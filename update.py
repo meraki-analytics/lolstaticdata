@@ -64,13 +64,39 @@ def pull_champion_ability(champion_name, ability_name):
     soup = BeautifulSoup(html, 'html.parser')
 
     table = soup.find_all(['th', 'td'])
-    table = [item.text.strip() for item in table]
-    table = table[table.index("Parameter")+3:]
-    table[0] = "name"  # this is '1' for some reason but it's the ability name
+
+    exclude_parameters = {
+        "callforhelp",
+        "flavorsound",
+        "video",
+        "video2",
+        "yvideo",
+        "yvideo2",
+    }
+
+    def parse_leveling(leveling: str):
+        if not isinstance(leveling, str):
+            leveling = str(leveling)
+        leveling = leveling.replace('</dt>', '\n</dt>')
+        leveling = leveling.replace('</dd>', '\n</dd>')
+        leveling = BeautifulSoup(leveling, 'html.parser')
+        parsed = leveling.text
+        return parsed.strip()
+
+    strip_table = [item.text.strip() for item in table]
+    start = strip_table.index("Parameter")+3
+    table = table[start:]
+    strip_table = strip_table[start:]
+    strip_table[0] = "name"  # this is '1' for some reason but it's the ability name
 
     data = {}
-    for parameter, value, desc in grouper(table, 3):
-        data[parameter] = value
+    for i, (parameter, value, desc) in enumerate(grouper(strip_table, 3)):
+        if value and parameter not in exclude_parameters:
+            if parameter.startswith('leveling'):
+                leveling = table[i*3+1]
+                value = parse_leveling(str(leveling))
+            data[parameter] = value
+
     return data
 
 
