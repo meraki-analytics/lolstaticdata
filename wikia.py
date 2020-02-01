@@ -97,7 +97,7 @@ def save_json(data, filename):
 
 
 def main():
-    statsfn = "champion_stats.json"
+    statsfn = "data/champion_stats.json"
     #if not os.path.exists(statsfn):
     stats = pull_champion_stats()
     save_json(stats, statsfn)
