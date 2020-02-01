@@ -6,10 +6,6 @@ from collections import Counter
 from bs4 import BeautifulSoup
 import requests
 import urllib.request
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 
 def grouper(iterable, n, fillvalue=None):
@@ -118,34 +114,35 @@ def main():
     }
 
     for champion_name, details in stats.items():
-        jsonfn = f"data/{champion_name}.json"
-        if not os.path.exists(jsonfn):
-            print(champion_name)
-            if champion_name == "Kled & Skaarl":
-                champion_name = "Kled"
-            success = True
-            for ability in ['i', 'q', 'w', 'e', 'r']:
-                result = {}
-                for ability_name in details[f"skill_{ability}"].values():
-                    if ability_name in missing_skills[champion_name]:
-                        continue
-                    print(ability_name)
-                    try:
-                        r = pull_champion_ability(champion_name, ability_name)
-                        # check to see if this ability was already pulled
-                        found = False
-                        for r0 in result.values():
-                            if r == r0:
-                                found = True
-                        if not found:
-                            result[ability_name] = r
-                    except Exception as exception:
-                        print(f"FAILED TO PARSE! {exception}")
-                        #success = False
-                details[f"skill_{ability}"] = result
-            if success:
-                save_json(details, jsonfn)
-            print()
+        jsonfn = f"data/{details['apiname']}.json"
+        #if os.path.exists(jsonfn):
+        #    continue
+        print(champion_name)
+        if champion_name == "Kled & Skaarl":
+            champion_name = "Kled"
+        success = True
+        for ability in ['i', 'q', 'w', 'e', 'r']:
+            result = {}
+            for ability_name in details[f"skill_{ability}"].values():
+                if champion_name in missing_skills and ability_name in missing_skills[champion_name]:
+                    continue
+                print(ability_name)
+                try:
+                    r = pull_champion_ability(champion_name, ability_name)
+                    # check to see if this ability was already pulled
+                    found = False
+                    for r0 in result.values():
+                        if r == r0:
+                            found = True
+                    if not found:
+                        result[ability_name] = r
+                except Exception as exception:
+                    print(f"FAILED TO PARSE! {exception}")
+                    #success = False
+            details[f"skill_{ability}"] = result
+        if success:
+            save_json(details, jsonfn)
+        print()
 
 
 
