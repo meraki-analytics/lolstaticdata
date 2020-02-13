@@ -17,14 +17,14 @@ class UnparsableLeveling(Exception):
 
 
 def grouper(iterable, n, fillvalue=None):
-    "Collect data into fixed-length chunks or blocks"
+    """Collect data into fixed-length chunks or blocks"""
     # grouper('ABCDEFG', 3, 'x') --> ABC DEF Gxx"
     args = [iter(iterable)] * n
     return itertools.zip_longest(*args, fillvalue=fillvalue)
 
 
 def pairwise(iterable):
-    "s -> (s0,s1), (s1,s2), (s2, s3), ..."
+    """s -> (s0,s1), (s1,s2), (s2, s3), ..."""
     a, b = itertools.tee(iterable)
     next(b, None)
     return zip(a, b)
@@ -34,6 +34,138 @@ rattribute = r"((?:[A-Za-z'\-\.0-9]+[\s\-]*)+:)"
 rflat = r": (.+)"
 rscaling = r"(\(\+.+?\))"
 rnumber = r"(\d+\.?\d*)"
+
+
+class AttributeModifier(dict):
+    def __init__(self, sign, values, units):
+        super().__init__({
+            "sign": sign,
+            "values": values,
+            "units": units,
+        })
+
+
+class Attribute(dict):
+    def __init__(self, name: str, modifiers: List[AttributeModifier]):
+        super().__init__({
+            "attribute": name,
+            "modifiers": modifiers
+        })
+
+    @classmethod
+    def from_string(cls, name: str, split, verbose: bool = False):
+        results = []
+
+        # Parse out the scalings first because it works better
+        print("FROM_STRING INPUT:", split)
+        scalings = re.compile(rscaling).findall(split)
+        if verbose:
+            print("SCALINGS", scalings, split)
+        for scaling in scalings:
+            split = split.replace(scaling, '').strip()  # remove the scaling part of the string for processing later
+        scalings = [x.strip() for x in scalings]
+        for i, scaling in enumerate(scalings):
+            s = Attribute._parse_scaling(scaling, num_levels=5)
+            results.append(s)
+
+        # Now parse out the flat damage info
+        flat = re.compile(rflat).findall(split)
+        flat = [x.strip().split(' + ') for x in flat]
+        flat = [x for s in flat for x in s]  # flatten the inner split list
+        if not flat:
+            numbers = re.compile(rnumber).findall(split)
+            # Check for the case of a just a very basic "1 / 2 / 3 / 4 / 5" string
+            if split.count(" / ") == 4 and len(numbers) == 5:
+                flat = [split]
+            elif split.count(" / ") == 2 and len(numbers) == 3:
+                flat = [split]
+            # Check for the case of a just a very basic "60" string
+            elif len(numbers) == 1 and str(numbers[0]) == split:
+                flat = [split]
+        if verbose:
+            print("FLAT", flat, split)
+        # assert len(flat) == 1  # don't enforce this
+        for i, f in enumerate(flat):
+            f = Attribute._parse_flat(f, num_levels=5)
+            results.append(f)
+
+        return cls(name=name, modifiers=results)
+
+    @staticmethod
+    def _parse_scaling(scaling, num_levels) -> AttributeModifier:
+        if scaling.startswith('(') and scaling.endswith(')'):
+            scaling = scaling[1:-1].strip()
+        modifier = scaling[0]  # + or -
+        scaling = scaling[1:].strip()
+        if ' / ' in scaling:
+            split = scaling.split(' / ')
+        else:
+            split = [scaling for _ in range(num_levels)]
+        results = []
+        for value in split:
+            v = re.compile(rnumber).findall(value)
+            if len(v) == 0:
+                assert value == "Siphoning Strike stacks"
+                unit = ''
+                v = value
+            else:
+                assert len(v) >= 1  # len(v) == 1 fails on e.g. "(+ 0.5% per 100 AP)" but we still just want the first #
+                v = v[0]
+                assert value.startswith(v) or value.startswith(f'[ {v}')  # 2nd one is for Vi's Denting Blows: "Bonus Physical Damage: 4 / 5.5 / 7 / 8.5 / 10% (+[ 1% per 35 ][ 2.86% per 100 ]bonus AD) of target's maximum health"
+                unit = value[len(v):]
+                v = eval(v)
+            results.append((v, unit))
+        results = AttributeModifier(sign=modifier, values=[v for v, unit in results], units=[unit for v, unit in results])
+        return results
+
+    @staticmethod
+    def _parse_flat(flat, num_levels) -> AttributeModifier:
+        if '(based on level)' in flat or '(based on casts)' in flat:
+            if '(based on level)' in flat:
+                unit = 'by level'
+                flat = flat.replace('(based on level)', '').strip()
+            elif '(based on casts)' in flat:
+                unit = 'by cast'
+                flat = flat.replace('(based on casts)', '').strip()
+            else:
+                raise RuntimeError("impossible")
+            values = re.compile(rnumber).findall(flat)
+            assert len(values) == 2
+            minn = eval(values[0])
+            maxx = eval(values[1])
+            delta = (maxx - minn) / 17.0
+            values = [minn + i*delta for i in range(18)]
+            units = [unit for _ in range(18)]
+            results = AttributeModifier(sign="+", values=values, units=units)
+            return results
+        else:
+            if flat.startswith('(') and flat.endswith(')'):
+                flat = flat[1:-1].strip()
+            if ' / ' in flat:
+                split = flat.split(' / ')
+            else:
+                split = [flat for _ in range(num_levels)]
+            results = []
+            for value in split:
+                v = re.compile(rnumber).findall(value)
+                assert len(v) == 1
+                v = v[0]
+                assert value.startswith(v)
+                unit = value[len(v):]
+                v = eval(v)
+                results.append((v, unit))
+
+            values = [v for v, unit in results]
+            units = [unit for v, unit in results]
+            unique_units = set(units)
+            if '' in unique_units:
+                unique_units.remove('')
+            if unique_units:
+                assert len(unique_units) == 1
+                unit = next(iter(unique_units))
+                units = [unit for _ in range(len(units))]
+            results = AttributeModifier(sign="+", values=values, units=units)
+            return results
 
 
 class Ability(dict):
@@ -90,7 +222,7 @@ class Ability(dict):
                 parameter = "name"
             else:
                 parameter = parameter.text.strip()
-            #desc = desc.text.strip()
+            # desc = desc.text.strip()
             text = value.text.strip()
             if text and parameter not in exclude_parameters:
                 data[parameter] = value
@@ -114,7 +246,13 @@ class Ability(dict):
                 elif "(based on  Phenomenal Evil stacks)" in parsed:
                     data[parameter] = parsed
                     continue
-                data[parameter] = Ability._parse_flat(parsed, 5)['values']
+                data[parameter] = Attribute.from_string(parameter, parsed, verbose=verbose)
+            elif parameter == "cost":
+                parsed = Ability._preparse_format(value)
+                if "10 Moonlight + 60" in parsed:
+                    data[parameter] = parsed
+                    continue
+                data[parameter] = Attribute.from_string(parameter, parsed, verbose=verbose)
             else:
                 data[parameter] = value.text.strip()
         if verbose:
@@ -157,10 +295,10 @@ class Ability(dict):
         return results
 
     @staticmethod
-    def _split_leveling(leveling: str, verbose: bool = False) -> List:
+    def _split_leveling(leveling: str, verbose: bool = False) -> List[Attribute]:
         # Remove some weird stuff
 
-        leveling_removals = []
+        leveling_removals = list()
         #  Ekko Chronobreak
         leveling_removals.append('(increased by 3% per 1% of health lost in the past 4 seconds)')
 
@@ -175,35 +313,12 @@ class Ability(dict):
         results = []
         if verbose:
             print("SPLITS", splits)
-        for match, split in zip(matches, splits):
-            result = {"modifiers": []}
-            result["attribute"] = match
+        for attribute_name, split in zip(matches, splits):
             if verbose:
-                print("ATTRIBUTE", result["attribute"])
+                print("ATTRIBUTE", attribute_name)
 
-            # Parse out the scalings first because it works better
-            scalings = re.compile(rscaling).findall(split)
-            if verbose:
-                print("SCALINGS", scalings, split)
-            for scaling in scalings:
-                split = split.replace(scaling, '')  # remove the scaling part of the string for processing later
-            scalings = [x.strip() for x in scalings]
-            for i, scaling in enumerate(scalings):
-                s = Ability._parse_scaling(scaling, num_levels=5)
-                result["modifiers"].append(s)
-
-            # Now parse out the flat damage info
-            flat = re.compile(rflat).findall(split)
-            flat = [x.strip().split(' + ') for x in flat]
-            flat = [x for s in flat for x in s]  # flatten the inner split list
-            if verbose:
-                print("FLAT", flat, split)
-            # assert len(flat) == 1  # don't enforce this
-            for i, f in enumerate(flat):
-                f = Ability._parse_flat(f, num_levels=5)
-                result["modifiers"].append(f)
-
-            results.append(result)
+            attribute = Attribute.from_string(attribute_name, split, verbose=verbose)
+            results.append(attribute)
         return results
 
     @staticmethod
@@ -231,82 +346,6 @@ class Ability(dict):
 
         return matches, splits
 
-    @staticmethod
-    def _parse_scaling(scaling, num_levels):
-        if scaling.startswith('(') and scaling.endswith(')'):
-            scaling = scaling[1:-1].strip()
-        modifier = scaling[0]  # + or -
-        scaling = scaling[1:].strip()
-        if ' / ' in scaling:
-            split = scaling.split(' / ')
-        else:
-            split = [scaling for _ in range(num_levels)]
-        results = []
-        for value in split:
-            v = re.compile(rnumber).findall(value)
-            if len(v) == 0:
-                assert value == "Siphoning Strike stacks"
-                unit = ''
-                v = value
-            else:
-                assert len(v) >= 1 # len(v) == 1 fails on e.g. "(+ 0.5% per 100 AP)" but we still just want the first #
-                v = v[0]
-                assert value.startswith(v) or value.startswith(f'[ {v}')  # 2nd one is for Vi's Denting Blows: "Bonus Physical Damage: 4 / 5.5 / 7 / 8.5 / 10% (+[ 1% per 35 ][ 2.86% per 100 ]bonus AD) of target's maximum health"
-                unit = value[len(v):]
-                v = eval(v)
-            results.append((v, unit))
-        results = {"modifier": modifier, "values": [v for v, unit in results], "units": [unit for v, unit in results]}
-        return results
-
-    @staticmethod
-    def _parse_flat(flat, num_levels):
-        if '(based on level)' in flat:
-            flat = flat.replace('(based on level)', '').strip()
-            values = re.compile(rnumber).findall(flat)
-            assert len(values) == 2
-            minn = eval(values[0])
-            maxx = eval(values[1])
-            delta = (maxx - minn) / 17.0
-            values = [minn + i*delta for i in range(18)]
-            units = ['by level' for _ in range(18)]
-            results = {"values": values, "units": units}
-            return results
-        else:
-            if flat.startswith('(') and flat.endswith(')'):
-                flat = flat[1:-1].strip()
-            if ' / ' in flat:
-                split = flat.split(' / ')
-            else:
-                split = [flat for _ in range(num_levels)]
-            results = []
-            for value in split:
-                v = re.compile(rnumber).findall(value)
-                assert len(v) == 1
-                v = v[0]
-                assert value.startswith(v)
-                unit = value[len(v):]
-                v = eval(v)
-                results.append((v, unit))
-
-            values = [v for v, unit in results]
-            units = [unit for v, unit in results]
-            unique_units = set(units)
-            if '' in unique_units:
-                unique_units.remove('')
-            if unique_units:
-                assert len(unique_units) == 1
-                unit = next(iter(unique_units))
-                units = [unit for _ in range(len(units))]
-            results = {"modifier": "+", "values": values, "units": units}
-            return results
-
-
-class ChampionStats(dict):
-    @classmethod
-    def from_html(cls, html):
-        self = cls()
-        return self
-
 
 def pull_all_champion_stats():
     # Download the page source
@@ -327,7 +366,7 @@ def pull_all_champion_stats():
         text = span.text
         if text == "{" or text == "}":
             brackets[text] += 1
-        if brackets["{"] != 0 :
+        if brackets["{"] != 0:
             data += text
         if brackets["{"] == brackets["}"] and brackets["{"] > 0:
             break
@@ -399,7 +438,6 @@ def save_json(data, filename):
 
 def main():
     statsfn = "data/champion_stats.json"
-    #if not os.path.exists(statsfn):
     stats = pull_all_champion_stats()
     save_json(stats, statsfn)
 
