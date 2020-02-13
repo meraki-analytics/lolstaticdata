@@ -437,8 +437,12 @@ def pull_champion_ability(champion_name, ability_name):
                 print("PREPARSED:", value)
                 for i, attribute in enumerate(value):
                     for j, modifier in enumerate(attribute['modifiers']):
-                        modifier['values'] = [modifier['values'][0], modifier['values'][2], modifier['values'][4]]
-                        modifier['units'] = [modifier['units'][0], modifier['units'][2], modifier['units'][4]]
+                        mvalues = modifier['values']
+                        if len(mvalues) == 5:
+                            modifier['values'] = [mvalues[0], mvalues[2], mvalues[4]]
+                        munits = modifier['units']
+                        if len(munits) == 5:
+                            modifier['units'] = [munits[0], munits[2], munits[4]]
             print("PARSED:", value)
             data[parameter] = value
         else:
