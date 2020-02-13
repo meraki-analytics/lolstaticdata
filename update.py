@@ -109,7 +109,7 @@ class Ability(dict):
                 data[parameter] = value
             elif parameter == "cooldown":
                 parsed = Ability._preparse_format(value)
-                if "(based on level)" in parsed:
+                if "(based on level)" in parsed and " / " in parsed:
                     parsed = parsed.replace("(based on level)", "").strip()
                 data[parameter] = Ability._parse_flat(parsed, 5)['values']
             else:
