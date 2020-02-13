@@ -107,6 +107,9 @@ class Ability(dict):
                 if verbose:
                     print("PARSED:", value)
                 data[parameter] = value
+            elif parameter == "cooldown":
+                parsed = Ability._preparse_format(value)
+                data[parameter] = Ability._parse_flat(parsed, 5)['values']
             else:
                 data[parameter] = value.text.strip()
         if verbose:
@@ -116,13 +119,19 @@ class Ability(dict):
         return data
 
     @staticmethod
-    def _parse_leveling(leveling: str, skill: str, verbose: bool = False):
+    def _preparse_format(leveling: str):
         if not isinstance(leveling, str):
             leveling = str(leveling)
         leveling = leveling.replace('</dt>', ' </dt>')
         leveling = leveling.replace('</dd>', ' </dd>')
         leveling = BeautifulSoup(leveling, 'html5lib')
         parsed = leveling.text.strip()
+        parsed = parsed.replace(u'\xa0', u' ')
+        return parsed
+
+    @staticmethod
+    def _parse_leveling(leveling: str, skill: str, verbose: bool = False):
+        parsed = Ability._preparse_format(leveling)
         if verbose:
             print("PARSING LEVELING:", str(parsed))
 
@@ -150,7 +159,6 @@ class Ability(dict):
         #  Ekko Chronobreak
         leveling_removals.append('(increased by 3% per 1% of health lost in the past 4 seconds)')
 
-        leveling = leveling.replace(u'\xa0', u' ')
         for removal in leveling_removals:
             if removal in leveling:
                 leveling = leveling.replace(removal, '').strip()
