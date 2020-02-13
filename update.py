@@ -111,6 +111,9 @@ class Ability(dict):
                 parsed = Ability._preparse_format(value)
                 if "(based on level)" in parsed and " / " in parsed:
                     parsed = parsed.replace("(based on level)", "").strip()
+                elif "(based on  Phenomenal Evil stacks)" in parsed:
+                    data[parameter] = parsed
+                    continue
                 data[parameter] = Ability._parse_flat(parsed, 5)['values']
             else:
                 data[parameter] = value.text.strip()
