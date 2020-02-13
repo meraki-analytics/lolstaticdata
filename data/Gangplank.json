@@ -84,11 +84,96 @@
       "icon": "Parrrley.png",
       "blurb": "Shoots target, plundering Gold for each enemy unit killed.",
       "description": "Active: Gangplank shoots the target enemy with his pistol, dealing  physical damage and applying on-hit effects.",
-      "leveling": "Physical Damage:\n20 / 45 / 70 / 95 / 120 (+ 100% AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                45,
+                70,
+                95,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Parrrley can  critically strike for (100% +  25%) AD bonus physical damage.",
       "icon3": "Silver Serpents.png",
       "description3": "If Parrrley kills the target, Gangplank plunders  gold and  Silver Serpents, the latter of which can be spent to upgrade  Cannon Barrage.",
-      "leveling3": "Gold Plunder:\n 3 / 4 / 5 / 6 / 7\nSilver Serpent Plunder:\n 4 / 5 / 6 / 7 / 8",
+      "leveling3": [
+        {
+          "attribute": "Gold Plunder",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Silver Serpent Plunder",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies, Self",
       "damagetype": "Physical",
@@ -110,7 +195,64 @@
       "icon": "Remove Scurvy.png",
       "blurb": "Eats citrus to cure crowd control effects and restore Health.",
       "description": "Active: Gangplank consumes a large quantity of citrus fruit,  cleansing himself from all  crowd control and  healing himself.",
-      "leveling": "Heal:\n50 / 75 / 100 / 125 / 150 (+ 90% AP) (+ 15% missing health)",
+      "leveling": [
+        {
+          "attribute": "Heal",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                75,
+                100,
+                125,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                90,
+                90,
+                90,
+                90
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                15,
+                15,
+                15,
+                15
+              ],
+              "units": [
+                "% missing health",
+                "% missing health",
+                "% missing health",
+                "% missing health",
+                "% missing health"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Self",
       "affects": "Self",
       "spelleffects": "Heal",
@@ -133,7 +275,52 @@
       "description2": "Active: Gangplank places a Powder Keg at the target location for 25 seconds, which connects to other nearby Powder Kegs with overlapping explosion radii.",
       "description3": "Gangplank and his enemies can attack the Powder Keg with basic attacks, dealing 1 damage per hit. Gangplank may also shoot the barrel with Parrrley. If Gangplank scores the killing blow, it explodes, also triggering a chain reaction that explodes nearby connected kegs. If killed by an enemy, the keg is safely dismantled.",
       "description4": "An exploding keg deals the attack's damage to all nearby enemies, plus bonus physical damage against  champions, ignoring 40% of their armor, as well as  slowing them for 2 seconds. Enemies can only be damaged once per chain.",
-      "leveling4": "Bonus Physical Damage:\n80 / 105 / 130 / 155 / 180\n\nSlow:\n40 / 50 / 60 / 70 / 80%",
+      "leveling4": [
+        {
+          "attribute": "Bonus Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                105,
+                130,
+                155,
+                180
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                50,
+                60,
+                70,
+                80
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Physical",
@@ -158,14 +345,211 @@
       "blurb": "Gangplank signals his ship to bombard an area, slowing and damaging enemies.",
       "description": "Active: Gangplank signals his ship off-shore to fire upon the target area for 8 seconds, calling down 12 waves of cannonballs in clusters of 3 every 2 seconds, and  revealing it for the duration. Each wave deals  magic damage to all enemies within the area and  slows them by 30% for 0.5 seconds.",
       "description2": "Gangplank can purchase upgrades for his ship in the store at the cost of 500  Silver Serpents each, which improve Cannon Barrage:",
-      "leveling2": "Magic Damage Per Wave:\n40 / 55 / 70 / 85 / 100 (+ 10% AP)\nMagic Damage Per Cluster:\n120 / 165 / 210 / 255 / 300 (+ 30% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage Per Wave",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                55,
+                70,
+                85,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Magic Damage Per Cluster",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                165,
+                210,
+                255,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "icon3": "Death's Daughter item.png",
       "description3": "Death's Daughter: An initial cannonball lands in the center of the barrage, dealing a cluster's worth of true damage to all enemies it hits and  slowing them by 60% for 1.5 seconds.",
-      "leveling3": "Total Magic Damage:\n480 / 660 / 840 / 1020 / 1200 (+ 120% AP)\nTotal Magic Damage withFire at Will:\n720 / 990 / 1260 / 1530 / 1800 (+ 180% AP)\nMaximum Mixed Total Damage withFire at Will and Death's Daughter:\n840 / 1155 / 1470 / 1785 / 2100 (+ 210% AP)",
+      "leveling3": [
+        {
+          "attribute": "Total Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                480,
+                660,
+                840,
+                1020,
+                1200
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                120,
+                120,
+                120,
+                120
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Magic Damage withFire at Will",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                720,
+                990,
+                1260,
+                1530,
+                1800
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                180,
+                180,
+                180,
+                180,
+                180
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Mixed Total Damage withFire at Will and Death's Daughter",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                840,
+                1155,
+                1470,
+                1785,
+                2100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                210,
+                210,
+                210,
+                210,
+                210
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "icon4": "Raise Morale item.png",
       "description4": "Raise Morale: The barrage grants allies  30% bonus movement speed while they are inside the area, persisting for 2 seconds after leaving it.",
       "icon5": "Fire at Will item.png",
-      "description5": "Fire at Will: Cannon Barrage fires  6 additional waves    2 additional clusters   over its duration.",
+      "description5": "Fire at Will: Cannon Barrage fires[ 6 additional waves ][ 2 additional clusters ] over its duration.",
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Physical",

@@ -82,10 +82,78 @@
       "description": "Passive - Focus: While Ranger's Focus is inactive, Ashe's basic attacks on-attack against  non-structures grant Focus for 4 seconds, stacking up to 4 times, with the duration also refreshing on structure attacks. After 4 seconds, each stack thereafter will fall off every second.",
       "icon2": "Ranger's Focus.png",
       "description2": "Active: Ashe gains  bonus attack speed for 4 seconds and causes each of her basic attacks to fire a flurry of five arrows.",
-      "leveling2": "Bonus Attack Speed:\n20 / 25 / 30 / 35 / 40%",
+      "leveling2": [
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "icon3": "Ranger's Focus 2.png",
       "description3": "Flurries trigger on-hit effects only once, and each arrow deals modified physical damage that benefits from  Frost Shots and  life steal.",
-      "leveling3": "Damage Per Arrow:\n21 / 22 / 23 / 24 / 25% AD\nTotal Damage Per Flurry:\n105 / 110 / 115 / 120 / 125% AD",
+      "leveling3": [
+        {
+          "attribute": "Damage Per Arrow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                21,
+                22,
+                23,
+                24,
+                25
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "AD Total Damage Per Flurry",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                105,
+                110,
+                115,
+                120,
+                125
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description4": "Ranger's Focus resets Ashe's basic attack timer.",
       "targeting": "No Target",
       "affects": "Self",
@@ -93,7 +161,7 @@
       "spelleffects": "spellpersist",
       "occurrence": "On-hit",
       "projectile": "True",
-      "notes": "* Although Ranger's Focus has no actual cooldown, 4 stacks of focus are needed before Ranger's Focus can be reactivated. The time before being able to reactivate Ranger's Focus is 6.08 \u2212 1.6 (based on attack speed) seconds.\n The multi-attack effect is similar to  Lightslinger and  Double Strike, except that on-hit effects aren't applied by the extra attacks.\n Each arrow from a flurry applies  Frost and the bonus damage from  Frost Shot is calculated individually per arrow.\n Similarly, since a flurry is 5 instances of physical damage,  The Black Cleaver allows her to cleave the enemy target 5 times per flurry.\n  Amumu's  Tantrum will reduce each arrow's damage, for a total of 10 \u2212 50 (based on E Rank) per flurry.\n\n Each additional arrow from  Runaan's Hurricane will also split into 5 arrows.\n The arrows are evenly distributed among secondary enemies but one enemy cannot be hit by more than 5 arrows.\n The flurry will trigger on-hit effects once to each enemy hit.\n Wind's Fury's splash damage is affected by the damage modifier of Ranger's Focus Rank 1 and doesn't increase based on its Rank - always dealing  (8.4% AD) damage per arrow    (42% AD) damage per flurry  to each secondary target.\n\n The Flurry attack can be used on structures.\n Each Flurry attack is considered a spell for the purpose of  Maokai's  Sap Magic."
+      "notes": "* Although Ranger's Focus has no actual cooldown, 4 stacks of focus are needed before Ranger's Focus can be reactivated. The time before being able to reactivate Ranger's Focus is 6.08 \u2212 1.6 (based on attack speed) seconds.\n The multi-attack effect is similar to  Lightslinger and  Double Strike, except that on-hit effects aren't applied by the extra attacks.\n Each arrow from a flurry applies  Frost and the bonus damage from  Frost Shot is calculated individually per arrow.\n Similarly, since a flurry is 5 instances of physical damage,  The Black Cleaver allows her to cleave the enemy target 5 times per flurry.\n  Amumu's  Tantrum will reduce each arrow's damage, for a total of 10 \u2212 50 (based on E Rank) per flurry.\n\n Each additional arrow from  Runaan's Hurricane will also split into 5 arrows.\n The arrows are evenly distributed among secondary enemies but one enemy cannot be hit by more than 5 arrows.\n The flurry will trigger on-hit effects once to each enemy hit.\n Wind's Fury's splash damage is affected by the damage modifier of Ranger's Focus Rank 1 and doesn't increase based on its Rank - always dealing[ (8.4% AD) damage per arrow ][ (42% AD) damage per flurry ]to each secondary target.\n\n The Flurry attack can be used on structures.\n Each Flurry attack is considered a spell for the purpose of  Maokai's  Sap Magic."
     }
   },
   "skill_w": {
@@ -111,7 +179,47 @@
       "icon": "Volley.png",
       "blurb": "Ashe fires 9 arrows in a cone for increased damage. Also applies Frost Shot.",
       "description": "Active: Ashe fires 9 arrows in a cone in the target direction, each dealing physical damage to the first enemy struck, and applying  Critical Slow to enemy  champions.",
-      "leveling": "Physical Damage:\n20 / 35 / 50 / 65 / 80 (+ 100% AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                35,
+                50,
+                65,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Enemies do not take damage from arrows beyond the first.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -158,9 +266,89 @@
       "icon": "Enchanted Crystal Arrow.png",
       "blurb": "Ashe fires a missile of ice in a straight line. If the arrow collides with an enemy Champion, it deals damage and stuns the Champion, stunning for longer the farther arrow has traveled. In addition, surrounding enemy units take damage and are slowed.",
       "description": "Active: Ashe fires a  missile of ice in the target direction, granting brief  sight of its surroundings. The arrow shatters upon hitting a  enemy champion, dealing  magic damage and  stunning them for 1 \u2212 3.5 (based on distance traveled) seconds.",
-      "leveling": "Magic Damage:\n200 / 300 / 400 / 500 / 600 (+ 100% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                300,
+                400,
+                500,
+                600
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Enemies surrounding the main target also take 50% damage.",
-      "leveling2": "Secondary Magic Damage:\n100 / 150 / 200 / 250 / 300 (+ 50% AP)",
+      "leveling2": [
+        {
+          "attribute": "Secondary Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                150,
+                200,
+                250,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",

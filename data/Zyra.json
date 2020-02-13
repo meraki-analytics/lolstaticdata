@@ -67,7 +67,7 @@
       "targeting": "Passive",
       "affects": "Self",
       "spelleffects": "pet",
-      "notes": "* Zyra tries to plant Seeds in brush and not on top of walls.\n Zyra tries not to plant Seeds too close together and at different angles.\n Zyra does not plant any Seeds if she is concealed within a brush (unless there is an enemy ward in it, in which case it takes her a little longer to plant the Seed) or when there is no room for additional ones.\n PENDING FOR TEST: Zyra tries to plant Seeds close to an enemy near her.\n PENDING FOR TEST: Zyra tries to plant Seeds under enemy structures only if she is in basic attack range of them.\n PENDING FOR TEST: Zyra tries to plant Seeds on the other side of the wall she is facing and/or standing right next to.\n PENDING FOR TEST: Zyra tries to plant Seeds in the direction she is facing and/or moving.\n PENDING FOR TEST: Zyra tries to plant Seeds near jungle path entrances.\n PENDING FOR TEST: Zyra tries to plant Seeds behind herself when she is walking through the river and there are no jungle path entrances near her.\n PENDING FOR TEST: Zyra tries to plant SeedsSeeds between herself and the enemy champion she has vision of (or is heading towards her) in a 45  angle to the left or to the right depending on where on lane she is standing.\n PENDING FOR TEST: Zyra tries to plant Seeds against the inner walls of epic monster pits ( Dragon,  Rift Herald,  Baron Nashor)"
+      "notes": "* Zyra tries to plant Seeds in brush and not on top of walls.\n Zyra tries not to plant Seeds too close together and at different angles.\n Zyra does not plant any Seeds if she is concealed within a brush (unless there is an enemy ward in it, in which case it takes her a little longer to plant the Seed) or when there is no room for additional ones.\n PENDING FOR TEST: Zyra tries to plant Seeds close to an enemy near her.\n PENDING FOR TEST: Zyra tries to plant Seeds under enemy structures only if she is in basic attack range of them.\n PENDING FOR TEST: Zyra tries to plant Seeds on the other side of the wall she is facing and/or standing right next to.\n PENDING FOR TEST: Zyra tries to plant Seeds in the direction she is facing and/or moving.\n PENDING FOR TEST: Zyra tries to plant Seeds near jungle path entrances.\n PENDING FOR TEST: Zyra tries to plant Seeds behind herself when she is walking through the river and there are no jungle path entrances near her.\n PENDING FOR TEST: Zyra tries to plant SeedsSeeds between herself and the enemy champion she has vision of (or is heading towards her) in a 45\u00b0 angle to the left or to the right depending on where on lane she is standing.\n PENDING FOR TEST: Zyra tries to plant Seeds against the inner walls of epic monster pits ( Dragon,  Rift Herald,  Baron Nashor)"
     }
   },
   "skill_q": {
@@ -82,7 +82,47 @@
       "icon": "Deadly Spines.png",
       "blurb": "Thick vines spread through the ground and explode into spines, dealing magic damage to enemies within the area. If cast near a seed, Deadly Spines grows a Thorn Spitter plant, which fires at enemies from afar.",
       "description": "Active: Zyra sprouts thorny spines at the target location that appear after a 0.625-seconds delay, dealing  magic damage to all enemies they hit.",
-      "leveling": "Magic Damage:\n60 / 95 / 130 / 165 / 200 (+ 60% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                95,
+                130,
+                165,
+                200
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If Deadly Spines hits a Seed, it sprouts into a  Thorn Spitter, which remains on the battlefield for 8 seconds.",
       "targeting": "Ground",
       "affects": "Enemies",
@@ -125,7 +165,69 @@
       "icon": "Grasping Roots.png",
       "blurb": "Zyra sends forth vines through the ground to ensnare her target, dealing damage and rooting enemies they come across. If cast near a seed, Grasping Roots grows a Vine Lasher, whose short range attacks reduce enemy Movement Speed.",
       "description": "Active: Zyra sends a surge of vines in the target direction, dealing magic damage to all enemies hit and  rooting them for a short duration.",
-      "leveling": "Magic Damage:\n60 / 105 / 150 / 195 / 240 (+ 50% AP)\nRoot Duration:\n1 / 1.25 / 1.5 / 1.75 / 2",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                105,
+                150,
+                195,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Root Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1,
+                1.25,
+                1.5,
+                1.75,
+                2
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If Grasping Roots hits a Seed, it sprouts into a  Vine Lasher, which remains on the battlefield for 8 seconds.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -149,9 +251,49 @@
       "icon": "Stranglethorns.png",
       "blurb": "Zyra summons a twisted thicket at her target location, dealing damage to enemies as it expands and knocking them airborne as it contracts.",
       "description": "Active: Zyra summons a monstrous thicket at the target location, dealing magic damage to all enemies in the area as it expands.",
-      "leveling": "Magic Damage:\n180 / 222.5 / 265 / 307.5 / 350 (+ 70% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                180,
+                222.5,
+                265,
+                307.5,
+                350
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "After 2 seconds, the vines snap upward,  knocking up all enemies caught in the thicket for 1 second.",
-      "description3": "Plants hit by the thicket are enraged, restoring  50% of their current health, increasing their  maximum health by 50%, and resetting their duration for the full duration of the thicket, for a maximum bonus duration of 2 seconds. Additionally they attack in a flurry, launching two shots per attack, dealing   150% damage per flurry    75% damage per shot  .",
+      "description3": "Plants hit by the thicket are enraged, restoring  50% of their current health, increasing their  maximum health by 50%, and resetting their duration for the full duration of the thicket, for a maximum bonus duration of 2 seconds. Additionally they attack in a flurry, launching two shots per attack, dealing [ 150% damage per flurry ][ 75% damage per shot ].",
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",

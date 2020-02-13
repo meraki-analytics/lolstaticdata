@@ -84,7 +84,69 @@
       "icon": "Dragon Strike.png",
       "blurb": "Jarvan IV extends his lance, dealing physical damage and lowering the Armor of enemies in its path. Additionally, this will pull Jarvan to his Demacian Standard, knocking up enemies in his path.",
       "description": "Active: Jarvan IV extends his lance in the target direction, dealing physical damage to all enemies and  reducing their armor for 3 seconds.",
-      "leveling": "Physical Damage:\n80 / 120 / 160 / 200 / 240 (+ 120% bonus AD)\nArmor Reduction:\n10 / 14 / 18 / 22 / 26% of target's armor",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                120,
+                160,
+                200,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                120,
+                120,
+                120,
+                120
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Armor Reduction",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                14,
+                18,
+                22,
+                26
+              ],
+              "units": [
+                "% of target's armor",
+                "% of target's armor",
+                "% of target's armor",
+                "% of target's armor",
+                "% of target's armor"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If the lance connects with a deployed  Demacian Standard, Jarvan IV  dashes to it,  knocking up nearby enemies along his path for 0.75 seconds.",
       "targeting": "Direction",
       "affects": "Self, Enemies",
@@ -106,9 +168,55 @@
       "icon": "Golden Aegis.png",
       "blurb": "Jarvan IV calls upon the ancient kings of Demacia to shield him from harm and slow surrounding enemies.",
       "description": "Active: Jarvan IV  slows all nearby enemies for 2 seconds.",
-      "leveling": "Slow:\n15 / 20 / 25 / 30 / 35%",
+      "leveling": [
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                20,
+                25,
+                30,
+                35
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Jarvan IV also  shields himself for 5 seconds, increased by 1.5% of Jarvan IV's maximum health for each enemy champion hit by Golden Aegis.",
-      "leveling2": "Base Shield:\n60 / 85 / 110 / 135 / 160",
+      "leveling2": [
+        {
+          "attribute": "Base Shield",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                85,
+                110,
+                135,
+                160
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Self",
       "affects": "Self, Enemies",
       "spelleffects": "Shield",
@@ -129,10 +237,73 @@
       "icon": "false",
       "blurb": "Jarvan IV carries the pride of Demacia, passively granting him bonus Attack Speed. Activating Demacian Standard allows Jarvan IV to place a Demacian flag that deals magic damage on impact and grants Attack Speed to nearby allied champions.",
       "description": "Passive: Jarvan IV gains permanent  bonus attack speed.",
-      "leveling": "Bonus Attack Speed:\n20 / 22.5 / 25 / 27.5 / 30%",
+      "leveling": [
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                22.5,
+                25,
+                27.5,
+                30
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Demacian Standard.png",
       "description2": "Active: Jarvan IV throws a Demacian flag to the target location, dealing  magic damage to all nearby enemies.",
-      "leveling2": "Magic Damage:\n80 / 120 / 160 / 200 / 240 (+ 80% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                120,
+                160,
+                200,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "The flag then remains for 8 seconds, granting  sight around it and providing an aura that grants Demacian Standard's bonus attack speed to all nearby allied champions.",
       "targeting": "Ground",
       "affects": "Self, Enemies",
@@ -155,7 +326,47 @@
       "icon": "Cataclysm.png",
       "blurb": "Jarvan IV heroically leaps into battle at a target with such force that he terraforms the surrounding area to create an arena around them. Nearby enemies are damaged at the moment of impact.",
       "description": "Active: Jarvan IV  leaps  unstoppably to an enemy champion and deals physical damage to all nearby enemies upon arrival.",
-      "leveling": "Physical Damage:\n200 / 262.5 / 325 / 387.5 / 450 (+ 150% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                262.5,
+                325,
+                387.5,
+                450
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                150,
+                150,
+                150,
+                150
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Upon impact, he creates a circle of impassable terrain for 3.5 seconds that grants  sight around it. Jarvan IV can reactivate Cataclysm to destroy the circle.",
       "targeting": "Unit",
       "affects": "Self, Enemies",

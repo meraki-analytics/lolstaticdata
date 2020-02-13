@@ -81,7 +81,47 @@
       "icon": "Bandage Toss.png",
       "blurb": "Amumu tosses a sticky bandage at a target, stunning and damaging the target while he pulls himself to them.",
       "description": "Active: Amumu tosses a bandage in the target direction that  stuns the first enemy it hits for 1 second, dealing  magic damage and  pulling him to their location.",
-      "leveling": "Magic Damage:\n80 / 130 / 180 / 230 / 280 (+ 70% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                130,
+                180,
+                230,
+                280
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -103,7 +143,47 @@
       "icon": "Despair.png",
       "blurb": "Overcome by anguish, nearby enemies lose a percentage of their maximum Health each second and have their Curses refreshed.",
       "description": "Toggle: Amumu cries a continuous pool of tears, refreshing Curse for 3 seconds and dealing magic damage every half second to nearby enemies.",
-      "leveling": "Magic Damage Per Half Second:\n5 / 7.5 / 10 / 12.5 / 15 (+ 0.5 / 0.625 / 0.75 / 0.875 / 1% (+ 0.5% per 100 AP) of target's maximum health)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage Per Half Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                5,
+                7.5,
+                10,
+                12.5,
+                15
+              ],
+              "units": [
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                0.5,
+                0.625,
+                0.75,
+                0.875,
+                1
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% (+ 0.5% per 100 AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Auto",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -124,10 +204,107 @@
       "icon": "false",
       "blurb": "Permanently reduces the physical damage Amumu would take. Amumu can unleash his rage, dealing damage to surrounding enemies. Each time Amumu is hit, the cooldown on Tantrum is reduced by 0.5 seconds.",
       "description": "Passive: Amumu takes reduced post-mitigation damage from each tick of physical damage.",
-      "leveling": "Physical Damage Reduction:\n2 / 4 / 6 / 8 / 10 (+ 3% bonus armor) (+ 3% bonus magic resistance)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage Reduction",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                2,
+                4,
+                6,
+                8,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                3,
+                3,
+                3,
+                3,
+                3
+              ],
+              "units": [
+                "% bonus armor",
+                "% bonus armor",
+                "% bonus armor",
+                "% bonus armor",
+                "% bonus armor"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                3,
+                3,
+                3,
+                3,
+                3
+              ],
+              "units": [
+                "% bonus magic resistance",
+                "% bonus magic resistance",
+                "% bonus magic resistance",
+                "% bonus magic resistance",
+                "% bonus magic resistance"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Tantrum.png",
       "description2": "Active: Amumu releases his anger, dealing magic damage to nearby enemies.",
-      "leveling2": "Magic Damage:\n75 / 100 / 125 / 150 / 175 (+ 50% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                100,
+                125,
+                150,
+                175
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Tantrum's  cooldown is reduced by 0.5 seconds every time Amumu is hit by a basic attack.",
       "targeting": "Passive / Auto",
       "affects": "Enemies",
@@ -149,7 +326,47 @@
       "icon": "Curse of the Sad Mummy.png",
       "blurb": "Amumu entangles surrounding enemy units in bandages, applying his Curse, damaging them and rendering them unable to attack or move.",
       "description": "Active: Amumu  entangles nearby enemies for 2 seconds, dealing magic damage.",
-      "leveling": "Magic Damage:\n150 / 200 / 250 / 300 / 350 (+ 80% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                200,
+                250,
+                300,
+                350
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",

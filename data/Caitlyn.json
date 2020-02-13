@@ -84,7 +84,86 @@
       "icon": "Piltover Peacemaker.png",
       "blurb": "Caitlyn revs up her rifle for 1 second to unleash a penetrating shot that deals physical damage (deals less damage to subsequent targets).",
       "description": "Active: Caitlyn fires a projectile in the target direction that deals physical damage to the first enemy it passes through, after which it expands in width but deals only 60% damage to all enemies it passes thereafter.",
-      "leveling": "Physical Damage:\n50 / 90 / 130 / 170 / 210 (+ 130 / 140 / 150 / 160 / 170% AD)\nReduced Damage:\n30 / 54 / 78 / 102 / 126 (+ 78 / 84 / 90 / 96 / 102% AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                90,
+                130,
+                170,
+                210
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                130,
+                140,
+                150,
+                160,
+                170
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Reduced Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                54,
+                78,
+                102,
+                126
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                78,
+                84,
+                90,
+                96,
+                102
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Enemies  revealed by  Yordle Snap Trap always take full damage from Piltover Peacemaker.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -109,11 +188,97 @@
       "icon": "Yordle Snap Trap.png",
       "blurb": "Caitlyn sets a trap to find sneaky yordles. When sprung, the trap reveals and immobilizes the enemy champion for 1.5 seconds.",
       "description": "Passive: Caitlyn periodically stocks a Yordle Snap Trap charge, up to a maximum amount.",
-      "leveling": "Maximum Traps:\n3 / 3 / 4 / 4 / 5",
+      "leveling": [
+        {
+          "attribute": "Maximum Traps",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                3,
+                3,
+                4,
+                4,
+                5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Active: Caitlyn sets a visible  untargetable trap at the target location which briefly grants  sight of the area and arms after 1 second, lasting for a duration. After the maximum amount of traps is laid down, deploying another immediately destroys the oldest one.",
-      "leveling2": "Trap Duration:\n30 / 35 / 40 / 45 / 50",
+      "leveling2": [
+        {
+          "attribute": "Trap Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                35,
+                40,
+                45,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "The next enemy champion that springs the trap is  rooted for 1.5 seconds,  revealed for 3 seconds, takes additional damage from  Headshot, and becomes immune to Yordle Snap Traps for 2 seconds, increased by 1 second for each Yordle Snap Trap they're consecutively affected.",
-      "leveling3": "Headshot Damage Increase:\n60 / 105 / 150 / 195 / 240 (+ 40 / 55 / 70 / 85 / 100% bonus AD)",
+      "leveling3": [
+        {
+          "attribute": "Headshot Damage Increase",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                105,
+                150,
+                195,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                55,
+                70,
+                85,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground / Single",
       "affects": "Enemies",
       "spellshield": "True",
@@ -132,7 +297,47 @@
       "icon": "90 Caliber Net.png",
       "blurb": "Caitlyn fires a heavy net to slow her target. The recoil knocks Caitlyn back.",
       "description": "Active: Caitlyn fires a net and  recoils 400 units in the opposite direction, dealing  magic damage to the first enemy hit and  slowing them by 50% for 1 second.",
-      "leveling": "Magic damage:\n70 / 110 / 150 / 190 / 230 (+ 80% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                110,
+                150,
+                190,
+                230
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction / Single",
       "affects": "Self, Enemies",
       "damagetype": "Magic",
@@ -156,7 +361,47 @@
       "blurb": "Caitlyn takes time to line up the perfect shot, dealing massive damage to a single target at a huge range. Enemy champions can intercept the bullet for their ally.",
       "description": "Active: After a brief delay, Caitlyn locks onto a target enemy champion and channels for 1 second, gaining  true sight of the target and  revealing herself to the enemies.",
       "description2": "Once Caitlyn completes the channel, she fires a homing projectile toward the target that deals physical damage to the first enemy champion it hits.",
-      "leveling2": "Physical damage:\n300 / 412.5 / 525 / 637.5 / 750 (+ 200% bonus AD)",
+      "leveling2": [
+        {
+          "attribute": "Physical damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                300,
+                412.5,
+                525,
+                637.5,
+                750
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                200,
+                200,
+                200,
+                200
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "If the target dies during the channel the ability is cancelled and put on a 5-second cooldown.",
       "targeting": "Unit",
       "affects": "Enemies",

@@ -45,7 +45,7 @@
   "rangetype": "Ranged",
   "date": "2010-09-21",
   "patch": "V1.0.0.101",
-  "changes": "V10.2",
+  "changes": "V10.3",
   "role": [
     "Enchanter"
   ],
@@ -89,19 +89,99 @@
       "cooldown": "8 / 7.2 / 6 / 4.8",
       "icon": "Hymn of Valor.png",
       "blurb": "Sona plays the Hymn of Valor, sends out bolts of sound, dealing magic damage to two nearby enemies, prioritizing champions and monsters. Sona gains a temporary aura that grants allies tagged by the zone bonus damage on their next attack against enemies.",
-      "description": "Active: Sona sends out two bolts of sound that deal magic damage to the nearest enemies, prioritizing champions.",
-      "leveling": "Magic Damage:\n40 / 70 / 100 / 130 / 160 (+ 50% AP)",
+      "description": "Active: Sona sends out two bolts of sound that deal magic damage to the two nearest  visible enemies, prioritizing champions.",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                70,
+                100,
+                130,
+                160
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Tempo Hymn of Valor.png",
       "description2": "Aura: Sona and tagged allied champions deal bonus magic damage on their next basic attack within 3 seconds.",
-      "leveling2": "Bonus Magic Damage:\n10 / 15 / 20 / 25 / 30 (+ 20% AP)",
-      "description3": "Power Chord \u2013 Staccato: Power Chord deals  28 \u2212  336 (based on level) (+ 28% AP) total magic damage.    40% bonus magic damage.  ",
-      "targeting": "Aura /  Auto",
+      "leveling2": [
+        {
+          "attribute": "Bonus Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                15,
+                20,
+                25,
+                30
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
+      "description3": "Power Chord \u2013 Staccato: Power Chord deals[ 28 \u2212  336 (based on level) (+ 28% AP) total magic damage. ][ 40% bonus magic damage. ]",
+      "targeting": "Aura / Auto",
       "affects": "Enemies",
       "damagetype": "Magic",
-      "spelleffects": "spellaoe",
+      "spelleffects": "special",
       "spellshield": "True",
       "projectile": "True",
-      "notes": "* Hymn of Valor's aura doesn't trigger spell effects.\n Even if both bolts hit the same enemy they can only be damaged by one.\n Hymn of Valor will only target enemy units if Sona has sight of them.\n If the target gets out of sight before the projectile hits them they will still be damaged."
+      "notes": "* Hymn of Valor deals  default damage in an  area of effect range. The granted aura buff applies  proc damage.\n The bolts do not apply spell effects.\n\n Bolts hitting the same target twice only receive damage from one bolt."
     }
   },
   "skill_w": {
@@ -116,15 +196,96 @@
       "icon": "Aria of Perseverance.png",
       "blurb": "Sona plays the Aria of Perseverance, sending out protective melodies, healing Sona and a nearby wounded ally. Sona gains a temporary aura that grants allies tagged by the zone a temporary shield.",
       "description": "Active: Sona  heals herself and the most wounded nearby allied champion.",
-      "leveling": "Heal:\n30 / 50 / 70 / 90 / 110 (+ 25% AP)",
+      "leveling": [
+        {
+          "attribute": "Heal",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                50,
+                70,
+                90,
+                110
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Tempo Aria of Perseverance.png",
       "description2": "Aura: Sona and tagged allied champions receive a  shield lasting up to 1.5 seconds.",
-      "leveling2": "Shield Strength:\n25 / 50 / 75 / 100 / 125 (+ 30% AP)",
+      "leveling2": [
+        {
+          "attribute": "Shield Strength",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                50,
+                75,
+                100,
+                125
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Power Chord \u2013 Diminuendo: Power Chord reduces its target's size and damage output by 25% (+ 4% per 100 AP) for 3 seconds.",
-      "targeting": "Aura",
+      "targeting": "Aura / Auto",
       "affects": "Self, Allies",
       "spelleffects": "Heal",
-      "notes": "* If no one is injured Aria of Perseverance will target the closest allied champion."
+      "spellshield": "special",
+      "notes": "* If no one is injured, Aria of Perseverance will target the closest allied champion.\n PENDING FOR TEST: While  Power Chord is activated, the damage reduction via basic attack is blocked by  spell shields."
     }
   },
   "skill_e": {
@@ -138,14 +299,55 @@
       "cooldown": "12 / 10.8 / 9 / 7.2",
       "icon": "Song of Celerity.png",
       "blurb": "Sona plays the Song of Celerity, granting nearby allies bonus Movement Speed. Sona gains a temporary aura that grants allied champions tagged by the zone bonus Movement Speed on their next attack.",
-      "description": "Active: Sona gains 25% (+ 4% per 100 AP)  bonus movement speed for 3 seconds, extended to up to 7 seconds if she doesn't take damage.",
+      "description": "Active: Sona gains 20% (+ 3% per 100 AP)  bonus movement speed for 3 seconds, extended to up to 7 seconds if she doesn't take damage.",
       "icon2": "Tempo Song of Celerity.png",
       "description2": "Aura: Tagged allied champions gain  bonus movement speed for 3 seconds.",
-      "leveling2": "Aura Bonus Movement Speed:\n10 / 11 / 12 / 13 / 14% (+ 3% per 100 AP)",
+      "leveling2": [
+        {
+          "attribute": "Aura Bonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                11,
+                12,
+                13,
+                14
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                3,
+                3,
+                3,
+                3,
+                3
+              ],
+              "units": [
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Power Chord \u2013 Tempo: Power Chord  slows its target by 40% (+ 4% per 100 AP) for 2 seconds.",
       "targeting": "Aura",
       "affects": "Self, Allies",
-      "notes": "* No additional details."
+      "spellshield": "special",
+      "notes": "* PENDING FOR TEST: While  Power Chord is activated, the  slow via basic attack is negated by  spell shields."
     }
   },
   "skill_r": {
@@ -160,10 +362,65 @@
       "icon": "false",
       "blurb": "Sona plays her ultimate chord, stunning enemy champions and forcing them to dance and dealing magic damage to them. Each rank reduces the base cooldown of Sona's basic abilities.",
       "description": "Passive: Reduces the base  cooldown of Sona's basic abilities.",
-      "leveling": "Basic Ability Base Cooldown Reduction:\n10 / 25 / 40%",
+      "leveling": [
+        {
+          "attribute": "Basic Ability Base Cooldown Reduction",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                25,
+                40
+              ],
+              "units": [
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Crescendo.png",
       "description2": "Active: After a 0.2-second delay, Sona plays an irresistible chord in the target direction, dealing magic damage to all enemy champions struck and  stunning them for 1.5 seconds.",
-      "leveling2": "Magic Damage:\n150 / 250 / 350 (+ 50% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                250,
+                350
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",

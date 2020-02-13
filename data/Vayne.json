@@ -78,7 +78,30 @@
       "icon": "Tumble.png",
       "blurb": "Vayne tumbles, maneuvering to carefully place her next shot. Her next attack critically strikes.",
       "description": "Active: Vayne  dashes forward, though not through terrain, and her next basic attack within 7 seconds deals  bonus physical damage.",
-      "leveling": "Bonus Physical Damage:\n50 / 55 / 60 / 65 / 70% AD",
+      "leveling": [
+        {
+          "attribute": "Bonus Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                55,
+                60,
+                65,
+                70
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Tumble resets Vayne's basic attack timer.",
       "targeting": "Self",
       "affects": "Self",
@@ -97,7 +120,52 @@
       "blurb": "Vayne tips her bolts with a rare metal, toxic to evil things. The third consecutive attack or ability against the same target deals a percentage of the target's maximum Health as bonus true damage. (Max: 200 damage vs. Monsters)",
       "description": "Passive: Vayne's basic attacks and  Condemn apply a Silver Bolts stack for 3.5 seconds, up to 3 times. Attacking a new enemy removes all stacks from the previous target.",
       "description2": "The third stack consumes them all to deal  bonus true damage, with a minimum threshold, and capped at 200 against monsters.",
-      "leveling2": "Bonus True Damage:\n4 / 6.5 / 9 / 11.5 / 14% of target's maximum health\nMinimum True Damage:\n50 / 65 / 80 / 95 / 110",
+      "leveling2": [
+        {
+          "attribute": "Bonus True Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                4,
+                6.5,
+                9,
+                11.5,
+                14
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "of target's maximum health Minimum True Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                65,
+                80,
+                95,
+                110
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Passive",
       "affects": "Enemies",
       "damagetype": "true",
@@ -119,9 +187,128 @@
       "icon": "Condemn.png",
       "blurb": "Vayne draws a heavy crossbow from her back, and fires a huge bolt at her target, knocking them back and dealing damage. If they collide with terrain, they are impaled, dealing bonus damage and stunning them.",
       "description": "Active: Vayne fires a heavy bolt at the target unit, dealing physical damage,  knocking them back 475 units, and applying a  Silver Bolts stack.",
-      "leveling": "Physical Damage:\n50 / 85 / 120 / 155 / 190 (+ 50% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                85,
+                120,
+                155,
+                190
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If the target collides with a wall, they take bonus physical damage and are  stunned for 1.5 seconds.",
-      "leveling2": "Bonus Damage:\n75 / 127.5 / 180 / 232.5 / 285 (+ 75% bonus AD)\nTotal Damage:\n125 / 212.5 / 300 / 387.5 / 475 (+ 125% bonus AD)",
+      "leveling2": [
+        {
+          "attribute": "Bonus Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                127.5,
+                180,
+                232.5,
+                285
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                75,
+                75,
+                75,
+                75
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                125,
+                212.5,
+                300,
+                387.5,
+                475
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                125,
+                125,
+                125,
+                125,
+                125
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "physical",
@@ -142,11 +329,100 @@
       "icon": "Final Hour.png",
       "blurb": "Readying herself for an epic confrontation, Vayne gains increased Attack Damage, Invisibility during Tumble, and triple the bonus Movement Speed from Night Hunter.",
       "description": "Active: For a duration, Vayne gains bonus attack damage and triples  Night Hunter's bonus.",
-      "leveling": "Duration:\n8 / 9 / 10 / 11 / 12\n\nBonus AD:\n25 / 32.5 / 40 / 47.5 / 55",
+      "leveling": [
+        {
+          "attribute": "Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                8,
+                9,
+                10,
+                11
+              ],
+              "units": [
+                " /",
+                " /",
+                " /",
+                " /"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "12 \nBonus AD",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                32.5,
+                40,
+                47.5,
+                55
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Additionally,  Tumble gains cooldown reduction, and casting it grants  invisibility for 1 second.",
-      "leveling2": "Tumble Cooldown Reduction:\n30 / 35 / 40 / 45 / 50%",
+      "leveling2": [
+        {
+          "attribute": "Tumble Cooldown Reduction",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                35,
+                40,
+                45,
+                50
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "While active, whenever a champion damaged by Vayne dies within 3 seconds, Final Hour's duration is extended by 4 seconds, up to a maximum of the original duration.",
-      "leveling3": "Maximum Duration:\n16 / 18 / 20 / 22 / 24",
+      "leveling3": [
+        {
+          "attribute": "Maximum Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                16,
+                18,
+                20,
+                22,
+                24
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "None",
       "affects": "Self",
       "notes": "* Final Hour has no cast time and does not interrupt Vayne's previous orders.\n Vayne's animations and basic attack projectiles change slightly during Final Hour.\n Tumble's  invisibility during  Final Hour will end prematurely if Vayne performs any action other than movement while stealthed."

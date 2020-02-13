@@ -77,10 +77,56 @@
       "icon": "Pow-Pow.png",
       "blurb": "Jinx modifies her basic attacks by swapping between Pow-Pow, her minigun and Fishbones, her rocket launcher. Attacks with Pow-Pow grant Attack Speed, while attacks with Fishbones deal area of effect damage, gain increased range, and drain Mana.",
       "description": "Pow-Pow - Passive: Jinx's basic attacks make her  Rev'd up for 2.5 seconds, granting  bonus attack speed, stacking up to 3 times.",
-      "leveling": "Maximum Attack Speed:\n30 / 55 / 80 / 105 / 130%",
+      "leveling": [
+        {
+          "attribute": "Maximum Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                55,
+                80,
+                105,
+                130
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Switcheroo!.png",
       "description2": "Fishbones - Toggle: Jinx loses  25% of her bonus attack speed and her basic attacks cost  mana on-attack. They gain  bonus range, deal 10% AD  bonus physical damage, and hit all enemies near the main target. The bonus damage from Fishbones is affected by  critical strike modifiers.",
-      "leveling2": "Bonus Range:\n75 / 100 / 125 / 150 / 175",
+      "leveling2": [
+        {
+          "attribute": "Bonus Range",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                100,
+                125,
+                150,
+                175
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "icon3": "Rev'd up.png",
       "description3": "The first Rev'd up stack is twice as potent as the others, and stacks decay one at a time when she stops attacking. Fishbones will not refresh the stack timer and only its first basic attack after using Switcheroo! will gain the bonus attack speed.",
       "targeting": "Self",
@@ -106,7 +152,69 @@
       "icon": "Zap!.png",
       "blurb": "Jinx uses Zapper, her shock pistol, to fire a blast that deals damage to the first enemy hit, slowing and revealing it.",
       "description": "Active: After 0.6 \u2212 0.4 (based on bonus attack speed) seconds, Jinx fires a shock blast that deals physical damage to the first enemy it hits,  revealing and  slowing them for 2 seconds.",
-      "leveling": "Physical Damage:\n10 / 60 / 110 / 160 / 210 (+ 160% AD)\nSlow:\n30 / 40 / 50 / 60 / 70%",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                60,
+                110,
+                160,
+                210
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                160,
+                160,
+                160,
+                160,
+                160
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                40,
+                50,
+                60,
+                70
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Physical",
@@ -129,7 +237,86 @@
       "icon": "Flame Chompers!.png",
       "blurb": "Jinx throws out a line of snare grenades that explode after 5 seconds, lighting enemies on fire. Flame Chompers will bite enemy champions who walk over them, rooting them in place.",
       "description": "Active: Jinx tosses out 3 Chompers that arm after 0.7 seconds and explode after 5 seconds, dealing magic damage over 1.5 seconds to all enemies within a small area.",
-      "leveling": "Total Magic Damage:\n70 / 120 / 170 / 220 / 270 (+ 100% AP)\nMagic Damage per instance:\n23.33 / 40 / 56.67 / 73.33 / 90 (+ 33.3% AP)",
+      "leveling": [
+        {
+          "attribute": "Total Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                120,
+                170,
+                220,
+                270
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Magic Damage per instance",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                23.33,
+                40,
+                56.67,
+                73.33,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                33.3,
+                33.3,
+                33.3,
+                33.3,
+                33.3
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Flame Chompers! 2.png",
       "description2": "Chompers prematurely explode on  enemy champion contact,  knocking down and  rooting them for the same duration. A champion can set off only a single Chomper and be damaged by one.",
       "targeting": "Ground",
@@ -156,7 +343,200 @@
       "blurb": "Jinx fires a super rocket across the map that gains damage as it travels. The rocket will explode upon colliding with an enemy champion, dealing damage to it and surrounding enemies based on their missing Health.",
       "description": "Active: Jinx fires a  rocket in the target direction that explodes upon enemy champion contact, dealing physical damage to them and 80% of the amount to nearby enemies as well as granting brief  sight of its surroundings.",
       "description2": "The rocket deals 10% \u2212 100% (based on distance traveled) of its damage based on distance traveled, though the missing health component is unaffected.",
-      "leveling2": "Min. Physical Damage:\n25 / 35 / 45 (+ 15% bonus AD) (+ 25 / 30 / 35% of target's missing health)\nMax. Physical Damage:\n250 / 350 / 450 (+ 150% bonus AD) (+ 25 / 30 / 35% of target's missing health)\nMin. Secondary Damage:\n20 / 28 / 36 (+ 12% bonus AD) (+ 20 / 24 / 28% of target's missing health\nMax. Secondary Damage:\n200 / 280 / 360 (+ 120% bonus AD) (+ 20 / 24 / 28% of target's missing health",
+      "leveling2": [
+        {
+          "attribute": "Min. Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                35,
+                45
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                15,
+                15,
+                15,
+                15
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                30,
+                35
+              ],
+              "units": [
+                "",
+                "",
+                "% of target's missing health"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Max. Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                250,
+                350,
+                450
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                150,
+                150,
+                150,
+                150
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                30,
+                35
+              ],
+              "units": [
+                "",
+                "",
+                "% of target's missing health"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Min. Secondary Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                28,
+                36
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                12,
+                12,
+                12,
+                12,
+                12
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                24,
+                28
+              ],
+              "units": [
+                "",
+                "",
+                "% of target's missing health"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Max. Secondary Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                280,
+                360
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                120,
+                120,
+                120,
+                120
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                24,
+                28
+              ],
+              "units": [
+                "",
+                "",
+                "% of target's missing health"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Physical",

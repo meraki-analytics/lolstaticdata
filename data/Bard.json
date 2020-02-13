@@ -122,7 +122,69 @@
       "icon": "Cosmic Binding.png",
       "blurb": "Bard fires a missile which will slow the first enemy struck, and continue onward. If it strikes a wall, it will stun the initial target; if it strikes another enemy, it will stun them both.",
       "description": "Active: Bard fires a burst of spirit energy in the target direction, dealing magic damage to the first enemy struck and briefly  slowing them by 60%.",
-      "leveling": "Magic Damage:\n80 / 125 / 170 / 215 / 260 (+ 65% AP)\nDisable Duration:\n1 / 1.2 / 1.4 / 1.6 / 1.8",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                125,
+                170,
+                215,
+                260
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                65,
+                65,
+                65,
+                65,
+                65
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Disable Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1,
+                1.2,
+                1.4,
+                1.6,
+                1.8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "After Cosmic Binding hits an enemy, the energy continues behind them for 300 units. If the burst hits a wall or a second enemy, it  stuns both targets for the same duration, dealing the same magic damage to the second target as well.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -146,7 +208,86 @@
       "blurb": "Reveals a healing shrine which powers up over a short time, disappearing after healing the first ally that touches it.",
       "description": "Active: Bard conjures a shrine at the target location that builds up in power over 10 seconds, up to 3 shrines active at once, which remains until consumed when a champion steps on it.",
       "description2": "If the champion was an ally or Bard himself, they are  healed for an amount based on the shrine's power and gain  50% bonus movement speed that decays over 1.5 seconds.",
-      "leveling2": "Minimum Heal:\n30 / 60 / 90 / 120 / 150 (+ 30% AP)\nMaximum Heal:\n70 / 110 / 150 / 190 / 230 (+ 60% AP)",
+      "leveling2": [
+        {
+          "attribute": "Minimum Heal",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                60,
+                90,
+                120,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Heal",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                110,
+                150,
+                190,
+                230
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Allies",
       "spelleffects": "Heal",

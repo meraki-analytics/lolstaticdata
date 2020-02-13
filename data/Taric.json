@@ -40,8 +40,8 @@
   "patch": "V0.9.22.15",
   "changes": "V9.22",
   "role": [
-    "Enchanter",
-    "Warden"
+    "Warden",
+    "Enchanter"
   ],
   "damage": 1,
   "toughness": 2,
@@ -63,9 +63,8 @@
       "targeting": "Passive",
       "affects": "Self",
       "damagetype": "Magic",
-      "spelleffects": "False",
-      "spellshield": "False",
-      "notes": "* The attacks will apply on-hit effects and can  critically strike as normal.\n  Critical strikes do not interact with Bravado's bonus damage.\n\n The empowered attacks will not apply the bonus damage against structures but will reduce Taric's cooldowns.\n The empowered basic attacks can be  dodged but will still reduce Taric's cooldowns.\n PENDING FOR TEST  Block or if Taric is affected by  blind."
+      "spelleffects": "proc",
+      "notes": "* The attacks will apply  on-hit effects and can  critically strike as normal.\n  Critical strikes do not interact with Bravado's bonus damage.\n\n The empowered attacks will not apply the bonus damage against structures but will reduce Taric's cooldowns.\n The empowered basic attacks can be  dodged or  blocked but will still reduce Taric's cooldowns.\n Being  blinded does not block Bravado's bonus magic damage or the  cooldown reduction."
     }
   },
   "skill_q": {
@@ -81,9 +80,32 @@
       "icon": "Starlight's Touch.png",
       "blurb": "Heals nearby allied champions based on charges stored. Bravado-empowered attacks grant a charge of Starlight's Touch.",
       "description": "Passive: Taric stores a charge of Starlight's Touch periodically, up to a maximum at once.  Bravado empowered attacks grant one charge.",
-      "leveling": "Maximum Charges:\n1 / 2 / 3 / 4 / 5",
+      "leveling": [
+        {
+          "attribute": "Maximum Charges",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Active: Taric  heals himself and all nearby allied champions for 30 (+ 20% AP) (+ 1% of Taric's maximum health) per stored charge at the time of cast, up to a maximum of 150 (+ 100% AP) (+ 5% of Taric's maximum health) at 5 charges.",
-      "targeting": "None",
+      "targeting": "Aura / Auto",
       "affects": "Allies",
       "spelleffects": "Heal",
       "notes": "* No additional details."
@@ -102,12 +124,58 @@
       "icon": "Bastion.png",
       "blurb": "Passively increase the Armor of Taric and any allied champion with Bastion. Actively shields an ally and grants them Bastion for as long as they remain near Taric. Taric's spells also cast off the ally with Bastion.",
       "description": "Passive: Taric gains  bonus armor and links to his ally. While tethered, the bonus armor and Taric's abilities are replicated on the ally, though the effects do not stack.",
-      "leveling": "Bonus Armor:\n10 / 12.5 / 15 / 17.5 / 20% of Taric's armor",
+      "leveling": [
+        {
+          "attribute": "Bonus Armor",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                12.5,
+                15,
+                17.5,
+                20
+              ],
+              "units": [
+                "% of Taric's armor",
+                "% of Taric's armor",
+                "% of Taric's armor",
+                "% of Taric's armor",
+                "% of Taric's armor"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Bastion 2.png",
       "description2": "Active: Taric  shields himself and the target allied champion for 2.5 seconds, blessing them with the Bastion link.",
-      "leveling2": "Shield Strength:\n8 / 9 / 10 / 11 / 12% of target's maximum health",
+      "leveling2": [
+        {
+          "attribute": "Shield Strength",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "units": [
+                "% of target's maximum health",
+                "% of target's maximum health",
+                "% of target's maximum health",
+                "% of target's maximum health",
+                "% of target's maximum health"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Taric can self-cast Bastion to shield himself, or to the nearest unlinked ally in range. Only one champion can be marked at a time, and selecting a new ally clears the previous mark.",
-      "targeting": "Unit",
+      "targeting": "Self / Unit",
       "affects": "Self, Allies",
       "spelleffects": "Shield",
       "notes": "* Linked allies will keep continuing  Bastion,  Dazzle, and  Cosmic Radiance even if Taric is not in range."
@@ -127,7 +195,64 @@
       "icon": "Dazzle.png",
       "blurb": "Taric readies a beam of starlight that, after a brief delay, deals magic damage and stuns enemies.",
       "description": "Active: Taric projects a beam of starlight towards the target location, erupting after a 1 second delay, dealing magic damage to all enemies hit and  stunning them for 1.25 seconds.",
-      "leveling": "Magic Damage:\n90 / 130 / 170 / 210 / 250 (+ 50% AP) (+ 50% bonus armor)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                130,
+                170,
+                210,
+                250
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% bonus armor",
+                "% bonus armor",
+                "% bonus armor",
+                "% bonus armor",
+                "% bonus armor"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -149,9 +274,9 @@
       "icon": "Cosmic Radiance.png",
       "blurb": "Pulses cosmic energy onto nearby allied champions after a delay, making them invulnerable for a short duration.",
       "description": "Active: After a 2.5-second delay, cosmic energy descends upon Taric and all nearby allied champions, rendering them  invulnerable for 2.5 seconds.",
-      "targeting": "None",
+      "targeting": "Aura / Buff",
       "affects": "Allies",
-      "notes": "* All affected units can still be affected with  crowd control."
+      "notes": "* No additional details."
     }
   }
 }

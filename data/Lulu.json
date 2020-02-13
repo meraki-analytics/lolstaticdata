@@ -82,7 +82,86 @@
       "icon": "Glitterlance.png",
       "blurb": "Pix and Lulu each fire a bolt of magical energy that heavily slows all enemies it hits. An enemy can only be damaged by one bolt.",
       "description": "Active: Lulu and  Pix each fire a magic bolt towards the target point, dealing magic damage to the first enemy they pass through, reduced to 70% against enemies thereafter, and  slowing them by 80%, decaying over 2 seconds.",
-      "leveling": "Magic Damage:\n80 / 125 / 170 / 215 / 260 (+ 50% AP)\n\nReduced Damage:\n56 / 87.5 / 119 / 150.5 / 182 (+ 35% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                125,
+                170,
+                215,
+                260
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Reduced Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                56,
+                87.5,
+                119,
+                150.5,
+                182
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                35,
+                35,
+                35,
+                35
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If an enemy is hit by both bolts, the second bolt will deal no damage if the first bolt dealt full damage to them, or 30% damage if the first bolt hit another unit before them. The second hit will refresh the  slow.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -105,9 +184,77 @@
       "icon": "Whimsy.png",
       "blurb": "If cast on an ally, grants them Attack Speed and Movement Speed for a short time. If cast on an enemy, turns them into an adorable critter that can't attack or cast spells.",
       "description": "On Ally Cast: Lulu casts erratic magic upon an ally champion, giving them  bonus attack speed and  30% (+ 5% per 100 AP) bonus movement speed for the next few seconds.",
-      "leveling": "Bonus Attack Speed:\n25 / 30 / 35 / 40 / 45%\nDuration:\n3 / 3.25 / 3.5 / 3.75 / 4",
+      "leveling": [
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                30,
+                35,
+                40,
+                45
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                3,
+                3.25,
+                3.5,
+                3.75,
+                4
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "On Enemy Cast: Lulu launches a spell on the target enemy champion  polymorphing them into a harmless critter, reducing their base movement speed by 60 for a short duration.",
-      "leveling2": "Polymorph Duration:\n1.25 / 1.5 / 1.75 / 2 / 2.25",
+      "leveling2": [
+        {
+          "attribute": "Polymorph Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1.25,
+                1.5,
+                1.75,
+                2,
+                2.25
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies / Allies / Self",
       "damagetype": "None",
@@ -129,9 +276,89 @@
       "icon": "Help, Pix!.png",
       "blurb": "If cast on an ally, commands Pix to jump to an ally and shield them. He then follows them and aids their attacks. If cast on an enemy, commands Pix to jump to an enemy and damage them. He then follows them and grants you vision of that enemy.",
       "description": "On Ally Cast: Lulu sends  Pix to the target ally,  shielding them for 2.5 seconds if they are a champion.",
-      "leveling": "Shield Strength:\n80 / 120 / 160 / 200 / 240 (+ 60% AP)",
+      "leveling": [
+        {
+          "attribute": "Shield Strength",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                120,
+                160,
+                200,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "On Enemy Cast: Lulu sends  Pix to the target enemy, dealing magic damage and granting  true sight of them for 4 seconds.",
-      "leveling2": "Magic Damage:\n80 / 120 / 160 / 200 / 240 (+ 40% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                120,
+                160,
+                200,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies / Allies / Self",
       "damagetype": "Magic",
@@ -154,7 +381,61 @@
       "icon": "Wild Growth.png",
       "blurb": "Lulu enlarges an ally, knocking nearby enemies into the air and granting the ally a large amount of bonus health. For the next few seconds, that ally gains an aura that slows nearby enemies.",
       "description": "Active: Lulu enlarges the target allied champion,  knocking up units around them for 0.75 seconds, increasing their  bonus health and causing them to  slow nearby units for 7 seconds.",
-      "leveling": "Bonus Health:\n300 / 450 / 600 (+ 50% AP)\nSlow:\n30 / 45 / 60%",
+      "leveling": [
+        {
+          "attribute": "Bonus Health",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                300,
+                450,
+                600
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                45,
+                60
+              ],
+              "units": [
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Allies / Self, Enemies",
       "damagetype": "None",

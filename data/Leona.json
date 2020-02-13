@@ -82,7 +82,47 @@
       "icon": "Shield of Daybreak.png",
       "blurb": "Leona uses her shield to perform her next basic attack, dealing bonus magic damage and stunning the target.",
       "description": "Active: Leona's next basic attack gains  50 bonus range, deals bonus magic damage and  stuns her target for 1 second.",
-      "leveling": "Bonus Magic Damage:\n10 / 35 / 60 / 85 / 110 (+ 30% AP)",
+      "leveling": [
+        {
+          "attribute": "Bonus Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                35,
+                60,
+                85,
+                110
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Shield of Daybreak resets Leona's basic attack timer.",
       "targeting": "Self",
       "affects": "Enemies",
@@ -105,9 +145,150 @@
       "icon": "Eclipse.png",
       "blurb": "Leona raises her shield to gain Armor and Magic Resist. When the duration first ends, if there are nearby enemies, she will deal magic damage to them and prolong the duration of the effect.",
       "description": "Active: For 3 seconds, Leona takes reduced pre-mitigation damage from each tick of damage, up to a maximum of 50% reduction. Leona also gains  bonus armor and  bonus magic resistance.",
-      "leveling": "Flat Damage Reduction:\n8 / 12 / 16 / 20 / 24\n\nBonus Armor:\n20 / 25 / 30 / 35 / 40 (+ 20% bonus armor)\n\nBonus Magic Resistance:\n20 / 25 / 30 / 35 / 40 (+ 20% bonus magic resistance)",
+      "leveling": [
+        {
+          "attribute": "Flat Damage Reduction",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                8,
+                12,
+                16,
+                20,
+                24
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Bonus Armor",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% bonus armor",
+                "% bonus armor",
+                "% bonus armor",
+                "% bonus armor",
+                "% bonus armor"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Bonus Magic Resistance",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% bonus magic resistance",
+                "% bonus magic resistance",
+                "% bonus magic resistance",
+                "% bonus magic resistance",
+                "% bonus magic resistance"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "She then explodes, dealing magic damage to all nearby enemies and retains Eclipse's reduced damage and bonus resistances for an additional 3 seconds if she hits an enemy.",
-      "leveling2": "Magic Damage:\n60 / 100 / 140 / 180 / 220 (+ 40% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                100,
+                140,
+                180,
+                220
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "None",
       "affects": "Self, Enemies",
       "damagetype": "magic",
@@ -130,7 +311,47 @@
       "icon": "Zenith Blade.png",
       "blurb": "Leona projects a solar image of her sword, dealing magic damage to all enemies in a line. When the image fades, the last enemy champion struck will be briefly immobilized and Leona will dash to them.",
       "description": "Active: Leona projects a solar image of her sword, dealing magic damage to all enemies struck.",
-      "leveling": "Magic Damage:\n60 / 100 / 140 / 180 / 220 (+ 40% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                100,
+                140,
+                180,
+                220
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If she damages an enemy champion, she will  dash to the last one struck and  root them for 0.5 seconds.",
       "description3": "Leona is unable to move or attack while Zenith Blade is in flight.",
       "targeting": "Direction",
@@ -157,7 +378,43 @@
       "icon": "Solar Flare.png",
       "blurb": "Leona calls down a beam of solar energy, dealing damage to enemies in an area. Enemies in the center of the area are stunned, while enemies on the outside are slowed. Afterward, Leona's sword is charged with the power of the sun and deals bonus magic damage for a few attacks.",
       "description": "Active: Leona calls down a beam of solar energy to the target location, dealing magic damage to all enemies it hits and  slowing them by 80% for 1.5 seconds.",
-      "leveling": "Magic Damage:\n100 / 175 / 250 (+ 80% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                175,
+                250
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Enemies hit by the flare's center are instead  stunned for the same duration.",
       "targeting": "Ground",
       "affects": "Enemies",

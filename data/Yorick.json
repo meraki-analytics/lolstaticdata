@@ -84,7 +84,47 @@
       "icon": "Last Rites.png",
       "blurb": "Yorick deals bonus damage on his next attack and heals himself. If the target dies a grave will be dug.",
       "description": "Active - Last Rites: Yorick's next basic attack within 6 seconds has  50 bonus range, deals  bonus physical damage, and  heals him for  12 \u2212 82 (based on level) health, doubled to  24 \u2212 164 (based on level) health if he is  below 50% maximum health.",
-      "leveling": "Bonus Physical Damage:\n30 / 55 / 80 / 105 / 130 (+ 40% AD)",
+      "leveling": [
+        {
+          "attribute": "Bonus Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                55,
+                80,
+                105,
+                130
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If there are at least 3 graves nearby and Last Rites has been cast or is on  cooldown, Yorick is granted the ability to cast  Awakening. Awakening will remain cast-able until there're no graves nearby.",
       "description3": "Last Rites resets Yorick's basic attack timer.",
       "targeting": "None",
@@ -122,7 +162,30 @@
       "blurb": "Yorick summons a destructible wall at target location that will block enemy movement.",
       "description": "Active: After a 1-second delay, Yorick summons a circular wall of spirits around the target area that lasts up to 4 seconds and acts as impassable terrain for enemies, while allowing allies to walk through.",
       "description2": "Dark Procession can only be targeted by enemy champion basic attacks and takes 1 damage per attack, dissolving after taking enough damage.  Turret shots instantly dissolve the wall.",
-      "leveling2": "Wall Health:\n2 / 2 / 3 / 3 / 4",
+      "leveling2": [
+        {
+          "attribute": "Wall Health",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                2,
+                2,
+                3,
+                3,
+                4
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "spelleffects": "False",
@@ -141,7 +204,47 @@
       "icon": "Mourning Mist.png",
       "blurb": "Yorick throws a globule of Black Mist that damages, slows and marks enemies.",
       "description": "Active: Yorick hurls a globule of Black Mist that splashes across an off-centered area, dealing 15% of target's current health  magic damage to all enemies hit, down to a minimum threshold.",
-      "leveling": "Minimum Magic Damage:\n70 / 105 / 140 / 175 / 210 (+ 70% AP)",
+      "leveling": [
+        {
+          "attribute": "Minimum Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                105,
+                140,
+                175,
+                210
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Mourning Mist 2.png",
       "description2": "Affected enemy champions and monsters are  slowed by 30% for 2 seconds, and are marked for 4 seconds, during which Yorick, Mist Walkers and the The Maiden gain  20% bonus movement speed when moving towards them.",
       "description3": "Mist Walkers will  leap to enemy champions affected by the mark.",
@@ -166,7 +269,26 @@
       "icon": "Eulogy of the Isles.png",
       "blurb": "Yorick summons the Maiden of the Mist that causes Yorick's attacks against the Maiden's target to deal bonus damage. The Maiden will also automatically raise Walkers from dead enemies.",
       "description": "Active: Yorick summons the Maiden of the Mist along with Mist Walkers, which remain on the battlefield until she or Yorick dies.",
-      "leveling": "Mist Walkers:\n2 / 3 / 4",
+      "leveling": [
+        {
+          "attribute": "Mist Walkers",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                2,
+                3,
+                4
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "While the Maiden of the Mist is alive, Eulogy of the Isles can be reactivated to set the Maiden free, letting her push the nearest lane until she dies.",
       "targeting": "Ground",
       "affects": "Self",

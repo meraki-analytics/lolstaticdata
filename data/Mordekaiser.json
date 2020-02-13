@@ -63,7 +63,7 @@
       "icon": "Darkness Rise.png",
       "description": "Innate: Mordekaiser's basic attacks deal 40% AP  bonus magic damage on-hit.",
       "description2": "Damaging abilities or basic attacks grant 1 stack per enemy champion or large monster hit, up to a maximum of 3. At 3 stacks, Mordekaiser gains Darkness Rise for 4 seconds. Further basic attacks and abilities against enemy champions and large monsters refresh the duration.",
-      "description3": "Darkness Rise: Mordekaiser deals   5 \u2212 15.2 (based on level) (+ 30% AP) (+ 1% \u2212 5% (based on level) of target's  maximum health) magic damage per second    0.63 \u2212 1.9 (based on level) (+ 3.75% AP) (+ 0.13% \u2212 0.63% (based on level) of target's  maximum health) magic damage every 0.125 seconds   to all nearby enemies and gains 3%  bonus movement speed.",
+      "description3": "Darkness Rise: Mordekaiser deals [ 5 \u2212 15.2 (based on level) (+ 30% AP) (+ 1% \u2212 5% (based on level) of target's  maximum health) magic damage per second ][ 0.63 \u2212 1.9 (based on level) (+ 3.75% AP) (+ 0.13% \u2212 0.63% (based on level) of target's  maximum health) magic damage every 0.125 seconds ] to all nearby enemies and gains 3%  bonus movement speed.",
       "targeting": "Self",
       "affects": "Self / Enemies",
       "damagetype": "Magic",
@@ -82,7 +82,111 @@
       "cooldown": "9 / 7.75 / 6.5 / 5.25 / 4",
       "icon": "Obliterate.png",
       "description": "Active: Mordekaiser smashes the area in the target direction, dealing magic damage to all enemies hit, increased if it hits only one enemy.",
-      "leveling": "Magic Damage:\n5 \u2212  139 (based on level) (+ 75 / 95 / 115 / 135 / 155) (+ 60% AP)\n\nDamage Increase:\n20 / 25 / 30 / 35 / 40%",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "values": [
+                5.0,
+                12.882352941176471,
+                20.764705882352942,
+                28.647058823529413,
+                36.529411764705884,
+                44.411764705882355,
+                52.294117647058826,
+                60.1764705882353,
+                68.05882352941177,
+                75.94117647058823,
+                83.82352941176471,
+                91.70588235294119,
+                99.58823529411765,
+                107.47058823529412,
+                115.3529411764706,
+                123.23529411764707,
+                131.11764705882354,
+                139.0
+              ],
+              "units": [
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                95,
+                115,
+                135,
+                155
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Damage Increase",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -103,7 +207,30 @@
       "description2": "Active - First Cast: Mordekaiser consumes all his current Potential Shield to  shield himself for 4 seconds for the same amount. At start the shield decays very slowly but exponentially increases near the end. After 0.25 seconds he can re-cast the ability.",
       "icon3": "Indestructible 2.png",
       "description3": "Active - Second Cast: Mordekaiser consumes the remaining shield,  healing for a percentage of the amount.",
-      "leveling3": "Healing:\n40 / 42.5 / 45 / 47.5 / 50%",
+      "leveling3": [
+        {
+          "attribute": "Healing",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                42.5,
+                45,
+                47.5,
+                50
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Self",
       "affects": "Self",
       "notes": "* No additional details."
@@ -121,9 +248,72 @@
       "cooldown": "24 / 21 / 18 / 15 / 12",
       "icon": "Death's Grasp.png",
       "description": "Passive: Mordekaiser gains  magic penetration.",
-      "leveling": "Magic Penetration:\n5 / 7.5 / 10 / 12.5 / 15%",
+      "leveling": [
+        {
+          "attribute": "Magic Penetration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                5,
+                7.5,
+                10,
+                12.5,
+                15
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Active: After 0.5 seconds, Mordekaiser  pulls enemies in the targeted area for 250 units, dealing magic damage.",
-      "leveling2": "Magic Damage:\n80 / 95 / 110 / 125 / 140 (+ 60% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                95,
+                110,
+                125,
+                140
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction/Ground",
       "affects": "Self, Enemies",
       "damagetype": "Magic",

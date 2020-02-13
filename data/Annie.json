@@ -79,7 +79,47 @@
       "icon": "Disintegrate.png",
       "blurb": "Annie hurls a Mana infused fireball, dealing damage and refunding the Mana cost if it destroys the target.",
       "description": "Active: Annie hurls a fireball at the target enemy, dealing  magic damage.",
-      "leveling": "Magic damage:\n80 / 115 / 150 / 185 / 220 (+ 80% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                115,
+                150,
+                185,
+                220
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If Disintegrate kills its target, it refunds its  mana cost and half of its  cooldown is immediately refreshed.",
       "targeting": "Unit",
       "affects": "Enemies",
@@ -104,7 +144,47 @@
       "icon": "Incinerate.png",
       "blurb": "Annie casts a blazing cone of fire, dealing damage to all enemies in the area.",
       "description": "Active: Annie releases a cone of fire in the target direction, dealing magic damage to all enemies in the area.",
-      "leveling": "Magic damage:\n70 / 115 / 160 / 205 / 250 (+ 85% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                115,
+                160,
+                205,
+                250
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                85,
+                85,
+                85,
+                85,
+                85
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -125,9 +205,72 @@
       "icon": "Molten Shield.png",
       "blurb": "Grants Annie and Tibbers increased percentage Damage Resist and damages enemies who attack with basic attacks.",
       "description": "Active: Annie wraps herself and  Tibbers in a fiery aura, gaining  30% \u2212 60% (based on level) bonus movement speed decaying over 1.5 seconds, and reducing damage taken for 3 seconds.",
-      "leveling": "Damage reduction:\n10 / 13 / 16 / 19 / 22%",
+      "leveling": [
+        {
+          "attribute": "Damage reduction",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                13,
+                16,
+                19,
+                22
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Enemies who deal basic attack Annie or  Tibbers during this time are dealt back magic damage.",
-      "leveling2": "Magic Damage:\n20 / 30 / 40 / 50 / 60 (+ 20% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                30,
+                40,
+                50,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "No Target",
       "affects": "Self, Enemies",
       "damagetype": "magic",
@@ -149,7 +292,47 @@
       "icon": "Summon Tibbers.png",
       "blurb": "Annie wills her bear Tibbers to life, dealing damage to units in the area. Tibbers can attack and also burns enemies that stand near him.",
       "description": "First Cast: Annie summons  Tibbers to the target location in a burst of flame, dealing magic damage to surrounding enemies.",
-      "leveling": "Initial Magic Damage:\n150 / 212.5 / 275 / 337.5 / 400 (+ 65% AP)",
+      "leveling": [
+        {
+          "attribute": "Initial Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                212.5,
+                275,
+                337.5,
+                400
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                65,
+                65,
+                65,
+                65,
+                65
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "He then remains on the field as a controllable pet for up to 45 seconds.",
       "icon3": "Command- Tibbers.png",
       "description3": "Tibbers Active: Annie directs Tibbers to the target location.",

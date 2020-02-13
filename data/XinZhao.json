@@ -80,7 +80,86 @@
       "icon": "Three Talon Strike.png",
       "blurb": "Xin Zhao's next 3 standard attacks deal increased damage with the third attack knocking an opponent into the air.",
       "description": "Active: For the next 5 seconds, Xin Zhao's next 3 basic attacks each deal bonus physical damage and reduce his other ability  cooldowns by 1 second each.",
-      "leveling": "Bonus Physical Damage:\n20 / 28 / 36 / 44 / 52 (+ 40% bonus AD)\nTotal Bonus Damage:\n60 / 84 / 108 / 132 / 156 (+ 120% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Bonus Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                28,
+                36,
+                44,
+                52
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Bonus Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                84,
+                108,
+                132,
+                156
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                120,
+                120,
+                120,
+                120
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Talon Strike is affected by  critical strike modifiers.",
       "description3": "The third basic attack  knocks up the target for 0.75 seconds.",
       "description4": "Three Talon Strike resets Xin Zhao's basic attack timer.",
@@ -98,18 +177,255 @@
       "champion": "Xin Zhao",
       "skill": "W",
       "target range": "900",
-      "angle": "180 ",
+      "angle": "180\u00b0",
       "cost": "45",
       "costtype": "Mana",
       "cooldown": "12 / 11 / 10 / 9 / 8",
       "icon": "Wind Becomes Lightning.png",
       "blurb": "Xin Zhao slashes in front of himself with his spear, then thrusts it forward.",
       "description": "Active: Xin Zhao performs two strikes over 0.5 / 0.4 (based on bonus attack speed) seconds.",
-      "leveling": "Slash Damage:\n30 / 40 / 50 / 60 / 70 (+ 30% AD)\nSlash Minion-Damage:\n15 / 20 / 25 / 30 / 35 (+ 15% AD)",
+      "leveling": [
+        {
+          "attribute": "Slash Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                40,
+                50,
+                60,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slash Minion-Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                20,
+                25,
+                30,
+                35
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                15,
+                15,
+                15,
+                15
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "The first deals physical damage to all enemies in an arc, and the second deals physical damage in a line,  slowing all enemies hit by 50% for 1.5 seconds.",
-      "leveling2": "Thrust Damage:\n30 / 65 / 100 / 135 / 170 (+ 75% AD)\nThrust Minion-Damage:\n15 / 32.5 / 50 / 67.5 / 85 (+ 37.5% AD)",
+      "leveling2": [
+        {
+          "attribute": "Thrust Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                65,
+                100,
+                135,
+                170
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                75,
+                75,
+                75,
+                75
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Thrust Minion-Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                32.5,
+                50,
+                67.5,
+                85
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                37.5,
+                37.5,
+                37.5,
+                37.5,
+                37.5
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Both strikes deal 50% reduced damage against minions, benefit from 33.3% of Xin Zhao's  life steal and the duration of his other abilities is paused during the effect.",
-      "leveling3": "Max. Physical Damage:\n60 / 105 / 150 / 195 / 240 (+ 105% AD)\nMax. Minion Damage:\n30 / 52.5 / 75 / 97.5 / 120 (+ 52.5% AD)",
+      "leveling3": [
+        {
+          "attribute": "Max. Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                105,
+                150,
+                195,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                105,
+                105,
+                105,
+                105,
+                105
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Max. Minion Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                52.5,
+                75,
+                97.5,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                52.5,
+                52.5,
+                52.5,
+                52.5,
+                52.5
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Physical",
@@ -132,9 +448,72 @@
       "icon": "Audacious Charge.png",
       "blurb": "Xin Zhao charges to an enemy, dealing damage to all enemies in the area and slowing them briefly.",
       "description": "Active: Xin Zhao  dashes to the target enemy, dealing  magic damage to all nearby units and  slowing them by 30% for 0.5 seconds.",
-      "leveling": "Magic Damage:\n50 / 75 / 100 / 125 / 150 (+ 60% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                75,
+                100,
+                125,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Xin Zhao then gains  bonus attack speed for 5 seconds.",
-      "leveling2": "Bonus Attack Speed:\n40 / 45 / 50 / 55 / 60%",
+      "leveling2": [
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                45,
+                50,
+                55,
+                60
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -157,7 +536,64 @@
       "description": "Passive - Challenge: The last enemy champion targeted by Xin Zhao's basic attacks or  Audacious Charge is  Challenged for 3 seconds.",
       "icon2": "Crescent Guard.png",
       "description2": "Active - Awareness: After 0.35 seconds, Xin Zhao sweeps around him, dealing physical damage to enemies hit, capped at 600 (+ 100% bonus AD) against monsters, while also  knocking back all non- Challenged enemies hit.",
-      "leveling2": "Physical Damage:\n75 / 125 / 175 / 225 / 275 (+ 100% bonus AD) (+ 15% of target's current health)",
+      "leveling2": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                125,
+                175,
+                225,
+                275
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                15,
+                15,
+                15,
+                15
+              ],
+              "units": [
+                "% of target's current health",
+                "% of target's current health",
+                "% of target's current health",
+                "% of target's current health",
+                "% of target's current health"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "For the next 3 seconds, Xin Zhao is  invulnerable against enemy champions more than 450-units away from him. His basic attacks and other spell casts extend the duration by 0.3 seconds.",
       "targeting": "None",
       "affects": "Enemies",

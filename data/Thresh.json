@@ -67,7 +67,7 @@
       "description3": "Each collected Soul grants Thresh  0.75 bonus ability power and  0.75 bonus armor.",
       "targeting": "Passive",
       "affects": "Self",
-      "notes": "* Souls grants a small amount of  sight around itself.\n The probability for souls dropping from small minions and monster on  Summoner's Rift starts at 33% but adjusts dynamically to match the expected quota of souls dropped (lowers if above, rises if below, remains if even). Souls collected are not considered when adjusting the probability.\n Thresh gains the Soul Gluttony buff and resets Damnation's counter every time he collects 255 souls.\n The maximum amount of souls Thresh can collect is 999,999, granting him 749,999 bonus ability power and 749,999 bonus armor (99.99% damage reduction, reduced to 99.98% when hit by  Last Whisper).\n\n  Nunu & Willump drop a soul each (sometimes the icy ghosts from  Twin Shadows' active will drop one each after reaching their targets)."
+      "notes": "* Souls grants a small amount of  sight around itself.\n The probability for souls dropping from small minions and monster on  Summoner's Rift starts at 33% but adjusts dynamically to match the expected quota of souls dropped (lowers if above, rises if below, remains if even). Souls collected are not considered when adjusting the probability.\n The maximum amount of souls Thresh can collect is 999,999, granting him 749,999 bonus ability power and 749,999 bonus armor (99.99% damage reduction, reduced to 99.98% when hit by  Last Whisper).\n  Nunu & Willump drop a soul each (sometimes the icy ghosts from  Twin Shadows' active will drop one each after reaching their targets)."
     }
   },
   "skill_q": {
@@ -86,16 +86,57 @@
       "blurb": "Thresh binds an enemy in chains and pulls them toward him. Activating this ability a second time pulls Thresh to the enemy.",
       "description": "First Cast - Death Sentence: Thresh throws out his scythe in the target direction. Thresh is  entangled while the scythe is in flight.",
       "description2": "The scythe stops with the first enemy it hits, dealing magic damage and  stunning them for 1.5 seconds, while also forming a tether between Thresh and them for the duration. Hitting an enemy reduces Death Sentence's  cooldown by 3 seconds.",
-      "leveling2": "Magic Damage:\n80 / 120 / 160 / 200 / 240 (+ 50% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                120,
+                160,
+                200,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "While the tether persists, Thresh is  disarmed and periodically tugs at his scythe's chain,  pulling the target a short distance towards himself. After 0.5 seconds, or instantly upon hitting a minion or monster, Thresh can cast  Death Leap.",
       "icon4": "Death Leap.png",
       "description4": "Second Cast - Death Leap: Thresh  dashes to the tethered enemy, removing the  stun but becoming able to attack again.",
       "targeting": "Direction / Auto",
       "affects": "Enemies / Self",
       "damagetype": "Magic",
+      "spelleffects": "spell",
       "spellshield": "True",
       "projectile": "True",
-      "notes": "* Thresh will not face in the target direction during Death Sentence's cast animation (only after the projectile starts traveling).\n While  grounded only the second cast is disabled.\n Death Sentence's  stun duration is reduced by  Tenacity while the tether will persist for the full duration (unless broken by Quicksilver,  Mikael's Crucible,  Cleanse, or certain abilities).\n Targets affected by  Black Shield will not be  stunned or  pulled at when hit (Thresh will not tug at his target even if  Black Shield wears off before Death Sentence ends).\n Death Sentence's tether will not be broken by becoming untargetable ( Playful, units grabbed by  Force of Will).\n Death Sentence's effects will persist if Thresh dies before the duration ends."
+      "notes": "* Thresh will not face in the target direction during Death Sentence's cast animation (only after the projectile starts traveling).\n While  grounded only the second cast is disabled.\n Death Sentence's  stun duration is reduced by  tenacity while the tether will persist for the full duration (unless broken by Quicksilver,  Mikael's Crucible,  Cleanse, or certain abilities).\n Targets affected by  Black Shield will not be  stunned or  pulled at when hit (Thresh will not tug at his target even if  Black Shield wears off before Death Sentence ends).\n Death Sentence's tether will not be broken by becoming  untargetable.\n Death Sentence's effects will persist if Thresh dies before the duration ends."
     }
   },
   "skill_w": {
@@ -113,7 +154,47 @@
       "blurb": "Thresh throws out a lantern that shields nearby allied Champions from damage. Allies can click the lantern to dash to Thresh.",
       "description": "Active: Thresh throws his lantern to the target location for 6 seconds or until he moves too far away from it,  revealing its surroundings.",
       "description2": "Thresh and the first allied champion to come near the lantern is  shielded for 4 seconds. An ally can select the lantern while in proximity of it,  dashing to Thresh's current location and gaining the shield.",
-      "leveling2": "Shield Strength:\n60 / 100 / 140 / 180 / 220 (+ 1 per  Soul collected)",
+      "leveling2": [
+        {
+          "attribute": "Shield Strength",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                100,
+                140,
+                180,
+                220
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "units": [
+                " per  Soul collected",
+                " per  Soul collected",
+                " per  Soul collected",
+                " per  Soul collected",
+                " per  Soul collected"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "An ally cannot select the lantern while  silenced,  grounded or  immobilized.",
       "targeting": "Ground",
       "affects": "Allies",
@@ -133,17 +214,158 @@
       "cooldown": "9",
       "icon": "false",
       "blurb": "Thresh's attacks wind up, dealing more damage the longer he waits between attacks. When activated, Thresh sweeps his chain, knocking all enemies hit in the direction of the blow.",
-      "description": "Passive: Thresh's basic attacks deal bonus magic damage, with the AD ratio increasing based on the time spent not attacking enemy or neutral units.",
-      "leveling": "Minimum Bonus Magic Damage:\n1 per  Soul collected (+ 0% AD)\nMaximum Bonus Magic Damage:\n1 per  Soul collected (+ 100 / 125 / 150 / 175 / 200% AD)",
+      "description": "Passive: Thresh's basic attacks deal bonus magic damage, with the  AD ratio increasing based on the time spent not attacking enemy or neutral units.",
+      "leveling": [
+        {
+          "attribute": "Minimum Bonus Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "units": [
+                " per  Soul collected",
+                " per  Soul collected",
+                " per  Soul collected",
+                " per  Soul collected",
+                " per  Soul collected"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Bonus Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "units": [
+                " per  Soul collected",
+                " per  Soul collected",
+                " per  Soul collected",
+                " per  Soul collected",
+                " per  Soul collected"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                125,
+                150,
+                175,
+                200
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Flay.png",
       "description2": "Active: Thresh sweeps his chain around him and in a broad line towards the target direction, dealing magic damage to enemies hit,  knocking them in the chain's direction, and  slowing them afterwards for 1 second.",
-      "leveling2": "Magic Damage:\n65 / 95 / 125 / 155 / 185 (+ 40% AP)\nSlow:\n20 / 25 / 30 / 35 / 40%",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                65,
+                95,
+                125,
+                155,
+                185
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",
-      "spelleffects": "Area of effect",
+      "spelleffects": "special",
       "spellshield": "True",
-      "notes": "*Flay's passive's buff icon changes colors depending on charge level:\n  0 - 25%\n  25 - 50%\n  50 - 75%\n  75 - 100%\n At 100%, Thresh's scythe will glow green and a sound effect will play.\n\n  Runaan's Hurricane's Wind's Fury will apply Flay's passive to each enemy hit, with the secondary targets taking minimum damage (charge resets upon hitting the primary target).\n The enhanced attack applies other on-hit effects and can  critically strike as normal (the bonus damage cannot) but does not affect structures or wards (hitting them does not consume the bonus damage or reset the charge).\n Flay's passive can be  dodged (the enhanced attack is not consumed and the charge is not reset).\n PENDING FOR TEST: Flay's passive's interaction with  parry,  block, and  blind (regarding both bonus damage and charge reset)."
+      "notes": "* Applies  area damage on the ability and deals  proc damage on the enhanced basic attack.\nFlay's passive's buff icon changes colors depending on charge level:\n  0 - 25%\n  25 - 50%\n  50 - 75%\n  75 - 100% \n At 100%, Thresh's scythe will glow green and a sound effect will play.\n\n  Runaan's Hurricane's Wind's Fury will apply Flay's passive to each enemy hit, with the secondary targets taking minimum damage (charge resets upon hitting the primary target).\n The enhanced attack applies other on-hit effects and can  critically strike as normal (the bonus damage cannot) but does not affect structures or wards (hitting them does not consume the bonus damage or reset the charge).\n Flay's passive can be  dodged (the enhanced attack is not consumed and the charge is not reset).\n PENDING FOR TEST: Enhanced attack's interactions with  blocking and  blinding effects (regarding both bonus damage and charge reset)."
     }
   },
   "skill_r": {
@@ -159,12 +381,48 @@
       "icon": "The Box.png",
       "blurb": "A prison of walls that slow and deal damage if broken.",
       "description": "Active: Thresh surrounds himself with 5 spectral walls, each lasting for up to 5 seconds. Walls break upon contact with an enemy champion, dealing magic damage and  slowing by 99% for 2 seconds.",
-      "leveling": "Magic Damage:\n250 / 400 / 550 (+ 100% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                250,
+                400,
+                550
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Enemy champions hitting any wall beyond the first take no damage and are  slowed for only 1 second.",
-      "targeting": "None",
+      "targeting": "Auto",
       "affects": "Enemies",
       "damagetype": "Magic",
-      "spelleffects": "Area of effect",
+      "spelleffects": "spell",
       "spellshield": "True",
       "notes": "* No additional details."
     }

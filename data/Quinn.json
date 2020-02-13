@@ -62,13 +62,13 @@
       "static": "8 \u2212  2.93 (based on critical strike chance)",
       "icon": "Harrier.png",
       "blurb": "Valor periodically marks enemies as Vulnerable. Quinn's first basic attack against Vulnerable targets will deal bonus physical damage.",
-      "description": "Innate:  Valor periodically marks a nearby visible unit as Vulnerable,  revealing them for 4 seconds. Units hit by  Blinding Assault,  Vault and  Skystrike will also be marked as Vulnerable.",
+      "description": "Innate:  Valor periodically marks a nearby visible enemy unit as Vulnerable,  revealing them for 4 seconds. Enemies hit by  Blinding Assault,  Vault and  Skystrike will also be marked as Vulnerable.",
       "description2": "Quinn's next basic attack against a Vulnerable target deals 10 \u2212 95 (based on level) (+ 16% \u2212 50% (based on level) AD)  bonus physical damage.",
       "description3": "Harrier is disabled while  Behind Enemy Lines is active and for a few seconds after a target's mark ends.",
-      "targeting": "Auto",
+      "targeting": "Passive / Auto",
       "affects": "Self",
       "damagetype": "Physical",
-      "spelleffects": "False",
+      "spelleffects": "Proc",
       "spellshield": "False",
       "notes": "* Harrier's targeting priority:\n Last unit hit (if it was a small minion it appears to select a different target).\n Lowest-health enemy champion.\n Lowest-health enemy minion.\n\n The enhanced attack will apply other on-hit effects and can  critically strike as normal.\n  Critical strikes do not interact with Harrier's bonus damage.\n As with most on-hit physical damage Harrier's bonus damage will apply  life steal.\n Harrier is consumed but does no damage if the enhanced attack is  dodged,  blocked, or if Quinn is  blinded.\n Harrier's bonus damage will not affect structures even if Quinn is seen using its attack animation against them if the ensuing basic attack was the last one prior.\n Basic attacks that are already in-flight will trigger and consume Harrier mark.\n If a mark was originally applied by  Blinding Assault or  Vault, attacking that Vulnerable target will place Harrier's passive application on a 1 second cooldown instead of its full duration."
     }
@@ -85,13 +85,70 @@
       "cooldown": "11 / 10.5 / 10 / 9.5 / 9",
       "icon": "Blinding Assault.png",
       "blurb": "Quinn calls Valor to mark an enemy and hinder its vision before damaging all enemies in the immediate area.",
-      "description": "Active: Quinn signals  Valor to fly forward in a line, stopping when he collides with a unit, dealing physical damage to all nearby enemies and applying  nearsight to the target for 1.5 seconds.",
-      "leveling": "Physical Damage:\n20 / 45 / 70 / 95 / 120 (+ 80 / 90 / 100 / 110 / 120% AD) (+ 50% AP)",
+      "description": "Active: Quinn signals  Valor to fly forward in a line, stopping when he collides with a enemy unit, dealing physical damage to all nearby enemies and applying  nearsight to the target for 1.5 seconds.",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                45,
+                70,
+                95,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                90,
+                100,
+                110,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Non-champion targets are  disarmed instead for the same duration.",
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Physical",
-      "spelleffects": "AoE",
+      "spelleffects": "spellaoe",
       "spellshield": "True",
       "projectile": "True",
       "notes": "* No additional details."
@@ -107,12 +164,55 @@
       "icon": "Heightened Senses.png",
       "blurb": "Passively grants Quinn Attack Speed and Movement Speed after she attacks a Vulnerable target. Activate to have Valor reveal a large area nearby.",
       "description": "Passive: Attacking a  Vulnerable target grants Quinn  bonus attack speed and  bonus movement speed for 2 seconds.",
-      "leveling": "Bonus Attack Speed:\n20 / 35 / 50 / 65 / 80%\nBonus Movement Speed:\n20 / 25 / 30 / 35 / 40%",
+      "leveling": [
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                35,
+                50,
+                65,
+                80
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Bonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Active: Quinn orders  Valor to  reveal the area around her for 2 seconds.",
-      "targeting": "None",
+      "targeting": "Auto / Buff",
       "affects": "Self",
-      "spelleffects": "False",
-      "spellshield": "False",
       "notes": "* No additional details."
     }
   },
@@ -128,13 +228,53 @@
       "icon": "Vault.png",
       "blurb": "Quinn dashes to an enemy, dealing physical damage and slowing the target's Movement Speed. Upon reaching the target, she leaps off the target, briefly interrupting it, and lands near her maximum Attack Range away from the target.",
       "description": "Active: Quinn  dashes to the target unit,  knocking them back, dealing them physical damage, and  slowing them by 50% which decays over 1.5 seconds, before  leaping back and landing 525 units away from them.",
-      "leveling": "Physical damage:\n40 / 70 / 100 / 130 / 160 (+ 20% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                70,
+                100,
+                130,
+                160
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "Physical",
-      "spelleffects": "Single target",
+      "spelleffects": "Spell",
       "spellshield": "True",
-      "notes": "* Quinn will automatically attempt to attack the target once she completes Vault.\n Unlike its constant cast range Vault's bounce's can vary to allow Quinn to close or to make a gap between herself and an enemy unit (depending on casting position) or even to jump through a wall (if there is enough landing room on the other side).\n Quinn will track and follow the target if they move,  dash, or  blink."
+      "notes": "* Quinn will automatically attempt to attack the target once she completes Vault.\n Unlike its constant cast range Vault's bounce's can vary to allow Quinn to close or to make a gap between herself and the target (depending on casting position) or even to jump through a wall (if there is enough landing room on the other side).\n Quinn will track and follow the target if they move through  dashes and  blinks.\n This will not occur if the target is travelling to a very far distance (e.g,  Recall,  Teleport,  Stand United)."
     }
   },
   "skill_r": {
@@ -147,30 +287,53 @@
       "icon": "Behind Enemy Lines.png",
       "blurb": "Quinn and Valor team up to fly around at great speed.",
       "description": "Active: Quinn  channels for 2 seconds. Upon completing it successfully,  Valor picks her up and they unite, increasing her  total movement speed and gaining the ability to use  Skystrike.",
-      "leveling": "Total Movement Speed Increase:\n70 / 85 / 100 / 115 / 130%",
+      "leveling": [
+        {
+          "attribute": "Total Movement Speed Increase",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                85,
+                100,
+                115,
+                130
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Taking damage from champions, monsters, or  turrets while Behind Enemy Lines is active disables the  bonus movement speed for 3 seconds.",
       "description3": "If you have a least one point in Behind Enemy Lines, respawning or returning to the summoning platform will spawn  Valor.",
-      "targeting": "None",
+      "targeting": "Self / Buff",
       "affects": "Self",
-      "notes": "* If Quinn uses  Vault while Behind Enemy Lines is active then  Skystrike will activate at her target's location after she bounces."
+      "notes": "* If Quinn uses  Vault while Behind Enemy Lines is active,  Skystrike will activate at her target's location after she bounces back."
     },
     "Skystrike": {
       "name": "Skystrike",
       "champion": "Quinn",
       "skill": "R",
       "effect radius": "700",
-      "cost": "NO",
+      "cost": "none",
       "costtype": "Cost",
       "icon": "Skystrike.png",
       "blurb": "Quinn and Valor team up to fly around at great speed.",
-      "description": "Active: Quinn detaches from  Valor, ending  Behind Enemy Lines' effects, and deals 40% AD physical damage to all units around her.",
+      "description": "Active: Quinn detaches from  Valor, ending  Behind Enemy Lines' effects, and deals  40% AD  physical damage to all units around her.",
       "description2": "Launching a basic attack,  Blinding Assault, or  Vault during  Behind Enemy Lines automatically activates Skystrike.",
-      "targeting": "None",
+      "targeting": "Auto",
       "affects": "Enemies",
       "damagetype": "Physical",
-      "spelleffects": "Area of effect",
+      "spelleffects": "spellaoe",
       "spellshield": "True",
-      "notes": "* If Quinn uses  Vault while  Behind Enemy Lines is active then Skystrike will activate at her target's location after she bounces."
+      "notes": "* If Quinn uses  Vault while  Behind Enemy Lines is active, Skystrike will activate at her target's location after she bounces back."
     }
   }
 }

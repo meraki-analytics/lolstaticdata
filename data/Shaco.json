@@ -61,10 +61,10 @@
       "description2": "Deceive and  Two-Shiv Poison also have additional effects when striking an enemy from behind.",
       "targeting": "Passive",
       "affects": "Enemies",
-      "damagetype": "Physical / Magic",
-      "spelleffects": "False",
+      "damagetype": "Physical",
+      "spelleffects": "Proc",
       "spellshield": "False",
-      "notes": "* No additional notes."
+      "notes": "* Backstab does not affect structures (turrets, inhibitors, Nexus)."
     }
   },
   "skill_q": {
@@ -79,14 +79,78 @@
       "icon": "Deceive.png",
       "blurb": "Shaco becomes Invisible and teleports to target location.",
       "description": "Active: After a 0.125-second delay, Shaco  blinks  to the target location, temporarily becoming  invisible for a few seconds.",
-      "leveling": "Invisibility Duration:\n2.5 / 2.75 / 3 / 3.25 / 3.5",
+      "leveling": [
+        {
+          "attribute": "Invisibility Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                2.5,
+                2.75,
+                3,
+                3.25,
+                3.5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "After exiting invisibility, his next basic attack within 0.25 seconds deals bonus physical damage. This damage can  critically strike.",
-      "leveling2": "Physical Damage:\n25 / 35 / 45 / 55 / 65 (+ 25% bonus AD)",
+      "leveling2": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                35,
+                45,
+                55,
+                65
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Deceive's  invisibility is not removed when Shaco casts  Hallucinate, while casting  Jack in the Box causes him to shimmer without removing it.",
       "description4": "Backstab: Guarantees the basic attack to  critically strike for (30% +  25%) bonus physical damage.",
       "targeting": "Ground",
       "affects": "Self",
-      "notes": "* Deceive's cast animation (an orange puff of smoke) can be seen by both teams through fog of war.\n  Teleport can be used during the invisibility without cancelling it. However  Recall cannot."
+      "spelleffects": "Proc",
+      "notes": "* Deceive's cast animation (an orange puff of smoke) can be seen by both teams through fog of war.\n  Teleport can be used during the invisibility without cancelling it. However  Recall cannot.\n PENDING FOR TEST: Enhanced attack's interactions with  dodging,  blocking, and  blinding effects."
     }
   },
   "skill_w": {
@@ -102,18 +166,120 @@
       "custominfo": "300",
       "icon": "Jack in the Box.png",
       "blurb": "Shaco creates a hidden animated Jack-in-the-Box. When triggered, it will fear and attack nearby enemies.",
-      "description": "Active: Shaco summons a Jack in the Box at the target location, lasting for up to 40 (+ 5% AP) seconds. The box arms after a 2 second delay, becoming  stealthed and  untargetable.",
-      "description2": "Triggering the box will  startle nearby enemies for 0.5 seconds as well as cause them to turn and  flee for 2 seconds, reduced against champions. While fleeing, minions and monsters have a static 60  movement speed and champions have a static 100  movement speed.",
-      "leveling2": "Champion Flee Duration:\n0.5 / 0.75 / 1 / 1.25 / 1.5",
-      "description3": "Once triggered, the box will also become targetable and start automatically firing at all nearby  visible enemies, dealing  magic damage with each attack, reduced by 50% against  structures. If the box attacks only one unit, it deals increased damage.",
-      "leveling3": "Magic Damage:\n15 / 20 / 25 / 30 / 35 (+ 10% AP)\nIncreased Damage:\n35 / 50 / 65 / 80 / 95 (+ 20% AP)",
-      "description4": "The box stays active for 5 seconds or until destroyed, independently from its remaining inactive duration.",
-      "targeting": "Ground",
+      "description": "Active: Shaco summons a Jack in the Box at the target location, lasting for up to 40 (+ 5% AP) seconds. The box arms after a 2 second delay, becoming  stealthed and  untargetable to enemies.",
+      "description2": "Triggering the box will  startle nearby enemies for 0.5 seconds as well as cause them to turn and  flee for 2 seconds, reduced against champions. While fleeing,  minions and  monsters have a static 60  movement speed and  champions have a static 100  movement speed.",
+      "leveling2": [
+        {
+          "attribute": "Champion Flee Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                0.5,
+                0.75,
+                1,
+                1.25,
+                1.5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "description3": "Once triggered, the box will also become targetable and automatically starts firing every 0.5 seconds at all nearby  visible enemies, dealing  magic damage with each attack, reduced by 50% against  structures. If the box attacks only one unit, it deals increased damage.",
+      "leveling3": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                20,
+                25,
+                30,
+                35
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Increased Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                50,
+                65,
+                80,
+                95
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
+      "description4": "The box can attack up to 10 times and stays active for 5 seconds or until destroyed, independently from its remaining inactive duration.",
+      "targeting": "Ground / Auto",
       "affects": "Enemies",
       "damagetype": "Magic",
       "spelleffects": "pet",
       "spellshield": "true",
-      "notes": "* The flee starts at the same time as the startle, but since the target cannot move while startled the effective duration of the flee is reduced by the startle's.\n Static movement speed cannot be modified (e.g. with slow resist or  Ghost).\n This effect is negated only if the target is fully Slow Immune (i.e  Master Yi's  Highlander,  Kayn - Shadow Assassin's  Shadow Step).\n\n Upon becoming stealthed, the box creates a puff of smoke and a distinct sound that can be detected through fog of war."
+      "notes": "* The box applies  persistent damage to enemies in an  area of effect range.\n The flee starts at the same time as the startle, but since the target cannot move while startled the effective duration of the flee is reduced by the startle's.\n Static movement speed cannot be modified (e.g. with  slow resist or  Ghost).\n This effect is negated only if the target is fully slow immune.\n\n Upon becoming  stealthed, the box creates a puff of smoke and a distinct sound that can be detected through the fog of war."
     }
   },
   "skill_e": {
@@ -128,15 +294,151 @@
       "icon": "false",
       "blurb": "Shaco's Shivs passively poison targets on hit, slowing their movement speed. He can throw his Shivs to deal damage and poison the target. The thrown Shiv deals bonus damage based on the target's missing Health.",
       "description": "Passive: Shaco's basic attacks  slow enemies for 2 seconds while Two-Shiv Poison is off cooldown.",
-      "leveling": "Slow:\n20 / 22.5 / 25 / 27.5 / 30%",
+      "leveling": [
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                22.5,
+                25,
+                27.5,
+                30
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Two-Shiv Poison.png",
       "description2": "Active: Shaco throws a dagger at the target enemy,  slowing them for 3 seconds and dealing magic damage, increased by 50% against targets below 30% of their maximum health.",
-      "leveling2": "Magic Damage:\n70 / 95 / 120 / 145 / 170 (+ 70% bonus AD) (+ 55% AP)\nIncreased Damage:\n105 / 142.5 / 180 / 217.5 / 255 (+ 105% bonus AD) (+ 82.5% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                95,
+                120,
+                145,
+                170
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                55,
+                55,
+                55,
+                55
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Increased Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                105,
+                142.5,
+                180,
+                217.5,
+                255
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                105,
+                105,
+                105,
+                105,
+                105
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                82.5,
+                82.5,
+                82.5,
+                82.5,
+                82.5
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Backstab: Deals an additional 15 \u2212 50 (based on level) (+ 10% AP) bonus magic damage, increased to 22.5 \u2212 75 (based on level) (+ 15% AP) when the target is below 30% of their maximum health.",
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "Magic",
-      "spelleffects": "Single target",
+      "spelleffects": "Spell",
       "spellshield": "True",
       "projectile": "True",
       "notes": "* No additional notes."
@@ -154,19 +456,138 @@
       "cooldown": "100 / 95 / 90 / 85 / 80",
       "icon": "Hallucinate.png",
       "blurb": "Shaco creates an illusion of himself near him, which can attack nearby enemies (Deals reduced damage to turrets). Upon death, it explodes, spawning three mini Jack in the Boxes and dealing damage to nearby enemies.",
-      "description": "First Cast: Shaco  vanishes for 0.5 seconds and then  blinks in the target direction while creating a Hallucination of himself that blinks in the opposite direction, remaining within tether range of him as a controllable pet for up to 18 seconds.",
+      "description": "First Cast: Shaco  vanishes for 0.5 seconds and then  blinks in the target direction while creating a clone of himself that blinks in the opposite direction, remaining within tether range of him as a controllable  pet for up to 18 seconds.",
       "icon2": "Command Hallucinate.png",
       "description2": "Second Cast: While the Hallucination is active, Hallucinate can be used to move it to the target location.",
-      "description3": "When the Hallucination dies or expires, it explodes, dealing magic damage to enemy units around it and leaving three  mini-boxes behind which activate instantly,  fearing nearby enemies for 1 second.",
-      "leveling3": "Magic Damage:\n150 / 187.5 / 225 / 262.5 / 300 (+ 70% AP)",
-      "description4": "The three boxes possess Jack in the Box's effects, except they have a doubled, but shared health, and deal modified magic damage with each attack, increased if attacking a single unit.",
-      "leveling4": "Mini-Box Magic Damage:\n10 / 15 / 20 / 25 / 30 (+ 10% AP)\nMini-Box Increased Damage:\n25 / 37.5 / 50 / 62.5 / 75 (+ 15% AP)",
-      "targeting": "None",
+      "description3": "When the Hallucination dies or expires, it explodes, dealing magic damage to enemy units around it and leaving three  mini-boxes behind which activate instantly, causing nearby enemies to  flee for 1 second.",
+      "leveling3": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                187.5,
+                225,
+                262.5,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
+      "description4": "The three boxes possess Jack in the Box's effects, except they have a doubled, but shared  health, and deal modified magic damage with each attack, increased if attacking a single unit.",
+      "leveling4": [
+        {
+          "attribute": "Mini-Box Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                15,
+                20,
+                25,
+                30
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Mini-Box Increased Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                37.5,
+                50,
+                62.5,
+                75
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                15,
+                15,
+                15,
+                15
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
+      "targeting": "Self / Ground",
       "affects": "Self",
       "damagetype": "Magic",
-      "spelleffects": "Area of effect",
+      "spelleffects": "Special",
       "spellshield": "True",
-      "notes": "* Shaco and the Hallucination will face each other the moment of their appearance."
+      "notes": "* Shaco and the Hallucination will face each other the moment of their appearance.\n The clone uses  pet damage.\n The Hallucination's  explosion applies  area damage.\n The summoned boxes deal  persistent damage in an  area of effect range."
     }
   }
 }

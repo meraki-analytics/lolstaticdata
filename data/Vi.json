@@ -85,7 +85,86 @@
       "blurb": "Vi charges her gauntlets and unleashes a vault shattering punch, carrying her forward. Enemies she hits are knocked back and receive a stack of Denting Blows.",
       "description": "First Cast: Vi  charges for up to 4 seconds to increase Vault Breaker's  range, speed, and damage over 1.25 seconds. While charging, Vi is  pacified and  slowed by 15%.",
       "description2": "Second Cast: Vi  dashes in the target direction, dealing  physical damage to all enemies she passes through, increased by 0% \u2212 100% (based on channel time).",
-      "leveling2": "Minimum Physical Damage:\n55 / 80 / 105 / 130 / 155 (+ 70% bonus AD)\nMaximum Damage:\n110 / 160 / 210 / 260 / 310 (+ 140% bonus AD)",
+      "leveling2": [
+        {
+          "attribute": "Minimum Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                80,
+                105,
+                130,
+                155
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                110,
+                160,
+                210,
+                260,
+                310
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                140,
+                140,
+                140,
+                140,
+                140
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Vi stops upon colliding with an enemy champion,  knocking them back while other units are instead  pulled towards her.",
       "description4": "Vault Breaker will go on a 3 second cooldown and refund  50% of its mana cost if Vi is interrupted during the channeling.",
       "targeting": "Direction",
@@ -104,10 +183,73 @@
       "icon": "Denting Blows.png",
       "blurb": "Vi's punches break her opponent's Armor, dealing bonus damage and granting her Attack Speed.",
       "description": "Passive: Vi's basic attacks and  Vault Breaker apply Denting Blows to enemies hit, stacking up to 3 times. At 3 Denting Blows, Vi consumes them to deal bonus physical damage, capped at 300 against non-champions.",
-      "leveling": "Bonus Physical Damage:\n4 / 5.5 / 7 / 8.5 / 10% (+  1% per 35    2.86% per 100  bonus AD) of target's maximum health",
+      "leveling": [
+        {
+          "attribute": "Bonus Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                4,
+                5.5,
+                7,
+                8.5,
+                10
+              ],
+              "units": [
+                "%  of target's maximum health",
+                "%  of target's maximum health",
+                "%  of target's maximum health",
+                "%  of target's maximum health",
+                "%  of target's maximum health"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "units": [
+                " 1% per 35 ][ 2.86% per 100 ]bonus AD",
+                " 1% per 35 ][ 2.86% per 100 ]bonus AD",
+                " 1% per 35 ][ 2.86% per 100 ]bonus AD",
+                " 1% per 35 ][ 2.86% per 100 ]bonus AD",
+                " 1% per 35 ][ 2.86% per 100 ]bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Denting Blows 2.png",
       "description2": "For the next 4 seconds, Vi gains  bonus attack speed and the target has 20% reduced armor.",
-      "leveling2": "Bonus Attack Speed:\n30 / 37.5 / 45 / 52.5 / 60%",
+      "leveling2": [
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                37.5,
+                45,
+                52.5,
+                60
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Passive",
       "affects": "Self, Enemies",
       "damagetype": "Physical",
@@ -131,7 +273,64 @@
       "description": "Passive: Vi periodically stores up to 2 Excessive Force charges.",
       "icon2": "Excessive Force 2.png",
       "description2": "Active: Vi's next basic attack gains  50 bonus range and deals physical damage to all enemies in a cone in front of her. The damage can  critically strike for (100% +  25%) AD bonus physical damage.",
-      "leveling2": "Physical Damage:\n10 / 30 / 50 / 70 / 90 (+ 110% AD) (+ 90% AP)",
+      "leveling2": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                30,
+                50,
+                70,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                110,
+                110,
+                110,
+                110,
+                110
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                90,
+                90,
+                90,
+                90
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Excessive Force resets Vi's basic attack timer.",
       "targeting": "Self",
       "affects": "Enemies",
@@ -154,7 +353,47 @@
       "icon": "Assault and Battery.png",
       "blurb": "Vi runs down an enemy, knocking aside anyone in the way. When she reaches her target she knocks it into the air, jumps after it, and slams it back into the ground.",
       "description": "Active: Vi rushes  unstoppably to the target enemy champion, dealing physical damage upon arrival and  knocking them up for 1.25 seconds.",
-      "leveling": "Physical Damage:\n150 / 237.5 / 325 / 412.5 / 500 (+ 110% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                237.5,
+                325,
+                412.5,
+                500
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                110,
+                110,
+                110,
+                110,
+                110
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Enemies along the way are  knocked aside by 350 units for 0.75 seconds and dealt the same damage.",
       "targeting": "Unit",
       "affects": "Enemies",

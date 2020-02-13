@@ -81,7 +81,47 @@
       "icon": "Piercing Light.png",
       "blurb": "Lucian shoots a bolt of piercing light through a target.",
       "description": "Active: After a 0.4 \u2212 0.25 (based on level)-second delay, Lucian fires a laser in the direction of the target enemy, dealing physical damage to all enemies in a line.",
-      "leveling": "Physical Damage:\n85 / 120 / 155 / 190 / 225 (+ 60 / 75 / 90 / 105 / 120% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                85,
+                120,
+                155,
+                190,
+                225
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                75,
+                90,
+                105,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "Physical",
@@ -102,13 +142,76 @@
       "cooldown": "14 / 13 / 12 / 11 / 10",
       "icon": "Ardent Blaze.png",
       "blurb": "Lucian shoots a missile that explodes in a star shape, marking enemies. Lucian gains Movement Speed for attacking marked enemies.",
-      "description": "Active: After a 0.25-second delay, Lucian fires a shot that explodes in a cross pattern upon hitting an enemy or reaching the end of its path, dealing  magic damage.",
-      "leveling": "Magic Damage:\n75 / 110 / 145 / 180 / 215 (+ 90% AP)",
+      "description": "Active: After a 0.25-second delay, Lucian fires a shot that explodes in a cross pattern upon hitting an enemy or reaching the end of its path, dealing  magic damage and  revealing the area for 1 second.",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                110,
+                145,
+                180,
+                215
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                90,
+                90,
+                90,
+                90
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Ardent Blaze 2.png",
-      "description2": "Enemies hit are marked for 6 seconds, granting  sight of them for the same duration.",
+      "description2": "Enemies hit are marked for 6 seconds.",
       "icon3": "Ardent Blaze 3.png",
       "description3": "Lucian gains  bonus movement speed for 1 second if he or allied champions damage a marked target.",
-      "leveling3": "Bonus Movement Speed:\n60 / 65 / 70 / 75 / 80",
+      "leveling3": [
+        {
+          "attribute": "Bonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                65,
+                70,
+                75,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies / Self, Allies",
       "damagetype": "Magic",
@@ -150,7 +253,254 @@
       "icon": "The Culling.png",
       "blurb": "Lucian unleashes a torrent of shots from his weapons.",
       "description": "Active: Lucian fires shots in the target direction for 3 seconds, dealing physical damage to the first enemy they collide with. The damage is doubled against enemy minions.",
-      "leveling": "Physical Damage Per Shot:\n20 / 30 / 40 / 50 / 60 (+ 25% AD) (+ 10% AP)\nTotal Non-Minion Damage:\n400 / 675 / 1000 / 1375 / 1800 (+ 500 / 562.5 / 625 / 687.5 / 750% AD) (+ 200 / 225 / 250 / 275 / 300% AP)\n\nMinion Damage Per Shot:\n40 / 60 / 80 / 100 / 120 (+ 50% AD) (+ 20% AP)\nTotal Minion Damage:\n800 / 1350 / 2000 / 2750 / 3600 (+ 1000 / 1125 / 1250 / 1375 / 1500% AD) (+ 400 / 450 / 500 / 550 / 600% AP)\n\nShots Fired:\n20 / 22.5 / 25 / 27.5 / 30",
+      "leveling": [
+        {
+          "attribute": "Physical Damage Per Shot",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                30,
+                40,
+                50,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Non-Minion Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                400,
+                675,
+                1000,
+                1375,
+                1800
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                500,
+                562.5,
+                625,
+                687.5,
+                750
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                225,
+                250,
+                275,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Minion Damage Per Shot",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                60,
+                80,
+                100,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Minion Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                800,
+                1350,
+                2000,
+                2750,
+                3600
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                1000,
+                1125,
+                1250,
+                1375,
+                1500
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                400,
+                450,
+                500,
+                550,
+                600
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Shots Fired",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                22.5,
+                25,
+                27.5,
+                30
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "While using The Culling, Lucian always faces in the casted direction and is  ghosted.",
       "description3": "The Culling can be reactivated to end its effects prematurely.",
       "targeting": "Direction",

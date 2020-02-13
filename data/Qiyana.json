@@ -5,7 +5,7 @@
   "attack": 0,
   "defense": 2,
   "magic": 4,
-  "difficulty": 3,
+  "difficulty": 2,
   "herotype": "Assassin",
   "alttype": "Fighter",
   "resource": "Mana",
@@ -33,8 +33,8 @@
     "as_ratio": 0.625,
     "attack_cast_time": 0.230000004172325,
     "attack_total_time": 1.5,
-    "aram_dmg_dealt": 1.08,
-    "aram_dmg_taken": 0.92,
+    "aram_dmg_dealt": 1.1,
+    "aram_dmg_taken": 0.9,
     "urf_dmg_dealt": 1.05,
     "urf_dmg_taken": 0.9
   },
@@ -81,7 +81,86 @@
       "cooldown": "7",
       "icon": "Edge of Ixtal.png",
       "description": "Active: Qiyana slashes forward in a line, dealing physical damage, reduced to 75% damage against targets beyond the first.",
-      "leveling": "Physical Damage:\n60 / 85 / 110 / 135 / 160 (+ 90% bonus AD)\nReduced Damage:\n45 / 63.75 / 82.5 / 101.25 / 120 (+ 67.5% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                85,
+                110,
+                135,
+                160
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                90,
+                90,
+                90,
+                90
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Reduced Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                63.75,
+                82.5,
+                101.25,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                67.5,
+                67.5,
+                67.5,
+                67.5,
+                67.5
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Upon gathering an  Element, Edge of Ixtal is upgraded to Elemental Wrath and its cooldown is  reset.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -101,14 +180,211 @@
       "icon": "false",
       "description": "Active: Qiyana consumes her current Element and  hurls her blade, detonating in a line upon colliding with an enemy or reaching maximum range, and applying a bonus effect based on the consumed Element.",
       "description2": "Enemies are dealt physical damage, reduced to 75% damage against subsequent units beyond the closest.",
-      "leveling2": "Physical Damage:\n60 / 85 / 110 / 135 / 160 (+ 90% bonus AD)\nReduced Damage:\n45 / 63.75 / 82.5 / 101.25 / 120 (+ 67.5% bonus AD)",
+      "leveling2": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                85,
+                110,
+                135,
+                160
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                90,
+                90,
+                90,
+                90
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Reduced Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                63.75,
+                82.5,
+                101.25,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                67.5,
+                67.5,
+                67.5,
+                67.5,
+                67.5
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "icon3": "Edge of Ixtal Brush.png",
       "description3": "Brush: The blade raises a grass trail behind for 3.5 seconds, granting Qiyana  invisibility and  20% bonus movement speed until she attacks or exits.",
       "icon4": "Edge of Ixtal River.png",
       "description4": "River:  Roots for 0.5 seconds, then  slows by 20% for 1 second.",
       "icon5": "Edge of Ixtal Rock.png",
       "description5": "Terrain: Enemies below 50% of maximum health are dealt bonus damage.",
-      "leveling5": "Bonus Damage:\n36 / 51 / 66 / 81 / 96 (+ 54% bonus AD)\nTotal Damage:\n96 / 136 / 176 / 216 / 256 (+ 144% bonus AD)\nTotal Damage to targets beyond the first:\n81 / 114.75 / 148.5 / 182.25 / 216 (+ 121.5% bonus AD)",
+      "leveling5": [
+        {
+          "attribute": "Bonus Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                36,
+                51,
+                66,
+                81,
+                96
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                54,
+                54,
+                54,
+                54,
+                54
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                96,
+                136,
+                176,
+                216,
+                256
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                144,
+                144,
+                144,
+                144,
+                144
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Damage to targets beyond the first",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                81,
+                114.75,
+                148.5,
+                182.25,
+                216
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                121.5,
+                121.5,
+                121.5,
+                121.5,
+                121.5
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies, Self",
       "damagetype": "Physical",
@@ -132,10 +408,111 @@
       "cooldown": "7",
       "icon": "Terrashape.png",
       "description": "Passive: While holding an Element, Qiyana gains  bonus attack speed,  25 bonus range, her basic attacks and basic abilities deal  bonus magic damage, and she gains out-of-combat  bonus movement speed while moving near the Element currently being held.",
-      "leveling": "Bonus Attack Speed:\n5 / 10 / 15 / 20 / 25%\n\nBonus Magic Damage:\n8 / 16 / 24 / 32 / 40 (+ 20% bonus AD) (+ 30% AP)\n\nBonus Movement Speed:\n5 / 6.25 / 7.5 / 8.75 / 10%",
+      "leveling": [
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                5,
+                10,
+                15,
+                20,
+                25
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Bonus Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                8,
+                16,
+                24,
+                32,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Bonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                5,
+                6.25,
+                7.5,
+                8.75,
+                10
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Active: Qiyana  dashes towards a target location, gathering an Element of the nearest  Brush,  River or  Terrain she targeted.",
       "description3": "A target Element is required to cast this ability.",
-      "targeting": "Terrain",
+      "targeting": "Direction / Self",
       "affects": "Self",
       "notes": "* Terrain created by champions are not valid target terrain."
     }
@@ -152,7 +529,47 @@
       "cooldown": "12 / 11 / 10 / 9 / 8",
       "icon": "Audacity.png",
       "description": "Active: Qiyana  dashes a fixed distance towards the target unit, dealing physical damage.",
-      "leveling": "Physical Damage:\n60 / 95 / 130 / 165 / 200 (+ 70% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                95,
+                130,
+                165,
+                200
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Casting  Edge of Ixtal during Audacity will aim at the dash target.",
       "targeting": "Unit",
       "affects": "Enemies, Self",
@@ -178,11 +595,90 @@
       "icon": "Supreme Display of Talent.png",
       "description": "Active: Qiyana sends a windblast in the target direction that  knocks back enemies. The windblast stops upon hitting terrain.",
       "description2": "The windblast then creates a shockwave across any River or Brush it passes through, as well as around the borders of terrain it reaches, dealing physical damage, with the percentage damage capped against monsters, and  stunning enemies for 1 \u2212 0.5 (based on proximity) seconds.",
-      "leveling2": "Physical Damage:\n100 / 135 / 170 / 205 / 240 (+ 170% bonus AD) (+ 10% of target's maximum health)\nCapped percentage damage:\n500 / 625 / 750 / 875 / 1000",
-      "targeting": "Direction, Terrain",
-      "affects": "Enemies",
+      "leveling2": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                135,
+                170,
+                205,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                170,
+                170,
+                170,
+                170,
+                170
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                "% of target's maximum health",
+                "% of target's maximum health",
+                "% of target's maximum health",
+                "% of target's maximum health",
+                "% of target's maximum health"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Capped percentage damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                500,
+                625,
+                750,
+                875,
+                1000
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "targeting": "Direction",
+      "affects": "Enemies, Terrain",
       "damagetype": "physical",
-      "spelleffects": "Area of effect",
+      "spelleffects": "spellaoe",
       "spellshield": "True",
       "projectile": "True",
       "notes": "* The windblast needs only to reach near terrain to trigger the terrain shockwave.\n Artificial terrain (e.g,  Anivia's  Crystallize,  Taliyah's  Weaver's Wall,  Trundle's  Pillar of Ice) touching map terrain will be treated as a single piece of terrain, even when bridging two pieces of map terrain together; the shockwave will wrap around all connecting terrain."

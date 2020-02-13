@@ -35,6 +35,7 @@
       "as_ratio": 0.651000022888183,
       "attack_cast_time": 0.300000011920928,
       "attack_total_time": 1.51999998092651,
+      "aram_dmg_taken": 0.95,
       "urf_dmg_dealt": 1.25,
       "urf_dmg_taken": 0.75
     },
@@ -181,7 +182,7 @@
     "rangetype": "Melee",
     "date": "2010-05-11",
     "patch": "V1.0.0.85",
-    "changes": "V9.24",
+    "changes": "V10.3",
     "role": [
       "Assassin"
     ],
@@ -357,7 +358,7 @@
     "attack": 1,
     "defense": 4,
     "magic": 10,
-    "difficulty": 3,
+    "difficulty": 2,
     "herotype": "Mage",
     "alttype": "Support",
     "resource": "Mana",
@@ -460,7 +461,7 @@
     "rangetype": "Ranged",
     "date": "2009-02-21",
     "patch": "Alpha Week 2",
-    "changes": "V9.19",
+    "changes": "V10.3",
     "role": [
       "Burst"
     ],
@@ -497,7 +498,7 @@
     "attack": 6,
     "defense": 2,
     "magic": 1,
-    "difficulty": 3,
+    "difficulty": 2,
     "herotype": "Marksman",
     "resource": "Mana",
     "stats": {
@@ -529,7 +530,7 @@
     "rangetype": "Ranged",
     "date": "2019-12-11",
     "patch": "V9.24",
-    "changes": "V10.2",
+    "changes": "V10.3",
     "role": [
       "Marksman"
     ],
@@ -717,14 +718,14 @@
     "attack": 6,
     "defense": 3,
     "magic": 8,
-    "difficulty": 3,
+    "difficulty": 2,
     "herotype": "Mage",
     "alttype": "Marksman",
     "resource": "Mana",
     "stats": {
       "hp_base": 552,
       "hp_lvl": 92,
-      "mp_base": 438,
+      "mp_base": 480,
       "mp_lvl": 21,
       "arm_base": 19.04,
       "arm_lvl": 3,
@@ -747,14 +748,14 @@
       "attack_cast_time": 0.25,
       "attack_total_time": 1.60000002384185,
       "attack_delay_offset": -0.150000005960464,
-      "aram_dmg_taken": 0.95,
+      "aram_dmg_dealt": 1.1,
       "missile_speed": 0
     },
     "fullname": "Omah Azir",
     "rangetype": "Ranged",
     "date": "2014-09-16",
     "patch": "V4.16",
-    "changes": "V10.1",
+    "changes": "V10.3",
     "role": [
       "Specialist"
     ],
@@ -821,8 +822,8 @@
       "attack_cast_time": 0.300000011920928,
       "attack_total_time": 1.60000002384185,
       "attack_delay_offset": -0.100000001490116,
-      "aram_dmg_dealt": 1.08,
-      "aram_dmg_taken": 0.95,
+      "aram_dmg_dealt": 1.1,
+      "aram_dmg_taken": 0.85,
       "urf_dmg_dealt": 1.2,
       "urf_dmg_taken": 0.9
     },
@@ -1040,7 +1041,7 @@
     "rangetype": "Melee",
     "date": "2014-05-12",
     "patch": "V4.7",
-    "changes": "V10.2",
+    "changes": "V10.3",
     "role": [
       "Warden"
     ],
@@ -1220,7 +1221,7 @@
     "attack": 2,
     "defense": 3,
     "magic": 9,
-    "difficulty": 3,
+    "difficulty": 2,
     "herotype": "Mage",
     "resource": "Mana",
     "stats": {
@@ -1391,7 +1392,7 @@
     "rangetype": "Ranged",
     "date": "2009-09-19",
     "patch": "V0.9.25.21",
-    "changes": "V10.1",
+    "changes": "V10.3",
     "role": [
       "Marksman"
     ],
@@ -1509,7 +1510,7 @@
     "stats": {
       "hp_base": 594,
       "hp_lvl": 95,
-      "mp_base": 420,
+      "mp_base": 375,
       "mp_lvl": 25,
       "arm_base": 31,
       "arm_lvl": 3.6,
@@ -1535,10 +1536,10 @@
     "rangetype": "Melee",
     "date": "2012-08-07",
     "patch": "V1.0.0.144",
-    "changes": "V9.24",
+    "changes": "V10.3",
     "role": [
-      "Assassin",
-      "Diver"
+      "Diver",
+      "Assassin"
     ],
     "damage": 3,
     "toughness": 2,
@@ -1643,7 +1644,7 @@
     "attack": 9,
     "defense": 3,
     "magic": 1,
-    "difficulty": 3,
+    "difficulty": 2,
     "herotype": "Marksman",
     "resource": "Mana",
     "stats": {
@@ -1746,7 +1747,7 @@
     "rangetype": "Melee",
     "date": "2015-05-29",
     "patch": "V5.10",
-    "changes": "V9.24",
+    "changes": "V10.3",
     "role": [
       "Assassin"
     ],
@@ -1782,7 +1783,7 @@
     "attack": 6,
     "defense": 5,
     "magic": 7,
-    "difficulty": 3,
+    "difficulty": 2,
     "herotype": "Mage",
     "alttype": "Fighter",
     "resource": "Mana",
@@ -1811,7 +1812,7 @@
       "as_ratio": 0.625,
       "attack_delay_offset": -0.112499997019767,
       "aram_dmg_dealt": 1.05,
-      "aram_dmg_taken": 0.95,
+      "aram_dmg_taken": 0.9,
       "urf_dmg_dealt": 1.1,
       "urf_dmg_taken": 0.9
     },
@@ -1889,7 +1890,7 @@
       "attack_cast_time": 0.230000004172325,
       "attack_total_time": 1.5,
       "aram_dmg_dealt": 1.15,
-      "aram_dmg_taken": 0.9,
+      "aram_dmg_taken": 0.85,
       "urf_dmg_dealt": 1.2
     },
     "rangetype": "Melee",
@@ -1940,7 +1941,7 @@
       "hp_base": 500,
       "hp_lvl": 86,
       "mp_base": 375,
-      "mp_lvl": 42,
+      "mp_lvl": 50,
       "arm_base": 22,
       "arm_lvl": 3.5,
       "mr_base": 30,
@@ -1952,7 +1953,7 @@
       "dam_base": 60,
       "dam_lvl": 2.5,
       "as_base": 0.625,
-      "as_lvl": 1.5,
+      "as_lvl": 2.5,
       "range": 550,
       "ms": 325,
       "acquisition_radius": 550,
@@ -1964,7 +1965,7 @@
     "rangetype": "Ranged",
     "date": "2010-03-16",
     "patch": "V1.0.0.79",
-    "changes": "V9.24b",
+    "changes": "V10.3",
     "role": [
       "Marksman"
     ],
@@ -2069,7 +2070,7 @@
     "attack": 10,
     "defense": 4,
     "magic": 2,
-    "difficulty": 3,
+    "difficulty": 2,
     "herotype": "Fighter",
     "alttype": "Assassin",
     "resource": "Mana",
@@ -2143,7 +2144,7 @@
     "attack": 6,
     "defense": 4,
     "magic": 7,
-    "difficulty": 3,
+    "difficulty": 2,
     "herotype": "Assassin",
     "alttype": "Fighter",
     "resource": "Mana",
@@ -2249,7 +2250,7 @@
     "rangetype": "Melee",
     "date": "2010-08-10",
     "patch": "v1.0.0.98",
-    "changes": "V9.17",
+    "changes": "V10.3",
     "role": [
       "Warden"
     ],
@@ -2392,7 +2393,7 @@
     "rangetype": "Melee",
     "date": "2010-04-27",
     "patch": "V1.0.0.83",
-    "changes": "V10.2",
+    "changes": "V10.3",
     "role": [
       "Juggernaut"
     ],
@@ -2429,7 +2430,7 @@
     "attack": 6,
     "defense": 5,
     "magic": 5,
-    "difficulty": 3,
+    "difficulty": 2,
     "herotype": "Fighter",
     "alttype": "Tank",
     "resource": "Rage",
@@ -2504,7 +2505,7 @@
     "attack": 6,
     "defense": 5,
     "magic": 5,
-    "difficulty": 3,
+    "difficulty": 2,
     "herotype": "Fighter",
     "alttype": "Tank",
     "resource": "Rage",
@@ -2894,7 +2895,7 @@
     "rangetype": "Melee",
     "date": "2015-11-24",
     "patch": "V5.23",
-    "changes": "V10.1",
+    "changes": "V10.3",
     "role": [
       "Juggernaut"
     ],
@@ -2931,7 +2932,7 @@
     "attack": 7,
     "defense": 4,
     "magic": 5,
-    "difficulty": 3,
+    "difficulty": 2,
     "herotype": "Fighter",
     "alttype": "Assassin",
     "resource": "Mana",
@@ -3106,7 +3107,8 @@
       "as_ratio": 0.625,
       "attack_delay_offset": -0.0799999982118606,
       "aram_dmg_taken": 1.1,
-      "aram_shielding": 0.92,
+      "aram_healing": 0.9,
+      "aram_shielding": 0.9,
       "urf_shielding": 0.92
     },
     "fullname": "Janna Windforce",
@@ -3220,7 +3222,7 @@
     "attack": 7,
     "defense": 5,
     "magic": 7,
-    "difficulty": 2,
+    "difficulty": 1,
     "herotype": "Fighter",
     "alttype": "Assassin",
     "resource": "Mana",
@@ -3248,6 +3250,7 @@
       "pathing_radius": 35,
       "as_ratio": 0.638000011444091,
       "attack_delay_offset": -0.0918904393911361,
+      "aram_dmg_taken": 0.95,
       "urf_dmg_dealt": 0.95
     },
     "fullname": "Saijax Cail-Rynx Kohari Icath\u2019un",
@@ -3325,7 +3328,7 @@
     "rangetype": "Melee",
     "date": "2012-07-07",
     "patch": "V1.0.0.142",
-    "changes": "V10.1",
+    "changes": "V10.3",
     "role": [
       "Artillery"
     ],
@@ -3402,10 +3405,10 @@
     "rangetype": "Ranged",
     "date": "2016-02-01",
     "patch": "V6.2",
-    "changes": "V9.18",
+    "changes": "V10.2",
     "role": [
-      "Marksman",
-      "Catcher"
+      "Catcher",
+      "Marksman"
     ],
     "damage": 3,
     "toughness": 1,
@@ -3475,7 +3478,7 @@
     "rangetype": "Ranged",
     "date": "2013-10-10",
     "patch": "V3.12",
-    "changes": "V10.2",
+    "changes": "V10.3",
     "role": [
       "Marksman"
     ],
@@ -3514,7 +3517,7 @@
     "attack": 8,
     "defense": 5,
     "magic": 3,
-    "difficulty": 2,
+    "difficulty": 1,
     "herotype": "Marksman",
     "resource": "Mana",
     "stats": {
@@ -3824,6 +3827,7 @@
       "pathing_radius": 35,
       "as_ratio": 0.639999985694885,
       "attack_delay_offset": -0.150000005960464,
+      "aram_dmg_taken": 0.9,
       "urf_dmg_dealt": 1.05,
       "urf_dmg_taken": 0.9
     },
@@ -3866,7 +3870,7 @@
     "attack": 4,
     "defense": 3,
     "magic": 9,
-    "difficulty": 3,
+    "difficulty": 2,
     "herotype": "Assassin",
     "alttype": "Mage",
     "resource": "None",
@@ -3903,7 +3907,7 @@
     "rangetype": "Melee",
     "date": "2009-09-19",
     "patch": "V0.9.25.21",
-    "changes": "V10.2",
+    "changes": "V10.3",
     "role": [
       "Assassin"
     ],
@@ -4002,7 +4006,7 @@
       "1": "Starfire Spellblade"
     },
     "skill_r": {
-      "1": "Divine Judgement"
+      "1": "Divine Judgment"
     }
   },
   "Kayn": {
@@ -4012,7 +4016,7 @@
     "attack": 10,
     "defense": 6,
     "magic": 1,
-    "difficulty": 2,
+    "difficulty": 3,
     "herotype": "Fighter",
     "alttype": "Assassin",
     "resource": "Mana",
@@ -4048,7 +4052,7 @@
     "rangetype": "Melee",
     "date": "2017-07-12",
     "patch": "V7.14",
-    "changes": "V9.21",
+    "changes": "V10.3",
     "role": [
       "Skirmisher"
     ],
@@ -4519,7 +4523,7 @@
     "attack": 1,
     "defense": 4,
     "magic": 10,
-    "difficulty": 3,
+    "difficulty": 2,
     "herotype": "Assassin",
     "alttype": "Mage",
     "resource": "Mana",
@@ -4547,8 +4551,8 @@
       "pathing_radius": 35,
       "as_ratio": 0.625,
       "attack_delay_offset": -0.133333340287208,
-      "aram_dmg_dealt": 1.12,
-      "aram_dmg_taken": 0.9,
+      "aram_dmg_dealt": 1.15,
+      "aram_dmg_taken": 0.85,
       "urf_dmg_dealt": 1.1
     },
     "fullname": "Emilia (Evaine) LeBlanc",
@@ -4596,7 +4600,7 @@
     "attack": 8,
     "defense": 5,
     "magic": 3,
-    "difficulty": 3,
+    "difficulty": 2,
     "herotype": "Fighter",
     "alttype": "Assassin",
     "resource": "Energy",
@@ -4632,7 +4636,7 @@
     "rangetype": "Melee",
     "date": "2011-04-01",
     "patch": "V1.0.0.114",
-    "changes": "V9.18",
+    "changes": "V10.3",
     "role": [
       "Diver"
     ],
@@ -4699,14 +4703,13 @@
       "pathing_radius": 35,
       "as_ratio": 0.625,
       "attack_delay_offset": -0.0708333328366279,
-      "aram_dmg_taken": 1.05,
       "urf_dmg_dealt": 1.05,
       "urf_dmg_taken": 0.9
     },
     "rangetype": "Melee",
     "date": "2011-07-13",
     "patch": "V1.0.0.121",
-    "changes": "V9.17",
+    "changes": "V10.3",
     "role": [
       "Vanguard"
     ],
@@ -4841,7 +4844,7 @@
     "rangetype": "Ranged",
     "date": "2013-08-22",
     "patch": "V3.10a",
-    "changes": "V9.22",
+    "changes": "V10.3",
     "role": [
       "Marksman"
     ],
@@ -4982,10 +4985,10 @@
     "rangetype": "Ranged",
     "date": "2010-10-19",
     "patch": "V1.0.0.103",
-    "changes": "V10.2",
+    "changes": "V10.3",
     "role": [
-      "Burst",
-      "Artillery"
+      "Artillery",
+      "Burst"
     ],
     "damage": 3,
     "toughness": 1,
@@ -5053,7 +5056,7 @@
     "rangetype": "Melee",
     "date": "2009-09-02",
     "patch": "V0.9.22.16",
-    "changes": "V9.23",
+    "changes": "V10.3",
     "role": [
       "Vanguard"
     ],
@@ -5188,7 +5191,7 @@
       "pathing_radius": 50,
       "as_ratio": 0.694999992847442,
       "attack_delay_offset": 0,
-      "aram_dmg_dealt": 0.88,
+      "aram_dmg_dealt": 0.85,
       "aram_dmg_taken": 1.12,
       "urf_dmg_taken": 0.95,
       "urf_healing": 0.95
@@ -5322,7 +5325,7 @@
       "dam_base": 50,
       "dam_lvl": 2.7,
       "as_base": 0.656,
-      "as_lvl": 3,
+      "as_lvl": 2.25,
       "range": 550,
       "ms": 325,
       "acquisition_radius": 800,
@@ -5337,7 +5340,7 @@
     "rangetype": "Ranged",
     "date": "2010-09-08",
     "patch": "V1.0.0.100",
-    "changes": "V10.2",
+    "changes": "V10.3",
     "role": [
       "Marksman"
     ],
@@ -5410,7 +5413,7 @@
     "rangetype": "Melee",
     "date": "2010-02-24",
     "patch": "V1.0.0.75",
-    "changes": "V10.1",
+    "changes": "V10.3",
     "role": [
       "Juggernaut"
     ],
@@ -5545,6 +5548,7 @@
       "as_ratio": 0.643999993801116,
       "attack_delay_offset": -0.11999999731779,
       "aram_dmg_taken": 1.05,
+      "aram_healing": 0.9,
       "urf_healing": 0.95
     },
     "rangetype": "Ranged",
@@ -5690,7 +5694,7 @@
     "rangetype": "Melee",
     "date": "2012-02-14",
     "patch": "V1.0.0.134",
-    "changes": "V10.2",
+    "changes": "V10.3",
     "role": [
       "Vanguard"
     ],
@@ -5763,8 +5767,8 @@
     "patch": "V8.24",
     "changes": "V9.21",
     "role": [
-      "Catcher",
-      "Burst"
+      "Burst",
+      "Catcher"
     ],
     "damage": 3,
     "toughness": 1,
@@ -5798,7 +5802,7 @@
     "attack": 5,
     "defense": 4,
     "magic": 7,
-    "difficulty": 3,
+    "difficulty": 2,
     "herotype": "Assassin",
     "alttype": "Mage",
     "resource": "Mana",
@@ -6013,7 +6017,7 @@
     "attack": 9,
     "defense": 5,
     "magic": 3,
-    "difficulty": 2,
+    "difficulty": 1,
     "herotype": "Fighter",
     "alttype": "Tank",
     "resource": "Mana",
@@ -6326,7 +6330,8 @@
       "gameplay_radius": 55,
       "as_ratio": 0.625,
       "attack_cast_time": 0.375,
-      "attack_total_time": 1.60000002384185
+      "attack_total_time": 1.60000002384185,
+      "aram_dmg_taken": 0.95
     },
     "rangetype": "Melee",
     "date": "2010-01-13",
@@ -6443,7 +6448,7 @@
     "attack": 0,
     "defense": 2,
     "magic": 4,
-    "difficulty": 3,
+    "difficulty": 2,
     "herotype": "Assassin",
     "alttype": "Fighter",
     "resource": "Mana",
@@ -6471,8 +6476,8 @@
       "as_ratio": 0.625,
       "attack_cast_time": 0.230000004172325,
       "attack_total_time": 1.5,
-      "aram_dmg_dealt": 1.08,
-      "aram_dmg_taken": 0.92,
+      "aram_dmg_dealt": 1.1,
+      "aram_dmg_taken": 0.9,
       "urf_dmg_dealt": 1.05,
       "urf_dmg_taken": 0.9
     },
@@ -6912,10 +6917,10 @@
     "rangetype": "Melee",
     "date": "2012-08-21",
     "patch": "V1.0.0.145",
-    "changes": "V9.6",
+    "changes": "V10.3",
     "role": [
-      "Assassin",
-      "Diver"
+      "Diver",
+      "Assassin"
     ],
     "damage": 3,
     "toughness": 1,
@@ -6950,7 +6955,7 @@
     "attack": 8,
     "defense": 5,
     "magic": 1,
-    "difficulty": 2,
+    "difficulty": 1,
     "herotype": "Fighter",
     "alttype": "Assassin",
     "resource": "None",
@@ -7023,7 +7028,7 @@
     "attack": 3,
     "defense": 6,
     "magic": 8,
-    "difficulty": 3,
+    "difficulty": 2,
     "herotype": "Fighter",
     "alttype": "Mage",
     "resource": "Heat",
@@ -7032,7 +7037,7 @@
       "hp_lvl": 85,
       "mp_base": 100,
       "mp_lvl": 0,
-      "arm_base": 30.88,
+      "arm_base": 31,
       "arm_lvl": 3.5,
       "mr_base": 32.1,
       "mr_lvl": 1.25,
@@ -7040,7 +7045,7 @@
       "hp5_lvl": 0.6,
       "mp5_base": 0,
       "mp5_lvl": 0,
-      "dam_base": 61.036,
+      "dam_base": 61,
       "dam_lvl": 3.2,
       "as_base": 0.644,
       "as_lvl": 1.85,
@@ -7059,7 +7064,7 @@
     "rangetype": "Melee",
     "date": "2011-04-26",
     "patch": "V1.0.0.116",
-    "changes": "V9.15",
+    "changes": "V10.3",
     "role": [
       "Battlemage"
     ],
@@ -7194,7 +7199,7 @@
       "mp5_lvl": 0.7,
       "dam_base": 66,
       "dam_lvl": 4,
-      "as_base": 0.625,
+      "as_base": 0.6875,
       "as_lvl": 3.5,
       "range": 150,
       "ms": 340,
@@ -7210,7 +7215,7 @@
     "rangetype": "Melee",
     "date": "2012-01-17",
     "patch": "V1.0.0.132",
-    "changes": "V10.1",
+    "changes": "V10.3",
     "role": [
       "Vanguard"
     ],
@@ -7282,10 +7287,10 @@
     "rangetype": "Ranged",
     "date": "2019-11-10",
     "patch": "V9.22",
-    "changes": "V9.24",
+    "changes": "V10.3",
     "role": [
-      "Marksman",
-      "Enchanter"
+      "Enchanter",
+      "Marksman"
     ],
     "damage": 2,
     "toughness": 1,
@@ -7294,7 +7299,7 @@
     "utility": 3,
     "style": 30,
     "adaptivetype": "physical",
-    "be": 7800,
+    "be": 6300,
     "rp": 975,
     "skill_i": {
       "1": "Absolution"
@@ -7332,7 +7337,7 @@
       "arm_lvl": 4,
       "mr_base": 32,
       "mr_lvl": 1.25,
-      "hp5_base": 9.25,
+      "hp5_base": 8,
       "hp5_lvl": 0.75,
       "mp5_base": 0,
       "mp5_lvl": 0,
@@ -7351,7 +7356,7 @@
     "rangetype": "Melee",
     "date": "2020-01-14",
     "patch": "V10.1",
-    "changes": "V10.2",
+    "changes": "V10.3",
     "role": [
       "Juggernaut"
     ],
@@ -7624,7 +7629,8 @@
       "selection_radius": 135,
       "pathing_radius": 35,
       "as_ratio": 0.612999975681304,
-      "attack_delay_offset": -0.0638512670993805
+      "attack_delay_offset": -0.0638512670993805,
+      "aram_dmg_dealt": 0.95
     },
     "rangetype": "Melee",
     "date": "2009-04-18",
@@ -7921,7 +7927,7 @@
     "rangetype": "Ranged",
     "date": "2010-09-21",
     "patch": "V1.0.0.101",
-    "changes": "V10.2",
+    "changes": "V10.3",
     "role": [
       "Enchanter"
     ],
@@ -8060,7 +8066,7 @@
     "rangetype": "Ranged",
     "date": "2010-10-05",
     "patch": "V1.0.0.102",
-    "changes": "V9.15",
+    "changes": "V10.3",
     "role": [
       "Battlemage"
     ],
@@ -8127,7 +8133,6 @@
       "attack_cast_time": 0.259999990463256,
       "attack_total_time": 1.54999995231628,
       "attack_delay_offset": -0.0994649976491928,
-      "aram_dmg_dealt": 1.05,
       "urf_dmg_taken": 0.95
     },
     "rangetype": "Melee",
@@ -8565,13 +8570,14 @@
       "gameplay_radius": 55,
       "as_ratio": 0.689999997615814,
       "attack_delay_offset": -0.0842565968632698,
-      "aram_dmg_dealt": 0.88,
+      "aram_dmg_dealt": 0.9,
+      "aram_dmg_taken": 1.05,
       "urf_dmg_dealt": 0.95
     },
     "rangetype": "Ranged",
     "date": "2009-02-21",
     "patch": "Alpha Week 2",
-    "changes": "V9.24",
+    "changes": "V10.3",
     "role": [
       "Specialist"
     ],
@@ -8781,7 +8787,8 @@
       "selection_radius": 135,
       "pathing_radius": 25.7665996551513,
       "as_ratio": 0.6700000166893,
-      "attack_delay_offset": -0.0916666686534881
+      "attack_delay_offset": -0.0916666686534881,
+      "aram_healing": 0.9
     },
     "rangetype": "Melee",
     "date": "2010-12-01",
@@ -8850,8 +8857,8 @@
       "pathing_radius": 35,
       "as_ratio": 0.6700000166893,
       "attack_delay_offset": -0.109999999403953,
-      "aram_dmg_dealt": 1.05,
-      "aram_dmg_taken": 0.95
+      "aram_dmg_dealt": 1.1,
+      "aram_dmg_taken": 0.9
     },
     "rangetype": "Melee",
     "date": "2009-05-01",
@@ -8892,7 +8899,7 @@
     "attack": 6,
     "defense": 2,
     "magic": 6,
-    "difficulty": 2,
+    "difficulty": 3,
     "herotype": "Mage",
     "resource": "Mana",
     "stats": {
@@ -9034,7 +9041,7 @@
     "attack": 8,
     "defense": 7,
     "magic": 4,
-    "difficulty": 2,
+    "difficulty": 1,
     "herotype": "Fighter",
     "alttype": "Tank",
     "resource": "Mana",
@@ -9134,8 +9141,7 @@
       "pathing_radius": 50,
       "gameplay_radius": 80,
       "as_ratio": 0.625,
-      "attack_delay_offset": -0.150000005960464,
-      "aram_dmg_dealt": 0.95
+      "attack_delay_offset": -0.150000005960464
     },
     "rangetype": "Ranged",
     "date": "2010-08-24",
@@ -9211,8 +9217,8 @@
     "patch": "V1.0.0.139",
     "changes": "V10.1",
     "role": [
-      "Marksman",
-      "Artillery"
+      "Artillery",
+      "Marksman"
     ],
     "damage": 3,
     "toughness": 1,
@@ -10271,7 +10277,7 @@
     "rangetype": "Ranged",
     "date": "2019-05-14",
     "patch": "V9.10",
-    "changes": "V9.24",
+    "changes": "V10.3",
     "role": [
       "Enchanter"
     ],
@@ -10481,7 +10487,7 @@
       "as_ratio": 0.656000018119812,
       "attack_delay_offset": -0.0916666686534881,
       "aram_dmg_dealt": 0.85,
-      "aram_dmg_taken": 1.08
+      "aram_dmg_taken": 1.1
     },
     "rangetype": "Ranged",
     "date": "2012-02-01",
@@ -10556,7 +10562,7 @@
     "rangetype": "Ranged",
     "date": "2009-04-18",
     "patch": "April 18, 2009 Patch",
-    "changes": "V8.9",
+    "changes": "V10.3",
     "role": [
       "Specialist"
     ],

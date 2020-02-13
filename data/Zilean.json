@@ -39,7 +39,7 @@
   "rangetype": "Ranged",
   "date": "2009-04-18",
   "patch": "April 18, 2009 Patch",
-  "changes": "V8.9",
+  "changes": "V10.3",
   "role": [
     "Specialist"
   ],
@@ -83,10 +83,73 @@
       "icon": "Time Bomb.png",
       "blurb": "Tosses a bomb to target area that sticks to units that come near it (prioritizes Champions). It detonates after 3 seconds, dealing area of effect damage. If a Time Bomb is detonated early by another Time Bomb, it also stuns enemies.",
       "description": "Active: Zilean throws a ticking time bomb to the target location that detonates after 3 seconds, dealing  magic damage to all surrounding enemies.",
-      "leveling": "Magic Damage:\n75 / 115 / 165 / 230 / 300 (+ 90% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                115,
+                165,
+                230,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                90,
+                90,
+                90,
+                90
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Time Bomb will attach itself to units hit directly, or those who move within a small radius of its center while it's on the ground, detonating at their location when the duration ends.",
       "description3": "Time Bomb detonates immediately if another one attaches itself to the same unit, briefly  stunning all affected enemies.",
-      "leveling3": "Stun Duration:\n1.1 / 1.2 / 1.3 / 1.4 / 1.5",
+      "leveling3": [
+        {
+          "attribute": "Stun Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1.1,
+                1.2,
+                1.3,
+                1.4,
+                1.5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -124,7 +187,30 @@
       "icon": "Time Warp.png",
       "blurb": "Zilean bends time around any unit, decreasing an enemy's Movement Speed or increasing an ally's Movement Speed for a short time.",
       "description": "Active: Zilean bends time around the target champion,  slowing enemies for 2.5 seconds or granting allies  bonus movement speed for the same duration.",
-      "leveling": "Movement Speed Modifier:\n40 / 55 / 70 / 85 / 99%",
+      "leveling": [
+        {
+          "attribute": "Movement Speed Modifier",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                55,
+                70,
+                85,
+                99
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies, Allies",
       "spelleffects": "False",
@@ -145,7 +231,47 @@
       "blurb": "Zilean places a protective time rune on an allied champion, teleporting the champion back in time if they take lethal damage.",
       "description": "Active: Zilean places a protective time rune on the target ally champion or himself, lasting for 5 seconds.",
       "description2": "If the target takes fatal damage during that time, they are put in  stasis for 3 seconds and then  revived, regaining a set amount of  health.",
-      "leveling2": "Health Regained:\n600 / 725 / 850 / 975 / 1100 (+ 200% AP)",
+      "leveling2": [
+        {
+          "attribute": "Health Regained",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                600,
+                725,
+                850,
+                975,
+                1100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                200,
+                200,
+                200,
+                200
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Self, Allies",
       "spelleffects": "Heal",

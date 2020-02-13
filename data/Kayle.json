@@ -91,7 +91,86 @@
       "icon": "Radiant Blast.png",
       "description": "Active: Kayle plants a portal at her initial location that faces the target direction. After a 0.25-second delay, a celestial sword launches forward from the portal.",
       "description2": "The sword explodes into a cross upon collision with an enemy, dealing magic damage and  slowing targets struck, while reducing their  armor and  magic resistance by 15% for 4 seconds.",
-      "leveling2": "Magic Damage:\n60 / 100 / 140 / 180 / 220 (+ 60% bonus AD) (+ 50% AP)\n\nSlow:\n26 / 32 / 38 / 44 / 50%",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                100,
+                140,
+                180,
+                220
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                26,
+                32,
+                38,
+                44,
+                50
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Radiant Blast refunds  50% of its mana cost for each enemy champion hit.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -113,7 +192,86 @@
       "cooldown": "15",
       "icon": "Celestial Blessing.png",
       "description": "Active: Kayle and target allied champion are  healed and gain bonus movement speed for 2 seconds.",
-      "leveling": "Heal:\n60 / 90 / 120 / 150 / 180 (+ 30% AP)\n\nBonus Movement Speed:\n24 / 28 / 32 / 36 / 40% (+ 8% per 100 AP)",
+      "leveling": [
+        {
+          "attribute": "Heal",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                90,
+                120,
+                150,
+                180
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Bonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                24,
+                28,
+                32,
+                36,
+                40
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                8,
+                8,
+                8,
+                8,
+                8
+              ],
+              "units": [
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If cast without a valid target, or self-cast, Celestial Blessing will automatically target the closest ally in range, prioritizing the most wounded one.",
       "targeting": "Unit / Auto",
       "affects": "Self, Allies",
@@ -130,10 +288,107 @@
       "cooldown": "8",
       "icon": "Starfire Spellblade.png",
       "description": "Passive: Kayle's basic attacks deal bonus magic damage. Additionally,  Aflame's base damage is increased.",
-      "leveling": "Passive Damage:\n15 / 20 / 25 / 30 / 35 (+ 10% bonus AD) (+ 25% AP)",
+      "leveling": [
+        {
+          "attribute": "Passive Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                20,
+                25,
+                30,
+                35
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Starfire Spellblade 2.png",
       "description2": "Active: Kayle's next basic attack within 6 seconds deals bonus magic damage. After unlocking  Aflame, the attack explodes, damaging and applying on-hit effects to all enemies around the target.",
-      "leveling2": "Bonus Magic Damage:\n8 / 9 / 10 / 11 / 12% (+ 2% per 100 AP) of target's missing health",
+      "leveling2": [
+        {
+          "attribute": "Bonus Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "units": [
+                "%  of target's missing health",
+                "%  of target's missing health",
+                "%  of target's missing health",
+                "%  of target's missing health",
+                "%  of target's missing health"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "units": [
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Prior to becoming  Arisen, Starfire Spellblade also causes Kayle to become a  ranged champion with 525 attack range on the empowered attack.",
       "description4": "Starfire Spellblade resets Kayle's basic attack timer.",
       "targeting": "None",
@@ -156,9 +411,89 @@
       "cooldown": "160 / 140 / 120 / 100 / 80",
       "icon": "Divine Judgement.png",
       "description": "Active: Kayle refreshes  Zealous and grants the target allied champion or herself  invulnerability for a few seconds.",
-      "leveling": "Duration:\n2 / 2.25 / 2.5 / 2.75 / 3",
+      "leveling": [
+        {
+          "attribute": "Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                2,
+                2.25,
+                2.5,
+                2.75,
+                3
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Kayle also begins conjuring swords around herself and highlights an area around her target for 1.5 seconds. At the end of the channel, the swords rain down and deal magic damage to all enemies within the area around her target.",
-      "leveling2": "Magic Damage:\n200 / 275 / 350 / 425 / 500 (+ 100% bonus AD) (+ 80% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                275,
+                350,
+                425,
+                500
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Divine Judgement will prioritize casting on allies over Kayle.",
       "targeting": "Unit / Self",
       "affects": "Allies, Self",

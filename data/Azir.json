@@ -89,7 +89,47 @@
       "icon": "Conquering Sands.png",
       "blurb": "Azir sends all Sand Soldiers towards a location. Sand Soldiers deal magic damage to enemies they pass through and apply a slow for 1 second.",
       "description": "Active: Azir orders all Sand Soldiers to dash toward the target location, dealing  magic damage to all enemies they pass through and  slowing them by 25% for 1 second.",
-      "leveling": "Magic Damage:\n70 / 90 / 110 / 130 / 150 (+ 30% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                90,
+                110,
+                130,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Enemies hit by subsequent soldiers are instead  slowed by an additional 25% per soldier.",
       "description3": "Conquering Sands resets Azir's basic attack timer.",
       "targeting": "Ground",
@@ -115,10 +155,55 @@
       "icon": "Arise!.png",
       "blurb": "Azir summons a Sand Soldier to attack nearby targets for him, replacing his basic attack against targets within the soldier's range. Their attacks deal magic damage to enemies in a line. Arise! also passively grants attack speed to Azir and his Sand Soldiers.",
       "description": "Passive: Azir periodically stocks a Sand Soldier, up to a maximum of 2. He also gains  bonus attack speed, doubled for 5 seconds if he summons a third concurrent soldier.",
-      "leveling": "Bonus Attack Speed:\n20 / 30 / 40 / 50 / 60%\nIncreased Attack Speed:\n40 / 60 / 80 / 100 / 120%",
+      "leveling": [
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                30,
+                40,
+                50,
+                60
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Increased Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                60,
+                80,
+                100,
+                120
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Active: Azir summons an  untargetable Sand Soldier at the target location that lasts 10 seconds, expiring twice as fast while within range of an enemy  turret, and expiring instantly if Azir is not in control range.",
       "description3": "When Azir selects an enemy in a soldier's attack range, the Sand Soldier attacks in his stead, dealing 60 \u2212  160 (based on level) (+ 60% AP) magic damage in a line. Targets beyond the closest take 25 / 50 / 75 / 100% (based on level) damage. Subsequent Sand Soldiers beyond the first deal 25% damage.",
-      "description4": "Sand Soldiers cannot attack  structures,  wards,  \u200etrinkets and  traps.",
+      "description4": "Sand Soldiers cannot attack  structures,  wards,  trinkets and  traps.",
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -140,7 +225,86 @@
       "icon": "Shifting Sands.png",
       "blurb": "Azir shields himself briefly and dashes to one of his Sand Soldiers, damaging enemies. If he hits an enemy champion, he instantly readies a new Sand Soldier for deployment and halts his dash.",
       "description": "Active: Azir  shields himself for 1.5 seconds and  dashes to the target Sand Soldiers, dealing magic damage to enemies he passes through.",
-      "leveling": "Shield Strength:\n80 / 120 / 160 / 200 / 240 (+ 70% AP)\nMagic Damage:\n60 / 90 / 120 / 150 / 180 (+ 40% AP)",
+      "leveling": [
+        {
+          "attribute": "Shield Strength",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                120,
+                160,
+                200,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                90,
+                120,
+                150,
+                180
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If Azir hits an enemy champion, he stops moving and gains a charge of  Arise!.",
       "targeting": "Unit-targeted (Sand Soldier)",
       "affects": "Self, Enemies",
@@ -162,9 +326,68 @@
       "icon": "Emperor's Divide.png",
       "blurb": "Azir summons a wall of soldiers which charge forward, knocking back and damaging enemies.",
       "description": "Active: Azir calls forth a phalanx of soldiers from behind him, charging forward in the target direction.",
-      "leveling": "Width:\n5 / 6 / 7 soldiers",
+      "leveling": [
+        {
+          "attribute": "Width",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                5,
+                6,
+                7
+              ],
+              "units": [
+                " soldiers",
+                " soldiers",
+                " soldiers"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Enemies impacted by the charge are dealt magic damage and  knocked back.",
-      "leveling2": "Magic Damage:\n175 / 250 / 325 / 400 / 475 (+ 60% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                175,
+                250,
+                325,
+                400,
+                475
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "When the soldiers finish their charge, they stand as a wall for 5 seconds, acting as impassible terrain against enemies. Allies and Azir can move through the wall.",
       "targeting": "Direction",
       "affects": "Enemies",

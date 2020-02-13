@@ -69,7 +69,7 @@
       "description3": "Both Zac and his enemies can interact with these chunks by being within 50 units of them: Zac can move over them to consume them, restoring  4 / 5 / 6 / 7% (based on  Let's Bounce!'s rank) of his maximum health; enemies can move over them to destroy them.",
       "icon4": "Cell Division 2.png",
       "description4": "Periodically, upon taking fatal damage, Zac splits into 4 uncontrollable bloblets that move to his final location over 8 / 7 / 6 / 5 / 4 (based on level) seconds. If any of these bloblets remain at the end of the duration, Zac  recombines and returns at  10 - 50% maximum health.",
-      "description5": "Upon splitting, the boblets stop upon colliding with terrain.",
+      "description5": "Upon splitting, the bloblets stop upon colliding with terrain.",
       "targeting": "Passive",
       "affects": "Self",
       "spelleffects": "Heal",
@@ -88,7 +88,120 @@
       "icon": "Stretching Strikes.png",
       "blurb": "Zac stretches an arm, grabbing an enemy. Attacking a different enemy will cause him to throw both targets towards each other.",
       "description": "Active: Zac stretches his left arm in the target direction, dealing  magic damage and  slowing the first enemy hit by 40% for 0.5 seconds, and attaching it to the target for 2 seconds.",
-      "leveling": "Magic Damage:\n40 / 55 / 70 / 85 / 100 (+ 30% AP) (+ 2.5% of Zac's maximum health)\nTotal Magic Damage:\n80 / 110 / 140 / 170 / 200 (+ 60% AP) (+ 5% of Zac's maximum health)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                55,
+                70,
+                85,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                2.5,
+                2.5,
+                2.5,
+                2.5,
+                2.5
+              ],
+              "units": [
+                "% of Zac's maximum health",
+                "% of Zac's maximum health",
+                "% of Zac's maximum health",
+                "% of Zac's maximum health",
+                "% of Zac's maximum health"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                110,
+                140,
+                170,
+                200
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                5,
+                5,
+                5,
+                5,
+                5
+              ],
+              "units": [
+                "% of Zac's maximum health",
+                "% of Zac's maximum health",
+                "% of Zac's maximum health",
+                "% of Zac's maximum health",
+                "% of Zac's maximum health"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "While his arm is attached, his next basic attack has  200 range and is replaced by a second Stretching Strike, dealing the same magic damage and  slow.",
       "description3": "If the two Stretching Strikes affect different targets, he  roots both targets for 0.5 seconds and then  flings them towards each other for 300 range.",
       "description4": "If the two targets are near each other, they're instead slammed against each other, both taking the initial magic damage and applied the  slow again.",
@@ -113,7 +226,69 @@
       "icon": "Unstable Matter.png",
       "blurb": "Zac's body erupts, damaging nearby enemies.",
       "description": "Active: Zac's body explodes outward, dealing magic damage to all nearby enemies, capped against  minions and  monsters, and becoming  ghosted for 5 seconds against monsters hit.",
-      "leveling": "Magic Damage:\n25 / 40 / 55 / 70 / 85 (+ 4 / 5 / 6 / 7 / 8% (+ 2% per 100 AP) of target's maximum health)\nCapped Damage:\n225 / 240 / 255 / 270 / 285",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                40,
+                55,
+                70,
+                85
+              ],
+              "units": [
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% (+ 2% per 100 AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Capped Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                225,
+                240,
+                255,
+                270,
+                285
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Unstable Matter's  cooldown is reduced by 1 second every time Zac picks up a  Cell Division chunk.",
       "targeting": "None",
       "affects": "Enemies",
@@ -136,10 +311,73 @@
       "icon": "Elastic Slingshot.png",
       "blurb": "Zac attaches his arms to the ground and stretches back, launching himself forward.",
       "description": "Active: Zac channels up to 4.5 seconds, increasing Elastic Slingshot's  range over a cone in the target direction.",
-      "leveling": "Maximum Range Channel Duration:\n0.9 / 1 / 1.1 / 1.2 / 1.3",
+      "leveling": [
+        {
+          "attribute": "Maximum Range Channel Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                0.9,
+                1,
+                1.1,
+                1.2,
+                1.3
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Moving during the channel automatically cancels it, refunding 50% of the cost and  cooldown.",
       "description3": "Second Cast: Zac  dashes to the target location, dealing magic damage to all nearby enemies on impact and  knocking them up for 0.5 \u2212 1 (based on duration of the charge) seconds.",
-      "leveling3": "Magic Damage:\n60 / 110 / 160 / 210 / 260 (+ 90% AP)",
+      "leveling3": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                110,
+                160,
+                210,
+                260
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                90,
+                90,
+                90,
+                90
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -157,10 +395,151 @@
       "cooldown": "130 / 122.5 / 115 / 107.5 / 100",
       "icon": "Let's Bounce!.png",
       "description": "Passive: Increases  Cell Division's healing from chunks.",
-      "leveling": "Chunk Healing:\n5 / 5.5 / 6 / 6.5 / 7% of his maximum health",
+      "leveling": [
+        {
+          "attribute": "Chunk Healing",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                5,
+                5.5,
+                6,
+                6.5,
+                7
+              ],
+              "units": [
+                "% of his maximum health",
+                "% of his maximum health",
+                "% of his maximum health",
+                "% of his maximum health",
+                "% of his maximum health"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Active: After a small delay, Zac bounces 4 times over 3 seconds, gaining 20% \u2212 50% (based on duration) bonus movement speed, but becoming  disarmed and unable to use  Stretching Strikes and  Elastic Slingshot for the duration. There is a 1-second delay between each bounce.",
       "description3": "Each bounce deals magic damage to all nearby enemies,  knocking them back for 1 second and subsequently  slowing them by 20% for the same duration.",
-      "leveling3": "Magic Damage:\n140 / 175 / 210 / 245 / 280 (+ 40% AP)\nReduced Damage:\n70 / 87.5 / 105 / 122.5 / 140 (+ 20% AP)\nMaximum Single-Target Damage:\n350 / 437.5 / 525 / 612.5 / 700 (+ 100% AP)",
+      "leveling3": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                140,
+                175,
+                210,
+                245,
+                280
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Reduced Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                87.5,
+                105,
+                122.5,
+                140
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Single-Target Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                350,
+                437.5,
+                525,
+                612.5,
+                700
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description4": "Enemies can be damaged by multiple bounces, with each beyond the first dealing 50% damage but not  displacing them.",
       "targeting": "Ground",
       "affects": "Enemies, Self",

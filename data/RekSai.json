@@ -67,7 +67,7 @@
       "targeting": "Passive",
       "affects": "Self",
       "spelleffects": "Heal",
-      "notes": "* Fury bar changes from yellow to red when full."
+      "notes": "*  Fury bar changes from Yellow to Red when full."
     }
   },
   "skill_q": {
@@ -80,13 +80,92 @@
       "icon": "Queen's Wrath.png",
       "blurb": "Rek'Sai's next 3 basic attacks deal bonus Physical Damage to nearby enemies.",
       "description": "Unburrowed - Active: Rek'Sai's next three basic attacks within 5 seconds deal  bonus physical damage to her target and all surrounding enemies. The damage to the primary target is affected by  critical strike modifiers.",
-      "leveling": "Physical Damage:\n20 / 25 / 30 / 35 / 40 (+ 50% bonus AD)\nTotal Damage:\n60 / 75 / 90 / 105 / 120 (+ 150% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                75,
+                90,
+                105,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                150,
+                150,
+                150,
+                150
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Queen's Wrath resets Rek'Sai's basic attack timer.",
-      "targeting": "None",
+      "targeting": "Self / Auto",
       "affects": "Enemies",
       "damagetype": "Physical",
-      "spelleffects": "False",
-      "notes": "* Queen's Wrath's bonus damage applies against turrets.\n Queen's Wrath ends and goes on cooldown if Rek'Sai is  burrowed for more than 1 second.\n PENDING FOR TEST: Queen's Wrath has a fixed attack animation forbidding Rek'Sai from attacking faster if she has over 2.0 attack speed.\n Queen's Wrath's enhanced attacks apply other on-hit effects, on-attack effects, and life steal but do not affect structures. The damage to additional targets is not affected by these.\n Does not apply  Hunter's Talisman to surrounding targets.\n PENDING FOR TEST Interaction with  Spirit's Refuge,  Counter Strike, and  blind."
+      "spelleffects": "Proc",
+      "notes": "* Queen's Wrath's bonus damage applies against turrets.\n Queen's Wrath ends and goes on cooldown if Rek'Sai is  burrowed for more than 1 second.\n PENDING FOR TEST: Queen's Wrath has a fixed attack animation forbidding Rek'Sai from attacking faster if she has over 2.0 attack speed.\n Queen's Wrath's enhanced attacks apply other on-hit effects, on-attack effects, and life steal but do not affect structures. The damage to additional targets is not affected by these.\n Does not apply  Hunter's Talisman to surrounding targets.\n PENDING FOR TEST: Queen's Wrath interactions with  dodging,  blocking, and  blinding effects."
     },
     "Prey Seeker": {
       "name": "Prey Seeker",
@@ -97,7 +176,64 @@
       "icon": "Prey Seeker.png",
       "blurb": "While Burrowed, Rek'Sai launches a burst of void-charged earth that deals Physical Damage and reveals enemies hit.",
       "description": "Burrowed - Active: Rek'Sai fires a void-charged pulse in a target direction, stopping at the first enemy hit, dealing physical damage to enemies in the area and  revealing them for 2.5 seconds.",
-      "leveling": "Physical Damage:\n60 / 90 / 120 / 150 / 180 (+ 50% bonus AD) (+ 70% AP)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                90,
+                120,
+                150,
+                180
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Physical",
@@ -118,9 +254,9 @@
       "blurb": "Rek'Sai burrows into the ground, gaining new abilities and increased Movement Speed. Her vision range is reduced and she cannot use basic attacks.",
       "description": "Unburrowed - Active: Rek'Sai burrows into the ground,  self-disarming and reducing her sight radius to 250, but gaining 15 / 20 / 25 / 30 (based on level)  bonus movement speed, becoming  ghosted, accessing an alternate set of basic abilities, and activating Tremor Sense.",
       "description2": "Tremor Sense: Rek'Sai gains  obscured vision of nearby enemy and neutral units in fog of war every 1.5 seconds if they are moving.",
-      "targeting": "None",
+      "targeting": "Self / Buff",
       "affects": "Self",
-      "notes": "* Rek'Sai Immediately burrows on respawn once she has at least one point in Burrow.\n Burrow has no cast time and does not interrupt Rek'Sai's previous orders.\n Enemies detected by Tremor Sense are displayed as rings on the ground (champions display much larger ones and play a sound effect for Rek'Sai).\n Enemies standing still while Rek'Sai is nearby are insensible to Tremor Sense.\n\n Burrow briefly  slows displaced enemies.\n Rek'Sai does not gain  obscured vision while  nearsighted."
+      "notes": "* Rek'Sai immediately burrows on respawn once she has at least one point in Burrow.\n Burrow has no cast time and does not interrupt Rek'Sai's previous orders.\n Enemies detected by Tremor Sense are displayed as rings on the ground (champions display much larger ones and play a sound effect audible to both allies and enemies).\n Enemies standing still while Rek'Sai is nearby are insensible to Tremor Sense.\n\n Burrow briefly  slows  displaced enemies.\n Rek'Sai does not gain  obscured vision while  nearsighted.\n\n \t  \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tRek'Sai sensing a nearby enemy with Tremors Sense."
     },
     "Unburrow": {
       "name": "Unburrow",
@@ -133,14 +269,54 @@
       "icon": "Unburrow.png",
       "blurb": "While Burrowed, Rek'Sai may cast Un-burrow to knock up and damage nearby enemies.",
       "description": "Burrowed - Active: Rek'Sai bursts out of the ground, dealing physical damage to surrounding enemies and  knocking them aside 250 units. The enemy closest to the center is  knocked up for 1 second instead, and cannot be affected again by Unburrow for some time.",
-      "leveling": "Physical Damage:\n55 / 70 / 85 / 100 / 115 (+ 80% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                70,
+                85,
+                100,
+                115
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Rek'Sai can also trigger Unburrow by issuing an attack command, applying the full  knock up against her target.",
-      "targeting": "None",
+      "targeting": "Auto",
       "affects": "Self / Enemies",
       "damagetype": "Physical",
-      "spelleffects": "Area of effect",
+      "spelleffects": "spellaoe",
       "spellshield": "True",
-      "notes": "* Unburrow's per-target cooldown only applies to targets affected by the full  knock-up, but provides immunity to all effects of the ability.\n Unburrow has no cast time and does not interrupt Rek'Sai's previous orders.\n Unburrow is still considered an ability and is thus stopped by  silence. She can basic attack normally during this time, without leaving unburrow."
+      "notes": "* Unburrow's per-target  cooldown only applies to targets affected by the full  knock-up, but provides immunity to all effects of the ability.\n Unburrow has no cast time and does not interrupt Rek'Sai's previous orders.\n Unburrow is still considered an ability and is thus stopped by  silence. She can basic attack normally during this time, without leaving unburrow."
     }
   },
   "skill_e": {
@@ -153,13 +329,93 @@
       "icon": "Furious Bite.png",
       "blurb": "Rek'Sai bites her target, dealing double and True Damage if she has max Fury.",
       "description": "Unburrowed - Active: Rek'Sai bites the target enemy, dealing physical damage.",
-      "leveling": "Physical Damage:\n50 / 60 / 70 / 80 / 90 (+ 85% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                60,
+                70,
+                80,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                85,
+                85,
+                85,
+                85,
+                85
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "At maximum  Fury the damage is doubled and converted to  true damage.",
-      "leveling2": "True Damage:\n100 / 120 / 140 / 160 / 180 (+ 170% bonus AD)",
+      "leveling2": [
+        {
+          "attribute": "True Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                120,
+                140,
+                160,
+                180
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                170,
+                170,
+                170,
+                170,
+                170
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
-      "damagetype": "Physical / True",
-      "spelleffects": "Single target",
+      "damagetype": "Physical damage /  True damage",
+      "spelleffects": "spell",
       "spellshield": "True",
       "notes": "* No additional details."
     },
@@ -177,7 +433,7 @@
       "description2": "Rek'Sai can have up to 8 pairs of entrances active on the map at the same time. Enemy  champions can destroy a Tunnel by standing on either entrance for 1.5 seconds.",
       "targeting": "Direction",
       "affects": "Self",
-      "notes": "* Tunnel entrances can be targeted by allied movement abilities ( Leap Strike,  Shunpo,  Safeguard) and by  Teleport.\n Tunnel entrances are visible on allied champions' minimaps, while enemies must first gain  sight of one before it becomes visible on theirs (the opposite entrance is not revealed).\n Enemy champions that destroy a Tunnel are each granted  5.\n Destroying a Tunnel while Rek'Sai is traversing it will not prevent her from reaching the opposite entrance.\n\n Rek'Sai exits a Tunnel the same way she entered (either  Unburrowed or  Burrowed, no switching).\n An  Unburrowed Rek'Sai is considered to be  Burrowed while inside a Tunnel. She will gain her  Burrowed abilities (unusable) suffer from  nearsight, and activate Tremor Sense, but will not be healed by  Fury of the Xer'Sai (unless  Burrowed prior to entering the Tunnel).\n\n Rek'Sai can Tunnel through walls if she dashes close to them and the wall is thin enough to allow the opposite entrance to spawn on the other side."
+      "notes": "* Tunnel entrances can be targeted by allied movement abilities ( Leap Strike,  Shunpo,  Safeguard,  Teleport).\n Tunnel entrances are  visible on allied champions' minimaps, while enemies must first gain  sight of one before it becomes visible on theirs (the opposite entrance is not revealed).\n Enemy champions that destroy a Tunnel are each granted  5.\n Destroying a Tunnel while Rek'Sai is traversing it will not prevent her from reaching the opposite entrance.\n\n Rek'Sai exits a Tunnel the same way she entered (either  Unburrowed or  Burrowed, no switching).\n An  Unburrowed Rek'Sai is considered to be  Burrowed while inside a Tunnel. She will gain her  Burrowed abilities (unusable), suffer from the self  nearsight, and activate Tremor Sense, but will not be  healed by  Fury of the Xer'Sai (unless  Burrowed prior to entering the Tunnel).\n If Rek'Sai enters a Tunnel while unburrowed, Rek'Sai will take longer to enter the tunnel because Rek'Sai will initiate the burrow animation before entering the tunnel. Rek'Sai will unburrow immediately after exiting the Tunnel, knocking up the nearest enemy and applying damage. This does not put  Burrow on cooldown.\n\n Rek'Sai can Tunnel through terrain if she dashes close to them and the wall is thin enough to allow the opposite entrance to spawn on the other side.\n Rek'Sai can be blocked from using a tunnel entrance if a ward is placed directly over it, because the cursor's target selection prioritizes wards over tunnel entrances."
     }
   },
   "skill_r": {
@@ -191,15 +447,72 @@
       "blurb": "Rek'Sai dives underground and leaps towards her target, dealing massive damage.",
       "description": "Passive: Rek'Sai's applies Mark as Prey to enemy champions she damaged in the last 5 seconds.",
       "icon2": "Void Rush.png",
-      "description2": "Active: Rek'Sai selects an enemy champion with Mark as Prey and  vanishes into the ground. After 1.5 seconds, she emerges from the ground near her target and  pounces  unstoppably a fixed distance in their direction to deal physical damage if she hits them.",
-      "leveling2": "Physical Damage:\n100 / 175 / 250 / 325 / 400 (+ 175% bonus AD) (+ 20 / 22.5 / 25 / 27.5 / 30% of target's missing health)",
+      "description2": "Active:  Rek'Sai selects an enemy champion with Mark as Prey and  vanishes into the ground. After 1.5 seconds, she emerges from the ground near her target and  pounces  unstoppably a fixed distance in their direction to deal physical damage if she hits them.",
+      "leveling2": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                175,
+                250,
+                325,
+                400
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                175,
+                175,
+                175,
+                175,
+                175
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                22.5,
+                25,
+                27.5,
+                30
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% of target's missing health"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "The damage can be dodged if the target moves 1500 units away.",
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "Physical",
-      "spelleffects": "Single target",
+      "spelleffects": "spell",
       "spellshield": "True",
-      "notes": "* The ability can be dodged if the target becomes  untargetable.\n Rek'Sai will follow the target even if they  dash or  blink, up to the maximum range.\n Rek'Sai can activate Void Rush while  Burrowed or  Unburrowed.\n The target champion will glow once Rek'Sai  Burrows to them, followed by a global screech (will be heard by enemies even if they don't have  sight of Rek'Sai and/or her destination)."
+      "notes": "* Void Rush can be dodged if the target becomes  untargetable.\n Rek'Sai will follow the target even if they  dash or  blink, up to the maximum range.\n Rek'Sai can activate Void Rush while  Burrowed or  Unburrowed.\n She will always emerge as Unburrowed.\n\n The target champion will glow once Rek'Sai  Burrows to them, followed by a global screech (will be heard by enemies even if they don't have  sight of Rek'Sai and/or her destination)."
     }
   }
 }

@@ -76,9 +76,167 @@
       "icon": "Rampage.png",
       "blurb": "Hecarim cleaves nearby enemies dealing physical damage.",
       "description": "Active: Hecarim cleaves nearby enemies, dealing  physical damage, reduced to 66.6% against minions.",
-      "leveling": "Physical Damage:\n55 / 95 / 135 / 175 / 215 (+ 70% bonus AD)\nMinion damage:\n36.67 / 63.33 / 90 / 116.67 / 143.33 (+ 46.6% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                95,
+                135,
+                175,
+                215
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Minion damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                36.67,
+                63.33,
+                90,
+                116.67,
+                143.33
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                46.6,
+                46.6,
+                46.6,
+                46.6,
+                46.6
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If Hecarim damages at least one enemy with Rampage, its base  cooldown is reduced by 1 second and the damage is increased by 5% for 8 seconds, stacking up to two times.",
-      "leveling2": "Maximum Damage:\n60.5 / 104.5 / 148.5 / 192.5 / 236.5 (+ 77% bonus AD)\nMaximum Minion damage:\n40.33 / 69.67 / 99 / 128.33 / 157.67 (+ 51.33% bonus AD)",
+      "leveling2": [
+        {
+          "attribute": "Maximum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60.5,
+                104.5,
+                148.5,
+                192.5,
+                236.5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                77,
+                77,
+                77,
+                77,
+                77
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Minion damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40.33,
+                69.67,
+                99,
+                128.33,
+                157.67
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                51.33,
+                51.33,
+                51.33,
+                51.33,
+                51.33
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Auto",
       "affects": "Self, Enemies",
       "damagetype": "Physical",
@@ -99,9 +257,111 @@
       "icon": "Spirit of Dread.png",
       "blurb": "Hecarim deals magic damage to nearby enemies for a short duration. Hecarim gains Health equal to a percentage of any damage those enemies suffer.",
       "description": "Active: Hecarim surrounds himself with the spirit of dread for 4 seconds, dealing  magic damage per second to all enemies within its reach.",
-      "leveling": "Magic Damage Per Second:\n20 / 30 / 40 / 50 / 60 (+ 20% AP)\nTotal Magic Damage:\n80 / 120 / 160 / 200 / 240 (+ 80% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage Per Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                30,
+                40,
+                50,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                120,
+                160,
+                200,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "While Spirit of Dread is active, Hecarim is  healed for 30% of the damage taken by enemies from any source within the area, capped from minions and monsters.",
-      "leveling2": "Capped Healing:\n90 / 120 / 150 / 180 / 210",
+      "leveling2": [
+        {
+          "attribute": "Capped Healing",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                120,
+                150,
+                180,
+                210
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Auto",
       "affects": "Self, Enemies",
       "damagetype": "Magic",
@@ -122,7 +382,86 @@
       "blurb": "Hecarim gains increasing Movement Speed and can move through units for a short duration. His next attack knocks the target back and deals additional physical damage based on the distance he has traveled since activating the ability.",
       "description": "Active: Hecarim is temporarily  ghosted and gains  25% \u2212 75% (based on time active) bonus movement speed for 4 seconds.",
       "description2": "While in effect, Hecarim's next basic attack gains 50 \u2212 250 (based on distance traveled)  bonus range and causes him to  dash to the target,  knocking them back 250 \u2212 450 (based on distance traveled) units and dealing modified physical damage, increased by 0% \u2212 100% (based on distance traveled), and ending the ability in the process.",
-      "leveling2": "Minimum Physical Damage:\n45 / 75 / 105 / 135 / 165 (+ 50% bonus AD)\nMaximum Physical Damage:\n90 / 150 / 210 / 270 / 330 (+ 100% bonus AD)",
+      "leveling2": [
+        {
+          "attribute": "Minimum Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                75,
+                105,
+                135,
+                165
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                150,
+                210,
+                270,
+                330
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Self",
       "damagetype": "Physical",
@@ -143,7 +482,43 @@
       "icon": "Onslaught of Shadows.png",
       "blurb": "Hecarim summons spectral riders and charges forward, dealing magic damage in a line. Hecarim creates a shockwave when he finishes his charge, causing nearby enemies to flee in terror.",
       "description": "Active: Hecarim summons spectral riders and  dashes  unstoppably in the target direction with them, dealing magic damage to all enemies in their path.",
-      "leveling": "Magic damage:\n150 / 250 / 350 (+ 100% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                250,
+                350
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Enemies within range of where Hecarim stops are also made to  flee from him for 0.75 \u2212 1.5 (based on distance traveled) seconds, also gradually  slowing them by up to 99% over the duration. This slow cannot be reduced.",
       "description3": "The wave of spectral riders travels through Onslaught of Shadows's full length, regardless of where Hecarim himself stops.",
       "targeting": "Direction / Ground",

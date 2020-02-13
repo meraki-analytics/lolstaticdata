@@ -79,7 +79,47 @@
       "icon": "Rupture.png",
       "blurb": "Ruptures the ground at target location, popping enemy units into the air, dealing damage and slowing them.",
       "description": "Active: Cho'Gath gains  sight of the target area which, after a 0.625 seconds delay, he ruptures dealing  magic damage and  knocking up enemies hit for 1 second,  slowing them by 60% for 1.5 seconds afterwards.",
-      "leveling": "Magic damage:\n80 / 135 / 190 / 245 / 300 (+ 100% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                135,
+                190,
+                245,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground-targeted",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -101,7 +141,69 @@
       "icon": "Feral Scream.png",
       "blurb": "Cho'Gath unleashes a terrible scream at enemies in a cone, dealing magic damage and Silencing enemies for a few seconds.",
       "description": "Active: Cho'Gath roars in the target direction, dealing magic damage to enemies in a cone and  silencing them for a duration.",
-      "leveling": "Magic damage:\n75 / 125 / 175 / 225 / 275 (+ 70% AP)\nSilence:\n1.6 / 1.7 / 1.8 / 1.9 / 2",
+      "leveling": [
+        {
+          "attribute": "Magic damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                125,
+                175,
+                225,
+                275
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Silence",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1.6,
+                1.7,
+                1.8,
+                1.9,
+                2
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction-targeted",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -124,7 +226,142 @@
       "icon": "Vorpal Spikes.png",
       "blurb": "Cho'Gath's attacks release deadly spikes, dealing damage and slowing all enemy units in front of him.",
       "description": "Active: Cho'Gath's next 3 basic attacks within 6 seconds have  50 bonus range and launch a volley of spikes in a line, dealing magic damage and applying a decaying  slow over the next 1.5 seconds to enemies hit.",
-      "leveling": "Magic Damage:\n22 / 34 / 46 / 58 / 70 (+ 30% AP) (+ 3% (+ 0.5% per  Feast stack) of target's maximum health)\nMaximum Damage:\n66 / 102 / 138 / 174 / 210 (+ 90% AP) (+ 9% (+ 1.5% per  Feast stack) of target's maximum health)\nSlow:\n30 / 35 / 40 / 45 / 50%",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                22,
+                34,
+                46,
+                58,
+                70
+              ],
+              "units": [
+                "   of target's maximum health)",
+                "   of target's maximum health)",
+                "   of target's maximum health)",
+                "   of target's maximum health)",
+                "   of target's maximum health)"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                3,
+                3,
+                3,
+                3,
+                3
+              ],
+              "units": [
+                "% (+ 0.5% per  Feast stack",
+                "% (+ 0.5% per  Feast stack",
+                "% (+ 0.5% per  Feast stack",
+                "% (+ 0.5% per  Feast stack",
+                "% (+ 0.5% per  Feast stack"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                66,
+                102,
+                138,
+                174,
+                210
+              ],
+              "units": [
+                "   of target's maximum health)",
+                "   of target's maximum health)",
+                "   of target's maximum health)",
+                "   of target's maximum health)",
+                "   of target's maximum health)"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                90,
+                90,
+                90,
+                90
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                9,
+                9,
+                9,
+                9,
+                9
+              ],
+              "units": [
+                "% (+ 1.5% per  Feast stack",
+                "% (+ 1.5% per  Feast stack",
+                "% (+ 1.5% per  Feast stack",
+                "% (+ 1.5% per  Feast stack",
+                "% (+ 1.5% per  Feast stack"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                35,
+                40,
+                45,
+                50
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Vorpal Spikes resets Cho'Gath's basic attack timer.",
       "targeting": "None",
       "affects": "Self / Enemies",
@@ -147,10 +384,100 @@
       "icon": "Feast.png",
       "blurb": "Devours an enemy unit, dealing a high amount of true damage. If the target is killed, Cho'Gath grows, gaining maximum Health.",
       "description": "Active: Cho'Gath attempts to eat the target enemy, dealing  true damage. Against non-champions, the base damage is increased to 1000.",
-      "leveling": "True Damage to Champions:\n300 / 475 / 650 (+ 50% AP) (+ 10% bonus health)",
+      "leveling": [
+        {
+          "attribute": "True Damage to Champions",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                300,
+                475,
+                650
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                "% bonus health",
+                "% bonus health",
+                "% bonus health",
+                "% bonus health",
+                "% bonus health"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If Feast kills its target, Cho'Gath gains a Feast stack. Only 6 stacks can be gained from non-epic monsters or minions.",
       "description3": "Each stack grants  bonus health, which can stack up to 255 times, as well as  bonus attack range and increased size that stack up to 17 / 13 / 10 (based on Rank) times, for a maximum  75 bonus attack range.",
-      "leveling3": "Bonus Health Per Stack:\n80 / 120 / 160 bonus health\nBonus Attack Range Per Stack:\n4.5 / 6 / 7.5",
+      "leveling3": [
+        {
+          "attribute": "Bonus Health Per Stack",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                120,
+                160
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "bonus health Bonus Attack Range Per Stack",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                4.5,
+                6,
+                7.5
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies / Self",
       "damagetype": "True",

@@ -84,7 +84,69 @@
       "icon": "Neurotoxin.png",
       "blurb": "Human Form: Deals damage based upon how high the target's Health is.",
       "description": "Active: Elise fires toxin at the target enemy unit, dealing magic damage, capped against  monsters.",
-      "leveling": "Magic Damage:\n40 / 75 / 110 / 145 / 180 (+ 4% (+ 3% per 100 AP) of target's current health)\nMax. Monster Damage:\n115 / 175 / 235 / 295 / 355",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                75,
+                110,
+                145,
+                180
+              ],
+              "units": [
+                "  of target's current health) Max.",
+                "  of target's current health) Max.",
+                "  of target's current health) Max.",
+                "  of target's current health) Max.",
+                "  of target's current health) Max."
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                4,
+                4,
+                4,
+                4,
+                4
+              ],
+              "units": [
+                "% (+ 3% per 100 AP",
+                "% (+ 3% per 100 AP",
+                "% (+ 3% per 100 AP",
+                "% (+ 3% per 100 AP",
+                "% (+ 3% per 100 AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Monster Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                115,
+                175,
+                235,
+                295,
+                355
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "magic",
@@ -102,7 +164,69 @@
       "icon": "Venomous Bite.png",
       "blurb": "Spider Form: Lunges at an enemy and deals damage based upon how low their Health is.",
       "description": "Active: Elise  dashes to the target enemy and bites them, dealing magic damage, capped against monsters.",
-      "leveling": "Magic Damage:\n70 / 110 / 150 / 190 / 230 (+ 8% (+ 3% per 100 AP) of target's missing health)\nMax. Monster Damage:\n145 / 210 / 275 / 340 / 405",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                110,
+                150,
+                190,
+                230
+              ],
+              "units": [
+                "  of target's missing health) Max.",
+                "  of target's missing health) Max.",
+                "  of target's missing health) Max.",
+                "  of target's missing health) Max.",
+                "  of target's missing health) Max."
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                8,
+                8,
+                8,
+                8,
+                8
+              ],
+              "units": [
+                "% (+ 3% per 100 AP",
+                "% (+ 3% per 100 AP",
+                "% (+ 3% per 100 AP",
+                "% (+ 3% per 100 AP",
+                "% (+ 3% per 100 AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Monster Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                145,
+                210,
+                275,
+                340,
+                405
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If there are active  spiderlings or a  votatile spiderling nearby, they will  dash alongside Elise towards Venomous Bite's target and reprioritize them.",
       "targeting": "Unit",
       "affects": "Enemies",
@@ -125,7 +249,47 @@
       "blurb": "Human Form: Releases a venom-gorged Spiderling that explodes when it nears a target.",
       "description": "Active: Elise summons an  untargetable venom-gorged spider for 3 seconds, which moves in the target direction.",
       "description2": "The spider explodes upon contact with an enemy unit or at the end of its lifespan, dealing magic damage to nearby enemies.",
-      "leveling2": "Magic Damage:\n60 / 105 / 150 / 195 / 240 (+ 95% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                105,
+                150,
+                195,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                95,
+                95,
+                95,
+                95,
+                95
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "If the spider does not hit an enemy before reaching the target location, it chases down a nearby enemy, prioritizing  champions. The spider gains  bonus movement speed, based on its proximity to its target.",
       "targeting": "Direction / Auto",
       "affects": "Enemies",
@@ -142,9 +306,55 @@
       "icon": "Skittering Frenzy.png",
       "blurb": "Spider Form: Elise and her Spiderlings gain Attack Speed.",
       "description": "Passive: Elise's  Spiderlings gain  bonus attack speed.",
-      "leveling": "Passive Attack Speed:\n5 / 10 / 15 / 20 / 25%",
+      "leveling": [
+        {
+          "attribute": "Passive Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                5,
+                10,
+                15,
+                20,
+                25
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Active: Elise and her  Spiderlings gain  bonus attack speed for 3 seconds.",
-      "leveling2": "Active Attack Speed:\n60 / 80 / 100 / 120 / 140%",
+      "leveling2": [
+        {
+          "attribute": "Active Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                80,
+                100,
+                120,
+                140
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Skittering Frenzy resets Elise's autoattack timer.",
       "targeting": "Buff / Self",
       "affects": "Spiderlings, Self",
@@ -165,7 +375,30 @@
       "icon": "Cocoon.png",
       "blurb": "Human Form: Stuns the first enemy unit hit and reveals them if they are not stealthed.",
       "description": "Active: Elise fires a web in the target direction, granting  sight of the first enemy hit for 1 second and  stunning them.",
-      "leveling": "Stun Duration:\n1.6 / 1.7 / 1.8 / 1.9 / 2",
+      "leveling": [
+        {
+          "attribute": "Stun Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1.6,
+                1.7,
+                1.8,
+                1.9,
+                2
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "spellshield": "True",
@@ -182,7 +415,30 @@
       "blurb": "Spider Form: Elise and her Spiderlings ascend into the air and then descend upon target enemy.",
       "description": "Active: Elise lifts up into the air, becoming  untargetable for up to 2 seconds and  revealing the area for the duration. While she is in the air she can select a target to instantly descend upon.",
       "description2": "If cast directly on an enemy, Elise automatically descends upon them after 1 second. Upon landing, Elise's  Spider Queen bonuses are increased for 5 seconds.",
-      "leveling2": "Spider Effects Increase:\n40 / 50 / 70 / 85 / 100%",
+      "leveling2": [
+        {
+          "attribute": "Spider Effects Increase",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                50,
+                70,
+                85,
+                100
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Self / Unit",
       "affects": "Self, Enemies",
       "notes": "* When Elise casts Rappel a circle shows the area in which a target or location can be selected.\nElise only gains an increase in her passive bonuses if she directly targets an enemy with Rappel.\n Elise cannot descend outside the bounds of this circle.\n\n Elise can cast Rappel on any targetable enemy unit (minions, monsters, champions, pets, wards, and traps (provided she has  true sight)).\nIf Elise\u2019s target is closer than Rappel\u2019s max range, Elise will attempt to position herself behind that target.\nElise\u2019s descending location is determined upon target-cast. Elise\u2019s descending location does not change after being determined, even if her target moves."

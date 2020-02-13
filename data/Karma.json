@@ -76,7 +76,47 @@
       "icon": "Inner Flame.png",
       "blurb": "Karma sends forth a ball of spirit energy that explodes and deals damage upon hitting an enemy unit. Mantra Bonus: In addition to the explosion, Mantra increases the destructive power of her Inner Flame, creating a cataclysm which deals damage after a short delay.",
       "description": "Active: Karma fires a burst of spiritual energy in the target direction, detonating with the first enemy hit, dealing  magic damage and  slowing all enemies around the target by 35% for 1.5 seconds.",
-      "leveling": "Magic Damage:\n90 / 135 / 180 / 225 / 270 (+ 40% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                135,
+                180,
+                225,
+                270
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -91,15 +131,236 @@
       "skill": "Q",
       "effect radius": "300",
       "icon": "Soulflare.png",
-      "description": "Mantra - Active: Inner Flame detonates upon hitting an enemy or reaching maximum range, dealing bonus magic damage in an increased area.",
-      "leveling": "Bonus Magic Damage:\n 25 / 75 / 125 / 175 (+ 30% AP)\nTotal Burst Damage:\n90 / 135 / 180 / 225 / 270 (+  25 / 75 / 125 / 175) (+ 70% AP)",
+      "description": "Mantra - Active: Inner Flame detonates upon hitting an enemy or reaching maximum range, dealing bonus magic damage in an increased  area.",
+      "leveling": [
+        {
+          "attribute": "Bonus Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                75,
+                125,
+                175
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Burst Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                135,
+                180,
+                225,
+                270
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                75,
+                125,
+                175
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "A field lingers around the detonation for 1.5 seconds,  slowing enemies by 50%, after which it explodes, dealing magic damage to all enemies inside.",
-      "leveling2": "Detonation Damage:\n 35 / 140 / 245 / 350 (+ 60% AP)\nTotal Bonus Damage:\n 60 / 215 / 370 / 525 (+ 90% AP)\nTotal Magic Damage:\n90 / 135 / 180 / 225 / 270 (+  60 / 215 / 370 / 525) (+ 130% AP)",
+      "leveling2": [
+        {
+          "attribute": "Detonation Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                140,
+                245,
+                350
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Bonus Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                215,
+                370,
+                525
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                90,
+                90,
+                90,
+                90
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                135,
+                180,
+                225,
+                270
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                215,
+                370,
+                525
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                130,
+                130,
+                130,
+                130,
+                130
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Soulflare scales with  Mantra's rank.",
-      "targeting": "Direction",
+      "targeting": "Direction / Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
-      "spelleffects": "Area of effect",
+      "spelleffects": "spellaoe",
       "spellshield": "Special",
       "projectile": "True",
       "notes": "*  Spell shield will block the initial impact from either ability but will not block Soulflare's field damage.\n The lingering field will place under the impacted enemy, rather than the impact point."
@@ -117,25 +378,165 @@
       "cooldown": "12",
       "icon": "Focused Resolve.png",
       "blurb": "Karma creates a tether between herself and a targeted enemy, dealing damage and revealing them. If the tether is not broken, the enemy will be rooted and damaged again. Mantra Bonus: Karma strengthens the link, healing herself and extending the root duration.",
-      "description": "Active: Karma exerts her will over a target enemy champion or monster, dealing magic damage and forming a tether between them for up to 2 seconds, during which the target is  revealed.",
-      "leveling": "Magic Damage:\n40 / 65 / 90 / 115 / 140 (+ 45% AP)",
-      "description2": "If the tether holds for the duration, the target is dealt the same magic damage and is  revealed and  rooted for a duration.",
-      "leveling2": "Total Magic Damage:\n80 / 130 / 180 / 230 / 280 (+ 90% AP)\n\nRoot Duration:\n1.4 / 1.55 / 1.7 / 1.85 / 2",
+      "description": "Active: Karma exerts her will over a target enemy  champion or  monster, dealing magic damage and forming a tether between them for up to 2 seconds, during which the target is revealed by  true sight.",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                65,
+                90,
+                115,
+                140
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                45,
+                45,
+                45,
+                45
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
+      "description2": "If the tether holds for the duration, the target is dealt the same magic damage and  rooted for a duration.",
+      "leveling2": [
+        {
+          "attribute": "Total Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                130,
+                180,
+                230,
+                280
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                90,
+                90,
+                90,
+                90
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Root Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1.4,
+                1.55,
+                1.7,
+                1.85,
+                2
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies / Self",
       "damagetype": "Magic",
-      "spelleffects": "DOT",
+      "spelleffects": "spellpersist",
       "spellshield": "Special",
       "projectile": "False",
-      "notes": "*  Spell shield will only block the tether's application, not the rooting from an already-applied one."
+      "notes": "*  Spell shield will only block the tether's application, not the rooting from an already-applied one.\n The  true sight duration is refreshed if the tether lasts."
     },
     "Renewal": {
       "name": "Renewal",
       "champion": "Karma",
       "skill": "W",
       "icon": "Renewal.png",
-      "description": "Mantra - Active: Focused Resolve's  root duration is increased, and  heals Karma for  20% (+ 1% per 100 AP) of missing health on-cast and once more when the target is  rooted, or if the target  dies while tethered.",
-      "leveling": "Total Root Duration:\n1.4 / 1.55 / 1.7 / 1.85 / 2 (+  0.5 / 0.75 / 1 / 1.25)",
+      "description": "Mantra - Active: Focused Resolve's  root duration is increased, and  heals Karma for  20% (+ 1% per 100 AP) of missing health on-cast and once more when the target is  rooted.",
+      "leveling": [
+        {
+          "attribute": "Total Root Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1.4,
+                1.55,
+                1.7,
+                1.85,
+                2
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                0.5,
+                0.75,
+                1,
+                1.25
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Renewal scales with  Mantra's rank.",
       "targeting": "Unit",
       "affects": "Enemies / Self",
@@ -143,7 +544,7 @@
       "spelleffects": "DOT",
       "spellshield": "Special",
       "projectile": "False",
-      "notes": "*  Spell shield will only block the tether's application, not the rooting from an already-applied one."
+      "notes": "*  Spell shield will only block the tether's application, not the rooting from an already-applied one.\n If the target dies while the tether persisted, the  heal is received again."
     }
   },
   "skill_e": {
@@ -158,7 +559,69 @@
       "icon": "Inspire.png",
       "blurb": "Karma summons a protective shield that absorbs incoming damage and increases the Movement Speed of the protected ally. Mantra Bonus: Energy radiates out from her target, strengthening the initial shield and applying Inspire to nearby allied champions.",
       "description": "Active: Karma  shields the target allied champion or herself for 2.5 seconds, granting them  bonus movement speed for 1.5 seconds.",
-      "leveling": "Shield:\n80 / 110 / 140 / 170 / 200 (+ 50% AP)\n\nBonus Movement Speed:\n40 / 45 / 50 / 55 / 60%",
+      "leveling": [
+        {
+          "attribute": "Shield",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                110,
+                140,
+                170,
+                200
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Bonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                45,
+                50,
+                55,
+                60
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit / Self",
       "affects": "Allies",
       "spelleffects": "Shield",
@@ -173,9 +636,155 @@
       "costtype": "Mana",
       "icon": "Defiance.png",
       "description": "Mantra - Active: Inspire's target receives bonus shield, and the effects are extended to allied champions near it, except they only gain 30% of the shield amount.",
-      "leveling": "Bonus Shield:\n 25 / 80 / 135 / 190 (+ 50% AP)\nTotal Target Shield:\n80 / 110 / 140 / 170 / 200 (+  25 / 80 / 135 / 190) (+ 100% AP)\nAllies' Shields:\n24 / 33 / 42 / 51 / 60 (+  7.5 / 24 / 40.5 / 57) (+ 30% AP)",
+      "leveling": [
+        {
+          "attribute": "Bonus Shield",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                80,
+                135,
+                190
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Target Shield",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                110,
+                140,
+                170,
+                200
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                80,
+                135,
+                190
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Allies' Shields",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                24,
+                33,
+                42,
+                51,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                7.5,
+                24,
+                40.5,
+                57
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Defiance scales with  Mantra's rank.",
-      "targeting": "Unit",
+      "targeting": "Unit / Self / Auto",
       "affects": "Allies",
       "spelleffects": "Shield",
       "notes": "* No additional notes."

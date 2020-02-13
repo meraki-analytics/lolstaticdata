@@ -61,9 +61,9 @@
       "icon": "Gnar OriginalSquare.png",
       "blurb": "While in combat Gnar generates Rage. At maximum Rage his next ability will transform him into Mega Gnar, granting increased survivability and access to new spells.",
       "description": "Innate - Mini Gnar: While in Mini Gnar form, he gains bonus  movement speed,  attack range, attack speed growth and  attack speed.",
-      "leveling": "Bonus Movespeed:\n10 \u2212  30 (based on level)\nTotal Movespeed:\n335 \u2212 355 (based on level)\nBonus Range:\n0 \u2212 100 (based on level)",
+      "leveling": "Bonus Movespeed:10 \u2212  30 (based on level)Total Movespeed:335 \u2212 355 (based on level)Bonus Range:0 \u2212 100 (based on level)",
       "icon2": "Rage Gene.png",
-      "description2": "Innate - Rage Gene: Mini Gnar generates 4 / 7 / 11 (based on level)  Rage over 2 seconds upon dealing or receiving damage. Against non-champions, basic attacks and  Boomerang Throw instantly generate   0.5 / 0.875 / 1.375 (based on level) Rage    12.5% of the amount  . Against champions,  Boomerang Throw instantly generates   1 / 1.75 / 2.75 (based on level) Rage    25% of the amount  , and basic attacks instantly generate   2 / 3.5 / 5.5 (based on level)    50% of the amount  .  Boomerang Throw can only generate Rage once per cast, and grants Rage based on the first enemy hit. Gnar's Rage decays if he has not dealt or taken damage in the last 13 seconds.",
+      "description2": "Innate - Rage Gene: Mini Gnar generates 4 / 7 / 11 (based on level)  Rage over 2 seconds upon dealing or receiving damage. Against non-champions, basic attacks and  Boomerang Throw instantly generate [ 0.5 / 0.875 / 1.375 (based on level) Rage ][ 12.5% of the amount ]. Against champions,  Boomerang Throw instantly generates [ 1 / 1.75 / 2.75 (based on level) Rage ][ 25% of the amount ], and basic attacks instantly generate [ 2 / 3.5 / 5.5 (based on level) ][ 50% of the amount ].  Boomerang Throw can only generate Rage once per cast, and grants Rage based on the first enemy hit. Gnar's Rage decays if he has not dealt or taken damage in the last 13 seconds.",
       "icon3": "Rage Gene 2.png",
       "description3": "At maximum  Rage, casting an ability or after 4 seconds will  transform him into  Mega Gnar for 15 seconds, during which Gnar's Rage depletes. Afterwards Gnar returns to Mini Gnar and is too  tired to generate Rage for 15 seconds. Gnar retains his  current percentage health when he returns to Mini Gnar.",
       "icon4": "Rage Gene 3.png",
@@ -85,7 +85,108 @@
       "icon": "Boomerang Throw.png",
       "blurb": "Gnar throws a boomerang that damages and slows enemies it hits before returning to him. If he catches the boomerang its cooldown is reduced.",
       "description": "Active: Gnar throws a boomerang forward in a line that deals  physical damage and  slows enemies for 2 seconds. The boomerang returns towards Gnar in a fixed line after reaching its maximum range or hitting an enemy, dealing 50% damage to subsequent targets.",
-      "leveling": "Physical Damage:\n5 / 45 / 85 / 125 / 165 (+ 115% AD)\nReduced Damage:\n2.5 / 22.5 / 42.5 / 62.5 / 82.5 (+ 57.5% AD)\nSlow:\n15 / 20 / 25 / 30 / 35%",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                5,
+                45,
+                85,
+                125,
+                165
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                115,
+                115,
+                115,
+                115,
+                115
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Reduced Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                2.5,
+                22.5,
+                42.5,
+                62.5,
+                82.5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                57.5,
+                57.5,
+                57.5,
+                57.5,
+                57.5
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                20,
+                25,
+                30,
+                35
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Each enemy can only be hit once. Catching the boomerang while in mid-air refunds 40% of its  maximum cooldown.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -106,7 +207,7 @@
       "icon": "Boulder Toss.png",
       "blurb": "Mega Gnar instead throws a boulder that stops on the first unit hit, damaging and slowing everything nearby. It can then be picked up to reduce the cooldown.",
       "description": "Active: Gnar throws a boulder that stops when it hits an enemy, applying  Boomerang Throw's  slow to all nearby enemies and dealing physical damage.",
-      "leveling": "Physical Damage:\n5 / 45 / 85 / 125 / 165 (+ 140% AD)",
+      "leveling": "Physical Damage:5 / 45 / 85 / 125 / 165 (+ 140% AD)",
       "description2": "Gnar can pick up the boulder by moving within 90 units of it, refunding 60% of its  maximum cooldown.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -125,7 +226,103 @@
       "icon": "Hyper.png",
       "blurb": "Gnar's attacks and spells hype him up, dealing bonus damage and granting him Movement Speed.",
       "description": "Passive: Every  third attack or ability on the same target within 3.5 seconds deals  bonus magic damage (capped against  monsters) and grants Gnar 30 / 45 / 60 / 75% (based on  GNAR!'s rank)  bonus movement speed that decays over 3 seconds.",
-      "leveling": "Bonus Magic Damage:\n10 / 20 / 30 / 40 / 50 (+ 6 / 8 / 10 / 12 / 14% of target's maximum health) (+ 100% AP)\nMaximum Bonus Damage To Monsters:\n100 / 150 / 200 / 250 / 300 (+ 100% AP)",
+      "leveling": [
+        {
+          "attribute": "Bonus Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                20,
+                30,
+                40,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                6,
+                8,
+                10,
+                12,
+                14
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% of target's maximum health"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Bonus Damage To Monsters",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                150,
+                200,
+                250,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Gnar gains Hyper's  bonus movement speed when he leaves  Mega form.",
       "targeting": "Passive",
       "affects": "Enemies",
@@ -144,7 +341,47 @@
       "icon": "Wallop.png",
       "blurb": "Mega Gnar is too enraged to be hyper and instead can rear up on his hind legs and smash down on the area in front of him, stunning enemies in an area.",
       "description": "Active: Gnar slams in the target direction, dealing physical damage to all enemies struck and  stunning them for 1.25 seconds.",
-      "leveling": "Physical Damage:\n25 / 55 / 85 / 115 / 145 (+ 100% AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                55,
+                85,
+                115,
+                145
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Physical",
@@ -164,10 +401,73 @@
       "icon": "Hop.png",
       "blurb": "Gnar leaps to a location and bounces off the head of any unit he lands on, traveling further.",
       "description": "Active: Gnar  leaps to a target location, gaining  bonus attack speed for 3 seconds.",
-      "leveling": "Attack Speed:\n20 / 30 / 40 / 50 / 60%",
+      "leveling": [
+        {
+          "attribute": "Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                30,
+                40,
+                50,
+                60
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If Gnar lands on a unit he will  bounce 525 units further in the same direction.",
       "description3": "Landing on an enemy deals physical damage and  slows it by 80% for 0.5 seconds.",
-      "leveling3": "Physical Damage:\n50 / 85 / 120 / 155 / 190 (+ 6% maximum health)",
+      "leveling3": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                85,
+                120,
+                155,
+                190
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                6,
+                6,
+                6,
+                6,
+                6
+              ],
+              "units": [
+                "% maximum health",
+                "% maximum health",
+                "% maximum health",
+                "% maximum health",
+                "% maximum health"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Physical",
@@ -186,7 +486,47 @@
       "icon": "Crunch.png",
       "blurb": "Mega Gnar is too large to bounce and instead lands with earth-shattering force, dealing damage in an area around him.",
       "description": "Active: Gnar  leaps to a target location and deals Hop's damage to nearby enemies on landing.",
-      "leveling": "Physical Damage:\n50 / 85 / 120 / 155 / 190 (+ 6% maximum health)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                85,
+                120,
+                155,
+                190
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                6,
+                6,
+                6,
+                6,
+                6
+              ],
+              "units": [
+                "% maximum health",
+                "% maximum health",
+                "% maximum health",
+                "% maximum health",
+                "% maximum health"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Hop and Crunch.png",
       "description2": "If Crunch is used to transform, Gnar will still be able to  bounce as per  Hop. Crunch's area of effect is dealt in both areas, though enemies can only be damaged once.",
       "description3": "Enemies Gnar lands directly on top of are dealt Hop's  slow.",
@@ -208,11 +548,170 @@
       "icon": "GNAR!.png",
       "blurb": "Mega Gnar throws everything around him in a chosen direction, dealing damage and slowing them. Any enemy that hits a wall is stunned and takes bonus damage.",
       "description": "Mini Gnar - Passive: Increases  Hyper's  bonus movement speed.",
-      "leveling": "Hyper Movement Speed:\n45 / 52.5 / 60 / 67.5 / 75%",
+      "leveling": [
+        {
+          "attribute": "Hyper Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                52.5,
+                60,
+                67.5,
+                75
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Mega Gnar - Active: After 0.4-seconds, Gnar  knocks nearby enemies up to 590 units in the target direction, dealing physical damage and  slowing them by 45%.",
-      "leveling2": "Physical Damage:\n200 / 250 / 300 / 350 / 400 (+ 20% bonus AD) (+ 50% AP)\nIncreased Damage:\n300 / 375 / 450 / 525 / 600 (+ 30% bonus AD) (+ 75% AP)",
+      "leveling2": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                250,
+                300,
+                350,
+                400
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Increased Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                300,
+                375,
+                450,
+                525,
+                600
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                75,
+                75,
+                75,
+                75
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Enemies that hit a wall take 50% bonus damage and are  stunned instead of  slowed.",
-      "leveling3": "Disable Duration:\n1.25 / 1.375 / 1.5 / 1.625 / 1.75",
+      "leveling3": [
+        {
+          "attribute": "Disable Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1.25,
+                1.375,
+                1.5,
+                1.625,
+                1.75
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction / Ground",
       "affects": "Enemies",
       "damagetype": "Physical",

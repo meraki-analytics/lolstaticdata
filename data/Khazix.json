@@ -62,13 +62,13 @@
       "description": "Innate - Isolation: Kha'Zix marks all enemy units who do not have any of their allies nearby as Isolated.  Taste Their Fear and  Void Spike have special interactions against Isolated targets.",
       "icon2": "Unseen Threat.png",
       "description2": "Innate: Kha'Zix gains Unseen Threat while out of enemy  sight, causing his next basic attack against an enemy champion to deal 14 \u2212 150 (based on level) (+ 40% bonus AD)  bonus magic damage and  slow them by 25% for 2 seconds.",
-      "targeting": "Passive",
+      "targeting": "Passive / Buff",
       "affects": "Enemies",
       "damagetype": "Magic",
       "spelleffects": "spell",
-      "onhiteffects": "true",
+      "onhiteffects": "True",
       "spellshield": "False",
-      "notes": "* All enemy units (including  monsters) are considered for the targeting of Isolated.\n Unseen Threat's damage will cause  Muramana's Shock damage to trigger twice with a single basic attack.\n The enhanced attack can  critically strike but the magic damage is not modified."
+      "notes": "* All enemy units (including  monsters) are considered for the targeting of Isolated.\n Unseen Threat's damage will cause  Muramana's Shock damage to trigger twice with a single basic attack.\n The enhanced attack can apply  on-hit effects and  critically strike (magic damage is not modified)."
     }
   },
   "skill_q": {
@@ -83,7 +83,86 @@
       "icon": "Taste Their Fear.png",
       "blurb": "Deals physical damage to the target. Damage increased on Isolated targets. If he chooses to Evolve Reaper Claws, this refunds a percent of it's cooldown against Isolated targets. Kha'Zix also gains increased range on his basic attacks and Taste Their Fear.",
       "description": "Active: Kha'Zix slashes the target enemy, dealing  physical damage, increased by 100% against Isolated targets.",
-      "leveling": "Physical damage:\n60 / 85 / 110 / 135 / 160 (+ 130% bonus AD)\nIsolation Physical Damage:\n120 / 170 / 220 / 270 / 320 (+ 260% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                85,
+                110,
+                135,
+                160
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                130,
+                130,
+                130,
+                130,
+                130
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Isolation Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                170,
+                220,
+                270,
+                320
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                260,
+                260,
+                260,
+                260,
+                260
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "Physical",
@@ -121,9 +200,89 @@
       "icon": "Void Spike.png",
       "blurb": "Kha'Zix fires exploding spikes that deal physical damage to enemies hit. Kha'Zix is healed if he is also within the explosion radius. If he chooses to Evolve Spike Racks, Void Spike now fires three spikes in a cone, slow enemies hit, and reveals enemy champions hit for 2 seconds. Isolated targets are slowed for extra.",
       "description": "Active: Kha'Zix fires a cluster of spikes in a line that detonates upon hitting an enemy dealing them physical damage.",
-      "leveling": "Physical Damage:\n85 / 115 / 145 / 175 / 205 (+ 100% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                85,
+                115,
+                145,
+                175,
+                205
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Kha'Zix  heals himself if he is within detonation radius.",
-      "leveling2": "Heal:\n60 / 85 / 110 / 135 / 160 (+ 50% AP)",
+      "leveling2": [
+        {
+          "attribute": "Heal",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                85,
+                110,
+                135,
+                160
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies, Self",
       "damagetype": "physical",
@@ -144,8 +303,7 @@
       "damagetype": "physical",
       "spelleffects": "aoe",
       "spellshield": "True",
-      "projectile": "true",
-      "notes": "* Void Spike is actually composed of two mini projectiles which proceed in the target direction in a helical pattern, meaning it's collision radius is somewhat random."
+      "projectile": "true"
     }
   },
   "skill_e": {
@@ -160,13 +318,53 @@
       "icon": "Leap.png",
       "blurb": "Kha'Zix leaps to an area, dealing physical damage upon landing. If he chooses to Evolve Wings, Leap's range increases by 200 and the cooldown resets on champion kill or assist.",
       "description": "Active: Kha'Zix  leaps to the target location, dealing physical damage to nearby enemies upon landing.",
-      "leveling": "Physical Damage:\n65 / 100 / 135 / 170 / 205 (+ 20% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                65,
+                100,
+                135,
+                170,
+                205
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "physical",
-      "spelleffects": "aoe",
+      "spelleffects": "spellaoe",
       "spellshield": "True",
-      "notes": "* Kha'Zix can still use summoner spells and activate items while mid-air.\n Kha'Zix is still targetable while jumping and is considered to be on the ground for the purposes of skillshots ( Enchanted Crystal Arrow,  Mystic Shot).\n Crowd control effects will take effect upon Kha'Zix landing.\n Displacements ( Headbutt,  Pulverize,  Rocket Grab,  Howling Gale,  Monsoon,  Fling,  Death Sentence,  Rolling Thunder) will cancel Leap and then take effect."
+      "notes": "* Kha'Zix can cast  Taste Their Fear on a target during the jump.\n He can also use summoner spells and active items.\n  Flash will  cancel the leap as it is considered a movement spell."
     },
     "Evolved Wings": {
       "name": "Evolved Wings",
@@ -211,6 +409,24 @@
       "targeting": "None",
       "affects": "Self",
       "notes": "* No additional details."
+    },
+    "Void Assault 2": {
+      "name": "Void Assault",
+      "champion": "Kha'Zix",
+      "skill": "R",
+      "cost": "100",
+      "costtype": "Mana",
+      "cooldown": "100 / 85 / 70",
+      "icon": "false",
+      "blurb": "Each rank allows Kha'Zix to evolve one of his abilities, giving it a unique additional effect. When activated, Kha'Zix becomes Invisible, triggering Unseen Threat and increasing Movement Speed. If he chooses to Evolve Adaptive Cloaking, while out of combat Kha'Zix also passively gains Void Assault upon entering a new brush.",
+      "description": "Passive: Each rank in Void Assault allows Kha'Zix to evolve one of his abilities, granting it additional effects.",
+      "icon2": "Void Assault.png",
+      "description2": "Active: Kha'Zix enters  invisibility for 1.25 seconds, gaining  40% bonus movement speed, and  ghosting while stealthed.",
+      "icon3": "Void Assault 2.png",
+      "description3": "After 2 seconds of leaving  stealth, and for the next 10 seconds, Void Assault can be cast a second time at no additional cost.",
+      "targeting": "Self",
+      "affects": "Self",
+      "notes": "* Void Assault has no  cast time and does not interrupt Kha'Zix's previous orders.\n Every time Void Assault is ranked, a secondary menu will pop up for Kha'Zix to select an ability to evolve, this can only be done once per ability.\n Selecting one will cause Kha'Zix to begin channeling, receiving the evolution when it ends (disabling or killing Kha'Zix while transforming will not stop him from gaining the evolution).\n The only way for Kha'Zix to evolve all of his abilities is to gain the fourth evolution point by being victorious in The Hunt is On! (by scoring a kill/assist on  Rengar)."
     }
   }
 }

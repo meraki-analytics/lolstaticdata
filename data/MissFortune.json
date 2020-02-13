@@ -81,7 +81,64 @@
       "icon": "Double Up.png",
       "blurb": "Miss Fortune fires a bullet at an enemy, damaging them and a target behind them. Both strikes can also apply Love Tap.",
       "description": "Active: Miss Fortune fires a shot at a target enemy that deals physical damage, which then bounces to hit another unit behind it. The shot applies on-hit effects, including  Love Tap.",
-      "leveling": "Physical Damage:\n20 / 40 / 60 / 80 / 100 (+ 100% AD) (+ 35% AP)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                40,
+                60,
+                80,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                35,
+                35,
+                35,
+                35
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Double Up's bounce prioritizes units directly behind the primary target.",
       "description3": "Double Up's bounce is affected by  critical strike modifiers. If Double Up kills its primary target, the bounce will critically strike.",
       "targeting": "Unit",
@@ -91,7 +148,7 @@
       "onhiteffects": "True",
       "spellshield": "True",
       "projectile": "True",
-      "notes": "*  Spell shields can be used by either target. A  spell shield on the primary target will not prevent the shot from bouncing.\n The second shot follows a priority order on targets within 500 units of the primary one:\n Enemy or neutral units within a 20  cone.\n Enemy or neutral units within a 40  cone.\n Enemy or neutral units within a 110  cone.\n Enemy or neutral units within 150 units in a 160  cone.\n\n Double Up's cast range adjusts based on Miss Fortune's attack range.\n Double Up can bounce to units in brush or in fog of war if they are in range of the primary target.\n The damage of a  critically striking second shot is 40 / 80 / 120 / 160 / 200 (+ 200% AD) (+ 70% AP) physical damage."
+      "notes": "*  Spell shields can be used by either target. A  spell shield on the primary target will not prevent the shot from bouncing.\n The second shot follows a priority order on targets within 500 units of the primary one:\n Enemy or neutral units within a 20\u00b0 cone.\n Enemy or neutral units within a 40\u00b0 cone.\n Enemy or neutral units within a 110\u00b0 cone.\n Enemy or neutral units within 150 units in a 160\u00b0 cone.\n\n Double Up's cast range adjusts based on Miss Fortune's attack range.\n Double Up can bounce to units in brush or in fog of war if they are in range of the primary target.\n The damage of a  critically striking second shot is 40 / 80 / 120 / 160 / 200 (+ 200% AD) (+ 70% AP) physical damage."
     }
   },
   "skill_w": {
@@ -105,10 +162,56 @@
       "icon": "Strut.png",
       "blurb": "Miss Fortune passively gains Movement Speed when not attacked. This ability can be activated to grant bonus Attack Speed for a short duration. While it's on cooldown, Love Taps reduce the remaining cooldown of Strut.",
       "description": "Passive - Strut: Miss Fortune gains  25 bonus movement speed if she has not taken damage in the last 5 seconds, excluding damage over time. This bonus is increased to a greater amount after another 5 seconds.",
-      "leveling": "Maximum Bonus Movement Speed:\n60 / 70 / 80 / 90 / 100",
+      "leveling": [
+        {
+          "attribute": "Maximum Bonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                70,
+                80,
+                90,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Guns Blazing.png",
       "description2": "Active - Guns Blazing: Miss Fortune gains  bonus attack speed for 4 seconds and brings Strut's passive effect to full power.",
-      "leveling2": "Bonus Attack Speed:\n40 / 55 / 70 / 85 / 100%",
+      "leveling2": [
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                55,
+                70,
+                85,
+                100
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Marking a new target with  Love Tap reduces Strut's  cooldown by 2 seconds.",
       "targeting": "None",
       "affects": "Self",
@@ -128,7 +231,108 @@
       "icon": "Make It Rain.png",
       "blurb": "Miss Fortune reveals an area with a flurry of bullets, dealing waves of damage to opponents and slowing them.",
       "description": "Active: Miss Fortune rains down hundreds of bullets onto the target area for 2 seconds,  slowing and dealing  magic damage every 0.25 seconds to units within the area.",
-      "leveling": "Magic Damage Per Tick:\n10 / 14.375 / 18.75 / 23.125 / 27.5 (+ 10% AP)\nMaximum Magic Damage:\n80 / 115 / 150 / 185 / 220 (+ 80% AP)\nSlow:\n40 / 45 / 50 / 55 / 60%",
+      "leveling": [
+        {
+          "attribute": "Magic Damage Per Tick",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                14.375,
+                18.75,
+                23.125,
+                27.5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                115,
+                150,
+                185,
+                220
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                45,
+                50,
+                55,
+                60
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -150,7 +354,67 @@
       "icon": "Bullet Time.png",
       "blurb": "Miss Fortune channels a flurry of bullets into a cone in front of her, dealing large amounts of damage to enemies. Each wave of Bullet Time can critically strike.",
       "description": "Active: Miss Fortune channels for 3 seconds while firing several waves of bullets in a cone towards the target location, with each wave dealing 75% AD (+ 20% AP) physical damage.",
-      "leveling": "Total Waves:\n12 / 13 / 14 / 15 / 16\nMinimum Total Damage:\n900 / 975 / 1050 / 1125 / 1200% AD (+ 240 / 260 / 280 / 300 / 320% AP)",
+      "leveling": [
+        {
+          "attribute": "Total Waves",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                12,
+                13,
+                14,
+                15
+              ],
+              "units": [
+                " /",
+                " /",
+                " /",
+                " /"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "16 Minimum Total Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                900,
+                975,
+                1050,
+                1125,
+                1200
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                240,
+                260,
+                280,
+                300,
+                320
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Each wave can  critically strike, dealing (20% +  5%) bonus physical damage.",
       "targeting": "Direction",
       "affects": "Enemies",

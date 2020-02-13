@@ -79,7 +79,47 @@
       "icon": "Spinning Axe.png",
       "blurb": "Draven's next attack will deal bonus physical damage. This axe will ricochet off the target high up into the air. If Draven catches it, he automatically readies another Spinning Axe. Draven can have two Spinning Axes at once.",
       "description": "Active: Draven starts spinning his axe, causing his next basic attack within 5.8 seconds to deal  bonus physical damage.",
-      "leveling": "Bonus Physical Damage:\n35 / 40 / 45 / 50 / 55 (+ 65 / 75 / 85 / 95 / 105% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Bonus Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                40,
+                45,
+                50,
+                55
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                65,
+                75,
+                85,
+                95,
+                105
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Draven Axe Indicator.png",
       "description2": "The spinning axe ricochets off the target high up into the air, landing 2 seconds later at a location determined by Draven's current movement. If Draven catches an axe, Spinning Axe is reapplied for no additional cost on his next basic attack.",
       "description3": "Draven can hold up to two Spinning Axes in his hands at once.",
@@ -104,7 +144,52 @@
       "icon": "Blood Rush.png",
       "blurb": "Draven gains increased Movement Speed and Attack Speed. The Movement Speed bonus decreases rapidly over its duration. Catching a Spinning Axe will refresh the cooldown of Blood Rush.",
       "description": "Active: Draven becomes  ghosted for 1.5 seconds, gaining  bonus attack speed for 3 seconds and  bonus movement speed which decays over 1.5 seconds.",
-      "leveling": "Bonus Attack Speed:\n20 / 25 / 30 / 35 / 40%\nMovement Speed:\n40 / 45 / 50 / 55 / 60%",
+      "leveling": [
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                45,
+                50,
+                55,
+                60
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Catching a  Spinning Axe resets Blood Rush's  cooldown.",
       "targeting": "Buff",
       "affects": "Self",
@@ -125,7 +210,69 @@
       "icon": "Stand Aside.png",
       "blurb": "Draven throws his axes, dealing physical damage to targets hit and knocking them aside. Targets hit are slowed.",
       "description": "Active: Draven throws his axes in a line, dealing physical damage to all enemies hit,  knocking them aside and  slowing them for 2 seconds.",
-      "leveling": "Physical Damage:\n75 / 110 / 145 / 180 / 215 (+ 50% bonus AD)\nSlow:\n20 / 25 / 30 / 35 / 40%",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                110,
+                145,
+                180,
+                215
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Physical",
@@ -149,11 +296,169 @@
       "icon": "Whirling Death.png",
       "blurb": "Draven hurls two massive axes to deal physical damage to each unit struck. Whirling Death slowly reverses direction and returns to Draven after striking an enemy champion. Draven may also activate this ability while the axes are in flight to cause it to return early. Deals less damage for each unit hit and resets when the axes reverse direction.",
       "description": "Active: Draven hurls two  massive axes in the target direction, dealing physical damage to all enemies struck.",
-      "leveling": "Physical Damage:\n175 / 225 / 275 / 325 / 375 (+ 110 / 120 / 130 / 140 / 150% bonus AD)\nTotal Physical Damage:\n350 / 450 / 550 / 650 / 750 (+ 220 / 240 / 260 / 280 / 300% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                175,
+                225,
+                275,
+                325,
+                375
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                110,
+                120,
+                130,
+                140,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                350,
+                450,
+                550,
+                650,
+                750
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                220,
+                240,
+                260,
+                280,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Whirling Death 2.png",
       "description2": "Upon reaching the edge of the map, striking an enemy champion, or upon reactivation, the axes slowly come to a stop before homing back to Draven, dealing the same damage to every enemy struck on the way back.",
       "description3": "Whirling Death deals 100% \u2212 40% (based on enemy hit) damage, this reduction resets when the axes reverse direction.",
-      "leveling3": "Minimum Physical Damage:\n70 / 90 / 110 / 130 / 150 (+ 44 / 48 / 52 / 56 / 60% bonus AD)\nMinimum Total Damage:\n140 / 180 / 220 / 260 / 300 (+ 88 / 96 / 104 / 112 / 120% bonus AD)",
+      "leveling3": [
+        {
+          "attribute": "Minimum Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                90,
+                110,
+                130,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                44,
+                48,
+                52,
+                56,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Minimum Total Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                140,
+                180,
+                220,
+                260,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                88,
+                96,
+                104,
+                112,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction / Ground",
       "affects": "Enemies",
       "damagetype": "Physical",

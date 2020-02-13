@@ -83,9 +83,111 @@
       "icon": "Flash Frost.png",
       "blurb": "Anivia brings her wings together and summons a sphere of ice that flies towards her opponents, chilling and damaging anyone in its path. When the sphere explodes it does moderate damage in a radius, stunning anyone in the area.",
       "description": "Active: Anivia launches a massive chunk of ice which flies toward the target location, dealing  magic damage and  slowing all enemies it passes through by 20% \u2212 40% (based on  Glacial Storm's Rank) for 3 seconds.",
-      "leveling": "Magic damage:\n60 / 85 / 110 / 135 / 160 (+ 45% AP)\nTotal Damage:\n120 / 170 / 220 / 270 / 320 (+ 90% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                85,
+                110,
+                135,
+                160
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                45,
+                45,
+                45,
+                45
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                170,
+                220,
+                270,
+                320
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                90,
+                90,
+                90,
+                90
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Recast: Anivia shatters the orb, dealing the same magic damage to enemies within the detonation and  stunning them.",
-      "leveling2": "Stun Duration:\n1.1 / 1.2 / 1.3 / 1.4 / 1.5",
+      "leveling2": [
+        {
+          "attribute": "Stun Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1.1,
+                1.2,
+                1.3,
+                1.4,
+                1.5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "At maximum range Flash Frost detonates automatically.",
       "targeting": "Direction-targeted / Ground-targeted",
       "affects": "Enemies",
@@ -108,7 +210,30 @@
       "icon": "Crystallize.png",
       "blurb": "Anivia condenses the moisture in the air into an impassable wall of ice to block all movement. The wall only lasts a short duration before it melts.",
       "description": "Active: Anivia summons an impassable wall of ice at the target location perpendicular to which way she is facing,  knocking units away from it. The wall lasts 5 seconds.",
-      "leveling": "Wall length:\n400 / 500 / 600 / 700 / 800",
+      "leveling": [
+        {
+          "attribute": "Wall length",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                400,
+                500,
+                600,
+                700,
+                800
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "notes": "* Crystallize's displacement triggers in-combat effects such as drawing turret aggro, applying  Elixir of Sorcery and  Sudden Impact. It will also trigger  Malzahar's  Void Shift.\n Anivia is granted an assist if the wall touches an enemy champion."
@@ -127,7 +252,86 @@
       "icon": "Frostbite.png",
       "blurb": "With a flap of her wings, Anivia blasts a freezing gust of wind at her target, dealing a low amount of damage. If the target was recently stunned by Flash Frost or damaged by a fully formed Glacial Storm, the damage they take is doubled.",
       "description": "Active: Anivia blasts the target with a freezing wind, dealing magic damage that is doubled against targets stunned by  Flash Frost within the last 3 seconds or damaged by a fully formed  Glacial Storm within the last 2 seconds.",
-      "leveling": "Magic damage:\n50 / 75 / 100 / 125 / 150 (+ 50% AP)\nEnhanced Damage:\n100 / 150 / 200 / 250 / 300 (+ 100% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                75,
+                100,
+                125,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Enhanced Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                150,
+                200,
+                250,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -151,7 +355,130 @@
       "icon": "Glacial Storm.png",
       "blurb": "Anivia summons a driving rain of ice and hail to damage her enemies and slow their advance.",
       "description": "Active: Anivia calls forth a driving rain of ice and hail at the target location, dealing magic damage each second to enemies within,  slowing them for 1 second.",
-      "leveling": "Magic damage per second:\n40 / 50 / 60 / 70 / 80 (+ 12.5% AP)\nEmpowered damage per second:\n120 / 150 / 180 / 210 / 240 (+ 37.5% AP)\nSlow:\n20 / 25 / 30 / 35 / 40%\nEmpowered Slow:\n30 / 37.5 / 45 / 52.5 / 60%",
+      "leveling": [
+        {
+          "attribute": "Magic damage per second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                50,
+                60,
+                70,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                12.5,
+                12.5,
+                12.5,
+                12.5,
+                12.5
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Empowered damage per second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                150,
+                180,
+                210,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                37.5,
+                37.5,
+                37.5,
+                37.5,
+                37.5
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Empowered Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                37.5,
+                45,
+                52.5,
+                60
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "The blizzard increases in size over 1.5 seconds. At maximum size, enemies within the area take 300% damage and suffer a 50% stronger slow which lasts 1.5 seconds.",
       "description3": "After Glacial Storm has been active for at least 1 second, Anivia can cast the ability again to deactivate it, dealing one last tick of damage. The ability will deactivate automatically if she gets too far away or runs out of  mana. Additionally, Glacial Storm is deactivated by all forms of  interrupting crowd control.",
       "targeting": "Ground",

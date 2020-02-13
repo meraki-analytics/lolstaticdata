@@ -83,12 +83,80 @@
       "icon": "Precision Protocol.png",
       "blurb": "Camille's next attack deals bonus damage and grants bonus movement speed. This spell can be recast for a short period of time, doing significantly increased bonus damage if Camille delays a period of time between the two attacks.",
       "description": "First cast - Active: Camille's next basic attack has  50 bonus range, deals bonus physical damage and grants  bonus movement speed for 1 second.",
-      "leveling": "Bonus Physical Damage:\n20 / 25 / 30 / 35 / 40% AD\nBonus Movement Speed:\n20 / 25 / 30 / 35 / 40%",
+      "leveling": [
+        {
+          "attribute": "Bonus Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "AD Bonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Precision Protocol 2.png",
       "description2": "Precision Protocol can then be recast within the next 3.5 seconds at no extra cost.",
       "icon3": "Precision Protocol 3.png",
       "description3": "Second cast - Active: If recast at least 1.5 seconds after the first attack, Precision Protocol's damage is doubled and 40% \u2212 100% (based on level) of the total damage is dealt as  true damage.",
-      "leveling3": "Increased Mixed Damage:\n40 / 50 / 60 / 70 / 80% AD",
+      "leveling3": [
+        {
+          "attribute": "Increased Mixed Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                50,
+                60,
+                70,
+                80
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description4": "Both casts of Precision Protocol reset Camille's basic attack timer. The attacks' animations can be cancelled by casting other abilities, but the attacks will still land.",
       "targeting": "Buff",
       "affects": "Self",
@@ -113,9 +181,167 @@
       "icon": "Tactical Sweep.png",
       "blurb": "Camille blasts in a cone after a delay, dealing damage. Enemies in the outer half are slowed and take extra damage, while also healing Camille.",
       "description": "Active: After a 1.1 second delay, Camille sweeps her leg to deal physical damage to all enemies in a cone in the target direction,  disarming herself for the duration.",
-      "leveling": "Physical Damage:\n70 / 100 / 130 / 160 / 190 (+ 60% bonus AD)\nNon-Epic Monster Damage:\n35 / 50 / 65 / 80 / 95 (+ 30% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                100,
+                130,
+                160,
+                190
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Non-Epic Monster Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                50,
+                65,
+                80,
+                95
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Enemies hit by the outer half of the cone take bonus physical damage and are  slowed by 80% that decays over 2 seconds, capped at 300 damage against  monsters. Camille is  healed for the bonus damage dealt against enemy  champions.",
-      "leveling2": "Outer Cone Bonus Damage:\n6 / 6.5 / 7 / 7.5 / 8% (+ 3.3% per 100 bonus AD) of target's maximum health\nBonus Non-Epic Monster Damage:\n3 / 3.25 / 3.5 / 3.75 / 4% (+ 1.6% per 100 bonus AD) of target's maximum health",
+      "leveling2": [
+        {
+          "attribute": "Outer Cone Bonus Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                6,
+                6.5,
+                7,
+                7.5,
+                8
+              ],
+              "units": [
+                "%  of target'",
+                "%  of target'",
+                "%  of target'",
+                "%  of target'",
+                "%  of target'"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                3.3,
+                3.3,
+                3.3,
+                3.3,
+                3.3
+              ],
+              "units": [
+                "% per 100 bonus AD",
+                "% per 100 bonus AD",
+                "% per 100 bonus AD",
+                "% per 100 bonus AD",
+                "% per 100 bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "s maximum health Bonus Non-Epic Monster Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                3,
+                3.25,
+                3.5,
+                3.75,
+                4
+              ],
+              "units": [
+                "%  of target's maximum health",
+                "%  of target's maximum health",
+                "%  of target's maximum health",
+                "%  of target's maximum health",
+                "%  of target's maximum health"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                1.6,
+                1.6,
+                1.6,
+                1.6,
+                1.6
+              ],
+              "units": [
+                "% per 100 bonus AD",
+                "% per 100 bonus AD",
+                "% per 100 bonus AD",
+                "% per 100 bonus AD",
+                "% per 100 bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Non-epic monsters take 50% damage from Tactical Sweep.",
       "description4": "Other abilities can be cast during the animation without cancelling it.",
       "targeting": "Direction",
@@ -157,9 +383,72 @@
       "icon": "Wall Dive.png",
       "blurb": "Camille pulls herself to a wall, leaping off and knocking up enemies upon landing.",
       "description": "Active: Camille  dashes in the target direction, dealing physical damage to enemies near the landing location. The range is doubled towards enemy  champions.",
-      "leveling": "Physical Damage:\n60 / 95 / 130 / 165 / 200 (+ 75% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                95,
+                130,
+                165,
+                200
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                75,
+                75,
+                75,
+                75
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "She prematurely stops upon colliding with an enemy champion,  knocking back and  stunning them and all nearby enemy champions for 0.75 seconds, while also gaining  bonus attack speed for 5 seconds.",
-      "leveling2": "Bonus Attack Speed:\n40 / 50 / 60 / 70 / 80%",
+      "leveling2": [
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                50,
+                60,
+                70,
+                80
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Other abilities besides  The Hextech Ultimatum can be cast while grappled or during the dash.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -183,9 +472,60 @@
       "blurb": "Camille dashes to target champion, anchoring them to the area. She also deals bonus magic damage to the target with her basic attacks.",
       "description": "Active: Camille becomes  untargetable and  leaps  unstoppably towards the target  enemy champion.",
       "description2": "When she lands, she creates a hexagonal zone around the target's current location for a duration,  interrupting them and  knocking away all other nearby enemies on impact.",
-      "leveling2": "Zone Duration:\n2.5 / 3.25 / 4",
+      "leveling2": [
+        {
+          "attribute": "Zone Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                2.5,
+                3.25,
+                4
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "The target cannot escape the zone through any means. While within the zone, Camille's basic attacks deal bonus magic damage.",
-      "leveling3": "Bonus Magic Damage:\n5 / 10 / 15 (+ 4 / 6 / 8% of target's current health)",
+      "leveling3": [
+        {
+          "attribute": "Bonus Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                5,
+                10,
+                15
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                4,
+                6,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "% of target's current health"
+              ]
+            }
+          ]
+        }
+      ],
       "description4": "The Hextech Ultimatum ends automatically within 1 second if Camille leaves the area or dies.",
       "targeting": "Unit / Buff",
       "affects": "Enemies, Self",

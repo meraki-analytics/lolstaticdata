@@ -33,8 +33,7 @@
     "pathing_radius": 50,
     "gameplay_radius": 80,
     "as_ratio": 0.625,
-    "attack_delay_offset": -0.150000005960464,
-    "aram_dmg_dealt": 0.95
+    "attack_delay_offset": -0.150000005960464
   },
   "rangetype": "Ranged",
   "date": "2010-08-24",
@@ -86,7 +85,69 @@
       "icon": "Corrosive Charge.png",
       "blurb": "Fires an explosive charge at the target location, dealing physical damage and slowing enemies caught in the explosion.",
       "description": "Active: Urgot launches a canister at the target location that explodes after 0.6 seconds, dealing physical damage and  slowing all enemies hit for 1 second.",
-      "leveling": "Physical Damage:\n25 / 70 / 115 / 160 / 205 (+ 70% AD)\n\nSlow:\n45 / 50 / 55 / 60 / 65%",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                70,
+                115,
+                160,
+                205
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                50,
+                55,
+                60,
+                65
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Physical",
@@ -110,7 +171,47 @@
       "description": "Passive: Urgot's other abilities apply Purge to enemy champions for 5 seconds. Only one enemy champion can be marked at a time.",
       "description2": "Active: For 4 seconds, Urgot is  ghosted, gains 40%  slow resist and autonomously basic attacks the nearest enemy at  3.0 attack speed, prioritizing  marked with Purge, refreshing the mark with every attack. Urgot can keep attacking without  interrupting his movement, but while firing his base movement speed is reduced by 125.",
       "description3": "Attacks deal modified damage, down to a minimum of 50 damage against  minions, with only 50% on-hit damage and cannot  critically strike.",
-      "leveling3": "Modified Damage:\n12 (+ 20 / 24 / 28 / 32 / 36% AD)",
+      "leveling3": [
+        {
+          "attribute": "Modified Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                12,
+                12,
+                12,
+                12,
+                12
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                24,
+                28,
+                32,
+                36
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "icon4": "Purge 2.png",
       "description4": "After 0.5 seconds, Urgot can reactivate Purge to end all effects.",
       "description5": "At maximum rank, Purge lasts indefinitely and becomes a toggled ability.",
@@ -132,9 +233,106 @@
       "icon": "Disdain.png",
       "blurb": "Urgot charges in a direction, trampling non-champion enemies. If he catches an enemy champion, he will stop and hurl them out of his way.",
       "description": "Active: Urgot  shields himself for 4 seconds.",
-      "leveling": "Shield Strength:\n60 / 80 / 100 / 120 / 140 (+ 150% bonus AD) (+ 15% bonus health)",
+      "leveling": [
+        {
+          "attribute": "Shield Strength",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                80,
+                100,
+                120,
+                140
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                150,
+                150,
+                150,
+                150
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                15,
+                15,
+                15,
+                15
+              ],
+              "units": [
+                "% bonus health",
+                "% bonus health",
+                "% bonus health",
+                "% bonus health",
+                "% bonus health"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "After 0.25 seconds, Urgot  dashes in the target direction, though not through terrain, dealing physical damage to all enemies in the way and  knocking them aside.",
-      "leveling2": "Physical Damage:\n90 / 120 / 150 / 180 / 210 (+ 100% bonus AD)",
+      "leveling2": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                120,
+                150,
+                180,
+                210
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Urgot comes to a stop upon colliding with an enemy champion,  flinging them over himself and  stunning them for 0.75 seconds after they land.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -158,7 +356,47 @@
       "icon": "Fear Beyond Death.png",
       "blurb": "Urgot fires a chem-drill that impales the first enemy champion hit. If that champion falls below a health threshold, Urgot judges them weak and can execute them.",
       "description": "First Cast: After a 0.5-second delay, Urgot fires a chem-drill forward that impales the first enemy champion struck, dealing physical damage, leashing them for 4 seconds and  slowing them by 0% \u2212 75% (based on target's missing health).",
-      "leveling": "Physical Damage:\n100 / 162.5 / 225 / 287.5 / 350 (+ 50% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                162.5,
+                225,
+                287.5,
+                350
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If the target is below  25% of their maximum health, Fear Beyond Death can be re-activated, and automatically does so after 4 seconds if the target is within the threshold.",
       "icon3": "Fear Beyond Death 2.png",
       "description3": "Second Cast: Urgot begins  channeling as he launches chains at the target,  suppressing them and pushing them up to 1000 units away, after which they're reeled in over 1.5 seconds, during which they are  untargetable.",

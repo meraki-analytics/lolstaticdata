@@ -77,7 +77,47 @@
       "icon": "Siphoning Strike.png",
       "blurb": "Nasus strikes his foe, dealing damage and increasing the power of his future Siphoning Strikes if he slays his target.",
       "description": "Active: Nasus's next basic attack within 10 seconds gains  25 bonus range and deals  bonus physical damage.",
-      "leveling": "Bonus Physical Damage:\n30 / 50 / 70 / 90 / 110 (+ Siphoning Strike stacks)",
+      "leveling": [
+        {
+          "attribute": "Bonus Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                50,
+                70,
+                90,
+                110
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                "Siphoning Strike stacks",
+                "Siphoning Strike stacks",
+                "Siphoning Strike stacks",
+                "Siphoning Strike stacks",
+                "Siphoning Strike stacks"
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If Siphoning Strike kills its target, Nasus permanently gains 3 stacks, increased to 12 if its target is a champion, large minion, or large monster.",
       "description3": "Siphoning Strike resets Nasus' autoattack timer.",
       "targeting": "None",
@@ -100,7 +140,96 @@
       "icon": "Wither.png",
       "blurb": "Nasus ages an enemy champion, decelerating their Movement and Attack Speeds over time.",
       "description": "Active: Nasus ages the target enemy champion for 5 seconds,  slowing them by 35% and  crippling them by half that amount, both increasing over the duration.",
-      "leveling": "Maximum Slow:\n47 / 59 / 71 / 83 / 95%\nAdditional Slow Per Second:\n3 / 6 / 9 / 12 / 15%\n\nMaximum Cripple:\n23.5 / 29.5 / 35.5 / 41.5 / 47.5%\nAdditional Cripple Per Second:\n1.5 / 3 / 4.5 / 6 / 7.5%",
+      "leveling": [
+        {
+          "attribute": "Maximum Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                47,
+                59,
+                71,
+                83,
+                95
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Additional Slow Per Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                3,
+                6,
+                9,
+                12,
+                15
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Cripple",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                23.5,
+                29.5,
+                35.5,
+                41.5,
+                47.5
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Additional Cripple Per Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1.5,
+                3,
+                4.5,
+                6,
+                7.5
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "spelleffects": "False",
@@ -121,9 +250,150 @@
       "icon": "Spirit Fire.png",
       "blurb": "Nasus unleashes a spirit flame at a location, dealing damage and reducing the Armor of enemies who stand on it.",
       "description": "Active: Nasus unleashes a spirit flame at the target location, dealing  magic damage to enemies in the area.",
-      "leveling": "Magic Damage:\n55 / 95 / 135 / 175 / 215 (+ 60% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                95,
+                135,
+                175,
+                215
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "The flame then remains for 5 seconds, dealing magic damage each second to all enemies within and reducing their armor while they remain, lingering for 1 second.",
-      "leveling2": "Magic Damage Per Second:\n11 / 19 / 27 / 35 / 43 (+ 12% AP)\nTotal Magic Damage:\n110 / 190 / 270 / 350 / 430 (+ 120% AP)\nArmor Reduction:\n15 / 20 / 25 / 30 / 35% of target's armor",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage Per Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                11,
+                19,
+                27,
+                35,
+                43
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                12,
+                12,
+                12,
+                12,
+                12
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                110,
+                190,
+                270,
+                350,
+                430
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                120,
+                120,
+                120,
+                120
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Armor Reduction",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                20,
+                25,
+                30,
+                35
+              ],
+              "units": [
+                "% of target's armor",
+                "% of target's armor",
+                "% of target's armor",
+                "% of target's armor",
+                "% of target's armor"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -144,9 +414,149 @@
       "icon": "Fury of the Sands.png",
       "blurb": "Nasus unleashes a mighty sandstorm that batters nearby enemies. While the storm rages, he gains increased Health, Attack Range, damages nearby enemies, has a reduced cooldown on Siphoning Strike, and gains bonus Armor and Magic Resistance for the duration.",
       "description": "Active: Nasus empowers himself for 15 seconds, gaining bonus  health,  armor and  magic resistance, increased size, and  50 bonus range on his basic attacks for the duration.",
-      "leveling": "Bonus Health:\n300 / 450 / 600\nBonus Resistances:\n15 / 35 / 55",
+      "leveling": [
+        {
+          "attribute": "Bonus Health",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                300,
+                450
+              ],
+              "units": [
+                " /",
+                " /"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "600 Bonus Resistances",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                35,
+                55
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "While Nasus is empowered, he deals magic damage to all enemies around him each second, capped at 240, gains bonus  armor and  magic resistance each second, and  Siphoning Strike's  cooldown is reduced by 50%.",
-      "leveling2": "Magic Damage Per Second:\n3 / 4 / 5% (+ 1% per 100 AP) of target's maximum health\nTotal Magic Damage:\n45 / 60 / 75% (+ 15% per 100 AP) of target's maximum health\nBonus Resistances Per Second:\n1 / 2 / 3\nTotal Bonus Resistances:\n30 / 65 / 100",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage Per Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                3,
+                4,
+                5
+              ],
+              "units": [
+                "%",
+                "%",
+                "%"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "units": [
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "of target's maximum health Total Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                60,
+                75
+              ],
+              "units": [
+                "%",
+                "%",
+                "%"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                15,
+                15,
+                15,
+                15
+              ],
+              "units": [
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "of target's maximum health Bonus Resistances Per Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1,
+                2
+              ],
+              "units": [
+                " /",
+                " /"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "3 Total Bonus Resistances",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                65,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "None",
       "affects": "Self",
       "damagetype": "Magic",

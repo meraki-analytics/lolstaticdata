@@ -62,7 +62,7 @@
       "skill": "I",
       "icon": "Glory in Death.png",
       "blurb": "After being killed, Sion will reanimate with rapidly decaying Health. His attacks become very rapid, gain 100% Lifesteal and deal bonus physical damage equal to 10% of his target's maximum Health (max 75 to monsters). All his abilities are replaced with Death Surge, which grants a burst of Movement Speed.",
-      "description": "Innate: Upon taking fatal damage, Sion becomes  untargetable for 1.5 seconds, after which he enters a frenzy, restoring himself to  100% maximum health but losing 2 \u2212 19 (based on level) every 0.265 seconds, increasing by   70% of the base value    1.4 \u2212 13.3 (based on level)   per subsequent tick.",
+      "description": "Innate: Upon taking fatal damage, Sion becomes  untargetable for 1.5 seconds, after which he enters a frenzy, restoring himself to  100% maximum health but losing 2 \u2212 19 (based on level) every 0.265 seconds, increasing by [ 70% of the base value ][ 1.4 \u2212 13.3 (based on level) ] per subsequent tick.",
       "description2": "Sion can freely move and use basic attacks during this time, gaining  100% life steal, attacking at  1.75 attack speed, and dealing 10% of the target\u2019s maximum health bonus physical damage on-hit, capped at 75 against minions and monsters.",
       "description3": "Glory in Death cannot last more than 60 seconds. Reaching the time will cause Sion to instantly die, regardless of his remaining health. While Glory in Death is active Sion's standard abilities are replaced with  Death Surge.",
       "targeting": "Passive",
@@ -78,9 +78,9 @@
       "icon": "Death Surge.png",
       "blurb": "Grants a burst of Movement Speed.",
       "description": "Active: Sion gains  50% bonus movement speed that decays over 1.5 seconds.",
-      "targeting": "None",
+      "targeting": "Self / Buff",
       "affects": "Self",
-      "notes": "* Death Surge's will always be ready to use when Glory in Death triggers.\n Once at least one ability has been learned, Death Surge can be cast using any ability key, even the unlearned ones.\n\n Death Surge's cooldown is affected by Cooldown reduction and thus the spell is technically able to be used up to twice during Glory in Death, but not in practice.\n Despite showing a shorter cooldown when hovering the ability in the ultimate-slot in the HUD, Death Surge is not actually affected by  Ultimate Hunter.\n\n Casting Death Surge does not add a stack to  Spellbinder."
+      "notes": "* Death Surge's will always be ready to use when Glory in Death triggers.\n Once at least one ability has been learned, Death Surge can be cast using any ability key, even the unlearned ones.\n\n Death Surge's cooldown is affected by  cooldown reduction and thus the spell is technically able to be used up to twice during Glory in Death, but not in practice.\n Despite showing a shorter cooldown when hovering the ability in the ultimate-slot in the HUD, Death Surge is not actually affected by  Ultimate Hunter.\n\n Casting Death Surge does not add a stack to  Spellbinder."
     }
   },
   "skill_q": {
@@ -96,10 +96,190 @@
       "icon": "Decimating Smash.png",
       "blurb": "Sion charges a powerful swing in an area in front of himself that will deal damage to enemies when released. If he charges for enough time, enemies hit by the swing will also be knocked up and stunned.",
       "description": "First Cast: Sion  channels for up to 2 seconds to swing in the target direction, increasing Decimating Smash's damage every 0.25 seconds, up to a bonus cap for the base damage and up to 200% bonus for the AD ratio.",
-      "leveling": "Max. Base Damage Increase:\n133.33 / 150 / 166.67 / 183.33 / 200%\n\nMinimum Damage:\n30 / 50 / 70 / 90 / 110 (+ 45 / 52.5 / 60 / 67.5 / 75% AD)\nMaximum Damage:\n70 / 135 / 200 / 265 / 330 (+ 135 / 157.5 / 180 / 202.5 / 225% AD)",
+      "leveling": [
+        {
+          "attribute": "Max. Base Damage Increase",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                133.33,
+                150,
+                166.67,
+                183.33,
+                200
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Minimum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                50,
+                70,
+                90,
+                110
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                52.5,
+                60,
+                67.5,
+                75
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                135,
+                200,
+                265,
+                330
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                135,
+                157.5,
+                180,
+                202.5,
+                225
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If the channel is  interrupted, Decimating Smash goes on a reduced  2 seconds cooldown, but no mana is refunded.",
       "description3": "Second Cast: Sion flails his axe, dealing physical damage to all enemies in the target area, and  slowing them by 50% for 0.25 seconds. Decimating Smash deals 60% damage against minions.",
-      "leveling3": "Minimum Minion Damage:\n18 / 30 / 42 / 54 / 66 (+ 27 / 31.5 / 36 / 40.5 / 45% AD)\nMaximum Minion Damage:\n42 / 81 / 120 / 159 / 198 (+ 81 / 94.5 / 108 / 121.5 / 135% AD)",
+      "leveling3": [
+        {
+          "attribute": "Minimum Minion Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                18,
+                30,
+                42,
+                54,
+                66
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                27,
+                31.5,
+                36,
+                40.5,
+                45
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Minion Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                42,
+                81,
+                120,
+                159,
+                198
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                81,
+                94.5,
+                108,
+                121.5,
+                135
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description4": "If Decimating Smash was charged for at least 1 second, Sion instead slams his axe down,  knocking up all enemies hit for 0.5 \u2212 1 (based on channel time) seconds and  stunning them for 1.25 \u2212 2.25 (based on channel time) seconds.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -124,14 +304,128 @@
       "description": "Passive: Sion permanently gains  4 bonus health whenever he kills an enemy, increased to 15 bonus health against large enemies and enemy champion  takedowns.",
       "icon2": "Soul Furnace.png",
       "description2": "First Cast: Sion  shields himself for up to 6 seconds. After 3 seconds, Soul Furnace can be reactivated to detonate the shield, detonating automatically if it persists for the full duration.",
-      "leveling2": "Shield Strength:\n50 / 75 / 100 / 125 / 150 (+ 40% AP) (+ 8 / 9 / 10 / 11 / 12% maximum health)",
+      "leveling2": [
+        {
+          "attribute": "Shield Strength",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                75,
+                100,
+                125,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% maximum health"
+              ]
+            }
+          ]
+        }
+      ],
       "icon3": "Soul Furnace 2.png",
       "description3": "Second Cast: Soul Furnace's shield detonates to deal  magic damage to enemies around Sion, capped at 400 against minions and monsters.",
-      "leveling3": "Magic Damage:\n40 / 65 / 90 / 115 / 140 (+ 40% AP) (+ 10 / 11 / 12 / 13 / 14% of target's maximum health)",
-      "targeting": "None",
+      "leveling3": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                65,
+                90,
+                115,
+                140
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                11,
+                12,
+                13,
+                14
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% of target's maximum health"
+              ]
+            }
+          ]
+        }
+      ],
+      "targeting": "Self / Auto",
       "affects": "Self, Enemies",
       "damagetype": "Magic",
-      "spelleffects": "Area of effect",
+      "spelleffects": "spellaoe",
       "spellshield": "True",
       "notes": "* A buff icon in the HUD will show the current shield strength, so that the player can better calculate the timing of the second cast.\n Soul Furnace has no cast time and does not interrupt Sion's previous orders.\n Both casts of Soul Furnace can be used during any of Sion's other abilities. The only exception to this is the release of  Decimating Smash.\n Soul Furnace's first cast does not break stealth.\n\n Gaining or losing AP or health, or ranking up the skill while the shield is active will not change its shield value but it will change the damage of the  explosion.\n The cooldown of Soul Furnace begins once the shield is removed.\n Gaining or losing CDR between the first cast and breaking of the shield will affect the resuming cooldown accordingly.\n\n Soul Furnace's bonus health can be obtained by any of Sion's damage sources (basic attacks, abilities, summoner spells, item actives).\n This does not include last hits transferred to Sion artificially, through effects such as  Spoils of War,\n If the gold efficiency of a  Ruby Crystal is considered 100%, each last hit or  takedown after Soul Furnace has been learned can be considered worth an extra  10.6 or  40g."
     }
@@ -148,7 +442,69 @@
       "icon": "Roar of the Slayer.png",
       "blurb": "Sion fires a short range shockwave that damages and slows and reduces the Armor of the first enemy hit. If the shockwave hits a minion or monster, it will be knocked back, damaging and slowing all enemies that it passes through.",
       "description": "Active: Sion bellows in the target direction, dealing magic damage to the first enemy hit,  slowing them for 2.5 seconds as well as  reducing their  armor by 20% for 4 seconds.",
-      "leveling": "Magic Damage:\n65 / 100 / 135 / 170 / 205 (+ 55% AP)\nSlow:\n40 / 45 / 50 / 55 / 60%",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                65,
+                100,
+                135,
+                170,
+                205
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                55,
+                55,
+                55,
+                55
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                45,
+                50,
+                55,
+                60
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If the target is a  minion or non-epic  monster, it is  knocked back, in the same line, up to 1300 units away from Sion, dealing the same damage and applying the same effects to all enemies it passes through. Projectile enemies take their damage once they are stopped, by either colliding with terrain or reaching the end of their trajectory.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -156,7 +512,7 @@
       "spelleffects": "Area of effect",
       "spellshield": "True",
       "projectile": "Special",
-      "notes": "* Unlike the intial single-target projectile, a thrown minion or monster is not blocked by  Wind Wall or  Unbreakable.\n Minions and monsters targeted by Roar of the Slayer are  invulnerable for the displacement's duration but cannot go through walls.\n A knocked back unit will always travel between 500 and 1300 units, unless colliding with terrain.\n Additionally, the unit will provide a small radius of vision during the travel.\n\n Gaining or losing AP, or upgrading the ability while its projectile is traveling will change its damage for every future hit. This applies to both the intial single-target projectile, as well as the minion-projectile."
+      "notes": "* Unlike the intial single-target projectile, a thrown minion or monster is not blocked by  Wind Wall or  Unbreakable.\n  Minions and  monsters targeted by Roar of the Slayer are  invulnerable to minion damage for the displacement's duration. Their flight is stopped upon colliding with static terrain.\n A knocked back unit will always travel between 500 and 1300 units, unless colliding with terrain.\n Additionally, the unit will provide a small radius of vision during the travel.\n\n Gaining or losing AP, or upgrading the ability while its projectile is traveling will change its damage for every future hit. This applies to both the intial single-target projectile, as well as the minion-projectile."
     }
   },
   "skill_r": {
@@ -174,7 +530,96 @@
       "icon2": "Unstoppable Onslaught 2.png",
       "description2": "Upon re-activating the ability or reaching the end of the duration, Sion  leaps forward 200-units, slamming the ground around him upon landing. Colliding with an enemy champion or terrain will stop Unstoppable Onslaught prematurely. Charging into terrain will also  stun Sion for 0.5 seconds.",
       "description3": "Both the charge and slam deal physical damage to all enemies and  turrets struck, with the base damage increasing by 0% \u2212 166.67% (based on charge time), the bonus AD ratio increasing by 0% \u2212 100% (based on charge time), and  slowing them for 3 seconds.",
-      "leveling3": "Minimum Physical Damage:\n150 / 300 / 450 (+ 40% bonus AD)\nMaximum Physical Damage:\n400 / 800 / 1200 (+ 80% bonus AD)\n\nSlow:\n40 / 45 / 50%",
+      "leveling3": [
+        {
+          "attribute": "Minimum Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                300,
+                450
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                400,
+                800,
+                1200
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                45,
+                50
+              ],
+              "units": [
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description4": "When not colliding with terrain Sion will additionally  pull,  knock up and  stun all enemies around him for a combined 0.75 \u2212 1.75 (based on charge time) seconds.",
       "targeting": "Direction",
       "affects": "Self, Enemies",

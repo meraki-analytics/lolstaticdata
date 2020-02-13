@@ -85,9 +85,267 @@
       "blurb": "Master Yi teleports across the battlefield with blinding speed, dealing physical damage to multiple units in his path, while simultaneously becoming untargetable. Alpha Strike can critically strike and deals bonus physical damage to minions and monsters. Basic attacks reduce Alpha Strike's cooldown.",
       "description": "Active: Master Yi  vanishes and, after 0.225 seconds, marks his target and then moves to mark the nearest  visible un-marked enemy within 600 units, recurring up to 3 times, once every 0.225 seconds.",
       "description2": "Upon finishing marking, or if there're no other enemies in range, he  re-appears after a 0.15 second delay in front of his target and deals physical damage to all marked enemies, increased against monsters. If his target dies during the delay, he will reappear at the cast location instead.",
-      "leveling2": "Physical Damage:\n25 / 60 / 95 / 130 / 165 (+ 100% AD)\nMonster Damage:\n100 / 160 / 220 / 280 / 340 (+ 100% AD)\nMonster Bonus Damage:\n75 / 100 / 125 / 150 / 175",
+      "leveling2": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                60,
+                95,
+                130,
+                165
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Monster Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                160,
+                220,
+                280,
+                340
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Monster Bonus Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                100,
+                125,
+                150,
+                175
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "If there are no other un-marked enemies in range, he may strike the same enemies again, dealing 25% damage instantly.",
-      "leveling3": "Reduced Damage:\n6.25 / 15 / 23.75 / 32.5 / 41.25 (+ 25% AD)\nReduced Monster Damage:\n25 / 40 / 55 / 70 / 85 (+ 25% AD)\n\nMaximum Single-Target Damage:\n43.75 / 105 / 166.25 / 227.5 / 288.75 (+ 175% AD)\nMax Monster Single-Target Damage:\n175 / 280 / 385 / 490 / 595 (+ 175% AD)",
+      "leveling3": [
+        {
+          "attribute": "Reduced Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                6.25,
+                15,
+                23.75,
+                32.5,
+                41.25
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Reduced Monster Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                40,
+                55,
+                70,
+                85
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Single-Target Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                43.75,
+                105,
+                166.25,
+                227.5,
+                288.75
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                175,
+                175,
+                175,
+                175,
+                175
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Max Monster Single-Target Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                175,
+                280,
+                385,
+                490,
+                595
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                175,
+                175,
+                175,
+                175,
+                175
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description4": "Alpha Strike's primary and lesser damage can  critically strike for (60% +  15%) AD bonus physical damage and (15% +  3.75%) AD bonus physical damage respectively.",
       "description5": "Basic attacks reduce Alpha Strike's  cooldown by 1 second.",
       "targeting": "Unit",
@@ -109,9 +367,211 @@
       "icon": "Meditate.png",
       "blurb": "Master Yi rejuvenates his body by focus of mind, restoring Health and taking reduced damage for a short time. In addition, Master Yi will gain stacks of Double Strike and pause the remaining duration on Wuju Style and Highlander for each second he channels.",
       "description": "Active: Master Yi  channels for up to 4 seconds,  healing himself every 0.5 seconds, increased by 0% \u2212 100% (based on missing health).",
-      "leveling": "Minimum Healing Per Half Second:\n15 / 25 / 35 / 45 / 55 (+ 12.5% AP)\nMaximum Healing Per Half Second:\n30 / 50 / 70 / 90 / 110 (+ 25% AP)\nMinimum Total Healing:\n120 / 200 / 280 / 360 / 440 (+ 100% AP)\nMaximum Total Healing:\n240 / 400 / 560 / 720 / 880 (+ 200% AP)",
+      "leveling": [
+        {
+          "attribute": "Minimum Healing Per Half Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                25,
+                35,
+                45,
+                55
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                12.5,
+                12.5,
+                12.5,
+                12.5,
+                12.5
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Healing Per Half Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                50,
+                70,
+                90,
+                110
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Minimum Total Healing",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                200,
+                280,
+                360,
+                440
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Total Healing",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                240,
+                400,
+                560,
+                720,
+                880
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                200,
+                200,
+                200,
+                200
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "While channeling, Master Yi reduces incoming damage, halved against turrets, pauses  Wuju Style's and  Highlander's duration, and grants one stack of  Double Strike per second.",
-      "leveling2": "Damage Reduction:\n60 / 62.5 / 65 / 67.5 / 70%\nTurret Damage Reduction:\n30 / 31.25 / 32.5 / 33.75 / 35%",
+      "leveling2": [
+        {
+          "attribute": "Damage Reduction",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                62.5,
+                65,
+                67.5,
+                70
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Turret Damage Reduction",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                31.25,
+                32.5,
+                33.75,
+                35
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Meditate resets Master Yi's autoattack timer.",
       "targeting": "None",
       "affects": "Self",
@@ -128,7 +588,47 @@
       "icon": "Wuju Style.png",
       "blurb": "Master Yi becomes skilled in the art of Wuju, passively increasing his Attack Damage. Activating Wuju Style grants bonus true damage on basic attacks, but the passive bonus is then lost while on cooldown.",
       "description": "Active: Master Yi's basic attacks deal  bonus true damage for 5 seconds.",
-      "leveling": "True Damage:\n18 / 26 / 34 / 42 / 50 (+ 35% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "True Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                18,
+                26,
+                34,
+                42,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                35,
+                35,
+                35,
+                35
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "None",
       "affects": "Self",
       "damagetype": "True",
@@ -149,7 +649,52 @@
       "description": "Passive: Champion  takedowns reduce the current  cooldown of Master Yi's basic abilities by 70%.",
       "icon2": "Highlander.png",
       "description2": "Active: For 7 seconds, Master Yi is  ghosted, gains  bonus attack speed and  bonus movement speed, and becomes immune to  slows and  cripples.",
-      "leveling2": "Bonus Attack Speed:\n30 / 42.5 / 55 / 67.5 / 80%\n\nBonus Movement Speed:\n35 / 40 / 45 / 50 / 55%",
+      "leveling2": [
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                42.5,
+                55,
+                67.5,
+                80
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Bonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                40,
+                45,
+                50,
+                55
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "While active, champion  takedowns extend the duration of Highlander by 7 seconds.",
       "targeting": "None",
       "affects": "Self",

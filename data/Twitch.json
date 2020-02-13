@@ -80,12 +80,58 @@
       "icon": "Ambush.png",
       "blurb": "Twitch becomes Camouflaged for a short duration and gains Movement Speed. When leaving Camouflage, Twitch gains Attack Speed for a short duration. When an enemy champion with Deadly Venom dies, Ambush's cooldown is reset.",
       "description": "Active: After a 1 second delay, Twitch becomes  camouflaged for a duration. Entering stealth cancels Twitch's current basic attack. Basic attacks and abilities break the stealth on-cast.",
-      "leveling": "Stealth Duration:\n10 / 11 / 12 / 13 / 14",
+      "leveling": [
+        {
+          "attribute": "Stealth Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                11,
+                12,
+                13,
+                14
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Ambush 2.png",
       "description2": "While stealthed he gains  10% bonus movement speed, increased to 30% when he moves toward enemy champions within a 1000-range radius who cannot see him.",
       "icon3": "Ambush 3.png",
       "description3": "Upon breaking stealth he gains  bonus attack speed for 5 seconds.",
-      "leveling3": "Bonus Attack Speed:\n30 / 35 / 40 / 45 / 50%",
+      "leveling3": [
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                35,
+                40,
+                45,
+                50
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description4": "Ambush's  cooldown is reset if an enemy champion dies while affected by  Deadly Venom.",
       "targeting": "None",
       "affects": "Self",
@@ -106,7 +152,30 @@
       "blurb": "Twitch hurls a cask of venom that explodes in an area, slowing targets and applying deadly venom to the target.",
       "description": "Active: Twitch hurls a cask of venom at the target area, infecting all enemies hit with a  Deadly Venom stack.",
       "description2": "The target area becomes contaminated for 3 seconds, applying a  Deadly Venom stack each second and  slowing all enemies inside it.",
-      "leveling2": "Slow:\n25 / 30 / 35 / 40 / 45%",
+      "leveling2": [
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                30,
+                35,
+                40,
+                45
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "spelleffects": "False",
@@ -127,7 +196,196 @@
       "icon": "Contaminate.png",
       "blurb": "Twitch wreaks further havoc on poisoned enemies with a blast of his vile diseases.",
       "description": "Active: Twitch deals  physical damage to all nearby enemies afflicted by  Deadly Venom, with each stack granting bonus damage.",
-      "leveling": "Base Physical Damage:\n20 / 30 / 40 / 50 / 60\nBonus Damage Per Stack:\n15 / 20 / 25 / 30 / 35 (+ 35% bonus AD) (+ 20% AP)\nMinimum Damage:\n35 / 50 / 65 / 80 / 95 (+ 35% bonus AD) (+ 20% AP)\nMaximum Damage:\n110 / 150 / 190 / 230 / 270 (+ 210% bonus AD) (+ 120% AP)",
+      "leveling": [
+        {
+          "attribute": "Base Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                30,
+                40,
+                50
+              ],
+              "units": [
+                " /",
+                " /",
+                " /",
+                " /"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "60 Bonus Damage Per Stack",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                20,
+                25,
+                30,
+                35
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                35,
+                35,
+                35,
+                35
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Minimum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                50,
+                65,
+                80,
+                95
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                35,
+                35,
+                35,
+                35
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                110,
+                150,
+                190,
+                230,
+                270
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                210,
+                210,
+                210,
+                210,
+                210
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                120,
+                120,
+                120,
+                120
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Contaminate cannot be activated if there are no nearby enemies afflicted by  Deadly Venom.",
       "targeting": "Auto",
       "affects": "Enemies",
@@ -149,7 +407,30 @@
       "icon": "Spray and Pray.png",
       "blurb": "Twitch unleashes the full power of his crossbow, shooting bolts over a great distance that pierce all enemies caught in their path.",
       "description": "Active: Twitch gains bonus attack damage and his basic attacks gain  300 bonus range for 5 seconds.",
-      "leveling": "Bonus AD:\n20 / 25 / 30 / 35 / 40",
+      "leveling": [
+        {
+          "attribute": "Bonus AD",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Additionally, Twitch's basic attacks travel across their full range and skewer every enemy they pass through for the duration, dealing 100% \u2212 40% (based on enemy hit) damage. These attacks apply on-hit effects to all affected enemies and can  critically strike against each individual target.",
       "targeting": "None",
       "affects": "Self",

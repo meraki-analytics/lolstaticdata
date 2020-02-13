@@ -86,7 +86,130 @@
       "icon": "Bladesurge.png",
       "description": "Passive: Enemy champions and large monsters hit by  Flawless Duet and  Vanguard's Edge's initial barrage are marked for 5 seconds, consumed with Bladesurge.",
       "description2": "Active: Irelia  dashes through the target enemy, dealing  physical damage, applying on-hit effects and  healing herself. Bladesurge deals increased damage to  minions.",
-      "leveling2": "Physical Damage:\n5 / 25 / 45 / 65 / 85 (+ 60% AD)\nMinion Bonus Damage:\n55 / 75 / 95 / 115 / 135\nMinion Total Damage:\n60 / 100 / 140 / 180 / 220 (+ 60% AD)\n\nHeal:\n12 / 14 / 16 / 18 / 20% AD",
+      "leveling2": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                5,
+                25,
+                45,
+                65,
+                85
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Minion Bonus Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                75,
+                95,
+                115,
+                135
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Minion Total Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                100,
+                140,
+                180,
+                220
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Heal",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                12,
+                14,
+                16,
+                18,
+                20
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Bladesurge's  cooldown is refunded if the target was marked or if it dies to or after Bladesurge has been cast.",
       "targeting": "Unit",
       "affects": "Enemies, Self",
@@ -109,7 +232,120 @@
       "icon": "Defiant Dance.png",
       "description": "First Cast: Irelia winds up for up to 1.5 seconds, during which she reduces incoming physical damage by 50% (+ 7% per 100 AP).",
       "description2": "Second Cast: After a 0.07-second delay, Irelia swipes with her blades in the target direction, dealing physical damage to all enemies around her and in a line, increased by 0% \u2212 100% (based on channel time).",
-      "leveling2": "Minimum Damage:\n10 / 25 / 40 / 55 / 70 (+ 50% AD) (+ 40% AP)\nMaximum Damage:\n20 / 50 / 80 / 110 / 140 (+ 100% AD) (+ 80% AP)",
+      "leveling2": [
+        {
+          "attribute": "Minimum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                25,
+                40,
+                55,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                50,
+                80,
+                110,
+                140
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "The Second Cast activates automatically toward the cursor's direction at the end of the duration.",
       "targeting": "None / Direction",
       "affects": "Self / Enemies",
@@ -131,7 +367,47 @@
       "icon": "Flawless Duet.png",
       "description": "Active: Irelia sends a blade to the target location for up to 3.5 seconds. After a 0.15-second delay, Flawless Duet may be recast to send another blade out, and does so automatically at Irelia's position if the first blade would expire, though not if she is  muted or channeling  Defiant Dance or  Teleport.",
       "description2": "Once both blades have been placed, they fly toward each other after a 0.25-second delay, dealing magic damage and  stunning all enemies struck for 0.75 seconds after converging.",
-      "leveling2": "Magic Damage:\n70 / 110 / 150 / 190 / 230 (+ 80% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                110,
+                150,
+                190,
+                230
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -151,9 +427,89 @@
       "cooldown": "140 / 130 / 120 / 110 / 100",
       "icon": "Vanguard's Edge.png",
       "description": "Active: Irelia launches a barrage of blades in the target direction, expanding outward upon hitting an enemy champion and dealing magic damage to all enemies hit.",
-      "leveling": "Barrage Damage:\n125 / 175 / 225 / 275 / 325 (+ 70% AP)",
+      "leveling": [
+        {
+          "attribute": "Barrage Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                125,
+                175,
+                225,
+                275,
+                325
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "After expanding, the blades drop on the ground, knocking all enemy units away from them, though not rendering them  airborne, and forming a spade-shaped perimeter around the enemy champion hit for 2.5 seconds. Enemies that pass through the blades are dealt magic damage and are  slowed by 90% for 1.5 seconds.",
-      "leveling2": "Perimeter Damage:\n125 / 162.5 / 200 / 237.5 / 275 (+ 70% AP)",
+      "leveling2": [
+        {
+          "attribute": "Perimeter Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                125,
+                162.5,
+                200,
+                237.5,
+                275
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "The perimeter will point at the same angle Irelia cast it from, but based on the target's center.",
       "targeting": "Direction",
       "affects": "Enemies",

@@ -82,18 +82,58 @@
       "cooldown": "8 / 7.5 / 7 / 6.5 / 6",
       "icon": "Noxian Diplomacy.png",
       "blurb": "Talon stabs the target unit. If they are within melee range, this attack deals critical damage. If they are outside melee range, Talon will leap at his target before stabbing them. Talon refunds some health and cooldown if this ability kills the target.",
-      "description": "Active: Noxian Diplomacy has a different effect depending on the  range with target.",
-      "description2": "Standard - Outside 170 units: Talon  dashes onto his target, dealing physical damage.",
-      "leveling2": "Physical Damage:\n65 / 90 / 115 / 140 / 165 (+ 110% bonus AD)",
+      "description": "Active: Noxian Diplomacy has a different effect depending on the  range with the target.",
+      "description2": "Standard - Outside 170 units: Talon  dashes onto his target, dealing physical damage on-arrival.",
+      "leveling2": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                65,
+                90,
+                115,
+                140,
+                165
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                110,
+                110,
+                110,
+                110,
+                110
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Melee - Within 170 units: Talon skewers his target, causing Noxian Diplomacy to  critically strike for (50% +  25%) bonus physical damage.",
       "description4": "If Noxian Diplomacy kills its target, Talon  heals for  20 \u2212 71 (based on level) and 50% of its  cooldown is refunded.",
       "description5": "The melee version of Noxian Diplomacy resets Talon's autoattack timer.",
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "Physical",
-      "spelleffects": "Single target",
+      "spelleffects": "spell",
       "spellshield": "True",
-      "notes": "* While  grounded or  rooted only the melee version of this ability may be used.\n The ranged version of Noxian Diplomacy causes Talon to follow all of the target's movements (through  blinks,  dashes, etc) until he reaches them.\n This does not occur on far distance travel ( Recall,  Teleport)."
+      "notes": "* While  grounded or  rooted only the melee version of this ability may be used.\n Talon will stop at the target's last location if they  blink long distances (i.e  Recall,  Teleport)."
     }
   },
   "skill_w": {
@@ -108,17 +148,158 @@
       "cooldown": "9",
       "icon": "Rake.png",
       "blurb": "Talon sends out a volley of daggers that then return back to him, dealing physical damage every time it passes through an enemy. The returning blades deal bonus damage and slow units hit.",
-      "description": "Active: Talon sends out a volley of daggers, dealing physical damage to all enemies they pass through.",
-      "leveling": "Physical Damage:\n50 / 65 / 80 / 95 / 110 (+ 40% bonus AD)",
-      "description2": "The daggers linger for 0.75 seconds before flying back to Talon, dealing physical damage to all enemies they pass through and  slowing them for 1 second.",
-      "leveling2": "Return Physical Damage:\n70 / 85 / 100 / 115 / 130 (+ 60% bonus AD)\nTotal Physical Damage:\n120 / 150 / 180 / 210 / 240 (+ 100% bonus AD)\n\nSlow:\n40 / 45 / 50 / 55 / 60%",
+      "description": "Active: Talon sends out a volley of blades, dealing physical damage to all enemies they pass through.",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                65,
+                80,
+                95,
+                110
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
+      "description2": "The blades linger for 0.75 seconds before flying back to Talon, dealing physical damage to all enemies they pass through and  slowing them for 1 second.",
+      "leveling2": [
+        {
+          "attribute": "Return Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                85,
+                100,
+                115,
+                130
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                150,
+                180,
+                210,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                45,
+                50,
+                55,
+                60
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Physical",
-      "spelleffects": "Area of effect",
+      "spelleffects": "spellaoe",
       "spellshield": "True",
       "projectile": "True",
-      "notes": "* If Talon dies while Rake is mid-air the projectiles will still complete their travel."
+      "notes": "* If Talon dies while Rake is mid-air, the projectiles will still complete their travel."
     }
   },
   "skill_e": {
@@ -136,7 +317,7 @@
       "description2": "Talon cannot cast Assassin's Path on the same area of terrain for a set duration.",
       "targeting": "Unit",
       "affects": "Self",
-      "notes": "* Assassin's Path can be cast on artificial terrain ( Crystallize,  Pillar of Ice,  Weaver's Wall).\n They are only considered one-time use and do not have a practical cooldown."
+      "notes": "* Assassin's Path can be cast on player-made terrain ( Crystallize,  Pillar of Ice,  Weaver's Wall)."
     }
   },
   "skill_r": {
@@ -151,7 +332,108 @@
       "icon": "Shadow Assault.png",
       "blurb": "Talon disperses a ring of blades and becomes Invisible while gaining additional Movement Speed. When Talon emerges from Invisibility, the blades converge on his location. Each time the blades move, Shadow Assault deals physical damage to enemies hit by at least one blade.",
       "description": "Active: Talon disperses a ring of blades, dealing physical damage to all enemies hit, while gaining  invisibility and  bonus movement speed for up to 2.5 seconds.",
-      "leveling": "Physical Damage:\n90 / 112.5 / 135 / 157.5 / 180 (+ 100% bonus AD)\nTotal Physical Damage:\n180 / 225 / 270 / 315 / 360 (+ 200% bonus AD)\nBonus Movement Speed:\n40 / 47.5 / 55 / 62.5 / 70%",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                112.5,
+                135,
+                157.5,
+                180
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                180,
+                225,
+                270,
+                315,
+                360
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                200,
+                200,
+                200,
+                200
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Bonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                47.5,
+                55,
+                62.5,
+                70
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "When Talon emerges from  invisibility, the blades converge to his location, dealing the same physical damage to all enemies they pass through. Breaking  invisibility with a basic attack or  Noxian Diplomacy causes the blades to converge to his target instead.",
       "targeting": "None",
       "affects": "Enemies",

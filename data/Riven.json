@@ -5,7 +5,7 @@
   "attack": 8,
   "defense": 5,
   "magic": 1,
-  "difficulty": 2,
+  "difficulty": 1,
   "herotype": "Fighter",
   "alttype": "Assassin",
   "resource": "None",
@@ -61,13 +61,13 @@
       "skill": "I",
       "icon": "Runic Blade.png",
       "blurb": "Riven's abilities charge her blade, causing her basic attacks to deal bonus physical damage. Riven's blade may be charged up to three times and expends one charge per attack.",
-      "description": "Innate: Riven's blade gains a Charge for 6 seconds every time she uses an ability (stacks up to 3 times). Riven's basic attacks consume a Charge to deal 25% \u2212 50% (based on level) AD  bonus physical damage.",
+      "description": "Innate: Riven's blade gains a Charge for 6 seconds every time she uses an ability, stacking up to 3 times. Riven's basic attacks consume a Charge to deal 25% \u2212 50% (based on level) AD  bonus physical damage.",
       "description2": "Runic Blade is affected by  critical strike modifiers.",
       "targeting": "Passive",
       "affects": "Enemies",
       "damagetype": "physical",
-      "onhiteffects": "Special",
-      "notes": "* Runic Blade's duration refreshes whenever Riven gains or consumes a stack.\n The bonus damage applies  life steal.\n Runic Blade does not affect structures (charges are not consumed when attacking them).\n Runic Blade can be  blocked,  dodged, or  parried.\n Runic Blade charges are not be consumed if Riven is  blinded when landing the enhanced attack.\n Runic Blade charges do not proc against wards."
+      "spelleffects": "Proc",
+      "notes": "* Runic Blade's duration refreshes whenever Riven gains or consumes a stack.\n The bonus damage applies  life steal.\n Runic Blade does not affect structures and  wards (charges are not consumed when attacking them).\n Runic Blade can be  dodged,  blocked, or  missed (charges are not consumed)."
     }
   },
   "skill_q": {
@@ -81,16 +81,95 @@
       "icon": "Broken Wings.png",
       "blurb": "Riven lashes out in a series of strikes. This ability can be reactivated three times in a short time frame with the third hit knocking back nearby enemies.",
       "description": "Active: Riven  dashes towards the target nearest to the cursor or in the direction she is currently facing, dealing physical damage to all enemies in front of her. Broken Wings can then be reactivated twice within the next 4 seconds, with the second cast refreshing the timer.",
-      "leveling": "Physical Damage:\n15 / 35 / 55 / 75 / 95 (+ 45 / 50 / 55 / 60 / 65% AD)\nTotal Physical Damage:\n45 / 105 / 165 / 225 / 285 (+ 135 / 150 / 165 / 180 / 195% AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                35,
+                55,
+                75,
+                95
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                50,
+                55,
+                60,
+                65
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                105,
+                165,
+                225,
+                285
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                135,
+                150,
+                165,
+                180,
+                195
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "The third cast  knocks up and damages all enemies around Riven in an expanded radius. The third cast is also the only cast able to dash over terrain, and can do so longer than its normal range.",
       "description3": "Each Broken Wings cast causes her next basic attack to occur more quickly. This is not considered a basic attack reset.",
       "description4": "Targeted Broken Wings casts grant  sight of an area around Riven to the enemies.",
-      "targeting": "Direction",
+      "targeting": "Direction / Auto",
       "affects": "Enemies",
       "damagetype": "physical",
-      "spelleffects": "aoe",
+      "spelleffects": "spellaoe",
       "spellshield": "Special",
-      "notes": "* Each cast triggers Spellblade and counts as a charge for  Force Pulse.\n The damage radius is centered 100 units in front of Riven.\n The third cast also  knocks back enemies away from the epicenter by 75 units.\n  Spell shield will only block the third cast.\n Since it's not considered a basic attack reset it does not count for  Hail of Blades."
+      "notes": "* Each cast triggers Spellblade and counts as a charge for  Force Pulse and  Spellbinder.\n The damage radius is centered 100 units in front of Riven.\n The third cast also  knocks back enemies away from the epicenter by 75 units.\n  Spell shield will only block the third cast.\n Since it's not considered a basic attack reset, it does not add additional stacks of  Hail of Blades."
     }
   },
   "skill_w": {
@@ -103,11 +182,51 @@
       "icon": "Ki Burst.png",
       "blurb": "Riven emits a Ki Burst, damaging and stunning nearby enemies.",
       "description": "Active: Riven's sword emits a burst of runic energy that shocks nearby enemies, dealing physical damage and applying a  stun for 0.75 seconds.",
-      "leveling": "Physical Damage:\n55 / 85 / 115 / 145 / 175 (+ 100% bonus AD)",
-      "targeting": "None",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                85,
+                115,
+                145,
+                175
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
+      "targeting": "Auto",
       "affects": "Enemies",
       "damagetype": "physical",
-      "spelleffects": "aoe",
+      "spelleffects": "spellaoe",
       "spellshield": "True",
       "notes": "* No additional details."
     }
@@ -122,10 +241,51 @@
       "icon": "Valor.png",
       "blurb": "Riven steps forward a short distance and blocks incoming damage.",
       "description": "Active: Riven  dashes in the direction of the cursor,  shielding herself for 1.5 seconds. If she targets an enemy with Valor, she briefly  reveals herself and the area around her to the enemies.",
-      "leveling": "Shield Strength:\n95 / 125 / 155 / 185 / 215 (+ 100% bonus AD)",
-      "description2": "Other abilities can be cast during the dash and their cast time is cancelled if used at the end or briefly after the dash.",
+      "leveling": [
+        {
+          "attribute": "Shield Strength",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                95,
+                125,
+                155,
+                185,
+                215
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
+      "description2": "Other abilities can be cast during the dash and  Broken Wings may be cast during their cast time if they're used at the end or briefly after the dash.",
       "targeting": "Direction",
       "affects": "Self",
+      "spelleffects": "Shield",
       "notes": "* Valor can be used to bypass player-created terrain ( Crystallize,  Cataclysm) but not to go through walls."
     }
   },
@@ -137,10 +297,10 @@
       "cooldown": "120 / 90 / 60",
       "icon": "Blade of the Exile.png",
       "blurb": "Riven empowers her keepsake weapon with energy, and gains Attack Damage and Range. During this time, she also gains the ability to use Wind Slash, a powerful ranged attack, once.",
-      "description": "Active: Riven empowers her sword for 15 seconds, gaining (20% AD) bonus attack damage,  75 bonus range on her basic attacks, increased range on  Broken Wings and  Ki Burst, and the ability to cast  Wind Slash once for the duration.",
-      "targeting": "None",
+      "description": "Active: Riven empowers her sword for 15 seconds, gaining 20% AD  bonus attack damage,  75 bonus range on her basic attacks, increased range on  Broken Wings and  Ki Burst, and the ability to cast  Wind Slash once for the duration.",
+      "targeting": "Self / Buff",
       "affects": "Self",
-      "notes": "* There is a 1 second cooldown before Riven can cast Wind Slash after activating Blade of the Exile.\n The bonus AD is gained on cast and does not change for the duration."
+      "notes": "* There is a 1 second cooldown before Riven can cast Wind Slash after activating Blade of the Exile.\n The bonus AD is gained and determined on cast."
     },
     "Wind Slash": {
       "name": "Wind Slash",
@@ -152,8 +312,87 @@
       "icon": "Wind Slash.png",
       "blurb": "Riven unleashes a powerful ranged attack, which she may do once during Blade of the Exile.",
       "description": "Active: Riven unleashes a wave of energy in a cone, dealing physical damage to all enemies hit, increased by 0% \u2212 200% (based on missing health).",
-      "leveling": "Minimum Physical Damage:\n100 / 125 / 150 / 175 / 200 (+ 60% bonus AD)\nMaximum Physical Damage:\n300 / 375 / 450 / 525 / 600 (+ 180% bonus AD)",
-      "description2": "Wind Slash briefly grants  vision of an area around Riven to the enemies.",
+      "leveling": [
+        {
+          "attribute": "Minimum Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                125,
+                150,
+                175,
+                200
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                300,
+                375,
+                450,
+                525,
+                600
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                180,
+                180,
+                180,
+                180,
+                180
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
+      "description2": "If Wind Slash hits an enemy, it will briefly grant  vision of the area around Riven to the enemies.",
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "physical",

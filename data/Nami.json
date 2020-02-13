@@ -59,7 +59,7 @@
       "skill": "I",
       "icon": "Surging Tides.png",
       "blurb": "When Nami's abilities hit allied champions they gain Movement Speed for a short duration.",
-      "description": "Innate: All allied champions touched by any of Nami's abilities gain  60 (+ 20% AP) bonus movement speed for 1.5 seconds,  doubled    120 (+ 40% AP)   when touched by  Tidal Wave.",
+      "description": "Innate: All allied champions touched by any of Nami's abilities gain  60 (+ 20% AP) bonus movement speed for 1.5 seconds,[ doubled ][ 120 (+ 40% AP) ] when touched by  Tidal Wave.",
       "targeting": "Passive",
       "affects": "Allies",
       "notes": "* Surging Tides will apply when an ally champion is targeted by  Ebb and Flow /  Tidecaller's Blessing or when within  Aqua Prison /  Tidal Wave's impact area."
@@ -77,7 +77,47 @@
       "icon": "Aqua Prison.png",
       "blurb": "Sends a bubble to a target area, dealing damage and stunning all enemies on impact.",
       "description": "Active: Nami sends a bubble towards the targeted area, dealing  magic damage to all enemies hit,  revealing them, and  suspending them for 1.5 seconds.",
-      "leveling": "Magic Damage:\n75 / 130 / 185 / 240 / 295 (+ 50% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                130,
+                185,
+                240,
+                295
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -101,7 +141,86 @@
       "blurb": "Unleashes a stream of water that bounces back and forth between allied and enemy champions, healing allies and damaging enemies.",
       "description": "Active: Nami unleashes a stream of water onto the target champion or herself, which then bounces to nearby unaffected champions up to twice, alternating between enemies, allies and herself.",
       "description2": "Ebb and Flow  heals allies and deals magic damage to enemies, with each bounce being 85% (+ 7.5% per 100 AP) as effective as the previous one.",
-      "leveling2": "Heal:\n60 / 85 / 110 / 135 / 160 (+ 30% AP)\nMagic Damage:\n70 / 110 / 150 / 190 / 230 (+ 50% AP)",
+      "leveling2": [
+        {
+          "attribute": "Heal",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                85,
+                110,
+                135,
+                160
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                110,
+                150,
+                190,
+                230
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies, Allies",
       "damagetype": "Magic",
@@ -123,7 +242,125 @@
       "icon": "Tidecaller's Blessing.png",
       "blurb": "Empowers an allied champion for a short duration. The ally's basic attacks deal bonus magic damage and slow the target.",
       "description": "Active: Nami blesses the target allied champion or herself for 6 seconds, causing her target's next three basic attacks or abilities to each deal bonus magic damage and  slow their target for 1 second.",
-      "leveling": "Bonus Magic Damage Per Hit:\n25 / 40 / 55 / 70 / 85 (+ 20% AP)\nTotal Bonus Magic Damage:\n75 / 120 / 165 / 210 / 255 (+ 60% AP)\n\nSlow:\n15 / 20 / 25 / 30 / 35% (+ 5% per 100 AP)",
+      "leveling": [
+        {
+          "attribute": "Bonus Magic Damage Per Hit",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                40,
+                55,
+                70,
+                85
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Bonus Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                120,
+                165,
+                210,
+                255
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                20,
+                25,
+                30,
+                35
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                5,
+                5,
+                5,
+                5,
+                5
+              ],
+              "units": [
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Empowered area-of-effect abilities only deal 33% \u2212 66% (based on level) of the bonus damage to non-champions.",
       "targeting": "Unit",
       "affects": "Self, Allies",
@@ -145,7 +382,61 @@
       "icon": "Tidal Wave.png",
       "blurb": "Summons a massive Tidal Wave that knocks up, slows, and damages enemies. Allies hit gain double the effect of Surging Tides.",
       "description": "Active: Nami summons a tidal wave that surges forth, dealing magic damage to all units it hits,  knocking them up for 0.5 seconds and then  slowing them for 2 \u2212 4 (based on distance traveled) seconds.",
-      "leveling": "Magic Damage:\n150 / 250 / 350 (+ 60% AP)\n\nSlow:\n50 / 60 / 70%",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                250,
+                350
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                60,
+                70
+              ],
+              "units": [
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",

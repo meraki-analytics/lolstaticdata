@@ -40,10 +40,10 @@
   "rangetype": "Melee",
   "date": "2012-08-21",
   "patch": "V1.0.0.145",
-  "changes": "V9.6",
+  "changes": "V10.3",
   "role": [
-    "Assassin",
-    "Diver"
+    "Diver",
+    "Assassin"
   ],
   "damage": 3,
   "toughness": 1,
@@ -67,9 +67,9 @@
       "description2": "Ferocity: Rengar generates 1 Ferocity whenever he casts a basic ability. Reaching 4 Ferocity makes his next ability empowered, granting an additional cast along with 30 / 40 / 50% (based on level)  bonus movement speed for 1.5 seconds at the cost of all Ferocity. Reaching 4 Ferocity with  Savagery or  Bola Strike  locks its empowered version for 0.1 seconds before and after casting it. All Ferocity is lost after being out-of-combat for 8 seconds.",
       "icon3": "Bonetooth Necklace.png",
       "description3": "Bonetooth Necklace:  Takedowns within 1.5 seconds of being damaged by Rengar grant him a Trophy per unique enemy champion (max 5). An  additional one is made available through the event The Hunt is On!. Trophies grant 1% \u2212 36% (based on  trophies) bonus AD as bonus attack damage.",
-      "targeting": "Passive / Unit",
+      "targeting": "Passive / Buff",
       "affects": "Self",
-      "notes": "* Unseen Predator occurs regardless of whether or not Rengar's target has  sight of him.\n Rengar will not leap to targets already in his basic attack range.\n He also cannot leap if he's  rooted.\n The enhanced attack will apply other on-hit effects and can  critically strike as normal.\n Rengar will only leap to a target if his basic attack timer has been refreshed (if not so he will not automatically attempt to path towards his target, despite them being within leap range).\n Rengar can freely use any ability mid-leap.\n Unseen Predator will be lost immediately if Rengar  Flashes outside brush.\n  Rapid Firecannon's and  Savagery's bonus range are lost after 0.25 seconds upon gaining Unseen Predator, and are re-gained after 0.25 seconds upon losing Unseen Predator.\n Bonetooth Necklace uses icons for each stack:  1,  2,  3,  4,  5, and  Head of Kha'Zix."
+      "notes": "* Unseen Predator occurs regardless of whether or not Rengar's target has  sight of him.\n Rengar will not leap to targets already in his basic attack range.\n He also cannot leap if he's  rooted.\n\n The enhanced attack will apply other on-hit effects and can  critically strike as normal.\n Rengar will only leap to a target if his basic attack timer has been refreshed (if not so he will not automatically attempt to path towards his target, despite them being within leap range).\n Rengar can freely use any ability mid-leap.\n Unseen Predator will be lost immediately if Rengar  blinks outside of the brush.\n  Rapid Firecannon's and  Savagery's bonus range are lost after 0.25 second(s) upon gaining Unseen Predator, and are re-gained after 0.25 second(s) upon losing Unseen Predator.\n Bonetooth Necklace uses different icons corresponding to the number of stacks acquired: \n 1 Stack:  \n 2 Stacks: \n 3 Stacks: \n 4 Stacks: \n 5 Stacks: \n 6th Stack:  Head of Kha'Zix"
     }
   },
   "skill_q": {
@@ -80,17 +80,122 @@
       "cooldown": "6 / 5.5 / 5 / 4.5 / 4",
       "icon": "Savagery.png",
       "description": "Active: Rengar's next two basic attacks within 3 seconds gain  40% bonus attack speed, with the first also gaining  25 bonus range and dealing  bonus physical damage.",
-      "leveling": "Bonus Physical Damage:\n30 / 60 / 90 / 120 / 150 (+ 0 / 5 / 10 / 15 / 20% AD)",
+      "leveling": [
+        {
+          "attribute": "Bonus Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                60,
+                90,
+                120,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                0,
+                5,
+                10,
+                15,
+                20
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Savagery 2.png",
       "description2": "Empowered Active: Savagery's bonus physical damage is modified and grants Rengar 50% \u2212 101% (based on level)  bonus attack speed for 5 seconds.",
-      "leveling2": "Empowered Bonus Physical Damage:\n30 \u2212 240 (based on level) (+ 40% AD)",
+      "leveling2": [
+        {
+          "attribute": "Empowered Bonus Physical Damage",
+          "modifiers": [
+            {
+              "values": [
+                30.0,
+                42.35294117647059,
+                54.705882352941174,
+                67.05882352941177,
+                79.41176470588235,
+                91.76470588235294,
+                104.11764705882354,
+                116.47058823529412,
+                128.8235294117647,
+                141.1764705882353,
+                153.52941176470588,
+                165.88235294117646,
+                178.23529411764707,
+                190.58823529411765,
+                202.94117647058823,
+                215.29411764705884,
+                227.64705882352942,
+                240.0
+              ],
+              "units": [
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Savagery resets Rengar's basic attack timer.",
       "targeting": "Self / Buff",
       "affects": "Self",
       "damagetype": "Physical",
       "spelleffects": "Proc",
       "spellshield": "True",
-      "notes": "* (Empowered) Savagery has no cast time and does not interrupt Rengar's previous orders.\n The enhanced attack applies other  on-hit effects as well as life steal and can  critically strike as normal (the bonus damage cannot) but does not affect structures."
+      "notes": "* Savagery and Empowered Savagery have no cast time and do not interrupt Rengar's previous orders.\n The enhanced attack applies other  on-hit effects as well as  life steal and can  critically strike as normal (the bonus damage cannot) but does not affect structures."
     }
   },
   "skill_w": {
@@ -105,10 +210,115 @@
       "description": "Passive: Rengar stores 50% of the damage he's taken in the last 1.5 seconds as Grey Health (75% versus monsters).",
       "icon2": "Battle Roar.png",
       "description2": "Active: Rengar lets out a battle roar, dealing  magic damage to nearby enemies and  healing Rengar for his Grey Health.",
-      "leveling2": "Magic Damage:\n50 / 80 / 110 / 140 / 170 (+ 80% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                80,
+                110,
+                140,
+                170
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "icon3": "Battle Roar 2.png",
       "description3": "Empowered Active: Battle Roar's magic damage is modified and additionally  cleanses Rengar of all  crowd control.",
-      "leveling3": "Empowered Magic Damage:\n50 \u2212 220 (based on level) (+ 80% AP)",
+      "leveling3": [
+        {
+          "attribute": "Empowered Magic Damage",
+          "modifiers": [
+            {
+              "values": [
+                50.0,
+                60.0,
+                70.0,
+                80.0,
+                90.0,
+                100.0,
+                110.0,
+                120.0,
+                130.0,
+                140.0,
+                150.0,
+                160.0,
+                170.0,
+                180.0,
+                190.0,
+                200.0,
+                210.0,
+                220.0
+              ],
+              "units": [
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Auto",
       "affects": "Self / Enemies",
       "damagetype": "Magic",
@@ -127,17 +337,144 @@
       "icon": "Bola Strike.png",
       "blurb": "Rengar throws a bola, slowing the first target hit for a short duration. Ferocity effect: roots the target.",
       "description": "Active: Rengar throws a bola in the target direction, dealing physical damage to the first enemy hit and  slowing them for 1.75 seconds.",
-      "leveling": "Physical Damage:\n55 / 100 / 145 / 190 / 235 (+ 80% bonus AD)\nSlow:\n30 / 45 / 60 / 75 / 90%",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                100,
+                145,
+                190,
+                235
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                45,
+                60,
+                75,
+                90
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Bola Strike 2.png",
       "description2": "Empowered Active: Bola Strike's physical damage is modified and  roots its target for 1.75 seconds.",
-      "leveling2": "Empowered Physical Damage:\n50 \u2212 305 (based on level) (+ 80% bonus AD)",
+      "leveling2": [
+        {
+          "attribute": "Empowered Physical Damage",
+          "modifiers": [
+            {
+              "values": [
+                50.0,
+                65.0,
+                80.0,
+                95.0,
+                110.0,
+                125.0,
+                140.0,
+                155.0,
+                170.0,
+                185.0,
+                200.0,
+                215.0,
+                230.0,
+                245.0,
+                260.0,
+                275.0,
+                290.0,
+                305.0
+              ],
+              "units": [
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Physical",
-      "spelleffects": "Single target",
+      "spelleffects": "spell",
       "spellshield": "True",
       "projectile": "True",
-      "notes": "* If Rengar presses  Q or  W during Bola Strike's cast time, he'll buffer those spells and cast them when Bola Strike completes."
+      "notes": "* If Rengar casts  Savagery and/or  Battle Roar during Bola Strike's cast time, he will buffer them and cast them until Bola Strike completes."
     }
   },
   "skill_r": {
@@ -149,16 +486,70 @@
       "cooldown": "110 / 90 / 70",
       "icon": "Thrill of the Hunt.png",
       "blurb": "Rengar's predatory instincts take over, Camouflaging him and revealing the nearest enemy champion in a large radius around him. During Thrill of the Hunt, Rengar gains Movement Speed and he can leap to the tracked enemy for a guaranteed critical strike, even without being in brush.",
-      "description": "Active: Rengar channels his predatory instincts gaining  true sight of the nearest enemy champion and  bonus movement speed for a duration.",
-      "leveling": "Duration:\n12 / 16 / 20\n\nBonus Movement Speed:\n40 / 50 / 60%",
-      "description2": "After 2 seconds he also becomes  camouflaged and gains  Unseen Predator for the remaining duration. His next basic attack within normal attack range against any unit or with Unseen Predator against the nearest enemy champion deals 50% AD bonus physical damage and reduces the target's  armor for 4 seconds.",
-      "leveling2": "Armor Reduction:\n12 / 18 / 24",
-      "description3": "The nearest enemy champion to Rengar alerts all allies within 1200 range about his presence. Attacking or casting any spell (excluding  Savagery) ends Thrill of the Hunt.",
-      "targeting": "Self",
+      "description": "Active: Rengar  channels his predatory instincts,  revealing the nearest enemy champion and gaining  bonus movement speed for a duration.",
+      "leveling": [
+        {
+          "attribute": "Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                12,
+                16
+              ],
+              "units": [
+                " /",
+                " /"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "20 \nBonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                50,
+                60
+              ],
+              "units": [
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
+      "description2": "After 2 seconds he also becomes  camouflaged and gains  Unseen Predator for the remaining duration. His next basic attack within normal attack range against any unit or with Unseen Predator against the nearest enemy champion deals  50% AD  bonus physical damage and reduces the target's  armor for 4 seconds.",
+      "leveling2": [
+        {
+          "attribute": "Armor Reduction",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                12,
+                18,
+                24
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "description3": "The nearest enemy champion to Rengar alerts all of their allies within 1200 range about his presence. Attacking or casting any spell (excluding  Savagery) ends Thrill of the Hunt immediately.",
+      "targeting": "Self / Buff",
       "affects": "Enemies",
       "damagetype": "Physical",
       "spelleffects": "Proc",
-      "notes": "* Alerted allies will hear a   threatening growl followed by an eerie sound effect.\n The enemy have a vision range of Rengar of 1600 units.\n Enemies revealed by Thrill of the Hunt stay revealed for the spell's duration.\n The true vision lingers on his target until the leap completes.\n Thrill of the Hunt does not grant  sight of the target while under the effects of  Paranoia.\n\n    The nearest detected target is automatically pronounced as the victim. This indicator is visible to both teams and may switch targets under certain circumstances."
+      "notes": "* Alerted allies will hear a   threatening growl following an eerie sound effect.\n The enemy have a vision range of Rengar of 1600 units.\n Enemies revealed by Thrill of the Hunt stay revealed for the spell's duration.\n The true vision lingers on his target until the leap completes.\n Thrill of the Hunt does not grant  sight of the target while under the effects of  Paranoia.\n\n \t  \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tThe nearest detected target is automatically pronounced as the victim. This indicator is visible to both teams and may switch targets under certain circumstances."
     }
   }
 }

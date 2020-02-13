@@ -78,7 +78,73 @@
       "icon": "To the Skies!.png",
       "blurb": "Hammer Stance: Leaps to an enemy dealing physical damage and slowing enemies.",
       "description": "Active: Jayce  leaps to the target enemy and smashes his hammer on the ground on top of them, dealing  physical damage to all enemies in the  area and  slowing them for 2 seconds.",
-      "leveling": "Physical Damage:\n45 / 80 / 115 / 150 / 185 / 220 (+ 120% bonus AD)\nSlow:\n30 / 35 / 40 / 45 / 50 / 55%",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                80,
+                115,
+                150,
+                185,
+                220
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                120,
+                120,
+                120,
+                120
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                35,
+                40,
+                45,
+                50,
+                55
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "physical",
@@ -98,7 +164,90 @@
       "icon": "Shock Blast.png",
       "blurb": "Cannon Stance: Fires an orb of electricity that detonates upon hitting an enemy (or reaching the end of its path) dealing physical damage to all enemies hit.",
       "description": "Active: Jayce fires an orb of electricity that detonates upon hitting an enemy or reaching the end of its path, dealing physical damage to all enemies around them.",
-      "leveling": "Physical Damage:\n55 / 110 / 165 / 220 / 275 / 330 (+ 120% bonus AD)\n Accelerated Damage:\n77 / 154 / 231 / 308 / 385 / 462 (+ 168% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                110,
+                165,
+                220,
+                275,
+                330
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                120,
+                120,
+                120,
+                120
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Accelerated Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                77,
+                154,
+                231,
+                308,
+                385,
+                462
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                168,
+                168,
+                168,
+                168,
+                168
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If Shock Blast is fired through  Acceleration Gate, the range and damage are increased by 40%, and the speed by 30.34%.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -121,9 +270,117 @@
       "icon": "Lightning Field.png",
       "blurb": "Hammer Stance: Passive: Restores Mana per strike. Active: Creates a field of lightning damaging nearby enemies for several seconds.",
       "description": "Passive: Jayce restores  mana each time he hits an enemy with a basic attack with  Mercury Hammer.",
-      "leveling": "Mana Restored:\n6 / 8 / 10 / 12 / 14 / 16",
+      "leveling": [
+        {
+          "attribute": "Mana Restored",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                6,
+                8,
+                10,
+                12,
+                14,
+                16
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Active: Jayce surrounds himself with an electric field for 4 seconds, dealing  magic damage each second to all nearby enemies.",
-      "leveling2": "Magic Damage Per Second:\n25 / 40 / 55 / 70 / 85 / 100 (+ 25% AP)\nTotal Magic Damage:\n 100 / 160 / 220 / 280 / 340 / 400 (+ 100% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage Per Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                40,
+                55,
+                70,
+                85,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                160,
+                220,
+                280,
+                340,
+                400
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Auto",
       "affects": "Self, Enemies",
       "damagetype": "magic",
@@ -140,7 +397,32 @@
       "icon": "Hyper Charge.png",
       "blurb": "Cannon Stance: Gains a burst of energy, increasing Attack Speed to maximum for several attacks.",
       "description": "Active: Jayce gains  300% bonus attack speed on his next 3 basic attacks within 4 seconds, with each one dealing modified damage.",
-      "leveling": "Damage Modifier:\n70 / 78 / 86 / 94 / 102 / 110%",
+      "leveling": [
+        {
+          "attribute": "Damage Modifier",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                78,
+                86,
+                94,
+                102,
+                110
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Hyper Charge resets Jayce's basic attack timer, and the modified damage is affected by  critical strikes.",
       "targeting": "Buff",
       "affects": "Self",
@@ -162,7 +444,73 @@
       "icon": "Thundering Blow.png",
       "blurb": "Hammer Stance: Deals magic damage to an enemy and knocks them back a short distance.",
       "description": "Active: Jayce swings his hammer at the target enemy, dealing magic damage and  knocking them back 500 units away in the opposite direction.",
-      "leveling": "Magic Damage:\n8 / 10.4 / 12.8 / 15.2 / 17.6 / 20% of target's maximum health (+ 100% bonus AD)\nMaximum Monster Damage:\n200 / 300 / 400 / 500 / 600 / 700",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                8,
+                10.4,
+                12.8,
+                15.2,
+                17.6,
+                20
+              ],
+              "units": [
+                "% of target's maximum health",
+                "% of target's maximum health",
+                "% of target's maximum health",
+                "% of target's maximum health",
+                "% of target's maximum health",
+                "% of target's maximum health"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Monster Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                300,
+                400,
+                500,
+                600,
+                700
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "magic",
@@ -181,7 +529,32 @@
       "icon": "Acceleration Gate.png",
       "blurb": "Cannon Stance: Deploys an Acceleration Gate increasing the Movement Speed of all allied champions who pass through it. If Shock Blast is fired through the gate the missile speed, range, and damage will increase.",
       "description": "Active: Jayce deploys an energy gate for 4 seconds, granting all allies who pass through it, including himself,  bonus movement speed that decays over 3 seconds.",
-      "leveling": "Bonus Movement Speed:\n30 / 35 / 40 / 45 / 50 / 55%",
+      "leveling": [
+        {
+          "attribute": "Bonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                35,
+                40,
+                45,
+                50,
+                55
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Allies",
       "notes": "* Acceleration Gate has no  cast time and does not interrupt Jayce's previous orders.\n The bonus movement speed does not apply to  pets and  minions.\n Acceleration Gate grants brief  sight of the area."

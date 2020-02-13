@@ -5,7 +5,7 @@
   "attack": 5,
   "defense": 4,
   "magic": 7,
-  "difficulty": 3,
+  "difficulty": 2,
   "herotype": "Assassin",
   "alttype": "Mage",
   "resource": "Mana",
@@ -58,13 +58,11 @@
       "skill": "I",
       "icon": "Prowl.png",
       "blurb": "Moving through brush increases Nidalee's Movement Speed by 10% for 2 seconds, increased to 30% toward visible enemy champions within 1400 range. Hitting champions or monsters with Javelin Toss or Bushwhack triggers a Hunt, granting True Sight of them for 4 seconds. During this time, Nidalee gains 10% Movement Speed (increased to 30% toward the Hunted target) and her Takedown and Pounce are enhanced against them.",
-      "description": "Innate - Prowl: Being in  brush grants Nidalee  10% bonus movement speed for 2 seconds, increased to 30% when facing a nearby visible enemy  champion.",
-      "description2": "Innate - Hunt: Hitting nearby monsters or enemy champions with  Javelin Toss or  Bushwhack marks them as Hunted,  revealing them for 4 seconds and granting Nidalee  10% bonus movement speed for the same duration, increased to 30% when facing a nearby Hunted target. Additionally, Nidalee's first use of  Takedown and  Pounce against Hunted targets are empowered.",
+      "description": "Innate - Prowl: Being in  brush grants Nidalee  10% bonus movement speed for 2 seconds, increased to 30% when facing a nearby  visible enemy  champion.",
+      "description2": "Innate - Hunt: Hitting nearby  monsters or enemy champions with  Javelin Toss or  Bushwhack marks them as Hunted,  revealing them for 4 seconds and granting Nidalee  10% bonus movement speed for the same duration, increased to 30% when facing a nearby Hunted target. Additionally, Nidalee's first use of  Takedown and  Pounce against Hunted targets are empowered.",
       "description3": "The bonus movement speed from Prowl and Hunt can stack, but cannot exceed 30%.",
       "targeting": "Passive",
       "affects": "Enemies, Self",
-      "damagetype": "None",
-      "spelleffects": "False",
       "notes": "* No additional notes."
     }
   },
@@ -82,7 +80,86 @@
       "icon": "Javelin Toss.png",
       "blurb": "In human form, Nidalee throws a spiked javelin at her target that gains damage as it flies.",
       "description": "Active: Nidalee hurls a javelin forward in a line, dealing  magic damage to the first enemy it hits, which is increased by 0% \u2212 200% (based on distance traveled).",
-      "leveling": "Minimum Magic Damage:\n70 / 85 / 100 / 115 / 130 (+ 40% AP)\nMaximum Magic Damage:\n210 / 255 / 300 / 345 / 390 (+ 120% AP)",
+      "leveling": [
+        {
+          "attribute": "Minimum Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                85,
+                100,
+                115,
+                130
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                210,
+                255,
+                300,
+                345,
+                390
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                120,
+                120,
+                120,
+                120
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -99,16 +176,266 @@
       "icon": "Takedown.png",
       "blurb": "As a cougar, her next attack will attempt to fatally wound her target, dealing more damage the less life they have.",
       "description": "Active: Nidalee's next basic attack gains  75 bonus range and is modified to deal magic damage, increased by an amount for every 1% of target's missing health.",
-      "leveling": "Takedown scales with  Aspect of the Cougar's rank\nBonus Damage:\n1 / 1.25 / 1.5 / 1.75%\nMaximum Bonus Damage:\n100 / 125 / 150 / 175%\nMinimum Magic Damage:\n5 / 30 / 55 / 80 (+ 75% AD) (+ 40% AP)\nMaximum Damage:\n10 / 67.5 / 137.5 / 220 (+ 150 / 168.75 / 187.5 / 206.25% AD) (+ 80 / 90 / 100 / 110% AP)",
+      "leveling": [
+        {
+          "attribute": "Takedown scales with  Aspect of the Cougar's rank\nBonus Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1,
+                1.25,
+                1.5,
+                1.75
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Bonus Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                125,
+                150,
+                175
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Minimum Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                5,
+                30,
+                55,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                75,
+                75,
+                75,
+                75
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                67.5,
+                137.5,
+                220
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                168.75,
+                187.5,
+                206.25
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                90,
+                100,
+                110
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Hunt Bonus: Takedown deals 40% increased damage to Hunted targets.",
-      "leveling2": "Prowl-Enhanced Minimum Damage:\n7 / 42 / 77 / 112 (+ 105% AD) (+ 56% AP)\n Prowl-Enhanced Maximum Damage:\n14 / 94.5 / 192.5 / 308 (+ 210 / 236.25 / 262.5 / 288.75% AD) (+ 112 / 126 / 140 / 154% AP)",
+      "leveling2": [
+        {
+          "attribute": "Prowl-Enhanced Minimum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                7,
+                42,
+                77,
+                112
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                105,
+                105,
+                105,
+                105,
+                105
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                56,
+                56,
+                56,
+                56,
+                56
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Prowl-Enhanced Maximum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                14,
+                94.5,
+                192.5,
+                308
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                210,
+                236.25,
+                262.5,
+                288.75
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                112,
+                126,
+                140,
+                154
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Takedown resets Nidalee's autoattack timer. Other damage converted to magic damage by Takedown are not increased by Takedown's respective effects.",
-      "targeting": "None",
+      "targeting": "Self",
       "affects": "Self, Enemies",
       "damagetype": "Magic",
-      "spelleffects": "Special",
+      "spelleffects": "Proc",
       "spellshield": "True",
-      "notes": "* Takedown has no cast time and does not interrupt Nidalee's previous orders.\n The attack enhanced by Takedown will apply other on-hit effects and can  critically strike as normal (damage not increased by Takedown) (magic damage to  Hunted targets is displayed as such only for clarity reasons) as well as affect structures (will not deal bonus damage based on their missing health).\n Basic attacks enhanced by Takedown convert Spellblade damage from  Sheen,  Iceborn Gauntlet, and/or  Trinity Force from physical to magic. Their damage is however not increased by Takedown.\n Takedown's damage will apply  life steal.\n Takedown's enhanced attack cannot be  dodged but can be  parried,  blocked, and/or miss if Nidalee is  blinded."
+      "notes": "* Takedown has no cast time and does not interrupt Nidalee's previous orders.\n The attack enhanced by Takedown will apply other on-hit effects and can  critically strike as normal (damage not increased by Takedown) (magic damage to  Hunted targets is displayed as such only for clarity reasons) as well as affect structures (will not deal bonus damage based on their missing health).\n Basic attacks enhanced by Takedown convert Spellblade damage from  Sheen,  Iceborn Gauntlet, and/or  Trinity Force from physical to magic. Their damage is however not increased by Takedown.\n Takedown's damage will apply  life steal.\n Takedown's enhanced attack cannot be  dodged, but it can be  blocked or missed if Nidalee is  blinded."
     }
   },
   "skill_w": {
@@ -122,13 +449,92 @@
       "cooldown": "13 / 12 / 11 / 10 / 9",
       "icon": "Bushwhack.png",
       "blurb": "In human form, Nidalee lays a trap for unwary opponents that, when sprung, damages and reveals its target.",
-      "description": "Active: Nidalee lays a trap at the target location, which  stealths and arms after a brief delay and lasts for up to 2 minutes. The next enemy who springs the trap takes magic damage over 4 seconds, granting  True Sight for the duration.",
-      "leveling": "Magic Damage Per Second:\n10 / 20 / 30 / 40 / 50 (+ 5% AP)\nTotal Magic Damage:\n40 / 80 / 120 / 160 / 200 (+ 20% AP)",
-      "description2": "Traps have  6 maximum health and can only be damaged by champion basic attacks (2 damage from  ranged and 3 from  melee). Up to a maximum of 4 / 6 / 8 / 10 (based on level) traps may be active at once.",
+      "description": "Active: Nidalee lays a  trap at the target location, which  stealths and arms after a brief delay and lasts for up to 2 minutes. The next enemy who springs the trap takes magic damage over 4 seconds and are  revealed for the duration.",
+      "leveling": [
+        {
+          "attribute": "Magic Damage Per Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                20,
+                30,
+                40,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                5,
+                5,
+                5,
+                5,
+                5
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                80,
+                120,
+                160,
+                200
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
+      "description2": "Traps have  6 maximum health and can only be damaged by champion basic attacks (2 hit points from  ranged and 3 hit points from  melee). Up to a maximum of 4 / 6 / 8 / 10 (based on level) traps may be active at once.",
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
-      "spelleffects": "DoT",
+      "spelleffects": "dot",
       "spellshield": "True",
       "notes": "* No additional notes."
     },
@@ -144,9 +550,68 @@
       "description": "Active: Nidalee  dashes a fixed distance in the direction of the cursor, dealing magic damage to enemies around her landing point.",
       "leveling": "Pounce scales with  Aspect of the Cougar's rank",
       "description2": "Hunt Bonus: Nidalee can cursor-over Hunted enemies to Pounce on them from increased range.",
-      "leveling2": "Magic Damage:\n60 / 110 / 160 / 210 (+ 30% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                110,
+                160,
+                210
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Killing a unit while in Cougar Form or using Pounce's Hunt bonus reduces Pounce's remaining  cooldown to a value. This has no effect if the remaining cooldown is already lower than that value.",
-      "leveling3": "Reduced Cooldown:\n3 / 2.5 / 2 / 1.5",
+      "leveling3": [
+        {
+          "attribute": "Reduced Cooldown",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                3,
+                2.5,
+                2,
+                1.5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -167,10 +632,110 @@
       "icon": "Primal Surge.png",
       "blurb": "In human form, Nidalee channels the spirit of the cougar to heal her allies and imbue them with Attack Speed for a short duration.",
       "description": "Active: Nidalee evokes the spirit of the cougar,  healing the target allied champion or herself, increased by 0% \u2212 100% (based on target's missing health), and granting them  bonus attack speed for 7 seconds.",
-      "leveling": "Minimum Heal:\n35 / 55 / 75 / 95 / 115 (+ 32.5% AP)\nMaximum Heal:\n70 / 110 / 150 / 190 / 230 (+ 65% AP)\nBonus Attack Speed:\n20 / 30 / 40 / 50 / 60%",
-      "targeting": "Unit",
+      "leveling": [
+        {
+          "attribute": "Minimum Heal",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                55,
+                75,
+                95,
+                115
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                32.5,
+                32.5,
+                32.5,
+                32.5,
+                32.5
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Heal",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                110,
+                150,
+                190,
+                230
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                65,
+                65,
+                65,
+                65,
+                65
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                30,
+                40,
+                50,
+                60
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
+      "targeting": "Unit / Self",
       "affects": "Self, Allies",
-      "damagetype": "None",
       "spelleffects": "Heal",
       "notes": "* The bonus attack speed will persist through  Cougar Form if Nidalee uses  Primal Surge on herself."
     },
@@ -184,7 +749,45 @@
       "icon": "Swipe.png",
       "blurb": "As a cougar, she claws in a direction, dealing damage to enemies in front of her.",
       "description": "Active: Nidalee claws at enemies in an arc in the direction of the cursor, dealing magic damage to all enemies hit.",
-      "leveling": "Swipe scales with  Aspect of the Cougar's rank\nMagic Damage:\n80 / 140 / 200 / 260 (+ 45% AP)",
+      "leveling": [
+        {
+          "attribute": "Swipe scales with  Aspect of the Cougar's rank\nMagic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                140,
+                200,
+                260
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                45,
+                45,
+                45,
+                45
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -207,9 +810,8 @@
       "description2": "Active: Nidalee transforms herself into a human, gaining  ranged attacks with 525  range as well as new abilities.",
       "description3": "Triggering  Hunt resets Aspect of the Cougar's  cooldown if Nidalee is in human form.",
       "description4": "Nidalee begins with one rank in Aspect of the Cougar and can increase it at levels 6, 11, and 16.",
-      "targeting": "None",
+      "targeting": "Self",
       "affects": "Self",
-      "damagetype": "None",
       "notes": "* No additional details."
     }
   }

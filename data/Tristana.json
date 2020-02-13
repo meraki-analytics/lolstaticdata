@@ -75,7 +75,30 @@
       "icon": "Rapid Fire.png",
       "blurb": "Tristana fires her weapon rapidly, increasing her Attack Speed for a short time.",
       "description": "Active: Tristana gains  bonus attack speed for 7 seconds.",
-      "leveling": "Bonus Attack Speed:\n50 / 65 / 80 / 95 / 110%",
+      "leveling": [
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                65,
+                80,
+                95,
+                110
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "None",
       "affects": "Self",
       "notes": "* Rapid Fire is a non-refreshing buff that will not update on rank-up."
@@ -93,15 +116,77 @@
       "cooldown": "22 / 20 / 18 / 16 / 14",
       "icon": "Rocket Jump.png",
       "blurb": "Tristana fires at the ground to propel her to a distant location, dealing damage and slowing surrounding units for a brief period where she lands.",
-      "description": "Active: Tristana  dashes to the target location, dealing  magic damage to all nearby enemies on impact and  slowing them by 60%.",
-      "leveling": "Magic Damage:\n95 / 145 / 195 / 245 / 295 (+ 50% AP)\n\nSlow Duration:\n1 / 1.5 / 2 / 2.5 / 3",
+      "description": "Active: Tristana  jumps to the target location, dealing  magic damage to all nearby enemies on impact and  slowing them by 60%.",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                95,
+                145,
+                195,
+                245,
+                295
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1,
+                1.5,
+                2,
+                2.5,
+                3
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "On enemy champion  takedowns or upon detonating  Explosive Charge at maximum stacks on an enemy champion, Rocket Jump's  cooldown is reset.",
       "targeting": "Ground",
       "affects": "Enemies / Self",
       "damagetype": "Magic",
-      "spelleffects": "Area of effect",
+      "spelleffects": "spellaoe",
       "spellshield": "True",
-      "notes": "* Tristana can still use basic attacks, abilities, summoner spells and item actives while in the air.\n Rocket Jump's speed depends on the distance of the jump.  Melee range jumps are much shorter while long range jumps leave Tristana in the air significantly longer.\n Tristana is still targetable while jumping and can be hit by skillshots such as  Ashe's  Enchanted Crystal Arrow and  Ezreal's  Mystic Shot.\n Non- airborne crowd control effects, such as  stuns and  roots, will take effect upon landing and will not cancel the jump, with the exception of  knockdowns.\n All  airborne crowd control effects, such as  knockups,  knockbacks and  pulls, will cancel the jump and then complete their effects as normal."
+      "notes": "* Tristana can still use basic attacks, abilities, summoner spells and item actives while in the air.\n Rocket Jump's speed depends on the distance of the jump.  Melee range jumps are much shorter while long range jumps leave Tristana in the air significantly longer.\n Tristana is still targetable while jumping and can be hit by skillshots such as  Ashe's  Enchanted Crystal Arrow and  Ezreal's  Mystic Shot.\n Non- airborne crowd control effects, such as  stuns and  roots, will take effect upon landing and will 'not  interrupt the jump, with the exception of  knockdowns.\n All  airborne crowd control effects, such as  knockups,  knockbacks and  pulls, will cancel the jump and then complete their effects as normal."
     }
   },
   "skill_e": {
@@ -117,19 +202,229 @@
       "cooldown": "16 / 15.5 / 15 / 14.5 / 14",
       "icon": "Explosive Charge.png",
       "blurb": "When Tristana kills a unit, her cannonballs burst into shrapnel, dealing damage to surrounding enemies. Can be activated to place a bomb on a target enemy that explodes after a short duration dealing damage to surrounding units.",
-      "description": "Passive: Enemies explode when slain by Tristana's basic attacks, dealing magic damage to all nearby enemies.",
-      "leveling": "Magic Damage:\n55 / 80 / 105 / 130 / 155 (+ 25% AP)",
+      "description": "Passive: Enemies explode when killed by Tristana's basic attacks, dealing magic damage to all nearby enemies.",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                80,
+                105,
+                130,
+                155
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Active: Tristana places an explosive charge on the target enemy or enemy turret. After 4 seconds the charge explodes, dealing  physical damage to nearby enemies. The explosion radius is increased when used on a  turret.",
-      "leveling2": "Minimum Physical Damage:\n70 / 80 / 90 / 100 / 110 (+ 50 / 70 / 90 / 110 / 130% bonus AD) (+ 50% AP)",
+      "leveling2": [
+        {
+          "attribute": "Minimum Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                80,
+                90,
+                100,
+                110
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                70,
+                90,
+                110,
+                130
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Tristana's basic attacks and abilities against the target increase Explosive Charge's damage by 30%, stacking up to 4 times for a maximum 120% increase, upon which the charge also detonates instantly.",
-      "leveling3": "Bonus Damage Per Stack:\n21 / 24 / 27 / 30 / 33 (+ 15 / 21 / 27 / 33 / 39% bonus AD) (+ 15% AP)\nMaximum Physical Damage:\n154 / 176 / 198 / 220 / 242 (+ 110 / 154 / 198 / 242 / 286% bonus AD) (+ 110% AP)",
+      "leveling3": [
+        {
+          "attribute": "Bonus Damage Per Stack",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                21,
+                24,
+                27,
+                30,
+                33
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                21,
+                27,
+                33,
+                39
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                15,
+                15,
+                15,
+                15
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                154,
+                176,
+                198,
+                220,
+                242
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                110,
+                154,
+                198,
+                242,
+                286
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                110,
+                110,
+                110,
+                110,
+                110
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "Physical",
-      "spelleffects": "Area of effect",
+      "spelleffects": "spellaoe",
       "spellshield": "True",
       "projectile": "True",
-      "notes": "* Explosive Charge's active range doesn't benefit from  Rapid Firecannon.\n Explosive Charge's cast time is reduced with  attack speed.\n Tristana will automatically be ordered to attack the target of Explosive Charge.\n All Explosive Charge explosions will affect turrets."
+      "notes": "* Explosive Charge's cast time is reduced with  attack speed.\n Tristana will automatically be ordered to attack the target of Explosive Charge."
     }
   },
   "skill_r": {
@@ -145,7 +440,61 @@
       "icon": "Buster Shot.png",
       "blurb": "Tristana loads a massive cannonball into her weapon and fires it at an enemy unit. This deals Magic Damage and knocks the target back. If the target is carrying the Explosive Charge bomb, the bomb detonation radius is doubled.",
       "description": "Active: Tristana fires a massive cannonball at the target enemy, dealing magic damage and  knocking back the target and all enemies around them.",
-      "leveling": "Magic Damage:\n300 / 400 / 500 (+ 100% AP)\nKnockback Distance:\n600 / 800 / 1000",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                300,
+                400,
+                500
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Knockback Distance",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                600,
+                800,
+                1000
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "Physical",

@@ -79,17 +79,135 @@
       "icon": "Threaded Volley.png",
       "blurb": "Taliyah throws a volley of missiles in a target direction, moving freely as she does. This works the ground below her. If Taliyah casts Threaded Volley on worked ground, she only throws one missile.",
       "description": "Active: After 0.25 seconds, Taliyah unleashes 5 Stone Shards in quick succession in the target direction over 1.5 seconds, dealing  magic damage to the first target hit. Units hit by multiple Stone Shards take 50% damage beyond the first.",
-      "leveling": "Minimum Magic Damage:\n70 / 95 / 120 / 145 / 170 (+ 45% AP)\nMaximum Single-Target Damage:\n210 / 285 / 360 / 435 / 510 (+ 135% AP)\nMaximum Damage:\n350 / 475 / 600 / 725 / 850 (+ 225% AP)",
+      "leveling": [
+        {
+          "attribute": "Minimum Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                95,
+                120,
+                145,
+                170
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                45,
+                45,
+                45,
+                45
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Single-Target Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                210,
+                285,
+                360,
+                435,
+                510
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                135,
+                135,
+                135,
+                135,
+                135
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                350,
+                475,
+                600,
+                725,
+                850
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                225,
+                225,
+                225,
+                225,
+                225
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Taliyah can move and cast other abilities while launching Stone Shards. After launching the third Stone Shard she's also able to basic attack.",
       "icon3": "Threaded Volley 2.png",
       "description3": "Casting Threaded Volley creates an area of Worked Ground 450 units radius wide around Taliyah that lasts 45 seconds. While on Worked Ground, Taliyah only hurls one Stone Shard upon casting Threaded Volley and reduces its  mana cost to 1.",
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "magic",
-      "spelleffects": "Special",
-      "spellshield": "True",
+      "spelleffects": "special",
+      "spellshield": "Special",
       "projectile": "true",
-      "notes": "* The first Stone Shard hit on each target is considered  single target damage and triggers effects such as Shock from  Muramana, while additional ones of the same cast are considered  damage-over-time.\n The first Stone Shard is launched instantly after the cast time. After 0.5 seconds is then launched the second and after the same delay is then launched the third. After another 0.25 seconds is launched the fourth and after the same delay is then launched the fifth."
+      "notes": "* The first Stone Shard hit on each target is considered  single target  spell damage and triggers effects such as Shock from  Muramana, while additional ones of the same cast are considered  persistent damage.\n The first Stone Shard is launched instantly after the cast time. After 0.5 seconds is then launched the second and after the same delay is then launched the third. After another 0.25 seconds is launched the fourth and after the same delay is then launched the fifth.\n  Spell shield only prevents one instance of damage."
     }
   },
   "skill_w": {
@@ -104,7 +222,47 @@
       "icon": "Seismic Shove.png",
       "blurb": "Taliyah causes an area of ground to erupt and throws enemies within in a direction of her choosing.",
       "description": "Active: After 0.25 seconds, Taliyah marks the target location and selects a direction. After 1 second, the ground erupts, dealing magic damage to all enemies hit and  knocking them in the chosen direction for 1 second.",
-      "leveling": "Magic Damage:\n60 / 80 / 100 / 120 / 140 (+ 40% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                80,
+                100,
+                120,
+                140
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Vector-targeted",
       "affects": "Enemies",
       "damagetype": "magic",
@@ -126,10 +284,168 @@
       "icon": "Unraveled Earth.png",
       "blurb": "Taliyah creates a slowing minefield that explodes if enemies dash through it or are pushed/pulled through it.",
       "description": "Active: After 0.25 seconds, Taliyah scatters 18 boulders over the ground in a cone before her, dealing magic damage to all enemies hit.",
-      "leveling": "Magic Damage:\n50 / 75 / 100 / 125 / 150 (+ 40% AP)\nTotal Magic Damage:\n100 / 150 / 200 / 250 / 300 (+ 80% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                75,
+                100,
+                125,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                150,
+                200,
+                250,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "The boulders then remain for 4 seconds,  slowing all enemies within the area by 20% (+ 4% per 100 AP). At the end of their duration, all remaining boulders explode, dealing Unraveled Earth's initial damage once more.",
       "description3": "Enemies who  dash over or are  knocked through the boulders will detonate them instantly, each dealing magic damage. Enemies can detonate multiple boulders, but they will only take damage from a maximum of 4, reduced by 0% \u2212 45% (based on boulder hit).",
-      "leveling3": "Minimum Trigger Damage:\n50 / 60 / 70 / 80 / 90 (+ 30% AP)\nMaximum Trigger Damage:\n155 / 186 / 217 / 248 / 279 (+ 93% AP)",
+      "leveling3": [
+        {
+          "attribute": "Minimum Trigger Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                60,
+                70,
+                80,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Trigger Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                155,
+                186,
+                217,
+                248,
+                279
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                93,
+                93,
+                93,
+                93,
+                93
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "magic",

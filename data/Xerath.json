@@ -78,16 +78,79 @@
       "blurb": "Fires a long-range beam of energy, dealing magic damage to all targets hit.",
       "description": "First Cast: Xerath  charges for up to 3 seconds to increase Arcanopulse's  range over 1.5 seconds, gradually  slowing himself for the duration by up to 50%.",
       "description2": "Arcanopulse is canceled when the charge ends, refunding  half of the mana cost.",
-      "leveling2": "Mana Refunded:\n40 / 45 / 50 / 55 / 60",
+      "leveling2": [
+        {
+          "attribute": "Mana Refunded",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                45,
+                50,
+                55,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Second Cast: After a brief delay, Xerath fires a beam of energy in the target direction, dealing  magic damage to all enemies hit.",
-      "leveling3": "Magic Damage:\n80 / 120 / 160 / 200 / 240 (+ 75% AP)",
+      "leveling3": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                120,
+                160,
+                200,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                75,
+                75,
+                75,
+                75
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Self, Enemies",
       "damagetype": "Magic",
       "spelleffects": "Area of effect",
       "spellshield": "True",
       "projectile": "False",
-      "notes": "* While charging, Arcanopulse can be interrupted by any hard disables.\n Arcanonopulse's cooldown starts after firing the beam or after it's cast time ends if not fired, not while channeling.\n Once casting, Arcanopulse cannot be interrupted. During the cast time, Xerath will ignore crowd control effects but still suffers from them if the duration persists. \n If Xerath is displaced by a knockback or pull effect during the cast time, the beam will fire from the original point of casting. \n If Xerath dies while charging or during the cast time, Arcanopulse will not fire but is still placed on cooldown."
+      "notes": "* While charging, Arcanopulse can be interrupted by any hard disables.\n Arcanonopulse's cooldown starts after firing the beam or after it's cast time ends if not fired, not while channeling. \n If Xerath is displaced by a knockback or pull effect during the cast time, the beam will fire from the original point of casting. \n If Xerath dies while charging or during the cast time, Arcanopulse will not fire but is still placed on cooldown."
     }
   },
   "skill_w": {
@@ -97,21 +160,124 @@
       "skill": "W",
       "target range": "1000",
       "effect radius": "210",
+      "cast time": "0.2",
       "cost": "70 / 80 / 90 / 100 / 110",
       "costtype": "mana",
       "cooldown": "14 / 13 / 12 / 11 / 10",
       "icon": "Eye of Destruction.png",
       "blurb": "Calls down a barrage of arcane energy, slowing and dealing magic damage to all enemies in an area. Targets in the middle receive additional damage and a stronger slow.",
-      "description": "Active: Xerath calls down a blast of arcane energy upon the target area which strikes after a 0.5-seconds delay, dealing magic damage to all enemies within and  slowing them by 25% for 2.5 seconds.",
-      "leveling": "Magic Damage:\n60 / 90 / 120 / 150 / 180 (+ 60% AP)",
+      "description": "Active: Xerath calls down a blast of arcane energy upon the target area which strikes after a 0.5-second delay, dealing magic damage to all enemies within and  slowing them by 25% for 2.5 seconds.",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                90,
+                120,
+                150,
+                180
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Enemies in the center of the blast take 50% increased damage and are  slowed by a greater amount, decaying down to 25% over the duration.",
-      "leveling2": "Enhanced Damage:\n90 / 135 / 180 / 225 / 270 (+ 90% AP)\nEnhanced Slow:\n60 / 65 / 70 / 75 / 80%",
+      "leveling2": [
+        {
+          "attribute": "Enhanced Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                135,
+                180,
+                225,
+                270
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                90,
+                90,
+                90,
+                90
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Enhanced Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                65,
+                70,
+                75,
+                80
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
       "spelleffects": "Area of effect",
       "spellshield": "True",
-      "notes": "* There is an 0.2 second casting time that must be completed in order for the impact to deal damage. After the 0.2 second casting time, there is no way to stop the blast.\n Cast times cannot be interrupted by crowd control effects, and will only be interrupted by Xerath's death. If Xerath dies during the 0.2 seconds, the impact will fizzle after the 0.5 seconds (and will not deal damage). \n During the cast time, Xerath will ignore crowd control effects but still suffers from them if the duration persists. \n If Xerath is displaced by a knockback or pull effect during the cast time, Eye of Destruction will still go off at the target location even if he is no longer in range. \n\n Eye of Destruction grants sight over a large area on-cast, which persists for a short duration after the blast hits."
+      "notes": "* If Xerath dies during the cast time, the impact will fizzle after the 0.5 second delay (and will not deal damage).\n Eye of Destruction grants sight over a large area on-cast, which persists for a short duration after the blast hits."
     }
   },
   "skill_e": {
@@ -128,7 +294,47 @@
       "icon": "Shocking Orb.png",
       "blurb": "Deals magic damage to an enemy and stuns them.",
       "description": "Active: Xerath fires an orb of energy in the target direction, dealing magic damage to the first enemy hit and  stunning them for 0.5 \u2212 2 (based on distance the orb traveled) seconds.",
-      "leveling": "Magic Damage:\n80 / 110 / 140 / 170 / 200 (+ 45% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                110,
+                140,
+                170,
+                200
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                45,
+                45,
+                45,
+                45
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -151,9 +357,111 @@
       "icon": "Rite of the Arcane.png",
       "blurb": "Xerath immobilizes himself and gains numerous long-range barrages.",
       "description": "Active: Xerath  roots himself to his current location for up to 10 seconds, gaining the ability to cast  Arcane Barrage multiple times, but losing the ability to cast his other abilities.",
-      "leveling": "Number of Barrages:\n3 / 3.5 / 4 / 4.5 / 5",
+      "leveling": [
+        {
+          "attribute": "Number of Barrages",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                3,
+                3.5,
+                4,
+                4.5,
+                5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Arcane Barrage - Active: Xerath launches a blast of arcane energy to the target area which strikes after 0.5 seconds, dealing magic damage and briefly granting  sight of it. Each cast has a static cooldown of 0.8 seconds.",
-      "leveling2": "Magic Damage:\n200 / 220 / 240 / 260 / 280 (+ 43% AP)\nTotal Damage:\n600 / 770 / 960 / 1170 / 1400 (+ 129 / 150.5 / 172 / 193.5 / 215% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                220,
+                240,
+                260,
+                280
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                43,
+                43,
+                43,
+                43,
+                43
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                600,
+                770,
+                960,
+                1170,
+                1400
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                129,
+                150.5,
+                172,
+                193.5,
+                215
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Rite of the Arcane can be canceled early by moving or attacking. If Arcane Barrage ends without any usage, half the  cooldown is refunded. Rite of the Arcane is canceled and put on full cooldown if Xerath is affected by any  crowd control that prevents or interrupts the casting of abilities.",
       "targeting": "Ground",
       "affects": "Self, Enemies",

@@ -85,7 +85,69 @@
       "icon": "Rootcaller.png",
       "blurb": "Ivern conjures a vine, dealing damage and rooting enemy targets hit. Ivern's allies can dash to the rooted target.",
       "description": "Active: Ivern throws a vine in the target direction, dealing  magic damage to the first enemy hit and  rooting them for a short duration.",
-      "leveling": "Magic Damage:\n80 / 125 / 170 / 215 / 260 (+ 70% AP)\nRoot Duration:\n1.2 / 1.4 / 1.6 / 1.8 / 2",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                125,
+                170,
+                215,
+                260
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Root Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1.2,
+                1.4,
+                1.6,
+                1.8,
+                2
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Ivern and his allies can target enemies  rooted by Rootcaller to  dash to them, with allies stopping at  their attack range and Ivern stopping at  125 range from the target.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -109,7 +171,47 @@
       "icon": "Brushmaker.png",
       "blurb": "In brush, Ivern's attacks are ranged and deal bonus magic damage. Ivern can activate this ability to create a patch of brush.",
       "description": "Passive: While in  brush, Ivern's basic attacks deal bonus magic damage. This bonus persists for 3 seconds after leaving brush.",
-      "leveling": "Bonus Magic Damage:\n30 / 37.5 / 45 / 52.5 / 60 (+ 30% AP)",
+      "leveling": [
+        {
+          "attribute": "Bonus Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                37.5,
+                45,
+                52.5,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Ivern periodically stocks a Brushmaker charge, up to a maximum of 3.",
       "description3": "Active: Ivern grows a patch of brush at the target location for 30 seconds,  revealing the area within and around it for 3 seconds. Brushmaker spawns more brush if used near terrain or other brush.",
       "targeting": "Ground",
@@ -130,9 +232,111 @@
       "icon": "Triggerseed.png",
       "blurb": "Ivern places a shield on an ally which explodes after a short duration slowing and damaging enemies.",
       "description": "Active: Ivern gifts a Triggerseed to the target allied champion, himself or  Daisy,  shielding them for 2 seconds.",
-      "leveling": "Shield:\n80 / 115 / 150 / 185 / 220 (+ 80% AP)",
+      "leveling": [
+        {
+          "attribute": "Shield",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                115,
+                150,
+                185,
+                220
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "At the end of its duration, Triggerseed bursts, dealing magic damage to all nearby enemies and  slowing them for 2 seconds.",
-      "leveling2": "Magic Damage:\n60 / 80 / 100 / 120 / 140 (+ 80% AP)\nSlow:\n40 / 45 / 50 / 55 / 60%",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                80,
+                100,
+                120,
+                140
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                45,
+                50,
+                55,
+                60
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit / Self",
       "affects": "Allies, Self, Enemies",
       "damagetype": "Magic",

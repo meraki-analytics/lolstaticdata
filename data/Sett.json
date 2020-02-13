@@ -18,7 +18,7 @@
     "arm_lvl": 4,
     "mr_base": 32,
     "mr_lvl": 1.25,
-    "hp5_base": 9.25,
+    "hp5_base": 8,
     "hp5_lvl": 0.75,
     "mp5_base": 0,
     "mp5_lvl": 0,
@@ -37,7 +37,7 @@
   "rangetype": "Melee",
   "date": "2020-01-14",
   "patch": "V10.1",
-  "changes": "V10.2",
+  "changes": "V10.3",
   "role": [
     "Juggernaut"
   ],
@@ -57,13 +57,14 @@
       "champion": "Sett",
       "skill": "I",
       "icon": "Pit Grit.png",
-      "description": "Innate - Heavy Hands: Sett's basic attacks alternate between a left punch then a right punch. Sett begins attacking with a left punch, and will reset back to it after 2 seconds of not performing a right punch.",
+      "description": "Innate - Heavy Hands: Sett's basic attacks alternate between a left punch a right punch on-attack. Sett begins attacking with a left punch, and will reset back to it after 2 seconds of not performing a right punch.",
       "description2": "Sett's right punch gains  50 bonus range, attacks at 8 times the left punch's attack speed, and deals 5 \u2212 90 (based on level) (+  15% AD)  bonus physical damage.",
       "description3": "Innate - Heart of the Half-Beast: Sett gains  0.25 / 0.5 / 1 / 2 (based on level) health regeneration per second for every 5% of his missing  health.",
       "targeting": "Passive",
       "affects": "Self, Enemies",
       "damagetype": "physical",
-      "notes": "* The right punch does not grant  bonus attack speed, rather is fixed at 800% of the left punch  total attack speed and it is unaffected by  cripples and attack speed buffs (i.e  Hail of Blades) for the duration.\n Heavy Hands punch cadence and right punch are an on-attack effect and do not interact with Guinsoo's Rageblade passive."
+      "spelleffects": "Proc",
+      "notes": "* The right punch does not grant  bonus attack speed, rather is fixed at 800% of the left punch  total attack speed and it is unaffected by  cripples and attack speed buffs (i.e  Hail of Blades) for the duration."
     }
   },
   "skill_q": {
@@ -77,12 +78,92 @@
       "description": "Active: For the first 1.5 seconds, Sett gains  30% bonus movement speed while moving towards an enemy  champion.",
       "icon2": "Knuckle Down.png",
       "description2": "Sett's next two basic attacks within 5 seconds each deal bonus physical damage. Consuming an attack will refresh the timer.",
-      "leveling2": "Bonus Physical Damage:\n10 / 20 / 30 / 40 / 50 (+ 1 / 2 / 3 / 4 / 5% (+ 1% per 100 AD) of target's maximum health)\nTotal Bonus Damage:\n20 / 40 / 60 / 80 / 100 (+ 2 / 4 / 6 / 8 / 10% (+ 2% per 100 AD) of target's maximum health)",
+      "leveling2": [
+        {
+          "attribute": "Bonus Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                20,
+                30,
+                40,
+                50
+              ],
+              "units": [
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% (+ 1% per 100 AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Bonus Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                40,
+                60,
+                80,
+                100
+              ],
+              "units": [
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                2,
+                4,
+                6,
+                8,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% (+ 2% per 100 AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Knuckle Down resets Sett's basic attack timer and  Pit Grit's punch cadence. The second attack will be a right punch.",
-      "targeting": "None",
+      "targeting": "Self / Buff",
       "affects": "Self, Enemies",
       "damagetype": "Physical",
-      "notes": "* No additional details."
+      "spelleffects": "Proc",
+      "notes": "* PENDING FOR TEST: Knuckle Down's  interactions with  dodging,  blocking, and  blinding effects."
     }
   },
   "skill_w": {
@@ -97,15 +178,55 @@
       "cast time": "0.75",
       "cost": "100%",
       "costtype": "Current Grit",
-      "cooldown": "16 / 14 / 12 / 10 / 8",
+      "cooldown": "18 / 16.5 / 15 / 13.5 / 12",
       "icon": "Haymaker.png",
-      "description": "Passive: Sett stores 100% of post-mitigation damage taken as Grit on his secondary resource bar, up to 50% of his  maximum health. Each instance of stored Grit decays by 30% every second after 4 seconds.",
+      "description": "Passive: Sett stores 100% of post-mitigation damage taken as Grit on his secondary resource bar, up to 50% of his maximum health. Each instance of stored Grit decays by 30% every second after 4 seconds.",
       "description2": "Active: Sett blasts an area in the target direction, dealing  physical damage to enemies hit. Enemies hit through the center take  true damage instead.",
-      "leveling2": "Physical / True Damage:\n90 / 125 / 160 / 195 / 230 (+ 25% (+ 10% per 100 bonus AD) of expended Grit)",
+      "leveling2": [
+        {
+          "attribute": "True Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                120,
+                150,
+                180,
+                210
+              ],
+              "units": [
+                "  of expended Grit)",
+                "  of expended Grit)",
+                "  of expended Grit)",
+                "  of expended Grit)",
+                "  of expended Grit)"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "units": [
+                "% (+ 10% per 100 bonus AD",
+                "% (+ 10% per 100 bonus AD",
+                "% (+ 10% per 100 bonus AD",
+                "% (+ 10% per 100 bonus AD",
+                "% (+ 10% per 100 bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Down but not out: Sett also gains a rapidly decaying  shield for 3 seconds equal to the Grit expended.",
-      "targeting": "Direction / Conic Area of effect",
+      "targeting": "Direction",
       "affects": "Self, Enemies",
-      "damagetype": "Physical / True",
+      "damagetype": "Physical damage /  True damage",
       "spelleffects": "aoe",
       "spellshield": "True",
       "projectile": "False",
@@ -123,14 +244,55 @@
       "cooldown": "16 / 14.5 / 13 / 11.5 / 10",
       "icon": "Facebreaker.png",
       "description": "Active: Sett  pulls in enemies at his front and back, dealing physical damage and  slowing them by 50% for 0.5 seconds.",
-      "leveling": "Physical Damage:\n50 / 80 / 110 / 140 / 170 (+ 60% AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                80,
+                110,
+                140,
+                170
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If Facebreaker affects at least one enemy on each side, all enemies are  stunned for 1 second upon landing.",
-      "targeting": "Direction Area of effect",
+      "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Physical",
       "spelleffects": "aoe",
-      "spellshield": "true",
-      "notes": "* Sett will attempt to basic attack the closest target.\n A target will rebound to Sett's attack range.\n There is a smaller affected area at Sett's sides, the indicator does not illustrate this for practical reasons."
+      "spellshield": "special",
+      "projectile": "False",
+      "notes": "* Sett will attempt to basic attack the closest target.\n A target will rebound to Sett's attack range.\n There is a smaller affected area at Sett's sides, the indicator does not illustrate this for practical reasons.\n PENDING FOR TEST: If the single target on either opposite side is protected by a  spell shield, Facebreaker will not  stun."
     }
   },
   "skill_r": {
@@ -145,7 +307,120 @@
       "icon": "The Show Stopper.png",
       "description": "Active: Sett  suppresses the target enemy  champion and then  dashes  unstoppably at a fixed distance toward them,  carrying the target for 1.5 seconds before slamming them into the ground.",
       "description2": "Enemies within the impact area take physical damage, reduced by up to 40% at the edge, and are  slowed by 99% for 1.5 seconds.",
-      "leveling2": "Physical Damage:\n200 / 250 / 300 / 350 / 400 (+ 100% bonus AD) (+ 40 / 45 / 50 / 55 / 60% of primary target's bonus health)\nMinimum Physical Damage:\n120 / 150 / 180 / 210 / 240 (+ 60% bonus AD) (+ 24 / 27 / 30 / 33 / 36% of primary target's bonus health)",
+      "leveling2": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                250,
+                300,
+                350,
+                400
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                45,
+                50,
+                55,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% of primary target's bonus health"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Minimum Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                150,
+                180,
+                210,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                24,
+                27,
+                30,
+                33,
+                36
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% of primary target's bonus health"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "The dash will prematurely end upon reaching a wall that cannot be dashed through.",
       "targeting": "Unit",
       "affects": "Enemies",

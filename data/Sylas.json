@@ -35,7 +35,6 @@
     "attack_cast_time": 0.259999990463256,
     "attack_total_time": 1.54999995231628,
     "attack_delay_offset": -0.0994649976491928,
-    "aram_dmg_dealt": 1.05,
     "urf_dmg_taken": 0.95
   },
   "rangetype": "Melee",
@@ -86,9 +85,228 @@
       "cooldown": "10 / 9 / 8 / 7 / 6",
       "icon": "Chain Lash.png",
       "description": "Active: Sylas lashes out two lines that converge to the target location and extend beyond it up to a maximum range, dealing magic damage and  slowing enemies hit for 1.5 seconds.",
-      "leveling": "Magic Damage:\n40 / 55 / 70 / 85 / 100 (+ 40% AP)\n\nSlow:\n15 / 20 / 25 / 30 / 35%",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                55,
+                70,
+                85,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                20,
+                25,
+                30,
+                35
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "After a 0.6-second delay, the chains' intersection detonates, dealing magic damage. Against  minions and  monsters the detonation deals 60% reduced damage.",
-      "leveling2": "Detonation Damage:\n60 / 115 / 170 / 225 / 280 (+ 80% AP)\nNon-Champion Detonation Damage:\n24 / 46 / 68 / 90 / 112 (+ 32% AP)\n\nMaximum Champion Damage:\n100 / 170 / 240 / 310 / 380 (+ 120% AP)\nMaximum Non-Champion Damage:\n64 / 101 / 138 / 175 / 212 (+ 72% AP)",
+      "leveling2": [
+        {
+          "attribute": "Detonation Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                115,
+                170,
+                225,
+                280
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Non-Champion Detonation Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                24,
+                46,
+                68,
+                90,
+                112
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                32,
+                32,
+                32,
+                32,
+                32
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Champion Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                170,
+                240,
+                310,
+                380
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                120,
+                120,
+                120,
+                120
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Non-Champion Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                64,
+                101,
+                138,
+                175,
+                212
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                72,
+                72,
+                72,
+                72,
+                72
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction / Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -109,9 +327,128 @@
       "cooldown": "13 / 11.5 / 10 / 8.5 / 7",
       "icon": "Kingslayer.png",
       "description": "Active: Sylas  lunges at a target enemy with a powerful strike, dealing magic damage.",
-      "leveling": "Magic Damage:\n65 / 100 / 135 / 170 / 205 (+ 85% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                65,
+                100,
+                135,
+                170,
+                205
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                85,
+                85,
+                85,
+                85,
+                85
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Against enemy  champions, Sylas is also  healed, increased by 0% \u2212 100% (based on Sylas' missing health).",
-      "leveling2": "Heal:\n30 / 60 / 90 / 120 / 150 (+ 50% AP)\nMaximum Heal:\n60 / 120 / 180 / 240 / 300 (+ 100% AP)",
+      "leveling2": [
+        {
+          "attribute": "Heal",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                60,
+                90,
+                120,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Heal",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                120,
+                180,
+                240,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -145,8 +482,48 @@
       "speed": "1600 / 1800",
       "icon": "Abduct.png",
       "description": "Active - Abduct: Sylas whips out his chains in the target direction, dealing magic damage and  stunning the first enemy hit,  pulling himself towards them, and  knocking them up for 0.35 seconds upon arrival.",
-      "leveling": "Magic Damage:\n80 / 130 / 180 / 230 / 280 (+ 100% AP)",
-      "description2": "Sylas may still move and cast  Kingslayer or  Hijack before the chains reaches his target, but he may not basic attack.",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                130,
+                180,
+                230,
+                280
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
+      "description2": "Sylas may still move, basic attack and cast  Kingslayer or  Hijack before the chains reach his target.",
       "description3": "Sylas is locked-out for 0.05 seconds after dashing.",
       "targeting": "Direction",
       "affects": "Enemies",

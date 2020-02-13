@@ -61,7 +61,7 @@
       "skill": "I",
       "icon": "Flurry.png",
       "blurb": "After Lee Sin uses an ability, his next 2 basic attacks gain 40% Attack Speed and return 20/10 Energy.",
-      "description": "Innate: After using an ability, Lee Sin's next 2 basic attacks within 3 seconds gain  40% bonus attack speed, returning  20 / 30 / 40 (based on level) energy on the first attack and   half of that     10 / 15 / 20 (based on level) energy   on the second.",
+      "description": "Innate: After using an ability, Lee Sin's next 2 basic attacks within 3 seconds gain  40% bonus attack speed, returning  20 / 30 / 40 (based on level) energy on the first attack and [ half of that ][  10 / 15 / 20 (based on level) energy ] on the second.",
       "targeting": "Passive",
       "affects": "Self",
       "spelleffects": "False",
@@ -81,7 +81,47 @@
       "icon": "Sonic Wave.png",
       "blurb": "Lee Sin projects a discordant wave of sound to locate his enemies, dealing physical damage to the first enemy it encounters. If Sonic Wave hits, Lee Sin can cast Resonating Strike for the next 3 seconds.",
       "description": "Active: Lee Sin fires a sonic blast in the target direction, dealing  physical damage to the first enemy it hits and granting  true sight of them for 3 seconds.",
-      "leveling": "Physical Damage:\n55 / 80 / 105 / 130 / 155 (+ 100% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                80,
+                105,
+                130,
+                155
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If Sonic Wave hits, Lee Sin can cast  Resonating Strike within the next 3 seconds.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -101,7 +141,86 @@
       "icon": "Resonating Strike.png",
       "blurb": "Lee Sin dashes to the enemy hit by Sonic Wave, dealing physical damage.",
       "description": "Active: Lee Sin  dashes to the enemy marked by  Sonic Wave, placing himself on top of the target and dealing physical damage, increased by 0% \u2212 100% (based on target's missing health).",
-      "leveling": "Physical Damage:\n55 / 80 / 105 / 130 / 155 (+ 100% bonus AD)\nMaximum Damage:\n110 / 160 / 210 / 260 / 310 (+ 200% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                80,
+                105,
+                130,
+                155
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                110,
+                160,
+                210,
+                260,
+                310
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                200,
+                200,
+                200,
+                200
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Auto",
       "affects": "Enemies",
       "damagetype": "Physical",
@@ -122,7 +241,47 @@
       "icon": "Safeguard.png",
       "blurb": "Lee Sin rushes to target ally, shielding himself from damage. If the ally is a champion, they are also shielded. After using Safeguard, Lee Sin can cast Iron Will for the next 3 seconds.",
       "description": "Active: Lee Sin  dashes to the target ally or friendly  ward. If the ally is a champion, both they and Lee Sin are  shielded for 2 seconds and Safeguard's  cooldown is reduced by 50%. Lee Sin can self-cast Safeguard to shield himself.",
-      "leveling": "Shield:\n55 / 110 / 165 / 220 / 275 (+ 80% AP)",
+      "leveling": [
+        {
+          "attribute": "Shield",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                110,
+                165,
+                220,
+                275
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If Safeguard is used, Lee Sin can cast  Iron Will within 3 seconds.",
       "targeting": "Unit",
       "affects": "Self, Allies",
@@ -138,7 +297,30 @@
       "icon": "Iron Will.png",
       "blurb": "Lee Sin's intense training allows him to thrive in battle. For 4 seconds, Lee Sin gains Life Steal and Spell Vamp.",
       "description": "Active: For 4 seconds, Lee Sin gains  bonus life steal and  bonus spell vamp.",
-      "leveling": "Bonus Sustain:\n10 / 15 / 20 / 25 / 30%",
+      "leveling": [
+        {
+          "attribute": "Bonus Sustain",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                15,
+                20,
+                25,
+                30
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "None",
       "affects": "Self",
       "notes": "* No additional details."
@@ -156,7 +338,47 @@
       "icon": "Tempest.png",
       "blurb": "Lee Sin smashes the ground, sending out a shockwave that deals magic damage and reveals enemy units hit. If Tempest hits an enemy, Lee Sin can cast cripple for the next 3 seconds.",
       "description": "Active: Lee Sin smashes the ground, dealing magic damage to nearby enemies and granting  sight of them for 4 seconds.",
-      "leveling": "Magic Damage:\n80 / 120 / 160 / 200 / 240 (+ 100% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                120,
+                160,
+                200,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If Tempest hits an enemy, Lee Sin can cast  Cripple within the next 3 seconds.",
       "targeting": "None",
       "affects": "Enemies",
@@ -175,7 +397,30 @@
       "icon": "Cripple.png",
       "blurb": "Lee Sin cripples nearby enemies damaged by Tempest, reducing their Movement Speed for 4 seconds. Movement Speed recovers gradually over the duration.",
       "description": "Active: Lee Sin  slows all enemies in range and marked by  Tempest for 4 seconds, decaying over the duration.",
-      "leveling": "Slow:\n20 / 30 / 40 / 50 / 60%",
+      "leveling": [
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                30,
+                40,
+                50,
+                60
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "None",
       "affects": "Enemies",
       "spelleffects": "False",
@@ -193,9 +438,106 @@
       "icon": "Dragon's Rage.png",
       "blurb": "Lee Sin performs a powerful roundhouse kick launching his target back, dealing physical damage to the target and any enemies they collide with. Enemies the target collides with are knocked into the air for a short duration. This technique was taught to him by Jesse Perring, although Lee Sin does not kick players off the map.",
       "description": "Active: Lee Sin instantly  roots the target enemy champion for 0.25 seconds after which he roundhouse kicks them dealing physical damage and  knocking them back 1200 units over 1 second.",
-      "leveling": "Physical Damage:\n175 / 287.5 / 400 / 512.5 / 625 (+ 200% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                175,
+                287.5,
+                400,
+                512.5,
+                625
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                200,
+                200,
+                200,
+                200
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Enemies hit by the displaced enemy receive bonus physical damage and are  knocked up for 1 second.",
-      "leveling2": "Collision Damage:\n175 / 287.5 / 400 / 512.5 / 625 (+ 200% bonus AD) (+ 12 / 13.5 / 15 / 16.5 / 18% of kicked target's bonus health)",
+      "leveling2": [
+        {
+          "attribute": "Collision Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                175,
+                287.5,
+                400,
+                512.5,
+                625
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                200,
+                200,
+                200,
+                200
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                12,
+                13.5,
+                15,
+                16.5,
+                18
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% of kicked target's bonus health"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit/Direction",
       "affects": "Enemies",
       "damagetype": "Physical",

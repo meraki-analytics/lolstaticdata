@@ -83,7 +83,125 @@
       "icon": "Howling Gale.png",
       "blurb": "By creating a localized change in pressure and temperature, Janna is able to create a small storm that grows in size with time. She can activate the spell again to release the storm. On release this storm will fly towards the direction it was cast in, dealing damage and knocking away any enemies in its path.",
       "description": "Active: Janna summons a whirlwind at her current location which charges up over 3 seconds. Its range, speed, damage, and  knockup duration increase for each second it is left charging.",
-      "leveling": "Minimum Magic Damage:\n60 / 85 / 110 / 135 / 160 (+ 35% AP)\nBonus Magic Damage Per Second:\n15 / 20 / 25 / 30 / 35 (+ 10% AP)\nMaximum Magic Damage:\n105 / 145 / 185 / 225 / 265 (+ 65% AP)",
+      "leveling": [
+        {
+          "attribute": "Minimum Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                85,
+                110,
+                135,
+                160
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                35,
+                35,
+                35,
+                35
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Bonus Magic Damage Per Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                20,
+                25,
+                30,
+                35
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                105,
+                145,
+                185,
+                225,
+                265
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                65,
+                65,
+                65,
+                65,
+                65
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "At the end of the duration, or upon reactivation, the whirlwind launches itself for 1.5 seconds in the target direction, dealing magic damage to all enemies it passes through and  knocking them up for 0.5 \u2212 1.25 (based on seconds charged) seconds.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -106,9 +224,139 @@
       "icon": "Zephyr.png",
       "blurb": "Janna summons an air elemental that passively increases her Movement Speed and enables her to pass through units. She may also activate this ability to deal damage and slow an enemy's Movement Speed. The passive is lost while this ability is on cooldown.",
       "description": "Passive: While Zephyr is not on cooldown, Janna is aided by an air elemental who  ghosts her and grants her  bonus movement speed.",
-      "leveling": "Bonus Movement Speed:\n6 / 7 / 8 / 9 / 10% (+ 2% per 100 AP)",
+      "leveling": [
+        {
+          "attribute": "Bonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "units": [
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Active: Janna commands her air elemental to attack the target enemy, dealing them magic damage and  slowing them for 2 seconds by an amount, capped at a maximum of 99%.",
-      "leveling2": "Magic Damage:\n55 / 90 / 125 / 160 / 195 (+ 50% AP) (+ 25 / 35% (based on level)  MS)\n\nSlow:\n24 / 28 / 32 / 36 / 40% (+ 6% per 100 AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                90,
+                125,
+                160,
+                195
+              ],
+              "units": [
+                "    MS)",
+                "    MS)",
+                "    MS)",
+                "    MS)",
+                "    MS)"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                35
+              ],
+              "units": [
+                "",
+                "% (based on level"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                24,
+                28,
+                32,
+                36,
+                40
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                6,
+                6,
+                6,
+                6,
+                6
+              ],
+              "units": [
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "magic",
@@ -130,9 +378,89 @@
       "icon": "Eye of the Storm.png",
       "blurb": "Janna conjures a defensive gale that shields an ally champion or turret from incoming damage and increases their Attack Damage.",
       "description": "Active: Janna  shields the target allied champion or herself for 5 seconds, decaying over the duration after 0.75 seconds.",
-      "leveling": "Shield Strength:\n80 / 115 / 150 / 185 / 220 (+ 70% AP)",
+      "leveling": [
+        {
+          "attribute": "Shield Strength",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                115,
+                150,
+                185,
+                220
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "While the shield holds, her target gains  bonus attack damage.",
-      "leveling2": "Bonus AD:\n10 / 17.5 / 25 / 32.5 / 40 (+ 10% AP)",
+      "leveling2": [
+        {
+          "attribute": "Bonus AD",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                17.5,
+                25,
+                32.5,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Each ability that  slows or applies  airborne effects to an enemy champion reduces Eye of the Storm's cooldown by 20%, up to once per ability cast.",
       "description4": "Eye of the Storm can be used on  turrets, causing Janna to be credited for any  champion kills it earns while the shield holds.",
       "targeting": "Unit / Self",
@@ -153,7 +481,78 @@
       "blurb": "Janna surrounds herself in a magical storm, throwing enemies back. After the storm has settled, soothing winds heal nearby allies while the ability is active.",
       "description": "Active: Janna  channels for 3 seconds,  knocking back all nearby enemies up to 875 units based on their proximity to her, while  stunning them for 0.5 seconds.",
       "description2": "While channeling, she releases soothing winds that  heal nearby allies every half-second.",
-      "leveling2": "Heal Per Half Second:\n50 / 75 / 100 (+ 25% AP)\nTotal Heal:\n300 / 450 / 600 (+ 150% AP)",
+      "leveling2": [
+        {
+          "attribute": "Heal Per Half Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                75,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Heal",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                300,
+                450,
+                600
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                150,
+                150,
+                150,
+                150
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Moving ends its effects immediately.",
       "targeting": "Auto",
       "affects": "Enemies, Allies",

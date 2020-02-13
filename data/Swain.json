@@ -40,7 +40,7 @@
   "rangetype": "Ranged",
   "date": "2010-10-05",
   "patch": "V1.0.0.102",
-  "changes": "V9.15",
+  "changes": "V10.3",
   "role": [
     "Battlemage"
   ],
@@ -62,16 +62,17 @@
       "speed": "1200",
       "static": "12 / 9 / 6 (based on level)",
       "icon": "Ravenous Flock.png",
-      "description": "Innate - Ravenous: Swain can periodically target a nearby  immobilized enemy champion to rip out a Soul Fragment from them, dealing 20 \u2212 105 (based on level) (+ 30% AP)  magic damage and  pulling them 290-units towards him. If the target would be brought past Swain, they are instead  knocked back the excess distance.",
+      "blurb": "Swain stocks the fragments of souls of his enemies to grant himself permanent health. He can target disabled enemies by clicking on them, damaging and pulling them towards him, as well as receiving a Soul Fragment. Additionally, enemy champions leave behind a harvestable Soul Fragment on their corpse whenever they die, which can be obtained if Swain is near them.",
+      "description": "Innate - Ravenous: Swain can periodically target a nearby  immobilized enemy  champion to rip out a Soul Fragment from them, dealing 20 \u2212 105 (based on level) (+ 30% AP)  magic damage and  pulling them 290-units towards him. If the target would be brought past Swain, they are instead  knocked back the excess distance.",
       "description2": "Enemy champions also leave behind a Soul Fragment for 16 seconds upon death, which can be harvested after 1 second if Swain is near them.",
       "description3": "Innate - Flock: Swain's ravens bring nearby Soul Fragments to him,  healing him for 4 / 5.5 / 7% (based on level) of his maximum health and restoring 4 / 5.5 / 7% (based on level) of his maximum mana. Each Soul Fragment collected permanently increases his maximum health by 5.",
-      "targeting": "Unit",
+      "targeting": "Passive / Unit",
       "affects": "Self, Enemies",
       "damagetype": "Magic",
-      "spelleffects": "Single target",
-      "spellshield": "Unknown",
+      "spelleffects": "periodic",
+      "spellshield": "Special",
       "projectile": "false",
-      "notes": "* The crows carrying the souls will only be seen by the enemies if they have  vision of Swain.\n The pull will interrupt  channels at the very beginning, but does not keep the target stunned for the rest of the movement.\n  Channels can be started successfully during the pull, provided the previous crowd control does not prevent them still.\n\n Decoys count as champions for dropping Soul Fragments."
+      "notes": "* The crows carrying the souls will only be seen by the enemies if they have  vision of Swain.\n The pull will  interrupt  channels at the very beginning, but does not keep the target stunned for the rest of the movement.\n  Channels can be started successfully during the pull, provided the previous crowd control does not prevent them still.\n\n Decoys count as champions for dropping Soul Fragments.\n PENDING FOR TEST:  Spell shield prevents the  pull."
     }
   },
   "skill_q": {
@@ -85,8 +86,110 @@
       "costtype": "Mana",
       "cooldown": "10 / 8.5 / 7 / 5.5 / 4",
       "icon": "Death's Hand.png",
+      "blurb": "Swain fires powerful bolts of demonic energy in front of him, dealing damage to all enemies and stopping upon hitting enemy champions.",
       "description": "Active: Swain unleashes five bolts of eldritch power in the target direction, dealing magic damage to all enemies in a cone. Enemies can be hit by multiple bolts, taking bonus damage.",
-      "leveling": "Magic Damage:\n55 / 75 / 95 / 115 / 135 (+ 40% AP)\n\nBonus Damage Per Bolt:\n15 / 20 / 25 / 30 / 35%\nMaximum Damage:\n88 / 135 / 190 / 253 / 324 (+ 64 / 72 / 80 / 88 / 96% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                75,
+                95,
+                115,
+                135
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Bonus Damage Per Bolt",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                20,
+                25,
+                30,
+                35
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                88,
+                135,
+                190,
+                253,
+                324
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                64,
+                72,
+                80,
+                88,
+                96
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Bolts stop on impact with enemy champions.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -109,15 +212,139 @@
       "cooldown": "22 / 21 / 20 / 19 / 18",
       "icon": "Vision of Empire.png",
       "description": "Active: Swain summons a demonic eye at the target area,  revealing it for 2 seconds, which explodes after 1.5 seconds, dealing magic damage to all enemies hit, halved against minions, and  slowing them for 2.5 seconds.",
-      "leveling": "Magic Damage:\n100 / 150 / 200 / 250 / 300 (+ 70% AP)\nReduced Damage:\n50 / 75 / 100 / 125 / 150 (+ 35% AP)\n\nSlow Strength:\n25 / 35 / 45 / 55 / 65%",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                150,
+                200,
+                250,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Reduced Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                75,
+                100,
+                125,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                35,
+                35,
+                35,
+                35
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow Strength",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                35,
+                45,
+                55,
+                65
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Enemy champions are  revealed for an additional duration and have a Soul Fragment ripped from them.",
-      "leveling2": "Reveal Duration:\n4 / 5 / 6 / 7 / 8",
+      "leveling2": [
+        {
+          "attribute": "Reveal Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
-      "spelleffects": "Area of effect",
-      "spellshield": "True",
-      "notes": "* Even if spell shielded, Swain will still acquire the Soul Fragments.\n Enemies are able to see the VFX and hear the SFX of Vision of Empire through the fog of war."
+      "spelleffects": "spellaoe",
+      "spellshield": "Special",
+      "notes": "* Even if blocked by a  spell shield, Swain will still acquire the Soul Fragments.\n Vision of Empire is visible and audible to enemies through the fog of war."
     }
   },
   "skill_e": {
@@ -131,16 +358,137 @@
       "costtype": "Mana",
       "cooldown": "13 / 12 / 11 / 10 / 9",
       "icon": "Nevermove.png",
+      "blurb": "Swain launches a demonic hand towards him, dealing magic damage to enemies along the way. The hand then returns back to Swain, rooting the first enemy who collides with it.",
       "description": "Active: Swain launches a demonic wave in the target direction, dealing magic damage to enemies it passes through.",
-      "leveling": "Magic Damage:\n35 / 70 / 105 / 140 / 175 (+ 25% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                70,
+                105,
+                140,
+                175
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Upon reaching its maximum distance, the wave returns to Swain, detonating at the first enemy hit, dealing magic damage to all nearby enemies and  rooting them for 1.5 seconds.",
-      "leveling2": "Detonation Damage:\n35 / 45 / 55 / 65 / 75 (+ 25% AP)\nMaximum Damage:\n70 / 115 / 160 / 205 / 250 (+ 50% AP)",
+      "leveling2": [
+        {
+          "attribute": "Detonation Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                45,
+                55,
+                65,
+                75
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                115,
+                160,
+                205,
+                250
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",
-      "spelleffects": "Area of effect",
+      "spelleffects": "special",
+      "spellshield": "true",
       "projectile": "True",
-      "notes": "* No additional details."
+      "notes": "* The detonation applies  spell damage and enemies passing through take  area damage."
     }
   },
   "skill_r": {
@@ -153,19 +501,277 @@
       "costtype": "Mana",
       "cooldown": "120",
       "icon": "Demonic Ascension.png",
+      "blurb": "Swain unleashes his true form, becoming a demon, gaining bonus health and draining the health of all nearby enemies for a duration.",
       "description": "Active: Swain frees the demon within for 12 seconds, gaining   bonus health and doubling the health gained from Soul Fragments.",
-      "leveling": "Bonus Health:\n125 / 162.5 / 200 / 237.5 / 275",
-      "description2": "While Demonic Ascension is active, Swain drains all nearby enemies, dealing magic damage to them each second, and  healing himself for each enemy hit, reduced by 90% against minions and monsters.",
-      "leveling2": "Damage per Second:\n35 / 42.5 / 50 / 57.5 / 65 (+ 14.167% AP)\nMaximum Damage:\n420 / 510 / 600 / 690 / 780 (+ 170% AP)\n\nHeal per Second:\n20 / 27.5 / 35 / 42.5 / 50 (+ 16% AP)\nReduced Healing:\n2 / 2.75 / 3.5 / 4.25 / 5 (+ 1.6% AP)\nMaximum Single-Champion Heal:\n240 / 330 / 420 / 510 / 600 (+ 192% AP)\nMaximum Single-Minion Heal:\n24 / 33 / 42 / 51 / 60 (+ 19.2% AP)",
+      "leveling": [
+        {
+          "attribute": "Bonus Health",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                125,
+                162.5,
+                200,
+                237.5,
+                275
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "description2": "While Demonic Ascension is active, Swain drains all nearby enemies, dealing magic damage to them each second, and  healing himself for each enemy hit, reduced by 90% against  minions and  monsters.",
+      "leveling2": [
+        {
+          "attribute": "Damage per Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                42.5,
+                50,
+                57.5,
+                65
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                14.167,
+                14.167,
+                14.167,
+                14.167,
+                14.167
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                420,
+                510,
+                600,
+                690,
+                780
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                170,
+                170,
+                170,
+                170,
+                170
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Heal per Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                27.5,
+                35,
+                42.5,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                16,
+                16,
+                16,
+                16,
+                16
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Reduced Healing",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                2,
+                2.75,
+                3.5,
+                4.25,
+                5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                1.6,
+                1.6,
+                1.6,
+                1.6,
+                1.6
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Single-Champion Heal",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                240,
+                330,
+                420,
+                510,
+                600
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                192,
+                192,
+                192,
+                192,
+                192
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Single-Minion Heal",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                24,
+                33,
+                42,
+                51,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                19.2,
+                19.2,
+                19.2,
+                19.2,
+                19.2
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "After draining any amount of health with Demonic Ascension, Swain can end its effects early to cast  Demonflare, and automatically does so at the end of its duration.",
-      "description4": "If Swain dies during the channel time of Demonic Ascension, the cooldown is fully refunded.",
-      "targeting": "Auto",
+      "description4": "If Swain dies during the brief  channel time of Demonic Ascension, the  cooldown is fully refunded.",
+      "targeting": "Self / Buff / Aura",
       "affects": "Self, Enemies",
       "damagetype": "Magic",
-      "spelleffects": "DoT",
-      "spellshield": "False",
+      "spelleffects": "aoedot",
       "projectile": "False",
-      "notes": "* Demonic Ascension can drain stealthed enemies.\n  Demonic Ascension persists through  stasis effects (e.g  Guardian Angel,  Zhonya's Hourglass)."
+      "notes": "* Demonic Ascension can drain hidden enemies (i.e -  stealth) but will not  reveal them.\n Demonic Ascension persists through  stasis and  resurrection effects."
     },
     "Demonflare": {
       "name": "Demonflare",
@@ -173,12 +779,92 @@
       "skill": "R",
       "effect radius": "675",
       "icon": "Demonflare.png",
+      "blurb": "Swain releases a burst of energy around him, dealing damage to all surrounding enemies, and returning back to his normal form.",
       "description": "Active: Swain releases a nova of energy, dealing a base amount of magic damage to all nearby enemies plus 37.5% of the health drained during  Demonic Ascension, with the total damage capped.",
-      "leveling": "Minimum Damage:\n100 / 125 / 150 / 175 / 200 (+ 50% AP)\nMaximum Damage:\n200 / 250 / 300 / 350 / 400 (+ 100% AP)",
-      "targeting": "None",
+      "leveling": [
+        {
+          "attribute": "Minimum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                125,
+                150,
+                175,
+                200
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                250,
+                300,
+                350,
+                400
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
+      "targeting": "Auto",
       "affects": "Enemies",
       "damagetype": "Magic",
-      "spelleffects": "Area of effect",
+      "spelleffects": "spellaoe",
       "spellshield": "True",
       "projectile": "True",
       "notes": "* Demon Flare passes through champions. Effects like  Yasuo's  Wind Wall and  Braum's  Unbreakable will block the portion of the nova they intercept."

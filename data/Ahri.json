@@ -80,7 +80,86 @@
       "description": "Passive: Ability hits grant an Essence Theft stack, up to a maximum of 3 per cast. At a maximum of 9 stacks, the next Orb of Deception consumes them all to  heal Ahri for  3 / 5 / 9 / 18 (based on level) (+ 9% AP) every time an enemy is hit. Essence Theft is not stacked within the same instance.",
       "icon2": "Orb of Deception.png",
       "description2": "Active: Ahri sends an orb of arcane energy in the target direction, dealing  magic damage to all enemies it passes through. At maximum range, it homes back to Ahri, dealing  true damage instead.",
-      "leveling2": "Damage Per Pass:\n40 / 65 / 90 / 115 / 140 (+ 35% AP)\nTotal Mixed Damage:\n80 / 130 / 180 / 230 / 280 (+ 70% AP)",
+      "leveling2": [
+        {
+          "attribute": "Damage Per Pass",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                65,
+                90,
+                115,
+                140
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                35,
+                35,
+                35,
+                35
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Mixed Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                130,
+                180,
+                230,
+                280
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic /  True",
@@ -105,9 +184,128 @@
       "description": "Active: Ahri summons three spectral flames which orbit her for up to 5 seconds.",
       "description2": "Flames prioritize champions hit by  Charm, then the target of Ahri's last basic attack within 3 seconds.",
       "description3": "After 0.25 seconds, each flame targets a visible prioritized enemy; or after 0.4 seconds targets the closest visible enemy in range, prioritizing champions, dealing magic damage.",
-      "leveling3": "Magic Damage:\n40 / 65 / 90 / 115 / 140 (+ 30% AP)",
+      "leveling3": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                65,
+                90,
+                115,
+                140
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description4": "Subsequent flames on a target deal 30% damage.",
-      "leveling4": "Additional Magic Damage:\n12 / 19.5 / 27 / 34.5 / 42 (+ 9% AP)\nTotal Single Target Damage:\n64 / 104 / 144 / 184 / 224 (+ 48% AP)",
+      "leveling4": [
+        {
+          "attribute": "Additional Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                12,
+                19.5,
+                27,
+                34.5,
+                42
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                9,
+                9,
+                9,
+                9,
+                9
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Single Target Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                64,
+                104,
+                144,
+                184,
+                224
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                48,
+                48,
+                48,
+                48,
+                48
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Auto",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -131,7 +329,69 @@
       "icon": "Charm.png",
       "blurb": "Ahri blows a kiss that damages and charms an enemy it encounters, causing them to walk harmlessly towards her.",
       "description": "Active: Ahri blows a kiss in the target direction that deals magic damage to the first enemy hit, interrupting in-progress dashes,  charming and  slowing them by 65%.",
-      "leveling": "Magic damage:\n60 / 90 / 120 / 150 / 180 (+ 40% AP)\nCharm Duration:\n1.4 / 1.55 / 1.7 / 1.85 / 2",
+      "leveling": [
+        {
+          "attribute": "Magic damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                90,
+                120,
+                150,
+                180
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Charm Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1.4,
+                1.55,
+                1.7,
+                1.85,
+                2
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "An enemy hit by Charm is vulnerable for 3 seconds, taking 20% bonus damage from Ahri's abilities.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -155,9 +415,116 @@
       "icon": "Spirit Rush.png",
       "blurb": "Ahri dashes forward and fires essence bolts, damaging 3 nearby enemies (prioritizes Champions). Spirit Rush can be cast up to three times before going on cooldown.",
       "description": "Active: Ahri  dashes in the target direction and then fires energy bolts to up to 3  visible targets, dealing magic damage. Spirit Rush can be recast twice more at a 1 second static cooldown within 10 seconds of activation at no additional cost.",
-      "leveling": "Magic damage:\n60 / 90 / 120 (+ 35% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                90,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                35,
+                35,
+                35,
+                35
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Recast: Ahri  dashes, mimicking the first cast's effects.",
-      "leveling2": "Maximum single target damage:\n180 / 270 / 360 (+ 105% AP)\nMaximum damage:\n540 / 810 / 1080 (+ 315% AP)",
+      "leveling2": [
+        {
+          "attribute": "Maximum single target damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                180,
+                270,
+                360
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                105,
+                105,
+                105,
+                105,
+                105
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                540,
+                810,
+                1080
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                315,
+                315,
+                315,
+                315,
+                315
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction / Auto",
       "affects": "Enemies",
       "damagetype": "Magic",

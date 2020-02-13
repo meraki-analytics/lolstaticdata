@@ -59,7 +59,7 @@
       "ontargetcdstatic": "10",
       "icon": "Contempt for the Weak.png",
       "blurb": "Zed's basic attacks against targets below 50% Health deal 6-10% of the target's maximum Health as bonus Magic Damage. This effect can only occur once every 10 seconds on the same target.",
-      "description": "Innate: Zed's basic attacks against targets  below 50% maximum health deal 6 / 8 / 10% (based on level) of target's maximum health as  bonus magic damage.",
+      "description": "Innate: Zed's basic attacks against targets  below 50% maximum health deal 6 / 8 / 10% (based on level) of target's maximum health as  bonus magic damage. Damage is capped against  monsters at 120 / 240 / 360 (based on level).",
       "description2": "Contempt for the Weak can only affect the same target once every few seconds.",
       "targeting": "Passive",
       "affects": "Enemies",
@@ -83,7 +83,86 @@
       "icon": "Razor Shuriken.png",
       "blurb": "Zed and his shadow both throw their spinning blades forward, dealing damage to any targets they pass through.",
       "description": "Active: Zed and his  Shadows throw their spinning blades toward the target location. Each blade deals  physical damage to all enemies struck, reduced to 60% against units beyond the first.",
-      "leveling": "Physical Damage:\n80 / 115 / 150 / 185 / 220 (+ 100% bonus AD)\nSecondary Damage:\n48 / 69 / 90 / 111 / 132 (+ 60% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                115,
+                150,
+                185,
+                220
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Secondary Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                48,
+                69,
+                90,
+                111,
+                132
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Physical",
@@ -108,13 +187,35 @@
       "blurb": "Zed's shadow dashes forward, remaining in place for 5 seconds, and mimicking his spell casts. Zed can reactivate to swap places with the shadow.",
       "description": "First Cast: Zed's  Shadow dashes in the target direction, remaining in place for 5 seconds and being able to mimic  Razor Shuriken and  Shadow Slash while in range of each other.",
       "description2": "Zed restores  energy whenever a  Shadow lands a mimicked ability on the same target he does. This may only happen once per cast ability.",
-      "leveling2": "Energy Restored:\n30 / 35 / 40 / 45 / 50",
+      "leveling2": [
+        {
+          "attribute": "Energy Restored",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                35,
+                40,
+                45,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "icon3": "Living Shadow 2.png",
       "description3": "Second Cast - Shadow Swap: While in range of each other, Zed and his  Shadow  blink to their respective locations, swapping places.",
       "targeting": "Direction / Auto",
       "affects": "Self",
-      "damagetype": "None",
-      "notes": "* The  Shadow grants  sight of its surroundings and is  untargetable.\n Zed always has an arrow next to him pointing in the direction of his  Shadows. It has three different colors, each one symbolizes important information about the specific Shadow. They are only visible to Zed.\n\n    Two arrows point toward their corresponding  Shadows.  \n\n    A green arrow (blue in colorblind mode) means the  Shadow can be swapped places with.  \n\n    A yellow arrow signifies the  Shadow is about to disappear.  \n\n    A red arrow (orange in colorblind mode) indicates the  Shadow is unable to be swapped places with."
+      "notes": "* While  grounded Zed can cast Living Shadow but may not swap places with it.\n The  Shadow grants  sight of its surroundings and is  untargetable.\n Zed always has an arrow next to him pointing in the direction of his  Shadows. It has three different colors, each one symbolizes important information about the specific Shadow. They are only visible to Zed.\n\n \t  \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tTwo arrows point toward their corresponding  Shadows. \t\t \t \n\n \t  \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tA green arrow (blue in colorblind mode) means the  Shadow can be swapped places with. \t\t \t \n\n \t  \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tA yellow arrow signifies the  Shadow is about to disappear. \t\t \t \n\n \t  \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tA red arrow (orange in colorblind mode) indicates the  Shadow is unable to be swapped places with."
     }
   },
   "skill_e": {
@@ -129,9 +230,94 @@
       "icon": "Shadow Slash.png",
       "blurb": "Zed and his shadow spin their blades, creating a burst of shadow energy. The shadow's spin slows.",
       "description": "Active: Zed and his  Shadows slash, dealing  physical damage to surrounding enemies.",
-      "leveling": "Physical Damage:\n70 / 95 / 120 / 145 / 170 (+ 80% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                95,
+                120,
+                145,
+                170
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Enemies hit by a  Shadow's Shadow Slash are  slowed for 1.5 seconds. Enemies hit by multiple slashes take no additional damage but the slow's potency is increased by 50%.",
-      "leveling2": "Slow:\n20 / 25 / 30 / 35 / 40%\nEnhanced Slow:\n30 / 37.5 / 45 / 52.5 / 60%",
+      "leveling2": [
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Enhanced Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                37.5,
+                45,
+                52.5,
+                60
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Each enemy champion hit by Zed's slash reduces  Living Shadow's  cooldown by 2 seconds.",
       "targeting": "Auto",
       "affects": "Enemies",
@@ -152,7 +338,43 @@
       "blurb": "Zed becomes untargetable and dashes to an enemy champion, marking them. After 3 seconds the mark triggers, repeating a portion of all the damage Zed dealt to the target while they were marked.",
       "description": "First Cast: Zed becomes  untargetable for 0.6 seconds after which he  dashes through the target enemy  champion over 0.4 seconds, marking them, becoming  ghosted for 3 seconds, and spawning a  Shadow at the cast location which lasts for 6.5 seconds. After 0.5 seconds of his reappearance, he can activate  Death Mark Shadow.",
       "description2": "For the next 3 seconds, the mark stores a percentage of all pre-mitigation  physical damage and  magical damage Zed and his  Shadows deal to the target, detonating at the end of the duration to deal  physical damage.",
-      "leveling2": "Physical Damage:\n100% AD (+ 25 / 40 / 55% of damage dealt)",
+      "leveling2": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                40,
+                55
+              ],
+              "units": [
+                "",
+                "",
+                "% of damage dealt"
+              ]
+            }
+          ]
+        }
+      ],
       "icon3": "Death Mark 2.png",
       "description3": "Second Cast - Death Mark Shadow: Regardless of distance between each other, Zed and the Death Mark  Shadow  blink to their respective locations, swapping places.",
       "description4": "If the target dies or is 1950 units away before the dash begins, Death Mark is canceled, goes on a 5 second  cooldown, and Zed reappears at the cast location.",
@@ -161,7 +383,7 @@
       "damagetype": "Physical",
       "spelleffects": "Single target",
       "spellshield": "Special",
-      "notes": "* The mark can be prevented by becoming  untargetable before it is applied (untargetability after application will not prevent the mark's detonation).\n Death Mark's  Shadow is functionally the same as a regular one, but it lasts longer and can be recast regardless of range.\n The range at which they mimic Zed's abilities do not change.\n\n Death Mark's stored damage derives from all abilities, items, and buffs.\n  Spell shields will only block the mark's application. They will not block the detonation from a mark that is already applied.\n If the mark is strong enough to kill the target, a spinning shuriken will appear above the victim to indicate their death. This does not however consider  shields or forms of damage modifiers.\n\n    The indicator shown in-game (base skin)."
+      "notes": "* The mark can be prevented by becoming  untargetable before it is applied (untargetability after application will not prevent the mark's detonation).\n Death Mark's  Shadow is functionally the same as a regular one, but it lasts longer and can be recast regardless of range.\n The range at which they mimic Zed's abilities do not change.\n\n Death Mark's stored damage derives from all abilities, items, and buffs.\n  Spell shields will only block the mark's application. They will not block the detonation from a mark that is already applied.\n If the mark is strong enough to kill the target, a spinning shuriken will appear above the victim to indicate their death. This does not however consider  shields or forms of damage modifiers.\n\n \t  \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tThe indicator shown in-game (base skin)."
     }
   }
 }

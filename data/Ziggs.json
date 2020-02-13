@@ -34,7 +34,7 @@
     "as_ratio": 0.656000018119812,
     "attack_delay_offset": -0.0916666686534881,
     "aram_dmg_dealt": 0.85,
-    "aram_dmg_taken": 1.08
+    "aram_dmg_taken": 1.1
   },
   "rangetype": "Ranged",
   "date": "2012-02-01",
@@ -86,7 +86,47 @@
       "blurb": "Ziggs throws a bouncing bomb that deals magic damage.",
       "description": "Active: Ziggs throws a bouncing bomb to the target area, exploding upon contacting an enemy, the terrain or reaching the end of its trajectory. The bomb can bounce up to twice, the distance traveled each time based on how far it was originally thrown.",
       "description2": "When exploding the Bouncing Bomb deals magic damage to all nearby enemies.",
-      "leveling2": "Magic Damage:\n85 / 130 / 175 / 220 / 265 (+ 65% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                85,
+                130,
+                175,
+                220,
+                265
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                65,
+                65,
+                65,
+                65,
+                65
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "magic",
@@ -110,9 +150,72 @@
       "blurb": "Ziggs flings an explosive charge that detonates after 4 seconds, or when this ability is activated again. The explosion deals magic damage to enemies, knocking them away. Ziggs is also knocked away, but takes no damage. Ziggs can use the Satchel to hexplode vulnerable enemy turrets.",
       "description": "Active: Ziggs flings an explosive charge towards the target area,  revealing its surroundings, and exploding after 4 seconds or upon reactivation.",
       "description2": "When exploding the Satchel Charge deals magic damage and  knocks back all surrounding enemies by 250 units. If Ziggs is within the explosion radius, he instead  flies up to 500 units away while taking no damage in the process.",
-      "leveling2": "Magic Damage:\n70 / 105 / 140 / 175 / 210 (+ 50% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                105,
+                140,
+                175,
+                210
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Turret Explosion: Satchel Charge's explosion can demolish  turrets below a  percentile health threshold.",
-      "leveling3": "Demolition Threshold:\n25 / 27.5 / 30 / 32.5 / 35% of turret's maximum health",
+      "leveling3": [
+        {
+          "attribute": "Demolition Threshold",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                27.5,
+                30,
+                32.5,
+                35
+              ],
+              "units": [
+                "% of turret's maximum health",
+                "% of turret's maximum health",
+                "% of turret's maximum health",
+                "% of turret's maximum health",
+                "% of turret's maximum health"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies / Self",
       "damagetype": "magic",
@@ -136,7 +239,147 @@
       "blurb": "Ziggs scatters proximity mines that detonate on enemy contact, dealing magic damage and slowing.",
       "description": "Active: Ziggs scatters a cluster of 11 proximity mines over the target area, lasting for up to 10 seconds.",
       "description2": "Mines explode on contact with an enemy,  slowing them for 1.5 seconds and dealing magic damage. Targets detonating more than one mine take 40% damage from subsequent mines.",
-      "leveling2": "Slow:\n30 / 35 / 40 / 45 / 50%\n\nMagic Damage Per Mine:\n40 / 75 / 110 / 145 / 180 (+ 30% AP)\n\nAdditional Magic Damage:\n16 / 30 / 44 / 58 / 72 (+ 12% AP)\nTotal Single-Target Damage:\n200 / 375 / 550 / 725 / 900 (+ 150% AP)",
+      "leveling2": [
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                35,
+                40,
+                45,
+                50
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Magic Damage Per Mine",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                75,
+                110,
+                145,
+                180
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Additional Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                16,
+                30,
+                44,
+                58,
+                72
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                12,
+                12,
+                12,
+                12,
+                12
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Single-Target Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                375,
+                550,
+                725,
+                900
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                150,
+                150,
+                150,
+                150
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "magic",
@@ -162,7 +405,86 @@
       "blurb": "Ziggs deploys his ultimate creation, the Mega Inferno Bomb, hurling it an enormous distance. Enemies in the primary blast zone take more damage than those farther away.",
       "description": "Active: Ziggs deploys his ultimate creation, the  Mega Inferno Bomb, hurling it to the target area, granting  sight within a 350 unit radius as it travels.",
       "description2": "Upon reaching the target area, it explodes, dealing magic damage to all enemies caught in the blast, increased by 50% in the epicenter.",
-      "leveling2": "Magic Damage:\n200 / 250 / 300 / 350 / 400 (+ 73.33% AP)\nIncreased Damage:\n300 / 375 / 450 / 525 / 600 (+ 110% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                250,
+                300,
+                350,
+                400
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                73.33,
+                73.33,
+                73.33,
+                73.33,
+                73.33
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Increased Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                300,
+                375,
+                450,
+                525,
+                600
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                110,
+                110,
+                110,
+                110,
+                110
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "magic",

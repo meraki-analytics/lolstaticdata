@@ -5,7 +5,7 @@
   "attack": 6,
   "defense": 2,
   "magic": 6,
-  "difficulty": 2,
+  "difficulty": 3,
   "herotype": "Mage",
   "resource": "Mana",
   "stats": {
@@ -77,7 +77,47 @@
       "icon": "Wild Cards.png",
       "blurb": "Twisted Fate throws three cards, dealing damage to each enemy unit they pass through.",
       "description": "Active: Twisted Fate throws three cards in a cone, dealing  magic damage to all enemies they pass through.",
-      "leveling": "Magic Damage:\n60 / 105 / 150 / 195 / 240 (+ 65% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                105,
+                150,
+                195,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                65,
+                65,
+                65,
+                65,
+                65
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Enemies can only be damaged once by Wild Cards.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -102,19 +142,258 @@
       "description": "First Cast - Pick a Card: Twisted Fate cycles through  three cards for 6 seconds. Choosing one by reactivating Pick a Card converts Twisted Fate's next basic attack within 6 seconds to instead deal magic damage and a bonus effect based on the card selected. The basic attack applies on-hit and spell effects but cannot  critical strike.",
       "icon2": "Blue Card.png",
       "description2": "Second Cast -  Blue Card: Restores  mana.",
-      "leveling2": "Magic Damage:\n40 / 60 / 80 / 100 / 120 (+ 100% AD) (+ 50% AP)\nMana Restored:\n50 / 75 / 100 / 125 / 150",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                60,
+                80,
+                100,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Mana Restored",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                75,
+                100,
+                125,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "icon3": "Red Card.png",
       "description3": "Second Cast -  Red Card: Deals magic damage around the target and  slows all enemies hit for 2.5 seconds.",
-      "leveling3": "Magic Damage:\n30 / 45 / 60 / 75 / 90 (+ 100% AD) (+ 50% AP)\nSlow:\n30 / 35 / 40 / 45 / 50%",
+      "leveling3": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                45,
+                60,
+                75,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                35,
+                40,
+                45,
+                50
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "icon4": "Gold Card.png",
       "description4": "Second Cast -  Gold Card:  Stuns the target.",
-      "leveling4": "Magic Damage:\n15 / 22.5 / 30 / 37.5 / 45 (+ 100% AD) (+ 50% AP)\nStun Duration:\n1 / 1.25 / 1.5 / 1.75 / 2",
+      "leveling4": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                22.5,
+                30,
+                37.5,
+                45
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Stun Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1,
+                1.25,
+                1.5,
+                1.75,
+                2
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "description5": "The card may be chosen while  crowd controlled.",
       "targeting": "Self",
       "affects": "Enemies, Self",
       "damagetype": "Magic",
+      "spelleffects": "spell",
       "spellshield": "True",
       "projectile": "True",
-      "notes": "* Pick a Card will stack and can trigger  Stacked Deck.\n The first card shown on-first-cast is random but the order always remains the same ( Blue Card,  Red Card,  Gold Card, repeat).\n Twisted Fate can choose a card in  stasis."
+      "notes": "* Pick a Card will stack and can trigger  Stacked Deck.\n The first card shown is random but the order always remains the same ( Blue Card,  Red Card,  Gold Card, repeat)."
     }
   },
   "skill_e": {
@@ -125,14 +404,78 @@
       "icon": "Stacked Deck.png",
       "blurb": "Every 4 attacks, Twisted Fate deals bonus damage. In addition, his Attack Speed is increased.",
       "description": "Passive: Twisted Fate gains  bonus attack speed.",
-      "leveling": "Bonus Attack Speed:\n20 / 25 / 30 / 35 / 40%",
+      "leveling": [
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Passive: Twisted Fate gains a Stacked Deck stack for every basic attack on-hit, up to a maximum of three.",
       "description3": "At 3 stacks, his next basic attack against  non-structures consumes the stacks on-attack to deal bonus magic damage.",
-      "leveling3": "Bonus Magic Damage:\n65 / 90 / 115 / 140 / 165 (+ 50% AP)",
+      "leveling3": [
+        {
+          "attribute": "Bonus Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                65,
+                90,
+                115,
+                140,
+                165
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Passive",
       "affects": "Enemies, Self",
       "damagetype": "Magic",
-      "spellshield": "False",
+      "spelleffects": "spell",
+      "spellshield": "false",
       "projectile": "True",
       "notes": "* Stacked Deck can be  dodged or negated if Twisted Fate is  blinded (the enhanced attack is not consumed in either case) but can only be mitigated if  blocked (the enhanced attack is consumed but the bonus damage is still applied)."
     }
@@ -150,7 +493,30 @@
       "icon": "Destiny.png",
       "blurb": "Twisted Fate predicts the fortunes of his foes, revealing all enemy champions and enabling the use of Gate, which teleports Twisted Fate to any target location in 1.5 seconds.",
       "description": "First Cast - Destiny: Twisted Fate and his allies gain  true sight of all  enemy champions for a few seconds. After a 0.5 second delay, Twisted Fate can use  Gate once for the duration.",
-      "leveling": "Duration:\n6 / 7 / 8 / 9 / 10",
+      "leveling": [
+        {
+          "attribute": "Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Gate.png",
       "description2": "Second Cast - Gate: Twisted Fate channels for 1.5 seconds,  blinking to the target location upon completion.",
       "targeting": "Ground",

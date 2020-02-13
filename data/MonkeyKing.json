@@ -76,7 +76,69 @@
       "icon": "Crushing Blow.png",
       "blurb": "Wukong's next attack deals additional physical damage, gains range, and reduces the enemy's Armor for a short duration.",
       "description": "Active: Wukong's next basic attack within 5 seconds gains  125 bonus range, deals  modified physical damage and reduces  his target's armor for 3 seconds.",
-      "leveling": "Modified Physical Damage:\n10 / 40 / 70 / 100 / 130 (+ 100 / 110 / 120 / 130 / 140% AD)\n\nArmor Reduction:\n10 / 15 / 20 / 25 / 30% of target's armor",
+      "leveling": [
+        {
+          "attribute": "Modified Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                40,
+                70,
+                100,
+                130
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                110,
+                120,
+                130,
+                140
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Armor Reduction",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                15,
+                20,
+                25,
+                30
+              ],
+              "units": [
+                "% of target's armor",
+                "% of target's armor",
+                "% of target's armor",
+                "% of target's armor",
+                "% of target's armor"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Crushing Blow resets Wukong's autoattack timer.",
       "targeting": "Self",
       "affects": "Self, Enemies",
@@ -99,7 +161,47 @@
       "blurb": "Wukong becomes Invisible for a short duration, leaving behind a decoy that will deal Magic Damage to enemies near it when Wukong's stealth expires.",
       "description": "Active: Wukong is  pushed 100 units away, entering  invisibility for 1.5 seconds and leaving behind a decoy of himself.",
       "description2": "After 1.5 seconds, the decoy performs a circular attack around itself for 0.5 seconds, dealing  magic damage to all nearby enemies before disappearing.",
-      "leveling2": "Magic Damage:\n70 / 115 / 160 / 205 / 250 (+ 60% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                115,
+                160,
+                205,
+                250
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Self",
       "affects": "Enemies",
       "damagetype": "magic",
@@ -121,9 +223,72 @@
       "icon": "Nimbus Strike.png",
       "blurb": "Wukong dashes to target enemy and sends out images to attack up to 2 additional enemies near his target, dealing physical damage to each enemy struck.",
       "description": "Active: Wukong  dashes on a cloud to the target enemy and sends out  untargetable clones to attack up to two additional enemies near the primary target, dealing physical damage to each enemy struck. The clones can block non-targeted attacks or abilities for 0.25 seconds after hitting their targets.",
-      "leveling": "Physical Damage:\n65 / 100 / 135 / 170 / 205 (+ 80% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                65,
+                100,
+                135,
+                170,
+                205
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Upon hitting his target, Wukong gains  bonus attack speed for 4 seconds.",
-      "leveling2": "Bonus Attack Speed:\n30 / 35 / 40 / 45 / 50%",
+      "leveling2": [
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                35,
+                40,
+                45,
+                50
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "physical",
@@ -145,7 +310,86 @@
       "blurb": "Wukong's staff grows outward and he spins it around, dealing damage and knocking up enemies. Wukong gains Movement Speed over the duration of the spell.",
       "description": "Active: Wukong spins his staff around for up to 4 seconds, becomes  pacified and gains  5% \u2212 40% (based on time active) bonus movement speed. Reactivating Cyclone cancels it immediately.",
       "description2": "The spin deals physical damage to nearby enemies every 0.5 seconds. Enemies affected by Cyclone for the first time are briefly  knocked up.",
-      "leveling2": "Physical Damage Per Tick:\n10 / 32.5 / 55 / 77.5 / 100 (+ 55% AD)\nTotal Physical Damage:\n80 / 260 / 440 / 620 / 800 (+ 440% AD)",
+      "leveling2": [
+        {
+          "attribute": "Physical Damage Per Tick",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                32.5,
+                55,
+                77.5,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                55,
+                55,
+                55,
+                55
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                260,
+                440,
+                620,
+                800
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                440,
+                440,
+                440,
+                440,
+                440
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Self",
       "affects": "Enemies, Self",
       "damagetype": "physical",

@@ -81,7 +81,170 @@
       "icon": "Paddle Star.png",
       "blurb": "Zoe fires a missile that she can redirect in flight, which deals more damage the longer it flies in a straight line.",
       "description": "First Cast: Zoe shoots a star in the target direction that collides with the first enemy hit, dealing magic damage in a small area, reduced to 80% to enemies hit beyond the first. The total damage is increased by 0% \u2212 150% (based on distance traveled).",
-      "leveling": "Minimum Magic Damage:\n7 \u2212 50 (based on level) (+ 50 / 80 / 110 / 140 / 170) (+ 60% AP)\nMaximum Magic Damage:\n17.5 \u2212 125 (based on level) (+ 125 / 200 / 275 / 350 / 425) (+ 150% AP)",
+      "leveling": [
+        {
+          "attribute": "Minimum Magic Damage",
+          "modifiers": [
+            {
+              "values": [
+                7.0,
+                9.529411764705882,
+                12.058823529411764,
+                14.588235294117647,
+                17.11764705882353,
+                19.647058823529413,
+                22.176470588235293,
+                24.705882352941174,
+                27.235294117647058,
+                29.764705882352942,
+                32.294117647058826,
+                34.8235294117647,
+                37.35294117647059,
+                39.88235294117647,
+                42.41176470588235,
+                44.94117647058823,
+                47.470588235294116,
+                50.0
+              ],
+              "units": [
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                80,
+                110,
+                140,
+                170
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Magic Damage",
+          "modifiers": [
+            {
+              "values": [
+                17.5,
+                23.823529411764707,
+                30.147058823529413,
+                36.470588235294116,
+                42.794117647058826,
+                49.11764705882353,
+                55.44117647058823,
+                61.76470588235294,
+                68.08823529411765,
+                74.41176470588235,
+                80.73529411764706,
+                87.05882352941177,
+                93.38235294117646,
+                99.70588235294117,
+                106.02941176470588,
+                112.35294117647058,
+                118.67647058823529,
+                125.0
+              ],
+              "units": [
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                125,
+                200,
+                275,
+                350,
+                425
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                150,
+                150,
+                150,
+                150
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If the star does not hit an enemy, it lingers at maximum range for 1 second.",
       "icon3": "Paddle Star 2.png",
       "description3": "Second Cast: While the star is out, Zoe can reactivate Paddle Star to redirect it to a new location near her, resetting its damage modifier on cast. The redirected star can travel beyond the new target location, continuing forward until it moves more than 800 units from Zoe.",
@@ -108,9 +271,133 @@
       "description2": "Collecting a Spell Shard allows Zoe to activate Spell Thief within the next 60 seconds. She can replace her current Spell Thief active by moving directly onto another Spell Shard.",
       "description3": "Active: Zoe mimics the active of the collected Spell Shard.",
       "description4": "Passive - Wheeeee: Casting Spell Thief or one of her own summoner spells grants Zoe  bonus movement speed for the next few seconds, and summons three bubbles that orbit her for the next 10 seconds.",
-      "leveling4": "Bonus Movement Speed:\n30 / 40 / 50 / 60 / 70%\nBonus Movement Speed Duration:\n2 / 2.25 / 2.5 / 2.75 / 3",
+      "leveling4": [
+        {
+          "attribute": "Bonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                40,
+                50,
+                60,
+                70
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Bonus Movement Speed Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                2,
+                2.25,
+                2.5,
+                2.75,
+                3
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description5": "If Zoe is not  immobilized she hurls one bubble at a time at the nearest enemy in range, prioritizing her attack target, dealing magic damage.",
-      "leveling5": "Magic Damage Per Orb:\n25 / 35 / 45 / 55 / 65 (+ 13.3% AP)\nTotal Magic Damage:\n75 / 105 / 135 / 165 / 195 (+ 40% AP)",
+      "leveling5": [
+        {
+          "attribute": "Magic Damage Per Orb",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                35,
+                45,
+                55,
+                65
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                13.3,
+                13.3,
+                13.3,
+                13.3,
+                13.3
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                105,
+                135,
+                165,
+                195
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Varied",
       "affects": "Varied",
       "damagetype": "Varied",
@@ -140,9 +427,111 @@
       "blurb": "Causes the target to become drowsy, then fall asleep. The first source of damage that breaks the sleep is doubled, up to a cap.",
       "description": "Active: Zoe kicks a bubble in the target direction that bursts on the first enemy hit, else forming a trap at maximum range for 5 seconds that arms after 0.8 seconds. The bubble can only move through terrain once but may do so indefinitely, can only move up to 650 units once outside terrain, and will fall short if it would enter terrain again.",
       "description2": "The bubble deals magic damage on contact with an enemy and renders them  drowsy for 1.4 seconds, which gradually  slows them, after which they fall  asleep for 2.25 seconds.",
-      "leveling2": "Maximum Slow:\n10 / 15 / 20 / 25 / 30%\n\nMagic Damage:\n60 / 100 / 140 / 180 / 220 (+ 40% AP)",
+      "leveling2": [
+        {
+          "attribute": "Maximum Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                15,
+                20,
+                25,
+                30
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                100,
+                140,
+                180,
+                220
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "The next  non-dot champion or turret damage taken by the  sleeping target deals  bonus true damage equal to the post-mitigation damage dealt, capped at Sleepy Trouble Bubble's damage. The bonus damage is dealt before the triggering damage.",
-      "leveling3": "Maximum Mixed Damage:\n120 / 200 / 280 / 360 / 440 (+ 80% AP)",
+      "leveling3": [
+        {
+          "attribute": "Maximum Mixed Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                200,
+                280,
+                360,
+                440
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",

@@ -81,11 +81,116 @@
       "icon": "Plasma Fission.png",
       "blurb": "Vel'Koz shoots a bolt of plasma that splits in two on reactivation or upon hitting an enemy. The bolt slows and damages on hit.",
       "description": "Active: Vel'Koz fires an energy bolt that collides with the first enemy hit to deal  magic damage and  slow by 70% for a few seconds, decaying over the duration.",
-      "leveling": "Magic Damage:\n80 / 120 / 160 / 200 / 240 (+ 80% AP)\nSlow Duration:\n1 / 1.4 / 1.8 / 2.2 / 2.6",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                120,
+                160,
+                200,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1,
+                1.4,
+                1.8,
+                2.2,
+                2.6
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Plasma Fission 2.png",
       "description2": "At the end of its range, upon re-activation after 0.25 seconds, or upon colliding with an enemy, the bolt splits in half, each part firing in opposite directions perpendicular to the primary bolt's trajectory.",
       "description3": "Plasma Fission restores  mana per target killed.",
-      "leveling3": "Mana Restored On-Kill:\n20 / 22.5 / 25 / 27.5 / 30\nMaximum Mana Restored:\n60 / 67.5 / 75 / 82.5 / 90",
+      "leveling3": [
+        {
+          "attribute": "Mana Restored On-Kill",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                22.5,
+                25,
+                27.5
+              ],
+              "units": [
+                " /",
+                " /",
+                " /",
+                " /"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "30 Maximum Mana Restored",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                67.5,
+                75,
+                82.5,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -109,7 +214,125 @@
       "blurb": "Vel'Koz opens a rift to the void that deals an initial burst of damage, then explodes for a second burst of damage after a delay.",
       "description": "Passive: Vel'Koz periodically stocks a Void Rift charge, up to a maximum of 2.",
       "description2": "Active: Vel'Koz opens a rift to the void that cuts through the ground in a line, dealing magic damage and leaving behind a trail. After a 0.25 seconds delay, the trail detonates, dealing magic damage.",
-      "leveling2": "Initial Magic Damage:\n30 / 50 / 70 / 90 / 110 (+ 15% AP)\nDetonation Magic Damage:\n45 / 75 / 105 / 135 / 165 (+ 25% AP)\nMaximum Damage:\n75 / 125 / 175 / 225 / 275 (+ 40% AP)",
+      "leveling2": [
+        {
+          "attribute": "Initial Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                50,
+                70,
+                90,
+                110
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                15,
+                15,
+                15,
+                15
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Detonation Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                75,
+                105,
+                135,
+                165
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                125,
+                175,
+                225,
+                275
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -134,7 +357,47 @@
       "icon": "Tectonic Disruption.png",
       "blurb": "Vel'Koz causes an area to explode, knocking up enemies, and knocking close enemies slightly away.",
       "description": "Active: Vel'Koz hurls a disruptive anomaly that reaches the target location after 0.55 seconds, briefly providing  sight, dealing magic damage and  suspending enemies in the area for 0.75 seconds. If the area is created close to Vel'Koz, enemies hit are also slightly  knocked back in the direction of the cast.",
-      "leveling": "Magic Damage:\n70 / 100 / 130 / 160 / 190 (+ 30% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                100,
+                130,
+                160,
+                190
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -159,7 +422,86 @@
       "icon2": "Lifeform Disintegration Ray.png",
       "description2": "Active: Vel'Koz channels for 2.5 seconds to project an energy beam in a line. The ray's trajectory updates itself over the duration to face the target direction. Reactivating Life Form Disintegration Ray ends the channel.",
       "description3": "The ray deals magic damage in 0.25 seconds intervals, and  slows by 20% for 1 second.  Deconstruction is applied every 0.7 seconds to enemies hit.  Researched enemies take true damage instead.",
-      "leveling3": "Magic Damage Per Tick:\n45 / 53.75 / 62.5 / 71.25 / 80 (+ 12.5% AP)\nMaximum Magic Damage:\n450 / 537.5 / 625 / 712.5 / 800 (+ 125% AP)",
+      "leveling3": [
+        {
+          "attribute": "Magic Damage Per Tick",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                53.75,
+                62.5,
+                71.25,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                12.5,
+                12.5,
+                12.5,
+                12.5,
+                12.5
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                450,
+                537.5,
+                625,
+                712.5,
+                800
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                125,
+                125,
+                125,
+                125,
+                125
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic / True",

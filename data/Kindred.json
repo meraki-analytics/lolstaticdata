@@ -64,11 +64,9 @@
       "icon2": "Lamb's Mask profileicon.png",
       "description2": "Innate - Lamb: Lamb is offered a selection of  champions to take down, which is hidden while in combat with an enemy champion. Once selected, there's an 8 seconds delay before the Mark can be collected, and Lamb can change her target if the target hasn't died during a period of time. Targets successfully hunted cannot be targeted again for a few minutes.",
       "icon3": "Wolf's Mask profileicon.png",
-      "description3": "Innate - Wolf: Starting at 3:15, Wolf periodically selects a monster camp within the enemy's jungle based on Lamb's current Marks for 180 seconds:\n 0 :  Rift Scuttler\n 1 \u2013 3:  Rift Scuttler,  Crimson Raptor,  Gromp\n 4 \u2013 7:  Ancient Krug,  Blue Sentinel,  Greater Murk Wolf, or  Red Brambleback\n 8 + :  Rift Herald or  Baron Nashor,  Dragon or  Elder Dragon\n\nWolf will select another monster camp 40 seconds after killing a marked monster. If an ally kills a hunted jungle monster within 6 seconds of Kindred damaging it, Kindred will still acquire the stack.\nThe marked camp is highlighted on the minimap to both teams. The mark is removed when the camp is cleared even if Kindred are not involved.",
-      "targeting": "Unit",
+      "description3": "Innate - Wolf: Starting at 3:15, Wolf periodically selects a  monster camp within the enemy's jungle based on Lamb's current Marks for 180 seconds:\n 0 :  Rift Scuttler\n 1 \u2013 3:  Rift Scuttler,  Crimson Raptor,  Gromp\n 4 \u2013 7:  Ancient Krug,  Blue Sentinel,  Greater Murk Wolf, or  Red Brambleback\n 8 + :  Rift Herald or  Baron Nashor,  Dragon or  Elder Dragon\n\nWolf will select another monster camp 40 seconds after killing a marked monster. If an ally kills a hunted jungle monster within 6 seconds of Kindred damaging it, Kindred will still acquire the stack.\nThe marked camp is highlighted on the minimap to both teams. The mark is removed when the camp is cleared even if Kindred are not involved.",
+      "targeting": "Passive",
       "affects": "Self, Enemies",
-      "damagetype": "Physical",
-      "spellshield": "False",
       "notes": "* No additional notes."
     }
   },
@@ -86,14 +84,77 @@
       "icon": "Dance of Arrows.png",
       "blurb": "Kindred tumbles and shoots up to three arrows at nearby targets.",
       "description": "Active: Lamb  dashes in the target direction, gaining 25% (+ 5% per  Mark) bonus attack speed for 4 seconds while firing up to three arrows to nearby  visible targets, dealing physical damage. Lamb's current attack target at any proximity will be prioritized by one of the arrows.",
-      "leveling": "Physical Damage:\n60 / 80 / 100 / 120 / 140 (+ 65% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                80,
+                100,
+                120,
+                140
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                65,
+                65,
+                65,
+                65,
+                65
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Casting  Wolf's Frenzy or dashing while inside the area will change Dance of Arrows'  cooldown into a static cooldown.",
-      "leveling2": "Static Cooldown:\n4 / 3.5 / 3 / 2.5 / 2",
+      "leveling2": [
+        {
+          "attribute": "Static Cooldown",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                4,
+                3.5,
+                3,
+                2.5,
+                2
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Dance of Arrows resets Lamb's basic attack timer.",
-      "targeting": "Direction",
+      "targeting": "Direction / Auto",
       "affects": "Enemies",
       "damagetype": "Physical",
-      "spelleffects": "Single target",
+      "spelleffects": "spell",
       "spellshield": "True",
       "projectile": "True",
       "notes": "* No additional details."
@@ -115,7 +176,64 @@
       "description": "Passive: As Kindred move and attack, they build up to 100 stacks of Hunter's Vigor. At full stacks, Lamb's next basic attack  restores up to  32 \u2212 100 (based on level) health, based on Kindred's missing health.",
       "description2": "Active: Wolf  dashes to the target location and claims the surrounding area as his territory for the next 8.5 seconds, separating from Lamb. Wolf autonomously attacks enemies within the area, prioritizing Lamb's attack target.",
       "description3": "Wolf's basic attacks deal magic damage and scale with 25% of Kindred's bonus attack speed. Against monsters, Wolf deals 50% increased damage and his attacks  slow his target by 50% for 2 seconds.",
-      "leveling3": "Magic Damage:\n25 / 30 / 35 / 40 / 45 (+ 20% bonus AD) (+ 1.5% (+ 1% per  Mark) of target's current health)",
+      "leveling3": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                30,
+                35,
+                40,
+                45
+              ],
+              "units": [
+                "   of target's current health)",
+                "   of target's current health)",
+                "   of target's current health)",
+                "   of target's current health)",
+                "   of target's current health)"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                1.5,
+                1.5,
+                1.5,
+                1.5,
+                1.5
+              ],
+              "units": [
+                "% (+ 1% per  Mark",
+                "% (+ 1% per  Mark",
+                "% (+ 1% per  Mark",
+                "% (+ 1% per  Mark",
+                "% (+ 1% per  Mark"
+              ]
+            }
+          ]
+        }
+      ],
       "description4": "Wolf's Frenzy ends immediately if Lamb leaves the area.",
       "targeting": "Auto / Ground",
       "affects": "Enemies",
@@ -138,7 +256,64 @@
       "blurb": "Lamb fires a carefully placed shot, slowing the target. If Lamb attacks the target two more times, her third attack instead directs Wolf to pounce on the enemy, savaging them for massive damage.",
       "description": "Active: Lamb cripples the target unit,  slowing them by 50% for 1 second.",
       "description2": "If Lamb manages to basic attack the target twice with no longer than 4 seconds between each attack after casting Mounting Dread, her third attack within the following 4 seconds directs Wolf to pounce the target, dealing bonus physical damage, capped against  monsters at 300 bonus damage.",
-      "leveling2": "Bonus Physical Damage:\n80 / 100 / 120 / 140 / 160 (+ 80% bonus AD) (+ 8% (+ 0.5% per  Mark) of target's missing health)",
+      "leveling2": [
+        {
+          "attribute": "Bonus Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                100,
+                120,
+                140,
+                160
+              ],
+              "units": [
+                "   of target's missing health)",
+                "   of target's missing health)",
+                "   of target's missing health)",
+                "   of target's missing health)",
+                "   of target's missing health)"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                8,
+                8,
+                8,
+                8,
+                8
+              ],
+              "units": [
+                "% (+ 0.5% per  Mark",
+                "% (+ 0.5% per  Mark",
+                "% (+ 0.5% per  Mark",
+                "% (+ 0.5% per  Mark",
+                "% (+ 0.5% per  Mark"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Wolf's pounce will  critically strike for (50% +  37.5%)  bonus physical damage against targets below 15% \u2212 65% (based on critical strike chance) maximum health.",
       "targeting": "Unit",
       "affects": "Enemies",
@@ -162,7 +337,26 @@
       "blurb": "Lamb grants all living things inside a zone a respite from death. Until the effect ends, nothing can die. At the end, units are healed.",
       "description": "Active: Lamb blesses the ground under herself for 4 seconds. While inside the area, all units  cannot be reduced below  10% their maximum health. Units in the area who reach the threshold cannot be healed for the remaining duration.",
       "description3": "All units within the zone are  healed immediately when the blessing ends.",
-      "leveling3": "Heal:\n200 / 250 / 300",
+      "leveling3": [
+        {
+          "attribute": "Heal",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                250,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground / Auto",
       "affects": "Self, Allies, Enemies",
       "spelleffects": "Heal",

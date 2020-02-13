@@ -82,7 +82,64 @@
       "icon": "Phosphorus Bomb.png",
       "blurb": "Corki fires a flash bomb at a target location, dealing magic damage to enemies in the area. This attack additionally reveals units in the area for a duration.",
       "description": "Active: Corki launches a bomb at the target area, dealing magic damage to enemies hit.",
-      "leveling": "Magic Damage:\n75 / 120 / 165 / 210 / 255 (+ 50% bonus AD) (+ 50% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                120,
+                165,
+                210,
+                255
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "The bomb  reveals the area as it travels and for 6 seconds afterwards, as well as all affected enemies.",
       "targeting": "Ground",
       "affects": "Enemies",
@@ -109,7 +166,86 @@
       "blurb": "Corki flies a short distance, dropping bombs that create a trail of fire that damages opponents who remain in it.",
       "description": "Active: Corki  dashes to the target location, dropping bombs that leave up to 3 blazing patches along his path, depending on the distance traveled, lasting for 2 seconds.",
       "description2": "These patches deal magic damage every 0.25 seconds to enemies within.",
-      "leveling2": "Magic Damage Per Tick:\n15 / 22.5 / 30 / 37.5 / 45 (+ 10% AP)\nTotal Magic Damage:\n120 / 180 / 240 / 300 / 360 (+ 80% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage Per Tick",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                22.5,
+                30,
+                37.5,
+                45
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                180,
+                240,
+                300,
+                360
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -153,7 +289,130 @@
       "icon": "Gatling Gun.png",
       "blurb": "Corki's gatling gun rapidly fires in a cone in front of him, dealing damage and reducing enemy Armor and Magic Resist.",
       "description": "Active: Corki sprays bullets in a frontal cone for 4 seconds, dealing equal parts physical and magic damage every 0.25 seconds to all enemies hit, and reducing the target's  armor and  magic resistance each tick, stacking up to 8 times, lingering for 2 seconds.",
-      "leveling": "Mixed Damage Per Tick:\n7.5 / 10.625 / 13.75 / 16.875 / 20 (+ 10% bonus AD)\nTotal Mixed Damage:\n120 / 170 / 220 / 270 / 320 (+ 160% bonus AD)\nResistance Reduction Per Tick:\n1 / 1.375 / 1.75 / 2.125 / 2.5\nTotal Resistance Reduction:\n8 / 11 / 14 / 17 / 20",
+      "leveling": [
+        {
+          "attribute": "Mixed Damage Per Tick",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                7.5,
+                10.625,
+                13.75,
+                16.875,
+                20
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Mixed Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                170,
+                220,
+                270,
+                320
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                160,
+                160,
+                160,
+                160,
+                160
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Resistance Reduction Per Tick",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1,
+                1.375,
+                1.75,
+                2.125,
+                2.5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Resistance Reduction",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                8,
+                11,
+                14,
+                17,
+                20
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Physical damage /  Magic damage",
@@ -180,7 +439,120 @@
       "blurb": "Corki fires a missile toward his target location that explodes on impact, dealing damage to enemies in an area. Corki stores missiles over time, up to a maximum. Every 3rd missile fired will be a Big One, dealing extra damage.",
       "description": "Passive: Corki periodically stocks a missile, up to a maximum of 7, and starts with 7 missiles every time he respawns.",
       "description2": "Active: Corki fires a missile in the target direction that explodes upon the first enemy hit, dealing magic damage in an area.",
-      "leveling2": "Magic Damage:\n90 / 107.5 / 125 / 142.5 / 160 (+ 15 / 30 / 45 / 60 / 75% AD) (+ 20% AP)\nBig One Magic Damage:\n180 / 215 / 250 / 285 / 320 (+ 30 / 60 / 90 / 120 / 150% AD) (+ 40% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                107.5,
+                125,
+                142.5,
+                160
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                30,
+                45,
+                60,
+                75
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Big One Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                180,
+                215,
+                250,
+                285,
+                320
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                60,
+                90,
+                120,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "icon3": "Big One.png",
       "description3": "Every third missile Corki fires is a  Big One, dealing 100% increased damage with increased range and explosion radius.",
       "targeting": "Direction",

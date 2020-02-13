@@ -86,16 +86,101 @@
       "icon": "Duskbringer.png",
       "blurb": "Nocturne throws a shadow blade that deals damage, leaves a Dusk Trail, and causes champions to leave a Dusk Trail. While on the trail, Nocturne can move through units and has increased Movement Speed and Attack Damage.",
       "description": "Active: Nocturne sends out a shadow blade in a line that leaves a Dusk Trail on its path, dealing  physical damage to enemies it passes through and causing enemy  champions hit to also leave a Dusk Trail behind their  movement for 5 seconds.",
-      "leveling": "Physical damage:\n65 / 110 / 155 / 200 / 245 (+ 75% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                65,
+                110,
+                155,
+                200,
+                245
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                75,
+                75,
+                75,
+                75
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "While on the Dusk Trail, Nocturne is  ghosted and gains  bonus movement speed and  bonus attack damage.",
-      "leveling2": "Movement Speed:\n15 / 20 / 25 / 30 / 35%\nBonus AD:\n20 / 30 / 40 / 50 / 60",
+      "leveling2": [
+        {
+          "attribute": "Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                20,
+                25,
+                30,
+                35
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Bonus AD",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                30,
+                40,
+                50,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Physical",
       "spelleffects": "Area of effect",
       "spellshield": "True",
       "projectile": "True",
-      "notes": "* Duskbringer's Dusk Trail will 'reveal' the path of affected units until its duration ends. This means it can indirectly show the location of any affected units without vision on them, including those in stealth.\n  Spell shield will block the damage and also prevents the Dusk Trail from following the target.\n The formed Dusk Trail does not disappear if Duskbringer is  destroyed."
+      "notes": "* Duskbringer's Dusk Trail will 'reveal' the path of affected units until its duration ends. This means it can indirectly show the location of any affected units without  vision on them, including those in  stealth.\n  Spell shield will block the damage and also prevents the Dusk Trail from following the target.\n The formed Dusk Trail does not disappear if Duskbringer is  destroyed."
     }
   },
   "skill_w": {
@@ -109,12 +194,56 @@
       "icon": "Shroud of Darkness.png",
       "blurb": "Nocturne empowers his blades, passively gaining Attack Speed. Activating Shroud of Darkness allows Nocturne to fade into the shadows, creating a magical barrier which blocks a single enemy ability and doubles his passive Attack Speed if successful.",
       "description": "Passive: Nocturne empowers his blades, permanently gaining  bonus attack speed.",
-      "leveling": "Bonus Attack Speed:\n30 / 35 / 40 / 45 / 50%\nMaximum Bonus Attack Speed:\n60 / 70 / 80 / 90 / 100%",
+      "leveling": [
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                35,
+                40,
+                45,
+                50
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                70,
+                80,
+                90,
+                100
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Active: Nocturne gains a  spell shield for 1.5 seconds.",
       "description3": "Blocking an ability will double Shroud of Darkness' passive  bonus attack speed for 5 seconds.",
-      "targeting": "None",
+      "targeting": "Self",
       "affects": "Self",
-      "spelleffects": "False",
       "notes": "* Shroud of Darkness has no cast time and does not interrupt Nocturne's previous orders.\n If Shroud of Darkness is active when Nocturne re-casts  Paranoia to dash to a target, it'll stay active until Nocturne reaches his target."
     }
   },
@@ -132,9 +261,72 @@
       "blurb": "Nocturne plants a nightmare into his target's mind, dealing damage each second and terrifying the target if they do not get out of range by the end of the duration.",
       "description": "Passive: Nocturne gains  335 bonus movement speed when moving toward  fleeing targets.",
       "description2": "Active: Nocturne plants nightmares into his target's mind, dealing  magic damage over 2 seconds and forming a tether between him and his target.",
-      "leveling2": "Magic Damage:\n80 / 125 / 170 / 215 / 260 (+ 100% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                125,
+                170,
+                215,
+                260
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "If the target does not break the tether by moving out of range, they are made to  flee from Nocturne for a short duration while  slowed by 90%.",
-      "leveling3": "Fear Duration:\n1.25 / 1.5 / 1.75 / 2 / 2.25",
+      "leveling3": [
+        {
+          "attribute": "Fear Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1.25,
+                1.5,
+                1.75,
+                2,
+                2.25
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -158,13 +350,49 @@
       "blurb": "Nocturne reduces the sight radius of all enemy champions and removes their ally vision in the process. He can then launch himself at a nearby enemy champion.",
       "description": "First Active: After a brief delay, Nocturne applies  nearsight to all enemy champions for 6 seconds.",
       "description2": "Second Active: While Paranoia is active, Nocturne can reactivate it to  dash  unstoppably to the target enemy  champion, dealing them  physical damage.",
-      "leveling2": "Physical Damage:\n150 / 275 / 400 (+ 120% bonus AD)",
-      "targeting": "Unit/Auto",
+      "leveling2": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                275,
+                400
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                120,
+                120,
+                120,
+                120
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
+      "targeting": "Unit / Auto",
       "affects": "Enemies",
       "damagetype": "Physical",
-      "spelleffects": "Single target",
+      "spelleffects": "spell",
       "spellshield": "Special",
-      "notes": "* Paranoia has no [[File:Template:Tip data/Cast time|20px|link=Template:Tip data/Cast time]][[File:Template:Tip data/Cast time|20px|link=Template:Tip data/Cast time]][[File:Template:Tip data/Cast time|20px|link=Template:Tip data/Cast time]] [[:Template:Tip data/Cast time|cast time]] and does not interrupt Nocturne's previous orders.\n Nocturne can cast his abilities, summoner spells, and active items during flight.\n Self-based movement spells such as  Flash will  interrupt Paranoia while he is flying to his target.\n\n\n  Spell shield does not block the  nearsight of Paranoia but it will absorb the damage dealt from the second active.\n Nocturne will track targets that change locations (moving,  dashing,  blinking) but not those that cover great distances ( recalling,  teleporting) in which case he will travel to their most previous location.\n Paranoia's  nearsight will prevent an enemy  Shen or  Galio from using their ultimate abilities ( Stand United and  Hero's Entrance) on allies from afar.\n Enemy  champions affected by Paranoia cannot cast  Teleport globally.\n  Untargetability does not invalidate the targeting of the nearsight.\n However,  vanishing effects negate it at the time of cast."
+      "notes": "* Paranoia has no cast time and does not interrupt Nocturne's previous orders.\n Nocturne can cast his abilities, summoner spells, and active items during flight.\n Self-based movement spells such as  Flash will  interrupt Paranoia while he is flying to his target.\n\n\n  Spell shield does not block the  nearsight of Paranoia but it will absorb the damage dealt from the second active.\n Nocturne will track targets that change locations (moving,  dashing,  blinking) but not those that cover great distances ( recalling,  teleporting) in which case he will travel to their most previous location.\n Paranoia's  nearsight will prevent an enemy  Shen or  Galio from using their ultimate abilities ( Stand United and  Hero's Entrance) on allies from afar.\n Enemy  champions affected by Paranoia cannot cast  Teleport globally.\n  Untargetability does not invalidate the targeting of the nearsight.\n However,  vanishing effects negate it at the time of cast."
     }
   }
 }

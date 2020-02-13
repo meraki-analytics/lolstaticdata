@@ -40,8 +40,8 @@
   "patch": "V1.0.0.139",
   "changes": "V10.1",
   "role": [
-    "Marksman",
-    "Artillery"
+    "Artillery",
+    "Marksman"
   ],
   "damage": 3,
   "toughness": 1,
@@ -80,7 +80,164 @@
       "description": "First Cast: Varus  charges for up to 4 seconds to gradually increase Piercing Arrow's  range and damage over the next 2 seconds, during which he is  pacified and  slowed by 20%.",
       "description2": "Piercing Arrow is canceled when the charge ends, refunding  half of the mana cost.",
       "description3": "Second Cast: Varus fires a piercing arrow dealing  physical damage to all enemies struck, which is increased by 0% \u2212 50% (based on Channel time). The arrow's damage is reduced to 100% \u2212 33% (based on enemy hit).",
-      "leveling3": "Minimum Physical Damage:\n10 / 46.67 / 83.33 / 120 / 156.67 (+ 110% AD)\nMinimum Fully Reduced Damage:\n3.3 / 15.4 / 27.5 / 39.6 / 51.7 (+ 36.3% AD)\n\nMaximum Physical Damage:\n15 / 70 / 125 / 180 / 235 (+ 165% AD)\nMaximum Fully Reduced Damage:\n4.95 / 23.1 / 41.25 / 59.4 / 77.55 (+ 54.45% AD)",
+      "leveling3": [
+        {
+          "attribute": "Minimum Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                46.67,
+                83.33,
+                120,
+                156.67
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                110,
+                110,
+                110,
+                110,
+                110
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Minimum Fully Reduced Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                3.3,
+                15.4,
+                27.5,
+                39.6,
+                51.7
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                36.3,
+                36.3,
+                36.3,
+                36.3,
+                36.3
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                70,
+                125,
+                180,
+                235
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                165,
+                165,
+                165,
+                165,
+                165
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Fully Reduced Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                4.95,
+                23.1,
+                41.25,
+                59.4,
+                77.55
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                54.45,
+                54.45,
+                54.45,
+                54.45,
+                54.45
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description4": "Detonating  Blight stacks on an enemy champion reduces Piercing Arrow's  cooldown by 3 seconds.",
       "targeting": "Direction",
       "affects": "Self, Enemies",
@@ -100,9 +257,128 @@
       "icon": "Blighted Quiver.png",
       "blurb": "Varus' basic attacks deal bonus magic damage and apply Blight. Varus' other abilities detonate Blight, dealing magic damage based on the target's maximum Health.",
       "description": "Passive: Varus' basic attacks deal  bonus magic damage and apply Blight for 6 seconds, stacking up to 3 times.",
-      "leveling": "Bonus Magic Damage:\n7 / 10.5 / 14 / 17.5 / 21 (+ 25% AP)",
+      "leveling": [
+        {
+          "attribute": "Bonus Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                7,
+                10.5,
+                14,
+                17.5,
+                21
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Varus' other abilities detonate Blight on enemies upon damaging them, dealing magic damage for each stack. This damage is capped at 360 against monsters.",
-      "leveling2": "Magic Damage per Stack:\n3 / 3.5 / 4 / 4.5 / 5% (+ 2% per 100 AP) of the target's maximum health\nMaximum Magic Damage:\n9 / 10.5 / 12 / 13.5 / 15% (+ 6% per 100 AP) of the target's maximum health",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage per Stack",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                3,
+                3.5,
+                4,
+                4.5,
+                5
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "units": [
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "of the target's maximum health Maximum Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                9,
+                10.5,
+                12,
+                13.5,
+                15
+              ],
+              "units": [
+                "%  of the target's maximum health",
+                "%  of the target's maximum health",
+                "%  of the target's maximum health",
+                "%  of the target's maximum health",
+                "%  of the target's maximum health"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                6,
+                6,
+                6,
+                6,
+                6
+              ],
+              "units": [
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP",
+                "% per 100 AP"
+              ]
+            }
+          ]
+        }
+      ],
       "icon3": "Blighted Quiver 2.png",
       "description3": "Active: Varus' next  Piercing Arrow deals 6% \u2212 14% (based on level) of the target's missing health bonus magic damage, increased by 0% \u2212 50% (based on Piercing Arrow channel time), for a maximum of 9% \u2212 21% (based on level) of the target's missing health. This damage is capped at 360 against monsters.",
       "description4": "Blighted Quiver can be cast during the first 0.25 seconds of  Piercing Arrow. If the arrow is not fired within 5 seconds, Blighted Quiver is placed on a 1 second cooldown, or on full cooldown if the charge is canceled.",
@@ -126,9 +402,72 @@
       "icon": "Hail of Arrows.png",
       "blurb": "Varus fires a hail of arrows that deal physical damage and desecrate the ground. Desecrated ground slows enemies' Movement Speed and reduces their self healing and regeneration.",
       "description": "Active: Varus fires a hail of arrows that deals physical damage on impact to all enemies in the target area.",
-      "leveling": "Physical Damage:\n70 / 105 / 140 / 175 / 210 (+ 60% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                105,
+                140,
+                175,
+                210
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "The area is desecrated for 4 seconds,  slowing all enemies standing in it and applying  Grievous Wounds.",
-      "leveling2": "Slow:\n25 / 30 / 35 / 40 / 45%",
+      "leveling2": [
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                30,
+                35,
+                40,
+                45
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -154,7 +493,47 @@
       "icon": "Chain of Corruption.png",
       "blurb": "Varus flings out a damaging tendril of corruption that immobilizes the first enemy champion hit and then spreads towards nearby uninfected champions, immobilizing them too on contact.",
       "description": "Active: Varus flings out a tendril of corruption that infects the first enemy champion hit, dealing magic damage and  rooting them for 2 seconds while inflicting them with full stacks of  Blight over 1.5 seconds.",
-      "leveling": "Magic Damage:\n150 / 175 / 200 / 225 / 250 (+ 100% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                175,
+                200,
+                225,
+                250
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "On impact, the tendril seeks out nearby enemy champions for 2 seconds, after which they are also infected. Tendrils will continue to spread until there are no champions in range that have not already been affected.",
       "description3": "Chain of Corruption will attempt to spread even if the first target dies or becomes free of the snare.",
       "targeting": "Direction",

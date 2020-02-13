@@ -60,7 +60,7 @@
       "skill": "I",
       "icon": "Perseverance.png",
       "blurb": "If Garen has not recently been struck by damage or enemy abilities, he regenerates a percentage of his total health each second. Minion damage does not stop Perseverance.",
-      "description": "Innate: Garen  restores  1.5% \u2212  10.1% (based on level) of his maximum health every 5 seconds    0.15% \u2212  1.01% (based on level) of his maximum health every 0.5 seconds  .",
+      "description": "Innate: Garen  restores[ 1.5% \u2212  10.1% (based on level) of his maximum health every 5 seconds ][ 0.15% \u2212  1.01% (based on level) of his maximum health every 0.5 seconds ].",
       "description2": "Perseverance is  interrupted for 7 seconds if Garen takes damage from epic  monsters,  turrets, or  champions, or if he is hit by an enemy ability.",
       "targeting": "Passive",
       "affects": "Self",
@@ -78,9 +78,72 @@
       "icon": "Decisive Strike.png",
       "blurb": "Garen gains a burst of movement speed, breaking free of all slows affecting him. His next attack strikes a vital area of his foe, dealing bonus damage and silencing them.",
       "description": "Active: Garen  cleanses himself of all  slows and gains  30% bonus movement speed for a few seconds.",
-      "leveling": "Movement Speed Duration:\n1.5 / 2 / 2.5 / 3 / 3.5",
+      "leveling": [
+        {
+          "attribute": "Movement Speed Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1.5,
+                2,
+                2.5,
+                3,
+                3.5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Additionally, Garen's next basic attack within 4.5 seconds  lunges him towards the target, dealing  bonus physical damage and  silencing the target for 1.5 seconds.",
-      "leveling2": "Bonus Physical Damage:\n30 / 60 / 90 / 120 / 150 (+ 40% AD)",
+      "leveling2": [
+        {
+          "attribute": "Bonus Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                60,
+                90,
+                120,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Decisive Strike resets Garen's basic attack timer.",
       "targeting": "Buff",
       "affects": "Self, Enemies",
@@ -101,7 +164,30 @@
       "blurb": "Garen passively increases his armor and magic resist by killing enemies. He may also activate this ability to give him a huge burst of Tenacity and damage reduction for a brief moment followed by a lesser amount of damage reduction for a longer duration.",
       "description": "Passive: Garen permanently gains  0.25 bonus armor and  0.25 bonus magic resistance every time he kills an enemy, up to a maximum of 30 bonus resistances at 120 unit kills.",
       "description2": "Active: Garen reduces incoming damage by 30% for a few seconds. For the first 0.75 seconds, Garen is additionally  shielded for 10% of his maximum health and gains 60%  tenacity.",
-      "leveling2": "Duration:\n2 / 2.75 / 3.5 / 4.25 / 5",
+      "leveling2": [
+        {
+          "attribute": "Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                2,
+                2.75,
+                3.5,
+                4.25,
+                5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Self / Buff",
       "affects": "Self",
       "notes": "* Courage does not interrupt Garen's previous orders.\n Courage's bonus resistances are only gained when it is ranked up at least once, but Courage's passive is retroactive.\n Any enemy unit counts towards Courage's bonus resistances: champions, minions, monsters (including epic ones), summoned units and turrets. The bonus is equal in all these cases.\n Courage will only grant bonus resistances from units killed by Garen himself.  Eye of the Herald and  Spoils of War of allies do not count."
@@ -117,7 +203,120 @@
       "icon": "Judgment.png",
       "blurb": "Garen performs a dance of death with his sword, dealing damage around him for the duration and shredding the armor of enemy champions hit.",
       "description": "Active: Garen becomes  ghosted and rapidly spins his sword around his body 7 \u2212  \u221e (based on bonus attack speed) times over 3 seconds, dealing physical damage with each spin to nearby enemies. Judgment can  critically strike for (50% +  25%) bonus physical damage.",
-      "leveling": "Physical Damage Per Spin:\n4 / 8 / 12 / 16 / 20 (+ 0 \u2212  8.2 (based on level)) (+ 32 / 34 / 36 / 38 / 40% AD)\nNearest Enemy Damage Per Spin:\n5 / 10 / 15 / 20 / 25 (+ 0 \u2212  10.25 (based on level)) (+ 40 / 42.5 / 45 / 47.5 / 50% AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage Per Spin",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                4,
+                8,
+                12,
+                16,
+                20
+              ],
+              "units": [
+                " )",
+                " )",
+                " )",
+                " )",
+                " )"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "units": [
+                " \u2212  8.2 (based on level",
+                " \u2212  8.2 (based on level",
+                " \u2212  8.2 (based on level",
+                " \u2212  8.2 (based on level",
+                " \u2212  8.2 (based on level"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                32,
+                34,
+                36,
+                38,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Nearest Enemy Damage Per Spin",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                5,
+                10,
+                15,
+                20,
+                25
+              ],
+              "units": [
+                " )",
+                " )",
+                " )",
+                " )",
+                " )"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "units": [
+                " \u2212  10.25 (based on level",
+                " \u2212  10.25 (based on level",
+                " \u2212  10.25 (based on level",
+                " \u2212  10.25 (based on level",
+                " \u2212  10.25 (based on level"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                42.5,
+                45,
+                47.5,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Judgment 3.png",
       "description2": "The nearest enemy is dealt 25% bonus damage per spin. Enemy champions hit 6 times have their  armor reduced by 25% for 6 seconds. Hits after the 6th refresh the duration of the debuff.",
       "icon3": "Judgment 2.png",
@@ -139,7 +338,47 @@
       "icon": "Demacian Justice.png",
       "blurb": "The enemy champion with the most recent kills is the Villain. Garen's attacks deal additional true damage to that champion. Garen can call upon the might of Demacia to deal a finishing blow to an enemy champion that deals damage based upon how much health his target has missing. This damage is true damage against the Villain.",
       "description": "Active: Garen gains  true sight of the target champion for 1 second, dealing them  true damage after a 0.5 second delay.",
-      "leveling": "True Damage:\n150 / 225 / 300 / 375 / 450 (+ 20 / 22.5 / 25 / 27.5 / 30% of target's missing health)",
+      "leveling": [
+        {
+          "attribute": "True Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                225,
+                300,
+                375,
+                450
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                22.5,
+                25,
+                27.5,
+                30
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% of target's missing health"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "True",

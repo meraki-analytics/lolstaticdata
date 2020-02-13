@@ -32,7 +32,8 @@
     "selection_radius": 135,
     "pathing_radius": 35,
     "as_ratio": 0.612999975681304,
-    "attack_delay_offset": -0.0638512670993805
+    "attack_delay_offset": -0.0638512670993805,
+    "aram_dmg_dealt": 0.95
   },
   "rangetype": "Melee",
   "date": "2009-04-18",
@@ -61,7 +62,7 @@
       "blurb": "Singed drafts off nearby champions, gaining a burst of movement speed when passing them.",
       "description": "Innate: Moving near a  champion grants Singed  20% bonus movement speed for 2 seconds. The effects of Noxious Slipstream can stack up to 25 times.",
       "description2": "This effect cannot happen on the same target more than once every few seconds.",
-      "targeting": "Passive",
+      "targeting": "Passive / Buff",
       "affects": "Self",
       "notes": "* No additional details."
     }
@@ -79,13 +80,90 @@
       "blurb": "Leaves a trail of poison behind Singed, dealing damage to enemies caught in the path.",
       "description": "Toggle: Singed leaves a  poison cloud behind him for 3.25 seconds.",
       "description2": "Enemies standing in the cloud's trail are  poisoned for 2 seconds, taking  magic damage every 0.25 seconds for the duration, continually refreshing while remaining in the affected area.",
-      "leveling2": "Magic Damage per 0.25 Seconds:\n5 / 7.5 / 10 / 12.5 / 15 (+ 10% AP)\nTotal Magic Damage:\n40 / 60 / 80 / 100 / 120 (+ 80% AP)",
-      "targeting": "None",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage per 0.25 Seconds",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                5,
+                7.5,
+                10,
+                12.5,
+                15
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                60,
+                80,
+                100,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
+      "targeting": "Auto",
       "affects": "Enemies",
       "damagetype": "Magic",
       "spelleffects": "AoEDoT",
-      "spellshield": "False",
-      "projectile": "False",
       "notes": "* Poison Trail interacts with  Twin Fang.\n Toggling Poison Trail on/off does not trigger Spellblade or charge  Force Pulse."
     }
   },
@@ -104,8 +182,6 @@
       "description": "Active: Singed covers the target area with a potent adhesive for 3 seconds,  slowing by 60% and  grounding all enemies within.",
       "targeting": "Ground",
       "affects": "Enemies",
-      "damagetype": "None",
-      "spellshield": "False",
       "notes": "* No additional details."
     }
   },
@@ -121,15 +197,134 @@
       "icon": "Fling.png",
       "blurb": "Damages target enemy unit and flings them into the air behind Singed. If the target Singed flings lands in his Mega Adhesive, they are also rooted.",
       "description": "Active: Singed  flings the target enemy over his shoulder 550 units, dealing magic damage, capped against  minions and  monsters.",
-      "leveling": "Magic Damage:\n50 / 65 / 80 / 95 / 110 (+ 6 / 6.5 / 7 / 7.5 / 8% of target's maximum health) (+ 75% AP)\nMaximum Non-Champion Damage:\n350 / 365 / 380 / 395 / 410 (+ 75% AP)",
-      "description2": "Targets flung into  Mega Adhesive's area of effect are temporarily  rooted.",
-      "leveling2": "Root Duration:\n1 / 1.25 / 1.5 / 1.75 / 2",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                65,
+                80,
+                95,
+                110
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                6,
+                6.5,
+                7,
+                7.5,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% of target's maximum health"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                75,
+                75,
+                75,
+                75
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Non-Champion Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                350,
+                365,
+                380,
+                395,
+                410
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                75,
+                75,
+                75,
+                75
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
+      "description2": "Targets flung into  Mega Adhesive's  area of effect are temporarily  rooted.",
+      "leveling2": [
+        {
+          "attribute": "Root Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1,
+                1.25,
+                1.5,
+                1.75,
+                2
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "Magic",
-      "spelleffects": "Single target",
+      "spelleffects": "Spell",
       "spellshield": "True",
-      "notes": "* Singed laughs during Fling's displacement.\n Fling's target is disabled for 1 second while being displaced.\n Enemies using  Flash during Fling's cast time will still be entirely affected (damage, disabling, displacement).\n\n Fling can make enemies go over walls (circumstances permitting).\n Fling will always attempt to displace enemies so they land behind Singed.\n Enemies may sometimes be displaced sideways if Singed approached them diagonally (caused by him not facing in their direction when casting Fling).\n\n Possible bug: Slow-immune enemies will not be  rooted when flung into  Mega Adhesive."
+      "notes": "* Singed laughs during Fling's displacement.\n Fling's target is  disabled for 1 second while being displaced.\n Enemies using  Flash during Fling's cast time will still be entirely affected (damage, disabling, displacement).\n\n Fling can make enemies go over walls (circumstances permitting).\n Fling will always attempt to displace enemies so they land behind Singed.\n This means any  dashes or  blinks the target uses during Fling will cause them to rebound all the way behind Singed.\n Enemies may sometimes be displaced sideways if Singed approached them diagonally (caused by him not facing in their direction when casting Fling).\n\n BUG: Slow-immune enemies will not be  rooted when flung into  Mega Adhesive."
     }
   },
   "skill_r": {
@@ -143,8 +338,71 @@
       "icon": "Insanity Potion.png",
       "blurb": "Singed drinks a potent brew of chemicals, granting him increased combat stats.",
       "description": "Active: Singed drinks a potent chemical brew, gaining  bonus ability power,  bonus armor,  bonus magic resistance,  bonus movement speed,  bonus health regeneration, and  bonus mana regeneration, all for the next 25 seconds.",
-      "leveling": "Bonus Stats:\n30 / 45 / 60 / 75 / 90\n\nRegeneration per Second:\n6 / 9 / 12 / 15 / 18\nTotal Regeneration:\n150 / 225 / 300 / 375 / 450",
-      "targeting": "None",
+      "leveling": [
+        {
+          "attribute": "Bonus Stats",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                45,
+                60,
+                75
+              ],
+              "units": [
+                " /",
+                " /",
+                " /",
+                " /"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "90 \nRegeneration per Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                6,
+                9,
+                12,
+                15
+              ],
+              "units": [
+                " /",
+                " /",
+                " /",
+                " /"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "18 Total Regeneration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                225,
+                300,
+                375,
+                450
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "targeting": "Self / Buff",
       "affects": "Self",
       "notes": "* Insanity Potion has no cast time and does not interrupt Singed's previous orders."
     }

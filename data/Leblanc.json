@@ -84,9 +84,89 @@
       "cooldown": "6",
       "icon": "Sigil of Malice.png",
       "description": "Active: LeBlanc projects an orb towards the target enemy, dealing  magic damage and marking them for 3.5 seconds.",
-      "leveling": "Magic Damage:\n55 / 80 / 105 / 130 / 155 (+ 40% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                80,
+                105,
+                130,
+                155
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "The mark will be consumed once LeBlanc damages the marked target with an ability, dealing the same magic damage again.",
-      "leveling2": "Total Damage:\n110 / 160 / 210 / 260 / 310 (+ 80% AP)",
+      "leveling2": [
+        {
+          "attribute": "Total Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                110,
+                160,
+                210,
+                260,
+                310
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -110,7 +190,47 @@
       "icon": "Distortion.png",
       "blurb": "LeBlanc rapidly dashes to a target location, dealing magic damage to nearby units. In the following 4 seconds, she can activate Distortion again to return to her starting location.",
       "description": "First Cast: LeBlanc  dashes to the target location, damaging all nearby enemies upon arrival and leaving a return pad at the cast location for 4 seconds. After 0.2 seconds she can recast  Distortion at no additional cost.",
-      "leveling": "Magic Damage:\n75 / 115 / 155 / 195 / 235 (+ 60% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                115,
+                155,
+                195,
+                235
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Distortion 2.png",
       "description2": "Second Cast: LeBlanc  blinks to Distortion's return pad.",
       "targeting": "Ground",
@@ -136,9 +256,128 @@
       "icon": "Ethereal Chains.png",
       "blurb": "LeBlanc flings illusionary chains towards a target location. If it hits an enemy unit, it will deal initial magic damage and shackle them. If the target remains shackled for 1.5 seconds, the target takes additional magic damage and is unable to move.",
       "description": "Active: LeBlanc flings an illusory chain in the target direction, dealing magic damage to the first enemy it hits and tethering herself to them for 1.5 seconds.",
-      "leveling": "Magic Damage:\n40 / 60 / 80 / 100 / 120 (+ 30% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                60,
+                80,
+                100,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "The target is  revealed while the tether is attached, and if it is not broken the target will be  revealed and  rooted for 1.5 seconds and dealt additional magic damage.",
-      "leveling2": "Root Damage:\n70 / 110 / 150 / 190 / 230 (+ 70% AP)\nTotal Damage:\n110 / 170 / 230 / 290 / 350 (+ 100% AP)",
+      "leveling2": [
+        {
+          "attribute": "Root Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                110,
+                150,
+                190,
+                230
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                110,
+                170,
+                230,
+                290,
+                350
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -157,11 +396,287 @@
       "icon": "Mimic.png",
       "description": "Active: LeBlanc casts a mimicked version of her most recently used basic ability, applying the same effects and dealing modified magic damage.",
       "description2": "Mimic Sigil of Malice: Deals modified damage and double damage upon triggering the mark.",
-      "leveling2": "Magic Damage:\n70 / 105 / 140 / 175 / 210 (+ 40% AP)\nMark Damage:\n140 / 210 / 280 / 350 / 420 (+ 80% AP)\nTotal Damage:\n210 / 315 / 420 / 525 / 630 (+ 120% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                105,
+                140,
+                175,
+                210
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Mark Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                140,
+                210,
+                280,
+                350,
+                420
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                210,
+                315,
+                420,
+                525,
+                630
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                120,
+                120,
+                120,
+                120
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Mimic Distortion: Deals modified damage.",
-      "leveling3": "Magic Damage:\n150 / 225 / 300 / 375 / 450 (+ 75% AP)",
+      "leveling3": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                225,
+                300,
+                375,
+                450
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                75,
+                75,
+                75,
+                75
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description4": "Mimic Ethereal Chains: Deals modified damage and double damage upon rooting.",
-      "leveling4": "Magic Damage:\n70 / 105 / 140 / 175 / 210 (+ 40% AP)\nRoot Damage:\n140 / 210 / 280 / 350 / 420 (+ 80% AP)\nTotal Damage:\n210 / 315 / 420 / 525 / 630 (+ 120% AP)",
+      "leveling4": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                105,
+                140,
+                175,
+                210
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Root Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                140,
+                210,
+                280,
+                350,
+                420
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                210,
+                315,
+                420,
+                525,
+                630
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                120,
+                120,
+                120,
+                120
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "None",
       "affects": "Self",
       "damagetype": "Magic",

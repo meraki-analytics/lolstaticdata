@@ -83,16 +83,174 @@
       "icon": "Double Daggers.png",
       "blurb": "Xayah throws two damaging daggers that also drop Feathers she can recall.",
       "description": "Active: Xayah throws two feather-blades in quick succession, dealing  physical damage, and leaving two Feathers on the ground.",
-      "leveling": "Damage Per Blade:\n45 / 65 / 85 / 105 / 125 (+ 50% bonus AD)\nMaximum Total Damage:\n90 / 130 / 170 / 210 / 250 (+ 100% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Damage Per Blade",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                65,
+                85,
+                105,
+                125
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Total Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                130,
+                170,
+                210,
+                250
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Targets hit after the first take 50% damage.",
-      "leveling2": "Minimum Damage Per Blade:\n22.5 / 32.5 / 42.5 / 52.5 / 62.5 (+ 25% bonus AD)\nMinimum Total Damage:\n45 / 65 / 85 / 105 / 125 (+ 50% bonus AD)",
+      "leveling2": [
+        {
+          "attribute": "Minimum Damage Per Blade",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                22.5,
+                32.5,
+                42.5,
+                52.5,
+                62.5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Minimum Total Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                65,
+                85,
+                105,
+                125
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Physical",
       "spelleffects": "False",
       "spellshield": "Special",
       "projectile": "True",
-      "notes": "*  Spell shields will block only a single feather blade.\n Xayah cannot basic attack for a set duration during the cast time of Double Daggers. The lock out duration is reduced by   0.007 seconds per every 1% bonus attack speed    1 second per every 140% bonus attack speed  .\nAs the feathers are forming, they will deal damage in a small area around Xayah's feet before firing."
+      "notes": "*  Spell shields will block only a single feather blade.\n Xayah cannot basic attack for a set duration during the cast time of Double Daggers. The lock out duration is reduced by [ 0.007 seconds per every 1% bonus attack speed ][ 1 second per every 140% bonus attack speed ].\nAs the feathers are forming, they will deal damage in a small area around Xayah's feet before firing."
     }
   },
   "skill_w": {
@@ -106,7 +264,30 @@
       "icon": "Deadly Plumage.png",
       "blurb": "Xayah creates a storm of blades that increase her basic attack speed and damage while granting her movement speed if she attacks a champion.",
       "description": "Active: Xayah creates a storm of blades for 4 seconds that grants her  bonus attack speed and cause her basic attacks to strike an additional time for 20% damage.",
-      "leveling": "Bonus Attack Speed:\n35 / 40 / 45 / 50 / 55%",
+      "leveling": [
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                40,
+                45,
+                50,
+                55
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If Deadly Plumage strikes an enemy champion, Xayah gains  30% bonus movement speed for 1.5 seconds.",
       "description3": "If  Rakan is nearby he will also gain the effects of Deadly Plumage, while also gaining the bonus movement speed when Xayah strikes an enemy champion.",
       "targeting": "Auto",
@@ -129,7 +310,86 @@
       "icon": "Bladecaller.png",
       "blurb": "Xayah calls back all her dropped Feathers dealing damage and rooting enemies.",
       "description": "Active: Xayah calls all Feathers back to her, dealing physical damage to enemies they pass through, increased by 0% \u2212 50% (based on critical chance). Minions take 50% damage.",
-      "leveling": "Physical Damage Per Feather:\n55 / 65 / 75 / 85 / 95 (+ 60% bonus AD)\nMinion Damage Per Feather:\n27.5 / 32.5 / 37.5 / 42.5 / 47.5 (+ 30% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage Per Feather",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                65,
+                75,
+                85,
+                95
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Minion Damage Per Feather",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                27.5,
+                32.5,
+                37.5,
+                42.5,
+                47.5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Enemies take 100% \u2212 10% (based on feathers hit) damage from a Feather.",
       "description3": "Enemies hit by at least 3 Feathers are  rooted for 1.25 seconds.",
       "targeting": "Auto",
@@ -152,7 +412,43 @@
       "icon": "Featherstorm.png",
       "blurb": "Xayah leaps into the air, becoming untargetable and throwing out a fan of daggers, dropping Feathers she can recall.",
       "description": "Active: Xayah leaps into the air, becoming  untargetable for 1.5 seconds, during which she is still able to move, then rains down daggers which deal physical damage and leave behind a line of 5 Feathers.",
-      "leveling": "Physical Damage:\n100 / 150 / 200 (+ 100% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                150,
+                200
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Physical",

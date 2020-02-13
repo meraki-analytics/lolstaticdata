@@ -81,7 +81,47 @@
       "icon": "Rocket Grab.png",
       "blurb": "Blitzcrank fires his right hand to grab an opponent on its path, dealing damage and dragging it back to him.",
       "description": "Active: Blitzcrank fires his right hand in the target direction, dealing  magic damage while  pulling the first enemy hit to him,  stunning them for 0.5 seconds.",
-      "leveling": "Magic Damage:\n70 / 120 / 170 / 220 / 270 (+ 100% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                120,
+                170,
+                220,
+                270
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Blitzcrank becomes unable to move or attack while Rocket Grab is in flight.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -103,7 +143,52 @@
       "icon": "Overdrive.png",
       "blurb": "Blitzcrank super charges himself to get dramatically increased Movement and Attack Speed. He is temporarily slowed after the effect ends.",
       "description": "Active: Blitzcrank puts himself into overdrive, gaining  bonus attack speed for 5 seconds and  bonus movement speed that decays to 10% after 2.5 seconds.",
-      "leveling": "Attack Speed:\n30 / 38 / 46 / 54 / 62%\nMovement Speed:\n70 / 75 / 80 / 85 / 90%",
+      "leveling": [
+        {
+          "attribute": "Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                38,
+                46,
+                54,
+                62
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                75,
+                80,
+                85,
+                90
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "When Overdrive ends, Blitzcrank is  slowed by 30% for 1.5 seconds.",
       "targeting": "Self",
       "affects": "Self",
@@ -142,9 +227,89 @@
       "icon": "Static Field.png",
       "blurb": "Passively causes lightning bolts to damage a nearby enemy. Additionally, Blitzcrank can activate this ability to damage nearby enemies and silence them for 0.5 seconds, but doing so removes the passive lightning until Static Field becomes available again.",
       "description": "Passive: While Static Field is available, Blitzcrank's basic attacks apply a mark that stacks up to 3 times. After every 1 second, 1 mark is consumed to deal magic damage.",
-      "leveling": "Bolt Magic Damage:\n50 / 75 / 100 / 125 / 150 (+ 30% AP)",
+      "leveling": [
+        {
+          "attribute": "Bolt Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                75,
+                100,
+                125,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Active: Blitzcrank detonates his static field, destroying damage-mitigating shields of nearby enemies before dealing magic damage and  silencing them for 0.5 seconds.",
-      "leveling2": "Detonation Magic Damage:\n250 / 312.5 / 375 / 437.5 / 500 (+ 100% AP)",
+      "leveling2": [
+        {
+          "attribute": "Detonation Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                250,
+                312.5,
+                375,
+                437.5,
+                500
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "None",
       "affects": "Enemies",
       "damagetype": "Magic",

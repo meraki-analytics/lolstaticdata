@@ -60,7 +60,7 @@
       "icon": "Eternal Hunger.png",
       "blurb": "Warwick's basic attacks deal bonus magic damage. If Warwick is below 50% health, he heals the same amount. If Warwick is below 25% health, this healing triples.",
       "description": "Innate: Warwick's basic attacks deal 10 \u2212 44 (based on level)  bonus magic damage on-hit.",
-      "description2": "While  below 50% maximum health he is also  healed by the amount of post-mitigation damage Eternal Hunger deals. This healing is increased  by 150%    to 25 \u2212 110 (based on level)  while  below 25% maximum health.",
+      "description2": "While  below 50% maximum health he is also  healed by the amount of post-mitigation damage Eternal Hunger deals. This healing is increased[ by 150% ][ to 25 \u2212 110 (based on level) ]while  below 25% maximum health.",
       "targeting": "Passive",
       "affects": "Self",
       "damagetype": "Magic",
@@ -81,7 +81,86 @@
       "icon": "Jaws of the Beast.png",
       "blurb": "Warwick lunges forward and bites his target, dealing damage based on their maximum health and healing for damage dealt.",
       "description": "Active: Warwick  dashes  unstoppably to the target enemy and bites them, dealing magic damage, applying on-hit effects and  healing himself for a portion of the post-mitigation damage dealt. The on-hits apply after the healing is calculated.",
-      "leveling": "Magic Damage:\n120% AD (+ 100% AP) (+ 6 / 7 / 8 / 9 / 10% of target's maximum health)\n\nHealing Percentage:\n30 / 45 / 60 / 75 / 90%",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                120,
+                120,
+                120,
+                120
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% of target's maximum health"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Healing Percentage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                45,
+                60,
+                75,
+                90
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If Jaws of the Beast is held, Warwick will lock his teeth into his target and use them to swing himself around to their far side. Warwick is  unable to act while swinging around his target, and will move wherever they move until he jumps off. Warwick is unstoppable while attached to an enemy.",
       "targeting": "Unit",
       "affects": "Enemies, Self",
@@ -104,14 +183,104 @@
       "cooldown": "120 / 105 / 90 / 75 / 60",
       "icon": "Blood Hunt.png",
       "blurb": "Warwick senses enemies below 50% health, gaining movement speed toward and attack speed against them. When they fall below 20% health, he frenzies and these bonuses triple.",
-      "description": "Passive: Warwick senses all enemy  champions below  below 50% of their maximum health, marking them as Blood Hunted as well as highlighting their position to his team. Warwick additionally sees a \"blood trail\" highlighting the shortest path to the Blood Hunted target, and gains  bonus movement speed while following it.",
-      "leveling": "Bonus Movement Speed:\n35 / 40 / 45 / 50 / 55%\nEnhanced Movement Speed:\n87.5 / 100 / 112.5 / 125 / 137.5%",
-      "description2": "Warwick also gains  bonus attack speed upon attacking a Blood Hunted target or an enemy unit  below 50% of their maximum health.",
-      "leveling2": "Bonus Attack Speed:\n70 / 80 / 90 / 100 / 110%\nEnhanced Attack Speed:\n175 / 200 / 225 / 250 / 275%",
-      "description3": "The bonus movement and attack speed is increased by 150% against enemies  below 20% maximum health.",
-      "icon4": "Warwick Blood Hunt Mark.png",
-      "description4": "Active: Warwick briefly senses all enemies and then Blood Hunts the nearest enemy champion within a large radius for 8 seconds, regardless of their  current health.",
-      "description5": "After being in combat with a champion, Blood Hunt may only be activated passively for 3 seconds. Its bonus movement speed will also be lost for 0.5 seconds, but will build up again every 0.25 seconds over the next 3.5 seconds.",
+      "description": "Passive: Warwick senses all enemy  champions below  below 50% of their maximum health, marking them as Blood Hunted as well as highlighting their position to his team.",
+      "description2": "Warwick additionally sees a blood trail, highlighting the shortest path to the Blood Hunted target, and gains  bonus movement speed while following it.",
+      "leveling2": [
+        {
+          "attribute": "Bonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                40,
+                45,
+                50,
+                55
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Enhanced Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                87.5,
+                100,
+                112.5,
+                125,
+                137.5
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
+      "description3": "Warwick also gains  bonus attack speed upon attacking a Blood Hunted target or an enemy unit  below 50% of their maximum health.",
+      "leveling3": [
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                80,
+                90,
+                100,
+                110
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Enhanced Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                175,
+                200,
+                225,
+                250,
+                275
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
+      "description4": "The bonus movement and attack speed is increased by 150% against enemies  below 20% maximum health.",
+      "icon5": "Warwick Blood Hunt Mark.png",
+      "description5": "Active: Warwick briefly senses all enemies and then Blood Hunts the nearest enemy champion within a large radius for 8 seconds, regardless of their  current health. After being in combat with a champion, Blood Hunt may only be activated passively for 3 seconds. Its bonus movement speed will also be lost for 0.5 seconds, but will build up again every 0.25 seconds over the next 3.5 seconds.",
       "targeting": "Auto",
       "affects": "Self / Enemies",
       "spellshield": "False",
@@ -130,7 +299,30 @@
       "icon": "Primal Howl.png",
       "blurb": "Warwick gains damage reduction for 2.5 seconds. At the end, or if re-activated, he howls, causing nearby enemies to flee for 1 second.",
       "description": "First Cast: Warwick reduces all incoming damage received for 2.5 seconds. After 1 second, Primal Howl can be re-activated, and automatically does so after 2.5 seconds.",
-      "leveling": "Damage Reduction:\n35 / 40 / 45 / 50 / 55%",
+      "leveling": [
+        {
+          "attribute": "Damage Reduction",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                40,
+                45,
+                50,
+                55
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Primal Howl 2.png",
       "description2": "Second Cast: Warwick unleashes a howl, ending the damage reduction in the process, and causes all nearby enemies to  flee for 1 second as well as  slowing them by 90%.",
       "description3": "Landing  Infinite Duress will instantly reactivate Primal Howl without prematurely ending the damage reduction buff.",
@@ -155,7 +347,47 @@
       "blurb": "Warwick leaps in a direction (scaling with his bonus movement speed), suppressing the first champion he collides with for 1.5 seconds.",
       "description": "Active: Warwick  leaps  unstoppably in the target direction,  suppressing the first champion he collides with for 1.5 seconds.",
       "description2": "Warwick  channels while the target is  suppressed, dealing magic damage by hitting the target up to 6 times while also applying on-hit effects up to 3 times. Infinite Duress  heals Warwick for all the damage dealt.",
-      "leveling2": "Total Magic Damage:\n175 / 262.5 / 350 / 437.5 / 525 (+ 167% bonus AD)",
+      "leveling2": [
+        {
+          "attribute": "Total Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                175,
+                262.5,
+                350,
+                437.5,
+                525
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                167,
+                167,
+                167,
+                167,
+                167
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",

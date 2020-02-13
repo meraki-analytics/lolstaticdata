@@ -59,7 +59,7 @@
       "static": "120",
       "icon": "Chosen of the Storm.png",
       "blurb": "Volibear heals rapidly for a few seconds when his Health drops to a critical level.",
-      "description": "Innate: When Volibear's health drops  below 30% of his maximum health he regenerates    30% of his maximum health over 6 seconds     2.5% of his maximum health every 0.5 seconds  .",
+      "description": "Innate: When Volibear's health drops  below 30% of his maximum health he regenerates [  30% of his maximum health over 6 seconds ][  2.5% of his maximum health every 0.5 seconds ].",
       "targeting": "Passive",
       "affects": "Self",
       "notes": "* Chosen of the Storm's cooldown starts as soon as it activates.\n If the cooldown ends while Volibear is under 30% health Chosen of the Storm will not trigger unless he takes damage.\n If Volibear is killed directly from anywhere higher than 30% health Chosen of the Storm will not activate and therefore will not go on cooldown."
@@ -76,9 +76,77 @@
       "icon": "Rolling Thunder.png",
       "blurb": "Volibear drops to all fours and runs faster. This bonus speed increases when chasing enemy champions. The first enemy he attacks is thrown backwards over Volibear.",
       "description": "Active: Volibear gains  bonus movement speed for the next 4 seconds, increased when moving towards a nearby  visible enemy champion within 1800 units of him.",
-      "leveling": "Bonus Movement Speed:\n15 / 17.5 / 20 / 22.5 / 25%\nIncreased Movement Speed:\n30 / 37.5 / 45 / 52.5 / 60%",
+      "leveling": [
+        {
+          "attribute": "Bonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                17.5,
+                20,
+                22.5,
+                25
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Increased Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                37.5,
+                45,
+                52.5,
+                60
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "For the duration, Volibear's next basic attack deals  bonus physical damage and  flings his target over and behind himself.",
-      "leveling2": "Bonus Physical Damage:\n30 / 60 / 90 / 120 / 150",
+      "leveling2": [
+        {
+          "attribute": "Bonus Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                60,
+                90,
+                120,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Rolling Thunder resets Volibear's autoattack timer.",
       "targeting": "None",
       "affects": "Self",
@@ -98,9 +166,133 @@
       "icon": "Frenzy.png",
       "blurb": "Volibear's repeated attacks grant him additional Attack Speed. Once Volibear has repeatedly attacked three times, he can perform a vicious bite on his target which deals increased damage based on the target's missing Health.",
       "description": "Passive: Volibear's basic attacks grant  bonus attack speed for 4 seconds, stacking up to 3 times. At 3 stacks, Volibear gains the ability to cast Frenzy.",
-      "leveling": "Bonus Attack Speed Per Stack:\n9 / 13 / 17 / 21 / 25%\nTotal Bonus Attack Speed:\n27 / 39 / 51 / 63 / 75%",
+      "leveling": [
+        {
+          "attribute": "Bonus Attack Speed Per Stack",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                9,
+                13,
+                17,
+                21,
+                25
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                27,
+                39,
+                51,
+                63,
+                75
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Active: Volibear bites the target enemy, dealing physical damage, increasing by 0% \u2212 100% (based on target's missing health).",
-      "leveling2": "Minimum Physical Damage:\n60 / 110 / 160 / 210 / 260 (+ 15% bonus health)\nMaximum Physical Damage:\n120 / 220 / 320 / 420 / 520 (+ 30% bonus health)",
+      "leveling2": [
+        {
+          "attribute": "Minimum Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                110,
+                160,
+                210,
+                260
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                15,
+                15,
+                15,
+                15
+              ],
+              "units": [
+                "% bonus health",
+                "% bonus health",
+                "% bonus health",
+                "% bonus health",
+                "% bonus health"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                220,
+                320,
+                420,
+                520
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% bonus health",
+                "% bonus health",
+                "% bonus health",
+                "% bonus health",
+                "% bonus health"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Frenzy's  cooldown is halved if it is used on a  minion or  monster.",
       "targeting": "Self / Unit",
       "affects": "Self / Enemies",
@@ -121,7 +313,69 @@
       "icon": "Majestic Roar.png",
       "blurb": "Volibear lets out a powerful roar that damages and slows enemies. Minions and monsters are feared as well.",
       "description": "Active: Volibear deals  magic damage to all nearby enemies, slightly  knocks them back and  slows them for 3 seconds. Minions and monsters are instead  feared and slowed by 100% for the same duration.",
-      "leveling": "Magic Damage:\n60 / 105 / 150 / 195 / 240 (+ 60% AP)\n\nSlow:\n30 / 35 / 40 / 45 / 50%",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                105,
+                150,
+                195,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                35,
+                40,
+                45,
+                50
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Enemies who are dashing or are  airborne during Majestic Roar are dealt an additional 8% of their maximum health as magic damage.",
       "targeting": "Auto",
       "affects": "Enemies",
@@ -142,7 +396,47 @@
       "icon": "Thunder Claws.png",
       "blurb": "Volibear erupts with chain lightning, damaging a number nearby enemies. The power of the storm causes Volibear's attacks to blast his targets with lightning that bounces to other nearby enemies.",
       "description": "Active: After a 0.1 second delay, Volibear deals magic damage to up to 8 nearby enemies.",
-      "leveling": "Magic Damage:\n75 / 95 / 115 / 135 / 155 (+ 40% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                95,
+                115,
+                135,
+                155
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Afterwards, for 12 seconds, Volibear's basic attacks deal the same damage as bonus magic damage on-hit that also bounces instantly to up to 7 nearby unaffected enemies.",
       "targeting": "None",
       "affects": "Enemies",

@@ -86,7 +86,47 @@
       "icon": "Bouncing Blade.png",
       "blurb": "Katarina throws a Dagger at the target that then bounces to nearby enemies before ricocheting onto the ground.",
       "description": "Active: Katarina throws a Dagger to the target enemy that bounces to up to 2 nearby enemies, dealing magic damage to each target.",
-      "leveling": "Magic Damage:\n75 / 105 / 135 / 165 / 195 (+ 30% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                105,
+                135,
+                165,
+                195
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "The Dagger then lands on the ground 350 units opposite from where it struck the target. The time to land from striking the target is the same regardless of distance traveled.",
       "targeting": "Unit / Auto",
       "affects": "Enemies",
@@ -106,7 +146,30 @@
       "icon": "Preparation.png",
       "blurb": "Katarina gains a burst of movement speed, tossing a Dagger into the air directly above herself.",
       "description": "Active: Katarina tosses a Dagger into the air above her current location, gaining  ghost and a decaying  bonus movement speed until it lands after 1.25 seconds.",
-      "leveling": "Bonus Movement speed:\n50 / 60 / 70 / 80 / 90%",
+      "leveling": [
+        {
+          "attribute": "Bonus Movement speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                60,
+                70,
+                80,
+                90
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Self / Buff",
       "affects": "Self",
       "notes": "* No additional details."
@@ -122,7 +185,64 @@
       "icon": "Shunpo.png",
       "blurb": "Katarina blinks to the target, striking it if its an enemy, or striking the nearest enemy otherwise.",
       "description": "Active: After a short delay, Katarina  blinks to the target location around the target unit or Dagger, dealing magic damage to the nearest enemy in range.",
-      "leveling": "Magic Damage:\n15 / 30 / 45 / 60 / 75 (+ 50% AD) (+ 25% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                30,
+                45,
+                60,
+                75
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Shunpo resets Katarina's basic attack timer.",
       "description3": "Upon blinking, Katarina remains in cast time for 0.15 seconds. Movement command buffering is also delayed by 0.85 seconds.",
       "targeting": "Unit",
@@ -143,7 +263,120 @@
       "icon": "Death Lotus.png",
       "blurb": "Katarina becomes a flurry of blades, dealing massive magic damage while she channels to the 3 nearest enemy champions.",
       "description": "Active: Katarina rapidly channels for 2.5 seconds, throwing a dagger every 0.166 seconds to up to 3 nearby enemy champions, dealing magic damage and applying  Grievous Wounds for 3 seconds, reducing healing on the target by 60%.",
-      "leveling": "Magic Damage Per Dagger:\n25 / 31.25 / 37.5 / 43.75 / 50 (+ 22% bonus AD) (+ 19% AP)\nTotal Single-Target Damage:\n375 / 468.75 / 562.5 / 656.25 / 750 (+ 330% bonus AD) (+ 285% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage Per Dagger",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                31.25,
+                37.5,
+                43.75,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                22,
+                22,
+                22,
+                22,
+                22
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                19,
+                19,
+                19,
+                19,
+                19
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Single-Target Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                375,
+                468.75,
+                562.5,
+                656.25,
+                750
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                330,
+                330,
+                330,
+                330,
+                330
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                285,
+                285,
+                285,
+                285,
+                285
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Katarina does not need to have  vision of the targets to hit them, and she will prioritize the closest ones.",
       "targeting": "Auto",
       "affects": "Enemies",

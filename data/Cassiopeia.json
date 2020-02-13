@@ -77,9 +77,111 @@
       "icon": "Noxious Blast.png",
       "blurb": "Cassiopeia blasts an area with Poison after a brief delay, granting her increased Movement Speed if she hits an enemy champion.",
       "description": "Active: After a 0.4-second delay, Cassiopeia blasts the target area with  Noxious Poison, dealing  magic damage every second for 3 seconds to all enemies it hits.",
-      "leveling": "Total Magic Damage:\n75 / 110 / 145 / 180 / 215 (+ 90% AP)\nDamage Per Second:\n25 / 36.67 / 48.33 / 60 / 71.67 (+ 30% AP)",
+      "leveling": [
+        {
+          "attribute": "Total Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                110,
+                145,
+                180,
+                215
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                90,
+                90,
+                90,
+                90
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Damage Per Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                36.67,
+                48.33,
+                60,
+                71.67
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Cassiopeia gains  bonus movement speed that decays over 3 seconds if Noxious Blast hits an enemy  champion.",
-      "leveling2": "Bonus Movement Speed:\n30 / 35 / 40 / 45 / 50%",
+      "leveling2": [
+        {
+          "attribute": "Bonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                35,
+                40,
+                45,
+                50
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -102,7 +204,108 @@
       "blurb": "Cassiopeia releases several clouds of poison, slowing, grounding, and lightly damaging enemies that pass through them. Grounded enemies cannot use Movement abilities.",
       "description": "Active: Cassiopeia spits forth eight bolts of venom in an arc, leaving toxic clouds of  Debilitating Poison where they hit the ground for 5 seconds.",
       "description2": "Debilitating Poison deals magic damage to enemies standing upon it every second, also  grounding them and applying a  slow that decays over the area's duration.",
-      "leveling2": "Damage Per Second:\n20 / 25 / 30 / 35 / 40 (+ 15% AP)\nMaximum Damage:\n100 / 125 / 150 / 175 / 200 (+ 75% AP)\nSlow:\n40 / 50 / 60 / 70 / 80%",
+      "leveling2": [
+        {
+          "attribute": "Damage Per Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                15,
+                15,
+                15,
+                15
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                125,
+                150,
+                175,
+                200
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                75,
+                75,
+                75,
+                75
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                50,
+                60,
+                70,
+                80
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -124,7 +327,91 @@
       "blurb": "Cassiopeia lets loose an attack that deals increased damage to Poisoned targets and heals her for a percentage of the damage dealt. If the target dies from this attack, Cassiopeia regains Mana.",
       "description": "Active: Cassiopeia launches her fangs at the target enemy, dealing 52 \u2212 120 (based on level) (+ 10% AP) magic damage. If Twin Fang kills its target, or the target is killed mid-flight, its  mana cost is refunded.",
       "description2": "If the target is  poisoned, Twin Fang deals bonus magic damage and  heals Cassiopeia. The heal is only 25% as effective against minions and small monsters.",
-      "leveling2": "Bonus Magic Damage:\n10 / 30 / 50 / 70 / 90 (+ 60% AP)\n\nHealing:\n12 / 14 / 16 / 18 / 20% AP\nReduced Healing:\n3 / 3.5 / 4 / 4.5 / 5% AP",
+      "leveling2": [
+        {
+          "attribute": "Bonus Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                30,
+                50,
+                70,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Healing",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                12,
+                14,
+                16,
+                18,
+                20
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "AP Reduced Healing",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                3,
+                3.5,
+                4,
+                4.5,
+                5
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -147,7 +434,47 @@
       "icon": "Petrifying Gaze.png",
       "blurb": "Cassiopeia releases a swirl of magical energy from her eyes, stunning any enemies in front of her that are facing her and slowing any others with their back turned.",
       "description": "Active: After a brief delay, Cassiopeia blasts enemies in a cone in the target direction, dealing magic damage to all enemies hit.",
-      "leveling": "Magic Damage:\n150 / 200 / 250 / 300 / 350 (+ 50% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                200,
+                250,
+                300,
+                350
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Enemies facing Cassiopeia are  stunned for 2 seconds upon being hit by Petrifying Gaze, and all other affected enemies are instead  slowed by 40% for the same duration.",
       "targeting": "Direction",
       "affects": "Enemies",

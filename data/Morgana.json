@@ -79,7 +79,69 @@
       "icon": "Dark Binding.png",
       "blurb": "Morgana releases a sphere of dark magic. Upon contact with an enemy unit, the sphere will deal magic damage and force the unit to the ground for a period of time.",
       "description": "Active: Morgana releases a sphere of dark magic that travels in a line, dealing  magic damage to the first enemy hit and  rooting them.",
-      "leveling": "Magic Damage:\n80 / 135 / 190 / 245 / 300 (+ 90% AP)\n\nRoot Duration:\n2 / 2.25 / 2.5 / 2.75 / 3",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                135,
+                190,
+                245,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                90,
+                90,
+                90,
+                90
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Root Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                2,
+                2.25,
+                2.5,
+                2.75,
+                3
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -102,7 +164,164 @@
       "icon": "Tormented Soil.png",
       "blurb": "Infects an area with desecrated soil, causing enemy units who stand on the location to take continual damage.",
       "description": "Active: Morgana infects the target area for 5 seconds, causing enemies who stand on the location to take magic damage every half second, increased by 0% \u2212 50% (based on target's missing health).",
-      "leveling": "Minimum Damage Per Half Second:\n8 / 16 / 24 / 32 / 40 (+ 11% AP)\nMaximum Damage Per Half Second:\n12 / 24 / 36 / 48 / 60 (+ 16.5% AP)\nMinimum Total Damage:\n80 / 160 / 240 / 320 / 400 (+ 110% AP)\nMaximum Total Damage:\n120 / 240 / 360 / 480 / 600 (+ 165% AP)",
+      "leveling": [
+        {
+          "attribute": "Minimum Damage Per Half Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                8,
+                16,
+                24,
+                32,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                11,
+                11,
+                11,
+                11,
+                11
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Damage Per Half Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                12,
+                24,
+                36,
+                48,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                16.5,
+                16.5,
+                16.5,
+                16.5,
+                16.5
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Minimum Total Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                160,
+                240,
+                320,
+                400
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                110,
+                110,
+                110,
+                110,
+                110
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Total Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                120,
+                240,
+                360,
+                480,
+                600
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                165,
+                165,
+                165,
+                165,
+                165
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Tormented Soil's cooldown is reduced by 5% whenever  Soul Siphon triggers.",
       "targeting": "Ground",
       "affects": "Enemies",
@@ -124,7 +343,47 @@
       "icon": "Black Shield.png",
       "blurb": "Places a protective barrier around an allied champion, absorbing magical damage and disables until penetrated or the shield dissipates.",
       "description": "Active: Morgana  shields the target allied champion for up to 5 seconds, which absorbs magic damage and dispels  crowd control effects while the shield holds.",
-      "leveling": "Magic Damage Shield:\n60 / 120 / 180 / 240 / 300 (+ 70% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage Shield",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                120,
+                180,
+                240,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Self, Allies",
       "spelleffects": "Shield",
@@ -144,9 +403,111 @@
       "icon": "Soul Shackles.png",
       "blurb": "Latches chains of energy onto nearby enemy champions, dealing initial damage to them and slowing their Movement Speed, and then echoing the pain a few seconds later and stunning them if they remain close to Morgana.",
       "description": "Active: After a 0.5-second delay, Morgana latches chains of energy onto nearby enemy champions, dealing magic damage.",
-      "leveling": "Magic Damage:\n150 / 187.5 / 225 / 262.5 / 300 (+ 70% AP)\nTotal Magic Damage:\n300 / 375 / 450 / 525 / 600 (+ 140% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                187.5,
+                225,
+                262.5,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                300,
+                375,
+                450,
+                525,
+                600
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                140,
+                140,
+                140,
+                140,
+                140
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "The tethers maintain at range for 3 seconds,  revealing affected enemies and  slowing them by 20%. Additionally, Morgana gains bonus movement speed towards tethered enemies.",
-      "leveling2": "Bonus Movement Speed:\n5 / 17.5 / 30 / 42.5 / 55%",
+      "leveling2": [
+        {
+          "attribute": "Bonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                5,
+                17.5,
+                30,
+                42.5,
+                55
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "When the duration ends, tethered targets are  revealed and  stunned for 1.5 seconds and dealt the same magic damage again.",
       "targeting": "Auto",
       "affects": "Enemies",

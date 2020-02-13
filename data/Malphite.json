@@ -81,7 +81,69 @@
       "icon": "Seismic Shard.png",
       "blurb": "Using his primal elemental magic, Malphite sends a shard of the earth through the ground at his foe, dealing damage upon impact and stealing Movement Speed for 3 seconds.",
       "description": "Active: Malphite sends a rock rolling to the target enemy, dealing  magic damage to them upon impact,  slowing them for 3 seconds and gaining  bonus movement speed equal to the raw amount the target lost.",
-      "leveling": "Magic Damage:\n70 / 120 / 170 / 220 / 270 (+ 60% AP)\n\nSlow:\n20 / 25 / 30 / 35 / 40%",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                120,
+                170,
+                220,
+                270
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "magic",
@@ -102,9 +164,167 @@
       "icon": "Thunderclap.png",
       "blurb": "Malphite starts to hit with such force that his attacks deal damage to all units in front of him. Passively increases his Armor (this amount is tripled while Granite Shield is active).",
       "description": "Passive: Malphite gains  bonus armor, tripled while  Granite Shield is active.",
-      "leveling": "Bonus Armor:\n10 / 15 / 20 / 25 / 30% armor\nIncreased Armor:\n30 / 45 / 60 / 75 / 90% armor",
+      "leveling": [
+        {
+          "attribute": "Bonus Armor",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                15,
+                20,
+                25,
+                30
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "armor Increased Armor",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                45,
+                60,
+                75,
+                90
+              ],
+              "units": [
+                "% armor",
+                "% armor",
+                "% armor",
+                "% armor",
+                "% armor"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Active: Malphite's next basic attack within 6 seconds gains 50 bonus range and deals bonus physical damage on-hit. Additionally, for 5 seconds, Malphite's basic attacks also deal physical damage in a cone to units behind his target.",
-      "leveling2": "Bonus Physical Damage:\n30 / 45 / 60 / 75 / 90 (+ 20% AP) (+ 15% armor)\nCone Damage:\n10 / 20 / 30 / 40 / 50 (+ 20% AP) (+ 10% armor)",
+      "leveling2": [
+        {
+          "attribute": "Bonus Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                45,
+                60,
+                75,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                15,
+                15,
+                15,
+                15
+              ],
+              "units": [
+                "% armor",
+                "% armor",
+                "% armor",
+                "% armor",
+                "% armor"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Cone Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                20,
+                30,
+                40,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                "% armor",
+                "% armor",
+                "% armor",
+                "% armor",
+                "% armor"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Thunderclap resets Malphite's basic attack timer.",
       "targeting": "Self",
       "affects": "Self",
@@ -126,7 +346,86 @@
       "icon": "Ground Slam.png",
       "blurb": "Malphite slams the ground, sending out a shockwave that deals magic damage based on his Armor as damage and reduces the Attack Speed of enemies for a short duration.",
       "description": "Active: Malphite slams the ground, dealing magic damage to all nearby enemies and  crippling them for 3 seconds.",
-      "leveling": "Magic Damage:\n60 / 95 / 130 / 165 / 200 (+ 60% AP) (+ 40% armor)\nCripple:\n30 / 35 / 40 / 45 / 50%",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                95,
+                130,
+                165,
+                200
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% armor",
+                "% armor",
+                "% armor",
+                "% armor",
+                "% armor"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Cripple",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                35,
+                40,
+                45,
+                50
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "None",
       "affects": "Enemies",
       "damagetype": "magic",
@@ -150,7 +449,43 @@
       "icon": "Unstoppable Force.png",
       "blurb": "Malphite ferociously charges to a location, damaging enemies and knocking them into the air.",
       "description": "Active: Malphite  dashes  unstoppably to the target location and, upon impact, deals magic damage to all nearby enemies and  knocks them up for 1.5 seconds.",
-      "leveling": "Magic Damage:\n200 / 300 / 400 (+ 80% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                300,
+                400
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "magic",

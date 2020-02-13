@@ -63,7 +63,7 @@
       "blurb": "Braum adds stacks of Concussive Blows to enemies with basic attacks or Winter's Bite. He and his allies continue to add stacks with basic attacks, at 4 stacks their target will be stunned.",
       "description": "Innate: Braum's basic attacks and  Winter's Bite each apply Concussive Blows to his target for 4 seconds, stacking up to 4 times. Once the first stack has been applied, any allied champion's basic attack on the target generates an additional stack.",
       "description2": "At 4 stacks, Concussive Blows is consumed to  stun the target for 1.25 \u2212 1.75 (based on level) seconds and deal 26 \u2212 196 (based on level) magic damage.",
-      "description3": "This effect cannot occur on the same target more than once every few seconds, but during this immunity period, affected targets instead take  20% of the trigger damage    5.2 \u2212 39.2 (based on level)   as bonus magic damage from Braum's basic attacks and  Winter's Bite.",
+      "description3": "This effect cannot occur on the same target more than once every few seconds, but during this immunity period, affected targets instead take[ 20% of the trigger damage ][ 5.2 \u2212 39.2 (based on level) ] as bonus magic damage from Braum's basic attacks and  Winter's Bite.",
       "targeting": "Passive",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -84,7 +84,47 @@
       "icon": "Winter's Bite.png",
       "blurb": "Braum propels freezing ice from his shield, slowing and dealing magic damage. Applies a stack of Concussive Blows.",
       "description": "Active: Braum propels ice from his shield in the target direction, dealing magic damage to the first enemy hit and  slowing them by 70% decaying over 2 seconds.",
-      "leveling": "Magic Damage:\n60 / 110 / 160 / 210 / 260 (+ 2.5% of Braum's maximum health)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                110,
+                160,
+                210,
+                260
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                2.5,
+                2.5,
+                2.5,
+                2.5,
+                2.5
+              ],
+              "units": [
+                "% of Braum's maximum health",
+                "% of Braum's maximum health",
+                "% of Braum's maximum health",
+                "% of Braum's maximum health",
+                "% of Braum's maximum health"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -106,7 +146,164 @@
       "icon": "Stand Behind Me.png",
       "blurb": "Braum leaps to a target allied champion or minion. On arrival, Braum and the ally gain Armor and Magic Resist for a few seconds.",
       "description": "Active: Braum  dashes to the target ally, positioning himself between them and the closest enemy champion, gaining  bonus armor and  bonus magic resistance for 3 seconds. If his target is a  champion, they also receive some bonus resistances.",
-      "leveling": "Self Bonus Armor:\n10 / 14 / 18 / 22 / 26 (+ 36% bonus armor)\nAlly Bonus Armor:\n10 / 14 / 18 / 22 / 26 (+ 12% bonus armor)\nSelf Bonus MR:\n10 / 14 / 18 / 22 / 26 (+ 36% bonus magic resistance)\nAlly Bonus MR:\n10 / 14 / 18 / 22 / 26 (+ 12% bonus magic resistance)",
+      "leveling": [
+        {
+          "attribute": "Self Bonus Armor",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                14,
+                18,
+                22,
+                26
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                36,
+                36,
+                36,
+                36,
+                36
+              ],
+              "units": [
+                "% bonus armor",
+                "% bonus armor",
+                "% bonus armor",
+                "% bonus armor",
+                "% bonus armor"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Ally Bonus Armor",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                14,
+                18,
+                22,
+                26
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                12,
+                12,
+                12,
+                12,
+                12
+              ],
+              "units": [
+                "% bonus armor",
+                "% bonus armor",
+                "% bonus armor",
+                "% bonus armor",
+                "% bonus armor"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Self Bonus MR",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                14,
+                18,
+                22,
+                26
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                36,
+                36,
+                36,
+                36,
+                36
+              ],
+              "units": [
+                "% bonus magic resistance",
+                "% bonus magic resistance",
+                "% bonus magic resistance",
+                "% bonus magic resistance",
+                "% bonus magic resistance"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Ally Bonus MR",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                14,
+                18,
+                22,
+                26
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                12,
+                12,
+                12,
+                12,
+                12
+              ],
+              "units": [
+                "% bonus magic resistance",
+                "% bonus magic resistance",
+                "% bonus magic resistance",
+                "% bonus magic resistance",
+                "% bonus magic resistance"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit / Self",
       "affects": "Self, Allies",
       "notes": "* If Braum casts Stand Behind Me on himself, it has no cast time and does not interrupt Braum's previous orders.\n Stand Behind Me can also be used on allied minions and pets, but cannot be used on wards."
@@ -125,7 +322,52 @@
       "icon": "Unbreakable.png",
       "blurb": "Braum raises his shield in a direction for several seconds, intercepting all projectiles causing them to hit him and be destroyed. He negates the damage of the first attack completely and reduces the damage of all subsequent attacks from this direction.",
       "description": "Active: Braum raises his shield in the target direction, creating a barrier that intercepts incoming non-turret enemy  projectiles and reduces the damage he takes through the shield. The first instance of damage blocked by his shield is negated completely.",
-      "leveling": "Damage reduction:\n30 / 32.5 / 35 / 37.5 / 40%\nDuration:\n3 / 3.25 / 3.5 / 3.75 / 4",
+      "leveling": [
+        {
+          "attribute": "Damage reduction",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                32.5,
+                35,
+                37.5,
+                40
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                3,
+                3.25,
+                3.5,
+                3.75,
+                4
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "While his shield is raised, Braum also gains  10% bonus movement speed and is  ghosted.",
       "targeting": "Direction",
       "affects": "Self",
@@ -144,11 +386,93 @@
       "icon": "Glacial Fissure.png",
       "blurb": "Braum slams the ground, knocking up enemies nearby and in a line in front of him. A fissure is left along the line that slows enemies.",
       "description": "Active: Braum leaps into the air and slams his shield into the ground, creating a fissure in the target direction that deals magic damage to enemies as well as those around him.",
-      "leveling": "Magic Damage:\n150 / 225 / 300 / 375 / 450 (+ 60% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                225,
+                300,
+                375,
+                450
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "The first target hit is  knocked up for at least 0.3 seconds, increased if they are further away from Braum. All other enemies hit are  knocked up for 0.3 seconds.",
-      "leveling2": "Maximum Knockup Duration:\n1 / 1.25 / 1.5",
+      "leveling2": [
+        {
+          "attribute": "Maximum Knockup Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1,
+                1.25,
+                1.5
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "A field of ice then remains at the fissure's location for 4 seconds,  slowing enemies within, persisting for 0.25 seconds.",
-      "leveling3": "Slow:\n40 / 45 / 50 / 55 / 60%",
+      "leveling3": [
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                45,
+                50,
+                55,
+                60
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction / Ground",
       "affects": "Enemies",
       "damagetype": "Magic",

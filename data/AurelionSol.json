@@ -86,7 +86,91 @@
       "description": "Active: Aurelion Sol fires the core of a newborn star in the target direction, which expands as long as it remains within the Outer Limit and grants him  20% bonus movement speed.",
       "icon2": "Starsurge 2.png",
       "description2": "Upon traveling beyond the Outer Limit, the core detonates, dealing magic damage to all enemies caught within and  stunning them, increased by 0% \u2212 300% (based on time traveled). Starsurge can be recast after 0.25 seconds.",
-      "leveling2": "Magic Damage:\n70 / 110 / 150 / 190 / 230 (+ 65% AP)\nMinimum Stun Duration:\n0.55 / 0.6 / 0.65 / 0.7 / 0.75\nMaximum Stun Duration:\n2.2 / 2.4 / 2.6 / 2.8 / 3",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                110,
+                150,
+                190,
+                230
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                65,
+                65,
+                65,
+                65,
+                65
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Minimum Stun Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                0.55,
+                0.6,
+                0.65,
+                0.7,
+                0.75
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Stun Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                2.2,
+                2.4,
+                2.6,
+                2.8,
+                3
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Recast: Aurelion Sol detonates the core early.",
       "description4": "If Aurelion Sol is faster than the missile, the missile speed will increase to keep up.",
       "targeting": "Direction",
@@ -109,10 +193,115 @@
       "icon": "Celestial Expansion.png",
       "blurb": "Aurelion Sol pushes his stars farther out, magnifying their damage.",
       "description": "Passive: The  Stars' base damage is increased.",
-      "leveling": "Bonus Damage:\n5 / 10 / 15 / 20 / 25",
+      "leveling": [
+        {
+          "attribute": "Bonus Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                5,
+                10,
+                15,
+                20,
+                25
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Celestial Expansion 2.png",
       "description2": "Active: Aurelion Sol  pushes his  Stars out to the Outer Limit, rotating them at a high but decaying speed, and increasing their total damage by 50%.",
-      "leveling2": "Total Damage:\n18 \u2212  180 (based on level) (+ 7.5 / 15 / 22.5 / 30 / 37.5) (+ 37.5% AP)",
+      "leveling2": [
+        {
+          "attribute": "Total Damage",
+          "modifiers": [
+            {
+              "values": [
+                18.0,
+                27.529411764705884,
+                37.05882352941177,
+                46.588235294117645,
+                56.11764705882353,
+                65.64705882352942,
+                75.17647058823529,
+                84.70588235294117,
+                94.23529411764706,
+                103.76470588235294,
+                113.29411764705883,
+                122.82352941176471,
+                132.35294117647058,
+                141.88235294117646,
+                151.41176470588235,
+                160.94117647058823,
+                170.47058823529412,
+                180.0
+              ],
+              "units": [
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level",
+                "by level"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                7.5,
+                15,
+                22.5,
+                30,
+                37.5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                37.5,
+                37.5,
+                37.5,
+                37.5,
+                37.5
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Upon reactivating or after 3 seconds, the stars retract and grant Aurelion Sol 40% bonus movement speed, decaying over 1.5 seconds",
       "targeting": "Self",
       "affects": "Enemies",
@@ -158,7 +347,69 @@
       "icon": "Voice of Light.png",
       "blurb": "Aurelion Sol projects a blast of pure starfire, damaging and slowing all enemies caught in it and knocking nearby enemies back to a safer distance.",
       "description": "Active: Aurelion Sol exhales a wave of starfire in a line, dealing magic damage to all enemies hit,  slowing for 2 seconds and  knocking targets back to the Outer Limit if they are within.",
-      "leveling": "Magic Damage:\n150 / 200 / 250 / 300 / 350 (+ 70% AP)\nSlow:\n40 / 45 / 50 / 55 / 60%",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                200,
+                250,
+                300,
+                350
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                45,
+                50,
+                55,
+                60
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",

@@ -81,7 +81,47 @@
       "blurb": "Veigar unleashes a bolt of dark energy that deals magic damage to the first two enemies hit. Units killed by this bolt grant Veigar some ability power permanently.",
       "description": "Passive: Killing a unit with Baleful Strike grants 1 stack of  Phenomenal Evil, doubled against large minions and monsters.",
       "description2": "Active: Veigar unleashes a bolt of dark energy in the target direction, dealing  magic damage to the first two enemies hit.",
-      "leveling2": "Magic Damage:\n70 / 110 / 150 / 190 / 230 (+ 60% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                110,
+                150,
+                190,
+                230
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -104,7 +144,47 @@
       "icon": "Dark Matter.png",
       "blurb": "Veigar calls a great mass of dark matter to fall from the sky to the target location, dealing magic damage when it lands. Stacks of Phenomenal Evil reduce Dark Matter's cooldown.",
       "description": "Active: Veigar calls a mass of dark matter to fall from the sky which lands after a 1.25 second delay to the target location, dealing magic damage to all enemies hit.",
-      "leveling": "Magic Damage:\n100 / 150 / 200 / 250 / 300 (+ 100% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                150,
+                200,
+                250,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Dark Matter's  cooldown is reduced by a percentage, scaling with  Phenomenal Evil.",
       "targeting": "Ground",
       "affects": "Enemies",
@@ -127,7 +207,30 @@
       "icon": "Event Horizon.png",
       "blurb": "After a brief delay Veigar twists the edges of space around the target location for 3 seconds, stunning enemies who pass through the perimeter.",
       "description": "Active: Veigar forms a cage around the target location which materializes after a 0.5 second delay and lasts for 3 seconds,  knocking down and  stunning all enemies who pass through its edges for the first time.",
-      "leveling": "Stun Duration:\n1.5 / 1.75 / 2 / 2.25 / 2.5",
+      "leveling": [
+        {
+          "attribute": "Stun Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1.5,
+                1.75,
+                2,
+                2.25,
+                2.5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "None",
@@ -148,7 +251,86 @@
       "icon": "Primordial Burst.png",
       "blurb": "Blasts target enemy champion, dealing a large amount of magic damage, increasing based on the target's missing health.",
       "description": "Active: Veigar blasts the target enemy champion with primordial energy, dealing magic damage to them, increased by 0% \u2212 100% (based on target's missing health).",
-      "leveling": "Minimum Damage:\n175 / 212.5 / 250 / 287.5 / 325 (+ 75% AP)\nMaximum Damage:\n350 / 425 / 500 / 575 / 650 (+ 150% AP)",
+      "leveling": [
+        {
+          "attribute": "Minimum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                175,
+                212.5,
+                250,
+                287.5,
+                325
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                75,
+                75,
+                75,
+                75
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                350,
+                425,
+                500,
+                575,
+                650
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                150,
+                150,
+                150,
+                150
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "Magic",

@@ -63,7 +63,7 @@
       "icon": "Triumphant Roar.png",
       "blurb": "Alistar charges his roar by stunning or displacing enemy champions or when nearby enemies die. When fully charged he heals himself and all nearby allied champions.",
       "description": "Innate: Alistar gains a stack of Triumph every time he  stuns or  displaces at least one enemy champion, and every time a minion, a small monster or a pet dies.",
-      "description2": "At 7 Triumph stacks, Alistar consumes them and roars,  healing himself for  25 \u2212 161 (based on level) health and all nearby allied champions for  double the amount     50 \u2212 322 (based on level) health  .",
+      "description2": "At 7 Triumph stacks, Alistar consumes them and roars,  healing himself for  25 \u2212 161 (based on level) health and all nearby allied champions for[ double the amount ][  50 \u2212 322 (based on level) health ].",
       "description3": "Alistar roars instantly if a nearby enemy champion or epic monster dies. Once Triumph stacks are consumed Alistar cannot gain more again for a short duration.",
       "targeting": "Passive",
       "affects": "Self, Allies",
@@ -84,7 +84,47 @@
       "icon": "Pulverize.png",
       "blurb": "Alistar smashes the ground, dealing damage to nearby enemies and tossing them into the air.",
       "description": "Active: Alistar slams the ground beneath him, dealing  magic damage to all nearby enemies and  knocking them up for 1 second.",
-      "leveling": "Magic Damage:\n60 / 105 / 150 / 195 / 240 (+ 50% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                105,
+                150,
+                195,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -106,7 +146,47 @@
       "icon": "Headbutt.png",
       "blurb": "Alistar rams a target with his head, dealing damage and knocking the target back.",
       "description": "Active: Alistar  dashes to the target enemy location. If the target is still in range on arrival, he deals them magic damage and  stuns them for 1 second while also  knocking them back 650 units.",
-      "leveling": "Magic Damage:\n55 / 110 / 165 / 220 / 275 (+ 70% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                110,
+                165,
+                220,
+                275
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -127,7 +207,86 @@
       "icon": "Trample.png",
       "blurb": "Alistar tramples nearby enemy units, ignoring unit colision and gaining stacks if he damages an enemy champion. At full stacks Alistar's next basic attack against an enemy champion deals additional magic damage and stuns them.",
       "description": "Active: Alistar becomes  ghosted and tramples the ground around him every 0.5 seconds for 5 seconds, dealing magic damage to all nearby enemies and gaining a Trample stack every time the ability damages at least one enemy champion.",
-      "leveling": "Magic Damage Per Tick:\n8 / 11 / 14 / 17 / 20 (+ 4% AP)\nTotal Magic Damage:\n80 / 110 / 140 / 170 / 200 (+ 40% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage Per Tick",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                8,
+                11,
+                14,
+                17,
+                20
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                4,
+                4,
+                4,
+                4,
+                4
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                110,
+                140,
+                170,
+                200
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Trample 2.png",
       "description2": "At 5 Trample stacks, Alistar empowers his next basic attack within 6 seconds to deal 35 \u2212 290 (based on level) bonus magic damage and  stun his target for 1 second.",
       "targeting": "Auto / Buff",
@@ -150,7 +309,26 @@
       "icon": "Unbreakable Will.png",
       "blurb": "Alistar lets out a wild roar, removing all crowd control effects on himself, and reducing incoming physical and magical damage for the duration.",
       "description": "Active: Alistar  cleanses himself of all  crowd control. For the next 7 seconds, Alistar reduces all incoming  physical damage and  magic damage recieved.",
-      "leveling": "Damage Reduction:\n55 / 65 / 75%",
+      "leveling": [
+        {
+          "attribute": "Damage Reduction",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                55,
+                65,
+                75
+              ],
+              "units": [
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Self / Buff",
       "affects": "Self"
     }

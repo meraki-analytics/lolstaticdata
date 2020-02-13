@@ -87,7 +87,47 @@
       "blurb": "Fiora lunges in a direction and stabs a nearby enemy, dealing physical damage and applying on-hit effects.",
       "description": "Active: Fiora  dashes a short distance in the target direction then stabs a nearby enemy if one is present. Lunge can damage structures and  wards. Stabbing an enemy reduces Lunge's  cooldown instantly by 60%.",
       "description2": "The stab deals  physical damage and applies on-hit effects.",
-      "leveling2": "Physical Damage:\n70 / 80 / 90 / 100 / 110 (+ 95 / 100 / 105 / 110 / 115% bonus AD)",
+      "leveling2": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                80,
+                90,
+                100,
+                110
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                95,
+                100,
+                105,
+                110,
+                115
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Other abilities can be cast during the dash without cancelling it.",
       "targeting": "Direction / Ground / Auto",
       "affects": "Enemies",
@@ -111,7 +151,47 @@
       "blurb": "Fiora parries all incoming damage and disables for a short time, then stabs in a direction. This stab slows the first enemy champion hit, or stuns them if Fiora blocked an immobilizing effect with this ability.",
       "description": "Active: Fiora poises to strike in the target direction, becoming  invulnerable to non-turret damage as well as gaining  crowd control and debuff immunity for the next 0.75 seconds. Fiora is  pacified while poised.",
       "description2": "After the duration, Fiora stabs her sword forward, dealing  magic damage to enemies in a line.",
-      "leveling2": "Magic Damage:\n110 / 150 / 190 / 230 / 270 (+ 100% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                110,
+                150,
+                190,
+                230,
+                270
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "The first enemy champion struck is also  slowed and  crippled by 50% for 2 seconds. If Fiora parries at least one  immobilizing effect, Riposte  stuns the target for the same duration instead.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -133,9 +213,55 @@
       "icon": "Bladework.png",
       "blurb": "Fiora has increased attack speed for the next two attacks. The first attack slows the target, and the second attack will critically strike.",
       "description": "Active: Fiora's next two basic attacks on-attack within 4 seconds gain  25 bonus range and  bonus attack speed.",
-      "leveling": "Bonus Attack Speed:\n50 / 60 / 70 / 80 / 90%",
+      "leveling": [
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                60,
+                70,
+                80,
+                90
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "The first attack  slows the target by 30% for 1 second but cannot critically strike. The second attack will  critically strike for  reduced critical damage (including to  structures).",
-      "leveling2": "Critical damage:\n160 / 170 / 180 / 190 / 200%",
+      "leveling2": [
+        {
+          "attribute": "Critical damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                160,
+                170,
+                180,
+                190,
+                200
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Bladework resets Fiora's basic attack timer.",
       "targeting": "Buff",
       "affects": "Self",
@@ -160,13 +286,115 @@
       "icon": "false",
       "blurb": "Fiora reveals all four Vitals on an enemy champion and gains movement speed while near them. If Fiora hits all 4 Vitals or if the target dies after she has hit at least one, Fiora and her allies in the area are healed over the next few seconds.",
       "description": "Passive:  Duelist's Dance's  bonus movement speed is increased.",
-      "leveling": "Bonus Movement Speed:\n10 / 15 / 20 / 25 / 30%",
+      "leveling": [
+        {
+          "attribute": "Bonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                15,
+                20,
+                25,
+                30
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Grand Challenge.png",
       "description2": "Active: Fiora challenges the target enemy champion for 8 seconds, highlighting their four Vitals after a 0.5 second delay. While in effect,  Duelist's Dance does not identify new Vitals on Fiora's target.",
       "description3": "While near the target, Fiora gains  Duelist's Dance's  bonus movement speed.",
       "icon4": "Grand Challenge 2.png",
       "description4": "If she triggers at least one Vital before her target dies, or triggers all four, she creates a  Victory Zone that  heals all allied champions within it for 2 \u2212 5 (based on Vitals hit) seconds.",
-      "leveling4": "Heal Per Second:\n80 / 95 / 110 / 125 / 140 (+ 60% bonus AD)\nMaximum Heal:\n400 / 475 / 550 / 625 / 700 (+ 300% bonus AD)",
+      "leveling4": [
+        {
+          "attribute": "Heal Per Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                95,
+                110,
+                125,
+                140
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Heal",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                400,
+                475,
+                550,
+                625,
+                700
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                300,
+                300,
+                300,
+                300,
+                300
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description5": "Unlike  Duelist's Dance, the Vitals will keep on lingering even if Fiora is not nearby.",
       "targeting": "Unit",
       "affects": "Self, Enemies",

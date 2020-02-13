@@ -63,7 +63,7 @@
       "description": "Innate: Each of Syndra's abilities gain an additional effect at maximum rank.",
       "targeting": "Passive",
       "affects": "Self",
-      "notes": "* The earliest possible champion level required for Transcendent to take effect is level 9, as this is the lowest level at which a basic ability can reach rank 5.\n Syndra's abilities gain additional visual effects when they reach rank 5. Her spells will also gain a colored tint - classic Syndra has red outlines while  Justicar gains an orange glow.\n  Dark Sphere will cause fractures to appear in the earth when it is used.\n  Scatter the Weak gains a wider cone."
+      "notes": "* The earliest possible champion level required for Transcendent to take effect is level 9, as this is the lowest level at which a basic ability can reach rank 5.\n Syndra's abilities gain additional visual effects when they reach rank 5. Her spells will also gain a red colored tint outlining the VFX.\n  Dark Sphere will cause fractures to appear in the earth when it is used.\n  Scatter the Weak gains a wider cone."
     }
   },
   "skill_q": {
@@ -79,9 +79,128 @@
       "icon": "Dark Sphere.png",
       "blurb": "Syndra conjures a Dark Sphere dealing magic damage. The sphere remains and can be manipulated by her other powers.",
       "description": "Active: After 0.6 seconds, Syndra conjures a Dark Sphere at the target location, dealing  magic damage to all enemies hit, which then remains for 6 seconds.",
-      "leveling": "Magic Damage:\n70 / 110 / 150 / 190 / 230 (+ 65% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                110,
+                150,
+                190,
+                230
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                65,
+                65,
+                65,
+                65,
+                65
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Transcendent Bonus: Dark Spheres deal 25% bonus damage against champions.",
-      "leveling2": "Bonus Damage:\n57.5 (+ 16.25% AP)\nTotal Damage:\n287.5 (+ 81.25% AP)",
+      "leveling2": [
+        {
+          "attribute": "Bonus Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                57.5,
+                57.5,
+                57.5,
+                57.5,
+                57.5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                16.25,
+                16.25,
+                16.25,
+                16.25,
+                16.25
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                287.5,
+                287.5,
+                287.5,
+                287.5,
+                287.5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                81.25,
+                81.25,
+                81.25,
+                81.25,
+                81.25
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "magic",
@@ -102,18 +221,160 @@
       "cooldown": "12 / 11 / 10 / 9 / 8",
       "icon": "Force of Will.png",
       "blurb": "Syndra picks up and throws a Dark Sphere or enemy minion dealing magic damage and slowing the Movement Speed of enemies.",
-      "description": "First Active: Syndra telekinetically grabs the nearest  Dark Sphere, enemy minion or non-epic monster within 400 range from the target location for 5 seconds, or if not found it grabs the nearest Dark Sphere. If a Dark Sphere is grabbed, its duration is refreshed. If a minion or monster is grabbed, it is put in  stasis.",
+      "description": "First Active: Syndra telekinetically grabs the nearest  Dark Sphere, enemy  minion or non-epic  monster within 400 range from the target location for 5 seconds, or if not found it grabs the nearest Dark Sphere. If a Dark Sphere is grabbed, its duration is refreshed. If a minion or monster is grabbed, it is put in  stasis.",
       "icon2": "Force of Will 2.png",
-      "description2": "Second Active: Syndra throws the grabbed target to the designated area, granting  sight of the projectile's surroundings as they fall. The projectile, if it is an enemy, and any enemies struck take magic damage and are  slowed for 1.5 seconds.",
-      "leveling2": "Magic Damage:\n70 / 110 / 150 / 190 / 230 (+ 70% AP)\nSlow:\n25 / 30 / 35 / 40 / 45%",
+      "description2": "Second Active: Syndra throws the grabbed target to the designated area, granting  sight of the projectile's surroundings as they fall. Enemies struck take magic damage and are  slowed for 1.5 seconds.",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                110,
+                150,
+                190,
+                230
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                30,
+                35,
+                40,
+                45
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Transcendent Bonus: Force of Will deals  20% bonus true damage.",
-      "leveling3": "Bonus True Damage:\n46 (+ 14% AP)\nTotal Mixed Damage:\n276 (+ 84% AP)",
+      "leveling3": [
+        {
+          "attribute": "Bonus True Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                46,
+                46,
+                46,
+                46,
+                46
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                14,
+                14,
+                14,
+                14,
+                14
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Mixed Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                276,
+                276,
+                276,
+                276,
+                276
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                84,
+                84,
+                84,
+                84,
+                84
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit / Ground",
       "affects": "Enemies",
       "damagetype": "magic",
-      "spelleffects": "Aoe",
+      "spelleffects": "spellaoe",
       "spellshield": "True",
-      "notes": "* Force of Will has no cast time and does not interrupt Syndra's previous orders.\n Thrown objects grant a brief instance of sight when they land.\n Syndra cannot grab any of the following units:\n  Baron Nashor\n  Dragon\n Champions\n  Traps\n  Shaco's  Jack in the Box is the exception.\n\n  Champion clones\n\n Casting  Teleport will cause Syndra to cancel Force of Will and drop anything she is holding.\n Grabbing prioritizes Dark Spheres.\n Even if the unit is put in stasis minion attacks may still kill it during it. The dead unit may still, however, be launched.\n Once upgraded to maximum rank Syndra gains a total damage increase of (20 + enemy's MR \u00f7 5)%.\n Enemy pets that passively have an effect on their surroundings will continue to affect the area around them while they are being held. For example,  Annie's  Tibbers will continue to inflict burn damage on surrounding units while in stasis.\n Grabbing a  Dark Sphere will cause the duration on it to refresh, but only on the first cast, not when it is thrown.\n Force of Will has additional effects when targeting the  Blue Sentinel and  Red Brambleback. Throwing the former will refund 10 mana to Syndra upon cast and will reduce the  Cooldown of Force of Will by 1 second, while throwing the latter will apply the  Crest of Cinders burn to any affected units in the area of effect."
+      "projectile": "Special",
+      "notes": "* Force of Will has no cast time and does not interrupt Syndra's previous orders.\n Syndra cannot grab any of the following units:\n  Baron Nashor\n  Dragon\n  Champions\n  Traps\n  Jack in the Box is the only exception.\n\n Decoys\n\n Casting  Teleport will cause Syndra to cancel Force of Will and drop anything she is holding.\n Enemy  pets that passively have an effect on their surroundings will continue to affect the area around them while they are being held. For example,  Tibbers will continue to inflict  burn damage on surrounding units while in  stasis.\n Force of Will has unique interactions when targeting the  Blue Sentinel and  Red Brambleback. Throwing the Blue Sentinel will refund  10 mana to Syndra upon cast and will reduce the  cooldown of Force of Will by 1 second, while throwing Red Brambleback will apply the  Crest of Cinders burn to any affected units in the  area of effect.\n Thrown  spheres will be  knocked down upon colliding with  Wind Wall.\n This does not occur to other thrown enemy units."
     }
   },
   "skill_e": {
@@ -130,7 +391,47 @@
       "icon": "Scatter the Weak.png",
       "blurb": "Syndra knocks enemies and Dark Spheres back dealing magic damage. Enemies hit by Dark Spheres become stunned.",
       "description": "Active: Syndra  knocks back all enemy units for 400 units and up to 800 units away from Syndra, dealing magic damage.",
-      "leveling": "Magic Damage:\n85 / 130 / 175 / 220 / 265 (+ 60% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                85,
+                130,
+                175,
+                220,
+                265
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Dark Spheres can also be knocked back for 1000 units and up to 1300 units away from Syndra, knocking back all enemy units they collide with for 100 units and  stunning them for 1.5 seconds, dealing Scatter the Weak's damage to enemies who weren't affected by the initial cast.",
       "description3": "Transcendent Bonus: Scatter the Weak's area of effect is 50% wider.",
       "targeting": "Direction",
@@ -138,8 +439,8 @@
       "damagetype": "magic",
       "spelleffects": "Aoe",
       "spellshield": "True",
-      "projectile": "true",
-      "notes": "* Launched  Dark Spheres that successfully strike an enemy will grant sight on that enemy for the duration of the stun."
+      "projectile": "special",
+      "notes": "* Launched  Dark Spheres that successfully strike an enemy will grant  sight of that enemy for the duration of the  stun.\n Spheres are  knocked down upon colliding with  Wind Wall."
     }
   },
   "skill_r": {
@@ -153,17 +454,135 @@
       "cooldown": "120 / 110 / 100 / 90 / 80",
       "icon": "Unleashed Power.png",
       "blurb": "Syndra bombards an enemy Champion with all of her Dark Spheres.",
-      "description": "Active: After a short delay, Syndra grabs up to 4 nearby  Dark Spheres and the three orbiting around her and hurls them at the target enemy champion, dealing magic damage per sphere.",
-      "leveling": "Magic Damage per Sphere:\n90 / 115 / 140 / 165 / 190 (+ 20% AP)\nMinimum Damage:\n270 / 345 / 420 / 495 / 570 (+ 60% AP)\nMaximum Damage:\n630 / 805 / 980 / 1155 / 1330 (+ 140% AP)",
+      "description": "Active: After a short delay, Syndra grabs up to 4 nearby  Dark Spheres and the three orbiting around her and hurls them at the target enemy  champion, dealing magic damage per sphere.",
+      "leveling": [
+        {
+          "attribute": "Magic Damage per Sphere",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                115,
+                140,
+                165,
+                190
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Minimum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                270,
+                345,
+                420,
+                495,
+                570
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                630,
+                805,
+                980,
+                1155,
+                1330
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                140,
+                140,
+                140,
+                140,
+                140
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "The  Dark Spheres will then remain on the ground for 6 seconds.",
       "description3": "Transcendent Bonus: Unleashed Power's cast range is increased.",
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "magic",
-      "spelleffects": "single",
+      "spelleffects": "spell",
       "spellshield": "Special",
       "projectile": "true",
-      "notes": "* Unleashed Power has a brief cast time before it activates, but Syndra does not have to remain in place while the spheres apply their damage. She can walk away as soon as the casting has completed, as the spheres only begin dealing their damage after the casting time.\n Each one of the sphere hits is considered a single-target spell, triggering  Muramana each time.\n Casting Unleashed Power on a target that becomes untargetable while the spheres are in flight will cause all spheres to deal no damage and be destroyed.\n Spheres already in flight will still travel if Syndra's target dies, but any remaining sphere will not. However their duration will still get reset.\n A Dark Sphere summoned very shortly before Unleashed Power will be used as one of the spheres that get thrown. \n Depending on how many spheres are on the map and how far away the enemy is upon casting Unleashed Power it is possible that Syndra would conjure the sphere behind her as if she was going to throw it, but she won't.\n\n  Spell shield will only block the damage of a single sphere."
+      "notes": "* Unleashed Power has a brief cast time before it activates, but Syndra does not have to remain in place while the spheres apply their damage. She can walk away as soon as the casting has completed, as the spheres only begin dealing their damage after the casting time.\n Each one of the sphere hits is considered a  single target spell, triggering  Muramana each time.\n Casting Unleashed Power on a target that becomes  untargetable while the spheres are in flight will cause all spheres to deal no damage and be destroyed.\n Spheres already in flight will still travel if Syndra's target dies, but any remaining sphere will not. However their duration will still get reset.\n A Dark Sphere summoned very shortly before Unleashed Power will be used as one of the spheres that get thrown. \n Depending on how many spheres are on the map and how far away the enemy is upon casting Unleashed Power it is possible that Syndra would conjure the sphere behind her as if she was going to throw it, but she won't.\n\n  Spell shield will only block the damage of a single sphere.\n Spheres are  knocked down upon  interception."
     }
   }
 }

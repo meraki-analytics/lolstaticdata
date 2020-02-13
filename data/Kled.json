@@ -1,7 +1,7 @@
 {
-  "id": 240.1,
+  "id": 240,
   "apiname": "Kled",
-  "title": "the Cantankerous Cavaliers",
+  "title": "the Cantankerous Cavalier",
   "attack": 8,
   "defense": 2,
   "magic": 2,
@@ -10,8 +10,8 @@
   "alttype": "Tank",
   "resource": "Courage",
   "stats": {
-    "hp_base": 740,
-    "hp_lvl": 130,
+    "hp_base": 340,
+    "hp_lvl": 70,
     "mp_base": 100,
     "mp_lvl": 0,
     "arm_base": 35,
@@ -26,8 +26,8 @@
     "dam_lvl": 3.5,
     "as_base": 0.625,
     "as_lvl": 3.5,
-    "range": 125,
-    "ms": 345,
+    "range": 250,
+    "ms": 285,
     "selection_radius": 140,
     "pathing_radius": 35,
     "as_ratio": 0.625,
@@ -46,49 +46,130 @@
   "damage": 3,
   "toughness": 2,
   "control": 1,
-  "mobility": 3,
+  "mobility": 2,
   "utility": 1,
   "style": 30,
   "adaptivetype": "physical",
   "be": 6300,
   "rp": 975,
   "skill_i": {
-    "Skaarl the Cowardly Lizard": {
-      "name": "Skaarl the Cowardly Lizard",
+    "Dismounted Skaarl the Cowardly Lizard": {
+      "name": "Dismounted Skaarl the Cowardly Lizard",
       "champion": "Kled",
       "skill": "I",
-      "icon": "Skaarl the Cowardly Lizard.png",
-      "blurb": "Kled rides his trusty steed, Skaarl, who takes damage for him. When Skaarl's health depletes, Kled dismounts. While dismounted, Kled's abilities change and he deals less damage to champions. Kled can restore Skaarl's courage by fighting enemies. At maximum courage, Kled remounts with a portion of Skaarl's health.",
-      "description": "Innate: Kled rides his semi-trusty mount, Skaarl. While mounted, all damage dealt to the duo is suffered by Skaarl, who has  400 \u2212 1505 (based on level) base health (+100% bonus health). Percent-health effects consider Kled & Skaarl's combined maximum health.",
-      "icon2": "Dismounted Skaarl the Cowardly Lizard.png",
-      "description2": "Being reduced to  0 health causes Skaarl to flee, forcing Kled to  dismount, with all damage in excess of Skaarl's  health being ignored. Dismounting  cleanses Kled of all  crowd control and briefly makes him  untargetable, as well as modifying his base stats and abilities.",
+      "icon": "Dismounted Skaarl the Cowardly Lizard.png",
+      "description": "Innate: Kled is only vulnerable to death while dismounted. Kled has  340 \u2212 1530 (based on level) base health, which is not improved by sources of bonus health, as well as reduced base movement speed and increased attack range. Percent-health effects consider Kled & Skaarl's combined maximum health, meaning that an unmounted Kled is always considered to be low health.",
+      "description2": "Kled gains 100 \u2212 185 (based on level)  bonus movement speed when moving towards enemy  champions within 900 range, as well as the ability to generate  Courage.",
+      "icon3": "Skaarl the Cowardly Lizard 3.png",
+      "description3": "Innate - Courage: Kled gains 15 Courage when basic attacking an enemy champion, 20 Courage whenever a champion he damaged dies within 3 seconds, 4 Courage for minion kills, and 5 Courage when basic attacking a structure or epic monster. At 100 Courage, Skaarl returns to the fight with  50 / 60 / 70 / 80% (based on level) of Skaarl's maximum health.  Mounting up resets the cooldown of  Beartrap on a Rope and  Jousting.",
+      "description4": "While at the allied fountain, 25 Courage is generated every 0.25 seconds.  Recalling fully restores Skaarl's Courage and  health. If reuniting outside of base, Skaarl gets Frayed Nerves, which prevents him from gaining Courage for 30 seconds.",
+      "description5": "The current status of Kled's own health is preserved between subsequent dismounts. While mounted, healing will first affect Skaarl's health and will only restore Kled's health while Skaarl is at full health.",
       "targeting": "Passive",
       "affects": "Self",
-      "notes": "* Decoys are counted as champions for all of this ability's effects, other than the takedown one.\n Kled's health is rounded up while Skaarl's is rounded down.\n  Gargoyle Stoneplate can increase Kled's base health.\n It is possible to get the Courage from base but have Kled and Skaarl reunite out of base.\n It is possible for the Nexus Obelisk to not be able to bring Kled down from Skaarl for a few seconds, even if Skaarl has no health.\n Health regeneration only regenerates Kled's or Skaarl's health, and not both's."
+      "notes": "* Decoys are counted as champions for all of this ability's effects, other than the takedown one.\n Kled's health is rounded up while Skaarl's is rounded down.\n  Gargoyle Stoneplate can increase Kled's base health.\n It is possible to get the Courage from base but have Kled and Skaarl reunite out of base.\n It is possible for the Nexus Obelisk to not be able to bring Kled down from Skaarl for a few seconds, even if Skaarl has no health.\n PENDING FOR TEST  Wild Growth and  Elixir of Iron"
     }
   },
   "skill_q": {
-    "Beartrap on a Rope": {
-      "name": "Beartrap on a Rope",
+    "Pocket Pistol": {
+      "name": "Pocket Pistol",
       "champion": "Kled",
       "skill": "Q",
-      "target range": "800 \u2212 650 (based on time active)",
-      "cooldown": "9 / 8.5 / 8 / 7.5 / 7",
-      "icon": "Beartrap on a Rope.png",
-      "blurb": "Kled throws a bear trap that damages and hooks an enemy champion. If shackled for a short duration, the target takes additional physical damage and is yanked toward Kled.",
-      "description": "Active: Kled hurls a beartrap tied to a piece of rope in the target direction, dealing physical damage to all enemies it passes through.",
-      "leveling": "Beartrap Physical Damage:\n30 / 55 / 80 / 105 / 130 (+ 60% bonus AD)\nMinions and Small Monsters Damage:\n45 / 82.5 / 120 / 157.5 / 195 (+ 90% bonus AD)",
-      "description2": "Minions and small  monsters take 50% increased damage. The bear trap stops at the first enemy  champion or large monster hit, attaching to them. While attached, they are  revealed.",
-      "description3": "If Kled remains for 1.75 seconds within a slowly decreasing radius of his target, he  pulls them 100-units towards him, dealing physical damage,  grievously wounding them by 60% for 5 seconds, and  slowing them for 1.5 seconds.",
-      "leveling3": "Yank Physical Damage:\n60 / 110 / 160 / 210 / 260 (+ 120% bonus AD)\nTotal Damage:\n90 / 165 / 240 / 315 / 390 (+ 180% bonus AD)\n\nSlow:\n40 / 45 / 50 / 55 / 60%",
-      "description4": "Can be cast while  Jousting.",
-      "targeting": "Direction / Auto",
+      "cost": "1",
+      "costtype": "Charge",
+      "cooldown": "3",
+      "recharge": "20 \u2212 7 (based on level)",
+      "icon": "Pocket Pistol.png",
+      "blurb": "When dismounted, this ability is replaced by Pocket Pistol, a ranged gun blast that knocks back Kled and restores courage.",
+      "description": "Passive: Kled periodically stocks an ammo charge, up to a maximum of 2. Kled will store ammo even while  mounted.",
+      "description2": "Active: Kled sprays a cone of five pellets in the target direction, dealing physical damage while  recoiling 250 units in the opposite direction.",
+      "leveling2": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                50,
+                65,
+                80,
+                95
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                63,
+                90,
+                117,
+                144,
+                171
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                144,
+                144,
+                144,
+                144,
+                144
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
+      "description3": "Pellets collide into the first enemy they hit, and deal 20% damage per pellet beyond the first. Each pellet that hits an enemy champion or epic monster restores  Courage, by 5 and 2.5 respectively.",
+      "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Physical",
-      "spelleffects": "spell",
+      "spelleffects": "Area of effect",
       "spellshield": "True",
       "projectile": "True",
-      "notes": "* No additional details."
+      "notes": "* The knockback from Pocket Pistol can be used to pass through terrain.\n Casting Q during Kled's dismounting animation will buffer Pocket Pistol to cast when Kled lands. Casting Q during Kled's remounting animation will fire Pocket Pistol normally."
     }
   },
   "skill_w": {
@@ -100,7 +181,69 @@
       "icon": "Violent Tendencies.png",
       "blurb": "Kled gains massive attack speed for four attacks. The fourth attack deals more damage.",
       "description": "Passive: Kled periodically enters a frenzy that grants him  150% bonus attack speed on his next 4 basic attacks within 4 seconds after the first, with the final attack dealing bonus physical damage, capped against  monsters.",
-      "leveling": "Bonus Physical Damage:\n20 / 30 / 40 / 50 / 60 (+ 4.5 / 5 / 5.5 / 6 / 6.5% (+ 5% per 100 bonus AD) of target's maximum health)\nMaximum Damage Against Monsters:\n220 / 230 / 240 / 250 / 260",
+      "leveling": [
+        {
+          "attribute": "Bonus Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                30,
+                40,
+                50,
+                60
+              ],
+              "units": [
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                4.5,
+                5,
+                5.5,
+                6,
+                6.5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% (+ 5% per 100 bonus AD"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Damage Against Monsters",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                220,
+                230,
+                240,
+                250,
+                260
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Passive",
       "affects": "Enemies",
       "damagetype": "Physical",
@@ -110,50 +253,21 @@
     }
   },
   "skill_e": {
-    "Jousting": {
-      "name": "Jousting",
+    "Unmounted Jousting": {
+      "name": "Unmounted Jousting",
       "champion": "Kled",
       "skill": "E",
-      "target range": "550 / 700",
-      "cooldown": "14 / 13 / 12 / 11 / 10",
-      "icon": "Jousting.png",
-      "blurb": "Kled dashes, dealing physical damage and gaining a short burst of speed. Kled can cast this ability again to dash back through his initial target, dealing the same damage.",
-      "description": "Active: Kled and Skaarl  dash in the target direction, dealing physical damage to all enemies struck and  pulling  minions and small  monsters towards him. This cannot cross terrain.",
-      "leveling": "Physical Damage:\n35 / 60 / 85 / 110 / 135 (+ 60% bonus AD)\nTotal Damage:\n70 / 120 / 170 / 220 / 270 (+ 120% bonus AD)",
-      "icon2": "Jousting 2.png",
-      "description2": "Upon hitting an enemy  champion or large monster Kled and Skaarl  dash a fixed 200-units through them, marking them for 3 seconds and gaining  true sight of them. At the end of the  dash Kled gains  50% bonus movement speed for 1 second and the ability to  joust through the marked target again. This subsequent pass can cross terrain.",
-      "description3": "The mark will remain even if the target dies.",
-      "targeting": "Direction",
-      "affects": "Enemies",
-      "damagetype": "Physical",
-      "spelleffects": "Area of effect",
-      "spellshield": "True",
-      "notes": "* Jousting's second dash will end prematurely if Kled leaves the dash range or is dismounted.\n If Kled re-casts the ability at its maximum range, it will go on cooldown without activating."
+      "icon": "Unmounted Jousting.png",
+      "description": "This ability is unusable while unmounted."
     }
   },
   "skill_r": {
-    "Chaaaaaaaarge!!!": {
-      "name": "Chaaaaaaaarge!!!",
+    "Unmounted Chaaaaaaaarge!!!": {
+      "name": "Unmounted Chaaaaaaaarge!!!",
       "champion": "Kled",
       "skill": "R",
-      "target range": "3500 / 3750 / 4000 / 4250 / 4500",
-      "speed": "950",
-      "cooldown": "160 / 150 / 140 / 130 / 120",
-      "icon": "Chaaaaaaaarge!!!.png",
-      "blurb": "Kled and Skaarl charge to a location, leaving a speed-granting trail behind them and gaining a shield. Skaarl locks onto and rams the first enemy champion encountered.",
-      "description": "Active: Kled and Skaarl charge  unstoppably towards the target location, automatically navigating terrain along the way.",
-      "icon2": "Chaaaaaaaarge!!! 2.png",
-      "description2": "While charging, the duo gain  bonus movement speed and a  shield for every 0.25 seconds of traveling, up to 950 total movement speed over 3 seconds and 10% \u2212 100% (based on time traveling) of the maximum shield amount over 2.25 seconds respectively. The shield lasts for 2 seconds upon finishing the charge. The duo trails a directional draft in their wake, lasting 9 seconds. Allied champions following the draft gain Mr. Kled's Wild Ride.",
-      "leveling2": "Minimum Shield:\n20 / 25 / 30 / 35 / 40 (+ 30% bonus AD)\nMaximum Shield:\n200 / 250 / 300 / 350 / 400 (+ 300% bonus AD)",
-      "description3": "Mr. Kled's Wild Ride: The target gains 650 total movement speed.",
-      "description4": "Skaarl  homes in on the first enemy champion encountered,  knocking them back 100 units and dealing physical damage, increased by 0% \u2212 200% (based on time traveling).",
-      "leveling4": "Minimum Physical Damage:\n4 / 4.5 / 5 / 5.5 / 6% (+ 4% per 100 bonus AD) of target's maximum health\nMaximum Physical Damage:\n12 / 13.5 / 15 / 16.5 / 18% (+ 12% per 100 bonus AD) of target's maximum health",
-      "targeting": "Ground",
-      "affects": "Enemies",
-      "damagetype": "Physical",
-      "spelleffects": "spell",
-      "spellshield": "True",
-      "notes": "* During the charge the duo gain:\n (950 \u2212 (current movement speed)) \u00f7 12 \u00d7 (time \u00f7 0.25) bonus movement speed\n\n The bonus movement speed is not affected by movement speed caps.\n The charge will not give any movement speed to Kled if he has more than 1440 movement speed.\n The trail will not give Kled and his allies any movement speed if they have more than 840 movement speed.\n Movement speed is granted merely by facing the direction of the draft and rapidly decays if the target leaves the path or moves in the opposite direction.\n Damaging Kled into dismount will cancel Chaaaaaaaarge!!! instantly.\n Enemies gain partial vision of Kled when he charges nearby.\n If Kled encounters terrain that suddenly blocks his path towards the target location (e.g,  Weaver's Wall,  Crystallize,  Pillar of Ice) he will simply walk around it or find an alternate direction if it is not possible."
+      "icon": "Unmounted Chaaaaaaaarge!!!.png",
+      "description": "This ability is unusable while unmounted."
     }
   }
 }

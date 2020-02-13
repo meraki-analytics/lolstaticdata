@@ -83,8 +83,65 @@
       "cooldown": "1.5",
       "icon": "Five Point Strike.png",
       "description": "Active: Akali throws a flurry of kunais in the target direction, dealing magic damage to enemies hit. Enemies hit at maximum range are also  slowed by 50% for 0.5 seconds.",
-      "leveling": "Magic Damage:\n25 / 50 / 75 / 100 / 125 (+ 65% AD) (+ 60% AP)",
-      "description2": "At rank 5, deals  25% bonus magic damage    156.25 (+ 81.25% AD) (+ 75% AP) total magic damage  to  minions and  monsters.",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                50,
+                75,
+                100,
+                125
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                65,
+                65,
+                65,
+                65,
+                65
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
+      "description2": "At rank 5, deals[ 25% bonus magic damage ][ 156.25 (+ 81.25% AD) (+ 75% AP) total magic damage ]to  minions and  monsters.",
       "targeting": "Direction",
       "affects": "Enemies, Self",
       "damagetype": "Magic",
@@ -105,9 +162,55 @@
       "cooldown": "20",
       "icon": "Twilight Shroud.png",
       "description": "Active: Akali restores  80 energy and detonates a smoke bomb in the target direction, creating a circular shroud that expands over the next 5 seconds into a ring. The shroud does not permeate terrain.",
-      "leveling": "Shroud Duration:\n5 / 5.5 / 6 / 6.5 / 7",
+      "leveling": [
+        {
+          "attribute": "Shroud Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                5,
+                5.5,
+                6,
+                6.5,
+                7
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Entering the shroud renders Akali  invisible and grants her  bonus movement speed.",
-      "leveling2": "Bonus Movement Speed:\n20 / 25 / 30 / 35 / 40%",
+      "leveling2": [
+        {
+          "attribute": "Bonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Akali's basic attacks and abilities will break the invisibility for 1 \u2212 0.625 (based on minutes) seconds.",
       "description4": "The  marked section of Twilight Shroud's will linger for the mark's duration, even after the shroud ends.",
       "targeting": "Ground",
@@ -126,11 +229,125 @@
       "cooldown": "16 / 14.5 / 13 / 11.5 / 10",
       "icon": "Shuriken Flip.png",
       "description": "Active: Akali  flips backward and fires a shuriken forward, stopping with the first enemy hit and dealing  physical damage.",
-      "leveling": "Physical Damage:\n40 / 70 / 100 / 130 / 160 (+ 35% AD) (+ 50% AP)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                70,
+                100,
+                130,
+                160
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                35,
+                35,
+                35,
+                35
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "The shuriken marks the enemy or the last  smoke section hit for 3 seconds. While the target is marked, Akali can reactivate Shuriken Flip.",
       "icon3": "Shuriken Flip 2.png",
       "description3": "Recast: Akali dashes towards the marked target, consuming the mark, regardless of distance. Against enemies deals the same physical damage.",
-      "leveling3": "Total Damage:\n80 / 140 / 200 / 260 / 320 (+ 70% AD) (+ 100% AP)",
+      "leveling3": [
+        {
+          "attribute": "Total Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                140,
+                200,
+                260,
+                320
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies, Self",
       "damagetype": "Physical",
@@ -150,11 +367,130 @@
       "cooldown": "160 / 145 / 130 / 115 / 100",
       "icon": "Perfect Execution.png",
       "description": "Active: Akali  dashes in the target direction, dealing physical damage to all enemies hit.",
-      "leveling": "Physical Damage:\n85 / 117.5 / 150 / 182.5 / 215 (+ 50% bonus AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                85,
+                117.5,
+                150,
+                182.5,
+                215
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Perfect Execution can be recast after a 2.5 second static cooldown within 10 seconds of first activation at no additional cost.",
       "icon3": "Perfect Execution 2.png",
       "description3": "Recast: Akali  dashes in the target direction, dealing magic damage to enemies hit, increased by 0% \u2212 200% (based on target's missing health).",
-      "leveling3": "Minimum Magic Damage:\n75 / 110 / 145 / 180 / 215 (+ 30% AP)\nMaximum Magic Damage:\n225 / 330 / 435 / 540 / 645 (+ 90% AP)",
+      "leveling3": [
+        {
+          "attribute": "Minimum Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                110,
+                145,
+                180,
+                215
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                225,
+                330,
+                435,
+                540,
+                645
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                90,
+                90,
+                90,
+                90
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Physical /  Magic",

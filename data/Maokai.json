@@ -86,7 +86,47 @@
       "icon": "Bramble Smash.png",
       "blurb": "Maokai knocks back nearby enemies with a shockwave, dealing magic damage and slowing them.",
       "description": "Active: After a 0.35-seconds delay, Maokai releases an arcane shockwave that travels forth in a line, dealing  magic damage to all enemies it passes through and  slowing them by 99% for 0.25 seconds.",
-      "leveling": "Magic Damage:\n70 / 115 / 160 / 205 / 250 (+ 40% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                115,
+                160,
+                205,
+                250
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Enemies near Maokai are also  knocked back up to 300 units based on their proximity to him.",
       "targeting": "Direction",
       "affects": "Enemies",
@@ -109,7 +149,69 @@
       "icon": "Twisted Advance.png",
       "blurb": "Maokai contorts into a mass of moving roots, becoming untargetable and dashing to the target. Upon arrival, he roots the target.",
       "description": "Active: Maokai  dashes to the target enemy, becoming  untargetable for the duration, dealing magic damage on arrival and briefly  rooting them.",
-      "leveling": "Magic Damage:\n70 / 95 / 120 / 145 / 170 (+ 40% AP)\n\nRoot Duration:\n1 / 1.1 / 1.2 / 1.3 / 1.4",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                95,
+                120,
+                145,
+                170
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Root Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1,
+                1.1,
+                1.2,
+                1.3,
+                1.4
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -134,9 +236,89 @@
       "blurb": "Maokai flings a sapling to the target area to stand guard. More effective in brush.",
       "description": "Active: Maokai flings a Sapling to the target location, remaining there for 30 seconds and granting  sight around itself.",
       "description2": "Saplings tether to nearby enemies, chasing them for up to 2.5 seconds, exploding upon impact or at the end of its duration, dealing magic damage to all nearby enemies upon detonation, capped at 300 against non-champions, and  slowing them by 35% for 2 seconds.",
-      "leveling2": "Magic Damage:\n25 / 50 / 75 / 100 / 125 (+ 7 / 7.25 / 7.5 / 7.75 / 8% (+ 1% per 100 AP) of target's maximum health)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                50,
+                75,
+                100,
+                125
+              ],
+              "units": [
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                7,
+                7.25,
+                7.5,
+                7.75,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% (+ 1% per 100 AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Saplings placed in bush instead have 30 (+ 2.5% bonus health) duration and deal double damage over 2 seconds to all enemies hit, capped at 600 against non-champions.",
-      "leveling3": "Total Magic Damage:\n50 / 100 / 150 / 200 / 250 (+ 14 / 14.5 / 15 / 15.5 / 16% (+ 2% per 100 AP) of target's maximum health)",
+      "leveling3": [
+        {
+          "attribute": "Total Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                100,
+                150,
+                200,
+                250
+              ],
+              "units": [
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)",
+                "  of target's maximum health)"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                14,
+                14.5,
+                15,
+                15.5,
+                16
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "% (+ 2% per 100 AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -159,7 +341,43 @@
       "blurb": "Maokai summons a colossal wall of brambles and thorns that slowly advances forwards, damaging and rooting any enemies in the path.",
       "description": "Active: Maokai summons a colossal wall of 5 thorny brambles that slowly advances forward, each stopping at the first enemy champion they collide with.",
       "description2": "Each thorny bramble deals magic damage and  roots for 0.8 \u2212  2.6 (based on distance traveled) seconds.",
-      "leveling2": "Magic Damage:\n150 / 225 / 300 (+ 75% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                225,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                75,
+                75,
+                75,
+                75
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",

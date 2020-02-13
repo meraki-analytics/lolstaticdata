@@ -61,13 +61,13 @@
       "icon": "Fey Feathers.png",
       "blurb": "Rakan periodically gains a shield.",
       "description": "Innate: Rakan periodically generates a 33 \u2212 254 (based on level) (+ 90% AP)  shield that lasts until broken. If the shield is damaged, but not destroyed after being out of combat for 5 seconds, it will regenerate 10% of its maximum value every second.",
-      "description2": "Basic attacks and abilities reduce Fey Feathers' cooldown by 1 second for each enemy  champion hit.",
+      "description2": "Basic attacks and abilities reduce Fey Feathers's  cooldown by 1 second for each enemy  champion hit.",
       "icon3": "ProfileIcon1634 Blazing Feathers.png",
       "description3": "Lover's Leap: If either Rakan or  Xayah is  recalling, the other may move nearby and activate their own recall to join them. Both reach base at the time of which the initiator's recall ends.",
       "targeting": "Passive",
       "affects": "Self",
       "spelleffects": "Shield",
-      "notes": "*  Revitalize will record bonus shielding when a new shield is created, but not when it regenerates. In either case, there's no bonus shielding received."
+      "notes": "*  Revitalize will record bonus shielding when a new shield is created, but not when it regenerates. In either case, there is no bonus shielding received."
     }
   },
   "skill_q": {
@@ -83,16 +83,56 @@
       "icon": "Gleaming Quill.png",
       "blurb": "Flings a magical feather that deals magic damage. Striking a champion or epic monster enables Rakan to heal his allies.",
       "description": "Active: Rakan slings an enchanted feather forward, dealing  magic damage to the first enemy hit.",
-      "leveling": "Magic Damage:\n70 / 115 / 160 / 205 / 250 (+ 60% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                115,
+                160,
+                205,
+                250
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If that enemy was a champion or epic monster, an area is marked around Rakan.",
       "description3": "After 3 seconds or if an ally champion comes within the marked area, Rakan  heals himself and surrounding allies by 18 \u2212 120 (based on level) (+ 70% AP).",
-      "targeting": "Direction",
+      "targeting": "Direction / Auto",
       "affects": "Enemies / Allies",
       "damagetype": "Magic",
-      "spelleffects": "Single target",
-      "spellshield": "True",
+      "spelleffects": "spell",
+      "spellshield": "Special",
       "projectile": "True",
-      "notes": "* The heal benefits from  Heal effects.\n The trigger radius is slightly smaller than the heal radius.\n If the spell is blocked by a  Spell shield, the damage will be blocked, but Rakan will still be affected by the heal component.\n The heal can activate immediately after the projectile hits the target, before the healing return animation completes."
+      "notes": "* The trigger radius is slightly smaller than the heal radius.\n If the spell is blocked by a  spell shield, the damage will be blocked, but Rakan will still be affected by the heal component.\n The heal can activate immediately after the projectile hits the target, before the healing return animation completes."
     }
   },
   "skill_w": {
@@ -110,13 +150,53 @@
       "blurb": "Dashes to a location, knocking up nearby enemies on arrival.",
       "description": "Active: Rakan  dashes to the target location.",
       "description2": "After a 0.35-second delay, he leaps into the air, dealing magic damage and  knocking up surrounding enemies for 1 second.",
-      "leveling2": "Magic Damage:\n70 / 120 / 170 / 220 / 270 (+ 70% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                120,
+                170,
+                220,
+                270
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
-      "spelleffects": "Area of effect",
+      "spelleffects": "spellaoe",
       "spellshield": "True",
-      "notes": "* Rakan will stop mid-dash if he is immobilized by  crowd control effects during Grand Entrance."
+      "notes": "* No additional details."
     }
   },
   "skill_e": {
@@ -132,7 +212,47 @@
       "icon": "Battle Dance.png",
       "blurb": "Flies to an allied champion granting them a shield. Can be re-cast for free for a short duration.",
       "description": "Active: Rakan  shields the target allied champion for 3 seconds while also  dashing through them.",
-      "leveling": "Shield Strength:\n40 / 65 / 90 / 115 / 140 (+ 80% AP)",
+      "leveling": [
+        {
+          "attribute": "Shield Strength",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                65,
+                90,
+                115,
+                140
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "Battle Dance 2.png",
       "description2": "Battle Dance can be re-cast for 5 seconds at no cost.",
       "description3": "If  Xayah is the target, Battle Dance can be cast from an increased range.",
@@ -154,14 +274,68 @@
       "icon": "The Quickness.png",
       "blurb": "Gains movement speed, charming and dealing magic damage to enemies touched.",
       "description": "Active: Rakan breaks into a captivating sprint for 4 seconds, gaining  50% bonus movement speed for the duration. During this time he deals magic damage to all enemy units he collides with,  charming and  slowing them by 75%. This may only occur once per unit.",
-      "leveling": "Magic Damage:\n100 / 200 / 300 (+ 50% AP)\n\nCharm Duration:\n1 / 1.25 / 1.5",
-      "description2": "When Rakan collides with his first enemy champion he gains an additional  100% bonus movement speed, which starts decaying after 0.5 seconds by 20% every 0.5 seconds.",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                200,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Charm Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1,
+                1.25,
+                1.5
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "description2": "When Rakan collides with his first enemy  champion he gains an additional  100% bonus movement speed, which starts decaying after 0.5 seconds by 20% every 0.5 seconds.",
       "description3": "During the first 0.5 seconds of The Quickness, Rakan is in cast time.",
       "description4": "During The Quickness, Rakan cannot basic attack enemy champions if he did not charm them.",
-      "targeting": "None",
+      "targeting": "Self / Buff / Auto",
       "affects": "Self / Enemies",
       "damagetype": "Magic",
-      "spelleffects": "Area of effect",
+      "spelleffects": "spellaoe",
       "spellshield": "True",
       "notes": "* The spell duration is increased by 0.25 seconds per enemy hit.\n  Grand Entrance can be buffered while The Quickness is active."
     }

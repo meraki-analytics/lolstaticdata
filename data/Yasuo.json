@@ -59,7 +59,7 @@
       "icon": "Way of the Wanderer.png",
       "blurb": "Yasuo's Critical Strike Chance is doubled. Additionally, Yasuo builds toward a shield whenever he is moving. The shield triggers when he takes damage from a champion or monster.",
       "description": "Intent: Yasuo doubles his  total critical strike chance from all other sources, but his  critical strikes deal only (80% +  22.5%) AD  bonus physical damage.",
-      "description2": "Resolve: Yasuo generates  Flow for every 59 / 52.5 / 46 (based on level) units he travels by any means. At   100 stacks    5900 / 5250 / 4600 (based on level) units traveled   and upon taking champion or monster damage, Yasuo consumes  all Flow to  shield himself for 100 \u2212 510 (based on level) for up to 1 second.",
+      "description2": "Resolve: Yasuo generates  Flow for every 59 / 52.5 / 46 (based on level) units he travels by any means. At [ 100 stacks ][ 5900 / 5250 / 4600 (based on level) units traveled ] and upon taking champion or monster damage, Yasuo consumes  all Flow to  shield himself for 100 \u2212 510 (based on level) for up to 1 second.",
       "targeting": "Passive",
       "affects": "Self",
       "spelleffects": "Shield",
@@ -78,7 +78,47 @@
       "icon": "Steel Tempest.png",
       "blurb": "A skillshot basic attack. After two successful Steel Tempests, the next fires a tornado that knocks enemies Airborne.",
       "description": "First Cast - Steel Tempest: Yasuo thrusts his sword in the target direction, dealing physical damage to enemies hit and applying on-hit effects to the first enemy hit. The ability can  critically strike for (60% +  20%) AD bonus physical damage.",
-      "leveling": "Physical Damage:\n20 / 45 / 70 / 95 / 120 (+ 100% AD)",
+      "leveling": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                45,
+                70,
+                95,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD",
+                "% AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If Steel Tempest hits an enemy, he gains a Gathering Storm stack for 6 seconds to which he's able to cast Steel Wind Rising.",
       "icon3": "Steel Tempest 2.png",
       "description3": "Second Cast - Steel Wind Rising: Yasuo casts Steel Tempest. If it hits an enemy, Yasuo gains another Gathering Storm stack to which he can cast Gathering Storm.",
@@ -105,7 +145,30 @@
       "icon": "Wind Wall.png",
       "blurb": "Creates a moving wall that blocks enemy projectiles.",
       "description": "Active: Yasuo creates a gust of wind that travels in the target direction over 0.25 seconds to form a wall in front of him. The wall slowly drifts forward 50 units over 3.75 seconds, blocking all hostile non- turret  projectiles.",
-      "leveling": "Wall Width:\n300 / 350 / 400 / 450 / 500",
+      "leveling": [
+        {
+          "attribute": "Wall Width",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                300,
+                350,
+                400,
+                450,
+                500
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "None",
       "projectile": "Special",
@@ -124,9 +187,165 @@
       "icon": "Sweeping Blade.png",
       "blurb": "Dashes through a unit, dealing escalating Magic Damage with each cast.",
       "description": "Active: Yasuo  dashes a fixed distance toward a target enemy, dealing  magic damage.",
-      "leveling": "Magic Damage:\n60 / 70 / 80 / 90 / 100 (+ 20% bonus AD) (+ 60% AP)\nMaximum Magic Damage:\n90 / 105 / 120 / 135 / 150 (+ 20% bonus AD) (+ 60% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                70,
+                80,
+                90,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                105,
+                120,
+                135,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Each Sweeping Blade cast increases the next dash's base damage by 25% for 5 seconds, up to 50%.",
-      "leveling2": "Bonus Damage:\n15 / 17.5 / 20 / 22.5 / 25\nMaximum Bonus Damage:\n30 / 35 / 40 / 45 / 50",
+      "leveling2": [
+        {
+          "attribute": "Bonus Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                17.5,
+                20,
+                22.5
+              ],
+              "units": [
+                " /",
+                " /",
+                " /",
+                " /"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "25 Maximum Bonus Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                35,
+                40,
+                45,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Yasuo cannot dash to the same target more than once every few seconds.",
       "description4": "Yasuo will be  knocked down by any  immobilizing crowd control during Sweeping Blade.",
       "targeting": "Unit",
@@ -148,7 +367,43 @@
       "blurb": "Moves to a unit and strikes them repeatedly for heavy damage. Can only be cast on Airborne targets.",
       "description": "Active: Yasuo  blinks to the other side of a  visible  airborne enemy champion nearest to the cursor, instantly generating maximum  Flow while resetting  Steel Tempest's stacks.",
       "description2": "Upon arrival, he  suspends all nearby  airborne enemies around the target for 1 second, dealing  physical damage thereafter.",
-      "leveling2": "Physical Damage:\n200 / 300 / 400 (+ 150% bonus AD)",
+      "leveling2": [
+        {
+          "attribute": "Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                300,
+                400
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                150,
+                150,
+                150,
+                150
+              ],
+              "units": [
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD",
+                "% bonus AD"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "For the next 15 seconds, Yasuo's  critical strikes gain  50% armor penetration versus  bonus armor.",
       "description4": "If Yasuo would be placed inside a turret's attack range upon blinking, he will instead attempt to position himself outside it (does not apply to Nexus Obelisk).",
       "targeting": "Auto",

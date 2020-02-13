@@ -60,7 +60,7 @@
       "skill": "I",
       "icon": "Adrenaline Rush.png",
       "blurb": "Dr. Mundo regenerates 0.3% of his maximum Health each second.",
-      "description": "Innate: Dr. Mundo passively regenerates   1.5% of his maximum health every 5 seconds     0.3% of his maximum health each second  .",
+      "description": "Innate: Dr. Mundo passively regenerates[  1.5% of his maximum health every 5 seconds ][  0.3% of his maximum health each second ].",
       "targeting": "Passive",
       "affects": "Self",
       "damagetype": "None",
@@ -82,11 +82,124 @@
       "icon": "Infected Cleaver.png",
       "blurb": "Dr. Mundo hurls his cleaver, dealing damage equal to a portion of his target's current Health and slowing them for a short time. Dr. Mundo delights in the suffering of others, so he is returned half of the Health cost when he successfully lands a cleaver (increased to the full Health cost on killing blows).",
       "description": "Active: Dr. Mundo hurls a cleaver in the target direction, dealing  magic damage to the first enemy it hits and  slowing it by 40% for 2 seconds.",
-      "leveling": "Magic Damage:\n20 / 22.5 / 25 / 27.5 / 30% of target's current health",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                22.5,
+                25,
+                27.5,
+                30
+              ],
+              "units": [
+                "% of target's current health",
+                "% of target's current health",
+                "% of target's current health",
+                "% of target's current health",
+                "% of target's current health"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Infected Cleaver has a minimum damage threshold, and is capped against  minions and  monsters.",
-      "leveling2": "Minimum Damage:\n80 / 130 / 180 / 230 / 280\nCapped Damage:\n300 / 350 / 400 / 450 / 500",
+      "leveling2": [
+        {
+          "attribute": "Minimum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                130,
+                180,
+                230,
+                280
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Capped Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                300,
+                350,
+                400,
+                450,
+                500
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "If Infected Cleaver hits an enemy, 40% of the  health cost is refunded, and if it kills it, 80% of the health cost is refunded.",
-      "leveling3": "Health Refund On Hit:\n20 / 24 / 28 / 32 / 36\nHealth Refund On Kill:\n40 / 48 / 56 / 64 / 72",
+      "leveling3": [
+        {
+          "attribute": "Health Refund On Hit",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                24,
+                28,
+                32,
+                36
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Health Refund On Kill",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                48,
+                56,
+                64,
+                72
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies / Self",
       "damagetype": "Magic",
@@ -109,7 +222,47 @@
       "icon": "Burning Agony.png",
       "blurb": "Dr. Mundo drains his Health to reduce the duration of disables and deal continual damage to nearby enemies.",
       "description": "Toggle: Dr. Mundo sets himself on fire, dealing magic damage to nearby enemies and gaining  30% Tenacity.",
-      "leveling": "Magic Damage Per Half-Second:\n20 / 27.5 / 35 / 42.5 / 50 (+ 10% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage Per Half-Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                27.5,
+                35,
+                42.5,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Auto",
       "affects": "Enemies / Self",
       "damagetype": "Magic",
@@ -128,11 +281,146 @@
       "icon": "Masochism.png",
       "blurb": "Dr. Mundo gains bonus attack damage based on his missing health, and his next basic attack headbutts his target for additional damage. Passively increases magic resist whenever Dr. Mundo is dealt magic damage or pays a health cost.",
       "description": "Passive: Taking magic damage or paying a  health cost increases Dr. Mundo's  magic resistance by 3% for 2 seconds, stacking up to an amount.",
-      "leveling": "Maximum Magic Resistance:\n6 / 15 / 24 / 33 / 42%\nMaximum Stacks:\n2 / 5 / 8 / 11 / 14",
+      "leveling": [
+        {
+          "attribute": "Maximum Magic Resistance",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                6,
+                15,
+                24,
+                33,
+                42
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Stacks",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                2,
+                5,
+                8,
+                11,
+                14
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Active: Dr. Mundo gains bonus attack damage for 5 seconds, increased by 0% \u2212 100% (based on missing health).",
-      "leveling2": "Minimum Bonus AD:\n40 / 55 / 70 / 85 / 100\nMaximum Bonus AD:\n80 / 110 / 140 / 170 / 200",
+      "leveling2": [
+        {
+          "attribute": "Minimum Bonus AD",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                55,
+                70,
+                85,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Bonus AD",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                110,
+                140,
+                170,
+                200
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Additionally, Dr. Mundo's next basic attack within the duration will cost health, but gains  25 bonus range and deals  bonus physical damage.",
-      "leveling3": "Health Cost:\n25 / 35 / 45 / 55 / 65\nBonus Physical Damage:\n3 / 3.5 / 4 / 4.5 / 5% of his maximum health",
+      "leveling3": [
+        {
+          "attribute": "Health Cost",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                35,
+                45,
+                55,
+                65
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Bonus Physical Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                3,
+                3.5,
+                4,
+                4.5,
+                5
+              ],
+              "units": [
+                "% of his maximum health",
+                "% of his maximum health",
+                "% of his maximum health",
+                "% of his maximum health",
+                "% of his maximum health"
+              ]
+            }
+          ]
+        }
+      ],
       "description4": "Masochism resets Dr. Mundo's basic attack timer.",
       "targeting": "Buff",
       "affects": "Self",
@@ -154,7 +442,74 @@
       "icon": "Sadism.png",
       "blurb": "Dr. Mundo sacrifices a portion of his Health for increased Movement Speed and drastically increased Health Regeneration.",
       "description": "Active: Dr. Mundo regenerates  health over 12 seconds and gains  bonus movement speed for the duration.",
-      "leveling": "Total Regeneration:\n50 / 62.5 / 75 / 87.5 / 100% maximum health\nRegeneration Per Second:\n4.17 / 5.21 / 6.25 / 7.29 / 8.33% maximum health\nBonus Movement Speed:\n15 / 20 / 25 / 30 / 35%",
+      "leveling": [
+        {
+          "attribute": "Total Regeneration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                62.5,
+                75,
+                87.5,
+                100
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "maximum health Regeneration Per Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                4.17,
+                5.21,
+                6.25,
+                7.29,
+                8.33
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "maximum health Bonus Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                15,
+                20,
+                25,
+                30,
+                35
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Buff / Self",
       "affects": "Self",
       "damagetype": "None",

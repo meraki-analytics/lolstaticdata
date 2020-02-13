@@ -73,22 +73,142 @@
       "champion": "Vladimir",
       "skill": "Q",
       "target range": "600",
+      "cast time": "0.25",
       "cooldown": "9 / 8 / 7 / 6 / 5",
       "icon": "Transfusion.png",
       "blurb": "Vladimir steals life from the target enemy. When Vladimir's resource is full, Transfusion will benefit from massively increased damage and healing for a brief time.",
-      "description": "Active: After a 0.25-second delay Vladimir drains the lifeforce of the target enemy, dealing  magic damage and  healing himself instantly.",
-      "leveling": "Magic Damage:\n80 / 100 / 120 / 140 / 160 (+ 60% AP)\nHeal:\n20 / 25 / 30 / 35 / 40 (+ 35% AP)",
+      "description": "Active: Vladimir drains the lifeforce of the target enemy, dealing  magic damage and  healing himself.",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                100,
+                120,
+                140,
+                160
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Heal",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                35,
+                35,
+                35,
+                35
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Each cast of Transfusion generates a stack of  Bloodthirst over its  cooldown, which is displayed in his secondary resource bar. At 2 stacks, Vladimir gains Crimson Rush for 2.5 seconds and  10% bonus movement speed for 0.5 seconds.",
       "icon3": "Crimson Rush.png",
       "description3": "Crimson Rush: The next Transfusion deals 85% increased damage and heals for an additional 30 \u2212 200 (based on level) (+ 5% (+ 4% per 100 AP) missing health), reduced to 35% against minions.",
-      "leveling3": "Empowered Damage:\n148 / 185 / 222 / 259 / 296 (+ 111% AP)",
+      "leveling3": [
+        {
+          "attribute": "Empowered Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                148,
+                185,
+                222,
+                259,
+                296
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                111,
+                111,
+                111,
+                111,
+                111
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Unit",
       "affects": "Self, Enemies",
       "damagetype": "Magic",
       "spelleffects": "Single target",
       "spellshield": "True",
-      "projectile": "Special",
-      "notes": "* Transfusion can be  intercepted but the healing is not prevented.\n Vladimir's resource bar changes colors depending on Bloodthirst's charge-up.\n White while generating the first stack and while at 1 stack   (there is no time-out period).\n Orange while generating the second stack.\n Red while Crimson Rush is active (Bloodthirst will deplete over 2.5 seconds once triggered).\n\n Each stack generates over-time (Transfusion's cooldown).\n\n During  Tides of Blood or  Sanguine Pool, Crimson Rush is maintained for the duration of the ability.\n  Bloodthirst is slowly depleted during this time."
+      "projectile": "false",
+      "notes": "* Even thought the healing effect is visualized as a projectile, the healing itself triggers instantly.\n Vladimir's resource bar changes colors depending on Bloodthirst's charge-up.\n White while generating the first stack and while at 1 stack (there is no time-out period).\n Orange while generating the second stack.\n Red while Crimson Rush is active (Bloodthirst will deplete over 2.5 seconds once triggered).\n\n Each stack generates over-time (Transfusion's cooldown).\n\n During  Tides of Blood or  Sanguine Pool, Crimson Rush is maintained for the duration of the ability.\n  Bloodthirst is slowly depleted during this time."
     }
   },
   "skill_w": {
@@ -102,15 +222,95 @@
       "cooldown": "28 / 25 / 22 / 19 / 16",
       "icon": "Sanguine Pool.png",
       "blurb": "Vladimir sinks into a pool of blood, becoming untargetable for 2 seconds. Additionally, enemies on the pool are slowed and Vladimir siphons life from them.",
-      "description": "Active: Vladimir sinks into a pool of blood, gaining  37.5% bonus movement speed which decays exponentially over 1 second and becoming  untargetable and granted  ghosting for 2 seconds.",
+      "description": "Active: Vladimir sinks into a pool of blood, gaining  37.5% bonus movement speed which decays exponentially over 1 second and becoming  untargetable and  ghosted for 2 seconds.",
       "description2": "Enemies who stand upon the pool are  slowed by 40% and dealt magic damage every half second, while Vladimir  heals himself for 15% of Sanguine Pool's damage dealt.",
-      "leveling2": "Magic Damage Per Half-Second:\n20 / 33.75 / 47.5 / 61.25 / 75 (+ 2.5% bonus health)\nMaximum Magic Damage:\n80 / 135 / 190 / 245 / 300 (+ 10% bonus health)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage Per Half-Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                33.75,
+                47.5,
+                61.25,
+                75
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                2.5,
+                2.5,
+                2.5,
+                2.5,
+                2.5
+              ],
+              "units": [
+                "% bonus health",
+                "% bonus health",
+                "% bonus health",
+                "% bonus health",
+                "% bonus health"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                135,
+                190,
+                245,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                "% bonus health",
+                "% bonus health",
+                "% bonus health",
+                "% bonus health",
+                "% bonus health"
+              ]
+            }
+          ]
+        }
+      ],
+      "description3": "Vladimir cannot use basic attacks or abilities during Sanguine Pool.",
       "targeting": "None",
       "affects": "Self, Enemies",
       "damagetype": "Magic",
       "spelleffects": "aoedot",
       "spellshield": "False",
-      "notes": "* The first tick damages immediately so the final one occurs 0.5 seconds before Vladimir becomes targetable again.\n The  slow ends immediately once affected enemies get out of range.\n Sanguine Pool has no  cast time.\n Sanguine Pool has a technical  14% AP ratio due to its interaction with health from  Crimson Pact.\n Vladimir is  pacified during Sanguine Pool.\n He can still use summoner spells and active items."
+      "notes": "* The first tick damages immediately so the final one occurs 0.5 seconds before Vladimir becomes targetable again.\n The  slow ends immediately once affected enemies get out of range.\n Sanguine Pool has no  cast time.\n Vladimir may still use summoner spells and active items during Sanguine Pool."
     }
   },
   "skill_e": {
@@ -125,19 +325,155 @@
       "cooldown": "13 / 11 / 9 / 7 / 5",
       "icon": "Tides of Blood.png",
       "blurb": "Vladimir pays his own health to charge up a reservoir of blood which, when released, deals damage in the area around him but can be blocked by enemy units.",
-      "description": "First Cast: Vladimir charges for up to 1.5 seconds,  slowing himself by 20% over the last 0.5 seconds. If Vladimir finishes charging or is  interrupted, he automatically initiates the second cast.",
+      "description": "First Cast: Vladimir winds up for up to 1.5 seconds,  slowing himself by 20% over the last 0.5 seconds. If Vladimir finishes charging or is  interrupted, he automatically initiates the second cast.",
       "description2": "Second Cast: Vladimir unleashes a nova of blood bolts, each of which collide with the first enemy they hit, dealing them magic damage that is increased the longer Tides of Blood was charged, up to the first second.",
-      "leveling2": "Minimum Magic Damage:\n30 / 45 / 60 / 75 / 90 (+ 2.5% maximum health) (+ 35% AP)\nMaximum Magic Damage:\n60 / 90 / 120 / 150 / 180 (+ 6% maximum health) (+ 80% AP)",
+      "leveling2": [
+        {
+          "attribute": "Minimum Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                45,
+                60,
+                75,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                2.5,
+                2.5,
+                2.5,
+                2.5,
+                2.5
+              ],
+              "units": [
+                "% maximum health",
+                "% maximum health",
+                "% maximum health",
+                "% maximum health",
+                "% maximum health"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                35,
+                35,
+                35,
+                35
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                90,
+                120,
+                150,
+                180
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                6,
+                6,
+                6,
+                6,
+                6
+              ],
+              "units": [
+                "% maximum health",
+                "% maximum health",
+                "% maximum health",
+                "% maximum health",
+                "% maximum health"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "If Tides of Blood was charged for at least 1 second, affected enemies are also  slowed for 0.5 seconds.",
-      "leveling3": "Slow:\n40 / 45 / 50 / 55 / 60%",
-      "description4": "Enemies can intercept multiple bolts, but can only be damaged once.  Minions and  monsters can each absorb up to 5 bolts, and damage nearby unaffected units if hit.",
+      "leveling3": [
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                45,
+                50,
+                55,
+                60
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
+      "description4": "Enemies can intercept multiple bolts, but may only be damaged once.",
       "targeting": "None",
       "affects": "Self, Enemies",
       "damagetype": "Magic",
       "spelleffects": "Area of effect",
       "spellshield": "True",
       "projectile": "True",
-      "notes": "* Tides of Blood is only  self-disrupted by spells that require  channeling.\n Active items such as  Hextech Protobelt-01 immediately cancel the ability."
+      "notes": "* No additional notes."
     }
   },
   "skill_r": {
@@ -151,15 +487,96 @@
       "icon": "Hemoplague.png",
       "blurb": "Vladimir infects an area with a virulent plague. Affected enemies take increased damage for the duration. After a few seconds, Hemoplague deals magic damage to infected enemies and heals Vladimir for each enemy Champion hit.",
       "description": "Active: Vladimir infects all enemies in the target area with a virulent plague, increasing the damage they take from all sources by 10% for 4 seconds, after which all infected enemies take magic damage.",
-      "leveling": "Magic damage:\n150 / 200 / 250 / 300 / 350 (+ 70% AP)",
-      "description2": "The detonation  heals Vladimir for its pre-mitigation damage dealt against  enemy champions, reduced to 50% after the first.",
-      "leveling2": "Maximum Heal:\n450 / 600 / 750 / 900 / 1050 (+ 210% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                150,
+                200,
+                250,
+                300,
+                350
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
+      "description2": "The detonation brings the blood from  enemy champions hit to Vladimir,  healing him for the pre-mitigation damage dealt against them once the blood reaches him, reduced to 50% after the first.",
+      "leveling2": [
+        {
+          "attribute": "Maximum Heal",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                450,
+                600,
+                750,
+                900,
+                1050
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                210,
+                210,
+                210,
+                210,
+                210
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Self, Enemies",
       "damagetype": "Magic",
       "spelleffects": "Area of effect",
       "spellshield": "True",
-      "notes": "* Hemoplague will amplify almost all sources and types of damage (including damage from neutral monsters but excluding  true damage, with percent modifiers stacking multiplicatively).\n Hemoplague amplifies itself for an actual 165 / 220 / 275 / 330 / 385 (+ 77% AP) damage.\n\n Hemoplague has no cast time and affects the target area instantly.\n Although, it has a brief 0.5 second delay during which Vladimir cannot perform attacks.\n\n The healing is not instantaneous after the detonation and is received based on the distance between Vladimir and the target."
+      "projectile": "false",
+      "notes": "* Hemoplague has no cast time and doesn't affect Vladimir's previous orders.\n Hemoplague will amplify almost all sources and types of damage (including damage from neutral monsters but excluding  true damage, with percent modifiers stacking multiplicatively).\n Hemoplague amplifies itself for an actual 165 / 220 / 275 / 330 / 385 (+ 77% AP) damage."
     }
   }
 }

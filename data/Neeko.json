@@ -41,8 +41,8 @@
   "patch": "V8.24",
   "changes": "V9.21",
   "role": [
-    "Catcher",
-    "Burst"
+    "Burst",
+    "Catcher"
   ],
   "damage": 3,
   "toughness": 1,
@@ -82,9 +82,128 @@
       "icon": "Blooming Burst.png",
       "blurb": "Neeko throws a seed dealing magic damage. The seed blooms again on hitting champions or killing units.",
       "description": "Active: Neeko propels a seed into a target area dealing  magic damage to enemies within.",
-      "leveling": "Magic Damage:\n70 / 115 / 160 / 205 / 250 (+ 50% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                115,
+                160,
+                205,
+                250
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If the seed kills an enemy unit or damages a champion or large monster, it will bloom again after a short delay to deal magic damage. This cannot happen more than twice per Blooming Burst.",
-      "leveling2": "Second and Third Bloom Damage:\n35 / 55 / 75 / 95 / 115 (+ 20% AP)\nTotal Maximum Damage:\n140 / 225 / 310 / 395 / 480 (+ 90% AP)",
+      "leveling2": [
+        {
+          "attribute": "Second and Third Bloom Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                35,
+                55,
+                75,
+                95,
+                115
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Total Maximum Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                140,
+                225,
+                310,
+                395,
+                480
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                90,
+                90,
+                90,
+                90
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -102,10 +221,95 @@
       "cooldown": "20 / 19 / 18 / 17 / 16",
       "icon": "Shapesplitter.png",
       "description": "Passive: Basic attacks on-hit grant Neeko a stack of Shapesplitter, up to a maximum of two. At 2 stacks, Neeko's next basic attack on-attack consumes the stacks to turn her attack into a  non-projectile, dealing bonus magic damage and granting her  bonus movement speed for 1 second.",
-      "leveling": "Bonus Magic Damage:\n50 / 70 / 90 / 110 / 130 (+ 60% AP)\n\nPassive Movement Speed:\n10 / 15 / 20 / 25 / 30%",
+      "leveling": [
+        {
+          "attribute": "Bonus Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                70,
+                90,
+                110,
+                130
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Passive Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                15,
+                20,
+                25,
+                30
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Active: Neeko becomes  invisible for 0.5 seconds, sending a temporary clone of her  current form sprinting in the target direction for 3 seconds and up to 900 units away. The clone is  untargetable for the first 0.5 seconds.",
       "description3": "Both Neeko and the clone gain bonus movement speed for 3 seconds.",
-      "leveling3": "Active Movement Speed:\n20 / 25 / 30 / 35 / 40%",
+      "leveling3": [
+        {
+          "attribute": "Active Movement Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Self",
       "damagetype": "Magic",
@@ -128,9 +332,94 @@
       "cooldown": "12 / 11.5 / 11 / 10.5 / 10",
       "icon": "Tangle-Barbs.png",
       "description": "Active: Neeko slings a magical spiral in a target direction, dealing magic damage and  rooting enemies it passes through.",
-      "leveling": "Magic Damage:\n80 / 115 / 150 / 185 / 220 (+ 40% AP)\n\nRoot Duration:\n0.7 / 0.9 / 1.1 / 1.3 / 1.5",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                115,
+                150,
+                185,
+                220
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Root Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                0.7,
+                0.9,
+                1.1,
+                1.3,
+                1.5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If Tangle-Barbs hits at least one enemy, it grows in size and speed, and the root duration is increased.",
-      "leveling2": "Empowered Root Duration:\n1.8 / 2.1 / 2.4 / 2.7 / 3",
+      "leveling2": [
+        {
+          "attribute": "Empowered Root Duration",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                1.8,
+                2.1,
+                2.4,
+                2.7,
+                3
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -152,9 +441,167 @@
       "icon": "Pop Blossom.png",
       "description": "Active: Neeko winds up over 1.25 seconds, creating a zone around her. The zone is invisible to enemies while she is  disguised.",
       "description2": "Neeko then  shields herself for 2 seconds, increased for each enemy champion nearby, as she leaps into the air for 0.6 seconds.",
-      "leveling2": "Shield:\n50 / 65 / 80 / 95 / 110 (+ 50% AP)\nBonus Shield Per Champion:\n40 / 50 / 60 / 70 / 80 (+ 40% AP)\nMaximum Shield:\n250 / 315 / 380 / 445 / 510 (+ 250% AP)",
+      "leveling2": [
+        {
+          "attribute": "Shield",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                65,
+                80,
+                95,
+                110
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Bonus Shield Per Champion",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                50,
+                60,
+                70,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Shield",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                250,
+                315,
+                380,
+                445,
+                510
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                250,
+                250,
+                250,
+                250,
+                250
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "Upon landing, Neeko bursts with spiritual energy, dealing magic damage and  stunning nearby enemies for 1.25 seconds.",
-      "leveling3": "Magic Damage:\n200 / 312.5 / 425 / 537.5 / 650 (+ 130% AP)",
+      "leveling3": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                312.5,
+                425,
+                537.5,
+                650
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                130,
+                130,
+                130,
+                130,
+                130
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "None",
       "affects": "Enemies, Self",
       "damagetype": "Magic",

@@ -40,7 +40,7 @@
   "rangetype": "Ranged",
   "date": "2019-05-14",
   "patch": "V9.10",
-  "changes": "V9.24",
+  "changes": "V10.3",
   "role": [
     "Enchanter"
   ],
@@ -77,14 +77,117 @@
       "target range": "1150",
       "speed": "1000",
       "cast time": "false",
-      "cost": "85 / 90 / 95 / 100 / 105 / 110",
+      "cost": "90",
       "costtype": "Mana",
       "cooldown": "13.5 / 12 / 10.5 / 9 / 7.5 / 6",
       "icon": "Prowling Projectile.png",
       "description": "Active: Yuumi fires an errant missile that deals  magic damage to the first enemy hit.",
-      "leveling": "Magic Damage:\n40 / 65 / 90 / 115 / 140 / 165 (+ 30% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                70,
+                100,
+                130,
+                160,
+                190
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "If the missile is in flight for 1 second, it deals increased magic damage, and  slows enemy  champions struck by 20% for 1 second.",
-      "leveling2": "Empowered Damage:\n50 / 95 / 140 / 185 / 230 / 275 (+ 40% AP)",
+      "leveling2": [
+        {
+          "attribute": "Empowered Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                85,
+                125,
+                165,
+                205,
+                245
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                2,
+                3.2,
+                4.4,
+                5.6,
+                6.8,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "% of the target's current health"
+              ]
+            }
+          ]
+        }
+      ],
       "icon3": "Prowling Projectile 2.png",
       "description3": "While  Attached, Yuumi directs the trajectory of the missile instead for up to 2 seconds before fizzling, during which she and the Anchor can see the effective range.",
       "targeting": "Direction",
@@ -103,7 +206,91 @@
       "static": "10 / 5 / 0 (based on level)",
       "icon": "false",
       "description": "Passive: Yuumi and her Anchor gain flat  adaptive force plus a percentage of the Anchor's  adaptive force and a percentage of its bonus attack damage or ability power, whichever is higher, as  adaptive force. Additionally, Yuumi starts with a point in You and Me! and  Prowling Projectile instead has 6 ranks.",
-      "leveling": "Adaptive Force:\n12 / 14 / 16 / 18 / 20 (+ 12 / 14 / 16 / 18 / 20%)\n\nAttack Damage Adaptive Force:\n20 / 23.33 / 26.67 / 30 / 33.33% bonus AD\n\nAbility Power Adaptive Force:\n12 / 14 / 16 / 18 / 20% AP",
+      "leveling": [
+        {
+          "attribute": "Adaptive Force",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                12,
+                14,
+                16,
+                18,
+                20
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                12,
+                14,
+                16,
+                18,
+                20
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Attack Damage Adaptive Force",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                23.33,
+                26.67,
+                30,
+                33.33
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "bonus AD \nAbility Power Adaptive Force",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                12,
+                14,
+                16,
+                18,
+                20
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "icon2": "You and Me!.png",
       "description2": "Active: After a 0.25-second channel, Yuumi  dashes to an allied champion and attaches to them. While Attached, Yuumi is  disarmed,  untargetable (except from  turrets and in-flight projectiles targeting her) and follows her Anchor's movement, and retains the ability to cast (except movement spells).",
       "icon3": "Change of Plan.png",
@@ -125,7 +312,69 @@
       "cooldown": "12 / 11 / 10 / 9 / 8",
       "icon": "Zoomies.png",
       "description": "Active: Yuumi  heals herself and gains 15% (+ 10% per 100 AP)  bonus movement speed and bonus attack speed for 3 seconds.",
-      "leveling": "Heal:\n70 / 110 / 150 / 190 / 230 (+ 30% AP)\n\nBonus Attack Speed:\n25 / 30 / 35 / 40 / 45%",
+      "leveling": [
+        {
+          "attribute": "Heal",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                105,
+                140,
+                175,
+                210
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Bonus Attack Speed",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                30,
+                35,
+                40,
+                45
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "While  Attached, the Anchor is targeted by the ability instead.",
       "targeting": "Auto",
       "affects": "Self / Allies",
@@ -144,7 +393,164 @@
       "cooldown": "130 / 120 / 110 / 100 / 90",
       "icon": "Final Chapter.png",
       "description": "Active: Yuumi  recoils X units in the opposite direction, after which Book channels to launch 7 waves over 3.5 seconds, each dealing magic damage. Enemy  champions hit take only 50% damage from subsequent waves, and when struck with three waves, they are  rooted for 1.75 seconds.",
-      "leveling": "Magic Damage Per Wave:\n60 / 70 / 80 / 90 / 100 (+ 20% AP)\nReduced Damage Per Wave:\n30 / 35 / 40 / 45 / 50 (+ 10% AP)\nMaximum Champion Damage:\n240 / 280 / 320 / 360 / 400 (+ 80% AP)\nMaximum Non-Champion Damage:\n420 / 490 / 560 / 630 / 700 (+ 140% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage Per Wave",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                70,
+                80,
+                90,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Reduced Damage Per Wave",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                35,
+                40,
+                45,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Champion Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                240,
+                280,
+                320,
+                360,
+                400
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Maximum Non-Champion Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                420,
+                490,
+                560,
+                630,
+                700
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                140,
+                140,
+                140,
+                140,
+                140
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Yuumi can move and cast both  You and Me! and  Zoomies during Final Chapter.",
       "targeting": "Direction",
       "affects": "Enemies",

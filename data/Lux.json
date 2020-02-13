@@ -84,7 +84,47 @@
       "icon": "Light Binding.png",
       "blurb": "Lux releases a sphere of light that binds and deals damage to up to two enemy units.",
       "description": "Active: Lux releases a sphere of light in a line that deals magic damage to the first two enemies hit and  roots them for 2 seconds.",
-      "leveling": "Magic Damage:\n70 / 115 / 160 / 205 / 250 (+ 70% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                115,
+                160,
+                205,
+                250
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -109,9 +149,89 @@
       "blurb": "Lux throws her wand and bends the light around any friendly target it touches, protecting them from enemy damage.",
       "description": "Active: Lux launches her wand in the target direction which returns to her after reaching maximum range.",
       "description2": "The outgoing wand  shields Lux and all allied champions it touches for 2.5 seconds.",
-      "leveling2": "Shield Strength:\n50 / 75 / 100 / 125 / 150 (+ 30% AP)",
+      "leveling2": [
+        {
+          "attribute": "Shield Strength",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                50,
+                75,
+                100,
+                125,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "The returning wand shields for the same amount and for the same duration, while also stacking with the outgoing shield and resetting its duration.",
-      "leveling3": "Maximum Shield:\n100 / 150 / 200 / 250 / 300 (+ 60% AP)",
+      "leveling3": [
+        {
+          "attribute": "Maximum Shield",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                150,
+                200,
+                250,
+                300
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description4": "The shields can only stack up to 2 times. Additional shields will neither reset the duration nor strengthen it.",
       "targeting": "Direction",
       "affects": "Allies",
@@ -134,9 +254,72 @@
       "icon": "Lucent Singularity.png",
       "blurb": "Fires an anomaly of twisted light to an area, which slows nearby enemies. Lux can detonate it to damage enemies in the area of effect.",
       "description": "Active: Lux sends an anomaly of twisted light to the target area for up to 5 seconds,  slowing enemies inside and  revealing the area around it.",
-      "leveling": "Slow:\n25 / 30 / 35 / 40 / 45%",
+      "leveling": [
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                25,
+                30,
+                35,
+                40,
+                45
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "At the end of the duration or if Lucent Singularity is reactivated, the area detonates, dealing magic damage.",
-      "leveling2": "Magic Damage:\n60 / 105 / 150 / 195 / 240 (+ 60% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                105,
+                150,
+                195,
+                240
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "description3": "The slow lingers for 0.25 seconds after leaving the area.",
       "targeting": "Ground",
       "affects": "Enemies",
@@ -161,7 +344,47 @@
       "icon": "Final Spark.png",
       "blurb": "After gathering energy, Lux fires a beam of light that deals damage to all targets in the area. If Final Spark kills a champion, part of its cooldown is refunded. In addition, triggers Lux's passive ability and refreshes the Illumination debuff duration.",
       "description": "Active: Lux fires a giant laser in a line that deals magic damage, briefly  revealing enemies as well as the surrounding area.",
-      "leveling": "Magic Damage:\n300 / 350 / 400 / 450 / 500 (+ 100% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                300,
+                350,
+                400,
+                450,
+                500
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                100,
+                100,
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Direction",
       "affects": "Enemies",
       "damagetype": "Magic",

@@ -77,7 +77,86 @@
       "icon": "Lay Waste.png",
       "blurb": "Karthus unleashes a delayed blast at a location, dealing damage to nearby enemies.",
       "description": "Active: After a 0.5-second delay, Karthus detonates the target area in the cursor's direction, dealing  magic damage to all enemies within, doubled when hitting only one target.",
-      "leveling": "Magic Damage:\n45 / 65 / 85 / 105 / 125 (+ 30% AP)\nEnhanced Magic Damage:\n90 / 130 / 170 / 210 / 250 (+ 60% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                45,
+                65,
+                85,
+                105,
+                125
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Enhanced Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                90,
+                130,
+                170,
+                210,
+                250
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "damagetype": "Magic",
@@ -98,9 +177,77 @@
       "icon": "Wall of Pain.png",
       "blurb": "Karthus creates a passable screen of leeching energy. Any enemy units that walk through the screen have their Movement Speed and Magic Resist reduced for a period.",
       "description": "Active: Karthus creates a transparent wall at the target location for 5 seconds and grants  sight around it.",
-      "leveling": "Wall Length:\n800 / 900 / 1000 / 1100 / 1200",
+      "leveling": [
+        {
+          "attribute": "Wall Length",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                800,
+                900,
+                1000,
+                1100,
+                1200
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "For the duration, all units who cross it are both  slowed for 4 seconds, reduced by 50% over the first second, decaying over its duration and  lose 15% magic resistance for the same duration.",
-      "leveling2": "Slow:\n40 / 50 / 60 / 70 / 80%\nReduced Slow:\n20 / 25 / 30 / 35 / 40%",
+      "leveling2": [
+        {
+          "attribute": "Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                40,
+                50,
+                60,
+                70,
+                80
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        },
+        {
+          "attribute": "Reduced Slow",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                25,
+                30,
+                35,
+                40
+              ],
+              "units": [
+                "%",
+                "%",
+                "%",
+                "%",
+                "%"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Ground",
       "affects": "Enemies",
       "spellshield": "False",
@@ -118,9 +265,72 @@
       "icon": "Defile.png",
       "blurb": "Karthus passively steals energy from his victims, gaining Mana on each kill. Alternatively, Karthus can surround himself in the souls of his prey, dealing damage to nearby enemies, but quickly draining his own Mana.",
       "description": "Toggle Off: Karthus restores  mana whenever he kills a unit.",
-      "leveling": "Mana Restored:\n20 / 27 / 34 / 41 / 48",
+      "leveling": [
+        {
+          "attribute": "Mana Restored",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                27,
+                34,
+                41,
+                48
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "description2": "Toggle On: Karthus deals magic damage per second to all nearby units.",
-      "leveling2": "Magic Damage Per Second:\n30 / 50 / 70 / 90 / 110 (+ 20% AP)",
+      "leveling2": [
+        {
+          "attribute": "Magic Damage Per Second",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                30,
+                50,
+                70,
+                90,
+                110
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Self",
       "affects": "Self, Enemies",
       "damagetype": "Magic",
@@ -141,7 +351,47 @@
       "icon": "Requiem.png",
       "blurb": "After channeling for 3 seconds, Karthus deals damage to all enemy champions.",
       "description": "Active: Karthus channels for 3 seconds and deals magic damage to all targetable enemy  champions upon its completion.",
-      "leveling": "Magic Damage:\n200 / 275 / 350 / 425 / 500 (+ 75% AP)",
+      "leveling": [
+        {
+          "attribute": "Magic Damage",
+          "modifiers": [
+            {
+              "modifier": "+",
+              "values": [
+                200,
+                275,
+                350,
+                425,
+                500
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "modifier": "+",
+              "values": [
+                75,
+                75,
+                75,
+                75,
+                75
+              ],
+              "units": [
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP",
+                "% AP"
+              ]
+            }
+          ]
+        }
+      ],
       "targeting": "Auto",
       "affects": "Enemies",
       "damagetype": "Magic",
