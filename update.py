@@ -436,7 +436,9 @@ def save_json(data, filename):
 
 
 def main():
-    statsfn = "data/champion_stats.json"
+    directory = os.path.dirname(os.path.realpath(__file__))
+
+    statsfn = directory + "/data/champion_stats.json"
     stats = pull_all_champion_stats()
     save_json(stats, statsfn)
 
@@ -456,7 +458,7 @@ def main():
     }
 
     for champion_name, details in stats.items():
-        jsonfn = f"data/_{details['apiname']}.json"
+        jsonfn = directory + "/data/_{details['apiname']}.json"
         #if os.path.exists(jsonfn):
         #    continue
         print(champion_name)
@@ -550,7 +552,6 @@ def rename_keys(j):
         "pathing_radius": "pathingRadius",
         "as_ratio": "attackSpeedRatio",
         "attack_delay_offset": "attackDelayOffset",
-        "aram_dmg_taken": "aramDamageTaken",
         "rangetype": "rangeType",
         "date": "date",
         "patch": "patch",
@@ -593,7 +594,8 @@ def rename_keys(j):
 
 
 def rename_all():
-    files = sorted(glob.glob(f"data/_**.json"))
+    directory = os.path.dirname(os.path.realpath(__file__))
+    files = sorted(glob.glob(directory + "/data/_**.json"))
     for fn in files:
         with open(fn) as f:
             j = json.load(f)
