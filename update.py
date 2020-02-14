@@ -10,6 +10,7 @@ from collections import Counter
 from bs4 import BeautifulSoup
 import requests
 import urllib.request
+import glob
 
 
 class UnparsableLeveling(Exception):
@@ -323,9 +324,7 @@ class Ability(dict):
 
     @staticmethod
     def _match_and_split(string: str, regex: str) -> Tuple[Optional[List], Optional[List]]:
-        if string == "Max. Secondary Damage: 200 / 240 / 280 / 320 / 360 (+ 120% bonus AD) (+ 20 / 22 / 24 / 26 / 28% of target's missing health Min. Secondary Damage: 20 / 24 / 28 / 32 / 36 (+ 12% bonus AD) (+ 20 / 22 / 24 / 26 / 28% of target's missing health":
-            string = "Max. Secondary Damage: 200 / 240 / 280 / 320 / 360 (+ 120% bonus AD) (+ 20 / 22 / 24 / 26 / 28% of target's missing health) Min. Secondary Damage: 20 / 24 / 28 / 32 / 36 (+ 12% bonus AD) (+ 20 / 22 / 24 / 26 / 28% of target's missing health)"  # Jinx: they missed some parentheses
-        elif string == "Pounce scales with  Aspect of the Cougar's rank":
+        if string == "Pounce scales with  Aspect of the Cougar's rank":
             raise UnparsableLeveling(string)
         elif string == "Cougar form's abilities rank up when  Aspect of the Cougar does":
             raise UnparsableLeveling(string)
@@ -457,7 +456,7 @@ def main():
     }
 
     for champion_name, details in stats.items():
-        jsonfn = f"data/{details['apiname']}.json"
+        jsonfn = f"data/_{details['apiname']}.json"
         #if os.path.exists(jsonfn):
         #    continue
         print(champion_name)
@@ -483,5 +482,126 @@ def main():
 
 
 
+def rename_keys(j):
+    map = {
+        "id": "id",
+        "champion": "champion",
+        "skill": "skill",
+        "name": "name",
+        "apiname": "apiName",
+        "fullname": "fullName",
+        "nickname": "nickname",
+        "title": "title",
+        "attack": "attack",
+        "defense": "defense",
+        "magic": "magic",
+        "difficulty": "difficulty",
+        "herotype": "heroType",
+        "alttype": "altType",
+        "resource": "resource",
+        "stats": "stats",
+        "hp_base": "hpBase",
+        "hp_lvl": "hpPerLevel",
+        "mp_base": "manaBase",
+        "mp_lvl": "manaPerLevel",
+        "arm_base": "armorBase",
+        "arm_lvl": "armorPerLevel",
+        "mr_base": "magicResistBase",
+        "mr_lvl": "magicResistPerLevel",
+        "hp5_base": "hpPer5Base",
+        "hp5_lvl": "hpPer5PerLevel",
+        "mp5_base": "manaPer5Base",
+        "mp5_lvl": "manaPer5PerLevel",
+        "dam_base": "damageBase",
+        "dam_lvl": "damagePerLevel",
+        "as_base": "attackSpeedBase",
+        "as_lvl": "attackSpeedPerLevel",
+        "crit_base": "critBase",
+        "crit_mod": "critModifier",
+        "missile_speed": "missileSpeed",
+        "attack_cast_time": "attackCastTime",
+        "attack_total_time": "attackTotalTime",
+        "windup_modifier": "windupModifier",
+        "urf_dmg_dealt": "urfDmgDealt",
+        "urf_dmg_taken": "urfDmgTaken",
+        "urf_healing": "urfHealing",
+        "urf_shielding": "urfShielding",
+        "aram_dmg_dealt": "aramDmgDealt",
+        "aram_dmg_taken": "aramDmgTaken",
+        "aram_healing": "aramHealing",
+        "aram_shielding": "aramShielding",
+        "static": "static",
+        "icon": "icon",
+        "gameplay_radius": "gameplayRadius",
+        "description": "description",
+        "description2": "description2",
+        "description3": "description3",
+        "targeting": "targeting",
+        "affects": "affects",
+        "damagetype": "damageType",
+        "spelleffects": "spellEffects",
+        "spellshield": "spellshield",
+        "notes": "notes",
+        "range": "range",
+        "range_lvl": "rangePerLevel",
+        "ms": "movespeed",
+        "acquisition_radius": "acquisitionRadius",
+        "selection_radius": "selectionRadius",
+        "pathing_radius": "pathingRadius",
+        "as_ratio": "attackSpeedRatio",
+        "attack_delay_offset": "attackDelayOffset",
+        "aram_dmg_taken": "aramDamageTaken",
+        "rangetype": "rangeType",
+        "date": "date",
+        "patch": "patch",
+        "changes": "changes",
+        "role": "role",
+        "damage": "damage",
+        "toughness": "toughness",
+        "control": "control",
+        "mobility": "mobility",
+        "utility": "utility",
+        "style": "style",
+        "adaptivetype": "adaptiveType",
+        "be": "blueEssense",
+        "rp": "rp",
+        "skill_i": "skillP",
+        "skill_q": "skillQ",
+        "skill_w": "skillW",
+        "skill_e": "skillE",
+        "skill_r": "skillR",
+        "secondary attributes": "secondaryAttributes",
+    }
+
+    new = {}
+    for key, value in j.items():
+        if key.startswith("skill_"):
+            value = list(value.values())
+        elif key == "skill" and value == "I":
+            value = "P"
+
+        if isinstance(value, dict):
+            value = rename_keys(value)
+        try:
+            new_key = map[key]
+            new[new_key] = value
+        except:
+            print(key, value)
+            new_key = map[key]
+            new[new_key] = value
+    return new
+
+
+def rename_all():
+    files = sorted(glob.glob(f"data/_**.json"))
+    for fn in files:
+        with open(fn) as f:
+            j = json.load(f)
+        renamed = rename_keys(j)
+        new_fn = fn.replace('data/_', 'data/')
+        save_json(renamed, new_fn)
+
+
 if __name__ == "__main__":
     main()
+    rename_all()
