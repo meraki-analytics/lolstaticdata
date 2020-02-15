@@ -583,6 +583,11 @@ def rename_keys(j):
 
         if isinstance(value, dict):
             value = rename_keys(value)
+        elif isinstance(value, list):
+            for i, item in enumerate(value):
+                if isinstance(item, dict):
+                    item = rename_keys(item)
+                    value[i] = item
         try:
             new_key = map[key]
             new[new_key] = value
