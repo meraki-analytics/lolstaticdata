@@ -1,4 +1,4 @@
-from typing import Tuple, List, Optional
+from typing import Tuple, List, Optional, Dict
 import os
 import json
 import time
@@ -6,7 +6,7 @@ import itertools
 import re
 import gzip
 import io
-from collections import Counter
+from collections import Counter, defaultdict
 from bs4 import BeautifulSoup
 import requests
 import urllib.request
@@ -35,12 +35,29 @@ rattribute = r"((?:[A-Za-z'\-\.0-9]+[\s\-]*)+:)"
 rflat = r": (.+)"
 rscaling = r"(\(\+.+?\))"
 rnumber = r"(\d+\.?\d*)"
+rsingle_number = r"^(\d+.?\d*)$"
+
+
+def regex_slash_separated(string: str) -> List[str]:
+    for i in range(20, 1, -1):
+        regex = ' / '.join([rnumber for _ in range(i)])
+        result = re.findall(regex, string)
+        if result:
+            return result
+    raise ValueError(f"Could not parse slash-separated string: {string}")
+
+
+def regex_simple_flat(string: str):
+    if '/' in string:
+        return regex_slash_separated(string)
+    elif re.findall(rsingle_number, string):
+        return re.findall(rsingle_number, string)[0]
+    raise ValueError(f"Could not parse a simple flat value: {string}")
 
 
 class AttributeModifier(dict):
-    def __init__(self, sign, values, units):
+    def __init__(self, values, units):
         super().__init__({
-            "sign": sign,
             "values": values,
             "units": units,
         })
@@ -116,7 +133,7 @@ class Attribute(dict):
                 unit = value[len(v):]
                 v = eval(v)
             results.append((v, unit))
-        results = AttributeModifier(sign=modifier, values=[v for v, unit in results], units=[unit for v, unit in results])
+        results = AttributeModifier(values=[v for v, unit in results], units=[unit for v, unit in results])
         return results
 
     @staticmethod
@@ -137,7 +154,7 @@ class Attribute(dict):
             delta = (maxx - minn) / 17.0
             values = [minn + i*delta for i in range(18)]
             units = [unit for _ in range(18)]
-            results = AttributeModifier(sign="+", values=values, units=units)
+            results = AttributeModifier(values=values, units=units)
             return results
         else:
             if flat.startswith('(') and flat.endswith(')'):
@@ -165,7 +182,7 @@ class Attribute(dict):
                 assert len(unique_units) == 1
                 unit = next(iter(unique_units))
                 units = [unit for _ in range(len(units))]
-            results = AttributeModifier(sign="+", values=values, units=units)
+            results = AttributeModifier(values=values, units=units)
             return results
 
 
@@ -240,7 +257,7 @@ class Ability(dict):
                 if verbose:
                     print("PARSED:", value)
                 data[parameter] = value
-            elif parameter == "cooldown":
+            elif parameter in ("cooldown", "static"):
                 parsed = Ability._preparse_format(value)
                 if "(based on level)" in parsed and " / " in parsed:
                     parsed = parsed.replace("(based on level)", "").strip()
@@ -542,7 +559,7 @@ def rename_keys(j):
         "aram_dmg_taken": "aramDmgTaken",
         "aram_healing": "aramHealing",
         "aram_shielding": "aramShielding",
-        "static": "static",
+        "static": "staticCooldown",
         "icon": "icon",
         "icon2": "icon2",
         "icon3": "icon3",
@@ -575,7 +592,6 @@ def rename_keys(j):
         "angle": "angle",
         "cast time": "castTime",
         "attribute": "attribute",
-        "sign": "sign",
         "values": "values",
         "units": "units",
         "modifiers": "modifiers",
@@ -718,27 +734,78 @@ def reformat_json_after_renaming(new):
     new["roles"] = [role.upper() for role in new["roles"]]
     new["attackType"] = new["attackType"].upper()
     new["adaptiveType"] = new["adaptiveType"].upper()
+    def to_enum(string):
+        return string.strip().upper().replace(' ', '_').replace('-', '_')
     for _, skills in new["skills"].items():
         for skill in skills:
             #skill["attribute"] = skill["attribute"].upper()  # TODO: This is for leveling*
             if "targeting" in skill:
-                skill["targeting"] = skill["targeting"].upper()
+                skill["targeting"] = [to_enum(t) for t in skill["targeting"].split('/')]
             if "affects" in skill:
-                skill["affects"] = [affect.strip().upper() for affect in skill["affects"].split(',')]
+                skill["affects"] = [to_enum(affect) for affect in skill["affects"].split(',')]
             if "spellshield" in skill:
-                skill["spellshield"] = skill["spellshield"].lower()  # true/false
+                skill["spellshield"] = to_enum(skill["spellshield"])  # true/false/special
             if "costType" in skill:
-                skill["costType"] = skill["costType"].upper()
+                skill["costType"] = to_enum(skill["costType"])
             if "damageType" in skill:
-                skill["damageType"] = skill["damageType"].upper()
+                skill["damageType"] = to_enum(skill["damageType"])
             if "spellEffects" in skill:
-                skill["spellEffects"] = skill["spellEffects"].upper()
+                skill["spellEffects"] = to_enum(skill["spellEffects"])
             if "projectile" in skill:
-                skill["projectile"] = skill["projectile"].lower()  # true/false
+                skill["projectile"] = to_enum(skill["projectile"])  # true/false/special/yasuo
             if "onHitEffects" in skill:
-                skill["onHitEffects"] = skill["onHitEffects"].upper()
-            if "targetRange" in skill:
-                skill["targetRange"] = skill["targetRange"].upper()
+                skill["onHitEffects"] = to_enum(skill["onHitEffects"])
+            if "occurrence" in skill:
+                skill["occurrence"] = to_enum(skill["occurrence"])
+
+            if "damageType" in skill:
+                if '/' in skill["damageType"]:
+                    skill["damageType"] = "MIXED_DAMAGE"
+                elif skill["damageType"] == "PHYSICAL":
+                    skill["damageType"] = "PHYSICAL_DAMAGE"
+                elif skill["damageType"] == "MAGIC":
+                    skill["damageType"] = "MAGIC_DAMAGE"
+                elif skill["damageType"] == "TRUE":
+                    skill["damageType"] = "TRUE_DAMAGE"
+                elif skill["damageType"] == "PURE":
+                    skill["damageType"] = "PURE_DAMAGE"
+                else:
+                    skill["damageType"] = "OTHER"
+
+            if "costType" in skill:
+                if skill["costType"] in ("MANA", "NO_COST", "HEALTH", "MAXIMUM_HEALTH", "ENERGY", "CURRENT_HEALTH", "HEALTH_PER_SECOND", "MANA_PER_SECOND", "CHARGE"):
+                    pass
+                elif skill["costType"] in (
+                        'MANA_+_4_FOCUS',
+                        'MANA_+_4_FROST_STACKS',
+                        'MANA_+_6_CHARGES',
+                        'MANA_+_1_SAND_SOLDIER',
+                        'MANA_+_40_/_45_/_50_/_55_/_60_PER_SECOND',
+                        'MAXIMUM_HEALTH_+_50_/_55_/_60_/_65_/_70_MANA',
+                        'MANA_+_1_TURRET_KIT',
+                        'MANA_+_1_MISSILE',
+                        'MANA_+_1_CHARGE',
+                        'MANA_+_ALL_CHARGES',
+                ):
+                    skill["costType"] = "MANA"
+                elif skill["costType"] == 'OF_CURRENT_HEALTH':
+                    skill["costType"] = "CURRENT_HEALTH"
+                elif skill["costType"] == '%_OF_CURRENT_HEALTH':
+                    skill["costType"] = "CURRENT_HEALTH"
+                elif skill["costType"] == 'CURRENT_GRIT':
+                    skill["costType"] = "GRIT"
+                elif skill["costType"] == "CURRENT_FURY":
+                    skill["costType"] = "FURY"
+                elif skill["costType"] == 'FURY_EVERY_0.5_SECONDS':
+                    skill["costType"] = "FURY"
+                else:
+                    skill["costType"] = "OTHER"
+
+    if new["adaptiveType"] in ("PHYSICAL", "MIXED,PHYSICAL"):
+        new["adaptiveType"] = "PHYSICAL_DAMAGE"
+    if new["adaptiveType"] == "MAGIC":
+        new["adaptiveType"] = "MAGIC_DAMAGE"
+
 
     return new
 
@@ -755,21 +822,71 @@ def rename_all():
         save_json(renamed, new_fn)
 
 
+def capture_enums():
+    directory = os.path.dirname(os.path.realpath(__file__))
+    files = sorted(glob.glob(directory + "/data/**.json"))
+    files = [f for f in files if '_' not in f]
+
+    enums = defaultdict(list)
+    for fn in files:
+        with open(fn) as f:
+            j = json.load(f)
+            _enums = _capture_enums(j)
+            for k, v in _enums.items():
+                enums[k].extend(v)
+    enums = {k: set(v) for k, v in enums.items()}
+    return enums
+
+
+def _capture_enums(j) -> Dict:
+    enums = defaultdict(list)
+    for key, value in j.items():
+        if isinstance(value, dict):
+            _enums = _capture_enums(value)
+            for k, v in _enums.items():
+                enums[k].extend(v)
+        elif isinstance(value, list):
+            for item in value:
+                if isinstance(item, dict):
+                    _enums = _capture_enums(item)
+                    for k, v in _enums.items():
+                        enums[k].extend(v)
+        else:
+            enums[key].append(value)
+    return enums
+
+
+
 if __name__ == "__main__":
     main()
     rename_all()
+    #enums = capture_enums()
+    #print(enums['costType'])
+    #for k, v in enums.items():
+    #    print(k, v)
 
 
 
 """
 TODO:
-* Change all enums to capital snake-case; also include resource for all valid values for each enum
-* Standardize `adaptiveType` with skill `attribute` and other things as an enum.
+* Collect all enums and their values into a file that we can distribute.
+
+* width {'805 / 180', '300', '130 / 260', '350', '120', '200', '100', '60', '180', '140 / 200', '320 / 2400', '320', '120 / 180', '210', '280 / 120', '120 / 200', '260', '80', '150', '340', '90', '140', '160'}
+
+* angle {'80°', '90°', '40°', '27°', '40° / 60°', '160°', '20°', '57.5°', '45°', '70°', '35° / 52.5°', '50°', '22°', '75°', '35°', '60° / 120°', '180°', '49.52°', '60°'}
+
+* castTime {'None', '0.55', 'false', '0.75', 'none', '0.6', 'X / X (based on bonus attack speed)', '0.2', '1', '0.5', '0.625', '1.3', '0.4 − 0.133 (based on bonus attack speed)', '0.25'}
+
+* speed {'850', '1550', 'X', '900', '1400', '1200 / 640', '1600 / 1800', '1650', '1750', '1250 (+ 80% movement speed)', '1900 / 2100', '1850', '350', '1600', '1900', '600 (+ 75 per 10% bonus attack speed)', '1800', '2300', '1150', '1000', '1450', '2000 / 2840', '1700', '200 / 300 / 250 / 375', '600 / 650 / 700 / 750 / 800', '1350', '3000', '3200', '20000', '2200', '850 − 600 (based on duration)', '1450 / 1890', '2100', '750 (+ 60% movement speed)', '1300 / 1500', '1500', '1500 / 2500', '1300', '666.67 − 1166.67 (based on seconds charged)', '1835 (+100% bonus movement speed)', '2400', '1500 (+ 100% movement speed)', '1575', '2000', '900 / 1200', '1200 / 100', '1250 − 1400 (based on channel time)', '950', '650', '2500', '800', '400 - 460', '500', '1200', '1650 / 200 / 2300'}
+
+* leveling4 {'Bonus Attack Damage:4 / 8 / 12 / 16 / 20 / 24\nBonus Attack Speed:6 / 12 / 18 / 24 / 30 / 36%\nBonus-Armor Penetration:3 / 6 / 9 / 12 / 15 / 18%'}
+* recharge {'14 / 12.5 / 11 / 9.5 / 8', '30 / 25.5 / 21 / 16.5 / 12', '12 / 11.5 / 11 / 10.5 / 10', '30 / 27.5 / 25 / 22.5 / 20', '8 / 7.5 / 7 / 6.5 / 6', '20', '15', '18 / 16 / 14 / 12 / 10', '90 / 80 / 70 / 60 / 50', '28 / 25 / 22 / 19 / 16', '6', '19 / 18 / 17 / 16 / 15', '20 / 18 / 16 / 14 / 12', '40 / 36 / 32 / 28 / 24'}
+* leveling {"Cougar form's abilities rank up when  Aspect of the Cougar does", "Pounce scales with  Aspect of the Cougar's rank", 'Bonus Movespeed:10 −  30 (based on level)Total Movespeed:335 − 355 (based on level)Bonus Range:0 − 100 (based on level)', 'Physical Damage:5 / 45 / 85 / 125 / 165 (+ 140% AD)'}
+
 
 ? Is this all the data we want to include?
 ? Are we going to version this?
 ? How are we going to manage overrides? Don't?  Multiple sources?
-? `sign` can be * or /, at least theoretically.  * Drop `sign` and apply the sign to the value.
 
 """
 
