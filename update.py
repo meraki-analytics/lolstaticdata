@@ -206,7 +206,7 @@ class Ability(dict):
         table = soup.find_all(['th', 'td'])
 
         # Set some fields to ignore
-        exclude_parameters = { "callforhelp", "flavorsound", "video", "video2", "yvideo", "yvideo2", "flavor sound", "video 2", "YouTube video", 'YouTube video 2', "Not applicable to be stolen.", "Stealable", "All maps",
+        exclude_parameters = { "callforhelp", "flavorsound", "video", "video2", "yvideo", "yvideo2", "flavor sound", "video 2", "YouTube video", 'YouTube video 2', "Not applicable to be stolen.", "Stealable", "All maps", "spelleffects",
             # Bard
             "15", "30", "45", "55", "60", "75", "90", "100", "145", "190", "235", "280", "325", "Chimes", "3:20", "Meep limit increased to 2.", "9:10", "Slow increased to 35%.", "15:50", "Recharge time reduced to 6 seconds.", "21:40", "Recharge time reduced to 5 seconds.", "28:20", "Recharge time reduced to 4 seconds.", "34:10", "Slow increased to 75%.", "40:50", "Meep limit increased to 9.", "Displays additional information with effect table to the right.",
             # Pyke
@@ -264,13 +264,16 @@ class Ability(dict):
                 elif "(based on  Phenomenal Evil stacks)" in parsed:
                     data[parameter] = parsed
                     continue
-                data[parameter] = Attribute.from_string(parameter, parsed, verbose=verbose)
+                data[parameter] = Attribute.from_string("cooldown", parsed, verbose=verbose)
+                data[parameter]["affectedByCDR"] = (parameter == "static")
+                del data[parameter]["attribute"]
             elif parameter == "cost":
                 parsed = Ability._preparse_format(value)
                 if "10 Moonlight + 60" in parsed:
                     data[parameter] = parsed
                     continue
                 data[parameter] = Attribute.from_string(parameter, parsed, verbose=verbose)
+                del data[parameter]["attribute"]
             else:
                 data[parameter] = value.text.strip()
         if verbose:
@@ -529,34 +532,34 @@ def rename_keys(j):
         "alttype": "altType",
         "resource": "resource",
         "stats": "stats",
-        "hp_base": "hpBase",
-        "hp_lvl": "hpPerLevel",
+        "hp_base": "healthBase",
+        "hp_lvl": "healthPerLevel",
         "mp_base": "manaBase",
         "mp_lvl": "manaPerLevel",
         "arm_base": "armorBase",
         "arm_lvl": "armorPerLevel",
         "mr_base": "magicResistBase",
         "mr_lvl": "magicResistPerLevel",
-        "hp5_base": "hpPer5Base",
-        "hp5_lvl": "hpPer5PerLevel",
+        "hp5_base": "healthPer5Base",
+        "hp5_lvl": "healthPer5PerLevel",
         "mp5_base": "manaPer5Base",
         "mp5_lvl": "manaPer5PerLevel",
-        "dam_base": "damageBase",
-        "dam_lvl": "damagePerLevel",
+        "dam_base": "attackDamageBase",
+        "dam_lvl": "attackDamagePerLevel",
         "as_base": "attackSpeedBase",
         "as_lvl": "attackSpeedPerLevel",
-        "crit_base": "critBase",
-        "crit_mod": "critModifier",
+        "crit_base": "criticalStrikeBase",
+        "crit_mod": "criticalStrikeModifier",
         "missile_speed": "missileSpeed",
         "attack_cast_time": "attackCastTime",
         "attack_total_time": "attackTotalTime",
         "windup_modifier": "windupModifier",
-        "urf_dmg_dealt": "urfDmgDealt",
-        "urf_dmg_taken": "urfDmgTaken",
+        "urf_dmg_dealt": "urfDamageDealt",
+        "urf_dmg_taken": "urfDamageTaken",
         "urf_healing": "urfHealing",
         "urf_shielding": "urfShielding",
-        "aram_dmg_dealt": "aramDmgDealt",
-        "aram_dmg_taken": "aramDmgTaken",
+        "aram_dmg_dealt": "aramDamageDealt",
+        "aram_dmg_taken": "aramDamageTaken",
         "aram_healing": "aramHealing",
         "aram_shielding": "aramShielding",
         "static": "staticCooldown",
@@ -582,12 +585,12 @@ def rename_keys(j):
         "speed": "speed",
         "cost": "cost",
         "Cost": "cost",
-        "costtype": "costType",
+        "costtype": "resource",
         "affects": "affects",
         "effect radius": "effectRadius",
         "damagetype": "damageType",
-        "spelleffects": "spellEffects",
-        "spellshield": "spellshield",
+        #"spelleffects": "spellEffects",
+        "spellshield": "spellshieldable",
         "width": "width",
         "angle": "angle",
         "cast time": "castTime",
@@ -597,8 +600,8 @@ def rename_keys(j):
         "modifiers": "modifiers",
         "cooldown": "cooldown",
         "notes": "notes",
-        "range": "range",
-        "range_lvl": "rangePerLevel",
+        "range": "attackRange",
+        "range_lvl": "attackRangePerLevel",
         "ms": "movespeed",
         "acquisition_radius": "acquisitionRadius",
         "selection_radius": "selectionRadius",
@@ -688,14 +691,16 @@ def reformat_json_after_renaming(new):
         new["attributeRatings"]["difficulty"] = new["difficulty"]
         del new["difficulty"]
 
-    if "class" in new:
+    if "class" in new and "roles" in new:
         new["roles"].append(new["class"])
         del new["class"]
-    if "altType" in new:
+    if "altType" in new and "roles" in new:
         new["roles"].append(new["altType"])
         del new["altType"]
+    if "roles" in new:
+        new["roles"] = set(new["roles"])
 
-    new["skills"] = {
+    new["abilities"] = {
         "passive": [],
         "q": [],
         "w": [],
@@ -705,29 +710,29 @@ def reformat_json_after_renaming(new):
     for skill in new["skillP"]:
         del skill["champion"]
         del skill["skill"]
-        new["skills"]["passive"].append(skill)
+        new["abilities"]["passive"].append(skill)
     for skill in new["skillQ"]:
         del skill["champion"]
         del skill["skill"]
-        new["skills"]["q"].append(skill)
+        new["abilities"]["q"].append(skill)
     for skill in new["skillW"]:
         del skill["champion"]
         del skill["skill"]
-        new["skills"]["w"].append(skill)
+        new["abilities"]["w"].append(skill)
     for skill in new["skillE"]:
         del skill["champion"]
         del skill["skill"]
-        new["skills"]["e"].append(skill)
+        new["abilities"]["e"].append(skill)
     for skill in new["skillR"]:
         del skill["champion"]
         del skill["skill"]
-        new["skills"]["r"].append(skill)
+        new["abilities"]["r"].append(skill)
     del new["skillP"]
     del new["skillQ"]
     del new["skillW"]
     del new["skillE"]
     del new["skillR"]
-    # skills now has format: "skills": {"passive": [...], "q": [...], ...}
+    # abilities now has format: "abilities": {"passive": [...], "q": [...], ...}
 
     # Capitalize enums (and snake-case)
     new["resource"] = new["resource"].upper()
@@ -736,7 +741,7 @@ def reformat_json_after_renaming(new):
     new["adaptiveType"] = new["adaptiveType"].upper()
     def to_enum(string):
         return string.strip().upper().replace(' ', '_').replace('-', '_')
-    for _, skills in new["skills"].items():
+    for _, skills in new["abilities"].items():
         for skill in skills:
             #skill["attribute"] = skill["attribute"].upper()  # TODO: This is for leveling*
             if "targeting" in skill:
@@ -745,12 +750,12 @@ def reformat_json_after_renaming(new):
                 skill["affects"] = [to_enum(affect) for affect in skill["affects"].split(',')]
             if "spellshield" in skill:
                 skill["spellshield"] = to_enum(skill["spellshield"])  # true/false/special
-            if "costType" in skill:
-                skill["costType"] = to_enum(skill["costType"])
+            if "resource" in skill:
+                skill["resource"] = to_enum(skill["resource"])
             if "damageType" in skill:
                 skill["damageType"] = to_enum(skill["damageType"])
-            if "spellEffects" in skill:
-                skill["spellEffects"] = to_enum(skill["spellEffects"])
+            #if "spellEffects" in skill:
+            #    skill["spellEffects"] = to_enum(skill["spellEffects"])
             if "projectile" in skill:
                 skill["projectile"] = to_enum(skill["projectile"])  # true/false/special/yasuo
             if "onHitEffects" in skill:
@@ -772,10 +777,10 @@ def reformat_json_after_renaming(new):
                 else:
                     skill["damageType"] = "OTHER"
 
-            if "costType" in skill:
-                if skill["costType"] in ("MANA", "NO_COST", "HEALTH", "MAXIMUM_HEALTH", "ENERGY", "CURRENT_HEALTH", "HEALTH_PER_SECOND", "MANA_PER_SECOND", "CHARGE"):
+            if "resource" in skill:
+                if skill["resource"] in ("MANA", "NO_COST", "HEALTH", "MAXIMUM_HEALTH", "ENERGY", "CURRENT_HEALTH", "HEALTH_PER_SECOND", "MANA_PER_SECOND", "CHARGE"):
                     pass
-                elif skill["costType"] in (
+                elif skill["resource"] in (
                         'MANA_+_4_FOCUS',
                         'MANA_+_4_FROST_STACKS',
                         'MANA_+_6_CHARGES',
@@ -787,25 +792,60 @@ def reformat_json_after_renaming(new):
                         'MANA_+_1_CHARGE',
                         'MANA_+_ALL_CHARGES',
                 ):
-                    skill["costType"] = "MANA"
-                elif skill["costType"] == 'OF_CURRENT_HEALTH':
-                    skill["costType"] = "CURRENT_HEALTH"
-                elif skill["costType"] == '%_OF_CURRENT_HEALTH':
-                    skill["costType"] = "CURRENT_HEALTH"
-                elif skill["costType"] == 'CURRENT_GRIT':
-                    skill["costType"] = "GRIT"
-                elif skill["costType"] == "CURRENT_FURY":
-                    skill["costType"] = "FURY"
-                elif skill["costType"] == 'FURY_EVERY_0.5_SECONDS':
-                    skill["costType"] = "FURY"
+                    skill["resource"] = "MANA"
+                elif skill["resource"] == 'OF_CURRENT_HEALTH':
+                    skill["resource"] = "CURRENT_HEALTH"
+                elif skill["resource"] == '%_OF_CURRENT_HEALTH':
+                    skill["resource"] = "CURRENT_HEALTH"
+                elif skill["resource"] == 'CURRENT_GRIT':
+                    skill["resource"] = "GRIT"
+                elif skill["resource"] == "CURRENT_FURY":
+                    skill["resource"] = "FURY"
+                elif skill["resource"] == 'FURY_EVERY_0.5_SECONDS':
+                    skill["resource"] = "FURY"
                 else:
-                    skill["costType"] = "OTHER"
+                    skill["resource"] = "OTHER"
+
+            # Change the skill descriptions + levelings format to:
+            # "effects": [
+            #     {"description": ..., "leveling": ..., "icon": ...},
+            #     {"description": ..., "leveling": ..., "icon": ...},
+            #     ...
+            # ]
+            skill["effects"] = []
+            for ending in ['', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']:
+                d = f"description{ending}"
+                i = f"icon{ending}"
+                l = f"leveling{ending}"
+                item = {}
+                if d in skill:
+                    item["description"] = skill[d]
+                    del item["description"]
+                if i in skill:
+                    item["icon"] = skill[i]
+                    del item["icon"]
+                if l in skill:
+                    item["leveling"] = l
+                    del item["leveling"]
+                if item:
+                    skill["effects"].append(item)
 
     if new["adaptiveType"] in ("PHYSICAL", "MIXED,PHYSICAL"):
         new["adaptiveType"] = "PHYSICAL_DAMAGE"
     if new["adaptiveType"] == "MAGIC":
         new["adaptiveType"] = "MAGIC_DAMAGE"
 
+    # Remove the leading V
+    if "releasePatch" in new:
+        new["releasePatch"] = new["releasePatch"][1:]
+    if "patchLastChanged" in new:
+        new["patchLastChanged"] = new["patchLastChanged"][1:]
+
+    new["price"] = {}
+    if "blueEssence" in new:
+        new["price"]["blueEssence"] = new["blueEssence"]
+    if "rp" in new:
+        new["price"]["rp"] = new["rp"]
 
     return new
 
@@ -861,7 +901,7 @@ if __name__ == "__main__":
     main()
     rename_all()
     #enums = capture_enums()
-    #print(enums['costType'])
+    #print(enums['resource'])
     #for k, v in enums.items():
     #    print(k, v)
 
@@ -870,6 +910,7 @@ if __name__ == "__main__":
 """
 TODO:
 * Collect all enums and their values into a file that we can distribute.
+
 
 * width {'805 / 180', '300', '130 / 260', '350', '120', '200', '100', '60', '180', '140 / 200', '320 / 2400', '320', '120 / 180', '210', '280 / 120', '120 / 200', '260', '80', '150', '340', '90', '140', '160'}
 
