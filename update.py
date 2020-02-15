@@ -813,20 +813,20 @@ def reformat_json_after_renaming(new):
             #     ...
             # ]
             skill["effects"] = []
-            for ending in ['', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']:
+            for ending in ['', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']:
                 d = f"description{ending}"
                 i = f"icon{ending}"
                 l = f"leveling{ending}"
                 item = {}
                 if d in skill:
                     item["description"] = skill[d]
-                    del item["description"]
+                    del skill[d]
                 if i in skill:
                     item["icon"] = skill[i]
-                    del item["icon"]
+                    del skill[i]
                 if l in skill:
                     item["leveling"] = l
-                    del item["leveling"]
+                    del skill[l]
                 if item:
                     skill["effects"].append(item)
 
