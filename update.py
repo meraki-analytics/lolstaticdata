@@ -629,6 +629,7 @@ def rename_keys(j):
         "skill_e": "skillE",
         "skill_r": "skillR",
         "secondary attributes": "secondaryAttributes",
+        "affectedByCDR": "affectedByCDR",
     }
 
     new = {}
