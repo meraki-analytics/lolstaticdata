@@ -826,7 +826,7 @@ def reformat_json_after_renaming(new):
                     item["icon"] = skill[i]
                     del skill[i]
                 if l in skill:
-                    item["leveling"] = l
+                    item["leveling"] = skills[l]
                     del skill[l]
                 if item:
                     skill["effects"].append(item)
