@@ -458,7 +458,7 @@ def main():
     }
 
     for champion_name, details in stats.items():
-        jsonfn = directory + "/data/_{details['apiname']}.json"
+        jsonfn = directory + f"/data/_{details['apiname']}.json"
         #if os.path.exists(jsonfn):
         #    continue
         print(champion_name)
