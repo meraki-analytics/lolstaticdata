@@ -490,7 +490,7 @@ def rename_keys(j):
         "champion": "champion",
         "skill": "skill",
         "name": "name",
-        "apiname": "apiName",
+        "apiname": "name",
         "fullname": "fullName",
         "nickname": "nickname",
         "disp_name": "dispName",
@@ -508,7 +508,7 @@ def rename_keys(j):
         "defense": "defense",
         "magic": "magic",
         "difficulty": "difficulty",
-        "herotype": "heroType",
+        "herotype": "class",
         "alttype": "altType",
         "resource": "resource",
         "stats": "stats",
@@ -589,20 +589,20 @@ def rename_keys(j):
         "pathing_radius": "pathingRadius",
         "as_ratio": "attackSpeedRatio",
         "attack_delay_offset": "attackDelayOffset",
-        "rangetype": "rangeType",
+        "rangetype": "attackType",
         "target range": "targetRange",
-        "date": "date",
-        "patch": "patch",
-        "changes": "changes",
-        "role": "role",
+        "date": "releaseDate",
+        "patch": "releasePatch",
+        "changes": "patchLastChanged",
+        "role": "roles",
         "damage": "damage",
         "toughness": "toughness",
         "control": "control",
         "mobility": "mobility",
         "utility": "utility",
-        "style": "style",
+        "style": "abilityReliance",
         "adaptivetype": "adaptiveType",
-        "be": "blueEssense",
+        "be": "blueEssence",
         "rp": "rp",
         "skill_i": "skillP",
         "skill_q": "skillQ",
@@ -635,6 +635,111 @@ def rename_keys(j):
             new[new_key] = value
     return new
 
+def reformat_json_after_renaming(new):
+    new["name"] = new["skillQ"][0]["champion"]
+
+    new["attributeRatings"] = {}
+    if "damage" in new:
+        new["attributeRatings"]["damage"] = new["damage"]
+        del new["damage"]
+    if "toughness" in new:
+        new["attributeRatings"]["toughness"] = new["toughness"]
+        del new["toughness"]
+    if "control" in new:
+        new["attributeRatings"]["control"] = new["control"]
+        del new["control"]
+    if "mobility" in new:
+        new["attributeRatings"]["mobility"] = new["mobility"]
+        del new["mobility"]
+    if "utility" in new:
+        new["attributeRatings"]["utility"] = new["utility"]
+        del new["utility"]
+    if "abilityReliance" in new:
+        new["attributeRatings"]["abilityReliance"] = new["abilityReliance"]
+        del new["abilityReliance"]
+    if "attack" in new:
+        new["attributeRatings"]["attack"] = new["attack"]
+        del new["attack"]
+    if "defense" in new:
+        new["attributeRatings"]["defense"] = new["defense"]
+        del new["defense"]
+    if "magic" in new:
+        new["attributeRatings"]["magic"] = new["magic"]
+        del new["magic"]
+    if "difficulty" in new:
+        new["attributeRatings"]["difficulty"] = new["difficulty"]
+        del new["difficulty"]
+
+    if "class" in new:
+        new["roles"].append(new["class"])
+        del new["class"]
+    if "altType" in new:
+        new["roles"].append(new["altType"])
+        del new["altType"]
+
+    new["skills"] = {
+        "passive": [],
+        "q": [],
+        "w": [],
+        "e": [],
+        "r": []
+    }
+    for skill in new["skillP"]:
+        del skill["champion"]
+        del skill["skill"]
+        new["skills"]["passive"].append(skill)
+    for skill in new["skillQ"]:
+        del skill["champion"]
+        del skill["skill"]
+        new["skills"]["q"].append(skill)
+    for skill in new["skillW"]:
+        del skill["champion"]
+        del skill["skill"]
+        new["skills"]["w"].append(skill)
+    for skill in new["skillE"]:
+        del skill["champion"]
+        del skill["skill"]
+        new["skills"]["e"].append(skill)
+    for skill in new["skillR"]:
+        del skill["champion"]
+        del skill["skill"]
+        new["skills"]["r"].append(skill)
+    del new["skillP"]
+    del new["skillQ"]
+    del new["skillW"]
+    del new["skillE"]
+    del new["skillR"]
+    # skills now has format: "skills": {"passive": [...], "q": [...], ...}
+
+    # Capitalize enums (and snake-case)
+    new["resource"] = new["resource"].upper()
+    new["roles"] = [role.upper() for role in new["roles"]]
+    new["attackType"] = new["attackType"].upper()
+    new["adaptiveType"] = new["adaptiveType"].upper()
+    for _, skills in new["skills"].items():
+        for skill in skills:
+            #skill["attribute"] = skill["attribute"].upper()  # TODO: This is for leveling*
+            if "targeting" in skill:
+                skill["targeting"] = skill["targeting"].upper()
+            if "affects" in skill:
+                skill["affects"] = [affect.strip().upper() for affect in skill["affects"].split(',')]
+            if "spellshield" in skill:
+                skill["spellshield"] = skill["spellshield"].lower()  # true/false
+            if "costType" in skill:
+                skill["costType"] = skill["costType"].upper()
+            if "damageType" in skill:
+                skill["damageType"] = skill["damageType"].upper()
+            if "spellEffects" in skill:
+                skill["spellEffects"] = skill["spellEffects"].upper()
+            if "projectile" in skill:
+                skill["projectile"] = skill["projectile"].lower()  # true/false
+            if "onHitEffects" in skill:
+                skill["onHitEffects"] = skill["onHitEffects"].upper()
+            if "targetRange" in skill:
+                skill["targetRange"] = skill["targetRange"].upper()
+
+    return new
+
 
 def rename_all():
     directory = os.path.dirname(os.path.realpath(__file__))
@@ -643,6 +748,7 @@ def rename_all():
         with open(fn) as f:
             j = json.load(f)
         renamed = rename_keys(j)
+        renamed = reformat_json_after_renaming(renamed)
         new_fn = fn.replace('data/_', 'data/')
         save_json(renamed, new_fn)
 
@@ -650,3 +756,18 @@ def rename_all():
 if __name__ == "__main__":
     main()
     rename_all()
+
+
+
+"""
+TODO:
+* Change all enums to capital snake-case; also include resource for all valid values for each enum
+* Standardize `adaptiveType` with skill `attribute` and other things as an enum.
+
+? Is this all the data we want to include?
+? Are we going to version this?
+? How are we going to manage overrides? Don't?  Multiple sources?
+? `sign` can be * or /, at least theoretically.  * Drop `sign` and apply the sign to the value.
+
+"""
+
