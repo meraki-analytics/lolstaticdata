@@ -189,7 +189,7 @@ class Ability(dict):
         table = soup.find_all(['th', 'td'])
 
         # Set some fields to ignore
-        exclude_parameters = { "callforhelp", "flavorsound", "video", "video2", "yvideo", "yvideo2", "flavor sound", "video 2", "YouTube video", 'YouTube video 2', "Not applicable to be stolen.", "Stealable", "All maps", "''",
+        exclude_parameters = { "callforhelp", "flavorsound", "video", "video2", "yvideo", "yvideo2", "flavor sound", "video 2", "YouTube video", 'YouTube video 2', "Not applicable to be stolen.", "Stealable", "All maps",
             # Bard
             "15", "30", "45", "55", "60", "75", "90", "100", "145", "190", "235", "280", "325", "Chimes", "3:20", "Meep limit increased to 2.", "9:10", "Slow increased to 35%.", "15:50", "Recharge time reduced to 6 seconds.", "21:40", "Recharge time reduced to 5 seconds.", "28:20", "Recharge time reduced to 4 seconds.", "34:10", "Slow increased to 75%.", "40:50", "Meep limit increased to 9.", "Displays additional information with effect table to the right.",
             # Pyke
@@ -614,6 +614,8 @@ def rename_keys(j):
 
     new = {}
     for key, value in j.items():
+        if key == '':
+            continue
         if key.startswith("skill_"):
             value = list(value.values())
         elif key == "skill" and value == "I":
