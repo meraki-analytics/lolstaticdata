@@ -43,7 +43,7 @@ def regex_slash_separated(string: str) -> List[str]:
         regex = ' / '.join([rnumber for _ in range(i)])
         result = re.findall(regex, string)
         if result:
-            return result
+            return [eval(r) for r in result]
     raise ValueError(f"Could not parse slash-separated string: {string}")
 
 
@@ -51,7 +51,7 @@ def regex_simple_flat(string: str):
     if '/' in string:
         return regex_slash_separated(string)
     elif re.findall(rsingle_number, string):
-        return re.findall(rsingle_number, string)[0]
+        return eval(re.findall(rsingle_number, string)[0])
     raise ValueError(f"Could not parse a simple flat value: {string}")
 
 
@@ -265,7 +265,7 @@ class Ability(dict):
                     data[parameter] = parsed
                     continue
                 data[parameter] = Attribute.from_string("cooldown", parsed, verbose=verbose)
-                data[parameter]["affectedByCDR"] = (parameter == "static")
+                data[parameter]["affectedByCDR"] = (parameter == "cooldown")
                 del data[parameter]["attribute"]
             elif parameter == "cost":
                 parsed = Ability._preparse_format(value)
@@ -274,6 +274,10 @@ class Ability(dict):
                     continue
                 data[parameter] = Attribute.from_string(parameter, parsed, verbose=verbose)
                 del data[parameter]["attribute"]
+            elif parameter == "recharge":
+                parsed = regex_simple_flat(value)
+                data[parameter] = parsed
+                continue
             else:
                 data[parameter] = value.text.strip()
         if verbose:
@@ -749,8 +753,8 @@ def reformat_json_after_renaming(new):
                 skill["targeting"] = [to_enum(t) for t in skill["targeting"].split('/')]
             if "affects" in skill:
                 skill["affects"] = [to_enum(affect) for affect in skill["affects"].split(',')]
-            if "spellshield" in skill:
-                skill["spellshield"] = to_enum(skill["spellshield"])  # true/false/special
+            if "spellshieldable" in skill:
+                skill["spellshieldable"] = to_enum(skill["spellshieldable"])  # true/false/special
             if "resource" in skill:
                 skill["resource"] = to_enum(skill["resource"])
             if "damageType" in skill:
@@ -826,10 +830,13 @@ def reformat_json_after_renaming(new):
                     item["icon"] = skill[i]
                     del skill[i]
                 if l in skill:
-                    item["leveling"] = skills[l]
+                    item["leveling"] = skill[l]
                     del skill[l]
                 if item:
                     skill["effects"].append(item)
+
+            if "notes" in skill and skill["notes"] == "* No additional notes.":
+                del skill["notes"]
 
     if new["adaptiveType"] in ("PHYSICAL", "MIXED,PHYSICAL"):
         new["adaptiveType"] = "PHYSICAL_DAMAGE"
@@ -894,6 +901,8 @@ def _capture_enums(j) -> Dict:
                         enums[k].extend(v)
         else:
             enums[key].append(value)
+            #if key == "recharge":
+            #    print(key, value, j["name"])
     return enums
 
 
@@ -901,7 +910,7 @@ def _capture_enums(j) -> Dict:
 if __name__ == "__main__":
     main()
     rename_all()
-    #enums = capture_enums()
+    enums = capture_enums()
     #print(enums['resource'])
     #for k, v in enums.items():
     #    print(k, v)
@@ -909,26 +918,11 @@ if __name__ == "__main__":
 
 
 """
-TODO:
+
 * Collect all enums and their values into a file that we can distribute.
 
+* Leave `effectRadius` as a string. Shyvana's Burnout was the deciding factor for me. I'm going to do the same for `width`, `angle`, `castType`, and `speed`.
 
-* width {'805 / 180', '300', '130 / 260', '350', '120', '200', '100', '60', '180', '140 / 200', '320 / 2400', '320', '120 / 180', '210', '280 / 120', '120 / 200', '260', '80', '150', '340', '90', '140', '160'}
-
-* angle {'80°', '90°', '40°', '27°', '40° / 60°', '160°', '20°', '57.5°', '45°', '70°', '35° / 52.5°', '50°', '22°', '75°', '35°', '60° / 120°', '180°', '49.52°', '60°'}
-
-* castTime {'None', '0.55', 'false', '0.75', 'none', '0.6', 'X / X (based on bonus attack speed)', '0.2', '1', '0.5', '0.625', '1.3', '0.4 − 0.133 (based on bonus attack speed)', '0.25'}
-
-* speed {'850', '1550', 'X', '900', '1400', '1200 / 640', '1600 / 1800', '1650', '1750', '1250 (+ 80% movement speed)', '1900 / 2100', '1850', '350', '1600', '1900', '600 (+ 75 per 10% bonus attack speed)', '1800', '2300', '1150', '1000', '1450', '2000 / 2840', '1700', '200 / 300 / 250 / 375', '600 / 650 / 700 / 750 / 800', '1350', '3000', '3200', '20000', '2200', '850 − 600 (based on duration)', '1450 / 1890', '2100', '750 (+ 60% movement speed)', '1300 / 1500', '1500', '1500 / 2500', '1300', '666.67 − 1166.67 (based on seconds charged)', '1835 (+100% bonus movement speed)', '2400', '1500 (+ 100% movement speed)', '1575', '2000', '900 / 1200', '1200 / 100', '1250 − 1400 (based on channel time)', '950', '650', '2500', '800', '400 - 460', '500', '1200', '1650 / 200 / 2300'}
-
-* leveling4 {'Bonus Attack Damage:4 / 8 / 12 / 16 / 20 / 24\nBonus Attack Speed:6 / 12 / 18 / 24 / 30 / 36%\nBonus-Armor Penetration:3 / 6 / 9 / 12 / 15 / 18%'}
-* recharge {'14 / 12.5 / 11 / 9.5 / 8', '30 / 25.5 / 21 / 16.5 / 12', '12 / 11.5 / 11 / 10.5 / 10', '30 / 27.5 / 25 / 22.5 / 20', '8 / 7.5 / 7 / 6.5 / 6', '20', '15', '18 / 16 / 14 / 12 / 10', '90 / 80 / 70 / 60 / 50', '28 / 25 / 22 / 19 / 16', '6', '19 / 18 / 17 / 16 / 15', '20 / 18 / 16 / 14 / 12', '40 / 36 / 32 / 28 / 24'}
-* leveling {"Cougar form's abilities rank up when  Aspect of the Cougar does", "Pounce scales with  Aspect of the Cougar's rank", 'Bonus Movespeed:10 −  30 (based on level)Total Movespeed:335 − 355 (based on level)Bonus Range:0 − 100 (based on level)', 'Physical Damage:5 / 45 / 85 / 125 / 165 (+ 140% AD)'}
-
-
-? Is this all the data we want to include?
-? Are we going to version this?
-? How are we going to manage overrides? Don't?  Multiple sources?
+* There are a few skills in `leveling4` and `leveling` that could be parsed correctly, but that's an overall problem with parsing that we need to fix.
 
 """
-
