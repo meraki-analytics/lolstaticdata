@@ -1,5 +1,6 @@
 from typing import Set, Mapping, List, Union
 from dataclasses import dataclass
+import dataclasses_json
 from enum import Enum, auto
 
 
@@ -50,6 +51,7 @@ class Role(Enum):
     # TODO: Finish this
 
 
+@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
 class Stats(object):
     health_base: float
@@ -66,7 +68,6 @@ class Stats(object):
     magic_resistance_per_level: float
     attack_damage_base: float
     attack_damage_per_level: float
-    attack_range: float
     movespeed: float
     acquisition_radius: float
     selection_radius: float
@@ -93,6 +94,7 @@ class Stats(object):
     # TODO: Should some of these be int?
 
 
+@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
 class AttributeRatings(object):
     damage: int
@@ -107,29 +109,34 @@ class AttributeRatings(object):
     difficulty: int
 
 
+@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
 class Modifier(object):
     values: List[Union[int, float]]
     units: List[str]
 
 
+@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
 class Cooldown(object):
     modifiers: List[Modifier]
     affected_by_cdr: bool
 
 
+@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
 class Cost(object):
     modifiers: List[Modifier]
 
 
+@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
 class Leveling(object):
     attribute: str
     modifiers: List[Modifier]
 
 
+@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
 class Effect(object):
     description: str
@@ -137,6 +144,7 @@ class Effect(object):
     leveling: List[Leveling]
 
 
+@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
 class Ability(object):
     name: str
@@ -168,12 +176,14 @@ class Ability(object):
     target_range: str
 
 
+@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
 class Price(object):
     blue_essence: int
     rp: int
 
 
+@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
 class Champion(object):
     id: int
@@ -192,3 +202,6 @@ class Champion(object):
     release_patch: str
     patch_last_changed: str
     price: Price
+
+    def __json__(self):
+        return self.to_json()
