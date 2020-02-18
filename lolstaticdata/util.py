@@ -39,7 +39,8 @@ def parse_top_level_parentheses(string):
 
 #NONASCII = Counter()
 def download_webpage(url, use_cache: bool = True):
-    fn = f"../__cache__/{url.replace('/', '@')}"
+    directory = os.path.dirname(os.path.realpath(__file__)) + "/"
+    fn = directory + f"../__cache__/{url.replace('/', '@')}"
     if use_cache and os.path.exists(fn):
         with open(fn) as f:
             html = f.read()
