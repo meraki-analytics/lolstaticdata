@@ -313,7 +313,7 @@ class LolWikiDataHandler:
             html = str(html)
         html = html.replace('</dt>', '\n</dt>')
         html = html.replace('</dd>', '\n</dd>')
-        html = BeautifulSoup(html, 'html5lib')
+        html = BeautifulSoup(html, 'lxml')
         html = html.text.strip()
         while '\n\n' in html:
             html = html.replace('\n\n', '\n')
