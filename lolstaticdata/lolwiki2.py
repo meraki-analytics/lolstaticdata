@@ -70,11 +70,13 @@ class LolWikiDataHandler:
         "Taliyah": ["Seismic Shove 2"],
     }
 
-    @staticmethod
-    def get_champions() -> List[Champion]:
+    def __init__(self, use_cache: bool = True):
+        self.use_cache = use_cache
+
+    def get_champions(self) -> List[Champion]:
         # Download the page source
         url = "https://leagueoflegends.fandom.com/wiki/Module:ChampionData/data"
-        html = download_webpage(url)
+        html = download_webpage(url, self.use_cache)
         soup = BeautifulSoup(html, 'lxml')
 
         # Pull the relevant data from the html tags
@@ -112,11 +114,10 @@ class LolWikiDataHandler:
         for name, d in data.items():
             if name == "Kled & Skaarl":
                 name = "Kled"
-            champion = LolWikiDataHandler._render_champion_data(name, d)
+            champion = self._render_champion_data(name, d)
             yield champion
 
-    @staticmethod
-    def _render_champion_data(name: str, data: Mapping) -> Champion:
+    def _render_champion_data(self, name: str, data: Mapping) -> Champion:
         if name == "Kled & Skaarl":
             name = "Kled"
         print(name)
@@ -189,24 +190,24 @@ class LolWikiDataHandler:
                 difficulty=data["difficulty"],
             ),
             abilities=dict([
-                LolWikiDataHandler._render_abilities(champion_name=name, abilities=[
-                    LolWikiDataHandler._pull_champion_ability(champion_name=name, ability_name=ability_name)
+                self._render_abilities(champion_name=name, abilities=[
+                    self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                     for ability_name in data["skill_i"].values() if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
                 ]),
-                LolWikiDataHandler._render_abilities(champion_name=name, abilities=[
-                    LolWikiDataHandler._pull_champion_ability(champion_name=name, ability_name=ability_name)
+                self._render_abilities(champion_name=name, abilities=[
+                    self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                     for ability_name in data["skill_q"].values() if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
                 ]),
-                LolWikiDataHandler._render_abilities(champion_name=name, abilities=[
-                    LolWikiDataHandler._pull_champion_ability(champion_name=name, ability_name=ability_name)
+                self._render_abilities(champion_name=name, abilities=[
+                    self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                     for ability_name in data["skill_w"].values() if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
                 ]),
-                LolWikiDataHandler._render_abilities(champion_name=name, abilities=[
-                    LolWikiDataHandler._pull_champion_ability(champion_name=name, ability_name=ability_name)
+                self._render_abilities(champion_name=name, abilities=[
+                    self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                     for ability_name in data["skill_e"].values() if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
                 ]),
-                LolWikiDataHandler._render_abilities(champion_name=name, abilities=[
-                    LolWikiDataHandler._pull_champion_ability(champion_name=name, ability_name=ability_name)
+                self._render_abilities(champion_name=name, abilities=[
+                    self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                     for ability_name in data["skill_r"].values() if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
                 ]),
             ]),
@@ -219,18 +220,16 @@ class LolWikiDataHandler:
         # "disp_name": "dispName",
         return champion
 
-    @staticmethod
-    def _pull_champion_ability(champion_name, ability_name) -> HTMLAbilityWrapper:
+    def _pull_champion_ability(self, champion_name, ability_name) -> HTMLAbilityWrapper:
         ability_name = ability_name.replace(' ', '_')
 
         # Pull the html from the wiki
         url = f"https://leagueoflegends.fandom.com/wiki/Template:Data_{champion_name}/{ability_name}"
-        html = download_webpage(url)
+        html = download_webpage(url, self.use_cache)
         soup = BeautifulSoup(html, 'lxml')
         return HTMLAbilityWrapper(soup)
 
-    @staticmethod
-    def _render_abilities(champion_name, abilities: List[HTMLAbilityWrapper]) -> Tuple[str, List[Ability]]:
+    def _render_abilities(self, champion_name, abilities: List[HTMLAbilityWrapper]) -> Tuple[str, List[Ability]]:
         inputs, abilities = abilities, []  # rename variables
         skill_key = inputs[0]["skill"]
         for data in inputs:
@@ -268,7 +267,7 @@ class LolWikiDataHandler:
                 description = data.get(f"description{ending}")
                 icon = data.get(f"icon{ending}")
                 leveling = data.get_source(f"leveling{ending}")
-                leveling = LolWikiDataHandler._render_levelings(leveling, nvalues) if leveling else []
+                leveling = self._render_levelings(leveling, nvalues) if leveling else []
                 if description or icon or leveling:
                     effects.append(
                         Effect(description=description, leveling=leveling, icon=icon)
@@ -277,8 +276,8 @@ class LolWikiDataHandler:
             ability = Ability(
                 name=data["name"],
                 effects=effects,
-                cost=LolWikiDataHandler._render_ability_cost(ability_cost, nvalues) if ability_cost else None,
-                cooldown=LolWikiDataHandler._render_ability_cooldown(cooldown, "static" in data.data, nvalues) if cooldown else None,
+                cost=self._render_ability_cost(ability_cost, nvalues) if ability_cost else None,
+                cooldown=self._render_ability_cooldown(cooldown, "static" in data.data, nvalues) if cooldown else None,
                 targeting=data.get("targeting"),
                 affects=data.get("affects"),
                 spellshieldable=data.get("spellshield"),
@@ -308,8 +307,7 @@ class LolWikiDataHandler:
             abilities.append(ability)
         return skill_key, abilities
 
-    @staticmethod
-    def _render_levelings(html: BeautifulSoup, nvalues: int) -> List[Leveling]:
+    def _render_levelings(self, html: BeautifulSoup, nvalues: int) -> List[Leveling]:
         # Do some pre-processing on the html
         if not isinstance(html, str):
             html = str(html)
@@ -340,28 +338,26 @@ class LolWikiDataHandler:
         for attribute, data in initial_split:
             if attribute.endswith(':'):
                 attribute = attribute[:-1]
-            result = LolWikiDataHandler._render_leveling(attribute, data, nvalues)
+            result = self._render_leveling(attribute, data, nvalues)
             results.append(result)
 
         return results
 
-    @staticmethod
-    def _render_leveling(attribute: str, data: str, nvalues: int) -> Leveling:
-        modifiers = LolWikiDataHandler._render_modifiers(data, nvalues)
+    def _render_leveling(self, attribute: str, data: str, nvalues: int) -> Leveling:
+        modifiers = self._render_modifiers(data, nvalues)
         leveling = Leveling(
             attribute=attribute,
             modifiers=modifiers,
         )
         return leveling
 
-    @staticmethod
-    def _render_modifiers(mods: str, nvalues: int) -> List[Modifier]:
+    def _render_modifiers(self, mods: str, nvalues: int) -> List[Modifier]:
         parsed_modifiers = ParsingAndRegex.split_modifiers(mods)
 
         modifiers = []  # type: List[Modifier]
         for lvling in parsed_modifiers:
             try:
-                modifier = LolWikiDataHandler._render_modifier(lvling, nvalues)
+                modifier = self._render_modifier(lvling, nvalues)
                 modifiers.append(modifier)
             except Exception as error:
                 print(f"ERROR: FAILURE TO PARSE:  {lvling}")
@@ -369,8 +365,7 @@ class LolWikiDataHandler:
                 modifiers.append(lvling)
         return modifiers
 
-    @staticmethod
-    def _render_modifier(mod: str, nvalues: int) -> Modifier:
+    def _render_modifier(self, mod: str, nvalues: int) -> Modifier:
         units, values = ParsingAndRegex.get_modifier(mod, nvalues)
         modifier = Modifier(
             values=values,
@@ -378,15 +373,13 @@ class LolWikiDataHandler:
         )
         return modifier
 
-    @staticmethod
-    def _render_ability_cost(mods: str, nvalues: int) -> Cost:
-        modifiers = LolWikiDataHandler._render_modifiers(mods, nvalues)
+    def _render_ability_cost(self, mods: str, nvalues: int) -> Cost:
+        modifiers = self._render_modifiers(mods, nvalues)
         cost = Cost(modifiers=modifiers)
         return cost
 
-    @staticmethod
-    def _render_ability_cooldown(mods: str, static_cooldown: bool, nvalues: int) -> Cooldown:
-        modifiers = LolWikiDataHandler._render_modifiers(mods, nvalues)
+    def _render_ability_cooldown(self, mods: str, static_cooldown: bool, nvalues: int) -> Cooldown:
+        modifiers = self._render_modifiers(mods, nvalues)
         cooldown = Cooldown(
             modifiers=modifiers,
             affected_by_cdr=static_cooldown,
@@ -497,7 +490,7 @@ class ParsingAndRegex:
 
 
 def main():
-    handler = LolWikiDataHandler()
+    handler = LolWikiDataHandler(use_cache=False)
     directory = os.path.dirname(os.path.realpath(__file__)) + "/"
 
     for champion in handler.get_champions():
