@@ -4,9 +4,9 @@
   "name": "Garen",
   "title": "The Might of Demacia",
   "fullName": "Garen Crownguard",
-  "resource": "None",
-  "attackType": "Melee",
-  "adaptiveType": "physical",
+  "resource": "NONE",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
   "stats": {
     "healthBase": 620,
     "healthPerLevel": 84,
@@ -162,11 +162,11 @@
                   },
                   {
                     "values": [
-                      40,
-                      40,
-                      40,
-                      40,
-                      40
+                      50,
+                      50,
+                      50,
+                      50,
+                      50
                     ],
                     "units": [
                       "% AD",
@@ -212,7 +212,7 @@
         "affects": "Self, Enemies",
         "spellshieldable": "False",
         "resource": null,
-        "damageType": "Physical",
+        "damageType": "PHYSICAL_DAMAGE",
         "spellEffects": "Proc",
         "projectile": null,
         "onHitEffects": null,
@@ -243,7 +243,12 @@
             "leveling": []
           },
           {
-            "description": "Active: Garen reduces incoming damage by 30% for a few seconds. For the first 0.75 seconds, Garen is additionally  shielded for 10% of his maximum health and gains 60%  tenacity.",
+            "description": "After reaching maximum stacks, gains an additional 10% bonus armor and 10% bonus magic resistance.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Active: Garen reduces incoming damage by 30% for a few seconds. For the first 0.75 seconds, Garen is additionally  shielded and gains 60%  tenacity.",
             "icon": null,
             "leveling": [
               {
@@ -263,6 +268,43 @@
                       "",
                       "",
                       ""
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Shield Strength",
+                "modifiers": [
+                  {
+                    "values": [
+                      70,
+                      95,
+                      120,
+                      145,
+                      170
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      20,
+                      20,
+                      20,
+                      20,
+                      20
+                    ],
+                    "units": [
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health"
                     ]
                   }
                 ]
@@ -322,7 +364,7 @@
         "name": "Judgment",
         "effects": [
           {
-            "description": "Active: Garen becomes  ghosted and rapidly spins his sword around his body 7 \u2212  \u221e (based on bonus attack speed) times over 3 seconds, dealing physical damage with each spin to nearby enemies. Judgment can  critically strike for (50% +  25%) bonus physical damage.",
+            "description": "Active: Garen becomes  ghosted and rapidly spins his sword around his body 7 \u2212  \u221e (based on bonus attack speed) times over 3 seconds, dealing physical damage with each spin to nearby enemies. Judgment can  critically strike for (50% +  25%) bonus physical damage. The total damage is increased by 50% against non-epic monsters.",
             "icon": "Judgment.png",
             "leveling": [
               {
@@ -522,7 +564,7 @@
         "affects": "Enemies",
         "spellshieldable": null,
         "resource": null,
-        "damageType": "Physical",
+        "damageType": "PHYSICAL_DAMAGE",
         "spellEffects": "aoedot",
         "projectile": null,
         "onHitEffects": null,
@@ -546,7 +588,7 @@
         "name": "Judgment",
         "effects": [
           {
-            "description": "Active: Garen becomes  ghosted and rapidly spins his sword around his body 7 \u2212  \u221e (based on bonus attack speed) times over 3 seconds, dealing physical damage with each spin to nearby enemies. Judgment can  critically strike for (50% +  25%) bonus physical damage.",
+            "description": "Active: Garen becomes  ghosted and rapidly spins his sword around his body 7 \u2212  \u221e (based on bonus attack speed) times over 3 seconds, dealing physical damage with each spin to nearby enemies. Judgment can  critically strike for (50% +  25%) bonus physical damage. The total damage is increased by 50% against non-epic monsters.",
             "icon": "Judgment.png",
             "leveling": [
               {
@@ -746,7 +788,7 @@
         "affects": "Enemies",
         "spellshieldable": null,
         "resource": null,
-        "damageType": "Physical",
+        "damageType": "PHYSICAL_DAMAGE",
         "spellEffects": "aoedot",
         "projectile": null,
         "onHitEffects": null,
@@ -829,7 +871,7 @@
         "affects": "Enemies",
         "spellshieldable": "True",
         "resource": null,
-        "damageType": "True",
+        "damageType": "TRUE_DAMAGE",
         "spellEffects": "spell",
         "projectile": null,
         "onHitEffects": null,
@@ -853,7 +895,7 @@
   },
   "releaseDate": "2010-04-27",
   "releasePatch": "1.0.0.83",
-  "patchLastChanged": "10.3",
+  "patchLastChanged": "10.4",
   "price": {
     "blueEssence": 450,
     "rp": 260

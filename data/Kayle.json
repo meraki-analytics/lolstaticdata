@@ -4,9 +4,9 @@
   "name": "Kayle",
   "title": "the Righteous",
   "fullName": "",
-  "resource": "Mana",
-  "attackType": "Melee",
-  "adaptiveType": "physical",
+  "resource": "MANA",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
   "stats": {
     "healthBase": 600,
     "healthPerLevel": 85,
@@ -47,8 +47,8 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "SUPPORT",
     "SPECIALIST",
+    "SUPPORT",
     "FIGHTER"
   ],
   "attributeRatings": {
@@ -74,7 +74,7 @@
             "leveling": []
           },
           {
-            "description": "Innate - Zealous: At level 1, Kayle's basic attacks grant  6% bonus attack speed for 5 seconds, stacking up to 5 times for a maximum of 30% bonus attack speed. At maximum stacks, Kayle becomes Exalted, gaining  8% bonus movement speed.",
+            "description": "Innate - Zealous: At level 1, Kayle's basic attacks on-attack grant  6% bonus attack speed for 5 seconds, stacking up to 5 times for a maximum of 30% bonus attack speed. At maximum stacks, Kayle becomes Exalted, gaining  8% bonus movement speed.",
             "icon": "Zealous.png",
             "leveling": []
           },
@@ -84,7 +84,7 @@
             "leveling": []
           },
           {
-            "description": "Innate - Aflame: At level 11, while Exalted, Kayle's basic attacks against non-structures additionally launch a wave of fire in the target's direction, dealing 15 \u2212 35 (based on  Starfire Spellblade's Rank) (+ 10% bonus AD) (+ 25% AP)  magic damage to enemies hit. The waves are affected by  critical strike modifiers.",
+            "description": "Innate - Aflame: At level 11, while Exalted, Kayle's basic attacks on-attack against non- structures additionally launch a wave of fire in the target's direction, dealing 15 \u2212 35 (based on  Starfire Spellblade's Rank) (+ 10% bonus AD) (+ 25% AP)  magic damage to enemies hit. The waves are affected by  critical strike modifiers.",
             "icon": "Divine Ascent.png",
             "leveling": []
           },
@@ -100,12 +100,12 @@
         "affects": "Self, Enemies",
         "spellshieldable": null,
         "resource": null,
-        "damageType": "Magic",
-        "spellEffects": "Special",
-        "projectile": "Special",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "AoE",
+        "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The  bonus magic damage applies  proc damage and the additional waves deal  area damage.\n Zealous can stack against structures.\n If Kayle is in her attack animation after the stacks finish she gains another 0.5 seconds to refresh / stack Zealous.\n The waves apply spell effects.\n The waves and passive stacks do not benefit from  Runaan's Hurricane and  Guinsoo's Rageblade's innate passives.\n Because Kayle is considered both a  melee and  ranged champion, she can buy items for both types at any point in the game without being restricted.\n The innate effects of melee/ranged items will not function until Kayle becomes either type.\n\n Kayle will attack as if she were melee while within  175 attack range of her target even after becoming Arisen, this does not occur after she is Aflame.\n This will not negate the activation of ranged effects (i.e  Runaan's Hurricane).\n This will still not trigger the activation of melee effects (i.e  Ravenous Hydra).\n\n Upon becoming Aflame, Kayle's portrait changes:\n Classic:  becomes .\n Silver Kayle:  becomes .\n Viridian Kayle:  becomes .\n Battleborn Kayle:  becomes .\n Aether Wing Kayle:  becomes .\n Riot Kayle:  becomes .\n Pentakill Kayle:  becomes .\n  Transcended Kayle,  Judgment Kayle, and  Iron Inquisitor Kayle do not change their portraits.",
+        "notes": "If Kayle is in her attack animation after the stacks finish she gains another 0.5 seconds to refresh / stack Zealous.\n Because Kayle is both a melee and ranged champion, she can buy both ranged and melee only items at anytime. However, melee only items will only work until she becomes ranged, while ranged only items will only work after.\n While in melee range after she becomes Arisen, she will still attack with her sword, bypassing  Yasuo's  Wind Wall.\n This will not negate the activation of ranged effects (i.e  Runaan's Hurricane).\n This will still not trigger the activation of melee effects (i.e  Ravenous Hydra).\n\n Upon becoming Aflame, Kayle's portrait changes:\n On the original skin  becomes .\n On the Silver skin  becomes .\n On the Viridian skin  becomes .\n On the Battleborn skin  becomes .\n On the Aether Wing skin  becomes .\n On the Riot skin  becomes .\n On the Pentakill skin  becomes .\n  Transcended Kayle,  Judgment Kayle, and  Iron Inquisitor Kayle do not change portrait.",
         "blurb": null,
         "missileSpeed": null,
         "rechargeRate": null,
@@ -260,10 +260,10 @@
         "targeting": "Direction",
         "affects": "Enemies",
         "spellshieldable": "true",
-        "resource": "Mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "spellaoe",
-        "projectile": "true",
+        "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "The VFX of the cross that spreads upon hitting its initial target shows the blade and guard of a sword.\n Despite the VFX suggesting otherwise, the two sides of the guard are each as long as the blade in terms of collision: approximately 295 units. PENDING FOR TEST",
@@ -287,7 +287,7 @@
         "name": "Celestial Blessing",
         "effects": [
           {
-            "description": "Active: Kayle and the target allied champion are  healed and gain bonus movement speed for 2 seconds.",
+            "description": "Active: Kayle and target allied champion are  healed and gain bonus movement speed for 2 seconds.",
             "icon": "Celestial Blessing.png",
             "leveling": [
               {
@@ -367,7 +367,7 @@
             ]
           },
           {
-            "description": "If cast without a valid target, Celestial Blessing will automatically target the closest ally in range, prioritizing the most wounded one.",
+            "description": "If cast without a valid target, or self-cast, Celestial Blessing will automatically target the closest ally in range, prioritizing the most wounded one.",
             "icon": null,
             "leveling": []
           }
@@ -413,12 +413,12 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Unit / Self",
+        "targeting": "Unit / Auto",
         "affects": "Self, Allies",
         "spellshieldable": null,
-        "resource": "Mana",
+        "resource": "MANA",
         "damageType": null,
-        "spellEffects": "Heal",
+        "spellEffects": null,
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
@@ -596,16 +596,16 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self",
+        "targeting": "none",
         "affects": "Self, Enemies",
         "spellshieldable": "true",
-        "resource": "Mana",
-        "damageType": "Magic",
-        "spellEffects": "Special",
-        "projectile": "true",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "true",
+        "projectile": "TRUE",
         "onHitEffects": "True",
         "occurrence": null,
-        "notes": "Starfire Spellblade's active applies both on-hit and spell effects.\n The  bonus magic damage applies  proc damage and the triggering explosion deals  area damage.\n Before becoming  Arisen, when attacking below 175 range, Starfire Spellblade's active is considered a  melee attack and will use a different attack animation (i.e. it will trigger  Tiamat).\n After unlocking Aflame, the exploding attack will only trigger the  Cleave and Crescent passives on the primary target, unlike all other on-hit effects.\n\n The on-hit damage stacks additively with the waves from Aflame.",
+        "notes": "Before becoming  Arisen, when attacking below 175 range, Starfire Spellblade's active is considered a  melee attack (i.e. it will trigger  Tiamat).\n After unlocking Aflame, the exploding attack will only trigger the  Cleave and Crescent passives on the primary target, unlike all other on-hit effects.",
         "blurb": null,
         "missileSpeed": null,
         "rechargeRate": null,
@@ -737,13 +737,13 @@
         "targeting": "Unit / Self",
         "affects": "Allies, Self",
         "spellshieldable": "True",
-        "resource": "mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "spellaoe",
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The aura around the target does not appear if the target is not  visible to the enemies' point of view.\n The  mana expenditure only occurs after the  cast time, though Kayle requires at least 100 mana to begin the cast. \n The ability will still go off if Kayle has less than the required mana at the time of expenditure (for effects such as  Seraph's Embrace's).\n\n Once cast has begun, the second part of the ability will go off regardless of whether or not Kayle or her target are alive.\n The prioritization will also cause Divine Judgment to be able to target allied decoys.",
+        "notes": "The aura around the target does not appear if the target is not  visible to the enemies' point of view.\n The  mana expenditure only occurs after the cast time, though Kayle requires at least 100 mana to begin the cast. \n The ability will still go off if Kayle has less than the required mana at the time of expenditure (for effects such as  Seraph's Embrace's).\n\n Once cast has begun, the second part of the ability will go off regardless of whether or not Kayle or her target are alive.\n The prioritization will also cause Divine Judgement to be able to target allied decoys, which are otherwise  untargetable by allies.\n The ending of other invulnerability effects (i.e  Kindred's  Lamb's Respite) will cause Divine Judgement's invulnerability to shortly have no effect.",
         "blurb": null,
         "missileSpeed": null,
         "rechargeRate": null,

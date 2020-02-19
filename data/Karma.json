@@ -4,9 +4,9 @@
   "name": "Karma",
   "title": "the Enlightened One",
   "fullName": "",
-  "resource": "Mana",
-  "attackType": "Ranged",
-  "adaptiveType": "magic",
+  "resource": "MANA",
+  "attackType": "RANGED",
+  "adaptiveType": "MAGIC_DAMAGE",
   "stats": {
     "healthBase": 534,
     "healthPerLevel": 95,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "MAGE",
     "BURST",
-    "SUPPORT",
-    "MAGE"
+    "SUPPORT"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -178,10 +178,10 @@
         "targeting": "Direction",
         "affects": "Enemies",
         "spellshieldable": "Special",
-        "resource": "Mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "Area of effect",
-        "projectile": "True",
+        "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "Spell shield will block the initial impact from Inner Flame.",
@@ -358,9 +358,9 @@
         "affects": "Enemies",
         "spellshieldable": "Special",
         "resource": null,
-        "damageType": "Magic",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "spellaoe",
-        "projectile": "True",
+        "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "Spell shield will block the initial impact from either ability but will not block Soulflare's field damage.\n The lingering field will place under the impacted enemy, rather than the impact point.",
@@ -384,7 +384,7 @@
         "name": "Focused Resolve",
         "effects": [
           {
-            "description": "Active: Karma exerts her will over a target enemy  champion or  monster, dealing magic damage and forming a tether between them for up to 2 seconds, during which the target is revealed by  true sight.",
+            "description": "Active: Karma exerts her will over a target enemy champion or monster, dealing magic damage and forming a tether between them for up to 2 seconds, during which the target is  revealed.",
             "icon": "Focused Resolve.png",
             "leveling": [
               {
@@ -412,7 +412,7 @@
             ]
           },
           {
-            "description": "If the tether holds for the duration, the target is dealt the same magic damage and  rooted for a duration.",
+            "description": "If the tether holds for the duration, the target is dealt the same magic damage and is  revealed and  rooted for a duration.",
             "icon": null,
             "leveling": [
               {
@@ -490,13 +490,13 @@
         "targeting": "Unit",
         "affects": "Enemies / Self",
         "spellshieldable": "Special",
-        "resource": "Mana",
-        "damageType": "Magic",
-        "spellEffects": "spellpersist",
-        "projectile": "False",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "DOT",
+        "projectile": "FALSE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Spell shield will only block the tether's application, not the rooting from an already-applied one.\n The  true sight duration is refreshed if the tether lasts.",
+        "notes": "Spell shield will only block the tether's application, not the rooting from an already-applied one.",
         "blurb": "Karma creates a tether between herself and a targeted enemy, dealing damage and revealing them. If the tether is not broken, the enemy will be rooted and damaged again. Mantra Bonus: Karma strengthens the link, healing herself and extending the root duration.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -515,7 +515,7 @@
         "name": "Renewal",
         "effects": [
           {
-            "description": "Mantra - Active: Focused Resolve's  root duration is increased, and  heals Karma for  20% (+ 1% per 100 AP) of missing health on-cast and once more when the target is  rooted.",
+            "description": "Mantra - Active: Focused Resolve's  root duration is increased, and  heals Karma for  20% (+ 1% per 100 AP) of missing health on-cast and once more when the target is  rooted, or if the target  dies while tethered.",
             "icon": "Renewal.png",
             "leveling": [
               {
@@ -567,12 +567,12 @@
         "affects": "Enemies / Self",
         "spellshieldable": "Special",
         "resource": null,
-        "damageType": "Magic",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "DOT",
-        "projectile": "False",
+        "projectile": "FALSE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Spell shield will only block the tether's application, not the rooting from an already-applied one.\n If the target dies while the tether persisted, the  heal is received again.",
+        "notes": "Spell shield will only block the tether's application, not the rooting from an already-applied one.",
         "blurb": null,
         "missileSpeed": null,
         "rechargeRate": null,
@@ -686,13 +686,13 @@
         "targeting": "Unit / Self",
         "affects": "Allies",
         "spellshieldable": null,
-        "resource": "Mana",
+        "resource": "MANA",
         "damageType": null,
         "spellEffects": "Shield",
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Inspire has no  cast time and does not interrupt Karma's previous orders.",
+        "notes": "Inspire has no cast time and does not interrupt Karma's previous orders.",
         "blurb": "Karma summons a protective shield that absorbs incoming damage and increases the Movement Speed of the protected ally. Mantra Bonus: Energy radiates out from her target, strengthening the initial shield and applying Inspire to nearby allied champions.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -819,7 +819,7 @@
         "targeting": "Unit / Self / Auto",
         "affects": "Allies",
         "spellshieldable": null,
-        "resource": "Mana",
+        "resource": "MANA",
         "damageType": null,
         "spellEffects": "Shield",
         "projectile": null,
@@ -876,7 +876,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self",
+        "targeting": "None",
         "affects": "Self",
         "spellshieldable": null,
         "resource": null,

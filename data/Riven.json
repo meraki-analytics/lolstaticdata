@@ -4,9 +4,9 @@
   "name": "Riven",
   "title": "the Exile",
   "fullName": "Konte Riven",
-  "resource": "None",
-  "attackType": "Melee",
-  "adaptiveType": "physical",
+  "resource": "NONE",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
   "stats": {
     "healthBase": 558.48,
     "healthPerLevel": 86,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "SKIRMISHER",
     "ASSASSIN",
-    "FIGHTER",
-    "SKIRMISHER"
+    "FIGHTER"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -85,7 +85,7 @@
         "affects": "Enemies",
         "spellshieldable": null,
         "resource": null,
-        "damageType": "physical",
+        "damageType": "PHYSICAL_DAMAGE",
         "spellEffects": "Proc",
         "projectile": null,
         "onHitEffects": null,
@@ -232,7 +232,7 @@
         "affects": "Enemies",
         "spellshieldable": "Special",
         "resource": null,
-        "damageType": "physical",
+        "damageType": "PHYSICAL_DAMAGE",
         "spellEffects": "spellaoe",
         "projectile": null,
         "onHitEffects": null,
@@ -327,7 +327,7 @@
         "affects": "Enemies",
         "spellshieldable": "True",
         "resource": null,
-        "damageType": "physical",
+        "damageType": "PHYSICAL_DAMAGE",
         "spellEffects": "spellaoe",
         "projectile": null,
         "onHitEffects": null,
@@ -579,9 +579,9 @@
         "affects": "Enemies",
         "spellshieldable": "True",
         "resource": null,
-        "damageType": "physical",
+        "damageType": "PHYSICAL_DAMAGE",
         "spellEffects": "aoe",
-        "projectile": "true",
+        "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "No additional details.",

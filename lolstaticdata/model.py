@@ -4,9 +4,13 @@ import dataclasses_json
 from enum import Enum
 
 
+def to_enum_like(string: str) -> str:
+    return string.upper().replace(' ', '_')
+
+
 @classmethod
 def from_string(cls: Type[Enum], string: str) -> Enum:
-    string = string.upper()
+    string = to_enum_like(string)
     for e in cls:
         if e.name == string:
             return e
@@ -20,13 +24,20 @@ class Resource(Enum):
     ENERGY = "ENERGY"
     RAGE = "RAGE"
     FURY = "FURY"
+    FEROCITY = "FEROCITY"
     HEALTH = "HEALTH"
     MAXIMUM_HEALTH = "MAXIMUM_HEALTH"
     CURRENT_HEALTH = "CURRENT_HEALTH"
     HEALTH_PER_SECOND = "HEALTH_PER_SECOND"
     MANA_PER_SECOND = "MANA_PER_SECOND"
     CHARGE = "CHARGE"
+    COURAGE = "COURAGE"
+    HEAT = "HEAT"
+    GRIT = "GRIT"
+    FLOW = "FLOW"
+    SHIELD = "SHIELD"
     OTHER = "OTHER"
+    NONE = "NONE"
 
 
 class AttackType(Enum):
@@ -34,9 +45,13 @@ class AttackType(Enum):
     RANGED = "RANGED"
 
 
-class AdaptiveType(Enum):
+class DamageType(Enum):
     PHYSICAL_DAMAGE = "PHYSICAL_DAMAGE"
     MAGIC_DAMAGE = "MAGIC_DAMAGE"
+    TRUE_DAMAGE = "TRUE_DAMAGE"
+    PURE_DAMAGE = "PURE_DAMAGE"
+    MIXED_DAMAGE = "MIXED_DAMAGE"
+    OTHER_DAMAGE = "OTHER_DAMAGE"
 
 
 class Role(Enum):
@@ -163,11 +178,11 @@ class Ability(object):
     targeting: str
     affects: str
     spellshieldable: str
-    resource: str
-    damageType: str
-    spellEffects: str
+    resource: Resource
+    damage_type: DamageType
+    spell_effects: str
     projectile: str
-    onHitEffects: str
+    on_hit_effects: str
     occurrence: str
     notes: str
     blurb: str
@@ -202,7 +217,7 @@ class Champion(object):
     full_name: str
     resource: Resource
     attack_type: AttackType
-    adaptive_type: AdaptiveType
+    adaptive_type: DamageType
     stats: Stats
     roles: Set[Role]
     attribute_ratings: AttributeRatings

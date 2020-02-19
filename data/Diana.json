@@ -4,9 +4,9 @@
   "name": "Diana",
   "title": "Scorn of the Moon",
   "fullName": "",
-  "resource": "Mana",
-  "attackType": "Melee",
-  "adaptiveType": "magic",
+  "resource": "MANA",
+  "attackType": "MELEE",
+  "adaptiveType": "MAGIC_DAMAGE",
   "stats": {
     "healthBase": 594,
     "healthPerLevel": 95,
@@ -47,10 +47,10 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "DIVER",
     "ASSASSIN",
-    "FIGHTER",
     "MAGE",
-    "DIVER"
+    "FIGHTER"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -75,7 +75,7 @@
             "leveling": []
           },
           {
-            "description": "Diana's basic attacks on-hit grant a stack for 3.5 seconds. At 2 stacks, Diana's next basic attack on-hit additionally cleaves nearby enemies for 20 \u2212  250 (based on level) (+ 40% AP)  magic damage, consuming all stacks.",
+            "description": "Diana's basic attacks on-hit grant a stack for 3.5 seconds. At 2 stacks, Diana's next basic attack on-hit additionally cleaves nearby enemies for 20 \u2212  250 (based on level) (+ 40% AP)  magic damage, consuming all stacks. This damage is increased by 50% against non-epic monsters.",
             "icon": null,
             "leveling": []
           }
@@ -86,7 +86,7 @@
         "affects": "Self / Enemies",
         "spellshieldable": "false",
         "resource": null,
-        "damageType": "Magic",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "spellaoe",
         "projectile": null,
         "onHitEffects": null,
@@ -204,10 +204,10 @@
         "targeting": "Ground",
         "affects": "Enemies",
         "spellshieldable": "special",
-        "resource": "mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "aoe",
-        "projectile": "True",
+        "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "The tip of the arc reveals Fog of War for a short duration.\n If the  spell shield blocks the bolt, it will not be able to block the explosion.",
@@ -466,10 +466,10 @@
         "targeting": "Auto",
         "affects": "Self, Enemies",
         "spellshieldable": "True",
-        "resource": "mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "spellaoe",
-        "projectile": "True",
+        "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "On the second application of Pale Cascade's shield,  Shield Power will apply to both the new shield amount and the shield amount remaining from the first shield, which already benefitted from shield power.\n Because of this, shield power effectively applies to the second shield twice, but with reduced efficiency, for up to an increase of 50% of shield power (maximum benefit if no damage was mitigated by the first shield). With 10% shield power, the second shield's total amount will be increased by up to an additional 5%, for a total of 15.5% bonus shield. \n The formula for the total amount of shield Diana will receive from both shield applications is:\n\n\n\nTotal Shield = (((Shield Amount * (1 + Shield Power)) - Damage Blocked by Shield) + Shield Amount) * (1 + Shield Power)",
@@ -645,7 +645,7 @@
         "targeting": "Auto",
         "affects": "Self, Enemies",
         "spellshieldable": "True",
-        "resource": "mana",
+        "resource": "MANA",
         "damageType": null,
         "spellEffects": "spellaoe",
         "projectile": null,
@@ -769,8 +769,8 @@
         "targeting": "Unit",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "Single target",
         "projectile": null,
         "onHitEffects": null,
@@ -794,7 +794,7 @@
   },
   "releaseDate": "2012-08-07",
   "releasePatch": "1.0.0.144",
-  "patchLastChanged": "10.3",
+  "patchLastChanged": "10.4",
   "price": {
     "blueEssence": 4800,
     "rp": 880

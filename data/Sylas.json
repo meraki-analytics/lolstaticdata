@@ -4,9 +4,9 @@
   "name": "Sylas",
   "title": "the Unshackled",
   "fullName": "",
-  "resource": "Mana",
-  "attackType": "Melee",
-  "adaptiveType": "Magic",
+  "resource": "MANA",
+  "attackType": "MELEE",
+  "adaptiveType": "MAGIC_DAMAGE",
   "stats": {
     "healthBase": 525,
     "healthPerLevel": 115,
@@ -47,10 +47,10 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "BURST",
-    "ASSASSIN",
     "SKIRMISHER",
-    "MAGE"
+    "MAGE",
+    "ASSASSIN",
+    "BURST"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -96,7 +96,7 @@
         "affects": "Self",
         "spellshieldable": "False",
         "resource": null,
-        "damageType": "Magic",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "AoE",
         "projectile": null,
         "onHitEffects": null,
@@ -131,10 +131,10 @@
                   {
                     "values": [
                       40,
-                      55,
-                      70,
-                      85,
-                      100
+                      60,
+                      80,
+                      100,
+                      120
                     ],
                     "units": [
                       "",
@@ -269,10 +269,10 @@
                   {
                     "values": [
                       100,
-                      170,
-                      240,
-                      310,
-                      380
+                      175,
+                      250,
+                      325,
+                      400
                     ],
                     "units": [
                       "",
@@ -306,10 +306,10 @@
                   {
                     "values": [
                       64,
-                      101,
-                      138,
-                      175,
-                      212
+                      106,
+                      148,
+                      190,
+                      232
                     ],
                     "units": [
                       "",
@@ -384,10 +384,10 @@
         "targeting": "Direction / Ground",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "Mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "spellaoe",
-        "projectile": "False",
+        "projectile": "FALSE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "Chain Lash will fire from the original location even if Sylas is  displaced.",
@@ -578,8 +578,8 @@
         "targeting": "Unit",
         "affects": "Enemies",
         "spellshieldable": "special",
-        "resource": "Mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "Single target",
         "projectile": null,
         "onHitEffects": null,
@@ -659,7 +659,7 @@
         "targeting": "Direction",
         "affects": "Self",
         "spellshieldable": null,
-        "resource": "Mana",
+        "resource": "MANA",
         "damageType": null,
         "spellEffects": null,
         "projectile": null,
@@ -743,9 +743,9 @@
         "affects": "Enemies",
         "spellshieldable": "True",
         "resource": null,
-        "damageType": "Magic",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "Single target",
-        "projectile": "True",
+        "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "Sylas will not dash to his target if the chains are  spell shielded.",
@@ -820,10 +820,10 @@
         "targeting": "Unit",
         "affects": "Self, Enemies",
         "spellshieldable": "True",
-        "resource": "Mana",
+        "resource": "MANA",
         "damageType": null,
         "spellEffects": null,
-        "projectile": "True",
+        "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "If Sylas casts Hijack on a decoy, no ultimate is stolen and the ability will be placed on a full cooldown.\n If the stolen ability is on-target and it loses its target during the cast time (i.e  untargetability, loss of  vision) the ability will cancel and go on cooldown.\n Since the copied ability scales based on Hijack's rank, abilities can be copied regardless of their rank.\n Hijack will copy all components of the ability: passives and actives as well as recast effects. Hijack will not trigger the effects of other abilities unless absolutely necessary. \n Shape-shifting ultimates will transform Sylas into the target's alternate form, replacing his basic abilities and base stats. Namely:  Cougar Form,  Spider Form,  Cannon Form and  Dragon Form.\n Dragon's Descent refreshes Sylas's mana, depleting it and regenerating it at the same rate Shyvana's  fury would. Other sources of mana restoration will extend the duration as well. At the end of the effect, Sylas gains his previous mana. \n Permanent transformations last for ~5 minutes or until toggled off. \n The alternate abilities of transforming champions will cost mana and scale with the ranks as appropriate for the ability (e.g. ranks in R for Nidalee and ranks in Q/W/E for Jayce/Elise).\n Upon transforming, a  Petricite Burst stack will be deducted.\n  Petricite Burst stacks will still be gained from abilities cast in alternate forms, but the stacks are gained independently from the normal ones. Each transformed stack applies an additional on-hit effect.\n If Sylas has both normal and transformed stacks, Petricite Burst will prioritize consuming Sylas stacks before the transformed ones.\n\n\n Ultimates comply with One For All rules if an ally is playing the hijacked champion. For example, an allied  Darius'  Hemorrhage stacks will increase the damage of the hijacked Noxian Guillotine; or an allied  Syndra's  Dark Sphere will add extra damage to hijacked Unleashed Power as well as producing 3 spheres that she can use.\n\nInteractions\n\n  Amumu's  Curse of the Sad Mummy - Does not apply  Cursed Touch.\n  Aphelios'  Moonlight Vigil - Based on the  main weapon at the moment of steal.  Crescendum empowers his basic attacks temporarily.\n  Calibrum does not apply marks.\n\n  Brand's  Pyroclasm - Does not apply stacks of  Blaze.\n  Cho'Gath's  Feast - Gains permanent Feast charges on-kill.\n  Corki's  Missile Barrage - Gains max charges. \n  Darius'  Noxian Guillotine - Deals minimal damage and does not apply stacks of  Hemorrhage.\n  Fiora's  Grand Challenge - Gains movement speed in the effect and can trigger the area healing, but  Vitals do not deal bonus damage.\n  Gangplank's  Cannon Barrage - Does not steal cannon upgrades.\n  Gnar's  GNAR! - Gains a usable ultimate regardless of cast on  Mini Gnar or  Mega Gnar.\n  Heimerdinger's  UPGRADE!!! - Sylas's basic abilities are replaced with Heimerdinger's empowered abilities.\n  Illaoi's  Leap of Faith - Does not reduce  cooldown of  Kingslayer.\n  Kassadin's  Riftwalk - Only provides one use.\n  Kai'Sa's  Killer Instinct - Sylas' basic attacks,  Abduct and nearby allies'  immobilizations apply stacks of  Plasma, up to 4. Sylas is unable to apply the 5th stack necessary to expunge the stacks.\n  Kalista's  Fate's Call - Only castable with a  link (purchasable in the Shop for  0 gold).\n  Karma's  Mantra - Sylas's basic abilities are replaced with Karma's empowered abilities.\n  Kayn's  Umbral Trespass - Based on current form ( Shadow Assassin/ Rhaast).\n  Kha'Zix's  Void Assault - Can steal the ability's  evolution bonus effects.\n  Kennen's  Slicing Maelstrom - Does not apply  Mark of the Storm, targets are not  stunned.\n  Kled's  Chaaaaaaaarge!!! - Does not need  mount to cast.\n  Kog'Maw's  Living Artillery - Only provides one use.\n  LeBlanc's  Mimic - Uses the empowered version of  LeBlanc's last cast basic ability. If she has not cast any spells,  Mimic Sigil of Malice is copied.\n  Leona's  Solar Flare - Does not apply  Sunlight.\n  Master Yi's  Highlander - Kills do not reduce basic ability cooldowns.\n  Mordekaiser's  Realm of Death - Can join the dimension of outgoing realms if cast in the proper range (does not extend their duration).\n  Nasus'  Fury of the Sands - Does not reduce  cooldown of  Chain Lash.\n  Orianna's  Command: Shockwave - Cast on self without a  ball.\n  Rengar's  Thrill of the Hunt - Sylas will gain  Unseen Predator on his next attack.\n  Sylas'  Hijack - Steals the ability that the enemy Sylas has stolen. Cannot be targeted if no ability has been stolen.\n  Rek'Sai's  Void Rush - Sylas's attacks against enemy champions will apply a  mark which can be used to cast Void Rush.\n  Syndra's  Unleashed Power - Throws a minimum of 3  spheres, which are left on the ground afterwards and vanish after 6 seconds.\n  Talon's  Shadow Assault - Does not apply  Blade's End.\n  Teemo's  Noxious Trap - Gains max charges.\n  Twitch's  Spray and Pray - Gains 300 attack range and his attacks produce missiles that travel 850 range. These attacks are classified as  melee, and so will trigger effects such as  Tiamat versus all hit targets.\n  Udyr - Steals  Phoenix Stance. Lasts for 2 empowered attacks. \n  Varus'  Chain of Corruption - Does not apply stacks of  Blight.\n  Vayne's  Final Hour - Gains the AD and MS bonuses. Additionally, Sylas gains  invisibility when he casts  Chain Lash. \n  Vel'Koz's  Life Form Disintegration Ray - Does not apply  Organic Deconstruction.\n  Viktor's  Chaos Storm - Can steal the ability's  evolution bonus effects.\n  Xayah's  Featherstorm -  Feathers do not interact with an ally or enemy  Xayah.\n  Zed's  Death Mark -  Shadow does not mimic spells but can be reactivated to  swap places.\n  Zoe's  Portal Jump - Sylas can use his spells for the 1 second at the target location, but not during the jump.",
@@ -845,7 +845,7 @@
   },
   "releaseDate": "2019-01-25",
   "releasePatch": "9.2",
-  "patchLastChanged": "10.2",
+  "patchLastChanged": "10.4",
   "price": {
     "blueEssence": 6300,
     "rp": 975

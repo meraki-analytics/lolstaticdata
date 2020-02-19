@@ -4,8 +4,8 @@ import re
 from bs4 import BeautifulSoup
 from collections import Counter
 
-from model import Champion, Stats, Ability, AdaptiveType, AttackType, AttributeRatings, Cooldown, Cost, Effect, Price, Resource, Modifier, Role, Leveling
-from util import download_webpage, save_json, parse_top_level_parentheses, grouper
+from model import Champion, Stats, Ability, DamageType, AttackType, AttributeRatings, Cooldown, Cost, Effect, Price, Resource, Modifier, Role, Leveling, to_enum_like
+from util import download_webpage, parse_top_level_parentheses, grouper
 
 
 class UnparsableLeveling(Exception):
@@ -118,15 +118,20 @@ class LolWikiDataHandler:
         if name == "Kled & Skaarl":
             name = "Kled"
         print(name)
+        adaptive_type = data["adaptivetype"]
+        if adaptive_type.upper() in ("PHYSICAL", "MIXED,PHYSICAL"):
+            adaptive_type = "PHYSICAL_DAMAGE"
+        if adaptive_type.upper() in ("MAGIC",):
+            adaptive_type = "MAGIC_DAMAGE"
         champion = Champion(
             id=data["id"],
             key=data["apiname"],
             name=name,
             title=data["title"],
             full_name=data.get("fullname", ""),
-            resource=data["resource"],
-            attack_type=data["rangetype"],
-            adaptive_type=data["adaptivetype"],
+            resource=Resource.from_string(data["resource"]),
+            attack_type=AttackType.from_string(data["rangetype"]),
+            adaptive_type=DamageType.from_string(adaptive_type),
             stats=Stats(
                 health_base=data["stats"]["hp_base"],
                 health_per_level=data["stats"]["hp_lvl"],
@@ -259,6 +264,48 @@ class LolWikiDataHandler:
             ability_cost = data.get("cost", data.get("Cost"))
             cooldown = data.get("cooldown", data.get("static"))
 
+            damage_type = data.get("damagetype")
+            if damage_type is not None:
+                damage_type = to_enum_like(damage_type)
+                if '/' in damage_type:
+                    damage_type = "MIXED_DAMAGE"
+                elif damage_type == "PHYSICAL":
+                    damage_type = "PHYSICAL_DAMAGE"
+                elif damage_type == "MAGIC":
+                    damage_type = "MAGIC_DAMAGE"
+                elif damage_type == "TRUE":
+                    damage_type = "TRUE_DAMAGE"
+                elif damage_type == "PURE":
+                    damage_type = "PURE_DAMAGE"
+                else:
+                    damage_type = "OTHER_DAMAGE"
+                damage_type = DamageType.from_string(damage_type)
+
+            resource = data.get("costtype")
+            if resource is not None:
+                resource = to_enum_like(resource)
+                if resource in ("MANA", "NO_COST", "HEALTH", "MAXIMUM_HEALTH", "ENERGY", "CURRENT_HEALTH", "HEALTH_PER_SECOND", "MANA_PER_SECOND", "CHARGE", "FURY"):
+                    pass
+                elif resource in ('MANA_+_4_FOCUS', 'MANA_+_4_FROST_STACKS', 'MANA_+_6_CHARGES', 'MANA_+_1_SAND_SOLDIER', 'MANA_+_40_/_45_/_50_/_55_/_60_PER_SECOND', 'MAXIMUM_HEALTH_+_50_/_55_/_60_/_65_/_70_MANA', 'MANA_+_1_TURRET_KIT', 'MANA_+_1_MISSILE', 'MANA_+_1_CHARGE', 'MANA_+_ALL_CHARGES'):
+                    resource = "MANA"
+                elif resource == 'OF_CURRENT_HEALTH':
+                    resource = "CURRENT_HEALTH"
+                elif resource == '%_OF_CURRENT_HEALTH':
+                    resource = "CURRENT_HEALTH"
+                elif resource == 'CURRENT_GRIT':
+                    resource = "GRIT"
+                elif resource == "CURRENT_FURY":
+                    resource = "FURY"
+                elif resource == 'FURY_EVERY_0.5_SECONDS':
+                    resource = "FURY"
+                else:
+                    resource = "OTHER"
+                resource = Resource.from_string(resource)
+
+            projectile = data.get("projectile")
+            if projectile:
+                projectile = to_enum_like(projectile)
+
             effects = []
             for ending in ['', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']:
                 description = data.get(f"description{ending}")
@@ -278,11 +325,11 @@ class LolWikiDataHandler:
                 targeting=data.get("targeting"),
                 affects=data.get("affects"),
                 spellshieldable=data.get("spellshield"),
-                resource=data.get("costtype"),
-                damageType=data.get("damagetype"),
-                spellEffects=data.get("spelleffects"),
-                projectile=data.get("projectile"),
-                onHitEffects=data.get("onhiteffects"),
+                resource=resource,
+                damage_type=damage_type,
+                spell_effects=data.get("spelleffects"),
+                projectile=projectile,
+                on_hit_effects=data.get("onhiteffects"),
                 occurrence=data.get("occurrence"),
                 blurb=data.get("blurb"),
                 notes=data.get("notes") if data.get("notes") != "* No additional notes." else None,

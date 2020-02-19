@@ -4,9 +4,9 @@
   "name": "Lux",
   "title": "the Lady of Luminosity",
   "fullName": "Luxanna Crownguard",
-  "resource": "Mana",
-  "attackType": "Ranged",
-  "adaptiveType": "magic",
+  "resource": "MANA",
+  "attackType": "RANGED",
+  "adaptiveType": "MAGIC_DAMAGE",
   "stats": {
     "healthBase": 490,
     "healthPerLevel": 85,
@@ -47,10 +47,10 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "BURST",
-    "SUPPORT",
     "ARTILLERY",
-    "MAGE"
+    "MAGE",
+    "BURST",
+    "SUPPORT"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -86,7 +86,7 @@
         "affects": "Enemies",
         "spellshieldable": "False",
         "resource": null,
-        "damageType": "Magic",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "Proc",
         "projectile": null,
         "onHitEffects": null,
@@ -120,11 +120,11 @@
                 "modifiers": [
                   {
                     "values": [
-                      70,
-                      115,
-                      160,
-                      205,
-                      250
+                      80,
+                      125,
+                      170,
+                      215,
+                      260
                     ],
                     "units": [
                       "",
@@ -136,11 +136,11 @@
                   },
                   {
                     "values": [
-                      70,
-                      70,
-                      70,
-                      70,
-                      70
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
                     ],
                     "units": [
                       "% AP",
@@ -179,10 +179,10 @@
           "modifiers": [
             {
               "values": [
-                13,
-                12,
                 11,
+                10.5,
                 10,
+                9.5,
                 9
               ],
               "units": [
@@ -199,10 +199,10 @@
         "targeting": "Direction",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "Mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "Area of effect",
-        "projectile": "True",
+        "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "Targets affected by a  spell shield or by  Black Shield count towards Light Binding's two-target limit.",
@@ -366,10 +366,10 @@
         "targeting": "Direction",
         "affects": "Allies",
         "spellshieldable": null,
-        "resource": "Mana",
+        "resource": "MANA",
         "damageType": null,
         "spellEffects": "Shield",
-        "projectile": "Special",
+        "projectile": "SPECIAL",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "Prismatic Barrier is intercepted only by  Wind Wall.\n If Lux dies before her wand returns it will fizzle upon reaching maximum range.\n The wand decelerates on the way out and accelerates on the way back.",
@@ -512,10 +512,10 @@
         "targeting": "Ground",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "Mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "Area of effect",
-        "projectile": "True",
+        "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "Lux can re-cast Lucent Singularity in flight to detonate on arrival.\n Lucent Singularity grants  sight while also in flight.",
@@ -610,13 +610,13 @@
         "targeting": "Direction",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "Mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "Area of effect",
-        "projectile": "False",
+        "projectile": "FALSE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Lux cannot use any ability, summoner spell, or item while casting, but she can reactivate  Lucent Singularity.\n If Lux is  displaced while casting, Final Spark will fire from her original location.\n Final Spark only goes on cooldown when it fires and not when Lux starts casting. If she dies while casting, Final Spark will not go on cooldown.",
+        "notes": "Lux cannot use any ability, summoner spell, or item while casting, but she can reactivate  Lucent Singularity.\n If Lux  Flashes or is  displaced while casting, Final Spark will fire from her original location.\n Final Spark only goes on cooldown when it fires and not when Lux starts casting. If she dies while casting, Final Spark will not go on cooldown.",
         "blurb": "After gathering energy, Lux fires a beam of light that deals damage to all targets in the area. If Final Spark kills a champion, part of its cooldown is refunded. In addition, triggers Lux's passive ability and refreshes the Illumination debuff duration.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -635,7 +635,7 @@
   },
   "releaseDate": "2010-10-19",
   "releasePatch": "1.0.0.103",
-  "patchLastChanged": "10.3",
+  "patchLastChanged": "10.4",
   "price": {
     "blueEssence": 3150,
     "rp": 790

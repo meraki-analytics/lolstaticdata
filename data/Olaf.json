@@ -4,9 +4,9 @@
   "name": "Olaf",
   "title": "the Berserker",
   "fullName": "",
-  "resource": "Mana",
-  "attackType": "Melee",
-  "adaptiveType": "physical",
+  "resource": "MANA",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
   "stats": {
     "healthBase": 597.24,
     "healthPerLevel": 93,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "DIVER",
     "FIGHTER",
-    "TANK",
-    "DIVER"
+    "TANK"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -219,10 +219,10 @@
         "targeting": "Direction",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "Mana",
-        "damageType": "Physical",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
         "spellEffects": "Aoe",
-        "projectile": "True",
+        "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "Undertow briefly grants  sight upon landing.\n The timer for how long an axe stays on the ground starts upon landing, so it is possible to throw another axe before grabbing the one from the ground.\n Olaf cannot pick up an enemy twin's Undertow (unlike  Draven with  Spinning Axe).",
@@ -343,7 +343,7 @@
         "targeting": "Self / Buff",
         "affects": "Self",
         "spellshieldable": null,
-        "resource": "Mana",
+        "resource": "MANA",
         "damageType": null,
         "spellEffects": "Heal",
         "projectile": null,
@@ -478,8 +478,8 @@
         "targeting": "Unit",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "Health",
-        "damageType": "True",
+        "resource": "HEALTH",
+        "damageType": "TRUE_DAMAGE",
         "spellEffects": "spell",
         "projectile": null,
         "onHitEffects": null,

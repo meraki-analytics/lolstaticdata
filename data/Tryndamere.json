@@ -4,9 +4,9 @@
   "name": "Tryndamere",
   "title": "the Barbarian King",
   "fullName": "",
-  "resource": "Fury",
-  "attackType": "Melee",
-  "adaptiveType": "physical",
+  "resource": "FURY",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
   "stats": {
     "healthBase": 625.64,
     "healthPerLevel": 98,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "SKIRMISHER",
     "ASSASSIN",
-    "FIGHTER",
-    "SKIRMISHER"
+    "FIGHTER"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -341,7 +341,7 @@
         "targeting": "Self",
         "affects": "Self",
         "spellshieldable": null,
-        "resource": "Current Fury",
+        "resource": "FURY",
         "damageType": null,
         "spellEffects": "Heal",
         "projectile": null,
@@ -564,7 +564,7 @@
         "affects": "Enemies",
         "spellshieldable": "True",
         "resource": null,
-        "damageType": "physical",
+        "damageType": "PHYSICAL_DAMAGE",
         "spellEffects": "aoe",
         "projectile": null,
         "onHitEffects": null,

@@ -4,9 +4,9 @@
   "name": "Karthus",
   "title": "the Deathsinger",
   "fullName": "",
-  "resource": "Mana",
-  "attackType": "Ranged",
-  "adaptiveType": "magic",
+  "resource": "MANA",
+  "attackType": "RANGED",
+  "adaptiveType": "MAGIC_DAMAGE",
   "stats": {
     "healthBase": 528,
     "healthPerLevel": 87,
@@ -47,8 +47,8 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "MAGE",
-    "BATTLEMAGE"
+    "BATTLEMAGE",
+    "MAGE"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -89,7 +89,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Death Defied will always trigger after revival effects ( Guardian Angel,  Chronoshift).\n At the start of Death Defied, Karthus is set to  1 health.\n Karthus can still regenerate his health over the duration, but he will always die at the end of it.\n Due to this fact, Karthus gains large benefit from  Last Stand for most of his passive.\n\n Karthus will still benefit from  cooldown reduction during Death Defied.\n After Death Defied ends, the corpse of Karthus will retain unit collision despite being dead on the ground.",
+        "notes": "Death Defied will always trigger after revival effects ( Guardian Angel,  Chronoshift).\n Death Defied will still trigger if Karthus is killed by the Nexus Obelisk.\n\n At the start of Death Defied, Karthus is set to  1 health.\n Karthus can still regenerate his health over the duration, but he will always die at the end of it.\n Due to this fact, Karthus gains large benefit from  Last Stand for most of his passive.\n\n Karthus will still benefit from  cooldown reduction during Death Defied.\n After Death Defied ends, the corpse of Karthus will retain unit collision despite being dead on the ground.",
         "blurb": "Upon dying, Karthus enters a spirit form that allows him to continue casting spells for 7 seconds.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -110,7 +110,7 @@
         "name": "Lay Waste",
         "effects": [
           {
-            "description": "Active: After a 0.5-second delay, Karthus detonates the target area in the cursor's direction, dealing  magic damage to all enemies within, doubled when hitting only one target.",
+            "description": "Active: Karthus briefly  reveals the target area which he detonates after a 0.5-second delay, dealing  magic damage to all enemies within, doubled when hitting only one target.",
             "icon": "Lay Waste.png",
             "leveling": [
               {
@@ -234,13 +234,13 @@
         "targeting": "Ground",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "Mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "Special",
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Applies  spell damage if it hits a single target and  area damage if it hits multiple targets.\n Lay Waste briefly grants  sight of the target area before detonation.\n Lay Waste plays a different sound effect and uses a cosmetic critical strike when it only hits one target.",
+        "notes": "Applies  spell damage if it hits a single target and  area damage if it hits multiple targets.\n Lay Waste plays a different sound effect and uses a cosmetic critical strike when it only hits one target.",
         "blurb": "Karthus unleashes a delayed blast at a location, dealing damage to nearby enemies.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -261,7 +261,7 @@
         "name": "Wall of Pain",
         "effects": [
           {
-            "description": "Active: Karthus creates a transparent wall at the target location for 5 seconds and grants  sight around it.",
+            "description": "Active: Karthus creates a passable wall of energy at the target location for 5 seconds, granting  sight around its pillars.",
             "icon": "Wall of Pain.png",
             "leveling": [
               {
@@ -288,7 +288,7 @@
             ]
           },
           {
-            "description": "For the duration, all units who cross it are both  slowed for 4 seconds, reduced by 50% over the first second, decaying over its duration and  lose 15% magic resistance for the same duration.",
+            "description": "For the duration, any enemy unit who crosses it is both  slowed for 4 seconds, decaying over its duration, and  loses 15% magic resistance for the same duration.",
             "icon": null,
             "leveling": [
               {
@@ -334,6 +334,11 @@
                 ]
               }
             ]
+          },
+          {
+            "description": "Each unit can only be affected once per cast.",
+            "icon": null,
+            "leveling": []
           }
         ],
         "cost": {
@@ -380,13 +385,13 @@
         "targeting": "Ground",
         "affects": "Enemies",
         "spellshieldable": "False",
-        "resource": "Mana",
+        "resource": "MANA",
         "damageType": null,
         "spellEffects": null,
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The wall casts perpendicular to Karthus'  location.\n The  sight is granted around Wall of Pain's pillars but not the wall itself.\n Wall of Pain can only affect any given unit once per cast.",
+        "notes": "The wall casts perpendicular to Karthus'  location.",
         "blurb": "Karthus creates a passable screen of leeching energy. Any enemy units that walk through the screen have their Movement Speed and Magic Resist reduced for a period.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -501,8 +506,8 @@
         "targeting": "Aura",
         "affects": "Self, Enemies",
         "spellshieldable": "False",
-        "resource": "Mana per second",
-        "damageType": "Magic",
+        "resource": "MANA_PER_SECOND",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "aoedot",
         "projectile": null,
         "onHitEffects": null,
@@ -599,8 +604,8 @@
         "targeting": "Auto",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "Mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "Aoe",
         "projectile": null,
         "onHitEffects": null,

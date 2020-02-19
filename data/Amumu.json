@@ -4,9 +4,9 @@
   "name": "Amumu",
   "title": "the Sad Mummy",
   "fullName": "",
-  "resource": "Mana",
-  "attackType": "Melee",
-  "adaptiveType": "magic",
+  "resource": "MANA",
+  "attackType": "MELEE",
+  "adaptiveType": "MAGIC_DAMAGE",
   "stats": {
     "healthBase": 613.12,
     "healthPerLevel": 84,
@@ -47,8 +47,8 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "MAGE",
     "VANGUARD",
+    "MAGE",
     "TANK"
   ],
   "attributeRatings": {
@@ -85,7 +85,7 @@
         "affects": "Enemies",
         "spellshieldable": "False",
         "resource": null,
-        "damageType": "True",
+        "damageType": "TRUE_DAMAGE",
         "spellEffects": null,
         "projectile": null,
         "onHitEffects": null,
@@ -198,10 +198,10 @@
         "targeting": "Direction",
         "affects": "Enemies",
         "spellshieldable": "special",
-        "resource": "mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "spell",
-        "projectile": "True",
+        "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "Bandage Toss will always be directed towards the target location even if Amumu moves during it.\n Bandage Toss follows his target for up to 2000 units from where he cast Bandage Toss, in case targets get out of the stun before he arrives.\n Bandage Toss cannot be cast while Amumu is  rooted.\n Crowd control effects will not prevent Amumu from commencing the dash. However, the duration of the crowd control can persist the duration of the dash.\n While Amumu is mid-dash, only  airborne crowd control effects will prevent him from reaching his target. Other forms of crowd control will still be applied, but they will not hinder his movement.\n Bandage Toss does not fizzle on Amumu's death, and can still stun and damage enemies.\n Amumu is still able to dash even if Bandage Toss is blocked by  spell shield.\n Amumu will attempt to basic attack the target. If Bandage Toss is used beyond Amumu's basic attack range, this basic attack will not grant any stack of  Conqueror,  Electrocute,  Phase Rush or  Spellthief's Edge.",
@@ -212,7 +212,7 @@
         "tetherRadius": null,
         "onTargetCdStatic": null,
         "innerRadius": null,
-        "speed": "2000",
+        "speed": "2000 / 1800",
         "width": null,
         "angle": null,
         "castTime": null,
@@ -312,8 +312,8 @@
         "targeting": "Aura",
         "affects": "Enemies",
         "spellshieldable": "False",
-        "resource": "mana per second",
-        "damageType": "Magic",
+        "resource": "MANA_PER_SECOND",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "aoedot",
         "projectile": null,
         "onHitEffects": null,
@@ -490,8 +490,8 @@
         "targeting": "Passive / Auto",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "spellaoe",
         "projectile": null,
         "onHitEffects": null,
@@ -550,6 +550,11 @@
                 ]
               }
             ]
+          },
+          {
+            "description": "Curse of the Sad Mummy also stops enemies in the middle of their  dashes.",
+            "icon": null,
+            "leveling": []
           }
         ],
         "cost": {
@@ -572,9 +577,9 @@
           "modifiers": [
             {
               "values": [
-                150,
                 130,
-                110
+                115,
+                100
               ],
               "units": [
                 "",
@@ -588,8 +593,8 @@
         "targeting": "none",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "spellaoe",
         "projectile": null,
         "onHitEffects": null,
@@ -613,7 +618,7 @@
   },
   "releaseDate": "2009-06-26",
   "releasePatch": "une 26, 2009 Patch",
-  "patchLastChanged": "9.24",
+  "patchLastChanged": "10.4",
   "price": {
     "blueEssence": 450,
     "rp": 260

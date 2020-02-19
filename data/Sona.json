@@ -4,9 +4,9 @@
   "name": "Sona",
   "title": "Maven of the Strings",
   "fullName": "Sona Buvelle",
-  "resource": "Mana",
-  "attackType": "Ranged",
-  "adaptiveType": "magic",
+  "resource": "MANA",
+  "attackType": "RANGED",
+  "adaptiveType": "MAGIC_DAMAGE",
   "stats": {
     "healthBase": 482.36,
     "healthPerLevel": 77,
@@ -47,9 +47,9 @@
     "urfShielding": 0.95
   },
   "roles": [
+    "MAGE",
     "SUPPORT",
-    "ENCHANTER",
-    "MAGE"
+    "ENCHANTER"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -90,7 +90,7 @@
         "affects": "Self",
         "spellshieldable": "True",
         "resource": null,
-        "damageType": "Magic",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "proc",
         "projectile": null,
         "onHitEffects": null,
@@ -202,6 +202,11 @@
             ]
           },
           {
+            "description": "Granting an ally (other than herself) the aura refunds 30 mana per cast.",
+            "icon": null,
+            "leveling": []
+          },
+          {
             "description": "Power Chord \u2013 Staccato: Power Chord deals[ 28 \u2212  336 (based on level) (+ 28% AP) total magic damage. ][ 40% bonus magic damage. ]",
             "icon": null,
             "leveling": []
@@ -211,11 +216,11 @@
           "modifiers": [
             {
               "values": [
-                50,
-                55,
-                60,
-                65,
-                70
+                75,
+                80,
+                85,
+                90,
+                95
               ],
               "units": [
                 "",
@@ -249,10 +254,10 @@
         "targeting": "Aura / Auto",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "special",
-        "projectile": "True",
+        "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "Hymn of Valor deals  default damage in an  area of effect range. The granted aura buff applies  proc damage.\n The bolts do not apply spell effects.\n\n Bolts hitting the same target twice only receive damage from one bolt.",
@@ -362,6 +367,11 @@
             ]
           },
           {
+            "description": "Granting an ally (other than herself) the aura refunds 30 mana per cast.",
+            "icon": null,
+            "leveling": []
+          },
+          {
             "description": "Power Chord \u2013 Diminuendo: Power Chord reduces its target's size and damage output by 25% (+ 4% per 100 AP) for 3 seconds.",
             "icon": null,
             "leveling": []
@@ -371,11 +381,11 @@
           "modifiers": [
             {
               "values": [
-                80,
-                85,
-                90,
-                95,
-                100
+                105,
+                110,
+                115,
+                120,
+                125
               ],
               "units": [
                 "",
@@ -409,7 +419,7 @@
         "targeting": "Aura / Auto",
         "affects": "Self, Allies",
         "spellshieldable": "special",
-        "resource": "mana",
+        "resource": "MANA",
         "damageType": null,
         "spellEffects": "Heal",
         "projectile": null,
@@ -484,6 +494,11 @@
             ]
           },
           {
+            "description": "Granting an ally (other than herself) the aura refunds 30 mana per cast.",
+            "icon": null,
+            "leveling": []
+          },
+          {
             "description": "Power Chord \u2013 Tempo: Power Chord  slows its target by 40% (+ 4% per 100 AP) for 2 seconds.",
             "icon": null,
             "leveling": []
@@ -493,11 +508,11 @@
           "modifiers": [
             {
               "values": [
-                65,
-                65,
-                65,
-                65,
-                65
+                90,
+                90,
+                90,
+                90,
+                90
               ],
               "units": [
                 "",
@@ -531,7 +546,7 @@
         "targeting": "Aura",
         "affects": "Self, Allies",
         "spellshieldable": "special",
-        "resource": "mana",
+        "resource": "MANA",
         "damageType": null,
         "spellEffects": null,
         "projectile": null,
@@ -652,10 +667,10 @@
         "targeting": "Direction",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "spellaoe",
-        "projectile": "True",
+        "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "Aesthetic: Enemies  stunned by Crescendo are forced to dance and perform their moves 50% faster for its duration.",
@@ -677,7 +692,7 @@
   },
   "releaseDate": "2010-09-21",
   "releasePatch": "1.0.0.101",
-  "patchLastChanged": "10.3",
+  "patchLastChanged": "10.4",
   "price": {
     "blueEssence": 3150,
     "rp": 790

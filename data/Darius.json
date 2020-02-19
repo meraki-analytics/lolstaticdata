@@ -4,9 +4,9 @@
   "name": "Darius",
   "title": "the Hand of Noxus",
   "fullName": "",
-  "resource": "Mana",
-  "attackType": "Melee",
-  "adaptiveType": "physical",
+  "resource": "MANA",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
   "stats": {
     "healthBase": 582.24,
     "healthPerLevel": 100,
@@ -69,7 +69,7 @@
         "name": "Hemorrhage",
         "effects": [
           {
-            "description": "Innate: Dealing damage to non- structure targets with basic attacks on-attack or abilities, causes them to bleed every 1.25 seconds for 5 seconds, dealing 13 \u2212 30 (based on level) (+ 30% bonus AD)  physical damage over the duration. This can stack up to 5 times for a maximum of 65 \u2212 150 (based on level) (+ 150% bonus AD) physical damage over the duration.",
+            "description": "Innate: Dealing damage to non- structure targets with basic attacks on-attack or abilities, causes them to bleed every 1.25 seconds for 5 seconds, dealing 13 \u2212 30 (based on level) (+ 30% bonus AD)  physical damage over the duration. This can stack up to 5 times for a maximum of 65 \u2212 150 (based on level) (+ 150% bonus AD) physical damage over the duration. The total damage is increased by 20% against monsters.",
             "icon": "Hemorrhage.png",
             "leveling": []
           },
@@ -90,7 +90,7 @@
         "affects": "Enemies",
         "spellshieldable": "false",
         "resource": null,
-        "damageType": "Physical",
+        "damageType": "PHYSICAL_DAMAGE",
         "spellEffects": "default",
         "projectile": null,
         "onHitEffects": null,
@@ -196,7 +196,7 @@
             ]
           },
           {
-            "description": "Darius  heals for  15% \u2212 45% (based on enemy champions hit by the blade) missing health. The handle of Darius' axe will not apply  hemorrhage or heal him.",
+            "description": "Against champions and large monsters, Darius  heals for  15% \u2212 45% (based on enemies hit by the blade) missing health. The handle of Darius' axe will not apply  hemorrhage or heal him.",
             "icon": null,
             "leveling": []
           }
@@ -245,8 +245,8 @@
         "targeting": "Auto",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "mana",
-        "damageType": "Physical",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
         "spellEffects": "spellaoe",
         "projectile": null,
         "onHitEffects": null,
@@ -358,8 +358,8 @@
         "targeting": "Buff",
         "affects": "Enemies, Structures",
         "spellshieldable": "True",
-        "resource": "mana",
-        "damageType": "Physical",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
         "spellEffects": "Proc",
         "projectile": null,
         "onHitEffects": null,
@@ -461,10 +461,10 @@
         "targeting": "Direction",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "mana",
+        "resource": "MANA",
         "damageType": null,
         "spellEffects": null,
-        "projectile": "False",
+        "projectile": "FALSE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "After the pull, Darius will attempt to basic attack the closest pulled target.\n The armor penetration stacks multiplicatively with other forms of percentage armor reduction.",
@@ -627,8 +627,8 @@
         "targeting": "Unit",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "mana",
-        "damageType": "True",
+        "resource": "MANA",
+        "damageType": "TRUE_DAMAGE",
         "spellEffects": "spell",
         "projectile": null,
         "onHitEffects": null,
@@ -652,7 +652,7 @@
   },
   "releaseDate": "2012-05-23",
   "releasePatch": "1.0.0.140",
-  "patchLastChanged": "10.2",
+  "patchLastChanged": "10.4",
   "price": {
     "blueEssence": 4800,
     "rp": 880

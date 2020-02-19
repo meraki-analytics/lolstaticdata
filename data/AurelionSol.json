@@ -4,9 +4,9 @@
   "name": "Aurelion Sol",
   "title": "The Star Forger",
   "fullName": "",
-  "resource": "Mana",
-  "attackType": "Ranged",
-  "adaptiveType": "magic",
+  "resource": "MANA",
+  "attackType": "RANGED",
+  "adaptiveType": "MAGIC_DAMAGE",
   "stats": {
     "healthBase": 575,
     "healthPerLevel": 92,
@@ -47,8 +47,8 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "MAGE",
-    "BATTLEMAGE"
+    "BATTLEMAGE",
+    "MAGE"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -100,9 +100,9 @@
         "affects": "Self / Enemies",
         "spellshieldable": "True",
         "resource": null,
-        "damageType": "Magic",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "spellpersist",
-        "projectile": "False",
+        "projectile": "FALSE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "Aurelion Sol's Stars have independent vision hitboxes, meaning that they may remain visible even while he is within a brush, and must be in the brush themselves in order to be hidden.\n In addition to not being considered to be projectiles for interception purposes, it is possible that his Stars are considered champion summoned units.\n\n An individual Star must complete at least one third of its orbit before it can damage the same target again. \n In the event that an enemy orbits around Aurelion Sol at the same rate as his Stars without leaving their hitbox, they will take damage once every third of the way around.\n  Stasis from friendly sources (allied  Tempered Fate,  Zhonya's Hourglass, etc.) does not disable Center of the Universe.",
@@ -270,10 +270,10 @@
         "targeting": "Direction",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "Mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "spellaoe",
-        "projectile": "True",
+        "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "So long as Aurelion Sol manages to keep Starsurge within the Outer Limit, it will continue to expand until detonated or out of range, giving this ability the largest range and radius of any ability in the game.\n Both instances count as ability activations for the purposes of effects such as Spellblade and  Force Pulse.\n Starsurge's size grows by 36.67 units per second.",
@@ -439,10 +439,10 @@
         "targeting": "Direction",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "Mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "spellaoe",
-        "projectile": "True",
+        "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "So long as Aurelion Sol manages to keep Starsurge within the Outer Limit, it will continue to expand until detonated or out of range, giving this ability the largest range and radius of any ability in the game.\n Both instances count as ability activations for the purposes of effects such as Spellblade and  Force Pulse.\n Starsurge's size grows by 36.67 units per second.",
@@ -493,7 +493,7 @@
             ]
           },
           {
-            "description": "Active: Aurelion Sol  pushes his  Stars out to the Outer Limit, rotating them at a high but decaying speed, and increasing their total damage by 50%.",
+            "description": "Active: Aurelion Sol  pushes his  Stars out to the Outer Limit, rotating them at a high but decaying speed, and increasing their total damage by 40%.",
             "icon": "Celestial Expansion 2.png",
             "leveling": [
               {
@@ -501,24 +501,24 @@
                 "modifiers": [
                   {
                     "values": [
-                      18.0,
-                      27.529411764705884,
-                      37.05882352941177,
-                      46.588235294117645,
-                      56.11764705882353,
-                      65.64705882352942,
-                      75.17647058823529,
-                      84.70588235294117,
-                      94.23529411764706,
-                      103.76470588235294,
-                      113.29411764705883,
-                      122.82352941176471,
-                      132.35294117647058,
-                      141.88235294117646,
-                      151.41176470588235,
-                      160.94117647058823,
-                      170.47058823529412,
-                      180.0
+                      16.8,
+                      25.694117647058825,
+                      34.588235294117645,
+                      43.48235294117647,
+                      52.37647058823529,
+                      61.27058823529411,
+                      70.16470588235293,
+                      79.05882352941175,
+                      87.95294117647057,
+                      96.8470588235294,
+                      105.74117647058821,
+                      114.63529411764704,
+                      123.52941176470587,
+                      132.4235294117647,
+                      141.31764705882352,
+                      150.21176470588233,
+                      159.10588235294117,
+                      168.0
                     ],
                     "units": [
                       "",
@@ -543,11 +543,11 @@
                   },
                   {
                     "values": [
-                      7.5,
-                      15,
-                      22.5,
-                      30,
-                      37.5
+                      7,
+                      14,
+                      21,
+                      28,
+                      35
                     ],
                     "units": [
                       "",
@@ -559,11 +559,11 @@
                   },
                   {
                     "values": [
-                      37.5,
-                      37.5,
-                      37.5,
-                      37.5,
-                      37.5
+                      35,
+                      35,
+                      35,
+                      35,
+                      35
                     ],
                     "units": [
                       "% AP",
@@ -627,10 +627,10 @@
         "targeting": "Self",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "Mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "Single target",
-        "projectile": "False",
+        "projectile": "FALSE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "Celestial Expansion does not apply Muramana's Shock passive.\n Due to being an extension of his innate, crowd control that inhibits the use of abilities will also disable Celestial Expansion and put it on cooldown.\n Although  stasis from friendly sources ( Tempered Fate,  Zhonya's Hourglass, etc.) does not disable Celestial Expansion.\n\n Toggle-able abilities do not count as an ability activation for the purposes of effects such as Spellblade and  Force Pulse.\n Toggle-able abilities heal for up to 25 health per second when purchasing  Rod of Ages.",
@@ -679,7 +679,7 @@
             ]
           },
           {
-            "description": "Active: Aurelion Sol  pushes his  Stars out to the Outer Limit, rotating them at a high but decaying speed, and increasing their total damage by 50%.",
+            "description": "Active: Aurelion Sol  pushes his  Stars out to the Outer Limit, rotating them at a high but decaying speed, and increasing their total damage by 40%.",
             "icon": "Celestial Expansion 2.png",
             "leveling": [
               {
@@ -687,24 +687,24 @@
                 "modifiers": [
                   {
                     "values": [
-                      18.0,
-                      27.529411764705884,
-                      37.05882352941177,
-                      46.588235294117645,
-                      56.11764705882353,
-                      65.64705882352942,
-                      75.17647058823529,
-                      84.70588235294117,
-                      94.23529411764706,
-                      103.76470588235294,
-                      113.29411764705883,
-                      122.82352941176471,
-                      132.35294117647058,
-                      141.88235294117646,
-                      151.41176470588235,
-                      160.94117647058823,
-                      170.47058823529412,
-                      180.0
+                      16.8,
+                      25.694117647058825,
+                      34.588235294117645,
+                      43.48235294117647,
+                      52.37647058823529,
+                      61.27058823529411,
+                      70.16470588235293,
+                      79.05882352941175,
+                      87.95294117647057,
+                      96.8470588235294,
+                      105.74117647058821,
+                      114.63529411764704,
+                      123.52941176470587,
+                      132.4235294117647,
+                      141.31764705882352,
+                      150.21176470588233,
+                      159.10588235294117,
+                      168.0
                     ],
                     "units": [
                       "",
@@ -729,11 +729,11 @@
                   },
                   {
                     "values": [
-                      7.5,
-                      15,
-                      22.5,
-                      30,
-                      37.5
+                      7,
+                      14,
+                      21,
+                      28,
+                      35
                     ],
                     "units": [
                       "",
@@ -745,11 +745,11 @@
                   },
                   {
                     "values": [
-                      37.5,
-                      37.5,
-                      37.5,
-                      37.5,
-                      37.5
+                      35,
+                      35,
+                      35,
+                      35,
+                      35
                     ],
                     "units": [
                       "% AP",
@@ -813,10 +813,10 @@
         "targeting": "Self",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "Mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "Single target",
-        "projectile": "False",
+        "projectile": "FALSE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "Celestial Expansion does not apply Muramana's Shock passive.\n Due to being an extension of his innate, crowd control that inhibits the use of abilities will also disable Celestial Expansion and put it on cooldown.\n Although  stasis from friendly sources ( Tempered Fate,  Zhonya's Hourglass, etc.) does not disable Celestial Expansion.\n\n Toggle-able abilities do not count as an ability activation for the purposes of effects such as Spellblade and  Force Pulse.\n Toggle-able abilities heal for up to 25 health per second when purchasing  Rod of Ages.",
@@ -899,7 +899,7 @@
         "targeting": "Direction",
         "affects": "Self",
         "spellshieldable": null,
-        "resource": "Mana",
+        "resource": "MANA",
         "damageType": null,
         "spellEffects": null,
         "projectile": null,
@@ -983,7 +983,7 @@
         "targeting": "Direction",
         "affects": "Self",
         "spellshieldable": null,
-        "resource": "Mana",
+        "resource": "MANA",
         "damageType": null,
         "spellEffects": null,
         "projectile": null,
@@ -1098,10 +1098,10 @@
         "targeting": "Direction",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "Mana",
-        "damageType": "Magic",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
         "spellEffects": "spellaoe",
-        "projectile": "False",
+        "projectile": "FALSE",
         "onHitEffects": null,
         "occurrence": null,
         "notes": "If Aurelion Sol is  displaced while casting, Voice of Light fires from the updated location.",
