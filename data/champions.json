@@ -1,5 +1,5 @@
-[
-  {
+{
+  "Aatrox": {
     "id": 266,
     "key": "Aatrox",
     "name": "Aatrox",
@@ -48,9 +48,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "JUGGERNAUT",
       "FIGHTER",
-      "JUGGERNAUT"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -875,7 +875,7 @@
       "rp": 880
     }
   },
-  {
+  "Ahri": {
     "id": 103,
     "key": "Ahri",
     "name": "Ahri",
@@ -1665,7 +1665,7 @@
       "rp": 880
     }
   },
-  {
+  "Akali": {
     "id": 84,
     "key": "Akali",
     "name": "Akali",
@@ -2381,7 +2381,7 @@
       "rp": 790
     }
   },
-  {
+  "Alistar": {
     "id": 12,
     "key": "Alistar",
     "name": "Alistar",
@@ -2430,9 +2430,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
       "SUPPORT",
-      "VANGUARD"
+      "VANGUARD",
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -2989,7 +2989,7 @@
       "rp": 585
     }
   },
-  {
+  "Amumu": {
     "id": 32,
     "key": "Amumu",
     "name": "Amumu",
@@ -3038,9 +3038,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "VANGUARD",
       "MAGE",
-      "VANGUARD"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -3615,7 +3615,7 @@
       "rp": 260
     }
   },
-  {
+  "Anivia": {
     "id": 34,
     "key": "Anivia",
     "name": "Anivia",
@@ -3664,9 +3664,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "BATTLEMAGE",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -4351,7 +4351,7 @@
       "rp": 790
     }
   },
-  {
+  "Annie": {
     "id": 1,
     "key": "Annie",
     "name": "Annie",
@@ -4954,7 +4954,7 @@
       "rp": 260
     }
   },
-  {
+  "Aphelios": {
     "id": 523,
     "key": "Aphelios",
     "name": "Aphelios",
@@ -6128,7 +6128,7 @@
       "rp": 975
     }
   },
-  {
+  "Ashe": {
     "id": 22,
     "key": "Ashe",
     "name": "Ashe",
@@ -6887,7 +6887,7 @@
       "rp": 260
     }
   },
-  {
+  "AurelionSol": {
     "id": 136,
     "key": "AurelionSol",
     "name": "Aurelion Sol",
@@ -8018,7 +8018,7 @@
       "rp": 975
     }
   },
-  {
+  "Azir": {
     "id": 268,
     "key": "Azir",
     "name": "Azir",
@@ -8067,9 +8067,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "SPECIALIST",
       "MARKSMAN",
-      "MAGE"
+      "MAGE",
+      "SPECIALIST"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -8691,7 +8691,7 @@
       "rp": 975
     }
   },
-  {
+  "Bard": {
     "id": 432,
     "key": "Bard",
     "name": "Bard",
@@ -8740,9 +8740,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "CATCHER",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -9298,7 +9298,7 @@
       "rp": 975
     }
   },
-  {
+  "Blitzcrank": {
     "id": 53,
     "key": "Blitzcrank",
     "name": "Blitzcrank",
@@ -9348,8 +9348,8 @@
     },
     "roles": [
       "CATCHER",
-      "TANK",
-      "FIGHTER"
+      "FIGHTER",
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -9878,7 +9878,7 @@
       "rp": 790
     }
   },
-  {
+  "Brand": {
     "id": 63,
     "key": "Brand",
     "name": "Brand",
@@ -10559,7 +10559,7 @@
       "rp": 880
     }
   },
-  {
+  "Braum": {
     "id": 201,
     "key": "Braum",
     "name": "Braum",
@@ -10608,9 +10608,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
       "WARDEN",
-      "SUPPORT"
+      "SUPPORT",
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -11288,7 +11288,7 @@
       "rp": 975
     }
   },
-  {
+  "Caitlyn": {
     "id": 51,
     "key": "Caitlyn",
     "name": "Caitlyn",
@@ -11954,7 +11954,7 @@
       "rp": 880
     }
   },
-  {
+  "Camille": {
     "id": 164,
     "key": "Camille",
     "name": "Camille",
@@ -12003,8 +12003,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "DIVER",
       "FIGHTER",
+      "DIVER",
       "TANK"
     ],
     "attributeRatings": {
@@ -13104,7 +13104,7 @@
       "rp": 975
     }
   },
-  {
+  "Cassiopeia": {
     "id": 69,
     "key": "Cassiopeia",
     "name": "Cassiopeia",
@@ -13834,7 +13834,7 @@
       "rp": 880
     }
   },
-  {
+  "Chogath": {
     "id": 31,
     "key": "Chogath",
     "name": "Cho'Gath",
@@ -13883,9 +13883,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "MAGE",
       "SPECIALIST",
-      "TANK",
-      "MAGE"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -14559,7 +14559,7 @@
       "rp": 585
     }
   },
-  {
+  "Corki": {
     "id": 42,
     "key": "Corki",
     "name": "Corki",
@@ -15595,7 +15595,7 @@
       "rp": 790
     }
   },
-  {
+  "Darius": {
     "id": 122,
     "key": "Darius",
     "name": "Darius",
@@ -15644,9 +15644,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "JUGGERNAUT",
       "FIGHTER",
-      "JUGGERNAUT"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -16255,7 +16255,7 @@
       "rp": 880
     }
   },
-  {
+  "Diana": {
     "id": 131,
     "key": "Diana",
     "name": "Diana",
@@ -16304,10 +16304,10 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "DIVER",
       "FIGHTER",
-      "ASSASSIN",
-      "MAGE"
+      "MAGE",
+      "DIVER",
+      "ASSASSIN"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -17057,7 +17057,7 @@
       "rp": 880
     }
   },
-  {
+  "DrMundo": {
     "id": 36,
     "key": "DrMundo",
     "name": "Dr. Mundo",
@@ -17106,9 +17106,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "JUGGERNAUT",
       "FIGHTER",
-      "JUGGERNAUT"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -17798,7 +17798,7 @@
       "rp": 260
     }
   },
-  {
+  "Draven": {
     "id": 119,
     "key": "Draven",
     "name": "Draven",
@@ -18696,7 +18696,7 @@
       "rp": 880
     }
   },
-  {
+  "Ekko": {
     "id": 245,
     "key": "Ekko",
     "name": "Ekko",
@@ -19424,7 +19424,7 @@
       "rp": 975
     }
   },
-  {
+  "Elise": {
     "id": 60,
     "key": "Elise",
     "name": "Elise",
@@ -19473,8 +19473,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "DIVER",
       "FIGHTER",
+      "DIVER",
       "MAGE"
     ],
     "attributeRatings": {
@@ -20342,7 +20342,7 @@
       "rp": 880
     }
   },
-  {
+  "Evelynn": {
     "id": 28,
     "key": "Evelynn",
     "name": "Evelynn",
@@ -20391,8 +20391,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "ASSASSIN",
-      "MAGE"
+      "MAGE",
+      "ASSASSIN"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -21301,7 +21301,7 @@
       "rp": 585
     }
   },
-  {
+  "Ezreal": {
     "id": 81,
     "key": "Ezreal",
     "name": "Ezreal",
@@ -21979,7 +21979,7 @@
       "rp": 880
     }
   },
-  {
+  "Fiddlesticks": {
     "id": 9,
     "key": "Fiddlesticks",
     "name": "Fiddlesticks",
@@ -22028,9 +22028,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "SPECIALIST",
+      "SUPPORT",
       "MAGE",
-      "SUPPORT"
+      "SPECIALIST"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -22803,7 +22803,7 @@
       "rp": 585
     }
   },
-  {
+  "Fiora": {
     "id": 114,
     "key": "Fiora",
     "name": "Fiora",
@@ -22852,9 +22852,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "ASSASSIN",
       "FIGHTER",
-      "SKIRMISHER",
-      "ASSASSIN"
+      "SKIRMISHER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -23666,7 +23666,7 @@
       "rp": 880
     }
   },
-  {
+  "Fizz": {
     "id": 105,
     "key": "Fizz",
     "name": "Fizz",
@@ -24517,7 +24517,7 @@
       "rp": 880
     }
   },
-  {
+  "Galio": {
     "id": 3,
     "key": "Galio",
     "name": "Galio",
@@ -24566,9 +24566,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
       "WARDEN",
-      "MAGE"
+      "MAGE",
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -25696,7 +25696,7 @@
       "rp": 790
     }
   },
-  {
+  "Gangplank": {
     "id": 41,
     "key": "Gangplank",
     "name": "Gangplank",
@@ -25745,8 +25745,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "SPECIALIST",
-      "FIGHTER"
+      "FIGHTER",
+      "SPECIALIST"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -26540,7 +26540,7 @@
       "rp": 790
     }
   },
-  {
+  "Garen": {
     "id": 86,
     "key": "Garen",
     "name": "Garen",
@@ -26589,9 +26589,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "JUGGERNAUT",
       "FIGHTER",
-      "JUGGERNAUT"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -27443,7 +27443,7 @@
       "rp": 260
     }
   },
-  {
+  "Gnar": {
     "id": 150,
     "key": "Gnar",
     "name": "Gnar",
@@ -27492,8 +27492,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "SPECIALIST",
       "FIGHTER",
+      "SPECIALIST",
       "TANK"
     ],
     "attributeRatings": {
@@ -28672,7 +28672,7 @@
       "rp": 975
     }
   },
-  {
+  "GnarBig": {
     "id": 150.2,
     "key": "GnarBig",
     "name": "Mega Gnar",
@@ -28721,9 +28721,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "VANGUARD",
       "FIGHTER",
-      "VANGUARD"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -29411,7 +29411,7 @@
       "rp": 975
     }
   },
-  {
+  "Gragas": {
     "id": 79,
     "key": "Gragas",
     "name": "Gragas",
@@ -29460,9 +29460,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "VANGUARD",
       "FIGHTER",
-      "MAGE",
-      "VANGUARD"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -30726,7 +30726,7 @@
       "rp": 790
     }
   },
-  {
+  "Graves": {
     "id": 104,
     "key": "Graves",
     "name": "Graves",
@@ -30775,8 +30775,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "SPECIALIST",
-      "MARKSMAN"
+      "MARKSMAN",
+      "SPECIALIST"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -31426,7 +31426,7 @@
       "rp": 880
     }
   },
-  {
+  "Hecarim": {
     "id": 120,
     "key": "Hecarim",
     "name": "Hecarim",
@@ -31475,8 +31475,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "DIVER",
       "FIGHTER",
+      "DIVER",
       "TANK"
     ],
     "attributeRatings": {
@@ -32211,7 +32211,7 @@
       "rp": 880
     }
   },
-  {
+  "Heimerdinger": {
     "id": 74,
     "key": "Heimerdinger",
     "name": "Heimerdinger",
@@ -32260,9 +32260,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "SPECIALIST",
+      "SUPPORT",
       "MAGE",
-      "SUPPORT"
+      "SPECIALIST"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -33009,7 +33009,7 @@
       "rp": 790
     }
   },
-  {
+  "Illaoi": {
     "id": 420,
     "key": "Illaoi",
     "name": "Illaoi",
@@ -33058,9 +33058,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "JUGGERNAUT",
       "FIGHTER",
-      "JUGGERNAUT"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -33779,7 +33779,7 @@
       "rp": 975
     }
   },
-  {
+  "Irelia": {
     "id": 39,
     "key": "Irelia",
     "name": "Irelia",
@@ -33828,8 +33828,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "DIVER",
       "FIGHTER",
+      "DIVER",
       "ASSASSIN"
     ],
     "attributeRatings": {
@@ -34554,7 +34554,7 @@
       "rp": 880
     }
   },
-  {
+  "Ivern": {
     "id": 427,
     "key": "Ivern",
     "name": "Ivern",
@@ -34603,9 +34603,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "CATCHER",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -35267,7 +35267,7 @@
       "rp": 975
     }
   },
-  {
+  "Janna": {
     "id": 40,
     "key": "Janna",
     "name": "Janna",
@@ -35316,9 +35316,9 @@
       "urfShielding": 0.92
     },
     "roles": [
+      "SUPPORT",
       "ENCHANTER",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -36079,7 +36079,7 @@
       "rp": 585
     }
   },
-  {
+  "JarvanIV": {
     "id": 59,
     "key": "JarvanIV",
     "name": "Jarvan IV",
@@ -36128,8 +36128,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "DIVER",
       "FIGHTER",
+      "DIVER",
       "TANK"
     ],
     "attributeRatings": {
@@ -36710,7 +36710,7 @@
       "rp": 880
     }
   },
-  {
+  "Jax": {
     "id": 24,
     "key": "Jax",
     "name": "Jax",
@@ -36759,9 +36759,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "ASSASSIN",
       "FIGHTER",
-      "SKIRMISHER",
-      "ASSASSIN"
+      "SKIRMISHER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -37409,7 +37409,7 @@
       "rp": 585
     }
   },
-  {
+  "Jayce": {
     "id": 126,
     "key": "Jayce",
     "name": "Jayce",
@@ -37459,8 +37459,8 @@
     },
     "roles": [
       "ARTILLERY",
-      "FIGHTER",
-      "MARKSMAN"
+      "MARKSMAN",
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -38504,7 +38504,7 @@
       "rp": 880
     }
   },
-  {
+  "Jhin": {
     "id": 202,
     "key": "Jhin",
     "name": "Jhin",
@@ -38553,8 +38553,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "CATCHER",
       "MARKSMAN",
+      "CATCHER",
       "MAGE"
     ],
     "attributeRatings": {
@@ -39788,7 +39788,7 @@
       "rp": 975
     }
   },
-  {
+  "Jinx": {
     "id": 222,
     "key": "Jinx",
     "name": "Jinx",
@@ -40850,7 +40850,7 @@
       "rp": 880
     }
   },
-  {
+  "Kaisa": {
     "id": 145,
     "key": "Kaisa",
     "name": "Kai'Sa",
@@ -42258,7 +42258,7 @@
       "rp": 975
     }
   },
-  {
+  "Kalista": {
     "id": 429,
     "key": "Kalista",
     "name": "Kalista",
@@ -42926,7 +42926,7 @@
       "rp": 975
     }
   },
-  {
+  "Karma": {
     "id": 43,
     "key": "Karma",
     "name": "Karma",
@@ -42975,9 +42975,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "BURST",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -43838,7 +43838,7 @@
       "rp": 790
     }
   },
-  {
+  "Karthus": {
     "id": 30,
     "key": "Karthus",
     "name": "Karthus",
@@ -44475,7 +44475,7 @@
       "rp": 790
     }
   },
-  {
+  "Kassadin": {
     "id": 38,
     "key": "Kassadin",
     "name": "Kassadin",
@@ -44524,8 +44524,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "ASSASSIN",
-      "MAGE"
+      "MAGE",
+      "ASSASSIN"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -45247,7 +45247,7 @@
       "rp": 790
     }
   },
-  {
+  "Katarina": {
     "id": 55,
     "key": "Katarina",
     "name": "Katarina",
@@ -45296,8 +45296,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "ASSASSIN",
-      "MAGE"
+      "MAGE",
+      "ASSASSIN"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -45854,7 +45854,7 @@
       "rp": 790
     }
   },
-  {
+  "Kayle": {
     "id": 10,
     "key": "Kayle",
     "name": "Kayle",
@@ -45903,9 +45903,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "SPECIALIST",
+      "SUPPORT",
       "FIGHTER",
-      "SUPPORT"
+      "SPECIALIST"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -46624,7 +46624,7 @@
       "rp": 260
     }
   },
-  {
+  "Kayn": {
     "id": 141,
     "key": "Kayn",
     "name": "Kayn",
@@ -46673,9 +46673,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "ASSASSIN",
       "FIGHTER",
-      "SKIRMISHER",
-      "ASSASSIN"
+      "SKIRMISHER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -48994,7 +48994,7 @@
       "rp": 975
     }
   },
-  {
+  "Kennen": {
     "id": 85,
     "key": "Kennen",
     "name": "Kennen",
@@ -49043,9 +49043,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "SPECIALIST",
       "MARKSMAN",
-      "MAGE"
+      "MAGE",
+      "SPECIALIST"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -49726,7 +49726,7 @@
       "rp": 880
     }
   },
-  {
+  "Khazix": {
     "id": 121,
     "key": "Khazix",
     "name": "Kha'Zix",
@@ -50567,7 +50567,7 @@
       "rp": 880
     }
   },
-  {
+  "Kindred": {
     "id": 203,
     "key": "Kindred",
     "name": "Kindred",
@@ -51223,490 +51223,7 @@
       "rp": 975
     }
   },
-  {
-    "id": 240,
-    "key": "Kled",
-    "name": "Kled",
-    "title": "the Cantankerous Cavalier",
-    "fullName": "Kled and Skaarl",
-    "resource": "COURAGE",
-    "attackType": "MELEE",
-    "adaptiveType": "PHYSICAL_DAMAGE",
-    "stats": {
-      "healthBase": 340,
-      "healthPerLevel": 70,
-      "healthPer5SecondsBase": 6,
-      "healthPer5SecondsPerLevel": 0.75,
-      "manaBase": 100,
-      "manaPerLevel": 0,
-      "manaPer5SecondsBase": 0,
-      "manaPer5SecondsPerLevel": 0,
-      "armorBase": 35,
-      "armorPerLevel": 4,
-      "magicResistanceBase": 32.1,
-      "magicResistancePerLevel": 1.25,
-      "attackDamageBase": 65,
-      "attackDamagePerLevel": 3.5,
-      "movespeed": 285,
-      "acquisitionRadius": 800,
-      "selectionRadius": 140,
-      "pathingRadius": 35,
-      "gameplayRadius": 65,
-      "criticalStrikeBase": 200,
-      "criticalStrikeModifier": 1.0,
-      "attackSpeedBase": 0.625,
-      "attackSpeedPerLevel": 3.5,
-      "attackSpeedRatio": 0.625,
-      "attackCastTime": 0.280000001192092,
-      "attackTotalTime": 1.60000002384185,
-      "attackDelayOffset": 0,
-      "attackRangeBase": 250,
-      "attackRangePerLevel": 0,
-      "aramDamageTaken": 0.95,
-      "aramDamageDealt": 1.0,
-      "aramHealing": 1.0,
-      "aramShielding": 1.0,
-      "urfDamageTaken": 1.0,
-      "urfDamageDealt": 1.0,
-      "urfHealing": 1.0,
-      "urfShielding": 1.0
-    },
-    "roles": [
-      "DIVER",
-      "FIGHTER",
-      "TANK"
-    ],
-    "attributeRatings": {
-      "damage": 3,
-      "toughness": 2,
-      "control": 1,
-      "mobility": 2,
-      "utility": 1,
-      "abilityReliance": 30,
-      "attack": 8,
-      "defense": 2,
-      "magic": 2,
-      "difficulty": 2
-    },
-    "abilities": {
-      "I": [
-        {
-          "name": "Dismounted Skaarl the Cowardly Lizard",
-          "effects": [
-            {
-              "description": "Innate: Kled is only vulnerable to death while dismounted. Kled has  340 \u2212 1530 (based on level) base health, which is not improved by sources of bonus health, as well as reduced base movement speed and increased attack range. Percent-health effects consider Kled & Skaarl's combined maximum health, meaning that an unmounted Kled is always considered to be low health.",
-              "icon": "Dismounted Skaarl the Cowardly Lizard.png",
-              "leveling": []
-            },
-            {
-              "description": "Kled gains 100 \u2212 185 (based on level)  bonus movement speed when moving towards enemy  champions within 900 range, as well as the ability to generate  Courage.",
-              "icon": null,
-              "leveling": []
-            },
-            {
-              "description": "Innate - Courage: Kled gains 15 Courage when basic attacking an enemy champion, 20 Courage whenever a champion he damaged dies within 3 seconds, 4 Courage for minion kills, and 5 Courage when basic attacking a structure or epic monster. At 100 Courage, Skaarl returns to the fight with  50 / 60 / 70 / 80% (based on level) of Skaarl's maximum health.  Mounting up resets the cooldown of  Beartrap on a Rope and  Jousting.",
-              "icon": "Skaarl the Cowardly Lizard 3.png",
-              "leveling": []
-            },
-            {
-              "description": "While at the allied fountain, 25 Courage is generated every 0.25 seconds.  Recalling fully restores Skaarl's Courage and  health. If reuniting outside of base, Skaarl gets Frayed Nerves, which prevents him from gaining Courage for 30 seconds.",
-              "icon": null,
-              "leveling": []
-            },
-            {
-              "description": "The current status of Kled's own health is preserved between subsequent dismounts. While mounted, healing will first affect Skaarl's health and will only restore Kled's health while Skaarl is at full health.",
-              "icon": null,
-              "leveling": []
-            }
-          ],
-          "cost": null,
-          "cooldown": null,
-          "targeting": "Passive",
-          "affects": "Self",
-          "spellshieldable": null,
-          "resource": null,
-          "damageType": null,
-          "spellEffects": null,
-          "projectile": null,
-          "onHitEffects": null,
-          "occurrence": null,
-          "notes": "Decoys are counted as champions for all of this ability's effects, other than the takedown one.\n Kled's health is rounded up while Skaarl's is rounded down.\n  Gargoyle Stoneplate can increase Kled's base health.\n It is possible to get the Courage from base but have Kled and Skaarl reunite out of base.\n It is possible for the Nexus Obelisk to not be able to bring Kled down from Skaarl for a few seconds, even if Skaarl has no health.\n PENDING FOR TEST  Wild Growth and  Elixir of Iron",
-          "blurb": null,
-          "missileSpeed": null,
-          "rechargeRate": null,
-          "collisionRadius": null,
-          "tetherRadius": null,
-          "onTargetCdStatic": null,
-          "innerRadius": null,
-          "speed": null,
-          "width": null,
-          "angle": null,
-          "castTime": null,
-          "effectRadius": null,
-          "targetRange": null
-        }
-      ],
-      "Q": [
-        {
-          "name": "Pocket Pistol",
-          "effects": [
-            {
-              "description": "Passive: Kled periodically stocks an ammo charge, up to a maximum of 2. Kled will store ammo even while  mounted.",
-              "icon": "Pocket Pistol.png",
-              "leveling": []
-            },
-            {
-              "description": "Active: Kled sprays a cone of five pellets in the target direction, dealing physical damage while  recoiling 250 units in the opposite direction.",
-              "icon": null,
-              "leveling": [
-                {
-                  "attribute": "Physical Damage",
-                  "modifiers": [
-                    {
-                      "values": [
-                        35,
-                        50,
-                        65,
-                        80,
-                        95
-                      ],
-                      "units": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "values": [
-                        80,
-                        80,
-                        80,
-                        80,
-                        80
-                      ],
-                      "units": [
-                        "% bonus AD",
-                        "% bonus AD",
-                        "% bonus AD",
-                        "% bonus AD",
-                        "% bonus AD"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "attribute": "Maximum Damage",
-                  "modifiers": [
-                    {
-                      "values": [
-                        63,
-                        90,
-                        117,
-                        144,
-                        171
-                      ],
-                      "units": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "values": [
-                        144,
-                        144,
-                        144,
-                        144,
-                        144
-                      ],
-                      "units": [
-                        "% bonus AD",
-                        "% bonus AD",
-                        "% bonus AD",
-                        "% bonus AD",
-                        "% bonus AD"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "description": "Pellets collide into the first enemy they hit, and deal 20% damage per pellet beyond the first. Each pellet that hits an enemy champion or epic monster restores  Courage, by 5 and 2.5 respectively.",
-              "icon": null,
-              "leveling": []
-            }
-          ],
-          "cost": {
-            "modifiers": [
-              {
-                "values": [
-                  1,
-                  1,
-                  1,
-                  1,
-                  1
-                ],
-                "units": [
-                  "",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            ]
-          },
-          "cooldown": {
-            "modifiers": [
-              {
-                "values": [
-                  3,
-                  3,
-                  3,
-                  3,
-                  3
-                ],
-                "units": [
-                  "",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            ],
-            "affectedByCdr": false
-          },
-          "targeting": "Direction",
-          "affects": "Enemies",
-          "spellshieldable": "True",
-          "resource": "CHARGE",
-          "damageType": "PHYSICAL_DAMAGE",
-          "spellEffects": "Area of effect",
-          "projectile": "TRUE",
-          "onHitEffects": null,
-          "occurrence": null,
-          "notes": "The knockback from Pocket Pistol can be used to pass through terrain.\n Casting Q during Kled's dismounting animation will buffer Pocket Pistol to cast when Kled lands. Casting Q during Kled's remounting animation will fire Pocket Pistol normally.",
-          "blurb": "When dismounted, this ability is replaced by Pocket Pistol, a ranged gun blast that knocks back Kled and restores courage.",
-          "missileSpeed": null,
-          "rechargeRate": "20 \u2212 7 (based on level)",
-          "collisionRadius": null,
-          "tetherRadius": null,
-          "onTargetCdStatic": null,
-          "innerRadius": null,
-          "speed": null,
-          "width": null,
-          "angle": null,
-          "castTime": null,
-          "effectRadius": null,
-          "targetRange": null
-        }
-      ],
-      "W": [
-        {
-          "name": "Violent Tendencies",
-          "effects": [
-            {
-              "description": "Passive: Kled periodically enters a frenzy that grants him  150% bonus attack speed on his next 4 basic attacks within 4 seconds after the first, with the final attack dealing bonus physical damage, capped against  monsters.",
-              "icon": "Violent Tendencies.png",
-              "leveling": [
-                {
-                  "attribute": "Bonus Physical Damage",
-                  "modifiers": [
-                    {
-                      "values": [
-                        20,
-                        30,
-                        40,
-                        50,
-                        60
-                      ],
-                      "units": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "values": [
-                        4.5,
-                        5,
-                        5.5,
-                        6,
-                        6.5
-                      ],
-                      "units": [
-                        "% (+ 5% per 100 bonus AD) of target's maximum health",
-                        "% (+ 5% per 100 bonus AD) of target's maximum health",
-                        "% (+ 5% per 100 bonus AD) of target's maximum health",
-                        "% (+ 5% per 100 bonus AD) of target's maximum health",
-                        "% (+ 5% per 100 bonus AD) of target's maximum health"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "attribute": "Maximum Damage Against Monsters",
-                  "modifiers": [
-                    {
-                      "values": [
-                        220,
-                        230,
-                        240,
-                        250,
-                        260
-                      ],
-                      "units": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "cost": null,
-          "cooldown": {
-            "modifiers": [
-              {
-                "values": [
-                  14,
-                  12.5,
-                  11,
-                  9.5,
-                  8
-                ],
-                "units": [
-                  "",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            ],
-            "affectedByCdr": false
-          },
-          "targeting": "Passive",
-          "affects": "Enemies",
-          "spellshieldable": "False",
-          "resource": null,
-          "damageType": "PHYSICAL_DAMAGE",
-          "spellEffects": "Proc",
-          "projectile": null,
-          "onHitEffects": null,
-          "occurrence": null,
-          "notes": "The enhanced attack will apply other on-hit effects and can  critically strike as normal but the damage from Violent Tendencies is unaffected.\n The bonus damage will apply  life steal and affects structures.",
-          "blurb": "Kled gains massive attack speed for four attacks. The fourth attack deals more damage.",
-          "missileSpeed": null,
-          "rechargeRate": null,
-          "collisionRadius": null,
-          "tetherRadius": null,
-          "onTargetCdStatic": null,
-          "innerRadius": null,
-          "speed": null,
-          "width": null,
-          "angle": null,
-          "castTime": null,
-          "effectRadius": null,
-          "targetRange": null
-        }
-      ],
-      "E": [
-        {
-          "name": "Unmounted Jousting",
-          "effects": [
-            {
-              "description": "This ability is unusable while unmounted.",
-              "icon": "Unmounted Jousting.png",
-              "leveling": []
-            }
-          ],
-          "cost": null,
-          "cooldown": null,
-          "targeting": null,
-          "affects": null,
-          "spellshieldable": null,
-          "resource": null,
-          "damageType": null,
-          "spellEffects": null,
-          "projectile": null,
-          "onHitEffects": null,
-          "occurrence": null,
-          "notes": null,
-          "blurb": null,
-          "missileSpeed": null,
-          "rechargeRate": null,
-          "collisionRadius": null,
-          "tetherRadius": null,
-          "onTargetCdStatic": null,
-          "innerRadius": null,
-          "speed": null,
-          "width": null,
-          "angle": null,
-          "castTime": null,
-          "effectRadius": null,
-          "targetRange": null
-        }
-      ],
-      "R": [
-        {
-          "name": "Unmounted Chaaaaaaaarge!!!",
-          "effects": [
-            {
-              "description": "This ability is unusable while unmounted.",
-              "icon": "Unmounted Chaaaaaaaarge!!!.png",
-              "leveling": []
-            }
-          ],
-          "cost": null,
-          "cooldown": null,
-          "targeting": null,
-          "affects": null,
-          "spellshieldable": null,
-          "resource": null,
-          "damageType": null,
-          "spellEffects": null,
-          "projectile": null,
-          "onHitEffects": null,
-          "occurrence": null,
-          "notes": null,
-          "blurb": null,
-          "missileSpeed": null,
-          "rechargeRate": null,
-          "collisionRadius": null,
-          "tetherRadius": null,
-          "onTargetCdStatic": null,
-          "innerRadius": null,
-          "speed": null,
-          "width": null,
-          "angle": null,
-          "castTime": null,
-          "effectRadius": null,
-          "targetRange": null
-        }
-      ]
-    },
-    "releaseDate": "2016-08-10",
-    "releasePatch": "6.16",
-    "patchLastChanged": "9.21",
-    "price": {
-      "blueEssence": 6300,
-      "rp": 975
-    }
-  },
-  {
+  "Kled": {
     "id": 240.1,
     "key": "Kled",
     "name": "Kled",
@@ -51755,8 +51272,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "DIVER",
       "FIGHTER",
+      "DIVER",
       "TANK"
     ],
     "attributeRatings": {
@@ -52834,7 +52351,7 @@
       "rp": 975
     }
   },
-  {
+  "KogMaw": {
     "id": 96,
     "key": "KogMaw",
     "name": "Kog'Maw",
@@ -53568,7 +53085,7 @@
       "rp": 880
     }
   },
-  {
+  "Leblanc": {
     "id": 7,
     "key": "Leblanc",
     "name": "LeBlanc",
@@ -53617,9 +53134,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "MAGE",
       "BURST",
-      "ASSASSIN",
-      "MAGE"
+      "ASSASSIN"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -55383,7 +54900,7 @@
       "rp": 790
     }
   },
-  {
+  "LeeSin": {
     "id": 64,
     "key": "LeeSin",
     "name": "Lee Sin",
@@ -55432,8 +54949,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "DIVER",
       "FIGHTER",
+      "DIVER",
       "ASSASSIN"
     ],
     "attributeRatings": {
@@ -56263,7 +55780,7 @@
       "rp": 880
     }
   },
-  {
+  "Leona": {
     "id": 89,
     "key": "Leona",
     "name": "Leona",
@@ -56312,9 +55829,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
       "SUPPORT",
-      "VANGUARD"
+      "VANGUARD",
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -56941,7 +56458,7 @@
       "rp": 880
     }
   },
-  {
+  "Lissandra": {
     "id": 127,
     "key": "Lissandra",
     "name": "Lissandra",
@@ -57635,7 +57152,7 @@
       "rp": 880
     }
   },
-  {
+  "Lucian": {
     "id": 236,
     "key": "Lucian",
     "name": "Lucian",
@@ -58654,7 +58171,7 @@
       "rp": 880
     }
   },
-  {
+  "Lulu": {
     "id": 117,
     "key": "Lulu",
     "name": "Lulu",
@@ -58703,9 +58220,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "ENCHANTER",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -59345,7 +58862,7 @@
       "rp": 880
     }
   },
-  {
+  "Lux": {
     "id": 99,
     "key": "Lux",
     "name": "Lux",
@@ -59395,9 +58912,9 @@
     },
     "roles": [
       "ARTILLERY",
+      "SUPPORT",
       "BURST",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -59988,7 +59505,7 @@
       "rp": 790
     }
   },
-  {
+  "Malphite": {
     "id": 54,
     "key": "Malphite",
     "name": "Malphite",
@@ -60037,9 +59554,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "VANGUARD",
       "FIGHTER",
-      "VANGUARD"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -60741,7 +60258,7 @@
       "rp": 585
     }
   },
-  {
+  "Malzahar": {
     "id": 90,
     "key": "Malzahar",
     "name": "Malzahar",
@@ -61549,7 +61066,7 @@
       "rp": 880
     }
   },
-  {
+  "Maokai": {
     "id": 57,
     "key": "Maokai",
     "name": "Maokai",
@@ -61598,9 +61115,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "VANGUARD",
       "MAGE",
-      "VANGUARD"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -62267,7 +61784,7 @@
       "rp": 880
     }
   },
-  {
+  "MasterYi": {
     "id": 11,
     "key": "MasterYi",
     "name": "Master Yi",
@@ -62316,9 +61833,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "ASSASSIN",
       "FIGHTER",
-      "SKIRMISHER",
-      "ASSASSIN"
+      "SKIRMISHER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -63221,7 +62738,7 @@
       "rp": 260
     }
   },
-  {
+  "MissFortune": {
     "id": 21,
     "key": "MissFortune",
     "name": "Miss Fortune",
@@ -64021,7 +63538,7 @@
       "rp": 790
     }
   },
-  {
+  "Mordekaiser": {
     "id": 82,
     "key": "Mordekaiser",
     "name": "Mordekaiser",
@@ -64070,8 +63587,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
-      "JUGGERNAUT"
+      "JUGGERNAUT",
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -64579,7 +64096,7 @@
       "rp": 585
     }
   },
-  {
+  "Morgana": {
     "id": 25,
     "key": "Morgana",
     "name": "Morgana",
@@ -64628,9 +64145,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "CATCHER",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -65325,7 +64842,7 @@
       "rp": 585
     }
   },
-  {
+  "Nami": {
     "id": 267,
     "key": "Nami",
     "name": "Nami",
@@ -65374,9 +64891,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "ENCHANTER",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -66015,7 +65532,7 @@
       "rp": 880
     }
   },
-  {
+  "Nasus": {
     "id": 75,
     "key": "Nasus",
     "name": "Nasus",
@@ -66064,9 +65581,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "JUGGERNAUT",
       "FIGHTER",
-      "JUGGERNAUT"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -66813,7 +66330,7 @@
       "rp": 585
     }
   },
-  {
+  "Nautilus": {
     "id": 111,
     "key": "Nautilus",
     "name": "Nautilus",
@@ -66862,9 +66379,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "VANGUARD",
       "FIGHTER",
-      "VANGUARD"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -67766,7 +67283,7 @@
       "rp": 880
     }
   },
-  {
+  "Neeko": {
     "id": 518,
     "key": "Neeko",
     "name": "Neeko",
@@ -67815,10 +67332,10 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "CATCHER",
       "BURST",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -68635,7 +68152,7 @@
       "rp": 975
     }
   },
-  {
+  "Nidalee": {
     "id": 76,
     "key": "Nidalee",
     "name": "Nidalee",
@@ -68684,9 +68201,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "SPECIALIST",
       "ASSASSIN",
-      "MAGE"
+      "MAGE",
+      "SPECIALIST"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -69551,7 +69068,7 @@
       "rp": 790
     }
   },
-  {
+  "Nocturne": {
     "id": 56,
     "key": "Nocturne",
     "name": "Nocturne",
@@ -70228,7 +69745,7 @@
       "rp": 880
     }
   },
-  {
+  "Nunu": {
     "id": 20,
     "key": "Nunu",
     "name": "Nunu & Willump",
@@ -70277,9 +69794,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "VANGUARD",
       "FIGHTER",
-      "VANGUARD"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -71361,7 +70878,7 @@
       "rp": 260
     }
   },
-  {
+  "Olaf": {
     "id": 2,
     "key": "Olaf",
     "name": "Olaf",
@@ -71410,8 +70927,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "DIVER",
       "FIGHTER",
+      "DIVER",
       "TANK"
     ],
     "attributeRatings": {
@@ -71995,7 +71512,7 @@
       "rp": 790
     }
   },
-  {
+  "Orianna": {
     "id": 61,
     "key": "Orianna",
     "name": "Orianna",
@@ -72044,9 +71561,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "BURST",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -72730,7 +72247,7 @@
       "rp": 880
     }
   },
-  {
+  "Ornn": {
     "id": 516,
     "key": "Ornn",
     "name": "Ornn",
@@ -72779,9 +72296,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "VANGUARD",
       "FIGHTER",
-      "VANGUARD"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -73549,7 +73066,7 @@
       "rp": 975
     }
   },
-  {
+  "Pantheon": {
     "id": 80,
     "key": "Pantheon",
     "name": "Pantheon",
@@ -73598,8 +73115,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "DIVER",
       "FIGHTER",
+      "DIVER",
       "ASSASSIN"
     ],
     "attributeRatings": {
@@ -74338,7 +73855,7 @@
       "rp": 790
     }
   },
-  {
+  "Poppy": {
     "id": 78,
     "key": "Poppy",
     "name": "Poppy",
@@ -74387,9 +73904,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "WARDEN",
       "FIGHTER",
-      "WARDEN"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -75378,7 +74895,7 @@
       "rp": 260
     }
   },
-  {
+  "Pyke": {
     "id": 555,
     "key": "Pyke",
     "name": "Pyke",
@@ -75427,8 +74944,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "ASSASSIN",
-      "SUPPORT"
+      "SUPPORT",
+      "ASSASSIN"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -75948,7 +75465,7 @@
       "rp": 975
     }
   },
-  {
+  "Qiyana": {
     "id": 246,
     "key": "Qiyana",
     "name": "Qiyana",
@@ -76900,7 +76417,7 @@
       "rp": 975
     }
   },
-  {
+  "Quinn": {
     "id": 133,
     "key": "Quinn",
     "name": "Quinn",
@@ -76949,9 +76466,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "SPECIALIST",
+      "MARKSMAN",
       "ASSASSIN",
-      "MARKSMAN"
+      "SPECIALIST"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -77505,7 +77022,7 @@
       "rp": 880
     }
   },
-  {
+  "Rakan": {
     "id": 497,
     "key": "Rakan",
     "name": "Rakan",
@@ -77554,8 +77071,8 @@
       "urfShielding": 0.9
     },
     "roles": [
-      "CATCHER",
-      "SUPPORT"
+      "SUPPORT",
+      "CATCHER"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -78382,7 +77899,7 @@
       "rp": 975
     }
   },
-  {
+  "Rammus": {
     "id": 33,
     "key": "Rammus",
     "name": "Rammus",
@@ -78431,9 +77948,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "VANGUARD",
       "FIGHTER",
-      "VANGUARD"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -79144,7 +78661,7 @@
       "rp": 585
     }
   },
-  {
+  "RekSai": {
     "id": 421,
     "key": "RekSai",
     "name": "Rek'Sai",
@@ -79193,8 +78710,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "DIVER",
-      "FIGHTER"
+      "FIGHTER",
+      "DIVER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -79969,7 +79486,7 @@
       "rp": 975
     }
   },
-  {
+  "Renekton": {
     "id": 58,
     "key": "Renekton",
     "name": "Renekton",
@@ -80018,8 +79535,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "DIVER",
       "FIGHTER",
+      "DIVER",
       "TANK"
     ],
     "attributeRatings": {
@@ -81023,7 +80540,7 @@
       "rp": 880
     }
   },
-  {
+  "Rengar": {
     "id": 107,
     "key": "Rengar",
     "name": "Rengar",
@@ -81072,8 +80589,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "DIVER",
       "FIGHTER",
+      "DIVER",
       "ASSASSIN"
     ],
     "attributeRatings": {
@@ -81829,7 +81346,7 @@
       "rp": 880
     }
   },
-  {
+  "Riven": {
     "id": 92,
     "key": "Riven",
     "name": "Riven",
@@ -81878,9 +81395,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "ASSASSIN",
       "FIGHTER",
-      "SKIRMISHER",
-      "ASSASSIN"
+      "SKIRMISHER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -82440,7 +81957,7 @@
       "rp": 880
     }
   },
-  {
+  "Rumble": {
     "id": 68,
     "key": "Rumble",
     "name": "Rumble",
@@ -82489,8 +82006,8 @@
       "urfShielding": 0.9
     },
     "roles": [
-      "FIGHTER",
       "BATTLEMAGE",
+      "FIGHTER",
       "MAGE"
     ],
     "attributeRatings": {
@@ -83801,7 +83318,7 @@
       "rp": 880
     }
   },
-  {
+  "Ryze": {
     "id": 13,
     "key": "Ryze",
     "name": "Ryze",
@@ -83850,8 +83367,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
       "BATTLEMAGE",
+      "FIGHTER",
       "MAGE"
     ],
     "attributeRatings": {
@@ -85101,7 +84618,7 @@
       "rp": 260
     }
   },
-  {
+  "Sejuani": {
     "id": 113,
     "key": "Sejuani",
     "name": "Sejuani",
@@ -85150,9 +84667,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "VANGUARD",
       "FIGHTER",
-      "VANGUARD"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -85885,7 +85402,7 @@
       "rp": 880
     }
   },
-  {
+  "Senna": {
     "id": 235,
     "key": "Senna",
     "name": "Senna",
@@ -85934,9 +85451,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "ENCHANTER",
       "MARKSMAN",
-      "SUPPORT"
+      "SUPPORT",
+      "ENCHANTER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -86600,7 +86117,7 @@
       "rp": 975
     }
   },
-  {
+  "Sett": {
     "id": 875,
     "key": "Sett",
     "name": "Sett",
@@ -86649,9 +86166,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "JUGGERNAUT",
       "FIGHTER",
-      "JUGGERNAUT"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -87234,7 +86751,7 @@
       "rp": 975
     }
   },
-  {
+  "Shaco": {
     "id": 35,
     "key": "Shaco",
     "name": "Shaco",
@@ -88075,7 +87592,7 @@
       "rp": 790
     }
   },
-  {
+  "Shen": {
     "id": 98,
     "key": "Shen",
     "name": "Shen",
@@ -88124,8 +87641,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
-      "WARDEN"
+      "WARDEN",
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -89797,7 +89314,7 @@
       "rp": 790
     }
   },
-  {
+  "Shyvana": {
     "id": 102,
     "key": "Shyvana",
     "name": "Shyvana",
@@ -89846,9 +89363,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "JUGGERNAUT",
       "FIGHTER",
-      "JUGGERNAUT"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -90566,7 +90083,7 @@
       "rp": 790
     }
   },
-  {
+  "Singed": {
     "id": 27,
     "key": "Singed",
     "name": "Singed",
@@ -90615,8 +90132,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "SPECIALIST",
       "FIGHTER",
+      "SPECIALIST",
       "TANK"
     ],
     "attributeRatings": {
@@ -91229,7 +90746,7 @@
       "rp": 260
     }
   },
-  {
+  "Sion": {
     "id": 14,
     "key": "Sion",
     "name": "Sion",
@@ -91278,9 +90795,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "VANGUARD",
       "FIGHTER",
-      "VANGUARD"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -92506,7 +92023,7 @@
       "rp": 585
     }
   },
-  {
+  "Sivir": {
     "id": 15,
     "key": "Sivir",
     "name": "Sivir",
@@ -93196,7 +92713,7 @@
       "rp": 260
     }
   },
-  {
+  "Skarner": {
     "id": 72,
     "key": "Skarner",
     "name": "Skarner",
@@ -93245,8 +92762,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "DIVER",
       "FIGHTER",
+      "DIVER",
       "TANK"
     ],
     "attributeRatings": {
@@ -94157,7 +93674,7 @@
       "rp": 880
     }
   },
-  {
+  "Sona": {
     "id": 37,
     "key": "Sona",
     "name": "Sona",
@@ -94206,9 +93723,9 @@
       "urfShielding": 0.95
     },
     "roles": [
+      "SUPPORT",
       "ENCHANTER",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -94857,7 +94374,7 @@
       "rp": 790
     }
   },
-  {
+  "Soraka": {
     "id": 16,
     "key": "Soraka",
     "name": "Soraka",
@@ -94906,9 +94423,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "ENCHANTER",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -95603,7 +95120,7 @@
       "rp": 260
     }
   },
-  {
+  "Swain": {
     "id": 50,
     "key": "Swain",
     "name": "Swain",
@@ -95652,8 +95169,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
       "BATTLEMAGE",
+      "FIGHTER",
       "MAGE"
     ],
     "attributeRatings": {
@@ -96681,7 +96198,7 @@
       "rp": 880
     }
   },
-  {
+  "Sylas": {
     "id": 517,
     "key": "Sylas",
     "name": "Sylas",
@@ -96731,9 +96248,9 @@
     },
     "roles": [
       "ASSASSIN",
-      "SKIRMISHER",
+      "MAGE",
       "BURST",
-      "MAGE"
+      "SKIRMISHER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -97534,7 +97051,7 @@
       "rp": 975
     }
   },
-  {
+  "Syndra": {
     "id": 134,
     "key": "Syndra",
     "name": "Syndra",
@@ -97583,9 +97100,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "BURST",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -98350,7 +97867,7 @@
       "rp": 880
     }
   },
-  {
+  "TahmKench": {
     "id": 223,
     "key": "TahmKench",
     "name": "Tahm Kench",
@@ -98399,9 +97916,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
       "WARDEN",
-      "SUPPORT"
+      "SUPPORT",
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -99062,7 +98579,7 @@
       "rp": 975
     }
   },
-  {
+  "Taliyah": {
     "id": 163,
     "key": "Taliyah",
     "name": "Taliyah",
@@ -99111,9 +98628,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "BATTLEMAGE",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -100077,7 +99594,7 @@
       "rp": 975
     }
   },
-  {
+  "Talon": {
     "id": 91,
     "key": "Talon",
     "name": "Talon",
@@ -100752,7 +100269,7 @@
       "rp": 880
     }
   },
-  {
+  "Taric": {
     "id": 44,
     "key": "Taric",
     "name": "Taric",
@@ -100802,9 +100319,9 @@
     },
     "roles": [
       "FIGHTER",
-      "ENCHANTER",
       "WARDEN",
-      "SUPPORT"
+      "SUPPORT",
+      "ENCHANTER"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -101424,7 +100941,7 @@
       "rp": 585
     }
   },
-  {
+  "Teemo": {
     "id": 17,
     "key": "Teemo",
     "name": "Teemo",
@@ -101473,9 +100990,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "SPECIALIST",
+      "MARKSMAN",
       "ASSASSIN",
-      "MARKSMAN"
+      "SPECIALIST"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -102188,7 +101705,7 @@
       "rp": 585
     }
   },
-  {
+  "Thresh": {
     "id": 412,
     "key": "Thresh",
     "name": "Thresh",
@@ -102237,9 +101754,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "CATCHER",
-      "FIGHTER",
-      "SUPPORT"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -103860,7 +103377,7 @@
       "rp": 880
     }
   },
-  {
+  "Tristana": {
     "id": 18,
     "key": "Tristana",
     "name": "Tristana",
@@ -103909,8 +103426,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "ASSASSIN",
-      "MARKSMAN"
+      "MARKSMAN",
+      "ASSASSIN"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -104590,7 +104107,7 @@
       "rp": 585
     }
   },
-  {
+  "Trundle": {
     "id": 48,
     "key": "Trundle",
     "name": "Trundle",
@@ -104639,9 +104156,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "JUGGERNAUT",
       "FIGHTER",
-      "JUGGERNAUT"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -105247,7 +104764,7 @@
       "rp": 790
     }
   },
-  {
+  "Tryndamere": {
     "id": 23,
     "key": "Tryndamere",
     "name": "Tryndamere",
@@ -105296,9 +104813,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "ASSASSIN",
       "FIGHTER",
-      "SKIRMISHER",
-      "ASSASSIN"
+      "SKIRMISHER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -105936,7 +105453,7 @@
       "rp": 585
     }
   },
-  {
+  "TwistedFate": {
     "id": 4,
     "key": "TwistedFate",
     "name": "Twisted Fate",
@@ -107731,7 +107248,7 @@
       "rp": 585
     }
   },
-  {
+  "Twitch": {
     "id": 29,
     "key": "Twitch",
     "name": "Twitch",
@@ -107780,8 +107297,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "ASSASSIN",
-      "MARKSMAN"
+      "MARKSMAN",
+      "ASSASSIN"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -108704,7 +108221,7 @@
       "rp": 790
     }
   },
-  {
+  "Udyr": {
     "id": 77,
     "key": "Udyr",
     "name": "Udyr",
@@ -108753,9 +108270,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "JUGGERNAUT",
       "FIGHTER",
-      "JUGGERNAUT"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -109583,7 +109100,7 @@
       "rp": 585
     }
   },
-  {
+  "Urgot": {
     "id": 6,
     "key": "Urgot",
     "name": "Urgot",
@@ -109632,9 +109149,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "JUGGERNAUT",
       "FIGHTER",
-      "JUGGERNAUT"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -110260,7 +109777,7 @@
       "rp": 790
     }
   },
-  {
+  "Varus": {
     "id": 110,
     "key": "Varus",
     "name": "Varus",
@@ -111046,7 +110563,7 @@
       "rp": 880
     }
   },
-  {
+  "Vayne": {
     "id": 67,
     "key": "Vayne",
     "name": "Vayne",
@@ -111095,8 +110612,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "ASSASSIN",
-      "MARKSMAN"
+      "MARKSMAN",
+      "ASSASSIN"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -111693,7 +111210,7 @@
       "rp": 880
     }
   },
-  {
+  "Veigar": {
     "id": 45,
     "key": "Veigar",
     "name": "Veigar",
@@ -112257,7 +111774,7 @@
       "rp": 585
     }
   },
-  {
+  "Velkoz": {
     "id": 161,
     "key": "Velkoz",
     "name": "Vel'Koz",
@@ -113326,7 +112843,7 @@
       "rp": 975
     }
   },
-  {
+  "Vi": {
     "id": 254,
     "key": "Vi",
     "name": "Vi",
@@ -113375,8 +112892,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "DIVER",
       "FIGHTER",
+      "DIVER",
       "ASSASSIN"
     ],
     "attributeRatings": {
@@ -114208,7 +113725,7 @@
       "rp": 880
     }
   },
-  {
+  "Viktor": {
     "id": 112,
     "key": "Viktor",
     "name": "Viktor",
@@ -115182,7 +114699,7 @@
       "rp": 880
     }
   },
-  {
+  "Vladimir": {
     "id": 8,
     "key": "Vladimir",
     "name": "Vladimir",
@@ -116150,7 +115667,7 @@
       "rp": 790
     }
   },
-  {
+  "Volibear": {
     "id": 106,
     "key": "Volibear",
     "name": "Volibear",
@@ -116199,9 +115716,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "JUGGERNAUT",
       "FIGHTER",
-      "JUGGERNAUT"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -116876,7 +116393,7 @@
       "rp": 880
     }
   },
-  {
+  "Warwick": {
     "id": 19,
     "key": "Warwick",
     "name": "Warwick",
@@ -116925,8 +116442,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "DIVER",
       "FIGHTER",
+      "DIVER",
       "TANK"
     ],
     "attributeRatings": {
@@ -117542,7 +117059,7 @@
       "rp": 260
     }
   },
-  {
+  "MonkeyKing": {
     "id": 62,
     "key": "MonkeyKing",
     "name": "Wukong",
@@ -117591,8 +117108,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "DIVER",
       "FIGHTER",
+      "DIVER",
       "TANK"
     ],
     "attributeRatings": {
@@ -118186,7 +117703,7 @@
       "rp": 880
     }
   },
-  {
+  "Xayah": {
     "id": 498,
     "key": "Xayah",
     "name": "Xayah",
@@ -118949,7 +118466,7 @@
       "rp": 975
     }
   },
-  {
+  "Xerath": {
     "id": 101,
     "key": "Xerath",
     "name": "Xerath",
@@ -119669,7 +119186,7 @@
       "rp": 880
     }
   },
-  {
+  "XinZhao": {
     "id": 5,
     "key": "XinZhao",
     "name": "Xin Zhao",
@@ -119718,8 +119235,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "DIVER",
       "FIGHTER",
+      "DIVER",
       "ASSASSIN"
     ],
     "attributeRatings": {
@@ -120529,7 +120046,7 @@
       "rp": 585
     }
   },
-  {
+  "Yasuo": {
     "id": 157,
     "key": "Yasuo",
     "name": "Yasuo",
@@ -120578,9 +120095,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "ASSASSIN",
       "FIGHTER",
-      "SKIRMISHER",
-      "ASSASSIN"
+      "SKIRMISHER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -121341,7 +120858,7 @@
       "rp": 975
     }
   },
-  {
+  "Yorick": {
     "id": 83,
     "key": "Yorick",
     "name": "Yorick",
@@ -121390,9 +120907,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "JUGGERNAUT",
       "FIGHTER",
-      "JUGGERNAUT"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -121940,7 +121457,7 @@
       "rp": 880
     }
   },
-  {
+  "Yuumi": {
     "id": 350,
     "key": "Yuumi",
     "name": "Yuumi",
@@ -121989,9 +121506,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "ENCHANTER",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -122773,7 +122290,7 @@
       "rp": 975
     }
   },
-  {
+  "Zac": {
     "id": 154,
     "key": "Zac",
     "name": "Zac",
@@ -122822,9 +122339,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
+      "VANGUARD",
       "FIGHTER",
-      "VANGUARD"
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -123650,7 +123167,7 @@
       "rp": 880
     }
   },
-  {
+  "Zed": {
     "id": 238,
     "key": "Zed",
     "name": "Zed",
@@ -124491,7 +124008,7 @@
       "rp": 880
     }
   },
-  {
+  "Ziggs": {
     "id": 115,
     "key": "Ziggs",
     "name": "Ziggs",
@@ -125234,7 +124751,7 @@
       "rp": 880
     }
   },
-  {
+  "Zilean": {
     "id": 26,
     "key": "Zilean",
     "name": "Zilean",
@@ -125283,9 +124800,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "SPECIALIST",
+      "SUPPORT",
       "MAGE",
-      "SUPPORT"
+      "SPECIALIST"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -125795,7 +125312,7 @@
       "rp": 585
     }
   },
-  {
+  "Zoe": {
     "id": 142,
     "key": "Zoe",
     "name": "Zoe",
@@ -125844,9 +125361,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "BURST",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -126846,7 +126363,7 @@
       "rp": 975
     }
   },
-  {
+  "Zyra": {
     "id": 143,
     "key": "Zyra",
     "name": "Zyra",
@@ -126895,9 +126412,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "CATCHER",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -127417,4 +126934,4 @@
       "rp": 880
     }
   }
-]
+}

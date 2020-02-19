@@ -545,10 +545,10 @@ def main():
         with open(jsonfn, 'w') as f:
             f.write(champion.to_json(indent=2))
 
-    jsonfn = directory + f"../data/all.json"
-    jsons = []
+    jsonfn = directory + f"../data/champions.json"
+    jsons = {}
     for champion in champions:
-        jsons.append(json.loads(champion.to_json()))
+        jsons[champion.key] = json.loads(champion.to_json())
     with open(jsonfn, 'w') as f:
         json.dump(jsons, f, indent=2)
     del jsons
