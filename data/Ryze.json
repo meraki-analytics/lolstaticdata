@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 570.48,
     "healthPerLevel": 98,
-    "healthPer_5SecondsBase": 8,
-    "healthPer_5SecondsPerLevel": 0.8,
+    "healthPer5SecondsBase": 8,
+    "healthPer5SecondsPerLevel": 0.8,
     "manaBase": 300,
     "manaPerLevel": 50,
-    "manaPer_5SecondsBase": 8,
-    "manaPer_5SecondsPerLevel": 0.8,
+    "manaPer5SecondsBase": 8,
+    "manaPer5SecondsPerLevel": 0.8,
     "armorBase": 21.552,
     "armorPerLevel": 3,
     "magicResistanceBase": 34,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "FIGHTER",
     "BATTLEMAGE",
-    "MAGE",
-    "FIGHTER"
+    "MAGE"
   ],
   "attributeRatings": {
     "damage": 3,

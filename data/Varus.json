@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 500,
     "healthPerLevel": 89,
-    "healthPer_5SecondsBase": 3.5,
-    "healthPer_5SecondsPerLevel": 0.55,
+    "healthPer5SecondsBase": 3.5,
+    "healthPer5SecondsPerLevel": 0.55,
     "manaBase": 360,
     "manaPerLevel": 33,
-    "manaPer_5SecondsBase": 8,
-    "manaPer_5SecondsPerLevel": 0.8,
+    "manaPer5SecondsBase": 8,
+    "manaPer5SecondsPerLevel": 0.8,
     "armorBase": 27,
     "armorPerLevel": 3.4,
     "magicResistanceBase": 30,
@@ -47,8 +47,8 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "MARKSMAN",
     "ARTILLERY",
+    "MARKSMAN",
     "MAGE"
   ],
   "attributeRatings": {

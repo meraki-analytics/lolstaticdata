@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 570,
     "healthPerLevel": 98,
-    "healthPer_5SecondsBase": 8,
-    "healthPer_5SecondsPerLevel": 0.7,
+    "healthPer5SecondsBase": 8,
+    "healthPer5SecondsPerLevel": 0.7,
     "manaBase": 317.2,
     "manaPerLevel": 37,
-    "manaPer_5SecondsBase": 6,
-    "manaPer_5SecondsPerLevel": 0.8,
+    "manaPer5SecondsBase": 6,
+    "manaPer5SecondsPerLevel": 0.8,
     "armorBase": 22.412,
     "armorPerLevel": 3.4,
     "magicResistanceBase": 32.1,
@@ -47,8 +47,8 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "ASSASSIN",
-    "FIGHTER"
+    "FIGHTER",
+    "ASSASSIN"
   ],
   "attributeRatings": {
     "damage": 3,

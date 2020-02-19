@@ -1,4 +1,5 @@
 from typing import Tuple, List, Mapping, Union, Iterator
+import json
 import os
 import re
 from bs4 import BeautifulSoup
@@ -537,10 +538,20 @@ def main():
     handler = LolWikiDataHandler(use_cache=False)
     directory = os.path.dirname(os.path.realpath(__file__)) + "/"
 
+    champions = []
     for champion in handler.get_champions():
+        champions.append(champion)
         jsonfn = directory + f"../data/{champion.key}.json"
         with open(jsonfn, 'w') as f:
             f.write(champion.to_json(indent=2))
+
+    jsonfn = directory + f"../data/all.json"
+    jsons = []
+    for champion in champions:
+        jsons.append(json.loads(champion.to_json()))
+    with open(jsonfn, 'w') as f:
+        json.dump(jsons, f, indent=2)
+    del jsons
 
 
 if __name__ == "__main__":

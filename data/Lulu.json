@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 525,
     "healthPerLevel": 74,
-    "healthPer_5SecondsBase": 6,
-    "healthPer_5SecondsPerLevel": 0.6,
+    "healthPer5SecondsBase": 6,
+    "healthPer5SecondsPerLevel": 0.6,
     "manaBase": 350,
     "manaPerLevel": 55,
-    "manaPer_5SecondsBase": 11,
-    "manaPer_5SecondsPerLevel": 0.6,
+    "manaPer5SecondsBase": 11,
+    "manaPer5SecondsPerLevel": 0.6,
     "armorBase": 29,
     "armorPerLevel": 3.7,
     "magicResistanceBase": 30,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "ENCHANTER",
     "MAGE",
-    "SUPPORT",
-    "ENCHANTER"
+    "SUPPORT"
   ],
   "attributeRatings": {
     "damage": 2,

@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 580,
     "healthPerLevel": 95,
-    "healthPer_5SecondsBase": 10,
-    "healthPer_5SecondsPerLevel": 0.65,
+    "healthPer5SecondsBase": 10,
+    "healthPer5SecondsPerLevel": 0.65,
     "manaBase": 317.12,
     "manaPerLevel": 31,
-    "manaPer_5SecondsBase": 7.356,
-    "manaPer_5SecondsPerLevel": 0.45,
+    "manaPer5SecondsBase": 7.356,
+    "manaPer5SecondsPerLevel": 0.45,
     "armorBase": 40,
     "armorPerLevel": 3.75,
     "magicResistanceBase": 28,
@@ -48,8 +48,8 @@
   },
   "roles": [
     "DIVER",
-    "ASSASSIN",
-    "FIGHTER"
+    "FIGHTER",
+    "ASSASSIN"
   ],
   "attributeRatings": {
     "damage": 3,

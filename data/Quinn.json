@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 532.8,
     "healthPerLevel": 85,
-    "healthPer_5SecondsBase": 5.5,
-    "healthPer_5SecondsPerLevel": 0.55,
+    "healthPer5SecondsBase": 5.5,
+    "healthPer5SecondsPerLevel": 0.55,
     "manaBase": 268.8,
     "manaPerLevel": 35,
-    "manaPer_5SecondsBase": 6.972,
-    "manaPer_5SecondsPerLevel": 0.4,
+    "manaPer5SecondsBase": 6.972,
+    "manaPer5SecondsPerLevel": 0.4,
     "armorBase": 28,
     "armorPerLevel": 3.5,
     "magicResistanceBase": 30,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "MARKSMAN",
     "SPECIALIST",
-    "ASSASSIN"
+    "ASSASSIN",
+    "MARKSMAN"
   ],
   "attributeRatings": {
     "damage": 3,
