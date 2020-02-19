@@ -1,0 +1,763 @@
+{
+  "id": 498,
+  "key": "Xayah",
+  "name": "Xayah",
+  "title": "the Rebel",
+  "fullName": "",
+  "resource": "Mana",
+  "attackType": "Ranged",
+  "adaptiveType": "physical",
+  "stats": {
+    "healthBase": 561,
+    "healthPerLevel": 86,
+    "healthPer_5SecondsBase": 3.25,
+    "healthPer_5SecondsPerLevel": 0.75,
+    "manaBase": 340,
+    "manaPerLevel": 40,
+    "manaPer_5SecondsBase": 8.25,
+    "manaPer_5SecondsPerLevel": 0.75,
+    "armorBase": 25,
+    "armorPerLevel": 3,
+    "magicResistanceBase": 30,
+    "magicResistancePerLevel": 0.5,
+    "attackDamageBase": 60,
+    "attackDamagePerLevel": 2.9,
+    "movespeed": 325,
+    "acquisitionRadius": 800,
+    "selectionRadius": 120,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 1.0,
+    "attackSpeedBase": 0.625,
+    "attackSpeedPerLevel": 3.3,
+    "attackSpeedRatio": 0.625,
+    "attackCastTime": 0.282999992370605,
+    "attackTotalTime": 1.60000002384185,
+    "attackDelayOffset": 0,
+    "attackRangeBase": 525,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 1.0,
+    "aramDamageDealt": 1.0,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 1.0,
+    "urfDamageDealt": 0.88,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "MARKSMAN"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 2,
+    "control": 3,
+    "mobility": 1,
+    "utility": 1,
+    "abilityReliance": 30,
+    "attack": 10,
+    "defense": 6,
+    "magic": 1,
+    "difficulty": 2
+  },
+  "abilities": {
+    "I": [
+      {
+        "name": "Clean Cuts",
+        "effects": [
+          {
+            "description": "Innate: After casting an ability, Xayah's next 3 basic attacks penetrate through all enemies along a 900 range line, dealing 100% damage to her main target and 30 / 40 / 50% (based on level) pass-through damage to other enemies.  At the end of their path, a Feather will be left in the ground for 6 seconds.",
+            "icon": "Clean Cuts.png",
+            "leveling": []
+          },
+          {
+            "description": "Xayah can store up to 5 empowered attacks for 8 seconds, refreshed with further ability use or upon attacking structures.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Lover's Leap: If either Xayah or  Rakan is  recalling, the other may move nearby and activate their own recall to join them. Both reach base at the time of which the initiator's recall ends.",
+            "icon": "ProfileIcon1634 Blazing Feathers.png",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Enemies",
+        "spellshieldable": "False",
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": "True",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "On-hit effects are only applied to her selected attack target.\n PENDING FOR TEST: Feathers'  interactions with  dodging,  blocking, and  blinding effects via basic attack.",
+        "blurb": "After using an ability, Xayah's next few basic attacks will hit all enemies along their path and dropping Feathers she can recall.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "Clean Cuts",
+        "effects": [
+          {
+            "description": "Innate: After casting an ability, Xayah's next 3 basic attacks penetrate through all enemies along a 900 range line, dealing 100% damage to her main target and 30 / 40 / 50% (based on level) pass-through damage to other enemies.  At the end of their path, a Feather will be left in the ground for 6 seconds.",
+            "icon": "Clean Cuts.png",
+            "leveling": []
+          },
+          {
+            "description": "Xayah can store up to 5 empowered attacks for 8 seconds, refreshed with further ability use or upon attacking structures.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Lover's Leap: If either Xayah or  Rakan is  recalling, the other may move nearby and activate their own recall to join them. Both reach base at the time of which the initiator's recall ends.",
+            "icon": "ProfileIcon1634 Blazing Feathers.png",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Enemies",
+        "spellshieldable": "False",
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": "True",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "On-hit effects are only applied to her selected attack target.\n PENDING FOR TEST: Feathers'  interactions with  dodging,  blocking, and  blinding effects via basic attack.",
+        "blurb": "After using an ability, Xayah's next few basic attacks will hit all enemies along their path and dropping Feathers she can recall.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Double Daggers",
+        "effects": [
+          {
+            "description": "Active: Xayah throws two feather-blades, dealing  physical damage to all enemies hit and leaving two Feathers on the ground.",
+            "icon": "Double Daggers.png",
+            "leveling": [
+              {
+                "attribute": "Damage Per Blade",
+                "modifiers": [
+                  {
+                    "values": [
+                      45,
+                      65,
+                      85,
+                      105,
+                      125
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      50,
+                      50,
+                      50,
+                      50,
+                      50
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Total Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      90,
+                      130,
+                      170,
+                      210,
+                      250
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Targets hit after the first take 50% damage.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Minimum Damage Per Blade",
+                "modifiers": [
+                  {
+                    "values": [
+                      22.5,
+                      32.5,
+                      42.5,
+                      52.5,
+                      62.5
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      25,
+                      25,
+                      25,
+                      25,
+                      25
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Minimum Total Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      45,
+                      65,
+                      85,
+                      105,
+                      125
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      50,
+                      50,
+                      50,
+                      50,
+                      50
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                10,
+                9,
+                8,
+                7,
+                6
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "Special",
+        "resource": "Mana",
+        "damageType": "Physical",
+        "spellEffects": "spellaoe",
+        "projectile": "True",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Xayah is  disarmed for a set duration during the cast time of Double Daggers. The lock out duration is reduced by [ 0.007 seconds per every 1% bonus attack speed ][ 1 second per every 140% bonus attack speed ].\n As the feathers are forming, they will deal damage in a small area around Xayah's feet before firing.\n  Spell shield will only block a single instance of damage.",
+        "blurb": "Xayah throws two damaging daggers that also drop Feathers she can recall.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "1100"
+      }
+    ],
+    "W": [
+      {
+        "name": "Deadly Plumage",
+        "effects": [
+          {
+            "description": "Active: Xayah creates a storm of blades for 4 seconds that grants her  bonus attack speed and cause her basic attacks to strike an additional time for 20% damage.",
+            "icon": "Deadly Plumage.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Attack Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      35,
+                      40,
+                      45,
+                      50,
+                      55
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If Deadly Plumage strikes an enemy champion, Xayah gains  30% bonus movement speed for 1.5 seconds.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "If  Rakan is nearby he will also gain the effects of Deadly Plumage, while also gaining the bonus movement speed when Xayah strikes an enemy champion.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                60,
+                55,
+                50,
+                45,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                20,
+                19,
+                18,
+                17,
+                16
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Self / Auto / Buff",
+        "affects": "Self, Rakan",
+        "spellshieldable": null,
+        "resource": "Mana",
+        "damageType": "Physical",
+        "spellEffects": "periodic",
+        "projectile": "true",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The lesser bolts count as additional sources of single target physical damage, and will apply bonus stacks of  The Black Cleaver and  Electrocute.\n The lesser bolts from  Runaan's Hurricane will also deal 20% increased damage, which is represented with additional lesser bolts. The damage of each bolt is based off of 20% of its own damage, not of the initial basic attack.",
+        "blurb": "Xayah creates a storm of blades that increase her basic attack speed and damage while granting her movement speed if she attacks a champion.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "E": [
+      {
+        "name": "Bladecaller",
+        "effects": [
+          {
+            "description": "Active: Xayah calls all Feathers back to her, dealing physical damage to enemies they pass through, increased by 0% \u2212 50% (based on critical chance).  Minions take 50% damage.",
+            "icon": "Bladecaller.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage Per Feather",
+                "modifiers": [
+                  {
+                    "values": [
+                      55,
+                      65,
+                      75,
+                      85,
+                      95
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Minion Damage Per Feather",
+                "modifiers": [
+                  {
+                    "values": [
+                      27.5,
+                      32.5,
+                      37.5,
+                      42.5,
+                      47.5
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      30,
+                      30,
+                      30,
+                      30,
+                      30
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Enemies take 100% \u2212 10% (based on feathers hit) damage from a Feather.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Enemies hit by at least 3 Feathers are  rooted for 1.25 seconds.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "auto",
+        "affects": "Enemies",
+        "spellshieldable": "special",
+        "resource": "Mana",
+        "damageType": "Physical",
+        "spellEffects": "spellaoe",
+        "projectile": "True",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Spell shield will only block a single instance of damage.\n This ability cannot be ranked at Level 1.\n The damage dealt by Bladecaller follows a diminishing returns formula not mentioned in the ability's description, successively reducing extra damage from feathers beyond the first.\n This formula is: \n For feathers <=10: Damage of one feather \u00d7 (n \u2212 0.1 \u00d7 (n \u2212 1) \u00f7 2 \u00d7 n) where n stands for the number of feathers hit.\n For feathers >=11: Damage of one feather \u00d7 (5.5 + 0.1 \u00d7 (n \u2212 10)) where n stands for the number of feathers hit.\n\n For example, at rank 1 Bladecaller deals 55 \u2212 302.5 (based on feathers hit).",
+        "blurb": "Xayah calls back all her dropped Feathers dealing damage and rooting enemies.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "Global",
+        "targetRange": null
+      }
+    ],
+    "R": [
+      {
+        "name": "Featherstorm",
+        "effects": [
+          {
+            "description": "Active: Xayah leaps into the air, becoming  untargetable for 1.5 seconds, during which she is still able to move, then rains down daggers which deal physical damage and leave behind a line of 5 Feathers.",
+            "icon": "Featherstorm.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      100,
+                      150,
+                      200
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                160,
+                145,
+                130
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "Mana",
+        "damageType": "Physical",
+        "spellEffects": "spellaoe",
+        "projectile": "True",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": "Xayah leaps into the air, becoming untargetable and throwing out a fan of daggers, dropping Feathers she can recall.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "1100"
+      }
+    ]
+  },
+  "releaseDate": "2017-04-19",
+  "releasePatch": "7.8",
+  "patchLastChanged": "9.22",
+  "price": {
+    "blueEssence": 6300,
+    "rp": 975
+  }
+}

@@ -1,0 +1,853 @@
+{
+  "id": 517,
+  "key": "Sylas",
+  "name": "Sylas",
+  "title": "the Unshackled",
+  "fullName": "",
+  "resource": "Mana",
+  "attackType": "Melee",
+  "adaptiveType": "Magic",
+  "stats": {
+    "healthBase": 525,
+    "healthPerLevel": 115,
+    "healthPer_5SecondsBase": 9,
+    "healthPer_5SecondsPerLevel": 0.9,
+    "manaBase": 280,
+    "manaPerLevel": 50,
+    "manaPer_5SecondsBase": 7,
+    "manaPer_5SecondsPerLevel": 0.8,
+    "armorBase": 27,
+    "armorPerLevel": 4,
+    "magicResistanceBase": 32,
+    "magicResistancePerLevel": 1.75,
+    "attackDamageBase": 61,
+    "attackDamagePerLevel": 3,
+    "movespeed": 340,
+    "acquisitionRadius": 525,
+    "selectionRadius": 100,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 1.0,
+    "attackSpeedBase": 0.645,
+    "attackSpeedPerLevel": 3.5,
+    "attackSpeedRatio": 0.644999980926513,
+    "attackCastTime": 0.259999990463256,
+    "attackTotalTime": 1.54999995231628,
+    "attackDelayOffset": -0.0994649976491928,
+    "attackRangeBase": 175,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 1.0,
+    "aramDamageDealt": 1.0,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 0.95,
+    "urfDamageDealt": 1.0,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "BURST",
+    "ASSASSIN",
+    "SKIRMISHER",
+    "MAGE"
+  ],
+  "attributeRatings": {
+    "damage": 2,
+    "toughness": 2,
+    "control": 1,
+    "mobility": 3,
+    "utility": 1,
+    "abilityReliance": 70,
+    "attack": 3,
+    "defense": 4,
+    "magic": 8,
+    "difficulty": 3
+  },
+  "abilities": {
+    "I": [
+      {
+        "name": "Petricite Burst",
+        "effects": [
+          {
+            "description": "Innate: Casting an ability grants an Unshackled stack for 4 seconds, up to maximum of 3. While Sylas has stacks of Unshackled, he gains  80% bonus attack speed.",
+            "icon": "Petricite Burst.png",
+            "leveling": []
+          },
+          {
+            "description": "Unshackled: Sylas' next basic attack is modified to whirl his chains around him, dealing 130% AD (+ 25% AP)  magic damage to his primary target, and 40% AD (+ 20% AP) magic damage to nearby secondary targets. This attack consumes a stack.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Damage to secondary targets executes  minions below 25 health.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "The empowered attack applies on-hit effects to the primary target but disables Sylas'  critical strikes' bonus damage. Spell effects only apply to secondary targets.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": "False",
+        "resource": null,
+        "damageType": "Magic",
+        "spellEffects": "AoE",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Spellblade damage will get converted to magic damage but will deal its damage only to the primary target.\n Hitting a target multiple times with Petricite Burst will not add additional stacks of  Electrocute or  Phase Rush.\n Petricite Burst does not add stacks of  Press the Attack to the target.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "300",
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Chain Lash",
+        "effects": [
+          {
+            "description": "Active: Sylas lashes out two lines that converge to the target location and extend beyond it up to a maximum range, dealing magic damage and  slowing enemies hit for 1.5 seconds.",
+            "icon": "Chain Lash.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      55,
+                      70,
+                      85,
+                      100
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      40,
+                      40,
+                      40,
+                      40,
+                      40
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Slow",
+                "modifiers": [
+                  {
+                    "values": [
+                      15,
+                      20,
+                      25,
+                      30,
+                      35
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "After a 0.6-second delay, the chains' intersection detonates, dealing magic damage. Against  minions and  monsters the detonation deals 60% reduced damage.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Detonation Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      115,
+                      170,
+                      225,
+                      280
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      80,
+                      80,
+                      80,
+                      80,
+                      80
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Non-Champion Detonation Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      24,
+                      46,
+                      68,
+                      90,
+                      112
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      32,
+                      32,
+                      32,
+                      32,
+                      32
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Champion Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      100,
+                      170,
+                      240,
+                      310,
+                      380
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      120,
+                      120,
+                      120,
+                      120,
+                      120
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Non-Champion Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      64,
+                      101,
+                      138,
+                      175,
+                      212
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      72,
+                      72,
+                      72,
+                      72,
+                      72
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                55,
+                60,
+                65,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                10,
+                9,
+                8,
+                7,
+                6
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction / Ground",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "Mana",
+        "damageType": "Magic",
+        "spellEffects": "spellaoe",
+        "projectile": "False",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Chain Lash will fire from the original location even if Sylas is  displaced.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "180 / 200",
+        "targetRange": "775"
+      }
+    ],
+    "W": [
+      {
+        "name": "Kingslayer",
+        "effects": [
+          {
+            "description": "Active: Sylas  lunges at a target enemy with a powerful strike, dealing magic damage.",
+            "icon": "Kingslayer.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      65,
+                      100,
+                      135,
+                      170,
+                      205
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      85,
+                      85,
+                      85,
+                      85,
+                      85
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Against enemy  champions, Sylas is also  healed, increased by 0% \u2212 100% (based on Sylas' missing health).",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Heal",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      60,
+                      90,
+                      120,
+                      150
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      50,
+                      50,
+                      50,
+                      50,
+                      50
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Heal",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      120,
+                      180,
+                      240,
+                      300
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                70,
+                80,
+                90,
+                100,
+                110
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                13,
+                11.5,
+                10,
+                8.5,
+                7
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "special",
+        "resource": "Mana",
+        "damageType": "Magic",
+        "spellEffects": "Single target",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": "True",
+        "notes": "Kingslayer is able to make allied  Illaoi  Tentacles slam (including those spawned by a hijacked  Leap of Faith).\n The tentacle attacks will regenerate Sylas's health and give him the  Gold for its kills.\n Kingslayer is unable to queue up tentacle attacks (commanding them to attack while they're already attacking will not make them attack a second time).\n\n  Spell shield does not prevent Kingslayer from  healing Sylas.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "E": [
+      {
+        "name": "Abscond",
+        "effects": [
+          {
+            "description": "Active - Abscond: Sylas  dashes forward to the target location.",
+            "icon": "Abscond.png",
+            "leveling": []
+          },
+          {
+            "description": "For the next 3.5 seconds, Sylas may cast  Abduct.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                65,
+                65,
+                65,
+                65,
+                65
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": "Mana",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "400"
+      },
+      {
+        "name": "Abduct",
+        "effects": [
+          {
+            "description": "Active - Abduct: Sylas whips out his chains in the target direction, dealing magic damage and  stunning the first enemy hit,  pulling himself towards them, and  knocking them up for 0.35 seconds upon arrival.",
+            "icon": "Abduct.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      80,
+                      130,
+                      180,
+                      230,
+                      280
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Sylas may still move, basic attack and cast  Kingslayer or  Hijack before the chains reach his target.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Sylas is locked-out for 0.05 seconds after dashing.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "Magic",
+        "spellEffects": "Single target",
+        "projectile": "True",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Sylas will not dash to his target if the chains are  spell shielded.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1600 / 1800",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "800"
+      }
+    ],
+    "R": [
+      {
+        "name": "Hijack",
+        "effects": [
+          {
+            "description": "First Cast: Sylas selects a nearby target enemy champion to gain a copy of their ultimate ability. Sylas cannot select the same champion again for a set duration, and can hold the hijacked ultimate for 90 seconds.",
+            "icon": "Hijack.png",
+            "leveling": []
+          },
+          {
+            "description": "Second Cast: Sylas can cast his hijacked ultimate ability without cost, scaling based on Hijack's rank and his own statistics.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "All Hijacked ultimates and abilities that do not scale with  ability power have their  attack damage ratios converted to  ability power ratios, scaling with 0.6% AP per 1% total AD, and 0.4% AP per 1% bonus AD.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                75,
+                75,
+                75
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                80,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Self, Enemies",
+        "spellshieldable": "True",
+        "resource": "Mana",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": "True",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "If Sylas casts Hijack on a decoy, no ultimate is stolen and the ability will be placed on a full cooldown.\n If the stolen ability is on-target and it loses its target during the cast time (i.e  untargetability, loss of  vision) the ability will cancel and go on cooldown.\n Since the copied ability scales based on Hijack's rank, abilities can be copied regardless of their rank.\n Hijack will copy all components of the ability: passives and actives as well as recast effects. Hijack will not trigger the effects of other abilities unless absolutely necessary. \n Shape-shifting ultimates will transform Sylas into the target's alternate form, replacing his basic abilities and base stats. Namely:  Cougar Form,  Spider Form,  Cannon Form and  Dragon Form.\n Dragon's Descent refreshes Sylas's mana, depleting it and regenerating it at the same rate Shyvana's  fury would. Other sources of mana restoration will extend the duration as well. At the end of the effect, Sylas gains his previous mana. \n Permanent transformations last for ~5 minutes or until toggled off. \n The alternate abilities of transforming champions will cost mana and scale with the ranks as appropriate for the ability (e.g. ranks in R for Nidalee and ranks in Q/W/E for Jayce/Elise).\n Upon transforming, a  Petricite Burst stack will be deducted.\n  Petricite Burst stacks will still be gained from abilities cast in alternate forms, but the stacks are gained independently from the normal ones. Each transformed stack applies an additional on-hit effect.\n If Sylas has both normal and transformed stacks, Petricite Burst will prioritize consuming Sylas stacks before the transformed ones.\n\n\n Ultimates comply with One For All rules if an ally is playing the hijacked champion. For example, an allied  Darius'  Hemorrhage stacks will increase the damage of the hijacked Noxian Guillotine; or an allied  Syndra's  Dark Sphere will add extra damage to hijacked Unleashed Power as well as producing 3 spheres that she can use.\n\nInteractions\n\n  Amumu's  Curse of the Sad Mummy - Does not apply  Cursed Touch.\n  Aphelios'  Moonlight Vigil - Based on the  main weapon at the moment of steal.  Crescendum empowers his basic attacks temporarily.\n  Calibrum does not apply marks.\n\n  Brand's  Pyroclasm - Does not apply stacks of  Blaze.\n  Cho'Gath's  Feast - Gains permanent Feast charges on-kill.\n  Corki's  Missile Barrage - Gains max charges. \n  Darius'  Noxian Guillotine - Deals minimal damage and does not apply stacks of  Hemorrhage.\n  Fiora's  Grand Challenge - Gains movement speed in the effect and can trigger the area healing, but  Vitals do not deal bonus damage.\n  Gangplank's  Cannon Barrage - Does not steal cannon upgrades.\n  Gnar's  GNAR! - Gains a usable ultimate regardless of cast on  Mini Gnar or  Mega Gnar.\n  Heimerdinger's  UPGRADE!!! - Sylas's basic abilities are replaced with Heimerdinger's empowered abilities.\n  Illaoi's  Leap of Faith - Does not reduce  cooldown of  Kingslayer.\n  Kassadin's  Riftwalk - Only provides one use.\n  Kai'Sa's  Killer Instinct - Sylas' basic attacks,  Abduct and nearby allies'  immobilizations apply stacks of  Plasma, up to 4. Sylas is unable to apply the 5th stack necessary to expunge the stacks.\n  Kalista's  Fate's Call - Only castable with a  link (purchasable in the Shop for  0 gold).\n  Karma's  Mantra - Sylas's basic abilities are replaced with Karma's empowered abilities.\n  Kayn's  Umbral Trespass - Based on current form ( Shadow Assassin/ Rhaast).\n  Kha'Zix's  Void Assault - Can steal the ability's  evolution bonus effects.\n  Kennen's  Slicing Maelstrom - Does not apply  Mark of the Storm, targets are not  stunned.\n  Kled's  Chaaaaaaaarge!!! - Does not need  mount to cast.\n  Kog'Maw's  Living Artillery - Only provides one use.\n  LeBlanc's  Mimic - Uses the empowered version of  LeBlanc's last cast basic ability. If she has not cast any spells,  Mimic Sigil of Malice is copied.\n  Leona's  Solar Flare - Does not apply  Sunlight.\n  Master Yi's  Highlander - Kills do not reduce basic ability cooldowns.\n  Mordekaiser's  Realm of Death - Can join the dimension of outgoing realms if cast in the proper range (does not extend their duration).\n  Nasus'  Fury of the Sands - Does not reduce  cooldown of  Chain Lash.\n  Orianna's  Command: Shockwave - Cast on self without a  ball.\n  Rengar's  Thrill of the Hunt - Sylas will gain  Unseen Predator on his next attack.\n  Sylas'  Hijack - Steals the ability that the enemy Sylas has stolen. Cannot be targeted if no ability has been stolen.\n  Rek'Sai's  Void Rush - Sylas's attacks against enemy champions will apply a  mark which can be used to cast Void Rush.\n  Syndra's  Unleashed Power - Throws a minimum of 3  spheres, which are left on the ground afterwards and vanish after 6 seconds.\n  Talon's  Shadow Assault - Does not apply  Blade's End.\n  Teemo's  Noxious Trap - Gains max charges.\n  Twitch's  Spray and Pray - Gains 300 attack range and his attacks produce missiles that travel 850 range. These attacks are classified as  melee, and so will trigger effects such as  Tiamat versus all hit targets.\n  Udyr - Steals  Phoenix Stance. Lasts for 2 empowered attacks. \n  Varus'  Chain of Corruption - Does not apply stacks of  Blight.\n  Vayne's  Final Hour - Gains the AD and MS bonuses. Additionally, Sylas gains  invisibility when he casts  Chain Lash. \n  Vel'Koz's  Life Form Disintegration Ray - Does not apply  Organic Deconstruction.\n  Viktor's  Chaos Storm - Can steal the ability's  evolution bonus effects.\n  Xayah's  Featherstorm -  Feathers do not interact with an ally or enemy  Xayah.\n  Zed's  Death Mark -  Shadow does not mimic spells but can be reactivated to  swap places.\n  Zoe's  Portal Jump - Sylas can use his spells for the 1 second at the target location, but not during the jump.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "950"
+      }
+    ]
+  },
+  "releaseDate": "2019-01-25",
+  "releasePatch": "9.2",
+  "patchLastChanged": "10.2",
+  "price": {
+    "blueEssence": 6300,
+    "rp": 975
+  }
+}

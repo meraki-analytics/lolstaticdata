@@ -1,0 +1,877 @@
+{
+  "id": 497,
+  "key": "Rakan",
+  "name": "Rakan",
+  "title": "The Charmer",
+  "fullName": "",
+  "resource": "Mana",
+  "attackType": "Ranged",
+  "adaptiveType": "magic",
+  "stats": {
+    "healthBase": 540,
+    "healthPerLevel": 85,
+    "healthPer_5SecondsBase": 5,
+    "healthPer_5SecondsPerLevel": 0.5,
+    "manaBase": 315,
+    "manaPerLevel": 50,
+    "manaPer_5SecondsBase": 8.75,
+    "manaPer_5SecondsPerLevel": 0.5,
+    "armorBase": 32,
+    "armorPerLevel": 3.9,
+    "magicResistanceBase": 32.1,
+    "magicResistancePerLevel": 1.25,
+    "attackDamageBase": 62,
+    "attackDamagePerLevel": 3.5,
+    "movespeed": 335,
+    "acquisitionRadius": 475,
+    "selectionRadius": 125,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 1.0,
+    "attackSpeedBase": 0.635,
+    "attackSpeedPerLevel": 3,
+    "attackSpeedRatio": 0.634999990463256,
+    "attackCastTime": 0.270000010728836,
+    "attackTotalTime": 1.57500004768371,
+    "attackDelayOffset": 0,
+    "attackRangeBase": 300,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 1.0,
+    "aramDamageDealt": 1.0,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 1.0,
+    "urfDamageDealt": 1.0,
+    "urfHealing": 1.0,
+    "urfShielding": 0.9
+  },
+  "roles": [
+    "SUPPORT",
+    "CATCHER"
+  ],
+  "attributeRatings": {
+    "damage": 1,
+    "toughness": 2,
+    "control": 3,
+    "mobility": 3,
+    "utility": 3,
+    "abilityReliance": 90,
+    "attack": 2,
+    "defense": 4,
+    "magic": 8,
+    "difficulty": 2
+  },
+  "abilities": {
+    "I": [
+      {
+        "name": "Fey Feathers",
+        "effects": [
+          {
+            "description": "Innate: Rakan periodically generates a 33 \u2212 254 (based on level) (+ 90% AP)  shield that lasts until broken. If the shield is damaged, but not destroyed after being out of combat for 5 seconds, it will regenerate 10% of its maximum value every second.",
+            "icon": "Fey Feathers.png",
+            "leveling": []
+          },
+          {
+            "description": "Basic attacks and abilities reduce Fey Feathers's  cooldown by 1 second for each enemy  champion hit.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Lover's Leap: If either Rakan or  Xayah is  recalling, the other may move nearby and activate their own recall to join them. Both reach base at the time of which the initiator's recall ends.",
+            "icon": "ProfileIcon1634 Blazing Feathers.png",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                40.0,
+                38.588235294117645,
+                37.1764705882353,
+                35.76470588235294,
+                34.35294117647059,
+                32.94117647058823,
+                31.529411764705884,
+                30.11764705882353,
+                28.705882352941174,
+                27.294117647058822,
+                25.88235294117647,
+                24.470588235294116,
+                23.058823529411764,
+                21.64705882352941,
+                20.235294117647058,
+                18.823529411764703,
+                17.41176470588235,
+                16.0
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": "Shield",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Revitalize will record bonus shielding when a new shield is created, but not when it regenerates. In either case, there is no bonus shielding received.",
+        "blurb": "Rakan periodically gains a shield.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "Fey Feathers",
+        "effects": [
+          {
+            "description": "Innate: Rakan periodically generates a 33 \u2212 254 (based on level) (+ 90% AP)  shield that lasts until broken. If the shield is damaged, but not destroyed after being out of combat for 5 seconds, it will regenerate 10% of its maximum value every second.",
+            "icon": "Fey Feathers.png",
+            "leveling": []
+          },
+          {
+            "description": "Basic attacks and abilities reduce Fey Feathers's  cooldown by 1 second for each enemy  champion hit.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Lover's Leap: If either Rakan or  Xayah is  recalling, the other may move nearby and activate their own recall to join them. Both reach base at the time of which the initiator's recall ends.",
+            "icon": "ProfileIcon1634 Blazing Feathers.png",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                40.0,
+                38.588235294117645,
+                37.1764705882353,
+                35.76470588235294,
+                34.35294117647059,
+                32.94117647058823,
+                31.529411764705884,
+                30.11764705882353,
+                28.705882352941174,
+                27.294117647058822,
+                25.88235294117647,
+                24.470588235294116,
+                23.058823529411764,
+                21.64705882352941,
+                20.235294117647058,
+                18.823529411764703,
+                17.41176470588235,
+                16.0
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": "Shield",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Revitalize will record bonus shielding when a new shield is created, but not when it regenerates. In either case, there is no bonus shielding received.",
+        "blurb": "Rakan periodically gains a shield.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Gleaming Quill",
+        "effects": [
+          {
+            "description": "Active: Rakan slings an enchanted feather forward, dealing  magic damage to the first enemy hit.",
+            "icon": "Gleaming Quill.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      70,
+                      115,
+                      160,
+                      205,
+                      250
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If that enemy was a champion or epic monster, an area is marked around Rakan.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "After 3 seconds or if an ally champion comes within the marked area, Rakan  heals himself and surrounding allies by 18 \u2212 120 (based on level) (+ 70% AP).",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction / Auto",
+        "affects": "Enemies / Allies",
+        "spellshieldable": "Special",
+        "resource": "Mana",
+        "damageType": "Magic",
+        "spellEffects": "spell",
+        "projectile": "True",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The trigger radius is slightly smaller than the heal radius.\n If the spell is blocked by a  spell shield, the damage will be blocked, but Rakan will still be affected by the heal component.\n The heal can activate immediately after the projectile hits the target, before the healing return animation completes.",
+        "blurb": "Flings a magical feather that deals magic damage. Striking a champion or epic monster enables Rakan to heal his allies.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "200",
+        "targetRange": "900"
+      }
+    ],
+    "W": [
+      {
+        "name": "Grand Entrance",
+        "effects": [
+          {
+            "description": "Active: Rakan  dashes to the target location.",
+            "icon": "Grand Entrance.png",
+            "leveling": []
+          },
+          {
+            "description": "After a 0.35-second delay, he leaps into the air, dealing magic damage and  knocking up surrounding enemies for 1 second.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      70,
+                      120,
+                      170,
+                      220,
+                      270
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      70,
+                      70,
+                      70,
+                      70,
+                      70
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                60,
+                70,
+                80,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                18,
+                16.5,
+                15,
+                13.5,
+                12
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "Mana",
+        "damageType": "Magic",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": "Dashes to a location, knocking up nearby enemies on arrival.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1700",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "250",
+        "targetRange": "600"
+      }
+    ],
+    "E": [
+      {
+        "name": "Battle Dance",
+        "effects": [
+          {
+            "description": "Active: Rakan  shields the target allied champion for 3 seconds while also  dashing through them.",
+            "icon": "Battle Dance.png",
+            "leveling": [
+              {
+                "attribute": "Shield Strength",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      65,
+                      90,
+                      115,
+                      140
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      80,
+                      80,
+                      80,
+                      80,
+                      80
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Battle Dance can be re-cast for 5 seconds at no cost.",
+            "icon": "Battle Dance 2.png",
+            "leveling": []
+          },
+          {
+            "description": "If  Xayah is the target, Battle Dance can be cast from an increased range.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                60,
+                70,
+                80,
+                90,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                20,
+                18,
+                16,
+                14,
+                12
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Allies",
+        "spellshieldable": null,
+        "resource": "Mana",
+        "damageType": null,
+        "spellEffects": "Shield",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The shield does not stack when reapplied. Thus, jumping on an ally who's already shielded will only have their shield refreshed.",
+        "blurb": "Flies to an allied champion granting them a shield. Can be re-cast for free for a short duration.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1250 (+ 80% movement speed)",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "700 / 1000"
+      },
+      {
+        "name": "Battle Dance",
+        "effects": [
+          {
+            "description": "Active: Rakan  shields the target allied champion for 3 seconds while also  dashing through them.",
+            "icon": "Battle Dance.png",
+            "leveling": [
+              {
+                "attribute": "Shield Strength",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      65,
+                      90,
+                      115,
+                      140
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      80,
+                      80,
+                      80,
+                      80,
+                      80
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Battle Dance can be re-cast for 5 seconds at no cost.",
+            "icon": "Battle Dance 2.png",
+            "leveling": []
+          },
+          {
+            "description": "If  Xayah is the target, Battle Dance can be cast from an increased range.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                60,
+                70,
+                80,
+                90,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                20,
+                18,
+                16,
+                14,
+                12
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Allies",
+        "spellshieldable": null,
+        "resource": "Mana",
+        "damageType": null,
+        "spellEffects": "Shield",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The shield does not stack when reapplied. Thus, jumping on an ally who's already shielded will only have their shield refreshed.",
+        "blurb": "Flies to an allied champion granting them a shield. Can be re-cast for free for a short duration.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1250 (+ 80% movement speed)",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "700 / 1000"
+      }
+    ],
+    "R": [
+      {
+        "name": "The Quickness",
+        "effects": [
+          {
+            "description": "Active: Rakan breaks into a captivating sprint for 4 seconds, gaining  50% bonus movement speed for the duration. During this time he deals magic damage to all enemy units he collides with,  charming and  slowing them by 75%. This may only occur once per unit.",
+            "icon": "The Quickness.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      100,
+                      200,
+                      300
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      50,
+                      50,
+                      50
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Charm Duration",
+                "modifiers": [
+                  {
+                    "values": [
+                      1,
+                      1.25,
+                      1.5
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "When Rakan collides with his first enemy  champion he gains an additional  100% bonus movement speed, which starts decaying after 0.5 seconds by 20% every 0.5 seconds.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "During the first 0.5 seconds of The Quickness, Rakan is in cast time.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "During The Quickness, Rakan cannot basic attack enemy champions if he did not charm them.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                130,
+                110,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Self / Buff / Auto",
+        "affects": "Self / Enemies",
+        "spellshieldable": "True",
+        "resource": "Mana",
+        "damageType": "Magic",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The spell duration is increased by 0.25 seconds per enemy hit.\n  Grand Entrance can be buffered while The Quickness is active.",
+        "blurb": "Gains movement speed, charming and dealing magic damage to enemies touched.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": "150",
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ]
+  },
+  "releaseDate": "2017-04-19",
+  "releasePatch": "7.8",
+  "patchLastChanged": "9.19",
+  "price": {
+    "blueEssence": 6300,
+    "rp": 975
+  }
+}

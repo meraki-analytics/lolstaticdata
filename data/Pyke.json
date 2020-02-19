@@ -1,0 +1,570 @@
+{
+  "id": 555,
+  "key": "Pyke",
+  "name": "Pyke",
+  "title": "the Bloodharbor Ripper",
+  "fullName": "",
+  "resource": "Mana",
+  "attackType": "Melee",
+  "adaptiveType": "physical",
+  "stats": {
+    "healthBase": 600,
+    "healthPerLevel": 90,
+    "healthPer_5SecondsBase": 7,
+    "healthPer_5SecondsPerLevel": 0.5,
+    "manaBase": 415,
+    "manaPerLevel": 50,
+    "manaPer_5SecondsBase": 8,
+    "manaPer_5SecondsPerLevel": 1,
+    "armorBase": 45,
+    "armorPerLevel": 5,
+    "magicResistanceBase": 32,
+    "magicResistancePerLevel": 1.5,
+    "attackDamageBase": 62,
+    "attackDamagePerLevel": 2,
+    "movespeed": 330,
+    "acquisitionRadius": 400,
+    "selectionRadius": 120,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 1.0,
+    "attackSpeedBase": 0.667,
+    "attackSpeedPerLevel": 2.5,
+    "attackSpeedRatio": 0.666999995708465,
+    "attackCastTime": 0.300000011920928,
+    "attackTotalTime": 1.5,
+    "attackDelayOffset": 0,
+    "attackRangeBase": 150,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 0.95,
+    "aramDamageDealt": 1.05,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 0.95,
+    "urfDamageDealt": 1.0,
+    "urfHealing": 0.95,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "SUPPORT",
+    "ASSASSIN"
+  ],
+  "attributeRatings": {
+    "damage": 2,
+    "toughness": 1,
+    "control": 3,
+    "mobility": 3,
+    "utility": 1,
+    "abilityReliance": 50,
+    "attack": 9,
+    "defense": 3,
+    "magic": 1,
+    "difficulty": 2
+  },
+  "abilities": {
+    "I": [
+      {
+        "name": "Gift of the Drowned Ones",
+        "effects": [
+          {
+            "description": "Innate: Pyke's  maximum health cannot increase except through growth (per level), instead he gains[ 1 bonus attack damage per 14 bonus health ][ (7.143% bonus health) bonus attack damage ].",
+            "icon": "Gift of the Drowned Ones.png",
+            "leveling": []
+          },
+          {
+            "description": "Pyke also stores 25% \u2212 50% (based on level) of the damage he takes from enemy champions as Grey Health on his health bar, up to 80 (+ 800% bonus AD), with an upper cap of 60% of his maximum health.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "When Pyke is unseen by enemies, he rapidly consumes his Grey Health to  heal for the same amount.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            "Amount"
+          ]
+        },
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": "Heal",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Game elements that increase health based on the champion's health (e.g  Cinderhulk,  Gargoyle Stoneplate's,  Overgrowth) will increase the health before getting converted by Gift of the Drowned Ones, thus granting increased bonus AD.\n  Spirit Visage and  Grievous Wounds take effect after Gift of the Drowned Ones's healing cap.\nPyke's Grey Health does not have a time limit, and will stay on his health bar until Pyke leaves enemy vision or dies.\n Since Pyke's maximum health cannot be increased, Gift of the Drowned Ones reaches the upper cap of 60% of maximum health at 35 \u2212 149.75 (based on level) bonus attack damage.\n Amount of attack damage granted from list of items that grants health, converted with Gift of the Drowned Ones:\n\n\nItem\nCost\nAmount\nAvailability\nAbyssal Mask Abyssal Mask3000 25All mapsAdaptive Helm Adaptive Helm2800 25All mapsBami's Cinder Bami's Cinder900 14.3All mapsBlack Cleaver Black Cleaver3000 68.6All mapsBlack Mist Scythe Black Mist Scythe400 32.1Summoner's RiftBulwark of the Mountain Bulwark of the Mountain400 21.4Summoner's RiftCatalyst of Aeons Catalyst of Aeons1100 16.1All mapsCinderhulk Cinderhulk1500 21.4Summoner's RiftCrystalline Bracer Crystalline Bracer650 14.3All mapsDead Man's Plate Dead Man's Plate2900 30.4All mapsDoran's Blade Doran's Blade450 13.7Summoner's RiftDoran's Ring Doran's Ring400 4.3Summoner's RiftDoran's Shield Doran's Shield450 5.7Summoner's RiftEdge of Night Edge of Night2900 78.2All mapsForgefire Cape Forgefire Cape2750 53.6All mapsFrostfang Frostfang400 5Summoner's RiftFrozen Mallet Frozen Mallet3100 80All mapsGiant's Belt Giant's Belt1000 27.1All mapsGuardian's Hammer Guardian's Hammer950 30.7Howling AbyssGuardian's Horn Guardian's Horn950 10.7Howling AbyssGuardian's Orb Guardian's Orb950 10.7Howling AbyssHarrowing Crescent Harrowing Crescent400 14.3Summoner's RiftHaunting Guise Haunting Guise1500 14.3All mapsHextech Protobelt-01 Hextech Protobelt-012500 21.4All mapsInfernal Mask Infernal Mask3000 53.6All mapsJaurim's Fist Jaurim's Fist1200 29.3All mapsKindlegem Kindlegem800 14.3All mapsKnight's Vow Knight's Vow2200 17.9All mapsLiandry's Torment Liandry's Torment3100 21.4All mapsMorellonomicon Morellonomicon3000 21.4All mapsOblivion Orb Oblivion Orb1600 14.3All mapsObsidian Cleaver Obsidian Cleaver3000 99.3All mapsPauldrons of Whiterock Pauldrons of Whiterock400 36.4Summoner's RiftPhage Phage1250 29.3All mapsRanduin's Omen Randuin's Omen2900 28.6All mapsRedemption Redemption2100 14.3All mapsRelic Shield Relic Shield400 2.1Summoner's RiftRighteous Glory Righteous Glory2650 28.6All mapsRod of Ages Rod of Ages2600 21.4Summoner's RiftRod of Ages (Quick Charge) Rod of Ages (Quick Charge)2600 21.4Howling AbyssRuby Crystal Ruby Crystal400 10.7All mapsRunesteel Spaulders Runesteel Spaulders400 13.1Summoner's RiftRylai's Crystal Scepter Rylai's Crystal Scepter2600 21.4All mapsSalvation Salvation2100 21.4All mapsShard of True Ice Shard of True Ice400 7.1Summoner's RiftShurelya's Reverie Shurelya's Reverie2050 21.4All mapsSpectral Sickle Spectral Sickle400 5.7Summoner's RiftSpectre's Cowl Spectre's Cowl1200 17.9All mapsSpellthief's Edge Spellthief's Edge400 0.7Summoner's RiftSpirit Visage Spirit Visage2800 32.1All mapsSteel Shoulderguards Steel Shoulderguards400 5.1Summoner's RiftSterak's Gage Sterak's Gage3200 32.1All mapsSunfire Cape Sunfire Cape2750 30.4All mapsTargon's Buckler Targon's Buckler400 7.1Summoner's RiftThornmail Thornmail2900 17.9All mapsTitanic Hydra Titanic Hydra3500 72.1All mapsTrinity Force Trinity Force3733 42.9All mapsTrinity Fusion Trinity Fusion3733 60All mapsWarmog's Armor Warmog's Armor2850 57.1All maps",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Bone Skewer",
+        "effects": [
+          {
+            "description": "First Cast: Pyke winds up for up to 3 seconds, increasing Bone Skewer's range by up to 700 units while being  slowed by 20%.",
+            "icon": "Bone Skewer.png",
+            "leveling": []
+          },
+          {
+            "description": "Second Cast: Pyke hurls his harpoon, dealing  physical damage to the first enemy struck,  pulling them a fixed 550 units towards him and  slowing them by 90% for 1 second.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      75,
+                      125,
+                      175,
+                      225,
+                      275
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Releasing the ability within 0.5 seconds causes Pyke to instead thrust his harpoon, hitting the closest enemy unit, prioritizing enemy champions.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "If Pyke  interrupted during the charge, or the charge completes without reactivation, Bone Skewer is cancelled and the ability is put on full  cooldown but refunds  half the mana cost.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "Mana",
+        "damageType": "Physical",
+        "spellEffects": "Spell",
+        "projectile": "special",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Since the pull is a fixed distance, Pyke will throw enemies behind him if he uses the ability at close range.\n  Wind Wall and  Unbreakable will only block the charged ability.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "0.25",
+        "effectRadius": null,
+        "targetRange": "400 \u2212 1100 (based on channel time)"
+      }
+    ],
+    "W": [
+      {
+        "name": "Ghostwater Dive",
+        "effects": [
+          {
+            "description": "Active: Pyke enters  camouflage and gains  bonus movement speed that decays over 5 seconds. Enemies are notified if Pyke is within 1500 units of them.",
+            "icon": "Ghostwater Dive.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      45,
+                      50,
+                      55,
+                      60
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  },
+                  {
+                    "values": [
+                      1.5,
+                      1.5,
+                      1.5,
+                      1.5,
+                      1.5
+                    ],
+                    "units": [
+                      "% per 1 Lethality",
+                      "% per 1 Lethality",
+                      "% per 1 Lethality",
+                      "% per 1 Lethality",
+                      "% per 1 Lethality"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Attacking or casting abilities immediately ends  camouflage.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                12,
+                11.5,
+                11,
+                10.5,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Self / Buff",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": "Mana",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "When Pyke is hidden nearby in his Ghostwater Dive, sharks will circle underneath nearby enemies' feet and a sound will be played, changing based on the amount of health they have left.\n Enemies will hear a disturbing deadly warning tone if their health bar is under the threshold of Death from Below.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "600",
+        "targetRange": null
+      }
+    ],
+    "E": [
+      {
+        "name": "Phantom Undertow",
+        "effects": [
+          {
+            "description": "Active: Pyke  dashes, leaving behind a drowned phantom.",
+            "icon": "Phantom Undertow.png",
+            "leveling": []
+          },
+          {
+            "description": "After 1 second, the phantom returns to Pyke,  stunning enemies it passes through for 1.25 (+ 0.1 per 10 Lethality) seconds. Enemy  champions also take physical damage.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      95,
+                      125,
+                      155,
+                      185,
+                      215
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                15,
+                15,
+                15,
+                15,
+                15
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction / Auto",
+        "affects": "Self, Enemies",
+        "spellshieldable": "True",
+        "resource": "Mana",
+        "damageType": "Physical",
+        "spellEffects": "spellaoe",
+        "projectile": "true",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The  dash can go through any wall as long as it can reach over half of its width, behaving similarly to a  blink.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": "100",
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "550"
+      }
+    ],
+    "R": [
+      {
+        "name": "Death from Below",
+        "effects": [
+          {
+            "description": "Active: Pyke marks the targeted area with an X which he strikes after a 0.75 second delay, executing enemy  champions below 250 \u2212 550 (based on level) (+ 80% bonus AD) (+ 1.5 per 1 Lethality) health while dealing 50% of the amount as physical damage to enemies not within the threshold for execution.",
+            "icon": "Death from Below.png",
+            "leveling": []
+          },
+          {
+            "description": "If Death from Below hits an enemy champion or one dies inside it, Pyke will  blink to the center of the X. For the latter case Pyke also gains the ability to recast within 20 seconds at no cost.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Each execution grants one  'Your Cut' to both Pyke and the last assisting ally, instead of its natural assist gold. In addition, each enemy champion killed inside the X by an ally grants Pyke two stacks of  'Your Cut'.",
+            "icon": "Death from Below 2.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                120,
+                100,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Self, Enemies",
+        "spellshieldable": "True",
+        "resource": "mana",
+        "damageType": "Physical damage /  True damage",
+        "spellEffects": "special",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Applies  raw damage to executed targets and  area damage to targets above the threshold.\n Death from Below cannot execute decoys and are always dealt 50% physical damage.\n  'Your Cut' is an item that can be consumed to gain gold. If the ally's inventory is full, it's auto-consumed.\n When  'Your Cut' is consumed, it quickly grants  100 stacks until reaching the full gold value.\n\n Only the target's current health will count as Pyke's damage in post-game statistics and  spell vamp healing if executed.\n If the target's current health is less than 50% of the post-mitigation non-executing damage, Pyke will heal less from spell vamp.\n\n If a champion dies inside the X before Death from Below performs, Pyke will be shown as having received an assist in the kill feed, but this will not grant him  takedown effects.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "750"
+      }
+    ]
+  },
+  "releaseDate": "2018-05-31",
+  "releasePatch": "8.11",
+  "patchLastChanged": "10.2",
+  "price": {
+    "blueEssence": 6300,
+    "rp": 975
+  }
+}

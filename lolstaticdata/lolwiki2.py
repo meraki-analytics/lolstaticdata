@@ -1,11 +1,8 @@
-from typing import Tuple, List, Optional, Mapping, Dict, Union
+from typing import Tuple, List, Mapping, Union, Iterator
 import os
 import re
-import json
-import glob
-import requests
 from bs4 import BeautifulSoup
-from collections import Counter, defaultdict
+from collections import Counter
 
 from model import Champion, Stats, Ability, AdaptiveType, AttackType, AttributeRatings, Cooldown, Cost, Effect, Price, Resource, Modifier, Role, Leveling
 from util import download_webpage, save_json, parse_top_level_parentheses, grouper
@@ -73,7 +70,7 @@ class LolWikiDataHandler:
     def __init__(self, use_cache: bool = True):
         self.use_cache = use_cache
 
-    def get_champions(self) -> List[Champion]:
+    def get_champions(self) -> Iterator[Champion]:
         # Download the page source
         url = "https://leagueoflegends.fandom.com/wiki/Module:ChampionData/data"
         html = download_webpage(url, self.use_cache)

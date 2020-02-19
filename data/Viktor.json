@@ -1,0 +1,974 @@
+{
+  "id": 112,
+  "key": "Viktor",
+  "name": "Viktor",
+  "title": "the Machine Herald",
+  "fullName": "",
+  "resource": "Mana",
+  "attackType": "Ranged",
+  "adaptiveType": "magic",
+  "stats": {
+    "healthBase": 530,
+    "healthPerLevel": 90,
+    "healthPer_5SecondsBase": 8,
+    "healthPer_5SecondsPerLevel": 0.65,
+    "manaBase": 405,
+    "manaPerLevel": 25,
+    "manaPer_5SecondsBase": 8,
+    "manaPer_5SecondsPerLevel": 0.8,
+    "armorBase": 23,
+    "armorPerLevel": 4,
+    "magicResistanceBase": 30,
+    "magicResistancePerLevel": 0.5,
+    "attackDamageBase": 53,
+    "attackDamagePerLevel": 3,
+    "movespeed": 335,
+    "acquisitionRadius": 525,
+    "selectionRadius": 160,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 1.0,
+    "attackSpeedBase": 0.658,
+    "attackSpeedPerLevel": 2.11,
+    "attackSpeedRatio": 0.657999992370605,
+    "attackCastTime": 0.3,
+    "attackTotalTime": 1.6,
+    "attackDelayOffset": -0.11999999731779,
+    "attackRangeBase": 525,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 1.0,
+    "aramDamageDealt": 1.0,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 1.0,
+    "urfDamageDealt": 0.95,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "MAGE",
+    "BATTLEMAGE"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 1,
+    "control": 2,
+    "mobility": 1,
+    "utility": 1,
+    "abilityReliance": 90,
+    "attack": 2,
+    "defense": 4,
+    "magic": 10,
+    "difficulty": 3
+  },
+  "abilities": {
+    "I": [
+      {
+        "name": "Glorious Evolution",
+        "effects": [
+          {
+            "description": "Innate: Viktor starts each game with an exclusive  Prototype Hex Core, which permanently occupies one of his item slots. For some additional gold, Viktor can upgrade his Hex Core to increase its bonuses and grant him one Evolution point, which he can use to augment one of his basic abilities. Once he augments all of his basic abilities, Viktor automatically augments his ultimate ability,  Chaos Storm.\n  Prototype Hex Core: Grants 1 \u2212 18 (based on level) ability power and 10 \u2212 180 (based on level) mana.\n  Hex Core mk-1: Grants 3 \u2212 54 (based on level) ability power and 15 \u2212 270 (based on level) mana. And one Evolution Point.\n  Hex Core mk-2: Grants 6 \u2212 108 (based on level) ability power and  20 \u2212 360 (based on level) mana. And one Evolution Point.\n  Perfect Hex Core: Grants 10 \u2212 180 (based on level) ability power and 25 \u2212 450 (based on level) mana. And one Evolution Point.",
+            "icon": "Glorious Evolution.png",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Given the gold values of  21.75 per ability power and  1.4 per mana:\n Prototype Hex Core is worth  35.75 at level 1, and  643.5 at level 18, and has infinite efficiency since it free; \n Hex Core mk-1 is at least 100% gold efficient at level 15; \n Hex Core mk-2 is at least 100% gold efficient at level 15; \n Perfect Hex Core is at least 100% gold efficient at level 12. \n\n At level 18, The Perfect Hex Core grants 180 ability power and 450 mana. It's worth  4545 at level 18 (excluding passives) and is 152% gold efficient.",
+        "blurb": "Viktor starts with the Prototype Hex Core that can be upgraded three times in the store to augment his abilities.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Siphon Power",
+        "effects": [
+          {
+            "description": "Active: Viktor  shields himself for 30 \u2212 115 (based on level) (+ 15% AP) for 2.5 seconds, deals  magic damage to the target enemy, and gains  Discharge for 3.5 seconds.",
+            "icon": "Siphon Power.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      75,
+                      90,
+                      105,
+                      120
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      40,
+                      40,
+                      40,
+                      40,
+                      40
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Discharge: Viktor's next basic attack won't use a  projectile and is modified to deal magic damage.",
+            "icon": "Discharge.png",
+            "leveling": [
+              {
+                "attribute": "Discharge Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      45,
+                      70,
+                      95,
+                      120
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      55,
+                      55,
+                      55,
+                      55,
+                      55
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      80,
+                      120,
+                      160,
+                      200,
+                      240
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      95,
+                      95,
+                      95,
+                      95,
+                      95
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Augment: Turbocharge: Viktor instantly gains  30% bonus movement speed for 2.5 seconds after using Siphon Power, while also increasing the shield's value by 60%, up to 48 \u2212 184 (based on level) (+ 24% AP).",
+            "icon": "Augment- Turbocharge.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                45,
+                50,
+                55,
+                60,
+                65
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                9,
+                8,
+                7,
+                6,
+                5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Enemies / Self",
+        "spellshieldable": "True",
+        "resource": "mana",
+        "damageType": "Magic",
+        "spellEffects": "special",
+        "projectile": "True",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Applies  spell damage to the ability and  default damage to the enhanced attack.\n The enhanced attack will apply other  on-hit and can  critically strike (the bonus damage does not) as normal.\n The enhanced attack will not trigger on  structures.\n All damage dealt by Spellblade on the enhanced attack is converted into magic damage.\n\n  Spell shield will block the damage, but will not cancel the  shield nor the enhanced attack and movement speed buffs.",
+        "blurb": "Viktor blasts an enemy unit dealing magic damage, gaining a shield and empowering his next basic attack. Augment: Viktor gains bonus Movement Speed after casting.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "2000",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "600"
+      }
+    ],
+    "W": [
+      {
+        "name": "Gravity Field",
+        "effects": [
+          {
+            "description": "Active: Viktor deploys a gravitational imprisonment device at the target location which arms after a brief delay. For 4 seconds, the trap  slows all enemies that pass through its field, persisting for 0.25 seconds after leaving.",
+            "icon": "Gravity Field.png",
+            "leveling": [
+              {
+                "attribute": "Slow",
+                "modifiers": [
+                  {
+                    "values": [
+                      28,
+                      32,
+                      36,
+                      40,
+                      44
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Whilst under the trap's effects, enemies generate a stack every 0.5 seconds. At 3 stacks, enemies are  knocked down and  stunned for 1.5 seconds.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Augment: Magnetize: Viktor's abilities, excluding  Chaos Storm ticks,  slow enemies hit by 20% for 1 second.",
+            "icon": "Augment- Magnetize.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                65,
+                65,
+                65,
+                65,
+                65
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                17,
+                16,
+                15,
+                14,
+                13
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "mana",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "An enemy can only be stunned by the field once per cast, after which they will not be slowed or accumulate stacks again.\n Gravity Field will remain active if Viktor dies.\n Gravity Field's animation can be seen by both teams through fog of war.",
+        "blurb": "Viktor conjures a heavy gravitational field that slows enemies in its radius. Enemies who stay within the device for too long are stunned. Augment: Enemies stunned by Gravity Field are dragged to the center.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "800"
+      }
+    ],
+    "E": [
+      {
+        "name": "Death Ray",
+        "effects": [
+          {
+            "description": "Active: Viktor uses his synthetic arm to fire an energy beam 500 units down the target path, dealing magic damage to every enemy it hits. The arm can fire in any direction from any point within range, and does not interrupt Viktor's previous orders.",
+            "icon": "Death Ray.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      70,
+                      110,
+                      150,
+                      190,
+                      230
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Augment: Aftershock: An explosion follows Death Ray's wake after 1 second, dealing additional magic damage.",
+            "icon": "Augment- Aftershock.png",
+            "leveling": [
+              {
+                "attribute": "Aftershock Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      60,
+                      100,
+                      140,
+                      180
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      70,
+                      70,
+                      70,
+                      70,
+                      70
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      90,
+                      170,
+                      250,
+                      330,
+                      410
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      130,
+                      130,
+                      130,
+                      130,
+                      130
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                70,
+                80,
+                90,
+                100,
+                110
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction / Ground",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "mana",
+        "damageType": "Magic",
+        "spellEffects": "spellaoe",
+        "projectile": "True",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Death Ray has no cast time and Viktor may freely act while the ray is travelling.\n The effected area is set upon casting, no matter how far away Viktor moves. Unlike a leash, Death Ray will not break off its own effect.\n\n The laser grants a moderate area of  sight around where the beam strikes the ground.\n If Death Ray is  intercepted, the initial ray is not destroyed.\n However, the capability to be blocked only applies to the laser as it hits the ground. Viktor can cast the ability over the wall and it will not be destroyed or intercepted.\n\n If Viktor dies while he is firing the beam it will become  interrupted and stops traveling.",
+        "blurb": "Viktor uses his robotic arm to fire a chaos beam that cuts across the field in a line, dealing damage to all enemies in its path. Augment: An explosion follows the Death Ray's wake, dealing magic damage.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1350",
+        "width": "90",
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "525"
+      }
+    ],
+    "R": [
+      {
+        "name": "Chaos Storm",
+        "effects": [
+          {
+            "description": "First Cast: Viktor conjures an arcane singularity at the target location, dealing magic damage to every enemy it hits and  interrupting  channeled abilities. The singularity remains active for 6.5 seconds afterwards, dealing magic damage to all nearby enemies every second.",
+            "icon": "Chaos Storm.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      100,
+                      175,
+                      250
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      50,
+                      50,
+                      50
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Magic Damage Per Tick",
+                "modifiers": [
+                  {
+                    "values": [
+                      65,
+                      105,
+                      145
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      45,
+                      45,
+                      45
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      490,
+                      805,
+                      1120
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      320,
+                      320,
+                      320
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Second Cast: Viktor directs the singularity to the target location. Once the singularity damages an enemy  champion, it automatically follows them until the target dies or escapes it. The singularity moves faster depending on its proximity to Viktor.",
+            "icon": "Chaos Storm 2.png",
+            "leveling": []
+          },
+          {
+            "description": "Augment: Perfect Storm: Chaos Storm moves 25% faster.",
+            "icon": "Augment- Perfect Storm.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                120,
+                100,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "mana",
+        "damageType": "Magic",
+        "spellEffects": "spellaoe",
+        "projectile": "False",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "If Viktor dies, Chaos Storm will remain active and follow the targeted enemy champion.\n Chaos Storm reaches its maximum speed at 300 units and minimum speed at 900 units away from Viktor.\n Including the initial damage, Chaos Storm deals 7 instance of damage.\n Chaos Storm can be controlled by alt + right click or by pressing the R button (default hotkeys). It can be commanded to move toward locations or enemy champions (it will continue to follow the chosen enemy champion unless commanded otherwise).\n If Viktor is affected by  immobilizes, he cannot issue new commands to the singularity.\n If the champion the storm is currently following enters stealth, the singularity will continue to follow them, effectively giving away their position. \n The singularity grants  sight around its position for the full duration..\n Chaos Storm is not obstructed by terrain.",
+        "blurb": "Viktor conjures a singularity on the field which deals magic damage and interrupts enemy channels. The singularity then periodically does magic damage to all nearby enemies. Viktor can redirect the singularity. Augment: The Chaos Storm moves faster.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "200 / 300 / 250 / 375",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "325",
+        "targetRange": "700"
+      },
+      {
+        "name": "Chaos Storm",
+        "effects": [
+          {
+            "description": "First Cast: Viktor conjures an arcane singularity at the target location, dealing magic damage to every enemy it hits and  interrupting  channeled abilities. The singularity remains active for 6.5 seconds afterwards, dealing magic damage to all nearby enemies every second.",
+            "icon": "Chaos Storm.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      100,
+                      175,
+                      250
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      50,
+                      50,
+                      50
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Magic Damage Per Tick",
+                "modifiers": [
+                  {
+                    "values": [
+                      65,
+                      105,
+                      145
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      45,
+                      45,
+                      45
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      490,
+                      805,
+                      1120
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      320,
+                      320,
+                      320
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Second Cast: Viktor directs the singularity to the target location. Once the singularity damages an enemy  champion, it automatically follows them until the target dies or escapes it. The singularity moves faster depending on its proximity to Viktor.",
+            "icon": "Chaos Storm 2.png",
+            "leveling": []
+          },
+          {
+            "description": "Augment: Perfect Storm: Chaos Storm moves 25% faster.",
+            "icon": "Augment- Perfect Storm.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                120,
+                100,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "mana",
+        "damageType": "Magic",
+        "spellEffects": "spellaoe",
+        "projectile": "False",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "If Viktor dies, Chaos Storm will remain active and follow the targeted enemy champion.\n Chaos Storm reaches its maximum speed at 300 units and minimum speed at 900 units away from Viktor.\n Including the initial damage, Chaos Storm deals 7 instance of damage.\n Chaos Storm can be controlled by alt + right click or by pressing the R button (default hotkeys). It can be commanded to move toward locations or enemy champions (it will continue to follow the chosen enemy champion unless commanded otherwise).\n If Viktor is affected by  immobilizes, he cannot issue new commands to the singularity.\n If the champion the storm is currently following enters stealth, the singularity will continue to follow them, effectively giving away their position. \n The singularity grants  sight around its position for the full duration..\n Chaos Storm is not obstructed by terrain.",
+        "blurb": "Viktor conjures a singularity on the field which deals magic damage and interrupts enemy channels. The singularity then periodically does magic damage to all nearby enemies. Viktor can redirect the singularity. Augment: The Chaos Storm moves faster.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "200 / 300 / 250 / 375",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "325",
+        "targetRange": "700"
+      }
+    ]
+  },
+  "releaseDate": "2011-12-29",
+  "releasePatch": "1.0.0.131",
+  "patchLastChanged": "10.2",
+  "price": {
+    "blueEssence": 4800,
+    "rp": 880
+  }
+}

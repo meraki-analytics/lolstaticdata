@@ -1,0 +1,743 @@
+{
+  "id": 115,
+  "key": "Ziggs",
+  "name": "Ziggs",
+  "title": "the Hexplosives Expert",
+  "fullName": "",
+  "resource": "Mana",
+  "attackType": "Ranged",
+  "adaptiveType": "magic",
+  "stats": {
+    "healthBase": 536,
+    "healthPerLevel": 92,
+    "healthPer_5SecondsBase": 6.5,
+    "healthPer_5SecondsPerLevel": 0.6,
+    "manaBase": 480,
+    "manaPerLevel": 23.5,
+    "manaPer_5SecondsBase": 8,
+    "manaPer_5SecondsPerLevel": 0.8,
+    "armorBase": 21.544,
+    "armorPerLevel": 3.3,
+    "magicResistanceBase": 30,
+    "magicResistancePerLevel": 0.5,
+    "attackDamageBase": 54.208,
+    "attackDamagePerLevel": 3.1,
+    "movespeed": 325,
+    "acquisitionRadius": 800,
+    "selectionRadius": 100,
+    "pathingRadius": 30,
+    "gameplayRadius": 55,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 1.0,
+    "attackSpeedBase": 0.656,
+    "attackSpeedPerLevel": 2,
+    "attackSpeedRatio": 0.656000018119812,
+    "attackCastTime": 0.3,
+    "attackTotalTime": 1.6,
+    "attackDelayOffset": -0.0916666686534881,
+    "attackRangeBase": 550,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 1.1,
+    "aramDamageDealt": 0.85,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 1.0,
+    "urfDamageDealt": 1.0,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "ARTILLERY",
+    "MAGE"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 1,
+    "control": 2,
+    "mobility": 2,
+    "utility": 1,
+    "abilityReliance": 90,
+    "attack": 2,
+    "defense": 4,
+    "magic": 9,
+    "difficulty": 2
+  },
+  "abilities": {
+    "I": [
+      {
+        "name": "Short Fuse",
+        "effects": [
+          {
+            "description": "Innate: Ziggs's basic attacks periodically deal 20 \u2212 160 (based on level) (+ 30 / 40 / 50% (based on level) AP)  bonus magic damage, doubled to 40 \u2212 320 (based on level) (+ 60 / 80 / 100% (based on level) AP) against structures.",
+            "icon": "Short Fuse.png",
+            "leveling": []
+          },
+          {
+            "description": "Ziggs reduces Short Fuse's  cooldown by 4 / 5 / 6 (based on level) seconds whenever he uses an ability.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                12,
+                12,
+                12
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Passive",
+        "affects": "Enemies",
+        "spellshieldable": "False",
+        "resource": null,
+        "damageType": "magic",
+        "spellEffects": "Proc",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "PENDING FOR TEST: Short Fuse's interactions with  dodging,  blocking, and  blinding effects.",
+        "blurb": "Every 12 seconds, Ziggs' next basic attack deals bonus magic damage. This cooldown is reduced whenever Ziggs uses an ability.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Bouncing Bomb",
+        "effects": [
+          {
+            "description": "Active: Ziggs throws a bouncing bomb to the target area, exploding upon hitting an enemy, colliding with terrain, or reaching the end of its trajectory. The bomb can bounce up to two times, the distance traveled each time based on how far it was originally thrown.",
+            "icon": "Bouncing Bomb.png",
+            "leveling": []
+          },
+          {
+            "description": "When exploding, the Bouncing Bomb deals magic damage to all nearby enemies.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      85,
+                      130,
+                      175,
+                      220,
+                      265
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      65,
+                      65,
+                      65,
+                      65,
+                      65
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                55,
+                60,
+                65,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                6,
+                5.5,
+                5,
+                4.5,
+                4
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Enemies",
+        "spellshieldable": "Special",
+        "resource": "Mana",
+        "damageType": "magic",
+        "spellEffects": "spellaoe",
+        "projectile": "true",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Bouncing Bomb obeys game physics (can be thrown or bounce over units/terrain if there is sufficient air time).\n Bouncing Bomb may go over enemies without exploding (will do so if it lands against walls).\n  Spell shield can block both the bomb's impact and its explosion (blocking the former will not prevent the latter).",
+        "blurb": "Ziggs throws a bouncing bomb that deals magic damage.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": "75",
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1700",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "180",
+        "targetRange": "850 / 1400"
+      }
+    ],
+    "W": [
+      {
+        "name": "Satchel Charge",
+        "effects": [
+          {
+            "description": "Active: Ziggs flings an explosive charge towards the target area,  revealing its surroundings, and exploding after 4 seconds or upon reactivation.",
+            "icon": "Satchel Charge.png",
+            "leveling": []
+          },
+          {
+            "description": "When exploding, the Satchel Charge deals magic damage and  knocks back all surrounding enemies by 250 units. If Ziggs is within the explosion radius, he instead  flies up to 500 units away while taking no damage in the process.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      70,
+                      105,
+                      140,
+                      175,
+                      210
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      50,
+                      50,
+                      50,
+                      50,
+                      50
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Turret Explosion: Satchel Charge's explosion can demolish  turrets below a  percentile health threshold.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Demolition Threshold",
+                "modifiers": [
+                  {
+                    "values": [
+                      25,
+                      27.5,
+                      30,
+                      32.5,
+                      35
+                    ],
+                    "units": [
+                      "% of turret's maximum health",
+                      "% of turret's maximum health",
+                      "% of turret's maximum health",
+                      "% of turret's maximum health",
+                      "% of turret's maximum health"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                65,
+                65,
+                65,
+                65,
+                65
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                20,
+                18,
+                16,
+                14,
+                12
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Enemies / Self",
+        "spellshieldable": "True",
+        "resource": "Mana",
+        "damageType": "magic",
+        "spellEffects": "spellaoe",
+        "projectile": "true",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Satchel Charge will explode immediately after landing if reactivated mid-flight.\n Satchel Charge's distance increases with proximity to the charge, resulting in being knocked straight up when aligned directly on top of it.\n Ziggs will not be displaced by Satchel Charge while  teleporting but he will while  recalling.\n PENDING FOR TEST: Satchel Charge cannot be reactivated while  grounded.",
+        "blurb": "Ziggs flings an explosive charge that detonates after 4 seconds, or when this ability is activated again. The explosion deals magic damage to enemies, knocking them away. Ziggs is also knocked away, but takes no damage. Ziggs can use the Satchel to hexplode vulnerable enemy turrets.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "325",
+        "targetRange": "1000"
+      }
+    ],
+    "E": [
+      {
+        "name": "Hexplosive Minefield",
+        "effects": [
+          {
+            "description": "Active: Ziggs scatters a cluster of 11 proximity mines over the target area, lasting for up to 10 seconds.",
+            "icon": "Hexplosive Minefield.png",
+            "leveling": []
+          },
+          {
+            "description": "Mines explode on contact with an enemy,  slowing them for 1.5 seconds and dealing magic damage. Targets detonating more than one mine take 40% damage from subsequent mines.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Slow",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      35,
+                      40,
+                      45,
+                      50
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Magic Damage Per Mine",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      75,
+                      110,
+                      145,
+                      180
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      30,
+                      30,
+                      30,
+                      30,
+                      30
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Additional Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      16,
+                      30,
+                      44,
+                      58,
+                      72
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      12,
+                      12,
+                      12,
+                      12,
+                      12
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Single-Target Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      200,
+                      375,
+                      550,
+                      725,
+                      900
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      150,
+                      150,
+                      150,
+                      150,
+                      150
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                70,
+                80,
+                90,
+                100,
+                110
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                16,
+                16,
+                16,
+                16,
+                16
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Enemies",
+        "spellshieldable": "Special",
+        "resource": "mana",
+        "damageType": "magic",
+        "spellEffects": "spellaoe",
+        "projectile": "true",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Hexplosive Minefield grants  sight of the target area for a short duration (on-cast and when each mine explodes).\n  Spell shield will block a single instance of damage.",
+        "blurb": "Ziggs scatters proximity mines that detonate on enemy contact, dealing magic damage and slowing.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "325",
+        "targetRange": "900"
+      }
+    ],
+    "R": [
+      {
+        "name": "Mega Inferno Bomb",
+        "effects": [
+          {
+            "description": "Active: Ziggs deploys his ultimate creation, the  Mega Inferno Bomb, hurling it to the target area, granting  sight within a 350 unit radius as it travels.",
+            "icon": "Mega Inferno Bomb.png",
+            "leveling": []
+          },
+          {
+            "description": "Upon reaching the target area, it explodes, dealing magic damage to all enemies caught in the blast, increased by 50% in the epicenter.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      200,
+                      300,
+                      400
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      73.33,
+                      73.33,
+                      73.33
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Increased Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      300,
+                      450,
+                      600
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      110,
+                      110,
+                      110
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                120,
+                95,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "Mana",
+        "damageType": "magic",
+        "spellEffects": "spellaoe",
+        "projectile": "Special",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Allies cannot see Mega Inferno Bomb's area indicator until shortly before the blast.\n Mega Inferno Bomb takes 3.5 seconds to land when Ziggs casts from maximum range (reduced to 2 seconds when casting point blank).\n PENDING FOR TEST: Mega Inferno Bomb can be blocked by  Wind Wall or  Unbreakable only at cast or at a certain angle upon landing.",
+        "blurb": "Ziggs deploys his ultimate creation, the Mega Inferno Bomb, hurling it an enormous distance. Enemies in the primary blast zone take more damage than those farther away.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": "250",
+        "speed": "1750",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "500",
+        "targetRange": "5000"
+      }
+    ]
+  },
+  "releaseDate": "2012-02-01",
+  "releasePatch": "1.0.0.133",
+  "patchLastChanged": "10.2",
+  "price": {
+    "blueEssence": 4800,
+    "rp": 880
+  }
+}

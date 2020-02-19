@@ -1,54 +1,64 @@
-from typing import Set, Mapping, List, Union
+from typing import Set, Mapping, List, Union, Type
 from dataclasses import dataclass
 import dataclasses_json
-from enum import Enum, auto
+from enum import Enum
 
 
 @classmethod
-def from_string(cls, string: str):
+def from_string(cls: Type[Enum], string: str) -> Enum:
     string = string.upper()
     for e in cls:
         if e.name == string:
             return e
-    return None
+    raise ValueError(f"Unknown {cls.__name__} type: {string}")
 Enum.from_string = from_string
 
 
 class Resource(Enum):
-    NO_COST = auto()
-    MANA = auto()
-    ENERGY = auto()
-    RAGE = auto()
-    FURY = auto()
-    HEALTH = auto()
-    MAXIMUM_HEALTH = auto()
-    CURRENT_HEALTH = auto()
-    HEALTH_PER_SECOND = auto()
-    MANA_PER_SECOND = auto()
-    CHARGE = auto()
-    OTHER = auto()
+    NO_COST = "NO_COST"
+    MANA = "MANA"
+    ENERGY = "ENERGY"
+    RAGE = "RAGE"
+    FURY = "FURY"
+    HEALTH = "HEALTH"
+    MAXIMUM_HEALTH = "MAXIMUM_HEALTH"
+    CURRENT_HEALTH = "CURRENT_HEALTH"
+    HEALTH_PER_SECOND = "HEALTH_PER_SECOND"
+    MANA_PER_SECOND = "MANA_PER_SECOND"
+    CHARGE = "CHARGE"
+    OTHER = "OTHER"
 
 
 class AttackType(Enum):
-    MELEE = auto()
-    RANGED = auto()
+    MELEE = "MELEE"
+    RANGED = "RANGED"
 
 
 class AdaptiveType(Enum):
-    PHYSICAL_DAMAGE = auto()
-    MAGIC_DAMAGE = auto()
+    PHYSICAL_DAMAGE = "PHYSICAL_DAMAGE"
+    MAGIC_DAMAGE = "MAGIC_DAMAGE"
 
 
 class Role(Enum):
-    CONTROLLER = auto()
-    FIGHTER = auto()
-    MAGE = auto()
-    MARKSMAN = auto()
-    SLAYER = auto()
-    TANK = auto()
-    SPECIALIST = auto()
-    ASSASSIN = auto()
-    # TODO: Finish this
+    TANK = "TANK"
+    FIGHTER = "FIGHTER"
+    MAGE = "MAGE"
+    MARKSMAN = "MARKSMAN"
+    SUPPORT = "SUPPORT"
+    WARDEN = "WARDEN"
+    VANGUARD = "VANGUARD"
+    JUGGERNAUT = "JUGGERNAUT"
+    CONTROLLER = "CONTROLLER"
+    SKIRMISHER = "SKIRMISHER"
+    DIVER = "DIVER"
+    SLAYER = "SLAYER"
+    BURST = "BURST"
+    BATTLEMAGE = "BATTLEMAGE"
+    ENCHANTER = "ENCHANTER"
+    CATCHER = "CATCHER"
+    ASSASSIN = "ASSASSIN"
+    SPECIALIST = "SPECIALIST"
+    ARTILLERY = "ARTILLERY"
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
@@ -91,7 +101,6 @@ class Stats(object):
     urf_damage_dealt: float
     urf_healing: float
     urf_shielding: float
-    # TODO: Should some of these be int?
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)

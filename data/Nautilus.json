@@ -1,0 +1,953 @@
+{
+  "id": 111,
+  "key": "Nautilus",
+  "name": "Nautilus",
+  "title": "the Titan of the Depths",
+  "fullName": "",
+  "resource": "Mana",
+  "attackType": "Melee",
+  "adaptiveType": "magic",
+  "stats": {
+    "healthBase": 576.48,
+    "healthPerLevel": 86,
+    "healthPer_5SecondsBase": 8.5,
+    "healthPer_5SecondsPerLevel": 0.55,
+    "manaBase": 400,
+    "manaPerLevel": 47,
+    "manaPer_5SecondsBase": 8.626,
+    "manaPer_5SecondsPerLevel": 0.5,
+    "armorBase": 39,
+    "armorPerLevel": 3.75,
+    "magicResistanceBase": 32.1,
+    "magicResistancePerLevel": 1.25,
+    "attackDamageBase": 61,
+    "attackDamagePerLevel": 3.3,
+    "movespeed": 325,
+    "acquisitionRadius": 400,
+    "selectionRadius": 125,
+    "pathingRadius": 50,
+    "gameplayRadius": 80,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 1.0,
+    "attackSpeedBase": 0.706,
+    "attackSpeedPerLevel": 1,
+    "attackSpeedRatio": 0.611999988555908,
+    "attackCastTime": 0.3,
+    "attackTotalTime": 1.6,
+    "attackDelayOffset": 0.00637254910543561,
+    "attackRangeBase": 175,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 1.08,
+    "aramDamageDealt": 1.0,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 1.0,
+    "urfDamageDealt": 1.0,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "VANGUARD",
+    "FIGHTER",
+    "TANK"
+  ],
+  "attributeRatings": {
+    "damage": 1,
+    "toughness": 3,
+    "control": 3,
+    "mobility": 1,
+    "utility": 1,
+    "abilityReliance": 80,
+    "attack": 4,
+    "defense": 6,
+    "magic": 6,
+    "difficulty": 2
+  },
+  "abilities": {
+    "I": [
+      {
+        "name": "Staggering Blow",
+        "effects": [
+          {
+            "description": "Innate: Nautilus's basic attacks deal 8 \u2212 110 (based on level)  bonus physical damage and  root his target for 0.75 \u2212 1.5 (based on level) seconds.",
+            "icon": "Staggering Blow.png",
+            "leveling": []
+          },
+          {
+            "description": "This effect cannot occur on the same target more than once every few seconds.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Enemies",
+        "spellshieldable": "Special",
+        "resource": null,
+        "damageType": "Physical",
+        "spellEffects": "Proc",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Spell shield will block the  root but not the bonus damage.\n PENDING FOR TEST: Staggering Blow's interactions with  dodging,  blocking, and  blinding effects.",
+        "blurb": "Nautilus' basic attacks deal bonus physical damage and immobilize his targets. This effect cannot happen more than once every few seconds on the same target.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": "6",
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Dredge Line",
+        "effects": [
+          {
+            "description": "Active: Nautilus hurls his anchor forward in a line, simultaneously  dragging the enemy hit towards him while  dashing towards them within 0.9 seconds, dealing  magic damage and  rooting them for 0.1 seconds.",
+            "icon": "Dredge Line.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      70,
+                      115,
+                      160,
+                      205,
+                      250
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      90,
+                      90,
+                      90,
+                      90,
+                      90
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If the anchor hits terrain, Nautilus dashes to the very end of its path, Dredge Line's  cooldown is reduced by 50% and refunds  half its mana cost.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Nautilus becomes  entangled while Dredge Line is in flight.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Self, Enemies",
+        "spellshieldable": "Special",
+        "resource": "Mana",
+        "damageType": "Magic",
+        "spellEffects": "spell",
+        "projectile": "true",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Dredge Line can interact with player-created terrain ( Cataclysm,  Crystallize,  Pillar of Ice).\n Nautilus will  dash all the way to the target's location if Dredge Line executes them.\n Dredge Line will not  interrupt any movement commands Nautilus was issued pre-cast so long as their directions somewhat correlate (this is intentional to smooth out traveling/escaping).\n  Spell shield will block the ability but Nautilus will still dash partway to the target.\n The anchor projectile will not act if Nautilus dies while the projectile is traveling.\n Nautilus will attempt to basic attack his target at the end of the dash. This attack will not grant a stack of  Conqueror,  Electrocute,  Phase Rush or  Spellthief's Edge.",
+        "blurb": "Nautilus hurls his anchor forward. If it hits a champion, he drags both himself and the opponent close together. If it hits terrain, Nautilus instead pulls himself to the anchor, the cooldown of Dredge Line is reduced by half, and half the Mana cost is refunded.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "2000",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "1100"
+      }
+    ],
+    "W": [
+      {
+        "name": "Titan's Wrath",
+        "effects": [
+          {
+            "description": "Active: Nautilus  shields himself for up to 6 seconds.",
+            "icon": "Titan's Wrath.png",
+            "leveling": [
+              {
+                "attribute": "Shield Strength",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      70,
+                      80,
+                      90,
+                      100
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "units": [
+                      "% maximum health",
+                      "% maximum health",
+                      "% maximum health",
+                      "% maximum health",
+                      "% maximum health"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "While the shield holds, his basic attacks deal bonus magic damage over 2 seconds to his target and all enemies around them.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Magic Damage Per Second",
+                "modifiers": [
+                  {
+                    "values": [
+                      15,
+                      20,
+                      25,
+                      30,
+                      35
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      20,
+                      20,
+                      20,
+                      20,
+                      20
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      40,
+                      50,
+                      60,
+                      70
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      40,
+                      40,
+                      40,
+                      40,
+                      40
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Titan's Wrath resets Nautilus'  basic attack timer.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                12,
+                12,
+                12,
+                12,
+                12
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Self",
+        "affects": "Self, Enemies",
+        "spellshieldable": "True",
+        "resource": "Mana",
+        "damageType": "Magic",
+        "spellEffects": "special",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Applies  proc damage to primary target and  area damage to secondary targets.\n Titan's Wrath has no cast time and does not interrupt Nautilus' previous orders.\n The first half of Titan's Wrath's damage is dealt on-hit (so long as the shield remains) while the rest is applied over the next second (regardless of Nautilus' attack speed).\n Nautilus'  basic attacks use different animations while Titan's Wrath is active.\n The damage over time will always apply when this animation plays (even if the shield fades during a basic attack).\n\n Titan's Wrath does not deal bonus damage to structures.\n PENDING FOR TEST Interaction with  Counter Strike,  Spirit's Refuge and  blind.\n  Spell shield will block the ability (but only a single application).",
+        "blurb": "Nautilus surrounds himself with dark energies, gaining a shield that blocks incoming damage. While the shield persists, his attacks apply a damage over time effect to enemies around his target.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "175",
+        "targetRange": null
+      }
+    ],
+    "E": [
+      {
+        "name": "Riptide",
+        "effects": [
+          {
+            "description": "Active: Nautilus creates 3 waves of explosions that radiate from him, each dealing magic damage to all enemies hit and  slowing them by an amount that decays over 1.5 seconds.",
+            "icon": "Riptide.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage Per Wave",
+                "modifiers": [
+                  {
+                    "values": [
+                      55,
+                      85,
+                      115,
+                      145,
+                      175
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      30,
+                      30,
+                      30,
+                      30,
+                      30
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Slow",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      35,
+                      40,
+                      45,
+                      50
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Enemies hit by subsequent waves beyond the first are dealt half damage.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Additional Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      27.5,
+                      42.5,
+                      57.5,
+                      72.5,
+                      87.5
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      15,
+                      15,
+                      15,
+                      15,
+                      15
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Single-Target Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      110,
+                      170,
+                      230,
+                      290,
+                      350
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                60,
+                70,
+                80,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                7,
+                6.5,
+                6,
+                5.5,
+                5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Auto",
+        "affects": "Enemies",
+        "spellshieldable": "Special",
+        "resource": "Mana",
+        "damageType": "Magic",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Riptide's waves radiate only from the cast location rather than from Nautlius.\n  Spell shield will block a single wave.",
+        "blurb": "Nautilus slams the ground, causing the earth to explode around him in a set of three explosions. Each explosion damages and slows enemies.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "600",
+        "targetRange": null
+      }
+    ],
+    "R": [
+      {
+        "name": "Depth Charge",
+        "effects": [
+          {
+            "description": "Active: Nautilus sends out a  Depth Charge that chases the target enemy champion, dealing magic damage while  knocking them up for 1 second and  stunning them on arrival.",
+            "icon": "Depth Charge.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      150,
+                      275,
+                      400
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      80,
+                      80,
+                      80
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Stun Duration",
+                "modifiers": [
+                  {
+                    "values": [
+                      1,
+                      1.5,
+                      2
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "All enemies hit along the way are dealt less damage,  knocked up for 1 second, and are also  stunned.",
+            "icon": "Depth Charge 2.png",
+            "leveling": [
+              {
+                "attribute": "Secondary Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      125,
+                      175,
+                      225
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      40,
+                      40,
+                      40
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                120,
+                100,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "Special",
+        "resource": "Mana",
+        "damageType": "Magic",
+        "spellEffects": "aoe",
+        "projectile": "false",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Depth Charge is cancelled (does not go on  cooldown) if:\n The target becomes  untargetable.\n Nautilus loses  sight of the target (during initial cast).\n The target dies.\n\n Depth Charge permeates through terrain, and will accelerate over time to ensure it cannot be outran (only extreme movement speed could potentially make it so).\n Moving away from a location at a far distance ( Recall,  Teleport) before Depth Charge hits will make the shockwaves disappear.\n\n  Spell shield will only block the shockwave for the primary target, while still affecting secondary ones.",
+        "blurb": "Nautilus fires a shockwave into the earth that chases an opponent. This shockwave rips up the earth above it, knocking enemies into the air. When it reaches the opponent, the shockwave erupts, knocking his target into the air and stunning them.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "825"
+      },
+      {
+        "name": "Depth Charge",
+        "effects": [
+          {
+            "description": "Active: Nautilus sends out a  Depth Charge that chases the target enemy champion, dealing magic damage while  knocking them up for 1 second and  stunning them on arrival.",
+            "icon": "Depth Charge.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      150,
+                      275,
+                      400
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      80,
+                      80,
+                      80
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Stun Duration",
+                "modifiers": [
+                  {
+                    "values": [
+                      1,
+                      1.5,
+                      2
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "All enemies hit along the way are dealt less damage,  knocked up for 1 second, and are also  stunned.",
+            "icon": "Depth Charge 2.png",
+            "leveling": [
+              {
+                "attribute": "Secondary Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      125,
+                      175,
+                      225
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      40,
+                      40,
+                      40
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                120,
+                100,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "Special",
+        "resource": "Mana",
+        "damageType": "Magic",
+        "spellEffects": "aoe",
+        "projectile": "false",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Depth Charge is cancelled (does not go on  cooldown) if:\n The target becomes  untargetable.\n Nautilus loses  sight of the target (during initial cast).\n The target dies.\n\n Depth Charge permeates through terrain, and will accelerate over time to ensure it cannot be outran (only extreme movement speed could potentially make it so).\n Moving away from a location at a far distance ( Recall,  Teleport) before Depth Charge hits will make the shockwaves disappear.\n\n  Spell shield will only block the shockwave for the primary target, while still affecting secondary ones.",
+        "blurb": "Nautilus fires a shockwave into the earth that chases an opponent. This shockwave rips up the earth above it, knocking enemies into the air. When it reaches the opponent, the shockwave erupts, knocking his target into the air and stunning them.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "825"
+      }
+    ]
+  },
+  "releaseDate": "2012-02-14",
+  "releasePatch": "1.0.0.134",
+  "patchLastChanged": "10.3",
+  "price": {
+    "blueEssence": 4800,
+    "rp": 880
+  }
+}

@@ -1,0 +1,611 @@
+{
+  "id": 92,
+  "key": "Riven",
+  "name": "Riven",
+  "title": "the Exile",
+  "fullName": "Konte Riven",
+  "resource": "None",
+  "attackType": "Melee",
+  "adaptiveType": "physical",
+  "stats": {
+    "healthBase": 558.48,
+    "healthPerLevel": 86,
+    "healthPer_5SecondsBase": 7,
+    "healthPer_5SecondsPerLevel": 0.5,
+    "manaBase": 0,
+    "manaPerLevel": 0,
+    "manaPer_5SecondsBase": 0,
+    "manaPer_5SecondsPerLevel": 0,
+    "armorBase": 33,
+    "armorPerLevel": 3.2,
+    "magicResistanceBase": 32.1,
+    "magicResistancePerLevel": 1.25,
+    "attackDamageBase": 64,
+    "attackDamagePerLevel": 3,
+    "movespeed": 340,
+    "acquisitionRadius": 600,
+    "selectionRadius": 130,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 1.0,
+    "attackSpeedBase": 0.625,
+    "attackSpeedPerLevel": 3.5,
+    "attackSpeedRatio": 0.625,
+    "attackCastTime": 0.3,
+    "attackTotalTime": 1.6,
+    "attackDelayOffset": -0.133333340287208,
+    "attackRangeBase": 125,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 0.95,
+    "aramDamageDealt": 1.05,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 0.9,
+    "urfDamageDealt": 1.0,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "ASSASSIN",
+    "FIGHTER",
+    "SKIRMISHER"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 2,
+    "control": 2,
+    "mobility": 3,
+    "utility": 1,
+    "abilityReliance": 75,
+    "attack": 8,
+    "defense": 5,
+    "magic": 1,
+    "difficulty": 1
+  },
+  "abilities": {
+    "I": [
+      {
+        "name": "Runic Blade",
+        "effects": [
+          {
+            "description": "Innate: Riven's blade gains a Charge for 6 seconds every time she uses an ability, stacking up to 3 times. Riven's basic attacks consume a Charge to deal 25% \u2212 50% (based on level) AD  bonus physical damage.",
+            "icon": "Runic Blade.png",
+            "leveling": []
+          },
+          {
+            "description": "Runic Blade is affected by  critical strike modifiers.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Enemies",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": "physical",
+        "spellEffects": "Proc",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Runic Blade's duration refreshes whenever Riven gains or consumes a stack.\n The bonus damage applies  life steal.\n Runic Blade does not affect structures and  wards (charges are not consumed when attacking them).\n Runic Blade can be  dodged,  blocked, or  missed (charges are not consumed).",
+        "blurb": "Riven's abilities charge her blade, causing her basic attacks to deal bonus physical damage. Riven's blade may be charged up to three times and expends one charge per attack.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Broken Wings",
+        "effects": [
+          {
+            "description": "Active: Riven  dashes towards the target nearest to the cursor or in the direction she is currently facing, dealing physical damage to all enemies in front of her. Broken Wings can then be reactivated twice within the next 4 seconds, with the second cast refreshing the timer.",
+            "icon": "Broken Wings.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      15,
+                      35,
+                      55,
+                      75,
+                      95
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      45,
+                      50,
+                      55,
+                      60,
+                      65
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      45,
+                      105,
+                      165,
+                      225,
+                      285
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      135,
+                      150,
+                      165,
+                      180,
+                      195
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "The third cast  knocks up and damages all enemies around Riven in an expanded radius. The third cast is also the only cast able to dash over terrain, and can do so longer than its normal range.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Each Broken Wings cast causes her next basic attack to occur more quickly. This is not considered a basic attack reset.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Targeted Broken Wings casts grant  sight of an area around Riven to the enemies.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                13,
+                13,
+                13,
+                13,
+                13
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction / Auto",
+        "affects": "Enemies",
+        "spellshieldable": "Special",
+        "resource": null,
+        "damageType": "physical",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Each cast triggers Spellblade and counts as a charge for  Force Pulse and  Spellbinder.\n The damage radius is centered 100 units in front of Riven.\n The third cast also  knocks back enemies away from the epicenter by 75 units.\n  Spell shield will only block the third cast.\n Since it's not considered a basic attack reset, it does not add additional stacks of  Hail of Blades.",
+        "blurb": "Riven lashes out in a series of strikes. This ability can be reactivated three times in a short time frame with the third hit knocking back nearby enemies.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "150 / 250 / 200 / 300",
+        "targetRange": "225"
+      }
+    ],
+    "W": [
+      {
+        "name": "Ki Burst",
+        "effects": [
+          {
+            "description": "Active: Riven's sword emits a burst of runic energy that shocks nearby enemies, dealing physical damage and applying a  stun for 0.75 seconds.",
+            "icon": "Ki Burst.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      55,
+                      85,
+                      115,
+                      145,
+                      175
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                11,
+                10,
+                9,
+                8,
+                7
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Auto",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "physical",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": "Riven emits a Ki Burst, damaging and stunning nearby enemies.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "250 / 300",
+        "targetRange": null
+      }
+    ],
+    "E": [
+      {
+        "name": "Valor",
+        "effects": [
+          {
+            "description": "Active: Riven  dashes in the direction of the cursor,  shielding herself for 1.5 seconds. If she targets an enemy with Valor, she briefly  reveals herself and the area around her to the enemies.",
+            "icon": "Valor.png",
+            "leveling": [
+              {
+                "attribute": "Shield Strength",
+                "modifiers": [
+                  {
+                    "values": [
+                      95,
+                      125,
+                      155,
+                      185,
+                      215
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Other abilities can be cast during the dash and  Broken Wings may be cast during their cast time if they're used at the end or briefly after the dash.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": "Shield",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Valor can be used to bypass player-created terrain ( Crystallize,  Cataclysm) but not to go through walls.",
+        "blurb": "Riven steps forward a short distance and blocks incoming damage.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "250"
+      }
+    ],
+    "R": [
+      {
+        "name": "Blade of the Exile",
+        "effects": [
+          {
+            "description": "Active: Riven empowers her sword for 15 seconds, gaining 20% AD  bonus attack damage,  75 bonus range on her basic attacks, increased range on  Broken Wings and  Ki Burst, and the ability to cast  Wind Slash once for the duration.",
+            "icon": "Blade of the Exile.png",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                120,
+                90,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Self / Buff",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "There is a 1 second cooldown before Riven can cast Wind Slash after activating Blade of the Exile.\n The bonus AD is gained and determined on cast.",
+        "blurb": "Riven empowers her keepsake weapon with energy, and gains Attack Damage and Range. During this time, she also gains the ability to use Wind Slash, a powerful ranged attack, once.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "Wind Slash",
+        "effects": [
+          {
+            "description": "Active: Riven unleashes a wave of energy in a cone, dealing physical damage to all enemies hit, increased by 0% \u2212 200% (based on missing health).",
+            "icon": "Wind Slash.png",
+            "leveling": [
+              {
+                "attribute": "Minimum Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      100,
+                      150,
+                      200
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      300,
+                      450,
+                      600
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      180,
+                      180,
+                      180
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If Wind Slash hits an enemy, it will briefly grant  vision of the area around Riven to the enemies.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "physical",
+        "spellEffects": "aoe",
+        "projectile": "true",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": "Riven unleashes a powerful ranged attack, which she may do once during Blade of the Exile.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1600",
+        "width": null,
+        "angle": "75\u00b0",
+        "castTime": null,
+        "effectRadius": "900",
+        "targetRange": null
+      }
+    ]
+  },
+  "releaseDate": "2011-09-14",
+  "releasePatch": "1.0.0.125",
+  "patchLastChanged": "9.19",
+  "price": {
+    "blueEssence": 4800,
+    "rp": 880
+  }
+}

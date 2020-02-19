@@ -1,0 +1,728 @@
+{
+  "id": 245,
+  "key": "Ekko",
+  "name": "Ekko",
+  "title": "the Boy Who Shattered Time",
+  "fullName": "",
+  "resource": "Mana",
+  "attackType": "Melee",
+  "adaptiveType": "magic",
+  "stats": {
+    "healthBase": 585,
+    "healthPerLevel": 85,
+    "healthPer_5SecondsBase": 9,
+    "healthPer_5SecondsPerLevel": 0.9,
+    "manaBase": 280,
+    "manaPerLevel": 50,
+    "manaPer_5SecondsBase": 7,
+    "manaPer_5SecondsPerLevel": 0.8,
+    "armorBase": 32,
+    "armorPerLevel": 3,
+    "magicResistanceBase": 32,
+    "magicResistancePerLevel": 1.25,
+    "attackDamageBase": 58,
+    "attackDamagePerLevel": 3,
+    "movespeed": 340,
+    "acquisitionRadius": 600,
+    "selectionRadius": 120,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 1.0,
+    "attackSpeedBase": 0.688,
+    "attackSpeedPerLevel": 3.3,
+    "attackSpeedRatio": 0.625,
+    "attackCastTime": 0.259999990463256,
+    "attackTotalTime": 1.60000002384185,
+    "attackDelayOffset": 0,
+    "attackRangeBase": 125,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 1.0,
+    "aramDamageDealt": 1.0,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 1.0,
+    "urfDamageDealt": 1.0,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "ASSASSIN",
+    "FIGHTER"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 2,
+    "control": 2,
+    "mobility": 3,
+    "utility": 1,
+    "abilityReliance": 75,
+    "attack": 5,
+    "defense": 3,
+    "magic": 7,
+    "difficulty": 3
+  },
+  "abilities": {
+    "I": [
+      {
+        "name": "Z-Drive Resonance",
+        "effects": [
+          {
+            "description": "Innate - Resonance: Ekko's basic attacks and damaging abilities apply a Resonance stack for 4 seconds.",
+            "icon": "Z-Drive Resonance.png",
+            "leveling": []
+          },
+          {
+            "description": "At 3 stacks, Resonance is consumed to deal 30 \u2212  140 (based on level) (+ 80% AP)  magic damage, increased by 50% against  monsters, dealing 45 \u2212  210 (based on level) (+ 120% AP), but capped at 600.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Resonance cannot affect the same target more than once every few seconds.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Innate - Stolen Time: Triggering Resonance against a  champion grants 50 / 60 / 70 / 80% (based on level)  bonus movement speed for 2 / 2.5 / 3 (based on level) seconds.",
+            "icon": "Z-Drive Resonance 2.png",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Enemies / Self",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "Magic",
+        "spellEffects": "Single target",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": "On-hit",
+        "notes": "No additional details.",
+        "blurb": "Ekko's Zero-Drive charges his spells and attacks with temporal energy. The third hit deals bonus damage and, if the target is a champion, Ekko gains accelerated movement speed.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Timewinder",
+        "effects": [
+          {
+            "description": "Active: Ekko throws a grenade in the target direction, dealing magic damage to enemies along its path.",
+            "icon": "Timewinder.png",
+            "leveling": [
+              {
+                "attribute": "Outward Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      75,
+                      90,
+                      105,
+                      120
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      30,
+                      30,
+                      30,
+                      30,
+                      30
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "After traveling 700 units or upon hitting an enemy champion, the grenade slows down for 1.75 seconds, expanding and creating a Temporal Sickness field that  slows nearby enemies, while continuing to travel in its direction for another 190 units and expanding for another 50 units.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Slow",
+                "modifiers": [
+                  {
+                    "values": [
+                      32,
+                      39,
+                      46,
+                      53,
+                      60
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "After finishing its path, the grenade contracts and returns to Ekko at a higher speed, dealing magic damage to enemies along its path.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Returning Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      65,
+                      90,
+                      115,
+                      140
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      100,
+                      140,
+                      180,
+                      220,
+                      260
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      90,
+                      90,
+                      90,
+                      90,
+                      90
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "The traveling and returning pass each cannot damage the same enemy more than once.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                60,
+                70,
+                80,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                9,
+                8.5,
+                8,
+                7.5,
+                7
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "Special",
+        "resource": "Mana",
+        "damageType": "Magic",
+        "spellEffects": "spellaoe",
+        "projectile": "True",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Spell shield will block only a single instance of damage.",
+        "blurb": "Ekko throws a temporal grenade that expands into a time-distortion field upon hitting an enemy champion, slowing and damaging anyone caught inside. After a delay, the grenade rewinds back to Ekko, dealing damage on its return.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1650 / 200 / 2300",
+        "width": "120 / 200",
+        "angle": null,
+        "castTime": "0.25",
+        "effectRadius": "160 / 210",
+        "targetRange": "1100"
+      }
+    ],
+    "W": [
+      {
+        "name": "Parallel Convergence",
+        "effects": [
+          {
+            "description": "Passive: Ekko's basic attacks deal 3% (+ 3% per 100 AP) of the target's missing health bonus magic damage to targets below  30% of their maximum health. The damage has a minimum threshold of 15 and is capped at 150 against  minions and  monsters.",
+            "icon": "Parallel Convergence.png",
+            "leveling": []
+          },
+          {
+            "description": "Active: Ekko calls upon an afterimage that bats a device to the target location. After traveling over 3 seconds, the device expands to  slow enemies by 40%, only revealing itself to enemies in the last 1 second.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "If Ekko enters the expansion within the next 1.5 seconds after it lands, it detonates to  shield him for 2 seconds and  stun any enemies within for 2.25 seconds.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Shield Strength",
+                "modifiers": [
+                  {
+                    "values": [
+                      80,
+                      100,
+                      120,
+                      140,
+                      160
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      150,
+                      150,
+                      150,
+                      150,
+                      150
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                30,
+                35,
+                40,
+                45,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                22,
+                20,
+                18,
+                16,
+                14
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": null,
+        "spellshieldable": "True",
+        "resource": "Mana",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": "False",
+        "onHitEffects": null,
+        "occurrence": "On-hit",
+        "notes": "Parallel Convergence's active provides  sight in its radius 2 seconds after cast and for as long as the  slowing field is active.\n Ekko can detonate the expansion even while  untargetable (i.e.  Chronobreak's dash).\n Ekko's shield buff reads Seen It All Before: \"Ekko has already seen this timeline and is able to avoid some incoming damage\".\n Enemies affected by the stun receive the debuff Temporal Suspension: \"The unit is frozen in time. WARNING: Avoid the detonation radius of temporal anomalies.\"\n The passive applies  proc damage.",
+        "blurb": "Ekko splits the timeline, creating an anomaly after a few seconds that slows enemies caught inside. If Ekko enters the anomaly, he gains shielding and triggers a detonation, stunning enemies by suspending them in time.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "375",
+        "targetRange": "1600"
+      }
+    ],
+    "E": [
+      {
+        "name": "Phase Dive",
+        "effects": [
+          {
+            "description": "Active: Ekko  dashes towards the target location. The next basic attack thereafter has  300 bonus range, deals bonus magic damage, and causes him to  blink within 125  range of the target.",
+            "icon": "Phase Dive.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      50,
+                      75,
+                      100,
+                      125,
+                      150
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      40,
+                      40,
+                      40,
+                      40,
+                      40
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Phase Dive resets Ekko's basic attack timer.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                40,
+                45,
+                50,
+                55,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                9,
+                8.5,
+                8,
+                7.5,
+                7
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction / Unit",
+        "affects": "Self",
+        "spellshieldable": "true",
+        "resource": "Mana",
+        "damageType": "Magic",
+        "spellEffects": "Spell",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": "On-hit",
+        "notes": null,
+        "blurb": "Ekko rolls evasively while charging up his Z-Drive. His next attack deals bonus damage and warps reality, teleporting him to his target.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "325"
+      }
+    ],
+    "R": [
+      {
+        "name": "Chronobreak",
+        "effects": [
+          {
+            "description": "Passive: Upon learning Chronobreak or if its current cooldown is lower than 4 seconds, Ekko spawns a time-delayed afterimage of himself that tracks where he was 4 seconds ago.",
+            "icon": "Chronobreak.png",
+            "leveling": []
+          },
+          {
+            "description": "Active: Ekko  traces back to his afterimage, entering  stasis during the transportation, dealing magic damage to surrounding enemies on arrival and  healing himself.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      150,
+                      300,
+                      450
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      150,
+                      150,
+                      150
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Self-Heal",
+                "modifiers": [
+                  {
+                    "values": [
+                      100,
+                      150,
+                      200
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  },
+                  "increased by 3% per 1% of health lost in the past 4 seconds"
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                110,
+                80,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Self / Ground",
+        "affects": "Enemies / Self",
+        "spellshieldable": "True",
+        "resource": "Mana",
+        "damageType": "Magic",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Ekko will attempt to basic attack the closest target, but can do so quicker if he manually attack commands after the dash.",
+        "blurb": "Ekko shatters his timeline, becoming untargetable and rewinding to a more favorable point in time. He returns to whenever he was a few seconds ago, and heals for a percentage of the damage received in that duration. Enemies near his arrival zone take massive damage.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "0.75",
+        "effectRadius": "375",
+        "targetRange": null
+      }
+    ]
+  },
+  "releaseDate": "2015-05-29",
+  "releasePatch": "5.10",
+  "patchLastChanged": "10.3",
+  "price": {
+    "blueEssence": 6300,
+    "rp": 975
+  }
+}

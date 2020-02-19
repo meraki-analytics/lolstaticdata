@@ -1,0 +1,802 @@
+{
+  "id": 131,
+  "key": "Diana",
+  "name": "Diana",
+  "title": "Scorn of the Moon",
+  "fullName": "",
+  "resource": "Mana",
+  "attackType": "Melee",
+  "adaptiveType": "magic",
+  "stats": {
+    "healthBase": 594,
+    "healthPerLevel": 95,
+    "healthPer_5SecondsBase": 7.5,
+    "healthPer_5SecondsPerLevel": 0.85,
+    "manaBase": 375,
+    "manaPerLevel": 25,
+    "manaPer_5SecondsBase": 8,
+    "manaPer_5SecondsPerLevel": 0.8,
+    "armorBase": 31,
+    "armorPerLevel": 3.6,
+    "magicResistanceBase": 32.1,
+    "magicResistancePerLevel": 1.25,
+    "attackDamageBase": 57.04,
+    "attackDamagePerLevel": 3,
+    "movespeed": 345,
+    "acquisitionRadius": 600,
+    "selectionRadius": 75,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 1.0,
+    "attackSpeedBase": 0.625,
+    "attackSpeedPerLevel": 2.25,
+    "attackSpeedRatio": 0.625,
+    "attackCastTime": 0.3,
+    "attackTotalTime": 1.6,
+    "attackDelayOffset": -0.0916666686534881,
+    "attackRangeBase": 150,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 1.0,
+    "aramDamageDealt": 1.0,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 0.95,
+    "urfDamageDealt": 1.0,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "ASSASSIN",
+    "FIGHTER",
+    "MAGE",
+    "DIVER"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 2,
+    "control": 2,
+    "mobility": 2,
+    "utility": 1,
+    "abilityReliance": 65,
+    "attack": 7,
+    "defense": 6,
+    "magic": 8,
+    "difficulty": 1
+  },
+  "abilities": {
+    "I": [
+      {
+        "name": "Moonsilver Blade",
+        "effects": [
+          {
+            "description": "Innate: Diana permanently has  10% \u2212  40% (based on level) bonus attack speed. After casting an ability, this bonus is tripled to 30% \u2212  120% (based on level) for 3 seconds.",
+            "icon": "Moonsilver Blade.png",
+            "leveling": []
+          },
+          {
+            "description": "Diana's basic attacks on-hit grant a stack for 3.5 seconds. At 2 stacks, Diana's next basic attack on-hit additionally cleaves nearby enemies for 20 \u2212  250 (based on level) (+ 40% AP)  magic damage, consuming all stacks.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self / Enemies",
+        "spellshieldable": "false",
+        "resource": null,
+        "damageType": "Magic",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Moonsilver Blade will affect structures.\n Each attack has a distinct animation and she will glow when the empowered attack is ready.",
+        "blurb": "Every third strike cleaves nearby enemies for additional magic damage. Every spell cast grants attack speed for the next 3 attacks.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "175",
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Crescent Strike",
+        "effects": [
+          {
+            "description": "Active: Diana unleashes a bolt of lunar energy that travels in a counter-clockwise arc before exploding at the target location, dealing magic damage to enemies hit and afflicting them with Moonlight for 3 seconds,  revealing them for the duration.",
+            "icon": "Crescent Strike.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      95,
+                      130,
+                      165,
+                      200
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      70,
+                      70,
+                      70,
+                      70,
+                      70
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Moonlight has interactions with  Lunar Rush.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                8,
+                7.5,
+                7,
+                6.5,
+                6
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Enemies",
+        "spellshieldable": "special",
+        "resource": "mana",
+        "damageType": "Magic",
+        "spellEffects": "aoe",
+        "projectile": "True",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The tip of the arc reveals Fog of War for a short duration.\n If the  spell shield blocks the bolt, it will not be able to block the explosion.",
+        "blurb": "Diana swings her blade to unleash a bolt of lunar energy that deals damage in an arc before exploding. Afflicts enemies struck with the Moonlight debuff, revealing them if they are not stealthed.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1900 / 2100",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "900"
+      }
+    ],
+    "W": [
+      {
+        "name": "Pale Cascade",
+        "effects": [
+          {
+            "description": "Active: Diana  shields herself for up to 5 seconds and creates three spheres that orbit her for the duration, detonating upon contact with an enemy and dealing magic damage to nearby enemies upon detonation.",
+            "icon": "Pale Cascade.png",
+            "leveling": [
+              {
+                "attribute": "Shield Strength",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      45,
+                      60,
+                      75,
+                      90
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      30,
+                      30,
+                      30,
+                      30,
+                      30
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  },
+                  {
+                    "values": [
+                      10,
+                      10,
+                      10,
+                      10,
+                      10
+                    ],
+                    "units": [
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Shield Strength",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      90,
+                      120,
+                      150,
+                      180
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  },
+                  {
+                    "values": [
+                      20,
+                      20,
+                      20,
+                      20,
+                      20
+                    ],
+                    "units": [
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Magic Damage per Orb",
+                "modifiers": [
+                  {
+                    "values": [
+                      18,
+                      30,
+                      42,
+                      54,
+                      66
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      15,
+                      15,
+                      15,
+                      15,
+                      15
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      54,
+                      90,
+                      126,
+                      162,
+                      198
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      45,
+                      45,
+                      45,
+                      45,
+                      45
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If all three spheres detonate, Pale Cascade's shield is reapplied, stacking with its original shield, and its duration is refreshed.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                40,
+                45,
+                50,
+                55,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                15,
+                13.5,
+                12,
+                10.5,
+                9
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Auto",
+        "affects": "Self, Enemies",
+        "spellshieldable": "True",
+        "resource": "mana",
+        "damageType": "Magic",
+        "spellEffects": "spellaoe",
+        "projectile": "True",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "On the second application of Pale Cascade's shield,  Shield Power will apply to both the new shield amount and the shield amount remaining from the first shield, which already benefitted from shield power.\n Because of this, shield power effectively applies to the second shield twice, but with reduced efficiency, for up to an increase of 50% of shield power (maximum benefit if no damage was mitigated by the first shield). With 10% shield power, the second shield's total amount will be increased by up to an additional 5%, for a total of 15.5% bonus shield. \n The formula for the total amount of shield Diana will receive from both shield applications is:\n\n\n\nTotal Shield = (((Shield Amount * (1 + Shield Power)) - Damage Blocked by Shield) + Shield Amount) * (1 + Shield Power)",
+        "blurb": "Diana creates three orbiting spheres that detonate on contact with enemies to deal damage in an area. She also gains a temporary shield that absorbs damage. If her third sphere detonates, the shield gains additional strength.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "false",
+        "effectRadius": "200",
+        "targetRange": null
+      }
+    ],
+    "R": [
+      {
+        "name": "Moonfall",
+        "effects": [
+          {
+            "description": "Active:  Reveals,  draws in, and successively  slows all nearby enemies for 2 seconds.",
+            "icon": "Moonfall.png",
+            "leveling": [
+              {
+                "attribute": "Slow",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      50,
+                      60
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If Diana pulls in one or more enemy champions, the moonlight crashes down onto her after 1 second, dealing magic damage in an area around her, increased for each champion pulled beyond the first.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      200,
+                      300,
+                      400
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Bonus Damage Per Champion",
+                "modifiers": [
+                  {
+                    "values": [
+                      35,
+                      60,
+                      85
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      15,
+                      15,
+                      15
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      340,
+                      540,
+                      740
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      120,
+                      120,
+                      120
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                90,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Auto",
+        "affects": "Self, Enemies",
+        "spellshieldable": "True",
+        "resource": "mana",
+        "damageType": null,
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Enemies stay in the area for a maximum of approximately 0.5 seconds while being pulled.",
+        "blurb": "Diana draws in and slows all nearby enemies.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "475 / 225",
+        "targetRange": null
+      }
+    ],
+    "E": [
+      {
+        "name": "Lunar Rush",
+        "effects": [
+          {
+            "description": "Active: Diana  dashes to an enemy, dealing magic damage to the target and consuming  Moonlight from all enemies. If the target is within 400 range, Diana will dash through them.",
+            "icon": "Lunar Rush.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      60,
+                      80,
+                      100,
+                      120
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      40,
+                      40,
+                      40,
+                      40,
+                      40
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If Moonlight is consumed from the target or the target dies mid-dash while being afflicted by Moonlight, Lunar Rush's  cooldown is reset.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Other abilities can be used during the dash.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                40,
+                45,
+                50,
+                55,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                22,
+                20,
+                18,
+                16,
+                14
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "mana",
+        "damageType": "Magic",
+        "spellEffects": "Single target",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Diana will attempt to basic attack the target. This will not grant a stack of  Conqueror,  Electrocute,  Phase Rush or  Spellthief's Edge.\n Lunar Rush consumes Moonlight upon ending the dash (even if  interrupted).\n If Lunar Rush is  spell shielded the Moonlight debuff is still consumed and therefore Lunar Rush's cooldown is still reset.",
+        "blurb": "Diana dashes to an enemy and deals magic damage. Lunar Rush has no cooldown when used to teleport to a target afflicted with Moonlight.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "825"
+      }
+    ]
+  },
+  "releaseDate": "2012-08-07",
+  "releasePatch": "1.0.0.144",
+  "patchLastChanged": "10.3",
+  "price": {
+    "blueEssence": 4800,
+    "rp": 880
+  }
+}
