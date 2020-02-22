@@ -77,7 +77,7 @@ class LolWikiDataHandler:
         html = download_webpage(url, self.use_cache)
         soup = BeautifulSoup(html, 'lxml')
 
-        # Pull the relevant data from the html tags
+        # Pull the relevant champData from the html tags
         spans = soup.find_all('span')
         start = None
         for i, span in enumerate(spans):
@@ -95,7 +95,7 @@ class LolWikiDataHandler:
             if brackets["{"] == brackets["}"] and brackets["{"] > 0:
                 break
 
-        # Sanitize the data
+        # Sanitize the champData
         data = data.replace('=', ':')
         data = data.replace('["', '"')
         data = data.replace('"]', '"')
@@ -106,7 +106,7 @@ class LolWikiDataHandler:
         data = data.replace('[5]', '5')
         data = data.replace('[6]', '6')
 
-        # Return the data as a list of Champions
+        # Return the champData as a list of Champions
         data = eval(data)
         results = []
         for name, d in data.items():
@@ -536,16 +536,16 @@ class ParsingAndRegex:
 
 def main():
     handler = LolWikiDataHandler(use_cache=False)
-    directory = os.path.dirname(os.path.realpath(__file__)) + "/"
+    directory = r"C:\Users\dan\PycharmProjects\lolstaticdata\test"
 
     champions = []
     for champion in handler.get_champions():
         champions.append(champion)
-        jsonfn = directory + f"../data/{champion.key}.json"
+        jsonfn = directory + f"\{champion.key}.json"
         with open(jsonfn, 'w') as f:
             f.write(champion.to_json(indent=2))
 
-    jsonfn = directory + f"../data/champions.json"
+    jsonfn = directory + f"\champions.json"
     jsons = {}
     for champion in champions:
         jsons[champion.key] = json.loads(champion.to_json())
