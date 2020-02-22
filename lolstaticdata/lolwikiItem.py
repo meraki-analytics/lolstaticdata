@@ -1,7 +1,11 @@
 # NOT FINAL
 # NOT FINAL
 # NOT FINAL
-
+#TODO fix paths
+#TODO clean up code
+#TODO Clean up item data 
+#TODO Lots and lots of cleaning
+#TODO Make it easy to add data to champion stats 
 
 from bs4 import BeautifulSoup
 import json
