@@ -8,7 +8,7 @@ from collections import Counter
 from model import Champion, Stats, Ability, DamageType, AttackType, AttributeRatings, Cooldown, Cost, Effect, Price, Resource, Modifier, Role, Leveling, to_enum_like
 from util import download_webpage, parse_top_level_parentheses, grouper
 
-#TODO Maybe look into dynamic descriptions. See Knight's response to I-Made-This post in Discord
+#TODO Maybe look into dynamic descriptions. See Knight's response to I-Made-This post in Discord.
 
 
 class UnparsableLeveling(Exception):
