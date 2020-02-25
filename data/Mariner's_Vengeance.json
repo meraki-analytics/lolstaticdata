@@ -4,6 +4,23 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "B. F. Sword, Chain Vest, Stopwatch",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": null,
+      "effects": " Upon taking lethal damage, removes all crowd controls, refreshes your basic abilities cooldowns, while also becoming invulnerable for 4 seconds, after which you die (210 second cooldown)."
+    },
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "40",
@@ -29,37 +46,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "2800",
     "priceCombined": "100",
     "priceSell": "1120",
-    "menu": {
-      "menu1a": "Defense",
-      "menu1b": "Armor",
-      "menu2a": "Offense",
-      "menu2b": "Damage",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "DEFENSE:ARMOR",
+      "tag2": "Attack:DAMAGE",
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

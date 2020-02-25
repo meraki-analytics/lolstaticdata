@@ -4,6 +4,27 @@
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": "",
+  "builds": "Skirmisher's Sabre, Stalker's Blade",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Tooth",
+      "effects": " Damaging a monster by any means set it aflame, dealing an additional 60 magic damage over 5 seconds while causing you to restore 6 health per second for every enemy you're burning. While in the jungle or river, regenerate 0- 8 (based on missing mana) mana per second."
+    },
+    "passive2": {
+      "unique": true,
+      "name": " Monster Hunter",
+      "effects": " Killing large or epic monsters grants +60 bonus experience. Once per game, killing a large monster also grants an additional +150 bonus experience. If your gold from minions is greater than half your gold from monsters, lane minion kills will grant 13 less gold. This penalty is removed at 14 minutes."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Tooth: Damaging a monster by any means set it aflame, dealing an additional 60 magic damage over 5 seconds while causing you to restore 6 health per second for every enemy you're burning. While in the jungle or river, regenerate 0 - 8 (based on missing mana) mana per second.",
-    "passive2": "Monster Hunter: Killing large or epic monsters grants +60 bonus experience. Once per game, killing a large monster also grants an additional +150 bonus experience. If your gold from minions is greater than half your gold from monsters, lane minion kills will grant 13 less gold. This penalty is removed at 14 minutes.",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "350",
     "priceCombined": "",
     "priceSell": "245",
-    "menu": {
-      "menu1a": "Starter Items",
-      "menu1b": "Jungling",
-      "menu2a": "Magic",
-      "menu2b": "Mana Regen",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Starter Items:JUNGLING",
+      "tag2": "MAGIC:MANA_REGEN",
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

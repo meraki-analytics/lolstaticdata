@@ -4,6 +4,23 @@
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": "",
+  "builds": "",
+  "effects": {
+    "passive1": null,
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": {
+      "unique": true,
+      "name": null,
+      "effects": " Shields your champion for 4 seconds for 200 (+ 150% AP) damage (45 second cooldown)."
+    },
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "52",
     "armor": "64",
@@ -29,37 +46,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "Unique: Shields your champion for 4 seconds for 200 (+ 150% AP) damage (45 second cooldown).",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "3624",
     "priceCombined": "",
     "priceSell": "2537",
-    "menu": {
-      "menu1a": "Defense",
-      "menu1b": "Armor",
-      "menu2a": "Magic",
-      "menu2b": "Ability Power",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "DEFENSE:ARMOR",
+      "tag2": "MAGIC:ABILITY_POWER",
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

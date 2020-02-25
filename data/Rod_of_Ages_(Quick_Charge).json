@@ -4,6 +4,27 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Catalyst of Aeons, Blasting Wand",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": false,
+      "name": null,
+      "effects": "This item gains 20 health, 10 mana and 4 ability power every 40 seconds, up to 10 times, for a maximum of 200 health, 100 mana and 40 ability power."
+    },
+    "passive2": {
+      "unique": true,
+      "name": " Eternity",
+      "effects": " Restore mana equal to 15% of damage taken from champions. Restore health equal to 20% of mana spent, up to 25 health per cast, while toggle abilities can heal for up to 25 per second."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "60",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "Eternity: Restore mana equal to 15% of damage taken from champions. Restore health equal to 20% of mana spent, up to 25 health per cast, while toggle abilities can heal for up to 25 per second.",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "2600",
     "priceCombined": "650",
     "priceSell": "1820",
-    "menu": {
-      "menu1a": "Defense",
-      "menu1b": "Health",
-      "menu2a": "Magic",
-      "menu2b": "Ability Power",
-      "menu3a": "Magic",
-      "menu3b": "Mana",
-      "menu4a": "Defense",
-      "menu4b": "Health Regen",
-      "menu5a": "Magic",
-      "menu5b": "Mana Regen",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "DEFENSE:HEALTH",
+      "tag2": "MAGIC:ABILITY_POWER",
+      "tag3": "MAGIC:MANA",
+      "tag4": "DEFENSE:HEALTH_REGEN",
+      "tag5": "MAGIC:MANA_REGEN",
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

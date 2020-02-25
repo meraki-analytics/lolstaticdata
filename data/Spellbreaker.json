@@ -4,6 +4,27 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Hexdrinker, Avarice Blade",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Lifeline",
+      "effects": " Upon taking magic damage that would reduce health below 30%, grants a shield that absorbs 400 magic damage for 5 seconds (90 second cooldown)."
+    },
+    "passive2": {
+      "unique": true,
+      "name": " Tenacity",
+      "effects": " Reduces the duration of most forms of crowd control by 35%."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Lifeline: Upon taking magic damage that would reduce health below 30%, grants a shield that absorbs 400 magic damage for 5 seconds (90 second cooldown).",
-    "passive2": "Tenacity: Reduces the duration of most forms of crowd control by 35%.",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "2800",
     "priceCombined": "650",
     "priceSell": "1960",
-    "menu": {
-      "menu1a": "Attack",
-      "menu1b": "Damage",
-      "menu2a": "Defense",
-      "menu2b": "Magic Resist",
-      "menu3a": "Attack",
-      "menu3b": "Critical Strike",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Attack:DAMAGE",
+      "tag2": "DEFENSE:MAGIC_RESIST",
+      "tag3": "Attack:CRITICAL_STRIKE",
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

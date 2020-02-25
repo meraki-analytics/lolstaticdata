@@ -4,6 +4,27 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Caulfield's Warhammer, Pickaxe, Vampiric Scepter",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": null,
+      "effects": " Instantly heal for 15% of all damage dealt, including physical damage, magic damage, and true damage. Area damage, persistent area damage, and pet damage only heals 5% for every unit affected."
+    },
+    "passive2": {
+      "unique": true,
+      "name": null,
+      "effects": " Stores 30% of all post-mitigation physical and magic damage received, which is successively taken as damage over time true damage instead, dealing one-third of the stored damage every second.The last tick of stored damage cannot deal lethal damage, leaving the champion with 1 health."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "3500",
     "priceCombined": "625",
     "priceSell": "2450",
-    "menu": {
-      "menu1a": "Attack",
-      "menu1b": "Damage",
-      "menu2a": "Attack",
-      "menu2b": "Life Steal",
-      "menu3a": "Magic",
-      "menu3b": "Cooldown Reduction",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Attack:DAMAGE",
+      "tag2": "Attack:LIFE_STEAL",
+      "tag3": "MAGIC:COOLDOWN_REDUCTION",
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

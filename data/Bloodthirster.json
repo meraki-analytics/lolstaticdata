@@ -4,6 +4,27 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "B. F. Sword, Vampiric Scepter, Long Sword",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": null,
+      "effects": " +20% life steal"
+    },
+    "passive2": {
+      "unique": true,
+      "name": null,
+      "effects": " Your life steal overheals you, converting the excess healing into a shield that absorbs up to 50- 350 (based on level) damage and decays when out-of-combat for 25 seconds."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "3500",
     "priceCombined": "950",
     "priceSell": "2450",
-    "menu": {
-      "menu1a": "Attack",
-      "menu1b": "Damage",
-      "menu2a": "Attack",
-      "menu2b": "Life Steal",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Attack:DAMAGE",
+      "tag2": "Attack:LIFE_STEAL",
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

@@ -4,6 +4,23 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Kindlegem, Vampiric Scepter",
+  "builds": "",
+  "effects": {
+    "passive1": null,
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": {
+      "unique": true,
+      "name": null,
+      "effects": " Nearby allied champions gain +20 attack damage and +10% life steal. (1100 Range)"
+    },
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +46,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "2450",
     "priceCombined": "800",
     "priceSell": "1715",
-    "menu": {
-      "menu1a": "Defense",
-      "menu1b": "Health",
-      "menu2a": "Attack",
-      "menu2b": "Damage",
-      "menu3a": "Attack",
-      "menu3b": "Life Steal",
-      "menu4a": "Magic",
-      "menu4b": "Cooldown Reduction",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "DEFENSE:HEALTH",
+      "tag2": "Attack:DAMAGE",
+      "tag3": "Attack:LIFE_STEAL",
+      "tag4": "MAGIC:COOLDOWN_REDUCTION",
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

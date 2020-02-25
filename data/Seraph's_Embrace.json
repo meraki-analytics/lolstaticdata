@@ -4,6 +4,31 @@
   "tier": "Tier 4",
   "type": "Tier 4",
   "recipe": "Archangel's Staff",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Haste",
+      "effects": " Grants an additional 10% cooldown reduction."
+    },
+    "passive2": {
+      "unique": true,
+      "name": " Awe",
+      "effects": " Grants bonus ability power equal to 3% maximum mana. Refunds 25% of mana spent."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": {
+      "unique": true,
+      "name": " Mana Shield",
+      "effects": " Drains 15% of your current mana to shield yourself for an equal amount plus 150 for 2 seconds (120 second cooldown)."
+    },
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "50",
     "armor": "",
@@ -29,37 +54,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Haste: Grants an additional 10% cooldown reduction.",
-    "passive2": "Awe: Grants bonus ability power equal to 3% maximum mana. Refunds 25% of mana spent.",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "Unique : Mana Shield: Drains 15% of your current mana to shield yourself for an equal amount plus 150 for 2 seconds (120 second cooldown).",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "",
     "priceCombined": "",
     "priceSell": "2240",
-    "menu": {
-      "menu1a": "",
-      "menu1b": "",
-      "menu2a": "",
-      "menu2b": "",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": null,
+      "tag2": null,
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

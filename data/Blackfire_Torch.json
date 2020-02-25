@@ -4,6 +4,23 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Blasting Wand, Fiendish Codex",
+  "builds": "",
+  "effects": {
+    "passive1": null,
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": {
+      "unique": true,
+      "name": null,
+      "effects": " Deals 20% of target champion's maximum health in magic damage over 4 seconds and increases all subsequent magic damage taken by target by 20% (90 second cooldown)."
+    },
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "80",
     "armor": "",
@@ -29,37 +46,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "Unique: Deals 20% of target champion's maximum health in magic damage over 4 seconds and increases all subsequent magic damage taken by target by 20% (90 second cooldown).",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "2650",
     "priceCombined": "970",
     "priceSell": "1855",
-    "menu": {
-      "menu1a": "Magic",
-      "menu1b": "Ability Power",
-      "menu2a": "Magic",
-      "menu2b": "Cooldown Reduction",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "MAGIC:ABILITY_POWER",
+      "tag2": "MAGIC:COOLDOWN_REDUCTION",
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

@@ -4,6 +4,27 @@
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": "Sapphire Crystal, Faerie Charm",
+  "builds": "Archangel's Staff (Quick Charge), Manamune (Quick Charge)",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Awe",
+      "effects": " Refunds 10% of mana spent."
+    },
+    "passive2": {
+      "unique": true,
+      "name": " Mana Charge",
+      "effects": " Grants a charge every 4 seconds, up to 3 charges. Each mana expenditure consumes a charge and grants +6 mana, up to a maximum of 750 mana."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Awe: Refunds 10% of mana spent.",
-    "passive2": "Mana Charge: Grants a charge every 4 seconds, up to 3 charges. Each mana expenditure consumes a charge and grants +6 mana, up to a maximum of 750 mana.",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "850",
     "priceCombined": "375",
     "priceSell": "595",
-    "menu": {
-      "menu1a": "Magic",
-      "menu1b": "Mana",
-      "menu2a": "Magic",
-      "menu2b": "Mana Regen",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "MAGIC:MANA",
+      "tag2": "MAGIC:MANA_REGEN",
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

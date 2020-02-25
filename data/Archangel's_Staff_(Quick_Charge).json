@@ -4,6 +4,35 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Tear of the Goddess (Quick Charge), Lost Chapter",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Haste",
+      "effects": " Grants an additional 10% cooldown reduction."
+    },
+    "passive2": {
+      "unique": true,
+      "name": " Awe",
+      "effects": " Grants bonus ability power equal to 1% maximum mana. Refunds 25% of mana spent."
+    },
+    "passive3": {
+      "unique": true,
+      "name": " Mana Charge",
+      "effects": " Grants a charge every 4 seconds, up to 3 charges. Each mana expenditure consumes a charge and grants +12 mana, up to a maximum of 750 mana."
+    },
+    "passive4": {
+      "unique": false,
+      "name": null,
+      "effects": "Transforms into  Seraph's Embrace at +750 mana."
+    },
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "50",
     "armor": "",
@@ -29,37 +58,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Haste: Grants an additional 10% cooldown reduction.",
-    "passive2": "Awe: Grants bonus ability power equal to 1% maximum mana. Refunds 25% of mana spent.",
-    "passive3": "Mana Charge: Grants a charge every 4 seconds, up to 3 charges. Each mana expenditure consumes a charge and grants +12 mana, up to a maximum of 750 mana.",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "3200",
     "priceCombined": "1050",
     "priceSell": "2240",
-    "menu": {
-      "menu1a": "Magic",
-      "menu1b": "Ability Power",
-      "menu2a": "Magic",
-      "menu2b": "Mana",
-      "menu3a": "Magic",
-      "menu3b": "Mana Regen",
-      "menu4a": "Magic",
-      "menu4b": "Cooldown Reduction",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "MAGIC:ABILITY_POWER",
+      "tag2": "MAGIC:MANA",
+      "tag3": "MAGIC:MANA_REGEN",
+      "tag4": "MAGIC:COOLDOWN_REDUCTION",
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

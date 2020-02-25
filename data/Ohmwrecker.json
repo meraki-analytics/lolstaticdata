@@ -4,6 +4,27 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Raptor Cloak, Kindlegem",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Point Runner",
+      "effects": " Builds up to 20% bonus movement speed over 2 seconds while near turrets, fallen turrets and Void Gates."
+    },
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": {
+      "unique": true,
+      "name": null,
+      "effects": " Targetable enemy turrets within 950 units are prevented from attacking for 3 seconds (120 second cooldown). This effect cannot be applied on the same tower for 8 seconds afterwards."
+    },
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "50",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Point Runner: Builds up to 20% bonus movement speed over 2 seconds while near turrets, fallen turrets and Void Gates.",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "Unique: Targetable enemy turrets within 950 units are prevented from attacking for 3 seconds (120 second cooldown). This effect cannot be applied on the same tower for 8 seconds afterwards.",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "2650",
     "priceCombined": "950",
     "priceSell": "1855",
-    "menu": {
-      "menu1a": "Defense",
-      "menu1b": "Armor",
-      "menu2a": "Defense",
-      "menu2b": "Health",
-      "menu3a": "Defense",
-      "menu3b": "Health Regen",
-      "menu4a": "Magic",
-      "menu4b": "Cooldown Reduction",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "DEFENSE:ARMOR",
+      "tag2": "DEFENSE:HEALTH",
+      "tag3": "DEFENSE:HEALTH_REGEN",
+      "tag4": "MAGIC:COOLDOWN_REDUCTION",
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

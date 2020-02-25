@@ -4,6 +4,27 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Sheen, Amplifying Tome",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Spellblade",
+      "effects": " After using an ability, your next basic attack (on-hit) deals 100% base AD + (30% AP) bonus magic damage (1.5 second cooldown)."
+    },
+    "passive2": {
+      "unique": false,
+      "name": null,
+      "effects": "Against monsters, Spellblade deals area of effect magic damage around the target and restores 8% missing mana. Spellblade also deals double damage (200% base AD + (60% AP)) against the first monster hit."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "40",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Spellblade: After using an ability, your next basic attack (on-hit) deals 100% base AD + (30% AP) bonus magic damage (1.5 second cooldown).",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "1625",
     "priceCombined": "140",
     "priceSell": "1872",
-    "menu": {
-      "menu1a": "Magic",
-      "menu1b": "Ability Power",
-      "menu2a": "Magic",
-      "menu2b": "Mana",
-      "menu3a": "Magic",
-      "menu3b": "Cooldown Reduction",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "MAGIC:ABILITY_POWER",
+      "tag2": "MAGIC:MANA",
+      "tag3": "MAGIC:COOLDOWN_REDUCTION",
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

@@ -4,6 +4,27 @@
   "tier": "Tier 4",
   "type": "Tier 4",
   "recipe": "Bilgewater Cutlass, Hextech Revolver",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": null,
+      "effects": " Heals for 15% of all damage dealt. Area of effect and pets damage only heals 5% for every unit affected."
+    },
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": {
+      "unique": true,
+      "name": " Lightning Bolt",
+      "effects": " Instantly deal 175- 253 (based on level) (+ 30% AP) magic damage and slows the target champion by 40% for 2 seconds ( 700 radius) (40 second cooldown, shared with other Hextech items)."
+    },
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "80",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "Unique : Lightning Bolt: Instantly deal 175 - 253 (based on level) (+ 30% AP) magic damage and  slows the target champion by 40% for 2 seconds ( 700 radius) (40 second cooldown, shared with other Hextech items).",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "3400",
     "priceCombined": "750",
     "priceSell": "2380",
-    "menu": {
-      "menu1a": "Attack",
-      "menu1b": "Damage",
-      "menu2a": "Attack",
-      "menu2b": "Life Steal",
-      "menu3a": "Magic",
-      "menu3b": "Ability Power",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Attack:DAMAGE",
+      "tag2": "Attack:LIFE_STEAL",
+      "tag3": "MAGIC:ABILITY_POWER",
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

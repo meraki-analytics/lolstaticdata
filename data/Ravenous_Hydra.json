@@ -4,6 +4,31 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Tiamat, Vampiric Scepter, Pickaxe",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": false,
+      "name": null,
+      "effects": "Life steal applies to 50% of Cleave and Crescent's splash physical damage."
+    },
+    "passive2": {
+      "unique": true,
+      "name": " Cleave",
+      "effects": " Basic attacks deal (20% to 60% AD) physical damage to units around your target"
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": {
+      "unique": true,
+      "name": " Crescent",
+      "effects": " Deals (60% to 100% AD) physical damage to units around you"
+    },
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +54,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "Cleave: Basic attacks deal (20% to 60% AD) physical damage to units around your target : (20% AD near the edge).",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "Unique : Crescent: Deals (60% to 100% AD) physical damage to units around you : (60% AD near the edge) (10 second cooldown).",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "3500",
     "priceCombined": "400",
     "priceSell": "2450",
-    "menu": {
-      "menu1a": "Attack",
-      "menu1b": "Damage",
-      "menu2a": "Attack",
-      "menu2b": "Life Steal",
-      "menu3a": "Defense",
-      "menu3b": "Health Regen",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Attack:DAMAGE",
+      "tag2": "Attack:LIFE_STEAL",
+      "tag3": "DEFENSE:HEALTH_REGEN",
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

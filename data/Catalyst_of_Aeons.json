@@ -4,6 +4,23 @@
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": "Ruby Crystal, Sapphire Crystal",
+  "builds": "Abyssal Mask, Rod of Ages",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Eternity",
+      "effects": " Restore mana equal to 15% of damage taken from champions. Restore health equal to 20% of mana spent, up to 15 health per cast, while toggle abilities can heal for up to 15 per second."
+    },
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +46,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Eternity: Restore mana equal to 15% of damage taken from champions. Restore health equal to 20% of mana spent, up to 15 health per cast, while toggle abilities can heal for up to 15 per second.",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "1100",
     "priceCombined": "350",
     "priceSell": "770",
-    "menu": {
-      "menu1a": "Defense",
-      "menu1b": "Health",
-      "menu2a": "Magic",
-      "menu2b": "Mana",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "DEFENSE:HEALTH",
+      "tag2": "MAGIC:MANA",
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

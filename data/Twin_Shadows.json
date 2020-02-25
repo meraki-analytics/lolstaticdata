@@ -4,6 +4,23 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Fiendish Codex, Aether Wisp",
+  "builds": "",
+  "effects": {
+    "passive1": null,
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": {
+      "unique": true,
+      "name": " Spectral Pursuit",
+      "effects": " Summons 2 ghosts for 6 seconds that seek out nearby enemy champions. Ghosts, on contact, reveal and slow enemy champion by 40% for 2- 5 (based on distance traveled) seconds (90 second cooldown)."
+    },
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "70",
     "armor": "",
@@ -29,37 +46,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "Unique : Spectral Pursuit: Summons 2 ghosts for 6 seconds that seek out nearby enemy champions. Ghosts, on contact,  reveal and  slow enemy champion by 40% for 2 - 5 (based on distance traveled) seconds (90 second cooldown).",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "2400",
     "priceCombined": "650",
     "priceSell": "1680",
-    "menu": {
-      "menu1a": "Magic",
-      "menu1b": "Ability Power",
-      "menu2a": "Magic",
-      "menu2b": "Cooldown Reduction",
-      "menu3a": "Movement",
-      "menu3b": "Other Movement Items",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "MAGIC:ABILITY_POWER",
+      "tag2": "MAGIC:COOLDOWN_REDUCTION",
+      "tag3": "Movement:OTHER_MOVEMENT_ITEMS",
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

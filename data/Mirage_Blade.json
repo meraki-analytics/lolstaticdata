@@ -4,6 +4,27 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Vampiric Scepter, Pickaxe, Cloak of Agility",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Mark of the Sands",
+      "effects": " Basic attacks apply a Mark of the Sands to the target, revealing them for 3 seconds. Only a single enemy can be marked at a time."
+    },
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": {
+      "unique": true,
+      "name": " Mirage Step",
+      "effects": " Blinks 350 units directly away from the marked target (60 second cooldown)."
+    },
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Mark of the Sands: Basic attacks apply a Mark of the Sands to the target, revealing them for 3 seconds. Only a single enemy can be marked at a time.",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "Unique : Mirage Step: Blinks 350 units directly away from the marked target (60 second cooldown).",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "3200",
     "priceCombined": "695",
     "priceSell": "2240",
-    "menu": {
-      "menu1a": "Offense",
-      "menu1b": "Damage",
-      "menu2a": "Offense",
-      "menu2b": "Critical Strike",
-      "menu3a": "Offense",
-      "menu3b": "Lifesteal",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Attack:DAMAGE",
+      "tag2": "Attack:CRITICAL_STRIKE",
+      "tag3": "Attack:LIFE_STEAL",
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

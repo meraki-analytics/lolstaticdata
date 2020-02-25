@@ -4,6 +4,23 @@
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": "Faerie Charm",
+  "builds": "",
+  "effects": {
+    "passive1": null,
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": {
+      "unique": true,
+      "name": " Mana Warp",
+      "effects": " Nearby allied champions gain 5 mana regeneration (1100 range)."
+    },
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +46,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "Mana Warp: Nearby allied champions gain 5 mana regeneration (1100 range).",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "300",
     "priceCombined": "120",
     "priceSell": "210",
-    "menu": {
-      "menu1a": "Magic",
-      "menu1b": "Mana Regen",
-      "menu2a": "",
-      "menu2b": "",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "MAGIC:MANA_REGEN",
+      "tag2": null,
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

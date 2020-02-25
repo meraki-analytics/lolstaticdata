@@ -4,6 +4,27 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Serrated Dirk, Caulfield's Warhammer",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": null,
+      "effects": " +21 Lethality (13.07- 21 (based on level) armor penetration)"
+    },
+    "passive2": {
+      "unique": true,
+      "name": " Nightstalker",
+      "effects": " After being unseen for at least 1 second, your next basic attack against an enemy champion deals 30- 150 (based on level) bonus on-hit physical damage and after a 0.25-second delay it slows them by 99% for 0.5 seconds. The enhanced attack lasts 5 seconds after being seen by an enemy champion."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "Nightstalker: After being unseen for at least 1 second, your next basic attack against an enemy champion deals 30 - 150 (based on level) bonus on-hit physical damage and after a 0.25-second delay it slows them by 99% for 0.5 seconds. The enhanced attack lasts 5 seconds after being seen by an enemy champion.",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "2900",
     "priceCombined": "700",
     "priceSell": "2030",
-    "menu": {
-      "menu1a": "Attack",
-      "menu1b": "Attack Damage",
-      "menu2a": "Attack",
-      "menu2b": "Armor Penetration",
-      "menu3a": "Magic",
-      "menu3b": "Cooldown Reduction",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Attack:DAMAGE",
+      "tag2": "Attack:ARMOR_PENETRATION",
+      "tag3": "MAGIC:COOLDOWN_REDUCTION",
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

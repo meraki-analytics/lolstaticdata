@@ -4,6 +4,31 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Recurve Bow",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Devouring",
+      "effects": " Takedowns grant Devourer stacks, increasing on-hit magic damage by +1."
+    },
+    "passive2": {
+      "unique": false,
+      "name": "Stacks on takedown",
+      "effects": "\n+1 for champions and large monsters.\n+2 for  Rift Scuttlers and  Rift Herald.\n+5 for  Dragon,  Baron and  Vilemaw."
+    },
+    "passive3": {
+      "unique": false,
+      "name": null,
+      "effects": "Transforms into  Sated Devourer at 30 Devourer stacks."
+    },
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +54,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "+30 on-hit magic damage",
-    "spec2": "",
-    "passive1": "Devouring: Takedowns grant Devourer stacks, increasing on-hit magic damage by +1.",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "1450",
     "priceCombined": "450",
     "priceSell": "1715",
-    "menu": {
-      "menu1a": "Attack",
-      "menu1b": "Attack Speed",
-      "menu2a": "Attack",
-      "menu2b": "Damage",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Attack:ATTACK_SPEED",
+      "tag2": "Attack:DAMAGE",
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

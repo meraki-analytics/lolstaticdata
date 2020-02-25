@@ -1,6 +1,53 @@
+from typing import Set, Mapping, List, Union, Type
 from dataclasses import dataclass, asdict
 import dataclasses_json
+from enum import Enum
 
+
+
+def to_enum_like(string: str) -> str:
+    return string.upper().replace(' ', '_')
+
+
+@classmethod
+def from_string(cls: Type[Enum], string: str) -> Enum:
+    string = to_enum_like(string)
+    for e in cls:
+        if e.name == string:
+            return e
+    raise ValueError(f"Unknown {cls.__name__} type: {string}")
+Enum.from_string = from_string
+
+
+class itemAttributes(Enum):
+    STARTER_ITEMS = "STARTER ITEMS"
+    TOOLS = "TOOLS"
+    DEFENSE = "DEFENSE"
+    ATTACK = "ATTACK"
+    MAGIC = "MAGIC"
+    MOVEMENT = "MOVEMENT"
+    JUNGLING = "JUNGLING"
+    LANING = "LANING"
+    ARMOR_PENETRATION = "ARMOR PENETRATION"
+    MAGIC_PENETRATION = "MAGIC PENETRATION"
+    CONSUMABLE = "CONSUMABLE"
+    GOLD_INCOME = "GOLD INCOME"
+    VISION_AND_TRINKETS = "VISION AND TRINKETS"
+    ARMOR = "ARMOR"
+    HEALTH = "HEALTH"
+    HEALTH_REGEN = "HEALTH REGEN"
+    MAGIC_RESISTANCE = "MAGIC RESISTANCE"
+    MAGIC_RESIST = "MAGIC RESIST"
+    ATTACK_SPEED = "ATTACK SPEED"
+    CRITICAL_STRIKE = "CRITICAL STRIKE"
+    DAMAGE = "ATTACK DAMAGE"
+    LIFE_STEAL = "LIFE STEAL"
+    COOLDOWN_REDUCTION = "COOLDOWN REDUCTION"
+    MANA = "MANA"
+    MANA_REGEN= "MANA REGEN"
+    ABILITY_POWER = "ABILITY POWER"
+    BOOTS = "BOOTS"
+    OTHER_MOVEMENT_ITEMS = "OTHER MOVEMENT ITEMS"
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
@@ -30,35 +77,20 @@ class Stat(object):
     moveSpeedFlat: int
     spec: str
     spec2: str
-    passive1 : str
-    passive2 : str
-    passive3 : str
-    passive4 : str
-    passive5 : str
-    active: str
-    aura: str
-    aura2: str
-    aura3: str
-    no_effects : bool
+
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
 class Menu(object):
-    menu1a: str
-    menu1b: str
-    menu2a: str
-    menu2b: str
-    menu3a: str
-    menu3b: str
-    menu4a: str
-    menu4b: str
-    menu5a: str
-    menu5b: str
-    menu6a: str
-    menu6b: str
-    menu7a: str
-    menu7b: str
+    Tag1: str
+    Tag2: str
+    Tag3: str
+    Tag4: str
+    Tag5: str
+    Tag6: str
+    Tag7: str
+
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
@@ -66,8 +98,30 @@ class Shop(object):
     priceFull : int
     priceCombined : int
     priceSell : int
-    menu : Menu
+    itemTags : Menu
 
+
+@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
+@dataclass
+class Passive(object):
+    unique : bool
+    name : str
+    effects : str
+
+@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
+@dataclass
+class Effects(object):
+
+    passive1 : Passive
+    passive2 : Passive
+    passive3 : Passive
+    passive4 : Passive
+    passive5 : Passive
+    active: Passive
+    aura: Passive
+    aura2: Passive
+    aura3: Passive
+    no_effects : bool
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
@@ -91,6 +145,8 @@ class Item(object):
     tier: str
     type: str
     recipe : str
+    builds : str
+    effects : Effects
     stats: Stat
     shop: Shop
     other : Other

@@ -4,6 +4,23 @@
   "tier": "Siege Weapon",
   "type": "Siege Weapon",
   "recipe": "",
+  "builds": "",
+  "effects": {
+    "passive1": null,
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": {
+      "unique": false,
+      "name": "Active",
+      "effects": " Creates a magical zone centered on the target location for 5 seconds. Allied champions within the zone have both of their summoner spells replaced with  Flash, which can be cast with a 1 second cooldown to any location within the zone."
+    },
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": "x"
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +46,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "Active: Creates a magical zone centered on the target location for 5 seconds. Allied champions within the zone have both of their summoner spells replaced with  Flash, which can be cast with a 1 second cooldown to any location within the zone.",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": "x"
+    "spec2": ""
   },
   "shop": {
     "priceFull": "",
     "priceCombined": "",
     "priceSell": "",
-    "menu": {
-      "menu1a": "",
-      "menu1b": "",
-      "menu2a": "",
-      "menu2b": "",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": null,
+      "tag2": null,
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

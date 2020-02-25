@@ -4,6 +4,23 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Caulfield's Warhammer, Jaurim's Fist",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Ashes to Ashes",
+      "effects": " Controlling the Altar on the allied side of the map sets you aflame, dealing 26- 43 (based on level) magic damage per second to nearby enemies. Deals [ 50% bonus ][ 39- 64.5 (based on level) ] magic damage to minions and monsters.Controlling the Altar on the enemy's side of the map causes your basic attacks to burn targets for 12- 114 (based on level) true damage over 3 seconds."
+    },
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +46,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Ashes to Ashes: Controlling the Altar on the allied side of the map sets you aflame, dealing 26 - 43 (based on level) magic damage per second to nearby enemies. Deals [ 50% bonus ][ 39 - 64.5 (based on level) ] magic damage to minions and monsters.Controlling the Altar on the enemy's side of the map causes your basic attacks to burn targets for 12 - 114 (based on level) true damage over 3 seconds.",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "3000",
     "priceCombined": "700",
     "priceSell": "2100",
-    "menu": {
-      "menu1a": "Defense",
-      "menu1b": "Health",
-      "menu2a": "Attack",
-      "menu2b": "Attack Damage",
-      "menu3a": "Magic",
-      "menu3b": "Cooldown Reduction",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "DEFENSE:HEALTH",
+      "tag2": "Attack:DAMAGE",
+      "tag3": "MAGIC:COOLDOWN_REDUCTION",
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

@@ -4,6 +4,23 @@
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": "",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": null,
+      "effects": " Holds 3 charges and refills upon visiting the shop."
+    },
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": "true"
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +46,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": "true"
+    "spec2": ""
   },
   "shop": {
     "priceFull": "345",
     "priceCombined": "",
     "priceSell": "138",
-    "menu": {
-      "menu1a": "Starter Items",
-      "menu1b": "Laning",
-      "menu2a": "Tools",
-      "menu2b": "Consumable",
-      "menu3a": "Defense",
-      "menu3b": "Health Regen",
-      "menu4a": "Magic",
-      "menu4b": "Mana Regen",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Starter Items:LANING",
+      "tag2": "TOOLS:CONSUMABLE",
+      "tag3": "DEFENSE:HEALTH_REGEN",
+      "tag4": "MAGIC:MANA_REGEN",
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

@@ -4,6 +4,23 @@
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": "Amplifying Tome",
+  "builds": "Morellonomicon, Shard of True Ice, Twin Shadows, Will of the Ancients",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Lucky Shadow",
+      "effects": " + 5 per 10 seconds."
+    },
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "25",
     "armor": "",
@@ -29,37 +46,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Lucky Shadow: + 5 per 10 seconds.",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "765",
     "priceCombined": "330",
     "priceSell": "306",
-    "menu": {
-      "menu1a": "Magic",
-      "menu1b": "Ability Power",
-      "menu2a": "Tools",
-      "menu2b": "Gold Income",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "MAGIC:ABILITY_POWER",
+      "tag2": "TOOLS:GOLD_INCOME",
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

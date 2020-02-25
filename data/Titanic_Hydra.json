@@ -4,6 +4,27 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Tiamat, Ruby Crystal, Jaurim's Fist",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Cleave",
+      "effects": " Basic attacks deal 5 (+ 1% maximum health) bonus physical damage on-hit. Additionally, basic attacks also deal 40 (+ 2.5% maximum health) physical damage in a cone to units behind the target."
+    },
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": {
+      "unique": true,
+      "name": " Crescent",
+      "effects": " On your next basic attack, Cleave will instead deal 40 (+ 10% maximum health) to all targets and has a larger cone (20 second cooldown). Crescent resets your autoattack timer."
+    },
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Cleave: Basic attacks deal 5 (+ 1% maximum health) bonus physical damage on-hit. Additionally, basic attacks also deal 40 (+ 2.5% maximum health) physical damage in a cone to units behind the target.",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "Unique : Crescent: On your next basic attack, Cleave will instead deal 40 (+ 10% maximum health) to all targets and has a larger cone (20 second cooldown). Crescent resets your autoattack timer.",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "3500",
     "priceCombined": "575",
     "priceSell": "2450",
-    "menu": {
-      "menu1a": "Attack",
-      "menu1b": "Damage",
-      "menu2a": "Attack",
-      "menu2b": "",
-      "menu3a": "Defense",
-      "menu3b": "Health",
-      "menu4a": "Defense",
-      "menu4b": "Health Regen",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Attack:DAMAGE",
+      "tag2": "Attack:None",
+      "tag3": "DEFENSE:HEALTH",
+      "tag4": "DEFENSE:HEALTH_REGEN",
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

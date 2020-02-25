@@ -4,6 +4,31 @@
   "tier": "Tier 4",
   "type": "Tier 4",
   "recipe": "Youmuu's Ghostblade",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": null,
+      "effects": " +25 Lethality (15.56- 25 (based on level) armor penetration)"
+    },
+    "passive2": {
+      "unique": true,
+      "name": null,
+      "effects": " +40 movement speed out-of-combat."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": {
+      "unique": true,
+      "name": null,
+      "effects": " Gain +20% movement speed and ghosting for 6 seconds (45 second cooldown)."
+    },
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +54,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "Unique: Gain +20% movement speed and  ghosting for 6 seconds (45 second cooldown).",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "2900",
     "priceCombined": "0",
     "priceSell": "2030",
-    "menu": {
-      "menu1a": "Attack",
-      "menu1b": "Cooldown Reduction",
-      "menu2a": "Magic",
-      "menu2b": "Cooldown Reduction",
-      "menu3a": "Movement",
-      "menu3b": "Other Movement Items",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Attack:COOLDOWN_REDUCTION",
+      "tag2": "MAGIC:COOLDOWN_REDUCTION",
+      "tag3": "Movement:OTHER_MOVEMENT_ITEMS",
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

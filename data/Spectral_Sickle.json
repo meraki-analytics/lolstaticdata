@@ -4,6 +4,27 @@
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": "",
+  "builds": "Harrowing Crescent",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Tribute",
+      "effects": " Grants a charge every 10 seconds, up to 3 charges. Damaging abilities and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge grants 15. Receive diminishing gold from excessive minion kills."
+    },
+    "passive2": {
+      "unique": true,
+      "name": " Quest",
+      "effects": " Earn 500 using this item to upgrade to Harrowing Crescent, gaining the Warding active with 3 wards in stock."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Tribute: Grants a charge every 10 seconds, up to 3 charges. Damaging abilities and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge grants 15. Receive diminishing gold from excessive minion kills.",
-    "passive2": "Quest: Earn 500 using this item to upgrade to Harrowing Crescent, gaining the Warding active with 3 wards in stock.",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "400",
     "priceCombined": "",
     "priceSell": "160",
-    "menu": {
-      "menu1a": "Starter Items",
-      "menu1b": "Laning",
-      "menu2a": "Tools",
-      "menu2b": "Gold Income",
-      "menu3a": "Magic",
-      "menu3b": "Mana Regen",
-      "menu4a": "Attack",
-      "menu4b": "Damage",
-      "menu5a": "Defense",
-      "menu5b": "Health",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Starter Items:LANING",
+      "tag2": "TOOLS:GOLD_INCOME",
+      "tag3": "MAGIC:MANA_REGEN",
+      "tag4": "Attack:DAMAGE",
+      "tag5": "DEFENSE:HEALTH",
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

@@ -4,6 +4,19 @@
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": "",
+  "builds": "",
+  "effects": {
+    "passive1": null,
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": "x"
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,41 +42,24 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": "x"
+    "spec2": ""
   },
   "shop": {
     "priceFull": "250",
     "priceCombined": "",
     "priceSell": "175",
-    "menu": {
-      "menu1a": "Tools",
-      "menu1b": "Consumable",
-      "menu2a": "Attack",
-      "menu2b": "Attack Speed",
-      "menu3a": "Attack",
-      "menu3b": "Critical Strike",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "TOOLS:CONSUMABLE",
+      "tag2": "Attack:ATTACK_SPEED",
+      "tag3": "Attack:CRITICAL_STRIKE",
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {
-    "consume": "On use, grants 12% - 22% (based on level) bonus attack speed and 8% critical strike chance for 240 seconds.",
+    "consume": "On use, grants 12%- 22% (based on level) bonus attack speed and 8% critical strike chance for 240 seconds.",
     "consume2": "",
     "championItem": "",
     "limit": "",

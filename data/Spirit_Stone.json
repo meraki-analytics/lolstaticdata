@@ -4,6 +4,23 @@
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": "Hunter's Machete, Faerie Charm, Rejuvenation Bead",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Butcher",
+      "effects": " Against monsters, deal 20% bonus damage and restore 6% of damage dealt as health and 3% as mana."
+    },
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +46,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Butcher: Against monsters, deal 20% bonus damage and restore 6% of damage dealt as health and 3% as mana.",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "700",
     "priceCombined": "15",
     "priceSell": "490",
-    "menu": {
-      "menu1a": "Defense",
-      "menu1b": "Health Regen",
-      "menu2a": "Magic",
-      "menu2b": "Mana Regen",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "DEFENSE:HEALTH_REGEN",
+      "tag2": "MAGIC:MANA_REGEN",
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

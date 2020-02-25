@@ -4,6 +4,27 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Harrowing Crescent",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": null,
+      "effects": " Receives diminishing gold from excessive minion kills."
+    },
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": {
+      "unique": true,
+      "name": " Warding",
+      "effects": " Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area. Holds up to 4 charges which refill upon visiting the shop."
+    },
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "Unique : Warding: Consumes a charge to place a  Stealth Ward at the target location (600 range), which reveals the surrounding area. Holds up to 4 charges which refill upon visiting the shop.",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "400",
     "priceCombined": "",
     "priceSell": "160",
-    "menu": {
-      "menu1a": "Tools",
-      "menu1b": "Gold Income",
-      "menu2a": "Magic",
-      "menu2b": "Mana Regen",
-      "menu3a": "Attack",
-      "menu3b": "Damage",
-      "menu4a": "Defense",
-      "menu4b": "Health",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "TOOLS:GOLD_INCOME",
+      "tag2": "MAGIC:MANA_REGEN",
+      "tag3": "Attack:DAMAGE",
+      "tag4": "DEFENSE:HEALTH",
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

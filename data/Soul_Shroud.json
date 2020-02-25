@@ -4,6 +4,23 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Mana Manipulator, Kindlegem, Ruby Crystal",
+  "builds": "",
+  "effects": {
+    "passive1": null,
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": {
+      "unique": true,
+      "name": null,
+      "effects": " Nearby champions gain 10% cooldown reduction and 12 mana regeneration (1200 range)."
+    },
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +46,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "2285",
     "priceCombined": "485",
     "priceSell": "1628",
-    "menu": {
-      "menu1a": "Defense",
-      "menu1b": "Health",
-      "menu2a": "Magic",
-      "menu2b": "Cooldown Reduction",
-      "menu3a": "Magic",
-      "menu3b": "Mana Regen",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "DEFENSE:HEALTH",
+      "tag2": "MAGIC:COOLDOWN_REDUCTION",
+      "tag3": "MAGIC:MANA_REGEN",
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

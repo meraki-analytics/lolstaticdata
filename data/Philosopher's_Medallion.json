@@ -4,6 +4,23 @@
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": "",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Favor",
+      "effects": " Nearby enemy minions, killed by any ally other than you, will sometimes drop a coin that can be picked up to either grant 50 or restore 10% missing mana (minimum 20). Gold coin can only drop if an allied champion is nearby. Cannon minions will drop a coin as long as you don't kill them."
+    },
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +46,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Favor: Nearby enemy minions, killed by any ally other than you, will sometimes drop a coin that can be picked up to either grant 50 or restore 10% missing mana (minimum 20). Gold coin can only drop if an allied champion is nearby. Cannon minions will drop a coin as long as you don't kill them.",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "450",
     "priceCombined": "",
     "priceSell": "180",
-    "menu": {
-      "menu1a": "Tools",
-      "menu1b": "Gold Income",
-      "menu2a": "Defense",
-      "menu2b": "Health Regen",
-      "menu3a": "Magic",
-      "menu3b": "Mana Regen",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "TOOLS:GOLD_INCOME",
+      "tag2": "DEFENSE:HEALTH_REGEN",
+      "tag3": "MAGIC:MANA_REGEN",
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

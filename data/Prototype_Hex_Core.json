@@ -4,6 +4,27 @@
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": "",
+  "builds": "The Hex Core mk-1",
+  "effects": {
+    "passive1": {
+      "unique": false,
+      "name": null,
+      "effects": "Grants 1- 18 (based on level) ability power and 10- 180 (based on level) mana."
+    },
+    "passive2": {
+      "unique": true,
+      "name": " Progress",
+      "effects": " This item can be upgraded three times, which each upgrade allowing Viktor to enhance one of his basic abilities."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": "true"
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "Progress: This item can be upgraded three times, which each upgrade allowing Viktor to enhance one of his basic abilities.",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": "true"
+    "spec2": ""
   },
   "shop": {
     "priceFull": "0",
     "priceCombined": "",
     "priceSell": "",
-    "menu": {
-      "menu1a": "",
-      "menu1b": "",
-      "menu2a": "",
-      "menu2b": "",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": null,
+      "tag2": null,
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

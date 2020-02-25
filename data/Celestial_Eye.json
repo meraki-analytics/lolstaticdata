@@ -4,6 +4,27 @@
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": "Relic Shield, Rejuvenation Bead",
+  "builds": "Eye of the Aspect",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Spoils of War",
+      "effects": " Grants a charge every 30 seconds, up to 3 charges. Melee basic attacks can consume one charge to execute minions below 215- 470 (based on level) (+ 100% AD) health. Killing a minion by any means with a charge heals you and the nearest allied champion for 10- 60 (based on missing health) health and grants them kill gold. Healing is halved if the owner is ranged. These effects require an allied champion to be nearby."
+    },
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": {
+      "unique": true,
+      "name": " Warding",
+      "effects": " Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area. Holds up to 3 charges which refill upon visiting the shop."
+    },
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Spoils of War: Grants a charge every 30 seconds, up to 3 charges. Melee basic attacks can consume one charge to execute minions below 215 - 470 (based on level) (+ 100% AD) health. Killing a minion by any means with a charge heals you and the nearest allied champion for 10 - 60 (based on missing health) health and grants them kill gold. Healing is halved if the owner is ranged. These effects require an allied champion to be nearby.",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "Unique : Warding: Consumes a charge to place a  Stealth Ward at the target location (600 range), which reveals the surrounding area. Holds up to 3 charges which refill upon visiting the shop.",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "850",
     "priceCombined": "300",
     "priceSell": "340",
-    "menu": {
-      "menu1a": "Tools",
-      "menu1b": "Gold Income",
-      "menu2a": "Defense",
-      "menu2b": "Health",
-      "menu3a": "Defense",
-      "menu3b": "Health Regen",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "TOOLS:GOLD_INCOME",
+      "tag2": "DEFENSE:HEALTH",
+      "tag3": "DEFENSE:HEALTH_REGEN",
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

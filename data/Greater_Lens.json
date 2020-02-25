@@ -4,6 +4,23 @@
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": "Sweeping Lens",
+  "builds": "Oracle's Lens",
+  "effects": {
+    "passive1": null,
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": {
+      "unique": false,
+      "name": null,
+      "effects": "Reveals and disables nearby invisible traps and wards for 6 seconds (60 second cooldown)."
+    },
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": "x"
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +46,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "Reveals and disables nearby invisible traps and wards for 6 seconds (60 second cooldown).",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": "x"
+    "spec2": ""
   },
   "shop": {
     "priceFull": "0",
     "priceCombined": "0",
     "priceSell": "",
-    "menu": {
-      "menu1a": "Tools",
-      "menu1b": "Vision & Trinkets",
-      "menu2a": "",
-      "menu2b": "",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "TOOLS:Vision and Trinkets",
+      "tag2": null,
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

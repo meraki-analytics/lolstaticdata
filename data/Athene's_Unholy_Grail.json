@@ -4,6 +4,27 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Fiendish Codex, Chalice of Harmony",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": null,
+      "effects": " Gain 35% of the premitigation damage dealt to champions as Blood Charges, up to 100- 250 (based on level). Healing or shielding another ally consumes charges equal to 100% of the heal or shield, to heal them, up to the original effect amount."
+    },
+    "passive2": {
+      "unique": true,
+      "name": " Dissonance",
+      "effects": " Gain +5 ability power for every additional 25% base mana regeneration. Disables Harmony on your other items."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "30",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "Dissonance: Gain +5 ability power for every additional 25% base mana regeneration. Disables Harmony on your other items.",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "2100",
     "priceCombined": "400",
     "priceSell": "1470",
-    "menu": {
-      "menu1a": "Defense",
-      "menu1b": "Magic Resist",
-      "menu2a": "Magic",
-      "menu2b": "Ability Power",
-      "menu3a": "Magic",
-      "menu3b": "Mana Regen",
-      "menu4a": "Magic",
-      "menu4b": "Cooldown Reduction",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "DEFENSE:MAGIC_RESIST",
+      "tag2": "MAGIC:ABILITY_POWER",
+      "tag3": "MAGIC:MANA_REGEN",
+      "tag4": "MAGIC:COOLDOWN_REDUCTION",
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

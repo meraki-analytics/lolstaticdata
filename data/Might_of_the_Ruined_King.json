@@ -4,6 +4,27 @@
   "tier": "Tier 5",
   "type": "Tier 5",
   "recipe": "Blade of the Ruined King",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": null,
+      "effects": " Basic attacks deal 8% of the target's current health bonus physical damage on-hit, with a minimum of 15 damage against all targets, and a maximum of 60 damage against minions and monsters."
+    },
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": {
+      "unique": true,
+      "name": null,
+      "effects": " Instantly deal 100 magic damage and slow the target by 25% for 3 seconds, while also increasing your own movement speed by 25% for the same duration (550 range) (90 second cooldown)."
+    },
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "Unique: Instantly deal 100 magic damage and  slow the target by 25% for 3 seconds, while also increasing your own movement speed by 25% for the same duration (550 range) (90 second cooldown).",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "3300",
     "priceCombined": "0",
     "priceSell": "2310",
-    "menu": {
-      "menu1a": "Attack",
-      "menu1b": "Damage",
-      "menu2a": "Attack",
-      "menu2b": "Attack Speed",
-      "menu3a": "Attack",
-      "menu3b": "Life Steal",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Attack:DAMAGE",
+      "tag2": "Attack:ATTACK_SPEED",
+      "tag3": "Attack:LIFE_STEAL",
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

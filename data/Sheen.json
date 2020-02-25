@@ -4,6 +4,23 @@
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": "Sapphire Crystal",
+  "builds": "Iceborn Gauntlet, Lich Bane, Trinity Force",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Spellblade",
+      "effects": " After using an ability, your next basic attack within 10 seconds deals 100% base AD bonus physical damage on-hit (1.5 second cooldown, begins after using the empowered attack)."
+    },
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +46,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Spellblade: After using an ability, your next basic attack within 10 seconds deals 100% base AD bonus physical damage on-hit (1.5 second cooldown, begins after using the empowered attack).",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "1050",
     "priceCombined": "700",
     "priceSell": "735",
-    "menu": {
-      "menu1a": "Magic",
-      "menu1b": "Cooldown Reduction",
-      "menu2a": "Magic",
-      "menu2b": "Mana",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "MAGIC:COOLDOWN_REDUCTION",
+      "tag2": "MAGIC:MANA",
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

@@ -4,6 +4,27 @@
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": "Long Sword",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Headhunter",
+      "effects": " After killing any enemy, your next damaging spell will deal 40 bonus physical damage to all enemies it hits (30 second cooldown)."
+    },
+    "passive2": {
+      "unique": true,
+      "name": null,
+      "effects": " After poaching 4 large monsters from the enemy jungle, transforms into a Serrated Dirk."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Headhunter: After killing any enemy, your next damaging spell will deal 40 bonus physical damage to all enemies it hits (30 second cooldown).",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "500",
     "priceCombined": "150",
     "priceSell": "350",
-    "menu": {
-      "menu1a": "Attack",
-      "menu1b": "Damage",
-      "menu2a": "",
-      "menu2b": "",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Attack:DAMAGE",
+      "tag2": null,
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

@@ -4,6 +4,23 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Recurve Bow, Negatron Cloak, Dagger",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " At Wit's End",
+      "effects": " Basic attacks deal 15- 80 (based on level) bonus magic damage on-hit. While below 50% health, heal for 33% of this effect's post-mitigation damage, increased to 100% for melee champions."
+    },
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +46,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "At Wit's End: Basic attacks deal 15 - 80 (based on level) bonus magic damage on-hit. While below 50% health, heal for 33% of this effect's post-mitigation damage, increased to 100% for melee champions.",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "2900",
     "priceCombined": "880",
     "priceSell": "2030",
-    "menu": {
-      "menu1a": "Attack",
-      "menu1b": "Attack Speed",
-      "menu2a": "Defense",
-      "menu2b": "Magic Resistance",
-      "menu3a": "Other",
-      "menu3b": "Movement Speed",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Attack:ATTACK_SPEED",
+      "tag2": "DEFENSE:MAGIC_RESIST",
+      "tag3": "Movement:OTHER_MOVEMENT_ITEMS",
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

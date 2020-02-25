@@ -4,6 +4,39 @@
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": "Hunter's Machete, Hunter's Talisman",
+  "builds": "Bloodrazor, Cinderhulk, Runic Echoes, Warrior",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Chilling Smite",
+      "effects": " Upgrades Smite to Chilling Smite. Chilling Smite can be cast on enemy champions, dealing 28- 166 (based on level) true damage and stealing 20% of their movement speed for 2 seconds."
+    },
+    "passive2": {
+      "unique": true,
+      "name": " Tooth and Nail",
+      "effects": " Basic attacks versus monsters deal 25 bonus physical damage and grant 15% bonus attack speed for 2 seconds. Damaging a monster by any means set it aflame, dealing an additional 50 magic damage over 5 seconds while causing you to restore 6 health per second for every enemy you're burning."
+    },
+    "passive3": {
+      "unique": true,
+      "name": " Restoration",
+      "effects": " While in the jungle or river, grants 1 mana regeneration per 5 seconds for every 2% of missing mana."
+    },
+    "passive4": {
+      "unique": false,
+      "name": null,
+      "effects": "Killing large or epic monsters grants +50 bonus experience, and gain +50 bonus experience for each level higher the monster is than you."
+    },
+    "passive5": null,
+    "active": {
+      "unique": true,
+      "name": " Control",
+      "effects": " Consume a charge to place a Control Ward. Charges are refilled by killing large monsters in the enemy jungle or returning to the shop."
+    },
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +62,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "+10% life steal against monsters",
-    "spec2": "",
-    "passive1": "Chilling Smite: Upgrades Smite to Chilling Smite. Chilling Smite can be cast on enemy champions, dealing 28 - 166 (based on level) true damage and stealing 20% of their movement speed for 2 seconds.",
-    "passive2": "Tooth and Nail: Basic attacks versus monsters deal 25 bonus physical damage and grant 15% bonus attack speed for 2 seconds. Damaging a monster by any means set it aflame, dealing an additional 50 magic damage over 5 seconds while causing you to restore 6 health per second for every enemy you're burning.",
-    "passive3": "Restoration: While in the jungle or river, grants 1 mana regeneration per 5 seconds for every 2% of missing mana.",
-    "passive4": "",
-    "passive5": "",
-    "active": "Unique : Control: Consume a charge to place a  Control Ward. Charges are refilled by killing large monsters in the enemy jungle or returning to the shop.",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "1000",
     "priceCombined": "300",
     "priceSell": "700",
-    "menu": {
-      "menu1a": "Starter Items",
-      "menu1b": "Jungling",
-      "menu2a": "Tools",
-      "menu2b": "Vision",
-      "menu3a": "Defense",
-      "menu3b": "Health Regen",
-      "menu4a": "Attack",
-      "menu4b": "Damage",
-      "menu5a": "Magic",
-      "menu5b": "Mana Regen",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Starter Items:JUNGLING",
+      "tag2": "TOOLS:VISION_AND_TRINKETS",
+      "tag3": "DEFENSE:HEALTH_REGEN",
+      "tag4": "Attack:DAMAGE",
+      "tag5": "MAGIC:MANA_REGEN",
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

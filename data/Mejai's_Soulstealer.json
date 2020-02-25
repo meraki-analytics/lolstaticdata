@@ -4,6 +4,27 @@
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": "Dark Seal",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Dread",
+      "effects": " Grants +5 ability power per stack of Glory. Grants +10% bonus movement speed at 10 Glory."
+    },
+    "passive2": {
+      "unique": true,
+      "name": " Do or Die",
+      "effects": " Grants 4 Glory (+20 AP) for a champion kill and 2 Glory (+10 AP) for an assist, up to 25 Glory (+125 AP). Upon death, lose 10 Glory stacks (-50 AP)."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "20",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Dread: Grants +5 ability power per stack of Glory. Grants +10% bonus movement speed at 10 Glory.",
-    "passive2": "Do or Die: Grants 4 Glory (+20 AP) for a champion kill and 2 Glory (+10 AP) for an assist, up to 25 Glory (+125 AP). Upon death, lose 10 Glory stacks (-50 AP).",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "1400",
     "priceCombined": "1050",
     "priceSell": "980",
-    "menu": {
-      "menu1a": "Magic",
-      "menu1b": "Ability Power",
-      "menu2a": "Magic",
-      "menu2b": "Mana",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "MAGIC:ABILITY_POWER",
+      "tag2": "MAGIC:MANA",
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

@@ -4,6 +4,31 @@
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": "Steel Shoulderguards",
+  "builds": "Pauldrons of Whiterock",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Spoils of War",
+      "effects": " Grants a charge every 45 seconds, up to 3 charges. Basic attacks can consume a charge to execute minions below 50% of their maximum health. Killing a minion by any means with a charge grants you and the nearest allied champion kill gold. These effects require an allied champion to be nearby. Receive diminishing gold from excessive minion kills."
+    },
+    "passive2": {
+      "unique": true,
+      "name": " Quest",
+      "effects": " Earn 500 using this item to upgrade to Pauldrons of Whiterock, increasing the Warding active to instead have 4 wards in stock."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": {
+      "unique": true,
+      "name": " Warding",
+      "effects": " Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area. Holds up to 3 charges which refill upon visiting the shop."
+    },
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +54,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Spoils of War: Grants a charge every 45 seconds, up to 3 charges. Basic attacks can consume a charge to execute minions below 50% of their maximum health. Killing a minion by any means with a charge grants you and the nearest allied champion kill gold. These effects require an allied champion to be nearby. Receive diminishing gold from excessive minion kills.",
-    "passive2": "Quest: Earn 500 using this item to upgrade to Pauldrons of Whiterock, increasing the Warding active to instead have 4 wards in stock.",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "Unique : Warding: Consumes a charge to place a  Stealth Ward at the target location (600 range), which reveals the surrounding area. Holds up to 3 charges which refill upon visiting the shop.",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "400",
     "priceCombined": "",
     "priceSell": "160",
-    "menu": {
-      "menu1a": "Tools",
-      "menu1b": "Gold Income",
-      "menu2a": "Defense",
-      "menu2b": "Health Regen",
-      "menu3a": "Defense",
-      "menu3b": "Health",
-      "menu4a": "Attack",
-      "menu4b": "Damage",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "TOOLS:GOLD_INCOME",
+      "tag2": "DEFENSE:HEALTH_REGEN",
+      "tag3": "DEFENSE:HEALTH",
+      "tag4": "Attack:DAMAGE",
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

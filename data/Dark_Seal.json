@@ -4,6 +4,27 @@
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": "",
+  "builds": "Mejai's Soulstealer",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Dread",
+      "effects": " Grants +3 ability power per stack of Glory."
+    },
+    "passive2": {
+      "unique": true,
+      "name": " Do or Die",
+      "effects": " Grants 2 Glory (+6 AP) for a champion kill and 1 Glory (+3 AP) for an assist, up to a maximum of 10 Glory stacks (+30 AP). Upon death, lose 4 Glory stacks (-12 AP)."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "10",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "+25% increased healing from potions and refillable potions.",
-    "spec2": "",
-    "passive1": "Dread: Grants +3 ability power per stack of Glory.",
-    "passive2": "Do or Die: Grants 2 Glory (+6 AP) for a champion kill and 1 Glory (+3 AP) for an assist, up to a maximum of 10 Glory stacks (+30 AP). Upon death, lose 4 Glory stacks (-12 AP).",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "350",
     "priceCombined": "",
     "priceSell": "140",
-    "menu": {
-      "menu1a": "Magic",
-      "menu1b": "Ability Power",
-      "menu2a": "Magic",
-      "menu2b": "Mana",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "MAGIC:ABILITY_POWER",
+      "tag2": "MAGIC:MANA",
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

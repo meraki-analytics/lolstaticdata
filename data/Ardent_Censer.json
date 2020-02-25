@@ -4,6 +4,23 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Forbidden Idol, Aether Wisp",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Outgoing healing and shielding (excluding yourself) enhances you and affected allies with Frenzy for 6 seconds.Frenzy",
+      "effects": " Grants 10%- 30% (based on target's level) bonus attack speed and 5- 20 (based on target's level) bonus magic damage on-hit."
+    },
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "60",
     "armor": "",
@@ -29,37 +46,20 @@
     "moveSpeedUnique": "8",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "2300",
     "priceCombined": "650",
     "priceSell": "1610",
-    "menu": {
-      "menu1a": "Magic",
-      "menu1b": "Ability Power",
-      "menu2a": "Magic",
-      "menu2b": "Cooldown Reduction",
-      "menu3a": "Magic",
-      "menu3b": "Mana Regen",
-      "menu4a": "Movement",
-      "menu4b": "Other Movement Items",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "MAGIC:ABILITY_POWER",
+      "tag2": "MAGIC:COOLDOWN_REDUCTION",
+      "tag3": "MAGIC:MANA_REGEN",
+      "tag4": "Movement:OTHER_MOVEMENT_ITEMS",
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

@@ -4,6 +4,27 @@
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": "",
+  "builds": "Targon's Buckler",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Spoils of War",
+      "effects": " Grants a charge every 45 seconds, up to 3 charges. Basic attacks can consume a charge to execute minions. Melee basic attacks execute minions below 50% of their maximum health and ranged basic attacks below 30% of their maximum health. Killing a minion by any means with a charge grants you and the nearest allied champion kill gold. These effects require an allied champion to be nearby. Receive diminishing gold from excessive minion kills."
+    },
+    "passive2": {
+      "unique": true,
+      "name": " Quest",
+      "effects": " Earn 500 using this item to upgrade to Targon's Buckler, gaining the Warding active with 3 wards in stock."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "5",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Spoils of War: Grants a charge every 45 seconds, up to 3 charges. Basic attacks can consume a charge to execute minions. Melee basic attacks execute minions below 50% of their maximum health and ranged basic attacks below 30% of their maximum health. Killing a minion by any means with a charge grants you and the nearest allied champion kill gold. These effects require an allied champion to be nearby. Receive diminishing gold from excessive minion kills.",
-    "passive2": "Quest: Earn 500 using this item to upgrade to Targon's Buckler, gaining the Warding active with 3 wards in stock.",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "400",
     "priceCombined": "",
     "priceSell": "160",
-    "menu": {
-      "menu1a": "Starter Items",
-      "menu1b": "Laning",
-      "menu2a": "Tools",
-      "menu2b": "Gold Income",
-      "menu3a": "Defense",
-      "menu3b": "Health Regen",
-      "menu4a": "Defense",
-      "menu4b": "Health",
-      "menu5a": "Magic",
-      "menu5b": "Ability Power",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Starter Items:LANING",
+      "tag2": "TOOLS:GOLD_INCOME",
+      "tag3": "DEFENSE:HEALTH_REGEN",
+      "tag4": "DEFENSE:HEALTH",
+      "tag5": "MAGIC:ABILITY_POWER",
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

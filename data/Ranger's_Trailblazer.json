@@ -4,6 +4,27 @@
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": "Hunter's Machete",
+  "builds": "Devourer, Runeglaive, Cinderhulk, Warrior",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Blasting Smite",
+      "effects": " Upgrades Smite to Blasting Smite. Blasting Smite deals 50% splash damage to all surrounding minions and monsters and stuns all damaged units for 1.5 seconds. If cast on a monster, you will also restore 15% of your missing health and mana."
+    },
+    "passive2": {
+      "unique": true,
+      "name": " Jungler",
+      "effects": " Deal 45 magic damage on hit to monsters over 2 seconds and gain 10 health and 5 mana per second while in combat with monsters."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "+ 30 on large monster kill.",
-    "spec2": "",
-    "passive1": "Blasting Smite: Upgrades Smite to Blasting Smite. Blasting Smite deals 50% splash damage to all surrounding minions and monsters and stuns all damaged units for 1.5 seconds. If cast on a monster, you will also restore 15% of your missing health and mana.",
-    "passive2": "Jungler: Deal 45 magic damage on hit to monsters over 2 seconds and gain 10 health and 5 mana per second while in combat with monsters.",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "850",
     "priceCombined": "450",
     "priceSell": "595",
-    "menu": {
-      "menu1a": "Starter Items",
-      "menu1b": "Jungling",
-      "menu2a": "Defense",
-      "menu2b": "Health Regen",
-      "menu3a": "Attack",
-      "menu3b": "Damage",
-      "menu4a": "Magic",
-      "menu4b": "Mana Regen",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Starter Items:JUNGLING",
+      "tag2": "DEFENSE:HEALTH_REGEN",
+      "tag3": "Attack:DAMAGE",
+      "tag4": "MAGIC:MANA_REGEN",
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

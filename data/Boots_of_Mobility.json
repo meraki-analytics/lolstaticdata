@@ -4,6 +4,27 @@
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": "Boots of Speed",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Enhanced Movement",
+      "effects": " +25 flat movement speed"
+    },
+    "passive2": {
+      "unique": false,
+      "name": null,
+      "effects": "Increases to +115 flat movement speed when out-of-combat. Receiving damage, dealing damage or debuffing units will put you in-combat, disabling this passive for 5 seconds."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": "true"
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Enhanced Movement: +25 flat movement speed",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": "true"
+    "spec2": ""
   },
   "shop": {
     "priceFull": "900",
     "priceCombined": "600",
     "priceSell": "630",
-    "menu": {
-      "menu1a": "Movement",
-      "menu1b": "Boots",
-      "menu2a": "",
-      "menu2b": "",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Movement:BOOTS",
+      "tag2": null,
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

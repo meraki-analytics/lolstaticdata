@@ -4,6 +4,23 @@
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": "Faerie Charm, Rejuvenation Bead",
+  "builds": "Mikael's Crucible, Ohmwrecker, Eleisa's Miracle, Shurelya's Reverie",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Transmute",
+      "effects": " + 5 per 10 seconds."
+    },
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +46,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "+7 health regeneration",
-    "spec2": "+9 mana regeneration",
-    "passive1": "Transmute: + 5 per 10 seconds.",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": "+9 mana regeneration"
   },
   "shop": {
     "priceFull": "700",
     "priceCombined": "340",
     "priceSell": "350",
-    "menu": {
-      "menu1a": "Defense",
-      "menu1b": "Health Regen",
-      "menu2a": "Magic",
-      "menu2b": "Mana Regen",
-      "menu3a": "Tools",
-      "menu3b": "Gold Income",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "DEFENSE:HEALTH_REGEN",
+      "tag2": "MAGIC:MANA_REGEN",
+      "tag3": "TOOLS:GOLD_INCOME",
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

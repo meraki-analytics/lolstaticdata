@@ -4,6 +4,27 @@
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": "Long Sword, Rejuvenation Bead, Long Sword",
+  "builds": "Ravenous Hydra, Titanic Hydra",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Cleave",
+      "effects": " Basic attacks deal (20% to 60% AD) physical damage to units around your target"
+    },
+    "passive2": null,
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": {
+      "unique": true,
+      "name": " Crescent",
+      "effects": " Deals (60% to 100% AD) physical damage to units around you"
+    },
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Cleave: Basic attacks deal (20% to 60% AD) physical damage to units around your target : (20% AD near the edge).",
-    "passive2": "",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "Unique : Crescent: Deals (60% to 100% AD) physical damage to units around you : (60% AD near the edge) (10 second cooldown).",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "1325",
     "priceCombined": "475",
     "priceSell": "928",
-    "menu": {
-      "menu1a": "Attack",
-      "menu1b": "Damage",
-      "menu2a": "Defense",
-      "menu2b": "Health Regen",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Attack:DAMAGE",
+      "tag2": "DEFENSE:HEALTH_REGEN",
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

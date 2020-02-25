@@ -4,6 +4,27 @@
   "tier": "Tier 4",
   "type": "Tier 4",
   "recipe": "Manamune (Quick Charge)",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": " Awe",
+      "effects": " Grants bonus attack damage equal to 2% maximum mana. Refunds 15% of mana spent."
+    },
+    "passive2": {
+      "unique": true,
+      "name": " Shock",
+      "effects": " Basic attacks and single targeted abilities against champions (on-hit) consume 3% current mana to deal 6% current mana bonus physical damage. This effect only activates while you have greater than 20% maximum mana."
+    },
+    "passive3": null,
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +50,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "Awe: Grants bonus attack damage equal to 2% maximum mana. Refunds 15% of mana spent.",
-    "passive2": "Shock: Basic attacks and single targeted abilities against champions (on-hit) consume 3% current mana to deal 6% current mana bonus physical damage. This effect only activates while you have greater than 20% maximum mana.",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "",
     "priceCombined": "",
     "priceSell": "1680",
-    "menu": {
-      "menu1a": "",
-      "menu1b": "",
-      "menu2a": "",
-      "menu2b": "",
-      "menu3a": "",
-      "menu3b": "",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": null,
+      "tag2": null,
+      "tag3": null,
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {

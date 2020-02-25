@@ -4,6 +4,31 @@
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": "Serrated Dirk, Long Sword, Long Sword",
+  "builds": "",
+  "effects": {
+    "passive1": {
+      "unique": true,
+      "name": null,
+      "effects": " +12 Lethality (7.47- 12 (based on level) armor penetration)"
+    },
+    "passive2": {
+      "unique": true,
+      "name": " Blackout",
+      "effects": " When spotted by enemy wards or traps, gain Blackout over a 400-unit radius for 8 seconds (45 second cooldown). You disable surrounding wards, as well as exposing stealthed wards and traps. The effects linger for 2 seconds after you walk away."
+    },
+    "passive3": {
+      "unique": true,
+      "name": null,
+      "effects": " Your basic attacks instantly kill revealed traps and deal triple damage to wards."
+    },
+    "passive4": null,
+    "passive5": null,
+    "active": null,
+    "aura": null,
+    "aura2": null,
+    "aura3": null,
+    "noEffects": ""
+  },
   "stats": {
     "abilityPower": "",
     "armor": "",
@@ -29,37 +54,20 @@
     "moveSpeedUnique": "",
     "moveSpeedFlat": "",
     "spec": "",
-    "spec2": "",
-    "passive1": "",
-    "passive2": "Blackout: When spotted by enemy wards or traps, gain Blackout over a 400-unit radius for 8 seconds (45 second cooldown). You disable surrounding wards, as well as exposing stealthed wards and traps. The effects linger for 2 seconds after you walk away.",
-    "passive3": "",
-    "passive4": "",
-    "passive5": "",
-    "active": "",
-    "aura": "",
-    "aura2": "",
-    "aura3": "",
-    "noEffects": ""
+    "spec2": ""
   },
   "shop": {
     "priceFull": "2400",
     "priceCombined": "600",
     "priceSell": "1680",
-    "menu": {
-      "menu1a": "Attack",
-      "menu1b": "Attack Damage",
-      "menu2a": "Attack",
-      "menu2b": "Armor Penetration",
-      "menu3a": "Magic",
-      "menu3b": "Cooldown Reduction",
-      "menu4a": "",
-      "menu4b": "",
-      "menu5a": "",
-      "menu5b": "",
-      "menu6a": "",
-      "menu6b": "",
-      "menu7a": "",
-      "menu7b": ""
+    "itemTags": {
+      "tag1": "Attack:DAMAGE",
+      "tag2": "Attack:ARMOR_PENETRATION",
+      "tag3": "MAGIC:COOLDOWN_REDUCTION",
+      "tag4": null,
+      "tag5": null,
+      "tag6": null,
+      "tag7": null
     }
   },
   "other": {
