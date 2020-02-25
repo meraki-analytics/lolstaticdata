@@ -8,8 +8,6 @@ from collections import Counter
 from model import Champion, Stats, Ability, DamageType, AttackType, AttributeRatings, Cooldown, Cost, Effect, Price, Resource, Modifier, Role, Leveling, to_enum_like
 from util import download_webpage, parse_top_level_parentheses, grouper
 
-#TODO Maybe look into dynamic descriptions. See Knight's response to I-Made-This post in Discord
-
 
 class UnparsableLeveling(Exception):
     pass
@@ -79,7 +77,7 @@ class LolWikiDataHandler:
         html = download_webpage(url, self.use_cache)
         soup = BeautifulSoup(html, 'lxml')
 
-        # Pull the relevant data from the html tags
+        # Pull the relevant champData from the html tags
         spans = soup.find_all('span')
         start = None
         for i, span in enumerate(spans):
@@ -97,7 +95,7 @@ class LolWikiDataHandler:
             if brackets["{"] == brackets["}"] and brackets["{"] > 0:
                 break
 
-        # Sanitize the data
+        # Sanitize the champData
         data = data.replace('=', ':')
         data = data.replace('["', '"')
         data = data.replace('"]', '"')
@@ -108,7 +106,7 @@ class LolWikiDataHandler:
         data = data.replace('[5]', '5')
         data = data.replace('[6]', '6')
 
-        # Return the data as a list of Champions
+        # Return the champData as a list of Champions
         data = eval(data)
         results = []
         for name, d in data.items():
@@ -120,9 +118,6 @@ class LolWikiDataHandler:
     def _render_champion_data(self, name: str, data: Mapping) -> Champion:
         if name == "Kled & Skaarl":
             name = "Kled"
-        data["skill_p"] = data["skill_i"]
-        del data["skill_i"]
-        #I don't actually think I need to do this but I did it anyway
         print(name)
         adaptive_type = data["adaptivetype"]
         if adaptive_type.upper() in ("PHYSICAL", "MIXED,PHYSICAL"):
@@ -200,8 +195,8 @@ class LolWikiDataHandler:
             abilities=dict([
                 self._render_abilities(champion_name=name, abilities=[
                     self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                    for ability_name in data["skill_p"].values() if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
-                ]),#swapped skill_i to skill_p
+                    for ability_name in data["skill_i"].values() if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
+                ]),
                 self._render_abilities(champion_name=name, abilities=[
                     self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                     for ability_name in data["skill_q"].values() if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
@@ -238,23 +233,18 @@ class LolWikiDataHandler:
         return HTMLAbilityWrapper(soup)
 
     def _render_abilities(self, champion_name, abilities: List[HTMLAbilityWrapper]) -> Tuple[str, List[Ability]]:
-        inputs, abilities = abilities, [] # rename variables
+        inputs, abilities = abilities, []  # rename variables
         skill_key = inputs[0]["skill"]
-        #swap I to P to make it cleaner
-        if skill_key == "I":
-            skill_key = "P"
         for data in inputs:
             _skill_key = data["skill"]
-            if _skill_key == "I":
-                _skill_key = "P"
             if champion_name == "Aphelios" and data["name"] in ("Calibrum", "Severum", "Gravitum", "Infernum", "Crescendum"):
-                _skill_key = "P"
+                _skill_key = "I"
             if champion_name == "Gnar" and data["name"] in ("Boulder Toss",):
                 _skill_key = "Q"
             assert _skill_key == skill_key
 
             nvalues = 5 if _skill_key in ('Q', 'W', 'E') else 3
-            if champion_name == "Aphelios" and _skill_key == "P":
+            if champion_name == "Aphelios" and _skill_key == "I":
                 nvalues = 6
             elif champion_name == "Heimerdinger":
                 nvalues = None
@@ -264,7 +254,7 @@ class LolWikiDataHandler:
                 nvalues = 6
             elif champion_name == "Karma":
                 nvalues = None
-            elif champion_name == "Kindred" and _skill_key == "P":
+            elif champion_name == "Kindred" and _skill_key == "I":
                 nvalues = 2
             elif champion_name == "Nidalee":
                 nvalues = None
@@ -508,7 +498,7 @@ class ParsingAndRegex:
     def get_units(not_parsed: List[str]) -> str:
         assert len(not_parsed) == 2
         assert not_parsed[0] == ''
-        return not_parsed[1].strip() #strip to remove space from start
+        return not_parsed[1]
 
     @staticmethod
     def get_modifier(mod: str, nvalues: int) -> [List[str], List[Union[int, float]]]:
@@ -533,7 +523,7 @@ class ParsingAndRegex:
             scalings = parse_top_level_parentheses(numbers)
         scalings = [scaling for scaling in scalings if scaling != '(based on level)']
         for scaling in scalings:
-            numbers = numbers.replace(scaling, '').strip()# remove the scaling part of the string for processing later
+            numbers = numbers.replace(scaling, '').strip()  # remove the scaling part of the string for processing later
         scalings = [x.strip() for x in scalings]
         for i, scaling in enumerate(scalings):
             if scaling.startswith('(') and scaling.endswith(')'):
