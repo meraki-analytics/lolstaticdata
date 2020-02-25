@@ -1,0 +1,876 @@
+{
+  "id": 266,
+  "key": "Aatrox",
+  "name": "Aatrox",
+  "title": "the Darkin Blade",
+  "fullName": "",
+  "resource": "NONE",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "stats": {
+    "healthBase": 580,
+    "healthPerLevel": 90,
+    "healthPer_5SecondsBase": 3,
+    "healthPer_5SecondsPerLevel": 1,
+    "manaBase": 0,
+    "manaPerLevel": 0,
+    "manaPer_5SecondsBase": 0,
+    "manaPer_5SecondsPerLevel": 0,
+    "armorBase": 38,
+    "armorPerLevel": 3.25,
+    "magicResistanceBase": 32.1,
+    "magicResistancePerLevel": 1.25,
+    "attackDamageBase": 60,
+    "attackDamagePerLevel": 5,
+    "movespeed": 345,
+    "acquisitionRadius": 475,
+    "selectionRadius": 135,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 1.0,
+    "attackSpeedBase": 0.651,
+    "attackSpeedPerLevel": 2.5,
+    "attackSpeedRatio": 0.651000022888183,
+    "attackCastTime": 0.300000011920928,
+    "attackTotalTime": 1.51999998092651,
+    "attackDelayOffset": 0,
+    "attackRangeBase": 175,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 0.95,
+    "aramDamageDealt": 1.0,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 0.75,
+    "urfDamageDealt": 1.25,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "TANK",
+    "JUGGERNAUT",
+    "FIGHTER"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 3,
+    "control": 2,
+    "mobility": 2,
+    "utility": 2,
+    "abilityReliance": 20,
+    "attack": 8,
+    "defense": 4,
+    "magic": 3,
+    "difficulty": 2
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Deathbringer Stance",
+        "effects": [
+          {
+            "description": "Innate: Aatrox periodically empowers his next basic attack to gain  50 bonus range and deal 5% \u2212 12% (based on level) of the target's  maximum health as  bonus physical damage on non- structures, capped at 100 against monsters, and  healing him for 100% of the  bonus physical damage dealt, reduced to 25% against  minions.",
+            "icon": "Deathbringer Stance.png",
+            "leveling": []
+          },
+          {
+            "description": "Deathbringer Stance's  cooldown is reduced by 2 seconds whenever Aatrox hits a  champion or  large monster with a basic attack on-hit or an ability, doubled if he hits with the edge of  The Darkin Blade. The cooldown reduction for  The Darkin Blade applies only once and prioritizes for the unit hit by the edge.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "The cooldown is also reduced by 2 seconds if Aatrox misses  The Darkin Blade by up to 50 units.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                24.0,
+                23.294117647058822,
+                22.58823529411765,
+                21.88235294117647,
+                21.176470588235293,
+                20.470588235294116,
+                19.764705882352942,
+                19.058823529411764,
+                18.352941176470587,
+                17.647058823529413,
+                16.941176470588236,
+                16.235294117647058,
+                15.529411764705882,
+                14.823529411764705,
+                14.117647058823529,
+                13.411764705882351,
+                12.705882352941176,
+                12.0
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Passive",
+        "affects": "Self, Enemies",
+        "spellshieldable": "False",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "proc",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Aatrox will assume stance when an enemy champion is in range of  Infernal Chains.\n Pressing CTRL + 5 switches stances controllably.\n\n The empowered attack is given on-attack. Commanding an attack before Deathbringer Stance is available, but hitting the target while it's available will not trigger the bonus damage.\n Even if the ability hit is  spell shielded Deathbringer Stance's cooldown will still be reduced.\n Aatrox respawns with his Deathbringer Stance ready.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "The Darkin Blade",
+        "effects": [
+          {
+            "description": "Active: Aatrox swings his greatsword in the target direction, striking enemies in a line. The Darkin Blade can then be reactivated twice within 4 seconds, with each cast refreshing the timer. The second cast strikes enemies in a cone and the third in the target area. There's a 1 second cooldown between each cast.",
+            "icon": "The Darkin Blade.png",
+            "leveling": []
+          },
+          {
+            "description": "Each strike deals physical damage, reduced to 55% against  minions. All units take 25% increased damage on the second cast and 50% on the third.",
+            "icon": "The Darkin Blade 2.png",
+            "leveling": [
+              {
+                "attribute": "First Swing Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      10,
+                      30,
+                      50,
+                      70,
+                      90
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      65,
+                      70,
+                      75,
+                      80
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Second Swing Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      12.5,
+                      37.5,
+                      62.5,
+                      87.5,
+                      112.5
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      75,
+                      81.25,
+                      87.5,
+                      93.75,
+                      100
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Third Swing Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      15,
+                      45,
+                      75,
+                      105,
+                      135
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      90,
+                      97.5,
+                      105,
+                      112.5,
+                      120
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Hitting enemies at the far end of the first two casts and the center of the third deals 50% bonus damage and  knocks up enemies for 0.25 seconds, doubled to 0.5 seconds against  monsters.",
+            "icon": "The Darkin Blade 3.png",
+            "leveling": [
+              {
+                "attribute": "Amplified First Swing Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      15,
+                      45,
+                      75,
+                      105,
+                      135
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      90,
+                      97.5,
+                      105,
+                      112.5,
+                      120
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Amplified Second Swing Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      18.75,
+                      56.25,
+                      93.75,
+                      131.25,
+                      168.75
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      112.5,
+                      121.875,
+                      131.25,
+                      140.625,
+                      150
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Amplified Third Swing Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      22.5,
+                      67.5,
+                      112.5,
+                      157.5,
+                      202.5
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      135,
+                      146.25,
+                      157.5,
+                      168.75,
+                      180
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Non-Minion Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      56.25,
+                      168.75,
+                      281.25,
+                      393.75,
+                      506.25
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      337.5,
+                      365.625,
+                      393.75,
+                      421.875,
+                      450
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                14,
+                12,
+                10,
+                8,
+                6
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Aatrox cannot move and cast abilities during the cast time, except for  Umbral Dash and  Flash.\n The hitbox and Aatrox's model are fixed to the initial target direction.\n Aatrox's facing-direction, for effects such as  Petrifying Gaze, is the direction he is moving, and not the direction the model is facing.\n\n All damage modifiers stack multiplicatively.\n The first cast extends at 50 units behind Aatrox, the second cast extends at 100 units.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": "200",
+        "angle": "70\u00b0",
+        "castTime": "0.6",
+        "effectRadius": "300",
+        "targetRange": "650 / 525 / 225 / 180"
+      }
+    ],
+    "W": [
+      {
+        "name": "Infernal Chains",
+        "effects": [
+          {
+            "description": "Active: Aatrox smashes the ground in the target direction, creating a chain that stops on the first enemy hit, dealing physical damage, doubled against  minions, and  slowing them by 25% for 1.5 seconds.",
+            "icon": "Infernal Chains.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      40,
+                      50,
+                      60,
+                      70
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      40,
+                      40,
+                      40,
+                      40,
+                      40
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Minion Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      80,
+                      100,
+                      120,
+                      140
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      80,
+                      80,
+                      80,
+                      80,
+                      80
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If Infernal Chains hits a  champion or large monster, they are chained to the impact area. If the chained enemy is still in the impact area after 1.5 seconds, they are  dragged to the center and take the same damage again.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Total Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      80,
+                      100,
+                      120,
+                      140
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      80,
+                      80,
+                      80,
+                      80,
+                      80
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                26,
+                23,
+                20,
+                17,
+                14
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The impact area is oriented relative to Aatrox's position when the projectile hits, not where the projectile originated from.\n The location that the target is dragged to is not at the target's original location, but slightly closer towards Aatrox's position when the zone expires.\n There's a small delay in checking if the target is in or outside the Infernal Chains area. Because of this it is still possible to drag the target if they leave the zone at the last instant.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1800",
+        "width": "160",
+        "angle": null,
+        "castTime": "0.25",
+        "effectRadius": null,
+        "targetRange": "825"
+      }
+    ],
+    "E": [
+      {
+        "name": "Umbral Dash",
+        "effects": [
+          {
+            "description": "Passive: Aatrox  heals for a percentage of the non-periodic damage he deals against champions.",
+            "icon": "Umbral Dash.png",
+            "leveling": [
+              {
+                "attribute": "Healing",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      22.5,
+                      25,
+                      27.5,
+                      30
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Active: Aatrox  dashes in the target direction.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Umbral Dash resets Aatrox's basic attack timer and can be cast during his other spell casts without interruption.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                9,
+                8,
+                7,
+                6,
+                5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "If Umbral Dash is cast in the same direction Aatrox is moving, he will be unable to buffer commands that require him to move.\n The dash can go through any wall as long as it can reach over half of it, behaving like a  blink.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "800",
+        "width": null,
+        "angle": null,
+        "castTime": "none",
+        "effectRadius": null,
+        "targetRange": "75 / 300"
+      }
+    ],
+    "R": [
+      {
+        "name": "World Ender",
+        "effects": [
+          {
+            "description": "Active: Aatrox unleashes his true demonic form for 10 seconds, gaining  bonus movement speed, decaying by 10% of the current bonus every 0.25 seconds, and  fearing nearby enemy  minions and pets,  slowing them by up to 99% for 3 seconds.",
+            "icon": "World Ender.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      80,
+                      100
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "While transformed, Aatrox gains increased size and  bonus attack damage, and receives increased  self-healing from all sources ( spell vamp exception).",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Bonus AD",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      25,
+                      30
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Increased Healing",
+                "modifiers": [
+                  {
+                    "values": [
+                      50,
+                      60,
+                      70
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "With each  enemy champion  takedown, World Ender is extended by 5 seconds, refreshing its effects, up to the original amount.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                120,
+                100,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "none",
+        "affects": "Self, Enemies",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "His resource bar indicates the remaining duration of World Ender.\n World Ender will instantly end if Aatrox takes post-mitigation damage bigger than his current health (calculated before taking into consideration  Death's Dance's damage storage and  Corrupting Potion's reduced damage for aoe attacks).\n World Ender will also instantly end if  Death's Dance's last tick of damage is reduced to not deal lethal damage as per its effect.\n\n If Aatrox enters  Guardian Angel's  revival state during World Ender's cast time, he will revive with World Ender active and increase Guardian Angel's self-heal.",
+        "blurb": "Aatrox unleashes his demonic form, gaining attack damage and movement speed.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "0.25",
+        "effectRadius": "600",
+        "targetRange": null
+      }
+    ]
+  },
+  "releaseDate": "2013-06-13",
+  "releasePatch": "3.8",
+  "patchLastChanged": "9.19",
+  "price": {
+    "blueEssence": 4800,
+    "rp": 880
+  }
+}

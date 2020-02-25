@@ -546,7 +546,7 @@ class ParsingAndRegex:
 
 def main():
     handler = LolWikiDataHandler(use_cache=False)
-    directory = r"C:\Users\dan\PycharmProjects\lolstaticdata\test"
+    directory = r"C:\Users\dan\PycharmProjects\lolstaticdata\data"
 
     champions = []
     for champion in handler.get_champions():

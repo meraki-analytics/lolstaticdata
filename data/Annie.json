@@ -1,0 +1,603 @@
+{
+  "id": 1,
+  "key": "Annie",
+  "name": "Annie",
+  "title": "the Dark Child",
+  "fullName": "Annie Hastur",
+  "resource": "MANA",
+  "attackType": "RANGED",
+  "adaptiveType": "MAGIC_DAMAGE",
+  "stats": {
+    "healthBase": 524,
+    "healthPerLevel": 88,
+    "healthPer_5SecondsBase": 5.5,
+    "healthPer_5SecondsPerLevel": 0.55,
+    "manaBase": 418,
+    "manaPerLevel": 25,
+    "manaPer_5SecondsBase": 8,
+    "manaPer_5SecondsPerLevel": 0.8,
+    "armorBase": 19.22,
+    "armorPerLevel": 4,
+    "magicResistanceBase": 30,
+    "magicResistancePerLevel": 0.5,
+    "attackDamageBase": 50.41,
+    "attackDamagePerLevel": 2.625,
+    "movespeed": 335,
+    "acquisitionRadius": 625,
+    "selectionRadius": 100,
+    "pathingRadius": 30,
+    "gameplayRadius": 55,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 1.0,
+    "attackSpeedBase": 0.579,
+    "attackSpeedPerLevel": 1.36,
+    "attackSpeedRatio": 0.578999996185302,
+    "attackCastTime": 0.3,
+    "attackTotalTime": 1.6,
+    "attackDelayOffset": -0.10420524328947,
+    "attackRangeBase": 625,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 1.0,
+    "aramDamageDealt": 1.0,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 1.0,
+    "urfDamageDealt": 1.0,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "BURST",
+    "MAGE"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 1,
+    "control": 3,
+    "mobility": 1,
+    "utility": 2,
+    "abilityReliance": 100,
+    "attack": 2,
+    "defense": 3,
+    "magic": 10,
+    "difficulty": 1
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Pyromania",
+        "effects": [
+          {
+            "description": "Innate - Pyromania: Annie gains a stack of Pyromania when she casts a spell, up to a maximum of 4. At 4 stacks, she gains Energized.",
+            "icon": "Pyromania.png",
+            "leveling": []
+          },
+          {
+            "description": "Energized: When Annie succeeds in her next cast damaging ability, she consumes all Pyromania stacks and  stuns enemies hit for 1.25 / 1.5 / 1.75 (based on level) seconds.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Annie loses Energized and all Pyromania stacks upon death.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self, Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "If  resurrecting, Annie will not lose Pyromania stacks but will lose Energized.\n The stun applies to the first ability that lands when the stun is available. If you cast  Disintegrate followed by  Incinerate while the stun is available and Incinerate lands first, the stun will be applied through Incinerate.",
+        "blurb": "After casting 4 spells, Annie's next offensive spell will stun the target for a short duration.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Disintegrate",
+        "effects": [
+          {
+            "description": "Active: Annie hurls a fireball at the target enemy, dealing  magic damage.",
+            "icon": "Disintegrate.png",
+            "leveling": [
+              {
+                "attribute": "Magic damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      80,
+                      115,
+                      150,
+                      185,
+                      220
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      80,
+                      80,
+                      80,
+                      80,
+                      80
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If Disintegrate kills its target, it refunds its  mana cost and half of its  cooldown is immediately refreshed.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                60,
+                65,
+                70,
+                75,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                4,
+                4,
+                4,
+                4,
+                4
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": "Annie hurls a Mana infused fireball, dealing damage and refunding the Mana cost if it destroys the target.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "625"
+      }
+    ],
+    "W": [
+      {
+        "name": "Incinerate",
+        "effects": [
+          {
+            "description": "Active: Annie releases a cone of fire in the target direction, dealing magic damage to all enemies in the area.",
+            "icon": "Incinerate.png",
+            "leveling": [
+              {
+                "attribute": "Magic damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      70,
+                      115,
+                      160,
+                      205,
+                      250
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      85,
+                      85,
+                      85,
+                      85,
+                      85
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                70,
+                80,
+                90,
+                100,
+                110
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                8,
+                8,
+                8,
+                8,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": "FALSE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": "Annie casts a blazing cone of fire, dealing damage to all enemies in the area.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": "49.52\u00b0",
+        "castTime": "0.25",
+        "effectRadius": "600",
+        "targetRange": null
+      }
+    ],
+    "E": [
+      {
+        "name": "Molten Shield",
+        "effects": [
+          {
+            "description": "Active: Annie wraps herself and  Tibbers in a fiery aura, gaining  30% \u2212 60% (based on level) bonus movement speed decaying over 1.5 seconds, and reducing damage taken for 3 seconds.",
+            "icon": "Molten Shield.png",
+            "leveling": [
+              {
+                "attribute": "Damage reduction",
+                "modifiers": [
+                  {
+                    "values": [
+                      10,
+                      13,
+                      16,
+                      19,
+                      22
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Enemies who deal basic attack damage on Annie or  Tibbers during this time are dealt magic damage.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      30,
+                      40,
+                      50,
+                      60
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      20,
+                      20,
+                      20,
+                      20,
+                      20
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Self / Auto",
+        "affects": "Self, Enemies",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Molten Shield does not deal damage against towers and their attacks.\n Attacks that  miss against Annie or  Tibbers will not cause the shield to deal damage.",
+        "blurb": "Grants Annie and Tibbers increased percentage Damage Resist and damages enemies who attack with basic attacks.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "R": [
+      {
+        "name": "Summon: Tibbers",
+        "effects": [
+          {
+            "description": "First Cast: Annie summons  Tibbers to the target location in a burst of flame, dealing magic damage to surrounding enemies.",
+            "icon": "Summon Tibbers.png",
+            "leveling": [
+              {
+                "attribute": "Initial Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      150,
+                      275,
+                      400
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      65,
+                      65,
+                      65
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "He then remains on the field as a controllable pet for up to 45 seconds.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Tibbers Active: Annie directs Tibbers to the target location.",
+            "icon": "Command- Tibbers.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                120,
+                100,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Enemies / Tibbers",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": null,
+        "blurb": "Annie wills her bear Tibbers to life, dealing damage to units in the area. Tibbers can attack and also burns enemies that stand near him.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "290",
+        "targetRange": "600 / Global"
+      }
+    ]
+  },
+  "releaseDate": "2009-02-21",
+  "releasePatch": "lpha Week 2",
+  "patchLastChanged": "10.3",
+  "price": {
+    "blueEssence": 450,
+    "rp": 260
+  }
+}

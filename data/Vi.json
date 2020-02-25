@@ -1,0 +1,882 @@
+{
+  "id": 254,
+  "key": "Vi",
+  "name": "Vi",
+  "title": "the Piltover Enforcer",
+  "fullName": "",
+  "resource": "MANA",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "stats": {
+    "healthBase": 585,
+    "healthPerLevel": 85,
+    "healthPer_5SecondsBase": 10,
+    "healthPer_5SecondsPerLevel": 1,
+    "manaBase": 295,
+    "manaPerLevel": 45,
+    "manaPer_5SecondsBase": 8,
+    "manaPer_5SecondsPerLevel": 0.65,
+    "armorBase": 30,
+    "armorPerLevel": 4,
+    "magicResistanceBase": 32.1,
+    "magicResistancePerLevel": 1.25,
+    "attackDamageBase": 63,
+    "attackDamagePerLevel": 3.5,
+    "movespeed": 340,
+    "acquisitionRadius": 600,
+    "selectionRadius": 100,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 1.0,
+    "attackSpeedBase": 0.644,
+    "attackSpeedPerLevel": 2,
+    "attackSpeedRatio": 0.643999993801116,
+    "attackCastTime": 0.360000014305114,
+    "attackTotalTime": 1.60000002384185,
+    "attackDelayOffset": 0,
+    "attackRangeBase": 125,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 1.0,
+    "aramDamageDealt": 1.05,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 1.0,
+    "urfDamageDealt": 0.95,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "ASSASSIN",
+    "FIGHTER",
+    "DIVER"
+  ],
+  "attributeRatings": {
+    "damage": 2,
+    "toughness": 2,
+    "control": 3,
+    "mobility": 2,
+    "utility": 1,
+    "abilityReliance": 55,
+    "attack": 8,
+    "defense": 5,
+    "magic": 3,
+    "difficulty": 1
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Blast Shield",
+        "effects": [
+          {
+            "description": "Innate: Hitting an enemy with an ability grants Vi a  15% maximum health shield for up to 3 seconds.",
+            "icon": "Blast Shield.png",
+            "leveling": []
+          },
+          {
+            "description": "Blast Shield's  cooldown is reduced by 3 seconds for every trigger of  Denting Blows.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                16.0,
+                15.764705882352942,
+                15.529411764705882,
+                15.294117647058824,
+                15.058823529411764,
+                14.823529411764707,
+                14.588235294117647,
+                14.352941176470589,
+                14.117647058823529,
+                13.882352941176471,
+                13.647058823529411,
+                13.411764705882353,
+                13.176470588235293,
+                12.941176470588236,
+                12.705882352941178,
+                12.470588235294118,
+                12.235294117647058,
+                12.0
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": "Shield",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Triggering  Denting Blows will not activate Blast Shield.",
+        "blurb": "Vi charges a shield over time. The shield can be activated by hitting an enemy with an ability.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Vault Breaker",
+        "effects": [
+          {
+            "description": "First Cast: Vi  charges for up to 4 seconds to increase Vault Breaker's  range, speed, and damage over 1.25 seconds. While charging, Vi is  pacified and  slowed by 15%.",
+            "icon": "Vault Breaker.png",
+            "leveling": []
+          },
+          {
+            "description": "Second Cast: Vi  dashes in the target direction, dealing  physical damage to all enemies she passes through, increased by 0% \u2212 100% (based on channel time).",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Minimum Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      55,
+                      80,
+                      105,
+                      130,
+                      155
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      70,
+                      70,
+                      70,
+                      70,
+                      70
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      110,
+                      160,
+                      210,
+                      260,
+                      310
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      140,
+                      140,
+                      140,
+                      140,
+                      140
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Vi stops upon colliding with an enemy champion,  knocking them back while other units are instead  pulled towards her.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Vault Breaker will go on a 3 second cooldown and refund  50% of its mana cost if Vi is  interrupted during the channeling.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                60,
+                70,
+                80,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies, Self",
+        "spellshieldable": "Special",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "aoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Despite being  pacified, Vi can still  Flash (and cast all other summoner spells except  Teleport) during Vault Breaker's channel.\n The self  slow is reduced by  slow resist.\n  Spell shield will block the damage (will not prevent  Denting Blows' application).\n PENDING FOR TEST: Vault Breaker's  interaction with  grounding effects.",
+        "blurb": "Vi charges her gauntlets and unleashes a vault shattering punch, carrying her forward. Enemies she hits are knocked back and receive a stack of Denting Blows.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1250 \u2212 1400 (based on channel time)",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "250 \u2212 725 (based on channel time)"
+      }
+    ],
+    "W": [
+      {
+        "name": "Denting Blows",
+        "effects": [
+          {
+            "description": "Passive: Vi's basic attacks and  Vault Breaker apply Denting Blows to enemies hit, stacking up to 3 times. At 3 Denting Blows, Vi consumes them to deal bonus physical damage, capped at 300 against non-champions.",
+            "icon": "Denting Blows.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      4,
+                      5.5,
+                      7,
+                      8.5,
+                      10
+                    ],
+                    "units": [
+                      "%  of target's maximum health",
+                      "%  of target's maximum health",
+                      "%  of target's maximum health",
+                      "%  of target's maximum health",
+                      "%  of target's maximum health"
+                    ]
+                  },
+                  "[ 1% per 35 ][ 2.86% per 100 ]bonus AD"
+                ]
+              }
+            ]
+          },
+          {
+            "description": "For the next 4 seconds, Vi gains  bonus attack speed and the target has 20% reduced  armor.",
+            "icon": "Denting Blows 2.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Attack Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      37.5,
+                      45,
+                      52.5,
+                      60
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self, Enemies",
+        "spellshieldable": "False",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Proc",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Denting Blows stacks will not reset when Vi switches targets.\n Denting Blows bonus attack speed will not stack with itself when Vi gains Denting Blows bonuses from the same target repeatedly or from multiple enemies in quick succession.\n The enhanced attack applies other  on-hit effects and can both  critically strike as normal as well as apply  life steal (the bonus damage cannot do either) but does not affect structures.\n Denting Blows can be  blocked but cannot be parried by  dodging and  blinding effects via basic attack.",
+        "blurb": "Vi's punches break her opponent's Armor, dealing bonus damage and granting her Attack Speed.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "Denting Blows",
+        "effects": [
+          {
+            "description": "Passive: Vi's basic attacks and  Vault Breaker apply Denting Blows to enemies hit, stacking up to 3 times. At 3 Denting Blows, Vi consumes them to deal bonus physical damage, capped at 300 against non-champions.",
+            "icon": "Denting Blows.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      4,
+                      5.5,
+                      7,
+                      8.5,
+                      10
+                    ],
+                    "units": [
+                      "%  of target's maximum health",
+                      "%  of target's maximum health",
+                      "%  of target's maximum health",
+                      "%  of target's maximum health",
+                      "%  of target's maximum health"
+                    ]
+                  },
+                  "[ 1% per 35 ][ 2.86% per 100 ]bonus AD"
+                ]
+              }
+            ]
+          },
+          {
+            "description": "For the next 4 seconds, Vi gains  bonus attack speed and the target has 20% reduced  armor.",
+            "icon": "Denting Blows 2.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Attack Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      37.5,
+                      45,
+                      52.5,
+                      60
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self, Enemies",
+        "spellshieldable": "False",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Proc",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Denting Blows stacks will not reset when Vi switches targets.\n Denting Blows bonus attack speed will not stack with itself when Vi gains Denting Blows bonuses from the same target repeatedly or from multiple enemies in quick succession.\n The enhanced attack applies other  on-hit effects and can both  critically strike as normal as well as apply  life steal (the bonus damage cannot do either) but does not affect structures.\n Denting Blows can be  blocked but cannot be parried by  dodging and  blinding effects via basic attack.",
+        "blurb": "Vi's punches break her opponent's Armor, dealing bonus damage and granting her Attack Speed.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "E": [
+      {
+        "name": "Excessive Force",
+        "effects": [
+          {
+            "description": "Passive: Vi periodically stores up to 2 Excessive Force charges.",
+            "icon": "Excessive Force.png",
+            "leveling": []
+          },
+          {
+            "description": "Active: Vi's next basic attack gains  50 bonus range and deals physical damage to all enemies in a cone in front of her. The damage can  critically strike for (100% +  25%) AD bonus physical damage.",
+            "icon": "Excessive Force 2.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      10,
+                      30,
+                      50,
+                      70,
+                      90
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      110,
+                      110,
+                      110,
+                      110,
+                      110
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      90,
+                      90,
+                      90,
+                      90,
+                      90
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Excessive Force resets Vi's basic attack timer.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                26,
+                32,
+                38,
+                44,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Self",
+        "affects": "Enemies",
+        "spellshieldable": "true",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Excessive Force has no cast time and does not interrupt Vi's previous orders.\n  Denting Blows will only apply a stack on Excessive Force's primary target (does not interact with the cone's damage).\n The enhanced attack applies other on-hit effects, can  critically strike as normal (the cone damage will also crit), apply  life steal, and affect structures if they are the primary target (the cone's damage does not affect them).",
+        "blurb": "Vi's next attack blasts through her target, dealing damage to enemies behind it.",
+        "missileSpeed": null,
+        "rechargeRate": "14 / 12.5 / 11 / 9.5 / 8",
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "600",
+        "targetRange": null
+      },
+      {
+        "name": "Excessive Force",
+        "effects": [
+          {
+            "description": "Passive: Vi periodically stores up to 2 Excessive Force charges.",
+            "icon": "Excessive Force.png",
+            "leveling": []
+          },
+          {
+            "description": "Active: Vi's next basic attack gains  50 bonus range and deals physical damage to all enemies in a cone in front of her. The damage can  critically strike for (100% +  25%) AD bonus physical damage.",
+            "icon": "Excessive Force 2.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      10,
+                      30,
+                      50,
+                      70,
+                      90
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      110,
+                      110,
+                      110,
+                      110,
+                      110
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      90,
+                      90,
+                      90,
+                      90,
+                      90
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Excessive Force resets Vi's basic attack timer.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                26,
+                32,
+                38,
+                44,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Self",
+        "affects": "Enemies",
+        "spellshieldable": "true",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Excessive Force has no cast time and does not interrupt Vi's previous orders.\n  Denting Blows will only apply a stack on Excessive Force's primary target (does not interact with the cone's damage).\n The enhanced attack applies other on-hit effects, can  critically strike as normal (the cone damage will also crit), apply  life steal, and affect structures if they are the primary target (the cone's damage does not affect them).",
+        "blurb": "Vi's next attack blasts through her target, dealing damage to enemies behind it.",
+        "missileSpeed": null,
+        "rechargeRate": "14 / 12.5 / 11 / 9.5 / 8",
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "600",
+        "targetRange": null
+      }
+    ],
+    "R": [
+      {
+        "name": "Assault and Battery",
+        "effects": [
+          {
+            "description": "Active: Vi rushes  unstoppably to the target enemy  champion dealing physical damage upon arrival and  knocking them up for 1.25 seconds.",
+            "icon": "Assault and Battery.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      150,
+                      325,
+                      500
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      110,
+                      110,
+                      110
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Enemies along the way are  knocked aside by 350 units for 0.75 seconds and dealt the same damage.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                125,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                120,
+                100,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Vi will track targets that change locations, whether by  dashing,  blinking, or simple movement.\n Assault and Battery has a maximum tether range, meaning it does not extensively follow targets that move too far away ( Teleport,  Recall).\n\n If the target becomes  untargetable during Assault and Battery, the ability is cancelled prematurely.",
+        "blurb": "Vi runs down an enemy, knocking aside anyone in the way. When she reaches her target she knocks it into the air, jumps after it, and slams it back into the ground.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "800"
+      }
+    ]
+  },
+  "releaseDate": "2012-12-19",
+  "releasePatch": "1.0.0.153",
+  "patchLastChanged": "10.4",
+  "price": {
+    "blueEssence": 4800,
+    "rp": 880
+  }
+}

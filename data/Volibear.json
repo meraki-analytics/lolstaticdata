@@ -1,0 +1,726 @@
+{
+  "id": 106,
+  "key": "Volibear",
+  "name": "Volibear",
+  "title": "the Thunder's Roar",
+  "fullName": "",
+  "resource": "MANA",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "stats": {
+    "healthBase": 584.48,
+    "healthPerLevel": 86,
+    "healthPer_5SecondsBase": 8,
+    "healthPer_5SecondsPerLevel": 0.65,
+    "manaBase": 270.4,
+    "manaPerLevel": 30,
+    "manaPer_5SecondsBase": 8.092,
+    "manaPer_5SecondsPerLevel": 0.65,
+    "armorBase": 35,
+    "armorPerLevel": 3.5,
+    "magicResistanceBase": 32.1,
+    "magicResistancePerLevel": 1.25,
+    "attackDamageBase": 68,
+    "attackDamagePerLevel": 3.3,
+    "movespeed": 345,
+    "acquisitionRadius": 400,
+    "selectionRadius": 125,
+    "pathingRadius": 50,
+    "gameplayRadius": 80,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 1.0,
+    "attackSpeedBase": 0.658,
+    "attackSpeedPerLevel": 2.67,
+    "attackSpeedRatio": 0.657999992370605,
+    "attackCastTime": 0.3,
+    "attackTotalTime": 1.6,
+    "attackDelayOffset": -0.0700000002980232,
+    "attackRangeBase": 125,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 1.0,
+    "aramDamageDealt": 1.0,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 1.0,
+    "urfDamageDealt": 1.0,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "TANK",
+    "JUGGERNAUT",
+    "FIGHTER"
+  ],
+  "attributeRatings": {
+    "damage": 2,
+    "toughness": 3,
+    "control": 2,
+    "mobility": 2,
+    "utility": 1,
+    "abilityReliance": 30,
+    "attack": 7,
+    "defense": 7,
+    "magic": 4,
+    "difficulty": 1
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Chosen of the Storm",
+        "effects": [
+          {
+            "description": "Innate: When Volibear's health drops  below 30% of his maximum health he regenerates [  30% of his maximum health over 6 seconds ][  2.5% of his maximum health every 0.5 seconds ].",
+            "icon": "Chosen of the Storm.png",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                120,
+                120,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": "heal",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Chosen of the Storm's cooldown starts as soon as it activates.\n If the cooldown ends while Volibear is under 30% health Chosen of the Storm will not trigger unless he takes damage.\n If Volibear is killed directly from anywhere higher than 30% health Chosen of the Storm will not activate and therefore will not go on cooldown.",
+        "blurb": "Volibear heals rapidly for a few seconds when his Health drops to a critical level.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Rolling Thunder",
+        "effects": [
+          {
+            "description": "Active: Volibear drops on all fours and gains  bonus movement speed for the next 4 seconds, increased when moving towards a nearby  visible enemy champion within 1800 units of him.",
+            "icon": "Rolling Thunder.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      15,
+                      17.5,
+                      20,
+                      22.5,
+                      25
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Increased Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      37.5,
+                      45,
+                      52.5,
+                      60
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "For the duration, Volibear's next basic attack deals  bonus physical damage and  flings his target over and behind himself.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Bonus Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      60,
+                      90,
+                      120,
+                      150
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Rolling Thunder resets Volibear's autoattack timer.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Self / Buff",
+        "affects": "Self",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Proc",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Rolling Thunder's bonus damage affects structures.\n Enemy can be flinged through very thin walls.\n Volibear will retain the bonus movement speed for Rolling Thunder's full duration even if he flings his target before it expires.\n When Volibear changes direction (from \"towards champions\" to any other direction), his bonus movement speed decays over 1 second.\n Rolling Thunder can be  blocked and  dodged but the  displacement cannot be negated by  blinding effects.",
+        "blurb": "Volibear drops to all fours and runs faster. This bonus speed increases when chasing enemy champions. The first enemy he attacks is thrown backwards over Volibear.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "W": [
+      {
+        "name": "Frenzy",
+        "effects": [
+          {
+            "description": "Passive: Volibear's basic attacks grant  bonus attack speed for 4 seconds, stacking up to 3 times. At 3 stacks, Volibear gains the ability to cast Frenzy.",
+            "icon": "Frenzy.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Attack Speed Per Stack",
+                "modifiers": [
+                  {
+                    "values": [
+                      9,
+                      13,
+                      17,
+                      21,
+                      25
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Bonus Attack Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      27,
+                      39,
+                      51,
+                      63,
+                      75
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Active: Volibear bites the target enemy, dealing physical damage, increasing by 0% \u2212 100% (based on target's missing health).",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Minimum Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      110,
+                      160,
+                      210,
+                      260
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      15,
+                      15,
+                      15,
+                      15,
+                      15
+                    ],
+                    "units": [
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      120,
+                      220,
+                      320,
+                      420,
+                      520
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      30,
+                      30,
+                      30,
+                      30,
+                      30
+                    ],
+                    "units": [
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Frenzy's  cooldown is halved if it is used on a  minion or  monster.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                35,
+                35,
+                35,
+                35,
+                35
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                18,
+                18,
+                18,
+                18,
+                18
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Passive / Unit",
+        "affects": "Self / Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "PENDING FOR TEST: Frenzy's  stack gain interactions with  dodging,  blocking, and  blinding effects.",
+        "blurb": "Volibear's repeated attacks grant him additional Attack Speed. Once Volibear has repeatedly attacked three times, he can perform a vicious bite on his target which deals increased damage based on the target's missing Health.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "400"
+      }
+    ],
+    "E": [
+      {
+        "name": "Majestic Roar",
+        "effects": [
+          {
+            "description": "Active: Volibear roars with might, dealing  magic damage to all nearby enemies, slightly  knocking them back and  slowing them for 3 seconds.  Minions and  monsters are instead  feared and slowed by 100% for the same duration.",
+            "icon": "Majestic Roar.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      105,
+                      150,
+                      195,
+                      240
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Slow",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      35,
+                      40,
+                      45,
+                      50
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Enemies who are  dashing or are  airborne during Majestic Roar are dealt an additional 8% of their maximum health as magic damage.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                60,
+                65,
+                70,
+                75,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                11,
+                11,
+                11,
+                11,
+                11
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Auto",
+        "affects": null,
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Majestic Roar will  fear decoys.",
+        "blurb": "Volibear lets out a powerful roar that damages and slows enemies. Minions and monsters are feared as well.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "425",
+        "targetRange": null
+      }
+    ],
+    "R": [
+      {
+        "name": "Thunder Claws",
+        "effects": [
+          {
+            "description": "Active: After a 0.1 second delay, Volibear erupts with thunder, increasing in size and striking to up to 8 nearby enemies with chain lightning, dealing them  magic damage.",
+            "icon": "Thunder Claws.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      75,
+                      115,
+                      155
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      40,
+                      40,
+                      40
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Afterwards, for 12 seconds, Volibear's basic attacks are empowered with the lightning, dealing  the same damage as bonus magic damage  on-hit that also instantly bounces to up to 7 nearby unaffected enemies.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                90,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Self / Auto",
+        "affects": "Enemies",
+        "spellshieldable": "special",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "PENDING FOR TEST: Thunder Claw's  interactions with  dodging,  blocking, and  blinding effects via basic attack.\n PENDING FOR TEST: Thunder Claw's  interaction with  spell shield.",
+        "blurb": "Volibear erupts with chain lightning, damaging a number nearby enemies. The power of the storm causes Volibear's attacks to blast his targets with lightning that bounces to other nearby enemies.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "500",
+        "targetRange": null
+      }
+    ]
+  },
+  "releaseDate": "2011-11-29",
+  "releasePatch": "1.0.0.130",
+  "patchLastChanged": "9.9",
+  "price": {
+    "blueEssence": 4800,
+    "rp": 880
+  }
+}

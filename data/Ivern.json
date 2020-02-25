@@ -1,0 +1,713 @@
+{
+  "id": 427,
+  "key": "Ivern",
+  "name": "Ivern",
+  "title": "the Green Father",
+  "fullName": "Ivern Bramblefoot",
+  "resource": "MANA",
+  "attackType": "RANGED",
+  "adaptiveType": "MAGIC_DAMAGE",
+  "stats": {
+    "healthBase": 585,
+    "healthPerLevel": 95,
+    "healthPer_5SecondsBase": 7,
+    "healthPer_5SecondsPerLevel": 0.85,
+    "manaBase": 450,
+    "manaPerLevel": 60,
+    "manaPer_5SecondsBase": 6,
+    "manaPer_5SecondsPerLevel": 0.75,
+    "armorBase": 27,
+    "armorPerLevel": 3.5,
+    "magicResistanceBase": 32.1,
+    "magicResistancePerLevel": 1.25,
+    "attackDamageBase": 50,
+    "attackDamagePerLevel": 3,
+    "movespeed": 330,
+    "acquisitionRadius": 800,
+    "selectionRadius": 140,
+    "pathingRadius": 40,
+    "gameplayRadius": 70,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 1.0,
+    "attackSpeedBase": 0.644,
+    "attackSpeedPerLevel": 3.4,
+    "attackSpeedRatio": 0.643999993801116,
+    "attackCastTime": 0.3,
+    "attackTotalTime": 1.6,
+    "attackDelayOffset": -0.0700000002980232,
+    "attackRangeBase": 475,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 1.0,
+    "aramDamageDealt": 1.0,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 0.9,
+    "urfDamageDealt": 1.1,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "CATCHER",
+    "MAGE",
+    "SUPPORT"
+  ],
+  "attributeRatings": {
+    "damage": 1,
+    "toughness": 1,
+    "control": 3,
+    "mobility": 2,
+    "utility": 3,
+    "abilityReliance": 10,
+    "attack": 3,
+    "defense": 5,
+    "magic": 7,
+    "difficulty": 3
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Friend of the Forest",
+        "effects": [
+          {
+            "description": "Innate: Ivern cannot attack or damage non-epic monsters. Instead, targeting a jungle camp initiates a 2.5 seconds channel that, upon completion, places the monsters within a grove. Placing a grove costs  131.63 \u2212 121 (based on level) health and  148.5 \u2212 110.25 (based on level) mana, and cannot be cast if Ivern lacks the resources. The channel cannot be cancelled in the first 0.15 seconds and in the last 0.5 seconds.",
+            "icon": "Friend of the Forest.png",
+            "leveling": []
+          },
+          {
+            "description": "The grove matures over 40 \u2212 1 (based on level) seconds. When fully matured, Ivern can interact with the camp again to free the monsters after 0.5 seconds, sending them away while receiving their  full gold and  full experience bounties.  Smiting a large monster within a grove will instantly free the camp's monsters, regardless of its maturity or the monsters' current health.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "If the camp's large monster has already been slain, Ivern will free the camp upon completing the channel at no cost. Similarly, the grove will instantly mature if the large monster is slain.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Starting at level 5, freeing the  Red Brambleback or the  Blue Sentinel leaves behind a sapling for 1 minute that can be picked up by an allied champion to gain the camp's buff, consuming it in the process. If at least one allied champion is nearby, Ivern can pick up the sapling to transfer it to the nearest one in range. If an ally kills either monster, they also leave behind a sapling that only Ivern can consume.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive / Unit",
+        "affects": "Monsters",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": "PURE_DAMAGE",
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Freeing a  Krugs camp will only give the  gold and  experience of the present Krugs, i.e the  Ancient Krug and a Medium  Krug, for a total of  70 \u2212 87.5 (based on monster's level) experience instead of 160 \u2212 200 (based on monster's level), and  75 gold instead of  125.\n Friend of the Forest can be used while Ivern or the camp is in combat and, once the grove is placed,  Smite can be used to instantly claim the camp. Interrupting the channel or killing Ivern is the only way to contest jungle camps, short of killing the camp during the channel time.\n  If the large monster in a camp is still alive, Ivern must gain vision of it to use Friend of the Forest on that camp.\n If the large monster in a camp is still alive, Ivern will walk towards it to use Friend of the Forest. Attempting to use Friend of the Forest on the camp\u2019s smaller monster will not change the total distance that Ivern walks.\n Friend of the Forest will leave Ivern at 1 current health if cast with exactly the required amount. Friend of the Forest cannot be cast with less, unlike other abilities with health costs.\n Non-epic monsters turned hostile by an allied or an enemy champion will still attack Ivern if he is the closest target (he is not immune to monster damage) yet he still cannot return fire if so (despite not being the one turning the monsters hostile)\n  Daisy also cannot attack non-epic monsters.\n Monsters are not hurt nor do they become hostile by Ivern when he is equipped with an item that has the Immolate effect.\n In Nexus Blitz, Friend of the Forest will not affect monsters. Ivern becomes hostile with them.",
+        "blurb": "Ivern cannot attack or be attacked by non-epic monsters. Ivern can create magical groves on jungle camps which grow over time. When the grove is fully grown, Ivern may free the monsters to receive gold and experience. After level 5 Ivern can share jungle buffs with allies.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Rootcaller",
+        "effects": [
+          {
+            "description": "Active: Ivern throws a vine in the target direction, dealing  magic damage to the first enemy hit and  rooting them for a short duration.",
+            "icon": "Rootcaller.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      80,
+                      125,
+                      170,
+                      215,
+                      260
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      70,
+                      70,
+                      70,
+                      70,
+                      70
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Root Duration",
+                "modifiers": [
+                  {
+                    "values": [
+                      1.2,
+                      1.4,
+                      1.6,
+                      1.8,
+                      2
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Ivern and his allies can target enemies  rooted by Rootcaller to  dash to them, with allies stopping at  their attack range and Ivern stopping at  125 range from the target.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "Single target",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Rootcaller can hit monsters and allow Ivern to dash to them although it won't deal damage.\n Ivern can also recast this ability to dash to targets.\n Ivern's pull/attack range is determined when he dashes to the target -- not from when he initially casts Rootcaller and throws the vine.\n Ivern (and allies?) are not able to dash to the target unless they are within approximately 1200 range.",
+        "blurb": "Ivern conjures a vine, dealing damage and rooting enemy targets hit. Ivern's allies can dash to the rooted target.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1300",
+        "width": "150",
+        "angle": null,
+        "castTime": "0.25",
+        "effectRadius": null,
+        "targetRange": "1100"
+      }
+    ],
+    "W": [
+      {
+        "name": "Brushmaker",
+        "effects": [
+          {
+            "description": "Passive: While in  brush, Ivern's basic attacks deal bonus magic damage. This bonus persists for 3 seconds after leaving brush.",
+            "icon": "Brushmaker.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      37.5,
+                      45,
+                      52.5,
+                      60
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      30,
+                      30,
+                      30,
+                      30,
+                      30
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Ivern periodically stocks a Brushmaker charge, up to a maximum of 3.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Active: Ivern grows a patch of brush at the target location for 30 seconds,  revealing the area within and around it for 3 seconds. Brushmaker spawns more brush if used near terrain or other brush.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                0.5,
+                0.5,
+                0.5,
+                0.5,
+                0.5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Ground / Buff",
+        "affects": "Self, Allies",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The bonus magic damage affects towers.\n PENDING FOR TEST: Passive's interactions with  dodging,  blocking, and  blinding effects.",
+        "blurb": "In brush, Ivern's attacks are ranged and deal bonus magic damage. Ivern can activate this ability to create a patch of brush.",
+        "missileSpeed": null,
+        "rechargeRate": "40 / 36 / 32 / 28 / 24",
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "1000"
+      }
+    ],
+    "E": [
+      {
+        "name": "Triggerseed",
+        "effects": [
+          {
+            "description": "Active: Ivern gifts a Triggerseed to the target allied champion, himself or  Daisy,  shielding them for 2 seconds.",
+            "icon": "Triggerseed.png",
+            "leveling": [
+              {
+                "attribute": "Shield",
+                "modifiers": [
+                  {
+                    "values": [
+                      80,
+                      115,
+                      150,
+                      185,
+                      220
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      80,
+                      80,
+                      80,
+                      80,
+                      80
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "At the end of its duration, Triggerseed bursts, dealing magic damage to all nearby enemies and  slowing them for 2 seconds.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      80,
+                      100,
+                      120,
+                      140
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      80,
+                      80,
+                      80,
+                      80,
+                      80
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Slow",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      45,
+                      50,
+                      55,
+                      60
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit / Self",
+        "affects": "Allies, Self, Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Triggerseed on allied champions grants them all kill credits it causes.",
+        "blurb": "Ivern places a shield on an ally which explodes after a short duration slowing and damaging enemies.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "380",
+        "targetRange": "750"
+      }
+    ],
+    "R": [
+      {
+        "name": "Daisy!",
+        "effects": [
+          {
+            "description": "Active: Ivern summons his sentinel friend  Daisy at his side, who remains on the field for 60 seconds as a controllable  pet.",
+            "icon": "Daisy!.png",
+            "leveling": []
+          },
+          {
+            "description": "Recast: Ivern commands Daisy! to move to the target location. If cast on Ivern,  Daisy will follow him.",
+            "icon": "Daisy, wait!.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                160,
+                140,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "None",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": "pet",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": "Ivern summons his Sentinel friend Daisy to fight with him. Daisy will send out a shockwave if she attacks the same champion three times in a row.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "Daisy!",
+        "effects": [
+          {
+            "description": "Active: Ivern summons his sentinel friend  Daisy at his side, who remains on the field for 60 seconds as a controllable  pet.",
+            "icon": "Daisy!.png",
+            "leveling": []
+          },
+          {
+            "description": "Recast: Ivern commands Daisy! to move to the target location. If cast on Ivern,  Daisy will follow him.",
+            "icon": "Daisy, wait!.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                160,
+                140,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "None",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": "pet",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": "Ivern summons his Sentinel friend Daisy to fight with him. Daisy will send out a shockwave if she attacks the same champion three times in a row.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ]
+  },
+  "releaseDate": "2016-10-05",
+  "releasePatch": "6.20",
+  "patchLastChanged": "9.22",
+  "price": {
+    "blueEssence": 6300,
+    "rp": 975
+  }
+}

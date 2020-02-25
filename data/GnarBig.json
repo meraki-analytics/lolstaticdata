@@ -1,0 +1,739 @@
+{
+  "id": 150.2,
+  "key": "GnarBig",
+  "name": "Mega Gnar",
+  "title": "the Missing Link",
+  "fullName": "",
+  "resource": "RAGE",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "stats": {
+    "healthBase": 610,
+    "healthPerLevel": 108,
+    "healthPer_5SecondsBase": 4.5,
+    "healthPer_5SecondsPerLevel": 1.75,
+    "manaBase": 100,
+    "manaPerLevel": 0,
+    "manaPer_5SecondsBase": 0,
+    "manaPer_5SecondsPerLevel": 0,
+    "armorBase": 35.5,
+    "armorPerLevel": 5.5,
+    "magicResistanceBase": 33.5,
+    "magicResistancePerLevel": 4,
+    "attackDamageBase": 65,
+    "attackDamagePerLevel": 5.5,
+    "movespeed": 335,
+    "acquisitionRadius": 600,
+    "selectionRadius": 100,
+    "pathingRadius": 30,
+    "gameplayRadius": 65,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 1.0,
+    "attackSpeedBase": 0.625,
+    "attackSpeedPerLevel": 0.5,
+    "attackSpeedRatio": 0.625,
+    "attackCastTime": 0.3,
+    "attackTotalTime": 1.6,
+    "attackDelayOffset": -0.153999999165534,
+    "attackRangeBase": 175,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 1.0,
+    "aramDamageDealt": 1.0,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 0.9,
+    "urfDamageDealt": 1.1,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "TANK",
+    "VANGUARD",
+    "FIGHTER"
+  ],
+  "attributeRatings": {
+    "damage": 2,
+    "toughness": 3,
+    "control": 2,
+    "mobility": 1,
+    "utility": 1,
+    "abilityReliance": 65,
+    "attack": 6,
+    "defense": 5,
+    "magic": 5,
+    "difficulty": 2
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Rage Gene",
+        "effects": [
+          {
+            "description": "Innate - Mini Gnar: While in Mini Gnar form, he gains bonus  movement speed,  attack range, attack speed growth and  attack speed.",
+            "icon": "Gnar OriginalSquare.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Movespeed",
+                "modifiers": [
+                  {
+                    "values": [
+                      0.0,
+                      1.1764705882352942,
+                      2.3529411764705883,
+                      3.5294117647058822,
+                      4.705882352941177,
+                      5.882352941176471,
+                      7.0588235294117645,
+                      8.23529411764706,
+                      9.411764705882353,
+                      10.588235294117647,
+                      11.764705882352942,
+                      12.941176470588236,
+                      14.117647058823529,
+                      15.294117647058824,
+                      16.47058823529412,
+                      17.647058823529413,
+                      18.823529411764707,
+                      20.0
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Movespeed",
+                "modifiers": [
+                  {
+                    "values": [
+                      335.0,
+                      336.1764705882353,
+                      337.3529411764706,
+                      338.52941176470586,
+                      339.70588235294116,
+                      340.88235294117646,
+                      342.05882352941177,
+                      343.2352941176471,
+                      344.4117647058824,
+                      345.5882352941176,
+                      346.7647058823529,
+                      347.94117647058823,
+                      349.11764705882354,
+                      350.29411764705884,
+                      351.47058823529414,
+                      352.6470588235294,
+                      353.8235294117647,
+                      355.0
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Bonus Range",
+                "modifiers": [
+                  {
+                    "values": [
+                      0.0,
+                      5.882352941176471,
+                      11.764705882352942,
+                      17.647058823529413,
+                      23.529411764705884,
+                      29.411764705882355,
+                      35.294117647058826,
+                      41.1764705882353,
+                      47.05882352941177,
+                      52.94117647058824,
+                      58.82352941176471,
+                      64.70588235294119,
+                      70.58823529411765,
+                      76.47058823529412,
+                      82.3529411764706,
+                      88.23529411764707,
+                      94.11764705882354,
+                      100.0
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Innate - Rage Gene: Mini Gnar generates 4 / 7 / 11 (based on level)  Rage over 2 seconds upon dealing or receiving damage. Against non-champions, basic attacks and  Boomerang Throw instantly generate [ 0.5 / 0.875 / 1.375 (based on level) Rage ][ 12.5% of the amount ]. Against champions,  Boomerang Throw instantly generates [ 1 / 1.75 / 2.75 (based on level) Rage ][ 25% of the amount ], and basic attacks instantly generate [ 2 / 3.5 / 5.5 (based on level) ][ 50% of the amount ].  Boomerang Throw can only generate Rage once per cast, and grants Rage based on the first enemy hit. Gnar's Rage decays if he has not dealt or taken damage in the last 13 seconds.",
+            "icon": "Rage Gene.png",
+            "leveling": []
+          },
+          {
+            "description": "At maximum  Rage, casting an ability or after 4 seconds will  transform him into  Mega Gnar for 15 seconds, during which Gnar's Rage depletes. Afterwards Gnar returns to Mini Gnar and is too  tired to generate Rage for 15 seconds. Gnar retains his  current percentage health when he returns to Mini Gnar.",
+            "icon": "Rage Gene 2.png",
+            "leveling": []
+          },
+          {
+            "description": "Innate - Mega Gnar: Mega Gnar has different abilities, although they share Mini Gnar's ability cooldowns. While in Mega Gnar form, he loses all Mini Gnar's buffs and instead has increased  base AD,  base health,  base armor, and  base magic resistance. Gnar restores  health equal to the increase.",
+            "icon": "Rage Gene 3.png",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The Rage generated upon dealing or receiving damage occurs over 2 seconds with 4 ticks every 0.5 seconds. It also does not stack but instead refreshes with subsequent applications (of dealing or receiving damage).\n The bonus rage generation on basic attacks counts as an on-hit effect, and is triggered by  Runaan's Hurricane and  Guinsoo's Rageblade.\n In-game, the value on the Rage bar always displays rounded down to the nearest integer.\n  Mega Gnar's gained health is not affected by  Grievous Wounds or increased healing from items and runes.\n When returning to  Mini Gnar, Gnar will only retain his current health percentage, not current health total.\n This is intentional to prevent Gnar from simply triggering Rage Gene in order to heal himself over time.\n\n  tired is treated as a self-cast buff. As such, the 15 seconds that it lasts for can not be reduced by cooldown reduction or  cleansed.\n Gnar's abilities share cooldowns across forms.\n The final stats, after Rage Gene being applied, can be seen on Gnar and Mega Gnar respective data template, in the front page.\n Mini Gnar gains 5.5% \u2212 99% (based on level) bonus attack speed.\n Mega Gnar gains 100 \u2212 831 (based on level) base health, 3.5 \u2212 54.5 (based on level) base armor, 3.5 \u2212 63 (based on level) base magic resistance, and 6 \u2212 48.5 (based on level) base attack damage.",
+        "blurb": "While in combat Gnar generates Rage. At maximum Rage his next ability will transform him into Mega Gnar, granting increased survivability and access to new spells.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q2": [
+      {
+        "name": "Boulder Toss",
+        "effects": [
+          {
+            "description": "Active: Gnar throws a boulder that stops when it hits an enemy, applying  Boomerang Throw's  slow to all nearby enemies and dealing physical damage.",
+            "icon": "Boulder Toss.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      5,
+                      85,
+                      165
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      140,
+                      140,
+                      140
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Gnar can pick up the boulder by moving within 90 units of it, refunding 60% of its  maximum cooldown.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                20,
+                15,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Area of effect",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Since the cooldown between the two is shared Mini Gnar may pick up a boulder and/or Mega Gnar may catch a boomerang.\n Gnar is locked out of picking up his boulder for 0.3 seconds after throwing it.\n The  Boulder will stop if colliding with  Wind Wall or  Unbreakable.",
+        "blurb": "Mega Gnar instead throws a boulder that stops on the first unit hit, damaging and slowing everything nearby. It can then be picked up to reduce the cooldown.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "2100",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "250",
+        "targetRange": "1100"
+      }
+    ],
+    "W": [
+      {
+        "name": "Wallop",
+        "effects": [
+          {
+            "description": "Active: Gnar slams in the target direction, dealing physical damage to all enemies struck and  stunning them for 1.25 seconds.",
+            "icon": "Wallop.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      25,
+                      55,
+                      85,
+                      115,
+                      145
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                7,
+                7,
+                7,
+                7,
+                7
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Area of effect",
+        "projectile": "FALSE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": "Mega Gnar is too enraged to be hyper and instead can rear up on his hind legs and smash down on the area in front of him, stunning enemies in an area.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": "100",
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "550"
+      }
+    ],
+    "E": [
+      {
+        "name": "Crunch",
+        "effects": [
+          {
+            "description": "Active: Gnar  leaps to a target location and deals Hop's damage to nearby enemies on landing.",
+            "icon": "Crunch.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      50,
+                      85,
+                      120,
+                      155,
+                      190
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      6,
+                      6,
+                      6,
+                      6,
+                      6
+                    ],
+                    "units": [
+                      "% maximum health",
+                      "% maximum health",
+                      "% maximum health",
+                      "% maximum health",
+                      "% maximum health"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If Crunch is used to transform, Gnar will still be able to  bounce as per  Hop. Crunch's area of effect is dealt in both areas, though enemies can only be damaged once.",
+            "icon": "Hop and Crunch.png",
+            "leveling": []
+          },
+          {
+            "description": "Enemies Gnar lands directly on top of are dealt Hop's  slow.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                22,
+                19.5,
+                17,
+                14.5,
+                12
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Area of effect",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Gnar is locked out of using any other abilities during Crunch, but he can still transform mid-air if he reaches 100 Rage during the jump of Hop.",
+        "blurb": "Mega Gnar is too large to bounce and instead lands with earth-shattering force, dealing damage in an area around him.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": "200",
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "375",
+        "targetRange": "600"
+      }
+    ],
+    "R": [
+      {
+        "name": "GNAR!",
+        "effects": [
+          {
+            "description": "Mini Gnar - Passive: Increases  Hyper's  bonus movement speed.",
+            "icon": "GNAR!.png",
+            "leveling": [
+              {
+                "attribute": "Hyper Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      45,
+                      60,
+                      75
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Mega Gnar - Active: After 0.4-seconds, Gnar  knocks nearby enemies up to 590 units in the target direction, dealing physical damage and  slowing them by 45%.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      200,
+                      300,
+                      400
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      50,
+                      50,
+                      50
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Increased Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      300,
+                      450,
+                      600
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      75,
+                      75,
+                      75
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      150,
+                      150,
+                      150
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Enemies that hit a wall take 50% bonus damage and are  stunned instead of  slowed.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Disable Duration",
+                "modifiers": [
+                  {
+                    "values": [
+                      1.25,
+                      1.5,
+                      1.75
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                90,
+                60,
+                30
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Area of effect",
+        "projectile": "FALSE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "GNAR!'s active also stuns enemies hitting impassable player-created terrain ( Crystallize,  Emperor's Divide,  Cataclysm,  Pillar of Ice).",
+        "blurb": "Mega Gnar throws everything around him in a chosen direction, dealing damage and slowing them. Any enemy that hits a wall is stunned and takes bonus damage.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "475",
+        "targetRange": null
+      }
+    ]
+  },
+  "releaseDate": "2014-08-14",
+  "releasePatch": "4.14",
+  "patchLastChanged": "10.4",
+  "price": {
+    "blueEssence": 6300,
+    "rp": 975
+  }
+}

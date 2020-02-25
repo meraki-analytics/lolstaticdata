@@ -1,0 +1,561 @@
+{
+  "id": 26,
+  "key": "Zilean",
+  "name": "Zilean",
+  "title": "the Chronokeeper",
+  "fullName": "",
+  "resource": "MANA",
+  "attackType": "RANGED",
+  "adaptiveType": "MAGIC_DAMAGE",
+  "stats": {
+    "healthBase": 504,
+    "healthPerLevel": 82,
+    "healthPer_5SecondsBase": 5.5,
+    "healthPer_5SecondsPerLevel": 0.5,
+    "manaBase": 452,
+    "manaPerLevel": 30,
+    "manaPer_5SecondsBase": 11.335,
+    "manaPer_5SecondsPerLevel": 0.8,
+    "armorBase": 24,
+    "armorPerLevel": 3.8,
+    "magicResistanceBase": 30,
+    "magicResistancePerLevel": 0.5,
+    "attackDamageBase": 51.64,
+    "attackDamagePerLevel": 3,
+    "movespeed": 335,
+    "acquisitionRadius": 550,
+    "selectionRadius": 135,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 1.0,
+    "attackSpeedBase": 0.625,
+    "attackSpeedPerLevel": 2.13,
+    "attackSpeedRatio": 0.625,
+    "attackCastTime": 0.3,
+    "attackTotalTime": 1.6,
+    "attackDelayOffset": -0.11999999731779,
+    "attackRangeBase": 550,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 1.0,
+    "aramDamageDealt": 1.0,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 0.95,
+    "urfDamageDealt": 1.2,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "MAGE",
+    "SPECIALIST",
+    "SUPPORT"
+  ],
+  "attributeRatings": {
+    "damage": 2,
+    "toughness": 1,
+    "control": 2,
+    "mobility": 2,
+    "utility": 3,
+    "abilityReliance": 100,
+    "attack": 2,
+    "defense": 5,
+    "magic": 8,
+    "difficulty": 2
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Time in a Bottle",
+        "effects": [
+          {
+            "description": "Innate: Zilean generates  2 / 3.5 / 5 / 6 / 12 (based on level) experience (does not count towards level up) every 5 seconds. Time in a Bottle is on cooldown when the game starts.",
+            "icon": "Time in a Bottle.png",
+            "leveling": []
+          },
+          {
+            "description": "When the amount stored is enough to level up an allied champion and Zilean has been out of combat for the last 10 seconds, he can right-click the target ally to initiate a 1 second  channel (if interrupted, Time in a Bottle goes on a 2 second  cooldown).",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "A successful channel levels up the target and grants Zilean the stored amount as  experience of his own.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                120,
+                120,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Passive",
+        "affects": "Allies",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Time in a Bottle marks allies with two circles around their feet; the inner one represents how close they are to leveling up, turning golden when able to activate Time in a Bottle on them.\n The target ally is not required to be out of combat to be leveled up by Time in a Bottle - only Zilean is.\n Zilean only consumes the amount of  experience required to level up an ally. He retains the excess for later use.",
+        "blurb": "Zilean stores time as Experience. When he has enough Experience to finish an ally's level, he can right-click them to impart it. Zilean receives as much Experience as he gives. Cannot be used in combat.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "1000"
+      }
+    ],
+    "Q": [
+      {
+        "name": "Time Bomb",
+        "effects": [
+          {
+            "description": "Active: Zilean throws a ticking time bomb to the target location that detonates after 3 seconds, dealing  magic damage to all surrounding enemies.",
+            "icon": "Time Bomb.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      75,
+                      115,
+                      165,
+                      230,
+                      300
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      90,
+                      90,
+                      90,
+                      90,
+                      90
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Time Bomb will attach itself to units hit directly, or those who move within a small radius of its center while it is on the ground, detonating at their location when the duration ends.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Time Bomb detonates immediately if another one attaches itself to the same unit, briefly  stunning all affected enemies.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Stun Duration",
+                "modifiers": [
+                  {
+                    "values": [
+                      1.1,
+                      1.2,
+                      1.3,
+                      1.4,
+                      1.5
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                60,
+                65,
+                70,
+                75,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                10,
+                9.5,
+                9,
+                8.5,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Time Bombs landing directly on top of multiple units follow a priority order for whom to attach themselves to.\n Units already carrying a bomb\n Enemy champions\n Allied champions\n Enemy  minions\n Allied minions\n\n Time Bombs will detonate immediately if their holder dies.\n Time Bombs enter  stealth if the ally they attach themselves to does so.\n Placing the Time Bomb triggers in-combat effects such as drawing turret aggro and applying  Elixir of Sorcery and  Sudden Impact.\n One For All: Zilean can detonate an enemy counterpart's Time Bomb by placing his own on the same unit (the first bomb still deals damage).\n Time Bomb will be removed if the holder dies or goes into  resurrection before it explodes.\n Time Bomb can deal damage to the holder through  untargetablility.",
+        "blurb": "Tosses a bomb to target area that sticks to units that come near it (prioritizes Champions). It detonates after 3 seconds, dealing area of effect damage. If a Time Bomb is detonated early by another Time Bomb, it also stuns enemies.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": "100",
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "300",
+        "targetRange": "900"
+      }
+    ],
+    "W": [
+      {
+        "name": "Rewind",
+        "effects": [
+          {
+            "description": "Active: Zilean reduces  Time Bomb's and  Time Warp's  cooldowns by 10 seconds each.",
+            "icon": "Rewind.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                35,
+                35,
+                35,
+                35,
+                35
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                14,
+                12,
+                10,
+                8,
+                6
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Self",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Rewind cannot be ranked up at Level 1.\n Rewind can only be cast when either of his basic abilities is on  cooldown.",
+        "blurb": "Zilean can prepare himself for future confrontations, reducing the cooldowns of his other basic abilities.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "E": [
+      {
+        "name": "Time Warp",
+        "effects": [
+          {
+            "description": "Active: Zilean bends time around the target champion,  slowing enemies for 2.5 seconds or granting allies or himself  bonus movement speed for the same duration.",
+            "icon": "Time Warp.png",
+            "leveling": [
+              {
+                "attribute": "Movement Speed Modifier",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      55,
+                      70,
+                      85,
+                      99
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                15,
+                15,
+                15,
+                15,
+                15
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Self / Unit",
+        "affects": "Enemies, Allies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": "FALSE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": null,
+        "blurb": "Zilean bends time around any unit, decreasing an enemy's Movement Speed or increasing an ally's Movement Speed for a short time.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "550"
+      }
+    ],
+    "R": [
+      {
+        "name": "Chronoshift",
+        "effects": [
+          {
+            "description": "Active: Zilean places a protective time rune on the target ally champion or himself, lasting for 5 seconds.",
+            "icon": "Chronoshift.png",
+            "leveling": []
+          },
+          {
+            "description": "If the target takes fatal damage during that time, they are put in  stasis for 3 seconds and then  revived, regaining a set amount of  health.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Health Regained",
+                "modifiers": [
+                  {
+                    "values": [
+                      600,
+                      850,
+                      1100
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      200,
+                      200,
+                      200
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                125,
+                150,
+                175
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                120,
+                90,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Self / Unit",
+        "affects": "Self, Allies",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": "Heal",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Chronoshift takes precedence over all other revive effects ( Guardian Angel,  Rebirth).",
+        "blurb": "Zilean places a protective time rune on an allied champion, teleporting the champion back in time if they take lethal damage.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "900"
+      }
+    ]
+  },
+  "releaseDate": "2009-04-18",
+  "releasePatch": "pril 18, 2009 Patch",
+  "patchLastChanged": "10.3",
+  "price": {
+    "blueEssence": 1350,
+    "rp": 585
+  }
+}

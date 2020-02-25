@@ -1,0 +1,1133 @@
+{
+  "id": 240.1,
+  "key": "Kled",
+  "name": "Kled",
+  "title": "the Cantankerous Cavaliers",
+  "fullName": "Kled and Skaarl",
+  "resource": "COURAGE",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "stats": {
+    "healthBase": 740,
+    "healthPerLevel": 130,
+    "healthPer_5SecondsBase": 6,
+    "healthPer_5SecondsPerLevel": 0.75,
+    "manaBase": 100,
+    "manaPerLevel": 0,
+    "manaPer_5SecondsBase": 0,
+    "manaPer_5SecondsPerLevel": 0,
+    "armorBase": 35,
+    "armorPerLevel": 4,
+    "magicResistanceBase": 32.1,
+    "magicResistancePerLevel": 1.25,
+    "attackDamageBase": 65,
+    "attackDamagePerLevel": 3.5,
+    "movespeed": 345,
+    "acquisitionRadius": 800,
+    "selectionRadius": 140,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 1.0,
+    "attackSpeedBase": 0.625,
+    "attackSpeedPerLevel": 3.5,
+    "attackSpeedRatio": 0.625,
+    "attackCastTime": 0.280000001192092,
+    "attackTotalTime": 1.60000002384185,
+    "attackDelayOffset": 0,
+    "attackRangeBase": 125,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 0.95,
+    "aramDamageDealt": 1.0,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 1.0,
+    "urfDamageDealt": 1.0,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "FIGHTER",
+    "DIVER",
+    "TANK"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 2,
+    "control": 1,
+    "mobility": 3,
+    "utility": 1,
+    "abilityReliance": 30,
+    "attack": 8,
+    "defense": 2,
+    "magic": 2,
+    "difficulty": 2
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Skaarl the Cowardly Lizard",
+        "effects": [
+          {
+            "description": "Innate: Kled rides his semi-trusty mount, Skaarl. While mounted, all damage dealt to the duo is suffered by Skaarl, who has  400 \u2212 1505 (based on level) base health (+100% bonus health). Percent-health effects consider Kled & Skaarl's combined maximum health.",
+            "icon": "Skaarl the Cowardly Lizard.png",
+            "leveling": []
+          },
+          {
+            "description": "Being reduced to  0 health causes Skaarl to flee, forcing Kled to  dismount, with all damage in excess of Skaarl's  health being ignored. Dismounting  cleanses Kled of all  crowd control and briefly makes him  untargetable, as well as modifying his base stats and abilities.",
+            "icon": "Dismounted Skaarl the Cowardly Lizard.png",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Decoys are counted as champions for all of this ability's effects, other than the takedown one.\n Kled's health is rounded up while Skaarl's is rounded down.\n  Gargoyle Stoneplate can increase Kled's base health.\n It is possible to get the Courage from base but have Kled and Skaarl reunite out of base.\n It is possible for the Nexus Obelisk to not be able to bring Kled down from Skaarl for a few seconds, even if Skaarl has no health.\n Health regeneration only regenerates Kled's or Skaarl's health, and not both's.",
+        "blurb": "Kled rides his trusty steed, Skaarl, who takes damage for him. When Skaarl's health depletes, Kled dismounts. While dismounted, Kled's abilities change and he deals less damage to champions. Kled can restore Skaarl's courage by fighting enemies. At maximum courage, Kled remounts with a portion of Skaarl's health.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Beartrap on a Rope",
+        "effects": [
+          {
+            "description": "Active: Kled hurls a beartrap tied to a piece of rope in the target direction, dealing physical damage to all enemies it passes through.",
+            "icon": "Beartrap on a Rope.png",
+            "leveling": [
+              {
+                "attribute": "Beartrap Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      55,
+                      80,
+                      105,
+                      130
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Minions and Small Monsters Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      45,
+                      82.5,
+                      120,
+                      157.5,
+                      195
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      90,
+                      90,
+                      90,
+                      90,
+                      90
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Minions and small  monsters take 50% increased damage. The bear trap stops at the first enemy  champion or large monster hit, attaching to them. While attached, they are  revealed.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "If Kled remains for 1.75 seconds within a slowly decreasing radius of his target, he  pulls them 100-units towards him, dealing physical damage,  grievously wounding them by 60% for 5 seconds, and  slowing them for 1.5 seconds.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Yank Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      110,
+                      160,
+                      210,
+                      260
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      120,
+                      120,
+                      120,
+                      120,
+                      120
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      90,
+                      165,
+                      240,
+                      315,
+                      390
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      180,
+                      180,
+                      180,
+                      180,
+                      180
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Slow",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      45,
+                      50,
+                      55,
+                      60
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Can be cast while  Jousting.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                9,
+                8.5,
+                8,
+                7.5,
+                7
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": "Kled throws a bear trap that damages and hooks an enemy champion. If shackled for a short duration, the target takes additional physical damage and is yanked toward Kled.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "800 \u2212 650 (based on time active)"
+      }
+    ],
+    "W": [
+      {
+        "name": "Violent Tendencies",
+        "effects": [
+          {
+            "description": "Passive: Kled periodically enters a frenzy that grants him  150% bonus attack speed on his next 4 basic attacks within 4 seconds after the first, with the final attack dealing bonus physical damage, capped against  monsters.",
+            "icon": "Violent Tendencies.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      30,
+                      40,
+                      50,
+                      60
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      4.5,
+                      5,
+                      5.5,
+                      6,
+                      6.5
+                    ],
+                    "units": [
+                      "% (+ 5% per 100 bonus AD) of target's maximum health",
+                      "% (+ 5% per 100 bonus AD) of target's maximum health",
+                      "% (+ 5% per 100 bonus AD) of target's maximum health",
+                      "% (+ 5% per 100 bonus AD) of target's maximum health",
+                      "% (+ 5% per 100 bonus AD) of target's maximum health"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Damage Against Monsters",
+                "modifiers": [
+                  {
+                    "values": [
+                      220,
+                      230,
+                      240,
+                      250,
+                      260
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Turrets are only affected by the base damage.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                14,
+                12.5,
+                11,
+                9.5,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Passive",
+        "affects": "Enemies",
+        "spellshieldable": "False",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Proc",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The bonus damage applies  life steal.",
+        "blurb": "Kled gains massive attack speed for four attacks. The fourth attack deals more damage.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "E": [
+      {
+        "name": "Jousting",
+        "effects": [
+          {
+            "description": "Active: Kled and Skaarl  dash in the target direction, dealing physical damage to all enemies struck and  pulling  minions and small  monsters towards him. This cannot cross terrain.",
+            "icon": "Jousting.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      35,
+                      60,
+                      85,
+                      110,
+                      135
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      70,
+                      120,
+                      170,
+                      220,
+                      270
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      120,
+                      120,
+                      120,
+                      120,
+                      120
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Upon hitting an enemy  champion or large monster Kled and Skaarl  dash a fixed 200-units through them, marking them for 3 seconds and gaining  true sight of them. At the end of the  dash Kled gains  50% bonus movement speed for 1 second and the ability to  joust through the marked target again. This subsequent pass can cross terrain.",
+            "icon": "Jousting 2.png",
+            "leveling": []
+          },
+          {
+            "description": "The mark will remain even if the target dies.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Area of effect",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Jousting's second dash will end prematurely if Kled leaves the dash range or is dismounted.\n If Kled re-casts the ability at its maximum range, it will go on cooldown without activating.",
+        "blurb": "Kled dashes, dealing physical damage and gaining a short burst of speed. Kled can cast this ability again to dash back through his initial target, dealing the same damage.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "550 / 700"
+      },
+      {
+        "name": "Jousting",
+        "effects": [
+          {
+            "description": "Active: Kled and Skaarl  dash in the target direction, dealing physical damage to all enemies struck and  pulling  minions and small  monsters towards him. This cannot cross terrain.",
+            "icon": "Jousting.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      35,
+                      60,
+                      85,
+                      110,
+                      135
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      70,
+                      120,
+                      170,
+                      220,
+                      270
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      120,
+                      120,
+                      120,
+                      120,
+                      120
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Upon hitting an enemy  champion or large monster Kled and Skaarl  dash a fixed 200-units through them, marking them for 3 seconds and gaining  true sight of them. At the end of the  dash Kled gains  50% bonus movement speed for 1 second and the ability to  joust through the marked target again. This subsequent pass can cross terrain.",
+            "icon": "Jousting 2.png",
+            "leveling": []
+          },
+          {
+            "description": "The mark will remain even if the target dies.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Area of effect",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Jousting's second dash will end prematurely if Kled leaves the dash range or is dismounted.\n If Kled re-casts the ability at its maximum range, it will go on cooldown without activating.",
+        "blurb": "Kled dashes, dealing physical damage and gaining a short burst of speed. Kled can cast this ability again to dash back through his initial target, dealing the same damage.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "550 / 700"
+      }
+    ],
+    "R": [
+      {
+        "name": "Chaaaaaaaarge!!!",
+        "effects": [
+          {
+            "description": "Active: Kled and Skaarl charge towards the target location, automatically navigating terrain along the way, during which they're  pacified and immune to crowd control.",
+            "icon": "Chaaaaaaaarge!!!.png",
+            "leveling": []
+          },
+          {
+            "description": "While charging, the duo gain  bonus movement speed and a  shield for every 0.25 seconds of traveling, up to 950 total movement speed over 3 seconds and 10% \u2212 100% (based on time traveling) of the maximum shield amount over 2.25 seconds respectively. The shield lasts for 2 seconds upon finishing the charge. The duo trails a directional draft in their wake, lasting 9 seconds. Allied champions following the draft gain Mr. Kled's Wild Ride.",
+            "icon": "Chaaaaaaaarge!!! 2.png",
+            "leveling": [
+              {
+                "attribute": "Minimum Shield",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      30,
+                      40
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      30,
+                      30,
+                      30
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Shield",
+                "modifiers": [
+                  {
+                    "values": [
+                      200,
+                      300,
+                      400
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      300,
+                      300,
+                      300
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Mr. Kled's Wild Ride: The target gains 650 total movement speed.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Skaarl  homes in on the first enemy champion encountered,  knocking them back 100 units and dealing physical damage, increased by 0% \u2212 200% (based on time traveling).",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Minimum Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      4,
+                      5,
+                      6
+                    ],
+                    "units": [
+                      "%  of target's maximum health",
+                      "%  of target's maximum health",
+                      "%  of target's maximum health"
+                    ]
+                  },
+                  {
+                    "values": [
+                      4,
+                      4,
+                      4
+                    ],
+                    "units": [
+                      "% per 100 bonus AD",
+                      "% per 100 bonus AD",
+                      "% per 100 bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      12,
+                      15,
+                      18
+                    ],
+                    "units": [
+                      "%  of target's maximum health",
+                      "%  of target's maximum health",
+                      "%  of target's maximum health"
+                    ]
+                  },
+                  {
+                    "values": [
+                      12,
+                      12,
+                      12
+                    ],
+                    "units": [
+                      "% per 100 bonus AD",
+                      "% per 100 bonus AD",
+                      "% per 100 bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                160,
+                140,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "During the charge the duo gain:\n (950 \u2212 (current movement speed)) \u00f7 12 \u00d7 (time \u00f7 0.25) bonus movement speed\n\n The bonus movement speed is not affected by movement speed caps.\n The charge will not give any movement speed to Kled if he has more than 1440 movement speed.\n The trail will not give Kled and his allies any movement speed if they have more than 840 movement speed.\n Movement speed is granted merely by facing the direction of the draft.\n Damaging Kled into dismount will cancel Chaaaaaaaarge!!! instantly.\n Enemies gain partial vision of Kled when he charges nearby.\n Kled will re-path if his current pathing is blocked by a newly created terrain (either player created or by the  Mountainous Rift).",
+        "blurb": "Kled and Skaarl charge to a location, leaving a speed-granting trail behind them and gaining a shield. Skaarl locks onto and rams the first enemy champion encountered.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "950",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "3500 / 3750 / 4000 / 4250 / 4500"
+      },
+      {
+        "name": "Chaaaaaaaarge!!!",
+        "effects": [
+          {
+            "description": "Active: Kled and Skaarl charge towards the target location, automatically navigating terrain along the way, during which they're  pacified and immune to crowd control.",
+            "icon": "Chaaaaaaaarge!!!.png",
+            "leveling": []
+          },
+          {
+            "description": "While charging, the duo gain  bonus movement speed and a  shield for every 0.25 seconds of traveling, up to 950 total movement speed over 3 seconds and 10% \u2212 100% (based on time traveling) of the maximum shield amount over 2.25 seconds respectively. The shield lasts for 2 seconds upon finishing the charge. The duo trails a directional draft in their wake, lasting 9 seconds. Allied champions following the draft gain Mr. Kled's Wild Ride.",
+            "icon": "Chaaaaaaaarge!!! 2.png",
+            "leveling": [
+              {
+                "attribute": "Minimum Shield",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      30,
+                      40
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      30,
+                      30,
+                      30
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Shield",
+                "modifiers": [
+                  {
+                    "values": [
+                      200,
+                      300,
+                      400
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      300,
+                      300,
+                      300
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Mr. Kled's Wild Ride: The target gains 650 total movement speed.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Skaarl  homes in on the first enemy champion encountered,  knocking them back 100 units and dealing physical damage, increased by 0% \u2212 200% (based on time traveling).",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Minimum Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      4,
+                      5,
+                      6
+                    ],
+                    "units": [
+                      "%  of target's maximum health",
+                      "%  of target's maximum health",
+                      "%  of target's maximum health"
+                    ]
+                  },
+                  {
+                    "values": [
+                      4,
+                      4,
+                      4
+                    ],
+                    "units": [
+                      "% per 100 bonus AD",
+                      "% per 100 bonus AD",
+                      "% per 100 bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      12,
+                      15,
+                      18
+                    ],
+                    "units": [
+                      "%  of target's maximum health",
+                      "%  of target's maximum health",
+                      "%  of target's maximum health"
+                    ]
+                  },
+                  {
+                    "values": [
+                      12,
+                      12,
+                      12
+                    ],
+                    "units": [
+                      "% per 100 bonus AD",
+                      "% per 100 bonus AD",
+                      "% per 100 bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                160,
+                140,
+                120
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "During the charge the duo gain:\n (950 \u2212 (current movement speed)) \u00f7 12 \u00d7 (time \u00f7 0.25) bonus movement speed\n\n The bonus movement speed is not affected by movement speed caps.\n The charge will not give any movement speed to Kled if he has more than 1440 movement speed.\n The trail will not give Kled and his allies any movement speed if they have more than 840 movement speed.\n Movement speed is granted merely by facing the direction of the draft.\n Damaging Kled into dismount will cancel Chaaaaaaaarge!!! instantly.\n Enemies gain partial vision of Kled when he charges nearby.\n Kled will re-path if his current pathing is blocked by a newly created terrain (either player created or by the  Mountainous Rift).",
+        "blurb": "Kled and Skaarl charge to a location, leaving a speed-granting trail behind them and gaining a shield. Skaarl locks onto and rams the first enemy champion encountered.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "950",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "3500 / 3750 / 4000 / 4250 / 4500"
+      }
+    ]
+  },
+  "releaseDate": "2016-08-10",
+  "releasePatch": "6.16",
+  "patchLastChanged": "9.21",
+  "price": {
+    "blueEssence": 6300,
+    "rp": 975
+  }
+}

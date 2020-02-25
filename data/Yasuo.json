@@ -1,0 +1,812 @@
+{
+  "id": 157,
+  "key": "Yasuo",
+  "name": "Yasuo",
+  "title": "the Unforgiven",
+  "fullName": "",
+  "resource": "FLOW",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "stats": {
+    "healthBase": 523,
+    "healthPerLevel": 87,
+    "healthPer_5SecondsBase": 6.5,
+    "healthPer_5SecondsPerLevel": 0.9,
+    "manaBase": 100,
+    "manaPerLevel": 0,
+    "manaPer_5SecondsBase": 0,
+    "manaPer_5SecondsPerLevel": 0,
+    "armorBase": 30,
+    "armorPerLevel": 3.4,
+    "magicResistanceBase": 30,
+    "magicResistancePerLevel": 1.25,
+    "attackDamageBase": 60,
+    "attackDamagePerLevel": 3.2,
+    "movespeed": 345,
+    "acquisitionRadius": 400,
+    "selectionRadius": 75,
+    "pathingRadius": 32,
+    "gameplayRadius": 65,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 0.9,
+    "attackSpeedBase": 0.697,
+    "attackSpeedPerLevel": 2.5,
+    "attackSpeedRatio": 0.6700000166893,
+    "attackCastTime": 0.3,
+    "attackTotalTime": 1.6,
+    "attackDelayOffset": -0.0799999982118606,
+    "attackRangeBase": 175,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 1.0,
+    "aramDamageDealt": 1.0,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 1.0,
+    "urfDamageDealt": 1.0,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "ASSASSIN",
+    "FIGHTER",
+    "SKIRMISHER"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 1,
+    "control": 2,
+    "mobility": 3,
+    "utility": 2,
+    "abilityReliance": 20,
+    "attack": 8,
+    "defense": 4,
+    "magic": 4,
+    "difficulty": 3
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Way of the Wanderer",
+        "effects": [
+          {
+            "description": "Intent: Yasuo doubles his  total critical strike chance from all other sources, but his  critical strikes deal only (80% +  22.5%) AD  bonus physical damage.",
+            "icon": "Way of the Wanderer.png",
+            "leveling": []
+          },
+          {
+            "description": "Resolve: Yasuo generates  Flow for every 59 / 52.5 / 46 (based on level) units he travels by any means. At [ 100 stacks ][ 5900 / 5250 / 4600 (based on level) units traveled ] and upon taking champion or monster damage, Yasuo consumes  all Flow to  shield himself for 100 \u2212 510 (based on level) for up to 1 second.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": "Shield",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": null,
+        "blurb": "Yasuo's Critical Strike Chance is doubled. Additionally, Yasuo builds toward a shield whenever he is moving. The shield triggers when he takes damage from a champion or monster.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Steel Tempest",
+        "effects": [
+          {
+            "description": "First Cast - Steel Tempest: Yasuo thrusts his sword in the target direction, dealing physical damage to enemies hit and applying on-hit and on-attack effects to the first enemy hit. The ability can  critically strike for (60% +  20%) AD bonus physical damage.",
+            "icon": "Steel Tempest.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      45,
+                      70,
+                      95,
+                      120
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If Steel Tempest hits an enemy, he gains a Gathering Storm stack for 6 seconds to which he's able to cast Steel Wind Rising.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Second Cast - Steel Wind Rising: Yasuo casts Steel Tempest. If it hits an enemy, Yasuo gains another Gathering Storm stack to which he can cast Gathering Storm.",
+            "icon": "Steel Tempest 2.png",
+            "leveling": []
+          },
+          {
+            "description": "Third Cast - Gathering Storm: Yasuo consumes his stacks to unleash a whirlwind that travels in the target direction, dealing the same damage and  knocking up all enemies hit.",
+            "icon": "Steel Tempest 3.png",
+            "leveling": []
+          },
+          {
+            "description": "Casting Steel Tempest, Steel Wind Rising or Gathering Storm during  Sweeping Blade will instead affect enemies around Yasuo at the end of the dash, or doing so immediately at his landing location after  blinking while ending the dash prematurely. Gathering Storm's whirlwind is not released when cast during  Sweeping Blade, but instead  knocks up all enemies hit around Yasuo for the same duration.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            "4 \u2212 1.33 (based on bonus attack speed)"
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Special",
+        "projectile": "SPECIAL",
+        "onHitEffects": "True",
+        "occurrence": null,
+        "notes": "Only Gathering Storm can be  intercepted.\n Steel Tempest counts as single-target for the first enemy hit and area of effect for the others.\n  Ravenous Hunter will only heal from the damage dealt to secondary targets.\n\n Each parry has different interactions with this ability, whether it's the first target of Steel Tempest or the secondary one. In either case Yasuo still gets a stack of Gathering Storm and his whirlwind knockup cannot be blocked:\n  Counter Strike: both first target and secondary target do not deal damage.\n  Spirit's Refuge: first target does not deal damage, secondary target does deal damage.\n  Blinding Dart: both first target and secondary target do deal damage.\n\n Steel Tempest will not apply spell effects to the first target hit, but will do so to the secondary ones.\n Steel Tempest's damage is calculated individually for every enemy hit when  critically striking.\n Unlike other abilities, the first two Steel Tempests will cancel and reset their cooldown if Yasuo is  stunned during their cast time.\n The third Steel Tempest will continue its cast through the stun.\n If Yasuo however buffers Steel Tempest after  Sweeping Blade, a stun will cause Steel Tempest to cancel and go on full cooldown.",
+        "blurb": "A skillshot basic attack. After two successful Steel Tempests, the next fires a tornado that knocks enemies Airborne.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "0.4 \u2212 0.133 (based on bonus attack speed)",
+        "effectRadius": "375",
+        "targetRange": "475 / 900"
+      },
+      {
+        "name": "Steel Tempest",
+        "effects": [
+          {
+            "description": "First Cast - Steel Tempest: Yasuo thrusts his sword in the target direction, dealing physical damage to enemies hit and applying on-hit and on-attack effects to the first enemy hit. The ability can  critically strike for (60% +  20%) AD bonus physical damage.",
+            "icon": "Steel Tempest.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      45,
+                      70,
+                      95,
+                      120
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If Steel Tempest hits an enemy, he gains a Gathering Storm stack for 6 seconds to which he's able to cast Steel Wind Rising.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Second Cast - Steel Wind Rising: Yasuo casts Steel Tempest. If it hits an enemy, Yasuo gains another Gathering Storm stack to which he can cast Gathering Storm.",
+            "icon": "Steel Tempest 2.png",
+            "leveling": []
+          },
+          {
+            "description": "Third Cast - Gathering Storm: Yasuo consumes his stacks to unleash a whirlwind that travels in the target direction, dealing the same damage and  knocking up all enemies hit.",
+            "icon": "Steel Tempest 3.png",
+            "leveling": []
+          },
+          {
+            "description": "Casting Steel Tempest, Steel Wind Rising or Gathering Storm during  Sweeping Blade will instead affect enemies around Yasuo at the end of the dash, or doing so immediately at his landing location after  blinking while ending the dash prematurely. Gathering Storm's whirlwind is not released when cast during  Sweeping Blade, but instead  knocks up all enemies hit around Yasuo for the same duration.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            "4 \u2212 1.33 (based on bonus attack speed)"
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Special",
+        "projectile": "SPECIAL",
+        "onHitEffects": "True",
+        "occurrence": null,
+        "notes": "Only Gathering Storm can be  intercepted.\n Steel Tempest counts as single-target for the first enemy hit and area of effect for the others.\n  Ravenous Hunter will only heal from the damage dealt to secondary targets.\n\n Each parry has different interactions with this ability, whether it's the first target of Steel Tempest or the secondary one. In either case Yasuo still gets a stack of Gathering Storm and his whirlwind knockup cannot be blocked:\n  Counter Strike: both first target and secondary target do not deal damage.\n  Spirit's Refuge: first target does not deal damage, secondary target does deal damage.\n  Blinding Dart: both first target and secondary target do deal damage.\n\n Steel Tempest will not apply spell effects to the first target hit, but will do so to the secondary ones.\n Steel Tempest's damage is calculated individually for every enemy hit when  critically striking.\n Unlike other abilities, the first two Steel Tempests will cancel and reset their cooldown if Yasuo is  stunned during their cast time.\n The third Steel Tempest will continue its cast through the stun.\n If Yasuo however buffers Steel Tempest after  Sweeping Blade, a stun will cause Steel Tempest to cancel and go on full cooldown.",
+        "blurb": "A skillshot basic attack. After two successful Steel Tempests, the next fires a tornado that knocks enemies Airborne.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "0.4 \u2212 0.133 (based on bonus attack speed)",
+        "effectRadius": "375",
+        "targetRange": "475 / 900"
+      },
+      {
+        "name": "Steel Tempest",
+        "effects": [
+          {
+            "description": "First Cast - Steel Tempest: Yasuo thrusts his sword in the target direction, dealing physical damage to enemies hit and applying on-hit and on-attack effects to the first enemy hit. The ability can  critically strike for (60% +  20%) AD bonus physical damage.",
+            "icon": "Steel Tempest.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      45,
+                      70,
+                      95,
+                      120
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If Steel Tempest hits an enemy, he gains a Gathering Storm stack for 6 seconds to which he's able to cast Steel Wind Rising.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Second Cast - Steel Wind Rising: Yasuo casts Steel Tempest. If it hits an enemy, Yasuo gains another Gathering Storm stack to which he can cast Gathering Storm.",
+            "icon": "Steel Tempest 2.png",
+            "leveling": []
+          },
+          {
+            "description": "Third Cast - Gathering Storm: Yasuo consumes his stacks to unleash a whirlwind that travels in the target direction, dealing the same damage and  knocking up all enemies hit.",
+            "icon": "Steel Tempest 3.png",
+            "leveling": []
+          },
+          {
+            "description": "Casting Steel Tempest, Steel Wind Rising or Gathering Storm during  Sweeping Blade will instead affect enemies around Yasuo at the end of the dash, or doing so immediately at his landing location after  blinking while ending the dash prematurely. Gathering Storm's whirlwind is not released when cast during  Sweeping Blade, but instead  knocks up all enemies hit around Yasuo for the same duration.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            "4 \u2212 1.33 (based on bonus attack speed)"
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Special",
+        "projectile": "SPECIAL",
+        "onHitEffects": "True",
+        "occurrence": null,
+        "notes": "Only Gathering Storm can be  intercepted.\n Steel Tempest counts as single-target for the first enemy hit and area of effect for the others.\n  Ravenous Hunter will only heal from the damage dealt to secondary targets.\n\n Each parry has different interactions with this ability, whether it's the first target of Steel Tempest or the secondary one. In either case Yasuo still gets a stack of Gathering Storm and his whirlwind knockup cannot be blocked:\n  Counter Strike: both first target and secondary target do not deal damage.\n  Spirit's Refuge: first target does not deal damage, secondary target does deal damage.\n  Blinding Dart: both first target and secondary target do deal damage.\n\n Steel Tempest will not apply spell effects to the first target hit, but will do so to the secondary ones.\n Steel Tempest's damage is calculated individually for every enemy hit when  critically striking.\n Unlike other abilities, the first two Steel Tempests will cancel and reset their cooldown if Yasuo is  stunned during their cast time.\n The third Steel Tempest will continue its cast through the stun.\n If Yasuo however buffers Steel Tempest after  Sweeping Blade, a stun will cause Steel Tempest to cancel and go on full cooldown.",
+        "blurb": "A skillshot basic attack. After two successful Steel Tempests, the next fires a tornado that knocks enemies Airborne.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "0.4 \u2212 0.133 (based on bonus attack speed)",
+        "effectRadius": "375",
+        "targetRange": "475 / 900"
+      }
+    ],
+    "W": [
+      {
+        "name": "Wind Wall",
+        "effects": [
+          {
+            "description": "Active: Yasuo creates a gust of wind that travels in the target direction over 0.25 seconds to form a wall in front of him. The wall slowly drifts forward 50 units over 3.75 seconds, blocking all hostile non- turret  projectiles.",
+            "icon": "Wind Wall.png",
+            "leveling": [
+              {
+                "attribute": "Wall Width",
+                "modifiers": [
+                  {
+                    "values": [
+                      300,
+                      350,
+                      400,
+                      450,
+                      500
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                26,
+                24,
+                22,
+                20,
+                18
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "None",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": "SPECIAL",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Wind Wall starts blocking projectiles on-cast (despite not being fully formed) and grants  sight over a small area.\n Wind Wall is  knocked down if it collides with another.",
+        "blurb": "Creates a moving wall that blocks enemy projectiles.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "400"
+      }
+    ],
+    "E": [
+      {
+        "name": "Sweeping Blade",
+        "effects": [
+          {
+            "description": "Active: Yasuo  dashes a fixed distance toward a target enemy, dealing  magic damage.",
+            "icon": "Sweeping Blade.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      70,
+                      80,
+                      90,
+                      100
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      20,
+                      20,
+                      20,
+                      20,
+                      20
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      90,
+                      105,
+                      120,
+                      135,
+                      150
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      20,
+                      20,
+                      20,
+                      20,
+                      20
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Each Sweeping Blade cast increases the next dash's base damage by 25% for 5 seconds, up to 50%.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Bonus Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      15,
+                      17.5,
+                      20,
+                      22.5,
+                      25
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Bonus Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      35,
+                      40,
+                      45,
+                      50
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Yasuo cannot dash to the same target more than once every few seconds.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Yasuo will be  knocked down by any  immobilizing crowd control during Sweeping Blade.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                0.5,
+                0.4,
+                0.3,
+                0.2,
+                0.1
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "Single target",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Sweeping Blade's dash speed is affected by  slows.\n Sweeping Blade will generate 7.5  Flow stacks per cast.\n Yasuo can use Sweeping Blade's fixed dash distance to cross walls both before and after hitting his target (provided his proximity to the wall and/or target allows it).",
+        "blurb": "Dashes through a unit, dealing escalating Magic Damage with each cast.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": "10 / 9 / 8 / 7 / 6",
+        "innerRadius": null,
+        "speed": "750 (+ 60% movement speed)",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "475"
+      }
+    ],
+    "R": [
+      {
+        "name": "Last Breath",
+        "effects": [
+          {
+            "description": "Active: Yasuo  blinks to the other side of a  visible  airborne enemy champion nearest to the cursor, instantly generating maximum  Flow while resetting  Steel Tempest's stacks.",
+            "icon": "Last Breath.png",
+            "leveling": []
+          },
+          {
+            "description": "Upon arrival, he  suspends all nearby  airborne enemies around the target for 1 second, dealing  physical damage thereafter.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      200,
+                      300,
+                      400
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      150,
+                      150,
+                      150
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "For the next 15 seconds, Yasuo's  critical strikes gain  50% armor penetration versus  bonus armor.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "If Yasuo would be placed inside a turret's attack range upon blinking, he will instead attempt to position himself outside it (does not apply to Nexus Obelisk).",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                80,
+                55,
+                30
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Auto",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Single target",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Last Breath's area of effect when suspending enemies increases per rank.\n Last Breath's damage and bonus armor penetration do not interact with each other.\n Suspended enemies are immune to further displacements during Last Breath's animation time.\n Casting right after the triggering displacement(s) will overwrite the latter's duration (whether shorter/longer) to Last Breath's animation time (durations will not stack).\n\n The targets will remain suspended and the damage will be applied even if Yasuo dies during it.\n Displacement abilities (e.g.  Weaver's Wall,  Pillar of Ice,  Volcanic Rupture) that affect enemy champions are considered  Airborne, and will therefore interact with Last Breath.\n Self-applied displacements cannot be targeted by Last Breath:\n Enemies displaced by neutral monsters (e.g.  Dragon's initial knock-back) can be targeted.\n\n While blinking, Yasuo creates an  untargetable clone of himself that instead dashes to the target location. This clone is considered a champion for  Turret Plating's  gold sharing.",
+        "blurb": "Moves to a unit and strikes them repeatedly for heavy damage. Can only be cast on Airborne targets.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "1400"
+      }
+    ]
+  },
+  "releaseDate": "2013-12-13",
+  "releasePatch": "3.15",
+  "patchLastChanged": "10.1",
+  "price": {
+    "blueEssence": 6300,
+    "rp": 975
+  }
+}

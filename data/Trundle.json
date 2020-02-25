@@ -1,0 +1,657 @@
+{
+  "id": 48,
+  "key": "Trundle",
+  "name": "Trundle",
+  "title": "the Troll King",
+  "fullName": "",
+  "resource": "MANA",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "stats": {
+    "healthBase": 616.28,
+    "healthPerLevel": 96,
+    "healthPer_5SecondsBase": 6,
+    "healthPer_5SecondsPerLevel": 0.75,
+    "manaBase": 281.6,
+    "manaPerLevel": 45,
+    "manaPer_5SecondsBase": 7.508,
+    "manaPer_5SecondsPerLevel": 0.6,
+    "armorBase": 37,
+    "armorPerLevel": 2.7,
+    "magicResistanceBase": 32.1,
+    "magicResistancePerLevel": 1.25,
+    "attackDamageBase": 68,
+    "attackDamagePerLevel": 3,
+    "movespeed": 350,
+    "acquisitionRadius": 400,
+    "selectionRadius": 135,
+    "pathingRadius": 25.7665996551513,
+    "gameplayRadius": 65,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 1.0,
+    "attackSpeedBase": 0.67,
+    "attackSpeedPerLevel": 2.9,
+    "attackSpeedRatio": 0.6700000166893,
+    "attackCastTime": 0.3,
+    "attackTotalTime": 1.6,
+    "attackDelayOffset": -0.0916666686534881,
+    "attackRangeBase": 175,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 1.0,
+    "aramDamageDealt": 1.0,
+    "aramHealing": 0.9,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 1.0,
+    "urfDamageDealt": 1.0,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "TANK",
+    "JUGGERNAUT",
+    "FIGHTER"
+  ],
+  "attributeRatings": {
+    "damage": 2,
+    "toughness": 3,
+    "control": 1,
+    "mobility": 1,
+    "utility": 2,
+    "abilityReliance": 20,
+    "attack": 7,
+    "defense": 6,
+    "magic": 2,
+    "difficulty": 1
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "King's Tribute",
+        "effects": [
+          {
+            "description": "Innate: Whenever an enemy dies near Trundle, he  heals for  2 / 3 / 4 / 5 / 6% (based on level) of their maximum health.",
+            "icon": "King's Tribute.png",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": "Heal",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Neutral monster deaths will trigger King's Tribute, even if their killer was an enemy.\n King's Tribute does not trigger when an enemy structure is destroyed.",
+        "blurb": "When an enemy unit dies near Trundle, he  heals for a percent of its maximum Health.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "1400",
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Chomp",
+        "effects": [
+          {
+            "description": "Active: Trundle's next basic attack deals  bonus physical damage and  slows his target by 75% for 0.1 seconds.",
+            "icon": "Chomp.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      40,
+                      60,
+                      80,
+                      100
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      10,
+                      20,
+                      30,
+                      40,
+                      50
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "After biting his target, Trundle gains bonus attack damage for 5 seconds and reduces his target's attack damage by half that amount for the same duration.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Bonus AD",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      25,
+                      30,
+                      35,
+                      40
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "AD Reduction",
+                "modifiers": [
+                  {
+                    "values": [
+                      10,
+                      12.5,
+                      15,
+                      17.5,
+                      20
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Chomp resets Trundle's autoattack timer.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                4,
+                4,
+                4,
+                4,
+                4
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Self",
+        "affects": "Self, Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Proc",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The triggering attack will apply other  on-hit effects and can  critically strike as normal.\n As with most on-hit physical damage, the bonus damage from Chomp will apply  life steal.\n  Critical strikes will not interact with the bonus damage from Chomp.\n The bonus damage will affect  turrets.\n Chomp will still incur the attack damage increase for Trundle if the attack is  dodged,  blocked or  missed.",
+        "blurb": "Trundle bites his opponent, dealing damage, briefly slowing and sapping some of their Attack Damage.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "W": [
+      {
+        "name": "Frozen Domain",
+        "effects": [
+          {
+            "description": "Active: Trundle coats the target area in ice for 8 seconds. While inside, he gains  bonus attack speed,  bonus movement speed, and 25% increased health restoration from all sources.",
+            "icon": "Frozen Domain.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Attack Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      47.5,
+                      65,
+                      82.5,
+                      100
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Bonus Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      35,
+                      40,
+                      45,
+                      50
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                15,
+                15,
+                15,
+                15,
+                15
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Frozen Domain has no cast time and does not interrupt Trundle's previous orders.",
+        "blurb": "Trundle turns target location into his domain, gaining Attack Speed, Movement Speed, and increased healing from all sources while on it.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "1000",
+        "targetRange": "900"
+      }
+    ],
+    "E": [
+      {
+        "name": "Pillar of Ice",
+        "effects": [
+          {
+            "description": "Active: Trundle projects a pillar of ice at the target location for 6 seconds,  knocking back everyone directly over it 225 units on cast, acting as impassable terrain for the duration and  slowing enemies around it.",
+            "icon": "Pillar of Ice.png",
+            "leveling": [
+              {
+                "attribute": "Slow",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      30,
+                      40,
+                      50,
+                      60
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                75,
+                75,
+                75,
+                75,
+                75
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                24,
+                22,
+                20,
+                18,
+                16
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Enemies",
+        "spellshieldable": "False",
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Pillar of Ice can knock back allied units.\n Allied  channels (e.g.  Recall,  Teleport) will be  interrupted.\n PENDING FOR TEST: Allies can be targeted by  Last Breath.\n\n Pillar of Ice cannot be placed inside impassable terrain. Attempting to do so will cause the pillar to spawn in the nearest available spot of accessible terrain, similar to  wards and traps such as  Caitlyn's  Yordle Snap Trap.\n Pillar Of Ice triggers in-combat effects such as drawing turret aggro, applying  Elixir of Sorcery and  Sudden Impact.",
+        "blurb": "Trundle creates an ice pillar at target location, becoming impassable terrain and slowing all nearby enemy units.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "187.5",
+        "targetRange": "1000"
+      }
+    ],
+    "R": [
+      {
+        "name": "Subjugate",
+        "effects": [
+          {
+            "description": "Active: After 0.5 seconds, Trundle starts draining the life force out of the target enemy champion,  healing for a percentage of the target's maximum health, dealing the same amount as  magic damage and stealing  40% of their armor and  magic resistance. Half of the total damage and stealing is applied instantly, and the other half is applied over the next 4 seconds.",
+            "icon": "Subjugate.png",
+            "leveling": [
+              {
+                "attribute": "Total Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      27.5,
+                      35
+                    ],
+                    "units": [
+                      "%  of the target's maximum health",
+                      "%  of the target's maximum health",
+                      "%  of the target's maximum health"
+                    ]
+                  },
+                  {
+                    "values": [
+                      2,
+                      2,
+                      2
+                    ],
+                    "units": [
+                      "% per 100 AP",
+                      "% per 100 AP",
+                      "% per 100 AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Initial Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      10,
+                      13.75,
+                      17.5
+                    ],
+                    "units": [
+                      "%  of the target's maximum health",
+                      "%  of the target's maximum health",
+                      "%  of the target's maximum health"
+                    ]
+                  },
+                  {
+                    "values": [
+                      1,
+                      1,
+                      1
+                    ],
+                    "units": [
+                      "% per 100 AP",
+                      "% per 100 AP",
+                      "% per 100 AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Magic Damage Per Second",
+                "modifiers": [
+                  {
+                    "values": [
+                      2.5,
+                      3.4375,
+                      4.375
+                    ],
+                    "units": [
+                      "%  of the target's maximum health",
+                      "%  of the target's maximum health",
+                      "%  of the target's maximum health"
+                    ]
+                  },
+                  {
+                    "values": [
+                      0.25,
+                      0.25,
+                      0.25
+                    ],
+                    "units": [
+                      "% per 100 AP",
+                      "% per 100 AP",
+                      "% per 100 AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "The armor and magic resist will remain stolen for 4 seconds after the drain has ended.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                80,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "special",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Applies  spell damage on initial cast and deals  persistent damage afterwards.\n The total value of armor, magic resist and damage that will be dealt is determined at the point of cast. Temporary boosts/reductions in resistances or health (e.g,  Wild Growth,  Aftershock,  Black Cleaver) will affect those values if they are active before cast, but will not affect those values if they come into effect afterwards.",
+        "blurb": "Trundle immediately steals a percent of his target's Health, Armor and Magic Resistance. Over the next 4 seconds the amount of Health, Armor, and Magic Resistance stolen is doubled.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "650"
+      }
+    ]
+  },
+  "releaseDate": "2010-12-01",
+  "releasePatch": "1.0.0.106",
+  "patchLastChanged": "10.4",
+  "price": {
+    "blueEssence": 3150,
+    "rp": 790
+  }
+}

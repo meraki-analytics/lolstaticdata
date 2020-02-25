@@ -1,0 +1,918 @@
+{
+  "id": 60,
+  "key": "Elise",
+  "name": "Elise",
+  "title": "the Spider Queen",
+  "fullName": "Elise Kythera Zaavan",
+  "resource": "MANA",
+  "attackType": "RANGED",
+  "adaptiveType": "MAGIC_DAMAGE",
+  "stats": {
+    "healthBase": 534,
+    "healthPerLevel": 93,
+    "healthPer_5SecondsBase": 5.5,
+    "healthPer_5SecondsPerLevel": 0.6,
+    "manaBase": 324,
+    "manaPerLevel": 50,
+    "manaPer_5SecondsBase": 6,
+    "manaPer_5SecondsPerLevel": 0.8,
+    "armorBase": 27,
+    "armorPerLevel": 3.35,
+    "magicResistanceBase": 30,
+    "magicResistancePerLevel": 0.5,
+    "attackDamageBase": 55,
+    "attackDamagePerLevel": 3,
+    "movespeed": 330,
+    "acquisitionRadius": 550,
+    "selectionRadius": 120,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrikeBase": 200,
+    "criticalStrikeModifier": 1.0,
+    "attackSpeedBase": 0.625,
+    "attackSpeedPerLevel": 1.75,
+    "attackSpeedRatio": 0.625,
+    "attackCastTime": 0.3,
+    "attackTotalTime": 1.6,
+    "attackDelayOffset": -0.112499997019767,
+    "attackRangeBase": 550,
+    "attackRangePerLevel": 0,
+    "aramDamageTaken": 0.9,
+    "aramDamageDealt": 1.05,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 0.9,
+    "urfDamageDealt": 1.1,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "FIGHTER",
+    "MAGE",
+    "DIVER"
+  ],
+  "attributeRatings": {
+    "damage": 2,
+    "toughness": 2,
+    "control": 2,
+    "mobility": 2,
+    "utility": 1,
+    "abilityReliance": 65,
+    "attack": 6,
+    "defense": 5,
+    "magic": 7,
+    "difficulty": 2
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Spider Queen",
+        "effects": [
+          {
+            "description": "Innate - Human Form: When Elise's abilities hits a target she gains one dormant Spiderling, up to 2 / 3 / 4 / 5 (based on  Human Form's Rank).",
+            "icon": "Spider Queen.png",
+            "leveling": []
+          },
+          {
+            "description": "Innate - Spider Form: Elise's basic attacks against non- structures deal 10 / 20 / 30 / 40 (based on  Spider Form's Rank) (+ 30% AP)  bonus magic damage and  heal her for  4 / 6 / 8 / 10 (based on  Spider Form's Rank) (+ 10% AP) health on-hit.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": null,
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "Special",
+        "projectile": null,
+        "onHitEffects": "Special",
+        "occurrence": "On-hit",
+        "notes": "Elise will always begin the game and respawn with maximum available Spiderlings stored.\n Elise's  Human Form ability casts can only store one Spiderling each.\n Spider Form's basic attacks will apply other on-hit effects and can  critically strike as normal (the bonus damage does not).\n PENDING FOR TEST: Spider Form's relationship with  dodge,  block, and  blind.\n\n Elise in spider form deals  proc damage on her basic attacks.\n The Spiderlings apply  pet damage.",
+        "blurb": "Human Form: When Elise's abilities hit an enemy, she gains a dormant Spiderling. Spider Form: Basic attacks deal bonus magic damage and restore health to Elise.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Neurotoxin",
+        "effects": [
+          {
+            "description": "Active: Elise fires toxin at the target enemy unit, dealing magic damage, capped against  monsters.",
+            "icon": "Neurotoxin.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      75,
+                      110,
+                      145,
+                      180
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      4,
+                      4,
+                      4,
+                      4,
+                      4
+                    ],
+                    "units": [
+                      "% (+ 3% per 100 AP) of target's current health",
+                      "% (+ 3% per 100 AP) of target's current health",
+                      "% (+ 3% per 100 AP) of target's current health",
+                      "% (+ 3% per 100 AP) of target's current health",
+                      "% (+ 3% per 100 AP) of target's current health"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Max. Monster Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      115,
+                      175,
+                      235,
+                      295,
+                      355
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                80,
+                85,
+                90,
+                95,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                6,
+                6,
+                6,
+                6,
+                6
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "single",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": "Human Form: Deals damage based upon how high the target's Health is.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "625"
+      },
+      {
+        "name": "Venomous Bite",
+        "effects": [
+          {
+            "description": "Active: Elise  lunges at the target enemy with her fangs and bites them, dealing magic damage, capped against  monsters.",
+            "icon": "Venomous Bite.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      70,
+                      110,
+                      150,
+                      190,
+                      230
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      8,
+                      8,
+                      8,
+                      8,
+                      8
+                    ],
+                    "units": [
+                      "% (+ 3% per 100 AP) of target's missing health",
+                      "% (+ 3% per 100 AP) of target's missing health",
+                      "% (+ 3% per 100 AP) of target's missing health",
+                      "% (+ 3% per 100 AP) of target's missing health",
+                      "% (+ 3% per 100 AP) of target's missing health"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Max. Monster Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      145,
+                      210,
+                      275,
+                      340,
+                      405
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If there are active  Spiderlings or a  Volatile Spiderling nearby, they will  dash alongside Elise towards Venomous Bite's target and reprioritize them.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                6,
+                6,
+                6,
+                6,
+                6
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Venomous Bite cannot be used to cross walls or impassable terrain.\n The target will be damaged regardless.\n  Spiderlings can cross walls and terrain to reach Venomous Bite's target and will attack provided Elise stays within their leash range.",
+        "blurb": "Spider Form: Lunges at an enemy and deals damage based upon how low their Health is.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "475"
+      }
+    ],
+    "W": [
+      {
+        "name": "Volatile Spiderling",
+        "effects": [
+          {
+            "description": "Active: Elise summons an  untargetable venom-gorged spider for 3 seconds, which moves in the target direction.",
+            "icon": "Volatile Spiderling.png",
+            "leveling": []
+          },
+          {
+            "description": "The spider explodes upon contact with an enemy unit or at the end of its lifespan, dealing magic damage to nearby enemies.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      105,
+                      150,
+                      195,
+                      240
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      95,
+                      95,
+                      95,
+                      95,
+                      95
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If the spider does not hit an enemy before reaching the target location, it chases down a nearby enemy, prioritizing  champions. The spider gains  bonus movement speed, based on its proximity to its target.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                60,
+                70,
+                80,
+                90,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                12,
+                12,
+                12,
+                12,
+                12
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction / Auto",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "If Volatile Spiderling dashes to a target due to  Venomous Bite, it will not expire before finishing its jump.",
+        "blurb": "Human Form: Releases a venom-gorged Spiderling that explodes when it nears a target.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "950"
+      },
+      {
+        "name": "Skittering Frenzy",
+        "effects": [
+          {
+            "description": "Passive: Elise's  Spiderlings gain  bonus attack speed.",
+            "icon": "Skittering Frenzy.png",
+            "leveling": [
+              {
+                "attribute": "Passive Attack Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      5,
+                      10,
+                      15,
+                      20,
+                      25
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Active: Elise and her  Spiderlings gain  bonus attack speed for 3 seconds.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Active Attack Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      80,
+                      100,
+                      120,
+                      140
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Skittering Frenzy resets Elise's autoattack timer.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Buff / Self",
+        "affects": "Spiderlings, Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Skittering Frenzy has no cast time and does not interrupt Elise's previous orders.\n Elise loses the attack speed bonus immediately when turning back to  Human Form.\n But if she is able to transform back in less than 3 seconds (only via sufficient cooldown reduction) she gets the bonus back for its remaining duration.",
+        "blurb": "Spider Form: Elise and her Spiderlings gain Attack Speed.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "E": [
+      {
+        "name": "Cocoon",
+        "effects": [
+          {
+            "description": "Active: Elise fires a web in the target direction, granting  sight of the first enemy hit for 1 second and  stunning them.",
+            "icon": "Cocoon.png",
+            "leveling": [
+              {
+                "attribute": "Stun Duration",
+                "modifiers": [
+                  {
+                    "values": [
+                      1.6,
+                      1.7,
+                      1.8,
+                      1.9,
+                      2
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                12,
+                11.5,
+                11,
+                10.5,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": "Human Form: Stuns the first enemy unit hit and reveals them if they are not stealthed.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": "27.5",
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1600",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "1075"
+      },
+      {
+        "name": "Rappel",
+        "effects": [
+          {
+            "description": "Active: Elise lifts up into the air, becoming  untargetable for up to 2 seconds and  revealing the area for the duration. While she is in the air she can select a target to instantly descend upon their location.",
+            "icon": "Rappel.png",
+            "leveling": []
+          },
+          {
+            "description": "If cast directly on an enemy, Elise automatically descends upon them after 1 second. Upon landing, Elise's  Spider Queen bonuses are increased for 5 seconds.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Spider Effects Increase",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      50,
+                      70,
+                      85,
+                      100
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                22,
+                21,
+                20,
+                19,
+                18
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Self / Unit",
+        "affects": "Self, Enemies",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "When Elise casts Rappel, a circle outlines the area in which a target or location can be selected.\nElise only gains an increase in her passive bonuses if she directly targets an enemy with Rappel.\n She cannot descend outside the bounds of this circle.\n\n Rappel can be cast on any targetable enemy unit ( minions,  monsters,  champions,  pets,  wards, and  revealed traps).\n Elise will attempt to position behind her target if she descends closer than Rappel's max range.",
+        "blurb": "Spider Form: Elise and her Spiderlings ascend into the air and then descend upon target enemy.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "750",
+        "targetRange": null
+      }
+    ],
+    "R": [
+      {
+        "name": "Spider Form / Human Form",
+        "effects": [
+          {
+            "description": "Passive:  Spider Queen's bonuses are increased.",
+            "icon": "Spider Form.png",
+            "leveling": []
+          },
+          {
+            "description": "Human Form - Active: Elise transforms into a menacing spider, gaining  25 bonus movement speed,  melee basic attacks with 125  range, and access to her arachnid abilities. Additionally, Elise unleashes all stored Spiderlings.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Spider Form - Active: Elise transforms into her human form, gaining  ranged basic attacks, and access to her human abilities. Additionally, Elise stores all unleashed Spiderlings.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Elise begins with one rank in Spider Form / Human Form and can increase it at levels 6, 11, and 16.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                4,
+                4,
+                4
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Self",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Both Spider Form and Human Form have no cast time and do not interrupt Elise's previous orders.\n Spider Form and Human Form have separate cooldowns.\n\n Neither transformation counts as an activation for the purposes of items such as  Tear of the Goddess, Spellblade, and  Force Pulse.",
+        "blurb": "Transforms into a menacing spider, reducing her attack range in exchange for movement speed, new abilities, and a Spiderling swarm that will attack her foes.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "Spider Form / Human Form",
+        "effects": [
+          {
+            "description": "Passive:  Spider Queen's bonuses are increased.",
+            "icon": "Spider Form.png",
+            "leveling": []
+          },
+          {
+            "description": "Human Form - Active: Elise transforms into a menacing spider, gaining  25 bonus movement speed,  melee basic attacks with 125  range, and access to her arachnid abilities. Additionally, Elise unleashes all stored Spiderlings.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Spider Form - Active: Elise transforms into her human form, gaining  ranged basic attacks, and access to her human abilities. Additionally, Elise stores all unleashed Spiderlings.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Elise begins with one rank in Spider Form / Human Form and can increase it at levels 6, 11, and 16.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                4,
+                4,
+                4
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Self",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Both Spider Form and Human Form have no cast time and do not interrupt Elise's previous orders.\n Spider Form and Human Form have separate cooldowns.\n\n Neither transformation counts as an activation for the purposes of items such as  Tear of the Goddess, Spellblade, and  Force Pulse.",
+        "blurb": "Transforms into a menacing spider, reducing her attack range in exchange for movement speed, new abilities, and a Spiderling swarm that will attack her foes.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ]
+  },
+  "releaseDate": "2012-10-26",
+  "releasePatch": "1.0.0.150",
+  "patchLastChanged": "9.6",
+  "price": {
+    "blueEssence": 4800,
+    "rp": 880
+  }
+}
