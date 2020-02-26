@@ -64,7 +64,7 @@
     "difficulty": 1
   },
   "abilities": {
-    "I": [
+    "P": [
       {
         "name": "Fury of the Dragonborn",
         "effects": [
@@ -180,16 +180,16 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Buff",
+        "targeting": "none",
         "affects": "Enemies",
         "spellshieldable": "True",
         "resource": null,
         "damageType": "PHYSICAL_DAMAGE",
-        "spellEffects": "special",
+        "spellEffects": "default",
         "projectile": null,
         "onHitEffects": null,
         "occurrence": "On-hit",
-        "notes": "Enhanced attack applies  proc damage twice.\n In Dragon Form, the attack deals  area damage.\n\n  Dragon Form's Twin Bite cannot apply  Tiamat's Cleave on each target hit because of Cleave's internal 0.05 seconds interval during which it cannot be applied on a different target.",
+        "notes": "Dragon Form's Twin Bite cannot apply  Tiamat's Cleave on each target hit because of Cleave's internal 0.05 seconds interval during which it cannot be applied on a different target.",
         "blurb": "Shyvana strikes twice on her next attack. Basic attacks reduce the cooldown of Twin Bite by 0.5 seconds. Dragon Form: Twin Bite cleaves all units in front Shyvana.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -371,16 +371,16 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Auto / Buff",
+        "targeting": "none",
         "affects": "Enemies",
         "spellshieldable": "False",
         "resource": null,
         "damageType": "MAGIC_DAMAGE",
-        "spellEffects": "special",
+        "spellEffects": "aoedot",
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The surrounding flame applies  persistent area damage and the magic damage via basic attack deals  spell damage.\n Burnout has no cast time and does not interrupt Shyvana's previous orders.\n PENDING FOR TEST: Magic damage on-hit's interactions with  dodging,  blocking, and  blinding effects.",
+        "notes": "Burnout has no cast time and does not interrupt Shyvana's previous orders.\n PENDING FOR TEST: Magic damage on-hit's interactions with  dodging,  blocking, and  blinding effects.",
         "blurb": "Shyvana surrounds herself in fire, dealing magic damage per second to nearby enemies and moving faster for 3 seconds, part of this damage is applied again when Shyvana basic attacks an enemy with Burnout active. The Movement Speed reduces over the duration of the spell. Basic attacks extend the duration of Burnout. Dragon Form: Burnout grows in size.",
         "missileSpeed": null,
         "rechargeRate": null,

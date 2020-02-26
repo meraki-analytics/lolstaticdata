@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "SUPPORT",
     "ENCHANTER",
-    "MAGE",
-    "SUPPORT"
+    "MAGE"
   ],
   "attributeRatings": {
     "damage": 1,
@@ -64,7 +64,7 @@
     "difficulty": 1
   },
   "abilities": {
-    "I": [
+    "P": [
       {
         "name": "Bop 'n' Block",
         "effects": [
@@ -459,9 +459,9 @@
                 0
               ],
               "units": [
-                " (based on level)",
-                " (based on level)",
-                " (based on level)"
+                "(based on level)",
+                "(based on level)",
+                "(based on level)"
               ]
             }
           ],

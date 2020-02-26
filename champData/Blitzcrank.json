@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "FIGHTER",
     "CATCHER",
-    "TANK"
+    "TANK",
+    "FIGHTER"
   ],
   "attributeRatings": {
     "damage": 1,
@@ -64,7 +64,7 @@
     "difficulty": 1
   },
   "abilities": {
-    "I": [
+    "P": [
       {
         "name": "Mana Barrier",
         "effects": [
@@ -411,7 +411,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Buff",
+        "targeting": "None",
         "affects": "Enemy, Structure",
         "spellshieldable": "True",
         "resource": "MANA",
@@ -420,7 +420,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Critical strikes will not interact with Power Fist's bonus damage.\n Power Fist is not interrupted by most effects that would normally prevent basic attacks from hitting their target.\n The  knockup is applied even if the attack is  dodged or if it  misses. The attack is negated by  blocking effects.\n The attack will complete even if the target becomes  untargetable during the windup.",
+        "notes": "Power Fist is not interrupted by most effects that would normally prevent basic attacks from hitting their target.\n The  knockup is applied even if the attack is  dodged,  blocked or if it  misses.\n The attack will complete even if the target becomes  untargetable during the windup.",
         "blurb": "Blitzcrank charges up his fist to make his next attack deal double damage and pop his target up in the air.",
         "missileSpeed": null,
         "rechargeRate": null,

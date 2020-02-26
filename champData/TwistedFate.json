@@ -47,8 +47,8 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "MAGE",
-    "BURST"
+    "BURST",
+    "MAGE"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -63,7 +63,7 @@
     "difficulty": 3
   },
   "abilities": {
-    "I": [
+    "P": [
       {
         "name": "Loaded Dice",
         "effects": [
@@ -515,7 +515,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self",
+        "targeting": "none",
         "affects": "Enemies, Self",
         "spellshieldable": "True",
         "resource": "MANA",
@@ -834,7 +834,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self",
+        "targeting": "none",
         "affects": "Enemies, Self",
         "spellshieldable": "True",
         "resource": "MANA",
@@ -1153,7 +1153,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self",
+        "targeting": "none",
         "affects": "Enemies, Self",
         "spellshieldable": "True",
         "resource": "MANA",
@@ -1472,7 +1472,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self",
+        "targeting": "none",
         "affects": "Enemies, Self",
         "spellshieldable": "True",
         "resource": "MANA",

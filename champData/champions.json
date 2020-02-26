@@ -65,7 +65,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Deathbringer Stance",
           "effects": [
@@ -924,9 +924,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "ASSASSIN",
+      "BURST",
       "MAGE",
-      "BURST"
+      "ASSASSIN"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -941,7 +941,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Vastayan Grace",
           "effects": [
@@ -1729,7 +1729,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Assassin's Mark",
           "effects": [
@@ -2430,9 +2430,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "VANGUARD",
       "SUPPORT",
-      "TANK"
+      "TANK",
+      "VANGUARD"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -2447,7 +2447,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Triumphant Roar",
           "effects": [
@@ -3038,9 +3038,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "VANGUARD",
+      "TANK",
       "MAGE",
-      "TANK"
+      "VANGUARD"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -3055,7 +3055,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Cursed Touch",
           "effects": [
@@ -3659,9 +3659,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "BATTLEMAGE",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -3676,7 +3676,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Rebirth",
           "effects": [
@@ -4395,8 +4395,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "MAGE",
-      "BURST"
+      "BURST",
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -4411,7 +4411,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Pyromania",
           "effects": [
@@ -5013,7 +5013,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "The Hitman and the Seer",
           "effects": [
@@ -5501,11 +5501,11 @@
                   10
                 ],
                 "units": [
-                  " Moonlight",
-                  " Moonlight",
-                  " Moonlight",
-                  " Moonlight",
-                  " Moonlight"
+                  "Moonlight",
+                  "Moonlight",
+                  "Moonlight",
+                  "Moonlight",
+                  "Moonlight"
                 ]
               },
               {
@@ -5537,11 +5537,11 @@
                   8
                 ],
                 "units": [
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)"
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)"
                 ]
               }
             ],
@@ -5596,11 +5596,11 @@
                   10
                 ],
                 "units": [
-                  " Moonlight",
-                  " Moonlight",
-                  " Moonlight",
-                  " Moonlight",
-                  " Moonlight"
+                  "Moonlight",
+                  "Moonlight",
+                  "Moonlight",
+                  "Moonlight",
+                  "Moonlight"
                 ]
               },
               {
@@ -5632,11 +5632,11 @@
                   8
                 ],
                 "units": [
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)"
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)"
                 ]
               }
             ],
@@ -5686,11 +5686,11 @@
                   10
                 ],
                 "units": [
-                  " Moonlight",
-                  " Moonlight",
-                  " Moonlight",
-                  " Moonlight",
-                  " Moonlight"
+                  "Moonlight",
+                  "Moonlight",
+                  "Moonlight",
+                  "Moonlight",
+                  "Moonlight"
                 ]
               },
               {
@@ -5722,11 +5722,11 @@
                   10
                 ],
                 "units": [
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)"
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)"
                 ]
               }
             ],
@@ -5776,11 +5776,11 @@
                   10
                 ],
                 "units": [
-                  " Moonlight",
-                  " Moonlight",
-                  " Moonlight",
-                  " Moonlight",
-                  " Moonlight"
+                  "Moonlight",
+                  "Moonlight",
+                  "Moonlight",
+                  "Moonlight",
+                  "Moonlight"
                 ]
               },
               {
@@ -5812,11 +5812,11 @@
                   6
                 ],
                 "units": [
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)"
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)"
                 ]
               }
             ],
@@ -5871,11 +5871,11 @@
                   10
                 ],
                 "units": [
-                  " Moonlight",
-                  " Moonlight",
-                  " Moonlight",
-                  " Moonlight",
-                  " Moonlight"
+                  "Moonlight",
+                  "Moonlight",
+                  "Moonlight",
+                  "Moonlight",
+                  "Moonlight"
                 ]
               },
               {
@@ -5907,11 +5907,11 @@
                   6
                 ],
                 "units": [
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)"
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)"
                 ]
               }
             ],
@@ -6081,9 +6081,9 @@
                   100
                 ],
                 "units": [
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)"
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)"
                 ]
               }
             ],
@@ -6188,7 +6188,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Frost Shot",
           "effects": [
@@ -6947,7 +6947,7 @@
       "difficulty": 3
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Center of the Universe",
           "effects": [
@@ -6972,9 +6972,9 @@
                   2
                 ],
                 "units": [
-                  " seconds",
-                  " seconds",
-                  " seconds"
+                  "seconds",
+                  "seconds",
+                  "seconds"
                 ]
               }
             ],
@@ -8079,7 +8079,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Shurima's Legacy",
           "effects": [
@@ -8569,9 +8569,9 @@
                         8
                       ],
                       "units": [
-                        " soldiers",
-                        " soldiers",
-                        " soldiers"
+                        "soldiers",
+                        "soldiers",
+                        "soldiers"
                       ]
                     }
                   ]
@@ -8736,8 +8736,8 @@
     },
     "roles": [
       "CATCHER",
-      "MAGE",
-      "SUPPORT"
+      "SUPPORT",
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -8752,7 +8752,7 @@
       "difficulty": 3
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Traveler's Call",
           "effects": [
@@ -9342,9 +9342,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
       "CATCHER",
-      "TANK"
+      "TANK",
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -9359,7 +9359,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Mana Barrier",
           "effects": [
@@ -9706,7 +9706,7 @@
             ],
             "affectedByCdr": false
           },
-          "targeting": "Self / Buff",
+          "targeting": "None",
           "affects": "Enemy, Structure",
           "spellshieldable": "True",
           "resource": "MANA",
@@ -9715,7 +9715,7 @@
           "projectile": null,
           "onHitEffects": null,
           "occurrence": null,
-          "notes": "Critical strikes will not interact with Power Fist's bonus damage.\n Power Fist is not interrupted by most effects that would normally prevent basic attacks from hitting their target.\n The  knockup is applied even if the attack is  dodged or if it  misses. The attack is negated by  blocking effects.\n The attack will complete even if the target becomes  untargetable during the windup.",
+          "notes": "Power Fist is not interrupted by most effects that would normally prevent basic attacks from hitting their target.\n The  knockup is applied even if the attack is  dodged,  blocked or if it  misses.\n The attack will complete even if the target becomes  untargetable during the windup.",
           "blurb": "Blitzcrank charges up his fist to make his next attack deal double damage and pop his target up in the air.",
           "missileSpeed": null,
           "rechargeRate": null,
@@ -9922,8 +9922,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "MAGE",
-      "BURST"
+      "BURST",
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -9938,7 +9938,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Blaze",
           "effects": [
@@ -10603,9 +10603,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
       "WARDEN",
-      "SUPPORT"
+      "SUPPORT",
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -10620,7 +10620,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Concussive Blows",
           "effects": [
@@ -11347,7 +11347,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Headshot",
           "effects": [
@@ -11998,9 +11998,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
+      "DIVER",
       "TANK",
-      "DIVER"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -12015,7 +12015,7 @@
       "difficulty": 3
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Adaptive Defenses",
           "effects": [
@@ -12035,9 +12035,9 @@
                   10
                 ],
                 "units": [
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)"
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)"
                 ]
               }
             ],
@@ -13164,7 +13164,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Serpentine Grace",
           "effects": [
@@ -13879,8 +13879,8 @@
     },
     "roles": [
       "SPECIALIST",
-      "MAGE",
-      "TANK"
+      "TANK",
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -13895,7 +13895,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Carnivore",
           "effects": [
@@ -14460,9 +14460,9 @@
                         160
                       ],
                       "units": [
-                        " bonus health",
-                        " bonus health",
-                        " bonus health"
+                        "bonus health",
+                        "bonus health",
+                        "bonus health"
                       ]
                     }
                   ]
@@ -14618,7 +14618,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Hextech Munitions",
           "effects": [
@@ -15656,7 +15656,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Hemorrhage",
           "effects": [
@@ -16300,9 +16300,9 @@
     },
     "roles": [
       "FIGHTER",
+      "DIVER",
       "MAGE",
-      "ASSASSIN",
-      "DIVER"
+      "ASSASSIN"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -16317,7 +16317,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Moonsilver Blade",
           "effects": [
@@ -17118,7 +17118,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Adrenaline Rush",
           "effects": [
@@ -17857,7 +17857,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "League of Draven",
           "effects": [
@@ -18756,7 +18756,7 @@
       "difficulty": 3
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Z-Drive Resonance",
           "effects": [
@@ -19468,9 +19468,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
+      "DIVER",
       "MAGE",
-      "DIVER"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -19485,7 +19485,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Spider Queen",
           "effects": [
@@ -20402,7 +20402,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Demon Shade",
           "effects": [
@@ -21361,7 +21361,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Rising Spell Force",
           "effects": [
@@ -22024,8 +22024,8 @@
     },
     "roles": [
       "SPECIALIST",
-      "MAGE",
-      "SUPPORT"
+      "SUPPORT",
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -22040,7 +22040,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Dread",
           "effects": [
@@ -22847,9 +22847,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
       "ASSASSIN",
-      "SKIRMISHER"
+      "SKIRMISHER",
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -22864,7 +22864,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Duelist's Dance",
           "effects": [
@@ -23726,7 +23726,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Nimble Fighter",
           "effects": [
@@ -24120,7 +24120,7 @@
             ],
             "affectedByCdr": false
           },
-          "targeting": "Buff",
+          "targeting": "none",
           "affects": "Enemies",
           "spellshieldable": "True",
           "resource": "MANA",
@@ -24562,8 +24562,8 @@
     },
     "roles": [
       "WARDEN",
-      "MAGE",
-      "TANK"
+      "TANK",
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -24578,7 +24578,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Colossal Smash",
           "effects": [
@@ -25756,7 +25756,7 @@
       "difficulty": 3
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Trial by Fire",
           "effects": [
@@ -26601,7 +26601,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Perseverance",
           "effects": [
@@ -27488,8 +27488,8 @@
     },
     "roles": [
       "SPECIALIST",
-      "FIGHTER",
-      "TANK"
+      "TANK",
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -27504,7 +27504,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Rage Gene",
           "effects": [
@@ -28716,9 +28716,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "TANK",
       "VANGUARD",
-      "FIGHTER",
-      "TANK"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -28733,7 +28733,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Rage Gene",
           "effects": [
@@ -29455,9 +29455,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "MAGE",
       "VANGUARD",
-      "FIGHTER",
-      "MAGE"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -29472,7 +29472,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Happy Hour",
           "effects": [
@@ -30786,7 +30786,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "New Destiny",
           "effects": [
@@ -31470,9 +31470,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
+      "DIVER",
       "TANK",
-      "DIVER"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -31487,7 +31487,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Warpath",
           "effects": [
@@ -32256,8 +32256,8 @@
     },
     "roles": [
       "SPECIALIST",
-      "MAGE",
-      "SUPPORT"
+      "SUPPORT",
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -32272,7 +32272,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Hextech Affinity",
           "effects": [
@@ -33070,7 +33070,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Prophet of an Elder God",
           "effects": [
@@ -33381,8 +33381,8 @@
             ],
             "affectedByCdr": false
           },
-          "targeting": "none",
-          "affects": null,
+          "targeting": "None",
+          "affects": "Self",
           "spellshieldable": "Special",
           "resource": "MANA",
           "damageType": "PHYSICAL_DAMAGE",
@@ -33833,9 +33833,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
+      "DIVER",
       "ASSASSIN",
-      "DIVER"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -33850,7 +33850,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Ionian Fervor",
           "effects": [
@@ -34609,8 +34609,8 @@
     },
     "roles": [
       "CATCHER",
-      "MAGE",
-      "SUPPORT"
+      "SUPPORT",
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -34625,7 +34625,7 @@
       "difficulty": 3
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Friend of the Forest",
           "effects": [
@@ -34916,7 +34916,7 @@
             ],
             "affectedByCdr": true
           },
-          "targeting": "Ground / Buff",
+          "targeting": "Ground",
           "affects": "Self, Allies",
           "spellshieldable": null,
           "resource": "MANA",
@@ -35321,9 +35321,9 @@
       "urfShielding": 0.92
     },
     "roles": [
+      "SUPPORT",
       "ENCHANTER",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -35338,7 +35338,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Tailwind",
           "effects": [
@@ -36134,8 +36134,8 @@
     },
     "roles": [
       "FIGHTER",
-      "TANK",
-      "DIVER"
+      "DIVER",
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -36150,7 +36150,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Martial Cadence",
           "effects": [
@@ -36764,9 +36764,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
       "ASSASSIN",
-      "SKIRMISHER"
+      "SKIRMISHER",
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -36781,7 +36781,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Relentless Assault",
           "effects": [
@@ -37463,9 +37463,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
+      "ARTILLERY",
       "MARKSMAN",
-      "ARTILLERY"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -37480,7 +37480,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Hextech Capacitor",
           "effects": [
@@ -38575,7 +38575,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Whisper",
           "effects": [
@@ -39857,7 +39857,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Get Excited!",
           "effects": [
@@ -40919,7 +40919,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Second Skin",
           "effects": [
@@ -42327,7 +42327,7 @@
       "difficulty": 3
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Martial Poise",
           "effects": [
@@ -42980,9 +42980,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "BURST",
       "SUPPORT",
-      "MAGE",
-      "BURST"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -42997,7 +42997,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Gathering Fire",
           "effects": [
@@ -43908,7 +43908,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Death Defied",
           "effects": [
@@ -44545,7 +44545,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Void Stone",
           "effects": [
@@ -45194,9 +45194,9 @@
                   800
                 ],
                 "units": [
-                  " (based on Stacks)",
-                  " (based on Stacks)",
-                  " (based on Stacks)"
+                  "(based on Stacks)",
+                  "(based on Stacks)",
+                  "(based on Stacks)"
                 ]
               }
             ]
@@ -45317,7 +45317,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Voracity",
           "effects": [
@@ -45909,8 +45909,8 @@
     },
     "roles": [
       "SPECIALIST",
-      "FIGHTER",
-      "SUPPORT"
+      "SUPPORT",
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -45925,7 +45925,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Divine Ascent",
           "effects": [
@@ -46678,9 +46678,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
       "ASSASSIN",
-      "SKIRMISHER"
+      "SKIRMISHER",
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -46695,7 +46695,7 @@
       "difficulty": 3
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "The Darkin Scythe",
           "effects": [
@@ -49065,7 +49065,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Mark of the Storm",
           "effects": [
@@ -49226,7 +49226,7 @@
           "name": "Electrical Surge",
           "effects": [
             {
-              "description": "Passive: Basic attacks grant a stack of Electrical Surge on-attack. Upon reaching 4 stacks Kennen's next basic attack is empowered to deal bonus magic damage, apply a Mark of the Storm and consume all stacks on-hit.",
+              "description": "Passive: Basic attacks grant a stack of Electrical Surge on-attack. Upon reaching 4 stacks Kennen's next basic attack against non- structures is empowered to deal bonus magic damage, apply a Mark of the Storm and consume all stacks on-hit.",
               "icon": "Electrical Surge.png",
               "leveling": [
                 {
@@ -49374,11 +49374,11 @@
           "spellshieldable": "True",
           "resource": "ENERGY",
           "damageType": "MAGIC_DAMAGE",
-          "spellEffects": "spellaoe",
+          "spellEffects": "special",
           "projectile": "FALSE",
           "onHitEffects": "Special",
           "occurrence": null,
-          "notes": "Basic attacks against structures will stack the counter but will not consume the enhanced attack.\n Electrical Surge's active will still hit stealthed champions as well as those hidden in fog of war (revealing their position but not granting  sight of them).\n The enhanced attack applies other  on-hit effects and can  critically strike as normal (the bonus damage does not).\n It also applies  spell damage.\n\n Electrical Surge's enhanced attack will be consumed and the bonus damage will not be applied if Kennen is  blinded.\n Electrical Surge's passive cannot be  dodged or  blocked.\n\n  Wind Wall will destroy the enhanced attack but not consume it.",
+          "notes": "The empowered basic attack applies  spell damage, while the electrical surge deals  area damage.\n Electrical Surge's active will still hit stealthed champions as well as those hidden in fog of war (revealing their position but not granting  sight of them).\n Electrical Surge's enhanced attack will be consumed and the bonus damage will not be applied if Kennen is  blinded.\n Electrical Surge's passive cannot be  dodged or  blocked.\n\n  Wind Wall will destroy the enhanced attack but not consume it.",
           "blurb": "Kennen passively deals extra damage and adds a Mark of the Storm to his target every few attacks, and he can activate this ability to damage and add another Mark of the Storm to targets who are already marked.",
           "missileSpeed": null,
           "rechargeRate": null,
@@ -49795,7 +49795,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Unseen Threat",
           "effects": [
@@ -50641,7 +50641,7 @@
       "difficulty": 3
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Mark of the Kindred",
           "effects": [
@@ -51282,9 +51282,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
+      "DIVER",
       "TANK",
-      "DIVER"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -51299,7 +51299,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Skaarl the Cowardly Lizard",
           "effects": [
@@ -52431,7 +52431,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Icathian Surprise",
           "effects": [
@@ -53149,9 +53149,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "ASSASSIN",
+      "BURST",
       "MAGE",
-      "BURST"
+      "ASSASSIN"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -53166,7 +53166,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Mirror Image",
           "effects": [
@@ -54964,9 +54964,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
+      "DIVER",
       "ASSASSIN",
-      "DIVER"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -54981,7 +54981,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Flurry",
           "effects": [
@@ -55844,9 +55844,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "VANGUARD",
       "SUPPORT",
-      "TANK"
+      "TANK",
+      "VANGUARD"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -55861,7 +55861,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Sunlight",
           "effects": [
@@ -56522,8 +56522,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "MAGE",
-      "BURST"
+      "BURST",
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -56538,7 +56538,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Iceborn Subjugation",
           "effects": [
@@ -57231,7 +57231,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Lightslinger",
           "effects": [
@@ -58235,9 +58235,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "ENCHANTER",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -58252,7 +58252,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Pix, Faerie Companion",
           "effects": [
@@ -58926,10 +58926,10 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "SUPPORT",
-      "MAGE",
       "BURST",
-      "ARTILLERY"
+      "ARTILLERY",
+      "SUPPORT",
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -58944,7 +58944,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Illumination",
           "effects": [
@@ -59569,9 +59569,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "TANK",
       "VANGUARD",
-      "FIGHTER",
-      "TANK"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -59586,7 +59586,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Granite Shield",
           "effects": [
@@ -59611,9 +59611,9 @@
                   6
                 ],
                 "units": [
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)"
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)"
                 ]
               }
             ],
@@ -60322,9 +60322,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "ASSASSIN",
       "BATTLEMAGE",
-      "MAGE",
-      "ASSASSIN"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -60339,7 +60339,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Void Shift",
           "effects": [
@@ -61135,9 +61135,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "VANGUARD",
+      "TANK",
       "MAGE",
-      "TANK"
+      "VANGUARD"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -61152,7 +61152,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Sap Magic",
           "effects": [
@@ -61182,9 +61182,9 @@
                   20
                 ],
                 "units": [
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)"
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)"
                 ]
               }
             ],
@@ -61243,9 +61243,9 @@
                   20
                 ],
                 "units": [
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)"
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)"
                 ]
               }
             ],
@@ -61853,9 +61853,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "ASSASSIN",
+      "FIGHTER",
       "SKIRMISHER",
-      "FIGHTER"
+      "ASSASSIN"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -61870,7 +61870,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Double Strike",
           "effects": [
@@ -62822,7 +62822,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Love Tap",
           "effects": [
@@ -63623,7 +63623,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Darkness Rise",
           "effects": [
@@ -64166,8 +64166,8 @@
     },
     "roles": [
       "CATCHER",
-      "MAGE",
-      "SUPPORT"
+      "SUPPORT",
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -64182,7 +64182,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Soul Siphon",
           "effects": [
@@ -64911,9 +64911,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "ENCHANTER",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -64928,7 +64928,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Surging Tides",
           "effects": [
@@ -65692,7 +65692,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Soul Eater",
           "effects": [
@@ -66473,9 +66473,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "TANK",
       "VANGUARD",
-      "FIGHTER",
-      "TANK"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -66490,7 +66490,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Staggering Blow",
           "effects": [
@@ -67426,10 +67426,10 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "BURST",
       "SUPPORT",
       "CATCHER",
-      "MAGE",
-      "BURST"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -67444,7 +67444,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Inherent Glamour",
           "effects": [
@@ -68312,7 +68312,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Prowl",
           "effects": [
@@ -69227,7 +69227,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Umbra Blades",
           "effects": [
@@ -69888,9 +69888,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "TANK",
       "VANGUARD",
-      "FIGHTER",
-      "TANK"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -69905,7 +69905,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Call of the Freljord",
           "effects": [
@@ -71026,9 +71026,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
+      "DIVER",
       "TANK",
-      "DIVER"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -71043,7 +71043,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Berserker Rage",
           "effects": [
@@ -71660,9 +71660,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "BURST",
       "SUPPORT",
-      "MAGE",
-      "BURST"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -71677,7 +71677,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Clockwork Windup",
           "effects": [
@@ -72395,9 +72395,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "TANK",
       "VANGUARD",
-      "FIGHTER",
-      "TANK"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -72412,7 +72412,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Living Forge",
           "effects": [
@@ -73214,9 +73214,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
+      "DIVER",
       "ASSASSIN",
-      "DIVER"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -73231,7 +73231,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Mortal Will",
           "effects": [
@@ -74013,9 +74013,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
       "WARDEN",
-      "TANK"
+      "TANK",
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -74030,7 +74030,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Iron Ambassador",
           "effects": [
@@ -74055,9 +74055,9 @@
                   8
                 ],
                 "units": [
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)"
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)"
                 ]
               }
             ],
@@ -74111,9 +74111,9 @@
                   8
                 ],
                 "units": [
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)"
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)"
                 ]
               }
             ],
@@ -75069,7 +75069,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Gift of the Drowned Ones",
           "effects": [
@@ -75639,7 +75639,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Royal Privilege",
           "effects": [
@@ -76592,7 +76592,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Harrier",
           "effects": [
@@ -77196,7 +77196,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Fey Feathers",
           "effects": [
@@ -78062,9 +78062,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "TANK",
       "VANGUARD",
-      "FIGHTER",
-      "TANK"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -78079,7 +78079,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Spiked Shell",
           "effects": [
@@ -78824,8 +78824,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
-      "DIVER"
+      "DIVER",
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -78840,7 +78840,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Fury of the Xer'Sai",
           "effects": [
@@ -79654,9 +79654,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
+      "DIVER",
       "TANK",
-      "DIVER"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -79671,7 +79671,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Reign of Anger",
           "effects": [
@@ -80709,8 +80709,8 @@
     },
     "roles": [
       "FIGHTER",
-      "ASSASSIN",
-      "DIVER"
+      "DIVER",
+      "ASSASSIN"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -80725,7 +80725,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Unseen Predator",
           "effects": [
@@ -81514,9 +81514,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
       "ASSASSIN",
-      "SKIRMISHER"
+      "SKIRMISHER",
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -81531,7 +81531,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Runic Blade",
           "effects": [
@@ -82125,9 +82125,9 @@
       "urfShielding": 0.9
     },
     "roles": [
+      "MAGE",
       "BATTLEMAGE",
-      "FIGHTER",
-      "MAGE"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -82142,7 +82142,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Junkyard Titan",
           "effects": [
@@ -83486,8 +83486,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "BATTLEMAGE",
       "FIGHTER",
+      "BATTLEMAGE",
       "MAGE"
     ],
     "attributeRatings": {
@@ -83503,7 +83503,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Arcane Mastery",
           "effects": [
@@ -84786,9 +84786,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "TANK",
       "VANGUARD",
-      "FIGHTER",
-      "TANK"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -84803,7 +84803,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Fury of the North",
           "effects": [
@@ -85570,8 +85570,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "ENCHANTER",
       "SUPPORT",
+      "ENCHANTER",
       "MARKSMAN"
     ],
     "attributeRatings": {
@@ -85587,7 +85587,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Absolution",
           "effects": [
@@ -86159,9 +86159,9 @@
                         1.5
                       ],
                       "units": [
-                        " per Mist collected",
-                        " per Mist collected",
-                        " per Mist collected"
+                        "per Mist collected",
+                        "per Mist collected",
+                        "per Mist collected"
                       ]
                     }
                   ]
@@ -86302,7 +86302,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Pit Grit",
           "effects": [
@@ -86934,7 +86934,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Backstab",
           "effects": [
@@ -87776,7 +87776,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Ki Barrier",
           "effects": [
@@ -89499,7 +89499,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Fury of the Dragonborn",
           "effects": [
@@ -89615,16 +89615,16 @@
             ],
             "affectedByCdr": false
           },
-          "targeting": "Self / Buff",
+          "targeting": "none",
           "affects": "Enemies",
           "spellshieldable": "True",
           "resource": null,
           "damageType": "PHYSICAL_DAMAGE",
-          "spellEffects": "special",
+          "spellEffects": "default",
           "projectile": null,
           "onHitEffects": null,
           "occurrence": "On-hit",
-          "notes": "Enhanced attack applies  proc damage twice.\n In Dragon Form, the attack deals  area damage.\n\n  Dragon Form's Twin Bite cannot apply  Tiamat's Cleave on each target hit because of Cleave's internal 0.05 seconds interval during which it cannot be applied on a different target.",
+          "notes": "Dragon Form's Twin Bite cannot apply  Tiamat's Cleave on each target hit because of Cleave's internal 0.05 seconds interval during which it cannot be applied on a different target.",
           "blurb": "Shyvana strikes twice on her next attack. Basic attacks reduce the cooldown of Twin Bite by 0.5 seconds. Dragon Form: Twin Bite cleaves all units in front Shyvana.",
           "missileSpeed": null,
           "rechargeRate": null,
@@ -89806,16 +89806,16 @@
             ],
             "affectedByCdr": false
           },
-          "targeting": "Auto / Buff",
+          "targeting": "none",
           "affects": "Enemies",
           "spellshieldable": "False",
           "resource": null,
           "damageType": "MAGIC_DAMAGE",
-          "spellEffects": "special",
+          "spellEffects": "aoedot",
           "projectile": null,
           "onHitEffects": null,
           "occurrence": null,
-          "notes": "The surrounding flame applies  persistent area damage and the magic damage via basic attack deals  spell damage.\n Burnout has no cast time and does not interrupt Shyvana's previous orders.\n PENDING FOR TEST: Magic damage on-hit's interactions with  dodging,  blocking, and  blinding effects.",
+          "notes": "Burnout has no cast time and does not interrupt Shyvana's previous orders.\n PENDING FOR TEST: Magic damage on-hit's interactions with  dodging,  blocking, and  blinding effects.",
           "blurb": "Shyvana surrounds herself in fire, dealing magic damage per second to nearby enemies and moving faster for 3 seconds, part of this damage is applied again when Shyvana basic attacks an enemy with Burnout active. The Movement Speed reduces over the duration of the spell. Basic attacks extend the duration of Burnout. Dragon Form: Burnout grows in size.",
           "missileSpeed": null,
           "rechargeRate": null,
@@ -90252,8 +90252,8 @@
     },
     "roles": [
       "SPECIALIST",
-      "FIGHTER",
-      "TANK"
+      "TANK",
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -90268,7 +90268,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Noxious Slipstream",
           "effects": [
@@ -90285,7 +90285,7 @@
           ],
           "cost": null,
           "cooldown": null,
-          "targeting": "Passive / Buff",
+          "targeting": "none",
           "affects": "Self",
           "spellshieldable": null,
           "resource": null,
@@ -90519,7 +90519,7 @@
           },
           "targeting": "Ground",
           "affects": "Enemies",
-          "spellshieldable": null,
+          "spellshieldable": "false",
           "resource": "MANA",
           "damageType": null,
           "spellEffects": null,
@@ -90547,7 +90547,7 @@
           "name": "Fling",
           "effects": [
             {
-              "description": "Active: Singed  flings the target enemy over his shoulder 550 units, dealing magic damage, capped against  minions and  monsters.",
+              "description": "Active: Singed  flings the target enemy over his shoulder, dropping at a location 550 units behind Singed after 1 second and dealing magic damage, capped against  minions and  monsters.",
               "icon": "Fling.png",
               "leveling": [
                 {
@@ -90643,7 +90643,7 @@
               ]
             },
             {
-              "description": "Targets flung into  Mega Adhesive's  area of effect are temporarily  rooted.",
+              "description": "Targets flung into  Mega Adhesive's area of effect are temporarily  rooted.",
               "icon": null,
               "leveling": [
                 {
@@ -90720,7 +90720,7 @@
           "projectile": null,
           "onHitEffects": null,
           "occurrence": null,
-          "notes": "Singed laughs during Fling's displacement.\n Fling's target is  disabled for 1 second while being displaced.\n Enemies using  Flash during Fling's cast time will still be entirely affected (damage, disabling, displacement).\n\n Fling can make enemies go over walls (circumstances permitting).\n Fling will always attempt to displace enemies so they land behind Singed.\n This means any  dashes or  blinks the target uses during Fling will cause them to rebound all the way behind Singed.\n Enemies may sometimes be displaced sideways if Singed approached them diagonally (caused by him not facing in their direction when casting Fling).\n\n BUG: Slow-immune enemies will not be  rooted when flung into  Mega Adhesive.",
+          "notes": "Fling can make enemies go over walls (circumstances permitting).\n Slow-immune enemies will not be  rooted when flung into  Mega Adhesive.",
           "blurb": "Damages target enemy unit and flings them into the air behind Singed. If the target Singed flings lands in his Mega Adhesive, they are also rooted.",
           "missileSpeed": null,
           "rechargeRate": null,
@@ -90831,7 +90831,7 @@
             ],
             "affectedByCdr": false
           },
-          "targeting": "Self / Buff",
+          "targeting": "None",
           "affects": "Self",
           "spellshieldable": null,
           "resource": "MANA",
@@ -90914,9 +90914,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "TANK",
       "VANGUARD",
-      "FIGHTER",
-      "TANK"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -90931,7 +90931,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Glory in Death",
           "effects": [
@@ -90953,12 +90953,12 @@
           ],
           "cost": null,
           "cooldown": null,
-          "targeting": "Passive",
+          "targeting": "none",
           "affects": "Self",
           "spellshieldable": null,
           "resource": null,
-          "damageType": "OTHER_DAMAGE",
-          "spellEffects": null,
+          "damageType": "PHYSICAL_DAMAGE",
+          "spellEffects": "proc",
           "projectile": null,
           "onHitEffects": null,
           "occurrence": null,
@@ -90996,15 +90996,15 @@
                   100
                 ],
                 "units": [
-                  " (Resets on Death)",
-                  " (Resets on Death)",
-                  " (Resets on Death)"
+                  "(Resets on Death)",
+                  "(Resets on Death)",
+                  "(Resets on Death)"
                 ]
               }
             ],
             "affectedByCdr": false
           },
-          "targeting": "Self / Buff",
+          "targeting": "None",
           "affects": "Self",
           "spellshieldable": null,
           "resource": null,
@@ -91013,7 +91013,7 @@
           "projectile": null,
           "onHitEffects": null,
           "occurrence": null,
-          "notes": "Death Surge's will always be ready to use when Glory in Death triggers.\n Once at least one ability has been learned, Death Surge can be cast using any ability key, even the unlearned ones.\n\n Death Surge's cooldown is affected by  cooldown reduction and thus the spell is technically able to be used up to twice during Glory in Death, but not in practice.\n Despite showing a shorter cooldown when hovering the ability in the ultimate-slot in the HUD, Death Surge is not actually affected by  Ultimate Hunter.\n\n Casting Death Surge does not add a stack to  Spellbinder.",
+          "notes": "Death Surge's will always be ready to use when Glory in Death triggers.\n Once at least one ability has been learned, Death Surge can be cast using any ability key, even the unlearned ones.\n\n Death Surge's cooldown is affected by Cooldown reduction and thus the spell is technically able to be used up to twice during Glory in Death, but not in practice.\n Despite showing a shorter cooldown when hovering the ability in the ultimate-slot in the HUD, Death Surge is not actually affected by  Ultimate Hunter.\n\n Casting Death Surge does not add a stack to  Spellbinder.",
           "blurb": "Grants a burst of Movement Speed.",
           "missileSpeed": null,
           "rechargeRate": null,
@@ -91460,7 +91460,7 @@
             ],
             "affectedByCdr": false
           },
-          "targeting": "Self / Auto",
+          "targeting": "Auto",
           "affects": "Self, Enemies",
           "spellshieldable": "True",
           "resource": "MANA",
@@ -91652,7 +91652,7 @@
             ],
             "affectedByCdr": false
           },
-          "targeting": "Self / Auto",
+          "targeting": "Auto",
           "affects": "Self, Enemies",
           "spellshieldable": "True",
           "resource": "MANA",
@@ -92206,7 +92206,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Fleet of Foot",
           "effects": [
@@ -92881,9 +92881,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
+      "DIVER",
       "TANK",
-      "DIVER"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -92898,7 +92898,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Crystal Spires",
           "effects": [
@@ -93842,9 +93842,9 @@
       "urfShielding": 0.95
     },
     "roles": [
+      "SUPPORT",
       "ENCHANTER",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -93859,7 +93859,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Power Chord",
           "effects": [
@@ -94542,9 +94542,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "ENCHANTER",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -94559,7 +94559,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Salvation",
           "effects": [
@@ -95288,8 +95288,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "BATTLEMAGE",
       "FIGHTER",
+      "BATTLEMAGE",
       "MAGE"
     ],
     "attributeRatings": {
@@ -95305,7 +95305,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Ravenous Flock",
           "effects": [
@@ -95335,9 +95335,9 @@
                   6
                 ],
                 "units": [
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)"
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)"
                 ]
               }
             ],
@@ -96366,10 +96366,10 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "SKIRMISHER",
+      "BURST",
       "ASSASSIN",
-      "MAGE",
-      "BURST"
+      "SKIRMISHER",
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -96384,7 +96384,7 @@
       "difficulty": 3
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Petricite Burst",
           "effects": [
@@ -97219,9 +97219,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "BURST",
       "SUPPORT",
-      "MAGE",
-      "BURST"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -97236,7 +97236,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Transcendent",
           "effects": [
@@ -98035,9 +98035,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "TANK",
       "WARDEN",
-      "SUPPORT"
+      "SUPPORT",
+      "TANK"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -98052,7 +98052,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "An Acquired Taste",
           "effects": [
@@ -98747,9 +98747,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "BATTLEMAGE",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -98764,7 +98764,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Rock Surfing",
           "effects": [
@@ -99777,7 +99777,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Blade's End",
           "effects": [
@@ -100437,9 +100437,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "ENCHANTER",
       "WARDEN",
       "SUPPORT",
+      "ENCHANTER",
       "FIGHTER"
     ],
     "attributeRatings": {
@@ -100455,7 +100455,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Bravado",
           "effects": [
@@ -101126,7 +101126,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Guerrilla Warfare",
           "effects": [
@@ -101873,9 +101873,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
       "CATCHER",
-      "SUPPORT"
+      "SUPPORT",
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -101890,7 +101890,7 @@
       "difficulty": 3
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Damnation",
           "effects": [
@@ -102234,11 +102234,11 @@
                         1
                       ],
                       "units": [
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected"
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected"
                       ]
                     }
                   ]
@@ -102337,11 +102337,11 @@
                         1
                       ],
                       "units": [
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected"
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected"
                       ]
                     },
                     {
@@ -102374,11 +102374,11 @@
                         1
                       ],
                       "units": [
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected"
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected"
                       ]
                     },
                     {
@@ -102550,11 +102550,11 @@
                         1
                       ],
                       "units": [
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected"
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected"
                       ]
                     },
                     {
@@ -102587,11 +102587,11 @@
                         1
                       ],
                       "units": [
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected"
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected"
                       ]
                     },
                     {
@@ -102763,11 +102763,11 @@
                         1
                       ],
                       "units": [
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected"
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected"
                       ]
                     },
                     {
@@ -102800,11 +102800,11 @@
                         1
                       ],
                       "units": [
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected"
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected"
                       ]
                     },
                     {
@@ -102976,11 +102976,11 @@
                         1
                       ],
                       "units": [
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected"
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected"
                       ]
                     },
                     {
@@ -103013,11 +103013,11 @@
                         1
                       ],
                       "units": [
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected"
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected"
                       ]
                     },
                     {
@@ -103189,11 +103189,11 @@
                         1
                       ],
                       "units": [
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected"
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected"
                       ]
                     },
                     {
@@ -103226,11 +103226,11 @@
                         1
                       ],
                       "units": [
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected",
-                        " per Soul collected"
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected",
+                        "per Soul collected"
                       ]
                     },
                     {
@@ -103561,7 +103561,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Draw a Bead",
           "effects": [
@@ -104292,7 +104292,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "King's Tribute",
           "effects": [
@@ -104932,9 +104932,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
       "ASSASSIN",
-      "SKIRMISHER"
+      "SKIRMISHER",
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -104949,7 +104949,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Battle Fury",
           "effects": [
@@ -105011,11 +105011,11 @@
                         25
                       ],
                       "units": [
-                        " AD",
-                        " AD",
-                        " AD",
-                        " AD",
-                        " AD"
+                        "AD",
+                        "AD",
+                        "AD",
+                        "AD",
+                        "AD"
                       ]
                     }
                   ]
@@ -105032,11 +105032,11 @@
                         0.35
                       ],
                       "units": [
-                        " AD",
-                        " AD",
-                        " AD",
-                        " AD",
-                        " AD"
+                        "AD",
+                        "AD",
+                        "AD",
+                        "AD",
+                        "AD"
                       ]
                     }
                   ]
@@ -105053,11 +105053,11 @@
                         60
                       ],
                       "units": [
-                        " AD",
-                        " AD",
-                        " AD",
-                        " AD",
-                        " AD"
+                        "AD",
+                        "AD",
+                        "AD",
+                        "AD",
+                        "AD"
                       ]
                     }
                   ]
@@ -105268,11 +105268,11 @@
                         80
                       ],
                       "units": [
-                        " AD",
-                        " AD",
-                        " AD",
-                        " AD",
-                        " AD"
+                        "AD",
+                        "AD",
+                        "AD",
+                        "AD",
+                        "AD"
                       ]
                     }
                   ]
@@ -105621,8 +105621,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "MAGE",
-      "BURST"
+      "BURST",
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -105637,7 +105637,7 @@
       "difficulty": 3
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Loaded Dice",
           "effects": [
@@ -106089,7 +106089,7 @@
             ],
             "affectedByCdr": false
           },
-          "targeting": "Self",
+          "targeting": "none",
           "affects": "Enemies, Self",
           "spellshieldable": "True",
           "resource": "MANA",
@@ -106408,7 +106408,7 @@
             ],
             "affectedByCdr": false
           },
-          "targeting": "Self",
+          "targeting": "none",
           "affects": "Enemies, Self",
           "spellshieldable": "True",
           "resource": "MANA",
@@ -106727,7 +106727,7 @@
             ],
             "affectedByCdr": false
           },
-          "targeting": "Self",
+          "targeting": "none",
           "affects": "Enemies, Self",
           "spellshieldable": "True",
           "resource": "MANA",
@@ -107046,7 +107046,7 @@
             ],
             "affectedByCdr": false
           },
-          "targeting": "Self",
+          "targeting": "none",
           "affects": "Enemies, Self",
           "spellshieldable": "True",
           "resource": "MANA",
@@ -107432,7 +107432,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Deadly Venom",
           "effects": [
@@ -108406,7 +108406,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Monkey's Agility",
           "effects": [
@@ -108644,16 +108644,16 @@
             ],
             "affectedByCdr": false
           },
-          "targeting": "Self / Passive",
+          "targeting": "none",
           "affects": "Enemies",
           "spellshieldable": "False",
           "resource": "MANA",
           "damageType": "PHYSICAL_DAMAGE",
-          "spellEffects": "special",
+          "spellEffects": "dot",
           "projectile": null,
           "onHitEffects": null,
           "occurrence": null,
-          "notes": "The  DoT deals  persistent damage and applies  ability damage effects.\n The triggering attack will generate the first stack toward the next, meaning the effect will always trigger on every 3rd attack.  Guinsoo's Rageblade will reduce this number to every 2nd attack, with Udyr's attack animations coded to \"look ahead\" and trigger the empowered-attack animation if he attacks a target while at 1 stack while Guinsoo's Rage is active. \n Tiger Stance's primed  damage over time does not persist through stance changes.\n The triggering attacks will apply other on-hit effects and can critically strike as normal.\n Unlike most on-hit physical damage, the bonus damage from Tiger Stance will not apply  life steal.\n Critical strikes do not interact with the bonus damage from Tiger Stance.\n The on-hit application of the DoT cannot be  dodged nor  blocked.\n If it  misses, neither the DoT nor the active damage will be applied, and it will consume the empowered attack of the active.",
+          "notes": "The triggering attack will generate the first stack toward the next, meaning the effect will always trigger on every 3rd attack.  Guinsoo's Rageblade will reduce this number to every 2nd attack, with Udyr's attack animations coded to \"look ahead\" and trigger the empowered-attack animation if he attacks a target while at 1 stack while Guinsoo's Rage is active.\n Tiger Stance's primed  damage over time does not persist through stance changes.\n Unlike most on-hit physical damage, the bonus damage from Tiger Stance will not apply  life steal.\n The on-hit application of the DoT cannot be  dodged nor  blocked, but it can  miss.",
           "blurb": "Tiger Stance: Activation - Udyr's Attack Speed is increased for a few seconds. Persistent Effect - Udyr's first attack and every third attack after will deal a high amount of damage over 2 seconds.",
           "missileSpeed": null,
           "rechargeRate": null,
@@ -109285,7 +109285,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Echoing Flames",
           "effects": [
@@ -109945,8 +109945,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "MAGE",
       "ARTILLERY",
+      "MAGE",
       "MARKSMAN"
     ],
     "attributeRatings": {
@@ -109962,7 +109962,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Living Vengeance",
           "effects": [
@@ -110747,7 +110747,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Night Hunter",
           "effects": [
@@ -111378,8 +111378,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "MAGE",
-      "BURST"
+      "BURST",
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -111394,7 +111394,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Phenomenal Evil Power",
           "effects": [
@@ -111942,8 +111942,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "MAGE",
-      "ARTILLERY"
+      "ARTILLERY",
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -111958,7 +111958,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Organic Deconstruction",
           "effects": [
@@ -113011,9 +113011,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
+      "DIVER",
       "ASSASSIN",
-      "DIVER"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -113028,7 +113028,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Blast Shield",
           "effects": [
@@ -113909,7 +113909,7 @@
       "difficulty": 3
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Glorious Evolution",
           "effects": [
@@ -114883,7 +114883,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Crimson Pact",
           "effects": [
@@ -115852,7 +115852,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Chosen of the Storm",
           "effects": [
@@ -116561,9 +116561,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
+      "DIVER",
       "TANK",
-      "DIVER"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -116578,7 +116578,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Eternal Hunger",
           "effects": [
@@ -117227,9 +117227,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
+      "DIVER",
       "TANK",
-      "DIVER"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -117244,7 +117244,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Stone Skin",
           "effects": [
@@ -117886,7 +117886,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Clean Cuts",
           "effects": [
@@ -118634,8 +118634,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "MAGE",
-      "ARTILLERY"
+      "ARTILLERY",
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -118650,7 +118650,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Mana Surge",
           "effects": [
@@ -119354,9 +119354,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
+      "DIVER",
       "ASSASSIN",
-      "DIVER"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -119371,7 +119371,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Determination",
           "effects": [
@@ -120214,9 +120214,9 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "FIGHTER",
       "ASSASSIN",
-      "SKIRMISHER"
+      "SKIRMISHER",
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -120231,7 +120231,7 @@
       "difficulty": 3
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Way of the Wanderer",
           "effects": [
@@ -121043,7 +121043,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Shepherd of Souls",
           "effects": [
@@ -121625,9 +121625,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "SUPPORT",
       "ENCHANTER",
-      "MAGE",
-      "SUPPORT"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 1,
@@ -121642,7 +121642,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Bop 'n' Block",
           "effects": [
@@ -122037,9 +122037,9 @@
                   0
                 ],
                 "units": [
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)"
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)"
                 ]
               }
             ],
@@ -122458,9 +122458,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "TANK",
       "VANGUARD",
-      "FIGHTER",
-      "TANK"
+      "FIGHTER"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -122475,7 +122475,7 @@
       "difficulty": 1
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Cell Division",
           "effects": [
@@ -123350,7 +123350,7 @@
       "difficulty": 3
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Contempt for the Weak",
           "effects": [
@@ -124176,8 +124176,8 @@
       "urfShielding": 1.0
     },
     "roles": [
-      "MAGE",
-      "ARTILLERY"
+      "ARTILLERY",
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -124192,7 +124192,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Short Fuse",
           "effects": [
@@ -124920,8 +124920,8 @@
     },
     "roles": [
       "SPECIALIST",
-      "MAGE",
-      "SUPPORT"
+      "SUPPORT",
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 2,
@@ -124936,7 +124936,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Time in a Bottle",
           "effects": [
@@ -125480,9 +125480,9 @@
       "urfShielding": 1.0
     },
     "roles": [
+      "BURST",
       "SUPPORT",
-      "MAGE",
-      "BURST"
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -125497,7 +125497,7 @@
       "difficulty": 3
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "More Sparkles!",
           "effects": [
@@ -126532,8 +126532,8 @@
     },
     "roles": [
       "CATCHER",
-      "MAGE",
-      "SUPPORT"
+      "SUPPORT",
+      "MAGE"
     ],
     "attributeRatings": {
       "damage": 3,
@@ -126548,7 +126548,7 @@
       "difficulty": 2
     },
     "abilities": {
-      "I": [
+      "P": [
         {
           "name": "Garden of Thorns",
           "effects": [
@@ -126578,9 +126578,9 @@
                   9
                 ],
                 "units": [
-                  " (based on level)",
-                  " (based on level)",
-                  " (based on level)"
+                  "(based on level)",
+                  "(based on level)",
+                  "(based on level)"
                 ]
               }
             ],

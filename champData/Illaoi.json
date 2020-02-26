@@ -64,7 +64,7 @@
     "difficulty": 2
   },
   "abilities": {
-    "I": [
+    "P": [
       {
         "name": "Prophet of an Elder God",
         "effects": [
@@ -375,8 +375,8 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "none",
-        "affects": null,
+        "targeting": "None",
+        "affects": "Self",
         "spellshieldable": "Special",
         "resource": "MANA",
         "damageType": "PHYSICAL_DAMAGE",

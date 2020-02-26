@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "FIGHTER",
     "WARDEN",
-    "TANK"
+    "TANK",
+    "FIGHTER"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -64,7 +64,7 @@
     "difficulty": 2
   },
   "abilities": {
-    "I": [
+    "P": [
       {
         "name": "Iron Ambassador",
         "effects": [
@@ -89,9 +89,9 @@
                 8
               ],
               "units": [
-                " (based on level)",
-                " (based on level)",
-                " (based on level)"
+                "(based on level)",
+                "(based on level)",
+                "(based on level)"
               ]
             }
           ],
@@ -145,9 +145,9 @@
                 8
               ],
               "units": [
-                " (based on level)",
-                " (based on level)",
-                " (based on level)"
+                "(based on level)",
+                "(based on level)",
+                "(based on level)"
               ]
             }
           ],

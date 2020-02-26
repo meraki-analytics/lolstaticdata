@@ -48,8 +48,8 @@
   },
   "roles": [
     "SPECIALIST",
-    "FIGHTER",
-    "TANK"
+    "TANK",
+    "FIGHTER"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -64,7 +64,7 @@
     "difficulty": 2
   },
   "abilities": {
-    "I": [
+    "P": [
       {
         "name": "Noxious Slipstream",
         "effects": [
@@ -81,7 +81,7 @@
         ],
         "cost": null,
         "cooldown": null,
-        "targeting": "Passive / Buff",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": null,
@@ -315,7 +315,7 @@
         },
         "targeting": "Ground",
         "affects": "Enemies",
-        "spellshieldable": null,
+        "spellshieldable": "false",
         "resource": "MANA",
         "damageType": null,
         "spellEffects": null,
@@ -343,7 +343,7 @@
         "name": "Fling",
         "effects": [
           {
-            "description": "Active: Singed  flings the target enemy over his shoulder 550 units, dealing magic damage, capped against  minions and  monsters.",
+            "description": "Active: Singed  flings the target enemy over his shoulder, dropping at a location 550 units behind Singed after 1 second and dealing magic damage, capped against  minions and  monsters.",
             "icon": "Fling.png",
             "leveling": [
               {
@@ -439,7 +439,7 @@
             ]
           },
           {
-            "description": "Targets flung into  Mega Adhesive's  area of effect are temporarily  rooted.",
+            "description": "Targets flung into  Mega Adhesive's area of effect are temporarily  rooted.",
             "icon": null,
             "leveling": [
               {
@@ -516,7 +516,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Singed laughs during Fling's displacement.\n Fling's target is  disabled for 1 second while being displaced.\n Enemies using  Flash during Fling's cast time will still be entirely affected (damage, disabling, displacement).\n\n Fling can make enemies go over walls (circumstances permitting).\n Fling will always attempt to displace enemies so they land behind Singed.\n This means any  dashes or  blinks the target uses during Fling will cause them to rebound all the way behind Singed.\n Enemies may sometimes be displaced sideways if Singed approached them diagonally (caused by him not facing in their direction when casting Fling).\n\n BUG: Slow-immune enemies will not be  rooted when flung into  Mega Adhesive.",
+        "notes": "Fling can make enemies go over walls (circumstances permitting).\n Slow-immune enemies will not be  rooted when flung into  Mega Adhesive.",
         "blurb": "Damages target enemy unit and flings them into the air behind Singed. If the target Singed flings lands in his Mega Adhesive, they are also rooted.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -627,7 +627,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Buff",
+        "targeting": "None",
         "affects": "Self",
         "spellshieldable": null,
         "resource": "MANA",

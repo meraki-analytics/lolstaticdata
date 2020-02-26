@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "TANK",
     "VANGUARD",
-    "FIGHTER",
-    "TANK"
+    "FIGHTER"
   ],
   "attributeRatings": {
     "damage": 1,
@@ -64,7 +64,7 @@
     "difficulty": 1
   },
   "abilities": {
-    "I": [
+    "P": [
       {
         "name": "Granite Shield",
         "effects": [
@@ -89,9 +89,9 @@
                 6
               ],
               "units": [
-                " (based on level)",
-                " (based on level)",
-                " (based on level)"
+                "(based on level)",
+                "(based on level)",
+                "(based on level)"
               ]
             }
           ],

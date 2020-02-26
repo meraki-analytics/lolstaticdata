@@ -64,7 +64,7 @@
     "difficulty": 2
   },
   "abilities": {
-    "I": [
+    "P": [
       {
         "name": "Mark of the Storm",
         "effects": [
@@ -225,7 +225,7 @@
         "name": "Electrical Surge",
         "effects": [
           {
-            "description": "Passive: Basic attacks grant a stack of Electrical Surge on-attack. Upon reaching 4 stacks Kennen's next basic attack is empowered to deal bonus magic damage, apply a Mark of the Storm and consume all stacks on-hit.",
+            "description": "Passive: Basic attacks grant a stack of Electrical Surge on-attack. Upon reaching 4 stacks Kennen's next basic attack against non- structures is empowered to deal bonus magic damage, apply a Mark of the Storm and consume all stacks on-hit.",
             "icon": "Electrical Surge.png",
             "leveling": [
               {
@@ -373,11 +373,11 @@
         "spellshieldable": "True",
         "resource": "ENERGY",
         "damageType": "MAGIC_DAMAGE",
-        "spellEffects": "spellaoe",
+        "spellEffects": "special",
         "projectile": "FALSE",
         "onHitEffects": "Special",
         "occurrence": null,
-        "notes": "Basic attacks against structures will stack the counter but will not consume the enhanced attack.\n Electrical Surge's active will still hit stealthed champions as well as those hidden in fog of war (revealing their position but not granting  sight of them).\n The enhanced attack applies other  on-hit effects and can  critically strike as normal (the bonus damage does not).\n It also applies  spell damage.\n\n Electrical Surge's enhanced attack will be consumed and the bonus damage will not be applied if Kennen is  blinded.\n Electrical Surge's passive cannot be  dodged or  blocked.\n\n  Wind Wall will destroy the enhanced attack but not consume it.",
+        "notes": "The empowered basic attack applies  spell damage, while the electrical surge deals  area damage.\n Electrical Surge's active will still hit stealthed champions as well as those hidden in fog of war (revealing their position but not granting  sight of them).\n Electrical Surge's enhanced attack will be consumed and the bonus damage will not be applied if Kennen is  blinded.\n Electrical Surge's passive cannot be  dodged or  blocked.\n\n  Wind Wall will destroy the enhanced attack but not consume it.",
         "blurb": "Kennen passively deals extra damage and adds a Mark of the Storm to his target every few attacks, and he can activate this ability to damage and add another Mark of the Storm to targets who are already marked.",
         "missileSpeed": null,
         "rechargeRate": null,

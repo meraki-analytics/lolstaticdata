@@ -64,7 +64,7 @@
     "difficulty": 1
   },
   "abilities": {
-    "I": [
+    "P": [
       {
         "name": "Monkey's Agility",
         "effects": [
@@ -302,16 +302,16 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Passive",
+        "targeting": "none",
         "affects": "Enemies",
         "spellshieldable": "False",
         "resource": "MANA",
         "damageType": "PHYSICAL_DAMAGE",
-        "spellEffects": "special",
+        "spellEffects": "dot",
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The  DoT deals  persistent damage and applies  ability damage effects.\n The triggering attack will generate the first stack toward the next, meaning the effect will always trigger on every 3rd attack.  Guinsoo's Rageblade will reduce this number to every 2nd attack, with Udyr's attack animations coded to \"look ahead\" and trigger the empowered-attack animation if he attacks a target while at 1 stack while Guinsoo's Rage is active. \n Tiger Stance's primed  damage over time does not persist through stance changes.\n The triggering attacks will apply other on-hit effects and can critically strike as normal.\n Unlike most on-hit physical damage, the bonus damage from Tiger Stance will not apply  life steal.\n Critical strikes do not interact with the bonus damage from Tiger Stance.\n The on-hit application of the DoT cannot be  dodged nor  blocked.\n If it  misses, neither the DoT nor the active damage will be applied, and it will consume the empowered attack of the active.",
+        "notes": "The triggering attack will generate the first stack toward the next, meaning the effect will always trigger on every 3rd attack.  Guinsoo's Rageblade will reduce this number to every 2nd attack, with Udyr's attack animations coded to \"look ahead\" and trigger the empowered-attack animation if he attacks a target while at 1 stack while Guinsoo's Rage is active.\n Tiger Stance's primed  damage over time does not persist through stance changes.\n Unlike most on-hit physical damage, the bonus damage from Tiger Stance will not apply  life steal.\n The on-hit application of the DoT cannot be  dodged nor  blocked, but it can  miss.",
         "blurb": "Tiger Stance: Activation - Udyr's Attack Speed is increased for a few seconds. Persistent Effect - Udyr's first attack and every third attack after will deal a high amount of damage over 2 seconds.",
         "missileSpeed": null,
         "rechargeRate": null,

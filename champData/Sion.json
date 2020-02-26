@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "TANK",
     "VANGUARD",
-    "FIGHTER",
-    "TANK"
+    "FIGHTER"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -64,7 +64,7 @@
     "difficulty": 1
   },
   "abilities": {
-    "I": [
+    "P": [
       {
         "name": "Glory in Death",
         "effects": [
@@ -86,12 +86,12 @@
         ],
         "cost": null,
         "cooldown": null,
-        "targeting": "Passive",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": null,
-        "damageType": "OTHER_DAMAGE",
-        "spellEffects": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "proc",
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
@@ -129,15 +129,15 @@
                 100
               ],
               "units": [
-                " (Resets on Death)",
-                " (Resets on Death)",
-                " (Resets on Death)"
+                "(Resets on Death)",
+                "(Resets on Death)",
+                "(Resets on Death)"
               ]
             }
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Buff",
+        "targeting": "None",
         "affects": "Self",
         "spellshieldable": null,
         "resource": null,
@@ -146,7 +146,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Death Surge's will always be ready to use when Glory in Death triggers.\n Once at least one ability has been learned, Death Surge can be cast using any ability key, even the unlearned ones.\n\n Death Surge's cooldown is affected by  cooldown reduction and thus the spell is technically able to be used up to twice during Glory in Death, but not in practice.\n Despite showing a shorter cooldown when hovering the ability in the ultimate-slot in the HUD, Death Surge is not actually affected by  Ultimate Hunter.\n\n Casting Death Surge does not add a stack to  Spellbinder.",
+        "notes": "Death Surge's will always be ready to use when Glory in Death triggers.\n Once at least one ability has been learned, Death Surge can be cast using any ability key, even the unlearned ones.\n\n Death Surge's cooldown is affected by Cooldown reduction and thus the spell is technically able to be used up to twice during Glory in Death, but not in practice.\n Despite showing a shorter cooldown when hovering the ability in the ultimate-slot in the HUD, Death Surge is not actually affected by  Ultimate Hunter.\n\n Casting Death Surge does not add a stack to  Spellbinder.",
         "blurb": "Grants a burst of Movement Speed.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -593,7 +593,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Auto",
+        "targeting": "Auto",
         "affects": "Self, Enemies",
         "spellshieldable": "True",
         "resource": "MANA",
@@ -785,7 +785,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Auto",
+        "targeting": "Auto",
         "affects": "Self, Enemies",
         "spellshieldable": "True",
         "resource": "MANA",
