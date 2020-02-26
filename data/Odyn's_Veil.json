@@ -11,29 +11,23 @@
   "noEffects": false,
   "removed": true,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": null,
       "effects": " Reduces and stores 10% of magic damage received."
-    },
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": true,
       "name": " Deals 200 + (stored magic damage",
       "effects": " max 400) magic damage to nearby enemy units (90 second cooldown) (525 range)."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

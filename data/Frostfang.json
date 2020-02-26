@@ -8,33 +8,23 @@
   "noEffects": false,
   "removed": false,
   "nickname": "Support, Economy, Gold, Sightstone, Ward",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Tribute",
       "effects": " Grants a charge every 10 seconds, up to 3 charges. Damaging abilities and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge grants 15. Receive diminishing gold from excessive minion kills."
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Quest",
-      "effects": " Earn 500 using this item to upgrade to Shard of True Ice, increasing the Warding active to instead have 4 wards in stock."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": true,
       "name": " Warding",
       "effects": " Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area. Holds up to 3 charges which refill upon visiting the shop."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 15,
     "armor": 0,

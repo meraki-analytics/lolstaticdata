@@ -11,25 +11,19 @@
   "noEffects": false,
   "removed": true,
   "nickname": "bft",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+  "passives": [
+    null
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": true,
       "name": null,
       "effects": " Deals 20% of target champion's maximum health in magic damage over 4 seconds and increases all subsequent magic damage taken by target by 20% (90 second cooldown)."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 80,
     "armor": 0,

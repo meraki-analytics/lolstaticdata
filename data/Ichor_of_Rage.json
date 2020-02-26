@@ -8,21 +8,15 @@
   "noEffects": true,
   "removed": true,
   "nickname": "",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+  "passives": [
+    null
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,
@@ -61,7 +55,7 @@
     ]
   },
   "other": {
-    "consume": "On use, grants 20 \u2212 40 (based on level) bonus attack damage, 20% \u2212 40% (based on level) bonus attack speed and 15% increased damage to turrets for 180 seconds.",
+    "consume": "On use, grants 20- 40 (based on level) bonus attack damage, 20%- 40% (based on level) bonus attack speed and 15% increased damage to turrets for 180 seconds.",
     "consume2": "",
     "championItem": "",
     "limit": "",

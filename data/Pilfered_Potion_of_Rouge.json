@@ -8,21 +8,15 @@
   "noEffects": true,
   "removed": true,
   "nickname": "kleptomancy",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+  "passives": [
+    null
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,
@@ -57,7 +51,7 @@
     "itemTags": []
   },
   "other": {
-    "consume": "Grants 6 \u2212 16.2 (based on level) bonus Attack Damage or 10 \u2212 27 (based on level) Ability Power (Adaptive) for 45 seconds.",
+    "consume": "Grants 6- 16.2 (based on level) bonus Attack Damage or 10- 27 (based on level) Ability Power (Adaptive) for 45 seconds.",
     "consume2": "",
     "championItem": "",
     "limit": "",

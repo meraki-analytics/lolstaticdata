@@ -8,33 +8,19 @@
   "noEffects": true,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": false,
       "name": null,
       "effects": "Holds up to 3 charges that refill upon visiting the shop."
-    },
-    "passive2": {
-      "unique": false,
-      "name": "Touch of Corruption",
-      "effects": " Abilities and basic attacks apply a burn that damages enemy champions for 15 bonus magic damage over 3 seconds. Bonus damage is halved for area of effect and damage over time effects."
-    },
-    "passive3": {
-      "unique": false,
-      "name": null,
-      "effects": "Corrupting Potion can be used even at full health and mana."
-    },
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

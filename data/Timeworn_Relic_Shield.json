@@ -8,29 +8,19 @@
   "noEffects": false,
   "removed": true,
   "nickname": "Support, Gold, Economy",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Spoils of War",
-      "effects": " Grants a charge every 40 seconds, up to 2 charges. Melee basic attacks can consume one charge to execute minions below 200 \u2212 285 (based on level) (+ 100% AD) health. Killing a minion by any means with a charge heals you and the nearest allied champion for 5 \u2212 30 (based on missing health) health and grants them kill gold. Healing is halved if the owner is ranged. These effects require an allied champion to be nearby."
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Quest",
-      "effects": " Earn 750 using this item and upgrade to Timeworn Targon's Brace. Reward"
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+      "effects": " Grants a charge every 40 seconds, up to 2 charges. Melee basic attacks can consume one charge to execute minions below 200- 285 (based on level) (+ 100% AD) health. Killing a minion by any means with a charge heals you and the nearest allied champion for 5- 30 (based on missing health) health and grants them kill gold. Healing is halved if the owner is ranged. These effects require an allied champion to be nearby."
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

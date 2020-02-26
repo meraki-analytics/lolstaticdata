@@ -11,29 +11,23 @@
   "noEffects": false,
   "removed": true,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": null,
       "effects": " Basic attacks build Flesh charges. At 5 charges, you gain the ability to cast Flesheater."
-    },
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": true,
       "name": " Flesheater",
       "effects": " Rip the flesh from the target enemy minion, dealing 200 (+ 75% AD) true damage and restoring 50 (+ 75% AD) health. Each cast of Fleasheater permanently increases the item's attack damage by 1."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

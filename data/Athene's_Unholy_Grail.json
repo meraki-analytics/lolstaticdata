@@ -11,29 +11,19 @@
   "noEffects": false,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": null,
-      "effects": " Gain 35% of the premitigation damage dealt to champions as Blood Charges, up to 100 \u2212 250 (based on level). Healing or shielding another ally consumes charges equal to 100% of the heal or shield, to heal them, up to the original effect amount."
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Dissonance",
-      "effects": " Gain +5 ability power for every additional 25% base mana regeneration. Disables Harmony on your other items."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+      "effects": " Gain 35% of the premitigation damage dealt to champions as Blood Charges, up to 100- 250 (based on level). Healing or shielding another ally consumes charges equal to 100% of the heal or shield, to heal them, up to the original effect amount."
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 30,
     "armor": 0,

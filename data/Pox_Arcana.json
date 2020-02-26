@@ -11,29 +11,23 @@
   "noEffects": false,
   "removed": true,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Pox",
       "effects": " Applies a stack of Pox for 10 seconds whenever you deal ability damage, stacking up to 5 times."
-    },
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": true,
       "name": " Disease Harvest",
       "effects": " Deals 100 magic damage plus 20 (+ 5% AP) per stack of Pox (maximum of 200 (+ 25% AP)) to all nearby enemies affected by Pox, and restores 5% of your maximum mana for every Pox stack harvested (60 second cooldown)."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 100,
     "armor": 0,

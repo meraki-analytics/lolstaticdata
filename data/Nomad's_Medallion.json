@@ -11,29 +11,19 @@
   "noEffects": false,
   "removed": true,
   "nickname": "Support, Economy, Gold, Sightstone, Ward",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Favor",
       "effects": " Nearby enemy minions, killed by any ally other than you, will sometimes drop a coin that can be picked up to either grant 50 or restore 6% missing mana (minimum 10). Gold coin can only drop if an allied champion is nearby. Cannon minions will drop a coin as long as you don't kill them."
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Quest",
-      "effects": " Earn 500 using this item. Reward"
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

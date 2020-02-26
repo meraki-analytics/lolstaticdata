@@ -8,29 +8,19 @@
   "noEffects": false,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Awe",
       "effects": " Grants bonus attack damage equal to 2% maximum mana. Refunds 15% of mana spent."
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Shock",
-      "effects": " Basic attacks and single targeted abilities against champions (on-hit) consume 3% current mana to deal 6% current mana bonus physical damage. This effect only activates while you have greater than 20% maximum mana."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

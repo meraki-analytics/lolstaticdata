@@ -11,33 +11,23 @@
   "noEffects": false,
   "removed": true,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Mana Font",
       "effects": " Restores 2% of your missing mana every 5 seconds."
-    },
-    "passive2": {
-      "unique": true,
-      "name": null,
-      "effects": " Basic attacks mark champions with a string for 6 seconds, which breaks if they move more than 1000 units away."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": true,
       "name": null,
       "effects": " Pulls all marked champions up to 250 units toward you (45 second cooldown)."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

@@ -11,29 +11,19 @@
   "noEffects": false,
   "removed": true,
   "nickname": "jungle",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Spellblade",
       "effects": " After using an ability, your next basic attack (on-hit) deals 100% base AD + (30% AP) bonus magic damage (1.5 second cooldown)."
-    },
-    "passive2": {
-      "unique": false,
-      "name": null,
-      "effects": "Against monsters, Spellblade deals area of effect magic damage around the target and restores 8% missing mana. Spellblade also deals double damage (200% base AD + (60% AP)) against the first monster hit."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 40,
     "armor": 0,

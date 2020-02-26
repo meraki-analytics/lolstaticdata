@@ -12,37 +12,19 @@
   "noEffects": false,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": false,
       "name": null,
       "effects": "Basic attacks deal 15 bonus magic damage on-hit."
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Last Whisper",
-      "effects": " Grants 15% total armor penetration."
-    },
-    "passive3": {
-      "unique": true,
-      "name": " Dissolve",
-      "effects": " Grants 15% magic penetration."
-    },
-    "passive4": {
-      "unique": true,
-      "name": " Basic attacks grant 8% bonus attack speed on-attack, after a 0.15 second delay, for 5 seconds, stacking up to 6 times for a maximum of 48% bonus attack speed. Melee champions can fully stack it with their fourth basic attack. While at 6 stacks gain Guinsoo's Rage",
-      "effects": " Every third basic attack triggers a Phantom Hit on-attack that applies on-hit effects to the target unit after a 0.15 second delay."
-    },
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 25,
     "armor": 0,

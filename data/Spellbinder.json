@@ -11,29 +11,23 @@
   "noEffects": false,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": null,
       "effects": " Gains a charge each time an enemy or allied champion within 1800 range, including yourself, casts an ability, up to a maximum of 100 charges."
-    },
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": true,
       "name": null,
-      "effects": " Grants 0 \u2212 80 (based on charges) ability power and a decaying 0% \u2212 50% (based on charges) bonus movement speed for 4 seconds (60 second cooldown)."
+      "effects": " Grants 0- 80 (based on charges) ability power and a decaying 0%- 50% (based on charges) bonus movement speed for 4 seconds (60 second cooldown)."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 120,
     "armor": 0,

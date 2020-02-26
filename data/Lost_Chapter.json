@@ -16,29 +16,19 @@
   "noEffects": false,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Haste",
       "effects": " Grants an additional 10% cooldown reduction."
-    },
-    "passive2": {
-      "unique": true,
-      "name": null,
-      "effects": " Upon leveling, restores 20% of your maximum mana over 3 seconds."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 40,
     "armor": 0,

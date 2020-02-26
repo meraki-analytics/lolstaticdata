@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 import json
 import re
 from lolstaticdata.util import download_webpage
-from model2 import Stat, Shop, Item, Other, Passives, Passive, Active, Aura, itemAttributes
+from model2 import Stat, Shop, Item, Other, Passive, itemAttributes
 from collections import OrderedDict
 
 
@@ -18,6 +18,39 @@ class get_Items():
         self.not_unique = re.compile('[A-z]')
 
     def uniquePassive(self,passive):
+
+        effects = []
+        if passive == "pass":
+            for i in range(1,6):
+                passive = "pass" + str(i)
+                if passive == "pass1":
+                    passive = "pass"
+                passive = self.test3[passive]
+                effect =self.uniquePassiveFunc(passive)
+                effects.append(effect)
+                print(effects)
+                return effects
+
+
+        elif passive == "aura":
+            for i in range(1,4):
+                passive = "aura" + str(i)
+                if passive == "aura1":
+                    passive = "aura"
+                print(passive)
+                passive = self.test3[passive]
+                effect = self.uniquePassiveFunc(passive)
+                effects.append(effect)
+                return effects
+
+        elif passive == "act":
+            passive = self.test3[passive]
+            effect = self.uniquePassiveFunc(passive)
+            effects.append(effect)
+            return effects
+
+
+    def uniquePassiveFunc(self,passive):
         unique_no_space = re.compile('(Unique:).*')
         unique_reg = re.compile('(?:(?<=Unique:)|(?<=Unique :)).*')
         not_unique = re.compile('[A-z]')
@@ -35,12 +68,13 @@ class get_Items():
                     unique = True
                     name = None
                     passive = uniqueData
-                effects = Passive(
+                effect = Passive(
                     unique = unique,
                     name = name,
                     effects = passive
                 )
-                return effects
+                return effect
+
             else:
                 # return normal passive
                 notUnique = not_unique.search(passive)
@@ -55,16 +89,22 @@ class get_Items():
                         name = None
                         passive = passive
 
-                    effects = Passive(
+                    effect = Passive(
                         unique=unique,
                         name=name,
                         effects=passive
                     )
-                    return effects
+                    return effect
 
         except AttributeError:
             print(passive, "TESTING")
             raise
+
+
+
+
+
+
     def prices(self, statistic):
         try:
             if statistic in ("N/A"):
@@ -222,21 +262,9 @@ class get_Items():
             no_effects = no_effects,
             removed=self.removed,
             nickname=self.test3["nickname"],
-            passives = Passives(
-                passive1= self.uniquePassive(self.test3["pass"]) ,
-                passive2=self.uniquePassive(self.test3["pass2"]),
-                passive3=self.uniquePassive(self.test3["pass3"]),
-                passive4=self.uniquePassive(self.test3["pass4"]),
-                passive5=self.uniquePassive(self.test3["pass5"]),
-            ),
-            auras = Aura(
-                aura=self.uniquePassive(self.test3["aura"]),
-                aura2=self.uniquePassive(self.test3["aura2"]),
-                aura3=self.uniquePassive(self.test3["aura3"]),
-            ),
-            active= Active(
-                active=self.uniquePassive(self.test3["act"]),
-            ),
+            passives = self.uniquePassive("pass"),
+            auras = self.uniquePassive("aura"),
+            active= self.uniquePassive("act"),
             stats=Stat(
                 abilityPower=self.prices(self.test3["ap"]),
                 armor=self.prices(self.test3['armor']),

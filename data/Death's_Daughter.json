@@ -8,25 +8,19 @@
   "noEffects": true,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Death's Daughter",
       "effects": " An initial, huge cannonball precedes Cannon Barrage's first cluster of waves, dealing 150 / 210 / 270 (+30% AP) true damage and slowing enemies hit by 60% for 1.5 seconds."
-    },
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

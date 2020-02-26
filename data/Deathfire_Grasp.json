@@ -11,25 +11,19 @@
   "noEffects": false,
   "removed": true,
   "nickname": "dfg",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+  "passives": [
+    null
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": true,
       "name": null,
       "effects": " Deals 15% of the target champion's maximum health in magic damage and increases all subsequent magic damage taken by the target by 20% for 4 seconds (750 range) (90 second cooldown)."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 120,
     "armor": 0,

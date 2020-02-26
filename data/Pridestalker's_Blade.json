@@ -13,29 +13,19 @@
   "noEffects": false,
   "removed": true,
   "nickname": "jungle",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Tooth and Nail",
-      "effects": " Basic attacks versus monsters deal 40 bonus physical damage. Damaging a monster by any means set it aflame, dealing an additional 80 magic damage over 5 seconds while causing you to restore 6 health per second for every enemy you're burning. While in the jungle or river, regenerate 0 \u2212 8 (based on missing mana) mana per second."
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Chilling Smite",
-      "effects": " Upgrading this item with an enchant upgrades Smite to Chilling Smite."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+      "effects": " Basic attacks versus monsters deal 40 bonus physical damage. Damaging a monster by any means set it aflame, dealing an additional 80 magic damage over 5 seconds while causing you to restore 6 health per second for every enemy you're burning. While in the jungle or river, regenerate 0- 8 (based on missing mana) mana per second."
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

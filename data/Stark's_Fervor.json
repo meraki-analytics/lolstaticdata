@@ -11,25 +11,19 @@
   "noEffects": false,
   "removed": true,
   "nickname": "",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": {
+  "passives": [
+    null
+  ],
+  "auras": [
+    {
       "unique": true,
       "name": null,
       "effects": " Nearby allied champions gain 20% attack speed, 30 health regeneration, and 20% life steal. Reduces armor or nearby enemy champions by 20 (1200 range)."
-    },
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

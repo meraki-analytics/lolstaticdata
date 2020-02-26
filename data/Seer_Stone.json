@@ -8,25 +8,19 @@
   "noEffects": true,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+  "passives": [
+    null
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": false,
       "name": "Definitely Not Dominion",
       "effects": "  Reveals a 550 range area within 2500 / 3500 (based on level) range for 3 seconds (120 second cooldown). Enemy champions hit will be  revealed for 5 seconds.\nNexus Siege"
     }
-  },
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

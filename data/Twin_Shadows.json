@@ -11,25 +11,19 @@
   "noEffects": false,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+  "passives": [
+    null
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": true,
       "name": " Spectral Pursuit",
-      "effects": " Summons 2 ghosts for 6 seconds that seek out nearby enemy champions. Ghosts, on contact, reveal and slow enemy champion by 40% for 2 \u2212 5 (based on distance traveled) seconds (90 second cooldown)."
+      "effects": " Summons 2 ghosts for 6 seconds that seek out nearby enemy champions. Ghosts, on contact, reveal and slow enemy champion by 40% for 2- 5 (based on distance traveled) seconds (90 second cooldown)."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 70,
     "armor": 0,

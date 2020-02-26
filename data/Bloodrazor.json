@@ -8,25 +8,19 @@
   "noEffects": false,
   "removed": false,
   "nickname": "jungle,yellow,enchantment,devourer",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": null,
       "effects": " Basic attacks deal 4% of the target's maximum health bonus physical damage on-hit, capped at 75 damage against minions and monsters."
-    },
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

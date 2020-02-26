@@ -12,25 +12,19 @@
   "noEffects": false,
   "removed": true,
   "nickname": "",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+  "passives": [
+    null
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": true,
       "name": null,
       "effects": " Places a Stealth Ward at target location (600 range) (180 seconds cooldown)."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

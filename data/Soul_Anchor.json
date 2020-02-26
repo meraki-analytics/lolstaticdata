@@ -8,25 +8,19 @@
   "noEffects": true,
   "removed": true,
   "nickname": "",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+  "passives": [
+    null
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": false,
       "name": null,
       "effects": "Consumes a charge to instantly revive you at your summoner platform and grants 125% movement speed that decays over 12 seconds.\nSoul Anchor starts with 1 charge, additional charges are gained at levels 9 and 14."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

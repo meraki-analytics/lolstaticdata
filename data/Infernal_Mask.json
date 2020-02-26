@@ -8,29 +8,23 @@
   "noEffects": false,
   "removed": false,
   "nickname": "ornn,forge",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Eternity",
       "effects": " Restore mana equal to 15% of damage taken from champions. Restore health equal to 20% of mana spent, up to 25 health per cast, while toggle abilities can heal for up to 25 per second."
-    },
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": {
+    }
+  ],
+  "auras": [
+    {
       "unique": true,
       "name": null,
       "effects": " Nearby enemy champions take 15% more magic damage (325 range)."
-    },
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

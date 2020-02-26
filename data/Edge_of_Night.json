@@ -12,29 +12,19 @@
   "noEffects": false,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": null,
-      "effects": " +10 Lethality (6.22 \u2212 10 (based on level) armor penetration)"
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Spell Shield",
-      "effects": " Grants a spell shield that blocks the next enemy ability. This shield refreshes after no damage is taken from enemy champions for 40 seconds."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+      "effects": " +10 Lethality (6.22- 10 (based on level) armor penetration)"
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

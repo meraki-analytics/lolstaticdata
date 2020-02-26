@@ -11,37 +11,23 @@
   "noEffects": false,
   "removed": true,
   "nickname": "Support, Economy, Gold",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Point Runner",
       "effects": " Builds up to 20% bonus movement speed over 2 seconds while near turrets, fallen turrets and Void Gates."
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Favor",
-      "effects": " Nearby enemy minions, killed by any ally other than you, will sometimes drop a coin that can be picked up to either grant 50 or restore 6% missing mana (minimum 10). Gold coin can only drop if an allied champion is nearby. Cannon minions will drop a coin as long as you don't kill them."
-    },
-    "passive3": {
-      "unique": true,
-      "name": " Quest",
-      "effects": " Earn 750 using this item. Reward"
-    },
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": true,
       "name": null,
       "effects": " Grants nearby allies +40% bonus movement speed for 3 seconds (60 second cooldown)."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 45,

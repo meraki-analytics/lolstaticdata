@@ -8,25 +8,19 @@
   "noEffects": true,
   "removed": true,
   "nickname": "red",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+  "passives": [
+    null
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": false,
       "name": null,
-      "effects": "Summons a  Sweeper Drone at the target location for 6 seconds (500 \u2212 2000 (based on level) cast range; 90 \u2212 60 (based on level) second cooldown). The drone has a 450 \u2212 575 (based on level)-unit detection radius."
+      "effects": "Summons a  Sweeper Drone at the target location for 6 seconds (500- 2000 (based on level) cast range; 90- 60 (based on level) second cooldown). The drone has a 450- 575 (based on level)-unit detection radius."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

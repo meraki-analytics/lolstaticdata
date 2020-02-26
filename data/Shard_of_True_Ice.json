@@ -8,29 +8,23 @@
   "noEffects": false,
   "removed": false,
   "nickname": "Support, Economy, Gold, Sightstone, Ward",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": null,
       "effects": " Receives diminishing gold from excessive minion kills."
-    },
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": true,
       "name": " Warding",
       "effects": " Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area. Holds up to 4 charges which refill upon visiting the shop."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 45,
     "armor": 0,

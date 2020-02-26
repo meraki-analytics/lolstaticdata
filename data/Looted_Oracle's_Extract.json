@@ -8,21 +8,15 @@
   "noEffects": true,
   "removed": true,
   "nickname": "kleptomancy",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+  "passives": [
+    null
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,
@@ -57,7 +51,7 @@
     "itemTags": []
   },
   "other": {
-    "consume": "Grants  True Sight as well as the ability to detect hidden units within a 500-unit detection radius for 15 \u2212 40 (based on level) seconds. The detection will ignore terrain and brush.\n  True Sight will reveal both stealthed and invisible enemies.\n Detection highlights units, traps and wards as a red silhouette.",
+    "consume": "Grants  True Sight as well as the ability to detect hidden units within a 500-unit detection radius for 15- 40 (based on level) seconds. The detection will ignore terrain and brush.\n  True Sight will reveal both stealthed and invisible enemies.\n Detection highlights units, traps and wards as a red silhouette.",
     "consume2": "",
     "championItem": "",
     "limit": "",

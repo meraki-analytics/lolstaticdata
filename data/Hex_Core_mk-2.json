@@ -8,29 +8,19 @@
   "noEffects": false,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": false,
       "name": null,
-      "effects": "Grants 6 \u2212 108 (based on level) ability power and  20 \u2212 360 (based on level) mana."
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Progress",
-      "effects": " Viktor can upgrade one of his basic abilities."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+      "effects": "Grants 6- 108 (based on level) ability power and  20- 360 (based on level) mana."
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

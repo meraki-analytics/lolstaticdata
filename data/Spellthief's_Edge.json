@@ -8,29 +8,19 @@
   "noEffects": false,
   "removed": false,
   "nickname": "Support, Economy, Gold",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Tribute",
       "effects": " Grants a charge every 10 seconds, up to 3 charges. Damaging abilities and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge grants 15. Receive diminishing gold from excessive minion kills."
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Quest",
-      "effects": " Earn 500 using this item to upgrade to Frostfang, gaining the Warding active with 3 wards in stock."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 8,
     "armor": 0,

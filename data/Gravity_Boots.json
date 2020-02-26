@@ -8,29 +8,19 @@
   "noEffects": true,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": false,
       "name": "Passive - Mass Conversion",
       "effects": " Thresh's health presents how far enemies will push and pull him."
-    },
-    "passive2": {
-      "unique": false,
-      "name": "Passive - Terminus Dwellers",
-      "effects": " Damaging on Abyssal Scuttlers causes them to scurry toward the Dark Star."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

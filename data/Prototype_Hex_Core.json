@@ -8,29 +8,19 @@
   "noEffects": true,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": false,
       "name": null,
-      "effects": "Grants 1 \u2212 18 (based on level) ability power and 10 \u2212 180 (based on level) mana."
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Progress",
-      "effects": " This item can be upgraded three times, which each upgrade allowing Viktor to enhance one of his basic abilities."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+      "effects": "Grants 1- 18 (based on level) ability power and 10- 180 (based on level) mana."
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

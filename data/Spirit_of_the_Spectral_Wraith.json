@@ -11,33 +11,19 @@
   "noEffects": false,
   "removed": true,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Spirit Drain",
       "effects": " Grants 2 ability power for every large monster kill, up to 30 ability power."
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Butcher",
-      "effects": " Against monsters, deal 30% bonus damage and restore 6% of damage dealt to monsters as health and 3% as mana."
-    },
-    "passive3": {
-      "unique": true,
-      "name": " Conservation",
-      "effects": " You generate Conservation stacks every 1.5 seconds, up to 80. Killing a large monster will consume up to 40 stacks and grant 1 per stack consumed. You may only be in possession of 1 Gold Income item."
-    },
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 50,
     "armor": 0,

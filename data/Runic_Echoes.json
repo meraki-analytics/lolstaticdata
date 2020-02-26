@@ -11,29 +11,19 @@
   "noEffects": false,
   "removed": false,
   "nickname": "jungle,blue,enchantment,runeglaive",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Echo",
       "effects": " Gains charges upon moving or casting. At 100 charges, the next instance of ability damage you deal will expend all charges to deal 60 (+ 10% AP) bonus magic damage to the first enemy hit and summon up to 3 lesser bolts that target nearby enemies, prioritizing enemies damaged by the ability and champions over minions."
-    },
-    "passive2": {
-      "unique": false,
-      "name": null,
-      "effects": "Echo is amplified to [ 250% ][ 150 (+ 25% AP) ] magic damage on large monsters. Hitting a large monster with this effect will restore 25% of your missing mana."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 80,
     "armor": 0,

@@ -11,25 +11,19 @@
   "noEffects": false,
   "removed": true,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Ashes to Ashes",
-      "effects": " Controlling the Altar on the allied side of the map sets you aflame, dealing 26 \u2212 43 (based on level) magic damage per second to nearby enemies. Deals [ 50% bonus ][ 39 \u2212 64.5 (based on level) ] magic damage to minions and monsters.Controlling the Altar on the enemy's side of the map causes your basic attacks to burn targets for 12 \u2212 114 (based on level) true damage over 3 seconds."
-    },
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+      "effects": " Controlling the Altar on the allied side of the map sets you aflame, dealing 26- 43 (based on level) magic damage per second to nearby enemies. Deals [ 50% bonus ][ 39- 64.5 (based on level) ] magic damage to minions and monsters.Controlling the Altar on the enemy's side of the map causes your basic attacks to burn targets for 12- 114 (based on level) true damage over 3 seconds."
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

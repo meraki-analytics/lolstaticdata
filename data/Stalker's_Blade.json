@@ -16,37 +16,19 @@
   "noEffects": false,
   "removed": false,
   "nickname": "jungle",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Chilling Smite",
       "effects": " Upgrades Smite to Chilling Smite."
-    },
-    "passive2": {
-      "unique": false,
-      "name": null,
-      "effects": "Chilling Smite can be cast on enemy champions, dealing 28 \u2212 166 (based on level) true damage and  slowing the target by 20% for 2 seconds, while also increasing your own movement speed by 20% for the same duration."
-    },
-    "passive3": {
-      "unique": true,
-      "name": " Tooth and Nail",
-      "effects": " Basic attacks versus monsters deal 40 bonus physical damage. Damaging a monster by any means set it aflame, dealing an additional 80 magic damage over 5 seconds while causing you to restore 6 health per second for every enemy you're burning. While in the jungle or river, regenerate 0 \u2212 8 (based on missing mana) mana per second."
-    },
-    "passive4": {
-      "unique": true,
-      "name": " Monster Hunter",
-      "effects": " Killing large or epic monsters grants +60 bonus experience. Once per game, killing a large monster also grants an additional +150 bonus experience. If your gold from minions is greater than half your gold from monsters, lane minion kills will grant 13 less gold. This penalty is removed at 14 minutes."
-    },
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

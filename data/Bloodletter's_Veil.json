@@ -11,29 +11,19 @@
   "noEffects": false,
   "removed": true,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Touch of Death",
       "effects": " +15 magic penetration."
-    },
-    "passive2": {
-      "unique": true,
-      "name": null,
-      "effects": " After hitting an enemy champion with a damaging ability, gain a spell shield for 2 seconds that blocks 1 incoming spell (30 second cooldown)."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 75,
     "armor": 0,

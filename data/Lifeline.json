@@ -11,29 +11,23 @@
   "noEffects": false,
   "removed": true,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": null,
-      "effects": " +8 Lethality (4.98 \u2212 8 (based on level) armor penetration)"
-    },
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+      "effects": " +8 Lethality (4.98- 8 (based on level) armor penetration)"
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": true,
       "name": null,
       "effects": " Mark your current location. After 4 seconds, you will return to the marked location (120 second cooldown)."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

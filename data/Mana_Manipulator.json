@@ -8,25 +8,19 @@
   "noEffects": false,
   "removed": true,
   "nickname": "",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": {
+  "passives": [
+    null
+  ],
+  "auras": [
+    {
       "unique": true,
       "name": " Mana Warp",
       "effects": " Nearby allied champions gain 5 mana regeneration (1100 range)."
-    },
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

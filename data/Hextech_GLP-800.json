@@ -11,29 +11,23 @@
   "noEffects": false,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Haste",
       "effects": " Grants an additional 10% cooldown reduction."
-    },
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": true,
       "name": " Frost Bolt",
-      "effects": " After a 0.25-second delay, fires over 0.2 seconds a spray of five icy bolts in a cone, which each bolt dealing 100 \u2212 200 (based on level) (+ 20% AP) magic damage and slowing by 65%, decaying over 2 second, the first units hit (40 second cooldown, shared with other Hextech items)."
+      "effects": " After a 0.25-second delay, fires over 0.2 seconds a spray of five icy bolts in a cone, which each bolt dealing 100- 200 (based on level) (+ 20% AP) magic damage and slowing by 65%, decaying over 2 second, the first units hit (40 second cooldown, shared with other Hextech items)."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 80,
     "armor": 0,

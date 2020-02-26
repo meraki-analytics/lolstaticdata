@@ -8,29 +8,19 @@
   "noEffects": false,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Dread",
       "effects": " Grants +5 ability power per stack of Glory. Grants +10% bonus movement speed at 10 Glory."
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Do or Die",
-      "effects": " Grants 4 Glory (+20 AP) for a champion kill and 2 Glory (+10 AP) for an assist, up to 25 Glory (+125 AP). Upon death, lose 10 Glory stacks (-50 AP)."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 20,
     "armor": 0,

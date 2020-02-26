@@ -8,21 +8,15 @@
   "noEffects": true,
   "removed": true,
   "nickname": "",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+  "passives": [
+    null
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,
@@ -62,7 +56,7 @@
     ]
   },
   "other": {
-    "consume": "On use, grants 30 \u2212 64 (based on level) ability power, 10% cooldown reduction for 180 seconds. Additionally, if you have mana, restores a lot of mana per second, and if you have energy, instead restores 3 flat energy and 0.5% of maximum energy per second.",
+    "consume": "On use, grants 30- 64 (based on level) ability power, 10% cooldown reduction for 180 seconds. Additionally, if you have mana, restores a lot of mana per second, and if you have energy, instead restores 3 flat energy and 0.5% of maximum energy per second.",
     "consume2": "",
     "championItem": "",
     "limit": "",

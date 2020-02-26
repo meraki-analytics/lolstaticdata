@@ -12,29 +12,19 @@
   "noEffects": false,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": null,
       "effects": " Instantly heal for 15% of all damage dealt, including physical damage, magic damage, and true damage. Area damage, persistent area damage, and pet damage only heals 5% for every unit affected."
-    },
-    "passive2": {
-      "unique": true,
-      "name": null,
-      "effects": " Stores 30% of all post-mitigation physical and magic damage received, which is successively taken as damage over time true damage instead, dealing one-third of the stored damage every second.The last tick of stored damage cannot deal lethal damage, leaving the champion with 1 health."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

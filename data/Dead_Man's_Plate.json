@@ -11,29 +11,19 @@
   "noEffects": false,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Dreadnought",
       "effects": " Generates a maximum of 100 Momentum stacks by moving, which grant up to 60 bonus movement speed. Momentum decays while immobilized or pacified."
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Crushing Blow",
-      "effects": " Basic attacks discharge all stacks to deal (1 per stack) bonus magic damage on-hit, up to 100. Basic attacks at 100 stacks also slow by 50% for 1 second."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 60,

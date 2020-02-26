@@ -96,33 +96,6 @@ class Passive(object):
     name : str
     effects : str
 
-@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
-@dataclass
-class Passives(object):
-
-    passive1 : Passive
-    passive2 : Passive
-    passive3 : Passive
-    passive4 : Passive
-    passive5 : Passive
-
-
-
-@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
-@dataclass
-class Active(object):
-
-    active: Passive
-
-
-@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
-@dataclass
-class Aura(object):
-
-    aura: Passive
-    aura2: Passive
-    aura3: Passive
-
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
@@ -148,9 +121,9 @@ class Item(object):
     no_effects: bool
     removed : bool
     nickname : str
-    passives : Passives
-    auras : Aura
-    active : Active
+    passives : List[Passive]
+    auras : List[Passive]
+    active : List[Passive]
     stats: Stat
     shop: Shop
     other : Other

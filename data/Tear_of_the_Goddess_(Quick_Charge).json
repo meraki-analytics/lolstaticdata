@@ -14,29 +14,19 @@
   "noEffects": false,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Awe",
       "effects": " Refunds 10% of mana spent."
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Mana Charge",
-      "effects": " Grants a charge every 4 seconds, up to 3 charges. Each mana expenditure consumes a charge and grants +6 mana, up to a maximum of 750 mana."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

@@ -8,21 +8,15 @@
   "noEffects": true,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+  "passives": [
+    null
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,
@@ -57,7 +51,7 @@
     "itemTags": []
   },
   "other": {
-    "consume": "Throws the Snax, which the  Poro King catches in his mouth. Eating the Frosted Snax causes the Poro King to unleash a barrage of 15 frosted artillery over the next 5 second upon a 1000-radius area, each dealing 213 \u2212 775 (based on level) magic damage to targets in the center of the impact, reduced to 85 \u2212 310 (based on level) on the edge (120 seconds cooldown). The area will track the largest contingent of the enemy team, moving to keep as many enemies in range as possible.",
+    "consume": "Throws the Snax, which the  Poro King catches in his mouth. Eating the Frosted Snax causes the Poro King to unleash a barrage of 15 frosted artillery over the next 5 second upon a 1000-radius area, each dealing 213- 775 (based on level) magic damage to targets in the center of the impact, reduced to 85- 310 (based on level) on the edge (120 seconds cooldown). The area will track the largest contingent of the enemy team, moving to keep as many enemies in range as possible.",
     "consume2": "",
     "championItem": "",
     "limit": "Can only be used within 850 units of the  Poro King.",

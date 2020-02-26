@@ -11,25 +11,19 @@
   "noEffects": false,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+  "passives": [
+    null
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": true,
       "name": null,
-      "effects": " Grants a decaying shield to nearby allied champions and yourself for up to 2.5 seconds, absorbing up to 130 \u2212 300 (based on highest level between target and caster) (+ 20% of caster's bonus health) damage ( 650 radius) (120 second cooldown). Shielded targets are Eclipsed for 20 seconds."
+      "effects": " Grants a decaying shield to nearby allied champions and yourself for up to 2.5 seconds, absorbing up to 130- 300 (based on highest level between target and caster) (+ 20% of caster's bonus health) damage ( 650 radius) (120 second cooldown). Shielded targets are Eclipsed for 20 seconds."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 30,
@@ -70,7 +64,7 @@
     "consume": "",
     "consume2": "",
     "championItem": "",
-    "limit": "Eclipsed: Additional  Locket of the Iron Solari shields [ are only 25% as effective ][ absorb only 32.5 \u2212 75 (based on highest level between target and caster) (+ 5% of caster's bonus health) damage ].",
+    "limit": "Eclipsed: Additional  Locket of the Iron Solari shields [ are only 25% as effective ][ absorb only 32.5- 75 (based on highest level between target and caster) (+ 5% of caster's bonus health) damage ].",
     "req": "",
     "hp": 0
   }

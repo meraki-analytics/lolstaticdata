@@ -12,25 +12,19 @@
   "noEffects": false,
   "removed": true,
   "nickname": "",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": {
+  "passives": [
+    null
+  ],
+  "auras": [
+    {
       "unique": true,
       "name": null,
       "effects": " Nearby champions gain 10% cooldown reduction and 12 mana regeneration (1200 range)."
-    },
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

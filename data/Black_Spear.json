@@ -8,25 +8,19 @@
   "noEffects": true,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+  "passives": [
+    null
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": false,
       "name": "Oathsworn Bond",
       "effects": " Binds with an ally for the remainder of the game, becoming Oathsworn Allies that link within  1100 units."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

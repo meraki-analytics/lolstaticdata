@@ -11,33 +11,23 @@
   "noEffects": false,
   "removed": true,
   "nickname": "Support, Economy, Gold",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Tribute",
       "effects": " Grants a charge every 10 seconds, up to 3 charges. Damaging spells and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge deals them 18 bonus magic damage, and if an allied champion is nearby, also grants 22. Before quest completion, killing a minion or non-epic monster pauses Tribute generation and the passive gold generation for 12 seconds per unit slain."
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Quest",
-      "effects": " Earn 750 using this item. Reward"
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": true,
       "name": null,
-      "effects": " Summon 2 icy ghosts for 6 seconds that seek out nearby enemy champions. Ghosts reveal enemies on contact and slow them by 40% for 2 \u2212 5 (based on distance traveled) seconds (90 second cooldown)."
+      "effects": " Summon 2 icy ghosts for 6 seconds that seek out nearby enemy champions. Ghosts reveal enemies on contact and slow them by 40% for 2- 5 (based on distance traveled) seconds (90 second cooldown)."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 60,
     "armor": 0,

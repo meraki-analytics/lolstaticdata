@@ -8,25 +8,19 @@
   "noEffects": true,
   "removed": true,
   "nickname": "",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+  "passives": [
+    null
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": false,
       "name": null,
       "effects": "Summons a drone at the target location for 6 seconds (600 range). The drone reveals and disables all invisible traps and wards within an 600-unit radius. (75 second cooldown).\nAdditionally, your champion gains  true sight for 10 seconds."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

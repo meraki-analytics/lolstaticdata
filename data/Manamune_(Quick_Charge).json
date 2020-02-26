@@ -11,33 +11,19 @@
   "noEffects": false,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Awe",
       "effects": " Grants bonus attack damage equal to 2% maximum mana. Refunds 15% of mana spent."
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Mana Charge",
-      "effects": " Grants a charge every 4 seconds, up to 3 charges. Each basic attack or mana expenditure consumes a charge and grants +6 mana, up to a maximum of 750 mana."
-    },
-    "passive3": {
-      "unique": false,
-      "name": null,
-      "effects": "Transforms into  Muramana at +750 mana."
-    },
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

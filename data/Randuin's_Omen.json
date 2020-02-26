@@ -11,33 +11,23 @@
   "noEffects": false,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": null,
       "effects": " -20% critical strike damage taken from basic attacks."
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Cold Steel",
-      "effects": " When hit by basic attacks, cripples source's attack speed by 15% for 1 second."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": true,
       "name": null,
       "effects": " Slows all enemy units within 500 units range by 55% for 2 seconds (60 second cooldown)."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 70,

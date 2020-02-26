@@ -11,29 +11,19 @@
   "noEffects": false,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Touch of Death",
       "effects": " +15 magic penetration."
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Cursed Strike",
-      "effects": " Dealing magic damage to an enemy champion inflicts them with Grievous Wounds for 3 seconds."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 70,
     "armor": 0,

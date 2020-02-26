@@ -12,33 +12,23 @@
   "noEffects": false,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": false,
       "name": null,
       "effects": "Life steal applies to 50% of Cleave and Crescent's splash physical damage."
-    },
-    "passive2": {
-      "unique": true,
-      "name": " Cleave",
-      "effects": " Basic attacks deal (20% to 60% AD) physical damage to units around your target"
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": true,
       "name": " Crescent",
       "effects": " Deals (60% to 100% AD) physical damage to units around you"
     }
-  },
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

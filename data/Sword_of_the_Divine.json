@@ -12,29 +12,23 @@
   "noEffects": false,
   "removed": true,
   "nickname": "sotd",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": null,
-      "effects": " +18 Lethality (11.2 \u2212 18 (based on level) armor penetration)"
-    },
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+      "effects": " +18 Lethality (11.2- 18 (based on level) armor penetration)"
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": true,
       "name": null,
       "effects": " For 3 seconds or your next 3 basic attacks, grants 100% bonus attack speed and 100% critical strike chance (90 second cooldown)."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

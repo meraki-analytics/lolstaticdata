@@ -11,25 +11,19 @@
   "noEffects": false,
   "removed": false,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Outgoing healing and shielding (excluding yourself) enhances you and affected allies with Frenzy for 6 seconds.Frenzy",
-      "effects": " Grants 10% \u2212 30% (based on target's level) bonus attack speed and 5 \u2212 20 (based on target's level) bonus magic damage on-hit."
-    },
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+      "effects": " Grants 10%- 30% (based on target's level) bonus attack speed and 5- 20 (based on target's level) bonus magic damage on-hit."
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 60,
     "armor": 0,

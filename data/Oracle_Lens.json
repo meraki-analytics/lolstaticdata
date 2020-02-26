@@ -8,25 +8,19 @@
   "noEffects": true,
   "removed": false,
   "nickname": "red",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+  "passives": [
+    null
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": false,
       "name": null,
-      "effects": "Summons a  Sweeper Drone that escorts you for the next 10 seconds (90 \u2212 60 (based on average of all champion levels) second cooldown). The drone has a 750-unit detection radius."
+      "effects": "Summons a  Sweeper Drone that escorts you for the next 10 seconds (90- 60 (based on average of all champion levels) second cooldown). The drone has a 750-unit detection radius."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

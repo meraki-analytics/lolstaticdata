@@ -8,29 +8,19 @@
   "noEffects": true,
   "removed": true,
   "nickname": "Green Potion",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": false,
       "name": null,
       "effects": "Holds up to 5 charges that refill upon visiting the store. Killing large monsters grants one charge."
-    },
-    "passive2": {
-      "unique": false,
-      "name": null,
-      "effects": "Killing a large monster at maximum charges will trigger the restoration at no cost to the charges."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

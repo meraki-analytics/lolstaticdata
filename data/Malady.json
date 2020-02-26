@@ -12,29 +12,19 @@
   "noEffects": false,
   "removed": true,
   "nickname": "",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": null,
       "effects": " Basic attacks deal 15 (+ 10% AP) bonus magic damage."
-    },
-    "passive2": {
-      "unique": true,
-      "name": null,
-      "effects": " Basic attacks reduce the target's magic resistance by 4 for 8 seconds. Stacks up to 7 times for a total of -28 magic resistance reduction."
-    },
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 25,
     "armor": 0,

@@ -8,25 +8,19 @@
   "noEffects": true,
   "removed": false,
   "nickname": "blue,brilliance,illumination",
-  "passives": {
-    "passive1": {
+  "passives": [
+    {
       "unique": true,
       "name": " Sorcery",
       "effects": " Going in combat by affecting enemy champions or turrets deals 25 bonus true damage (5 second cooldown against champions, no cooldown against turrets)."
-    },
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

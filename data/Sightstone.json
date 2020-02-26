@@ -13,25 +13,19 @@
   "noEffects": false,
   "removed": true,
   "nickname": "Support, Ward",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": null,
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": {
+  "passives": [
+    null
+  ],
+  "auras": [
+    null
+  ],
+  "active": [
+    {
       "unique": true,
       "name": " Warding",
       "effects": " Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area for 150 seconds. Holds up to 3 charges which refill upon visiting the shop."
     }
-  },
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

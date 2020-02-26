@@ -11,25 +11,19 @@
   "noEffects": false,
   "removed": false,
   "nickname": "fh",
-  "passives": {
-    "passive1": null,
-    "passive2": null,
-    "passive3": null,
-    "passive4": null,
-    "passive5": null
-  },
-  "auras": {
-    "aura": {
+  "passives": [
+    null
+  ],
+  "auras": [
+    {
       "unique": true,
       "name": null,
       "effects": " Cripples nearby enemies' attack speed by 15% (700 range)."
-    },
-    "aura2": null,
-    "aura3": null
-  },
-  "active": {
-    "active": null
-  },
+    }
+  ],
+  "active": [
+    null
+  ],
   "stats": {
     "abilityPower": 0,
     "armor": 110,
