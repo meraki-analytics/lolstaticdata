@@ -3,9 +3,15 @@
   "itemID": "3004",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Tear of the Goddess, Pickaxe",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Tear of the Goddess",
+    " Pickaxe"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Awe",
@@ -22,53 +28,52 @@
       "effects": "Transforms into  Muramana at +750 mana."
     },
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "35",
-    "attackSpeed": "",
-    "cdr": "",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "250",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 35,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 250,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "2400",
-    "priceCombined": "675",
-    "priceSell": "1680",
-    "itemTags": {
-      "tag1": "MAGIC:MANA",
-      "tag2": "Attack:DAMAGE",
-      "tag3": "MAGIC:MANA_REGEN",
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 2400,
+    "priceCombined": 675,
+    "priceSell": 1680,
+    "itemTags": [
+      "MAGIC:MANA",
+      "Attack:DAMAGE",
+      "MAGIC:MANA_REGEN"
+    ]
   },
   "other": {
     "consume": "",
@@ -76,8 +81,6 @@
     "championItem": "",
     "limit": "Limited to 1 Awe item.",
     "req": "",
-    "hp": "",
-    "removed": false,
-    "nickname": ""
+    "hp": 0
   }
 }

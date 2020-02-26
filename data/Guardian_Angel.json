@@ -3,9 +3,16 @@
   "itemID": "3026",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "B. F. Sword, Chain Vest, Stopwatch",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "B. F. Sword",
+    " Chain Vest",
+    " Stopwatch"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "ga",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": null,
@@ -14,53 +21,51 @@
     "passive2": null,
     "passive3": null,
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "40",
-    "armorPenetration": "",
-    "attackDamage": "45",
-    "attackSpeed": "",
-    "cdr": "",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 40,
+    "armorPenetration": 0,
+    "attackDamage": 45,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "2800",
-    "priceCombined": "50",
-    "priceSell": "1120",
-    "itemTags": {
-      "tag1": "DEFENSE:ARMOR",
-      "tag2": "Attack:DAMAGE",
-      "tag3": null,
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 2800,
+    "priceCombined": 50,
+    "priceSell": 1120,
+    "itemTags": [
+      "DEFENSE:ARMOR",
+      "Attack:DAMAGE"
+    ]
   },
   "other": {
     "consume": "",
@@ -68,8 +73,6 @@
     "championItem": "",
     "limit": "",
     "req": "",
-    "hp": "",
-    "removed": false,
-    "nickname": "ga"
+    "hp": 0
   }
 }

@@ -3,64 +3,70 @@
   "itemID": "3099",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Mana Manipulator, Kindlegem, Ruby Crystal",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Mana Manipulator",
+    " Kindlegem",
+    " Ruby Crystal"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": {
     "passive1": null,
     "passive2": null,
     "passive3": null,
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": {
       "unique": true,
       "name": null,
       "effects": " Nearby champions gain 10% cooldown reduction and 12 mana regeneration (1200 range)."
     },
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "520",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 520,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "2285",
-    "priceCombined": "485",
-    "priceSell": "1628",
-    "itemTags": {
-      "tag1": "DEFENSE:HEALTH",
-      "tag2": "MAGIC:COOLDOWN_REDUCTION",
-      "tag3": "MAGIC:MANA_REGEN",
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 2285,
+    "priceCombined": 485,
+    "priceSell": 1628,
+    "itemTags": [
+      "DEFENSE:HEALTH",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "MAGIC:MANA_REGEN"
+    ]
   },
   "other": {
     "consume": "",
@@ -68,8 +74,6 @@
     "championItem": "",
     "limit": "",
     "req": "",
-    "hp": "",
-    "removed": true,
-    "nickname": ""
+    "hp": 0
   }
 }

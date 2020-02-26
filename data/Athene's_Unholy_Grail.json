@@ -3,13 +3,19 @@
   "itemID": "3174",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Fiendish Codex, Chalice of Harmony",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Fiendish Codex",
+    " Chalice of Harmony"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": null,
-      "effects": " Gain 35% of the premitigation damage dealt to champions as Blood Charges, up to 100- 250 (based on level). Healing or shielding another ally consumes charges equal to 100% of the heal or shield, to heal them, up to the original effect amount."
+      "effects": " Gain 35% of the premitigation damage dealt to champions as Blood Charges, up to 100 \u2212 250 (based on level). Healing or shielding another ally consumes charges equal to 100% of the heal or shield, to heal them, up to the original effect amount."
     },
     "passive2": {
       "unique": true,
@@ -18,53 +24,53 @@
     },
     "passive3": null,
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "30",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "10",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "30",
-    "mana": "",
-    "manaRegenPer5": "100",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 30,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 10,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 30,
+    "mana": 0,
+    "manaRegenPer5": 100,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "2100",
-    "priceCombined": "400",
-    "priceSell": "1470",
-    "itemTags": {
-      "tag1": "DEFENSE:MAGIC_RESIST",
-      "tag2": "MAGIC:ABILITY_POWER",
-      "tag3": "MAGIC:MANA_REGEN",
-      "tag4": "MAGIC:COOLDOWN_REDUCTION",
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 2100,
+    "priceCombined": 400,
+    "priceSell": 1470,
+    "itemTags": [
+      "DEFENSE:MAGIC_RESIST",
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:MANA_REGEN",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
   },
   "other": {
     "consume": "",
@@ -72,8 +78,6 @@
     "championItem": "",
     "limit": "",
     "req": "",
-    "hp": "",
-    "removed": false,
-    "nickname": ""
+    "hp": 0
   }
 }

@@ -3,9 +3,15 @@
   "itemID": "3089",
   "tier": "Tier 2",
   "type": "Tier 2",
-  "recipe": "Needlessly Large Rod, Needlessly Large Rod",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Needlessly Large Rod",
+    " Needlessly Large Rod"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "dc,hat",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": null,
@@ -14,53 +20,50 @@
     "passive2": null,
     "passive3": null,
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "120",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 120,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "3600",
-    "priceCombined": "1100",
-    "priceSell": "2520",
-    "itemTags": {
-      "tag1": "MAGIC:ABILITY_POWER",
-      "tag2": null,
-      "tag3": null,
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 3600,
+    "priceCombined": 1100,
+    "priceSell": 2520,
+    "itemTags": [
+      "MAGIC:ABILITY_POWER"
+    ]
   },
   "other": {
     "consume": "",
@@ -68,8 +71,6 @@
     "championItem": "",
     "limit": "",
     "req": "",
-    "hp": "",
-    "removed": false,
-    "nickname": "dc,hat"
+    "hp": 0
   }
 }

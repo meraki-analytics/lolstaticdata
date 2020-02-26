@@ -3,64 +3,62 @@
   "itemID": "3841",
   "tier": "Tier 2",
   "type": "Tier 2",
-  "recipe": "Murksphere",
-  "builds": "",
-  "effects": {
+  "recipe": [],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": {
     "passive1": null,
     "passive2": null,
     "passive3": null,
     "passive4": null,
-    "passive5": null,
+    "passive5": null
+  },
+  "auras": {
+    "aura": null,
+    "aura2": null,
+    "aura3": null
+  },
+  "active": {
     "active": {
       "unique": true,
       "name": " Swindler's Shield",
       "effects": " Shields target ally from the next 60 damage. You generate 1 for every 4 damage absorbed (maximum of 15). Self-cast shields will not generate gold from monster damage. 15 second cooldown."
-    },
-    "aura": null,
-    "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    }
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "10",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "50",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 10,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 50,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "865",
-    "priceCombined": "500",
-    "priceSell": "",
-    "itemTags": {
-      "tag1": null,
-      "tag2": null,
-      "tag3": null,
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 865,
+    "priceCombined": 500,
+    "priceSell": 0,
+    "itemTags": []
   },
   "other": {
     "consume": "",
@@ -68,8 +66,6 @@
     "championItem": "",
     "limit": "Limited to 1 Gold Income item.",
     "req": "",
-    "hp": "",
-    "removed": true,
-    "nickname": ""
+    "hp": 0
   }
 }

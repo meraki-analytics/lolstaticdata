@@ -3,64 +3,70 @@
   "itemID": "3504",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Forbidden Idol, Aether Wisp",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Forbidden Idol",
+    " Aether Wisp"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Outgoing healing and shielding (excluding yourself) enhances you and affected allies with Frenzy for 6 seconds.Frenzy",
-      "effects": " Grants 10%- 30% (based on target's level) bonus attack speed and 5- 20 (based on target's level) bonus magic damage on-hit."
+      "effects": " Grants 10% \u2212 30% (based on target's level) bonus attack speed and 5 \u2212 20 (based on target's level) bonus magic damage on-hit."
     },
     "passive2": null,
     "passive3": null,
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "60",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "10",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "10",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "50",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "8",
-    "moveSpeedFlat": "",
+    "abilityPower": 60,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 10,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 10,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 50,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 8,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "2300",
-    "priceCombined": "650",
-    "priceSell": "1610",
-    "itemTags": {
-      "tag1": "MAGIC:ABILITY_POWER",
-      "tag2": "MAGIC:COOLDOWN_REDUCTION",
-      "tag3": "MAGIC:MANA_REGEN",
-      "tag4": "Movement:OTHER_MOVEMENT_ITEMS",
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 2300,
+    "priceCombined": 650,
+    "priceSell": 1610,
+    "itemTags": [
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "MAGIC:MANA_REGEN",
+      "Movement:OTHER_MOVEMENT_ITEMS"
+    ]
   },
   "other": {
     "consume": "",
@@ -68,8 +74,6 @@
     "championItem": "",
     "limit": "",
     "req": "",
-    "hp": "",
-    "removed": false,
-    "nickname": ""
+    "hp": 0
   }
 }

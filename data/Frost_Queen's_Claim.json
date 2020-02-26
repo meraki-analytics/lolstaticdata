@@ -3,9 +3,15 @@
   "itemID": "3092",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Frostfang, Blasting Wand",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Frostfang",
+    " Blasting Wand"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "Support, Economy, Gold",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Tribute",
@@ -22,57 +28,57 @@
       "effects": " Earn 750 using this item. Reward"
     },
     "passive4": null,
-    "passive5": null,
+    "passive5": null
+  },
+  "auras": {
+    "aura": null,
+    "aura2": null,
+    "aura3": null
+  },
+  "active": {
     "active": {
       "unique": true,
       "name": null,
       "effects": " Summon 2 icy ghosts for 6 seconds that seek out nearby enemy champions (4500 range). Ghosts reveal enemies on contact and slow them by 40% for 2 - 5 seconds (90 second cooldown)."
-    },
-    "aura": null,
-    "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    }
   },
   "stats": {
-    "abilityPower": "60",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "10",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "2",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "50",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 60,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 10,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 2,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 50,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "2200",
-    "priceCombined": "500",
-    "priceSell": "880",
-    "itemTags": {
-      "tag1": "MAGIC:COOLDOWN_REDUCTION",
-      "tag2": "MAGIC:ABILITY_POWER",
-      "tag3": "MAGIC:MANA_REGEN",
-      "tag4": "TOOLS:GOLD_INCOME",
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 2200,
+    "priceCombined": 500,
+    "priceSell": 880,
+    "itemTags": [
+      "MAGIC:COOLDOWN_REDUCTION",
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:MANA_REGEN",
+      "TOOLS:GOLD_INCOME"
+    ]
   },
   "other": {
     "consume": "",
@@ -80,8 +86,6 @@
     "championItem": "",
     "limit": "Limited to 1 Gold Income item.",
     "req": "",
-    "hp": "",
-    "removed": true,
-    "nickname": "Support, Economy, Gold"
+    "hp": 0
   }
 }

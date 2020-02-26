@@ -3,9 +3,15 @@
   "itemID": "3156",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Hexdrinker, Caulfield's Warhammer",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Hexdrinker",
+    " Caulfield's Warhammer"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Lifeline",
@@ -22,53 +28,52 @@
       "effects": " Grants +20 attack damage, +10% spell vamp and +10% life steal until out-of-combat."
     },
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "50",
-    "attackSpeed": "",
-    "cdr": "10",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "50",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 50,
+    "attackSpeed": 0,
+    "cdr": 10,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 50,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "3250",
-    "priceCombined": "850",
-    "priceSell": "2275",
-    "itemTags": {
-      "tag1": "DEFENSE:MAGIC_RESIST",
-      "tag2": "Attack:DAMAGE",
-      "tag3": "MAGIC:COOLDOWN_REDUCTION",
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 3250,
+    "priceCombined": 850,
+    "priceSell": 2275,
+    "itemTags": [
+      "DEFENSE:MAGIC_RESIST",
+      "Attack:DAMAGE",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
   },
   "other": {
     "consume": "",
@@ -76,8 +81,6 @@
     "championItem": "",
     "limit": "",
     "req": "",
-    "hp": "",
-    "removed": false,
-    "nickname": ""
+    "hp": 0
   }
 }

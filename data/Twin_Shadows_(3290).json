@@ -3,9 +3,15 @@
   "itemID": "3290",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Aether Wisp, Fiendish Codex",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Aether Wisp",
+    " Fiendish Codex"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Trap Detection",
@@ -14,57 +20,56 @@
     "passive2": null,
     "passive3": null,
     "passive4": null,
-    "passive5": null,
+    "passive5": null
+  },
+  "auras": {
+    "aura": null,
+    "aura2": null,
+    "aura3": null
+  },
+  "active": {
     "active": {
       "unique": true,
       "name": " Hunt",
       "effects": " Summons up to 2 invulnerable ghosts that seek out the 2 nearest enemy champions for 6 seconds. If a ghost reaches its target, it reveals the target and reduces their movement speed by 40% for 2.5 seconds. If a ghost cannot find a target, it tries to return to the caster. Ghosts that successfully return in this way reduce the item's cooldown by 20 seconds (60 second cooldown)."
-    },
-    "aura": null,
-    "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    }
   },
   "stats": {
-    "abilityPower": "80",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "10",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "6",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 80,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 10,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 6,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "2400",
-    "priceCombined": "730",
-    "priceSell": "1680",
-    "itemTags": {
-      "tag1": "MAGIC:ABILITY_POWER",
-      "tag2": "MAGIC:COOLDOWN_REDUCTION",
-      "tag3": "Movement:OTHER_MOVEMENT_ITEMS",
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 2400,
+    "priceCombined": 730,
+    "priceSell": 1680,
+    "itemTags": [
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "Movement:OTHER_MOVEMENT_ITEMS"
+    ]
   },
   "other": {
     "consume": "",
@@ -72,8 +77,6 @@
     "championItem": "",
     "limit": "",
     "req": "",
-    "hp": "",
-    "removed": true,
-    "nickname": ""
+    "hp": 0
   }
 }

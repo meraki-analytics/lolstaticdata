@@ -3,9 +3,16 @@
   "itemID": "3150",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Vampiric Scepter, Pickaxe, Cloak of Agility",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Vampiric Scepter",
+    " Pickaxe",
+    " Cloak of Agility"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Mark of the Sands",
@@ -14,57 +21,56 @@
     "passive2": null,
     "passive3": null,
     "passive4": null,
-    "passive5": null,
+    "passive5": null
+  },
+  "auras": {
+    "aura": null,
+    "aura2": null,
+    "aura3": null
+  },
+  "active": {
     "active": {
       "unique": true,
       "name": " Mirage Step",
       "effects": " Blinks 350 units directly away from the marked target (60 second cooldown)."
-    },
-    "aura": null,
-    "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    }
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "60",
-    "attackSpeed": "",
-    "cdr": "",
-    "cdrUnique": "",
-    "crit": "15",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "12",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 60,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 15,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 12,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "3200",
-    "priceCombined": "695",
-    "priceSell": "2240",
-    "itemTags": {
-      "tag1": "Attack:DAMAGE",
-      "tag2": "Attack:CRITICAL_STRIKE",
-      "tag3": "Attack:LIFE_STEAL",
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 3200,
+    "priceCombined": 695,
+    "priceSell": 2240,
+    "itemTags": [
+      "Attack:DAMAGE",
+      "Attack:CRITICAL_STRIKE",
+      "Attack:LIFE_STEAL"
+    ]
   },
   "other": {
     "consume": "",
@@ -72,8 +78,6 @@
     "championItem": "",
     "limit": "",
     "req": "",
-    "hp": "",
-    "removed": true,
-    "nickname": ""
+    "hp": 0
   }
 }

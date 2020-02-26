@@ -3,9 +3,16 @@
   "itemID": "3053",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Jaurim's Fist, Pickaxe, Ruby Crystal",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Jaurim's Fist",
+    " Pickaxe",
+    " Ruby Crystal"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Giant Strength",
@@ -14,7 +21,7 @@
     "passive2": {
       "unique": true,
       "name": " Lifeline",
-      "effects": " If you take 400- 1800 (based on level) damage within 5 seconds, you gain a shield for up to 3.75 seconds equal to 75% bonus health, which start decaying after 0.75 seconds (60 second cooldown)."
+      "effects": " If you take 400 \u2212 1800 (based on level) damage within 5 seconds, you gain a shield for up to 3.75 seconds equal to 75% bonus health, which start decaying after 0.75 seconds (60 second cooldown)."
     },
     "passive3": {
       "unique": false,
@@ -26,53 +33,51 @@
       "name": " Sterak's Fury",
       "effects": " Grants increased size and +30% Tenacity for 8 seconds."
     },
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "450",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 450,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "3200",
-    "priceCombined": "725",
-    "priceSell": "2240",
-    "itemTags": {
-      "tag1": "Attack:DAMAGE",
-      "tag2": "DEFENSE:HEALTH",
-      "tag3": null,
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 3200,
+    "priceCombined": 725,
+    "priceSell": 2240,
+    "itemTags": [
+      "Attack:DAMAGE",
+      "DEFENSE:HEALTH"
+    ]
   },
   "other": {
     "consume": "",
@@ -80,8 +85,6 @@
     "championItem": "",
     "limit": "Can only be purchased on  melee champions.",
     "req": "",
-    "hp": "",
-    "removed": false,
-    "nickname": ""
+    "hp": 0
   }
 }

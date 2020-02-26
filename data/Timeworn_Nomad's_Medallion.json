@@ -3,9 +3,15 @@
   "itemID": "3305",
   "tier": "Tier 2",
   "type": "Tier 2",
-  "recipe": "Timeworn Ancient Coin, Rejuvenation Bead",
-  "builds": "Timeworn Talisman of Ascension",
-  "effects": {
+  "recipe": [
+    "Timeworn Ancient Coin",
+    " Rejuvenation Bead"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "Support, Economy, Gold",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Favor",
@@ -18,53 +24,52 @@
     },
     "passive3": null,
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "10",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "2",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "50",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "10",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 10,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 2,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 50,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 10,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "850",
-    "priceCombined": "300",
-    "priceSell": "340",
-    "itemTags": {
-      "tag1": "TOOLS:GOLD_INCOME",
-      "tag2": "DEFENSE:HEALTH_REGEN",
-      "tag3": "MAGIC:MANA_REGEN",
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 850,
+    "priceCombined": 300,
+    "priceSell": 340,
+    "itemTags": [
+      "TOOLS:GOLD_INCOME",
+      "DEFENSE:HEALTH_REGEN",
+      "MAGIC:MANA_REGEN"
+    ]
   },
   "other": {
     "consume": "",
@@ -72,8 +77,6 @@
     "championItem": "",
     "limit": "Limited to 1 Jungle or Gold Income item.",
     "req": "",
-    "hp": "",
-    "removed": true,
-    "nickname": "Support, Economy, Gold"
+    "hp": 0
   }
 }

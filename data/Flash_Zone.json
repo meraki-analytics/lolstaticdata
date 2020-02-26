@@ -3,64 +3,62 @@
   "itemID": "",
   "tier": "Siege Weapon",
   "type": "Siege Weapon",
-  "recipe": "",
-  "builds": "",
-  "effects": {
+  "recipe": [],
+  "builds": [],
+  "noEffects": true,
+  "removed": true,
+  "nickname": "",
+  "passives": {
     "passive1": null,
     "passive2": null,
     "passive3": null,
     "passive4": null,
-    "passive5": null,
+    "passive5": null
+  },
+  "auras": {
+    "aura": null,
+    "aura2": null,
+    "aura3": null
+  },
+  "active": {
     "active": {
       "unique": false,
       "name": "Active",
       "effects": " Creates a magical zone centered on the target location for 5 seconds. Allied champions within the zone have both of their summoner spells replaced with  Flash, which can be cast with a 1 second cooldown to any location within the zone."
-    },
-    "aura": null,
-    "aura2": null,
-    "aura3": null,
-    "noEffects": "x"
+    }
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "",
-    "priceCombined": "",
-    "priceSell": "",
-    "itemTags": {
-      "tag1": null,
-      "tag2": null,
-      "tag3": null,
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 0,
+    "priceCombined": 0,
+    "priceSell": 0,
+    "itemTags": []
   },
   "other": {
     "consume": "",
@@ -68,8 +66,6 @@
     "championItem": "",
     "limit": "Defending Team only. Occupies one of your Summoner Spell slots. Limit of 2 Siege Weapons, 1 of each type.",
     "req": "",
-    "hp": "",
-    "removed": true,
-    "nickname": ""
+    "hp": 0
   }
 }

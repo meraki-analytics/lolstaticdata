@@ -3,13 +3,20 @@
   "itemID": "3209",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Spirit Stone, Long Sword, Long Sword",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Spirit Stone",
+    " Long Sword",
+    " Long Sword"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Incinerate",
-      "effects": " Dealing physical damage also deals 14- 48 (based on level) bonus true damage over 3 seconds."
+      "effects": " Dealing physical damage also deals 14 \u2212 48 (based on level) bonus true damage over 3 seconds."
     },
     "passive2": {
       "unique": true,
@@ -22,53 +29,52 @@
       "effects": " You generate Conservation stacks every 1.5 seconds, up to 80. Killing a large monster will consume up to 40 stacks and grant 1 per stack consumed. You may only be in possession of 1 Gold Income item."
     },
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "30",
-    "attackSpeed": "",
-    "cdr": "10",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 30,
+    "attackSpeed": 0,
+    "cdr": 10,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "2000",
-    "priceCombined": "580",
-    "priceSell": "800",
-    "itemTags": {
-      "tag1": "Attack:DAMAGE",
-      "tag2": "MAGIC:COOLDOWN_REDUCTION",
-      "tag3": "TOOLS:GOLD_INCOME",
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 2000,
+    "priceCombined": 580,
+    "priceSell": 800,
+    "itemTags": [
+      "Attack:DAMAGE",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "TOOLS:GOLD_INCOME"
+    ]
   },
   "other": {
     "consume": "",
@@ -76,8 +82,6 @@
     "championItem": "",
     "limit": "",
     "req": "",
-    "hp": "",
-    "removed": true,
-    "nickname": ""
+    "hp": 0
   }
 }

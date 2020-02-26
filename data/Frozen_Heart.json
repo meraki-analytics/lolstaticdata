@@ -3,64 +3,69 @@
   "itemID": "3110",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Warden's Mail, Glacial Shroud",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Warden's Mail",
+    " Glacial Shroud"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "fh",
+  "passives": {
     "passive1": null,
     "passive2": null,
     "passive3": null,
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": {
       "unique": true,
       "name": null,
       "effects": " Cripples nearby enemies' attack speed by 15% (700 range)."
     },
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "110",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "20",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "400",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 110,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 20,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 400,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "2700",
-    "priceCombined": "800",
-    "priceSell": "1890",
-    "itemTags": {
-      "tag1": "DEFENSE:ARMOR",
-      "tag2": "MAGIC:COOLDOWN_REDUCTION",
-      "tag3": "MAGIC:MANA",
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 2700,
+    "priceCombined": 800,
+    "priceSell": 1890,
+    "itemTags": [
+      "DEFENSE:ARMOR",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "MAGIC:MANA"
+    ]
   },
   "other": {
     "consume": "",
@@ -68,8 +73,6 @@
     "championItem": "",
     "limit": "",
     "req": "",
-    "hp": "",
-    "removed": false,
-    "nickname": "fh"
+    "hp": 0
   }
 }

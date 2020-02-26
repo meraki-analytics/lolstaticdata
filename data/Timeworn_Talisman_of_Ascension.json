@@ -3,9 +3,15 @@
   "itemID": "3306",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Timeworn Nomad's Medallion, Raptor Cloak",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Timeworn Nomad's Medallion",
+    " Raptor Cloak"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "Support, Economy, Gold",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Point Runner",
@@ -22,57 +28,59 @@
       "effects": " Earn 750 using this item. Reward"
     },
     "passive4": null,
-    "passive5": null,
+    "passive5": null
+  },
+  "auras": {
+    "aura": null,
+    "aura2": null,
+    "aura3": null
+  },
+  "active": {
     "active": {
       "unique": true,
       "name": null,
       "effects": " Grants nearby allies +40% bonus movement speed for 3 seconds (60 second cooldown)."
-    },
-    "aura": null,
-    "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    }
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "45",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "10",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "2",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "175",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "10",
+    "abilityPower": 0,
+    "armor": 45,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 10,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 2,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 175,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 10,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "2200",
-    "priceCombined": "450",
-    "priceSell": "880",
-    "itemTags": {
-      "tag1": "TOOLS:GOLD_INCOME",
-      "tag2": "DEFENSE:ARMOR",
-      "tag3": "DEFENSE:HEALTH_REGEN",
-      "tag4": "MAGIC:MANA_REGEN",
-      "tag5": "MAGIC:COOLDOWN_REDUCTION",
-      "tag6": "Movement:OTHER_MOVEMENT_ITEMS",
-      "tag7": null
-    }
+    "priceFull": 2200,
+    "priceCombined": 450,
+    "priceSell": 880,
+    "itemTags": [
+      "TOOLS:GOLD_INCOME",
+      "DEFENSE:ARMOR",
+      "DEFENSE:HEALTH_REGEN",
+      "MAGIC:MANA_REGEN",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "Movement:OTHER_MOVEMENT_ITEMS"
+    ]
   },
   "other": {
     "consume": "",
@@ -80,8 +88,6 @@
     "championItem": "",
     "limit": "Limited to 1 Jungle or Gold Income item.",
     "req": "",
-    "hp": "",
-    "removed": true,
-    "nickname": "Support, Economy, Gold"
+    "hp": 0
   }
 }

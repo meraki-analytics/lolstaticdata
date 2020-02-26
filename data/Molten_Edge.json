@@ -3,60 +3,61 @@
   "itemID": "3371",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Infinity Edge",
-  "builds": "",
-  "effects": {
+  "recipe": [],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "ornn,forge",
+  "passives": {
     "passive1": null,
     "passive2": null,
     "passive3": null,
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "110",
-    "attackSpeed": "",
-    "cdr": "",
-    "cdrUnique": "",
-    "crit": "25",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 110,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 25,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "Unique: +25%  critical damage",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "3400",
-    "priceCombined": "0",
-    "priceSell": "2380",
-    "itemTags": {
-      "tag1": "Attack:DAMAGE",
-      "tag2": "Attack:CRITICAL_STRIKE",
-      "tag3": null,
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 3400,
+    "priceCombined": 0,
+    "priceSell": 2380,
+    "itemTags": [
+      "Attack:DAMAGE",
+      "Attack:CRITICAL_STRIKE"
+    ]
   },
   "other": {
     "consume": "",
@@ -64,8 +65,6 @@
     "championItem": "",
     "limit": "Can only be forged by  Ornn. Limited to one  Master Craftsman item.",
     "req": "",
-    "hp": "",
-    "removed": false,
-    "nickname": "ornn,forge"
+    "hp": 0
   }
 }

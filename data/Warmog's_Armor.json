@@ -3,9 +3,16 @@
   "itemID": "3083",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Giant's Belt, Kindlegem, Crystalline Bracer",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Giant's Belt",
+    " Kindlegem",
+    " Crystalline Bracer"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": {
     "passive1": {
       "unique": false,
       "name": null,
@@ -18,53 +25,51 @@
     },
     "passive3": null,
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "",
-    "cdrUnique": "10",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "800",
-    "healthRegen": "200",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 10,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 800,
+    "healthRegen": 200,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "2850",
-    "priceCombined": "400",
-    "priceSell": "1995",
-    "itemTags": {
-      "tag1": "DEFENSE:HEALTH",
-      "tag2": "DEFENSE:HEALTH_REGEN",
-      "tag3": null,
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 2850,
+    "priceCombined": 400,
+    "priceSell": 1995,
+    "itemTags": [
+      "DEFENSE:HEALTH",
+      "DEFENSE:HEALTH_REGEN"
+    ]
   },
   "other": {
     "consume": "",
@@ -72,8 +77,6 @@
     "championItem": "",
     "limit": "",
     "req": "",
-    "hp": "",
-    "removed": false,
-    "nickname": ""
+    "hp": 0
   }
 }

@@ -3,9 +3,15 @@
   "itemID": "3829",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Haunting Guise, Ruby Crystal",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Haunting Guise",
+    " Ruby Crystal"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Eyes of Pain",
@@ -14,57 +20,56 @@
     "passive2": null,
     "passive3": null,
     "passive4": null,
-    "passive5": null,
+    "passive5": null
+  },
+  "auras": {
+    "aura": null,
+    "aura2": null,
+    "aura3": null
+  },
+  "active": {
     "active": {
       "unique": true,
       "name": " Disguise",
       "effects": " Teleports to the target allied champion (550 range) and takes on their appearance for 30 seconds. The disguise includes the target's current health, mana and emotes. The disguise is broken upon casting a spell or attacking, or upon your or the disguise's health being dropped to 0. 90 second cooldown."
-    },
-    "aura": null,
-    "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    }
   },
   "stats": {
-    "abilityPower": "60",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "400",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 60,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 400,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "2115",
-    "priceCombined": "215",
-    "priceSell": "1481",
-    "itemTags": {
-      "tag1": "MAGIC:ABILITY_POWER",
-      "tag2": "DEFENSE:HEALTH",
-      "tag3": "MAGIC:MAGIC_PENETRATION",
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 2115,
+    "priceCombined": 215,
+    "priceSell": 1481,
+    "itemTags": [
+      "MAGIC:ABILITY_POWER",
+      "DEFENSE:HEALTH",
+      "MAGIC:MAGIC_PENETRATION"
+    ]
   },
   "other": {
     "consume": "",
@@ -72,8 +77,6 @@
     "championItem": "",
     "limit": "",
     "req": "",
-    "hp": "",
-    "removed": true,
-    "nickname": ""
+    "hp": 0
   }
 }

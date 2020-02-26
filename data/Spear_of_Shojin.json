@@ -3,9 +3,16 @@
   "itemID": "3161",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "B. F. Sword, Kindlegem, Long Sword",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "B. F. Sword",
+    " Kindlegem",
+    " Long Sword"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": null,
@@ -18,53 +25,52 @@
     },
     "passive3": null,
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "60",
-    "attackSpeed": "",
-    "cdr": "20",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "250",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 60,
+    "attackSpeed": 0,
+    "cdr": 20,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 250,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "3400",
-    "priceCombined": "950",
-    "priceSell": "2380",
-    "itemTags": {
-      "tag1": "Attack:DAMAGE",
-      "tag2": "MAGIC:COOLDOWN_REDUCTION",
-      "tag3": "DEFENSE:HEALTH",
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 3400,
+    "priceCombined": 950,
+    "priceSell": 2380,
+    "itemTags": [
+      "Attack:DAMAGE",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "DEFENSE:HEALTH"
+    ]
   },
   "other": {
     "consume": "",
@@ -72,8 +78,6 @@
     "championItem": "",
     "limit": "",
     "req": "",
-    "hp": "",
-    "removed": true,
-    "nickname": ""
+    "hp": 0
   }
 }

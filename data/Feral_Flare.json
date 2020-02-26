@@ -3,9 +3,12 @@
   "itemID": "",
   "tier": "Tier 4",
   "type": "Tier 4",
-  "recipe": "Wriggle's Lantern",
-  "builds": "",
-  "effects": {
+  "recipe": [],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Maim",
@@ -22,57 +25,57 @@
       "effects": " You may only be in possession of 1 Gold Income item."
     },
     "passive4": null,
-    "passive5": null,
+    "passive5": null
+  },
+  "auras": {
+    "aura": null,
+    "aura2": null,
+    "aura3": null
+  },
+  "active": {
     "active": {
       "unique": true,
       "name": null,
       "effects": " Places a Stealth Ward at target location that lasts for 180 seconds (1000 range) (180 seconds cooldown)."
-    },
-    "aura": null,
-    "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    }
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "12",
-    "attackSpeed": "30",
-    "cdr": "",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 12,
+    "attackSpeed": 30,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "",
-    "priceCombined": "",
-    "priceSell": "720",
-    "itemTags": {
-      "tag1": "Attack:ATTACK_SPEED",
-      "tag2": "Attack:DAMAGE",
-      "tag3": "TOOLS:GOLD_INCOME",
-      "tag4": "TOOLS:Vision and Trinkets",
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 0,
+    "priceCombined": 0,
+    "priceSell": 720,
+    "itemTags": [
+      "Attack:ATTACK_SPEED",
+      "Attack:DAMAGE",
+      "TOOLS:GOLD_INCOME",
+      "TOOLS:Vision and Trinkets"
+    ]
   },
   "other": {
     "consume": "",
@@ -80,8 +83,6 @@
     "championItem": "",
     "limit": "",
     "req": "",
-    "hp": "",
-    "removed": true,
-    "nickname": ""
+    "hp": 0
   }
 }

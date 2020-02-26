@@ -1,7 +1,7 @@
 import json
 import re
 from bs4 import BeautifulSoup
-from util import download_webpage
+from lolstaticdata.util import download_webpage
 from lolwikiItem import get_Items
 from collections import OrderedDict
 

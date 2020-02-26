@@ -3,13 +3,20 @@
   "itemID": "3814",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Pickaxe, Serrated Dirk, Ruby Crystal",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Pickaxe",
+    " Serrated Dirk",
+    " Ruby Crystal"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": null,
-      "effects": " +10 Lethality (6.22- 10 (based on level) armor penetration)"
+      "effects": " +10 Lethality (6.22 \u2212 10 (based on level) armor penetration)"
     },
     "passive2": {
       "unique": true,
@@ -18,53 +25,51 @@
     },
     "passive3": null,
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "55",
-    "attackSpeed": "",
-    "cdr": "",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "325",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 55,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 325,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "2900",
-    "priceCombined": "525",
-    "priceSell": "2030",
-    "itemTags": {
-      "tag1": "Attack:DAMAGE",
-      "tag2": "DEFENSE:HEALTH",
-      "tag3": null,
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 2900,
+    "priceCombined": 525,
+    "priceSell": 2030,
+    "itemTags": [
+      "Attack:DAMAGE",
+      "DEFENSE:HEALTH"
+    ]
   },
   "other": {
     "consume": "",
@@ -72,8 +77,6 @@
     "championItem": "",
     "limit": "",
     "req": "",
-    "hp": "",
-    "removed": false,
-    "nickname": ""
+    "hp": 0
   }
 }

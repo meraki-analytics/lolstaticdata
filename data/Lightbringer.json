@@ -3,9 +3,15 @@
   "itemID": "3185",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Wicked Hatchet, Cloak of Agility",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Wicked Hatchet",
+    " Cloak of Agility"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "lb",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Critical Vision",
@@ -18,57 +24,55 @@
     },
     "passive3": null,
     "passive4": null,
-    "passive5": null,
+    "passive5": null
+  },
+  "auras": {
+    "aura": null,
+    "aura2": null,
+    "aura3": null
+  },
+  "active": {
     "active": {
       "unique": true,
       "name": null,
       "effects": " Covers a target area in a stealth-detecting mist that grants vision for 5 seconds and reveals enemies that enter it for 3 seconds (60 second cooldown) (800 range, 375 AoE estimated)."
-    },
-    "aura": null,
-    "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    }
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "30",
-    "attackSpeed": "",
-    "cdr": "",
-    "cdrUnique": "",
-    "crit": "30",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 30,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 30,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "2350",
-    "priceCombined": "350",
-    "priceSell": "1645",
-    "itemTags": {
-      "tag1": "Attack:DAMAGE",
-      "tag2": "Attack:CRITICAL_STRIKE",
-      "tag3": null,
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 2350,
+    "priceCombined": 350,
+    "priceSell": 1645,
+    "itemTags": [
+      "Attack:DAMAGE",
+      "Attack:CRITICAL_STRIKE"
+    ]
   },
   "other": {
     "consume": "",
@@ -76,8 +80,6 @@
     "championItem": "",
     "limit": "",
     "req": "",
-    "hp": "",
-    "removed": true,
-    "nickname": "lb"
+    "hp": 0
   }
 }

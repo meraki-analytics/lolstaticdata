@@ -3,9 +3,15 @@
   "itemID": "3311",
   "tier": "Tier 2",
   "type": "Tier 2",
-  "recipe": "Timeworn Spellthief's Edge, Faerie Charm",
-  "builds": "Timeworn Frost Queen's Claim",
-  "effects": {
+  "recipe": [
+    "Timeworn Spellthief's Edge",
+    " Faerie Charm"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "Support, Economy, Gold",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Tribute",
@@ -18,53 +24,53 @@
     },
     "passive3": null,
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "20",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "10",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "2",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "50",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 20,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 10,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 2,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 50,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "850",
-    "priceCombined": "325",
-    "priceSell": "340",
-    "itemTags": {
-      "tag1": "TOOLS:GOLD_INCOME",
-      "tag2": "MAGIC:ABILITY_POWER",
-      "tag3": "MAGIC:COOLDOWN_REDUCTION",
-      "tag4": "MAGIC:MANA_REGEN",
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 850,
+    "priceCombined": 325,
+    "priceSell": 340,
+    "itemTags": [
+      "TOOLS:GOLD_INCOME",
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "MAGIC:MANA_REGEN"
+    ]
   },
   "other": {
     "consume": "",
@@ -72,8 +78,6 @@
     "championItem": "",
     "limit": "Limited to 1 Jungle or Gold Income item.",
     "req": "",
-    "hp": "",
-    "removed": true,
-    "nickname": "Support, Economy, Gold"
+    "hp": 0
   }
 }

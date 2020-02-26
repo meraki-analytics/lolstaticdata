@@ -3,9 +3,15 @@
   "itemID": "3222",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Chalice of Harmony, Forbidden Idol",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Chalice of Harmony",
+    " Forbidden Idol"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Harmony",
@@ -14,57 +20,56 @@
     "passive2": null,
     "passive3": null,
     "passive4": null,
-    "passive5": null,
+    "passive5": null
+  },
+  "auras": {
+    "aura": null,
+    "aura2": null,
+    "aura3": null
+  },
+  "active": {
     "active": {
       "unique": true,
       "name": null,
       "effects": " Instantly removes all stuns, roots, taunts, fears, charms, silences and slows on an allied champion, as well as granting 2 seconds of slow immunity. Successfully cleansing an effect will also grant the target 40% bonus movement speed for 2 seconds (120 second cooldown)."
-    },
-    "aura": null,
-    "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    }
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "10",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "20",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "40",
-    "mana": "",
-    "manaRegenPer5": "100",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 10,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 20,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 40,
+    "mana": 0,
+    "manaRegenPer5": 100,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "2100",
-    "priceCombined": "500",
-    "priceSell": "1470",
-    "itemTags": {
-      "tag1": "DEFENSE:MAGIC_RESIST",
-      "tag2": "MAGIC:MANA_REGEN",
-      "tag3": "MAGIC:COOLDOWN_REDUCTION",
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 2100,
+    "priceCombined": 500,
+    "priceSell": 1470,
+    "itemTags": [
+      "DEFENSE:MAGIC_RESIST",
+      "MAGIC:MANA_REGEN",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
   },
   "other": {
     "consume": "",
@@ -72,8 +77,6 @@
     "championItem": "",
     "limit": "",
     "req": "",
-    "hp": "",
-    "removed": false,
-    "nickname": ""
+    "hp": 0
   }
 }

@@ -3,9 +3,17 @@
   "itemID": "3109",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Negatron Cloak, Negatron Cloak, Rejuvenation Bead, Rejuvenation Bead",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Negatron Cloak",
+    " Negatron Cloak",
+    " Rejuvenation Bead",
+    " Rejuvenation Bead"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": null,
@@ -14,53 +22,52 @@
     "passive2": null,
     "passive3": null,
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "200",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "90",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "8",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 200,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 90,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 8,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "2900",
-    "priceCombined": "1160",
-    "priceSell": "2030",
-    "itemTags": {
-      "tag1": "DEFENSE:HEALTH_REGEN",
-      "tag2": "DEFENSE:MAGIC_RESIST",
-      "tag3": "Movement:OTHER_MOVEMENT_ITEMS",
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 2900,
+    "priceCombined": 1160,
+    "priceSell": 2030,
+    "itemTags": [
+      "DEFENSE:HEALTH_REGEN",
+      "DEFENSE:MAGIC_RESIST",
+      "Movement:OTHER_MOVEMENT_ITEMS"
+    ]
   },
   "other": {
     "consume": "",
@@ -68,8 +75,6 @@
     "championItem": "",
     "limit": "",
     "req": "",
-    "hp": "",
-    "removed": true,
-    "nickname": ""
+    "hp": 0
   }
 }

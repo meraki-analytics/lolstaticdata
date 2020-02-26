@@ -3,9 +3,12 @@
   "itemID": "3302",
   "tier": "Tier 1",
   "type": "Tier 1",
-  "recipe": "",
-  "builds": "Targon's Buckler",
-  "effects": {
+  "recipe": [],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "Support, Gold, Economy",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Spoils of War",
@@ -18,53 +21,54 @@
     },
     "passive3": null,
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "5",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "2",
-    "healShield": "",
-    "health": "30",
-    "healthRegen": "25",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 5,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 2,
+    "healShield": 0,
+    "health": 30,
+    "healthRegen": 25,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "400",
-    "priceCombined": "",
-    "priceSell": "160",
-    "itemTags": {
-      "tag1": "Starter Items:LANING",
-      "tag2": "TOOLS:GOLD_INCOME",
-      "tag3": "DEFENSE:HEALTH_REGEN",
-      "tag4": "DEFENSE:HEALTH",
-      "tag5": "MAGIC:ABILITY_POWER",
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 400,
+    "priceCombined": 0,
+    "priceSell": 160,
+    "itemTags": [
+      "Starter Items:LANING",
+      "TOOLS:GOLD_INCOME",
+      "DEFENSE:HEALTH_REGEN",
+      "DEFENSE:HEALTH",
+      "MAGIC:ABILITY_POWER"
+    ]
   },
   "other": {
     "consume": "",
@@ -72,8 +76,6 @@
     "championItem": "",
     "limit": "Limited to 1 Jungle or Gold Income item.",
     "req": "",
-    "hp": "",
-    "removed": false,
-    "nickname": "Support, Gold, Economy"
+    "hp": 0
   }
 }

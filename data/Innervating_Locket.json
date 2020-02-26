@@ -3,9 +3,15 @@
   "itemID": "",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Catalyst of Aeons, Caulfield's Warhammer",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Catalyst of Aeons",
+    " Caulfield's Warhammer"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Eternity",
@@ -18,53 +24,53 @@
     },
     "passive3": null,
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "30",
-    "attackSpeed": "",
-    "cdr": "10",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "400",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "300",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 30,
+    "attackSpeed": 0,
+    "cdr": 10,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 400,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 300,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "2800",
-    "priceCombined": "600",
-    "priceSell": "1960",
-    "itemTags": {
-      "tag1": "DEFENSE:HEALTH",
-      "tag2": "MAGIC:MANA",
-      "tag3": "Attack:DAMAGE",
-      "tag4": "MAGIC:COOLDOWN_REDUCTION",
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 2800,
+    "priceCombined": 600,
+    "priceSell": 1960,
+    "itemTags": [
+      "DEFENSE:HEALTH",
+      "MAGIC:MANA",
+      "Attack:DAMAGE",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
   },
   "other": {
     "consume": "",
@@ -72,8 +78,6 @@
     "championItem": "",
     "limit": "",
     "req": "",
-    "hp": "",
-    "removed": true,
-    "nickname": ""
+    "hp": 0
   }
 }

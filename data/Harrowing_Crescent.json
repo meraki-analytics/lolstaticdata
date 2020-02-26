@@ -3,9 +3,12 @@
   "itemID": "",
   "tier": "Tier 2",
   "type": "Tier 2",
-  "recipe": "Spectral Sickle",
-  "builds": "Black Mist Scythe",
-  "effects": {
+  "recipe": [],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "Support, Economy, Gold, Sightstone, Ward",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Tribute",
@@ -18,57 +21,57 @@
     },
     "passive3": null,
     "passive4": null,
-    "passive5": null,
+    "passive5": null
+  },
+  "auras": {
+    "aura": null,
+    "aura2": null,
+    "aura3": null
+  },
+  "active": {
     "active": {
       "unique": true,
       "name": " Warding",
       "effects": " Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area. Holds up to 3 charges which refill upon visiting the shop."
-    },
-    "aura": null,
-    "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    }
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "10",
-    "attackSpeed": "",
-    "cdr": "",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "3",
-    "healShield": "",
-    "health": "60",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "50",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 10,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 3,
+    "healShield": 0,
+    "health": 60,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 50,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "400",
-    "priceCombined": "",
-    "priceSell": "160",
-    "itemTags": {
-      "tag1": "TOOLS:GOLD_INCOME",
-      "tag2": "MAGIC:MANA_REGEN",
-      "tag3": "Attack:DAMAGE",
-      "tag4": "DEFENSE:HEALTH",
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 400,
+    "priceCombined": 0,
+    "priceSell": 160,
+    "itemTags": [
+      "TOOLS:GOLD_INCOME",
+      "MAGIC:MANA_REGEN",
+      "Attack:DAMAGE",
+      "DEFENSE:HEALTH"
+    ]
   },
   "other": {
     "consume": "",
@@ -76,8 +79,6 @@
     "championItem": "",
     "limit": "Limited to 1 Jungle or Gold Income item. A player may only have 3  Stealth Wards or  Totem Wards on the map at one time.",
     "req": "",
-    "hp": "",
-    "removed": false,
-    "nickname": "Support, Economy, Gold, Sightstone, Ward"
+    "hp": 0
   }
 }

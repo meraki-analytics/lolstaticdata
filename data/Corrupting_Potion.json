@@ -3,9 +3,12 @@
   "itemID": "2033",
   "tier": "Tier 2",
   "type": "Tier 2",
-  "recipe": "Refillable Potion",
-  "builds": "",
-  "effects": {
+  "recipe": [],
+  "builds": [],
+  "noEffects": true,
+  "removed": false,
+  "nickname": "",
+  "passives": {
     "passive1": {
       "unique": false,
       "name": null,
@@ -22,53 +25,53 @@
       "effects": "Corrupting Potion can be used even at full health and mana."
     },
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": "true"
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "500",
-    "priceCombined": "350",
-    "priceSell": "200",
-    "itemTags": {
-      "tag1": "Starter Items:LANING",
-      "tag2": "TOOLS:CONSUMABLE",
-      "tag3": "DEFENSE:HEALTH_REGEN",
-      "tag4": "MANA:MANA_REGEN",
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 500,
+    "priceCombined": 350,
+    "priceSell": 200,
+    "itemTags": [
+      "Starter Items:LANING",
+      "TOOLS:CONSUMABLE",
+      "DEFENSE:HEALTH_REGEN",
+      "MANA:MANA_REGEN"
+    ]
   },
   "other": {
     "consume": "For 12 seconds, regenerates 5.208 health and 3.125 mana every half-second for a total of 125 health and 75 mana as well as grants Touch of Corruption.",
@@ -76,8 +79,6 @@
     "championItem": "",
     "limit": "Limited to one type of Potion.",
     "req": "",
-    "hp": "",
-    "removed": false,
-    "nickname": ""
+    "hp": 0
   }
 }

@@ -3,13 +3,19 @@
   "itemID": "2303",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Sightstone, Targon's Brace",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Sightstone",
+    " Targon's Brace"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "Support, Economy, Gold, Sightstone, Ward",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Spoils of War",
-      "effects": " Melee basic attacks execute minions below 340- 680 (based on level) health. Melee autoattacks that would proc Spoils of War gain 150 bonus range and slightly increased attack speed. Killing a minion by any means heals you and the nearest allied champion for 50 (+ 2% of missing health) health and grants them kill gold. These effects require an allied champion within 1050 units of the user. Recharges every 20 seconds. Max 4 charges."
+      "effects": " Melee basic attacks execute minions below 340 \u2212 680 (based on level) health. Melee autoattacks that would proc Spoils of War gain 150 bonus range and slightly increased attack speed. Killing a minion by any means heals you and the nearest allied champion for 50 (+ 2% of missing health) health and grants them kill gold. These effects require an allied champion within 1050 units of the user. Recharges every 20 seconds. Max 4 charges."
     },
     "passive2": {
       "unique": true,
@@ -22,57 +28,57 @@
       "effects": " Earn 750 using this item. Reward"
     },
     "passive4": null,
-    "passive5": null,
+    "passive5": null
+  },
+  "auras": {
+    "aura": null,
+    "aura2": null,
+    "aura3": null
+  },
+  "active": {
     "active": {
       "unique": true,
       "name": " Warding",
       "effects": " Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area for 150 seconds. Holds up to 4 charges which refill upon visiting the shop."
-    },
-    "aura": null,
-    "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    }
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "10",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "2",
-    "healShield": "",
-    "health": "500",
-    "healthRegen": "200",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 10,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 2,
+    "healShield": 0,
+    "health": 500,
+    "healthRegen": 200,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "2300",
-    "priceCombined": "650",
-    "priceSell": "920",
-    "itemTags": {
-      "tag1": "TOOLS:GOLD_INCOME",
-      "tag2": "TOOLS:VISION_AND_TRINKETS",
-      "tag3": "DEFENSE:HEALTH",
-      "tag4": "DEFENSE:HEALTH_REGEN",
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 2300,
+    "priceCombined": 650,
+    "priceSell": 920,
+    "itemTags": [
+      "TOOLS:GOLD_INCOME",
+      "TOOLS:VISION_AND_TRINKETS",
+      "DEFENSE:HEALTH",
+      "DEFENSE:HEALTH_REGEN"
+    ]
   },
   "other": {
     "consume": "",
@@ -80,8 +86,6 @@
     "championItem": "",
     "limit": "Limited to 1 Gold Income item. A player may only have 3  Stealth Wards or  Totem Wards on the map at one time.",
     "req": "",
-    "hp": "",
-    "removed": true,
-    "nickname": "Support, Economy, Gold, Sightstone, Ward"
+    "hp": 0
   }
 }

@@ -3,9 +3,15 @@
   "itemID": "3924",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Vampiric Scepter, Long Sword",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Vampiric Scepter",
+    " Long Sword"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": null,
@@ -14,57 +20,55 @@
     "passive2": null,
     "passive3": null,
     "passive4": null,
-    "passive5": null,
+    "passive5": null
+  },
+  "auras": {
+    "aura": null,
+    "aura2": null,
+    "aura3": null
+  },
+  "active": {
     "active": {
       "unique": true,
       "name": " Flesheater",
       "effects": " Rip the flesh from the target enemy minion, dealing 200 (+ 75% AD) true damage and restoring 50 (+ 75% AD) health. Each cast of Fleasheater permanently increases the item's attack damage by 1."
-    },
-    "aura": null,
-    "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    }
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "20",
-    "attackSpeed": "",
-    "cdr": "",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "10",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 20,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 10,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "1460",
-    "priceCombined": "300",
-    "priceSell": "1022",
-    "itemTags": {
-      "tag1": "Attack:DAMAGE",
-      "tag2": "Attack:LIFE_STEAL",
-      "tag3": null,
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 1460,
+    "priceCombined": 300,
+    "priceSell": 1022,
+    "itemTags": [
+      "Attack:DAMAGE",
+      "Attack:LIFE_STEAL"
+    ]
   },
   "other": {
     "consume": "",
@@ -72,8 +76,6 @@
     "championItem": "",
     "limit": "Melee only",
     "req": "",
-    "hp": "",
-    "removed": true,
-    "nickname": ""
+    "hp": 0
   }
 }

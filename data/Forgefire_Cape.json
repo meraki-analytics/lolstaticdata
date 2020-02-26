@@ -3,64 +3,65 @@
   "itemID": "3373",
   "tier": "Tier 4",
   "type": "Tier 4",
-  "recipe": "Sunfire Cape",
-  "builds": "",
-  "effects": {
+  "recipe": [],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "ornn,forge",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Immolate",
-      "effects": " Deals 26- 43 (based on level) magic damage per second to nearby enemies (325 range).Hitting an enemy with an immobilizing ability deals 26- 43 (based on level) (+ 4% bonus health) bonus magic damage and releases a fire nova that also deals that bonus damage to nearby enemies (12 second cooldown).Immolate's damage is increased by 50% against minions and monsters."
+      "effects": " Deals 26 \u2212 43 (based on level) magic damage per second to nearby enemies (325 range).Hitting an enemy with an immobilizing ability deals 26 \u2212 43 (based on level) (+ 4% bonus health) bonus magic damage and releases a fire nova that also deals that bonus damage to nearby enemies (12 second cooldown).Immolate's damage is increased by 50% against minions and monsters."
     },
     "passive2": null,
     "passive3": null,
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "100",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "750",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 100,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 750,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "2750",
-    "priceCombined": "0",
-    "priceSell": "1925",
-    "itemTags": {
-      "tag1": "DEFENSE:ARMOR",
-      "tag2": "DEFENSE:HEALTH",
-      "tag3": null,
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 2750,
+    "priceCombined": 0,
+    "priceSell": 1925,
+    "itemTags": [
+      "DEFENSE:ARMOR",
+      "DEFENSE:HEALTH"
+    ]
   },
   "other": {
     "consume": "",
@@ -68,8 +69,6 @@
     "championItem": "",
     "limit": "Can only be forged by  Ornn. Limited to one  Master Craftsman item.",
     "req": "",
-    "hp": "",
-    "removed": false,
-    "nickname": "ornn,forge"
+    "hp": 0
   }
 }

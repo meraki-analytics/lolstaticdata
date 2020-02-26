@@ -3,9 +3,15 @@
   "itemID": "3003",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Tear of the Goddess, Lost Chapter",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Tear of the Goddess",
+    " Lost Chapter"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "aa",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Haste",
@@ -26,53 +32,53 @@
       "name": null,
       "effects": "Transforms into  Seraph's Embrace at +750 mana."
     },
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "50",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "10",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "650",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 50,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 10,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 650,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "3200",
-    "priceCombined": "1050",
-    "priceSell": "2240",
-    "itemTags": {
-      "tag1": "MAGIC:ABILITY_POWER",
-      "tag2": "MAGIC:MANA",
-      "tag3": "MAGIC:MANA_REGEN",
-      "tag4": "MAGIC:COOLDOWN_REDUCTION",
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 3200,
+    "priceCombined": 1050,
+    "priceSell": 2240,
+    "itemTags": [
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:MANA",
+      "MAGIC:MANA_REGEN",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
   },
   "other": {
     "consume": "",
@@ -80,8 +86,6 @@
     "championItem": "",
     "limit": "Limited to 1 Awe item.",
     "req": "",
-    "hp": "",
-    "removed": false,
-    "nickname": "aa"
+    "hp": 0
   }
 }

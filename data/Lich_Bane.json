@@ -3,9 +3,16 @@
   "itemID": "3100",
   "tier": "Tier 3",
   "type": "Tier 3",
-  "recipe": "Sheen, Aether Wisp, Blasting Wand",
-  "builds": "",
-  "effects": {
+  "recipe": [
+    "Sheen",
+    " Aether Wisp",
+    " Blasting Wand"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Spellblade",
@@ -14,53 +21,52 @@
     "passive2": null,
     "passive3": null,
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "80",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "10",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "",
-    "healShield": "",
-    "health": "",
-    "healthRegen": "",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "250",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "7",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 80,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 10,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 250,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 7,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "3200",
-    "priceCombined": "450",
-    "priceSell": "2240",
-    "itemTags": {
-      "tag1": "MAGIC:ABILITY_POWER",
-      "tag2": "MAGIC:MANA",
-      "tag3": "Movement:OTHER_MOVEMENT_ITEMS",
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 3200,
+    "priceCombined": 450,
+    "priceSell": 2240,
+    "itemTags": [
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:MANA",
+      "Movement:OTHER_MOVEMENT_ITEMS"
+    ]
   },
   "other": {
     "consume": "",
@@ -68,8 +74,6 @@
     "championItem": "",
     "limit": "",
     "req": "",
-    "hp": "",
-    "removed": false,
-    "nickname": ""
+    "hp": 0
   }
 }

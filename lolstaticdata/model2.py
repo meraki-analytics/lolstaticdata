@@ -82,23 +82,11 @@ class Stat(object):
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
-class Menu(object):
-    Tag1: str
-    Tag2: str
-    Tag3: str
-    Tag4: str
-    Tag5: str
-    Tag6: str
-    Tag7: str
-
-
-@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
-@dataclass
 class Shop(object):
     priceFull : int
     priceCombined : int
     priceSell : int
-    itemTags : Menu
+    itemTags : List[str]
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
@@ -110,18 +98,30 @@ class Passive(object):
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
-class Effects(object):
+class Passives(object):
 
     passive1 : Passive
     passive2 : Passive
     passive3 : Passive
     passive4 : Passive
     passive5 : Passive
+
+
+
+@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
+@dataclass
+class Active(object):
+
     active: Passive
+
+
+@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
+@dataclass
+class Aura(object):
+
     aura: Passive
     aura2: Passive
     aura3: Passive
-    no_effects : bool
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
@@ -133,8 +133,7 @@ class Other(object):
     limit : str
     req: str
     hp : int
-    removed : bool
-    nickname : str
+
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
@@ -144,9 +143,14 @@ class Item(object):
     itemID : int
     tier: str
     type: str
-    recipe : str
-    builds : str
-    effects : Effects
+    recipe : List[str]
+    builds : List[str]
+    no_effects: bool
+    removed : bool
+    nickname : str
+    passives : Passives
+    auras : Aura
+    active : Active
     stats: Stat
     shop: Shop
     other : Other

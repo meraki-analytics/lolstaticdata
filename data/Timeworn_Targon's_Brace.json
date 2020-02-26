@@ -3,13 +3,19 @@
   "itemID": "3308",
   "tier": "Tier 2",
   "type": "Tier 2",
-  "recipe": "Timeworn Relic Shield, Rejuvenation Bead",
-  "builds": "Timeworn Face of the Mountain",
-  "effects": {
+  "recipe": [
+    "Timeworn Relic Shield",
+    " Rejuvenation Bead"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "Support, Gold, Economy",
+  "passives": {
     "passive1": {
       "unique": true,
       "name": " Spoils of War",
-      "effects": " Grants a charge every 30 seconds, up to 3 charges. Melee basic attacks can consume one charge to execute minions below 210- 380 (based on level) (+ 100% AD) health. Killing a minion by any means with a charge heals you and the nearest allied champion for 10- 60 (based on missing health) health and grants them kill gold. Healing is halved if the owner is ranged. These effects require an allied champion to be nearby."
+      "effects": " Grants a charge every 30 seconds, up to 3 charges. Melee basic attacks can consume one charge to execute minions below 210 \u2212 380 (based on level) (+ 100% AD) health. Killing a minion by any means with a charge heals you and the nearest allied champion for 10 \u2212 60 (based on missing health) health and grants them kill gold. Healing is halved if the owner is ranged. These effects require an allied champion to be nearby."
     },
     "passive2": {
       "unique": true,
@@ -18,53 +24,52 @@
     },
     "passive3": null,
     "passive4": null,
-    "passive5": null,
-    "active": null,
+    "passive5": null
+  },
+  "auras": {
     "aura": null,
     "aura2": null,
-    "aura3": null,
-    "noEffects": ""
+    "aura3": null
+  },
+  "active": {
+    "active": null
   },
   "stats": {
-    "abilityPower": "",
-    "armor": "",
-    "armorPenetration": "",
-    "attackDamage": "",
-    "attackSpeed": "",
-    "cdr": "",
-    "cdrUnique": "",
-    "crit": "",
-    "critUnique": "",
-    "goldPer10": "4",
-    "healShield": "",
-    "health": "125",
-    "healthRegen": "50",
-    "healthRegenFlat": "",
-    "lifesteal": "",
-    "magicPenetration": "",
-    "magicResist": "",
-    "mana": "",
-    "manaRegenPer5": "",
-    "manaRegenPer5Flat": "",
-    "moveSpeed": "",
-    "moveSpeedUnique": "",
-    "moveSpeedFlat": "",
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 4,
+    "healShield": 0,
+    "health": 125,
+    "healthRegen": 50,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0,
     "spec": "",
     "spec2": ""
   },
   "shop": {
-    "priceFull": "850",
-    "priceCombined": "300",
-    "priceSell": "340",
-    "itemTags": {
-      "tag1": "TOOLS:GOLD_INCOME",
-      "tag2": "DEFENSE:HEALTH",
-      "tag3": "DEFENSE:HEALTH_REGEN",
-      "tag4": null,
-      "tag5": null,
-      "tag6": null,
-      "tag7": null
-    }
+    "priceFull": 850,
+    "priceCombined": 300,
+    "priceSell": 340,
+    "itemTags": [
+      "TOOLS:GOLD_INCOME",
+      "DEFENSE:HEALTH",
+      "DEFENSE:HEALTH_REGEN"
+    ]
   },
   "other": {
     "consume": "",
@@ -72,8 +77,6 @@
     "championItem": "",
     "limit": "Limited to 1 Jungle or Gold Income item.",
     "req": "",
-    "hp": "",
-    "removed": true,
-    "nickname": "Support, Gold, Economy"
+    "hp": 0
   }
 }
