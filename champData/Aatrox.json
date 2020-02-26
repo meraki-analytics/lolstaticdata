@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 580,
     "healthPerLevel": 90,
-    "healthPer_5SecondsBase": 3,
-    "healthPer_5SecondsPerLevel": 1,
+    "healthPer5SecondsBase": 3,
+    "healthPer5SecondsPerLevel": 1,
     "manaBase": 0,
     "manaPerLevel": 0,
-    "manaPer_5SecondsBase": 0,
-    "manaPer_5SecondsPerLevel": 0,
+    "manaPer5SecondsBase": 0,
+    "manaPer5SecondsPerLevel": 0,
     "armorBase": 38,
     "armorPerLevel": 3.25,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "FIGHTER",
+    "JUGGERNAUT",
     "TANK",
-    "JUGGERNAUT"
+    "FIGHTER"
   ],
   "attributeRatings": {
     "damage": 3,

@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 575.6,
     "healthPerLevel": 85,
-    "healthPer_5SecondsBase": 8.5,
-    "healthPer_5SecondsPerLevel": 0.8,
+    "healthPer5SecondsBase": 8.5,
+    "healthPer5SecondsPerLevel": 0.8,
     "manaBase": 338.8,
     "manaPerLevel": 32,
-    "manaPer_5SecondsBase": 8.15,
-    "manaPer_5SecondsPerLevel": 0.75,
+    "manaPer5SecondsBase": 8.15,
+    "manaPer5SecondsPerLevel": 0.75,
     "armorBase": 35,
     "armorPerLevel": 3.8,
     "magicResistanceBase": 32.1,
@@ -48,8 +48,8 @@
   },
   "roles": [
     "FIGHTER",
-    "DIVER",
-    "TANK"
+    "TANK",
+    "DIVER"
   ],
   "attributeRatings": {
     "damage": 3,

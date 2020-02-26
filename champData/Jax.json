@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 592.8,
     "healthPerLevel": 85,
-    "healthPer_5SecondsBase": 8.5,
-    "healthPer_5SecondsPerLevel": 0.55,
+    "healthPer5SecondsBase": 8.5,
+    "healthPer5SecondsPerLevel": 0.55,
     "manaBase": 338.8,
     "manaPerLevel": 32,
-    "manaPer_5SecondsBase": 7.576,
-    "manaPer_5SecondsPerLevel": 0.7,
+    "manaPer5SecondsBase": 7.576,
+    "manaPer5SecondsPerLevel": 0.7,
     "armorBase": 36,
     "armorPerLevel": 3,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "SKIRMISHER",
     "FIGHTER",
-    "ASSASSIN"
+    "ASSASSIN",
+    "SKIRMISHER"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -340,7 +340,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Buff",
+        "targeting": "none",
         "affects": "Self, Enemies",
         "spellshieldable": "True",
         "resource": "MANA",
@@ -349,7 +349,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Empower has no cast time and does not interrupt Jax's previous orders.\n Empower's bonus damage will cause  Muramana's to trigger twice with a single basic attack.\n Empower will be consumed and negated if the attack is  dodged,  blocked, or  missed.",
+        "notes": "Empower has no cast time and does not interrupt Jax's previous orders.\n Empower's bonus damage will cause  Muramana's to trigger twice with a single basic attack.",
         "blurb": "Jax charges his weapon with energy, causing his next attack to deal additional damage.",
         "missileSpeed": null,
         "rechargeRate": null,

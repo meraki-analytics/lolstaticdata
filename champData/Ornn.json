@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 590,
     "healthPerLevel": 95,
-    "healthPer_5SecondsBase": 9,
-    "healthPer_5SecondsPerLevel": 0.9,
+    "healthPer5SecondsBase": 9,
+    "healthPer5SecondsPerLevel": 0.9,
     "manaBase": 340.6,
     "manaPerLevel": 45,
-    "manaPer_5SecondsBase": 8.01,
-    "manaPer_5SecondsPerLevel": 0.6,
+    "manaPer5SecondsBase": 8.01,
+    "manaPer5SecondsPerLevel": 0.6,
     "armorBase": 36,
     "armorPerLevel": 4,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "TANK",
     "VANGUARD",
-    "FIGHTER"
+    "FIGHTER",
+    "TANK"
   ],
   "attributeRatings": {
     "damage": 1,

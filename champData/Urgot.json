@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 585,
     "healthPerLevel": 88,
-    "healthPer_5SecondsBase": 7.5,
-    "healthPer_5SecondsPerLevel": 0.7,
+    "healthPer5SecondsBase": 7.5,
+    "healthPer5SecondsPerLevel": 0.7,
     "manaBase": 340,
     "manaPerLevel": 45,
-    "manaPer_5SecondsBase": 7.25,
-    "manaPer_5SecondsPerLevel": 0.8,
+    "manaPer5SecondsBase": 7.25,
+    "manaPer5SecondsPerLevel": 0.8,
     "armorBase": 36,
     "armorPerLevel": 4.25,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "FIGHTER",
+    "JUGGERNAUT",
     "TANK",
-    "JUGGERNAUT"
+    "FIGHTER"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -251,7 +251,7 @@
             "leveling": []
           },
           {
-            "description": "Active: For 4 seconds, Urgot is  ghosted, gains 40%  slow resist and autonomously basic attacks the nearest enemy at  3.0 attack speed, prioritizing  marked with Purge, refreshing the mark with every attack. Urgot can keep attacking without  interrupting his movement, but while firing his base movement speed is reduced by 125.",
+            "description": "Active: For 4 seconds, Urgot is  ghosted, gains 75%  slow resist and autonomously basic attacks the nearest enemy at  3.0 attack speed, prioritizing  marked with Purge, refreshing the mark with every attack. Urgot can keep attacking without  interrupting his movement, but while firing his base movement speed is reduced by 125.",
             "icon": null,
             "leveling": []
           },

@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 600,
     "healthPerLevel": 100,
-    "healthPer_5SecondsBase": 6.5,
-    "healthPer_5SecondsPerLevel": 0.55,
+    "healthPer5SecondsBase": 6.5,
+    "healthPer5SecondsPerLevel": 0.55,
     "manaBase": 325,
     "manaPerLevel": 40,
-    "manaPer_5SecondsBase": 8,
-    "manaPer_5SecondsPerLevel": 1,
+    "manaPer5SecondsBase": 8,
+    "manaPer5SecondsPerLevel": 1,
     "armorBase": 47,
     "armorPerLevel": 3.5,
     "magicResistanceBase": 32.1,
@@ -48,8 +48,8 @@
   },
   "roles": [
     "TANK",
-    "SUPPORT",
-    "WARDEN"
+    "WARDEN",
+    "SUPPORT"
   ],
   "attributeRatings": {
     "damage": 2,

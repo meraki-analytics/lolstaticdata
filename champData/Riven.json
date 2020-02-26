@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 558.48,
     "healthPerLevel": 86,
-    "healthPer_5SecondsBase": 7,
-    "healthPer_5SecondsPerLevel": 0.5,
+    "healthPer5SecondsBase": 7,
+    "healthPer5SecondsPerLevel": 0.5,
     "manaBase": 0,
     "manaPerLevel": 0,
-    "manaPer_5SecondsBase": 0,
-    "manaPer_5SecondsPerLevel": 0,
+    "manaPer5SecondsBase": 0,
+    "manaPer5SecondsPerLevel": 0,
     "armorBase": 33,
     "armorPerLevel": 3.2,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "SKIRMISHER",
     "FIGHTER",
-    "ASSASSIN"
+    "ASSASSIN",
+    "SKIRMISHER"
   ],
   "attributeRatings": {
     "damage": 3,

@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 540,
     "healthPerLevel": 85,
-    "healthPer_5SecondsBase": 8.5,
-    "healthPer_5SecondsPerLevel": 0.75,
+    "healthPer5SecondsBase": 8.5,
+    "healthPer5SecondsPerLevel": 0.75,
     "manaBase": 400,
     "manaPerLevel": 0,
-    "manaPer_5SecondsBase": 50,
-    "manaPer_5SecondsPerLevel": 0,
+    "manaPer5SecondsBase": 50,
+    "manaPer5SecondsPerLevel": 0,
     "armorBase": 34,
     "armorPerLevel": 3,
     "magicResistanceBase": 32.1,
@@ -47,8 +47,8 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "TANK",
-    "WARDEN"
+    "WARDEN",
+    "TANK"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -105,7 +105,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The Spirit Blade spawns with Shen, teleports closer to him if he gets too far away, and instantly blinks to him if he uses any global  blink ( Teleport,  Recall,  Abyssal Voyage, or  Stand United).\n Enemies see an arrow pointing from Shen to the location of his Spirit Blade even if it is not visible.\n  Twilight Assault will grant no shield if the Spirit Blade is stopped before it reaches Shen.\n  Spirit's Refuge will give the shield after the protective zone disappears.\n  Shadow Dash will give the shield when the dash ends.\n If the  dash is  knocked down, the shield will instead be received the moment it is applied, before damage calculation (if any).\n\n  Stand United will grant the shield if its  channel finishes.",
+        "notes": "The Spirit Blade spawns with Shen, teleports closer to him if he gets too far away, and instantly blinks to him if he uses any global  blink ( Teleport,  Recall,  Abyssal Voyage, or  Stand United).\n Enemies see an arrow pointing from Shen to the location of his Spirit Blade even if it is not visible.\n  Twilight Assault will grant no shield if the Spirit Blade is stopped before it reaches Shen.\n  Spirit's Refuge will give the shield after the protective zone disappears.\n  Shadow Dash will give the shield when the dash ends.\n If the dash is  interrupted, the shield will instead be received the moment the crowd control is applied, before damage calculation (if any).",
         "blurb": "After casting a spell, Shen gets a shield. Affecting other champions reduces the cooldown of this effect.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -494,7 +494,7 @@
         "projectile": "SPECIAL",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The Spirit Blade is  knocked down if colliding with  Wind Wall or  Unbreakable.\n PENDING FOR TEST: Twilight Assault's  interactions with  dodging,  blocking, and  blinding effects.",
+        "notes": "The Spirit Blade will stop upon colliding with  Wind Wall or  Unbreakable.\n PENDING FOR TEST: Twilight Assault's  interactions with  dodging,  blocking, and  blinding effects.",
         "blurb": "Shen recalls his spirit blade to attack with it, dealing damage based on the target's max health. The attacks are greatly empowered if it collides with an enemy champion, and all collided enemies are slowed while running away from Shen.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -881,7 +881,7 @@
         "projectile": "SPECIAL",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The Spirit Blade is  knocked down if colliding with  Wind Wall or  Unbreakable.\n PENDING FOR TEST: Twilight Assault's  interactions with  dodging,  blocking, and  blinding effects.",
+        "notes": "The Spirit Blade will stop upon colliding with  Wind Wall or  Unbreakable.\n PENDING FOR TEST: Twilight Assault's  interactions with  dodging,  blocking, and  blinding effects.",
         "blurb": "Shen recalls his spirit blade to attack with it, dealing damage based on the target's max health. The attacks are greatly empowered if it collides with an enemy champion, and all collided enemies are slowed while running away from Shen.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -1268,7 +1268,7 @@
         "projectile": "SPECIAL",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The Spirit Blade is  knocked down if colliding with  Wind Wall or  Unbreakable.\n PENDING FOR TEST: Twilight Assault's  interactions with  dodging,  blocking, and  blinding effects.",
+        "notes": "The Spirit Blade will stop upon colliding with  Wind Wall or  Unbreakable.\n PENDING FOR TEST: Twilight Assault's  interactions with  dodging,  blocking, and  blinding effects.",
         "blurb": "Shen recalls his spirit blade to attack with it, dealing damage based on the target's max health. The attacks are greatly empowered if it collides with an enemy champion, and all collided enemies are slowed while running away from Shen.",
         "missileSpeed": null,
         "rechargeRate": null,
