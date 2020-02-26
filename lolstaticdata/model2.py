@@ -5,6 +5,7 @@ from enum import Enum
 
 
 
+
 def to_enum_like(string: str) -> str:
     return string.upper().replace(' ', '_')
 

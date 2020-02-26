@@ -1,7 +1,7 @@
 # NOT FINAL
 # NOT FINAL
 # NOT FINAL
-#TODO Something with unique values ie: CDRUnique and CDR
+#TODO Something with unique values ie: CDRUnique and CDR.
 
 from bs4 import BeautifulSoup
 import json
