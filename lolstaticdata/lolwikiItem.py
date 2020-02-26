@@ -29,6 +29,8 @@ class get_Items():
                 effect =self.uniquePassiveFunc(passive)
                 effects.append(effect)
                 print(effects)
+                if effects == [None]:
+                    effects = []
                 return effects
 
 
@@ -41,12 +43,16 @@ class get_Items():
                 passive = self.test3[passive]
                 effect = self.uniquePassiveFunc(passive)
                 effects.append(effect)
+                if effects == [None]:
+                    effects = []
                 return effects
 
         elif passive == "act":
             passive = self.test3[passive]
             effect = self.uniquePassiveFunc(passive)
             effects.append(effect)
+            if effects == [None]:
+                effects = []
             return effects
 
 
@@ -94,6 +100,7 @@ class get_Items():
                         name=name,
                         effects=passive
                     )
+
                     return effect
 
         except AttributeError:
@@ -241,27 +248,33 @@ class get_Items():
             self.item_to_json()
 
     def item_stats(self):
+        builds = []
+        recipes = []
         #Create the json files from the classes in model2.py
         self.removed = self.test3.get("hp", None)
         if self.test3["removed"] == "true":
             self.removed = True
         else:
             self.removed = False
-        if self.not_unique.match(self.test3["noe"] ):
+        if self.not_unique.match(self.test3["noe"]):
             no_effects = True
         else:
             no_effects = False
-        builds = []
-        if "," in self.test3['builds']:
+        if self.not_unique.search(self.test3["builds"]):
             build = self.test3["builds"]
-            for i in build.split(","):
-                builds.append(i)
+            if "," in build:
+                for i in build.split(","):
+                    builds.append(i.strip())
+            else:
+                builds.append(build.strip())
 
-        recipes = []
-        if "," in self.test3['recipe']:
+        if self.not_unique.match(self.test3["recipe"]):
             component = self.test3["recipe"]
-            for i in component.split(","):
-                recipes.append(i)
+            if "," in component:
+                for i in component.split(","):
+                    recipes.append(i.strip())
+            else:
+                recipes.append(component.strip())
 
 
 
@@ -271,7 +284,7 @@ class get_Items():
             tier=self.test3["tier"],
             type=self.test3["type"],
             recipe=recipes,
-            builds = builds,
+            builds =builds,
             no_effects = no_effects,
             removed=self.removed,
             nickname=self.test3["nickname"],

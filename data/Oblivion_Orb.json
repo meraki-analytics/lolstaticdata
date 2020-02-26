@@ -5,9 +5,11 @@
   "type": "Tier 2",
   "recipe": [
     "Ruby Crystal",
-    " Amplifying Tome"
+    "Amplifying Tome"
   ],
-  "builds": [],
+  "builds": [
+    "Morellonomicon"
+  ],
   "noEffects": false,
   "removed": false,
   "nickname": "",
@@ -18,12 +20,8 @@
       "effects": " +15 magic penetration."
     }
   ],
-  "auras": [
-    null
-  ],
-  "active": [
-    null
-  ],
+  "auras": [],
+  "active": [],
   "stats": {
     "abilityPower": 20,
     "armor": 0,

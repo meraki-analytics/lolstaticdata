@@ -3,12 +3,14 @@
   "itemID": 3711,
   "tier": "Tier 2",
   "type": "Tier 2",
-  "recipe": [],
+  "recipe": [
+    "Hunter's Machete"
+  ],
   "builds": [
     "Devourer",
-    " Runeglaive",
-    " Cinderhulk",
-    " Warrior"
+    "Runeglaive",
+    "Cinderhulk",
+    "Warrior"
   ],
   "noEffects": false,
   "removed": true,
@@ -20,12 +22,8 @@
       "effects": " Upgrades Smite to Scavenging Smite. If Scavenging Smite is used on a large monster in the enemy's jungle, the recharge timer is halved. Upon killing the affected monster, you gain 20 bonus gold and 175% bonus movement speed that decays over 2 seconds."
     }
   ],
-  "auras": [
-    null
-  ],
-  "active": [
-    null
-  ],
+  "auras": [],
+  "active": [],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

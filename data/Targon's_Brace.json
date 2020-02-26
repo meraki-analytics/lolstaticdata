@@ -5,9 +5,11 @@
   "type": "Tier 2",
   "recipe": [
     "Relic Shield",
-    " Rejuvenation Bead"
+    "Rejuvenation Bead"
   ],
-  "builds": [],
+  "builds": [
+    "Remnant of the Aspect"
+  ],
   "noEffects": false,
   "removed": true,
   "nickname": "Support, Economy, Gold, Sightstone, Ward",
@@ -18,12 +20,8 @@
       "effects": " Grants a charge every 30 seconds, up to 3 charges. Melee basic attacks can consume one charge to execute minions below 215- 470 (based on level) (+ 100% AD) health. Killing a minion by any means with a charge heals you and the nearest allied champion for 10- 60 (based on missing health) health and grants them kill gold. Healing is halved if the owner is ranged. These effects require an allied champion to be nearby."
     }
   ],
-  "auras": [
-    null
-  ],
-  "active": [
-    null
-  ],
+  "auras": [],
+  "active": [],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

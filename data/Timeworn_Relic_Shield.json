@@ -4,7 +4,9 @@
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
-  "builds": [],
+  "builds": [
+    "Timeworn Targon's Brace"
+  ],
   "noEffects": false,
   "removed": true,
   "nickname": "Support, Gold, Economy",
@@ -15,12 +17,8 @@
       "effects": " Grants a charge every 40 seconds, up to 2 charges. Melee basic attacks can consume one charge to execute minions below 200- 285 (based on level) (+ 100% AD) health. Killing a minion by any means with a charge heals you and the nearest allied champion for 5- 30 (based on missing health) health and grants them kill gold. Healing is halved if the owner is ranged. These effects require an allied champion to be nearby."
     }
   ],
-  "auras": [
-    null
-  ],
-  "active": [
-    null
-  ],
+  "auras": [],
+  "active": [],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

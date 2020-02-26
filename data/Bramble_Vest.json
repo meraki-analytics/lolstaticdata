@@ -5,9 +5,11 @@
   "type": "Tier 2",
   "recipe": [
     "Cloth Armor",
-    " Cloth Armor"
+    "Cloth Armor"
   ],
-  "builds": [],
+  "builds": [
+    "Thornmail"
+  ],
   "noEffects": false,
   "removed": false,
   "nickname": "",
@@ -18,12 +20,8 @@
       "effects": " Upon being hit by a basic attack, reflects 3 (+ 10% bonus armor) magic damage, while also inflicting Grievous Wounds on the attacker for 3 seconds."
     }
   ],
-  "auras": [
-    null
-  ],
-  "active": [
-    null
-  ],
+  "auras": [],
+  "active": [],
   "stats": {
     "abilityPower": 0,
     "armor": 35,

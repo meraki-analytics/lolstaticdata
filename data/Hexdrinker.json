@@ -5,9 +5,11 @@
   "type": "Tier 2",
   "recipe": [
     "Long Sword",
-    " Null-Magic Mantle"
+    "Null-Magic Mantle"
   ],
-  "builds": [],
+  "builds": [
+    "Maw of Malmortius"
+  ],
   "noEffects": false,
   "removed": false,
   "nickname": "",
@@ -18,12 +20,8 @@
       "effects": " If you would take magic damage that would reduce maximum health below 30%, you first gain a shield that absorbs 110- 280 (based on level) magic damage for 5 seconds (90 second cooldown)."
     }
   ],
-  "auras": [
-    null
-  ],
-  "active": [
-    null
-  ],
+  "auras": [],
+  "active": [],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

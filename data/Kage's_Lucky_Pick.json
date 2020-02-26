@@ -3,12 +3,14 @@
   "itemID": null,
   "tier": "Tier 2",
   "type": "Tier 2",
-  "recipe": [],
+  "recipe": [
+    "Amplifying Tome"
+  ],
   "builds": [
     "Morellonomicon",
-    " Shard of True Ice",
-    " Twin Shadows",
-    " Will of the Ancients"
+    "Shard of True Ice",
+    "Twin Shadows",
+    "Will of the Ancients"
   ],
   "noEffects": false,
   "removed": true,
@@ -20,12 +22,8 @@
       "effects": " + 5 per 10 seconds."
     }
   ],
-  "auras": [
-    null
-  ],
-  "active": [
-    null
-  ],
+  "auras": [],
+  "active": [],
   "stats": {
     "abilityPower": 25,
     "armor": 0,

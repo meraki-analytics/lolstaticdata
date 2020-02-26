@@ -5,9 +5,11 @@
   "type": "Tier 2",
   "recipe": [
     "Brawler's Gloves",
-    " Long Sword"
+    "Long Sword"
   ],
-  "builds": [],
+  "builds": [
+    "Lightbringer"
+  ],
   "noEffects": false,
   "removed": true,
   "nickname": "",
@@ -18,12 +20,8 @@
       "effects": " Critical strikes cause enemies to bleed for an additional 60% bonus AD as magic damage over 3 seconds."
     }
   ],
-  "auras": [
-    null
-  ],
-  "active": [
-    null
-  ],
+  "auras": [],
+  "active": [],
   "stats": {
     "abilityPower": 0,
     "armor": 0,

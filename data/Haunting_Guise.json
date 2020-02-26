@@ -5,9 +5,11 @@
   "type": "Tier 2",
   "recipe": [
     "Ruby Crystal",
-    " Amplifying Tome"
+    "Amplifying Tome"
   ],
-  "builds": [],
+  "builds": [
+    "Liandry's Torment"
+  ],
   "noEffects": false,
   "removed": false,
   "nickname": "mask",
@@ -18,12 +20,8 @@
       "effects": " Damaging an enemy champion generates one stack every second for the next 4 seconds. Deal 2% increased damage for each stack, up to a maximum of 10%."
     }
   ],
-  "auras": [
-    null
-  ],
-  "active": [
-    null
-  ],
+  "auras": [],
+  "active": [],
   "stats": {
     "abilityPower": 35,
     "armor": 0,
