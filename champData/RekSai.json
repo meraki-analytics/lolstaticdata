@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 570,
     "healthPerLevel": 85,
-    "healthPer5SecondsBase": 7.5,
-    "healthPer5SecondsPerLevel": 0.65,
+    "healthPer_5SecondsBase": 7.5,
+    "healthPer_5SecondsPerLevel": 0.65,
     "manaBase": 100,
     "manaPerLevel": 0,
-    "manaPer5SecondsBase": 0,
-    "manaPer5SecondsPerLevel": 0,
+    "manaPer_5SecondsBase": 0,
+    "manaPer_5SecondsPerLevel": 0,
     "armorBase": 36,
     "armorPerLevel": 3.75,
     "magicResistanceBase": 32.1,
@@ -217,7 +217,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Auto",
+        "targeting": "none",
         "affects": "Enemies",
         "spellshieldable": null,
         "resource": null,
@@ -388,7 +388,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Buff",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": null,
@@ -397,7 +397,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Rek'Sai immediately burrows on respawn once she has at least one point in Burrow.\n Burrow has no cast time and does not interrupt Rek'Sai's previous orders.\n Enemies detected by Tremor Sense are displayed as rings on the ground (champions display much larger ones and play a sound effect audible to both allies and enemies).\n Enemies standing still while Rek'Sai is nearby are insensible to Tremor Sense.\n\n Burrow briefly  slows  displaced enemies.\n Rek'Sai does not gain  obscured vision while  nearsighted.\n\n    Rek'Sai sensing a nearby enemy with Tremors Sense.",
+        "notes": "Rek'Sai immediately burrows on respawn once she has at least one point in Burrow.\n Burrow has no cast time and does not interrupt Rek'Sai's previous orders.\n Enemies detected by Tremor Sense are displayed as rings on the ground (champions display much larger ones and play a sound effect audible to both allies and enemies).\n Enemies standing still while Rek'Sai is nearby are insensible to Tremor Sense.\n\n Rek'Sai does not gain  obscured vision while  nearsighted.\n\n    Rek'Sai sensing a nearby enemy with Tremors Sense.",
         "blurb": "Rek'Sai burrows into the ground, gaining new abilities and increased Movement Speed. Her vision range is reduced and she cannot use basic attacks.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -660,6 +660,11 @@
             "description": "Rek'Sai can have up to 8 pairs of entrances active on the map at the same time. Enemy  champions can destroy a Tunnel by standing on either entrance for 1.5 seconds.",
             "icon": null,
             "leveling": []
+          },
+          {
+            "description": "An Unburrowed Rek'Sai will automatically  Burrow before entering the Tunnel and automatically  Unburrow after exiting it. This does not put  Burrow on cooldown nor trigger  Fury of the Xer'Sai, but does trigger other Burrow effects and  Unburrow.",
+            "icon": null,
+            "leveling": []
           }
         ],
         "cost": null,
@@ -693,7 +698,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Tunnel entrances can be targeted by allied movement abilities ( Leap Strike,  Shunpo,  Safeguard,  Teleport).\n Tunnel entrances are  visible on allied champions' minimaps, while enemies must first gain  sight of one before it becomes visible on theirs (the opposite entrance is not revealed).\n Enemy champions that destroy a Tunnel are each granted  5.\n Destroying a Tunnel while Rek'Sai is traversing it will not prevent her from reaching the opposite entrance.\n\n Rek'Sai exits a Tunnel the same way she entered (either  Unburrowed or  Burrowed, no switching).\n An  Unburrowed Rek'Sai is considered to be  Burrowed while inside a Tunnel. She will gain her  Burrowed abilities (unusable), suffer from the self  nearsight, and activate Tremor Sense, but will not be  healed by  Fury of the Xer'Sai (unless  Burrowed prior to entering the Tunnel).\n If Rek'Sai enters a Tunnel while unburrowed, Rek'Sai will take longer to enter the tunnel because Rek'Sai will initiate the burrow animation before entering the tunnel. Rek'Sai will unburrow immediately after exiting the Tunnel, knocking up the nearest enemy and applying damage. This does not put  Burrow on cooldown.\n\n Rek'Sai can Tunnel through terrain if she dashes close to them and the wall is thin enough to allow the opposite entrance to spawn on the other side.\n Rek'Sai can be blocked from using a tunnel entrance if a ward is placed directly over it, because the cursor's target selection prioritizes wards over tunnel entrances.",
+        "notes": "Tunnel entrances can be targeted by allied movement abilities ( Leap Strike,  Shunpo,  Safeguard,  Teleport).\n Tunnel entrances are  visible on allied champions' minimaps, while enemies must first gain  sight of one before it becomes visible on theirs (the opposite entrance is not revealed).\n Enemy champions that destroy a Tunnel are each granted  5.\n Destroying a Tunnel while Rek'Sai is traversing it will not prevent her from reaching the opposite entrance.\n\n Rek'Sai can Tunnel through terrain if she dashes close to them and the wall is thin enough to allow the opposite entrance to spawn on the other side.",
         "blurb": "While Burrowed, Rek'Sai creates a re-usable, long lasting tunnel. Enemies can destroy it by standing on top of either entrance.",
         "missileSpeed": null,
         "rechargeRate": null,

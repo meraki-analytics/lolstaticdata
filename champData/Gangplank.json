@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 540,
     "healthPerLevel": 82,
-    "healthPer5SecondsBase": 6,
-    "healthPer5SecondsPerLevel": 0.6,
+    "healthPer_5SecondsBase": 6,
+    "healthPer_5SecondsPerLevel": 0.6,
     "manaBase": 282,
     "manaPerLevel": 40,
-    "manaPer5SecondsBase": 7.5,
-    "manaPer5SecondsPerLevel": 0.7,
+    "manaPer_5SecondsBase": 7.5,
+    "manaPer_5SecondsPerLevel": 0.7,
     "armorBase": 35,
     "armorPerLevel": 3,
     "magicResistanceBase": 32.1,
@@ -192,7 +192,7 @@
         "name": "Parrrley",
         "effects": [
           {
-            "description": "Active: Gangplank shoots the target enemy with his pistol, dealing  physical damage and applying on-hit effects.",
+            "description": "Active: Gangplank shoots the target enemy with his pistol, dealing  physical damage and applying on-hit and on-attack effects.",
             "icon": "Parrrley.png",
             "leveling": [
               {
@@ -338,7 +338,7 @@
         "projectile": "TRUE",
         "onHitEffects": "True",
         "occurrence": null,
-        "notes": "On-hit effects that deal area of effect damage will allow Parrrley to plunder from every enemy killed. This includes enemies killed by Gangplank's  Powder Keg's when activated by Parrrley.\n Parrrley doesn't count as a basic attack for  Guinsoo's Rageblade.",
+        "notes": "On-hit effects that deal area of effect damage will allow Parrrley to plunder from every enemy killed. This includes enemies killed by Gangplank's  Powder Keg's when activated by Parrrley.",
         "blurb": "Shoots target, plundering Gold for each enemy unit killed.",
         "missileSpeed": null,
         "rechargeRate": null,

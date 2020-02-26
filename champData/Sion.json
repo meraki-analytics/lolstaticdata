@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 545,
     "healthPerLevel": 73,
-    "healthPer5SecondsBase": 7.5,
-    "healthPer5SecondsPerLevel": 0.8,
+    "healthPer_5SecondsBase": 7.5,
+    "healthPer_5SecondsPerLevel": 0.8,
     "manaBase": 330,
     "manaPerLevel": 42,
-    "manaPer5SecondsBase": 8,
-    "manaPer5SecondsPerLevel": 0.6,
+    "manaPer_5SecondsBase": 8,
+    "manaPer_5SecondsPerLevel": 0.6,
     "armorBase": 32,
     "armorPerLevel": 3,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "TANK",
     "VANGUARD",
-    "FIGHTER",
-    "TANK"
+    "FIGHTER"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -167,7 +167,7 @@
         "name": "Decimating Smash",
         "effects": [
           {
-            "description": "First Cast: Sion  channels for up to 2 seconds to swing in the target direction, increasing Decimating Smash's damage every 0.25 seconds, up to a bonus cap for the base damage and up to 200% bonus for the AD ratio.",
+            "description": "Active: Sion  channels for up to 2 seconds to swing in the target direction, increasing Decimating Smash's damage every 0.25 seconds, up to a bonus cap for the base physical damage and up to 200% bonus for the scaling physical damage. Decimating Smash can be recast at any time within its duration.",
             "icon": "Decimating Smash.png",
             "leveling": [
               {
@@ -273,7 +273,7 @@
             "leveling": []
           },
           {
-            "description": "Second Cast: Sion flails his axe, dealing physical damage to all enemies in the target area, and  slowing them by 50% for 0.25 seconds. Decimating Smash deals 60% damage against minions.",
+            "description": "Recast: Sion flails his axe, dealing physical damage to all enemies in the target area, and  slowing them by 50% for 0.25 seconds. Decimating Smash deals 60% damage against minions.",
             "icon": null,
             "leveling": [
               {
@@ -1046,7 +1046,7 @@
             ]
           },
           {
-            "description": "When not colliding with terrain Sion will additionally  pull,  knock up and  stun all enemies around him for a combined 0.75 \u2212 1.75 (based on charge time) seconds.",
+            "description": "When not colliding with terrain Sion will additionally  pull all enemies around him over 0.5 seconds, after which they're  stunned for 0.25 \u2212  1.25 (based on charge time) seconds, increased to 0.75 \u2212  1.75 (based on charge time) if hit by the leap.",
             "icon": null,
             "leveling": []
           }
@@ -1203,7 +1203,7 @@
             ]
           },
           {
-            "description": "When not colliding with terrain Sion will additionally  pull,  knock up and  stun all enemies around him for a combined 0.75 \u2212 1.75 (based on charge time) seconds.",
+            "description": "When not colliding with terrain Sion will additionally  pull all enemies around him over 0.5 seconds, after which they're  stunned for 0.25 \u2212  1.25 (based on charge time) seconds, increased to 0.75 \u2212  1.75 (based on charge time) if hit by the leap.",
             "icon": null,
             "leveling": []
           }

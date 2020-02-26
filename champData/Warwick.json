@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 550,
     "healthPerLevel": 85,
-    "healthPer5SecondsBase": 4,
-    "healthPer5SecondsPerLevel": 0.75,
+    "healthPer_5SecondsBase": 4,
+    "healthPer_5SecondsPerLevel": 0.75,
     "manaBase": 280,
     "manaPerLevel": 35,
-    "manaPer5SecondsBase": 7.466,
-    "manaPer5SecondsPerLevel": 0.575,
+    "manaPer_5SecondsBase": 7.466,
+    "manaPer_5SecondsPerLevel": 0.575,
     "armorBase": 33,
     "armorPerLevel": 3.2,
     "magicResistanceBase": 32.1,
@@ -111,7 +111,7 @@
         "name": "Jaws of the Beast",
         "effects": [
           {
-            "description": "Active: Warwick  dashes  unstoppably to the target enemy and bites them, dealing magic damage, applying  on-hit effects and  healing himself for a portion of the post-mitigation damage dealt. The on-hits apply after the healing is calculated.",
+            "description": "Active: Warwick  dashes  unstoppably to the target enemy and bites them, dealing magic damage, applying  on-hit and on-attack effects and  healing himself for a portion of the post-mitigation damage dealt. The on-hits apply after the healing is calculated.",
             "icon": "Jaws of the Beast.png",
             "leveling": [
               {
@@ -244,7 +244,7 @@
         "damageType": "MAGIC_DAMAGE",
         "spellEffects": "spell",
         "projectile": null,
-        "onHitEffects": null,
+        "onHitEffects": "True",
         "occurrence": null,
         "notes": "The ability will not cancel if the target dies during its cast time.\n Warwick cannot be  displaced while attached to an enemy, but can be  knocked down prior to reaching them.\n The button must be held until Warwick reaches his target to trigger the second effect. \n While Jaws of the Beast does not use Quick Casting by default, click-and-hold is comparable to the input required to use  Piercing Arrow or  Decimating Smash while using Quick Casting. It does not accept two-click input (e.g. First Cast and Second Cast) that Standard Casters will be used to on the aforementioned abilities.\n The distance traveled past the target depends on how long the ability was held after Warwick reached the target.",
         "blurb": "Warwick lunges forward and bites his target, dealing damage based on their maximum health and healing for damage dealt.",
@@ -267,13 +267,8 @@
         "name": "Blood Hunt",
         "effects": [
           {
-            "description": "Passive: Warwick senses all enemy  champions below  below 50% of their maximum health, marking them as Blood Hunted as well as highlighting their position to his team.",
+            "description": "Passive: Warwick senses all enemy  champions below  below 50% of their maximum health, marking them as Blood Hunted as well as highlighting their position to his team. Warwick additionally sees a \"blood trail\" highlighting the shortest path to the Blood Hunted target, and gains  bonus movement speed while following it.",
             "icon": "Blood Hunt.png",
-            "leveling": []
-          },
-          {
-            "description": "Warwick additionally sees a blood trail, highlighting the shortest path to the Blood Hunted target, and gains  bonus movement speed while following it.",
-            "icon": null,
             "leveling": [
               {
                 "attribute": "Bonus Movement Speed",
@@ -373,8 +368,13 @@
             "leveling": []
           },
           {
-            "description": "Active: Warwick briefly senses all enemies and then Blood Hunts the nearest enemy champion within a large radius for 8 seconds, regardless of their  current health. After being in combat with a champion, Blood Hunt may only be activated passively for 3 seconds. Its bonus movement speed will also be lost for 0.5 seconds, but will build up again every 0.25 seconds over the next 3.5 seconds.",
+            "description": "Active: Warwick briefly senses all enemies and then Blood Hunts the nearest enemy champion within a large radius for 8 seconds, regardless of their  current health.",
             "icon": "Warwick Blood Hunt Mark.png",
+            "leveling": []
+          },
+          {
+            "description": "After being in combat with a champion, Blood Hunt may only be activated passively for 3 seconds. Its bonus movement speed will also be lost for 0.5 seconds, but will build up again every 0.25 seconds over the next 3.5 seconds.",
+            "icon": null,
             "leveling": []
           }
         ],
@@ -428,7 +428,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Enemies who are Blood Hunted will display a red wolf mark on their heads while ominous music will replace their Summoner's Rift default chosen song until they are no longer Blood Hunted, with a small delay.\n Blood Hunt can detect and target decoys.\n The blood trail, altough described as a trail, does not indicate where the target has been - only the quickest route to their current location, and it will update as you and/or the target move.\n Warwick will lose his movement speed bonus if enemies that are not Blood Hunted stay exactly between him and the Blood Hunted target.\n Blood Hunt's passive only senses enemies that go below the health threshold while Warwick is alive. A unit that went below 50% health while Warwick was dead and has not taken damage while he is alive will not be detected by Blood Hunt until it falls low again.\n Same applies to enemy champions that went under the threshold by taking  Nexus Obelisk's damage or to units that spawn with their current health below the threshold (i.e  Hallucinate,  Mirror Image).\n\n The detection from Blood Hunt is more similar to  Tremor Sense than a form of  sight - it grants positional information only. It does not explicitly inform Warwick about who is low health or if they are alone.",
+        "notes": "Enemies who are Blood Hunted will display a red wolf mark on their heads while ominous music will replace their Summoner's Rift default chosen song until they are no longer Blood Hunted, with a small delay.\n Blood Hunt can detect and target decoys.\n The blood trail, altough described as a trail, does not indicate where the target has been - only the quickest route to their current location, and it will update as you and/or the target move.\n Warwick will lose his movement speed bonus if enemies that are not Blood Hunted stay exactly between him and the Blood Hunted target.\n Blood Hunt's passive only senses enemies that go below the health threshold while Warwick is alive. A unit that went below 50% health while Warwick was dead and has not taken damage while he is alive will not be detected by Blood Hunt until it falls low again.\n Same applies to enemy champions that went under the threshold by taking Nexus Obelisk damage or to units that spawn with their current health below the threshold (i.e  Hallucinate,  Mirror Image).\n\n The detection from Blood Hunt is more similar to  Tremor Sense than a form of sight - it grants positional information only. It does not explicitly inform Warwick about who is low health or if they are alone.",
         "blurb": "Warwick senses enemies below 50% health, gaining movement speed toward and attack speed against them. When they fall below 20% health, he frenzies and these bonuses triple.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -562,7 +562,7 @@
             "leveling": []
           },
           {
-            "description": "Warwick  channels while the target is  suppressed, dealing magic damage by hitting the target up to 6 times while also applying  on-hit effects up to 3 times. Infinite Duress  heals Warwick for all the damage dealt.",
+            "description": "Warwick  channels while the target is  suppressed, dealing magic damage by hitting the target up to 6 times while also applying  on-hit and on-attack effects up to 3 times. Infinite Duress  heals Warwick for all the damage dealt.",
             "icon": null,
             "leveling": [
               {

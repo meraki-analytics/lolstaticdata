@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 558.48,
     "healthPerLevel": 86,
-    "healthPer5SecondsBase": 7,
-    "healthPer5SecondsPerLevel": 0.5,
+    "healthPer_5SecondsBase": 7,
+    "healthPer_5SecondsPerLevel": 0.5,
     "manaBase": 0,
     "manaPerLevel": 0,
-    "manaPer5SecondsBase": 0,
-    "manaPer5SecondsPerLevel": 0,
+    "manaPer_5SecondsBase": 0,
+    "manaPer_5SecondsPerLevel": 0,
     "armorBase": 33,
     "armorPerLevel": 3.2,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "ASSASSIN",
+    "SKIRMISHER",
     "FIGHTER",
-    "SKIRMISHER"
+    "ASSASSIN"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -90,7 +90,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Runic Blade's duration refreshes whenever Riven gains or consumes a stack.\n The bonus damage applies  life steal.\n Runic Blade does not affect structures and  wards (charges are not consumed when attacking them).\n Runic Blade can be  dodged,  blocked, or  missed (charges are not consumed).",
+        "notes": "Runic Blade's duration refreshes whenever Riven gains or consumes a stack.\n The bonus damage applies  life steal.\n Runic Blade does not affect structures and  wards (charges are not consumed when attacking them).\n Runic Blade can be  dodged,  blocked and can  miss.",
         "blurb": "Riven's abilities charge her blade, causing her basic attacks to deal bonus physical damage. Riven's blade may be charged up to three times and expends one charge per attack.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -228,7 +228,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Direction / Auto",
+        "targeting": "Direction / Unit",
         "affects": "Enemies",
         "spellshieldable": "Special",
         "resource": null,
@@ -237,7 +237,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Each cast triggers Spellblade and counts as a charge for  Force Pulse and  Spellbinder.\n The damage radius is centered 100 units in front of Riven.\n The third cast also  knocks back enemies away from the epicenter by 75 units.\n  Spell shield will only block the third cast.\n Since it's not considered a basic attack reset, it does not add additional stacks of  Hail of Blades.",
+        "notes": "Each cast triggers Spellblade and counts as a charge for  Force Pulse and  Spellbinder.\n The damage radius is centered 100 units in front of Riven.\n The third cast also  knocks back enemies away from the epicenter by 75 units.\n  Spell shield will only block the third cast.\n Since it's not considered a basic attack reset, it consumes stacks of  Hail of Blades.",
         "blurb": "Riven lashes out in a series of strikes. This ability can be reactivated three times in a short time frame with the third hit knocking back nearby enemies.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -353,7 +353,7 @@
         "name": "Valor",
         "effects": [
           {
-            "description": "Active: Riven  dashes in the direction of the cursor,  shielding herself for 1.5 seconds. If she targets an enemy with Valor, she briefly  reveals herself and the area around her to the enemies.",
+            "description": "Active: Riven  dashes in the direction of the cursor (but not through terrain),  shielding herself for 1.5 seconds. If she targets an enemy with Valor, she briefly  reveals herself and the area around her to the enemies.",
             "icon": "Valor.png",
             "leveling": [
               {
@@ -428,11 +428,11 @@
         "spellshieldable": null,
         "resource": null,
         "damageType": null,
-        "spellEffects": "Shield",
+        "spellEffects": null,
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Valor can be used to bypass player-created terrain ( Crystallize,  Cataclysm) but not to go through walls.",
+        "notes": "PENDING FOR TEST - Can Valor can be used to bypass player-created terrain ( Crystallize,  Cataclysm)?",
         "blurb": "Riven steps forward a short distance and blocks incoming damage.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -476,7 +476,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Buff",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": null,

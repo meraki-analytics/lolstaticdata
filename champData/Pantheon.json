@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 580,
     "healthPerLevel": 95,
-    "healthPer5SecondsBase": 10,
-    "healthPer5SecondsPerLevel": 0.65,
+    "healthPer_5SecondsBase": 10,
+    "healthPer_5SecondsPerLevel": 0.65,
     "manaBase": 317.12,
     "manaPerLevel": 31,
-    "manaPer5SecondsBase": 7.356,
-    "manaPer5SecondsPerLevel": 0.45,
+    "manaPer_5SecondsBase": 7.356,
+    "manaPer_5SecondsPerLevel": 0.45,
     "armorBase": 40,
     "armorPerLevel": 3.75,
     "magicResistanceBase": 28,
@@ -111,12 +111,12 @@
         "name": "Comet Spear",
         "effects": [
           {
-            "description": "First Cast: Pantheon winds up for up to 4 seconds, increasing Comet Spear's range while being  slowed by 10%.",
+            "description": "Active: Pantheon winds up for up to 4 seconds, increasing Comet Spear's range while being  slowed by 10%. Comet Spear can be recast at any time within its duration.",
             "icon": "Comet Spear.png",
             "leveling": []
           },
           {
-            "description": "Second Cast: Pantheon hurls his spear, dealing  physical damage to all enemies hit, increased against enemies below 20% of their maximum health but reduced by 30% against  minions and by 50% against enemies beyond the first.",
+            "description": "Recast: Pantheon hurls his spear, dealing  physical damage to all enemies hit, increased against enemies below 20% of their maximum health but reduced by 30% against  minions and by 50% against enemies beyond the first.",
             "icon": null,
             "leveling": [
               {
@@ -522,7 +522,7 @@
             "leveling": []
           },
           {
-            "description": "At the end of the duration or upon reactivation after 0.3 seconds, Pantheon slams with his shield after a 0.25-second delay, dealing physical damage.",
+            "description": "At the end of the duration, Pantheon slams with his shield after a 0.25-second delay, dealing physical damage. Aegis Assault can be recast after 0.3 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -563,6 +563,11 @@
                 ]
               }
             ]
+          },
+          {
+            "description": "Recast: Pantheon slams with his shield early.",
+            "icon": null,
+            "leveling": []
           },
           {
             "description": "Mortal Will: Aegis Assault's duration is increased to 2.5 seconds, dealing[ up to 166.6% AD physical damage over the duration ][ 8.3% AD physical damage every 0.125 seconds ].",
@@ -616,11 +621,11 @@
         "spellshieldable": "special",
         "resource": "MANA",
         "damageType": "PHYSICAL_DAMAGE",
-        "spellEffects": "aoedot",
+        "spellEffects": "aoe",
         "projectile": "FALSE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Blink ability damage is calculated before the displacement.\n The self-slow is affected by  slow resist.\n  Spell shield will only block the slam's damage.",
+        "notes": "Blink ability damage is calculated before the displacement.\n  Spell shield will only block the slam's damage.",
         "blurb": "Pantheon sets his shield in a direction, gaining invulnerability to damage from enemies in that direction and dealing damage continuously. The last hit is extra powerful and still activates if E is canceled early. Empowered: Aegis Assault lasts longer.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -718,6 +723,11 @@
             "description": "Grand Starfall's  cooldown is reduced to 30 seconds if the channel is  interrupted.",
             "icon": null,
             "leveling": []
+          },
+          {
+            "description": "Grand Starfall will cast at max range if cast beyond that.",
+            "icon": null,
+            "leveling": []
           }
         ],
         "cost": {
@@ -762,7 +772,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "PENDING FOR TEST: Grand Starfall's  interactions with  The Hextech Ultimatum, buff and debuff retention, and  untargetability bypasses (e.g,  Tempered Fate,  Realm Warp,  Nexus Obelisk's turret laser).\n Abilities that target Pantheon will redirect to the last location.\n  Umbral Trespass will damage Pantheon during the travel, but will stay at the previous location.\n\n Pinging the ability will inform allies in chat which  visible  enemy champions are in range of Grand Starfall.",
+        "notes": "Abilities that target Pantheon will redirect to the last location.\n  Umbral Trespass will damage Pantheon during the travel, but will stay at the previous location.\n\n Pinging the ability will inform allies in chat which  visible  enemy champions are in range of Grand Starfall.",
         "blurb": "Pantheon leaps into the air and then hurtles back toward a target location, damaging enemies as he passes through. Mortal Will activates immediately when he lands.",
         "missileSpeed": null,
         "rechargeRate": null,

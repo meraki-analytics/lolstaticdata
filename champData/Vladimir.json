@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 537,
     "healthPerLevel": 96,
-    "healthPer5SecondsBase": 7,
-    "healthPer5SecondsPerLevel": 0.6,
+    "healthPer_5SecondsBase": 7,
+    "healthPer_5SecondsPerLevel": 0.6,
     "manaBase": 2,
     "manaPerLevel": 0,
-    "manaPer5SecondsBase": 0,
-    "manaPer5SecondsPerLevel": 0,
+    "manaPer_5SecondsBase": 0,
+    "manaPer_5SecondsPerLevel": 0,
     "armorBase": 23,
     "armorPerLevel": 3.3,
     "magicResistanceBase": 30,
@@ -47,8 +47,8 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "BATTLEMAGE",
-    "MAGE"
+    "MAGE",
+    "BATTLEMAGE"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -823,7 +823,7 @@
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": null,
+        "notes": "No additional details.",
         "blurb": "Vladimir pays his own health to charge up a reservoir of blood which, when released, deals damage in the area around him but can be blocked by enemy units.",
         "missileSpeed": null,
         "rechargeRate": null,

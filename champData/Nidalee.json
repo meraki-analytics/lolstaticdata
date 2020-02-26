@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 545,
     "healthPerLevel": 85,
-    "healthPer5SecondsBase": 6,
-    "healthPer5SecondsPerLevel": 0.6,
+    "healthPer_5SecondsBase": 6,
+    "healthPer_5SecondsPerLevel": 0.6,
     "manaBase": 295.6,
     "manaPerLevel": 45,
-    "manaPer5SecondsBase": 6,
-    "manaPer5SecondsPerLevel": 0.8,
+    "manaPer_5SecondsBase": 6,
+    "manaPer_5SecondsPerLevel": 0.8,
     "armorBase": 28,
     "armorPerLevel": 3.5,
     "magicResistanceBase": 30,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "ASSASSIN",
     "MAGE",
-    "SPECIALIST"
+    "SPECIALIST",
+    "ASSASSIN"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -418,16 +418,16 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self",
+        "targeting": "none",
         "affects": "Self, Enemies",
         "spellshieldable": "True",
         "resource": null,
         "damageType": "MAGIC_DAMAGE",
-        "spellEffects": "Proc",
+        "spellEffects": "spell",
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Takedown has no cast time and does not interrupt Nidalee's previous orders.\n The attack enhanced by Takedown will apply other on-hit effects and can  critically strike as normal (damage not increased by Takedown) (magic damage to  Hunted targets is displayed as such only for clarity reasons) as well as affect structures (will not deal bonus damage based on their missing health).\n Basic attacks enhanced by Takedown convert Spellblade damage from  Sheen,  Iceborn Gauntlet, and/or  Trinity Force from physical to magic. Their damage is however not increased by Takedown.\n Takedown's damage will apply  life steal.\n Takedown's enhanced attack cannot be  dodged, but it can be  blocked or missed if Nidalee is  blinded.",
+        "notes": "Takedown has no cast time and does not interrupt Nidalee's previous orders.\n The attack enhanced by Takedown will apply other on-hit effects and can  critically strike as normal (damage not increased by Takedown) (magic damage to  Hunted targets is displayed as such only for clarity reasons) as well as affect structures (will not deal bonus damage based on their missing health).\n Basic attacks enhanced by Takedown convert Spellblade damage from  Sheen,  Iceborn Gauntlet, and/or  Trinity Force from physical to magic. Their damage is however not increased by Takedown.\n Takedown's damage will apply  life steal.\n PENDING FOR TEST - Interaction with  Counter Strike,  Spirit's Refuge and  blind.",
         "blurb": "As a cougar, her next attack will attempt to fatally wound her target, dealing more damage the less life they have.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -448,7 +448,7 @@
         "name": "Bushwhack",
         "effects": [
           {
-            "description": "Active: Nidalee lays a  trap at the target location, which  stealths and arms after a brief delay and lasts for up to 2 minutes. The next enemy who springs the trap takes magic damage over 4 seconds and are  revealed for the duration.",
+            "description": "Active: Nidalee lays a trap at the target location, which  stealths and arms after a brief delay and lasts for up to 2 minutes. The next enemy who springs the trap takes magic damage over 4 seconds and are  revealed for the duration.",
             "icon": "Bushwhack.png",
             "leveling": [
               {
@@ -880,7 +880,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": null,

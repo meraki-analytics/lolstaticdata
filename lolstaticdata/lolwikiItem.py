@@ -6,7 +6,7 @@
 from bs4 import BeautifulSoup
 import json
 import re
-from lolstaticdata.util import download_webpage
+from lolstaticdata.util import download_webpage_items
 from model2 import Stat, Shop, Item, Passive, itemAttributes
 from collections import OrderedDict
 import os
@@ -238,7 +238,7 @@ class get_Items():
 
         url = 'https://leagueoflegends.fandom.com/wiki/Category:Item_data_templates?from=A'
 
-        html = download_webpage(url, use_cache)
+        html = download_webpage_items(url, use_cache)
         soup = BeautifulSoup(html, 'lxml')
 
         next_button = soup.find("a", {"class": "category-page__pagination-next wds-button wds-is-secondary"})
@@ -251,26 +251,23 @@ class get_Items():
 
                 item_url = base_url + url['href']
                 item = item_url
-                html1 = download_webpage(item, use_cache)
+                html1 = download_webpage_items(item, use_cache)
                 soup1 = BeautifulSoup(html1, 'lxml')
-                with open("html.json", 'w') as self.f:
-                    self.test3 = OrderedDict()
+                self.test3 = OrderedDict()
 
-                    for td in soup1.findAll('td', {"data-name": True}):
-                        self.attributes = td.find_previous("td").text.rstrip()
-                        self.attributes = self.attributes.lstrip()
-                        self.values = td.text.rstrip()
-                        # replace("\n", "")
-                        self.values = self.values.lstrip().rstrip()
-                        self.test3[self.attributes] = self.values
-                    item = self.item_stats()
-                    json.dump(self.test3, self.f, indent=2)
-                    self.f.close()
-                    yield item
+                for td in soup1.findAll('td', {"data-name": True}):
+                    self.attributes = td.find_previous("td").text.rstrip()
+                    self.attributes = self.attributes.lstrip()
+                    self.values = td.text.rstrip()
+                    # replace("\n", "")
+                    self.values = self.values.lstrip().rstrip()
+                    self.test3[self.attributes] = self.values
+                item = self.item_stats()
+                yield item
 
             try:
                 url = (next_button['href'])
-                html = download_webpage(url, use_cache)
+                html = download_webpage_items(url, use_cache)
             except TypeError:
                 last_page = True
             soup = BeautifulSoup(html, 'lxml')
@@ -361,7 +358,10 @@ class get_Items():
 def main():
     jsons = {}
     items = []
-    directory = r"C:\Users\dan\PycharmProjects\lolstaticdata\data"
+    directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), "..","itemData"))
+    if not os.path.exists(directory):
+        os.mkdir(directory)
+    print(directory)
     startItems = get_Items()
     for item in startItems.get_items():
         items.append(item)

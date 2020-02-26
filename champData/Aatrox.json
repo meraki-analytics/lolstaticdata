@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 580,
     "healthPerLevel": 90,
-    "healthPer5SecondsBase": 3,
-    "healthPer5SecondsPerLevel": 1,
+    "healthPer_5SecondsBase": 3,
+    "healthPer_5SecondsPerLevel": 1,
     "manaBase": 0,
     "manaPerLevel": 0,
-    "manaPer5SecondsBase": 0,
-    "manaPer5SecondsPerLevel": 0,
+    "manaPer_5SecondsBase": 0,
+    "manaPer_5SecondsPerLevel": 0,
     "armorBase": 38,
     "armorPerLevel": 3.25,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "JUGGERNAUT",
     "FIGHTER",
-    "TANK"
+    "TANK",
+    "JUGGERNAUT"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -644,7 +644,7 @@
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The impact area is oriented relative to Aatrox's position when the projectile hits, not where the projectile originated from.\n The location that the target is dragged to is not at the target's original location, but slightly closer towards Aatrox's position when the zone expires.\n There is a \"grace period\" near the end where the enemy will get pulled no matter what, even if they leave the impact area.",
+        "notes": "The impact area is oriented relative to Aatrox's position when the projectile hits, not where the projectile originated from.\n The location that the target is dragged to is not at the target's original location, but slightly closer towards Aatrox's position when the zone expires.\n There's a small delay in checking if the target is in or outside the Infernal Chains area. Because of this it is still possible to drag the target if they leave the zone at the last instant.",
         "blurb": null,
         "missileSpeed": null,
         "rechargeRate": null,

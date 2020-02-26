@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 534,
     "healthPerLevel": 88,
-    "healthPer5SecondsBase": 3.75,
-    "healthPer5SecondsPerLevel": 0.55,
+    "healthPer_5SecondsBase": 3.75,
+    "healthPer_5SecondsPerLevel": 0.55,
     "manaBase": 325,
     "manaPerLevel": 40,
-    "manaPer5SecondsBase": 8.75,
-    "manaPer5SecondsPerLevel": 0.7,
+    "manaPer_5SecondsBase": 8.75,
+    "manaPer_5SecondsPerLevel": 0.7,
     "armorBase": 24,
     "armorPerLevel": 3.5,
     "magicResistanceBase": 30,
@@ -47,8 +47,8 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "MARKSMAN",
-    "MAGE"
+    "MAGE",
+    "MARKSMAN"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -84,7 +84,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Upon triggering Icathian Surprise, Kog'Maw is cleansed of all debuffs and effects that do not inherently persist through death.\n An example for a debuff that does persist through death is  Brand's  Blaze.\n\n  Guardian Angel and  Chronoshift will take precedence over Icathian Surprise.\n Possible Bug: Dying while affected by  Chronoshift allows Kog'Maw to trigger Icathian Surprise immediately and then a second time right after he revives.\n\n After Icathian Surprise ends, the corpse of Kog'Maw will retain body block for the duration of his death animation.\n If Kog'Maw has an auto attack in the air at the same time that he's moving while he dies, as long as the auto hits the target after Icathian Surprise has started Kog'Maw will be able to auto once during Icathian Surprise.",
+        "notes": "Upon triggering Icathian Surprise, Kog'Maw is cleansed of all debuffs and effects that do not inherently persist through death.\n An example for a debuff that does persist through death is  Brand's  Blaze.\n\n  Guardian Angel and  Chronoshift will take precedence over Icathian Surprise.\n After Icathian Surprise ends, the corpse of Kog'Maw will retain body block for the duration of his death animation.\n If Kog'Maw has an auto attack in the air at the same time that he's moving while he dies, as long as the auto hits the target after Icathian Surprise has started Kog'Maw will be able to auto once during Icathian Surprise.",
         "blurb": "Upon dying, Kog'Maw starts a chain reaction in his body which causes him to move faster and detonate after 4 seconds; dealing 100 + (25 x lvl) true damage to surrounding enemies.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -372,7 +372,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self",
+        "targeting": "none",
         "affects": null,
         "spellshieldable": null,
         "resource": "MANA",

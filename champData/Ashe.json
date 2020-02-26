@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 539,
     "healthPerLevel": 85,
-    "healthPer5SecondsBase": 3.5,
-    "healthPer5SecondsPerLevel": 0.55,
+    "healthPer_5SecondsBase": 3.5,
+    "healthPer_5SecondsPerLevel": 0.55,
     "manaBase": 280,
     "manaPerLevel": 32,
-    "manaPer5SecondsBase": 6.972,
-    "manaPer5SecondsPerLevel": 0.4,
+    "manaPer_5SecondsBase": 6.972,
+    "manaPer_5SecondsPerLevel": 0.4,
     "armorBase": 26,
     "armorPerLevel": 3.4,
     "magicResistanceBase": 30,
@@ -47,8 +47,8 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "MARKSMAN",
-    "SUPPORT"
+    "SUPPORT",
+    "MARKSMAN"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -256,7 +256,7 @@
           ]
         },
         "cooldown": null,
-        "targeting": "Self / Buff",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": "MANA",
@@ -390,7 +390,7 @@
           ]
         },
         "cooldown": null,
-        "targeting": "Self / Buff",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": "MANA",

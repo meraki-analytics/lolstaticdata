@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 620,
     "healthPerLevel": 84,
-    "healthPer5SecondsBase": 8,
-    "healthPer5SecondsPerLevel": 0.5,
+    "healthPer_5SecondsBase": 8,
+    "healthPer_5SecondsPerLevel": 0.5,
     "manaBase": 0,
     "manaPerLevel": 0,
-    "manaPer5SecondsBase": 0,
-    "manaPer5SecondsPerLevel": 0,
+    "manaPer_5SecondsBase": 0,
+    "manaPer_5SecondsPerLevel": 0,
     "armorBase": 36,
     "armorPerLevel": 3,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "JUGGERNAUT",
     "FIGHTER",
-    "TANK"
+    "TANK",
+    "JUGGERNAUT"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -217,7 +217,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Decisive Strike does not interrupt Garen's previous orders.\n The enhanced attack will apply other on-hit effects and can  critically strike as normal (the bonus damage does not).\n The bonus damage will also apply  life steal.\n The bonus damage is applied to structures.\n\n If the  slow has a  cripple effect within it, it will also be removed together with the slow.\n For example, it will remove  cripple from  Nasus'  Wither, but not from  Malphite's  Ground Slam.\n Decisive Strike will remove  slow from  Exhaust, but not the damage reduction, for it being two separate effects within one summoner spell.\n It will remove the slow from  Red Buff, but not the damage over time.\n\n Decisive Strike does not protect Garen from re-application of  slows on him.\n Area of effect  slows (like  Trundle's  Pillar of Ice) are re-applied immediately after removing if Garen stays in the corresponding area.\n\n Garen can  lunge over very thin terrain if he attacks with a fully charged  Rapid Firecannon.\n PENDING FOR TEST : Can he go through very thin terrain without it?",
+        "notes": "Decisive Strike does not interrupt Garen's previous orders.\n The enhanced attack will apply other on-hit effects and can  critically strike as normal (the bonus damage does not).\n The bonus damage will also apply  life steal.\n The bonus damage is applied to structures.\n\n If the  slow has a  cripple effect within it, it will also be removed together with the slow.\n For example, it will remove  cripple from  Nasus'  Wither, but not from  Malphite's  Ground Slam.\n Decisive Strike will remove  slow from  Exhaust, but not the damage reduction, for it being two separate effects within one summoner spell.\n It will remove the slow from  Red Buff, but not the damage over time.\n\n Decisive Strike does not protect Garen from re-application of  slows on him.\n Area of effect  slows (like  Trundle's  Pillar of Ice) are re-applied immediately after removing if Garen stays in the corresponding area.\n\n Decisive Strike's leap can pass very thin terrain and will otherwise not be able to. In any case, Garen will still hit his target.",
         "blurb": "Garen gains a burst of movement speed, breaking free of all slows affecting him. His next attack strikes a vital area of his foe, dealing bonus damage and silencing them.",
         "missileSpeed": null,
         "rechargeRate": null,

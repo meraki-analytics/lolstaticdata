@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 500,
     "healthPerLevel": 86,
-    "healthPer5SecondsBase": 4,
-    "healthPer5SecondsPerLevel": 0.55,
+    "healthPer_5SecondsBase": 4,
+    "healthPer_5SecondsPerLevel": 0.55,
     "manaBase": 375,
     "manaPerLevel": 50,
-    "manaPer5SecondsBase": 8.5,
-    "manaPer5SecondsPerLevel": 0.65,
+    "manaPer_5SecondsBase": 8.5,
+    "manaPer_5SecondsPerLevel": 0.65,
     "armorBase": 22,
     "armorPerLevel": 3.5,
     "magicResistanceBase": 30,
@@ -47,8 +47,8 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "MARKSMAN",
-    "MAGE"
+    "MAGE",
+    "MARKSMAN"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -105,7 +105,7 @@
         "name": "Mystic Shot",
         "effects": [
           {
-            "description": "Active: Ezreal fires a bolt of energy in a line, dealing  physical damage to the first enemy hit, applying on-hit effects and healing off  life steal instead of  spell vamp.",
+            "description": "Active: Ezreal fires a bolt of energy in a line, dealing  physical damage to the first enemy hit, applying on-hit and on-attack effects and healing off  life steal instead of  spell vamp.",
             "icon": "Mystic Shot.png",
             "leveling": [
               {
@@ -219,7 +219,7 @@
         "projectile": "TRUE",
         "onHitEffects": "True",
         "occurrence": null,
-        "notes": "Even if the ability is  spell shielded it will still trigger the cooldown reduction.\n Mystic Shot triggers  Runaan's Hurricane's Wind's Fury.",
+        "notes": "Even if the ability is  spell shielded it will still trigger the cooldown reduction.",
         "blurb": "Ezreal fires a damaging bolt of energy which reduces all of his cooldowns by 1.5 seconds if it strikes an enemy unit.",
         "missileSpeed": null,
         "rechargeRate": null,

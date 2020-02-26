@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 525,
     "healthPerLevel": 85,
-    "healthPer5SecondsBase": 7,
-    "healthPer5SecondsPerLevel": 0.65,
+    "healthPer_5SecondsBase": 7,
+    "healthPer_5SecondsPerLevel": 0.65,
     "manaBase": 468,
     "manaPerLevel": 28.5,
-    "manaPer5SecondsBase": 8,
-    "manaPer5SecondsPerLevel": 0.8,
+    "manaPer_5SecondsBase": 8,
+    "manaPer_5SecondsPerLevel": 0.8,
     "armorBase": 22.72,
     "armorPerLevel": 4,
     "magicResistanceBase": 30,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "BATTLEMAGE",
     "FIGHTER",
-    "MAGE"
+    "MAGE",
+    "BATTLEMAGE"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -288,7 +288,7 @@
         "projectile": "FALSE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": null,
+        "notes": "Death's Hand will still cast and deal damage if Swain dies during the cast time.",
         "blurb": "Swain fires powerful bolts of demonic energy in front of him, dealing damage to all enemies and stopping upon hitting enemy champions.",
         "missileSpeed": null,
         "rechargeRate": null,

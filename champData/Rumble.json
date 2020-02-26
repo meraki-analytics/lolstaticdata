@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 589,
     "healthPerLevel": 85,
-    "healthPer5SecondsBase": 8,
-    "healthPer5SecondsPerLevel": 0.6,
+    "healthPer_5SecondsBase": 8,
+    "healthPer_5SecondsPerLevel": 0.6,
     "manaBase": 100,
     "manaPerLevel": 0,
-    "manaPer5SecondsBase": 0,
-    "manaPer5SecondsPerLevel": 0,
+    "manaPer_5SecondsBase": 0,
+    "manaPer_5SecondsPerLevel": 0,
     "armorBase": 31,
     "armorPerLevel": 3.5,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 0.9
   },
   "roles": [
-    "BATTLEMAGE",
     "FIGHTER",
-    "MAGE"
+    "MAGE",
+    "BATTLEMAGE"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -79,14 +79,14 @@
             "leveling": []
           },
           {
-            "description": "Overheating: At 100  Heat, Rumble becomes Overheated,  silencing himself for 6 seconds. During this time, his basic attacks deal 25 \u2212 110 (based on level) (+ 30% AP)  bonus magic damage while his  Heat rapidly decays by 10 every 0.6 seconds.",
+            "description": "Overheating: At 100  Heat, Rumble becomes Overheated, disabling his abilities for 6 seconds. During this time, his basic attacks deal 25 \u2212 110 (based on level) (+ 30% AP)  bonus magic damage to non- structures while his  Heat decays back to 0 over the duration.",
             "icon": "Junkyard Titan 3.png",
             "leveling": []
           }
         ],
         "cost": null,
         "cooldown": null,
-        "targeting": "Passive / Self",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": null,
@@ -95,7 +95,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The enhanced attacks apply other  on-hit effects and can  critically strike as normal (the bonus damage cannot).\n They do not affect structures.\n\n The self  silence is unaffected by  cleansing effects and  tenacity. \n Rumble can use summoner spells and/or active items while he is  overheating.",
+        "notes": null,
         "blurb": "Every spell Rumble casts gives him Heat. When he reaches 50% Heat he reaches Danger Zone, granting all his basic abilities bonus effects. When he reaches 100% Heat, he starts Overheating, granting his basic attacks bonus damage, but making him unable to cast spells for a few seconds.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -124,14 +124,14 @@
             "leveling": []
           },
           {
-            "description": "Overheating: At 100  Heat, Rumble becomes Overheated,  silencing himself for 6 seconds. During this time, his basic attacks deal 25 \u2212 110 (based on level) (+ 30% AP)  bonus magic damage while his  Heat rapidly decays by 10 every 0.6 seconds.",
+            "description": "Overheating: At 100  Heat, Rumble becomes Overheated, disabling his abilities for 6 seconds. During this time, his basic attacks deal 25 \u2212 110 (based on level) (+ 30% AP)  bonus magic damage to non- structures while his  Heat decays back to 0 over the duration.",
             "icon": "Junkyard Titan 3.png",
             "leveling": []
           }
         ],
         "cost": null,
         "cooldown": null,
-        "targeting": "Passive / Self",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": null,
@@ -140,7 +140,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The enhanced attacks apply other  on-hit effects and can  critically strike as normal (the bonus damage cannot).\n They do not affect structures.\n\n The self  silence is unaffected by  cleansing effects and  tenacity. \n Rumble can use summoner spells and/or active items while he is  overheating.",
+        "notes": null,
         "blurb": "Every spell Rumble casts gives him Heat. When he reaches 50% Heat he reaches Danger Zone, granting all his basic abilities bonus effects. When he reaches 100% Heat, he starts Overheating, granting his basic attacks bonus damage, but making him unable to cast spells for a few seconds.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -169,14 +169,14 @@
             "leveling": []
           },
           {
-            "description": "Overheating: At 100  Heat, Rumble becomes Overheated,  silencing himself for 6 seconds. During this time, his basic attacks deal 25 \u2212 110 (based on level) (+ 30% AP)  bonus magic damage while his  Heat rapidly decays by 10 every 0.6 seconds.",
+            "description": "Overheating: At 100  Heat, Rumble becomes Overheated, disabling his abilities for 6 seconds. During this time, his basic attacks deal 25 \u2212 110 (based on level) (+ 30% AP)  bonus magic damage to non- structures while his  Heat decays back to 0 over the duration.",
             "icon": "Junkyard Titan 3.png",
             "leveling": []
           }
         ],
         "cost": null,
         "cooldown": null,
-        "targeting": "Passive / Self",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": null,
@@ -185,7 +185,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The enhanced attacks apply other  on-hit effects and can  critically strike as normal (the bonus damage cannot).\n They do not affect structures.\n\n The self  silence is unaffected by  cleansing effects and  tenacity. \n Rumble can use summoner spells and/or active items while he is  overheating.",
+        "notes": null,
         "blurb": "Every spell Rumble casts gives him Heat. When he reaches 50% Heat he reaches Danger Zone, granting all his basic abilities bonus effects. When he reaches 100% Heat, he starts Overheating, granting his basic attacks bonus damage, but making him unable to cast spells for a few seconds.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -559,7 +559,7 @@
         },
         "targeting": "Direction / Auto",
         "affects": "Enemies",
-        "spellshieldable": null,
+        "spellshieldable": "false",
         "resource": null,
         "damageType": "MAGIC_DAMAGE",
         "spellEffects": "AoeDoT",
@@ -743,7 +743,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Buff",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": null,
@@ -927,7 +927,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Buff",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": null,
@@ -962,7 +962,7 @@
             "leveling": []
           },
           {
-            "description": "Active: Rumble shoots a electrical harpoon, dealing magic damage to the first enemy hit and  slowing them for 2 seconds. Hitting the same target with another harpoon enhances the  slow (stacks additively).",
+            "description": "Active: Rumble shoots a harpoon, dealing magic damage to the first enemy hit and  slowing them for 2 seconds. Hitting the same target with another harpoon enhances the  slow (stacks additively).",
             "icon": "Electro Harpoon 2.png",
             "leveling": [
               {
@@ -1217,7 +1217,7 @@
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "If Rumble casts Electro Harpoon before Overheating, he may still use another charge within three seconds of the initial cast.\n Each Electro Harpoon cast triggers  Sheen (and its upgrades) Spellblade and stacks  Force Pulse.",
+        "notes": "If Rumble casts Electro Harpoon before Overheating, he may still use another charge within three seconds of the initial cast.\n Each Electro Harpoon cast triggers  Sheen and stacks  Force Pulse.",
         "blurb": "Rumble launches a taser, electrocuting his target with magic damage and slowing their Movement Speed. Rumble can carry 2 harpoons at a time. While in Danger Zone the damage and slow percentage is increased.",
         "missileSpeed": null,
         "rechargeRate": "6",
@@ -1243,7 +1243,7 @@
             "leveling": []
           },
           {
-            "description": "Enemies within the line of flaming rockets take magic damage every 0.5 seconds and are  slowed by 35%. After leaving the area the damage will  linger for 1 second.",
+            "description": "Enemies within the line of rockets take magic damage every 0.5 seconds and are  slowed by 35%. After leaving the area the damage will linger for 1 second.",
             "icon": null,
             "leveling": [
               {
@@ -1325,7 +1325,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Direction / Ground",
+        "targeting": "Vector-targeted",
         "affects": "Enemies",
         "spellshieldable": "False",
         "resource": null,

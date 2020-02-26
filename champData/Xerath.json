@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 526,
     "healthPerLevel": 92,
-    "healthPer5SecondsBase": 5.5,
-    "healthPer5SecondsPerLevel": 0.55,
+    "healthPer_5SecondsBase": 5.5,
+    "healthPer_5SecondsPerLevel": 0.55,
     "manaBase": 459,
     "manaPerLevel": 22,
-    "manaPer5SecondsBase": 8,
-    "manaPer5SecondsPerLevel": 0.8,
+    "manaPer_5SecondsBase": 8,
+    "manaPer_5SecondsPerLevel": 0.8,
     "armorBase": 21.88,
     "armorPerLevel": 3.5,
     "magicResistanceBase": 30,
@@ -121,12 +121,12 @@
         "name": "Arcanopulse",
         "effects": [
           {
-            "description": "First Cast: Xerath  charges for up to 3 seconds to increase Arcanopulse's  range over 1.5 seconds, gradually  slowing himself for the duration by up to 50%.",
+            "description": "Active: Xerath  charges for up to 3 seconds to increase Arcanopulse's  range over 1.5 seconds, gradually  slowing himself for the duration by up to 50%. Arcanopulse can be recast at any time within its duration.",
             "icon": "Arcanopulse.png",
             "leveling": []
           },
           {
-            "description": "Arcanopulse is canceled when the charge ends, refunding  half of the mana cost.",
+            "description": "If the charge completes without reactivation, Arcanopulse is cancelled, refunding  half of the mana cost.",
             "icon": null,
             "leveling": [
               {
@@ -153,7 +153,7 @@
             ]
           },
           {
-            "description": "Second Cast: After a brief delay, Xerath fires a beam of energy in the target direction, dealing  magic damage to all enemies hit.",
+            "description": "Recast: After a brief delay, Xerath fires a beam of energy in the target direction, dealing  magic damage to all enemies hit.",
             "icon": null,
             "leveling": [
               {
@@ -424,7 +424,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The  sight granted persists for a short duration after the blast has finished.",
+        "notes": null,
         "blurb": "Calls down a barrage of arcane energy, slowing and dealing magic damage to all enemies in an area. Targets in the middle receive additional damage and a stronger slow.",
         "missileSpeed": null,
         "rechargeRate": null,

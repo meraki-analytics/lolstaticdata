@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 489.32,
     "healthPerLevel": 74,
-    "healthPer5SecondsBase": 5.5,
-    "healthPer5SecondsPerLevel": 0.55,
+    "healthPer_5SecondsBase": 5.5,
+    "healthPer_5SecondsPerLevel": 0.55,
     "manaBase": 377.24,
     "manaPerLevel": 43,
-    "manaPer5SecondsBase": 11.5,
-    "manaPer5SecondsPerLevel": 0.4,
+    "manaPer_5SecondsBase": 11.5,
+    "manaPer_5SecondsPerLevel": 0.4,
     "armorBase": 29,
     "armorPerLevel": 4,
     "magicResistanceBase": 30,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "MAGE",
     "SUPPORT",
-    "ENCHANTER",
-    "MAGE"
+    "ENCHANTER"
   ],
   "attributeRatings": {
     "damage": 1,
@@ -220,12 +220,12 @@
         "name": "Ebb and Flow",
         "effects": [
           {
-            "description": "Active: Nami unleashes a stream of water onto the target champion or herself, which then bounces to nearby unaffected champions up to twice, alternating between enemies, allies and herself.",
+            "description": "Active: Nami unleashes a stream of water onto the target  champion or herself, which then bounces to nearby unaffected champions up to twice, alternating between enemies and allies and herself.",
             "icon": "Ebb and Flow.png",
             "leveling": []
           },
           {
-            "description": "Ebb and Flow  heals allies and deals magic damage to enemies, with each bounce being 85% (+ 7.5% per 100 AP) as effective as the previous one.",
+            "description": "Ebb and Flow  heals allies and deals magic damage to enemies, with each bounce being ((7.5 per 100 AP) - 15)% more effective as the first one.",
             "icon": null,
             "leveling": [
               {
@@ -266,6 +266,43 @@
                 ]
               },
               {
+                "attribute": "Minimum Heal",
+                "modifiers": [
+                  {
+                    "values": [
+                      42,
+                      59.5,
+                      77,
+                      94.5,
+                      112
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      21,
+                      21,
+                      21,
+                      21,
+                      21
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
                 "attribute": "Magic Damage",
                 "modifiers": [
                   {
@@ -291,6 +328,43 @@
                       50,
                       50,
                       50
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Minimum Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      49,
+                      77,
+                      105,
+                      133,
+                      161
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      35,
+                      35,
+                      35,
+                      35,
+                      35
                     ],
                     "units": [
                       "% AP",
@@ -351,11 +425,11 @@
         "spellshieldable": "True",
         "resource": "MANA",
         "damageType": "MAGIC_DAMAGE",
-        "spellEffects": "special",
+        "spellEffects": "aoe",
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Applies  spell damage in a  area of effect range.\n  Spell shield will block only one bounce. Ebb and Flow will continue to bounce and the target who blocked the ability may be targeted again by a later bounce.\n Additional ability power will modify the damage/healing of Ebb and Flow by a percentage, based on the number of bounces.\n At Rank 5 with 0 AP (-15% per bounce) the first heal/damage will be 185/230, the second 157/196, and the third 130/161.\n At Rank 5 with 200 AP (no change per bounce) the heal/damage will be will remain at 245/330 throughout.\n At Rank 5 with 600 AP (+30% per bounce) the first heal/damage will be 365/530, the second 475/689, and the third 584/848.",
+        "notes": "Spell shield will block only one bounce. Ebb and Flow will continue to bounce and the target who blocked the ability may be targeted again by a later bounce.",
         "blurb": "Unleashes a stream of water that bounces back and forth between allied and enemy champions, healing allies and damaging enemies.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -544,11 +618,11 @@
         "spellshieldable": "False",
         "resource": "MANA",
         "damageType": "MAGIC_DAMAGE",
-        "spellEffects": "special",
+        "spellEffects": "proc",
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Applies  proc damage on empowered basic attacks and  spell damage for empowered abilities.\n Tidecaller's Blessing has no cast time and does not interrupt Nami's previous orders.\n The enhanced attacks will apply other  on-hit effects and can  critically strike as normal (the bonus damage does not).\n Tidecaller's Blessing has no effect against structures.\n\n Tidecaller's Blessing will not proc  Muramana's shock more than once per basic attack.\n The bonus magic damage benefits from the allied target's  magic penetration, not Nami's.",
+        "notes": "Tidecaller's Blessing has no cast time and does not interrupt Nami's previous orders.\n The enhanced attacks will apply other  on-hit effects and can  critically strike as normal (the bonus damage does not).\n Tidecaller's Blessing has no effect against structures.\n\n Tidecaller's Blessing will not proc  Muramana's shock more than once per basic attack.\n The bonus magic damage benefits from the allied target's  magic penetration, not Nami's.",
         "blurb": "Empowers an allied champion for a short duration. The ally's basic attacks deal bonus magic damage and slow the target.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -569,7 +643,7 @@
         "name": "Tidal Wave",
         "effects": [
           {
-            "description": "Active: Nami summons a tidal wave that surges forth, dealing magic damage to all units it hits,  knocking them up for 0.5 seconds and then  slowing them for 2 \u2212 4 (based on distance traveled) seconds.",
+            "description": "Active: Nami summons a tidal wave that surges forth, dealing magic damage to all units it hits,  knocking them up for 0.5 seconds and then  slowing them for 2 \u2212  4 (based on distance traveled) seconds.",
             "icon": "Tidal Wave.png",
             "leveling": [
               {
@@ -663,7 +737,7 @@
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "There is a brief  delay during which Nami performs the animation.\n  Surging Tides will trigger immediately on Nami on-cast.\n The wave travels for ~3.2 seconds at ~859 speed and the projectile is ~562 units wide.\n It is undodgeable by foot at 325 movement speed and 742 range.\n\n The wave places you slightly closer to Nami's cast position.",
+        "notes": "There is a brief cast time during which Nami performs the animation.\n  Surging Tides will trigger immediately on Nami on-cast.\n The wave travels for ~3.2 seconds at ~859 speed and the projectile is ~562 units wide.\n It is undodgeable by foot at 325 movement speed and 742 range.\n\n The wave places you slightly closer to Nami's cast position.",
         "blurb": "Summons a massive Tidal Wave that knocks up, slows, and damages enemies. Allies hit gain double the effect of Surging Tides.",
         "missileSpeed": null,
         "rechargeRate": null,

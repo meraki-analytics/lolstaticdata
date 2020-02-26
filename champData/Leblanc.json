@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 528,
     "healthPerLevel": 92,
-    "healthPer5SecondsBase": 7.5,
-    "healthPer5SecondsPerLevel": 0.55,
+    "healthPer_5SecondsBase": 7.5,
+    "healthPer_5SecondsPerLevel": 0.55,
     "manaBase": 334,
     "manaPerLevel": 50,
-    "manaPer5SecondsBase": 6,
-    "manaPer5SecondsPerLevel": 0.8,
+    "manaPer_5SecondsBase": 6,
+    "manaPer_5SecondsPerLevel": 0.8,
     "armorBase": 21.88,
     "armorPerLevel": 3.5,
     "magicResistanceBase": 30,
@@ -47,8 +47,8 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "MAGE",
     "BURST",
+    "MAGE",
     "ASSASSIN"
   ],
   "attributeRatings": {
@@ -79,7 +79,7 @@
             "leveling": []
           },
           {
-            "description": "Schism: Mirror Image can only occur once every few seconds.",
+            "description": "Mirror Image can only occur once every few seconds.",
             "icon": "Mirror Image 2.png",
             "leveling": []
           }
@@ -289,7 +289,7 @@
         "name": "Distortion",
         "effects": [
           {
-            "description": "First Cast: LeBlanc  dashes to the target location, damaging all nearby enemies upon arrival and leaving a return pad at the cast location for 4 seconds. After 0.2 seconds she can recast  Distortion at no additional cost.",
+            "description": "Active: LeBlanc  dashes to the target location, damaging all nearby enemies upon arrival and leaving a return pad at the cast location for 4 seconds. After 0.2 seconds she can recast  Distortion at no additional cost.",
             "icon": "Distortion.png",
             "leveling": [
               {
@@ -332,7 +332,7 @@
             ]
           },
           {
-            "description": "Second Cast: LeBlanc  blinks to Distortion's return pad.",
+            "description": "Recast: LeBlanc  blinks to Distortion's return pad, regardless of range.",
             "icon": "Distortion 2.png",
             "leveling": []
           }
@@ -387,7 +387,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The second cast has no range limit; it is global.\n Distortion and  Mimic Distortion have independent return pads and LeBlanc can travel to both while they are active.",
+        "notes": "Distortion and  Mimic Distortion have independent return pads and LeBlanc can travel to both while they are active.",
         "blurb": "LeBlanc rapidly dashes to a target location, dealing magic damage to nearby units. In the following 4 seconds, she can activate Distortion again to return to her starting location.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -406,7 +406,7 @@
         "name": "Distortion",
         "effects": [
           {
-            "description": "First Cast: LeBlanc  dashes to the target location, damaging all nearby enemies upon arrival and leaving a return pad at the cast location for 4 seconds. After 0.2 seconds she can recast  Distortion at no additional cost.",
+            "description": "Active: LeBlanc  dashes to the target location, damaging all nearby enemies upon arrival and leaving a return pad at the cast location for 4 seconds. After 0.2 seconds she can recast  Distortion at no additional cost.",
             "icon": "Distortion.png",
             "leveling": [
               {
@@ -449,7 +449,7 @@
             ]
           },
           {
-            "description": "Second Cast: LeBlanc  blinks to Distortion's return pad.",
+            "description": "Recast: LeBlanc  blinks to Distortion's return pad, regardless of range.",
             "icon": "Distortion 2.png",
             "leveling": []
           }
@@ -504,7 +504,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The second cast has no range limit; it is global.\n Distortion and  Mimic Distortion have independent return pads and LeBlanc can travel to both while they are active.",
+        "notes": "Distortion and  Mimic Distortion have independent return pads and LeBlanc can travel to both while they are active.",
         "blurb": "LeBlanc rapidly dashes to a target location, dealing magic damage to nearby units. In the following 4 seconds, she can activate Distortion again to return to her starting location.",
         "missileSpeed": null,
         "rechargeRate": null,

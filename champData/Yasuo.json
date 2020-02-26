@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 523,
     "healthPerLevel": 87,
-    "healthPer5SecondsBase": 6.5,
-    "healthPer5SecondsPerLevel": 0.9,
+    "healthPer_5SecondsBase": 6.5,
+    "healthPer_5SecondsPerLevel": 0.9,
     "manaBase": 100,
     "manaPerLevel": 0,
-    "manaPer5SecondsBase": 0,
-    "manaPer5SecondsPerLevel": 0,
+    "manaPer_5SecondsBase": 0,
+    "manaPer_5SecondsPerLevel": 0,
     "armorBase": 30,
     "armorPerLevel": 3.4,
     "magicResistanceBase": 30,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "ASSASSIN",
+    "SKIRMISHER",
     "FIGHTER",
-    "SKIRMISHER"
+    "ASSASSIN"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -111,7 +111,7 @@
         "name": "Steel Tempest",
         "effects": [
           {
-            "description": "First Cast - Steel Tempest: Yasuo thrusts his sword in the target direction, dealing physical damage to enemies hit and applying  on-hit effects to the first enemy hit. The ability can  critically strike for (60% +  20%) AD bonus physical damage.",
+            "description": "First Cast - Steel Tempest: Yasuo thrusts his sword in the target direction, dealing physical damage to enemies hit and applying on-hit and on-attack effects to the first enemy hit. The ability can  critically strike for (60% +  20%) AD bonus physical damage.",
             "icon": "Steel Tempest.png",
             "leveling": [
               {
@@ -183,14 +183,14 @@
         },
         "targeting": "Direction",
         "affects": "Enemies",
-        "spellshieldable": "Special",
+        "spellshieldable": "True",
         "resource": null,
         "damageType": "PHYSICAL_DAMAGE",
         "spellEffects": "Special",
         "projectile": "SPECIAL",
-        "onHitEffects": null,
+        "onHitEffects": "True",
         "occurrence": null,
-        "notes": "Applies  spell damage to the first target hit and  area damage to secondary targets.\n Only Gathering Storm can be  intercepted. \n  Ravenous Hunter will only heal from the damage dealt to secondary targets.\n\n Each parry has different interactions with this ability, whether it's the first target of Steel Tempest or the secondary one. In either case Yasuo still gets a stack of Gathering Storm and his whirlwind knockup cannot be negated:\n  Counter Strike: both first target and secondary target do not deal damage.\n  Spirit's Refuge: first target does not deal damage, secondary target does deal damage.\n  Blinding Dart: both first target and secondary target do deal damage.\n\n  Spell shield does not prevent Steel Tempest from gaining a stack.\n Steel Tempest's damage is calculated individually for every enemy hit when  critically striking.\n Steel Tempest is not considered a basic attack for effects like  Guinsoo's Rageblade and stacking  Energizing attacks.\n It's been however special cased to be considered a basic attack for  Hail of Blades.\n\n Unlike other abilities, the first two Steel Tempests will cancel and reset their cooldown if Yasuo is  immobilized during their cast time.\n The third Steel Tempest will continue its cast through immobilization.\n If Yasuo, however, buffers Steel Tempest after  Sweeping Blade, a disable will cause Steel Tempest to cancel and go on full cooldown but does not consume the stacks.",
+        "notes": "Only Gathering Storm can be  intercepted.\n Steel Tempest counts as single-target for the first enemy hit and area of effect for the others.\n  Ravenous Hunter will only heal from the damage dealt to secondary targets.\n\n Each parry has different interactions with this ability, whether it's the first target of Steel Tempest or the secondary one. In either case Yasuo still gets a stack of Gathering Storm and his whirlwind knockup cannot be blocked:\n  Counter Strike: both first target and secondary target do not deal damage.\n  Spirit's Refuge: first target does not deal damage, secondary target does deal damage.\n  Blinding Dart: both first target and secondary target do deal damage.\n\n Steel Tempest will not apply spell effects to the first target hit, but will do so to the secondary ones.\n Steel Tempest's damage is calculated individually for every enemy hit when  critically striking.\n Unlike other abilities, the first two Steel Tempests will cancel and reset their cooldown if Yasuo is  stunned during their cast time.\n The third Steel Tempest will continue its cast through the stun.\n If Yasuo however buffers Steel Tempest after  Sweeping Blade, a stun will cause Steel Tempest to cancel and go on full cooldown.",
         "blurb": "A skillshot basic attack. After two successful Steel Tempests, the next fires a tornado that knocks enemies Airborne.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -209,7 +209,7 @@
         "name": "Steel Tempest",
         "effects": [
           {
-            "description": "First Cast - Steel Tempest: Yasuo thrusts his sword in the target direction, dealing physical damage to enemies hit and applying  on-hit effects to the first enemy hit. The ability can  critically strike for (60% +  20%) AD bonus physical damage.",
+            "description": "First Cast - Steel Tempest: Yasuo thrusts his sword in the target direction, dealing physical damage to enemies hit and applying on-hit and on-attack effects to the first enemy hit. The ability can  critically strike for (60% +  20%) AD bonus physical damage.",
             "icon": "Steel Tempest.png",
             "leveling": [
               {
@@ -281,14 +281,14 @@
         },
         "targeting": "Direction",
         "affects": "Enemies",
-        "spellshieldable": "Special",
+        "spellshieldable": "True",
         "resource": null,
         "damageType": "PHYSICAL_DAMAGE",
         "spellEffects": "Special",
         "projectile": "SPECIAL",
-        "onHitEffects": null,
+        "onHitEffects": "True",
         "occurrence": null,
-        "notes": "Applies  spell damage to the first target hit and  area damage to secondary targets.\n Only Gathering Storm can be  intercepted. \n  Ravenous Hunter will only heal from the damage dealt to secondary targets.\n\n Each parry has different interactions with this ability, whether it's the first target of Steel Tempest or the secondary one. In either case Yasuo still gets a stack of Gathering Storm and his whirlwind knockup cannot be negated:\n  Counter Strike: both first target and secondary target do not deal damage.\n  Spirit's Refuge: first target does not deal damage, secondary target does deal damage.\n  Blinding Dart: both first target and secondary target do deal damage.\n\n  Spell shield does not prevent Steel Tempest from gaining a stack.\n Steel Tempest's damage is calculated individually for every enemy hit when  critically striking.\n Steel Tempest is not considered a basic attack for effects like  Guinsoo's Rageblade and stacking  Energizing attacks.\n It's been however special cased to be considered a basic attack for  Hail of Blades.\n\n Unlike other abilities, the first two Steel Tempests will cancel and reset their cooldown if Yasuo is  immobilized during their cast time.\n The third Steel Tempest will continue its cast through immobilization.\n If Yasuo, however, buffers Steel Tempest after  Sweeping Blade, a disable will cause Steel Tempest to cancel and go on full cooldown but does not consume the stacks.",
+        "notes": "Only Gathering Storm can be  intercepted.\n Steel Tempest counts as single-target for the first enemy hit and area of effect for the others.\n  Ravenous Hunter will only heal from the damage dealt to secondary targets.\n\n Each parry has different interactions with this ability, whether it's the first target of Steel Tempest or the secondary one. In either case Yasuo still gets a stack of Gathering Storm and his whirlwind knockup cannot be blocked:\n  Counter Strike: both first target and secondary target do not deal damage.\n  Spirit's Refuge: first target does not deal damage, secondary target does deal damage.\n  Blinding Dart: both first target and secondary target do deal damage.\n\n Steel Tempest will not apply spell effects to the first target hit, but will do so to the secondary ones.\n Steel Tempest's damage is calculated individually for every enemy hit when  critically striking.\n Unlike other abilities, the first two Steel Tempests will cancel and reset their cooldown if Yasuo is  stunned during their cast time.\n The third Steel Tempest will continue its cast through the stun.\n If Yasuo however buffers Steel Tempest after  Sweeping Blade, a stun will cause Steel Tempest to cancel and go on full cooldown.",
         "blurb": "A skillshot basic attack. After two successful Steel Tempests, the next fires a tornado that knocks enemies Airborne.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -307,7 +307,7 @@
         "name": "Steel Tempest",
         "effects": [
           {
-            "description": "First Cast - Steel Tempest: Yasuo thrusts his sword in the target direction, dealing physical damage to enemies hit and applying  on-hit effects to the first enemy hit. The ability can  critically strike for (60% +  20%) AD bonus physical damage.",
+            "description": "First Cast - Steel Tempest: Yasuo thrusts his sword in the target direction, dealing physical damage to enemies hit and applying on-hit and on-attack effects to the first enemy hit. The ability can  critically strike for (60% +  20%) AD bonus physical damage.",
             "icon": "Steel Tempest.png",
             "leveling": [
               {
@@ -379,14 +379,14 @@
         },
         "targeting": "Direction",
         "affects": "Enemies",
-        "spellshieldable": "Special",
+        "spellshieldable": "True",
         "resource": null,
         "damageType": "PHYSICAL_DAMAGE",
         "spellEffects": "Special",
         "projectile": "SPECIAL",
-        "onHitEffects": null,
+        "onHitEffects": "True",
         "occurrence": null,
-        "notes": "Applies  spell damage to the first target hit and  area damage to secondary targets.\n Only Gathering Storm can be  intercepted. \n  Ravenous Hunter will only heal from the damage dealt to secondary targets.\n\n Each parry has different interactions with this ability, whether it's the first target of Steel Tempest or the secondary one. In either case Yasuo still gets a stack of Gathering Storm and his whirlwind knockup cannot be negated:\n  Counter Strike: both first target and secondary target do not deal damage.\n  Spirit's Refuge: first target does not deal damage, secondary target does deal damage.\n  Blinding Dart: both first target and secondary target do deal damage.\n\n  Spell shield does not prevent Steel Tempest from gaining a stack.\n Steel Tempest's damage is calculated individually for every enemy hit when  critically striking.\n Steel Tempest is not considered a basic attack for effects like  Guinsoo's Rageblade and stacking  Energizing attacks.\n It's been however special cased to be considered a basic attack for  Hail of Blades.\n\n Unlike other abilities, the first two Steel Tempests will cancel and reset their cooldown if Yasuo is  immobilized during their cast time.\n The third Steel Tempest will continue its cast through immobilization.\n If Yasuo, however, buffers Steel Tempest after  Sweeping Blade, a disable will cause Steel Tempest to cancel and go on full cooldown but does not consume the stacks.",
+        "notes": "Only Gathering Storm can be  intercepted.\n Steel Tempest counts as single-target for the first enemy hit and area of effect for the others.\n  Ravenous Hunter will only heal from the damage dealt to secondary targets.\n\n Each parry has different interactions with this ability, whether it's the first target of Steel Tempest or the secondary one. In either case Yasuo still gets a stack of Gathering Storm and his whirlwind knockup cannot be blocked:\n  Counter Strike: both first target and secondary target do not deal damage.\n  Spirit's Refuge: first target does not deal damage, secondary target does deal damage.\n  Blinding Dart: both first target and secondary target do deal damage.\n\n Steel Tempest will not apply spell effects to the first target hit, but will do so to the secondary ones.\n Steel Tempest's damage is calculated individually for every enemy hit when  critically striking.\n Unlike other abilities, the first two Steel Tempests will cancel and reset their cooldown if Yasuo is  stunned during their cast time.\n The third Steel Tempest will continue its cast through the stun.\n If Yasuo however buffers Steel Tempest after  Sweeping Blade, a stun will cause Steel Tempest to cancel and go on full cooldown.",
         "blurb": "A skillshot basic attack. After two successful Steel Tempests, the next fires a tornado that knocks enemies Airborne.",
         "missileSpeed": null,
         "rechargeRate": null,

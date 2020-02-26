@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 577.8,
     "healthPerLevel": 85,
-    "healthPer5SecondsBase": 6,
-    "healthPer5SecondsPerLevel": 0.65,
+    "healthPer_5SecondsBase": 6,
+    "healthPer_5SecondsPerLevel": 0.65,
     "manaBase": 265.84,
     "manaPerLevel": 38,
-    "manaPer5SecondsBase": 8.042,
-    "manaPer5SecondsPerLevel": 0.65,
+    "manaPer_5SecondsBase": 8.042,
+    "manaPer_5SecondsPerLevel": 0.65,
     "armorBase": 34,
     "armorPerLevel": 3.5,
     "magicResistanceBase": 32.1,
@@ -506,7 +506,7 @@
         "name": "Cyclone",
         "effects": [
           {
-            "description": "Active: Wukong spins his staff around for up to 4 seconds, becomes  pacified and gains  5% \u2212 40% (based on time active) bonus movement speed. Reactivating Cyclone cancels it immediately.",
+            "description": "Active: Wukong spins his staff around for up to 4 seconds, becomes  pacified and gains  5% \u2212 40% (based on time active) bonus movement speed. Wukong can reactivate Cyclone after 1 second cancelling it immediately.",
             "icon": "Cyclone.png",
             "leveling": []
           },

@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 570,
     "healthPerLevel": 82,
-    "healthPer5SecondsBase": 5,
-    "healthPer5SecondsPerLevel": 0.8,
+    "healthPer_5SecondsBase": 5,
+    "healthPer_5SecondsPerLevel": 0.8,
     "manaBase": 280,
     "manaPerLevel": 42,
-    "manaPer5SecondsBase": 7,
-    "manaPer5SecondsPerLevel": 0.5,
+    "manaPer_5SecondsBase": 7,
+    "manaPer_5SecondsPerLevel": 0.5,
     "armorBase": 32,
     "armorPerLevel": 3,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "TANK",
     "VANGUARD",
-    "FIGHTER",
-    "TANK"
+    "FIGHTER"
   ],
   "attributeRatings": {
     "damage": 1,
@@ -490,7 +490,7 @@
             "leveling": []
           },
           {
-            "description": "The duo is slowed by 50% for the first 1 second, but is  immune to other  slows and keeps all movement speed buffs at time of cast for the duration of the charge. After a delay, the duo gains  14 movement speed every 0.25 seconds, up to the greater value between [ Total MS + 85 \u2212 255 (based on level) ][ Total Uncapped Flat MS + 85 \u2212 255 (based on level) ]. The bonus movement speed from Biggest Snowball Ever! ignores the movement speed cap.",
+            "description": "The duo is slowed by 50% for the first 1 second, but is  immune to other  slows and keeps all movement speed buffs at time of cast for the duration of the charge. After a delay, the duo gains  14 movement speed every 0.25 seconds, up to the greater value between [ Total MS + 85 \u2212 255 (based on level) ][ Total Uncapped Flat MS + 85 \u2212 255 (based on level) ] (click to toggle). The bonus movement speed from Biggest Snowball Ever! ignores the movement speed cap.",
             "icon": null,
             "leveling": []
           },
@@ -655,7 +655,7 @@
             ]
           },
           {
-            "description": "After 10 seconds, upon re-activation after 0.5 seconds, or if the duo is  interrupted, they will let loose the snowball, sending it rolling forward for an additional 750 \u2212 1750 (based on charge time) units during which it will not grow any larger and will explode upon colliding with an enemy unit.",
+            "description": "After 10 seconds, or if the duo is  interrupted, they will let loose the snowball, sending it rolling forward for an additional 750 \u2212 1750 (based on charge time) units during which it will not grow any larger and will explode upon colliding with an enemy unit. Biggest Snowball Ever! can be recast after 0.5 seconds.",
             "icon": "Biggest Snowball Ever! 2.png",
             "leveling": []
           }
@@ -848,7 +848,7 @@
             ]
           },
           {
-            "description": "Enemies hit 3 times are  slowed for 1 second. Champions and large monsters hit once are also Snowbound for 4 seconds, resetting on each hit.",
+            "description": "Enemies hit 3 times are  slowed for 1 second. Champions and large monsters hit once are also Snowbound for 4 seconds, resetting on each hit. Snowball Barrage can be recast twice within 3 seconds at no additional cost.",
             "icon": null,
             "leveling": [
               {
@@ -875,12 +875,12 @@
             ]
           },
           {
-            "description": "Snowball Barrage can be re-activated up to 2 times at no cost for 3 seconds. An enemy cannot be  slowed more than once. After 3 seconds, it is Willump's Turn.",
+            "description": "Recast: Nunu hurls another volley of snowballs, mimicking the first cast's effects. An enemy may only be  slowed once for being hit by 3 snowballs.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Willump's Turn: Snowbound enemies around Willump take magic damage and are  rooted for 0.5 \u2212 1.5 (based on level) seconds.",
+            "description": "After 3 seconds of the first cast, Snowbound enemies around Willump take magic damage and are  rooted for 0.5 \u2212 1.5 (based on level) seconds.",
             "icon": null,
             "leveling": [
               {
@@ -964,16 +964,16 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Direction / Auto",
+        "targeting": "Direction",
         "affects": "Enemies",
         "spellshieldable": "True",
         "resource": "MANA",
         "damageType": "MAGIC_DAMAGE",
-        "spellEffects": "aoedot",
+        "spellEffects": "aoe",
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Because of snowballs' cast time and travel time it is possible for Willump's Turn to come in while Nunu is still launching his snowballs.\n Nunu can move while casting Snowball Barrage.",
+        "notes": "Nunu can move while casting Snowball Barrage.",
         "blurb": null,
         "missileSpeed": null,
         "rechargeRate": null,
@@ -994,7 +994,7 @@
         "name": "Absolute Zero",
         "effects": [
           {
-            "description": "Active: Nunu and Willump sap heat from the surrounding  area for 3 seconds,  slowing affected enemies by 0% \u2212 95% (based on channel time), as well as gaining a  shield. The affected area is hidden if the duo is not  visible to the enemy team.",
+            "description": "Active: Nunu and Willump sap heat from the surrounding area for 3 seconds,  slowing affected enemies by 0% \u2212 95% (based on channel time), as well as gaining a  shield. The affected area is hidden if the duo is not  visible to the enemy team.",
             "icon": "Absolute Zero.png",
             "leveling": [
               {
@@ -1029,7 +1029,7 @@
             ]
           },
           {
-            "description": "At the end of the duration or if the channel is  interrupted, surrounding enemies take magic damage, reduced by 100% \u2212 0% (based on channel time). Once the channel ends, affected enemies will remain  slowed for 0 \u2212 3 (based on channel time) seconds and any remaining shield will decay over 3 seconds.",
+            "description": "At the end of the duration or if the channel is  interrupted, surrounding enemies take magic damage, reduced by 100% \u2212 0% (based on channel time). Once the channel ends, affected enemies will remain  slowed for 0 \u2212 3 (based on channel time) seconds and any remaining shield will decay over 3 seconds. Absolute Zero can be recast after 0.5 seconds.",
             "icon": "Absolute Zero 2.png",
             "leveling": [
               {
@@ -1062,6 +1062,11 @@
                 ]
               }
             ]
+          },
+          {
+            "description": "Recast: Nunu and Willump end the  channel early.",
+            "icon": null,
+            "leveling": []
           }
         ],
         "cost": {

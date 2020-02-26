@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 600,
     "healthPerLevel": 93,
-    "healthPer5SecondsBase": 8,
-    "healthPer5SecondsPerLevel": 0.75,
+    "healthPer_5SecondsBase": 8,
+    "healthPer_5SecondsPerLevel": 0.75,
     "manaBase": 0,
     "manaPerLevel": 0,
-    "manaPer5SecondsBase": 0,
-    "manaPer5SecondsPerLevel": 0,
+    "manaPer_5SecondsBase": 0,
+    "manaPer_5SecondsPerLevel": 0,
     "armorBase": 37,
     "armorPerLevel": 4,
     "magicResistanceBase": 32,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "JUGGERNAUT",
     "FIGHTER",
-    "TANK"
+    "TANK",
+    "JUGGERNAUT"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -69,7 +69,7 @@
         "name": "Pit Grit",
         "effects": [
           {
-            "description": "Innate - Heavy Hands: Sett's basic attacks alternate between a left punch a right punch on-attack. Sett begins attacking with a left punch, and will reset back to it after 2 seconds of not performing a right punch.",
+            "description": "Innate - Heavy Hands: Sett's basic attacks alternate between a left punch and a right punch on-attack. Sett begins attacking with a left punch, and will reset back to it after 2 seconds of not performing a right punch.",
             "icon": "Pit Grit.png",
             "leveling": []
           },
@@ -228,7 +228,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Buff",
+        "targeting": "none",
         "affects": "Self, Enemies",
         "spellshieldable": null,
         "resource": null,
@@ -454,7 +454,7 @@
         },
         "targeting": "Direction",
         "affects": "Enemies",
-        "spellshieldable": "special",
+        "spellshieldable": null,
         "resource": null,
         "damageType": "PHYSICAL_DAMAGE",
         "spellEffects": "aoe",

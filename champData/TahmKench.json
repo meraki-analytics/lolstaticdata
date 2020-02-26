@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 600,
     "healthPerLevel": 100,
-    "healthPer5SecondsBase": 6.5,
-    "healthPer5SecondsPerLevel": 0.55,
+    "healthPer_5SecondsBase": 6.5,
+    "healthPer_5SecondsPerLevel": 0.55,
     "manaBase": 325,
     "manaPerLevel": 40,
-    "manaPer5SecondsBase": 8,
-    "manaPer5SecondsPerLevel": 1,
+    "manaPer_5SecondsBase": 8,
+    "manaPer_5SecondsPerLevel": 1,
     "armorBase": 47,
     "armorPerLevel": 3.5,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "WARDEN",
+    "TANK",
     "SUPPORT",
-    "TANK"
+    "WARDEN"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -256,7 +256,7 @@
         "name": "Devour",
         "effects": [
           {
-            "description": "Active \u2013 Devour: Tahm Kench swallows an enemy minion, non-epic monster or allied champion, making them  untargetable and unable to take any actions for 4 seconds.",
+            "description": "Active: Devour: Tahm Kench swallows an enemy minion, non-epic monster or allied champion, making them  untargetable and unable to take any actions for 4 seconds.",
             "icon": "Devour.png",
             "leveling": []
           },
@@ -345,7 +345,7 @@
         "name": "Regurgitate",
         "effects": [
           {
-            "description": "Active \u2013 Regurgitate: Tahm Kench regurgitates the swallowed target. If they are an enemy they also take magic damage, capped at 500 against monsters.",
+            "description": "Active: Regurgitate: Tahm Kench regurgitates the swallowed target. If they are an enemy they also take magic damage, capped at 500 against monsters.",
             "icon": "Regurgitate.png",
             "leveling": [
               {

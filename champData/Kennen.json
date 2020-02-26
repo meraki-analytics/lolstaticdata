@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 541,
     "healthPerLevel": 84,
-    "healthPer5SecondsBase": 5.5,
-    "healthPer5SecondsPerLevel": 0.65,
+    "healthPer_5SecondsBase": 5.5,
+    "healthPer_5SecondsPerLevel": 0.65,
     "manaBase": 200,
     "manaPerLevel": 0,
-    "manaPer5SecondsBase": 50,
-    "manaPer5SecondsPerLevel": 0,
+    "manaPer_5SecondsBase": 50,
+    "manaPer_5SecondsPerLevel": 0,
     "armorBase": 29,
     "armorPerLevel": 3.75,
     "magicResistanceBase": 30,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "MARKSMAN",
     "MAGE",
-    "SPECIALIST"
+    "SPECIALIST",
+    "MARKSMAN"
   ],
   "attributeRatings": {
     "damage": 3,

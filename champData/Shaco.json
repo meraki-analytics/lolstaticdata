@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 587,
     "healthPerLevel": 89,
-    "healthPer5SecondsBase": 8.5,
-    "healthPer5SecondsPerLevel": 0.55,
+    "healthPer_5SecondsBase": 8.5,
+    "healthPer_5SecondsPerLevel": 0.55,
     "manaBase": 297.2,
     "manaPerLevel": 40,
-    "manaPer5SecondsBase": 7.156,
-    "manaPer5SecondsPerLevel": 0.45,
+    "manaPer_5SecondsBase": 7.156,
+    "manaPer_5SecondsPerLevel": 0.45,
     "armorBase": 30,
     "armorPerLevel": 3.5,
     "magicResistanceBase": 32.1,
@@ -67,7 +67,7 @@
         "name": "Backstab",
         "effects": [
           {
-            "description": "Innate: Shaco's basic attacks deal an additional 10 \u2212 25 (based on level) (+ 15% bonus AD) bonus physical damage when striking an enemy from behind. This damage can  critically strike.",
+            "description": "Innate: Shaco's basic attacks deal an additional 10 \u2212 25 (based on level) (+ 15% bonus AD) bonus physical damage when striking a non- structure from behind. This damage can  critically strike.",
             "icon": "Backstab.png",
             "leveling": []
           },
@@ -88,7 +88,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Backstab does not affect structures (turrets, inhibitors, Nexus).",
+        "notes": null,
         "blurb": "Shaco's basic attack critically strikes for extra damage when striking a unit from behind. Units can't be Backstabbed more than once every few seconds, modified by Shaco's cooldown reduction.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -292,7 +292,7 @@
             ]
           },
           {
-            "description": "Once triggered, the box will also become targetable and automatically starts firing every 0.5 seconds at all nearby  visible enemies, dealing  magic damage with each attack, reduced by 50% against  structures. If the box attacks only one unit, it deals increased damage.",
+            "description": "Once triggered, the box will also become targetable and automatically start firing every 0.5 seconds at all nearby  visible enemies, dealing  magic damage with each attack, reduced by 50% against  structures. If the box attacks only one unit, it deals increased damage.",
             "icon": null,
             "leveling": [
               {
@@ -372,7 +372,7 @@
             ]
           },
           {
-            "description": "The box can attack up to 10 times and stays active for 5 seconds or until destroyed, independently from its remaining inactive duration.",
+            "description": "The box stays active for 5 seconds or until destroyed, independently from its remaining inactive duration.",
             "icon": null,
             "leveling": []
           }
@@ -423,11 +423,11 @@
         "spellshieldable": "true",
         "resource": "MANA",
         "damageType": "MAGIC_DAMAGE",
-        "spellEffects": "pet",
+        "spellEffects": "aoe",
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The box applies  persistent damage to enemies in an  area of effect range.\n The flee starts at the same time as the startle, but since the target cannot move while startled the effective duration of the flee is reduced by the startle's.\n Static movement speed cannot be modified (e.g. with  slow resist or  Ghost).\n This effect is negated only if the target is fully slow immune.\n\n Upon becoming  stealthed, the box creates a puff of smoke and a distinct sound that can be detected through the fog of war.",
+        "notes": "The flee starts at the same time as the startle, but since the target cannot move while startled the effective duration of the flee is reduced by the startle's.\n Static movement speed cannot be modified (e.g. with  slow resist or  Ghost).\n This effect is negated only if the target is fully slow immune.\n\n Upon becoming  stealthed, the box creates a puff of smoke and a distinct sound that can be detected through the fog of war.",
         "blurb": "Shaco creates a hidden animated Jack-in-the-Box. When triggered, it will fear and attack nearby enemies.",
         "missileSpeed": null,
         "rechargeRate": null,

@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 597.24,
     "healthPerLevel": 93,
-    "healthPer5SecondsBase": 8.5,
-    "healthPer5SecondsPerLevel": 0.9,
+    "healthPer_5SecondsBase": 8.5,
+    "healthPer_5SecondsPerLevel": 0.9,
     "manaBase": 315.6,
     "manaPerLevel": 42,
-    "manaPer5SecondsBase": 7.466,
-    "manaPer5SecondsPerLevel": 0.575,
+    "manaPer_5SecondsBase": 7.466,
+    "manaPer_5SecondsPerLevel": 0.575,
     "armorBase": 35,
     "armorPerLevel": 3,
     "magicResistanceBase": 32.1,
@@ -340,7 +340,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Buff",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": "MANA",
@@ -528,7 +528,7 @@
             ]
           },
           {
-            "description": "Active: Olaf  cleanses himself of all  crowd control. For the next 6 seconds, he becomes immune to crowd controls and gains bonus attack damage. For the first second of Ragnarok, he also gains  bonus movement speed when moving towards nearby  visible nearby enemy  champions.",
+            "description": "Active: Olaf  cleanses himself of all  crowd control. For the next 6 seconds, he becomes immune to crowd controls and gains bonus attack damage. For the first second of Ragnarok, he also gains  bonus movement speed when moving towards nearby  visible enemy  champions.",
             "icon": null,
             "leveling": [
               {
@@ -598,7 +598,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Buff",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": null,
@@ -607,7 +607,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Ragnarok can be cast while Olaf is disabled by enemies but will not remove any active  displacement or  Tempered Fate's  stasis (only future applications).\n Ragnarok will not bypass any allied disables ( Zhonya's Hourglass'  stasis,  Fate's Call).\n Abilities with debuff components ( Permafrost,  Chomp,  Mocking Shout) will not be negated by Ragnarok (only their crowd control ones).\n If caught in  The Hextech Ultimatum, Olaf cannot escape the area unless he has a  blink during which Ragnarok is active, as he is immune to  grounding effects. This interaction occurs because the border of the hexagon is considered to be terrain for the affected target.\n Ragnarok upon activation will not  cleanse  nearsight.",
+        "notes": "Ragnarok can be cast while Olaf is disabled by enemies but will not remove any active  displacement or  Tempered Fate's  stasis (only future applications).\n Ragnarok will not bypass any allied disables ( Zhonya's Hourglass'  stasis,  Fate's Call).\n Abilities with debuff components ( Permafrost,  Chomp,  Mocking Shout) will not be negated by Ragnarok (only their crowd control ones).\n If caught in  The Hextech Ultimatum, Olaf cannot escape the area unless he has a  blink. This interaction occurs because the border of the hexagon is considered to be terrain for the affected target.\n Ragnarok upon activation will not  cleanse  nearsight.",
         "blurb": "Olaf temporarily becomes immune to disables.",
         "missileSpeed": null,
         "rechargeRate": null,

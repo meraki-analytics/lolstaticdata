@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 580,
     "healthPerLevel": 100,
-    "healthPer5SecondsBase": 8,
-    "healthPer5SecondsPerLevel": 0.8,
+    "healthPer_5SecondsBase": 8,
+    "healthPer_5SecondsPerLevel": 0.8,
     "manaBase": 300,
     "manaPerLevel": 40,
-    "manaPer5SecondsBase": 7.5,
-    "manaPer5SecondsPerLevel": 0.75,
+    "manaPer_5SecondsBase": 7.5,
+    "manaPer_5SecondsPerLevel": 0.75,
     "armorBase": 39,
     "armorPerLevel": 4,
     "magicResistanceBase": 32,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "JUGGERNAUT",
     "FIGHTER",
-    "TANK"
+    "TANK",
+    "JUGGERNAUT"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -238,7 +238,7 @@
         "name": "Awakening",
         "effects": [
           {
-            "description": "Active \u2013 Awakening: Yorick exhumes a Mist Walker under his command from each nearby grave.",
+            "description": "Active: Awakening: Yorick exhumes a Mist Walker under his command from each nearby grave.",
             "icon": "Awakening.png",
             "leveling": []
           }

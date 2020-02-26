@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 565,
     "healthPerLevel": 95,
-    "healthPer5SecondsBase": 5,
-    "healthPer5SecondsPerLevel": 0.75,
+    "healthPer_5SecondsBase": 5,
+    "healthPer_5SecondsPerLevel": 0.75,
     "manaBase": 377.28,
     "manaPerLevel": 43,
-    "manaPer5SecondsBase": 7.2,
-    "manaPer5SecondsPerLevel": 0.6,
+    "manaPer_5SecondsBase": 7.2,
+    "manaPer_5SecondsPerLevel": 0.6,
     "armorBase": 39,
     "armorPerLevel": 4,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "TANK",
     "VANGUARD",
-    "MAGE",
-    "TANK"
+    "MAGE"
   ],
   "attributeRatings": {
     "damage": 1,
@@ -111,7 +111,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Maokai can gain stacks from nearby enemy  champions he has no  sight of.\n Sap Magic can be  dodged and/or miss if Maokai is  blinded (but will not be consumed) but cannot be  blocked (the damage will be).\n The empowered attack cannot be  cancelled.\n Sap Magic cannot be used against  turrets,  wards, inhibitors or the Nexus.\n If Maokai possesses a  spell shield and it consumes an enemy ability, he will still receive the cooldown reduction.",
+        "notes": "Maokai can gain stacks from nearby enemy  champions he has no  sight of.\n Sap Magic can be  dodged and/or miss if Maokai is  blinded (but will not be consumed) but cannot be  blocked.\n The empowered attack cannot be  cancelled.\n Sap Magic cannot be used against  turrets,  wards, inhibitors or the Nexus.\n If Maokai possesses a  spell shield and it consumes an enemy ability, he will still receive the cooldown reduction.",
         "blurb": "Maokai's basic attack also heal him on a moderate cooldown. Each time Maokai casts a spell or is struck by an enemy's spell, this cooldown is reduced.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -172,7 +172,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Maokai can gain stacks from nearby enemy  champions he has no  sight of.\n Sap Magic can be  dodged and/or miss if Maokai is  blinded (but will not be consumed) but cannot be  blocked (the damage will be).\n The empowered attack cannot be  cancelled.\n Sap Magic cannot be used against  turrets,  wards, inhibitors or the Nexus.\n If Maokai possesses a  spell shield and it consumes an enemy ability, he will still receive the cooldown reduction.",
+        "notes": "Maokai can gain stacks from nearby enemy  champions he has no  sight of.\n Sap Magic can be  dodged and/or miss if Maokai is  blinded (but will not be consumed) but cannot be  blocked.\n The empowered attack cannot be  cancelled.\n Sap Magic cannot be used against  turrets,  wards, inhibitors or the Nexus.\n If Maokai possesses a  spell shield and it consumes an enemy ability, he will still receive the cooldown reduction.",
         "blurb": "Maokai's basic attack also heal him on a moderate cooldown. Each time Maokai casts a spell or is struck by an enemy's spell, this cooldown is reduced.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -609,7 +609,7 @@
         "name": "Nature's Grasp",
         "effects": [
           {
-            "description": "Active: Maokai summons a colossal wall of 5 thorny brambles that slowly advances forward, each stopping at the first enemy champion they collide with.",
+            "description": "Active: Maokai summons a colossal wall of 5 thorny brambles that slowly advances forward, accelerating over time, each stopping at the first enemy champion they collide with.",
             "icon": "Nature's Grasp.png",
             "leveling": []
           },
@@ -682,16 +682,16 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Direction / Ground",
+        "targeting": "Direction",
         "affects": "Enemies",
         "spellshieldable": "True",
         "resource": "MANA",
         "damageType": "MAGIC_DAMAGE",
-        "spellEffects": "spell",
+        "spellEffects": "Area of effect",
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The brambles can go through terrain.\n Starts off very slow but accelerates, and close the max range becomes very fast.",
+        "notes": "Enemy champion can be rooted and damaged multiple times by the ability if they manage to \"follow\" the ability.",
         "blurb": "Maokai summons a colossal wall of brambles and thorns that slowly advances forwards, damaging and rooting any enemies in the path.",
         "missileSpeed": null,
         "rechargeRate": null,

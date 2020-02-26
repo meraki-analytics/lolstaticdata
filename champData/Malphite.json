@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 574.2,
     "healthPerLevel": 90,
-    "healthPer5SecondsBase": 7,
-    "healthPer5SecondsPerLevel": 0.55,
+    "healthPer_5SecondsBase": 7,
+    "healthPer_5SecondsPerLevel": 0.55,
     "manaBase": 282.2,
     "manaPerLevel": 40,
-    "manaPer5SecondsBase": 7.324,
-    "manaPer5SecondsPerLevel": 0.55,
+    "manaPer_5SecondsBase": 7.324,
+    "manaPer_5SecondsPerLevel": 0.55,
     "armorBase": 37,
     "armorPerLevel": 3.75,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "TANK",
     "VANGUARD",
-    "FIGHTER",
-    "TANK"
+    "FIGHTER"
   ],
   "attributeRatings": {
     "damage": 1,
@@ -69,7 +69,7 @@
         "name": "Granite Shield",
         "effects": [
           {
-            "description": "Shard of the Monolith: Malphite's size scales with  his maximum armor (before applying  Thunderclap's bonus armor), capped at around 850 maximum armor.",
+            "description": "Innate- Shard of the Monolith: Malphite's size scales with  his total armor (before applying  Thunderclap's bonus armor), capped at 850 total armor.",
             "icon": "false",
             "leveling": []
           },
@@ -97,7 +97,7 @@
           ],
           "affectedByCdr": true
         },
-        "targeting": "Passive",
+        "targeting": "None",
         "affects": "Self",
         "spellshieldable": null,
         "resource": null,
@@ -237,7 +237,7 @@
         "spellshieldable": "Special",
         "resource": "MANA",
         "damageType": "MAGIC_DAMAGE",
-        "spellEffects": "spell",
+        "spellEffects": "single",
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
@@ -310,7 +310,7 @@
             ]
           },
           {
-            "description": "Active: Malphite's next basic attack within 6 seconds gains 50  bonus range and deals bonus physical damage on-hit. Additionally, for 5 seconds, Malphite's basic attacks also deal physical damage in a cone to units behind his target.",
+            "description": "Active: Malphite's next basic attack within 6 seconds gains 50 bonus range and deals bonus physical damage on-hit. Additionally, for 5 seconds, Malphite's basic attacks also deal physical damage in a cone to units behind his target.",
             "icon": null,
             "leveling": [
               {
@@ -470,14 +470,14 @@
         },
         "targeting": "Self",
         "affects": "Self",
-        "spellshieldable": null,
+        "spellshieldable": "False",
         "resource": "MANA",
         "damageType": "PHYSICAL_DAMAGE",
-        "spellEffects": "Proc",
-        "projectile": "SPECIAL",
+        "spellEffects": "false",
+        "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Thunderclap has no cast time and does not interrupt Malphite's previous orders.\n The cone damage cannot be  intercepted.",
+        "notes": "Thunderclap has no cast time and does not interrupt Malphite's previous orders.",
         "blurb": "Malphite starts to hit with such force that his attacks deal damage to all units in front of him. Passively increases his Armor (this amount is tripled while Granite Shield is active).",
         "missileSpeed": null,
         "rechargeRate": null,

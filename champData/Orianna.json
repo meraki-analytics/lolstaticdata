@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 530,
     "healthPerLevel": 91,
-    "healthPer5SecondsBase": 7,
-    "healthPer5SecondsPerLevel": 0.55,
+    "healthPer_5SecondsBase": 7,
+    "healthPer_5SecondsPerLevel": 0.55,
     "manaBase": 418,
     "manaPerLevel": 25,
-    "manaPer5SecondsBase": 8,
-    "manaPer5SecondsPerLevel": 0.8,
+    "manaPer_5SecondsBase": 8,
+    "manaPer_5SecondsPerLevel": 0.8,
     "armorBase": 17.04,
     "armorPerLevel": 3,
     "magicResistanceBase": 26,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "SUPPORT",
     "BURST",
-    "MAGE"
+    "MAGE",
+    "SUPPORT"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -74,7 +74,7 @@
             "leveling": []
           },
           {
-            "description": "Clockwork Winding: Orianna's basic attacks deal 10 \u2212 50 (based on level) (+ 15% AP)  bonus magic damage  on-hit and gain Clockwork Winding for 4 seconds, stacking up to twice. Clockwork Windup deals[ 20% bonus damage ][ 2 \u2212 10 (based on level) (+ 3% AP) bonus damage ] per stack, up to 14 \u2212 70 (based on level) (+ 21% AP) total bonus magic damage.",
+            "description": "Innate - Clockwork Winding: Orianna's basic attacks deal 10 \u2212 50 (based on level) (+ 15% AP)  bonus magic damage  on-hit and gain Clockwork Winding for 4 seconds, stacking up to twice. Clockwork Windup deals[ 20% bonus damage ][ 2 \u2212 10 (based on level) (+ 3% AP) bonus damage ] per stack, up to 14 \u2212 70 (based on level) (+ 21% AP) total bonus magic damage.",
             "icon": "Clockwork Winding.png",
             "leveling": []
           },
@@ -86,7 +86,7 @@
         ],
         "cost": null,
         "cooldown": null,
-        "targeting": "Passive",
+        "targeting": "none",
         "affects": "Enemies, Self",
         "spellshieldable": null,
         "resource": null,
@@ -119,7 +119,7 @@
             "leveling": []
           },
           {
-            "description": "Clockwork Winding: Orianna's basic attacks deal 10 \u2212 50 (based on level) (+ 15% AP)  bonus magic damage  on-hit and gain Clockwork Winding for 4 seconds, stacking up to twice. Clockwork Windup deals[ 20% bonus damage ][ 2 \u2212 10 (based on level) (+ 3% AP) bonus damage ] per stack, up to 14 \u2212 70 (based on level) (+ 21% AP) total bonus magic damage.",
+            "description": "Innate - Clockwork Winding: Orianna's basic attacks deal 10 \u2212 50 (based on level) (+ 15% AP)  bonus magic damage  on-hit and gain Clockwork Winding for 4 seconds, stacking up to twice. Clockwork Windup deals[ 20% bonus damage ][ 2 \u2212 10 (based on level) (+ 3% AP) bonus damage ] per stack, up to 14 \u2212 70 (based on level) (+ 21% AP) total bonus magic damage.",
             "icon": "Clockwork Winding.png",
             "leveling": []
           },
@@ -131,7 +131,7 @@
         ],
         "cost": null,
         "cooldown": null,
-        "targeting": "Passive",
+        "targeting": "none",
         "affects": "Enemies, Self",
         "spellshieldable": null,
         "resource": null,
@@ -282,7 +282,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Direction",
+        "targeting": "Ground",
         "affects": "Enemies",
         "spellshieldable": "True",
         "resource": "MANA",
@@ -291,7 +291,7 @@
         "projectile": "SPECIAL",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Command Attack has no cast time and does not interrupt Orianna's movement if The Ball is not attached to her (otherwise an animation will play and interrupt any movement commands).\n Orianna cannot use other abilities while The Ball is in transit but she may still perform other actions.\n\n The Ball will remain in the target location until Orianna retrieves it or if she goes beyond its leash range.\n Orianna will attempt to walk to Command Attack's cast point if it lies outside cast range (The Ball will never exceed its leash range regardless of target direction).\n\n The Ball will be  knocked down upon colliding with  Yasuo's  Wind Wall.",
+        "notes": "Command Attack has no cast time and does not interrupt Orianna's movement if The Ball is not attached to her (otherwise an animation will play and interrupt any movement commands).\n Orianna cannot use other abilities while The Ball is in transit but she may still perform other actions.\n\n The Ball will remain in the target location until Orianna retrieves it or if she goes beyond its leash range.\n Orianna will attempt to walk to Command Attack's cast point if it lies outside cast range (The Ball will never exceed its leash range regardless of target direction).\n\n The Ball will drop to the ground upon colliding with  Yasuo's  Wind Wall but not with  Braum's  Unbreakable.",
         "blurb": "Orianna commands her Ball to fire toward a target location, dealing magic damage to targets along the way (deals less damage to subsequent targets). Her Ball remains at the target location after.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -606,11 +606,11 @@
         "spellshieldable": "True",
         "resource": "MANA",
         "damageType": "MAGIC_DAMAGE",
-        "spellEffects": "special",
+        "spellEffects": "aoe",
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Applies  area damage to enemies along the way and provides a  shield to allies.\n Command Protect has no cast time and does not interrupt Orianna's previous orders.\n Orianna gains Command Protect's bonus resistances whenever The Ball is attached to her (even if she didn't self-cast).\n The Ball will remain where Command Protect's target ally died or, if instead they die or become  untargetable while it is mid-flight, snap back to Orianna.\n The Ball will return to Orianna if Command Protect's target ally moves too far away from her (The Ball will always respect its leash range, which is increased by 100 when attached to allied champions).\n\n The Ball will join Command Protect's target ally in  stealth if they are affected by it when Orianna targets them.",
+        "notes": "Command Protect has no cast time and does not interrupt Orianna's previous orders.\n Orianna gains Command Protect's bonus resistances whenever The Ball is attached to her (even if she didn't self-cast).\n The Ball will remain where Command Protect's target ally died or, if instead they die or become  untargetable while it is mid-flight, snap back to Orianna.\n The Ball will return to Orianna if Command Protect's target ally moves too far away from her (The Ball will always respect its leash range, which is increased by 100 when attached to allied champions).\n\n The Ball will join Command Protect's target ally in  stealth if they are affected by it when Orianna targets them.",
         "blurb": "Orianna commands her Ball to attach to an allied champion, shielding them and dealing magic damage to any enemies it passes through on the way. Additionally, the Ball grants additional Armor and Magic Resist to the champion it is attached to.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -708,7 +708,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "PENDING FOR TEST: Enemies are disabled for a total 1.25 seconds.\n Command Shockwave tosses enemies a set distance (those on the edge of the flinging area will be tossed to the center while those close to the middle will go over The Ball towards the edge) and can send them through walls.\n Command Shockwave, if buffered while  Command: Attack, will be immediately casted at the target location when the ball has stopped moving.\n Orianna can  Flash during the delay while The Ball is attached to her and Command Shockwave will update its  area of effect location.",
+        "notes": "PENDING FOR TEST: Enemies are disabled for a total 1.25 seconds.\n Command Shockwave tosses enemies a set distance (those on the edge of the flinging area will be tossed to the center while those close to the middle will go over The Ball towards the edge) and can send them through walls.\n Command Shockwave, if buffered while  Command: Attack, will be immediately casted at the target location when the ball has stopped moving.\n Orianna can  Flash during the cast time while The Ball is attached to her and Command Shockwave will affect the new location.",
         "blurb": "Orianna commands her Ball to unleash a shockwave, dealing magic damage and launching nearby enemies towards the Ball after a short delay.",
         "missileSpeed": null,
         "rechargeRate": null,

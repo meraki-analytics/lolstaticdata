@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 585,
     "healthPerLevel": 85,
-    "healthPer5SecondsBase": 10,
-    "healthPer5SecondsPerLevel": 1,
+    "healthPer_5SecondsBase": 10,
+    "healthPer_5SecondsPerLevel": 1,
     "manaBase": 295,
     "manaPerLevel": 45,
-    "manaPer5SecondsBase": 8,
-    "manaPer5SecondsPerLevel": 0.65,
+    "manaPer_5SecondsBase": 8,
+    "manaPer_5SecondsPerLevel": 0.65,
     "armorBase": 30,
     "armorPerLevel": 4,
     "magicResistanceBase": 32.1,
@@ -157,12 +157,12 @@
         "name": "Vault Breaker",
         "effects": [
           {
-            "description": "First Cast: Vi  charges for up to 4 seconds to increase Vault Breaker's  range, speed, and damage over 1.25 seconds. While charging, Vi is  pacified and  slowed by 15%.",
+            "description": "Active: Vi  charges for up to 4 seconds to increase Vault Breaker's  range, speed, and damage over 1.25 seconds. While charging, Vi is  pacified and  slowed by 15%. Vault Breaker can be recast at any time within its duration.",
             "icon": "Vault Breaker.png",
             "leveling": []
           },
           {
-            "description": "Second Cast: Vi  dashes in the target direction, dealing  physical damage to all enemies she passes through, increased by 0% \u2212 100% (based on channel time).",
+            "description": "Recast: Vi  dashes in the target direction, dealing  physical damage to all enemies she passes through, increased by 0% \u2212 100% (based on channel time).",
             "icon": null,
             "leveling": [
               {

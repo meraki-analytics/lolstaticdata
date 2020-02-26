@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 572.8,
     "healthPerLevel": 85,
-    "healthPer5SecondsBase": 7.5,
-    "healthPer5SecondsPerLevel": 0.75,
+    "healthPer_5SecondsBase": 7.5,
+    "healthPer_5SecondsPerLevel": 0.75,
     "manaBase": 327.2,
     "manaPerLevel": 40,
-    "manaPer5SecondsBase": 7.59,
-    "manaPer5SecondsPerLevel": 0.5,
+    "manaPer_5SecondsBase": 7.59,
+    "manaPer_5SecondsPerLevel": 0.5,
     "armorBase": 36,
     "armorPerLevel": 3,
     "magicResistanceBase": 32.1,
@@ -79,7 +79,7 @@
         ],
         "cost": null,
         "cooldown": null,
-        "targeting": "Passive / Buff",
+        "targeting": "none",
         "affects": "Enemies",
         "spellshieldable": "False",
         "resource": null,
@@ -88,7 +88,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "All enemy units (including  monsters) are considered for the targeting of Isolated.\n Unseen Threat's damage will cause  Muramana's Shock damage to trigger twice with a single basic attack.\n The enhanced attack can apply  on-hit effects and  critically strike (magic damage is not modified).",
+        "notes": "A team's allies are champions, pets (i.e  Prophet of an Elder God),  minions and outer turrets.  Monsters are considered allies for other monsters.\n Unseen Threat's damage will cause  Muramana's Shock damage to trigger twice with a single basic attack.",
         "blurb": "When Kha'Zix is not visible to the enemy team, he gains Unseen Threat, causing his next basic attack against an enemy Champion to deal bonus magic damage and slow.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -538,6 +538,11 @@
                 ]
               }
             ]
+          },
+          {
+            "description": "Taste Their Fear may be used mid-dash.",
+            "icon": null,
+            "leveling": []
           }
         ],
         "cost": {
@@ -590,7 +595,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Kha'Zix can cast  Taste Their Fear on a target during the jump.\n He can also use summoner spells and active items.\n  Flash will  cancel the leap as it is considered a movement spell.",
+        "notes": "Kha'Zix can also use summoner spells and activate items while mid-air.",
         "blurb": "Kha'Zix leaps to an area, dealing physical damage upon landing. If he chooses to Evolve Wings, Leap's range increases by 200 and the cooldown resets on champion kill or assist.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -694,7 +699,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": "MANA",
@@ -729,7 +734,7 @@
         ],
         "cost": null,
         "cooldown": null,
-        "targeting": "None",
+        "targeting": "Self",
         "affects": "Self",
         "spellshieldable": null,
         "resource": null,
@@ -805,7 +810,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": "MANA",

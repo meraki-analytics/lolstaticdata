@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 540,
     "healthPerLevel": 85,
-    "healthPer5SecondsBase": 5,
-    "healthPer5SecondsPerLevel": 0.5,
+    "healthPer_5SecondsBase": 5,
+    "healthPer_5SecondsPerLevel": 0.5,
     "manaBase": 315,
     "manaPerLevel": 50,
-    "manaPer5SecondsBase": 8.75,
-    "manaPer5SecondsPerLevel": 0.5,
+    "manaPer_5SecondsBase": 8.75,
+    "manaPer_5SecondsPerLevel": 0.5,
     "armorBase": 32,
     "armorPerLevel": 3.9,
     "magicResistanceBase": 32.1,
@@ -47,8 +47,8 @@
     "urfShielding": 0.9
   },
   "roles": [
-    "SUPPORT",
-    "CATCHER"
+    "CATCHER",
+    "SUPPORT"
   ],
   "attributeRatings": {
     "damage": 1,
@@ -422,6 +422,11 @@
                 ]
               }
             ]
+          },
+          {
+            "description": "Rakan will be  knocked down by any  immobilizing crowd control during Grand Entrance.",
+            "icon": null,
+            "leveling": []
           }
         ],
         "cost": {
@@ -841,7 +846,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Buff / Auto",
+        "targeting": "Auto",
         "affects": "Self / Enemies",
         "spellshieldable": "True",
         "resource": "MANA",

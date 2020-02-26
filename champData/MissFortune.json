@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 541,
     "healthPerLevel": 91,
-    "healthPer5SecondsBase": 3.75,
-    "healthPer5SecondsPerLevel": 0.65,
+    "healthPer_5SecondsBase": 3.75,
+    "healthPer_5SecondsPerLevel": 0.65,
     "manaBase": 325.84,
     "manaPerLevel": 35,
-    "manaPer5SecondsBase": 8.042,
-    "manaPer5SecondsPerLevel": 0.65,
+    "manaPer_5SecondsBase": 8.042,
+    "manaPer_5SecondsPerLevel": 0.65,
     "armorBase": 28,
     "armorPerLevel": 3,
     "magicResistanceBase": 30,
@@ -104,7 +104,7 @@
         "name": "Double Up",
         "effects": [
           {
-            "description": "Active: Miss Fortune fires a shot at a target enemy that deals physical damage, which then bounces to hit another unit behind it. The shot applies  on-hit effects, including  Love Tap.",
+            "description": "Active: Miss Fortune fires a shot at a target enemy that deals physical damage, which then bounces to hit another unit behind it. The shot applies  on-hit effects to both enemies hit, and applies on-attack effects for the first enemy hit.",
             "icon": "Double Up.png",
             "leveling": [
               {
@@ -223,7 +223,7 @@
         "projectile": "TRUE",
         "onHitEffects": "True",
         "occurrence": null,
-        "notes": "Spell shields can be used by either target. If it is on the primary target, the spell shield will not prevent the shot from bouncing.\n The second shot follows a priority order on targets within 500 units of the primary one:\n Enemy or neutral units within a 20\u00b0 cone.\n Enemy or neutral units within a 40\u00b0 cone.\n Enemy or neutral units within a 110\u00b0 cone.\n Enemy or neutral units within 150 units in a 160\u00b0 cone.\n\n Double Up's cast range adjusts based on Miss Fortune's attack range.\n Double Up can bounce to units who are hidden if they are in range of the primary target.\n The damage of a  critically striking second shot is 40 / 80 / 120 / 160 / 200 (+ 200% AD) (+ 70% AP) physical damage.\n Double Up triggers  Runaan's Hurricane's Wind's Fury.",
+        "notes": "Spell shields can be used by either target. If it is on the primary target, the spell shield will not prevent the shot from bouncing.\n The second shot follows a priority order on targets within 500 units of the primary one:\n Enemy or neutral units within a 20\u00b0 cone.\n Enemy or neutral units within a 40\u00b0 cone.\n Enemy or neutral units within a 110\u00b0 cone.\n Enemy or neutral units within 150 units in a 160\u00b0 cone.\n\n Double Up's cast range adjusts based on Miss Fortune's attack range.\n Double Up can bounce to units hidden in the fog of war if they are in range of the primary target.\n The damage of a  critically striking second shot is 40 / 80 / 120 / 160 / 200 (+ 200% AD) (+ 70% AP) physical damage.",
         "blurb": "Miss Fortune fires a bullet at an enemy, damaging them and a target behind them. Both strikes can also apply Love Tap.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -271,7 +271,7 @@
             ]
           },
           {
-            "description": "Active - Guns Blazing: Miss Fortune gains  bonus attack speed for 4 seconds and brings Strut's passive effect to full power.",
+            "description": "Active: Miss Fortune gains  bonus attack speed for 4 seconds and brings Strut's passive effect to full power.",
             "icon": "Guns Blazing.png",
             "leveling": [
               {
@@ -344,7 +344,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Buff",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": "MANA",
@@ -399,7 +399,7 @@
             ]
           },
           {
-            "description": "Active - Guns Blazing: Miss Fortune gains  bonus attack speed for 4 seconds and brings Strut's passive effect to full power.",
+            "description": "Active: Miss Fortune gains  bonus attack speed for 4 seconds and brings Strut's passive effect to full power.",
             "icon": "Guns Blazing.png",
             "leveling": [
               {
@@ -472,7 +472,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Buff",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": "MANA",
@@ -502,7 +502,7 @@
         "name": "Make It Rain",
         "effects": [
           {
-            "description": "Active: Miss Fortune rains down hundreds of bullets onto the target area for 2 seconds,  slowing and dealing  magic damage every 0.25 seconds to units within the area.",
+            "description": "Active: Miss Fortune rains down hundreds of bullets onto the target area for 2 seconds,  revealing the area while  slowing and dealing  magic damage every 0.25 seconds to units within it.",
             "icon": "Make It Rain.png",
             "leveling": [
               {
@@ -653,7 +653,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Make It Rain grants  sight of the area.",
+        "notes": null,
         "blurb": "Miss Fortune reveals an area with a flurry of bullets, dealing waves of damage to opponents and slowing them.",
         "missileSpeed": null,
         "rechargeRate": null,

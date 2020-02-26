@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 532.8,
     "healthPerLevel": 85,
-    "healthPer5SecondsBase": 5.5,
-    "healthPer5SecondsPerLevel": 0.55,
+    "healthPer_5SecondsBase": 5.5,
+    "healthPer_5SecondsPerLevel": 0.55,
     "manaBase": 268.8,
     "manaPerLevel": 35,
-    "manaPer5SecondsBase": 6.972,
-    "manaPer5SecondsPerLevel": 0.4,
+    "manaPer_5SecondsBase": 6.972,
+    "manaPer_5SecondsPerLevel": 0.4,
     "armorBase": 28,
     "armorPerLevel": 3.5,
     "magicResistanceBase": 30,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "MARKSMAN",
+    "SPECIALIST",
     "ASSASSIN",
-    "SPECIALIST"
+    "MARKSMAN"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -91,7 +91,7 @@
           ],
           "affectedByCdr": true
         },
-        "targeting": "Passive / Auto",
+        "targeting": "Auto",
         "affects": "Self",
         "spellshieldable": "False",
         "resource": null,
@@ -121,7 +121,7 @@
         "name": "Blinding Assault",
         "effects": [
           {
-            "description": "Active: Quinn signals  Valor to fly forward in a line, stopping when he collides with a enemy unit, dealing physical damage to all nearby enemies and applying  nearsight to the target for 1.5 seconds.",
+            "description": "Active: Quinn signals  Valor to fly forward in a line, stopping upon colliding with an enemy unit, dealing physical damage to all nearby enemies and applying  nearsight to the target for 1.5 seconds.",
             "icon": "Blinding Assault.png",
             "leveling": [
               {
@@ -331,7 +331,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Auto / Buff",
+        "targeting": "Auto",
         "affects": "Self",
         "spellshieldable": null,
         "resource": null,
@@ -525,7 +525,7 @@
           ]
         },
         "cooldown": null,
-        "targeting": "Self / Buff",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": "MANA",
@@ -572,7 +572,7 @@
         "targeting": "Auto",
         "affects": "Enemies",
         "spellshieldable": "True",
-        "resource": "OTHER",
+        "resource": null,
         "damageType": "PHYSICAL_DAMAGE",
         "spellEffects": "spellaoe",
         "projectile": null,

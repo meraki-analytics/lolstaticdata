@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 576.48,
     "healthPerLevel": 86,
-    "healthPer5SecondsBase": 8.5,
-    "healthPer5SecondsPerLevel": 0.55,
+    "healthPer_5SecondsBase": 8.5,
+    "healthPer_5SecondsPerLevel": 0.55,
     "manaBase": 400,
     "manaPerLevel": 47,
-    "manaPer5SecondsBase": 8.626,
-    "manaPer5SecondsPerLevel": 0.5,
+    "manaPer_5SecondsBase": 8.626,
+    "manaPer_5SecondsPerLevel": 0.5,
     "armorBase": 39,
     "armorPerLevel": 3.75,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "TANK",
     "VANGUARD",
-    "FIGHTER",
-    "TANK"
+    "FIGHTER"
   ],
   "attributeRatings": {
     "damage": 1,
@@ -159,7 +159,7 @@
             "leveling": []
           },
           {
-            "description": "Nautilus becomes  entangled while Dredge Line is in flight.",
+            "description": "Nautilus is unable to move or attack while Dredge Line is in flight.",
             "icon": null,
             "leveling": []
           }
@@ -214,7 +214,7 @@
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Dredge Line can interact with player-created terrain ( Cataclysm,  Crystallize,  Pillar of Ice).\n Nautilus will  dash all the way to the target's location if Dredge Line executes them.\n Dredge Line will not  interrupt any movement commands Nautilus was issued pre-cast so long as their directions somewhat correlate (this is intentional to smooth out traveling/escaping).\n  Spell shield will block the ability but Nautilus will still dash partway to the target.\n The anchor projectile will not act if Nautilus dies while the projectile is traveling.\n Nautilus will attempt to basic attack his target at the end of the dash. This attack will not grant a stack of  Conqueror,  Electrocute,  Phase Rush or  Spellthief's Edge.",
+        "notes": "Dredge Line can interact with player-created terrain ( Cataclysm,  Crystallize,  Pillar of Ice).\n Nautilus will  dash all the way to the target's location if Dredge Line executes them.\n Dredge Line will not  interrupt any movement commands Nautilus was issued pre-cast so long as their directions somewhat correlate (this is intentional to smooth out traveling/escaping).\n  Spell shield will block the ability but Nautilus will still dash partway to the target.\n The anchor projectile will stop if Nautilus dies while the projectile is traveling.\n Nautilus will attempt to basic attack his target at the end of the dash. This attack will not grant a stack of  Conqueror,  Electrocute,  Phase Rush or  Spellthief's Edge.",
         "blurb": "Nautilus hurls his anchor forward. If it hits a champion, he drags both himself and the opponent close together. If it hits terrain, Nautilus instead pulls himself to the anchor, the cooldown of Dredge Line is reduced by half, and half the Mana cost is refunded.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -404,16 +404,16 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self",
+        "targeting": "none",
         "affects": "Self, Enemies",
-        "spellshieldable": "True",
+        "spellshieldable": "special",
         "resource": "MANA",
         "damageType": "MAGIC_DAMAGE",
-        "spellEffects": "special",
+        "spellEffects": "Proc",
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Applies  proc damage to primary target and  area damage to secondary targets.\n Titan's Wrath has no cast time and does not interrupt Nautilus' previous orders.\n The first half of Titan's Wrath's damage is dealt on-hit (so long as the shield remains) while the rest is applied over the next second (regardless of Nautilus' attack speed).\n Nautilus'  basic attacks use different animations while Titan's Wrath is active.\n The damage over time will always apply when this animation plays (even if the shield fades during a basic attack).\n\n Titan's Wrath does not deal bonus damage to structures.\n PENDING FOR TEST Interaction with  Counter Strike,  Spirit's Refuge and  blind.\n  Spell shield will block the ability (but only a single application).",
+        "notes": "Titan's Wrath has no cast time and does not interrupt Nautilus' previous orders.\n The first half of Titan's Wrath's damage is dealt on-hit (so long as the shield remains) while the rest is applied over the next second (regardless of Nautilus' attack speed).\n Nautilus'  basic attacks use different animations while Titan's Wrath is active.\n The damage over time will always apply when this animation plays (even if the shield fades during a basic attack).\n\n Titan's Wrath does not deal bonus damage to structures.\n PENDING FOR TEST Interaction with  Counter Strike,  Spirit's Refuge and  blind.\n  Spell shield will block the ability (but only a single application).",
         "blurb": "Nautilus surrounds himself with dark energies, gaining a shield that blocks incoming damage. While the shield persists, his attacks apply a damage over time effect to enemies around his target.",
         "missileSpeed": null,
         "rechargeRate": null,

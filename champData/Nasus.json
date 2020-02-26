@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 561.2,
     "healthPerLevel": 90,
-    "healthPer5SecondsBase": 9,
-    "healthPer5SecondsPerLevel": 0.9,
+    "healthPer_5SecondsBase": 9,
+    "healthPer_5SecondsPerLevel": 0.9,
     "manaBase": 325.6,
     "manaPerLevel": 42,
-    "manaPer5SecondsBase": 7.44,
-    "manaPer5SecondsPerLevel": 0.5,
+    "manaPer_5SecondsBase": 7.44,
+    "manaPer_5SecondsPerLevel": 0.5,
     "armorBase": 34,
     "armorPerLevel": 3.5,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "JUGGERNAUT",
     "FIGHTER",
-    "TANK"
+    "TANK",
+    "JUGGERNAUT"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -185,16 +185,16 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self",
+        "targeting": "none",
         "affects": "Self",
-        "spellshieldable": "False",
+        "spellshieldable": "true",
         "resource": "MANA",
         "damageType": "PHYSICAL_DAMAGE",
         "spellEffects": "Proc",
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Siphoning Strike's cooldown will not start until the enhanced attack is used or it expires.\n Siphoning Strike's bonus range stacks with  Fury of the Sands', granting 200 total range.\n Nasus can gain Siphoning Strike stacks by last-hitting any targetable enemy units (wards, structures,  Tibbers,  Powder Keg,  Tentacles,  Voidlings,  Jack in the Box,  Noxious Trap,  Mist Walkers,  Maiden of the Mist)\n Siphoning Strike will not generate stacks from secondary units killed by  area damage buffs influenced by basic attacks ( Tiamat's Cleave and Crescent or  Iceborn Gauntlet's Icy Zone).\n Siphoning Strike will not generate stacks from jungle plants.\n The enhanced attack will apply other  on-hit effects and can  critically strike as normal.\n Only Siphoning Strike's base damage interacts with  critical strikes but the bonus damage will still apply  life steal as well as affect structures.\n If Siphoning Strike is  missed, the enhanced attack will not be consumed.",
+        "notes": "Nasus can gain Siphoning Strike stacks by last-hitting any targetable enemy units (wards, structures,  Tibbers,  Powder Keg,  Tentacles,  Voidlings,  Jack in the Box,  Noxious Trap,  Mist Walkers,  Maiden of the Mist)\n Siphoning Strike will not generate stacks from secondary units killed by other effects (i.e  Tiamat's,  Iceborn Gauntlet's).\n Siphoning Strike will not generate stacks from jungle plants.",
         "blurb": "Nasus strikes his foe, dealing damage and increasing the power of his future Siphoning Strikes if he slays his target.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -215,7 +215,7 @@
         "name": "Wither",
         "effects": [
           {
-            "description": "Active: Nasus ages the target enemy champion for 5 seconds,  slowing them by 35% and  crippling them by[ half that amount, ][ 17.5%, ]both increasing over the duration.",
+            "description": "Active: Nasus ages the target enemy champion for 5 seconds,  slowing them by 35% and  crippling them by[ half that amount ][ 17.5% ], both increasing over the duration.",
             "icon": "Wither.png",
             "leveling": [
               {
@@ -566,11 +566,11 @@
         "spellshieldable": "False",
         "resource": "MANA",
         "damageType": "MAGIC_DAMAGE",
-        "spellEffects": "special",
+        "spellEffects": "AoEDoT",
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Applies  spell damage on initial cast and deals  persistent area damage afterwards.\n Spirit Fire grants  sight of the target area (is smaller than the damage area) for a short duration on-cast.",
+        "notes": "Spirit Fire grants  sight of the target area (is smaller than the damage area) for a short duration on-cast.",
         "blurb": "Nasus unleashes a spirit flame at a location, dealing damage and reducing the Armor of enemies who stand on it.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -762,7 +762,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Buff / Aura",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": "MANA",

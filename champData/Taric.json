@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 575,
     "healthPerLevel": 90,
-    "healthPer5SecondsBase": 6,
-    "healthPer5SecondsPerLevel": 0.5,
+    "healthPer_5SecondsBase": 6,
+    "healthPer_5SecondsPerLevel": 0.5,
     "manaBase": 300,
     "manaPerLevel": 60,
-    "manaPer5SecondsBase": 8.5,
-    "manaPer5SecondsPerLevel": 0.8,
+    "manaPer_5SecondsBase": 8.5,
+    "manaPer_5SecondsPerLevel": 0.8,
     "armorBase": 40,
     "armorPerLevel": 3.4,
     "magicResistanceBase": 32.1,
@@ -47,10 +47,10 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "FIGHTER",
     "WARDEN",
     "SUPPORT",
-    "ENCHANTER"
+    "ENCHANTER",
+    "FIGHTER"
   ],
   "attributeRatings": {
     "damage": 1,
@@ -86,7 +86,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The attacks will apply  on-hit effects and can  critically strike as normal.\n  Critical strikes do not interact with Bravado's bonus damage.\n\n The empowered attacks will not apply the bonus damage against structures but will reduce Taric's cooldowns.\n The empowered basic attacks can be  dodged or  blocked but will still reduce Taric's cooldowns.\n Being  blinded does not block Bravado's bonus magic damage or the  cooldown reduction.",
+        "notes": "The attacks will apply  on-hit effects and can  critically strike as normal.\n  Critical strikes do not interact with Bravado's bonus damage.\n\n The more cooldown reduction taric has the less bravado will reduce his cooldowns from 1 to 0.60 seconds (from 0% to 40% cooldown reduction).\n The empowered attacks will not apply the bonus damage against structures but will reduce Taric's cooldowns.\n The empowered basic attacks can be  dodged or  blocked but will still reduce Taric's cooldowns.\n Being  blinded does not block Bravado's bonus magic damage or the  cooldown reduction.",
         "blurb": "Spellcasts empower Taric's next 2 basic attacks to deal bonus magic damage, reduce his spell cooldowns, and attack in quick succession.",
         "missileSpeed": null,
         "rechargeRate": null,

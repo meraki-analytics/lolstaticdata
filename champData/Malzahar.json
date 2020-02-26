@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 537,
     "healthPerLevel": 87,
-    "healthPer5SecondsBase": 6,
-    "healthPer5SecondsPerLevel": 0.6,
+    "healthPer_5SecondsBase": 6,
+    "healthPer_5SecondsPerLevel": 0.6,
     "manaBase": 375,
     "manaPerLevel": 27.5,
-    "manaPer5SecondsBase": 8,
-    "manaPer5SecondsPerLevel": 0.8,
+    "manaPer_5SecondsBase": 8,
+    "manaPer_5SecondsPerLevel": 0.8,
     "armorBase": 18,
     "armorPerLevel": 3.5,
     "magicResistanceBase": 30,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "ASSASSIN",
+    "MAGE",
     "BATTLEMAGE",
-    "MAGE"
+    "ASSASSIN"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -670,6 +670,11 @@
             ]
           },
           {
+            "description": "Cleansing effects will not remove the tether and Malzahar will continue to channel and deal damage.",
+            "icon": null,
+            "leveling": []
+          },
+          {
             "description": "A Null Zone is opened beneath the target that lasts 5 seconds, dealing magic damage every half-second to all enemies within.",
             "icon": "Null Zone.png",
             "leveling": [
@@ -734,7 +739,7 @@
             ]
           },
           {
-            "description": "Nether Grasp and Null Zone will continue to deal damage even if the ability is  interrupted or is  cleansed.",
+            "description": "Null Zone will continue to deal damage even if the ability is  interrupted.",
             "icon": null,
             "leveling": []
           }

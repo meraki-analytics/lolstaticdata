@@ -10,18 +10,18 @@
   "stats": {
     "healthBase": 482.36,
     "healthPerLevel": 77,
-    "healthPer5SecondsBase": 5.5,
-    "healthPer5SecondsPerLevel": 0.55,
+    "healthPer_5SecondsBase": 5.5,
+    "healthPer_5SecondsPerLevel": 0.55,
     "manaBase": 340.6,
     "manaPerLevel": 45,
-    "manaPer5SecondsBase": 11.5,
-    "manaPer5SecondsPerLevel": 0.4,
+    "manaPer_5SecondsBase": 11.5,
+    "manaPer_5SecondsPerLevel": 0.4,
     "armorBase": 28,
     "armorPerLevel": 3.3,
     "magicResistanceBase": 30,
     "magicResistancePerLevel": 0.5,
-    "attackDamageBase": 49,
-    "attackDamagePerLevel": 3,
+    "attackDamageBase": 45,
+    "attackDamagePerLevel": 2,
     "movespeed": 325,
     "acquisitionRadius": 800,
     "selectionRadius": 110,
@@ -47,9 +47,9 @@
     "urfShielding": 0.95
   },
   "roles": [
+    "MAGE",
     "SUPPORT",
-    "ENCHANTER",
-    "MAGE"
+    "ENCHANTER"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -207,7 +207,7 @@
             "leveling": []
           },
           {
-            "description": "Power Chord \u2013 Staccato: Power Chord deals[ 28 \u2212  336 (based on level) (+ 28% AP) total magic damage. ][ 40% bonus magic damage. ]",
+            "description": "Power Chord: Staccato: Power Chord deals[ 28 \u2212  336 (based on level) (+ 28% AP) total magic damage. ][ 40% bonus magic damage. ]",
             "icon": null,
             "leveling": []
           }
@@ -372,7 +372,7 @@
             "leveling": []
           },
           {
-            "description": "Power Chord \u2013 Diminuendo: Power Chord reduces its target's size and damage output by 25% (+ 4% per 100 AP) for 3 seconds.",
+            "description": "Power Chord: Diminuendo: Power Chord reduces its target's size and damage output by 25% (+ 4% per 100 AP) for 3 seconds.",
             "icon": null,
             "leveling": []
           }
@@ -446,7 +446,7 @@
         "name": "Song of Celerity",
         "effects": [
           {
-            "description": "Active: Sona gains 20% (+ 3% per 100 AP)  bonus movement speed for 3 seconds, extended to up to 7 seconds if she doesn't take damage.",
+            "description": "Active: Sona gains  bonus movement speed for 3 seconds, extended to up to 7 seconds if she doesn't take damage.",
             "icon": "Song of Celerity.png",
             "leveling": []
           },
@@ -455,7 +455,7 @@
             "icon": "Tempo Song of Celerity.png",
             "leveling": [
               {
-                "attribute": "Aura Bonus Movement Speed",
+                "attribute": "Self and Aura Bonus Movement Speed",
                 "modifiers": [
                   {
                     "values": [
@@ -499,7 +499,7 @@
             "leveling": []
           },
           {
-            "description": "Power Chord \u2013 Tempo: Power Chord  slows its target by 40% (+ 4% per 100 AP) for 2 seconds.",
+            "description": "Power Chord: Tempo: Power Chord  slows its target by 40% (+ 4% per 100 AP) for 2 seconds.",
             "icon": null,
             "leveling": []
           }

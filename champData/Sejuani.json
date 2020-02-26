@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 560,
     "healthPerLevel": 100,
-    "healthPer5SecondsBase": 8.5,
-    "healthPer5SecondsPerLevel": 1,
+    "healthPer_5SecondsBase": 8.5,
+    "healthPer_5SecondsPerLevel": 1,
     "manaBase": 400,
     "manaPerLevel": 40,
-    "manaPer5SecondsBase": 7,
-    "manaPer5SecondsPerLevel": 0.7,
+    "manaPer_5SecondsBase": 7,
+    "manaPer_5SecondsPerLevel": 0.7,
     "armorBase": 34,
     "armorPerLevel": 4.25,
     "magicResistanceBase": 32.1,
@@ -29,7 +29,7 @@
     "gameplayRadius": 80,
     "criticalStrikeBase": 200,
     "criticalStrikeModifier": 1.0,
-    "attackSpeedBase": 0.6875,
+    "attackSpeedBase": 0.688,
     "attackSpeedPerLevel": 3.5,
     "attackSpeedRatio": 0.625,
     "attackCastTime": 0.300000011920928,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "TANK",
     "VANGUARD",
-    "FIGHTER",
-    "TANK"
+    "FIGHTER"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -91,7 +91,7 @@
         "spellshieldable": null,
         "resource": null,
         "damageType": "MAGIC_DAMAGE",
-        "spellEffects": "Proc",
+        "spellEffects": "spell",
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
@@ -757,7 +757,7 @@
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Applies  spell damage to the primary target and  area damage to secondary targets in the ice storm.\n Glacial Prison affects minions only if they are within detonation radius.\n  Spell shields will block only a single instance of damage.\n The bola is always thrown at maximum range.\n The bola does not collide with terrain.\n The bola applies the freeze immunity of  Permafrost when  stunning a champion.",
+        "notes": "Applies  spell damage to the primary target and  area damage to secondary targets in the ice storm.\n Glacial Prison affects minions only if they are within detonation radius.\n  Spell shields will block only a single instance of damage.\n The bola is always thrown at maximum range.\n The bola does not collide with terrain.",
         "blurb": "Sejuani throws her bola that freezes and stuns the first champion hit and creates an ice storm that slows other enemies.",
         "missileSpeed": null,
         "rechargeRate": null,

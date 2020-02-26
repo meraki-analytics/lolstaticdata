@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 575,
     "healthPerLevel": 92,
-    "healthPer5SecondsBase": 7,
-    "healthPer5SecondsPerLevel": 0.6,
+    "healthPer_5SecondsBase": 7,
+    "healthPer_5SecondsPerLevel": 0.6,
     "manaBase": 350,
     "manaPerLevel": 50,
-    "manaPer5SecondsBase": 6,
-    "manaPer5SecondsPerLevel": 0.8,
+    "manaPer_5SecondsBase": 6,
+    "manaPer_5SecondsPerLevel": 0.8,
     "armorBase": 19,
     "armorPerLevel": 3.6,
     "magicResistanceBase": 30,
@@ -47,8 +47,8 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "BATTLEMAGE",
-    "MAGE"
+    "MAGE",
+    "BATTLEMAGE"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -1123,7 +1123,7 @@
   },
   "releaseDate": "2016-03-24",
   "releasePatch": "6.6",
-  "patchLastChanged": "10.1",
+  "patchLastChanged": "10.4",
   "price": {
     "blueEssence": 6300,
     "rp": 975

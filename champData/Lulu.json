@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 525,
     "healthPerLevel": 74,
-    "healthPer5SecondsBase": 6,
-    "healthPer5SecondsPerLevel": 0.6,
+    "healthPer_5SecondsBase": 6,
+    "healthPer_5SecondsPerLevel": 0.6,
     "manaBase": 350,
     "manaPerLevel": 55,
-    "manaPer5SecondsBase": 11,
-    "manaPer5SecondsPerLevel": 0.6,
+    "manaPer_5SecondsBase": 11,
+    "manaPer_5SecondsPerLevel": 0.6,
     "armorBase": 29,
     "armorPerLevel": 3.7,
     "magicResistanceBase": 30,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "MAGE",
     "SUPPORT",
-    "ENCHANTER",
-    "MAGE"
+    "ENCHANTER"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -267,8 +267,35 @@
         "name": "Whimsy",
         "effects": [
           {
-            "description": "On Ally Cast: Lulu casts erratic magic upon an ally champion, giving them  bonus attack speed and  30% (+ 5% per 100 AP) bonus movement speed for the next few seconds.",
+            "description": "Enemy Cast: Lulu launches a spell on the target enemy champion  polymorphing them into a harmless critter, reducing their base movement speed by 60 for a short duration.",
             "icon": "Whimsy.png",
+            "leveling": [
+              {
+                "attribute": "Polymorph Duration",
+                "modifiers": [
+                  {
+                    "values": [
+                      1.25,
+                      1.5,
+                      1.75,
+                      2,
+                      2.25
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Ally Cast: Lulu casts erratic magic upon an ally champion, giving them  bonus attack speed and  30% (+ 5% per 100 AP) bonus movement speed for the next few seconds.",
+            "icon": null,
             "leveling": [
               {
                 "attribute": "Bonus Attack Speed",
@@ -301,33 +328,6 @@
                       3.5,
                       3.75,
                       4
-                    ],
-                    "units": [
-                      "",
-                      "",
-                      "",
-                      "",
-                      ""
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "description": "On Enemy Cast: Lulu launches a spell on the target enemy champion  polymorphing them into a harmless critter, reducing their base movement speed by 60 for a short duration.",
-            "icon": null,
-            "leveling": [
-              {
-                "attribute": "Polymorph Duration",
-                "modifiers": [
-                  {
-                    "values": [
-                      1.25,
-                      1.5,
-                      1.75,
-                      2,
-                      2.25
                     ],
                     "units": [
                       "",
@@ -392,7 +392,7 @@
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Whimsy can  interrupt channeled abilities when used on enemy champions.\n Whimsy's movement speed reduction is not affected by  slow resist.\n Whimsy has no  cast time on ally-cast. It can be cast while moving and will not interrupt previous commands.",
+        "notes": "Whimsy can  interrupt channeled abilities when used on enemy champions.\n Whimsy's movement speed reduction is not affected by  slow resist.\n Whimsy has no  cast time on ally-cast. It can be cast while moving and will not interrupt previous commands.\n Whimsy has no cast time. It can be cast while moving and will not interrupt previous commands.",
         "blurb": "If cast on an ally, grants them Attack Speed and Movement Speed for a short time. If cast on an enemy, turns them into an adorable critter that can't attack or cast spells.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -413,51 +413,8 @@
         "name": "Help, Pix!",
         "effects": [
           {
-            "description": "On Ally Cast: Lulu sends  Pix to the target ally,  shielding them for 2.5 seconds if they are a champion.",
+            "description": "Enemy Cast: Lulu sends  Pix to the target enemy, dealing magic damage and granting  true sight of them for 4 seconds.",
             "icon": "Help, Pix!.png",
-            "leveling": [
-              {
-                "attribute": "Shield Strength",
-                "modifiers": [
-                  {
-                    "values": [
-                      80,
-                      120,
-                      160,
-                      200,
-                      240
-                    ],
-                    "units": [
-                      "",
-                      "",
-                      "",
-                      "",
-                      ""
-                    ]
-                  },
-                  {
-                    "values": [
-                      60,
-                      60,
-                      60,
-                      60,
-                      60
-                    ],
-                    "units": [
-                      "% AP",
-                      "% AP",
-                      "% AP",
-                      "% AP",
-                      "% AP"
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "description": "On Enemy Cast: Lulu sends  Pix to the target enemy, dealing magic damage and granting  true sight of them for 4 seconds.",
-            "icon": null,
             "leveling": [
               {
                 "attribute": "Magic Damage",
@@ -485,6 +442,49 @@
                       40,
                       40,
                       40
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Ally Cast: Lulu sends  Pix to the target ally,  shielding them for 2.5 seconds if they are a champion.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Shield Strength",
+                "modifiers": [
+                  {
+                    "values": [
+                      80,
+                      120,
+                      160,
+                      200,
+                      240
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
                     ],
                     "units": [
                       "% AP",
@@ -542,14 +542,14 @@
         },
         "targeting": "Unit",
         "affects": "Enemies / Allies / Self",
-        "spellshieldable": "True",
+        "spellshieldable": "special",
         "resource": "MANA",
         "damageType": "MAGIC_DAMAGE",
-        "spellEffects": "Special",
+        "spellEffects": "spell",
         "projectile": "FALSE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Applies  spell damage on enemy-cast and provides a  shield on ally-cast.\n Pix will return to Lulu if the one he's following exceeds his leash range (2000 units).\n Help, Pix! has no cast time. It can be cast while moving and will not interrupt previous commands.\n Pix will continue to assist the target ally for the full duration even if the shield breaks (the same applies for the shield if the target ally leaves Pix's leash range).\n Pix's  Glitterlance bolt can be fired while he is away from Lulu from his location and towards the cursor (effectively extending  Glitterlance's range).",
+        "notes": "Help, Pix! has no cast time. It can be cast while moving and will not interrupt previous commands.\n Pix will return to Lulu if the one he's following exceeds his leash range (2000 units).\n  Spellshields and  Riposte will block the damage but Pix will still follow.\n Pix will continue to assist the target ally for the full duration even if the shield breaks (the same applies for the shield if the target ally leaves Pix's leash range).\n Pix's  Glitterlance bolt can be fired while he is away from Lulu from his location and towards the cursor (effectively extending  Glitterlance's range).",
         "blurb": "If cast on an ally, commands Pix to jump to an ally and shield them. He then follows them and aids their attacks. If cast on an enemy, commands Pix to jump to an enemy and damage them. He then follows them and grants you vision of that enemy.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -664,7 +664,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Wild Growth has no cast time. It can be cast while moving and will not interrupt previous commands.\n Wild Growth has a size limit ( Cho'Gath with 10  Feast stacks will not grow significantly but will gain extended range on  Vorpal Spikes).\n Wild Growth's  bonus health is not affected by  Grievous Wounds and its resulting health restoration will persist after the duration ends.\n The  slow persists while enemy units remain in range and for 0.25 seconds after leaving the marked area.\n The  knock up will affect  untargetable units.\n POSSIBLE BUG:  Fizz, while in  Playful, will also become targetable by everything other than  unit-targeted effects.",
+        "notes": "Wild Growth has no cast time. It can be cast while moving and will not interrupt previous commands.\n Wild Growth has a size limit ( Cho'Gath with 10  Feast stacks will not grow significantly but will gain extended range on  Vorpal Spikes).\n Wild Growth's  bonus health is not affected by  Grievous Wounds and its resulting health restoration will persist after the duration ends.\n The  slow persists while enemy units remain in range and for 0.25 seconds after leaving the marked area.\n The  knock up will go through  untargetable effects..\n  Fizz, while in  Playful, will also become targetable by everything other than  unit-targeted effects.",
         "blurb": "Lulu enlarges an ally, knocking nearby enemies into the air and granting the ally a large amount of bonus health. For the next few seconds, that ally gains an aura that slows nearby enemies.",
         "missileSpeed": null,
         "rechargeRate": null,

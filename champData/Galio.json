@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 562,
     "healthPerLevel": 112,
-    "healthPer5SecondsBase": 8,
-    "healthPer5SecondsPerLevel": 0.8,
+    "healthPer_5SecondsBase": 8,
+    "healthPer_5SecondsPerLevel": 0.8,
     "manaBase": 500,
     "manaPerLevel": 40,
-    "manaPer5SecondsBase": 9.5,
-    "manaPer5SecondsPerLevel": 0.7,
+    "manaPer_5SecondsBase": 9.5,
+    "manaPer_5SecondsPerLevel": 0.7,
     "armorBase": 24,
     "armorPerLevel": 3.5,
     "magicResistanceBase": 32,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "WARDEN",
+    "TANK",
     "MAGE",
-    "TANK"
+    "WARDEN"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -1075,7 +1075,7 @@
         "name": "Hero's Entrance",
         "effects": [
           {
-            "description": "Active: Galio designates the target allied champion's location at the time of cast as his landing spot,  channels for 1.25 seconds, and then  dashes to them, dealing magic damage to all nearby enemies on impact and  knocking them up for 0.75 seconds.",
+            "description": "Active: Galio designates the target allied champion's location at the time of cast as his landing spot,  channels for 1.25 seconds, and then becomes  untargetable and  dashes to them, dealing magic damage to all nearby enemies on impact and  knocking them up for 0.75 seconds.",
             "icon": "Hero's Entrance.png",
             "leveling": [
               {
@@ -1143,7 +1143,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Unit / Ground",
+        "targeting": "Unit",
         "affects": "Allies, Enemies",
         "spellshieldable": "True",
         "resource": "MANA",
@@ -1152,7 +1152,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Galio becomes completely  untargetable while in the air.\nGalio cannot cast Hero's Entrance on allies at long distances while  nearsighted.",
+        "notes": "Galio cannot cast Hero's Entrance on allies at long distances while  nearsighted.",
         "blurb": "Galio grants damage reduction to an ally. After a delay Galio smashes down on the ally's original location, knocking up nearby enemies.",
         "missileSpeed": null,
         "rechargeRate": null,

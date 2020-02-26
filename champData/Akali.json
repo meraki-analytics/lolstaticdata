@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 575,
     "healthPerLevel": 95,
-    "healthPer5SecondsBase": 8,
-    "healthPer5SecondsPerLevel": 0.5,
+    "healthPer_5SecondsBase": 8,
+    "healthPer_5SecondsPerLevel": 0.5,
     "manaBase": 200,
     "manaPerLevel": 0,
-    "manaPer5SecondsBase": 50,
-    "manaPer5SecondsPerLevel": 0,
+    "manaPer_5SecondsBase": 50,
+    "manaPer_5SecondsPerLevel": 0,
     "armorBase": 23,
     "armorPerLevel": 3.5,
     "magicResistanceBase": 37,
@@ -558,7 +558,7 @@
         "name": "Perfect Execution",
         "effects": [
           {
-            "description": "Active: Akali  dashes to the target enemy champion, dealing physical damage to all enemies hit.",
+            "description": "Active: Akali  dashes 675 \u2212  825 (based on distance from target) units towards the target enemy champion, dealing physical damage to all enemies hit.",
             "icon": "Perfect Execution.png",
             "leveling": [
               {
@@ -701,7 +701,7 @@
         "width": null,
         "angle": null,
         "castTime": null,
-        "effectRadius": "675 \u2212 825 (based on distance from target)",
+        "effectRadius": null,
         "targetRange": "675 / 750"
       }
     ]

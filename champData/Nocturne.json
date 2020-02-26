@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 585,
     "healthPerLevel": 85,
-    "healthPer5SecondsBase": 8.5,
-    "healthPer5SecondsPerLevel": 0.75,
+    "healthPer_5SecondsBase": 8.5,
+    "healthPer_5SecondsPerLevel": 0.75,
     "manaBase": 275,
     "manaPerLevel": 35,
-    "manaPer5SecondsBase": 7,
-    "manaPer5SecondsPerLevel": 0.45,
+    "manaPer_5SecondsBase": 7,
+    "manaPer_5SecondsPerLevel": 0.45,
     "armorBase": 38,
     "armorPerLevel": 3.5,
     "magicResistanceBase": 32.1,
@@ -68,12 +68,12 @@
         "name": "Umbra Blades",
         "effects": [
           {
-            "description": "Innate: Nocturne's basic attack is periodically enhanced, dealing  20% AD  bonus physical damage to his target and  120% AD  physical damage to surrounding enemies, while also  healing himself for 15 \u2212 40 (based on level) ( + 15% AP) per enemy hit.",
+            "description": "Innate: Nocturne's basic attack is periodically enhanced, dealing  20% AD  bonus physical damage to his target and  120% AD physical damage to surrounding enemies, while also  healing himself for 15 \u2212 40 (based on level) ( + 15% AP) per enemy hit.",
             "icon": "Umbra Blades.png",
             "leveling": []
           },
           {
-            "description": "Umbra Blades's damage to the primary target can  critically strike for  2.5%  AD  bonus physical damage.",
+            "description": "Umbra Blades's damage to the primary target can  critically strike for  2.5%  AD bonus physical damage.",
             "icon": null,
             "leveling": []
           },
@@ -131,7 +131,7 @@
         "name": "Duskbringer",
         "effects": [
           {
-            "description": "Active: Nocturne sends out a shadow blade in a line that leaves a Dusk Trail on its path, dealing  physical damage to enemies it passes through and causing enemy  champions hit to also leave a Dusk Trail behind their  movement for 5 seconds.",
+            "description": "Active: Nocturne sends out a shadow blade in a line that leaves a Dusk Trail on its path, dealing physical damage to enemies it passes through and causing enemy  champions hit to also leave a Dusk Trail behind their  movement for 5 seconds.",
             "icon": "Duskbringer.png",
             "leveling": [
               {
@@ -392,7 +392,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": "MANA",
@@ -568,12 +568,12 @@
         "name": "Paranoia",
         "effects": [
           {
-            "description": "First Active: After a brief delay, Nocturne applies  nearsight to all enemy champions for 6 seconds.",
+            "description": "Active: After a brief delay, Nocturne applies  nearsight to all enemy champions for 6 seconds, and the ability to recast Paranoia for the duration.",
             "icon": "Paranoia.png",
             "leveling": []
           },
           {
-            "description": "Second Active: While Paranoia is active, Nocturne can reactivate it to  dash  unstoppably to the target enemy  champion, dealing them  physical damage.",
+            "description": "Recast: Nocturne  dashes  unstoppably to the target enemy  champion, dealing them physical damage.",
             "icon": null,
             "leveling": [
               {

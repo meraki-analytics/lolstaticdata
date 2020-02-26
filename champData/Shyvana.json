@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 595,
     "healthPerLevel": 95,
-    "healthPer5SecondsBase": 8.5,
-    "healthPer5SecondsPerLevel": 0.8,
+    "healthPer_5SecondsBase": 8.5,
+    "healthPer_5SecondsPerLevel": 0.8,
     "manaBase": 100,
     "manaPerLevel": 0,
-    "manaPer5SecondsBase": 0,
-    "manaPer5SecondsPerLevel": 0,
+    "manaPer_5SecondsBase": 0,
+    "manaPer_5SecondsPerLevel": 0,
     "armorBase": 38,
     "armorPerLevel": 3.35,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "JUGGERNAUT",
     "FIGHTER",
-    "TANK"
+    "TANK",
+    "JUGGERNAUT"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -138,7 +138,7 @@
             ]
           },
           {
-            "description": "The second strike applies  on-hit effects and is affected by  critical strike modifiers.",
+            "description": "The second strike applies  on-hit and on-attack effects and is affected by  critical strike modifiers.",
             "icon": null,
             "leveling": []
           },
@@ -153,7 +153,7 @@
             "leveling": []
           },
           {
-            "description": "Dragon Form: Shyvana instantly strikes all enemies in a cone in front of her twice, applying on-hit effects twice to each target hit. The second strike cannot  critically strike on the primary target.",
+            "description": "Dragon Form: Shyvana instantly strikes all enemies in a cone in front of her twice, applying on-hit effects twice to each target hit. The second strike cannot  critically strike on the primary target and doesn't trigger on-attack effects.",
             "icon": null,
             "leveling": []
           }

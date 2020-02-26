@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 590,
     "healthPerLevel": 95,
-    "healthPer5SecondsBase": 9,
-    "healthPer5SecondsPerLevel": 0.9,
+    "healthPer_5SecondsBase": 9,
+    "healthPer_5SecondsPerLevel": 0.9,
     "manaBase": 340.6,
     "manaPerLevel": 45,
-    "manaPer5SecondsBase": 8.01,
-    "manaPer5SecondsPerLevel": 0.6,
+    "manaPer_5SecondsBase": 8.01,
+    "manaPer_5SecondsPerLevel": 0.6,
     "armorBase": 36,
     "armorPerLevel": 4,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "TANK",
     "VANGUARD",
-    "FIGHTER",
-    "TANK"
+    "FIGHTER"
   ],
   "attributeRatings": {
     "damage": 1,
@@ -74,17 +74,17 @@
             "leveling": []
           },
           {
-            "description": "Living Forge: Ornn can purchase non-consumable items from anywhere on the field by forging them himself, and is also presented a Forge Menu with his recommended items to select to be forged.  Forging takes 4 seconds and the process is  interrupted if Ornn enters combat, disabling Living Forge.",
+            "description": "Innate - Living Forge: Ornn can purchase non-consumable items from anywhere on the field by forging them himself, and is also presented a Forge Menu with his recommended items to select to be forged.  Forging takes 4 seconds and the process is  interrupted if Ornn enters combat, disabling Living Forge.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Master Craftman: When Ornn reaches level 12, any upgradable (Masterwork) item Ornn owns or purchases for the rest of the game is upgraded for free, up to a maximum of 2. Additionally, for each level after 12 (level 13, 14, 15 and 16), Ornn can upgrade one of his ally's upgradable items (Masterwork) by getting within 600 range of them and clicking on them, up to a maximum of 1 per ally.\n Masterwork items: \n Attack Damage Items:  Might of the Ruined King,  Molten Edge,  Obsidian Cleaver,  Trinity Fusion,  Youmuu's Wraithblade.\n Ability Power Items:  Luden's Pulse,  Rabadon's Deathcrown,  Zhonya's Paradox.\n Tank Items:  Forgefire Cape,  Frozen Fist,  Infernal Mask.\n Support Items:  Circlet of the Iron Solari,  Salvation.",
+            "description": "Innate - Master Craftman: When Ornn reaches level 12, any upgradable (Masterwork) item Ornn owns or purchases for the rest of the game is upgraded for free, up to a maximum of 2. Additionally, for each level after 12 (level 13, 14, 15 and 16), Ornn can upgrade one of his ally's upgradable items (Masterwork) by getting within 600 range of them and clicking on them, up to a maximum of 1 per ally.\n Masterwork items: \n Attack Damage Items:  Might of the Ruined King,  Molten Edge,  Obsidian Cleaver,  Trinity Fusion,  Youmuu's Wraithblade.\n Ability Power Items:  Luden's Pulse,  Rabadon's Deathcrown,  Zhonya's Paradox.\n Tank Items:  Forgefire Cape,  Frozen Fist,  Infernal Mask.\n Support Items:  Circlet of the Iron Solari,  Salvation.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Temper: Ornn's basic attacks against  Brittle enemies briefly  knocks them back.",
+            "description": "Innate - Temper: Ornn's basic attacks against  Brittle enemies briefly  knocks them back.",
             "icon": null,
             "leveling": []
           },
@@ -105,7 +105,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Gold is only deducted upon completing the channel.\n The reduction in Tenacity will benefit all applicable types of crowd control, not just immobilizes. Effects such as slows, blinds and silences will be empowered without consuming the debuff.\n Despite the in-game tooltip attribute Brittle to  Bellows Breath, it is not required to rank Bellows Breath in order to benefit from the effect. \n PENDING FOR TEST: The bonus magic damage inflicted by Brittle is credited to Ornn.\n Mastercraft items and their components are not the same item and so in theory any unnamed passives would stack and any unnamed actives would only put themselves on cooldown upon activated. This is however not true. Actives will always place their counterpart on cooldown, and passives are inconsistent: \n The  Heal and Shield Power from  Redemption and  Salvation stack, granting 20% when having them together.\n  The Black Cleaver and  The Obsidian Cleaver each apply 1 stack (for a total of 2) per instance of  physical damage.\n The bonus on-hit damage from  Blade of the Ruined King and  Might of the Ruined King do not stack.\n The auras of  Abyssal Mask and  Infernal Mask do not stack.\n The passive of  Infinity Edge and  Molten Edge do not stack.\n Both passives of  Youmuu's Ghostblade and  Youmuu's Wraithblade do not stack.\n The passive of  Rabadon's Deathcap and  Rabadon's Deathcrown do not stack.\n\n PENDING FOR TEST:  Brittle's interactions with  dodging,  blocking, and  blinding effects via basic attack.",
+        "notes": "Gold is only deducted upon completing the channel.\n The reduction in Tenacity will benefit all applicable types of crowd control, not just immobilizes. Effects such as slows, blinds and silences will be empowered without consuming the debuff.\n Despite the in-game tooltip attribute Brittle to  Bellows Breath, it is not required to rank Bellows Breath in order to benefit from the effect. \n The bonus magic damage inflicted by Brittle is credited to Ornn.\n Ornn's Brittle knockback is not negated by  blocking.\n Mastercraft items and their components are not the same item and so in theory any unnamed passives would stack and any unnamed actives would only put themselves on cooldown upon activated. This is however not true. Actives will always place their counterpart on cooldown, and passives are inconsistent: \n The  Heal and Shield Power from  Redemption and  Salvation stack, granting 20% when having them together.\n  The Black Cleaver and  The Obsidian Cleaver each apply 1 stack (for a total of 2) per instance of  physical damage.\n The bonus on-hit damage from  Blade of the Ruined King and  Might of the Ruined King do not stack.\n The auras of  Abyssal Mask and  Infernal Mask do not stack.\n The passive of  Infinity Edge and  Molten Edge do not stack.\n Both passives of  Youmuu's Ghostblade and  Youmuu's Wraithblade do not stack.\n The passive of  Rabadon's Deathcap and  Rabadon's Deathcrown do not stack, and Deathcap's passive will state that it grants 0 AP while using the item.",
         "blurb": "Ornn can spend gold to forge non-consumable items anywhere. Additionally, when Ornn reaches level 12 masterwork upgrades for some items become available for Ornn and his team to purchase. Ornn can smith items directly from his forge menu or the shop.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -129,17 +129,17 @@
             "leveling": []
           },
           {
-            "description": "Living Forge: Ornn can purchase non-consumable items from anywhere on the field by forging them himself, and is also presented a Forge Menu with his recommended items to select to be forged.  Forging takes 4 seconds and the process is  interrupted if Ornn enters combat, disabling Living Forge.",
+            "description": "Innate - Living Forge: Ornn can purchase non-consumable items from anywhere on the field by forging them himself, and is also presented a Forge Menu with his recommended items to select to be forged.  Forging takes 4 seconds and the process is  interrupted if Ornn enters combat, disabling Living Forge.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Master Craftman: When Ornn reaches level 12, any upgradable (Masterwork) item Ornn owns or purchases for the rest of the game is upgraded for free, up to a maximum of 2. Additionally, for each level after 12 (level 13, 14, 15 and 16), Ornn can upgrade one of his ally's upgradable items (Masterwork) by getting within 600 range of them and clicking on them, up to a maximum of 1 per ally.\n Masterwork items: \n Attack Damage Items:  Might of the Ruined King,  Molten Edge,  Obsidian Cleaver,  Trinity Fusion,  Youmuu's Wraithblade.\n Ability Power Items:  Luden's Pulse,  Rabadon's Deathcrown,  Zhonya's Paradox.\n Tank Items:  Forgefire Cape,  Frozen Fist,  Infernal Mask.\n Support Items:  Circlet of the Iron Solari,  Salvation.",
+            "description": "Innate - Master Craftman: When Ornn reaches level 12, any upgradable (Masterwork) item Ornn owns or purchases for the rest of the game is upgraded for free, up to a maximum of 2. Additionally, for each level after 12 (level 13, 14, 15 and 16), Ornn can upgrade one of his ally's upgradable items (Masterwork) by getting within 600 range of them and clicking on them, up to a maximum of 1 per ally.\n Masterwork items: \n Attack Damage Items:  Might of the Ruined King,  Molten Edge,  Obsidian Cleaver,  Trinity Fusion,  Youmuu's Wraithblade.\n Ability Power Items:  Luden's Pulse,  Rabadon's Deathcrown,  Zhonya's Paradox.\n Tank Items:  Forgefire Cape,  Frozen Fist,  Infernal Mask.\n Support Items:  Circlet of the Iron Solari,  Salvation.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Temper: Ornn's basic attacks against  Brittle enemies briefly  knocks them back.",
+            "description": "Innate - Temper: Ornn's basic attacks against  Brittle enemies briefly  knocks them back.",
             "icon": null,
             "leveling": []
           },
@@ -160,7 +160,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Gold is only deducted upon completing the channel.\n The reduction in Tenacity will benefit all applicable types of crowd control, not just immobilizes. Effects such as slows, blinds and silences will be empowered without consuming the debuff.\n Despite the in-game tooltip attribute Brittle to  Bellows Breath, it is not required to rank Bellows Breath in order to benefit from the effect. \n PENDING FOR TEST: The bonus magic damage inflicted by Brittle is credited to Ornn.\n Mastercraft items and their components are not the same item and so in theory any unnamed passives would stack and any unnamed actives would only put themselves on cooldown upon activated. This is however not true. Actives will always place their counterpart on cooldown, and passives are inconsistent: \n The  Heal and Shield Power from  Redemption and  Salvation stack, granting 20% when having them together.\n  The Black Cleaver and  The Obsidian Cleaver each apply 1 stack (for a total of 2) per instance of  physical damage.\n The bonus on-hit damage from  Blade of the Ruined King and  Might of the Ruined King do not stack.\n The auras of  Abyssal Mask and  Infernal Mask do not stack.\n The passive of  Infinity Edge and  Molten Edge do not stack.\n Both passives of  Youmuu's Ghostblade and  Youmuu's Wraithblade do not stack.\n The passive of  Rabadon's Deathcap and  Rabadon's Deathcrown do not stack.\n\n PENDING FOR TEST:  Brittle's interactions with  dodging,  blocking, and  blinding effects via basic attack.",
+        "notes": "Gold is only deducted upon completing the channel.\n The reduction in Tenacity will benefit all applicable types of crowd control, not just immobilizes. Effects such as slows, blinds and silences will be empowered without consuming the debuff.\n Despite the in-game tooltip attribute Brittle to  Bellows Breath, it is not required to rank Bellows Breath in order to benefit from the effect. \n The bonus magic damage inflicted by Brittle is credited to Ornn.\n Ornn's Brittle knockback is not negated by  blocking.\n Mastercraft items and their components are not the same item and so in theory any unnamed passives would stack and any unnamed actives would only put themselves on cooldown upon activated. This is however not true. Actives will always place their counterpart on cooldown, and passives are inconsistent: \n The  Heal and Shield Power from  Redemption and  Salvation stack, granting 20% when having them together.\n  The Black Cleaver and  The Obsidian Cleaver each apply 1 stack (for a total of 2) per instance of  physical damage.\n The bonus on-hit damage from  Blade of the Ruined King and  Might of the Ruined King do not stack.\n The auras of  Abyssal Mask and  Infernal Mask do not stack.\n The passive of  Infinity Edge and  Molten Edge do not stack.\n Both passives of  Youmuu's Ghostblade and  Youmuu's Wraithblade do not stack.\n The passive of  Rabadon's Deathcap and  Rabadon's Deathcrown do not stack, and Deathcap's passive will state that it grants 0 AP while using the item.",
         "blurb": "Ornn can spend gold to forge non-consumable items anywhere. Additionally, when Ornn reaches level 12 masterwork upgrades for some items become available for Ornn and his team to purchase. Ornn can smith items directly from his forge menu or the shop.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -284,7 +284,7 @@
         "projectile": "SPECIAL",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The fissure will move an 200 units beyond the first champion it hits, not exceeding the maximum range of the ability. It can still damage additional targets.\n The pillar's  formation applies brief displacement. Doing so consumes all stacks of  Brittle on the displaced targets.\n Volcanic Rupture is  knocked down upon colliding with  Wind Wall.\n If launched in a wall, pillar will try to appear on the other side of the wall, if it cannot the pillar will be destroyed.",
+        "notes": "The fissure will move an 200 units beyond the first champion it hits, not exceeding the maximum range of the ability. It can still damage additional targets.\n Volcanic Rupture will stop upon colliding with  Wind Wall.\n If launched in a wall, pillar will try to appear on the other side of the wall, if it cannot the pillar will be destroyed.",
         "blurb": "Ornn slams the ground, sending out a fissure dealing damage and slowing enemies hit. After a small delay, a magma pillar forms at the end location.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -358,7 +358,7 @@
             ]
           },
           {
-            "description": "Bellows Breath has a minimum damage threshold, which is also the damage dealt to  minions.  Monsters take modified damage in addition.",
+            "description": "Bellows Breath has a minimum damage threshold, which is also the damage dealt to  minions.  Monsters take modified damage as well.",
             "icon": null,
             "leveling": [
               {
@@ -494,11 +494,11 @@
         "spellshieldable": "Special",
         "resource": "MANA",
         "damageType": "MAGIC_DAMAGE",
-        "spellEffects": "aoedot",
+        "spellEffects": "aoe",
         "projectile": "FALSE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The belch deals 5 instances of damage.\n  Spell shield will negate the final instance of damage and prevents  Brittle from being applied.",
+        "notes": "Spell shield will negate the final instance of damage and prevents  Brittle from being applied.",
         "blurb": "Ornn advances unstoppably, breathing fire and shielding himself. Enemies hit by the final gout of flame become Brittle.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -638,7 +638,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Spell shield blocks either instance of damage dealt by Searing Charge.",
+        "notes": "Spell shields may only block one instance of damage.",
         "blurb": "Ornn charges, dealing damage to enemies he passes through. If Ornn collides with terrain while charging, the impact creates a shockwave around him which deals damage and knocks up enemies.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -659,7 +659,7 @@
         "name": "Call of the Forge God",
         "effects": [
           {
-            "description": "First Cast: Ornn summons an elemental at maximum range in the target direction that stampedes toward him, dealing magic damage and  slowing enemies hit for 2 seconds, as well as applying  Brittle for 3 seconds. The  slow scales with the distance traveled by the elemental, with a minimum of 10%.",
+            "description": "Active: Ornn summons an elemental at maximum range in the target direction that stampedes towards his direction for 3000 range on increasing speed, dealing magic damage and  slowing enemies hit for 2 seconds, as well as applying  Brittle for 3 seconds. The  slow scales with the distance traveled by the elemental, with a minimum of 10%.",
             "icon": "Call of the Forge God.png",
             "leveling": [
               {
@@ -745,7 +745,7 @@
             "leveling": []
           },
           {
-            "description": "Second Cast: Ornn  dashes 300 units in the target direction. If Ornn collides with the elemental, he headbutts it, sending it stampeding again in the new direction and empowering it to  knock up enemies hit for 1 second, reduced to 0.5 seconds after the first enemy champion hit. Call of the Forge God can affect enemies twice and applies  Brittle on each hit.",
+            "description": "Recast: Ornn  dashes 300 units in the target direction (but not through terrain). If Ornn collides with the elemental, he headbutts it, sending it stampeding again in the new direction and empowering it to  knock up enemies hit for 1 second, reduced to 0.5 seconds after the first enemy champion hit. Call of the Forge God can affect enemies twice and applies  Brittle on each hit.",
             "icon": "Call of the Forge God 2.png",
             "leveling": []
           }
@@ -792,7 +792,7 @@
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The  dash on the second cast cannot be used to pass through terrain.\n If Ornn does not use or misses the elemental on the second cast, the elemental will continue ~500 units behind the cast location. \n  Spell shields will block only one instance of damage dealt by the elemental.",
+        "notes": "The second cast cannot be activated while grounded and will be interrupted by knockdown.\n  Spell shields may only block one instance of damage.",
         "blurb": "Ornn summons a massive elemental at a location which travels toward him with increasing speed. Enemies run over by the elemental take damage, are slowed and are made Brittle. Ornn can recast the ability to charge into the elemental, redirecting it in the direction he hits it, causing the elemental to affect any enemies it runs over to be knocked up for 1 second, dealing the same damage and re-applying Brittle.",
         "missileSpeed": null,
         "rechargeRate": null,

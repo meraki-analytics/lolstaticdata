@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 520,
     "healthPerLevel": 75,
-    "healthPer5SecondsBase": 3.5,
-    "healthPer5SecondsPerLevel": 0.55,
+    "healthPer_5SecondsBase": 3.5,
+    "healthPer_5SecondsPerLevel": 0.55,
     "manaBase": 350,
     "manaPerLevel": 45,
-    "manaPer5SecondsBase": 11.5,
-    "manaPer5SecondsPerLevel": 0.4,
+    "manaPer_5SecondsBase": 11.5,
+    "manaPer_5SecondsPerLevel": 0.4,
     "armorBase": 28,
     "armorPerLevel": 3.5,
     "magicResistanceBase": 30,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "MARKSMAN",
     "SUPPORT",
-    "ENCHANTER"
+    "ENCHANTER",
+    "MARKSMAN"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -69,12 +69,12 @@
         "name": "Absolution",
         "effects": [
           {
-            "description": "Innate - Weakened Soul: Senna's basic attacks and abilities on enemy champions apply Mist for 4 seconds. Senna's next attack collects the Mist and deals 1% \u2212 16% (based on level) of target's current health  bonus physical damage. The same target cannot be collected more than once every few seconds.",
+            "description": "Innate - Weakened Soul: Senna's basic attacks on-hit and abilities on enemy champions apply Mist for 4 seconds. Senna's next basic attack on-hit collects the Mist and deals 1% \u2212 16% (based on level) of target's current health  bonus physical damage. The same target cannot be collected more than once every few seconds.",
             "icon": "Absolution.png",
             "leveling": []
           },
           {
-            "description": "Enemy  champions, large  minions and large  monsters that die near Senna spawn a Mist Wraith for 8 seconds. Epic monsters spawn 2 Mist Wraiths instead. Small  minions and lesser  monsters have a 20% chance to spawn Mist Wraiths, reduced to 1.67% chance on those that Senna kills. Senna can basic attack a Mist Wraith to destroy it, gaining  3 and collecting its Mist.",
+            "description": "Enemy  champions and large  monsters that die near Senna spawn a Mist Wraith for 8 seconds. Epic monsters spawn 2 Mist Wraiths instead.  Minions and lesser  monsters have a 25% chance to spawn Mist Wraiths, reduced to 1.67% chance on those that Senna kills. Senna can basic attack a Mist Wraith to destroy it, gaining  3 and collecting its Mist.",
             "icon": "MistWraithSquare.png",
             "leveling": []
           },
@@ -100,7 +100,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "A Mist Wraith can be hit by  Cosmic Binding and it will interact with it the same way minions or monsters interact with Cosmic Binding but it will not take damage.\n Mist Wraith has a spawn animation, but is targetable immediately.\n Mist Wraith grants a small amount of  sight around itself.\n Excluding the range increase, one stack of Mist values approx.  49 ( +3 from Mist Wraith pickup). The bonuses have a gross value of  59 ( 44 with Lifesteal).\n 1 AD is worth  35. Absolution effectively boosts basic attacks with 1.2 AD, making the value  42.\n  0.75% Critical strike chance is worth  24. Absolution reduces its efficiency by 70%, making the value \u2248 7.\n  0.26% Life steal is worth \u2248 9.",
+        "notes": "Minions executed by allies with Spoils of War have a 1.67% chance to spawn Mist Wraiths.\n A Mist Wraith can be hit by  Cosmic Binding and it will interact with it the same way minions or monsters interact with Cosmic Binding but it will not take damage.\n Mist Wraith has a spawn animation, but is targetable immediately.\n Mist Wraith grants a small amount of  sight around itself.\n  Runaan's Hurricane secondary bolts will ignore Mist Wraiths.\n Excluding the range increase, one stack of Mist values approx.  51 ( +3 from Mist Wraith pickup). The bonuses have a gross value of  65 ( 44 with Lifesteal).\n 1 AD is worth  35. Absolution effectively boosts basic attacks with 1.2 AD, making the value  42.\n  0.75% Critical strike chance is worth  30. Absolution reduces its efficiency by 70%, making the value  9.\n  0.26% Life steal is worth \u2248 9.",
         "blurb": "Senna's Relic Cannon is slow to fire, but deals bonus damage. She can power up its range, Attack Damage, and Crit chance over time by absorbing Mist from enemy champions she's attacking or from wraiths that spawn from dead enemies.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -268,7 +268,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Unit / Direction",
+        "targeting": "Unit",
         "affects": "Allies, Enemies, Turrets, Wards",
         "spellshieldable": "True",
         "resource": "MANA",
@@ -277,7 +277,7 @@
         "projectile": "FALSE",
         "onHitEffects": "true",
         "occurrence": null,
-        "notes": "Senna can generally target anything that is not either explicitly  untargetable or herself.\n Valid target include anything that can be targeted by a basic attack from someone.\n\n As for interactions, there's differences between specific units.\n Powder Keg: dealt 1 damage.\nWard: dealt 1 damage only if visible.\n\n  To enemy  champions struck, Piercing Darkness applies  Relic Cannon, collects  Mist if there's one with relative effects proc.\n Piercing Darkness deals no damage to enemy  turrets itself. The fact that they're struck is considered basic attacked once by Senna was the reason damage came out.\n This may be confirmed by that the damage follows the rule of Ability Power damage conversion\n Also this implements that the damage is not as described in this skill, but is same with a basic attack to  Turrets from Senna.\n\n On-hit effects are applied in order of struck units' spawn ID. This matters for effects that are consumed on-hit (E.g.  Duskblade of Draktharr, Spellblade), which are applied to the target with the lowest Spawn ID.\n \"spawn ID\" is an unofficial abbreviation to describe the spawn order for all units at the beginning of games, below are some examples.\n If Senna targets an enemy champion but hits at least one more enemy champion simultaneously,  Press the Attack's first stack will be applied to that target. If no champion was targeted, it will default to the champion with the lowest Spawn ID out of the ones struck by the ability. Whether the effect stacks up on a champion or not when multiple enemy champions are stuck also depends on Spawn ID.\n IF Piercing Darkness struck an enemy champion and turret simultaneously, with  Rapid Firecannon fully charged,  Rapid Firecannon's effect will most likely proc on the turret since turrets are often spawned before champions.",
+        "notes": "Senna can generally target anything that is not either explicitly  untargetable or herself.\n Valid targets include anything that can be targeted by a basic attack from someone.\n\n On-hit effects are applied in order of struck units' spawn ID. This matters for effects that are consumed on-hit (E.g.  Duskblade of Draktharr, Spellblade), which are applied to the target with the lowest Spawn ID.\n \"spawn ID\" is an unofficial abbreviation to describe the spawn order for all units at the beginning of games, below are some examples.\n If Senna targets an enemy champion but hits at least one more enemy champion simultaneously,  Press the Attack's first stack will be applied to that target. If no champion was targeted, it will default to the champion with the lowest Spawn ID out of the ones struck by the ability. Whether the effect stacks up on a champion or not when multiple enemy champions are stuck also depends on Spawn ID.\n IF Piercing Darkness struck an enemy champion and turret simultaneously, with  Rapid Firecannon fully charged,  Rapid Firecannon's effect will most likely proc on the turret since turrets are often spawned before champions.",
         "blurb": "Senna fires a bolt that heals her allies, and damages her foes. Senna can keep attacking to decrease Piercing Darkness\u2019 cooldown.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -522,7 +522,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Buff / Aura",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": "MANA",

@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 500,
     "healthPerLevel": 89,
-    "healthPer5SecondsBase": 3.5,
-    "healthPer5SecondsPerLevel": 0.55,
+    "healthPer_5SecondsBase": 3.5,
+    "healthPer_5SecondsPerLevel": 0.55,
     "manaBase": 360,
     "manaPerLevel": 33,
-    "manaPer5SecondsBase": 8,
-    "manaPer5SecondsPerLevel": 0.8,
+    "manaPer_5SecondsBase": 8,
+    "manaPer_5SecondsPerLevel": 0.8,
     "armorBase": 27,
     "armorPerLevel": 3.4,
     "magicResistanceBase": 30,
@@ -48,8 +48,8 @@
   },
   "roles": [
     "ARTILLERY",
-    "MARKSMAN",
-    "MAGE"
+    "MAGE",
+    "MARKSMAN"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -106,17 +106,17 @@
         "name": "Piercing Arrow",
         "effects": [
           {
-            "description": "First Cast: Varus  charges for up to 4 seconds to gradually increase Piercing Arrow's  range and damage over the next 2 seconds, during which he is  pacified and  slowed by 20%.",
+            "description": "Active: Varus  charges for up to 4 seconds to gradually increase Piercing Arrow's  range and damage over the next 2 seconds, during which he is  pacified and  slowed by 20%. Piercing Arrow can be recast at any time within its duration.",
             "icon": "Piercing Arrow.png",
             "leveling": []
           },
           {
-            "description": "Piercing Arrow is canceled when the charge ends, refunding  half of the mana cost.",
+            "description": "If the charge completes without reactivation, Piercing Arrow is cancelled, refunding  half of the mana cost.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Second Cast: Varus fires a piercing arrow dealing  physical damage to all enemies struck, which is increased by 0% \u2212 50% (based on Channel time). The arrow's damage is reduced to 100% \u2212 33% (based on enemy hit).",
+            "description": "Recast: Varus fires a piercing arrow dealing  physical damage to all enemies struck, which is increased by 0% \u2212 50% (based on Channel time). The arrow's damage is reduced to 100% \u2212 33% (based on enemy hit).",
             "icon": null,
             "leveling": [
               {

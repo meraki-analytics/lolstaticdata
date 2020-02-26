@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 535,
     "healthPerLevel": 74,
-    "healthPer5SecondsBase": 2.5,
-    "healthPer5SecondsPerLevel": 0.5,
+    "healthPer_5SecondsBase": 2.5,
+    "healthPer_5SecondsPerLevel": 0.5,
     "manaBase": 375,
     "manaPerLevel": 40,
-    "manaPer5SecondsBase": 11.5,
-    "manaPer5SecondsPerLevel": 0.4,
+    "manaPer_5SecondsBase": 11.5,
+    "manaPer_5SecondsPerLevel": 0.4,
     "armorBase": 32,
     "armorPerLevel": 3.8,
     "magicResistanceBase": 30,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "MAGE",
     "SUPPORT",
-    "ENCHANTER",
-    "MAGE"
+    "ENCHANTER"
   ],
   "attributeRatings": {
     "damage": 1,
@@ -340,10 +340,10 @@
                 "modifiers": [
                   {
                     "values": [
-                      40,
-                      55,
+                      60,
                       70,
-                      85,
+                      80,
+                      90,
                       100
                     ],
                     "units": [
@@ -388,10 +388,10 @@
           "modifiers": [
             {
               "values": [
-                8,
-                6.5,
+                6,
                 5,
-                3.5,
+                4,
+                3,
                 2
               ],
               "units": [
@@ -408,7 +408,7 @@
         "targeting": "Unit",
         "affects": "Allies / Self",
         "spellshieldable": null,
-        "resource": "MANA",
+        "resource": "OTHER",
         "damageType": null,
         "spellEffects": "Heal",
         "projectile": "FALSE",

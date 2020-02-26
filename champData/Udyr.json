@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 593.32,
     "healthPerLevel": 99,
-    "healthPer5SecondsBase": 6,
-    "healthPer5SecondsPerLevel": 0.75,
+    "healthPer_5SecondsBase": 6,
+    "healthPer_5SecondsPerLevel": 0.75,
     "manaBase": 270.4,
     "manaPerLevel": 30,
-    "manaPer5SecondsBase": 7.506,
-    "manaPer5SecondsPerLevel": 0.45,
+    "manaPer_5SecondsBase": 7.506,
+    "manaPer_5SecondsPerLevel": 0.45,
     "armorBase": 34,
     "armorPerLevel": 4,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "JUGGERNAUT",
     "FIGHTER",
-    "TANK"
+    "TANK",
+    "JUGGERNAUT"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -95,7 +95,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Further stance activations at maximum stacks of Monkey's Agility will refresh the timer.\n Despite having 4 abilities each with 6 ranks, Udyr is not able to level beyond the usual limit under normal circumstances - meaning he must choose how to allocate his points and will not be able to reach maximum rank on each of his abilities, except in the featured game mode,  Ultra Rapid Fire.",
+        "notes": "Instead of granting ultimate  cooldown reduction,  Cloudbringer's Grace from  Cloud Drake grants 5 / 10 / 15 / 20% (based on stacks) reduced global cooldown.\n Further stance activations at maximum stacks of Monkey's Agility will refresh the timer.\n Despite having 4 abilities each with 6 ranks, Udyr is not able to level beyond the usual limit under normal circumstances - meaning he must choose how to allocate his points and will not be able to reach maximum rank on each of his abilities, except in the featured game mode,  Ultra Rapid Fire.",
         "blurb": "Entering a stance grants Udyr bonus Attack Speed and Movement Speed for a short duration. This effect can stack multiple times.",
         "missileSpeed": null,
         "rechargeRate": null,

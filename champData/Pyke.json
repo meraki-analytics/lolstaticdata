@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 600,
     "healthPerLevel": 90,
-    "healthPer5SecondsBase": 7,
-    "healthPer5SecondsPerLevel": 0.5,
+    "healthPer_5SecondsBase": 7,
+    "healthPer_5SecondsPerLevel": 0.5,
     "manaBase": 415,
     "manaPerLevel": 50,
-    "manaPer5SecondsBase": 8,
-    "manaPer5SecondsPerLevel": 1,
+    "manaPer_5SecondsBase": 8,
+    "manaPer_5SecondsPerLevel": 1,
     "armorBase": 45,
     "armorPerLevel": 5,
     "magicResistanceBase": 32,
@@ -94,7 +94,7 @@
         "spellshieldable": null,
         "resource": null,
         "damageType": null,
-        "spellEffects": "Heal",
+        "spellEffects": null,
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
@@ -119,12 +119,12 @@
         "name": "Bone Skewer",
         "effects": [
           {
-            "description": "First Cast: Pyke winds up for up to 3 seconds, increasing Bone Skewer's range by up to 700 units while being  slowed by 20%.",
+            "description": "Active: Pyke winds up for up to 3 seconds, increasing Bone Skewer's range by up to 700 units while being  slowed by 20%. Bone Skewer can be recast at any time within its duration.",
             "icon": "Bone Skewer.png",
             "leveling": []
           },
           {
-            "description": "Second Cast: Pyke hurls his harpoon, dealing  physical damage to the first enemy struck,  pulling them a fixed 550 units towards him and  slowing them by 90% for 1 second.",
+            "description": "Recast: Pyke hurls his harpoon, dealing  physical damage to the first enemy struck,  pulling them a fixed 550 units towards him and  slowing them by 90% for 1 second.",
             "icon": null,
             "leveling": [
               {
@@ -337,7 +337,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Buff",
+        "targeting": "None",
         "affects": "Self",
         "spellshieldable": null,
         "resource": "MANA",

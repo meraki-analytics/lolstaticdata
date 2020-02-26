@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 534,
     "healthPerLevel": 93,
-    "healthPer5SecondsBase": 5.5,
-    "healthPer5SecondsPerLevel": 0.6,
+    "healthPer_5SecondsBase": 5.5,
+    "healthPer_5SecondsPerLevel": 0.6,
     "manaBase": 324,
     "manaPerLevel": 50,
-    "manaPer5SecondsBase": 6,
-    "manaPer5SecondsPerLevel": 0.8,
+    "manaPer_5SecondsBase": 6,
+    "manaPer_5SecondsPerLevel": 0.8,
     "armorBase": 27,
     "armorPerLevel": 3.35,
     "magicResistanceBase": 30,
@@ -48,8 +48,8 @@
   },
   "roles": [
     "FIGHTER",
-    "DIVER",
-    "MAGE"
+    "MAGE",
+    "DIVER"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -694,7 +694,7 @@
         "name": "Rappel",
         "effects": [
           {
-            "description": "Active: Elise lifts up into the air, becoming  untargetable for up to 2 seconds and  revealing the area for the duration. While she is in the air she can select a target to instantly descend upon.",
+            "description": "Active: Elise lifts up into the air, becoming  untargetable for up to 2 seconds and  revealing the area for the duration. While she is in the air she can select a target to instantly descend upon their location.",
             "icon": "Rappel.png",
             "leveling": []
           },

@@ -536,16 +536,17 @@ class ParsingAndRegex:
 
 def main():
     handler = LolWikiDataHandler(use_cache=False)
-    directory = r"C:\Users\dan\PycharmProjects\lolstaticdata\test"
-
+    directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), "..","champData"))
+    if not os.path.exists(directory):
+        os.mkdir(directory)
     champions = []
     for champion in handler.get_champions():
         champions.append(champion)
-        jsonfn = directory + f"\{champion.key}.json"
+        jsonfn = os.path.join(directory, champion.key + ".json")
         with open(jsonfn, 'w') as f:
             f.write(champion.to_json(indent=2))
 
-    jsonfn = directory + f"\champions.json"
+    jsonfn = os.path.join(directory, "champions.json")
     jsons = {}
     for champion in champions:
         jsons[champion.key] = json.loads(champion.to_json())

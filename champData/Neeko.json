@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 540,
     "healthPerLevel": 90,
-    "healthPer5SecondsBase": 7.5,
-    "healthPer5SecondsPerLevel": 0.75,
+    "healthPer_5SecondsBase": 7.5,
+    "healthPer_5SecondsPerLevel": 0.75,
     "manaBase": 450,
     "manaPerLevel": 30,
-    "manaPer5SecondsBase": 7,
-    "manaPer5SecondsPerLevel": 0.7,
+    "manaPer_5SecondsBase": 7,
+    "manaPer_5SecondsPerLevel": 0.7,
     "armorBase": 21,
     "armorPerLevel": 4,
     "magicResistanceBase": 30,
@@ -47,10 +47,10 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "SUPPORT",
-    "CATCHER",
     "BURST",
-    "MAGE"
+    "MAGE",
+    "SUPPORT",
+    "CATCHER"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -842,7 +842,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Stasis will not cancel Pop Blossom and can be activated during the wind up but not during the leap.\n If Neeko is moved during the leap under any circumstances ( knock back,  dash,  blink), she will strike down from the new location.",
+        "notes": "Stasis will not cancel Pop Blossom and can be activated during the wind up but not during the leap.",
         "blurb": null,
         "missileSpeed": null,
         "rechargeRate": null,

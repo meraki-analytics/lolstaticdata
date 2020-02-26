@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 585.6,
     "healthPerLevel": 95,
-    "healthPer5SecondsBase": 9.5,
-    "healthPer5SecondsPerLevel": 0.8,
+    "healthPer_5SecondsBase": 9.5,
+    "healthPer_5SecondsPerLevel": 0.8,
     "manaBase": 300,
     "manaPerLevel": 40,
-    "manaPer5SecondsBase": 7.5,
-    "manaPer5SecondsPerLevel": 0.75,
+    "manaPer_5SecondsBase": 7.5,
+    "manaPer_5SecondsPerLevel": 0.75,
     "armorBase": 35,
     "armorPerLevel": 3.8,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "JUGGERNAUT",
     "FIGHTER",
-    "TANK"
+    "TANK",
+    "JUGGERNAUT"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -458,8 +458,13 @@
             "leveling": []
           },
           {
-            "description": "Vessel: Enemies made a Vessel spawn a Tentacle near themselves every 5 / 4 / 3 (based on level) seconds, They can rid themselves of the the debuff by  taking down Illaoi. Tentacles can spawn exceptionally closer to each other than when spawned by Illaoi.",
+            "description": "Vessel: Enemies made a Vessel spawn a Tentacle near themselves every 5 / 4 / 3 (based on level) seconds. Tentacles can spawn exceptionally closer to each other than when spawned by Illaoi.",
             "icon": "Vessel.png",
+            "leveling": []
+          },
+          {
+            "description": "Vessels can cleanse the debuff by  taking down Illaoi.",
+            "icon": null,
             "leveling": []
           }
         ],
@@ -585,8 +590,13 @@
             "leveling": []
           },
           {
-            "description": "Vessel: Enemies made a Vessel spawn a Tentacle near themselves every 5 / 4 / 3 (based on level) seconds, They can rid themselves of the the debuff by  taking down Illaoi. Tentacles can spawn exceptionally closer to each other than when spawned by Illaoi.",
+            "description": "Vessel: Enemies made a Vessel spawn a Tentacle near themselves every 5 / 4 / 3 (based on level) seconds. Tentacles can spawn exceptionally closer to each other than when spawned by Illaoi.",
             "icon": "Vessel.png",
+            "leveling": []
+          },
+          {
+            "description": "Vessels can cleanse the debuff by  taking down Illaoi.",
+            "icon": null,
             "leveling": []
           }
         ],

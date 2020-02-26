@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 571,
     "healthPerLevel": 86,
-    "healthPer5SecondsBase": 3.75,
-    "healthPer5SecondsPerLevel": 0.65,
+    "healthPer_5SecondsBase": 3.75,
+    "healthPer_5SecondsPerLevel": 0.65,
     "manaBase": 348.88,
     "manaPerLevel": 38,
-    "manaPer5SecondsBase": 8.176,
-    "manaPer5SecondsPerLevel": 0.7,
+    "manaPer_5SecondsBase": 8.176,
+    "manaPer_5SecondsPerLevel": 0.7,
     "armorBase": 28,
     "armorPerLevel": 3,
     "magicResistanceBase": 30,
@@ -72,7 +72,7 @@
             "leveling": []
           },
           {
-            "description": "The second shot applies  on-hits at full effect and can  critically strike for (75% +  18.75%) bonus physical damage, increased to (100% +  25%) against minions.",
+            "description": "The second shot applies  on-hits and on-attack effects at full effect and can  critically strike for (75% +  18.75%) bonus physical damage, increased to (100% +  25%) against minions.",
             "icon": null,
             "leveling": []
           },
@@ -93,7 +93,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": "On-hit",
-        "notes": "Lightslinger is triggered and consumed by the first attack.\n The second attack will prioritize enemy champions (even if hidden in fog of war or in  brush) and enemy  minions with  low health.\n Lightslinger will still be consumed if no second target is found when Lucian fires.\n\n Lucian can move freely while firing Lightslinger since the second attack is integrated into the first one (like  Double Strike) and has special movement animations depending on the direction he is moving while firing.\n The second shot will not proc on-attack effects like  Runaan's Hurricane or  Guinsoo's Rageblade.",
+        "notes": "Lightslinger is triggered and consumed by the first attack.\n The second attack will prioritize enemy champions (even if hidden in fog of war or in  brush) and enemy  minions with  low health.\n Lightslinger will still be consumed if no second target is found when Lucian fires.\n\n Lucian can move freely while firing Lightslinger since the second attack is integrated into the first one (like  Double Strike) and has special movement animations depending on the direction he is moving while firing.",
         "blurb": "Whenever Lucian uses an ability, his next attack becomes a double-shot.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -353,7 +353,7 @@
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Lucian will not gain Ardent Blaze's bonus movement speed if attacks on marked targets are  dodged,  blocked, or if he is  blinded.\n  Persistent damage dealt by his allies will proc Ardent Blaze only once.",
+        "notes": "Lucian will not gain Ardent Blaze's bonus movement speed if attacks on marked targets are  dodged,  blocked, or if he is  blinded.\n DoT will proc Ardent Blaze only once.",
         "blurb": "Lucian shoots a missile that explodes in a star shape, marking enemies. Lucian gains Movement Speed for attacking marked enemies.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -497,7 +497,7 @@
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Lucian will not gain Ardent Blaze's bonus movement speed if attacks on marked targets are  dodged,  blocked, or if he is  blinded.\n  Persistent damage dealt by his allies will proc Ardent Blaze only once.",
+        "notes": "Lucian will not gain Ardent Blaze's bonus movement speed if attacks on marked targets are  dodged,  blocked, or if he is  blinded.\n DoT will proc Ardent Blaze only once.",
         "blurb": "Lucian shoots a missile that explodes in a star shape, marking enemies. Lucian gains Movement Speed for attacking marked enemies.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -641,7 +641,7 @@
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Lucian will not gain Ardent Blaze's bonus movement speed if attacks on marked targets are  dodged,  blocked, or if he is  blinded.\n  Persistent damage dealt by his allies will proc Ardent Blaze only once.",
+        "notes": "Lucian will not gain Ardent Blaze's bonus movement speed if attacks on marked targets are  dodged,  blocked, or if he is  blinded.\n DoT will proc Ardent Blaze only once.",
         "blurb": "Lucian shoots a missile that explodes in a star shape, marking enemies. Lucian gains Movement Speed for attacking marked enemies.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -662,7 +662,7 @@
         "name": "Relentless Pursuit",
         "effects": [
           {
-            "description": "Passive: Relentless Pursuit's  cooldown is reduced by 1 second for each  Lightslinger shot landed, doubled to 2 seconds against enemy  champions.",
+            "description": "Passive: Relentless Pursuit's  cooldown is reduced by 1 second for each  Lightslinger shot landed, doubled to 2 seconds against enemy champions.",
             "icon": "Relentless Pursuit.png",
             "leveling": []
           },
@@ -677,7 +677,7 @@
             "leveling": []
           },
           {
-            "description": "Relentless Pursuit can be cast during  The Culling as well Lucian's other abilities.",
+            "description": "Relentless Pursuit can be cast during  The Culling and other abilities can be cast during Relentless Pursuit.",
             "icon": null,
             "leveling": []
           }
@@ -992,7 +992,7 @@
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Lucian can interact with  Dark Passage or  Devour without  interrupting The Culling.\n Since The Culling is made up of two parallel skillshots it is possible for enemies to take only half the damage (half of Lucian's shots) if they stand on the edge of The Culling's fire line.\n Even though each bullet can only hit one target, it will not proc  Muramana since The Culling applies spell effects as a direction-targeted  area of effect.\n The damage dealt by each bullet of The Culling is calculated when the bullet reaches the target.\n  Spell shield only blocks one instance of damage.",
+        "notes": "Lucian can interact with  Dark Passage or  Devour without  interrupting The Culling.\n Since The Culling is made up of two parallel skillshots it is possible for enemies to take only half the damage (half of Lucian's shots) if they stand on the edge of The Culling's fire line.\n Even though each bullet can only hit one target, it will not proc  Muramana since The Culling applies spell effects as  area of effect.\n The damage dealt by each bullet of The Culling is calculated when the bullet reaches the target.\n  Spell shield only blocks one instance of damage.",
         "blurb": "Lucian unleashes a torrent of shots from his weapons.",
         "missileSpeed": null,
         "rechargeRate": null,

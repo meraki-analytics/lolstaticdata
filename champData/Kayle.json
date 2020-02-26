@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 600,
     "healthPerLevel": 85,
-    "healthPer5SecondsBase": 5,
-    "healthPer5SecondsPerLevel": 0.5,
+    "healthPer_5SecondsBase": 5,
+    "healthPer_5SecondsPerLevel": 0.5,
     "manaBase": 330,
     "manaPerLevel": 50,
-    "manaPer5SecondsBase": 8,
-    "manaPer5SecondsPerLevel": 0.8,
+    "manaPer_5SecondsBase": 8,
+    "manaPer_5SecondsPerLevel": 0.8,
     "armorBase": 26,
     "armorPerLevel": 3,
     "magicResistanceBase": 34,
@@ -47,8 +47,8 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "SUPPORT",
     "FIGHTER",
+    "SUPPORT",
     "SPECIALIST"
   ],
   "attributeRatings": {
@@ -105,7 +105,7 @@
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "If Kayle is in her attack animation after the stacks finish she gains another 0.5 seconds to refresh / stack Zealous.\n Because Kayle is both a melee and ranged champion, she can buy both ranged and melee only items at anytime. However, melee only items will only work until she becomes ranged, while ranged only items will only work after.\n While in melee range after she becomes Arisen, she will still attack with her sword, bypassing  Yasuo's  Wind Wall.\n This will not negate the activation of ranged effects (i.e  Runaan's Hurricane).\n This will still not trigger the activation of melee effects (i.e  Ravenous Hydra).\n\n Upon becoming Aflame, Kayle's portrait changes:\n On the original skin  becomes .\n On the Silver skin  becomes .\n On the Viridian skin  becomes .\n On the Battleborn skin  becomes .\n On the Aether Wing skin  becomes .\n On the Riot skin  becomes .\n On the Pentakill skin  becomes .\n  Transcended Kayle,  Judgment Kayle, and  Iron Inquisitor Kayle do not change portrait.",
+        "notes": "If Kayle is in her attack animation after the stacks finish she gains another 0.5 seconds to refresh / stack Zealous.\n Because Kayle is both a melee and ranged champion, she can purchase both ranged and melee exclusive items at anytime, but their effects will function depending on her range type; the same principle also applies on runes. Exceptional effects:\n  Sterak's Gage: Lifeline disabled, Giant Strength and Sterak's Fury will activate regardless.\n\n While in melee range after she becomes Arisen, she will still attack with her sword, bypassing  Yasuo's  Wind Wall.\n This will not negate the activation of ranged effects (i.e  Runaan's Hurricane).\n This will still not trigger the activation of melee effects (i.e  Ravenous Hydra).",
         "blurb": null,
         "missileSpeed": null,
         "rechargeRate": null,
@@ -545,7 +545,7 @@
             ]
           },
           {
-            "description": "Prior to becoming  Arisen, Starfire Spellblade also causes Kayle to temporarily become a  ranged champion with 525 attack range on the empowered attack.",
+            "description": "Prior to becoming  Arisen, the empowered basic attack also gains  350 bonus range.",
             "icon": null,
             "leveling": []
           },
@@ -605,7 +605,7 @@
         "projectile": "TRUE",
         "onHitEffects": "True",
         "occurrence": null,
-        "notes": "Before becoming  Arisen, when attacking below 175 range, Starfire Spellblade's active is considered a  melee attack (i.e. it will trigger  Tiamat).\n After unlocking Aflame, the exploding attack will only trigger the  Cleave and Crescent passives on the primary target, unlike all other on-hit effects.",
+        "notes": "Before becoming  Arisen, casting  Starfire Spellblade won't make Kayle be a ranged champion (i.e.  Runaan's Hurricane will still be negated anyhow).\n When attacking below 175 range, the empowered basic attack is considered a  melee attack (i.e. it will trigger  Tiamat).\n Otherwise, however, such melee-limited effects will be negated despite Kayle itself being still a melee champion.",
         "blurb": null,
         "missileSpeed": null,
         "rechargeRate": null,

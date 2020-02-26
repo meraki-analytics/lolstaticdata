@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 575,
     "healthPerLevel": 85,
-    "healthPer5SecondsBase": 7.5,
-    "healthPer5SecondsPerLevel": 0.7,
+    "healthPer_5SecondsBase": 7.5,
+    "healthPer_5SecondsPerLevel": 0.7,
     "manaBase": 200,
     "manaPerLevel": 0,
-    "manaPer5SecondsBase": 50,
-    "manaPer5SecondsPerLevel": 0,
+    "manaPer_5SecondsBase": 50,
+    "manaPer_5SecondsPerLevel": 0,
     "armorBase": 33,
     "armorPerLevel": 3.7,
     "magicResistanceBase": 32.1,
@@ -452,7 +452,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Lee Sin cannot self-cast Safeguard if he is  immobilized.\n Safeguard can be used on any targetable allied unit (e.g,  champions,  minions,  wards,  pets) with the exception of structures.\n Casting Safeguard will  interrupt  Resonating Strike's  dash, preventing any potential damage.",
+        "notes": "Lee Sin cannot self-cast Safeguard if he is  immobilized.\n Safeguard can be used on any targetable allied unit (e.g,  champions,  minions,  wards,  Demacian Standard,  Lantern) with the exception of structures.\n Casting Safeguard will  interrupt  Resonating Strike's  dash, preventing any potential damage.",
         "blurb": "Lee Sin rushes to target ally, shielding himself from damage. If the ally is a champion, they are also shielded. After using Safeguard, Lee Sin can cast Iron Will for the next 3 seconds.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -519,7 +519,7 @@
           ]
         },
         "cooldown": null,
-        "targeting": "Self",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": "ENERGY",
@@ -666,7 +666,7 @@
         "name": "Cripple",
         "effects": [
           {
-            "description": "Active: Lee Sin  slows all enemies marked by  Tempest in range for 4 seconds, decaying over the duration.",
+            "description": "Active: Lee Sin  slows all nearby enemies marked by  Tempest for 4 seconds, decaying over the duration.",
             "icon": "Cripple.png",
             "leveling": [
               {
@@ -723,7 +723,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Tempest's  sight reveal is not removed when Lee Sin casts Cripple.",
+        "notes": "Tempest's  reveal is not removed when Lee Sin casts Cripple.",
         "blurb": "Lee Sin cripples nearby enemies damaged by Tempest, reducing their Movement Speed for 4 seconds. Movement Speed recovers gradually over the duration.",
         "missileSpeed": null,
         "rechargeRate": null,

@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 550,
     "healthPerLevel": 85,
-    "healthPer5SecondsBase": 8.5,
-    "healthPer5SecondsPerLevel": 0.55,
+    "healthPer_5SecondsBase": 8.5,
+    "healthPer_5SecondsPerLevel": 0.55,
     "manaBase": 300,
     "manaPerLevel": 40,
-    "manaPer5SecondsBase": 8,
-    "manaPer5SecondsPerLevel": 0.7,
+    "manaPer_5SecondsBase": 8,
+    "manaPer_5SecondsPerLevel": 0.7,
     "armorBase": 33,
     "armorPerLevel": 3.5,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "ASSASSIN",
+    "SKIRMISHER",
     "FIGHTER",
-    "SKIRMISHER"
+    "ASSASSIN"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -81,7 +81,7 @@
         ],
         "cost": null,
         "cooldown": null,
-        "targeting": "Passive / Auto",
+        "targeting": "Auto",
         "affects": "Enemies",
         "spellshieldable": "False",
         "resource": null,
@@ -121,7 +121,7 @@
         ],
         "cost": null,
         "cooldown": null,
-        "targeting": "Passive / Auto",
+        "targeting": "Auto",
         "affects": "Enemies",
         "spellshieldable": "False",
         "resource": null,
@@ -499,7 +499,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Buff",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": "special",
         "resource": "MANA",

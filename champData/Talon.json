@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 588,
     "healthPerLevel": 95,
-    "healthPer5SecondsBase": 8.5,
-    "healthPer5SecondsPerLevel": 0.75,
+    "healthPer_5SecondsBase": 8.5,
+    "healthPer_5SecondsPerLevel": 0.75,
     "manaBase": 377.2,
     "manaPerLevel": 37,
-    "manaPer5SecondsBase": 7.6,
-    "manaPer5SecondsPerLevel": 0.8,
+    "manaPer_5SecondsBase": 7.6,
+    "manaPer_5SecondsPerLevel": 0.8,
     "armorBase": 30,
     "armorPerLevel": 3.5,
     "magicResistanceBase": 39,
@@ -67,12 +67,12 @@
         "name": "Blade's End",
         "effects": [
           {
-            "description": "Innate: Talon's abilities wound enemy  champions and epic  monsters every time they deal damage, lasting 6 seconds and stacking up to 3 times. Basic attacks refresh the duration on-hit.",
+            "description": "Innate: Talon's abilities wound enemy  champions and  monsters every time they deal damage, lasting 6 seconds and stacking up to 3 times. Basic attacks refresh the duration on-hit.",
             "icon": "Blade's End.png",
             "leveling": []
           },
           {
-            "description": "Talon's next basic attack against a target with 3 wounds will consume them, causing the target to bleed for 75 \u2212 245 (based on level) (+ 200% bonus AD)  physical damage over 2 seconds, with each tick occurring every 0.125 seconds.",
+            "description": "Talon's next basic attack against a target with 3 wounds will consume them, causing the target to bleed for 75 \u2212 245 (based on level) (+ 200% bonus AD)  physical damage over 2 seconds, with each tick occurring every 0.125 seconds. The total damage is increased by 20% against monsters.",
             "icon": null,
             "leveling": []
           }

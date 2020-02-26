@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 564.48,
     "healthPerLevel": 95,
-    "healthPer5SecondsBase": 8,
-    "healthPer5SecondsPerLevel": 0.55,
+    "healthPer_5SecondsBase": 8,
+    "healthPer_5SecondsPerLevel": 0.55,
     "manaBase": 310.44,
     "manaPerLevel": 33,
-    "manaPer5SecondsBase": 7.84,
-    "manaPer5SecondsPerLevel": 0.5,
+    "manaPer_5SecondsBase": 7.84,
+    "manaPer_5SecondsPerLevel": 0.5,
     "armorBase": 36,
     "armorPerLevel": 4.3,
     "magicResistanceBase": 32.1,
@@ -47,9 +47,9 @@
     "urfShielding": 1.0
   },
   "roles": [
+    "TANK",
     "VANGUARD",
-    "FIGHTER",
-    "TANK"
+    "FIGHTER"
   ],
   "attributeRatings": {
     "damage": 2,
@@ -111,7 +111,7 @@
             "leveling": []
           },
           {
-            "description": "Rammus stops rolling upon colliding with an enemy,  knocking back all nearby enemies 100 units over 0.75 seconds, dealing them magic damage, and  slowing them for 1 second.",
+            "description": "Rammus stops rolling upon colliding with an enemy,  knocking back all nearby enemies 100 units over 0.75 seconds, dealing them magic damage, and  slowing them for 1 second. Powerball can be recast after 1 second.",
             "icon": null,
             "leveling": [
               {
@@ -175,7 +175,7 @@
             ]
           },
           {
-            "description": "Powerball's channel can be ended prematurely by recasting it or by activating  Defensive Ball Curl.",
+            "description": "Recast: Rammus ends the  channel early.",
             "icon": null,
             "leveling": []
           }
@@ -221,16 +221,16 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self / Buff / Auto",
+        "targeting": "None",
         "affects": "Enemies",
         "spellshieldable": "True",
         "resource": "MANA",
         "damageType": "MAGIC_DAMAGE",
-        "spellEffects": "spellaoe",
+        "spellEffects": "Area of effect",
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Powerball will still hit nearby enemies even (including  minions) if Rammus is  ghosted.\n Powerball will trigger Mana Charge twice (upon activation and when ending it prematurely).",
+        "notes": "Powerball will still collide with enemies if Rammus is  ghosted.\n Powerball will trigger Mana Charge twice (upon activation and when ending it prematurely).",
         "blurb": "Rammus accelerates in a ball towards his enemies, dealing damage and slowing targets affected by the impact.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -455,7 +455,7 @@
             ]
           },
           {
-            "description": "While  Powerball,  Defensive Ball Curl or  Tremors is active, the  bonus attack speed is refreshed.",
+            "description": "While  Powerball,  Defensive Ball Curl or  Tremors is active, the  bonus attack speed remains active.",
             "icon": null,
             "leveling": []
           }
@@ -728,14 +728,14 @@
         },
         "targeting": "Auto",
         "affects": "Enemies",
-        "spellshieldable": "Special",
+        "spellshieldable": "true",
         "resource": "MANA",
         "damageType": "MAGIC_DAMAGE",
         "spellEffects": "aoedot",
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Tremors has no cast time and does not interrupt Rammus'  previous orders.\n  Spell shield only prevents one instance of the  slow.",
+        "notes": "Tremors has no cast time and does not interrupt Rammus'  previous orders.\n  Spell shield only prevents one tick of the ability.",
         "blurb": "Rammus creates waves of destruction pulsing through the ground, causing damage to nearby enemies and slowing them. Turrets take double damage from Tremors.",
         "missileSpeed": null,
         "rechargeRate": null,

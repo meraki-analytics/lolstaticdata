@@ -10,12 +10,12 @@
   "stats": {
     "healthBase": 575,
     "healthPerLevel": 90,
-    "healthPer5SecondsBase": 5,
-    "healthPer5SecondsPerLevel": 0.75,
+    "healthPer_5SecondsBase": 5,
+    "healthPer_5SecondsPerLevel": 0.75,
     "manaBase": 0,
     "manaPerLevel": 0,
-    "manaPer5SecondsBase": 0,
-    "manaPer5SecondsPerLevel": 0,
+    "manaPer_5SecondsBase": 0,
+    "manaPer_5SecondsPerLevel": 0,
     "armorBase": 37,
     "armorPerLevel": 3,
     "magicResistanceBase": 32,
@@ -47,8 +47,8 @@
     "urfShielding": 1.0
   },
   "roles": [
-    "JUGGERNAUT",
-    "FIGHTER"
+    "FIGHTER",
+    "JUGGERNAUT"
   ],
   "attributeRatings": {
     "damage": 3,
@@ -78,14 +78,14 @@
             "leveling": []
           },
           {
-            "description": "Darkness Rise: Mordekaiser deals [ 5 \u2212 15.2 (based on level) (+ 30% AP) (+ 1% \u2212 5% (based on level) of target's maximum health) magic damage per second ][ 0.63 \u2212 1.9 (based on level) (+ 3.75% AP) (+ 0.13% \u2212 0.63% (based on level) of target's maximum health) magic damage every 0.125 seconds ] to all nearby enemies and gains 3% bonus movement speed. Damage is capped against  monsters at 25 \u2212 120 (based on level).",
+            "description": "Darkness Rise: Mordekaiser deals [ 5 \u2212 15.2 (based on level) (+ 30% AP) (+ 1% \u2212 5% (based on level) of target's maximum health) magic damage per second ][ 0.63 \u2212 1.9 (based on level) (+ 3.75% AP) (+ 0.13% \u2212 0.63% (based on level) of target's maximum health) magic damage every 0.125 seconds ] to all nearby enemies and gains 3% bonus movement speed. The damage against  monsters is capped at 25 \u2212 120 (based on level).",
             "icon": null,
             "leveling": []
           }
         ],
         "cost": null,
         "cooldown": null,
-        "targeting": "Passive",
+        "targeting": "none",
         "affects": "Self / Enemies",
         "spellshieldable": null,
         "resource": null,
@@ -252,7 +252,7 @@
         "projectile": "FALSE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Applies  spell damage if it hits one target and  area damage to multiple targets.\n When Obliterate hits a single unit, it is considered a  single target ability and uses a different metallic sound effect.",
+        "notes": "Applies  spell damage if it hits one target and  area damage to multiple targets.",
         "blurb": null,
         "missileSpeed": null,
         "rechargeRate": null,
@@ -278,12 +278,12 @@
             "leveling": []
           },
           {
-            "description": "Active - First Cast: Mordekaiser consumes all his current Potential Shield to  shield himself for 4 seconds for the same amount. At start the shield decays very slowly but exponentially increases near the end. After 0.25 seconds he can re-cast the ability.",
+            "description": "Active: Mordekaiser consumes all his current Potential Shield to  shield himself for 4 seconds for the same amount. At start the shield decays very slowly but exponentially increases near the end. After 0.25 seconds he can recast the ability.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Active - Second Cast: Mordekaiser consumes the remaining shield,  healing for a percentage of the amount.",
+            "description": "Recast: Mordekaiser consumes the remaining shield,  healing for a percentage of the amount.",
             "icon": "Indestructible 2.png",
             "leveling": [
               {
@@ -332,7 +332,7 @@
           ],
           "affectedByCdr": false
         },
-        "targeting": "Self",
+        "targeting": "none",
         "affects": "Self",
         "spellshieldable": null,
         "resource": null,
