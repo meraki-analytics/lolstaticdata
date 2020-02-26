@@ -1,0 +1,60 @@
+{
+  "name": "Sheen",
+  "itemID": 3057,
+  "tier": "Tier 2",
+  "type": "Tier 2",
+  "recipe": [
+    "Sapphire Crystal"
+  ],
+  "builds": [
+    "Iceborn Gauntlet",
+    "Lich Bane",
+    "Trinity Force"
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": " Spellblade",
+      "effects": " After using an ability, your next basic attack within 10 seconds deals 100% base AD bonus physical damage on-hit (1.5 second cooldown, begins after using the empowered attack)."
+    }
+  ],
+  "auras": [],
+  "active": [],
+  "stats": {
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 10,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 250,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0
+  },
+  "shop": {
+    "priceFull": 1050,
+    "priceCombined": 700,
+    "priceSell": 735,
+    "itemTags": [
+      "MAGIC:COOLDOWN_REDUCTION",
+      "MAGIC:MANA"
+    ]
+  }
+}

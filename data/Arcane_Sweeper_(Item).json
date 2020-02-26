@@ -1,0 +1,65 @@
+{
+  "name": "Arcane Sweeper (Item)",
+  "itemID": 3187,
+  "tier": "Tier 3",
+  "type": "Tier 3",
+  "recipe": [
+    "Glacial Shroud",
+    "Kindlegem"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": " Trap Detection",
+      "effects": " Nearby stealthed enemy traps are revealed."
+    }
+  ],
+  "auras": [],
+  "active": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": " Covers an area with stealth-detecting mist for 5 seconds, granting vision of units which pass through it for 3 seconds. (60 second cooldown) (800 range, 375 AoE estimated)"
+    }
+  ],
+  "stats": {
+    "abilityPower": 0,
+    "armor": 25,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 20,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 225,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 250,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0
+  },
+  "shop": {
+    "priceFull": 2150,
+    "priceCombined": 350,
+    "priceSell": 1505,
+    "itemTags": [
+      "DEFENSE:HEALTH",
+      "DEFENSE:ARMOR",
+      "MAGIC:MANA",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
+  }
+}

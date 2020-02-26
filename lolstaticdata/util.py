@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 
 def grouper(iterable, n, fillvalue=None):
-    """Collect data into fixed-length chunks or blocks"""
+    """Collect champData into fixed-length chunks or blocks"""
     # grouper('ABCDEFG', 3, 'x') --> ABC DEF Gxx"
     args = [iter(iterable)] * n
     return itertools.zip_longest(*args, fillvalue=fillvalue)
@@ -58,9 +58,12 @@ def download_webpage(url, use_cache: bool = True):
     html = html.replace(u'\u00ba', u'°')
     html = html.replace(u'\u200b', u'')  # zero width space
     html = html.replace(u'\u200e', u'')  # left-to-right mark
+    html = html.replace(u' \u2013', u':')  # left-to-right mark
     html = html.replace(u'\xa0', u' ')
-    #html = html.replace(u'‐', u'-')
-    #html = html.replace(u'−', u'-')
+    html = html.replace(u'&', u'and')
+    html = html.replace(u"\uFF06", u'and')
+    html = html.replace(u'‐', u'-')
+    html = html.replace(u' −', u'-')
     #html = html.replace(u'☂', u'')
     #html = html.replace(u'•', u'*')
     #html = html.replace(u'’', u'')

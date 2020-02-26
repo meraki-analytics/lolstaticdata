@@ -1,0 +1,67 @@
+{
+  "name": "Timeworn Talisman of Ascension",
+  "itemID": 3306,
+  "tier": "Tier 3",
+  "type": "Tier 3",
+  "recipe": [
+    "Timeworn Nomad's Medallion",
+    "Raptor Cloak"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "Support, Economy, Gold",
+  "passives": [
+    {
+      "unique": true,
+      "name": " Point Runner",
+      "effects": " Builds up to 20% bonus movement speed over 2 seconds while near turrets, fallen turrets and Void Gates."
+    }
+  ],
+  "auras": [],
+  "active": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": " Grants nearby allies +40% bonus movement speed for 3 seconds (60 second cooldown)."
+    }
+  ],
+  "stats": {
+    "abilityPower": 0,
+    "armor": 45,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 10,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 2,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 175,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 10
+  },
+  "shop": {
+    "priceFull": 2200,
+    "priceCombined": 450,
+    "priceSell": 880,
+    "itemTags": [
+      "TOOLS:GOLD_INCOME",
+      "DEFENSE:ARMOR",
+      "DEFENSE:HEALTH_REGEN",
+      "MAGIC:MANA_REGEN",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
+    ]
+  }
+}

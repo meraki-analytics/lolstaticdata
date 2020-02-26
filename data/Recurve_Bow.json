@@ -1,0 +1,61 @@
+{
+  "name": "Recurve Bow",
+  "itemID": 1043,
+  "tier": "Tier 2",
+  "type": "Tier 2",
+  "recipe": [
+    "Dagger",
+    "Dagger"
+  ],
+  "builds": [
+    "Blade of the Ruined King",
+    "Bloodrazor",
+    "Guinsoo's Rageblade",
+    "Wit's End"
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": " Basic attacks deal 15 bonus physical damage on-hit."
+    }
+  ],
+  "auras": [],
+  "active": [],
+  "stats": {
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 25,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0
+  },
+  "shop": {
+    "priceFull": 1000,
+    "priceCombined": 400,
+    "priceSell": 700,
+    "itemTags": [
+      "ATTACK:ATTACK_SPEED"
+    ]
+  }
+}

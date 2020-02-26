@@ -1,0 +1,62 @@
+{
+  "name": "Trinity Force",
+  "itemID": 3078,
+  "tier": "Tier 3",
+  "type": "Tier 3",
+  "recipe": [
+    "Stinger",
+    "Sheen",
+    "Phage"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "triforce",
+  "passives": [
+    {
+      "unique": true,
+      "name": " Rage",
+      "effects": " Basic attacks (on-hit) grant +20 flat movement speed for 2 seconds. Killing a unit grants +60 flat movement speed instead. Bonus movement speed is halved on ranged champions."
+    }
+  ],
+  "auras": [],
+  "active": [],
+  "stats": {
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 25,
+    "attackSpeed": 40,
+    "cdr": 20,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 250,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 250,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 5,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0
+  },
+  "shop": {
+    "priceFull": 3733,
+    "priceCombined": 333,
+    "priceSell": 2613,
+    "itemTags": [
+      "ATTACK:ATTACK_SPEED",
+      "ATTACK:DAMAGE",
+      "DEFENSE:HEALTH",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "MAGIC:MANA",
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
+    ]
+  }
+}

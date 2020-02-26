@@ -1,0 +1,58 @@
+{
+  "name": "Nashor's Tooth",
+  "itemID": 3115,
+  "tier": "Tier 3",
+  "type": "Tier 3",
+  "recipe": [
+    "Stinger",
+    "Fiendish Codex"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": " Basic attacks deal 15 (+ 15% AP) bonus magic damage on-hit."
+    }
+  ],
+  "auras": [],
+  "active": [],
+  "stats": {
+    "abilityPower": 80,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 50,
+    "cdr": 0,
+    "cdrUnique": 20,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0
+  },
+  "shop": {
+    "priceFull": 3000,
+    "priceCombined": 1000,
+    "priceSell": 2100,
+    "itemTags": [
+      "ATTACK:ATTACK_SPEED",
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
+  }
+}

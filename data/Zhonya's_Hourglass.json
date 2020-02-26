@@ -1,0 +1,59 @@
+{
+  "name": "Zhonya's Hourglass",
+  "itemID": 3157,
+  "tier": "Tier 3",
+  "type": "Tier 3",
+  "recipe": [
+    "Seeker's Armguard",
+    "Stopwatch",
+    "Fiendish Codex"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "zhg,zonya",
+  "passives": [],
+  "auras": [],
+  "active": [
+    {
+      "unique": true,
+      "name": " Stasis",
+      "effects": " Put yourself in stasis for 2.5 seconds, rendering yourself untargetable and invulnerable for the duration, but also becoming unable to move and pacified during this time (120 second cooldown)."
+    }
+  ],
+  "stats": {
+    "abilityPower": 75,
+    "armor": 45,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 10,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0
+  },
+  "shop": {
+    "priceFull": 2900,
+    "priceCombined": 300,
+    "priceSell": 2030,
+    "itemTags": [
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "DEFENSE:ARMOR"
+    ]
+  }
+}

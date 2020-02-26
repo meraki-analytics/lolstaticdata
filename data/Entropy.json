@@ -1,0 +1,63 @@
+{
+  "name": "Entropy",
+  "itemID": 3184,
+  "tier": "Tier 3",
+  "type": "Tier 3",
+  "recipe": [
+    "Phage",
+    "Pickaxe"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": " Rage",
+      "effects": " Basic attacks grant 20 movement speed for 2 seconds on hit. Minion, monster, and champion kills grant 60 movement speed for 2 seconds. This movement speed bonus is halved for ranged champions."
+    }
+  ],
+  "auras": [],
+  "active": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": " For 5 seconds, basic attacks reduces the target's movement speed by 30% and deal 80 true damage over 2.5 seconds (60 second cooldown)."
+    }
+  ],
+  "stats": {
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 55,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 275,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0
+  },
+  "shop": {
+    "priceFull": 2600,
+    "priceCombined": 475,
+    "priceSell": 1820,
+    "itemTags": [
+      "ATTACK:DAMAGE",
+      "DEFENSE:HEALTH"
+    ]
+  }
+}

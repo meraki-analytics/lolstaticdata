@@ -1,0 +1,58 @@
+{
+  "name": "Bloodthirster",
+  "itemID": 3072,
+  "tier": "Tier 3",
+  "type": "Tier 3",
+  "recipe": [
+    "B. F. Sword",
+    "Vampiric Scepter",
+    "Long Sword"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "bt",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": " +20% life steal"
+    }
+  ],
+  "auras": [],
+  "active": [],
+  "stats": {
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 80,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0
+  },
+  "shop": {
+    "priceFull": 3500,
+    "priceCombined": 950,
+    "priceSell": 2450,
+    "itemTags": [
+      "ATTACK:DAMAGE",
+      "ATTACK:LIFE_STEAL"
+    ]
+  }
+}

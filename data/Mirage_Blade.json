@@ -1,0 +1,65 @@
+{
+  "name": "Mirage Blade",
+  "itemID": 3150,
+  "tier": "Tier 3",
+  "type": "Tier 3",
+  "recipe": [
+    "Vampiric Scepter",
+    "Pickaxe",
+    "Cloak of Agility"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": " Mark of the Sands",
+      "effects": " Basic attacks apply a Mark of the Sands to the target, revealing them for 3 seconds. Only a single enemy can be marked at a time."
+    }
+  ],
+  "auras": [],
+  "active": [
+    {
+      "unique": true,
+      "name": " Mirage Step",
+      "effects": " Blinks 350 units directly away from the marked target (60 second cooldown)."
+    }
+  ],
+  "stats": {
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 60,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 15,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 12,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0
+  },
+  "shop": {
+    "priceFull": 3200,
+    "priceCombined": 695,
+    "priceSell": 2240,
+    "itemTags": [
+      "ATTACK:DAMAGE",
+      "ATTACK:CRITICAL_STRIKE",
+      "ATTACK:LIFE_STEAL"
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "name": "Abyssal Mask",
+  "itemID": 3001,
+  "tier": "Tier 3",
+  "type": "Tier 3",
+  "recipe": [
+    "Catalyst of Aeons",
+    "Negatron Cloak"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": " Eternity",
+      "effects": " Restore mana equal to 15% of damage taken from champions. Restore health equal to 20% of mana spent, up to 25 health per cast, while toggle abilities can heal for up to 25 per second."
+    }
+  ],
+  "auras": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": " Nearby enemy champions take 15% more magic damage (325 range)."
+    }
+  ],
+  "active": [],
+  "stats": {
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 10,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 350,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 55,
+    "mana": 300,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0
+  },
+  "shop": {
+    "priceFull": 3000,
+    "priceCombined": 1180,
+    "priceSell": 2100,
+    "itemTags": [
+      "DEFENSE:HEALTH",
+      "DEFENSE:MAGIC_RESIST",
+      "MAGIC:MANA",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "DEFENSE:HEALTH_REGEN",
+      "MAGIC:MANA_REGEN"
+    ]
+  }
+}

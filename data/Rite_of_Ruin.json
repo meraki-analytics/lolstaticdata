@@ -1,0 +1,58 @@
+{
+  "name": "Rite of Ruin",
+  "itemID": 3430,
+  "tier": "Tier 4",
+  "type": "Tier 4",
+  "recipe": [
+    "Lost Chapter",
+    "Amplifying Tome"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": " Razing",
+      "effects": " Gains charges upon moving or killing enemies, up to 300 charges. Attacking structures expends 50 charges to deal 100 (+ 15% AP) bonus true damage."
+    }
+  ],
+  "auras": [],
+  "active": [],
+  "stats": {
+    "abilityPower": 100,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 20,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 100,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0
+  },
+  "shop": {
+    "priceFull": 3000,
+    "priceCombined": 765,
+    "priceSell": 2100,
+    "itemTags": [
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "MAGIC:MANA_REGEN"
+    ]
+  }
+}

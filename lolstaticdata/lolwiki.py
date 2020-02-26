@@ -20,7 +20,7 @@ class UnparsableLeveling(Exception):
 
 
 def grouper(iterable, n, fillvalue=None):
-    """Collect data into fixed-length chunks or blocks"""
+    """Collect champData into fixed-length chunks or blocks"""
     # grouper('ABCDEFG', 3, 'x') --> ABC DEF Gxx"
     args = [iter(iterable)] * n
     return itertools.zip_longest(*args, fillvalue=fillvalue)
@@ -232,7 +232,7 @@ class _Ability(dict):
 
     @staticmethod
     def _parse_html_table(table, exclude_parameters, verbose: bool = False):
-        # Iterate over the data in the table and parse the info
+        # Iterate over the champData in the table and parse the info
         data = {}
         for i, (parameter, value, desc) in enumerate(grouper(table, 3)):
             if not value:
@@ -375,7 +375,7 @@ class _Ability(dict):
 def main():
     directory = os.path.dirname(os.path.realpath(__file__))
 
-    statsfn = directory + "/data/champion_stats.json"
+    statsfn = directory + "/champData/champion_stats.json"
     stats = pull_all_champion_stats()
     save_json(stats, statsfn)
 
@@ -395,7 +395,7 @@ def main():
     }
 
     for champion_name, details in stats.items():
-        jsonfn = directory + f"/data/_{details['apiname']}.json"
+        jsonfn = directory + f"/champData/_{details['apiname']}.json"
         #if os.path.exists(jsonfn):
         #    continue
         print(champion_name)
@@ -773,19 +773,19 @@ def reformat_json_after_renaming(new):
 
 def rename_all():
     directory = os.path.dirname(os.path.realpath(__file__))
-    files = sorted(glob.glob(directory + "/data/_**.json"))
+    files = sorted(glob.glob(directory + "/champData/_**.json"))
     for fn in files:
         with open(fn) as f:
             j = json.load(f)
         renamed = rename_keys(j)
         renamed = reformat_json_after_renaming(renamed)
-        new_fn = fn.replace('data/_', 'data/')
+        new_fn = fn.replace('champData/_', 'champData/')
         save_json(renamed, new_fn)
 
 
 def capture_enums():
     directory = os.path.dirname(os.path.realpath(__file__))
-    files = sorted(glob.glob(directory + "/data/**.json"))
+    files = sorted(glob.glob(directory + "/champData/**.json"))
     files = [f for f in files if '_' not in f]
 
     enums = defaultdict(list)

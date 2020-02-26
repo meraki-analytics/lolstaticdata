@@ -1,0 +1,57 @@
+{
+  "name": "Runic Echoes",
+  "itemID": null,
+  "tier": "Tier 3",
+  "type": "Tier 3",
+  "recipe": [
+    "Fiendish Codex",
+    "Sapphire Crystal"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "jungle,blue,enchantment,runeglaive",
+  "passives": [
+    {
+      "unique": true,
+      "name": " Echo",
+      "effects": " Gains charges upon moving or casting. At 100 charges, the next instance of ability damage you deal will expend all charges to deal 60 (+ 10% AP) bonus magic damage to the first enemy hit and summon up to 3 lesser bolts that target nearby enemies, prioritizing enemies damaged by the ability and champions over minions."
+    }
+  ],
+  "auras": [],
+  "active": [],
+  "stats": {
+    "abilityPower": 80,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 10,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 300,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0
+  },
+  "shop": {
+    "priceFull": 1500,
+    "priceCombined": 250,
+    "priceSell": 1050,
+    "itemTags": [
+      "MAGIC:ABILITY_POWER",
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
+    ]
+  }
+}

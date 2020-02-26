@@ -1,0 +1,58 @@
+{
+  "name": "Spellbreaker",
+  "itemID": null,
+  "tier": "Tier 3",
+  "type": "Tier 3",
+  "recipe": [
+    "Hexdrinker",
+    "Avarice Blade"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": " Lifeline",
+      "effects": " Upon taking magic damage that would reduce health below 30%, grants a shield that absorbs 400 magic damage for 5 seconds (90 second cooldown)."
+    }
+  ],
+  "auras": [],
+  "active": [],
+  "stats": {
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 40,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 20,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 25,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0
+  },
+  "shop": {
+    "priceFull": 2800,
+    "priceCombined": 650,
+    "priceSell": 1960,
+    "itemTags": [
+      "ATTACK:DAMAGE",
+      "DEFENSE:MAGIC_RESIST",
+      "ATTACK:CRITICAL_STRIKE"
+    ]
+  }
+}

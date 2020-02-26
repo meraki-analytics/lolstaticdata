@@ -1,0 +1,60 @@
+{
+  "name": "Hextech Revolver",
+  "itemID": 3145,
+  "tier": "Tier 2",
+  "type": "Tier 2",
+  "recipe": [
+    "Amplifying Tome",
+    "Amplifying Tome"
+  ],
+  "builds": [
+    "Hextech Gunblade",
+    "Hextech GLP-800",
+    "Hextech Protobelt-01"
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": " Magic Bolt",
+      "effects": " Damaging an enemy champion with a basic attack shocks them for 50- 125 (based on level) bonus magic damage on-hit (40 second cooldown, shared with other Hextech items)."
+    }
+  ],
+  "auras": [],
+  "active": [],
+  "stats": {
+    "abilityPower": 40,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 0,
+    "attackSpeed": 0,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0
+  },
+  "shop": {
+    "priceFull": 1050,
+    "priceCombined": 180,
+    "priceSell": 735,
+    "itemTags": [
+      "MAGIC:ABILITY_POWER"
+    ]
+  }
+}

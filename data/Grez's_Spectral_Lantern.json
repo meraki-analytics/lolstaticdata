@@ -1,0 +1,66 @@
+{
+  "name": "Grez's Spectral Lantern",
+  "itemID": 3159,
+  "tier": "Tier 3",
+  "type": "Tier 3",
+  "recipe": [
+    "Madred's Razors",
+    "Long Sword",
+    "Dagger"
+  ],
+  "builds": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": " Maim",
+      "effects": " Basic attacks against monsters deal 75 bonus magic damage and restore 10 health."
+    }
+  ],
+  "auras": [],
+  "active": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": " Summons a stealth-detecting mist that grants vision in the target area for 5 seconds and reveals enemies that enter it for 3 seconds (60 second cooldown) (800 range, 375 AoE)."
+    }
+  ],
+  "stats": {
+    "abilityPower": 0,
+    "armor": 0,
+    "armorPenetration": 0,
+    "attackDamage": 15,
+    "attackSpeed": 30,
+    "cdr": 0,
+    "cdrUnique": 0,
+    "crit": 0,
+    "critUnique": 0,
+    "goldPer10": 0,
+    "healShield": 0,
+    "health": 0,
+    "healthRegen": 0,
+    "healthRegenFlat": 0,
+    "lifesteal": 0,
+    "magicPenetration": 0,
+    "magicResist": 0,
+    "mana": 0,
+    "manaRegenPer5": 0,
+    "manaRegenPer5Flat": 0,
+    "moveSpeed": 0,
+    "moveSpeedUnique": 0,
+    "moveSpeedFlat": 0
+  },
+  "shop": {
+    "priceFull": 1740,
+    "priceCombined": 180,
+    "priceSell": 696,
+    "itemTags": [
+      "ATTACK:DAMAGE",
+      "ATTACK:ATTACK_SPEED",
+      "TOOLS:GOLD_INCOME",
+      "TOOLS:VISION AND TRINKETS"
+    ]
+  }
+}
