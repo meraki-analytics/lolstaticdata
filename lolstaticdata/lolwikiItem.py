@@ -364,9 +364,12 @@ def main():
     print(directory)
     startItems = get_Items()
     for item in startItems.get_items():
-        items.append(item)
         fileName = item.Name.replace(" ", "_")
+        if fileName in ("Champion", "Tower"):
+            continue
+        items.append(item)
         print(fileName)
+
         jsonfn = os.path.join(directory, fileName.strip() + ".json")
         print(jsonfn)
         with open(jsonfn, 'w') as p:
