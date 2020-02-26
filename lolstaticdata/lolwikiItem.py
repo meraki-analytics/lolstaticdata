@@ -9,13 +9,14 @@ import re
 from lolstaticdata.util import download_webpage
 from model2 import Stat, Shop, Item, Passive, itemAttributes
 from collections import OrderedDict
-
+import os
 
 
 class get_Items():
-    def __init__(self, url):
-        self.url = url
+    def __init__(self):
         self.not_unique = re.compile('[A-z]')
+
+
 
     def uniquePassive(self,passive):
 
@@ -232,20 +233,49 @@ class get_Items():
         #All item data has a html attribute "data-name" so I put them all in an ordered dict while stripping the new lines
         #and spaces from the data
         use_cache = False
-        html = download_webpage(self.url, use_cache)
-        soup = BeautifulSoup(html, 'lxml')
-        with open("html.json", 'w') as self.f:
-            self.test3 = OrderedDict()
 
-            for td in soup.findAll('td', {"data-name": True}):
-                self.attributes = td.find_previous("td").text.rstrip()
-                self.attributes = self.attributes.lstrip()
-                self.values = td.text.rstrip()
-                # replace("\n", "")
-                self.values = self.values.lstrip().rstrip()
-                self.test3[self.attributes] = self.values
-            self.item_stats()
-            self.item_to_json()
+        base_url = 'https://leagueoflegends.fandom.com'
+
+        url = 'https://leagueoflegends.fandom.com/wiki/Category:Item_data_templates?from=A'
+
+        html = download_webpage(url, use_cache)
+        soup = BeautifulSoup(html, 'lxml')
+
+        next_button = soup.find("a", {"class": "category-page__pagination-next wds-button wds-is-secondary"})
+
+        test2 = soup.find_all("a", {"class": "category-page__member-link"})
+        last_page = False
+        while not last_page:
+            for url in test2:
+                # print(url.text.strip())
+
+                item_url = base_url + url['href']
+                item = item_url
+                html1 = download_webpage(item, use_cache)
+                soup1 = BeautifulSoup(html1, 'lxml')
+                with open("html.json", 'w') as self.f:
+                    self.test3 = OrderedDict()
+
+                    for td in soup1.findAll('td', {"data-name": True}):
+                        self.attributes = td.find_previous("td").text.rstrip()
+                        self.attributes = self.attributes.lstrip()
+                        self.values = td.text.rstrip()
+                        # replace("\n", "")
+                        self.values = self.values.lstrip().rstrip()
+                        self.test3[self.attributes] = self.values
+                    item = self.item_stats()
+                    json.dump(self.test3, self.f, indent=2)
+                    self.f.close()
+                    yield item
+
+            try:
+                url = (next_button['href'])
+                html = download_webpage(url, use_cache)
+            except TypeError:
+                last_page = True
+            soup = BeautifulSoup(html, 'lxml')
+            next_button = soup.find("a", {"class": "category-page__pagination-next wds-button wds-is-secondary"})
+            test2 = soup.find_all("a", {"class": "category-page__member-link"})
 
     def item_stats(self):
         builds = []
@@ -278,7 +308,7 @@ class get_Items():
 
 
 
-        self.item = Item(
+        item = Item(
             Name=self.test3["1"],
             itemID=self.itemid(),
             tier=self.test3["tier"],
@@ -324,13 +354,34 @@ class get_Items():
             )
 
             )
+        return item
 
-    def item_to_json(self):
-        json.dump(self.test3, self.f, indent=2)
-        self.f.close()
 
-        jsonfn = r"C:\Users\dan\PycharmProjects\lolstaticdata\data\{}.json".format(self.test3["1"].replace(" ", "_"))
+
+def main():
+    jsons = {}
+    items = []
+    directory = r"C:\Users\dan\PycharmProjects\lolstaticdata\data"
+    startItems = get_Items()
+    for item in startItems.get_items():
+        items.append(item)
+        fileName = item.Name.replace(" ", "_")
+        print(fileName)
+        jsonfn = os.path.join(directory, fileName.strip() + ".json")
+        print(jsonfn)
         with open(jsonfn, 'w') as p:
-            p.write(self.item.to_json(indent=2))
+            p.write(item.to_json(indent=2))
             p.close()
+    for item in items:
+        jsons[item.Name.replace(" ", "_").strip()] = json.loads(item.to_json())
+        print(jsons, "yeet")
+    itemFile = os.path.join(directory, "items.json")
+    for item in items:
+        jsons[item.Name.replace(" ", "_")] = json.loads(item.to_json())
+    with open(itemFile, 'w') as p:
+       json.dump(jsons, p, indent=2)
+    del jsons
 
+
+if __name__ == "__main__":
+    main()
