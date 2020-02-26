@@ -1,6 +1,6 @@
 {
   "name": "Lich Bane",
-  "itemID": "3100",
+  "itemID": 3100,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -48,9 +48,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 7,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3200,
@@ -59,15 +57,7 @@
     "itemTags": [
       "MAGIC:ABILITY_POWER",
       "MAGIC:MANA",
-      "Movement:OTHER_MOVEMENT_ITEMS"
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

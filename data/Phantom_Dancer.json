@@ -1,6 +1,6 @@
 {
   "name": "Phantom Dancer",
-  "itemID": "3046",
+  "itemID": 3046,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -47,26 +47,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 5,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2600,
     "priceCombined": 900,
     "priceSell": 1820,
     "itemTags": [
-      "Attack:ATTACK_SPEED",
-      "Attack:CRITICAL_STRIKE",
-      "Movement:OTHER_MOVEMENT_ITEMS"
+      "ATTACK:ATTACK_SPEED",
+      "ATTACK:CRITICAL_STRIKE",
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

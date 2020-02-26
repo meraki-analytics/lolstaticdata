@@ -1,6 +1,6 @@
 {
   "name": "Bloodthirster",
-  "itemID": "3072",
+  "itemID": 3072,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -48,25 +48,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3500,
     "priceCombined": 950,
     "priceSell": 2450,
     "itemTags": [
-      "Attack:DAMAGE",
-      "Attack:LIFE_STEAL"
+      "ATTACK:DAMAGE",
+      "ATTACK:LIFE_STEAL"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

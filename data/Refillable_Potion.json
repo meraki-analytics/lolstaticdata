@@ -1,6 +1,6 @@
 {
   "name": "Refillable Potion",
-  "itemID": "2031",
+  "itemID": 2031,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -44,27 +44,17 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 150,
     "priceCombined": 0,
     "priceSell": 60,
     "itemTags": [
-      "Starter Items:JUNGLING",
-      "Starter Items:LANING",
+      "STARTER ITEMS:JUNGLING",
+      "STARTER ITEMS:LANING",
       "TOOLS:CONSUMABLE",
       "DEFENSE:HEALTH_REGEN"
     ]
-  },
-  "other": {
-    "consume": "Regenerates 5.21 health every half-second for 12 seconds, restoring a total of 125 health.",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to one type of Potion.",
-    "req": "",
-    "hp": 0
   }
 }

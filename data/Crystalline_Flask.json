@@ -1,6 +1,6 @@
 {
   "name": "Crystalline Flask",
-  "itemID": "2041",
+  "itemID": 2041,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -44,27 +44,17 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 345,
     "priceCombined": 0,
     "priceSell": 138,
     "itemTags": [
-      "Starter Items:LANING",
+      "STARTER ITEMS:LANING",
       "TOOLS:CONSUMABLE",
       "DEFENSE:HEALTH_REGEN",
       "MAGIC:MANA_REGEN"
     ]
-  },
-  "other": {
-    "consume": "Consumes a charge to restore 120 health and 60 mana over 12 seconds.",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

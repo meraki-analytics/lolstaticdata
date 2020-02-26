@@ -1,6 +1,6 @@
 {
   "name": "Hextech Gunblade",
-  "itemID": "3146",
+  "itemID": 3146,
   "tier": "Tier 4",
   "type": "Tier 4",
   "recipe": [
@@ -51,26 +51,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3400,
     "priceCombined": 750,
     "priceSell": 2380,
     "itemTags": [
-      "Attack:DAMAGE",
-      "Attack:LIFE_STEAL",
+      "ATTACK:DAMAGE",
+      "ATTACK:LIFE_STEAL",
       "MAGIC:ABILITY_POWER"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

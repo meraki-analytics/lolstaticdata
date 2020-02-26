@@ -1,6 +1,6 @@
 {
   "name": "Spirit of the Elder Lizard",
-  "itemID": "3209",
+  "itemID": 3209,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -48,26 +48,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2000,
     "priceCombined": 580,
     "priceSell": 800,
     "itemTags": [
-      "Attack:DAMAGE",
+      "ATTACK:DAMAGE",
       "MAGIC:COOLDOWN_REDUCTION",
       "TOOLS:GOLD_INCOME"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

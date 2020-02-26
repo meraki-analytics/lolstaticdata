@@ -1,6 +1,6 @@
 {
   "name": "Sated Devourer",
-  "itemID": "",
+  "itemID": null,
   "tier": "Tier 4",
   "type": "Tier 4",
   "recipe": [],
@@ -44,22 +44,12 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "+60 on-hit magic damage",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 0,
     "priceCombined": 0,
     "priceSell": 3290,
     "itemTags": []
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "On  ranged champions, Phantom Hit will trigger every fourth basic attack instead.",
-    "req": "",
-    "hp": 0
   }
 }

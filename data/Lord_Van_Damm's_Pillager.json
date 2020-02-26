@@ -1,6 +1,6 @@
 {
   "name": "Lord Van Damm's Pillager",
-  "itemID": "3104",
+  "itemID": 3104,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -47,9 +47,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3000,
@@ -57,16 +55,8 @@
     "priceSell": 2100,
     "itemTags": [
       "DEFENSE:HEALTH",
-      "Attack:DAMAGE",
+      "ATTACK:DAMAGE",
       "MAGIC:COOLDOWN_REDUCTION"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "Talisman of Ascension",
-  "itemID": "3069",
+  "itemID": 3069,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -51,9 +51,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2200,
@@ -65,15 +63,7 @@
       "DEFENSE:HEALTH_REGEN",
       "MAGIC:MANA_REGEN",
       "MAGIC:COOLDOWN_REDUCTION",
-      "Movement:OTHER_MOVEMENT_ITEMS"
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to 1 Gold Income item.",
-    "req": "",
-    "hp": 0
   }
 }

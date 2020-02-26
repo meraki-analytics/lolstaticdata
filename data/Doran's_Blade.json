@@ -1,6 +1,6 @@
 {
   "name": "Doran's Blade",
-  "itemID": "1055",
+  "itemID": 1055,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -40,27 +40,17 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 450,
     "priceCombined": 0,
     "priceSell": 180,
     "itemTags": [
-      "Starter Items:LANING",
+      "STARTER ITEMS:LANING",
       "DEFENSE:HEALTH",
-      "Attack:DAMAGE",
-      "Attack:LIFE_STEAL"
+      "ATTACK:DAMAGE",
+      "ATTACK:LIFE_STEAL"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

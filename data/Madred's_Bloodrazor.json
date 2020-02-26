@@ -1,6 +1,6 @@
 {
   "name": "Madred's Bloodrazor",
-  "itemID": "3126",
+  "itemID": 3126,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -48,26 +48,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3800,
     "priceCombined": 775,
     "priceSell": 2660,
     "itemTags": [
-      "Attack:ATTACK_SPEED",
-      "Attack:DAMAGE",
+      "ATTACK:ATTACK_SPEED",
+      "ATTACK:DAMAGE",
       "DEFENSE:ARMOR"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

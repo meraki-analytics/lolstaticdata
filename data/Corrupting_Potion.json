@@ -1,6 +1,6 @@
 {
   "name": "Corrupting Potion",
-  "itemID": "2033",
+  "itemID": 2033,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [],
@@ -44,27 +44,17 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 500,
     "priceCombined": 350,
     "priceSell": 200,
     "itemTags": [
-      "Starter Items:LANING",
+      "STARTER ITEMS:LANING",
       "TOOLS:CONSUMABLE",
       "DEFENSE:HEALTH_REGEN",
       "MANA:MANA_REGEN"
     ]
-  },
-  "other": {
-    "consume": "For 12 seconds, regenerates 5.208 health and 3.125 mana every half-second for a total of 125 health and 75 mana as well as grants Touch of Corruption.",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to one type of Potion.",
-    "req": "",
-    "hp": 0
   }
 }

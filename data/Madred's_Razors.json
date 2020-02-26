@@ -1,6 +1,6 @@
 {
   "name": "Madred's Razors",
-  "itemID": "3106",
+  "itemID": 3106,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [],
@@ -44,26 +44,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 750,
     "priceCombined": 300,
     "priceSell": 525,
     "itemTags": [
-      "Starter Items:JUNGLING",
+      "STARTER ITEMS:JUNGLING",
       "DEFENSE:HEALTH_REGEN",
-      "Attack:ATTACK_SPEED"
+      "ATTACK:ATTACK_SPEED"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

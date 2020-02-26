@@ -1,6 +1,6 @@
 {
   "name": "Spirit Stone",
-  "itemID": "1080",
+  "itemID": 1080,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -48,9 +48,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 700,
@@ -60,13 +58,5 @@
       "DEFENSE:HEALTH_REGEN",
       "MAGIC:MANA_REGEN"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "Sweeping Lens",
-  "itemID": "3341",
+  "itemID": 3341,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -44,25 +44,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 0,
     "priceCombined": 0,
     "priceSell": 0,
     "itemTags": [
-      "Starter Items:JUNGLING",
-      "TOOLS:Vision and Trinkets"
+      "STARTER ITEMS:JUNGLING",
+      "TOOLS:VISION AND TRINKETS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to 1 Trinket. Switching to  Warding Totem or  Farsight Alteration disables trinket use for 120 seconds. Switching to  Oracle Alteration keeps the current cooldown, if there is any.",
-    "req": "",
-    "hp": 0
   }
 }

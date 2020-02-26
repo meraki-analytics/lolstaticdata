@@ -1,6 +1,6 @@
 {
   "name": "Zephyr",
-  "itemID": "3172",
+  "itemID": 3172,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -48,26 +48,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 10,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2800,
     "priceCombined": 900,
     "priceSell": 1960,
     "itemTags": [
-      "Attack:DAMAGE",
-      "Attack:ATTACK_SPEED",
-      "Movement:OTHER_MOVEMENT_ITEMS"
+      "ATTACK:DAMAGE",
+      "ATTACK:ATTACK_SPEED",
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

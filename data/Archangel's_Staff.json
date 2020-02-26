@@ -1,6 +1,6 @@
 {
   "name": "Archangel's Staff",
-  "itemID": "3003",
+  "itemID": 3003,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -47,9 +47,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3200,
@@ -61,13 +59,5 @@
       "MAGIC:MANA_REGEN",
       "MAGIC:COOLDOWN_REDUCTION"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to 1 Awe item.",
-    "req": "",
-    "hp": 0
   }
 }

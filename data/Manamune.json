@@ -1,6 +1,6 @@
 {
   "name": "Manamune",
-  "itemID": "3004",
+  "itemID": 3004,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -47,9 +47,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2400,
@@ -57,16 +55,8 @@
     "priceSell": 1680,
     "itemTags": [
       "MAGIC:MANA",
-      "Attack:DAMAGE",
+      "ATTACK:DAMAGE",
       "MAGIC:MANA_REGEN"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to 1 Awe item.",
-    "req": "",
-    "hp": 0
   }
 }

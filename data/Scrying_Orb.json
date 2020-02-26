@@ -1,6 +1,6 @@
 {
   "name": "Scrying Orb",
-  "itemID": "3342",
+  "itemID": 3342,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -44,24 +44,14 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 0,
     "priceCombined": 0,
     "priceSell": 0,
     "itemTags": [
-      "TOOLS:Vision and Trinkets"
+      "TOOLS:VISION AND TRINKETS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to 1 Trinket.\nTrinkets cannot be used in the first 30 seconds of a game.\nSelling a Trinket will disable Trinket use for 120 seconds.",
-    "req": "",
-    "hp": 0
   }
 }

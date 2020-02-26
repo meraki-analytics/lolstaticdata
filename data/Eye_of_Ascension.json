@@ -1,6 +1,6 @@
 {
   "name": "Eye of Ascension",
-  "itemID": "3069",
+  "itemID": 3069,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -51,9 +51,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 10,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 10
   },
   "shop": {
     "priceFull": 1500,
@@ -66,13 +64,5 @@
       "DEFENSE:DEFENSE",
       "MAGIC:MANA_REGEN"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to 1 Jungle or Gold Income item. A player may only have 3  Stealth Wards or  Totem Wards on the map at one time.",
-    "req": "",
-    "hp": 0
   }
 }

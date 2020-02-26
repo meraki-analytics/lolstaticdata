@@ -1,6 +1,6 @@
 {
   "name": "Tiamat",
-  "itemID": "3077",
+  "itemID": 3077,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -55,25 +55,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1325,
     "priceCombined": 475,
     "priceSell": 928,
     "itemTags": [
-      "Attack:DAMAGE",
+      "ATTACK:DAMAGE",
       "DEFENSE:HEALTH_REGEN"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Can only be purchased on  melee champions.",
-    "req": "",
-    "hp": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "Sword of the Divine",
-  "itemID": "3131",
+  "itemID": 3131,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -52,26 +52,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2500,
     "priceCombined": 800,
     "priceSell": 1750,
     "itemTags": [
-      "Attack:DAMAGE",
-      "Attack:ATTACK_SPEED",
-      "Attack:CRITICAL_STRIKE"
+      "ATTACK:DAMAGE",
+      "ATTACK:ATTACK_SPEED",
+      "ATTACK:CRITICAL_STRIKE"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

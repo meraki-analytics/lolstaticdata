@@ -1,6 +1,6 @@
 {
   "name": "Wooglet's Witchcrown",
-  "itemID": "3385",
+  "itemID": 3385,
   "tier": "Tier 4",
   "type": "Tier 4",
   "recipe": [],
@@ -48,9 +48,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3400,
@@ -60,13 +58,5 @@
       "MAGIC:ABILITY_POWER",
       "DEFENSE:ARMOR"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Can only be forged by  Ornn. Limited to one  Master Craftsman item.",
-    "req": "",
-    "hp": 0
   }
 }

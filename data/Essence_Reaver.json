@@ -1,6 +1,6 @@
 {
   "name": "Essence Reaver",
-  "itemID": "3508",
+  "itemID": 3508,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -48,26 +48,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3300,
     "priceCombined": 100,
     "priceSell": 2310,
     "itemTags": [
-      "Attack:DAMAGE",
-      "Attack:CRITICAL_STRIKE",
+      "ATTACK:DAMAGE",
+      "ATTACK:CRITICAL_STRIKE",
       "MAGIC:COOLDOWN_REDUCTION"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

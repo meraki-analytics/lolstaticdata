@@ -1,6 +1,6 @@
 {
   "name": "Elixir of Brilliance",
-  "itemID": "2039",
+  "itemID": 2039,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -40,9 +40,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 250,
@@ -53,13 +51,5 @@
       "MAGIC:ABILITY_POWER",
       "MAGIC:COOLDOWN_REDUCTION"
     ]
-  },
-  "other": {
-    "consume": "On use, grants 25- 40 (based on level) ability power and 10% cooldown reduction for 180 seconds.",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

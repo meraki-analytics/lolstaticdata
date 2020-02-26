@@ -1,6 +1,6 @@
 {
   "name": "Marksman's Rifle",
-  "itemID": "",
+  "itemID": null,
   "tier": "",
   "type": "",
   "recipe": [],
@@ -44,25 +44,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 0,
     "priceCombined": 0,
     "priceSell": 0,
     "itemTags": [
-      "Attack:DAMAGE",
-      "Attack:CRITICAL_STRIKE"
+      "ATTACK:DAMAGE",
+      "ATTACK:CRITICAL_STRIKE"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

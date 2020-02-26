@@ -1,6 +1,6 @@
 {
   "name": "Chain Vest",
-  "itemID": "1031",
+  "itemID": 1031,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [],
@@ -46,9 +46,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 800,
@@ -57,13 +55,5 @@
     "itemTags": [
       "DEFENSE:ARMOR"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

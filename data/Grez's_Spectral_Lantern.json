@@ -1,6 +1,6 @@
 {
   "name": "Grez's Spectral Lantern",
-  "itemID": "3159",
+  "itemID": 3159,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -52,27 +52,17 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1740,
     "priceCombined": 180,
     "priceSell": 696,
     "itemTags": [
-      "Attack:DAMAGE",
-      "Attack:ATTACK_SPEED",
+      "ATTACK:DAMAGE",
+      "ATTACK:ATTACK_SPEED",
       "TOOLS:GOLD_INCOME",
-      "TOOLS:Vision and Trinkets"
+      "TOOLS:VISION AND TRINKETS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

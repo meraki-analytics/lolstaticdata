@@ -1,6 +1,6 @@
 {
   "name": "Trinity Fusion",
-  "itemID": "3384",
+  "itemID": 3384,
   "tier": "Tier 4",
   "type": "Tier 4",
   "recipe": [],
@@ -44,29 +44,19 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 8,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3733,
     "priceCombined": 0,
     "priceSell": 2613,
     "itemTags": [
-      "Attack:ATTACK_SPEED",
-      "Attack:DAMAGE",
+      "ATTACK:ATTACK_SPEED",
+      "ATTACK:DAMAGE",
       "DEFENSE:HEALTH",
       "MAGIC:COOLDOWN_REDUCTION",
       "MAGIC:MANA",
-      "Movement:OTHER_MOVEMENT_ITEMS"
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Can only be forged by  Ornn. Limited to one  Master Craftsman item.",
-    "req": "",
-    "hp": 0
   }
 }

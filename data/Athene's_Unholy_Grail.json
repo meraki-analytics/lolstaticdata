@@ -1,6 +1,6 @@
 {
   "name": "Athene's Unholy Grail",
-  "itemID": "3174",
+  "itemID": 3174,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -47,9 +47,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2100,
@@ -61,13 +59,5 @@
       "MAGIC:MANA_REGEN",
       "MAGIC:COOLDOWN_REDUCTION"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

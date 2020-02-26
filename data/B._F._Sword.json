@@ -1,6 +1,6 @@
 {
   "name": "B. F. Sword",
-  "itemID": "1038",
+  "itemID": 1038,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -46,24 +46,14 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1300,
     "priceCombined": 0,
     "priceSell": 910,
     "itemTags": [
-      "Attack:DAMAGE"
+      "ATTACK:DAMAGE"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

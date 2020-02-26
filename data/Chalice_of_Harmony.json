@@ -1,6 +1,6 @@
 {
   "name": "Chalice of Harmony",
-  "itemID": "3028",
+  "itemID": 3028,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -51,9 +51,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 800,
@@ -64,13 +62,5 @@
       "MAGIC:MANA_REGEN",
       "DEFENSE:HEALTH_REGEN"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

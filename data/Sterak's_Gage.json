@@ -1,6 +1,6 @@
 {
   "name": "Sterak's Gage",
-  "itemID": "3053",
+  "itemID": 3053,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -48,25 +48,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3200,
     "priceCombined": 725,
     "priceSell": 2240,
     "itemTags": [
-      "Attack:DAMAGE",
+      "ATTACK:DAMAGE",
       "DEFENSE:HEALTH"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Can only be purchased on  melee champions.",
-    "req": "",
-    "hp": 0
   }
 }

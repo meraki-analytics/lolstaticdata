@@ -1,6 +1,6 @@
 {
   "name": "Wit's End",
-  "itemID": "3091",
+  "itemID": 3091,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -48,26 +48,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 5,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2900,
     "priceCombined": 880,
     "priceSell": 2030,
     "itemTags": [
-      "Attack:ATTACK_SPEED",
+      "ATTACK:ATTACK_SPEED",
       "DEFENSE:MAGIC_RESIST",
-      "Movement:OTHER_MOVEMENT_ITEMS"
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

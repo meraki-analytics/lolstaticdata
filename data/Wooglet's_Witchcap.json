@@ -1,6 +1,6 @@
 {
   "name": "Wooglet's Witchcap",
-  "itemID": "3090",
+  "itemID": 3090,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -52,9 +52,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3400,
@@ -64,13 +62,5 @@
       "MAGIC:ABILITY_POWER",
       "DEFENSE:ARMOR"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

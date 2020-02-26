@@ -1,6 +1,6 @@
 {
   "name": "Hexdrinker (old)",
-  "itemID": "3155",
+  "itemID": 3155,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -47,25 +47,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1300,
     "priceCombined": 485,
     "priceSell": 0,
     "itemTags": [
-      "Attack:DAMAGE",
+      "ATTACK:DAMAGE",
       "DEFENSE:MAGIC_RESIST"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

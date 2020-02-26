@@ -1,6 +1,6 @@
 {
   "name": "Trinity Force",
-  "itemID": "3078",
+  "itemID": 3078,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -48,29 +48,19 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 5,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3733,
     "priceCombined": 333,
     "priceSell": 2613,
     "itemTags": [
-      "Attack:ATTACK_SPEED",
-      "Attack:DAMAGE",
+      "ATTACK:ATTACK_SPEED",
+      "ATTACK:DAMAGE",
       "DEFENSE:HEALTH",
       "MAGIC:COOLDOWN_REDUCTION",
       "MAGIC:MANA",
-      "Movement:OTHER_MOVEMENT_ITEMS"
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

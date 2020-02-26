@@ -1,6 +1,6 @@
 {
   "name": "Wriggle's Lantern",
-  "itemID": "3154",
+  "itemID": 3154,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -48,27 +48,17 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "+10% spell vamp",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1650,
     "priceCombined": 100,
     "priceSell": 1155,
     "itemTags": [
-      "Attack:ATTACK_SPEED",
-      "Attack:DAMAGE",
-      "Attack:LIFE_STEAL",
-      "TOOLS:Vision and Trinkets"
+      "ATTACK:ATTACK_SPEED",
+      "ATTACK:DAMAGE",
+      "ATTACK:LIFE_STEAL",
+      "TOOLS:VISION AND TRINKETS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

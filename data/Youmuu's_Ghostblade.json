@@ -1,6 +1,6 @@
 {
   "name": "Youmuu's Ghostblade",
-  "itemID": "3142",
+  "itemID": 3142,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -51,26 +51,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2900,
     "priceCombined": 700,
     "priceSell": 2030,
     "itemTags": [
-      "Attack:DAMAGE",
+      "ATTACK:DAMAGE",
       "MAGIC:COOLDOWN_REDUCTION",
-      "Movement:OTHER_MOVEMENT_ITEMS"
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

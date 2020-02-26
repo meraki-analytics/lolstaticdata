@@ -1,6 +1,6 @@
 {
   "name": "Sightstone",
-  "itemID": "2049",
+  "itemID": 2049,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [],
@@ -49,9 +49,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 800,
@@ -61,13 +59,5 @@
       "DEFENSE:HEALTH",
       "TOOLS:CONSUMABLE"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "A player may only have 3  Stealth Wards or  Totem Wards on the map at one time.",
-    "req": "",
-    "hp": 3
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "Spirit of the Ancient Golem",
-  "itemID": "3207",
+  "itemID": 3207,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -51,9 +51,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2000,
@@ -64,15 +62,7 @@
       "DEFENSE:ARMOR",
       "MAGIC:COOLDOWN_REDUCTION",
       "TOOLS:GOLD_INCOME",
-      "TOOLS:Vision and Trinkets"
+      "TOOLS:VISION AND TRINKETS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

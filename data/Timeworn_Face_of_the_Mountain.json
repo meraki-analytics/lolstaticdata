@@ -1,6 +1,6 @@
 {
   "name": "Timeworn Face of the Mountain",
-  "itemID": "3309",
+  "itemID": 3309,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -51,9 +51,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2100,
@@ -65,13 +63,5 @@
       "DEFENSE:HEALTH_REGEN",
       "MAGIC:COOLDOWN_REDUCTION"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to 1 Jungle or Gold Income item.",
-    "req": "",
-    "hp": 0
   }
 }

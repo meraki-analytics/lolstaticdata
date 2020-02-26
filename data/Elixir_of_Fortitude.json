@@ -1,6 +1,6 @@
 {
   "name": "Elixir of Fortitude",
-  "itemID": "2037",
+  "itemID": 2037,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -40,9 +40,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 350,
@@ -51,15 +49,7 @@
     "itemTags": [
       "TOOLS:CONSUMABLE",
       "DEFENSE:HEALTH",
-      "Attack:DAMAGE"
+      "ATTACK:DAMAGE"
     ]
-  },
-  "other": {
-    "consume": "On use, grants 15 attack damage and 120- 235 (based on level) health for 180 seconds. Also restores the same amount of health on use.",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

@@ -76,9 +76,6 @@ class Stat(object):
     moveSpeed: int
     moveSpeedUnique: int
     moveSpeedFlat: int
-    spec: str
-    spec2: str
-
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
@@ -97,19 +94,6 @@ class Passive(object):
     name : str
     effects : str
 
-
-@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
-@dataclass
-class Other(object):
-    consume: str
-    consume2: str
-    champion_item : str
-    limit : str
-    req: str
-    hp : int
-
-
-
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
 class Item(object):
@@ -127,7 +111,6 @@ class Item(object):
     active : List[Passive]
     stats: Stat
     shop: Shop
-    other : Other
 
 
 

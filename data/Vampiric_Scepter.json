@@ -1,6 +1,6 @@
 {
   "name": "Vampiric Scepter",
-  "itemID": "1053",
+  "itemID": 1053,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [],
@@ -47,25 +47,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 900,
     "priceCombined": 550,
     "priceSell": 630,
     "itemTags": [
-      "Attack:DAMAGE",
-      "Attack:LIFE_STEAL"
+      "ATTACK:DAMAGE",
+      "ATTACK:LIFE_STEAL"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

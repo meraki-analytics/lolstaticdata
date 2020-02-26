@@ -1,6 +1,6 @@
 {
   "name": "Hunter's Machete",
-  "itemID": "1041",
+  "itemID": 1041,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -47,25 +47,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "+10% life steal vs. monsters",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 350,
     "priceCombined": 0,
     "priceSell": 245,
     "itemTags": [
-      "Starter Items:JUNGLING",
-      "Attack:LIFE_STEAL"
+      "STARTER ITEMS:JUNGLING",
+      "ATTACK:LIFE_STEAL"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to 1 Jungle or Gold Income item. The bonus experience part does not stack with passive Tooth.",
-    "req": "Can only purchase if you have  Smite.",
-    "hp": 0
   }
 }

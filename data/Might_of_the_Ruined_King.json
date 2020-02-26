@@ -1,6 +1,6 @@
 {
   "name": "Might of the Ruined King",
-  "itemID": "3389",
+  "itemID": 3389,
   "tier": "Tier 5",
   "type": "Tier 5",
   "recipe": [],
@@ -48,26 +48,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3300,
     "priceCombined": 0,
     "priceSell": 2310,
     "itemTags": [
-      "Attack:DAMAGE",
-      "Attack:ATTACK_SPEED",
-      "Attack:LIFE_STEAL"
+      "ATTACK:DAMAGE",
+      "ATTACK:ATTACK_SPEED",
+      "ATTACK:LIFE_STEAL"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Can only be forged by  Ornn. Limited to one  Master Craftsman item.",
-    "req": "",
-    "hp": 0
   }
 }

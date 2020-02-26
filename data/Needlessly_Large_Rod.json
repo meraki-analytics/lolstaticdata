@@ -1,6 +1,6 @@
 {
   "name": "Needlessly Large Rod",
-  "itemID": "1058",
+  "itemID": 1058,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -43,9 +43,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1250,
@@ -54,13 +52,5 @@
     "itemTags": [
       "MAGIC:ABILITY_POWER"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

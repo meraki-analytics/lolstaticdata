@@ -1,6 +1,6 @@
 {
   "name": "Frozen Mallet",
-  "itemID": "3022",
+  "itemID": 3022,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -47,25 +47,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3100,
     "priceCombined": 900,
     "priceSell": 2170,
     "itemTags": [
-      "Attack:DAMAGE",
+      "ATTACK:DAMAGE",
       "DEFENSE:HEALTH"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "On  ranged champions, applies a  20% slow instead.",
-    "req": "",
-    "hp": 0
   }
 }

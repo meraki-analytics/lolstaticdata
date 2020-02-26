@@ -1,6 +1,6 @@
 {
   "name": "Shield Totem",
-  "itemID": "",
+  "itemID": null,
   "tier": "Siege Weapon",
   "type": "Siege Weapon",
   "recipe": [],
@@ -44,22 +44,12 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 0,
     "priceCombined": 0,
     "priceSell": 0,
     "itemTags": []
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Attacking Team only. Occupies one of your Summoner Spell slots. Limit of 2 Siege Weapons, 1 of each type.",
-    "req": "",
-    "hp": 0
   }
 }

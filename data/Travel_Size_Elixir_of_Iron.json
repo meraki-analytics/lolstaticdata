@@ -1,6 +1,6 @@
 {
   "name": "Travel Size Elixir of Iron",
-  "itemID": "2058",
+  "itemID": 2058,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -44,22 +44,12 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 0,
     "priceCombined": 0,
     "priceSell": 32,
     "itemTags": []
-  },
-  "other": {
-    "consume": "Grants 150 bonus health, 25%  Tenacity, increased champion size, and Path of Iron for 45- 90 (based on level) seconds.",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Can stack with other Travel Size elixirs and with standard elixirs.",
-    "req": "Requires  Kleptomancy.",
-    "hp": 0
   }
 }

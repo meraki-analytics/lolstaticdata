@@ -1,6 +1,6 @@
 {
   "name": "Duskblade of Draktharr",
-  "itemID": "3147",
+  "itemID": 3147,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -47,26 +47,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2900,
     "priceCombined": 700,
     "priceSell": 2030,
     "itemTags": [
-      "Attack:DAMAGE",
-      "Attack:ARMOR_PENETRATION",
+      "ATTACK:DAMAGE",
+      "ATTACK:ARMOR_PENETRATION",
       "MAGIC:COOLDOWN_REDUCTION"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Ranged basic attacks do not apply the slow.",
-    "req": "",
-    "hp": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "Devourer",
-  "itemID": "",
+  "itemID": null,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [],
@@ -44,25 +44,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "+30 on-hit magic damage",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1450,
     "priceCombined": 450,
     "priceSell": 1715,
     "itemTags": [
-      "Attack:ATTACK_SPEED",
-      "Attack:DAMAGE"
+      "ATTACK:ATTACK_SPEED",
+      "ATTACK:DAMAGE"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "Molten Edge",
-  "itemID": "3371",
+  "itemID": 3371,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [],
@@ -40,25 +40,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "Unique: +25%  critical damage",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3400,
     "priceCombined": 0,
     "priceSell": 2380,
     "itemTags": [
-      "Attack:DAMAGE",
-      "Attack:CRITICAL_STRIKE"
+      "ATTACK:DAMAGE",
+      "ATTACK:CRITICAL_STRIKE"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Can only be forged by  Ornn. Limited to one  Master Craftsman item.",
-    "req": "",
-    "hp": 0
   }
 }

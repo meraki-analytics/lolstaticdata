@@ -1,6 +1,6 @@
 {
   "name": "Hunter's Potion",
-  "itemID": "2032",
+  "itemID": 2032,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [],
@@ -44,27 +44,17 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 400,
     "priceCombined": 250,
     "priceSell": 160,
     "itemTags": [
-      "Starter Items:LANING",
+      "STARTER ITEMS:LANING",
       "TOOLS:CONSUMABLE",
       "DEFENSE:HEALTH_REGEN",
       "MANA:MANA_REGEN"
     ]
-  },
-  "other": {
-    "consume": "Regenerates 3.75 health and 2.18 mana every half-second for 8 seconds, restoring a total of 60 health and 35 mana.",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to one type of Potion.",
-    "req": "",
-    "hp": 0
   }
 }

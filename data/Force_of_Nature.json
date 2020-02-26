@@ -1,6 +1,6 @@
 {
   "name": "Force of Nature",
-  "itemID": "3109",
+  "itemID": 3109,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -49,9 +49,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 8,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2900,
@@ -60,15 +58,7 @@
     "itemTags": [
       "DEFENSE:HEALTH_REGEN",
       "DEFENSE:MAGIC_RESIST",
-      "Movement:OTHER_MOVEMENT_ITEMS"
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

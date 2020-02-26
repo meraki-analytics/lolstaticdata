@@ -1,6 +1,6 @@
 {
   "name": "Stalker's Blade",
-  "itemID": "3706",
+  "itemID": 3706,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -52,27 +52,17 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "+10% life steal against monsters",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1000,
     "priceCombined": 300,
     "priceSell": 700,
     "itemTags": [
-      "Starter Items:JUNGLING",
+      "STARTER ITEMS:JUNGLING",
       "DEFENSE:HEALTH_REGEN",
-      "Attack:DAMAGE",
+      "ATTACK:DAMAGE",
       "MAGIC:MANA_REGEN"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to 1 Jungle or Gold Income item.",
-    "req": "",
-    "hp": 0
   }
 }

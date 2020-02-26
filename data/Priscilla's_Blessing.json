@@ -1,6 +1,6 @@
 {
   "name": "Priscilla's Blessing",
-  "itemID": "3183",
+  "itemID": 3183,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -51,9 +51,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "+25 health regeneration",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1600,
@@ -61,15 +59,7 @@
     "priceSell": 770,
     "itemTags": [
       "DEFENSE:HEALTH_REGEN",
-      "Movement:OTHER_MOVEMENT_ITEMS"
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

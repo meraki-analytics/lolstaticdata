@@ -1,6 +1,6 @@
 {
   "name": "Aegis of the Legion",
-  "itemID": "3105",
+  "itemID": 3105,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -46,9 +46,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1100,
@@ -58,13 +56,5 @@
       "DEFENSE:ARMOR",
       "DEFENSE:MAGIC_RESIST"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

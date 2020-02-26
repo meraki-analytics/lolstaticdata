@@ -1,6 +1,6 @@
 {
   "name": "Executioner's Calling",
-  "itemID": "3123",
+  "itemID": 3123,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [],
@@ -44,24 +44,14 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 800,
     "priceCombined": 450,
     "priceSell": 560,
     "itemTags": [
-      "Attack:DAMAGE"
+      "ATTACK:DAMAGE"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

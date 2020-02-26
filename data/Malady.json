@@ -1,6 +1,6 @@
 {
   "name": "Malady",
-  "itemID": "3114",
+  "itemID": 3114,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -48,25 +48,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2035,
     "priceCombined": 800,
     "priceSell": 1425,
     "itemTags": [
-      "Attack:ATTACK_SPEED",
+      "ATTACK:ATTACK_SPEED",
       "MAGIC:ABILITY_POWER"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

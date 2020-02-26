@@ -1,6 +1,6 @@
 {
   "name": "Tear of the Goddess (Quick Charge)",
-  "itemID": "3073",
+  "itemID": 3073,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -50,9 +50,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 850,
@@ -62,13 +60,5 @@
       "MAGIC:MANA",
       "MAGIC:MANA_REGEN"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to 1 Awe item.",
-    "req": "",
-    "hp": 0
   }
 }

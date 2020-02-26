@@ -1,6 +1,6 @@
 {
   "name": "Locket of the Iron Solari",
-  "itemID": "3190",
+  "itemID": 3190,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -47,9 +47,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2200,
@@ -59,13 +57,5 @@
       "DEFENSE:ARMOR",
       "DEFENSE:MAGIC_RESIST"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Eclipsed: Additional  Locket of the Iron Solari shields [ are only 25% as effective ][ absorb only 32.5- 75 (based on highest level between target and caster) (+ 5% of caster's bonus health) damage ].",
-    "req": "",
-    "hp": 0
   }
 }

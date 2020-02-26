@@ -1,6 +1,6 @@
 {
   "name": "Zeke's Harbinger",
-  "itemID": "3050",
+  "itemID": 3050,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -52,9 +52,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2250,
@@ -65,15 +63,7 @@
       "DEFENSE:ARMOR",
       "MAGIC:ABILITY_POWER",
       "MAGIC:COOLDOWN_REDUCTION",
-      "Attack:CRITICAL_STRIKE"
+      "ATTACK:CRITICAL_STRIKE"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

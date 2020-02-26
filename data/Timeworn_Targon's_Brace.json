@@ -1,6 +1,6 @@
 {
   "name": "Timeworn Targon's Brace",
-  "itemID": "3308",
+  "itemID": 3308,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -47,9 +47,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 850,
@@ -60,13 +58,5 @@
       "DEFENSE:HEALTH",
       "DEFENSE:HEALTH_REGEN"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to 1 Jungle or Gold Income item.",
-    "req": "",
-    "hp": 0
   }
 }

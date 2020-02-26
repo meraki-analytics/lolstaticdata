@@ -1,6 +1,6 @@
 {
   "name": "Elixir of Sorcery",
-  "itemID": "2139",
+  "itemID": 2139,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -44,9 +44,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 500,
@@ -57,13 +55,5 @@
       "MAGIC:MANA_REGEN",
       "MAGIC:ABILITY_POWER"
     ]
-  },
-  "other": {
-    "consume": "Grants 50 ability power, 15 flat mana regeneration, and Sorcery for 180 seconds. Can be used while dead.",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Only one elixir may be active at a time.",
-    "req": "Level 9 required to purchase.",
-    "hp": 0
   }
 }

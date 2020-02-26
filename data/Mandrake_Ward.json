@@ -1,6 +1,6 @@
 {
   "name": "Mandrake Ward",
-  "itemID": "",
+  "itemID": null,
   "tier": "Consumable",
   "type": "Consumable",
   "recipe": [],
@@ -40,22 +40,12 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 0,
     "priceCombined": 0,
     "priceSell": 0,
     "itemTags": []
-  },
-  "other": {
-    "consume": "Places an invisible blind sentry in a brush for 2 minutes. The plant will ping the map if a visible or invisible enemy is within 1000 range.(Counts as towards the max of 3 Stealth Wards placed at a time.)\n(May only carry 3 Stealth Wards at a time.)",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

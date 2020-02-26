@@ -1,6 +1,6 @@
 {
   "name": "Avarice Blade",
-  "itemID": "3093",
+  "itemID": 3093,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [],
@@ -48,25 +48,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 800,
     "priceCombined": 400,
     "priceSell": 320,
     "itemTags": [
-      "Attack:CRITICAL_STRIKE",
+      "ATTACK:CRITICAL_STRIKE",
       "TOOLS:GOLD_INCOME"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

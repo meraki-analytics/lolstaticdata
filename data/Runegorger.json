@@ -1,6 +1,6 @@
 {
   "name": "Runegorger",
-  "itemID": "N/A",
+  "itemID": null,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -48,26 +48,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3300,
     "priceCombined": 575,
     "priceSell": 2310,
     "itemTags": [
-      "Attack:DAMAGE",
+      "ATTACK:DAMAGE",
       "DEFENSE:MAGIC_RESIST",
-      "Attack:LIFE_STEAL"
+      "ATTACK:LIFE_STEAL"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

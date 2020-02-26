@@ -1,6 +1,6 @@
 {
   "name": "Slightly Magical Boots",
-  "itemID": "2422",
+  "itemID": 2422,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -52,24 +52,14 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 0,
     "priceCombined": 0,
     "priceSell": 210,
     "itemTags": [
-      "Movement:BOOTS"
+      "MOVEMENT:BOOTS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Only available with  Magical Footwear. Cannot be re-purchased. Disables  Boots of Speed. Limited to 1 Boots item.",
-    "req": "",
-    "hp": 0
   }
 }

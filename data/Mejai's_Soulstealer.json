@@ -1,6 +1,6 @@
 {
   "name": "Mejai's Soulstealer",
-  "itemID": "3041",
+  "itemID": 3041,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [],
@@ -44,9 +44,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1400,
@@ -56,13 +54,5 @@
       "MAGIC:ABILITY_POWER",
       "MAGIC:MANA"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

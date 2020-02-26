@@ -1,6 +1,6 @@
 {
   "name": "The Brutalizer",
-  "itemID": "",
+  "itemID": null,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -50,25 +50,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1337,
     "priceCombined": 617,
     "priceSell": 936,
     "itemTags": [
-      "Attack:DAMAGE",
+      "ATTACK:DAMAGE",
       "MAGIC:COOLDOWN_REDUCTION"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

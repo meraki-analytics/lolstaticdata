@@ -1,6 +1,6 @@
 {
   "name": "Poacher's Knife",
-  "itemID": "3711",
+  "itemID": 3711,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [],
@@ -49,27 +49,17 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "+ 30 on large monster kill.",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 850,
     "priceCombined": 450,
     "priceSell": 595,
     "itemTags": [
-      "Starter Items:JUNGLING",
+      "STARTER ITEMS:JUNGLING",
       "DEFENSE:HEALTH_REGEN",
-      "Attack:DAMAGE",
+      "ATTACK:DAMAGE",
       "MAGIC:MANA_REGEN"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to 1 Jungle item.",
-    "req": "",
-    "hp": 0
   }
 }

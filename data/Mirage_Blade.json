@@ -1,6 +1,6 @@
 {
   "name": "Mirage Blade",
-  "itemID": "3150",
+  "itemID": 3150,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -52,26 +52,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3200,
     "priceCombined": 695,
     "priceSell": 2240,
     "itemTags": [
-      "Attack:DAMAGE",
-      "Attack:CRITICAL_STRIKE",
-      "Attack:LIFE_STEAL"
+      "ATTACK:DAMAGE",
+      "ATTACK:CRITICAL_STRIKE",
+      "ATTACK:LIFE_STEAL"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "Kitae's Bloodrazor",
-  "itemID": "3186",
+  "itemID": 3186,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -47,25 +47,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2475,
     "priceCombined": 700,
     "priceSell": 1733,
     "itemTags": [
-      "Attack:DAMAGE",
-      "Attack:ATTACK_SPEED"
+      "ATTACK:DAMAGE",
+      "ATTACK:ATTACK_SPEED"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

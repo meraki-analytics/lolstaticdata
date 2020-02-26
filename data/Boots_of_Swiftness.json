@@ -1,6 +1,6 @@
 {
   "name": "Boots of Swiftness",
-  "itemID": "3009",
+  "itemID": 3009,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [],
@@ -44,24 +44,14 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 900,
     "priceCombined": 600,
     "priceSell": 630,
     "itemTags": [
-      "Movement:BOOTS"
+      "MOVEMENT:BOOTS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to 1 Boots item.",
-    "req": "",
-    "hp": 0
   }
 }

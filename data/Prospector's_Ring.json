@@ -1,6 +1,6 @@
 {
   "name": "Prospector's Ring",
-  "itemID": "1063",
+  "itemID": 1063,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -40,9 +40,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 950,
@@ -53,13 +51,5 @@
       "MAGIC:MANA_REGEN",
       "DEFENSE:HEALTH"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

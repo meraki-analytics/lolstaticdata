@@ -1,6 +1,6 @@
 {
   "name": "Ghostwalkers",
-  "itemID": "",
+  "itemID": null,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [],
@@ -48,24 +48,14 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1000,
     "priceCombined": 700,
     "priceSell": 700,
     "itemTags": [
-      "Movement:BOOTS"
+      "MOVEMENT:BOOTS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to 1 Boots item. Can only be purchased on  melee champions.",
-    "req": "",
-    "hp": 0
   }
 }

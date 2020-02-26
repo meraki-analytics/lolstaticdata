@@ -1,6 +1,6 @@
 {
   "name": "Zz'Rot Portal",
-  "itemID": "3512",
+  "itemID": 3512,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -51,9 +51,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2700,
@@ -63,15 +61,7 @@
       "DEFENSE:ARMOR",
       "DEFENSE:MAGIC_RESIST",
       "DEFENSE:HEALTH_REGEN",
-      "Movement:OTHER_MOVEMENT_ITEMS"
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

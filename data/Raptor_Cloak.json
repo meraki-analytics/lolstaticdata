@@ -1,6 +1,6 @@
 {
   "name": "Raptor Cloak",
-  "itemID": "2053",
+  "itemID": 2053,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -50,9 +50,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 900,
@@ -61,15 +59,7 @@
     "itemTags": [
       "DEFENSE:ARMOR",
       "DEFENSE:HEALTH_REGEN",
-      "Movement:OTHER_MOVEMENT_ITEMS"
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

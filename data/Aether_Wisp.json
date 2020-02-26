@@ -1,6 +1,6 @@
 {
   "name": "Aether Wisp",
-  "itemID": "3113",
+  "itemID": 3113,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [],
@@ -45,9 +45,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 5,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 850,
@@ -55,15 +53,7 @@
     "priceSell": 595,
     "itemTags": [
       "MAGIC:ABILITY_POWER",
-      "Movement:OTHER_MOVEMENT_ITEMS"
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

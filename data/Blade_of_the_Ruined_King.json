@@ -1,6 +1,6 @@
 {
   "name": "Blade of the Ruined King",
-  "itemID": "3153",
+  "itemID": 3153,
   "tier": "Tier 4",
   "type": "Tier 4",
   "recipe": [
@@ -51,26 +51,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3300,
     "priceCombined": 700,
     "priceSell": 2310,
     "itemTags": [
-      "Attack:DAMAGE",
-      "Attack:ATTACK_SPEED",
-      "Attack:LIFE_STEAL"
+      "ATTACK:DAMAGE",
+      "ATTACK:ATTACK_SPEED",
+      "ATTACK:LIFE_STEAL"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

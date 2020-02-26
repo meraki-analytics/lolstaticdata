@@ -1,6 +1,6 @@
 {
   "name": "Mercurial Scimitar",
-  "itemID": "3139",
+  "itemID": 3139,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -48,9 +48,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3400,
@@ -58,16 +56,8 @@
     "priceSell": 2380,
     "itemTags": [
       "DEFENSE:MAGIC_RESIST",
-      "Attack:DAMAGE",
-      "Movement:OTHER_MOVEMENT_ITEMS"
+      "ATTACK:DAMAGE",
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

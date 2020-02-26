@@ -1,6 +1,6 @@
 {
   "name": "Zhonya's Hourglass",
-  "itemID": "3157",
+  "itemID": 3157,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -48,9 +48,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2900,
@@ -61,13 +59,5 @@
       "MAGIC:COOLDOWN_REDUCTION",
       "DEFENSE:ARMOR"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

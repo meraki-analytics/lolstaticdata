@@ -1,6 +1,6 @@
 {
   "name": "Stark's Fervor",
-  "itemID": "3050",
+  "itemID": 3050,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -47,26 +47,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2550,
     "priceCombined": 700,
     "priceSell": 1785,
     "itemTags": [
-      "Attack:ATTACK_SPEED",
-      "Attack:LIFE_STEAL",
+      "ATTACK:ATTACK_SPEED",
+      "ATTACK:LIFE_STEAL",
       "DEFENSE:HEALTH_REGEN"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

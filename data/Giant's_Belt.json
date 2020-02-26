@@ -1,6 +1,6 @@
 {
   "name": "Giant's Belt",
-  "itemID": "1011",
+  "itemID": 1011,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [],
@@ -45,9 +45,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1000,
@@ -56,13 +54,5 @@
     "itemTags": [
       "DEFENSE:HEALTH"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

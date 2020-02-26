@@ -1,6 +1,6 @@
 {
   "name": "Nomad's Eye",
-  "itemID": "3096",
+  "itemID": 3096,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -51,9 +51,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 10,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 10
   },
   "shop": {
     "priceFull": 850,
@@ -64,13 +62,5 @@
       "DEFENSE:HEALTH_REGEN",
       "MAGIC:MANA_REGEN"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to 1 Jungle or Gold Income item. A player may only have 3  Stealth Wards or  Totem Wards on the map at one time.",
-    "req": "",
-    "hp": 0
   }
 }

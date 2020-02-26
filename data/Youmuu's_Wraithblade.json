@@ -1,6 +1,6 @@
 {
   "name": "Youmuu's Wraithblade",
-  "itemID": "3388",
+  "itemID": 3388,
   "tier": "Tier 4",
   "type": "Tier 4",
   "recipe": [],
@@ -48,26 +48,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2900,
     "priceCombined": 0,
     "priceSell": 2030,
     "itemTags": [
-      "Attack:COOLDOWN_REDUCTION",
+      "ATTACK:COOLDOWN_REDUCTION",
       "MAGIC:COOLDOWN_REDUCTION",
-      "Movement:OTHER_MOVEMENT_ITEMS"
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Can only be forged by  Ornn. Limited to one  Master Craftsman item.",
-    "req": "",
-    "hp": 0
   }
 }

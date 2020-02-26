@@ -1,6 +1,6 @@
 {
   "name": "Netherstride Grimoire",
-  "itemID": "3431",
+  "itemID": 3431,
   "tier": "Tier 4",
   "type": "Tier 4",
   "recipe": [
@@ -47,9 +47,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3000,
@@ -59,15 +57,7 @@
       "MAGIC:ABILITY_POWER",
       "MAGIC:COOLDOWN_REDUCTION",
       "MAGIC:MANA_REGEN",
-      "Movement:OTHER_MOVEMENT_ITEMS"
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

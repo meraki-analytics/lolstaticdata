@@ -1,6 +1,6 @@
 {
   "name": "Philosopher's Stone",
-  "itemID": "3096",
+  "itemID": 3096,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -52,9 +52,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "+7 health regeneration",
-    "spec2": "+9 mana regeneration"
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 700,
@@ -65,13 +63,5 @@
       "MAGIC:MANA_REGEN",
       "TOOLS:GOLD_INCOME"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

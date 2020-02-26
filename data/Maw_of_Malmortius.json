@@ -1,6 +1,6 @@
 {
   "name": "Maw of Malmortius",
-  "itemID": "3156",
+  "itemID": 3156,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -47,9 +47,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3250,
@@ -57,16 +55,8 @@
     "priceSell": 2275,
     "itemTags": [
       "DEFENSE:MAGIC_RESIST",
-      "Attack:DAMAGE",
+      "ATTACK:DAMAGE",
       "MAGIC:COOLDOWN_REDUCTION"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 import json
 import re
 from lolstaticdata.util import download_webpage
-from model2 import Stat, Shop, Item, Other, Passive, itemAttributes
+from model2 import Stat, Shop, Item, Passive, itemAttributes
 from collections import OrderedDict
 
 
@@ -109,11 +109,24 @@ class get_Items():
         try:
             if statistic in ("N/A"):
                 return 0
+
             else:
                 stat = eval(statistic)
                 return stat
         except SyntaxError:
             return 0
+
+    def itemid(self):
+        try:
+            if self.test3["code"] in ("N/A"):
+                return None
+            else:
+                stat = eval(self.test3["code"])
+                return stat
+        except SyntaxError:
+            return None
+
+
 
     def get_item_attributes(self):
         #gets all item attributes from the item tags
@@ -178,7 +191,7 @@ class get_Items():
                         if secondaryTag in ('Vision andamp;Trinkets', 'VISION AND TRINKETS', 'Vision and&; Trinkets',
                                                    'Vision & Trinkets', 'Vision'):
                             secondaryTag = "Vision and Trinkets"
-                            tag = primaryTag.name + ':' + secondaryTag
+                            tag = primaryTag.name + ':' + secondaryTag.upper()
                         else:
                             secondaryTag= secondaryTag.split(";")
                             print(secondaryTag)
@@ -188,19 +201,19 @@ class get_Items():
                             secondaryTag2 = itemAttributes.from_string(secondaryTag[1])
                             print(secondaryTag[1])
                             secondaryTag = secondaryTag1.name + "," + secondaryTag2.name
-                            tag = primaryTag.name + ":" + secondaryTag
+                            tag = primaryTag.name + ":" + secondaryTag.upper()
                     else:
                         secondaryTag = itemAttributes.from_string(secondaryTag)
                         try:
                             #there was an error with a couple primary tags not having the right tags so this fixes it
                             tag = primaryTag.name + ":" + secondaryTag.name
                         except AttributeError:
-                            tag = primaryTag + ':' + secondaryTag.name
+                            tag = primaryTag.upper() + ':' + secondaryTag.name
                     tags.append(tag)
                 else:
                     #Titanic Hydra decided to mess everything up so I needed to put something to allow a Primary tag
                     # without a secondary tag
-                    tag = primaryTag + ":None"
+                    tag = primaryTag.upper() + ":None"
                     tags.append(tag)
         return tags
 
@@ -254,7 +267,7 @@ class get_Items():
 
         self.item = Item(
             Name=self.test3["1"],
-            itemID=self.test3["code"],
+            itemID=self.itemid(),
             tier=self.test3["tier"],
             type=self.test3["type"],
             recipe=recipes,
@@ -289,22 +302,12 @@ class get_Items():
                 moveSpeed=self.prices(self.test3["ms"]),
                 moveSpeedUnique=self.prices(self.test3["msunique"]),
                 moveSpeedFlat=self.prices(self.test3["msflat"]),
-                spec = self.test3["spec"],
-                spec2 = self.test3["spec2"]
             ),
             shop=Shop(
                 priceFull=self.prices(self.test3["buy"]),
                 priceCombined=self.prices(self.test3["comb"]),
                 priceSell=self.prices(self.test3["sell"]),
                 itemTags=self.get_item_attributes()
-            ),
-            other=Other(
-                consume=self.test3["consume"],
-                consume2=self.test3["consume2"],
-                champion_item=self.test3["champion"],
-                limit=self.test3["limit"],
-                req=self.test3["req"],
-                hp=self.prices(self.test3["hp"]),
             )
 
             )

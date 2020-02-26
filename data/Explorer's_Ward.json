@@ -1,6 +1,6 @@
 {
   "name": "Explorer's Ward",
-  "itemID": "2050",
+  "itemID": 2050,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -40,9 +40,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 0,
@@ -50,15 +48,7 @@
     "priceSell": 0,
     "itemTags": [
       "TOOLS:CONSUMABLE",
-      "TOOLS:Vision and Trinkets"
+      "TOOLS:VISION AND TRINKETS"
     ]
-  },
-  "other": {
-    "consume": "Places an invisible ward that reveals the surrounding area for 60 seconds.",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

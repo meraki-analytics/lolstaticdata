@@ -1,6 +1,6 @@
 {
   "name": "Obsidian Cleaver",
-  "itemID": "3380",
+  "itemID": 3380,
   "tier": "Tier 4",
   "type": "Tier 4",
   "recipe": [],
@@ -44,26 +44,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3000,
     "priceCombined": 0,
     "priceSell": 2100,
     "itemTags": [
-      "Attack:DAMAGE",
+      "ATTACK:DAMAGE",
       "MAGIC:COOLDOWN_REDUCTION",
       "DEFENSE:HEALTH"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Can only be forged by  Ornn. Limited to one  Master Craftsman item.",
-    "req": "",
-    "hp": 0
   }
 }

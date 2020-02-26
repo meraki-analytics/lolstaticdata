@@ -1,6 +1,6 @@
 {
   "name": "Blue Pill",
-  "itemID": "",
+  "itemID": null,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -40,9 +40,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 600,
@@ -51,13 +49,5 @@
     "itemTags": [
       "TOOLS:CONSUMABLE"
     ]
-  },
-  "other": {
-    "consume": "Teleports the champion to their team's fountain.",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

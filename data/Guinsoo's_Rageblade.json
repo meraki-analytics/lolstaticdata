@@ -1,6 +1,6 @@
 {
   "name": "Guinsoo's Rageblade",
-  "itemID": "3124",
+  "itemID": 3124,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -48,26 +48,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3100,
     "priceCombined": 790,
     "priceSell": 2170,
     "itemTags": [
-      "Attack:DAMAGE",
-      "Attack:ATTACK_SPEED",
+      "ATTACK:DAMAGE",
+      "ATTACK:ATTACK_SPEED",
       "MAGIC:ABILITY_POWER"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

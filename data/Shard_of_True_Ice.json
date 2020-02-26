@@ -1,6 +1,6 @@
 {
   "name": "Shard of True Ice",
-  "itemID": "3092",
+  "itemID": 3092,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [],
@@ -48,9 +48,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 400,
@@ -62,13 +60,5 @@
       "MAGIC:ABILITY_POWER",
       "DEFENSE:HEALTH"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to 1 Jungle or Gold Income item. A player may only have 3  Stealth Wards or  Totem Wards on the map at one time.",
-    "req": "",
-    "hp": 0
   }
 }

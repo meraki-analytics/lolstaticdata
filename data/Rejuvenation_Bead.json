@@ -1,6 +1,6 @@
 {
   "name": "Rejuvenation Bead",
-  "itemID": "1006",
+  "itemID": 1006,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -44,9 +44,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 150,
@@ -55,13 +53,5 @@
     "itemTags": [
       "DEFENSE:HEALTH_REGEN"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

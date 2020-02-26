@@ -1,6 +1,6 @@
 {
   "name": "Timeworn Frostfang",
-  "itemID": "3311",
+  "itemID": 3311,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -47,9 +47,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 850,
@@ -61,13 +59,5 @@
       "MAGIC:COOLDOWN_REDUCTION",
       "MAGIC:MANA_REGEN"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to 1 Jungle or Gold Income item.",
-    "req": "",
-    "hp": 0
   }
 }

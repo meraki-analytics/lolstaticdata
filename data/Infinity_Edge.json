@@ -1,6 +1,6 @@
 {
   "name": "Infinity Edge",
-  "itemID": "3031",
+  "itemID": 3031,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -44,25 +44,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "Unique: +25%  critical damage",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3400,
     "priceCombined": 425,
     "priceSell": 2380,
     "itemTags": [
-      "Attack:DAMAGE",
-      "Attack:CRITICAL_STRIKE"
+      "ATTACK:DAMAGE",
+      "ATTACK:CRITICAL_STRIKE"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

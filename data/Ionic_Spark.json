@@ -1,6 +1,6 @@
 {
   "name": "Ionic Spark",
-  "itemID": "3178",
+  "itemID": 3178,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -47,25 +47,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2100,
     "priceCombined": 575,
     "priceSell": 1610,
     "itemTags": [
-      "Attack:ATTACK_SPEED",
+      "ATTACK:ATTACK_SPEED",
       "DEFENSE:HEALTH"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

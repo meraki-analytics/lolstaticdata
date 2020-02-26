@@ -1,6 +1,6 @@
 {
   "name": "Lightbringer",
-  "itemID": "3185",
+  "itemID": 3185,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -51,25 +51,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2350,
     "priceCombined": 350,
     "priceSell": 1645,
     "itemTags": [
-      "Attack:DAMAGE",
-      "Attack:CRITICAL_STRIKE"
+      "ATTACK:DAMAGE",
+      "ATTACK:CRITICAL_STRIKE"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

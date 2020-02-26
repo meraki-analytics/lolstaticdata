@@ -1,6 +1,6 @@
 {
   "name": "Total Biscuit of Rejuvenation",
-  "itemID": "2010",
+  "itemID": 2010,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -40,26 +40,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 50,
     "priceCombined": 0,
     "priceSell": 20,
     "itemTags": [
-      "Starter Items:JUNGLING",
-      "Starter Items:LANING",
+      "STARTER ITEMS:JUNGLING",
+      "STARTER ITEMS:LANING",
       "TOOLS:CONSUMABLE"
     ]
-  },
-  "other": {
-    "consume": "Restores 15 health and 15 mana on consumption, and regenerates 5 health every half-second for 16.5 seconds, restoring a total of 165 health.",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to 5 at one time. Limited to one type of Healing Potion.",
-    "req": "Needs 1 point in  Secret Stash",
-    "hp": 0
   }
 }

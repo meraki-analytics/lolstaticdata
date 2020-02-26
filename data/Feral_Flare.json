@@ -1,6 +1,6 @@
 {
   "name": "Feral Flare",
-  "itemID": "",
+  "itemID": null,
   "tier": "Tier 4",
   "type": "Tier 4",
   "recipe": [],
@@ -48,27 +48,17 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 0,
     "priceCombined": 0,
     "priceSell": 720,
     "itemTags": [
-      "Attack:ATTACK_SPEED",
-      "Attack:DAMAGE",
+      "ATTACK:ATTACK_SPEED",
+      "ATTACK:DAMAGE",
       "TOOLS:GOLD_INCOME",
-      "TOOLS:Vision and Trinkets"
+      "TOOLS:VISION AND TRINKETS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

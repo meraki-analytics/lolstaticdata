@@ -1,6 +1,6 @@
 {
   "name": "Stinger",
-  "itemID": "3101",
+  "itemID": 3101,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -46,25 +46,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1100,
     "priceCombined": 500,
     "priceSell": 770,
     "itemTags": [
-      "Attack:ATTACK_SPEED",
+      "ATTACK:ATTACK_SPEED",
       "MAGIC:COOLDOWN_REDUCTION"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

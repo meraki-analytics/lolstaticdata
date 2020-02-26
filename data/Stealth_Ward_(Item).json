@@ -1,6 +1,6 @@
 {
   "name": "Stealth Ward (Item)",
-  "itemID": "2044",
+  "itemID": 2044,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -44,26 +44,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 0,
     "priceCombined": 0,
     "priceSell": 0,
     "itemTags": [
-      "Starter Items:LANING",
+      "STARTER ITEMS:LANING",
       "TOOLS:CONSUMABLE",
-      "TOOLS:Vision and Trinkets"
+      "TOOLS:VISION AND TRINKETS"
     ]
-  },
-  "other": {
-    "consume": "Places an invisible ward with 1100 range.",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 3
   }
 }

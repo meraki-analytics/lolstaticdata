@@ -1,6 +1,6 @@
 {
   "name": "Staff of Flowing Water",
-  "itemID": "3744",
+  "itemID": 3744,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -47,9 +47,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1635,
@@ -59,15 +57,7 @@
       "MAGIC:ABILITY_POWER",
       "MAGIC:MANA_REGEN",
       "DEFENSE:MAGIC_RESIST",
-      "Movement:OTHER_MOVEMENT_ITEMS"
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

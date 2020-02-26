@@ -1,6 +1,6 @@
 {
   "name": "Greater Vision Totem",
-  "itemID": "3362",
+  "itemID": 3362,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [],
@@ -44,24 +44,14 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 250,
     "priceCombined": 250,
     "priceSell": 175,
     "itemTags": [
-      "TOOLS:Vision and Trinkets"
+      "TOOLS:VISION AND TRINKETS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to 1 Trinket.\nSelling a Trinket will disable Trinket use for 120 seconds.\nLimited to 1 Vision Ward on the map per player.",
-    "req": "Cannot be purchased until level 9.",
-    "hp": 0
   }
 }

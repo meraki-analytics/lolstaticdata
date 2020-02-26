@@ -1,6 +1,6 @@
 {
   "name": "Guardian's Orb",
-  "itemID": "3112",
+  "itemID": 3112,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -40,27 +40,17 @@
     "manaRegenPer5Flat": 10,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 950,
     "priceCombined": 0,
     "priceSell": 380,
     "itemTags": [
-      "Starter Items:LANING",
+      "STARTER ITEMS:LANING",
       "DEFENSE:HEALTH",
       "MAGIC:ABILITY_POWER",
       "MAGIC:MANA_REGEN"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Cannot purchase more than one Guardian's item.",
-    "req": "",
-    "hp": 0
   }
 }

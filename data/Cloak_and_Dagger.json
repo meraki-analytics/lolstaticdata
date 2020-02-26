@@ -1,6 +1,6 @@
 {
   "name": "Cloak and Dagger",
-  "itemID": "3172",
+  "itemID": 3172,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -43,25 +43,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "+35 tenacity",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1450,
     "priceCombined": 200,
     "priceSell": 1015,
     "itemTags": [
-      "Attack:ATTACK_SPEED",
-      "Attack:CRITICAL_STRIKE"
+      "ATTACK:ATTACK_SPEED",
+      "ATTACK:CRITICAL_STRIKE"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

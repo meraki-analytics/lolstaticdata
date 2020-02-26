@@ -1,6 +1,6 @@
 {
   "name": "Peering Farsight Ward",
-  "itemID": "2057",
+  "itemID": 2057,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -40,22 +40,12 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 0,
     "priceCombined": 0,
     "priceSell": 24,
     "itemTags": []
-  },
-  "other": {
-    "consume": "Reveals an area up to 2000 units away for 2 seconds. Enemy champions hit will be revealed for 5 seconds. This does not affect stealth champions. Also places a visible  Farsight Ward at the target location that lasts indefinitely.",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "Requires  Kleptomancy.",
-    "hp": 0
   }
 }

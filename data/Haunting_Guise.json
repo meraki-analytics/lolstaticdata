@@ -1,6 +1,6 @@
 {
   "name": "Haunting Guise",
-  "itemID": "3136",
+  "itemID": 3136,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -47,9 +47,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1500,
@@ -59,13 +57,5 @@
       "DEFENSE:HEALTH",
       "MAGIC:ABILITY_POWER"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

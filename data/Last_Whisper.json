@@ -1,6 +1,6 @@
 {
   "name": "Last Whisper",
-  "itemID": "3035",
+  "itemID": 3035,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -50,24 +50,14 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1450,
     "priceCombined": 750,
     "priceSell": 1015,
     "itemTags": [
-      "Attack:DAMAGE"
+      "ATTACK:DAMAGE"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

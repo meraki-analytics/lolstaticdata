@@ -1,6 +1,6 @@
 {
   "name": "Oracle's Extract",
-  "itemID": "2047",
+  "itemID": 2047,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -40,9 +40,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 300,
@@ -50,15 +48,7 @@
     "priceSell": 210,
     "itemTags": [
       "TOOLS:CONSUMABLE",
-      "TOOLS:Vision and Trinkets"
+      "TOOLS:VISION AND TRINKETS"
     ]
-  },
-  "other": {
-    "consume": "Grants  True Sight as well as the ability to detect hidden units within a 500-unit detection radius for 5 minutes. The detection will ignore terrain and brush.\n  True Sight will reveal both stealthed and invisible enemies.\n Detection highlights units and traps as a red silhouette.",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

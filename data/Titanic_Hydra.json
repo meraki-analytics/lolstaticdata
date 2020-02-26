@@ -1,6 +1,6 @@
 {
   "name": "Titanic Hydra",
-  "itemID": "3748",
+  "itemID": 3748,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -52,27 +52,17 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3500,
     "priceCombined": 575,
     "priceSell": 2450,
     "itemTags": [
-      "Attack:DAMAGE",
-      "Attack:None",
+      "ATTACK:DAMAGE",
+      "ATTACK:None",
       "DEFENSE:HEALTH",
       "DEFENSE:HEALTH_REGEN"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Can only be purchased on  melee champions.",
-    "req": "",
-    "hp": 0
   }
 }

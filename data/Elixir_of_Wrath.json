@@ -1,6 +1,6 @@
 {
   "name": "Elixir of Wrath",
-  "itemID": "2140",
+  "itemID": 2140,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -44,9 +44,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 500,
@@ -54,16 +52,8 @@
     "priceSell": 200,
     "itemTags": [
       "TOOLS:CONSUMABLE",
-      "Attack:DAMAGE",
-      "Attack:LIFE_STEAL"
+      "ATTACK:DAMAGE",
+      "ATTACK:LIFE_STEAL"
     ]
-  },
-  "other": {
-    "consume": "Grants 30 bonus attack damage and Bloodlust for 180 seconds. Can be used while dead.",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Only one elixir may be active at a time.",
-    "req": "Level 9 required to purchase.",
-    "hp": 0
   }
 }

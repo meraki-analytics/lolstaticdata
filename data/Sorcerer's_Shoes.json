@@ -1,6 +1,6 @@
 {
   "name": "Sorcerer's Shoes",
-  "itemID": "3020",
+  "itemID": 3020,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [],
@@ -44,24 +44,14 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1100,
     "priceCombined": 800,
     "priceSell": 770,
     "itemTags": [
-      "Movement:BOOTS"
+      "MOVEMENT:BOOTS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "Limited to 1 Boots item.",
-    "req": "",
-    "hp": 0
   }
 }

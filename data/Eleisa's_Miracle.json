@@ -1,6 +1,6 @@
 {
   "name": "Eleisa's Miracle",
-  "itemID": "3173",
+  "itemID": 3173,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [],
@@ -44,9 +44,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "+10 health regeneration\n+15 mana regeneration",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1100,
@@ -56,13 +54,5 @@
       "DEFENSE:HEALTH_REGEN",
       "MAGIC:MANA_REGEN"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

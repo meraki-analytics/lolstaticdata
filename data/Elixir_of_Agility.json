@@ -1,6 +1,6 @@
 {
   "name": "Elixir of Agility",
-  "itemID": "2038",
+  "itemID": 2038,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -40,9 +40,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 250,
@@ -50,16 +48,8 @@
     "priceSell": 175,
     "itemTags": [
       "TOOLS:CONSUMABLE",
-      "Attack:ATTACK_SPEED",
-      "Attack:CRITICAL_STRIKE"
+      "ATTACK:ATTACK_SPEED",
+      "ATTACK:CRITICAL_STRIKE"
     ]
-  },
-  "other": {
-    "consume": "On use, grants 12%- 22% (based on level) bonus attack speed and 8% critical strike chance for 240 seconds.",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

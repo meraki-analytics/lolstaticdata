@@ -1,6 +1,6 @@
 {
   "name": "Rite of Ruin",
-  "itemID": "3430",
+  "itemID": 3430,
   "tier": "Tier 4",
   "type": "Tier 4",
   "recipe": [
@@ -47,9 +47,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3000,
@@ -60,13 +58,5 @@
       "MAGIC:COOLDOWN_REDUCTION",
       "MAGIC:MANA_REGEN"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

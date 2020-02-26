@@ -1,6 +1,6 @@
 {
   "name": "Brawler's Gloves",
-  "itemID": "1051",
+  "itemID": 1051,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -43,24 +43,14 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 400,
     "priceCombined": 0,
     "priceSell": 280,
     "itemTags": [
-      "Attack:CRITICAL_STRIKE"
+      "ATTACK:CRITICAL_STRIKE"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

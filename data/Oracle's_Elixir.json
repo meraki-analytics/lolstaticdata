@@ -1,6 +1,6 @@
 {
   "name": "Oracle's Elixir",
-  "itemID": "2042",
+  "itemID": 2042,
   "tier": "Tier 1",
   "type": "Tier 1",
   "recipe": [],
@@ -40,9 +40,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 400,
@@ -50,15 +48,7 @@
     "priceSell": 200,
     "itemTags": [
       "TOOLS:CONSUMABLE",
-      "TOOLS:Vision and Trinkets"
+      "TOOLS:VISION AND TRINKETS"
     ]
-  },
-  "other": {
-    "consume": "Grants detection of nearby invisible units for up to 4 minutes or until death.",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

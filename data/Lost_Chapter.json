@@ -1,6 +1,6 @@
 {
   "name": "Lost Chapter",
-  "itemID": "3802",
+  "itemID": 3802,
   "tier": "Tier 2",
   "type": "Tier 2",
   "recipe": [
@@ -52,9 +52,7 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1300,
@@ -66,13 +64,5 @@
       "MAGIC:MANA_REGEN",
       "MAGIC:COOLDOWN_REDUCTION"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

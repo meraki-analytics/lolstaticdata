@@ -1,6 +1,6 @@
 {
   "name": "Bloodrazor",
-  "itemID": "",
+  "itemID": null,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [],
@@ -44,24 +44,14 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 1625,
     "priceCombined": 625,
     "priceSell": 1137,
     "itemTags": [
-      "Attack:ATTACK_SPEED"
+      "ATTACK:ATTACK_SPEED"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

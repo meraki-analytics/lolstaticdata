@@ -1,6 +1,6 @@
 {
   "name": "Statikk Shiv",
-  "itemID": "3087",
+  "itemID": 3087,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -47,26 +47,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 5,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2600,
     "priceCombined": 500,
     "priceSell": 1820,
     "itemTags": [
-      "Attack:CRITICAL_STRIKE",
-      "Attack:ATTACK_SPEED",
-      "Movement:OTHER_MOVEMENT_ITEMS"
+      "ATTACK:CRITICAL_STRIKE",
+      "ATTACK:ATTACK_SPEED",
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

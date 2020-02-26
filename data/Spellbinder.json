@@ -1,6 +1,6 @@
 {
   "name": "Spellbinder",
-  "itemID": "3907",
+  "itemID": 3907,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -51,25 +51,15 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 10,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 2900,
     "priceCombined": 800,
     "priceSell": 2030,
     "itemTags": [
-      "Movement:OTHER_MOVEMENT_ITEMS",
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS",
       "MAGIC:ABILITY_POWER"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "Nashor's Tooth",
-  "itemID": "3115",
+  "itemID": 3115,
   "tier": "Tier 3",
   "type": "Tier 3",
   "recipe": [
@@ -47,26 +47,16 @@
     "manaRegenPer5Flat": 0,
     "moveSpeed": 0,
     "moveSpeedUnique": 0,
-    "moveSpeedFlat": 0,
-    "spec": "",
-    "spec2": ""
+    "moveSpeedFlat": 0
   },
   "shop": {
     "priceFull": 3000,
     "priceCombined": 1000,
     "priceSell": 2100,
     "itemTags": [
-      "Attack:ATTACK_SPEED",
+      "ATTACK:ATTACK_SPEED",
       "MAGIC:ABILITY_POWER",
       "MAGIC:COOLDOWN_REDUCTION"
     ]
-  },
-  "other": {
-    "consume": "",
-    "consume2": "",
-    "championItem": "",
-    "limit": "",
-    "req": "",
-    "hp": 0
   }
 }
