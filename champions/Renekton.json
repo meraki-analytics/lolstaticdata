@@ -54,13 +54,8 @@
     "selectionRadius": 125,
     "pathingRadius": 50,
     "gameplayRadius": 80,
-    "criticalStrikeChance": {
-      "flat": 0.0,
-      "percent": 200,
-      "perLevel": 0.0,
-      "percentPerLevel": 0.0
-    },
-    "criticalStrikeModifier": 1.0,
+    "criticalStrikeDamage": 200,
+    "criticalStrikeDamageModifier": 1.0,
     "attackSpeed": {
       "flat": 0.665,
       "percent": 0.0,

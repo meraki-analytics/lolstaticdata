@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from collections import Counter
 
 from modelchampion import Champion, Stats, Ability, AttackType, AttributeRatings, Cooldown, Cost, Effect, Price, Resource, Modifier, Role, Leveling
-from modelcommon import DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, CriticalStrikeChance, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration
+from modelcommon import DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration
 from utils import download_webpage, parse_top_level_parentheses, grouper, to_enum_like
 
 
@@ -177,10 +177,8 @@ class LolWikiDataHandler:
                     flat=data["stats"]["range"],
                     per_level=data["stats"].get("range_lvl", 0),
                 ),
-                critical_strike_chance=CriticalStrikeChance(
-                    percent=data["stats"].get("crit_base", 200),
-                ),
-                critical_strike_modifier=data["stats"].get("crit_mod", 1.0),
+                critical_strike_damage=data["stats"].get("crit_base", 200),
+                critical_strike_damage_modifier=data["stats"].get("crit_base", 1.0),
                 movespeed=Movespeed(flat=data["stats"]["ms"]),
                 acquisition_radius=data["stats"].get("acquisition_radius", 800),
                 selection_radius=data["stats"].get("selection_radius", 100),

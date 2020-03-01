@@ -4,7 +4,7 @@ import dataclasses_json
 import json
 import stringcase
 
-from modelcommon import DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, CriticalStrikeChance, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration
+from modelcommon import DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration
 from utils import OrderedEnum, ExtendedEncoder
 
 
@@ -72,8 +72,8 @@ class Stats(object):
     selection_radius: float
     pathing_radius: float
     gameplay_radius: float
-    critical_strike_chance: CriticalStrikeChance
-    critical_strike_modifier: float
+    critical_strike_damage: float
+    critical_strike_damage_modifier: float
     attack_speed: AttackSpeed
     attack_speed_ratio: float
     attack_cast_time: float
@@ -201,7 +201,7 @@ class Champion(object):
 
     def __json__(self, *args, **kwargs):
         d = self.to_dict()
-        for name in ("health", "health_regen", "mana", "mana_regen", "armor", "magic_resistance", "attack_damage", "movespeed", "critical_strike_chance", "attack_speed", "attack_range"):
+        for name in ("health", "health_regen", "mana", "mana_regen", "armor", "magic_resistance", "attack_damage", "movespeed", "attack_speed", "attack_range"):
             stat = getattr(self.stats, name)
             if stat.flat == stat.percent == stat.unique == stat.unique_percent == stat.per_level == stat.percent_per_level == stat.percent_base == stat.percent_bonus == 0:
                 camel = stringcase.camelcase(name)
