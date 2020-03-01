@@ -11,107 +11,61 @@
     "health": {
       "flat": 610,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 108,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "healthRegen": {
       "flat": 4.5,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 1.75,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "mana": {
       "flat": 100,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
-    },
-    "manaRegen": {
-      "flat": 0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
-      "perLevel": 0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "armor": {
       "flat": 35.5,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 5.5,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "magicResistance": {
       "flat": 33.5,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 4,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "attackDamage": {
       "flat": 65,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 5.5,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "movespeed": {
       "flat": 335,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "acquisitionRadius": 600,
     "selectionRadius": 100,
     "pathingRadius": 30,
     "gameplayRadius": 65,
-    "criticalStrike": {
+    "criticalStrikeChance": {
       "flat": 0.0,
       "percent": 200,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "criticalStrikeModifier": 1.0,
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.5,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "attackSpeedRatio": 0.625,
     "attackCastTime": 0.3,
@@ -120,12 +74,8 @@
     "attackRange": {
       "flat": 175,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "aramDamageTaken": 1.0,
     "aramDamageDealt": 1.0,

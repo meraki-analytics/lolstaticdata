@@ -11,107 +11,67 @@
     "health": {
       "flat": 585,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 95,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "healthRegen": {
       "flat": 7,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.85,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "mana": {
       "flat": 450,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 60,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "manaRegen": {
       "flat": 6,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.75,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "armor": {
       "flat": 27,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 3.5,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "magicResistance": {
       "flat": 32.1,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 1.25,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "attackDamage": {
       "flat": 50,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 3,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "movespeed": {
       "flat": 330,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "acquisitionRadius": 800,
     "selectionRadius": 140,
     "pathingRadius": 40,
     "gameplayRadius": 70,
-    "criticalStrike": {
+    "criticalStrikeChance": {
       "flat": 0.0,
       "percent": 200,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "criticalStrikeModifier": 1.0,
     "attackSpeed": {
       "flat": 0.644,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 3.4,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "attackSpeedRatio": 0.643999993801116,
     "attackCastTime": 0.3,
@@ -120,12 +80,8 @@
     "attackRange": {
       "flat": 475,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "aramDamageTaken": 1.0,
     "aramDamageDealt": 1.0,
@@ -458,17 +414,11 @@
         "blurb": "In brush, Ivern's attacks are ranged and deal bonus magic damage. Ivern can activate this ability to create a patch of brush.",
         "missileSpeed": null,
         "rechargeRate": [
-          [
-            "",
-            ""
-          ],
-          [
-            40,
-            36,
-            32,
-            28,
-            24
-          ]
+          40,
+          36,
+          32,
+          28,
+          24
         ],
         "collisionRadius": null,
         "tetherRadius": null,

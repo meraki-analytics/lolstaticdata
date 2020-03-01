@@ -11,107 +11,67 @@
     "health": {
       "flat": 575,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 90,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "healthRegen": {
       "flat": 6,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.5,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "mana": {
       "flat": 300,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 60,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "manaRegen": {
       "flat": 8.5,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.8,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "armor": {
       "flat": 40,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 3.4,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "magicResistance": {
       "flat": 32.1,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 1.25,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "attackDamage": {
       "flat": 55,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 3.5,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "movespeed": {
       "flat": 340,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "acquisitionRadius": 350,
     "selectionRadius": 135,
     "pathingRadius": 35,
     "gameplayRadius": 65,
-    "criticalStrike": {
+    "criticalStrikeChance": {
       "flat": 0.0,
       "percent": 200,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "criticalStrikeModifier": 1.0,
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 2,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "attackSpeedRatio": 0.625,
     "attackCastTime": 0.3,
@@ -120,12 +80,8 @@
     "attackRange": {
       "flat": 150,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "aramDamageTaken": 1.0,
     "aramDamageDealt": 1.0,
@@ -283,17 +239,11 @@
         "blurb": "Heals nearby allied champions based on charges stored. Bravado-empowered attacks grant a charge of Starlight's Touch.",
         "missileSpeed": null,
         "rechargeRate": [
-          [
-            "",
-            ""
-          ],
-          [
-            15,
-            15,
-            15,
-            15,
-            15
-          ]
+          15,
+          15,
+          15,
+          15,
+          15
         ],
         "collisionRadius": null,
         "tetherRadius": null,

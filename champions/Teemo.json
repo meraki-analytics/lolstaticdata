@@ -11,107 +11,67 @@
     "health": {
       "flat": 528,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 90,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "healthRegen": {
       "flat": 5.5,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.65,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "mana": {
       "flat": 334,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 20,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "manaRegen": {
       "flat": 9.6,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.45,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "armor": {
       "flat": 24.3,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 3.75,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "magicResistance": {
       "flat": 30,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.5,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "attackDamage": {
       "flat": 54,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 3,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "movespeed": {
       "flat": 330,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "acquisitionRadius": 500,
     "selectionRadius": 100,
     "pathingRadius": 30,
     "gameplayRadius": 55,
-    "criticalStrike": {
+    "criticalStrikeChance": {
       "flat": 0.0,
       "percent": 200,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "criticalStrikeModifier": 1.0,
     "attackSpeed": {
       "flat": 0.69,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 3.38,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "attackSpeedRatio": 0.689999997615814,
     "attackCastTime": 0.3,
@@ -120,12 +80,8 @@
     "attackRange": {
       "flat": 500,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "aramDamageTaken": 1.05,
     "aramDamageDealt": 0.9,
@@ -831,15 +787,9 @@
         "blurb": "Teemo throws an explosive poisonous trap using one of the mushrooms stored in his pack. If an enemy steps on the trap, it will release a poisonous cloud, slowing enemies and damaging them over time. If Teemo throws a mushroom onto another mushroom it will bounce, gaining additional range.",
         "missileSpeed": null,
         "rechargeRate": [
-          [
-            "",
-            ""
-          ],
-          [
-            30,
-            25,
-            20
-          ]
+          30,
+          25,
+          20
         ],
         "collisionRadius": "75",
         "tetherRadius": null,

@@ -1,9 +1,11 @@
 from typing import List
 from dataclasses import dataclass
 import dataclasses_json
+import json
+import stringcase
 
 from modelcommon import DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, CriticalStrikeChance, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration
-from util import OrderedEnum
+from utils import OrderedEnum, ExtendedEncoder
 
 
 class ItemAttributes(OrderedEnum):
@@ -109,6 +111,13 @@ class Item(object):
     stats: Stats
     shop: Shop
 
-
-    def __json__(self):
-        return self.to_json()
+    def __json__(self, *args, **kwargs):
+        d = self.to_dict()
+        for name in ("health", "health_regen", "mana", "mana_regen", "armor", "magic_resistance", "attack_damage", "movespeed", "critical_strike_chance", "attack_speed", "ability_power", "cooldown_reduction", "gold_per_10", "heal_and_shield_power", "lifesteal", "magic_penetration"):
+            stat = getattr(self.stats, name)
+            if stat.flat == stat.percent == stat.unique == stat.unique_percent == stat.per_level == stat.percent_per_level == stat.percent_base == stat.percent_bonus == 0:
+                camel = stringcase.camelcase(name)
+                del d['stats'][camel]
+        if d['stats'].get('armor_penetration') == 0:
+            del d['stats']['armor_penetration']
+        return json.dumps(d, cls=ExtendedEncoder, *args, **kwargs)

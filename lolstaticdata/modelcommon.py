@@ -2,7 +2,7 @@ from typing import Union
 from dataclasses import dataclass
 import dataclasses_json
 
-from util import OrderedEnum
+from utils import OrderedEnum
 
 Number = Union[float, int]
 

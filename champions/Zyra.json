@@ -11,107 +11,67 @@
     "health": {
       "flat": 504,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 79,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "healthRegen": {
       "flat": 5.5,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.5,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "mana": {
       "flat": 418,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 25,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "manaRegen": {
       "flat": 13,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.4,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "armor": {
       "flat": 29,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 3,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "magicResistance": {
       "flat": 30,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.5,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "attackDamage": {
       "flat": 53.376,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 3.2,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "movespeed": {
       "flat": 340,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "acquisitionRadius": 575,
     "selectionRadius": 120,
     "pathingRadius": 35,
     "gameplayRadius": 65,
-    "criticalStrike": {
+    "criticalStrikeChance": {
       "flat": 0.0,
       "percent": 200,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "criticalStrikeModifier": 1.0,
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 2.11,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "attackSpeedRatio": 0.625,
     "attackCastTime": 0.3,
@@ -120,12 +80,8 @@
     "attackRange": {
       "flat": 575,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
+      "percentPerLevel": 0.0
     },
     "aramDamageTaken": 1.06,
     "aramDamageDealt": 0.94,
@@ -390,17 +346,11 @@
         "blurb": "Zyra plants a seed, lasting up to 60 seconds. Deadly Spines and Grasping Roots cast near seeds will turn them into plants who fight for Zyra. Additionally, Rampant Growth passively grants her plants improved maximum Health.",
         "missileSpeed": null,
         "rechargeRate": [
-          [
-            "",
-            ""
-          ],
-          [
-            20,
-            18,
-            16,
-            14,
-            12
-          ]
+          20,
+          18,
+          16,
+          14,
+          12
         ],
         "collisionRadius": null,
         "tetherRadius": null,

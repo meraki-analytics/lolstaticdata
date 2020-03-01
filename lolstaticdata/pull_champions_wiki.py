@@ -7,7 +7,7 @@ from collections import Counter
 
 from modelchampion import Champion, Stats, Ability, AttackType, AttributeRatings, Cooldown, Cost, Effect, Price, Resource, Modifier, Role, Leveling
 from modelcommon import DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, CriticalStrikeChance, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration
-from util import download_webpage, parse_top_level_parentheses, grouper, to_enum_like
+from utils import download_webpage, parse_top_level_parentheses, grouper, to_enum_like
 
 
 class UnparsableLeveling(Exception):
@@ -177,7 +177,7 @@ class LolWikiDataHandler:
                     flat=data["stats"]["range"],
                     per_level=data["stats"].get("range_lvl", 0),
                 ),
-                critical_strike=CriticalStrikeChance(
+                critical_strike_chance=CriticalStrikeChance(
                     percent=data["stats"].get("crit_base", 200),
                 ),
                 critical_strike_modifier=data["stats"].get("crit_mod", 1.0),
@@ -339,7 +339,7 @@ class LolWikiDataHandler:
 
             recharge_rate = data.get("recharge")
             if recharge_rate:
-                recharge_rate = ParsingAndRegex.regex_simple_flat(recharge_rate, nvalues)
+                _, recharge_rate = ParsingAndRegex.regex_simple_flat(recharge_rate, nvalues)  # ignore units
 
             effects = []
             for ending in ['', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']:
@@ -581,12 +581,12 @@ def main():
         champions.append(champion)
         jsonfn = directory + f"/../champions/{champion.key}.json"
         with open(jsonfn, 'w') as f:
-            f.write(champion.to_json(indent=2))
+            f.write(champion.__json__(indent=2))
 
     jsonfn = directory + f"/../champions.json"
     jsons = {}
     for champion in champions:
-        jsons[champion.key] = json.loads(champion.to_json())
+        jsons[champion.key] = json.loads(champion.__json__())
     with open(jsonfn, 'w') as f:
         json.dump(jsons, f, indent=2)
     del jsons

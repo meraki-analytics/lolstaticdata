@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import os
 import json
 import re
-from lolstaticdata.util import download_webpage
+from lolstaticdata.utils import download_webpage
 from collections import OrderedDict
 
 from modelitem import Stats, Shop, Item, Passive, Active, Aura, ItemAttributes
@@ -14,7 +14,6 @@ from modelcommon import DamageType, Health, HealthRegen, Mana, ManaRegen, Armor,
 class ItemParser:
     @classmethod
     def parse_passives(cls, item_data: dict) -> List[Passive]:
-        print("PASSIVES")
         effects = []
         for i in range(1, 6):
             passive = "pass" + str(i)
@@ -28,7 +27,6 @@ class ItemParser:
 
     @classmethod
     def parse_auras(cls, item_data: dict) -> List[Aura]:
-        print("AURAS")
         effects = []
         for i in range(1, 4):
             passive = "aura" + str(i)
@@ -43,7 +41,6 @@ class ItemParser:
 
     @classmethod
     def parse_actives(cls, item_data: dict) -> List[Active]:
-        print("ACTIVES")
         effects = []
         passive = item_data["act"].strip()
         if passive:
@@ -54,7 +51,6 @@ class ItemParser:
 
     @staticmethod
     def _parse_passive(passive: str) -> Passive:
-        print(f"Parsing passive: {passive}")
         if passive.startswith("Unique"):
             unique = True
             passive = passive[len("Unique"):].strip()
@@ -91,7 +87,6 @@ class ItemParser:
                 name=name,
                 effects=passive.strip()
             )
-        print(effect)
         return effect
 
     @staticmethod
@@ -328,13 +323,13 @@ def main():
     item_urls = get_item_urls(use_cache)
     jsons = {}
     for url in item_urls:
-        print(url)
         item = ItemParser.download(url)
         if item.id is not None:
             jsonfn = directory + f"/../items/{item.id}.json"
             with open(jsonfn, 'w') as f:
-                f.write(item.to_json(indent=2))
-            jsons[item.id] = json.loads(item.to_json())
+                f.write(item.__json__(indent=2))
+            jsons[item.id] = json.loads(item.__json__())
+            print(item.id, url)
 
     jsonfn = directory + "/../items.json"
     with open(jsonfn, 'w') as f:

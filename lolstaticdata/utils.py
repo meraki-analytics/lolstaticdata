@@ -1,10 +1,15 @@
-from typing import Type
+from typing import Type, Collection, Mapping, Union
 import os
 import json
 import requests
 import itertools
 from bs4 import BeautifulSoup
 from enum import Enum
+from datetime import datetime
+from uuid import UUID
+from decimal import Decimal
+
+Json = Union[dict, list, str, int, float, bool, None]
 
 
 def to_enum_like(string: str) -> str:
@@ -39,6 +44,38 @@ class OrderedEnum(Enum):
         if self.__class__ is other.__class__:
             return self.value < other.value
         return NotImplemented
+
+
+# From dataclasses_json -> utils.py
+def _isinstance_safe(o, t):
+    try:
+        result = isinstance(o, t)
+    except Exception:
+        return False
+    else:
+        return result
+
+
+# From dataclasses_json -> core.py
+class ExtendedEncoder(json.JSONEncoder):
+    def default(self, o) -> Json:
+        result: Json
+        if _isinstance_safe(o, Collection):
+            if _isinstance_safe(o, Mapping):
+                result = dict(o)
+            else:
+                result = list(o)
+        elif _isinstance_safe(o, datetime):
+            result = o.timestamp()
+        elif _isinstance_safe(o, UUID):
+            result = str(o)
+        elif _isinstance_safe(o, Enum):
+            result = o.value
+        elif _isinstance_safe(o, Decimal):
+            result = str(o)
+        else:
+            result = json.JSONEncoder.default(self, o)
+        return result
 
 
 def grouper(iterable, n, fillvalue=None):

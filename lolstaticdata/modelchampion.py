@@ -1,9 +1,11 @@
 from typing import Mapping, List, Union
 from dataclasses import dataclass
 import dataclasses_json
+import json
+import stringcase
 
 from modelcommon import DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, CriticalStrikeChance, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration
-from util import OrderedEnum
+from utils import OrderedEnum, ExtendedEncoder
 
 
 class Resource(OrderedEnum):
@@ -70,7 +72,7 @@ class Stats(object):
     selection_radius: float
     pathing_radius: float
     gameplay_radius: float
-    critical_strike: CriticalStrikeChance
+    critical_strike_chance: CriticalStrikeChance
     critical_strike_modifier: float
     attack_speed: AttackSpeed
     attack_speed_ratio: float
@@ -197,5 +199,19 @@ class Champion(object):
     patch_last_changed: str
     price: Price
 
-    def __json__(self):
-        return self.to_json()
+    def __json__(self, *args, **kwargs):
+        d = self.to_dict()
+        for name in ("health", "health_regen", "mana", "mana_regen", "armor", "magic_resistance", "attack_damage", "movespeed", "critical_strike_chance", "attack_speed", "attack_range"):
+            stat = getattr(self.stats, name)
+            if stat.flat == stat.percent == stat.unique == stat.unique_percent == stat.per_level == stat.percent_per_level == stat.percent_base == stat.percent_bonus == 0:
+                camel = stringcase.camelcase(name)
+                del d['stats'][camel]
+
+        for name, stat in d['stats'].items():
+            if isinstance(stat, dict):
+                del stat['unique']
+                del stat['uniquePercent']
+                del stat['percentBase']
+                del stat['percentBonus']
+
+        return json.dumps(d, cls=ExtendedEncoder, *args, **kwargs)
