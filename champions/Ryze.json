@@ -1,0 +1,1390 @@
+{
+  "id": 13,
+  "key": "Ryze",
+  "name": "Ryze",
+  "title": "the Rune Mage",
+  "fullName": "",
+  "resource": "MANA",
+  "attackType": "RANGED",
+  "adaptiveType": "MAGIC_DAMAGE",
+  "stats": {
+    "health": {
+      "flat": 570.48,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 98,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 8,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.8,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 300,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 50,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 8,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.8,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "armor": {
+      "flat": 21.552,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 3,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 34,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.5,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackDamage": {
+      "flat": 55.04,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 3,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "movespeed": {
+      "flat": 340,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "acquisitionRadius": 575,
+    "selectionRadius": 120,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrike": {
+      "flat": 0.0,
+      "percent": 200,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "criticalStrikeModifier": 1.0,
+    "attackSpeed": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 2.112,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackSpeedRatio": 0.625,
+    "attackCastTime": 0.3,
+    "attackTotalTime": 1.6,
+    "attackDelayOffset": -0.100000001490116,
+    "attackRange": {
+      "flat": 550,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "aramDamageTaken": 0.95,
+    "aramDamageDealt": 1.05,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 0.9,
+    "urfDamageDealt": 1.02,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "BATTLEMAGE",
+    "FIGHTER",
+    "MAGE"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 1,
+    "control": 2,
+    "mobility": 2,
+    "utility": 2,
+    "abilityReliance": 100,
+    "attack": 2,
+    "defense": 2,
+    "magic": 10,
+    "difficulty": 2
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Arcane Mastery",
+        "effects": [
+          {
+            "description": "Innate: Ryze gains (5% per 100 AP)  bonus mana.",
+            "icon": "Arcane Mastery.png",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Arcane Mastery stacks recursively with  Seraph's Embrace and multiplicatively with other sources of % ability power. Examples on how they calculate below:\n Case 1: With  Rabadon's Deathcap you get a total of (40% AP) bonus ability power and ((7% AP)% mana)) bonus mana.\n Case 2: With  Seraph's Embrace you get a total of ((3 + 0.15% AP)% mana) \u00f7 (1 - 0.0015% mana) bonus ability power and ((0.15% mana + 5% AP)% mana) \u00f7 (1 - 0.0015% mana) bonus mana.\n Case 3: With  Rabadon's Deathcap +  Seraph's Embrace you get a total of ((4.2 + 0.21% AP)% mana) \u00f7 (1 - 0.0021% mana) bonus ability power and ((0.21% mana + 7% AP)% mana) \u00f7 (1 - 0.0021% mana) bonus mana.",
+        "blurb": "Ryze's spells deal extra damage based on his Bonus Mana, and he gains a percentage increase to his maximum Mana based on his Ability Power.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Overload",
+        "effects": [
+          {
+            "description": "Passive: Ryze's other basic abilities reset  Overload's cooldown and charge a  Rune for 4 seconds, up to 2.",
+            "icon": "Overload 5.png",
+            "leveling": []
+          },
+          {
+            "description": "Active: Ryze unleashes a runic blast in the target direction, dealing  magic damage to the first enemy struck and consuming all of his  Runes.",
+            "icon": "Overload.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      65,
+                      90,
+                      115,
+                      140,
+                      165
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      45,
+                      45,
+                      45,
+                      45,
+                      45
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  },
+                  {
+                    "values": [
+                      3,
+                      3,
+                      3,
+                      3,
+                      3
+                    ],
+                    "units": [
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If Ryze consumes 2 Runes, he gains  bonus movement speed for 2 seconds.",
+            "icon": "Overload 4.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      25,
+                      30,
+                      35,
+                      40
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Flux: Overload deals 10 / 40 / 70 / 100% (based on  Realm Warp's rank) increased damage, and spreads to all nearby enemies marked with Flux.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                6,
+                6,
+                6,
+                6,
+                6
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction / Auto",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "Special",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Applies  spell damage to the primary target and  area damage to secondary targets affected by  Flux.",
+        "blurb": "Passively, Ryze's other damaging spells reset Overload and begin to charge a Rune that can be used to empower Overload. On cast, Ryze throws a charge of pure energy in a line, dealing damage to the first enemy struck. If a Rune is fully charged, Ryze also gains Movement Speed.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "1000"
+      },
+      {
+        "name": "Overload",
+        "effects": [
+          {
+            "description": "Passive: Ryze's other basic abilities reset  Overload's cooldown and charge a  Rune for 4 seconds, up to 2.",
+            "icon": "Overload 5.png",
+            "leveling": []
+          },
+          {
+            "description": "Active: Ryze unleashes a runic blast in the target direction, dealing  magic damage to the first enemy struck and consuming all of his  Runes.",
+            "icon": "Overload.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      65,
+                      90,
+                      115,
+                      140,
+                      165
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      45,
+                      45,
+                      45,
+                      45,
+                      45
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  },
+                  {
+                    "values": [
+                      3,
+                      3,
+                      3,
+                      3,
+                      3
+                    ],
+                    "units": [
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If Ryze consumes 2 Runes, he gains  bonus movement speed for 2 seconds.",
+            "icon": "Overload 4.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      25,
+                      30,
+                      35,
+                      40
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Flux: Overload deals 10 / 40 / 70 / 100% (based on  Realm Warp's rank) increased damage, and spreads to all nearby enemies marked with Flux.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                6,
+                6,
+                6,
+                6,
+                6
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction / Auto",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "Special",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Applies  spell damage to the primary target and  area damage to secondary targets affected by  Flux.",
+        "blurb": "Passively, Ryze's other damaging spells reset Overload and begin to charge a Rune that can be used to empower Overload. On cast, Ryze throws a charge of pure energy in a line, dealing damage to the first enemy struck. If a Rune is fully charged, Ryze also gains Movement Speed.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "1000"
+      },
+      {
+        "name": "Overload",
+        "effects": [
+          {
+            "description": "Passive: Ryze's other basic abilities reset  Overload's cooldown and charge a  Rune for 4 seconds, up to 2.",
+            "icon": "Overload 5.png",
+            "leveling": []
+          },
+          {
+            "description": "Active: Ryze unleashes a runic blast in the target direction, dealing  magic damage to the first enemy struck and consuming all of his  Runes.",
+            "icon": "Overload.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      65,
+                      90,
+                      115,
+                      140,
+                      165
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      45,
+                      45,
+                      45,
+                      45,
+                      45
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  },
+                  {
+                    "values": [
+                      3,
+                      3,
+                      3,
+                      3,
+                      3
+                    ],
+                    "units": [
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If Ryze consumes 2 Runes, he gains  bonus movement speed for 2 seconds.",
+            "icon": "Overload 4.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      25,
+                      30,
+                      35,
+                      40
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Flux: Overload deals 10 / 40 / 70 / 100% (based on  Realm Warp's rank) increased damage, and spreads to all nearby enemies marked with Flux.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                6,
+                6,
+                6,
+                6,
+                6
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction / Auto",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "Special",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Applies  spell damage to the primary target and  area damage to secondary targets affected by  Flux.",
+        "blurb": "Passively, Ryze's other damaging spells reset Overload and begin to charge a Rune that can be used to empower Overload. On cast, Ryze throws a charge of pure energy in a line, dealing damage to the first enemy struck. If a Rune is fully charged, Ryze also gains Movement Speed.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "1000"
+      },
+      {
+        "name": "Overload",
+        "effects": [
+          {
+            "description": "Passive: Ryze's other basic abilities reset  Overload's cooldown and charge a  Rune for 4 seconds, up to 2.",
+            "icon": "Overload 5.png",
+            "leveling": []
+          },
+          {
+            "description": "Active: Ryze unleashes a runic blast in the target direction, dealing  magic damage to the first enemy struck and consuming all of his  Runes.",
+            "icon": "Overload.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      65,
+                      90,
+                      115,
+                      140,
+                      165
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      45,
+                      45,
+                      45,
+                      45,
+                      45
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  },
+                  {
+                    "values": [
+                      3,
+                      3,
+                      3,
+                      3,
+                      3
+                    ],
+                    "units": [
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If Ryze consumes 2 Runes, he gains  bonus movement speed for 2 seconds.",
+            "icon": "Overload 4.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      25,
+                      30,
+                      35,
+                      40
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Flux: Overload deals 10 / 40 / 70 / 100% (based on  Realm Warp's rank) increased damage, and spreads to all nearby enemies marked with Flux.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                6,
+                6,
+                6,
+                6,
+                6
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction / Auto",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "Special",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Applies  spell damage to the primary target and  area damage to secondary targets affected by  Flux.",
+        "blurb": "Passively, Ryze's other damaging spells reset Overload and begin to charge a Rune that can be used to empower Overload. On cast, Ryze throws a charge of pure energy in a line, dealing damage to the first enemy struck. If a Rune is fully charged, Ryze also gains Movement Speed.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "1000"
+      },
+      {
+        "name": "Overload",
+        "effects": [
+          {
+            "description": "Passive: Ryze's other basic abilities reset  Overload's cooldown and charge a  Rune for 4 seconds, up to 2.",
+            "icon": "Overload 5.png",
+            "leveling": []
+          },
+          {
+            "description": "Active: Ryze unleashes a runic blast in the target direction, dealing  magic damage to the first enemy struck and consuming all of his  Runes.",
+            "icon": "Overload.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      65,
+                      90,
+                      115,
+                      140,
+                      165
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      45,
+                      45,
+                      45,
+                      45,
+                      45
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  },
+                  {
+                    "values": [
+                      3,
+                      3,
+                      3,
+                      3,
+                      3
+                    ],
+                    "units": [
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If Ryze consumes 2 Runes, he gains  bonus movement speed for 2 seconds.",
+            "icon": "Overload 4.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      25,
+                      30,
+                      35,
+                      40
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Flux: Overload deals 10 / 40 / 70 / 100% (based on  Realm Warp's rank) increased damage, and spreads to all nearby enemies marked with Flux.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                6,
+                6,
+                6,
+                6,
+                6
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction / Auto",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "Special",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Applies  spell damage to the primary target and  area damage to secondary targets affected by  Flux.",
+        "blurb": "Passively, Ryze's other damaging spells reset Overload and begin to charge a Rune that can be used to empower Overload. On cast, Ryze throws a charge of pure energy in a line, dealing damage to the first enemy struck. If a Rune is fully charged, Ryze also gains Movement Speed.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "1000"
+      }
+    ],
+    "W": [
+      {
+        "name": "Rune Prison",
+        "effects": [
+          {
+            "description": "Active: Ryze instantly deals magic damage and  slows the target enemy by 35% for 1.5 seconds.",
+            "icon": "Rune Prison.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      80,
+                      100,
+                      120,
+                      140,
+                      160
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  },
+                  {
+                    "values": [
+                      4,
+                      4,
+                      4,
+                      4,
+                      4
+                    ],
+                    "units": [
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Flux: Rune Prison's  slow is converted to a  root for the same duration.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                40,
+                55,
+                70,
+                85,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                13,
+                12,
+                11,
+                10,
+                9
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "Single target",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": "Ryze traps a target enemy unit in a cage of runes, damaging them and preventing them from moving.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "615"
+      }
+    ],
+    "E": [
+      {
+        "name": "Spell Flux",
+        "effects": [
+          {
+            "description": "Active: Ryze hurls an orb of runic energy at the target enemy, dealing magic damage to his target and marking them and nearby enemies with Flux for 3 seconds, causing his next basic ability against them to consume the mark and gain bonus effects.",
+            "icon": "Spell Flux.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      80,
+                      100,
+                      120,
+                      140
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      30,
+                      30,
+                      30,
+                      30,
+                      30
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  },
+                  {
+                    "values": [
+                      2,
+                      2,
+                      2,
+                      2,
+                      2
+                    ],
+                    "units": [
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana",
+                      "% bonus mana"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Flux: Spell Flux spreads further.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                40,
+                55,
+                70,
+                85,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                3.25,
+                3,
+                2.75,
+                2.5,
+                2.25
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit / Auto",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Spell Flux's second cast on a target will apply a new Flux debuff as well as triggering the previous one (effectively refreshing the duration).",
+        "blurb": "Ryze releases an orb of pure magical power that damages an enemy and debuffs them. Ryze's spells have additional effects against the debuffed enemy.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "350",
+        "targetRange": "615"
+      }
+    ],
+    "R": [
+      {
+        "name": "Realm Warp",
+        "effects": [
+          {
+            "description": "Passive: Increases  Overload's damage against targets marked with  Spell Flux.",
+            "icon": "Realm Warp.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Overload Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      70,
+                      100
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Active: Ryze opens a portal on the ground at his current location and begins channeling. If Ryze successfully channels for 2 seconds, all allied units within the portal  blink to the target location and very briefly become  untargetable. Realm Warp can affect untargetable allies.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                210,
+                180,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Allies",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Realm Warp casts at maximum range if attempting to cast beyond it.\n Realm Warp will try to predict whether an ally is trying to run out of it or not and will not teleport allies that are very near the edge and move click outside of it.\n  Untargetable effect lasts approximately 0.75 seconds.\n Teleported units retain the same relative positions to one another upon arrival.\n Ryze will not teleport if he exits the area, but the teleport will still occur for other allies so long as he isn't interrupted.\n  Ground will both prevent Ryze from activating, as well as prevent units from being teleported, but will not interrupt the channel.\n Allied  stasis effects will not interrupt Realm Warp's channel - excluding  Zhonya's Hourglass and  Stopwatch - like the passive of  Guardian Angel or an allied  Bard's  Tempered Fate. Other allies untargetable by similar effects will also be teleported.\n A hostile  Bard's  Tempered Fate will interrupt the channel.\n\n Realm Warp's interaction with (primarely  channelled) abilities seems to be case-by-case:\n The following will prevent the caster from being teleported:  Teleport,  Recall,  Ace in the Hole,  Curtain Call,  Umbral Trespass*,  Bullet Time,  Grand Starfall and  Rite of the Arcane.\n The following do not prevent you getting teleported and are not interrupted:  Crowstorm*,  Requiem,  Absolute Zero,  Decimating Smash and  Unstoppable Onslaught.\n These lists are not complete.\n\n Ryze can teleport  Zac during his  Cell Division, moving both his bloblets as well as the point where they are attempting to converge.\n If no  champions but one or more  minions are teleported, Realm Warp will not teleport the minion closest to its center, and furthermore shuffle the positions of the other teleported minions.\n If a champion is present, the innermost minion is teleported on top the outermost champion's new position, and the remaining minions are teleported to their proper intended positions.",
+        "blurb": "Ryze creates a portal to a nearby location. After a few seconds, allies standing near the portal are teleported to the target location.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "475",
+        "targetRange": "1000 / 3000"
+      }
+    ]
+  },
+  "releaseDate": "2009-02-21",
+  "releasePatch": "lpha Week 2",
+  "patchLastChanged": "9.24",
+  "price": {
+    "blueEssence": 450,
+    "rp": 260
+  }
+}

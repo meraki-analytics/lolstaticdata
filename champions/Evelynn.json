@@ -1,0 +1,1049 @@
+{
+  "id": 28,
+  "key": "Evelynn",
+  "name": "Evelynn",
+  "title": "Agony's Embrace",
+  "fullName": "",
+  "resource": "MANA",
+  "attackType": "MELEE",
+  "adaptiveType": "MAGIC_DAMAGE",
+  "stats": {
+    "health": {
+      "flat": 572,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 84,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 8.5,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.75,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 315.6,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 42,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 8.108,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.6,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "armor": {
+      "flat": 37,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 3.5,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 32.1,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 1.25,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackDamage": {
+      "flat": 61,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 3,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "movespeed": {
+      "flat": 335,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "acquisitionRadius": 400,
+    "selectionRadius": 120,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrike": {
+      "flat": 0.0,
+      "percent": 200,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "criticalStrikeModifier": 1.0,
+    "attackSpeed": {
+      "flat": 0.667,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 2.1,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackSpeedRatio": 0.666999995708465,
+    "attackCastTime": 0.230000004172325,
+    "attackTotalTime": 1.5,
+    "attackDelayOffset": 0,
+    "attackRange": {
+      "flat": 125,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "aramDamageTaken": 0.85,
+    "aramDamageDealt": 1.15,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 1.0,
+    "urfDamageDealt": 1.2,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "ASSASSIN",
+    "MAGE"
+  ],
+  "attributeRatings": {
+    "damage": 2,
+    "toughness": 2,
+    "control": 1,
+    "mobility": 2,
+    "utility": 2,
+    "abilityReliance": 75,
+    "attack": 4,
+    "defense": 2,
+    "magic": 7,
+    "difficulty": 2
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Demon Shade",
+        "effects": [
+          {
+            "description": "Innate: Evelynn gains Demon Shade after not basic attacking or casting an ability for 4 seconds. Taking damage from enemy champions or turrets puts Demon Shade on a 1.5 second static cooldown.",
+            "icon": "Demon Shade.png",
+            "leveling": []
+          },
+          {
+            "description": "Demon Shade: While below  250 \u2212 590 (based on level) (+ 250% AP) health, Evelynn  restores  15 \u2212 75 (based on level) health every second. From level 6 onward, Demon Shade also grants  camouflage.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": "Heal",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Whenever Demon Shade activates, a puff of purple smoke will briefly appear around her.\n She will be spotted by an enemy she has no vision of but Demon Shade's stealth will not break.\n\n\n    Evelynn being  revealed in Demon Shade (post 6).",
+        "blurb": "When out of combat, Evelynn enters Demon Shade. Demon Shade heals Evelynn when she is low on health and grants Camouflage after level 6.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "700",
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Hate Spike",
+        "effects": [
+          {
+            "description": "Active: Evelynn launches a dart in the target direction, dealing  magic damage to the first enemy hit. Hitting a  monster refunds  50% of the cooldown.",
+            "icon": "Hate Spike.png",
+            "leveling": [
+              {
+                "attribute": "Dart Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      25,
+                      30,
+                      35,
+                      40,
+                      45
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      30,
+                      30,
+                      30,
+                      30,
+                      30
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "For the next 4 seconds, the enemy hit takes bonus magic damage from her next 3 basic attacks and abilities.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Bonus Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      10,
+                      20,
+                      30,
+                      40,
+                      50
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      25,
+                      25,
+                      25,
+                      25,
+                      25
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Bonus Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      60,
+                      90,
+                      120,
+                      150
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      75,
+                      75,
+                      75,
+                      75,
+                      75
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Hate Spike may be re-activated up to 3 times at no cost until the ability comes off cooldown.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Recast: Evelynn unleashes a line of spikes in the direction of her attack target, dealing magic damage to all enemies struck. Hate Spike will first prioritize Evelynn's attack target, then the nearest enemy champion.",
+            "icon": "Hate Spike 2.png",
+            "leveling": [
+              {
+                "attribute": "Spike Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      25,
+                      30,
+                      35,
+                      40,
+                      45
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      30,
+                      30,
+                      30,
+                      30,
+                      30
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      75,
+                      90,
+                      105,
+                      120,
+                      135
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      90,
+                      90,
+                      90,
+                      90,
+                      90
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      130,
+                      180,
+                      230,
+                      280,
+                      330
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      195,
+                      195,
+                      195,
+                      195,
+                      195
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                40,
+                45,
+                50,
+                55,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                8,
+                8,
+                8,
+                8,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction / Auto",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "Special",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Hate Spike prioritizes:\n The last champion Evelynn hit\n The last non-champion Evelynn hit\n The lowest-health champion\n The lowest-health non-champion\n\n The dart applies  spell damage and the spikes deal  area damage.\n Recasts can be buffered up to 0.5 seconds before becoming castable.\n Evelynn has a minimum of 4 seconds to use the second casts regardless of the ability's cooldown, which is mainly only applicable versus monsters, on  Ultra Rapid Fire and in Practice Tool.\n In  URF game mode, the spikes can be reactivated 10 times instead.",
+        "blurb": "Evelynn strikes out with her Lasher, dealing damage to the first unit hit. Then, Evelynn can shoot a line of spikes at nearby foes up to 3 times.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "800"
+      }
+    ],
+    "W": [
+      {
+        "name": "Allure",
+        "effects": [
+          {
+            "description": "Active: Evelynn curses the target champion or monster for 5 seconds.",
+            "icon": "Allure.png",
+            "leveling": []
+          },
+          {
+            "description": "Evelynn's next basic attack or ability against the accursed expunges them,  slowing them by 65%.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Disable Duration",
+                "modifiers": [
+                  {
+                    "values": [
+                      1,
+                      1.25,
+                      1.5,
+                      1.75,
+                      2
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Monster Duration",
+                "modifiers": [
+                  {
+                    "values": [
+                      3,
+                      3.25,
+                      3.5,
+                      3.75,
+                      4
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Expunging a target will refund Allure's  mana cost. If the target is cursed for at least 2.5 seconds she also  charms them, as well as applying additional effects based on the target type.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Against  champions, the expunge also reduces their magic resistance for 4 seconds.Against  monsters, the expunge deals bonus magic damage and the  charm lasts for 2 more seconds.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Magic Resistance Reduction",
+                "modifiers": [
+                  {
+                    "values": [
+                      25,
+                      27.5,
+                      30,
+                      32.5,
+                      35
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Bonus Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      250,
+                      300,
+                      350,
+                      400,
+                      450
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                60,
+                70,
+                80,
+                90,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                15,
+                14,
+                13,
+                12,
+                11
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "Special",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "Single target",
+        "projectile": "FALSE",
+        "onHitEffects": null,
+        "occurrence": "On-hit",
+        "notes": "Allure does not break Demon Shade's  stealth.\n An enemy champion affected by Allure is alerted by her presence and after 2.5 seconds, an arrow will appear near them pointing towards Evelynn's current position (regardless of distance).\n The  magic resistance shred will be applied to the attack or ability that triggers it.\n Allure's initial cast on a target cannot be resisted by  spell shields.",
+        "blurb": "Evelynn curses her target, causing her next attack or spell after a delay to charm her target and reduce their magic resist.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "1200 / 1300 / 1400 / 1500 / 1600"
+      }
+    ],
+    "E": [
+      {
+        "name": "Whiplash",
+        "effects": [
+          {
+            "description": "Active: Evelynn whips the target enemy with her lashers, applying on-hit effects and dealing magic damage.",
+            "icon": "Whiplash.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      55,
+                      70,
+                      85,
+                      100,
+                      115
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      3,
+                      3,
+                      3,
+                      3,
+                      3
+                    ],
+                    "units": [
+                      "% (+ 1.5% per 100 AP) of target's maximum health",
+                      "% (+ 1.5% per 100 AP) of target's maximum health",
+                      "% (+ 1.5% per 100 AP) of target's maximum health",
+                      "% (+ 1.5% per 100 AP) of target's maximum health",
+                      "% (+ 1.5% per 100 AP) of target's maximum health"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Evelynn also gains  30% bonus movement speed for 2 seconds.",
+            "icon": "Whiplash 2.png",
+            "leveling": []
+          },
+          {
+            "description": "Gaining  Demon Shade resets Whiplash's  cooldown and  empowers the next cast.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                40,
+                45,
+                50,
+                55,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                8,
+                8,
+                8,
+                8,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "Spell",
+        "projectile": "FALSE",
+        "onHitEffects": "True",
+        "occurrence": null,
+        "notes": "Whiplash can be  dodged and  blocked but may not  miss.",
+        "blurb": "Evelynn whips her target with her Lasher, dealing damage. She then gains movement speed for a short duration.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "210"
+      },
+      {
+        "name": "Empowered Whiplash",
+        "effects": [
+          {
+            "description": "Active: Evelynn  dashes toward the target enemy, dealing increased damage as well as damaging all enemies she passes through. On-hit effects are only applied to her target.",
+            "icon": "Empowered Whiplash.png",
+            "leveling": [
+              {
+                "attribute": "Empowered Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      75,
+                      100,
+                      125,
+                      150,
+                      175
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      4,
+                      4,
+                      4,
+                      4,
+                      4
+                    ],
+                    "units": [
+                      "% (+ 2.5% per 100 AP) of target's maximum health",
+                      "% (+ 2.5% per 100 AP) of target's maximum health",
+                      "% (+ 2.5% per 100 AP) of target's maximum health",
+                      "% (+ 2.5% per 100 AP) of target's maximum health",
+                      "% (+ 2.5% per 100 AP) of target's maximum health"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "The percentile health damage deals a minimum of 25 and is capped at 450 against  monsters.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": "Special",
+        "occurrence": null,
+        "notes": "There is no time-out period on Empowered Whiplash.\n Empowered Whiplash can be  blocked but may not  miss or be  dodged.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "R": [
+      {
+        "name": "Last Caress",
+        "effects": [
+          {
+            "description": "Active: Evelynn becomes  untargetable as she reveals her true form to all enemies in front of her, before  blinking back 700 units.",
+            "icon": "Last Caress.png",
+            "leveling": []
+          },
+          {
+            "description": "Enemies caught in her reveal are devastated, taking magic damage, with enemies below  30% of their maximum health receiving 140% bonus damage.",
+            "icon": "Last Caress 2.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      125,
+                      250,
+                      375
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      75,
+                      75,
+                      75
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Empowered Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      300,
+                      600,
+                      900
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      180,
+                      180,
+                      180
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                140,
+                110,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies / Self",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "Area of effect",
+        "projectile": "FALSE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Last Caress can be buffered during  Empowered Whiplash.\n The casting input controls the direction the damage is dealt, with the movement automatically happening in the reverse direction. This is comparable to  90 Caliber Net.\n Enemy  champions below the maximum health threshold are marked for Evelynn, indicating the bonus damage opportunity.\n\n    As shown in-game.",
+        "blurb": "Evelynn briefly goes untargetable and decimates the area in front of her before warping backwards a long distance.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": "180\u00b0",
+        "castTime": null,
+        "effectRadius": "500",
+        "targetRange": null
+      }
+    ]
+  },
+  "releaseDate": "2009-05-01",
+  "releasePatch": "ay 1, 2009 Patch",
+  "patchLastChanged": "9.24b",
+  "price": {
+    "blueEssence": 1350,
+    "rp": 585
+  }
+}

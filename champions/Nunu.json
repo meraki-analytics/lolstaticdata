@@ -1,0 +1,1228 @@
+{
+  "id": 20,
+  "key": "Nunu",
+  "name": "Nunu & Willump",
+  "title": "the Boy and His Yeti",
+  "fullName": "Nunu & Willump",
+  "resource": "MANA",
+  "attackType": "MELEE",
+  "adaptiveType": "MAGIC_DAMAGE",
+  "stats": {
+    "health": {
+      "flat": 570,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 82,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 5,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.8,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 280,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 42,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 7,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.5,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "armor": {
+      "flat": 32,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 3,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 32.1,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 1.25,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackDamage": {
+      "flat": 61,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 3,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "movespeed": {
+      "flat": 345,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "acquisitionRadius": 600,
+    "selectionRadius": 140,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrike": {
+      "flat": 0.0,
+      "percent": 200,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "criticalStrikeModifier": 1.0,
+    "attackSpeed": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 2.25,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackSpeedRatio": 0.625,
+    "attackCastTime": 0.3,
+    "attackTotalTime": 1.6,
+    "attackDelayOffset": -0.106413997709751,
+    "attackRange": {
+      "flat": 125,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "aramDamageTaken": 0.95,
+    "aramDamageDealt": 1.0,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 0.9,
+    "urfDamageDealt": 1.0,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "FIGHTER",
+    "TANK",
+    "VANGUARD"
+  ],
+  "attributeRatings": {
+    "damage": 1,
+    "toughness": 3,
+    "control": 2,
+    "mobility": 1,
+    "utility": 2,
+    "abilityReliance": 80,
+    "attack": 4,
+    "defense": 6,
+    "magic": 7,
+    "difficulty": 1
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Call of the Freljord",
+        "effects": [
+          {
+            "description": "Innate: Nunu's and Willump's next instance of damage dealt to an enemy  champion, large  monster or  structure grants both Willump and the nearest allied champion Call of the Freljord for 4 seconds, prioritizing the ally with  highest attack speed.",
+            "icon": "Call of the Freljord.png",
+            "leveling": []
+          },
+          {
+            "description": "Call of the Freljord: Targets gain  20% bonus attack speed and  10% bonus movement speed. Additionally, Willump gains  splash damage on his basic attacks, dealing 30% AD physical damage in a cone to enemies behind the target.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Nunu and Willump cannot trigger Call of the Freljord from the same enemy again for a time. Successive triggers of Call of the Freljord will stack the duration.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self, Allies",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "periodic",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The splash damage will critically strike when the basic attack does, but will not deal any bonus damage.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": "10",
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Consume",
+        "effects": [
+          {
+            "description": "Active: Willump takes a bite of a target enemy after 0.25 seconds, dealing  magic damage and  healing himself. The heal is increased by 50% when below  50% of maximum health.",
+            "icon": "Consume.png",
+            "leveling": [
+              {
+                "attribute": "Champion Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      100,
+                      140,
+                      180,
+                      220
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      50,
+                      50,
+                      50,
+                      50,
+                      50
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  },
+                  {
+                    "values": [
+                      5,
+                      5,
+                      5,
+                      5,
+                      5
+                    ],
+                    "units": [
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Base Healing from Champions",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      88,
+                      116,
+                      144,
+                      172
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      56,
+                      56,
+                      56,
+                      56,
+                      56
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  },
+                  {
+                    "values": [
+                      8,
+                      8,
+                      8,
+                      8,
+                      8
+                    ],
+                    "units": [
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Empowered Healing from Champions",
+                "modifiers": [
+                  {
+                    "values": [
+                      90,
+                      132,
+                      174,
+                      216,
+                      258
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      84,
+                      84,
+                      84,
+                      84,
+                      84
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  },
+                  {
+                    "values": [
+                      12,
+                      12,
+                      12,
+                      12,
+                      12
+                    ],
+                    "units": [
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Against  minions and  monsters he deals  true damage instead, and restores 25% more health.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Non-Champion Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      340,
+                      500,
+                      660,
+                      820,
+                      980
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Base Healing from Non-Champions",
+                "modifiers": [
+                  {
+                    "values": [
+                      75,
+                      110,
+                      145,
+                      180,
+                      215
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      70,
+                      70,
+                      70,
+                      70,
+                      70
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  },
+                  {
+                    "values": [
+                      10,
+                      10,
+                      10,
+                      10,
+                      10
+                    ],
+                    "units": [
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Empowered Healing from Non-Champions",
+                "modifiers": [
+                  {
+                    "values": [
+                      112.5,
+                      165,
+                      217.5,
+                      270,
+                      322.5
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      105,
+                      105,
+                      105,
+                      105,
+                      105
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  },
+                  {
+                    "values": [
+                      15,
+                      15,
+                      15,
+                      15,
+                      15
+                    ],
+                    "units": [
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Enemies, Self",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MIXED_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Icon border glows when he is within the maximum healing threshold.\n If the ability would deal lethal damage and the target is a minion or small-medium monster, it will instead perform an unique animation,  stunning and  pulling them, and then deal the true damage.\n  Spell shields will block the damage and the heal.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "125"
+      }
+    ],
+    "W": [
+      {
+        "name": "Biggest Snowball Ever!",
+        "effects": [
+          {
+            "description": "Active: Willump breaks free of active  slowing effects and conjures a  snowball that he begins rolling in the target direction for up to 10 seconds, increasing in power over 5 seconds. Its size radius also increases to 75 \u2212 200 (based on charge time) units. He can steer with a slow turn rate that increases over time; changing direction resets the turn rate.",
+            "icon": "Biggest Snowball Ever!.png",
+            "leveling": []
+          },
+          {
+            "description": "The duo is slowed by 50% for the first 1 second, but is  immune to other  slows and keeps all movement speed buffs at time of cast for the duration of the charge. After a delay, the duo gains  14 movement speed every 0.25 seconds, up to the greater value between [ Total MS + 85 \u2212 255 (based on level) ][ Total Uncapped Flat MS + 85 \u2212 255 (based on level) ] (click to toggle). The bonus movement speed from Biggest Snowball Ever! ignores the movement speed cap.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "The snowball explodes upon colliding with an enemy  champion,  large pet, medium-large  monster or terrain, dealing magic damage to surrounding enemies, increased by 0% \u2212 400% (based on charge time),  knocking them up for 0.5 \u2212 0.75 (based on charge time) seconds and subsequently  stunning them for 0 \u2212 0.5 (based on charge time) seconds.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Minimum Explosion Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      36,
+                      45,
+                      54,
+                      63,
+                      72
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      30,
+                      30,
+                      30,
+                      30,
+                      30
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Explosion Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      180,
+                      225,
+                      270,
+                      315,
+                      360
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      150,
+                      150,
+                      150,
+                      150,
+                      150
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "The snowball rolls over  minions and small monsters in its path dealing 33.3% of the damage as magic damage.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Minimum Rollover Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      11.988,
+                      14.985,
+                      17.982,
+                      20.979,
+                      23.976
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      9.99,
+                      9.99,
+                      9.99,
+                      9.99,
+                      9.99
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Rollover Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      59.94,
+                      74.925,
+                      89.91,
+                      104.895,
+                      119.88
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      49.95,
+                      49.95,
+                      49.95,
+                      49.95,
+                      49.95
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "After 10 seconds, or if the duo is  interrupted, they will let loose the snowball, sending it rolling forward for an additional 750 \u2212 1750 (based on charge time) units during which it will not grow any larger and will explode upon colliding with an enemy unit. Biggest Snowball Ever! can be recast after 0.5 seconds.",
+            "icon": "Biggest Snowball Ever! 2.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                55,
+                60,
+                65,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                14,
+                14,
+                14,
+                14,
+                14
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Self, Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": "FALSE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "There are 3 stages where the turn rate increases from the original one:\n After turning for 1 second, the turn rate is increased to 175%.\n After turning for 3 seconds, the turn rate is increased to 250%.\n After turning for 6 seconds, the turn rate is increased to 325% where it caps.\n\n The time threshold to begin gaining bonus movement speed may be bugged, as Flat Bonus MS increases the time while % Bonus MS decreases the time.\n The formula appears to be (X / 100) - Y, where:\n X = Total Flat MS after caps\n Y = 0.1 per 1% %MS \n\n\n The delay is not modified from its initially calculated value on-cast, even if additional movement speed is gained.\n Nunu and Willump's movement speed always increases in increments of ~14, regardless of which total value he will reach. This takes 6 increments to reach the Total MS + 85, but may take more to reach the Uncapped Flat + 85. Due to flat bonuses increasing the time threshold, it is possible for the ability's effects to end before reaching the total uncapped movement speed. \n If Nunu turns continuously he will create a 600 unit circle, increased with bonus movement speed, striking the same point up to 3 times, for a maximum of 180 / 225 / 270 / 315 / 360 (+ 300% AP) magic damage. The damage can be further increased by detonating the snowball, for a total of 360 / 450 / 540 / 630 / 720 (+450% AP) magic damage.\n  Ryze's  Realm Warp will only teleport Nunu and Willump, leaving the  snowball behind.\n Hovering the cursor on the HUD (e.g minimap / champion portraits) does not affect the cast and steering of Biggest Snowball Ever!.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "350",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "E": [
+      {
+        "name": "Snowball Barrage",
+        "effects": [
+          {
+            "description": "Active: Nunu swiftly throws a volley of 3 snowballs in the target direction over 0.4 seconds, each snowball shattering upon hitting an enemy, dealing magic damage to enemies in a cone.",
+            "icon": "Snowball Barrage.png",
+            "leveling": [
+              {
+                "attribute": "Damage Per Snowball",
+                "modifiers": [
+                  {
+                    "values": [
+                      16,
+                      24,
+                      32,
+                      40,
+                      48
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      6,
+                      6,
+                      6,
+                      6,
+                      6
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Damage Per Volley",
+                "modifiers": [
+                  {
+                    "values": [
+                      48,
+                      72,
+                      96,
+                      120,
+                      144
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      18,
+                      18,
+                      18,
+                      18,
+                      18
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      144,
+                      216,
+                      288,
+                      360,
+                      432
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      54,
+                      54,
+                      54,
+                      54,
+                      54
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Enemies hit 3 times are  slowed for 1 second. Champions and large monsters hit once are also Snowbound for 4 seconds, resetting on each hit. Snowball Barrage can be recast twice within 3 seconds at no additional cost.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Slow",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      35,
+                      40,
+                      45,
+                      50
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Recast: Nunu hurls another volley of snowballs, mimicking the first cast's effects. An enemy may only be  slowed once for being hit by 3 snowballs.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "After 3 seconds of the first cast, Snowbound enemies around Willump take magic damage and are  rooted for 0.5 \u2212 1.5 (based on level) seconds.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      30,
+                      40,
+                      50,
+                      60
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      80,
+                      80,
+                      80,
+                      80,
+                      80
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                55,
+                60,
+                65,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                14,
+                14,
+                14,
+                14,
+                14
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "aoe",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Nunu can move while casting Snowball Barrage.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "690"
+      }
+    ],
+    "R": [
+      {
+        "name": "Absolute Zero",
+        "effects": [
+          {
+            "description": "Active: Nunu and Willump sap heat from the surrounding area for 3 seconds,  slowing affected enemies by 0% \u2212 95% (based on channel time), as well as gaining a  shield. The affected area is hidden if the duo is not  visible to the enemy team.",
+            "icon": "Absolute Zero.png",
+            "leveling": [
+              {
+                "attribute": "Shield",
+                "modifiers": [
+                  {
+                    "values": [
+                      65,
+                      75,
+                      85
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      30,
+                      40,
+                      50
+                    ],
+                    "units": [
+                      "% bonus health",
+                      "% bonus health",
+                      "% bonus health"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "At the end of the duration or if the channel is  interrupted, surrounding enemies take magic damage, reduced by 100% \u2212 0% (based on channel time). Once the channel ends, affected enemies will remain  slowed for 0 \u2212 3 (based on channel time) seconds and any remaining shield will decay over 3 seconds. Absolute Zero can be recast after 0.5 seconds.",
+            "icon": "Absolute Zero 2.png",
+            "leveling": [
+              {
+                "attribute": "Maximum Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      625,
+                      950,
+                      1275
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      250,
+                      250,
+                      250
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Recast: Nunu and Willump end the  channel early.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                110,
+                100,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Auto",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "650",
+        "targetRange": null
+      }
+    ]
+  },
+  "releaseDate": "2009-02-21",
+  "releasePatch": "lpha Week 2",
+  "patchLastChanged": "9.20",
+  "price": {
+    "blueEssence": 450,
+    "rp": 260
+  }
+}

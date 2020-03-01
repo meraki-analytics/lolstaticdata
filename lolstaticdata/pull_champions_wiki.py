@@ -384,6 +384,8 @@ class LolWikiDataHandler:
             if ability.notes is not None and ability.notes.startswith("*"):
                 ability.notes = ability.notes[1:].strip()
             abilities.append(ability)
+        if skill_key == "I":
+            skill_key = "P"
         return skill_key, abilities
 
     def _render_levelings(self, html: BeautifulSoup, nvalues: int) -> List[Leveling]:

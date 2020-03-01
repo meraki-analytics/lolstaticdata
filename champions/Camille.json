@@ -1,0 +1,1240 @@
+{
+  "id": 164,
+  "key": "Camille",
+  "name": "Camille",
+  "title": "the Steel Shadow",
+  "fullName": "Camille Ferros",
+  "resource": "MANA",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "stats": {
+    "health": {
+      "flat": 575.6,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 85,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 8.5,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.8,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 338.8,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 32,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 8.15,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.75,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "armor": {
+      "flat": 35,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 3.8,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 32.1,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 1.25,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackDamage": {
+      "flat": 68,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 3.5,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "movespeed": {
+      "flat": 340,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "acquisitionRadius": 550,
+    "selectionRadius": 100,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrike": {
+      "flat": 0.0,
+      "percent": 200,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "criticalStrikeModifier": 1.0,
+    "attackSpeed": {
+      "flat": 0.644,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 2.5,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackSpeedRatio": 0.643999993801116,
+    "attackCastTime": 0.300000011920928,
+    "attackTotalTime": 1.55200004577636,
+    "attackDelayOffset": 0,
+    "attackRange": {
+      "flat": 125,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "aramDamageTaken": 0.94,
+    "aramDamageDealt": 1.06,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 0.95,
+    "urfDamageDealt": 1.05,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "DIVER",
+    "FIGHTER",
+    "TANK"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 2,
+    "control": 2,
+    "mobility": 3,
+    "utility": 1,
+    "abilityReliance": 40,
+    "attack": 8,
+    "defense": 6,
+    "magic": 3,
+    "difficulty": 3
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Adaptive Defenses",
+        "effects": [
+          {
+            "description": "Innate: Periodically, Camille's next basic attack against enemy champions is enhanced to  shield her for 20% of her maximum health for 2 seconds from either exclusively  physical damage or  magic damage, based on which type would mitigate the most damage from her target.",
+            "icon": "Adaptive Defenses.png",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                16,
+                13,
+                10
+              ],
+              "units": [
+                " (based on level)",
+                " (based on level)",
+                " (based on level)"
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": "Shield",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": "On-hit",
+        "notes": "The shield-typing is determined based on the total damage the target has dealt to champions that game (as a percentage) versus Camille's current armor and magic resistance.\n For example, with little bonus resistances Camille would likely gain the most obvious shield-typing - i.e. physical versus marksmen and magical versus mages. However, with a full-armor build - she may gain a magic damage shield versus a target like  Kog'Maw, as his physical threat is already mitigated by the armor.\n\n What shield she will gain is displayed as an icon beneath an enemy's health bar: Orange for Physical or Blue for Magical.",
+        "blurb": "Basic attacks on champions grant a shield equal to 20% of Camille's maximum health against their damage type (Physical or Magic) for 1.5-2.5 seconds. This effect has a 20-10 second cooldown.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Precision Protocol",
+        "effects": [
+          {
+            "description": "First cast - Active: Camille's next basic attack has  50 bonus range, deals bonus physical damage and grants  bonus movement speed for 1 second.",
+            "icon": "Precision Protocol.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      25,
+                      30,
+                      35,
+                      40
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Bonus Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      25,
+                      30,
+                      35,
+                      40
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Precision Protocol can then be recast within the next 3.5 seconds at no extra cost.",
+            "icon": "Precision Protocol 2.png",
+            "leveling": []
+          },
+          {
+            "description": "Second cast - Active: If recast at least 1.5 seconds after the first attack, Precision Protocol's damage is doubled and 40% \u2212 100% (based on level) of the total damage is dealt as  true damage.",
+            "icon": "Precision Protocol 3.png",
+            "leveling": [
+              {
+                "attribute": "Increased Mixed Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      50,
+                      60,
+                      70,
+                      80
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Both casts of Precision Protocol reset Camille's basic attack timer. The attacks' animations can be cancelled by casting other abilities, but the attacks will still land.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                9,
+                8.25,
+                7.5,
+                6.75,
+                6
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Buff",
+        "affects": "Self",
+        "spellshieldable": "false",
+        "resource": "MANA",
+        "damageType": "MIXED_DAMAGE",
+        "spellEffects": "Proc",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": "On-hit",
+        "notes": "Both enhanced attacks cannot  critically strike.\n  On-hit effects do not interact with the true damage conversion, however life steal does.\n\n The basic attacks are  unstoppable, meaning no effect can interrupt them other than death, Camille's or the target's. Using  Flash or going into  stasis (i.e  Zhonya's Hourglass,  Guardian Angel) will cancel the animation but the attack will still land.",
+        "blurb": "Camille's next attack deals bonus damage and grants bonus movement speed. This spell can be recast for a short period of time, doing significantly increased bonus damage if Camille delays a period of time between the two attacks.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "Precision Protocol",
+        "effects": [
+          {
+            "description": "First cast - Active: Camille's next basic attack has  50 bonus range, deals bonus physical damage and grants  bonus movement speed for 1 second.",
+            "icon": "Precision Protocol.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      25,
+                      30,
+                      35,
+                      40
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Bonus Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      25,
+                      30,
+                      35,
+                      40
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Precision Protocol can then be recast within the next 3.5 seconds at no extra cost.",
+            "icon": "Precision Protocol 2.png",
+            "leveling": []
+          },
+          {
+            "description": "Second cast - Active: If recast at least 1.5 seconds after the first attack, Precision Protocol's damage is doubled and 40% \u2212 100% (based on level) of the total damage is dealt as  true damage.",
+            "icon": "Precision Protocol 3.png",
+            "leveling": [
+              {
+                "attribute": "Increased Mixed Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      50,
+                      60,
+                      70,
+                      80
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Both casts of Precision Protocol reset Camille's basic attack timer. The attacks' animations can be cancelled by casting other abilities, but the attacks will still land.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                9,
+                8.25,
+                7.5,
+                6.75,
+                6
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Buff",
+        "affects": "Self",
+        "spellshieldable": "false",
+        "resource": "MANA",
+        "damageType": "MIXED_DAMAGE",
+        "spellEffects": "Proc",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": "On-hit",
+        "notes": "Both enhanced attacks cannot  critically strike.\n  On-hit effects do not interact with the true damage conversion, however life steal does.\n\n The basic attacks are  unstoppable, meaning no effect can interrupt them other than death, Camille's or the target's. Using  Flash or going into  stasis (i.e  Zhonya's Hourglass,  Guardian Angel) will cancel the animation but the attack will still land.",
+        "blurb": "Camille's next attack deals bonus damage and grants bonus movement speed. This spell can be recast for a short period of time, doing significantly increased bonus damage if Camille delays a period of time between the two attacks.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "Precision Protocol",
+        "effects": [
+          {
+            "description": "First cast - Active: Camille's next basic attack has  50 bonus range, deals bonus physical damage and grants  bonus movement speed for 1 second.",
+            "icon": "Precision Protocol.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      25,
+                      30,
+                      35,
+                      40
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Bonus Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      25,
+                      30,
+                      35,
+                      40
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Precision Protocol can then be recast within the next 3.5 seconds at no extra cost.",
+            "icon": "Precision Protocol 2.png",
+            "leveling": []
+          },
+          {
+            "description": "Second cast - Active: If recast at least 1.5 seconds after the first attack, Precision Protocol's damage is doubled and 40% \u2212 100% (based on level) of the total damage is dealt as  true damage.",
+            "icon": "Precision Protocol 3.png",
+            "leveling": [
+              {
+                "attribute": "Increased Mixed Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      50,
+                      60,
+                      70,
+                      80
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Both casts of Precision Protocol reset Camille's basic attack timer. The attacks' animations can be cancelled by casting other abilities, but the attacks will still land.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                9,
+                8.25,
+                7.5,
+                6.75,
+                6
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Buff",
+        "affects": "Self",
+        "spellshieldable": "false",
+        "resource": "MANA",
+        "damageType": "MIXED_DAMAGE",
+        "spellEffects": "Proc",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": "On-hit",
+        "notes": "Both enhanced attacks cannot  critically strike.\n  On-hit effects do not interact with the true damage conversion, however life steal does.\n\n The basic attacks are  unstoppable, meaning no effect can interrupt them other than death, Camille's or the target's. Using  Flash or going into  stasis (i.e  Zhonya's Hourglass,  Guardian Angel) will cancel the animation but the attack will still land.",
+        "blurb": "Camille's next attack deals bonus damage and grants bonus movement speed. This spell can be recast for a short period of time, doing significantly increased bonus damage if Camille delays a period of time between the two attacks.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "W": [
+      {
+        "name": "Tactical Sweep",
+        "effects": [
+          {
+            "description": "Active: After a 1.1 second delay, Camille sweeps her leg to deal physical damage to all enemies in a cone in the target direction,  disarming herself for the duration.",
+            "icon": "Tactical Sweep.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      70,
+                      100,
+                      130,
+                      160,
+                      190
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Non-Epic Monster Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      35,
+                      50,
+                      65,
+                      80,
+                      95
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      30,
+                      30,
+                      30,
+                      30,
+                      30
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Enemies hit by the outer half of the cone take bonus physical damage and are  slowed by 80% that decays over 2 seconds, capped at 300 damage against  monsters. Camille is  healed for the bonus damage dealt against enemy  champions.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Outer Cone Bonus Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      6,
+                      6.5,
+                      7,
+                      7.5,
+                      8
+                    ],
+                    "units": [
+                      "%  of target's maximum health",
+                      "%  of target's maximum health",
+                      "%  of target's maximum health",
+                      "%  of target's maximum health",
+                      "%  of target's maximum health"
+                    ]
+                  },
+                  {
+                    "values": [
+                      3.3,
+                      3.3,
+                      3.3,
+                      3.3,
+                      3.3
+                    ],
+                    "units": [
+                      "% per 100 bonus AD",
+                      "% per 100 bonus AD",
+                      "% per 100 bonus AD",
+                      "% per 100 bonus AD",
+                      "% per 100 bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Bonus Non-Epic Monster Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      3,
+                      3.25,
+                      3.5,
+                      3.75,
+                      4
+                    ],
+                    "units": [
+                      "%  of target's maximum health",
+                      "%  of target's maximum health",
+                      "%  of target's maximum health",
+                      "%  of target's maximum health",
+                      "%  of target's maximum health"
+                    ]
+                  },
+                  {
+                    "values": [
+                      1.6,
+                      1.6,
+                      1.6,
+                      1.6,
+                      1.6
+                    ],
+                    "units": [
+                      "% per 100 bonus AD",
+                      "% per 100 bonus AD",
+                      "% per 100 bonus AD",
+                      "% per 100 bonus AD",
+                      "% per 100 bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Non-epic monsters take 50% damage from Tactical Sweep.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Other abilities can be cast during the animation without cancelling it.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                55,
+                60,
+                65,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                15,
+                13.5,
+                12,
+                10.5,
+                9
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "true",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": "FALSE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Camille can move during the delay, but the hitbox and Camille's model are fixed to the initial target direction.\n Camille's facing-direction, for effects such as  Petrifying Gaze, is the direction she is moving, and not the direction the model is facing.\n\n The 50% damage reduction against non-epic monsters applies after the cap. Because of this the actual cap against non-epic monsters is 150 damage.\n Using  Tiamat will cancel the animation, but the sweep will still strike and Camille will still be unable to basic attack.",
+        "blurb": "Camille blasts in a cone after a delay, dealing damage. Enemies in the outer half are slowed and take extra damage, while also healing Camille.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": "70\u00b0",
+        "castTime": "false",
+        "effectRadius": "650",
+        "targetRange": null
+      }
+    ],
+    "E": [
+      {
+        "name": "Hookshot",
+        "effects": [
+          {
+            "description": "Active: Camille fires a grapple toward the target location. If the grapple collides with terrain, Camille will  dash toward and bind to the terrain for 0.75 seconds. While bound, she gains the ability to cast  Wall Dive.",
+            "icon": "Hookshot.png",
+            "leveling": []
+          },
+          {
+            "description": "Other abilities can be cast during the ability. Casting  The Hextech Ultimatum will cancel the grapple.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                16,
+                14.5,
+                13,
+                11.5,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Terrain, Self",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Hookshot can be cast while  rooted but not while  grounded.",
+        "blurb": "Camille pulls herself to a wall, leaping off and knocking up enemies upon landing.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": "100",
+        "angle": null,
+        "castTime": "false",
+        "effectRadius": null,
+        "targetRange": "800"
+      },
+      {
+        "name": "Wall Dive",
+        "effects": [
+          {
+            "description": "Active: Camille  dashes in the target direction, dealing physical damage to enemies near the landing location. The range is doubled towards enemy  champions within 1400 range.",
+            "icon": "Wall Dive.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      95,
+                      130,
+                      165,
+                      200
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      75,
+                      75,
+                      75,
+                      75,
+                      75
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "She prematurely stops upon colliding with an enemy champion,  knocking back and  stunning them and all nearby enemy champions for 0.75 seconds, while also gaining  bonus attack speed for 5 seconds.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Bonus Attack Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      50,
+                      60,
+                      70,
+                      80
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Other abilities besides  The Hextech Ultimatum can be cast while grappled or during the dash.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "true",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Despite what one might assume from a wall-jumping ability, Wall Dive can be used to go through terrain (including the terrain she is bound to).\n  Summoner spells besides  Flash cannot be cast.\n Wall Dive is disabled while  grounded or  rooted but Camille is allowed to move if grounded while attached to a wall. She may still dash away from her current location once the grounding finishes.\n Camille will gain a range indicator for each valid champion to dash to, but only if they are within the 800 range of the dash.\n She does not have to  see any enemy champions to gain the range indicator or extended range.",
+        "blurb": "Camille pulls herself to a wall, leaping off and knocking up enemies upon landing.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1050 + 100% current movement speed",
+        "width": null,
+        "angle": null,
+        "castTime": "false",
+        "effectRadius": "130",
+        "targetRange": "400 / 800"
+      }
+    ],
+    "R": [
+      {
+        "name": "The Hextech Ultimatum",
+        "effects": [
+          {
+            "description": "Active: Camille becomes  untargetable and  leaps  unstoppably towards the target  enemy champion.",
+            "icon": "The Hextech Ultimatum.png",
+            "leveling": []
+          },
+          {
+            "description": "When she lands, she creates a hexagonal zone around the target's current location for a duration,  interrupting them and  knocking away all other nearby enemies on impact.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Zone Duration",
+                "modifiers": [
+                  {
+                    "values": [
+                      2.5,
+                      3.25,
+                      4
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "The target cannot escape the zone through any means. While within the zone, Camille's basic attacks deal bonus magic damage.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Bonus Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      5,
+                      10,
+                      15
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      4,
+                      6,
+                      8
+                    ],
+                    "units": [
+                      "% of target's current health",
+                      "% of target's current health",
+                      "% of target's current health"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "The Hextech Ultimatum ends automatically within 1 second if Camille leaves the area or dies.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                140,
+                115,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit / Buff",
+        "affects": "Enemies, Self",
+        "spellshieldable": "true",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "Proc",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Camille will attempt to basic attack the target.\n The trapped victim is  grounded from casting  Flash until Hextech Ultimatum ends.\n The ability will be cancelled and go on cooldown if the target dies or becomes untargetable during the cast time.\n Knockaway speed is 1000.\n The boundaries are not considered terrain ( exception), and enemies that try to move out of the area will be displaced back inside.\n Abilities such as  Comet of Legend and  Keeper's Verdict will cap their effect range to the boundary. Targets will stop at the boundary even after it expired.\n  Ekko's  Chronobreak will still deal damage at the hologram's location.\n  Tahm Kench's  Devour can carry Camille's target outside of the area, but they will be displaced back inside once  Regurgitated. \n An active  Assault and Battery on a target outside the perimeter will cause  Vi to continue her charge until The Hextech Ultimatum ends. She can knockback and damage secondary targets multiple times.\n  Shadows placed outside of the hexagonal zone by  Zed can be swapped with but he will only  blink to the nearest position towards his  Shadow while still being unable to escape in The Hextech Ultimatum.",
+        "blurb": "Camille dashes to target champion, anchoring them to the area. She also deals bonus magic damage to the target with her basic attacks.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "425",
+        "targetRange": "475"
+      }
+    ]
+  },
+  "releaseDate": "2016-12-07",
+  "releasePatch": "6.24",
+  "patchLastChanged": "9.17",
+  "price": {
+    "blueEssence": 6300,
+    "rp": 975
+  }
+}

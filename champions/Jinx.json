@@ -1,0 +1,1152 @@
+{
+  "id": 222,
+  "key": "Jinx",
+  "name": "Jinx",
+  "title": "the Loose Cannon",
+  "fullName": "",
+  "resource": "MANA",
+  "attackType": "RANGED",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "stats": {
+    "health": {
+      "flat": 581,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 84,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 3.75,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.5,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 245,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 45,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 6.7,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 1,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "armor": {
+      "flat": 28,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 3.5,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 30,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.5,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackDamage": {
+      "flat": 57,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 3.4,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "movespeed": {
+      "flat": 325,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "acquisitionRadius": 550,
+    "selectionRadius": 120,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrike": {
+      "flat": 0.0,
+      "percent": 200,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "criticalStrikeModifier": 1.0,
+    "attackSpeed": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 1,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackSpeedRatio": 0.625,
+    "attackCastTime": 0.270000010728836,
+    "attackTotalTime": 1.60000002384185,
+    "attackDelayOffset": 0,
+    "attackRange": {
+      "flat": 525,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "aramDamageTaken": 1.0,
+    "aramDamageDealt": 0.95,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 1.0,
+    "urfDamageDealt": 1.0,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "MARKSMAN"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 1,
+    "control": 2,
+    "mobility": 1,
+    "utility": 1,
+    "abilityReliance": 10,
+    "attack": 9,
+    "defense": 2,
+    "magic": 4,
+    "difficulty": 2
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Get Excited!",
+        "effects": [
+          {
+            "description": "Innate: Whenever an enemy champion, epic monster, turret or inhibitor dies within 3 seconds of being damaged by Jinx, she gains  175% bonus movement speed which decays over 6 seconds.",
+            "icon": "Get Excited!.png",
+            "leveling": []
+          },
+          {
+            "description": "Additionally, she gains  15% total attack speed and removes the attack speed cap for the same duration.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": "Jinx receives massively increased Movement Speed and stacking Attack Speed whenever she damages an enemy champion, tower, or inhibitor that is then killed or destroyed within 3 seconds.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Switcheroo!",
+        "effects": [
+          {
+            "description": "Pow-Pow - Passive: Jinx's basic attacks make her  Rev'd up for 2.5 seconds, granting  bonus attack speed, stacking up to 3 times.",
+            "icon": "Pow-Pow.png",
+            "leveling": [
+              {
+                "attribute": "Maximum Attack Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      55,
+                      80,
+                      105,
+                      130
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Fishbones - Toggle: Jinx loses  25% of her bonus attack speed and her basic attacks cost  mana on-attack. They gain  bonus range, deal 10% AD  bonus physical damage, and hit all enemies near the main target. The bonus damage from Fishbones is affected by  critical strike modifiers.",
+            "icon": "Switcheroo!.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Range",
+                "modifiers": [
+                  {
+                    "values": [
+                      75,
+                      100,
+                      125,
+                      150,
+                      175
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "The first Rev'd up stack is twice as potent as the others, and stacks decay one at a time when she stops attacking. Fishbones will not refresh the stack timer and only its first basic attack after using Switcheroo! will gain the bonus attack speed.",
+            "icon": "Rev'd up.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                0.9,
+                0.9,
+                0.9,
+                0.9,
+                0.9
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Self",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": "OTHER",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Jinx's first attack after switching to  Fishbones can be triggered after 0.4 seconds, instead of using the attack timer.\n Toggling Switcheroo! is not considered an activation for the purposes of Spellblade.\n Despite Jinx starting the game using  Pow-Pow she doesn't receive any bonus attack speed until Switcheroo! is unlocked.\n  Fishbones splash damage affects structures (minions will target Jinx) but does not affect targets if Jinx's attacks are  blocked,  dodged, or if they  miss.\n With  Runaan's Hurricane  Pow-Pow generates one stack per enemy hit.\n Both weapons apply on-hit effects (the splash damage of  Fishbones does not) and can  critically strike.  Fishbones's bonus damage also applies  life steal.\n Each of  Runaan's Hurricane's additional bolts apply  Fishbones' splash damage, which stacks with each other.\n Damage for  Fishbones: 110% AD (100% + 10%).\n Critical strike damage for  Fishbones: 220% AD ((100% + 10%) \u00d7 2).\n Critical strike damage for  Fishbones with  Infinity Edge: 247.5% AD ((100% + 10%) \u00d7 2.25).\n Damage per  Fishbones  bolt: 44% AD ((100% + 10%) \u00d7  0.4).\n Critical strike damage per  Fishbones  bolt: 88% AD (((100% + 10%) \u00d7  0.4) \u00d7 2).\n Critical strike damage per  Fishbones  bolt with  Infinity Edge: 99% AD (((100% + 10%) \u00d7  0.4) \u00d7 2.25).\n Potential damage on stacked enemies with  Fishbones and  Runaan's Hurricane: 198% AD (110% + 44% + 44%).\n Potential critical strike damage on stacked enemies with  Fishbones and  Runaan's Hurricane: 396% AD (220% + 88% + 88%).\n Potential critical strike damage on stacked enemies with  Fishbones,  Runaan's Hurricane, and  Infinity Edge: 445.5% AD ((247.5% + 99% + 99%)).",
+        "blurb": "Jinx modifies her basic attacks by swapping between Pow-Pow, her minigun and Fishbones, her rocket launcher. Attacks with Pow-Pow grant Attack Speed, while attacks with Fishbones deal area of effect damage, gain increased range, and drain Mana.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "150",
+        "targetRange": null
+      },
+      {
+        "name": "Switcheroo!",
+        "effects": [
+          {
+            "description": "Pow-Pow - Passive: Jinx's basic attacks make her  Rev'd up for 2.5 seconds, granting  bonus attack speed, stacking up to 3 times.",
+            "icon": "Pow-Pow.png",
+            "leveling": [
+              {
+                "attribute": "Maximum Attack Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      55,
+                      80,
+                      105,
+                      130
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Fishbones - Toggle: Jinx loses  25% of her bonus attack speed and her basic attacks cost  mana on-attack. They gain  bonus range, deal 10% AD  bonus physical damage, and hit all enemies near the main target. The bonus damage from Fishbones is affected by  critical strike modifiers.",
+            "icon": "Switcheroo!.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Range",
+                "modifiers": [
+                  {
+                    "values": [
+                      75,
+                      100,
+                      125,
+                      150,
+                      175
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "The first Rev'd up stack is twice as potent as the others, and stacks decay one at a time when she stops attacking. Fishbones will not refresh the stack timer and only its first basic attack after using Switcheroo! will gain the bonus attack speed.",
+            "icon": "Rev'd up.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                0.9,
+                0.9,
+                0.9,
+                0.9,
+                0.9
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Self",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": "OTHER",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Jinx's first attack after switching to  Fishbones can be triggered after 0.4 seconds, instead of using the attack timer.\n Toggling Switcheroo! is not considered an activation for the purposes of Spellblade.\n Despite Jinx starting the game using  Pow-Pow she doesn't receive any bonus attack speed until Switcheroo! is unlocked.\n  Fishbones splash damage affects structures (minions will target Jinx) but does not affect targets if Jinx's attacks are  blocked,  dodged, or if they  miss.\n With  Runaan's Hurricane  Pow-Pow generates one stack per enemy hit.\n Both weapons apply on-hit effects (the splash damage of  Fishbones does not) and can  critically strike.  Fishbones's bonus damage also applies  life steal.\n Each of  Runaan's Hurricane's additional bolts apply  Fishbones' splash damage, which stacks with each other.\n Damage for  Fishbones: 110% AD (100% + 10%).\n Critical strike damage for  Fishbones: 220% AD ((100% + 10%) \u00d7 2).\n Critical strike damage for  Fishbones with  Infinity Edge: 247.5% AD ((100% + 10%) \u00d7 2.25).\n Damage per  Fishbones  bolt: 44% AD ((100% + 10%) \u00d7  0.4).\n Critical strike damage per  Fishbones  bolt: 88% AD (((100% + 10%) \u00d7  0.4) \u00d7 2).\n Critical strike damage per  Fishbones  bolt with  Infinity Edge: 99% AD (((100% + 10%) \u00d7  0.4) \u00d7 2.25).\n Potential damage on stacked enemies with  Fishbones and  Runaan's Hurricane: 198% AD (110% + 44% + 44%).\n Potential critical strike damage on stacked enemies with  Fishbones and  Runaan's Hurricane: 396% AD (220% + 88% + 88%).\n Potential critical strike damage on stacked enemies with  Fishbones,  Runaan's Hurricane, and  Infinity Edge: 445.5% AD ((247.5% + 99% + 99%)).",
+        "blurb": "Jinx modifies her basic attacks by swapping between Pow-Pow, her minigun and Fishbones, her rocket launcher. Attacks with Pow-Pow grant Attack Speed, while attacks with Fishbones deal area of effect damage, gain increased range, and drain Mana.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "150",
+        "targetRange": null
+      }
+    ],
+    "W": [
+      {
+        "name": "Zap!",
+        "effects": [
+          {
+            "description": "Active: After 0.6 \u2212 0.4 (based on bonus attack speed) seconds, Jinx fires a shock blast that deals physical damage to the first enemy it hits,  revealing and  slowing them for 2 seconds.",
+            "icon": "Zap!.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      10,
+                      60,
+                      110,
+                      160,
+                      210
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      160,
+                      160,
+                      160,
+                      160,
+                      160
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Slow",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      40,
+                      50,
+                      60,
+                      70
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                60,
+                70,
+                80,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                8,
+                7,
+                6,
+                5,
+                4
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Single target",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": null,
+        "blurb": "Jinx uses Zapper, her shock pistol, to fire a blast that deals damage to the first enemy hit, slowing and revealing it.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": "40.25",
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "3200",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "1450"
+      }
+    ],
+    "E": [
+      {
+        "name": "Flame Chompers!",
+        "effects": [
+          {
+            "description": "Active: Jinx tosses out 3 Chompers that arm after 0.7 seconds and explode after 5 seconds, dealing magic damage over 1.5 seconds to all enemies within a small area.",
+            "icon": "Flame Chompers!.png",
+            "leveling": [
+              {
+                "attribute": "Total Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      70,
+                      120,
+                      170,
+                      220,
+                      270
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Magic Damage per instance",
+                "modifiers": [
+                  {
+                    "values": [
+                      23.33,
+                      40,
+                      56.67,
+                      73.33,
+                      90
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      33.3,
+                      33.3,
+                      33.3,
+                      33.3,
+                      33.3
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Chompers prematurely explode on  enemy champion contact,  knocking down and  rooting them for the same duration. A champion can set off only a single Chomper and be damaged by one.",
+            "icon": "Flame Chompers! 2.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                24,
+                20.5,
+                17,
+                13.5,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spellpersist",
+        "projectile": "SPECIAL",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Casting Flame Chompers! will not interrupt Jinx's orders.\n Chompers will halt when encountering  Wind Wall and  Unbreakable.",
+        "blurb": "Jinx throws out a line of snare grenades that explode after 5 seconds, lighting enemies on fire. Flame Chompers will bite enemy champions who walk over them, rooting them in place.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "50",
+        "targetRange": "900"
+      },
+      {
+        "name": "Flame Chompers!",
+        "effects": [
+          {
+            "description": "Active: Jinx tosses out 3 Chompers that arm after 0.7 seconds and explode after 5 seconds, dealing magic damage over 1.5 seconds to all enemies within a small area.",
+            "icon": "Flame Chompers!.png",
+            "leveling": [
+              {
+                "attribute": "Total Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      70,
+                      120,
+                      170,
+                      220,
+                      270
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Magic Damage per instance",
+                "modifiers": [
+                  {
+                    "values": [
+                      23.33,
+                      40,
+                      56.67,
+                      73.33,
+                      90
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      33.3,
+                      33.3,
+                      33.3,
+                      33.3,
+                      33.3
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Chompers prematurely explode on  enemy champion contact,  knocking down and  rooting them for the same duration. A champion can set off only a single Chomper and be damaged by one.",
+            "icon": "Flame Chompers! 2.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                24,
+                20.5,
+                17,
+                13.5,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spellpersist",
+        "projectile": "SPECIAL",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Casting Flame Chompers! will not interrupt Jinx's orders.\n Chompers will halt when encountering  Wind Wall and  Unbreakable.",
+        "blurb": "Jinx throws out a line of snare grenades that explode after 5 seconds, lighting enemies on fire. Flame Chompers will bite enemy champions who walk over them, rooting them in place.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "50",
+        "targetRange": "900"
+      }
+    ],
+    "R": [
+      {
+        "name": "Super Mega Death Rocket!",
+        "effects": [
+          {
+            "description": "Active: Jinx fires a  rocket in the target direction, briefly  revealing the area it flies through. The rocket explodes upon enemy champion contact, dealing physical damage and briefly revealing the area around them.",
+            "icon": "Super Mega Death Rocket!.png",
+            "leveling": []
+          },
+          {
+            "description": "The rocket deals 10% \u2212 100% (based on distance traveled) of its flat damage.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Max. Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      250,
+                      350,
+                      450
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      150,
+                      150,
+                      150
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      25,
+                      30,
+                      35
+                    ],
+                    "units": [
+                      "% of target's missing health",
+                      "% of target's missing health",
+                      "% of target's missing health"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Min. Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      25,
+                      35,
+                      45
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      15,
+                      15,
+                      15
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      25,
+                      30,
+                      35
+                    ],
+                    "units": [
+                      "% of target's missing health",
+                      "% of target's missing health",
+                      "% of target's missing health"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Enemies surrounding the main target also take 80% damage.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Max. Secondary Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      200,
+                      280,
+                      360
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      120,
+                      120,
+                      120
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      20,
+                      24,
+                      28
+                    ],
+                    "units": [
+                      "% of target's missing health",
+                      "% of target's missing health",
+                      "% of target's missing health"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Min. Secondary Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      28,
+                      36
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      12,
+                      12,
+                      12
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      20,
+                      24,
+                      28
+                    ],
+                    "units": [
+                      "% of target's missing health",
+                      "% of target's missing health",
+                      "% of target's missing health"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                90,
+                75,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "special",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Area of effect",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Spell Shield will block the impact damage, but will not prevent the explosion.",
+        "blurb": "Jinx fires a super rocket across the map that gains damage as it travels. The rocket will explode upon colliding with an enemy champion, dealing damage to it and surrounding enemies based on their missing Health.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1500 / 2500",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "225",
+        "targetRange": "Global"
+      }
+    ]
+  },
+  "releaseDate": "2013-10-10",
+  "releasePatch": "3.12",
+  "patchLastChanged": "10.4",
+  "price": {
+    "blueEssence": 4800,
+    "rp": 880
+  }
+}

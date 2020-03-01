@@ -1,0 +1,1264 @@
+{
+  "id": 523,
+  "key": "Aphelios",
+  "name": "Aphelios",
+  "title": "the Weapon of the Faithful",
+  "fullName": "",
+  "resource": "MANA",
+  "attackType": "RANGED",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "stats": {
+    "health": {
+      "flat": 500,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 86,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 3.25,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.55,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 348,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 42,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 6.5,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.4,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "armor": {
+      "flat": 28,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 3,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 26,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.5,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackDamage": {
+      "flat": 57,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 2.2,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "movespeed": {
+      "flat": 325,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "acquisitionRadius": 800,
+    "selectionRadius": 110,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrike": {
+      "flat": 0.0,
+      "percent": 200,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "criticalStrikeModifier": 1.0,
+    "attackSpeed": {
+      "flat": 0.64,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 2.1,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackSpeedRatio": 0.6399999856948853,
+    "attackCastTime": 0.23000000417232513,
+    "attackTotalTime": 1.5,
+    "attackDelayOffset": 0,
+    "attackRange": {
+      "flat": 550,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "aramDamageTaken": 1.0,
+    "aramDamageDealt": 1.0,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 0.95,
+    "urfDamageDealt": 1.0,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "MARKSMAN"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 1,
+    "control": 2,
+    "mobility": 1,
+    "utility": 1,
+    "abilityReliance": 20,
+    "attack": 6,
+    "defense": 2,
+    "magic": 1,
+    "difficulty": 2
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "The Hitman and the Seer",
+        "effects": [
+          {
+            "description": "Innate: Aphelios has access to an arsenal of 5 Moonstone Weapons, created by his sister Alune. He equips two weapons at any one time, one as his main weapon and one as his off-hand. Each weapon has a unique basic attack and passive effect.",
+            "icon": "The Hitman and the Seer.png",
+            "leveling": []
+          },
+          {
+            "description": "Aphelios begins the game with  Calibrum as his main weapon and  Severum in his off-hand, with  Gravitum,  Infernum, and  Crescendum queued in reserve. The queue order can be rearranged based on weapon usage.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Innate - Moonlight: Weapons spawn with 50 Moonlight for ammunition, which is consumed on basic attacks or to cast his  abilities. Abilities that cause Aphelios to attack do not cost additional Moonlight on top of their ability cost. Once his main weapon is exhausted of Moonlight, it is moved to the end of the queue and Aphelios channels for 1 second to equip the next available weapon from his reserve.",
+            "icon": "The Hitman and the Seer 2.png",
+            "leveling": []
+          },
+          {
+            "description": "Innate - Weapon Master: Aphelios cannot improve his abilities with skill points. He starts the game with  Phase and gains access to  abilities at level 2. He gains access to  Moonlight Vigil at level 6, which improves automatically at levels 11 and 16. Instead, Aphelios may spend his skill points to gain  bonus attack damage,  bonus attack speed or  penetration versus  bonus armor.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Bonus Attack Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      4,
+                      8,
+                      12,
+                      16,
+                      20,
+                      24
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Bonus Attack Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      6,
+                      12,
+                      18,
+                      24,
+                      30,
+                      36
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Bonus-Armor Penetration",
+                "modifiers": [
+                  {
+                    "values": [
+                      3,
+                      6,
+                      9,
+                      12,
+                      15,
+                      18
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The level up for the bonus attack damage, attack speed, and armor penetration have hotkeys Q, W, E, respectively.\n Assigning points does not follow the same rules as conventional point expenditure. The quickest you can get an individual statistic to rank-6 is by assigning points at 1 / 2 / 3 / 5 / 7 / 9.\n\n An ammunition counter will appear to the right side of the screen at 10 or less Moonlight.\n Abilities can still be used with less than the required amount of Moonlight, consuming all remaining Moonlight in the process.\n Runaan's Hurricane does not consume additional Moonlight for his basic attacks.\n The icon for this ability changes based on the active skin and functions as Alune's portrait, similarly to Aphelios' portrait.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "Calibrum",
+        "effects": [
+          {
+            "description": "Innate - Precision: Aphelios gains  100 bonus range while Calibrum is his main weapon. Enemies damaged by Calibrum via an ability are marked for 4.5 seconds,  revealing them for the duration. Aphelios's next basic attack against a marked target uses the current off-hand weapon regardless of his basic attack timer and has  1800 range and bonus missile speed.",
+            "icon": "Calibrum.png",
+            "leveling": []
+          },
+          {
+            "description": "This attack will consume the marks from all targets, dealing 15 (+ 20% bonus AD)  bonus physical damage to the main target for each mark consumed. If Calibrum is the current off-hand weapon, the empowered attack uses the main weapon instead.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": null,
+        "targeting": "Unit",
+        "affects": "Self, Enemies",
+        "spellshieldable": null,
+        "resource": "OTHER",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "attack",
+        "projectile": "SPECIAL",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Crescendum's outgoing basic attack can bypass  Yasuo's  Wind Wall and  Braum's  Unbreakable but cannot while returning.\n Triggered Marks apply on-hit effects and are considered a basic attack for  Runaan's Hurricane, but are not considered one for  Guinsoo's Rageblade.\n The mark will not be triggered by  Onslaught attacks.\n The increased basic attack range is drawn for Aphelios to differentiate it from his normal attack range.\n The empowered range for the mark will also be drawn as an indicator for Aphelios.\n\n    Quality of Life: A blue circle outlining the range in which he may perform basic attacks.  \n    This glowing indicator will align directly behind each marked target.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "Severum",
+        "effects": [
+          {
+            "description": "Innate - Resurgent: Basic attacks with Severum don't use  projectiles.  Severum's attacks  heal him for 8% \u2212 25% (based on level) of damage dealt.",
+            "icon": "Severum.png",
+            "leveling": []
+          },
+          {
+            "description": "Healing from Severum in excess of Aphelios  maximum health is converted into a  shield for an amount of up to 10 \u2212 140 (based on level) (+ 6% maximum health), lasting for up to 30 seconds.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": null,
+        "targeting": "Unit",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": "OTHER",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "attack",
+        "projectile": "FALSE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": null,
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "Gravitum",
+        "effects": [
+          {
+            "description": "Innate - Binding: Gravitum applies a 30%  slow for 3.5 seconds, decaying to 10% after 0.7 seconds.",
+            "icon": "Gravitum.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": null,
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "False",
+        "resource": "OTHER",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "attack",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": null,
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "Infernum",
+        "effects": [
+          {
+            "description": "Innate - Incendiary: Infernum fires a firebolt towards the target enemy unit, splitting into four other firebolts in a cone behind it. The firebolt deals 110% AD physical damage to the main target and 75 / 100% (based on level) AD physical damage to each secondary enemy it passes through, reduced to 34 / 45% (based on level) AD physical damage against  minions.",
+            "icon": "Infernum.png",
+            "leveling": []
+          },
+          {
+            "description": "Critical strikes spray eight firebolts over a 100% wider cone and deal bonus damage.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": null,
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "False",
+        "resource": "OTHER",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "default",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": null,
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "Crescendum",
+        "effects": [
+          {
+            "description": "Innate - Arcing: Basic attacks with Crescendum hurl the blade at the target, which lingers for 0.25 seconds before homing back to Aphelios. He is  disarmed until he retrieves Crescendum, but the attack timer is reset once caught.",
+            "icon": "Crescendum.png",
+            "leveling": []
+          },
+          {
+            "description": "Whenever Aphelios casts an ability that would require him to throw Crescendum, he instead throws a spectral Chakram at his target that similarly returns to him. Aphelios accumulates the Chakrams he catches, up to 20, which last for 5 seconds. Attacks against  champions and epic  monsters will refresh the lifespan on Chakrams.",
+            "icon": "Crescendum 2.png",
+            "leveling": []
+          },
+          {
+            "description": "Basic attacks with Crescendum are empowered to deal 0% \u2212  173% (based on number of Chakrams) AD bonus physical damage and have a 10.67% wind up percentage, decreased to 6.67% when  critically striking. The bonus damage from Chakrams can critically strike.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": null,
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": null,
+        "resource": "OTHER",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "attack",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Accumulated Chakrams accompany Crescendum whenever Aphelios performs a basic attack. This is merely a visual representation of the increased damage, and the separate blades are not considered separate damage sources nor projectiles.\n All Chakram stacks are lost if the Crescendum projectile is destroyed (i.e  Wind Wall,  Unbreakable).",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "600 (+ 75 per 10% bonus attack speed)",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Weapons of the Faithful",
+        "effects": [
+          {
+            "description": "The active effect of Aphelios'  varies based on his current main hand weapon.",
+            "icon": "Weapons of the Faithful.png",
+            "leveling": []
+          },
+          {
+            "description": "The individual actives do not share a cooldown.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": null,
+        "affects": null,
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": null,
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "Moonshot",
+        "effects": [
+          {
+            "description": "Calibrum - Active: Aphelios fires a bolt of energy in a line, dealing 60 / 85 / 110 / 135 / 160 (based on level) (+ 60% bonus AD) (+ 100% AP) physical damage to the first enemy hit.",
+            "icon": "Moonshot.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                " Moonlight",
+                " Moonlight",
+                " Moonlight",
+                " Moonlight",
+                " Moonlight"
+              ]
+            },
+            {
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                10,
+                9.5,
+                9,
+                8.5,
+                8
+              ],
+              "units": [
+                " (based on level)",
+                " (based on level)",
+                " (based on level)",
+                " (based on level)",
+                " (based on level)"
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Moonshot's name is modified based on Aphelios' off-hand weapon:\n  Resurgent Moonshot\n  Binding Moonshot\n  Incendiary Moonshot\n  Arcing Moonshot",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1850",
+        "width": "90",
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "1450"
+      },
+      {
+        "name": "Onslaught",
+        "effects": [
+          {
+            "description": "Severum - Active: For 1.75 seconds, Aphelios gains 20% (+ 10% per 100 AP)  bonus movement speed and autonomously performs up to 6 (+ 3 per 100% bonus attack speed) attacks over the duration to the nearest enemy, prioritizing enemy  champions.",
+            "icon": "Onslaught.png",
+            "leveling": []
+          },
+          {
+            "description": "Attacks alternate between Severum and his current off-hand weapon, each dealing 10 / 15 / 20 / 25 / 30 (based on level) (+ 30% bonus AD) physical damage, 25% on-hit damage and can  critically strike.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                " Moonlight",
+                " Moonlight",
+                " Moonlight",
+                " Moonlight",
+                " Moonlight"
+              ]
+            },
+            {
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                10,
+                9.5,
+                9,
+                8.5,
+                8
+              ],
+              "units": [
+                " (based on level)",
+                " (based on level)",
+                " (based on level)",
+                " (based on level)",
+                " (based on level)"
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Auto-targeted",
+        "affects": "Self, Enemies",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "attack",
+        "projectile": "SPECIAL",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Severum's attacks are not  intercepted, but the attacks from the off-hand weapon are during Onslaught.\n Onslaught's name is modified based on Aphelios' off-hand weapon:\n  Precision Onslaught\n  Binding Onslaught\n  Incendiary Onslaught\n  Arcing Onslaught\n\n Onslaught doesn't apply on-attack effects.\n  Crescendum will not deal damage if blocked by  Wind Wall, but the stacks will still be gained.\n Cosmetically, the Moonlight cost is consumed through the duration.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "Binding Eclipse",
+        "effects": [
+          {
+            "description": "Gravitum - Active: Aphelios expunges all enemies affected by Gravitum's  slow, dealing 50 / 65 / 80 / 95 / 110 (based on level) (+ 35% bonus AD) (+ 70% AP)  magic damage and  rooting them for 1 second.",
+            "icon": "Binding Eclipse.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                " Moonlight",
+                " Moonlight",
+                " Moonlight",
+                " Moonlight",
+                " Moonlight"
+              ]
+            },
+            {
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                12,
+                11.5,
+                11,
+                10.5,
+                10
+              ],
+              "units": [
+                " (based on level)",
+                " (based on level)",
+                " (based on level)",
+                " (based on level)",
+                " (based on level)"
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Auto-targeted",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "Spell",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Binding Eclipse can be buffered before the attack reaches the target.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "Global",
+        "targetRange": null
+      },
+      {
+        "name": "Duskwave",
+        "effects": [
+          {
+            "description": "Infernum - Active: Aphelios unleashes a wave of energy in a cone, dealing 25 / 35 / 45 / 55 / 65 (based on level) (+ 80% bonus AD) (+ 70% AP) physical damage to all enemies hit and locking on to each of them. After a delay, Aphelios then fires a volley of attacks from his current off-hand weapon, one at each locked-on enemy, applying on-hit effects. There is no  range limit for locked-on targets.",
+            "icon": "Duskwave.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                " Moonlight",
+                " Moonlight",
+                " Moonlight",
+                " Moonlight",
+                " Moonlight"
+              ]
+            },
+            {
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                9,
+                8.25,
+                7.5,
+                6.75,
+                6
+              ],
+              "units": [
+                " (based on level)",
+                " (based on level)",
+                " (based on level)",
+                " (based on level)",
+                " (based on level)"
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "special",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The volley applies  area damage and the follow up attacks from the off-hand weapon deal  basic damage.\nThe hitbox also includes a very small portion behind Aphelios's character model\n Duskwave's name is modified based on Aphelios' off-hand weapon:\n  Precision Duskwave\n  Resurgent Duskwave\n  Binding Duskwave\n  Arcing Duskwave\n\n Aphelios is  locked-out of performing basic attacks until Duskwave resolves.\n The automatic attacks do no trigger on-attack effects.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": "40\u00b0",
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "650"
+      },
+      {
+        "name": "Sentry",
+        "effects": [
+          {
+            "description": "Crescendum - Active: Aphelios deploys an  untargetable lunar sentry for up to 20 seconds. The sentry attacks if an enemy gets in range, reducing its duration to 4 seconds and becoming targetable. Deploying a new sentry reduces the eldest's duration to 4 seconds. A sentry has 6 health and take 3 damage per  ranged basic attack and 4 damage per AoE abilities.",
+            "icon": "Sentry.png",
+            "leveling": []
+          },
+          {
+            "description": "The sentry autonomously attacks the nearest enemy in range with a clone of Aphelios current off-hand weapon, dealing 25 / 40 / 55 / 70 / 85 (based on level) (+ 50% bonus AD) (+ 50% AP) physical damage. The sentry attacks 3 times, but this can be increased with Aphelios'  attack speed. The sentry can  critically strike and benefits from Aphelios'  critical strike chance.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                " Moonlight",
+                " Moonlight",
+                " Moonlight",
+                " Moonlight",
+                " Moonlight"
+              ]
+            },
+            {
+              "values": [
+                60,
+                60,
+                60,
+                60,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                9,
+                8.25,
+                7.5,
+                6.75,
+                6
+              ],
+              "units": [
+                " (based on level)",
+                " (based on level)",
+                " (based on level)",
+                " (based on level)",
+                " (based on level)"
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Auto-targeted",
+        "affects": "Enemies",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Pet",
+        "projectile": "SPECIAL",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Sentry's name is modified based on Aphelios' off-hand weapon:\n  Precision Sentry\n  Resurgent Sentry\n  Heals Aphelios for any damage it deals.\n\n  Binding Sentry\n  Incendiary Sentry",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "575",
+        "targetRange": "475"
+      }
+    ],
+    "W": [
+      {
+        "name": "Phase",
+        "effects": [
+          {
+            "description": "Active: Aphelios switches between his main weapon and off-hand weapon.",
+            "icon": "Phase.png",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                0.8,
+                0.8,
+                0.8,
+                0.8,
+                0.8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": null,
+        "affects": null,
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": null,
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "false",
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "E": [
+      {
+        "name": "Weapon Queue System",
+        "effects": [
+          {
+            "description": "The icon of this ability reflects the next weapon that is in reserve.",
+            "icon": "false",
+            "leveling": []
+          },
+          {
+            "description": "Active: Aphelios receives a text prompt of the weapon Alune will create next.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "None",
+        "affects": null,
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "This ability also includes the icon of the off-hand.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "R": [
+      {
+        "name": "Moonlight Vigil",
+        "effects": [
+          {
+            "description": "Active: Aphelios casts forth a lunar spotlight that stops upon illuminating an  enemy champion. Alune smites the area centered on the illuminated enemy, dealing 125 / 175 / 225 (based on level) (+ 20% bonus AD) (+ 100% AP)  physical damage and locking-on to each enemy hit.",
+            "icon": "Moonlight Vigil.png",
+            "leveling": []
+          },
+          {
+            "description": "After a delay, attacks will begin raining from the sky based on Aphelios' current main weapon, one upon each enemy locked-on by Moonlight Vigil, applying on-hit effects. These attacks can  critically strike for (50% +  18.75%) AD bonus physical damage. There is no  range limit for locked-on targets.\n Calibrum: Applies an empowered mark that deals 20 / 45 / 70 (based on level)  additional physical damage per mark.\n\n Severum: If at least one enemy is hit, Aphelios  heals for 200 / 300 / 400 (based on level) health.\n\n Gravitum: The initial  slow is increased to 99%.\n\n Infernum: The initial blast deals an additional 50 / 100 / 150 (based on level) (+ 25% bonus AD) physical damage. Attacks  splash in a 400 unit circle instead of a cone, dealing 75% of that damage. Enemies will take damage from overlapping areas.\n\n Crescendum: 3 additional spectral chakrams return to Aphelios from the first enemy hit, for a total of 4, on top of those from other enemies hit.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                120,
+                110,
+                100
+              ],
+              "units": [
+                " (based on level)",
+                " (based on level)",
+                " (based on level)"
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction / Auto",
+        "affects": "Enemies",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": "aoe",
+        "projectile": "SPECIAL",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The basic attacks do not use  projectiles no matter what main weapon is in play.\n The basic attacks from Moonlight Vigil critically strike independently from each other. Targets further away from the center of the blast are hit after a slightly longer delay. These attacks do not apply on-attack effects.\nChanging weapons while Moonlight Vigil is in flight does not change the effect it has when it hits.\n With  Calibrum, the extra damage from consuming the mark is a bonus damage on top of Calibrum's  normal mark consumption damage.\n With  Infernum, 14 fire bolts splash from each target hit. For  critical strikes, 18 fire bolts are launched instead. This does not occur if the initial damage of Moonlight Vigil kills the target.\n With  Crescendum, 1 spectral chakram is gained for every target hit by the blast, meaning it is possible to gain up to 8 spectral chakrams with one use of Moonlight Vigil if it hits 5 enemy champions.\n PENDING FOR TEST: Champion decoys count for this interaction.\n\n With  Severum, the extra flat heal is given only once, not per target. However, all damage done by Moonlight Vigil with it also heals him from Severum's  own passive effect.\n Moonlight Vigil has different visual effects changed accordingly to each weapon. This may vary depending on the skin, this showcases the default:\n\n     Calibrum  \n     Severum  \n     Gravitum  \n     Infernum  \n     Crescendum",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "300",
+        "targetRange": "1300"
+      }
+    ]
+  },
+  "releaseDate": "2019-12-11",
+  "releasePatch": "9.24",
+  "patchLastChanged": "10.4",
+  "price": {
+    "blueEssence": 6300,
+    "rp": 975
+  }
+}
