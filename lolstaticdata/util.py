@@ -1,8 +1,44 @@
+from typing import Type
 import os
 import json
 import requests
 import itertools
 from bs4 import BeautifulSoup
+from enum import Enum
+
+
+def to_enum_like(string: str) -> str:
+    return string.upper().replace(' ', '_')
+
+
+# Monkey patch this method onto Enums
+@classmethod
+def from_string(cls: Type[Enum], string: str) -> Enum:
+    string = to_enum_like(string)
+    for e in cls:
+        if e.name == string:
+            return e
+    raise ValueError(f"Unknown {cls.__name__} type: {string}")
+Enum.from_string = from_string
+
+
+class OrderedEnum(Enum):
+    def __ge__(self, other):
+        if self.__class__ is other.__class__:
+            return self.value >= other.value
+        return NotImplemented
+    def __gt__(self, other):
+        if self.__class__ is other.__class__:
+            return self.value > other.value
+        return NotImplemented
+    def __le__(self, other):
+        if self.__class__ is other.__class__:
+            return self.value <= other.value
+        return NotImplemented
+    def __lt__(self, other):
+        if self.__class__ is other.__class__:
+            return self.value < other.value
+        return NotImplemented
 
 
 def grouper(iterable, n, fillvalue=None):
@@ -38,7 +74,7 @@ def parse_top_level_parentheses(string):
 
 
 #NONASCII = Counter()
-def download_webpage(url, use_cache: bool = True):
+def download_webpage(url: str, use_cache: bool = True):
     directory = os.path.dirname(os.path.realpath(__file__)) + "/"
     fn = directory + f"../__cache__/{url.replace('/', '@')}"
     if use_cache and os.path.exists(fn):
@@ -58,12 +94,9 @@ def download_webpage(url, use_cache: bool = True):
     html = html.replace(u'\u00ba', u'°')
     html = html.replace(u'\u200b', u'')  # zero width space
     html = html.replace(u'\u200e', u'')  # left-to-right mark
-    html = html.replace(u' \u2013', u':')  # left-to-right mark
+    html = html.replace(u'\u2013', u':')  # left-to-right mark
     html = html.replace(u'\xa0', u' ')
-    html = html.replace(u'&', u'and')
-    html = html.replace(u"\uFF06", u'and')
-    html = html.replace(u'‐', u'-')
-    html = html.replace(u' −', u'-')
+    html = html.replace(u"\uFF06", u'&')
     #html = html.replace(u'☂', u'')
     #html = html.replace(u'•', u'*')
     #html = html.replace(u'’', u'')

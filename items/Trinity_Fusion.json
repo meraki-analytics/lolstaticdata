@@ -1,0 +1,202 @@
+{
+  "name": "Trinity Fusion",
+  "id": 3384,
+  "tier": "Tier 4",
+  "buildsFrom": [
+    "Trinity Force"
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "ornn,forge",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Rage",
+      "effects": "Basic attacks (on-hit) grant +20 flat movement speed for 2 seconds. Killing a unit grants +60 flat movement speed instead. Bonus movement speed is halved on ranged champions."
+    },
+    {
+      "unique": true,
+      "name": "Spellblade",
+      "effects": "After using an ability, your next basic attack within 10 seconds deals 200% base AD bonus physical damage on-hit (1.5 second cooldown)."
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "armor": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "armorPenetration": 0.0,
+    "attackDamage": {
+      "flat": 35.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackSpeed": {
+      "flat": 50.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 20.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "criticalStrikeChance": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "goldPer10": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healAndShieldPower": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 350.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "lifesteal": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicPenetration": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 350.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "movespeed": {
+      "flat": 0.0,
+      "percent": 8.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3733,
+    "priceCombined": 0,
+    "priceSell": 2613,
+    "tags": [
+      "ATTACK:ATTACK_SPEED",
+      "ATTACK:DAMAGE",
+      "DEFENSE:HEALTH",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "MAGIC:MANA",
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
+    ]
+  }
+}

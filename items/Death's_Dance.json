@@ -1,0 +1,201 @@
+{
+  "name": "Death's Dance",
+  "id": 3812,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    "Caulfield's Warhammer",
+    "Pickaxe",
+    "Vampiric Scepter"
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Instantly heal for 15% of all damage dealt, including physical damage, magic damage, and true damage. Area of effect and pet damage only heals 5% for every unit affected."
+    },
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Stores 30% of all post-mitigation physical and magic damage received, which is successively taken as damage over time true damage instead, dealing one-third of the stored damage every second.The last tick of stored damage cannot deal lethal damage, leaving the champion with 1 health."
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "armor": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "armorPenetration": 0.0,
+    "attackDamage": {
+      "flat": 80.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackSpeed": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 10.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "criticalStrikeChance": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "goldPer10": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healAndShieldPower": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "lifesteal": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicPenetration": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "movespeed": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3500,
+    "priceCombined": 625,
+    "priceSell": 2450,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "ATTACK:LIFE_STEAL",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "name": "Luden's Pulse",
+  "id": 3390,
+  "tier": "Tier 4",
+  "buildsFrom": [
+    "Luden's Echo"
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "ornn,forge",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Haste",
+      "effects": "Grants an additional 10% cooldown reduction."
+    },
+    {
+      "unique": true,
+      "name": "Echo",
+      "effects": "Gains charges upon moving or casting. At 100 charges, the next instance of ability damage you deal will expend all charges to deal 100 (+ 10% AP) bonus magic damage to the first enemy hit and to 3 nearby enemies, prioritizing enemies damaged by the ability and champions over minions.Echo grants vision around you to the enemies."
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 120.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "armor": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "armorPenetration": 0.0,
+    "attackDamage": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackSpeed": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 10.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "criticalStrikeChance": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "goldPer10": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healAndShieldPower": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "lifesteal": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicPenetration": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 850.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "movespeed": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3200,
+    "priceCombined": 0,
+    "priceSell": 2240,
+    "tags": [
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:MANA",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
+  }
+}

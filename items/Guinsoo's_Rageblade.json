@@ -1,0 +1,211 @@
+{
+  "name": "Guinsoo's Rageblade",
+  "id": 3124,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    "Amplifying Tome",
+    "Recurve Bow",
+    "Pickaxe"
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Basic attacks deal 15 bonus magic damage on-hit."
+    },
+    {
+      "unique": true,
+      "name": "Last Whisper",
+      "effects": "Grants 15% total armor penetration."
+    },
+    {
+      "unique": true,
+      "name": "Dissolve",
+      "effects": "Grants 15% magic penetration."
+    },
+    {
+      "unique": true,
+      "name": "Basic attacks grant 8% bonus attack speed on-attack, after a 0.15 second delay, for 5 seconds, stacking up to 6 times for a maximum of 48% bonus attack speed. Melee champions can fully stack it with their fourth basic attack. While at 6 stacks gain Guinsoo's Rage",
+      "effects": "Every third basic attack triggers a Phantom Hit on-attack that applies on-hit effects to the target unit after a 0.15 second delay."
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 25.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "armor": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "armorPenetration": 0.0,
+    "attackDamage": {
+      "flat": 25.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackSpeed": {
+      "flat": 25.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "criticalStrikeChance": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "goldPer10": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healAndShieldPower": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "lifesteal": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicPenetration": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "movespeed": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3100,
+    "priceCombined": 790,
+    "priceSell": 2170,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "ATTACK:ATTACK_SPEED",
+      "MAGIC:ABILITY_POWER"
+    ]
+  }
+}

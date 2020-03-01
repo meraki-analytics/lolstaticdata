@@ -1,0 +1,216 @@
+{
+  "name": "Skirmisher's Sabre",
+  "id": 3715,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    "Hunter's Machete",
+    "Hunter's Talisman"
+  ],
+  "buildsInto": [
+    "Bloodrazor",
+    "Cinderhulk",
+    "Runic Echoes",
+    "Warrior"
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "jungle",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Challenging Smite",
+      "effects": "Upgrades Smite to Challenging Smite."
+    },
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Challenging Smite can be cast on enemy champions to mark them for 4 seconds, reducing their damage against you by 20%, and empowering your basic attacks to deal 48 \u2212 125 (based on level) true damage to them over 2.5 seconds."
+    },
+    {
+      "unique": true,
+      "name": "Tooth and Nail",
+      "effects": "Basic attacks versus monsters deal 40 bonus physical damage. Damaging a monster by any means set it aflame, dealing an additional 80 magic damage over 5 seconds while causing you to restore 6 health per second for every enemy you're burning. While in the jungle or river, regenerate 0 \u2212 8 (based on missing mana) mana per second."
+    },
+    {
+      "unique": true,
+      "name": "Monster Hunter",
+      "effects": "Killing large or epic monsters grants +60 bonus experience. Once per game, killing a large monster also grants an additional +150 bonus experience. If your gold from minions is greater than half your gold from monsters, lane minion kills will grant 13 less gold. This penalty is removed at 14 minutes."
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "armor": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "armorPenetration": 0.0,
+    "attackDamage": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackSpeed": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "criticalStrikeChance": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "goldPer10": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healAndShieldPower": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "lifesteal": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicPenetration": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "movespeed": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "unique": 0.0,
+      "uniquePercent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1000,
+    "priceCombined": 300,
+    "priceSell": 700,
+    "tags": [
+      "STARTER ITEMS:JUNGLING",
+      "DEFENSE:HEALTH_REGEN",
+      "ATTACK:DAMAGE",
+      "MAGIC:MANA_REGEN"
+    ]
+  }
+}
