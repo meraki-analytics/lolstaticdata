@@ -330,10 +330,11 @@ def main():
     for url in item_urls:
         print(url)
         item = ItemParser.download(url)
-        jsonfn = directory + f"/../items/{item.name.replace(' ', '_')}.json"
-        with open(jsonfn, 'w') as f:
-            f.write(item.to_json(indent=2))
-        jsons[item.name] = json.loads(item.to_json())
+        if item.id is not None:
+            jsonfn = directory + f"/../items/{item.id}.json"
+            with open(jsonfn, 'w') as f:
+                f.write(item.to_json(indent=2))
+            jsons[item.id] = json.loads(item.to_json())
 
     jsonfn = directory + "/../items.json"
     with open(jsonfn, 'w') as f:
