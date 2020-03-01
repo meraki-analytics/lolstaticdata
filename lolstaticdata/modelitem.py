@@ -8,6 +8,37 @@ from modelcommon import DamageType, Health, HealthRegen, Mana, ManaRegen, Armor,
 from utils import OrderedEnum, ExtendedEncoder
 
 
+class ItemAttributes(OrderedEnum):
+    STARTER_ITEMS = "STARTER_ITEMS"
+    TOOLS = "TOOLS"
+    DEFENSE = "DEFENSE"
+    ATTACK = "ATTACK"
+    MAGIC = "MAGIC"
+    MOVEMENT = "MOVEMENT"
+    JUNGLING = "JUNGLING"
+    LANING = "LANING"
+    ARMOR_PENETRATION = "ARMOR_PENETRATION"
+    MAGIC_PENETRATION = "MAGIC_PENETRATION"
+    CONSUMABLE = "CONSUMABLE"
+    GOLD_INCOME = "GOLD_INCOME"
+    VISION_AND_TRINKETS = "VISION_AND_TRINKETS"
+    ARMOR = "ARMOR"
+    HEALTH = "HEALTH"
+    HEALTH_REGEN = "HEALTH_REGEN"
+    MAGIC_RESISTANCE = "MAGIC_RESISTANCE"
+    MAGIC_RESIST = "MAGIC_RESIST"
+    ATTACK_SPEED = "ATTACK_SPEED"
+    CRITICAL_STRIKE = "CRITICAL_STRIKE"
+    DAMAGE = "ATTACK_DAMAGE"
+    LIFE_STEAL = "LIFE_STEAL"
+    COOLDOWN_REDUCTION = "COOLDOWN_REDUCTION"
+    MANA = "MANA"
+    MANA_REGEN= "MANA_REGEN"
+    ABILITY_POWER = "ABILITY_POWER"
+    BOOTS = "BOOTS"
+    OTHER_MOVEMENT_ITEMS = "OTHER_MOVEMENT_ITEMS"
+
+
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
 class Stats(object):
@@ -87,6 +118,6 @@ class Item(object):
             if stat.flat == stat.percent == stat.unique == stat.unique_percent == stat.per_level == stat.percent_per_level == stat.percent_base == stat.percent_bonus == 0:
                 camel = stringcase.camelcase(name)
                 del d['stats'][camel]
-        if d['stats'].get('armor_penetration') == 0:
-            del d['stats']['armor_penetration']
+        if d['stats'].get('armorPenetration') == 0:
+            del d['stats']['armorPenetration']
         return json.dumps(d, cls=ExtendedEncoder, *args, **kwargs)
