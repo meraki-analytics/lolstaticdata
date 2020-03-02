@@ -12,7 +12,13 @@
   "noEffects": false,
   "removed": false,
   "nickname": "ie",
-  "passives": [],
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "+25% critical damage"
+    }
+  ],
   "auras": [],
   "active": [],
   "stats": {

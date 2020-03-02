@@ -93,6 +93,7 @@ class Passive(object):
     unique : bool
     name : str
     effects : str
+    range : int
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass

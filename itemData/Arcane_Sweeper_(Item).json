@@ -14,8 +14,9 @@
   "passives": [
     {
       "unique": true,
-      "name": " Trap Detection",
-      "effects": " Nearby stealthed enemy traps are revealed."
+      "name": "Trap Detection",
+      "effects": "Nearby stealthed enemy traps are revealed.",
+      "range": null
     }
   ],
   "auras": [],
@@ -23,7 +24,8 @@
     {
       "unique": true,
       "name": null,
-      "effects": " Covers an area with stealth-detecting mist for 5 seconds, granting vision of units which pass through it for 3 seconds. (60 second cooldown) (800 range, 375 AoE estimated)"
+      "effects": "Covers an area with stealth-detecting mist for 5 seconds, granting vision of units which pass through it for 3 seconds. (60 second cooldown) (800 range, 375 AoE estimated)",
+      "range": null
     }
   ],
   "stats": {

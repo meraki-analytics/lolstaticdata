@@ -14,8 +14,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Mana Font",
-      "effects": " Restores 2% of your missing mana every 5 seconds."
+      "name": "Mana Font",
+      "effects": "Restores 2% of your missing mana every 5 seconds."
+    },
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Basic attacks mark champions with a string for 6 seconds, which breaks if they move more than 1000 units away."
     }
   ],
   "auras": [],
@@ -23,7 +28,7 @@
     {
       "unique": true,
       "name": null,
-      "effects": " Pulls all marked champions up to 250 units toward you (45 second cooldown)."
+      "effects": "Pulls all marked champions up to 250 units toward you (45 second cooldown)."
     }
   ],
   "stats": {

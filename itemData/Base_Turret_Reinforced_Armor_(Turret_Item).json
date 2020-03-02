@@ -10,9 +10,14 @@
   "nickname": "",
   "passives": [
     {
-      "unique": false,
-      "name": "Unique Passive",
-      "effects": " While no enemy minions are within range, gain 66.6% damage reduction and immunity to true damage."
+      "unique": true,
+      "name": null,
+      "effects": "While no enemy minions are within range, gain 66.6% damage reduction and immunity to true damage."
+    },
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Base turrets have health regeneration, but cannot regenerate past their current segment. Base Turrets are segmented at 33%, 66% and 100% health."
     }
   ],
   "auras": [],

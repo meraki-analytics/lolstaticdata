@@ -12,13 +12,19 @@
   "noEffects": false,
   "removed": true,
   "nickname": "",
-  "passives": [],
+  "passives": [
+    {
+      "unique": false,
+      "name": null,
+      "effects": "10% spell vamp"
+    }
+  ],
   "auras": [],
   "active": [
     {
       "unique": true,
       "name": null,
-      "effects": " Places a Stealth Ward at target location (600 range) (180 seconds cooldown)."
+      "effects": "Places a Stealth Ward at target location (600 range) (180 seconds cooldown)."
     }
   ],
   "stats": {

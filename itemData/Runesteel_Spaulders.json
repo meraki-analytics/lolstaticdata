@@ -15,16 +15,21 @@
   "passives": [
     {
       "unique": true,
-      "name": " Spoils of War",
-      "effects": " Grants a charge every 45 seconds, up to 3 charges. Basic attacks can consume a charge to execute minions below 50% of their maximum health. Killing a minion by any means with a charge grants you and the nearest allied champion kill gold. These effects require an allied champion to be nearby. Receive diminishing gold from excessive minion kills."
+      "name": "Spoils of War",
+      "effects": "Grants a charge every 45 seconds, up to 3 charges. Basic attacks can consume a charge to execute minions below 50% of their maximum health. Killing a minion by any means with a charge grants you and the nearest allied champion kill gold. These effects require an allied champion to be nearby. Receive diminishing gold from excessive minion kills."
+    },
+    {
+      "unique": true,
+      "name": "Quest",
+      "effects": "Earn 500 using this item to upgrade to Pauldrons of Whiterock, increasing the Warding active to instead have 4 wards in stock."
     }
   ],
   "auras": [],
   "active": [
     {
       "unique": true,
-      "name": " Warding",
-      "effects": " Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area. Holds up to 3 charges which refill upon visiting the shop."
+      "name": "Warding",
+      "effects": "Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area. Holds up to 3 charges which refill upon visiting the shop."
     }
   ],
   "stats": {

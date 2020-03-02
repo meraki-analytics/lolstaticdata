@@ -15,15 +15,30 @@
     {
       "unique": true,
       "name": null,
-      "effects": " +25% bonus health."
+      "effects": "+25% bonus health."
+    },
+    {
+      "unique": true,
+      "name": "Sapping Barbs",
+      "effects": "Grants 60 health regeneration and 45 mana regeneration for 5 seconds whenever you take damage from a monster. Additionally, monsters who attack you bleed for 5% of their maximum health over 3 seconds (capped at 150 damage). Sapping Barbs cannot deal lethal damage."
+    },
+    {
+      "unique": true,
+      "name": "Conservation",
+      "effects": "You generate Conservation stacks every 1.5 seconds, up to 80. Killing a large monster will consume up to 40 stacks and grant 1 per stack consumed. You may only be in possession of 1 Gold Income item."
+    },
+    {
+      "unique": true,
+      "name": "Trap Detection",
+      "effects": "Nearby stealthed enemy traps are revealed."
     }
   ],
   "auras": [],
   "active": [
     {
       "unique": true,
-      "name": " Hunter's Ward",
-      "effects": " Places a Stealth Ward that reveals the surrounding area for 180 seconds (600 range) (180 second cooldown)."
+      "name": "Hunter's Ward",
+      "effects": "Places a Stealth Ward that reveals the surrounding area for 180 seconds (600 range) (180 second cooldown)."
     }
   ],
   "stats": {

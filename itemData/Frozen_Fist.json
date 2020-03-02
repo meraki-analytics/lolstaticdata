@@ -13,8 +13,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Spellblade",
-      "effects": " After using an ability, your next basic attack within 10 seconds deals 100% base AD bonus physical damage on-hit (1.5 second cooldown)."
+      "name": "Spellblade",
+      "effects": "After using an ability, your next basic attack within 10 seconds deals 100% base AD bonus physical damage on-hit (1.5 second cooldown)."
+    },
+    {
+      "unique": true,
+      "name": "Icy Zone",
+      "effects": "Triggering Spellblade also deals 100% base AD physical damage to enemies surrounding the target and creates a icy zone for 2 seconds, which slows enemies within by 30%. The zone has a radius of 180 (+ 55% bonus armor) units."
     }
   ],
   "auras": [],

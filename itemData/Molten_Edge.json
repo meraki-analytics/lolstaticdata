@@ -10,7 +10,13 @@
   "noEffects": false,
   "removed": false,
   "nickname": "ornn,forge",
-  "passives": [],
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "+25% critical damage"
+    }
+  ],
   "auras": [],
   "active": [],
   "stats": {

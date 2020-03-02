@@ -17,8 +17,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Awe",
-      "effects": " Refunds 10% of mana spent."
+      "name": "Awe",
+      "effects": "Refunds 10% of mana spent."
+    },
+    {
+      "unique": true,
+      "name": "Mana Charge",
+      "effects": "Grants a charge every 4 seconds, up to 3 charges. Each mana expenditure consumes a charge and grants +4 mana, up to a maximum of 750 mana."
     }
   ],
   "auras": [],

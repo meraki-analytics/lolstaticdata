@@ -10,9 +10,14 @@
   "nickname": "",
   "passives": [
     {
-      "unique": false,
-      "name": "Unique Passive - Dodge Piercing",
-      "effects": " This turret's attacks cannot be dodged."
+      "unique": true,
+      "name": "Dodge Piercing",
+      "effects": "This turret's attacks cannot be dodged."
+    },
+    {
+      "unique": true,
+      "name": "Warming Up",
+      "effects": "Turrets gain 40% damage each time they strike a champion, up to a maximum of 120% bonus damage."
     }
   ],
   "auras": [],

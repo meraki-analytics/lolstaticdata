@@ -6,7 +6,7 @@
 from bs4 import BeautifulSoup
 import json
 import re
-from lolstaticdata.util import download_webpage_items
+from files.util import download_webpage_items
 from model2 import Stat, Shop, Item, Passive, itemAttributes
 from collections import OrderedDict
 import os
@@ -28,11 +28,22 @@ class get_Items():
                     passive = "pass"
                 passive = self.test3[passive]
                 effect =self.uniquePassiveFunc(passive)
-                effects.append(effect)
-                print(effects)
-                if effects == [None]:
-                    effects = []
-                return effects
+                if effect is None:
+                    continue
+                else:
+                    effects.append(effect)
+            for i in range(1,3):
+                passive = "spec" + str(i)
+                if passive == "spec1":
+                    passive = "spec"
+                passive = self.test3[passive]
+                effect = self.spec(passive)
+
+                if effect is None:
+                    continue
+                else:
+                    effects.append(effect)
+            return effects
 
 
         elif passive == "aura":
@@ -40,66 +51,130 @@ class get_Items():
                 passive = "aura" + str(i)
                 if passive == "aura1":
                     passive = "aura"
-                print(passive)
+                #print(passive)
                 passive = self.test3[passive]
                 effect = self.uniquePassiveFunc(passive)
-                effects.append(effect)
-                if effects == [None]:
-                    effects = []
-                return effects
+                if effect is None:
+                    continue
+                else:
+                    effects.append(effect)
+            return effects
 
         elif passive == "act":
             passive = self.test3[passive]
             effect = self.uniquePassiveFunc(passive)
-            effects.append(effect)
-            if effects == [None]:
+            if effect is None:
                 effects = []
+            else:
+                effects.append(effect)
             return effects
 
+    def spec(self,passive):
+        spec = re.compile('(?<=\+).*')
+        specUnique = re.compile('(Unique:)')
+        try:
+            if not specUnique.match(passive):
+                specData = spec.search(passive).group(0).replace("+ ", "+")
+                effect = Passive(
+                    unique = False,
+                    name = None,
+                    effects = specData
+                )
+            else:
+                effect = self.uniquePassiveFunc(passive)
+
+            return effect
+        except AttributeError:
+            effect = None
+            return effect
 
     def uniquePassiveFunc(self,passive):
-        unique_no_space = re.compile('(Unique:).*')
-        unique_reg = re.compile('(?:(?<=Unique:)|(?<=Unique :)).*')
+        unique_no_space = re.compile('(?:(Unique:)|(Unique –)|(Unique Passive -)).*')
+        unique_name = re.compile('(Unique –).*')
+        unique_reg = re.compile('(?:(?<=Unique: )|(?<=Unique – )|(?<=Unique Passive - )).*')
+        normal_match = re.compile('(Passive - ).*')
+        normal_reg = re.compile('(?<=Passive - ).*')
         not_unique = re.compile('[A-z]')
+        get_range = re.compile('(\d+ range)')
         try:
+            print(passive)
+            if get_range.search(passive):
+
+                range = get_range.search(passive).group(0)
+                range = range.split(" ")
+                range=eval(range[0])
+            else:
+                range = None
             if unique_no_space.match(passive):
-                #I changed util to detect unique items regardless of name or not
-                #Before it had "Unique \u2013 passive name :"
-                uniqueData = unique_reg.search(passive).group(0).replace("  ", " ")
-                if ':' in uniqueData:
-                    unique_split = uniqueData.split(':')
-                    name = unique_split[0]
-                    passive = unique_split[1]
-                    unique = True
+                if unique_name.match(passive):
+
+                    #I changed util to detect unique items regardless of name or not
+                    #Before it had "Unique \u2013 passive name :"
+                    uniqueData = unique_reg.search(passive).group(0).replace("  ", " ")
+
+                    if ':' in uniqueData.replace("  ", " "):
+                        unique_split = uniqueData.split(':', 1)
+                        name = unique_split[0]
+                        passive = unique_split[1].strip()
+                        unique = True
                 else:
+                    uniqueData = unique_reg.search(passive).group(0).replace("  ", " ")
+
                     unique = True
                     name = None
-                    passive = uniqueData
+                    passive = uniqueData.strip()
                 effect = Passive(
-                    unique = unique,
-                    name = name,
-                    effects = passive
+                        unique = unique,
+                        name = name,
+                        effects = passive,
+                        range = range
                 )
                 return effect
 
             else:
                 # return normal passive
-                notUnique = not_unique.search(passive)
                 if not_unique.match(passive):
-                    if ':' in passive:
-                        notUnique_split = passive.split(':')
+                    if normal_match.match(passive):
+                        stuff = normal_reg.search(passive).group(0)
+                        stuff = stuff.split(':')
                         unique = False
-                        name = notUnique_split[0]
-                        passive = notUnique_split[1]
+                        name = stuff[0]
+                        passive = stuff[1]
                     else:
-                        unique = False
-                        name = None
-                        passive = passive
+                        if ':' in passive:
+                            if "Unique Passive" or "UNIQUE Passive"in passive:
+                                passive = passive.replace("Unique Passive:", "")
+                                passive = passive.replace("UNIQUE Passive:", "")
+                                effect = Passive(
+                                    unique = True,
+                                    name = None,
+                                    effects=passive.strip(),
+                                    range = range
+
+                                )
+                                return effect
+
+                            if self.test3["1"] in ("1Bonetooth Necklace"):
+                                passive = passive.replace("\n", "")
+                                unique = False
+                                name = None
+                                passive = passive.replace("  ", " ")
+                            else:
+                                notUnique_split = passive.split(':', 1)
+                                unique = False
+                                name = notUnique_split[0].strip()
+                                passive = notUnique_split[1].strip()
+                        else:
+                            unique = False
+                            name = None
+                            passive = passive
 
                     effect = Passive(
                         unique=unique,
                         name=name,
-                        effects=passive
+                        effects=passive,
+                        range = range
+
                     )
 
                     return effect
@@ -140,9 +215,9 @@ class get_Items():
         #gets all item attributes from the item tags
         #This is a mess. The wiki has tons of miss named tags, this is to get them
         tags = []
+        print(self.test3["1"])
         for i in range(1,8):
             menu = "menu" + str(i)
-            print(menu)
 
             menua = menu+"a"
             menub = menu+"b"
@@ -151,7 +226,6 @@ class get_Items():
             if self.test3[menua]:
                 primaryTag = self.test3[menua]
                 secondaryTag = self.test3[menub]
-                print(self.test3[menua], self.test3[menub])
                 if self.test3[menua] in ('Offense', 'Attack'):
                     primaryTag = "Attack"
                 elif self.test3[menua] in ('Starter Items', 'Starting Items'):
@@ -193,7 +267,6 @@ class get_Items():
                         secondaryTag = "Vision and Trinkets"
 
                     if ';' in self.test3[menub]:
-                        print(self.test3[menub], "Test")
                         secondaryTag= self.test3[menub].replace("; ", ";")
                         #I don't think this is needed (the vision stuff)
                         if secondaryTag in ('Vision andamp;Trinkets', 'VISION AND TRINKETS', 'Vision and&; Trinkets',
@@ -202,12 +275,8 @@ class get_Items():
                             tag = primaryTag.name + ':' + secondaryTag.upper()
                         else:
                             secondaryTag= secondaryTag.split(";")
-                            print(secondaryTag)
                             secondaryTag1 = itemAttributes.from_string(secondaryTag[0])
-                            print(secondaryTag1.name)
-                            print(secondaryTag[1])
                             secondaryTag2 = itemAttributes.from_string(secondaryTag[1])
-                            print(secondaryTag[1])
                             secondaryTag = secondaryTag1.name + "," + secondaryTag2.name
                             tag = primaryTag.name + ":" + secondaryTag.upper()
                     else:
@@ -368,16 +437,13 @@ def main():
         if fileName in ("Champion", "Tower"):
             continue
         items.append(item)
-        print(fileName)
 
         jsonfn = os.path.join(directory, fileName.strip() + ".json")
-        print(jsonfn)
         with open(jsonfn, 'w') as p:
             p.write(item.to_json(indent=2))
             p.close()
     for item in items:
         jsons[item.Name.replace(" ", "_").strip()] = json.loads(item.to_json())
-        print(jsons, "yeet")
     itemFile = os.path.join(directory, "items.json")
     for item in items:
         jsons[item.Name.replace(" ", "_")] = json.loads(item.to_json())

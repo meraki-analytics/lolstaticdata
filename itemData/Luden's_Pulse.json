@@ -13,8 +13,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Haste",
-      "effects": " Grants an additional 10% cooldown reduction."
+      "name": "Haste",
+      "effects": "Grants an additional 10% cooldown reduction."
+    },
+    {
+      "unique": true,
+      "name": "Echo",
+      "effects": "Gains charges upon moving or casting. At 100 charges, the next instance of ability damage you deal will expend all charges to deal 100 (+ 10% AP) bonus magic damage to the first enemy hit and to 3 nearby enemies, prioritizing enemies damaged by the ability and champions over minions.Echo grants vision around you to the enemies."
     }
   ],
   "auras": [],

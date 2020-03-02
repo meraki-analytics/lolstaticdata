@@ -13,8 +13,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Spoils of War",
-      "effects": " Grants a charge every 45 seconds, up to 3 charges. Basic attacks can consume a charge to execute minions. Melee basic attacks execute minions below 50% of their maximum health and ranged basic attacks below 30% of their maximum health. Killing a minion by any means with a charge grants you and the nearest allied champion kill gold. These effects require an allied champion to be nearby. Receive diminishing gold from excessive minion kills."
+      "name": "Spoils of War",
+      "effects": "Grants a charge every 45 seconds, up to 3 charges. Basic attacks can consume a charge to execute minions. Melee basic attacks execute minions below 50% of their maximum health and ranged basic attacks below 30% of their maximum health. Killing a minion by any means with a charge grants you and the nearest allied champion kill gold. These effects require an allied champion to be nearby. Receive diminishing gold from excessive minion kills."
+    },
+    {
+      "unique": true,
+      "name": "Quest",
+      "effects": "Earn 500 using this item to upgrade to Targon's Buckler, gaining the Warding active with 3 wards in stock."
     }
   ],
   "auras": [],

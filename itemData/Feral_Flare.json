@@ -13,8 +13,18 @@
   "passives": [
     {
       "unique": true,
-      "name": " Maim",
-      "effects": " Champion kills, assists and large monsters slain will grant Feral stacks. Basic attacks deal 25 (+1 per Feral stack) bonus magic damage and restore 10 health. Minions and monsters take 75 (+3 per Feral stack) bonus magic damage."
+      "name": "Maim",
+      "effects": "Champion kills, assists and large monsters slain will grant Feral stacks. Basic attacks deal 25 (+1 per Feral stack) bonus magic damage and restore 10 health. Minions and monsters take 75 (+3 per Feral stack) bonus magic damage."
+    },
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Gain 30% increased gold from monsters."
+    },
+    {
+      "unique": true,
+      "name": "Gold Income",
+      "effects": "You may only be in possession of 1 Gold Income item."
     }
   ],
   "auras": [],
@@ -22,7 +32,7 @@
     {
       "unique": true,
       "name": null,
-      "effects": " Places a Stealth Ward at target location that lasts for 180 seconds (1000 range) (180 seconds cooldown)."
+      "effects": "Places a Stealth Ward at target location that lasts for 180 seconds (1000 range) (180 seconds cooldown)."
     }
   ],
   "stats": {

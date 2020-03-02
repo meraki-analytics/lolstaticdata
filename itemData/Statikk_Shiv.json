@@ -14,8 +14,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Energized",
-      "effects": " Moving and basic attacking generates Energize stacks, up to 100."
+      "name": "Energized",
+      "effects": "Moving and basic attacking generates Energize stacks, up to 100."
+    },
+    {
+      "unique": true,
+      "name": "Electroshock",
+      "effects": "When fully Energized, your next basic attack deals 120 bonus magic damage on-hit. Energized attacks bounce to 7 targets."
     }
   ],
   "auras": [],

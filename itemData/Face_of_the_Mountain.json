@@ -14,16 +14,26 @@
   "passives": [
     {
       "unique": true,
-      "name": " Spoils of War",
-      "effects": " Melee basic attacks execute minions below 340- 680 (based on level) health. Melee autoattacks that would proc Spoils of War gain 150 bonus range and slightly increased attack speed. Killing a minion by any means heals you and the nearest allied champion for 50 (+ 2% of missing health) health and grants them kill gold. These effects require an allied champion within 1050 units of the user. Recharges every 20 seconds. Max 4 charges."
+      "name": "Spoils of War",
+      "effects": "Melee basic attacks execute minions below 340 - 680 (based on level) health. Melee autoattacks that would proc Spoils of War gain 150 bonus range and slightly increased attack speed. Killing a minion by any means heals you and the nearest allied champion for 50 (+ 2% of missing health) health and grants them kill gold. These effects require an allied champion within 1050 units of the user. Recharges every 20 seconds. Max 4 charges."
+    },
+    {
+      "unique": true,
+      "name": "Bandit",
+      "effects": "Grants Bandit."
+    },
+    {
+      "unique": true,
+      "name": "Quest",
+      "effects": "Earn 750 using this item. Reward: Shield Battery, a permanent shield for 255 - 340 (based on level) health. The shield regenerates slowly when out-of-combat. Executing minions with Spoils of War regenerates 64 - 85 (based on level) shield value."
     }
   ],
   "auras": [],
   "active": [
     {
       "unique": true,
-      "name": " Deadly Phalanx",
-      "effects": " Grant a shield to yourself and an ally equal to 10% of your maximum health for 4 seconds. After 4 seconds, the shield explodes to slow nearby enemies by 40% for 2 seconds (60 second cooldown)."
+      "name": "Deadly Phalanx",
+      "effects": "Grant a shield to yourself and an ally equal to 10% of your maximum health for 4 seconds. After 4 seconds, the shield explodes to slow nearby enemies by 40% for 2 seconds (60 second cooldown)."
     }
   ],
   "stats": {

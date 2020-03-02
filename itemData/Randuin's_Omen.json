@@ -15,7 +15,12 @@
     {
       "unique": true,
       "name": null,
-      "effects": " -20% critical strike damage taken from basic attacks."
+      "effects": "-20% critical strike damage taken from basic attacks."
+    },
+    {
+      "unique": true,
+      "name": "Cold Steel",
+      "effects": "When hit by basic attacks, cripples source's attack speed by 15% for 1 second."
     }
   ],
   "auras": [],
@@ -23,7 +28,7 @@
     {
       "unique": true,
       "name": null,
-      "effects": " Slows all enemy units within 500 units range by 55% for 2 seconds (60 second cooldown)."
+      "effects": "Slows all enemy units within 500 units range by 55% for 2 seconds (60 second cooldown)."
     }
   ],
   "stats": {

@@ -16,7 +16,12 @@
     {
       "unique": true,
       "name": null,
-      "effects": " Instantly heal for 15% of all damage dealt, including physical damage, magic damage, and true damage. Area of effect and pet damage only heals 5% for every unit affected."
+      "effects": "Instantly heal for 15% of all damage dealt, including physical damage, magic damage, and true damage. Area of effect and pet damage only heals 5% for every unit affected."
+    },
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Stores 30% of all post-mitigation physical and magic damage received, which is successively taken as damage over time true damage instead, dealing one-third of the stored damage every second.The last tick of stored damage cannot deal lethal damage, leaving the champion with 1 health."
     }
   ],
   "auras": [],

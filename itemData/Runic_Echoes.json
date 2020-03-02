@@ -14,8 +14,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Echo",
-      "effects": " Gains charges upon moving or casting. At 100 charges, the next instance of ability damage you deal will expend all charges to deal 60 (+ 10% AP) bonus magic damage to the first enemy hit and summon up to 3 lesser bolts that target nearby enemies, prioritizing enemies damaged by the ability and champions over minions."
+      "name": "Echo",
+      "effects": "Gains charges upon moving or casting. At 100 charges, the next instance of ability damage you deal will expend all charges to deal 60 (+ 10% AP) bonus magic damage to the first enemy hit and summon up to 3 lesser bolts that target nearby enemies, prioritizing enemies damaged by the ability and champions over minions."
+    },
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Echo is amplified to [ 250% ][ 150 (+ 25% AP) ] magic damage on large monsters. Hitting a large monster with this effect will restore 25% of your missing mana."
     }
   ],
   "auras": [],

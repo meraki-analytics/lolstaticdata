@@ -16,7 +16,17 @@
     {
       "unique": true,
       "name": null,
-      "effects": " +12 Lethality (7.47- 12 (based on level) armor penetration)"
+      "effects": "+12 Lethality (7.47 - 12 (based on level) armor penetration)"
+    },
+    {
+      "unique": true,
+      "name": "Blackout",
+      "effects": "When spotted by enemy wards or traps, gain Blackout over a 400-unit radius for 8 seconds (45 second cooldown). You disable surrounding wards, as well as exposing stealthed wards and traps. The effects linger for 2 seconds after you walk away."
+    },
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Your basic attacks instantly kill revealed traps and deal triple damage to wards."
     }
   ],
   "auras": [],

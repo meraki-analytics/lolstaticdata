@@ -17,8 +17,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Energized",
-      "effects": " Moving and basic attacking generates Energize stacks, up to 100."
+      "name": "Energized",
+      "effects": "Moving and basic attacking generates Energize stacks, up to 100."
+    },
+    {
+      "unique": true,
+      "name": "Jolt",
+      "effects": "When fully Energized, your next basic attack deals 80 bonus magic damage on-hit."
     }
   ],
   "auras": [],

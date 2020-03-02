@@ -13,8 +13,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Phantom Hit",
-      "effects": " Every second basic attack against non-structures will trigger a phantom attack, applying on-hit effects twice."
+      "name": "Phantom Hit",
+      "effects": "Every second basic attack against non-structures will trigger a phantom attack, applying on-hit effects twice."
+    },
+    {
+      "unique": false,
+      "name": null,
+      "effects": "60 on-hit magic damage"
     }
   ],
   "auras": [],

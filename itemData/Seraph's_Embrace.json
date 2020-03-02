@@ -13,16 +13,21 @@
   "passives": [
     {
       "unique": true,
-      "name": " Haste",
-      "effects": " Grants an additional 10% cooldown reduction."
+      "name": "Haste",
+      "effects": "Grants an additional 10% cooldown reduction."
+    },
+    {
+      "unique": true,
+      "name": "Awe",
+      "effects": "Grants bonus ability power equal to 3% maximum mana. Refunds 25% of mana spent."
     }
   ],
   "auras": [],
   "active": [
     {
       "unique": true,
-      "name": " Mana Shield",
-      "effects": " Drains 15% of your current mana to shield yourself for an equal amount plus 150 for 2 seconds (120 second cooldown)."
+      "name": "Mana Shield",
+      "effects": "Drains 15% of your current mana to shield yourself for an equal amount plus 150 for 2 seconds (120 second cooldown)."
     }
   ],
   "stats": {

@@ -18,8 +18,18 @@
   "passives": [
     {
       "unique": true,
-      "name": " Blasting Smite",
-      "effects": " Upgrades Smite to Blasting Smite. Blasting Smite deals 50% splash damage to all surrounding minions and monsters and stuns all damaged units for 1.5 seconds. If cast on a monster, you will also restore 15% of your missing health and mana."
+      "name": "Blasting Smite",
+      "effects": "Upgrades Smite to Blasting Smite. Blasting Smite deals 50% splash damage to all surrounding minions and monsters and stuns all damaged units for 1.5 seconds. If cast on a monster, you will also restore 15% of your missing health and mana."
+    },
+    {
+      "unique": true,
+      "name": "Jungler",
+      "effects": "Deal 45 magic damage on hit to monsters over 2 seconds and gain 10 health and 5 mana per second while in combat with monsters."
+    },
+    {
+      "unique": false,
+      "name": null,
+      "effects": " 30 on large monster kill."
     }
   ],
   "auras": [],

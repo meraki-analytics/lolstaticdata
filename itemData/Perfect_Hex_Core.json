@@ -14,7 +14,17 @@
     {
       "unique": false,
       "name": null,
-      "effects": "Grants 10- 180 (based on level) ability power and 25- 450 (based on level) mana."
+      "effects": "Grants 10 - 180 (based on level) ability power and 25 - 450 (based on level) mana."
+    },
+    {
+      "unique": true,
+      "name": "Progress",
+      "effects": "Viktor can upgrade one of his basic abilities. Upon upgrading each of his basic ability, Viktor gains Glorious Evolution."
+    },
+    {
+      "unique": true,
+      "name": "Glorious Evolution",
+      "effects": "Viktor upgrades his Chaos Storm."
     }
   ],
   "auras": [],

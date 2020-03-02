@@ -15,8 +15,23 @@
   "passives": [
     {
       "unique": true,
-      "name": " Giant Strength",
-      "effects": " Gain 50% of base attack damage as bonus attack damage."
+      "name": "Giant Strength",
+      "effects": "Gain 50% of base attack damage as bonus attack damage."
+    },
+    {
+      "unique": true,
+      "name": "Lifeline",
+      "effects": "If you take 400 - 1800 (based on level) damage within 5 seconds, you gain a shield for up to 3.75 seconds equal to 75% bonus health, which start decaying after 0.75 seconds (60 second cooldown)."
+    },
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Triggering Lifeline grants Sterak's Fury."
+    },
+    {
+      "unique": true,
+      "name": "Sterak's Fury",
+      "effects": "Grants increased size and +30% Tenacity for 8 seconds."
     }
   ],
   "auras": [],

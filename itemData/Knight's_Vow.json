@@ -15,7 +15,12 @@
     {
       "unique": true,
       "name": null,
-      "effects": " If your Partner is nearby, gain 20 armor, and 15% bonus movement speed while moving toward them."
+      "effects": "If your Partner is nearby, gain 20 armor, and 15% bonus movement speed while moving toward them."
+    },
+    {
+      "unique": true,
+      "name": null,
+      "effects": "While within 1000 range of your Partner, heal for 12% of the damage your Partner deals to champions and redirect 12% of the damage your Partner takes from champions (after reductions) to you as true damage. Both effects are reduced to 6% if the item holder is ranged."
     }
   ],
   "auras": [],
@@ -23,7 +28,7 @@
     {
       "unique": true,
       "name": null,
-      "effects": " Designate an allied champion within 1000 range as your Partner (90 second cooldown)."
+      "effects": "Designate an allied champion within 1000 range as your Partner (90 second cooldown)."
     }
   ],
   "stats": {

@@ -13,8 +13,23 @@
   "passives": [
     {
       "unique": true,
-      "name": " Devouring",
-      "effects": " Takedowns grant Devourer stacks, increasing on-hit magic damage by +1."
+      "name": "Devouring",
+      "effects": "Takedowns grant Devourer stacks, increasing on-hit magic damage by +1."
+    },
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Stacks on takedown:\n+1 for champions and large monsters.\n+2 for  Rift Scuttlers and  Rift Herald.\n+5 for  Dragon,  Baron and  Vilemaw."
+    },
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Transforms into  Sated Devourer at 30 Devourer stacks."
+    },
+    {
+      "unique": false,
+      "name": null,
+      "effects": "30 on-hit magic damage"
     }
   ],
   "auras": [],

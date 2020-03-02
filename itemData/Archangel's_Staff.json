@@ -14,8 +14,27 @@
   "passives": [
     {
       "unique": true,
-      "name": " Haste",
-      "effects": " Grants an additional 10% cooldown reduction."
+      "name": "Haste",
+      "effects": "Grants an additional 10% cooldown reduction.",
+      "range": null
+    },
+    {
+      "unique": true,
+      "name": "Awe",
+      "effects": "Grants bonus ability power equal to 1% maximum mana. Refunds 25% of mana spent.",
+      "range": null
+    },
+    {
+      "unique": true,
+      "name": "Mana Charge",
+      "effects": "Grants a charge every 4 seconds, up to 3 charges. Each mana expenditure consumes a charge and grants +8 mana, up to a maximum of 750 mana.",
+      "range": null
+    },
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Transforms into  Seraph's Embrace at +750 mana.",
+      "range": null
     }
   ],
   "auras": [],

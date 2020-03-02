@@ -16,8 +16,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Spoils of War",
-      "effects": " Grants a charge every 30 seconds, up to 3 charges. Melee basic attacks can consume one charge to execute minions below 210- 380 (based on level) (+ 100% AD) health. Killing a minion by any means with a charge heals you and the nearest allied champion for 10- 60 (based on missing health) health and grants them kill gold. Healing is halved if the owner is ranged. These effects require an allied champion to be nearby."
+      "name": "Spoils of War",
+      "effects": "Grants a charge every 30 seconds, up to 3 charges. Melee basic attacks can consume one charge to execute minions below 210 - 380 (based on level) (+ 100% AD) health. Killing a minion by any means with a charge heals you and the nearest allied champion for 10 - 60 (based on missing health) health and grants them kill gold. Healing is halved if the owner is ranged. These effects require an allied champion to be nearby."
+    },
+    {
+      "unique": true,
+      "name": "Quest",
+      "effects": "Earn 750 using this item. Reward: Shield Battery, a permanent shield for 255 - 510 (based on level) health. The shield regenerates slowly when out-of-combat. Executing minions with Spoils of War regenerates 64 - 85 (based on level) shield value."
     }
   ],
   "auras": [],

@@ -8,7 +8,13 @@
   "noEffects": false,
   "removed": true,
   "nickname": "",
-  "passives": [],
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Chance on-hit, to apply a minor damage over time effect that deals 10 damage per second for 10 seconds, during which time the target cannot regenerate their health."
+    }
+  ],
   "auras": [],
   "active": [],
   "stats": {

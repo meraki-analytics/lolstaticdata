@@ -15,16 +15,21 @@
   "passives": [
     {
       "unique": true,
-      "name": " Tribute",
-      "effects": " Grants a charge every 10 seconds, up to 3 charges. Damaging abilities and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge grants 15. Receive diminishing gold from excessive minion kills."
+      "name": "Tribute",
+      "effects": "Grants a charge every 10 seconds, up to 3 charges. Damaging abilities and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge grants 15. Receive diminishing gold from excessive minion kills."
+    },
+    {
+      "unique": true,
+      "name": "Quest",
+      "effects": "Earn 500 using this item to upgrade to Shard of True Ice, increasing the Warding active to instead have 4 wards in stock."
     }
   ],
   "auras": [],
   "active": [
     {
       "unique": true,
-      "name": " Warding",
-      "effects": " Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area. Holds up to 3 charges which refill upon visiting the shop."
+      "name": "Warding",
+      "effects": "Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area. Holds up to 3 charges which refill upon visiting the shop."
     }
   ],
   "stats": {

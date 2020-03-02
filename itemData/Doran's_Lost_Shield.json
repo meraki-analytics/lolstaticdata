@@ -8,7 +8,18 @@
   "noEffects": false,
   "removed": true,
   "nickname": "",
-  "passives": [],
+  "passives": [
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Basic attacks deal an additional 5 physical damage to minions on hit."
+    },
+    {
+      "unique": true,
+      "name": null,
+      "effects": "After taking damage from an enemy champion, gain health regeneration equal to 20 health over 10 seconds."
+    }
+  ],
   "auras": [],
   "active": [],
   "stats": {

@@ -14,8 +14,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Eternity",
-      "effects": " Restore mana equal to 15% of damage taken from champions. Restore health equal to 20% of mana spent, up to 25 health per cast, while toggle abilities can heal for up to 25 per second."
+      "name": "Eternity",
+      "effects": "Restore mana equal to 15% of damage taken from champions. Restore health equal to 20% of mana spent, up to 25 health per cast, while toggle abilities can heal for up to 25 per second."
+    },
+    {
+      "unique": true,
+      "name": null,
+      "effects": "After using an ability, restore 8% of missing health and 3% of missing mana over 3 seconds."
     }
   ],
   "auras": [],

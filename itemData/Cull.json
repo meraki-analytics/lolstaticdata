@@ -12,7 +12,17 @@
     {
       "unique": true,
       "name": null,
-      "effects": " Killing a minion grants +1, up to a maximum of +100."
+      "effects": "Killing a minion grants +1, up to a maximum of +100."
+    },
+    {
+      "unique": false,
+      "name": null,
+      "effects": "After having killed 100 minions, grants an additional  +350 and permanently disables this passive."
+    },
+    {
+      "unique": false,
+      "name": null,
+      "effects": "3 health on-hit"
     }
   ],
   "auras": [],

@@ -15,7 +15,12 @@
     {
       "unique": true,
       "name": null,
-      "effects": " +15% capture rate. Does not stack with other capture rate modifiers."
+      "effects": "+15% capture rate. Does not stack with other capture rate modifiers."
+    },
+    {
+      "unique": false,
+      "name": null,
+      "effects": "25 health regeneration"
     }
   ],
   "auras": [],
@@ -23,7 +28,7 @@
     {
       "unique": true,
       "name": null,
-      "effects": " Grants 30% movement speed for 2 seconds (60 second cooldown)."
+      "effects": "Grants 30% movement speed for 2 seconds (60 second cooldown)."
     }
   ],
   "stats": {

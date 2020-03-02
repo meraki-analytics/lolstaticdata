@@ -15,8 +15,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Rage",
-      "effects": " Basic attacks (on-hit) grant +20 flat movement speed for 2 seconds. Killing a unit grants +60 flat movement speed instead. Bonus movement speed is halved on ranged champions."
+      "name": "Rage",
+      "effects": "Basic attacks (on-hit) grant +20 flat movement speed for 2 seconds. Killing a unit grants +60 flat movement speed instead. Bonus movement speed is halved on ranged champions."
+    },
+    {
+      "unique": true,
+      "name": "Spellblade",
+      "effects": "After using an ability, your next basic attack within 10 seconds deals 200% base AD bonus physical damage on-hit (1.5 second cooldown)."
     }
   ],
   "auras": [],

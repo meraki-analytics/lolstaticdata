@@ -14,8 +14,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Lifeline",
-      "effects": " Upon taking magic damage that would reduce health below 30%, grants a shield that absorbs 400 magic damage for 5 seconds (90 second cooldown)."
+      "name": "Lifeline",
+      "effects": "Upon taking magic damage that would reduce health below 30%, grants a shield that absorbs 400 magic damage for 5 seconds (90 second cooldown)."
+    },
+    {
+      "unique": true,
+      "name": "Tenacity",
+      "effects": "Reduces the duration of most forms of crowd control by 35%."
     }
   ],
   "auras": [],

@@ -10,9 +10,10 @@
   "nickname": "",
   "passives": [
     {
-      "unique": false,
-      "name": "Unique Passive - Reinforced Armor",
-      "effects": " Damage from turrets is modified against this minion. Outer turrets always deal 14% maximum health; inner turrets deal 11% maximum health; and base turrets deal 8% maximum health."
+      "unique": true,
+      "name": "Reinforced Armor",
+      "effects": "Damage from turrets is modified against this minion. Outer turrets always deal 14% maximum health; inner turrets deal 11% maximum health; and base turrets deal 8% maximum health.",
+      "range": null
     }
   ],
   "auras": [],

@@ -15,15 +15,20 @@
     {
       "unique": true,
       "name": null,
-      "effects": " Casting your ultimate near your Conduit grant both of you bonus effects for 10 seconds. You are surrounded with a 300 range Frost storm which slows enemies within it by 20%, and your Conduit's basic attacks burn their target with Fire dealing 30% bonus magic damage over 2 seconds (45 second cooldown)."
+      "effects": "Casting your ultimate near your Conduit grant both of you bonus effects for 10 seconds. You are surrounded with a 300 range Frost storm which slows enemies within it by 20%, and your Conduit's basic attacks burn their target with Fire dealing 30% bonus magic damage over 2 seconds (45 second cooldown)."
+    },
+    {
+      "unique": true,
+      "name": "Frostfire Covenant",
+      "effects": "If an enemy is both struck by Frost and Fire, your Frost storm ignites and becomes Frostfire. A Frostfire storm, deals 40 magic damage per second to nearby enemies and slows by 40% instead for 3 seconds."
     }
   ],
   "auras": [],
   "active": [
     {
       "unique": true,
-      "name": " Conduit",
-      "effects": " Designate an allied champion within 1000 range as your Conduit (0.5 second cooldown)."
+      "name": "Conduit",
+      "effects": "Designate an allied champion within 1000 range as your Conduit (0.5 second cooldown)."
     }
   ],
   "stats": {

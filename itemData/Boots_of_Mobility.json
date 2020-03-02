@@ -13,8 +13,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Enhanced Movement",
-      "effects": " +25 flat movement speed"
+      "name": "Enhanced Movement",
+      "effects": "+25 flat movement speed"
+    },
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Increases to +115 flat movement speed when out-of-combat. Receiving damage, dealing damage or debuffing units will put you in-combat, disabling this passive for 5 seconds."
     }
   ],
   "auras": [],

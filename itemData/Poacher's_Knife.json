@@ -19,7 +19,17 @@
     {
       "unique": true,
       "name": null,
-      "effects": " Upgrades Smite to Scavenging Smite. If Scavenging Smite is used on a large monster in the enemy's jungle, the recharge timer is halved. Upon killing the affected monster, you gain 20 bonus gold and 175% bonus movement speed that decays over 2 seconds."
+      "effects": "Upgrades Smite to Scavenging Smite. If Scavenging Smite is used on a large monster in the enemy's jungle, the recharge timer is halved. Upon killing the affected monster, you gain 20 bonus gold and 175% bonus movement speed that decays over 2 seconds."
+    },
+    {
+      "unique": true,
+      "name": "Jungler",
+      "effects": "Deal 45 magic damage on hit to monsters over 2 seconds and gain 10 health and 5 mana per second while in combat with monsters."
+    },
+    {
+      "unique": false,
+      "name": null,
+      "effects": " 30 on large monster kill."
     }
   ],
   "auras": [],

@@ -13,8 +13,18 @@
   "passives": [
     {
       "unique": true,
-      "name": " Aid",
-      "effects": " Your Summoner Heal, Clarity and Clairvoyance cooldowns are reduced by 25%."
+      "name": "Aid",
+      "effects": "Your Summoner Heal, Clarity and Clairvoyance cooldowns are reduced by 25%."
+    },
+    {
+      "unique": true,
+      "name": "Eleisa's Blessing",
+      "effects": "If you gain 3 levels with this item, you gain all the effects permanently and this item is consumed."
+    },
+    {
+      "unique": false,
+      "name": null,
+      "effects": "10 health regeneration"
     }
   ],
   "auras": [],

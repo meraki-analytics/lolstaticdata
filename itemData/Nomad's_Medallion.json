@@ -16,8 +16,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Favor",
-      "effects": " Nearby enemy minions, killed by any ally other than you, will sometimes drop a coin that can be picked up to either grant 50 or restore 6% missing mana (minimum 10). Gold coin can only drop if an allied champion is nearby. Cannon minions will drop a coin as long as you don't kill them."
+      "name": "Favor",
+      "effects": "Nearby enemy minions, killed by any ally other than you, will sometimes drop a coin that can be picked up to either grant 50 or restore 6% missing mana (minimum 10). Gold coin can only drop if an allied champion is nearby. Cannon minions will drop a coin as long as you don't kill them."
+    },
+    {
+      "unique": true,
+      "name": "Quest",
+      "effects": "Earn 500 using this item. Reward: Permanently upgrades Nomad's Medallion to Nomad's Eye and Remnant of the Ascended to Eye of Ascension, giving them the Warding active with respectively 3 and 4 wards in stock."
     }
   ],
   "auras": [],

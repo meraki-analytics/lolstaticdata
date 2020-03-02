@@ -15,8 +15,18 @@
   "passives": [
     {
       "unique": true,
-      "name": " Maim",
-      "effects": " Basic attacks against monsters deal 75 bonus magic damage and restore 10 health."
+      "name": "Maim",
+      "effects": "Basic attacks against monsters deal 75 bonus magic damage and restore 10 health."
+    },
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Gain 30% increased gold from monsters."
+    },
+    {
+      "unique": true,
+      "name": "Trap Detection",
+      "effects": "Nearby stealthed enemy traps are revealed."
     }
   ],
   "auras": [],
@@ -24,7 +34,7 @@
     {
       "unique": true,
       "name": null,
-      "effects": " Summons a stealth-detecting mist that grants vision in the target area for 5 seconds and reveals enemies that enter it for 3 seconds (60 second cooldown) (800 range, 375 AoE)."
+      "effects": "Summons a stealth-detecting mist that grants vision in the target area for 5 seconds and reveals enemies that enter it for 3 seconds (60 second cooldown) (800 range, 375 AoE)."
     }
   ],
   "stats": {

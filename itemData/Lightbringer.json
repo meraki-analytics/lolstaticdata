@@ -14,8 +14,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Critical Vision",
-      "effects": " Critical strikes cause enemies to bleed for an additional 90% bonus AD as magic damage over 3 seconds and reveal them for the duration."
+      "name": "Critical Vision",
+      "effects": "Critical strikes cause enemies to bleed for an additional 90% bonus AD as magic damage over 3 seconds and reveal them for the duration."
+    },
+    {
+      "unique": true,
+      "name": "Trap Detection",
+      "effects": "Nearby stealthed enemy traps are revealed."
     }
   ],
   "auras": [],
@@ -23,7 +28,7 @@
     {
       "unique": true,
       "name": null,
-      "effects": " Covers a target area in a stealth-detecting mist that grants vision for 5 seconds and reveals enemies that enter it for 3 seconds (60 second cooldown) (800 range, 375 AoE estimated)."
+      "effects": "Covers a target area in a stealth-detecting mist that grants vision for 5 seconds and reveals enemies that enter it for 3 seconds (60 second cooldown) (800 range, 375 AoE estimated)."
     }
   ],
   "stats": {

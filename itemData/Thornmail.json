@@ -15,8 +15,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Thorns",
-      "effects": " Upon being hit by a basic attack on-hit, reflects 25 (+ 10% bonus armor) magic damage, while also inflicting Grievous Wounds on the attacker for 3 seconds."
+      "name": "Thorns",
+      "effects": "Upon being hit by a basic attack on-hit, reflects 25 (+ 10% bonus armor) magic damage, while also inflicting Grievous Wounds on the attacker for 3 seconds."
+    },
+    {
+      "unique": true,
+      "name": "Cold Steel",
+      "effects": "When hit by basic attacks, cripples source's attack speed by 15% for 1 second."
     }
   ],
   "auras": [],

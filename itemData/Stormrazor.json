@@ -15,8 +15,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Energized",
-      "effects": " Moving and basic attacking generates Energize stacks, up to 100."
+      "name": "Energized",
+      "effects": "Moving and basic attacking generates Energize stacks, up to 100."
+    },
+    {
+      "unique": true,
+      "name": "Paralyze",
+      "effects": "When fully Energized, your next basic attack deals 120 bonus magic damage on-hit. Energized effects slow by 75% for 0.5 seconds."
     }
   ],
   "auras": [],

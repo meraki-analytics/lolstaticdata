@@ -12,7 +12,13 @@
   "noEffects": false,
   "removed": true,
   "nickname": "",
-  "passives": [],
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Grants a shield that absorbs damage. The shield will refresh after a short period without taking damage."
+    }
+  ],
   "auras": [],
   "active": [],
   "stats": {

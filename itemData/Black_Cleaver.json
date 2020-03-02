@@ -15,7 +15,12 @@
     {
       "unique": true,
       "name": null,
-      "effects": " Dealing physical damage to an enemy champion Cleaves them, reducing their armor by 4% for 6 seconds, stacking up to 6 times for a maximum of 24%."
+      "effects": "Dealing physical damage to an enemy champion Cleaves them, reducing their armor by 4% for 6 seconds, stacking up to 6 times for a maximum of 24%."
+    },
+    {
+      "unique": true,
+      "name": "Rage",
+      "effects": "Dealing physical damage grants 20 movement speed for 2 seconds. Assists on Cleaved enemy champions or kills on any unit grant 60 movement speed for 2 seconds instead. This movement speed bonus is halved for ranged champions."
     }
   ],
   "auras": [],

@@ -14,8 +14,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Spellblade",
-      "effects": " After using an ability, your next basic attack (on-hit) deals 100% base AD + (30% AP) bonus magic damage (1.5 second cooldown)."
+      "name": "Spellblade",
+      "effects": "After using an ability, your next basic attack (on-hit) deals 100% base AD + (30% AP) bonus magic damage (1.5 second cooldown)."
+    },
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Against monsters, Spellblade deals area of effect magic damage around the target and restores 8% missing mana. Spellblade also deals double damage (200% base AD + (60% AP)) against the first monster hit."
     }
   ],
   "auras": [],

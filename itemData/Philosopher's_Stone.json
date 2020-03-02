@@ -19,8 +19,18 @@
   "passives": [
     {
       "unique": true,
-      "name": " Transmute",
-      "effects": " + 5 per 10 seconds."
+      "name": "Transmute",
+      "effects": "+ 5 per 10 seconds."
+    },
+    {
+      "unique": false,
+      "name": null,
+      "effects": "7 health regeneration"
+    },
+    {
+      "unique": false,
+      "name": null,
+      "effects": "9 mana regeneration"
     }
   ],
   "auras": [],

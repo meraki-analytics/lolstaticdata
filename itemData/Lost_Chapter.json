@@ -19,8 +19,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Haste",
-      "effects": " Grants an additional 10% cooldown reduction."
+      "name": "Haste",
+      "effects": "Grants an additional 10% cooldown reduction."
+    },
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Upon leveling, restores 20% of your maximum mana over 3 seconds."
     }
   ],
   "auras": [],

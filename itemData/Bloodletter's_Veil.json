@@ -14,8 +14,13 @@
   "passives": [
     {
       "unique": true,
-      "name": " Touch of Death",
-      "effects": " +15 magic penetration."
+      "name": "Touch of Death",
+      "effects": "+15 magic penetration."
+    },
+    {
+      "unique": true,
+      "name": null,
+      "effects": "After hitting an enemy champion with a damaging ability, gain a spell shield for 2 seconds that blocks 1 incoming spell (30 second cooldown)."
     }
   ],
   "auras": [],
