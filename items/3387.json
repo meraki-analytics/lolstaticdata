@@ -1,0 +1,64 @@
+{
+  "name": "Frozen Fist",
+  "id": 3387,
+  "tier": "Tier 4",
+  "buildsFrom": [
+    3025
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "ornn,forge",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Spellblade",
+      "effects": "After using an ability, your next basic attack within 10 seconds deals 100% base AD bonus physical damage on-hit (1.5 second cooldown).",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Icy Zone",
+      "effects": "Triggering Spellblade also deals 100% base AD physical damage to enemies surrounding the target and creates a icy zone for 2 seconds, which slows enemies within by 30%. The zone has a radius of 180 (+ 55% bonus armor) units.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "armor": {
+      "flat": 125.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 20.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 700.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2700,
+    "priceCombined": 0,
+    "priceSell": 1890,
+    "tags": [
+      "DEFENSE:ARMOR",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "MAGIC:MANA"
+    ]
+  }
+}

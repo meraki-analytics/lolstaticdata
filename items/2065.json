@@ -1,0 +1,77 @@
+{
+  "name": "Shurelya's Reverie",
+  "id": 2065,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3114,
+    3801
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [],
+  "active": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Grants you and nearby allies 40% bonus movement speed for 3 seconds (90 second cooldown).",
+      "range": 0,
+      "cooldown": 90.0
+    }
+  ],
+  "auras": [],
+  "stats": {
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healAndShieldPower": {
+      "flat": 10.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 300.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 100.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 0.0,
+      "percent": 100.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2050,
+    "priceCombined": 600,
+    "priceSell": 1435,
+    "tags": [
+      "DEFENSE:HEALTH",
+      "DEFENSE:HEALTH_REGEN",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "MAGIC:MANA_REGEN"
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Atma's Impaler",
+  "id": 3005,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    1031,
+    3093
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "You gain attack damage equal to 1.5% of your maximum health.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "armor": {
+      "flat": 45.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "criticalStrikeChance": {
+      "flat": 0.0,
+      "percent": 15.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2300,
+    "priceCombined": 780,
+    "priceSell": 1610,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "ATTACK:CRITICAL_STRIKE",
+      "DEFENSE:ARMOR"
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "Haunting Guise",
+  "id": 3136,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1028,
+    1052
+  ],
+  "buildsInto": [
+    3151
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "mask",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Madness",
+      "effects": "Damaging an enemy champion generates one stack every second for the next 4 seconds. Deal 2% increased damage for each stack, up to a maximum of 10%.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 35.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 200.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1500,
+    "priceCombined": 665,
+    "priceSell": 1120,
+    "tags": [
+      "DEFENSE:HEALTH",
+      "MAGIC:ABILITY_POWER"
+    ]
+  }
+}

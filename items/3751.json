@@ -1,0 +1,43 @@
+{
+  "name": "Bami's Cinder",
+  "id": 3751,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1028
+  ],
+  "buildsInto": [
+    null,
+    3068
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Immolate",
+      "effects": "Deals 6 \u2212 23 (based on level) magic damage per second to nearby enemies (325 range).Hitting an enemy with an immobilizing ability deals 6 \u2212 23 (based on level) (+ 1% bonus health) bonus magic damage and releases a fire nova that also deals that bonus damage to nearby enemies (12 second cooldown).Immolate's damage is increased by 100% against minions and monsters.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "health": {
+      "flat": 200.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 900,
+    "priceCombined": 500,
+    "priceSell": 630,
+    "tags": [
+      "DEFENSE:HEALTH"
+    ]
+  }
+}

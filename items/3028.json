@@ -1,0 +1,55 @@
+{
+  "name": "Chalice of Harmony",
+  "id": 3028,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1004,
+    1033,
+    1004
+  ],
+  "buildsInto": [
+    3174,
+    3222
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Harmony",
+      "effects": "Gain +25% base health regeneration for every additional 25% base mana regeneration.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "magicResistance": {
+      "flat": 30.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 0.0,
+      "percent": 50.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 800,
+    "priceCombined": 100,
+    "priceSell": 560,
+    "tags": [
+      "DEFENSE:MAGIC_RESIST",
+      "MAGIC:MANA_REGEN",
+      "DEFENSE:HEALTH_REGEN"
+    ]
+  }
+}

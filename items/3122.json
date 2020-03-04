@@ -1,0 +1,52 @@
+{
+  "name": "Wicked Hatchet",
+  "id": 3122,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1051,
+    1036
+  ],
+  "buildsInto": [
+    3185
+  ],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Critical strikes cause enemies to bleed for an additional 60% bonus AD as magic damage over 3 seconds.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 20.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "criticalStrikeChance": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1200,
+    "priceCombined": 440,
+    "priceSell": 840,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "ATTACK:CRITICAL_STRIKE"
+    ]
+  }
+}

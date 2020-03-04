@@ -1,0 +1,44 @@
+{
+  "name": "Soul Shroud",
+  "id": 3099,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3037,
+    3067,
+    1028
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [],
+  "active": [],
+  "auras": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Nearby champions gain 10% cooldown reduction and 12 mana regeneration (1200 range).",
+      "range": 1200
+    }
+  ],
+  "stats": {
+    "health": {
+      "flat": 520.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2285,
+    "priceCombined": 485,
+    "priceSell": 1628,
+    "tags": [
+      "DEFENSE:HEALTH",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "MAGIC:MANA_REGEN"
+    ]
+  }
+}

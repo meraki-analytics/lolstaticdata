@@ -1,0 +1,53 @@
+{
+  "name": "Phage",
+  "id": 3044,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1028,
+    1036
+  ],
+  "buildsInto": [
+    3071,
+    3078
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Rage",
+      "effects": "Basic attacks (on-hit) grant +20 flat movement speed for 2 seconds. Killing a Unit grants +60 flat movement speed instead.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 15.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 200.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1250,
+    "priceCombined": 500,
+    "priceSell": 875,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "DEFENSE:HEALTH"
+    ]
+  }
+}

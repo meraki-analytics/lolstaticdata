@@ -1,0 +1,70 @@
+{
+  "name": "Trickster's Glass",
+  "id": 3829,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3136,
+    1028
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Eyes of Pain",
+      "effects": "+15 magic penetration",
+      "stats": [
+        {
+          "magicPenetration": {
+            "flat": "15",
+            "percent": 0.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "active": [
+    {
+      "unique": true,
+      "name": "Disguise",
+      "effects": "Teleports to the target allied champion (550 range) and takes on their appearance for 30 seconds. The disguise includes the target's current health, mana and emotes. The disguise is broken upon casting a spell or attacking, or upon your or the disguise's health being dropped to 0. 90 second cooldown.",
+      "range": 550,
+      "cooldown": 90.0
+    }
+  ],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 60.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 400.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2115,
+    "priceCombined": 215,
+    "priceSell": 1481,
+    "tags": [
+      "MAGIC:ABILITY_POWER",
+      "DEFENSE:HEALTH",
+      "MAGIC:MAGIC_PENETRATION"
+    ]
+  }
+}

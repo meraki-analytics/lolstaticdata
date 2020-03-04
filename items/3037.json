@@ -1,0 +1,31 @@
+{
+  "name": "Mana Manipulator",
+  "id": 3037,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1004
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [],
+  "active": [],
+  "auras": [
+    {
+      "unique": true,
+      "name": "Mana Warp",
+      "effects": "Nearby allied champions gain 5 mana regeneration (1100 range).",
+      "range": 1100
+    }
+  ],
+  "stats": {},
+  "shop": {
+    "priceTotal": 300,
+    "priceCombined": 120,
+    "priceSell": 210,
+    "tags": [
+      "MAGIC:MANA_REGEN"
+    ]
+  }
+}

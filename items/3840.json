@@ -1,0 +1,48 @@
+{
+  "name": "Globe of Trust",
+  "id": 3840,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3841,
+    3114
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [],
+  "active": [
+    {
+      "unique": true,
+      "name": "Safe Harbor",
+      "effects": "Lobs a bubble that shields allies hit from the next 150 damage. You generate 1 for every 4 damage absorbed for a maximum of 150 per cast (maximum of 37.5 per ally). Self-cast shields will not generate gold from monster damage. 15 second cooldown.",
+      "range": 0,
+      "cooldown": 15.0
+    }
+  ],
+  "auras": [],
+  "stats": {
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 20.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 0.0,
+      "percent": 150.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2100,
+    "priceCombined": 635,
+    "priceSell": 0,
+    "tags": []
+  }
+}

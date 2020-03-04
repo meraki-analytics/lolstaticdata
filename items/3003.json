@@ -1,0 +1,89 @@
+{
+  "name": "Archangel's Staff",
+  "id": 3003,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3070,
+    3802
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "aa",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Haste",
+      "effects": "Grants an additional 10% cooldown reduction.",
+      "stats": [
+        {
+          "cooldownReduction": {
+            "flat": 0.0,
+            "percent": 10.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "unique": true,
+      "name": "Awe",
+      "effects": "Grants bonus ability power equal to 1% maximum mana. Refunds 25% of mana spent.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Mana Charge",
+      "effects": "Grants a charge every 4 seconds, up to 3 charges. Each mana expenditure consumes a charge and grants +8 mana, up to a maximum of 750 mana.",
+      "stats": []
+    },
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Transforms into Seraph's Embrace at +750 mana.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 50.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 650.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3200,
+    "priceCombined": 1050,
+    "priceSell": 2240,
+    "tags": [
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:MANA",
+      "MAGIC:MANA_REGEN",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Recurve Bow",
+  "id": 1043,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1042,
+    1042
+  ],
+  "buildsInto": [
+    3153,
+    null,
+    3124,
+    3091
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Basic attacks deal 15 bonus physical damage on-hit.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackSpeed": {
+      "flat": 25.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1000,
+    "priceCombined": 400,
+    "priceSell": 700,
+    "tags": [
+      "ATTACK:ATTACK_SPEED"
+    ]
+  }
+}

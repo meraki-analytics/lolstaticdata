@@ -1,0 +1,60 @@
+{
+  "name": "Bloodthirster",
+  "id": 3072,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    1038,
+    1053,
+    1036
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "bt",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "+20% life steal",
+      "stats": [
+        {
+          "lifesteal": {
+            "flat": 0.0,
+            "percent": 20.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Your life steal overheals you, converting the excess healing into a shield that absorbs up to 50 \u2212 350 (based on level) damage and decays when out-of-combat for 25 seconds.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 80.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3500,
+    "priceCombined": 950,
+    "priceSell": 2450,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "ATTACK:LIFE_STEAL"
+    ]
+  }
+}

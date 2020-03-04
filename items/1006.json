@@ -1,0 +1,35 @@
+{
+  "name": "Rejuvenation Bead",
+  "id": 1006,
+  "tier": "Tier 1",
+  "buildsFrom": [],
+  "buildsInto": [
+    3194,
+    3801,
+    3077
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 50.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 150,
+    "priceCombined": 0,
+    "priceSell": 105,
+    "tags": [
+      "DEFENSE:HEALTH_REGEN"
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "name": "Spirit Visage",
+  "id": 3065,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3067,
+    3211
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "sv",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Increases effectiveness of all sources of health restoration by 30% (including health regeneration, life steal and spell vamp).",
+      "stats": [
+        {
+          "lifesteal": {
+            "flat": 0.0,
+            "percent": 30.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 450.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 100.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 55.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2800,
+    "priceCombined": 800,
+    "priceSell": 1960,
+    "tags": [
+      "DEFENSE:HEALTH",
+      "DEFENSE:HEALTH_REGEN",
+      "DEFENSE:MAGIC_RESIST",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
+  }
+}

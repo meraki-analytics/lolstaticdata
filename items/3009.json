@@ -1,0 +1,48 @@
+{
+  "name": "Boots of Swiftness",
+  "id": 3009,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1001
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Enhanced Movement",
+      "effects": "+60 flat movement speed",
+      "stats": [
+        {
+          "movespeed": {
+            "flat": 60.0,
+            "percent": 0.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "unique": true,
+      "name": "Slow Resist",
+      "effects": "Reduces the effectiveness of slows by 25%.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {},
+  "shop": {
+    "priceTotal": 900,
+    "priceCombined": 600,
+    "priceSell": 630,
+    "tags": [
+      "MOVEMENT:BOOTS"
+    ]
+  }
+}

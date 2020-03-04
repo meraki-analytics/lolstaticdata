@@ -1,0 +1,74 @@
+{
+  "name": "Ravenous Hydra",
+  "id": 3074,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3077,
+    1053,
+    1037
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Life steal applies to 50% of Cleave and Crescent's splash physical damage.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Cleave",
+      "effects": "Basic attacks deal (20% to 60% AD) physical damage to units around your target : (20% AD near the edge).",
+      "stats": []
+    }
+  ],
+  "active": [
+    {
+      "unique": true,
+      "name": "Crescent",
+      "effects": "Deals (60% to 100% AD) physical damage to units in front of you : (60% AD near the edge) (10 second cooldown).",
+      "range": 0,
+      "cooldown": 10.0
+    }
+  ],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 80.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 100.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "lifesteal": {
+      "flat": 0.0,
+      "percent": 18.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3500,
+    "priceCombined": 400,
+    "priceSell": 2450,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "ATTACK:LIFE_STEAL",
+      "DEFENSE:HEALTH_REGEN"
+    ]
+  }
+}

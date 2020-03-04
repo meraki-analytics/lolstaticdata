@@ -1,0 +1,50 @@
+{
+  "name": "Will of the Ancients",
+  "id": 3152,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3145,
+    3108
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Abilities instantly heal for 15% of raw damage dealt, including physical, magical and true damage. Area of effect abilities only heal 5% for every unit affected.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 80.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2300,
+    "priceCombined": 300,
+    "priceSell": 1610,
+    "tags": [
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
+  }
+}

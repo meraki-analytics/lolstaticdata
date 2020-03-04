@@ -1,0 +1,47 @@
+{
+  "name": "Aether Wisp",
+  "id": 3113,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1052
+  ],
+  "buildsInto": [
+    3504,
+    3100,
+    3907,
+    3905
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 30.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "movespeed": {
+      "flat": 0.0,
+      "percent": 5.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 850,
+    "priceCombined": 415,
+    "priceSell": 595,
+    "tags": [
+      "MAGIC:ABILITY_POWER",
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
+    ]
+  }
+}

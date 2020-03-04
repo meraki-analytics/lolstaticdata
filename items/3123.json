@@ -1,0 +1,42 @@
+{
+  "name": "Executioner's Calling",
+  "id": 3123,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1036
+  ],
+  "buildsInto": [
+    3033
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Executioner",
+      "effects": "Physical damage inflicts Grievous Wounds on enemy champions for 3 seconds.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 15.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 800,
+    "priceCombined": 450,
+    "priceSell": 560,
+    "tags": [
+      "ATTACK:DAMAGE"
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "name": "Spirit of the Ancient Golem",
+  "id": 3207,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3205,
+    3067
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "+25% bonus health.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Sapping Barbs",
+      "effects": "Grants 60 health regeneration and 45 mana regeneration for 5 seconds whenever you take damage from a monster. Additionally, monsters who attack you bleed for 5% of their maximum health over 3 seconds (capped at 150 damage). Sapping Barbs cannot deal lethal damage.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Conservation",
+      "effects": "You generate Conservation stacks every 1.5 seconds, up to 80. Killing a large monster will consume up to 40 stacks and grant 1 per stack consumed. You may only be in possession of 1 Gold Income item.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Trap Detection",
+      "effects": "Nearby stealthed enemy traps are revealed.",
+      "stats": []
+    }
+  ],
+  "active": [
+    {
+      "unique": true,
+      "name": "Hunter's Ward",
+      "effects": "Places a Stealth Ward that reveals the surrounding area for 180 seconds (600 range) (180 second cooldown).",
+      "range": 600,
+      "cooldown": 180.0
+    }
+  ],
+  "auras": [],
+  "stats": {
+    "armor": {
+      "flat": 20.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 200.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2000,
+    "priceCombined": 450,
+    "priceSell": 800,
+    "tags": [
+      "DEFENSE:HEALTH",
+      "DEFENSE:ARMOR",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "TOOLS:GOLD_INCOME",
+      "TOOLS:VISION_AND_TRINKETS"
+    ]
+  }
+}

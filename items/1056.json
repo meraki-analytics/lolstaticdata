@@ -1,0 +1,57 @@
+{
+  "name": "Doran's Ring",
+  "id": 1056,
+  "tier": "Tier 1",
+  "buildsFrom": [],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Basic attacks deal an additional 5 physical damage to minions on-hit.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 15.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 60.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 5.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 400,
+    "priceCombined": 0,
+    "priceSell": 160,
+    "tags": [
+      "STARTER ITEMS:LANING",
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:MANA_REGEN",
+      "DEFENSE:HEALTH"
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "name": "Mikael's Crucible",
+  "id": 3222,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3028,
+    3114
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Harmony",
+      "effects": "Gain +25% base health regeneration for every additional 25% base mana regeneration.",
+      "stats": []
+    }
+  ],
+  "active": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Instantly removes all stuns, roots, taunts, fears, charms, silences and slows on an allied champion, as well as granting 2 seconds of slow immunity. Successfully cleansing an effect will also grant the target 40% bonus movement speed for 2 seconds (120 second cooldown).",
+      "range": 0,
+      "cooldown": 120.0
+    }
+  ],
+  "auras": [],
+  "stats": {
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healAndShieldPower": {
+      "flat": 20.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 40.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 0.0,
+      "percent": 100.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2100,
+    "priceCombined": 500,
+    "priceSell": 1470,
+    "tags": [
+      "DEFENSE:MAGIC_RESIST",
+      "MAGIC:MANA_REGEN",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
+  }
+}

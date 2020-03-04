@@ -1,0 +1,53 @@
+{
+  "name": "Spectre's Cowl",
+  "id": 3211,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1028,
+    1033
+  ],
+  "buildsInto": [
+    3194,
+    3065
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "hat",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "After taking damage from an enemy champion, gains 150% base health regeneration for 10 seconds.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "health": {
+      "flat": 250.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 25.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1200,
+    "priceCombined": 350,
+    "priceSell": 840,
+    "tags": [
+      "DEFENSE:HEALTH",
+      "DEFENSE:MAGIC_RESIST"
+    ]
+  }
+}

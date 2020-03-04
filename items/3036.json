@@ -1,0 +1,42 @@
+{
+  "name": "Lord Dominik's Regards",
+  "id": 3036,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3035,
+    1037
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Last Whisper",
+      "effects": "+35% total armor penetration.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 45.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2800,
+    "priceCombined": 475,
+    "priceSell": 1960,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "ATTACK:ARMOR_PENETRATION"
+    ]
+  }
+}

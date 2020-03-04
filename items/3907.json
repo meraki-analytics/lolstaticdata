@@ -1,0 +1,58 @@
+{
+  "name": "Spellbinder",
+  "id": 3907,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3113,
+    1058
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Gains a charge each time an enemy or allied champion within 1800 range, including yourself, casts an ability, up to a maximum of 100 charges.",
+      "stats": []
+    }
+  ],
+  "active": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Grants 0 \u2212 80 (based on charges) ability power and a decaying 0% \u2212 50% (based on charges) bonus movement speed for 4 seconds (60 second cooldown).",
+      "range": 0,
+      "cooldown": 60.0
+    }
+  ],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 120.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "movespeed": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2900,
+    "priceCombined": 800,
+    "priceSell": 2030,
+    "tags": [
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS",
+      "MAGIC:ABILITY_POWER"
+    ]
+  }
+}

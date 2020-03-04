@@ -1,0 +1,41 @@
+{
+  "name": "Priscilla's Blessing",
+  "id": 3183,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1006,
+    1006
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "+15% capture rate. Does not stack with other capture rate modifiers.",
+      "stats": []
+    }
+  ],
+  "active": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Grants 30% movement speed for 2 seconds (60 second cooldown).",
+      "range": 0,
+      "cooldown": 60.0
+    }
+  ],
+  "auras": [],
+  "stats": {},
+  "shop": {
+    "priceTotal": 1600,
+    "priceCombined": 1100,
+    "priceSell": 770,
+    "tags": [
+      "DEFENSE:HEALTH_REGEN",
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
+    ]
+  }
+}

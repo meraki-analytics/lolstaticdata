@@ -1,0 +1,51 @@
+{
+  "name": "Sunfire Cape",
+  "id": 3068,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3751,
+    1028,
+    1031
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Immolate",
+      "effects": "Deals 26 \u2212 43 (based on level) magic damage per second to nearby enemies (325 range).Hitting an enemy with an immobilizing ability deals 26 \u2212 43 (based on level) (+ 4% bonus health) bonus magic damage and releases a fire nova that also deals that bonus damage to nearby enemies (12 second cooldown).Immolate's damage is increased by 50% against minions and monsters.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "armor": {
+      "flat": 60.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 425.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2750,
+    "priceCombined": 650,
+    "priceSell": 1925,
+    "tags": [
+      "DEFENSE:ARMOR",
+      "DEFENSE:HEALTH"
+    ]
+  }
+}

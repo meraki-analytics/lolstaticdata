@@ -1,0 +1,74 @@
+{
+  "name": "Athene's Unholy Grail",
+  "id": 3174,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3108,
+    3028
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Gain 35% of the premitigation damage dealt to champions as Blood Charges, up to 100 \u2212 250 (based on level). Healing or shielding another ally consumes charges equal to 100% of the heal or shield, to heal them, up to the original effect amount.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Dissonance",
+      "effects": "Gain +5 ability power for every additional 25% base mana regeneration. Disables Harmony on your other items.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 30.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 30.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 0.0,
+      "percent": 100.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2100,
+    "priceCombined": 400,
+    "priceSell": 1470,
+    "tags": [
+      "DEFENSE:MAGIC_RESIST",
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:MANA_REGEN",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
+  }
+}

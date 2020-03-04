@@ -1,0 +1,32 @@
+{
+  "name": "Oracle's Lens",
+  "id": 3364,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    3341
+  ],
+  "buildsInto": [],
+  "noEffects": true,
+  "removed": true,
+  "nickname": "",
+  "passives": [],
+  "active": [
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Summons a drone at the target location for 6 seconds (600 range). The drone reveals and disables all invisible traps and wards within an 600-unit radius. (75 second cooldown).\nAdditionally, your champion gains true sight for 10 seconds.",
+      "range": 600,
+      "cooldown": 75.0
+    }
+  ],
+  "auras": [],
+  "stats": {},
+  "shop": {
+    "priceTotal": 250,
+    "priceCombined": 250,
+    "priceSell": 175,
+    "tags": [
+      "TOOLS:VISION_AND_TRINKETS"
+    ]
+  }
+}

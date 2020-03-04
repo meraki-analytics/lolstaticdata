@@ -1,0 +1,76 @@
+{
+  "name": "Infernal Mask",
+  "id": 3379,
+  "tier": "Tier 4",
+  "buildsFrom": [
+    3001
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "ornn,forge",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Eternity",
+      "effects": "Restore mana equal to 15% of damage taken from champions. Restore health equal to 20% of mana spent, up to 25 health per cast, while toggle abilities can heal for up to 25 per second.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Nearby enemy champions take 15% more magic damage (325 range).",
+      "range": 325
+    }
+  ],
+  "stats": {
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 750.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 100.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 300.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3000,
+    "priceCombined": 0,
+    "priceSell": 2100,
+    "tags": [
+      "DEFENSE:HEALTH",
+      "DEFENSE:MAGIC_RESIST",
+      "MAGIC:MANA",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "DEFENSE:HEALTH_REGEN",
+      "MAGIC:MANA_REGEN"
+    ]
+  }
+}

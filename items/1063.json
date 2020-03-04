@@ -1,0 +1,40 @@
+{
+  "name": "Prospector's Ring",
+  "id": 1063,
+  "tier": "Tier 1",
+  "buildsFrom": [],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": false,
+      "name": "+6 mana regeneration per 5 seconds\nUnique ",
+      "effects": "Prospector: +150 health",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 35.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 950,
+    "priceCombined": 0,
+    "priceSell": 380,
+    "tags": [
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:MANA_REGEN",
+      "DEFENSE:HEALTH"
+    ]
+  }
+}

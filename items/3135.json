@@ -1,0 +1,52 @@
+{
+  "name": "Void Staff",
+  "id": 3135,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1026,
+    1052
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Dissolve",
+      "effects": "Grants 40% magic penetration.",
+      "stats": [
+        {
+          "magicPenetration": {
+            "flat": 0.0,
+            "percent": "40",
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 70.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2650,
+    "priceCombined": 1365,
+    "priceSell": 1855,
+    "tags": [
+      "MAGIC:ABILITY_POWER"
+    ]
+  }
+}

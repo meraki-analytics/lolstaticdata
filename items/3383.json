@@ -1,0 +1,50 @@
+{
+  "name": "Circlet of the Iron Solari",
+  "id": 3383,
+  "tier": "Tier 4",
+  "buildsFrom": [
+    3190
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "ornn,forge",
+  "passives": [],
+  "active": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Grants a decaying shield to nearby allied champions and yourself for up to 2.5 seconds, absorbing up to 130 \u2212 300 (based on highest level between target and caster) (+ 20% of caster's bonus health) damage ( 650 radius) (120 second cooldown). Shielded targets are Eclipsed for 20 seconds.",
+      "range": 0,
+      "cooldown": 120.0
+    }
+  ],
+  "auras": [],
+  "stats": {
+    "armor": {
+      "flat": 45.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 75.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2200,
+    "priceCombined": 0,
+    "priceSell": 1540,
+    "tags": [
+      "DEFENSE:ARMOR",
+      "DEFENSE:MAGIC_RESIST"
+    ]
+  }
+}

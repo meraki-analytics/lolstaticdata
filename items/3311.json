@@ -1,0 +1,76 @@
+{
+  "name": "Timeworn Frostfang",
+  "id": 3311,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    3310,
+    1004
+  ],
+  "buildsInto": [
+    3312
+  ],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "Support, Economy, Gold",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Tribute",
+      "effects": "Grants a charge every 10 seconds, up to 3 charges. Damaging spells and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge deals them 18 bonus magic damage, and if an allied champion is nearby, also grants 22. Before quest completion, killing a minion or non-epic monster pauses Tribute generation and the passive gold generation for 12 seconds per unit slain.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Quest",
+      "effects": "Earn 750 using this item. Reward: Tribute is upgraded to Queen's Tribute, giving you 50% bonus movement speed for 1 second (additional stacks extend duration) for each charge consumed.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 20.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "goldPer10": {
+      "flat": 2.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 0.0,
+      "percent": 50.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 850,
+    "priceCombined": 325,
+    "priceSell": 340,
+    "tags": [
+      "TOOLS:GOLD_INCOME",
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "MAGIC:MANA_REGEN"
+    ]
+  }
+}

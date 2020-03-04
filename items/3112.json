@@ -1,0 +1,51 @@
+{
+  "name": "Orb of Winter",
+  "id": 3112,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    1057,
+    1006,
+    1006
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Grants a shield that absorbs damage. The shield will refresh after a short period without taking damage.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 100.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 70.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2200,
+    "priceCombined": 950,
+    "priceSell": 1540,
+    "tags": [
+      "DEFENSE:MAGIC_RESIST",
+      "DEFENSE:HEALTH_REGEN"
+    ]
+  }
+}

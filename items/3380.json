@@ -1,0 +1,64 @@
+{
+  "name": "Obsidian Cleaver",
+  "id": 3380,
+  "tier": "Tier 4",
+  "buildsFrom": [
+    3071
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "ornn,forge",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Dealing physical damage to an enemy champion Cleaves them, reducing their armor by 4% for 6 seconds, stacking up to 6 times for a maximum of 24%.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Rage",
+      "effects": "Dealing physical damage grants 20 movement speed for 2 seconds. Assists on Cleaved enemy champions or kills on any unit grant 60 movement speed for 2 seconds instead. This movement speed bonus is halved for ranged champions.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 60.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 20.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 550.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3000,
+    "priceCombined": 0,
+    "priceSell": 2100,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "DEFENSE:HEALTH"
+    ]
+  }
+}

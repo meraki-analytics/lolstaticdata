@@ -1,0 +1,56 @@
+{
+  "name": "Dead Man's Plate",
+  "id": 3742,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    1031,
+    1011
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Dreadnought",
+      "effects": "Generates a maximum of 100 Momentum stacks by moving, which grant up to 60 bonus movement speed. Momentum decays while immobilized or pacified.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Crushing Blow",
+      "effects": "Basic attacks discharge all stacks to deal (1 per stack) bonus magic damage on-hit, up to 100. Basic attacks at 100 stacks also slow by 50% for 1 second.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "armor": {
+      "flat": 60.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 425.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2900,
+    "priceCombined": 1100,
+    "priceSell": 2030,
+    "tags": [
+      "DEFENSE:ARMOR",
+      "DEFENSE:HEALTH"
+    ]
+  }
+}

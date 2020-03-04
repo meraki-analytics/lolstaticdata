@@ -1,0 +1,67 @@
+{
+  "name": "Odyn's Veil",
+  "id": 3180,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    1057,
+    3010
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Reduces and stores 10% of magic damage received.",
+      "stats": []
+    }
+  ],
+  "active": [
+    {
+      "unique": true,
+      "name": "Deals 200 + (stored magic damage ",
+      "effects": "max 400) magic damage to nearby enemy units (90 second cooldown) (525 range).",
+      "range": 525,
+      "cooldown": 90.0
+    }
+  ],
+  "auras": [],
+  "stats": {
+    "health": {
+      "flat": 350.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 50.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 350.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2450,
+    "priceCombined": 450,
+    "priceSell": 1715,
+    "tags": [
+      "DEFENSE:HEALTH",
+      "DEFENSE:MAGIC_RESIST",
+      "MAGIC:MANA"
+    ]
+  }
+}

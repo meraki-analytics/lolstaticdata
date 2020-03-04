@@ -1,0 +1,60 @@
+{
+  "name": "Caulfield's Warhammer",
+  "id": 3133,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1036,
+    1036
+  ],
+  "buildsInto": [
+    3812,
+    3147,
+    3508,
+    3156,
+    null,
+    3142
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "10.0% cooldown reduction",
+      "stats": [
+        {
+          "cooldownReduction": {
+            "flat": 0.0,
+            "percent": 10.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 25.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1100,
+    "priceCombined": 400,
+    "priceSell": 770,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
+  }
+}

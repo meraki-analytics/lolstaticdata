@@ -1,0 +1,57 @@
+{
+  "name": "Thornmail",
+  "id": 3075,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3076,
+    1028,
+    3082
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Thorns",
+      "effects": "Upon being hit by a basic attack on-hit, reflects 25 (+ 10% bonus armor) magic damage, while also inflicting Grievous Wounds on the attacker for 3 seconds.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Cold Steel",
+      "effects": "When hit by basic attacks, cripples source's attack speed by 15% for 1 second.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "armor": {
+      "flat": 80.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 250.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2900,
+    "priceCombined": 500,
+    "priceSell": 2030,
+    "tags": [
+      "DEFENSE:ARMOR",
+      "DEFENSE:HEALTH"
+    ]
+  }
+}

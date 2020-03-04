@@ -1,0 +1,45 @@
+{
+  "name": "Ranger's Trailblazer",
+  "id": 3713,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1041
+  ],
+  "buildsInto": [
+    null,
+    3708,
+    null,
+    null
+  ],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "jungle",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Blasting Smite",
+      "effects": "Upgrades Smite to Blasting Smite. Blasting Smite deals 50% splash damage to all surrounding minions and monsters and stuns all damaged units for 1.5 seconds. If cast on a monster, you will also restore 15% of your missing health and mana.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Jungler",
+      "effects": "Deal 45 magic damage on hit to monsters over 2 seconds and gain 10 health and 5 mana per second while in combat with monsters.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {},
+  "shop": {
+    "priceTotal": 850,
+    "priceCombined": 450,
+    "priceSell": 595,
+    "tags": [
+      "STARTER ITEMS:JUNGLING",
+      "DEFENSE:HEALTH_REGEN",
+      "ATTACK:DAMAGE",
+      "MAGIC:MANA_REGEN"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "name": "Death's Dance",
+  "id": 3812,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3133,
+    1037,
+    1053
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Instantly heal for 15% of all damage dealt, including physical damage, magic damage, and true damage. Area of effect and pet damage only heals 5% for every unit affected.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Stores 30% of all post-mitigation physical and magic damage received, which is successively taken as damage over time true damage instead, dealing one-third of the stored damage every second.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 80.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3500,
+    "priceCombined": 625,
+    "priceSell": 2450,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "ATTACK:LIFE_STEAL",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
+  }
+}

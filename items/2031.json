@@ -1,0 +1,34 @@
+{
+  "name": "Refillable Potion",
+  "id": 2031,
+  "tier": "Tier 1",
+  "buildsFrom": [],
+  "buildsInto": [
+    2033
+  ],
+  "noEffects": true,
+  "removed": false,
+  "nickname": "Green Potion",
+  "passives": [
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Holds up to 2 charges that refill upon visiting the store.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {},
+  "shop": {
+    "priceTotal": 150,
+    "priceCombined": 0,
+    "priceSell": 60,
+    "tags": [
+      "STARTER ITEMS:JUNGLING",
+      "STARTER ITEMS:LANING",
+      "TOOLS:CONSUMABLE",
+      "DEFENSE:HEALTH_REGEN"
+    ]
+  }
+}

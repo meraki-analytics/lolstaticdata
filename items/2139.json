@@ -1,0 +1,31 @@
+{
+  "name": "Elixir of Sorcery",
+  "id": 2139,
+  "tier": "Tier 1",
+  "buildsFrom": [],
+  "buildsInto": [],
+  "noEffects": true,
+  "removed": false,
+  "nickname": "blue,brilliance,illumination",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Sorcery",
+      "effects": "Going in combat by affecting enemy champions or turrets deals 25 bonus true damage (5 second cooldown against champions, no cooldown against turrets).",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {},
+  "shop": {
+    "priceTotal": 500,
+    "priceCombined": 0,
+    "priceSell": 200,
+    "tags": [
+      "TOOLS:CONSUMABLE",
+      "MAGIC:MANA_REGEN",
+      "MAGIC:ABILITY_POWER"
+    ]
+  }
+}

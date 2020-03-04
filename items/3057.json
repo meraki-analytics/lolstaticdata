@@ -1,0 +1,53 @@
+{
+  "name": "Sheen",
+  "id": 3057,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1027
+  ],
+  "buildsInto": [
+    3025,
+    3100,
+    3078
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Spellblade",
+      "effects": "After using an ability, your next basic attack within 10 seconds deals 100% base AD bonus physical damage on-hit (1.5 second cooldown, begins after using the empowered attack).",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 250.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1050,
+    "priceCombined": 700,
+    "priceSell": 735,
+    "tags": [
+      "MAGIC:COOLDOWN_REDUCTION",
+      "MAGIC:MANA"
+    ]
+  }
+}

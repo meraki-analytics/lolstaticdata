@@ -1,0 +1,53 @@
+{
+  "name": "Catalyst the Protector",
+  "id": 3010,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1028,
+    1027
+  ],
+  "buildsInto": [
+    3800,
+    3027
+  ],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Valor's Reward",
+      "effects": "On leveling up, restores 150 health and 200 mana over 8 seconds.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "health": {
+      "flat": 225.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 300.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1200,
+    "priceCombined": 450,
+    "priceSell": 840,
+    "tags": [
+      "DEFENSE:HEALTH",
+      "MAGIC:MANA"
+    ]
+  }
+}

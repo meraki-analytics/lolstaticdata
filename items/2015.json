@@ -1,0 +1,50 @@
+{
+  "name": "Kircheis Shard",
+  "id": 2015,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1042
+  ],
+  "buildsInto": [
+    3094,
+    3087,
+    3095
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Energized",
+      "effects": "Moving and basic attacking generates Energize stacks, up to 100.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Jolt",
+      "effects": "When fully Energized, your next basic attack deals 80 bonus magic damage on-hit.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackSpeed": {
+      "flat": 15.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 700,
+    "priceCombined": 400,
+    "priceSell": 490,
+    "tags": [
+      "ATTACK:ATTACK_SPEED"
+    ]
+  }
+}

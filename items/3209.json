@@ -1,0 +1,64 @@
+{
+  "name": "Spirit of the Elder Lizard",
+  "id": 3209,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    1080,
+    1036,
+    1036
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Incinerate",
+      "effects": "Dealing physical damage also deals 14 \u2212 48 (based on level) bonus true damage over 3 seconds.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Butcher",
+      "effects": "Against monsters, deal 20% bonus damage and restore 6% of damage dealt to monsters as health and 3% as mana.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Conservation",
+      "effects": "You generate Conservation stacks every 1.5 seconds, up to 80. Killing a large monster will consume up to 40 stacks and grant 1 per stack consumed. You may only be in possession of 1 Gold Income item.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 30.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2000,
+    "priceCombined": 580,
+    "priceSell": 800,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "TOOLS:GOLD_INCOME"
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "name": "Manamune (Quick Charge)",
+  "id": 3008,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3073,
+    1037
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Awe",
+      "effects": "Grants bonus attack damage equal to 2% maximum mana. Refunds 15% of mana spent.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Mana Charge",
+      "effects": "Grants a charge every 4 seconds, up to 3 charges. Each basic attack or mana expenditure consumes a charge and grants +6 mana, up to a maximum of 750 mana.",
+      "stats": []
+    },
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Transforms into Muramana at +750 mana.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 35.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 250.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2400,
+    "priceCombined": 675,
+    "priceSell": 1680,
+    "tags": [
+      "MAGIC:MANA",
+      "ATTACK:DAMAGE",
+      "MAGIC:MANA_REGEN"
+    ]
+  }
+}

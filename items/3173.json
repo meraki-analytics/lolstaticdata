@@ -1,0 +1,38 @@
+{
+  "name": "Eleisa's Miracle",
+  "id": 3173,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3096
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Aid",
+      "effects": "Your Summoner Heal, Clarity and Clairvoyance cooldowns are reduced by 25%.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Eleisa's Blessing",
+      "effects": "If you gain 3 levels with this item, you gain all the effects permanently and this item is consumed.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {},
+  "shop": {
+    "priceTotal": 1100,
+    "priceCombined": 400,
+    "priceSell": 440,
+    "tags": [
+      "DEFENSE:HEALTH_REGEN",
+      "MAGIC:MANA_REGEN"
+    ]
+  }
+}

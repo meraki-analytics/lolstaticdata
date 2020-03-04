@@ -1,0 +1,67 @@
+{
+  "name": "Morellonomicon",
+  "id": 3165,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3916,
+    1026
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Touch of Death",
+      "effects": "+15 magic penetration.",
+      "stats": [
+        {
+          "magicPenetration": {
+            "flat": "15",
+            "percent": 0.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "unique": true,
+      "name": "Cursed Strike",
+      "effects": "Dealing magic damage to an enemy champion inflicts them with Grievous Wounds for 3 seconds.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 70.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 300.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3000,
+    "priceCombined": 550,
+    "priceSell": 2100,
+    "tags": [
+      "MAGIC:ABILITY_POWER",
+      "DEFENSE:HEALTH"
+    ]
+  }
+}

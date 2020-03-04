@@ -1,0 +1,40 @@
+{
+  "name": "Sword of the Occult",
+  "id": 3141,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1036
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "soto",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Grants 5 attack damage per stack and starts with 5 stacks upon first purchase. Grants 2 stacks for a kill or 1 stack for an assist, maximum 20 stacks, for a total of 100 attack damage. Half of the stacks are lost upon death. At 20 stacks, grants 20% bonus attack speed.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 10.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1400,
+    "priceCombined": 1040,
+    "priceSell": 980,
+    "tags": [
+      "ATTACK:DAMAGE"
+    ]
+  }
+}

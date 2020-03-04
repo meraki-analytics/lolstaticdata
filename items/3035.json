@@ -1,0 +1,44 @@
+{
+  "name": "Last Whisper",
+  "id": 3035,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1036,
+    1036
+  ],
+  "buildsInto": [
+    3036,
+    3033
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "lw",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Last Whisper",
+      "effects": "+20% total armor penetration.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 20.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1450,
+    "priceCombined": 750,
+    "priceSell": 1015,
+    "tags": [
+      "ATTACK:DAMAGE"
+    ]
+  }
+}

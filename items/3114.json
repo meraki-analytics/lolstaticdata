@@ -1,0 +1,57 @@
+{
+  "name": "Malady",
+  "id": 3114,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1042,
+    1042,
+    1052
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Basic attacks deal 15 (+ 10% AP) bonus magic damage.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Basic attacks reduce the target's magic resistance by 4 for 8 seconds. Stacks up to 7 times for a total of -28 magic resistance reduction.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 25.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackSpeed": {
+      "flat": 45.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2035,
+    "priceCombined": 800,
+    "priceSell": 1425,
+    "tags": [
+      "ATTACK:ATTACK_SPEED",
+      "MAGIC:ABILITY_POWER"
+    ]
+  }
+}

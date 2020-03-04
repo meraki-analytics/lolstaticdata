@@ -1,0 +1,51 @@
+{
+  "name": "Sorcerer's Shoes",
+  "id": 3020,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1001
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "boots",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Enhanced Movement",
+      "effects": "+45 flat movement speed",
+      "stats": [
+        {
+          "movespeed": {
+            "flat": 45.0,
+            "percent": 0.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "magicPenetration": {
+      "flat": 18.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1100,
+    "priceCombined": 800,
+    "priceSell": 770,
+    "tags": [
+      "MOVEMENT:BOOTS"
+    ]
+  }
+}

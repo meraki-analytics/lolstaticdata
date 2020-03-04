@@ -1,0 +1,51 @@
+{
+  "name": "Tear of the Goddess (Quick Charge)",
+  "id": 3073,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1027,
+    1004
+  ],
+  "buildsInto": [
+    3007,
+    3008
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Awe",
+      "effects": "Refunds 10% of mana spent.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Mana Charge",
+      "effects": "Grants a charge every 4 seconds, up to 3 charges. Each mana expenditure consumes a charge and grants +6 mana, up to a maximum of 750 mana.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "mana": {
+      "flat": 250.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 850,
+    "priceCombined": 375,
+    "priceSell": 595,
+    "tags": [
+      "MAGIC:MANA",
+      "MAGIC:MANA_REGEN"
+    ]
+  }
+}

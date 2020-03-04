@@ -1,0 +1,47 @@
+{
+  "name": "Mortal Reminder",
+  "id": 3033,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3123,
+    3035
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Executioner",
+      "effects": "Physical damage inflicts Grievous Wounds on enemy champions for 5 seconds.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Last Whisper",
+      "effects": "+25% total armor penetration.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 45.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2800,
+    "priceCombined": 550,
+    "priceSell": 1960,
+    "tags": [
+      "ATTACK:DAMAGE"
+    ]
+  }
+}

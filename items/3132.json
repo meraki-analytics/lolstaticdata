@@ -1,0 +1,45 @@
+{
+  "name": "Heart of Gold",
+  "id": 3132,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1028
+  ],
+  "buildsInto": [
+    3190,
+    3104,
+    3143
+  ],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "+ 5 per 10 seconds.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "health": {
+      "flat": 200.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 825,
+    "priceCombined": 350,
+    "priceSell": 412,
+    "tags": [
+      "DEFENSE:HEALTH",
+      "TOOLS:GOLD_INCOME"
+    ]
+  }
+}

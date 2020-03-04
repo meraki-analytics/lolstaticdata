@@ -1,0 +1,67 @@
+{
+  "name": "Rod of Ages",
+  "id": 3027,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3010,
+    1026
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "roa",
+  "passives": [
+    {
+      "unique": false,
+      "name": null,
+      "effects": "This item gains 20 health, 10 mana and 4 ability power every minute, up to 10 times, for a maximum of 200 health, 100 mana and 40 ability power.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Eternity",
+      "effects": "Restore mana equal to 15% of damage taken from champions. Restore health equal to 20% of mana spent, up to 25 health per cast, while toggle abilities can heal for up to 25 per second.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 60.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 300.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 300.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2600,
+    "priceCombined": 650,
+    "priceSell": 1820,
+    "tags": [
+      "DEFENSE:HEALTH",
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:MANA",
+      "DEFENSE:HEALTH_REGEN",
+      "MAGIC:MANA_REGEN"
+    ]
+  }
+}

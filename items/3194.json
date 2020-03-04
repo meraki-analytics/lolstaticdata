@@ -1,0 +1,69 @@
+{
+  "name": "Adaptive Helm",
+  "id": 3194,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    1033,
+    3211,
+    1006
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Taking magic damage from a spell or effect reduces all subsequent magic damage taken from that spell or effect by 20% for 4 seconds. Multiple sources of magic damage can have this effect active at any one time and the duration is tracked separately per source.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 350.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 100.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 55.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2800,
+    "priceCombined": 1000,
+    "priceSell": 1960,
+    "tags": [
+      "DEFENSE:HEALTH",
+      "DEFENSE:MAGIC_RESIST",
+      "DEFENSE:HEALTH_REGEN",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
+  }
+}

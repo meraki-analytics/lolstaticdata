@@ -1,0 +1,60 @@
+{
+  "name": "Netherstride Grimoire",
+  "id": 3431,
+  "tier": "Tier 4",
+  "buildsFrom": [
+    3802,
+    1052
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Malice",
+      "effects": "Gain 20% movement speed for 2 seconds whenever you deal ability damage.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 100.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 20.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 0.0,
+      "percent": 100.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3000,
+    "priceCombined": 765,
+    "priceSell": 2100,
+    "tags": [
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "MAGIC:MANA_REGEN",
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
+    ]
+  }
+}

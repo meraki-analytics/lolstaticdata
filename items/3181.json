@@ -1,0 +1,78 @@
+{
+  "name": "Sanguine Blade",
+  "id": 3181,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3134,
+    1053
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "+10 Lethality (6.22 \u2212 10 (based on level) armor penetration)",
+      "stats": [
+        {
+          "lethality": {
+            "flat": 10.0,
+            "percent": 0.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "unique": true,
+      "name": "Blood Pursuit",
+      "effects": "While near one or fewer visible enemy champions gain 8 lethality and 20% \u2212 80% (based on level) bonus attack speed, decaying over 3 seconds if other enemy champions get too close (1350 range).",
+      "stats": [
+        {
+          "lethality": {
+            "flat": 8.0,
+            "percent": 0.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 50.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "lifesteal": {
+      "flat": 0.0,
+      "percent": 15.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3100,
+    "priceCombined": 1100,
+    "priceSell": 2100,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "ATTACK:LIFE_STEAL"
+    ]
+  }
+}

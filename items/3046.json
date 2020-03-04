@@ -1,0 +1,65 @@
+{
+  "name": "Phantom Dancer",
+  "id": 3046,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    1042,
+    3086
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "pd",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Spectral Waltz",
+      "effects": "Basic attacking a champion grants ghosting and 7% bonus movement speed for 2 seconds.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Lifeline",
+      "effects": "If you would take damage that would reduce maximum health below 30%, you first gain a shield that absorbs 240 \u2212 600 (based on level) damage decaying over 2 seconds (90 second cooldown).",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackSpeed": {
+      "flat": 30.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "criticalStrikeChance": {
+      "flat": 0.0,
+      "percent": 25.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "movespeed": {
+      "flat": 0.0,
+      "percent": 5.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2600,
+    "priceCombined": 900,
+    "priceSell": 1820,
+    "tags": [
+      "ATTACK:ATTACK_SPEED",
+      "ATTACK:CRITICAL_STRIKE",
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
+    ]
+  }
+}

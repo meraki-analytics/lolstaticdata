@@ -1,0 +1,51 @@
+{
+  "name": "Rylai's Crystal Scepter",
+  "id": 3116,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    1026,
+    1052,
+    1028
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Icy",
+      "effects": "Damaging abilities and pet attacks slow affected units by 20% for 1 second.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 90.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 300.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2600,
+    "priceCombined": 915,
+    "priceSell": 1820,
+    "tags": [
+      "DEFENSE:HEALTH",
+      "MAGIC:ABILITY_POWER"
+    ]
+  }
+}

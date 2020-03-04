@@ -1,0 +1,52 @@
+{
+  "name": "Zeke's Herald",
+  "id": 3050,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3067,
+    1053
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [],
+  "active": [],
+  "auras": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Nearby allied champions gain +20 attack damage and +10% life steal. (1100 Range)",
+      "range": 0
+    }
+  ],
+  "stats": {
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 20.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 250.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2450,
+    "priceCombined": 800,
+    "priceSell": 1715,
+    "tags": [
+      "DEFENSE:HEALTH",
+      "ATTACK:DAMAGE",
+      "ATTACK:LIFE_STEAL",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
+  }
+}

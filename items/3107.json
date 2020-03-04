@@ -1,0 +1,59 @@
+{
+  "name": "Runic Bulwark",
+  "id": 3107,
+  "tier": "Tier 4",
+  "buildsFrom": [
+    3097,
+    1033
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [],
+  "active": [],
+  "auras": [
+    {
+      "unique": true,
+      "name": "Legion",
+      "effects": "Nearby allied units gain 10 armor, 25 magic resistance and 10 health regeneration. Nearby minions gain 15 armor, 37.5 magic resistance and 15 health regeneration.",
+      "range": 0
+    }
+  ],
+  "stats": {
+    "armor": {
+      "flat": 20.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 300.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 30.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2950,
+    "priceCombined": 400,
+    "priceSell": 2065,
+    "tags": [
+      "DEFENSE:HEALTH",
+      "DEFENSE:ARMOR",
+      "DEFENSE:HEALTH_REGEN"
+    ]
+  }
+}

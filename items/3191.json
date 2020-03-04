@@ -1,0 +1,53 @@
+{
+  "name": "Seeker's Armguard",
+  "id": 3191,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1029,
+    1052,
+    1029
+  ],
+  "buildsInto": [
+    3157
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Killing a unit grants 0.5 bonus ability power and armor, stacking up to 30 times for a maximum of 15 bonus ability power and armor.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 20.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "armor": {
+      "flat": 30.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1100,
+    "priceCombined": 65,
+    "priceSell": 840,
+    "tags": [
+      "DEFENSE:ARMOR",
+      "MAGIC:ABILITY_POWER"
+    ]
+  }
+}

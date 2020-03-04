@@ -1,0 +1,44 @@
+{
+  "name": "Madred's Razors",
+  "id": 3106,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1042
+  ],
+  "buildsInto": [
+    3159
+  ],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Maim",
+      "effects": "Basic attacks against monsters deal 50 bonus magic damage and restore 8 health.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackSpeed": {
+      "flat": 15.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 750,
+    "priceCombined": 300,
+    "priceSell": 525,
+    "tags": [
+      "STARTER ITEMS:JUNGLING",
+      "DEFENSE:HEALTH_REGEN",
+      "ATTACK:ATTACK_SPEED"
+    ]
+  }
+}

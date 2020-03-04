@@ -1,0 +1,58 @@
+{
+  "name": "Kindlegem",
+  "id": 3067,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1028
+  ],
+  "buildsInto": [
+    3071,
+    3152,
+    3109,
+    3065,
+    3083
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "10.0% cooldown reduction",
+      "stats": [
+        {
+          "cooldownReduction": {
+            "flat": 0.0,
+            "percent": 10.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "health": {
+      "flat": 200.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 800,
+    "priceCombined": 400,
+    "priceSell": 560,
+    "tags": [
+      "DEFENSE:HEALTH",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
+  }
+}

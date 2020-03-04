@@ -1,0 +1,61 @@
+{
+  "name": "Mercurial Scimitar",
+  "id": 3139,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3140,
+    1037,
+    1053
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [],
+  "active": [
+    {
+      "unique": true,
+      "name": "Quicksilver",
+      "effects": "Removes all crowd control debuffs from your champion and grants +50% movement speed for 1 second (90 second cooldown).",
+      "range": 0,
+      "cooldown": 90.0
+    }
+  ],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 50.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "lifesteal": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 35.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3400,
+    "priceCombined": 325,
+    "priceSell": 2380,
+    "tags": [
+      "DEFENSE:MAGIC_RESIST",
+      "ATTACK:DAMAGE",
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
+    ]
+  }
+}

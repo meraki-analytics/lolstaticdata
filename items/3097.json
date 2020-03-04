@@ -1,0 +1,67 @@
+{
+  "name": "Targon's Brace",
+  "id": 3097,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    3302,
+    1006
+  ],
+  "buildsInto": [
+    3401
+  ],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "Support, Economy, Gold, Sightstone, Ward",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Spoils of War",
+      "effects": "Grants a charge every 30 seconds, up to 3 charges. Melee basic attacks can consume one charge to execute minions below 215 \u2212 470 (based on level) (+ 100% AD) health. Killing a minion by any means with a charge heals you and the nearest allied champion for 10 \u2212 60 (based on missing health) health and grants them kill gold. Healing is halved if the owner is ranged. These effects require an allied champion to be nearby.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Quest",
+      "effects": "Earn 500 using this item. Reward: Permanently upgrades Targon's Brace to Celestial Eye and Remnant of the Aspect to Eye of the Aspect, giving them the Warding active with respectively 3 and 4 wards in stock.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "goldPer10": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 125.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 50.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 850,
+    "priceCombined": 300,
+    "priceSell": 340,
+    "tags": [
+      "TOOLS:GOLD_INCOME",
+      "DEFENSE:HEALTH",
+      "DEFENSE:HEALTH_REGEN"
+    ]
+  }
+}

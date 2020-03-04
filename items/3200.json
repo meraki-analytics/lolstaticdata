@@ -1,0 +1,35 @@
+{
+  "name": "Prototype Hex Core",
+  "id": 3200,
+  "tier": "Tier 1",
+  "buildsFrom": [],
+  "buildsInto": [
+    3196
+  ],
+  "noEffects": true,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Grants 1 \u2212 18 (based on level) ability power and 10 \u2212 180 (based on level) mana.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Progress",
+      "effects": "This item can be upgraded three times, which each upgrade allowing Viktor to enhance one of his basic abilities.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {},
+  "shop": {
+    "priceTotal": 0,
+    "priceCombined": 0,
+    "priceSell": 0,
+    "tags": []
+  }
+}

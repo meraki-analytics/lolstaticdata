@@ -1,0 +1,59 @@
+{
+  "name": "Fiendish Codex",
+  "id": 3108,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1052
+  ],
+  "buildsInto": [
+    3174,
+    3102,
+    3115,
+    null,
+    3905,
+    3157
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "10.0% cooldown reduction",
+      "stats": [
+        {
+          "cooldownReduction": {
+            "flat": 0.0,
+            "percent": 10.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 35.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 900,
+    "priceCombined": 465,
+    "priceSell": 630,
+    "tags": [
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
+  }
+}

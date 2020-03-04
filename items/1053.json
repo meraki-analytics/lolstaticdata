@@ -1,0 +1,49 @@
+{
+  "name": "Vampiric Scepter",
+  "id": 1053,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1036
+  ],
+  "buildsInto": [
+    3144,
+    3072,
+    3812,
+    3139,
+    3074,
+    3181
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 15.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "lifesteal": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 900,
+    "priceCombined": 550,
+    "priceSell": 630,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "ATTACK:LIFE_STEAL"
+    ]
+  }
+}

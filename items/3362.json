@@ -1,0 +1,32 @@
+{
+  "name": "Greater Vision Totem",
+  "id": 3362,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    3340
+  ],
+  "buildsInto": [],
+  "noEffects": true,
+  "removed": true,
+  "nickname": "yellow",
+  "passives": [],
+  "active": [
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Places a Vision Ward that has infinite duration. (120 second cooldown).",
+      "range": 0,
+      "cooldown": 120.0
+    }
+  ],
+  "auras": [],
+  "stats": {},
+  "shop": {
+    "priceTotal": 250,
+    "priceCombined": 250,
+    "priceSell": 175,
+    "tags": [
+      "TOOLS:VISION_AND_TRINKETS"
+    ]
+  }
+}

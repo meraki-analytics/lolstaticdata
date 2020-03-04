@@ -1,0 +1,52 @@
+{
+  "name": "Muramana (Quick Charge)",
+  "id": 3043,
+  "tier": "Tier 4",
+  "buildsFrom": [
+    3008
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Awe",
+      "effects": "Grants bonus attack damage equal to 2% maximum mana. Refunds 15% of mana spent.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Shock",
+      "effects": "Basic attacks and single targeted abilities against champions (on-hit) consume 3% current mana to deal 6% current mana bonus physical damage. This effect only activates while you have greater than 20% maximum mana.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 35.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 1000.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 0,
+    "priceCombined": 0,
+    "priceSell": 1680,
+    "tags": []
+  }
+}

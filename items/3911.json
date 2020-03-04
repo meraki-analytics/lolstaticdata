@@ -1,0 +1,60 @@
+{
+  "name": "Martyr's Gambit",
+  "id": 3911,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3801,
+    3067
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [],
+  "active": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Binds yourself to the target allied champion for the next 3 seconds, redirecting 60% of all damage dealt to them to yourself (30 second cooldown).",
+      "range": 0,
+      "cooldown": 30.0
+    }
+  ],
+  "auras": [],
+  "stats": {
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 400.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 100.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1850,
+    "priceCombined": 400,
+    "priceSell": 1295,
+    "tags": [
+      "MAGIC:COOLDOWN_REDUCTION",
+      "DEFENSE:HEALTH",
+      "DEFENSE:HEALTH_REGEN"
+    ]
+  }
+}

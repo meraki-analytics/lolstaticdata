@@ -1,0 +1,75 @@
+{
+  "name": "Youmuu's Wraithblade",
+  "id": 3388,
+  "tier": "Tier 4",
+  "buildsFrom": [
+    3142
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "ornn,forge",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "+25 Lethality (15.56 \u2212 25 (based on level) armor penetration)",
+      "stats": [
+        {
+          "lethality": {
+            "flat": 25.0,
+            "percent": 0.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "unique": true,
+      "name": null,
+      "effects": "+40 movement speed out-of-combat.",
+      "stats": []
+    }
+  ],
+  "active": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Gain +20% movement speed and ghosting for 6 seconds (45 second cooldown).",
+      "range": 0,
+      "cooldown": 45.0
+    }
+  ],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 75.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2900,
+    "priceCombined": 0,
+    "priceSell": 2030,
+    "tags": [
+      "ATTACK:COOLDOWN_REDUCTION",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
+    ]
+  }
+}

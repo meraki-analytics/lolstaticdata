@@ -1,0 +1,66 @@
+{
+  "name": "Might of the Ruined King",
+  "id": 3389,
+  "tier": "Tier 5",
+  "buildsFrom": [
+    3153
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "ornn,forge",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Basic attacks deal 12% of the target's current health bonus physical damage on-hit, with a minimum of 15 damage against all targets, and a maximum of 60 damage against minions and monsters.",
+      "stats": []
+    }
+  ],
+  "active": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Instantly deal 100 magic damage and slow the target by 25% for 3 seconds, while also increasing your own movement speed by 25% for the same duration (550 range) (90 second cooldown).",
+      "range": 550,
+      "cooldown": 90.0
+    }
+  ],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 55.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackSpeed": {
+      "flat": 40.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "lifesteal": {
+      "flat": 0.0,
+      "percent": 12.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3300,
+    "priceCombined": 0,
+    "priceSell": 2310,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "ATTACK:ATTACK_SPEED",
+      "ATTACK:LIFE_STEAL"
+    ]
+  }
+}

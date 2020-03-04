@@ -1,0 +1,96 @@
+{
+  "name": "Talisman of Ascension",
+  "id": 3069,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3096,
+    2053
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "Support, Economy, Gold",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Point Runner",
+      "effects": "Builds up to 20% bonus movement speed over 2 seconds while near turrets, fallen turrets and Void Gates.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Favor",
+      "effects": "Nearby enemy minions, killed by any ally other than you, will sometimes drop a coin that can be picked up to either grant 40 or restore 6% missing mana (minimum 10). Cannon minions will drop a coin as long as you don't kill them.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Bandit",
+      "effects": "Grants Bandit.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Quest",
+      "effects": "Earn 750 using this item. Reward: Favor is upgraded to Emperor's Favor making champion takedowns grant both the gold and mana. You also grant 8% bonus movement speed to nearby allied champions moving toward you (1250 range).",
+      "stats": []
+    }
+  ],
+  "active": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Grants nearby allies +40% movement speed for 3 seconds (60 second cooldown) (600 range).",
+      "range": 600,
+      "cooldown": 60.0
+    }
+  ],
+  "auras": [],
+  "stats": {
+    "armor": {
+      "flat": 45.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "goldPer10": {
+      "flat": 2.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 175.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2200,
+    "priceCombined": 450,
+    "priceSell": 880,
+    "tags": [
+      "TOOLS:GOLD_INCOME",
+      "DEFENSE:ARMOR",
+      "DEFENSE:HEALTH_REGEN",
+      "MAGIC:MANA_REGEN",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
+    ]
+  }
+}

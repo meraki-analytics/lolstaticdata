@@ -1,0 +1,41 @@
+{
+  "name": "Perfect Hex Core",
+  "id": 3198,
+  "tier": "Tier 4",
+  "buildsFrom": [
+    3197
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Grants 10 \u2212 180 (based on level) ability power and 25 \u2212 450 (based on level) mana.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Progress",
+      "effects": "Viktor can upgrade one of his basic abilities. Upon upgrading each of his basic ability, Viktor gains Glorious Evolution.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Glorious Evolution",
+      "effects": "Viktor upgrades his Chaos Storm.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {},
+  "shop": {
+    "priceTotal": 3000,
+    "priceCombined": 850,
+    "priceSell": 0,
+    "tags": []
+  }
+}

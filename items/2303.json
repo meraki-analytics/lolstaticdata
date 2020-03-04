@@ -1,0 +1,88 @@
+{
+  "name": "Eye of the Equinox",
+  "id": 2303,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    2049,
+    3097
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "Support, Economy, Gold, Sightstone, Ward",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Spoils of War",
+      "effects": "Melee basic attacks execute minions below 340 \u2212 680 (based on level) health. Melee autoattacks that would proc Spoils of War gain 150 bonus range and slightly increased attack speed. Killing a minion by any means heals you and the nearest allied champion for 50 (+ 2% of missing health) health and grants them kill gold. These effects require an allied champion within 1050 units of the user. Recharges every 20 seconds. Max 4 charges.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Bandit",
+      "effects": "Grants Bandit.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Quest",
+      "effects": "Earn 750 using this item. Reward: Shield Battery, a permanent shield for 255 \u2212 340 (based on level) health. The shield regenerates slowly when out-of-combat. Executing minions with Spoils of War regenerates 64 \u2212 85 (based on level) shield value.",
+      "stats": []
+    }
+  ],
+  "active": [
+    {
+      "unique": true,
+      "name": "Warding",
+      "effects": "Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area for 150 seconds. Holds up to 4 charges which refill upon visiting the shop.",
+      "range": 600,
+      "cooldown": 0.0
+    }
+  ],
+  "auras": [],
+  "stats": {
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "goldPer10": {
+      "flat": 2.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 500.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 200.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2300,
+    "priceCombined": 650,
+    "priceSell": 920,
+    "tags": [
+      "TOOLS:GOLD_INCOME",
+      "TOOLS:VISION_AND_TRINKETS",
+      "DEFENSE:HEALTH",
+      "DEFENSE:HEALTH_REGEN"
+    ]
+  }
+}

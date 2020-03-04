@@ -1,0 +1,34 @@
+{
+  "name": "Spirit Stone",
+  "id": 1080,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1041,
+    1004,
+    1006
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Butcher",
+      "effects": "Against monsters, deal 20% bonus damage and restore 6% of damage dealt as health and 3% as mana.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {},
+  "shop": {
+    "priceTotal": 700,
+    "priceCombined": 15,
+    "priceSell": 490,
+    "tags": [
+      "DEFENSE:HEALTH_REGEN",
+      "MAGIC:MANA_REGEN"
+    ]
+  }
+}

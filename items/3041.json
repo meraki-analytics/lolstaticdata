@@ -1,0 +1,55 @@
+{
+  "name": "Mejai's Soulstealer",
+  "id": 3041,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1082
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Dread",
+      "effects": "Grants +5 ability power per stack of Glory. Grants +10% bonus movement speed at 10 Glory.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Do or Die",
+      "effects": "Grants 4 Glory (+20 AP) for a champion kill and 2 Glory (+10 AP) for an assist, up to 25 Glory (+125 AP). Upon death, lose 10 Glory stacks (-50 AP).",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 20.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 200.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1400,
+    "priceCombined": 1050,
+    "priceSell": 980,
+    "tags": [
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:MANA"
+    ]
+  }
+}

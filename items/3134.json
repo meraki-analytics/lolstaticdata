@@ -1,0 +1,59 @@
+{
+  "name": "Serrated Dirk",
+  "id": 3134,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1036,
+    1036
+  ],
+  "buildsInto": [
+    3147,
+    3814,
+    3181,
+    null,
+    3142
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "+10 Lethality (6.22 \u2212 10 (based on level) armor penetration)",
+      "stats": [
+        {
+          "lethality": {
+            "flat": 10.0,
+            "percent": 0.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 30.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1100,
+    "priceCombined": 400,
+    "priceSell": 770,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "ATTACK:ARMOR_PENETRATION"
+    ]
+  }
+}

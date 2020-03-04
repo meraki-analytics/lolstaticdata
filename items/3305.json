@@ -1,0 +1,75 @@
+{
+  "name": "Timeworn Nomad's Medallion",
+  "id": 3305,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    3304,
+    1006
+  ],
+  "buildsInto": [
+    3306
+  ],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "Support, Economy, Gold",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Favor",
+      "effects": "Nearby enemy minions, killed by any ally other than you, will sometimes drop a coin that can be picked up to either grant 50 or restore 6% missing mana (minimum 10). Gold coin can only drop if an allied champion is nearby. Cannon minions will drop a coin as long as you don't kill them.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Quest",
+      "effects": "Earn 750 using this item. Reward: Favor is upgraded to Emperor's Favor making champion takedowns grant both the gold and mana. You also grant 8% bonus movement speed to nearby allied champions moving toward you.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "goldPer10": {
+      "flat": 2.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 50.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "movespeed": {
+      "flat": 10.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 850,
+    "priceCombined": 300,
+    "priceSell": 340,
+    "tags": [
+      "TOOLS:GOLD_INCOME",
+      "DEFENSE:HEALTH_REGEN",
+      "MAGIC:MANA_REGEN"
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "name": "Stormrazor",
+  "id": 3095,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    1038,
+    1018,
+    2015
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Energized",
+      "effects": "Moving and basic attacking generates Energize stacks, up to 100.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Paralyze",
+      "effects": "When fully Energized, your next basic attack deals 120 bonus magic damage on-hit. Energized effects slow by 75% for 0.5 seconds.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 50.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackSpeed": {
+      "flat": 15.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "criticalStrikeChance": {
+      "flat": 0.0,
+      "percent": 25.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3200,
+    "priceCombined": 400,
+    "priceSell": 2240,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "ATTACK:ATTACK_SPEED",
+      "ATTACK:CRITICAL_STRIKE"
+    ]
+  }
+}

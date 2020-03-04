@@ -1,0 +1,43 @@
+{
+  "name": "Quicksilver Sash",
+  "id": 3140,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1033
+  ],
+  "buildsInto": [
+    3139
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "qss",
+  "passives": [],
+  "active": [
+    {
+      "unique": true,
+      "name": "Quicksilver",
+      "effects": "Removes all crowd control debuffs from your champion (90 second cooldown).",
+      "range": 0,
+      "cooldown": 90.0
+    }
+  ],
+  "auras": [],
+  "stats": {
+    "magicResistance": {
+      "flat": 30.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1300,
+    "priceCombined": 850,
+    "priceSell": 910,
+    "tags": [
+      "DEFENSE:MAGIC_RESIST"
+    ]
+  }
+}

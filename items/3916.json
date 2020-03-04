@@ -1,0 +1,63 @@
+{
+  "name": "Oblivion Orb",
+  "id": 3916,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1028,
+    1052
+  ],
+  "buildsInto": [
+    3165
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Touch of Death",
+      "effects": "+15 magic penetration.",
+      "stats": [
+        {
+          "magicPenetration": {
+            "flat": "15",
+            "percent": 0.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 20.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 200.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1600,
+    "priceCombined": 765,
+    "priceSell": 1120,
+    "tags": [
+      "MAGIC:ABILITY_POWER",
+      "DEFENSE:HEALTH"
+    ]
+  }
+}

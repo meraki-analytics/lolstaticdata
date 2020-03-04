@@ -1,0 +1,60 @@
+{
+  "name": "Banshee's Veil",
+  "id": 3102,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3108,
+    1033,
+    1026
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "bv",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Spell Shield",
+      "effects": "Grants a spell shield that blocks the next enemy ability. This shield refreshes after no damage is taken from enemy champions for 40 seconds.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 75.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 60.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3000,
+    "priceCombined": 800,
+    "priceSell": 2100,
+    "tags": [
+      "DEFENSE:MAGIC_RESIST",
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
+  }
+}

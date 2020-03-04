@@ -1,0 +1,52 @@
+{
+  "name": "Hexdrinker (old)",
+  "id": 3155,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1036,
+    1033
+  ],
+  "buildsInto": [
+    null
+  ],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "After taking magic damage you gain attack damage for 8 seconds. Bonus stacks up to 25 attack damage after taking 600 magic damage.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 20.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 30.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1300,
+    "priceCombined": 485,
+    "priceSell": 0,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "DEFENSE:MAGIC_RESIST"
+    ]
+  }
+}

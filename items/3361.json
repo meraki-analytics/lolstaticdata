@@ -1,0 +1,32 @@
+{
+  "name": "Greater Stealth Totem",
+  "id": 3361,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    3340
+  ],
+  "buildsInto": [],
+  "noEffects": true,
+  "removed": true,
+  "nickname": "yellow",
+  "passives": [],
+  "active": [
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Places an Stealth Ward that lasts 180 seconds (60 second cooldown).\nStore a charge every 60 seconds, up to 2 total.",
+      "range": 0,
+      "cooldown": 60.0
+    }
+  ],
+  "auras": [],
+  "stats": {},
+  "shop": {
+    "priceTotal": 250,
+    "priceCombined": 250,
+    "priceSell": 175,
+    "tags": [
+      "TOOLS:VISION_AND_TRINKETS"
+    ]
+  }
+}

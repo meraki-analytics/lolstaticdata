@@ -1,0 +1,67 @@
+{
+  "name": "Glacial Shroud",
+  "id": 3024,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1027,
+    1029
+  ],
+  "buildsInto": [
+    3110,
+    3025,
+    3800,
+    3050
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "10.0% cooldown reduction",
+      "stats": [
+        {
+          "cooldownReduction": {
+            "flat": 0.0,
+            "percent": 10.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "armor": {
+      "flat": 20.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 250.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 900,
+    "priceCombined": 250,
+    "priceSell": 630,
+    "tags": [
+      "DEFENSE:ARMOR",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "MAGIC:MANA"
+    ]
+  }
+}

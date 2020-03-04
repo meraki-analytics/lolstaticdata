@@ -1,0 +1,60 @@
+{
+  "name": "Dervish Blade",
+  "id": 3137,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3140,
+    3101
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [],
+  "active": [
+    {
+      "unique": true,
+      "name": "Quicksilver",
+      "effects": "Removes all debuffs from your champion. Melee champions also gain +50% movement speed for 1 second. 90 second cooldown.",
+      "range": 0,
+      "cooldown": 90.0
+    }
+  ],
+  "auras": [],
+  "stats": {
+    "attackSpeed": {
+      "flat": 50.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 45.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2700,
+    "priceCombined": 300,
+    "priceSell": 1890,
+    "tags": [
+      "DEFENSE:MAGIC_RESIST",
+      "ATTACK:ATTACK_SPEED",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
+  }
+}

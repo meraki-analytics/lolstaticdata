@@ -1,0 +1,68 @@
+{
+  "name": "Banner of Command",
+  "id": 3060,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3105,
+    2053
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "flag",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Point Runner",
+      "effects": "Builds up to 20% bonus movement speed over 2 seconds while near turrets, fallen turrets and Void Gates.",
+      "stats": []
+    }
+  ],
+  "active": [
+    {
+      "unique": true,
+      "name": "Promote",
+      "effects": "Greatly increases the power of a lane minion, granting it 40% reduced damage from enemy champions, 100% bonus damage against turrets and bonus stats (1200 range) (120 second cooldown).",
+      "range": 1200,
+      "cooldown": 120.0
+    }
+  ],
+  "auras": [],
+  "stats": {
+    "armor": {
+      "flat": 60.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 125.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 30.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2200,
+    "priceCombined": 200,
+    "priceSell": 1540,
+    "tags": [
+      "DEFENSE:ARMOR",
+      "DEFENSE:MAGIC_RESIST",
+      "DEFENSE:HEALTH_REGEN",
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
+    ]
+  }
+}

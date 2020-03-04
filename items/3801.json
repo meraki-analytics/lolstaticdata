@@ -1,0 +1,48 @@
+{
+  "name": "Crystalline Bracer",
+  "id": 3801,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1028,
+    1006
+  ],
+  "buildsInto": [
+    3107,
+    3800,
+    2065,
+    3083
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "health": {
+      "flat": 200.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 50.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 650,
+    "priceCombined": 100,
+    "priceSell": 455,
+    "tags": [
+      "DEFENSE:HEALTH",
+      "DEFENSE:HEALTH_REGEN"
+    ]
+  }
+}

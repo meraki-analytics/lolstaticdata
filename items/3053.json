@@ -1,0 +1,61 @@
+{
+  "name": "Sterak's Gage",
+  "id": 3053,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3052,
+    1037,
+    1028
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Giant Strength",
+      "effects": "Gain 50% of base attack damage as bonus attack damage.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Lifeline",
+      "effects": "If you take 400 \u2212 1800 (based on level) damage within 5 seconds, you gain a shield for up to 3.75 seconds equal to 75% bonus health, which start decaying after 0.75 seconds (60 second cooldown).",
+      "stats": []
+    },
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Triggering Lifeline grants Sterak's Fury.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Sterak's Fury",
+      "effects": "Grants increased size and +30% Tenacity for 8 seconds.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "health": {
+      "flat": 450.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3200,
+    "priceCombined": 725,
+    "priceSell": 2240,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "DEFENSE:HEALTH"
+    ]
+  }
+}

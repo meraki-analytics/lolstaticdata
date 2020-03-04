@@ -1,0 +1,31 @@
+{
+  "name": "Warding Totem",
+  "id": 3340,
+  "tier": "Tier 1",
+  "buildsFrom": [],
+  "buildsInto": [],
+  "noEffects": true,
+  "removed": false,
+  "nickname": "yellow",
+  "passives": [],
+  "active": [
+    {
+      "unique": false,
+      "name": null,
+      "effects": "Consume a charge to place an invisible Totem Ward at the target location (600 range), which reveals the surrounding area. Stores one charge every 240 \u2212 120 (based on average of all champion levels) seconds, up to 2 maximum charges.",
+      "range": 600,
+      "cooldown": 0.0
+    }
+  ],
+  "auras": [],
+  "stats": {},
+  "shop": {
+    "priceTotal": 0,
+    "priceCombined": 0,
+    "priceSell": 0,
+    "tags": [
+      "STARTER ITEMS:LANING",
+      "TOOLS:VISION_AND_TRINKETS"
+    ]
+  }
+}

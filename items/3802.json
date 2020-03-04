@@ -1,0 +1,74 @@
+{
+  "name": "Lost Chapter",
+  "id": 3802,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1052,
+    1027,
+    1052
+  ],
+  "buildsInto": [
+    3003,
+    3030,
+    3285
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Haste",
+      "effects": "Grants an additional 10% cooldown reduction.",
+      "stats": [
+        {
+          "cooldownReduction": {
+            "flat": 0.0,
+            "percent": 10.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Upon leveling, restores 20% of your maximum mana over 3 seconds.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 40.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 300.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1300,
+    "priceCombined": 80,
+    "priceSell": 910,
+    "tags": [
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:MANA",
+      "MAGIC:MANA_REGEN",
+      "MAGIC:COOLDOWN_REDUCTION"
+    ]
+  }
+}

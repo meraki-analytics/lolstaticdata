@@ -1,0 +1,60 @@
+{
+  "name": "Madred's Bloodrazor",
+  "id": 3126,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3106,
+    1037,
+    1043
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Basic attacks deal 4% of the target's maximum health bonus magic damage on-hit, capped at 120 damage against monsters.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "armor": {
+      "flat": 25.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackDamage": {
+      "flat": 40.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackSpeed": {
+      "flat": 40.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3800,
+    "priceCombined": 775,
+    "priceSell": 2660,
+    "tags": [
+      "ATTACK:ATTACK_SPEED",
+      "ATTACK:DAMAGE",
+      "DEFENSE:ARMOR"
+    ]
+  }
+}

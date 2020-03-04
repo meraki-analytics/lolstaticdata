@@ -1,0 +1,66 @@
+{
+  "name": "Staff of Flowing Water",
+  "id": 3744,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3028,
+    1052
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Mana Font",
+      "effects": "Every 5 seconds, restores 2% of your missing mana.",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": null,
+      "effects": "While in the river, grants +30% movement speed and +10 flat mana regeneration.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 40.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 25.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 0.0,
+      "percent": 50.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 1635,
+    "priceCombined": 300,
+    "priceSell": 1145,
+    "tags": [
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:MANA_REGEN",
+      "DEFENSE:MAGIC_RESIST",
+      "MOVEMENT:OTHER_MOVEMENT_ITEMS"
+    ]
+  }
+}

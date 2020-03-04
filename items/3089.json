@@ -1,0 +1,60 @@
+{
+  "name": "Zhonya's Ring",
+  "id": 3089,
+  "tier": "Tier 2",
+  "buildsFrom": [
+    1026,
+    1058
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "+25% ability power.",
+      "stats": [
+        {
+          "abilityPower": {
+            "flat": 0.0,
+            "percent": 25.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "active": [
+    {
+      "unique": true,
+      "name": "Stasis",
+      "effects": "Put yourself in stasis for 2 seconds, rendering yourself untargetable and invulnerable for the duration, but also unable to move, attack, cast spells, or use items during this time (90 second cooldown).",
+      "range": 0,
+      "cooldown": 90.0
+    }
+  ],
+  "auras": [],
+  "stats": {
+    "abilityPower": {
+      "flat": 120.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3460,
+    "priceCombined": 1000,
+    "priceSell": 2422,
+    "tags": [
+      "MAGIC:ABILITY_POWER"
+    ]
+  }
+}

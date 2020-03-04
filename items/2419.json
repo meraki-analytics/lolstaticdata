@@ -1,0 +1,32 @@
+{
+  "name": "Replica Stopwatch",
+  "id": 2419,
+  "tier": "Tier 1",
+  "buildsFrom": [],
+  "buildsInto": [
+    3193,
+    3026,
+    3157
+  ],
+  "noEffects": true,
+  "removed": false,
+  "nickname": "",
+  "passives": [],
+  "active": [
+    {
+      "unique": true,
+      "name": "Stasis",
+      "effects": "Put yourself in stasis for 2.5 seconds, rendering yourself untargetable and invulnerable for the duration, but also unable to move, attack, cast spells, or use items during this time.",
+      "range": 0,
+      "cooldown": 0.0
+    }
+  ],
+  "auras": [],
+  "stats": {},
+  "shop": {
+    "priceTotal": 0,
+    "priceCombined": 0,
+    "priceSell": 20,
+    "tags": []
+  }
+}

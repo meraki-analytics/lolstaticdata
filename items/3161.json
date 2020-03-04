@@ -1,0 +1,66 @@
+{
+  "name": "Spear of Shojin",
+  "id": 3161,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    1038,
+    3067,
+    1036
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "After casting your ultimate, your next basic attack on-hit within 10 seconds grants Awakened Dragon for 6 seconds (30 second cooldown).",
+      "stats": []
+    },
+    {
+      "unique": true,
+      "name": "Awakened Dragon",
+      "effects": "Gain 50% bonus attack speed, and basic attacks refund 20% of your remaining basic abilities cooldowns on-attack. Abilities that trigger on-hit effects refund the cooldown on-hit.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 60.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 20.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 250.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3400,
+    "priceCombined": 950,
+    "priceSell": 2380,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "MAGIC:COOLDOWN_REDUCTION",
+      "DEFENSE:HEALTH"
+    ]
+  }
+}

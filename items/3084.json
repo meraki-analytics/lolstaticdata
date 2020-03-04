@@ -1,0 +1,49 @@
+{
+  "name": "Overlord's Bloodmail",
+  "id": 3084,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3801,
+    1011
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": true,
+  "nickname": "",
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "On kill or assist, heal for 300 health over 5 seconds.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "health": {
+      "flat": 800.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 100.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 2550,
+    "priceCombined": 900,
+    "priceSell": 1785,
+    "tags": [
+      "DEFENSE:HEALTH"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Faerie Charm",
+  "id": 1004,
+  "tier": "Tier 1",
+  "buildsFrom": [],
+  "buildsInto": [
+    3028,
+    3114,
+    3070
+  ],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "",
+  "passives": [],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "manaRegen": {
+      "flat": 0.0,
+      "percent": 25.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 125,
+    "priceCombined": 0,
+    "priceSell": 88,
+    "tags": [
+      "MAGIC:MANA_REGEN"
+    ]
+  }
+}

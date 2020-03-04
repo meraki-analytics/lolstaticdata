@@ -1,0 +1,50 @@
+{
+  "name": "Frozen Mallet",
+  "id": 3022,
+  "tier": "Tier 3",
+  "buildsFrom": [
+    3052,
+    1011
+  ],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "nickname": "fm",
+  "passives": [
+    {
+      "unique": true,
+      "name": "Icy",
+      "effects": "Basic attacks (on-hit) apply a 40% slow to your target for 1.5 seconds, refreshing with every hit.",
+      "stats": []
+    }
+  ],
+  "active": [],
+  "auras": [],
+  "stats": {
+    "attackDamage": {
+      "flat": 30.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 700.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "priceTotal": 3100,
+    "priceCombined": 900,
+    "priceSell": 2170,
+    "tags": [
+      "ATTACK:DAMAGE",
+      "DEFENSE:HEALTH"
+    ]
+  }
+}
