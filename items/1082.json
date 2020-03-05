@@ -1,24 +1,27 @@
 {
   "name": "Dark Seal",
   "id": 1082,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
-  "buildsInto": [
-    "Mejai's Soulstealer"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1082.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Dread",
-      "effects": "Grants +3 ability power per stack of Glory."
+      "effects": "Grants +3 ability power per stack of Glory.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Do or Die",
-      "effects": "Grants 2 Glory (+6 AP) for a champion kill and 1 Glory (+3 AP) for an assist, up to a maximum of 10 Glory stacks (+30 AP). Upon death, lose 4 Glory stacks (-12 AP)."
+      "effects": "Grants 2 Glory (+6 AP) for a champion kill and 1 Glory (+3 AP) for an assist, up to a maximum of 10 Glory stacks (+30 AP). Upon death, lose 4 Glory stacks (-12 AP).",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -27,8 +30,6 @@
     "abilityPower": {
       "flat": 10.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -37,8 +38,6 @@
     "mana": {
       "flat": 100.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

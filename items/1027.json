@@ -1,19 +1,15 @@
 {
   "name": "Sapphire Crystal",
   "id": 1027,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
-  "buildsInto": [
-    "Catalyst of Aeons",
-    "Glacial Shroud",
-    "Lost Chapter",
-    "Runic Echoes",
-    "Sheen",
-    "Tear of the Goddess"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1027.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "blue",
+  "nicknames": [
+    "blue"
+  ],
   "passives": [],
   "active": [],
   "auras": [],
@@ -21,8 +17,6 @@
     "mana": {
       "flat": 250.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

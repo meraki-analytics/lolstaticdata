@@ -1,32 +1,41 @@
 {
   "name": "Lightbringer",
   "id": 3185,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Wicked Hatchet",
-    "Cloak of Agility"
+    3122,
+    1018
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3185_lightbringer.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "lb",
+  "nicknames": [
+    "lb"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Critical Vision",
-      "effects": "Critical strikes cause enemies to bleed for an additional 90% bonus AD as magic damage over 3 seconds and reveal them for the duration."
+      "effects": "Critical strikes cause enemies to bleed for an additional 90% bonus AD as magic damage over 3 seconds and reveal them for the duration.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Trap Detection",
-      "effects": "Nearby stealthed enemy traps are revealed."
+      "effects": "Nearby stealthed enemy traps are revealed.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [
     {
       "unique": true,
       "name": null,
-      "effects": "Covers a target area in a stealth-detecting mist that grants vision for 5 seconds and reveals enemies that enter it for 3 seconds (60 second cooldown) (800 range, 375 AoE estimated)."
+      "effects": "Covers a target area in a stealth-detecting mist that grants vision for 5 seconds and reveals enemies that enter it for 3 seconds (60 second cooldown) (800 range, 375 AoE estimated).",
+      "range": 800,
+      "cooldown": 60.0
     }
   ],
   "auras": [],
@@ -34,8 +43,6 @@
     "attackDamage": {
       "flat": 30.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -44,8 +51,6 @@
     "criticalStrikeChance": {
       "flat": 0.0,
       "percent": 30.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

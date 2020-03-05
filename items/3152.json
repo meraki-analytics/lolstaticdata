@@ -1,20 +1,23 @@
 {
   "name": "Will of the Ancients",
   "id": 3152,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Hextech Revolver",
-    "Fiendish Codex"
+    3145,
+    3067
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3152.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "Abilities instantly heal for 15% of raw damage dealt, including physical, magical and true damage. Area of effect abilities only heal 5% for every unit affected."
+      "effects": "Abilities instantly heal for 15% of raw damage dealt, including physical, magical and true damage. Area of effect abilities only heal 5% for every unit affected.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -23,18 +26,14 @@
     "abilityPower": {
       "flat": 80.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
     },
     "cooldownReduction": {
-      "flat": 10.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 10.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

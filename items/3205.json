@@ -1,27 +1,34 @@
 {
   "name": "Quill Coat",
   "id": 3205,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Hunter's Machete",
-    "Cloth Armor"
+    1039,
+    1029
   ],
-  "buildsInto": [],
+  "buildsInto": [
+    3207
+  ],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3205_quillcoat.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Sapping Barbs",
-      "effects": "Grants 40 health regeneration and 30 mana regeneration whenever you take damage from a monster. Additionally, monsters who attack you bleed for 5% of their maximum health over 3 seconds (capped at 150 damage). Sapping Barbs cannot deal lethal damage."
+      "effects": "Grants 40 health regeneration and 30 mana regeneration whenever you take damage from a monster. Additionally, monsters who attack you bleed for 5% of their maximum health over 3 seconds (capped at 150 damage). Sapping Barbs cannot deal lethal damage.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [
     {
       "unique": true,
       "name": "Hunter's Ward",
-      "effects": "Places a Stealth Ward that reveals the surrounding area for 180 seconds (600 range) (180 second cooldown)."
+      "effects": "Places a Stealth Ward that reveals the surrounding area for 180 seconds (600 range) (180 second cooldown).",
+      "range": 600,
+      "cooldown": 180.0
     }
   ],
   "auras": [],
@@ -29,8 +36,6 @@
     "armor": {
       "flat": 20.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

@@ -1,27 +1,37 @@
 {
   "name": "Ruby Sightstone",
   "id": 2045,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Sightstone",
-    "Ruby Crystal"
+    2049,
+    1028
   ],
-  "buildsInto": [],
+  "buildsInto": [
+    3375
+  ],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/2049_ruby_ward.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "Support, Ward",
+  "nicknames": [
+    "Support",
+    "Ward"
+  ],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "Active ability items' cooldowns are reduced by 20% each."
+      "effects": "Active ability items' cooldowns are reduced by 20% each.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [
     {
       "unique": true,
       "name": "Warding",
-      "effects": "Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area for 150 seconds. Holds up to 4 charges which refill upon visiting the shop."
+      "effects": "Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area for 150 seconds. Holds up to 4 charges which refill upon visiting the shop.",
+      "range": 600,
+      "cooldown": null
     }
   ],
   "auras": [],
@@ -29,8 +39,6 @@
     "health": {
       "flat": 500.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

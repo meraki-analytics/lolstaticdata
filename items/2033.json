@@ -1,29 +1,36 @@
 {
   "name": "Corrupting Potion",
   "id": 2033,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Refillable Potion"
+    2031
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2033.png",
   "noEffects": true,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": false,
       "name": null,
-      "effects": "Holds up to 3 charges that refill upon visiting the shop."
+      "effects": "Holds up to 3 charges that refill upon visiting the shop.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": false,
       "name": "Touch of Corruption",
-      "effects": "Abilities and basic attacks apply a burn that damages enemy champions for 15 bonus magic damage over 3 seconds. Bonus damage is halved for area of effect and damage over time effects."
+      "effects": "Abilities and basic attacks apply a burn that damages enemy champions for 15 bonus magic damage over 3 seconds. Bonus damage is halved for area of effect and damage over time effects.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": false,
       "name": null,
-      "effects": "Corrupting Potion can be used even at full health and mana."
+      "effects": "Corrupting Potion can be used even at full health and mana.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],

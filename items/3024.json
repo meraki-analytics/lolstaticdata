@@ -1,39 +1,42 @@
 {
   "name": "Glacial Shroud",
   "id": 3024,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Sapphire Crystal",
-    "Cloth Armor"
+    1027,
+    1029
   ],
-  "buildsInto": [
-    "Frozen Heart",
-    "Iceborn Gauntlet",
-    "Righteous Glory",
-    "Zeke's Convergence"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3024.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
-  "passives": [],
+  "nicknames": [],
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "10.0% cooldown reduction",
+      "range": null,
+      "stats": [
+        {
+          "cooldownReduction": {
+            "flat": 0.0,
+            "percent": 10.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    }
+  ],
   "active": [],
   "auras": [],
   "stats": {
     "armor": {
       "flat": 20.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
-      "perLevel": 0.0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
-    },
-    "cooldownReduction": {
-      "flat": 0.0,
-      "percent": 0.0,
-      "unique": 10.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -42,8 +45,6 @@
     "mana": {
       "flat": 250.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

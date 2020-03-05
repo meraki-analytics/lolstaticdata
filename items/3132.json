@@ -1,23 +1,22 @@
 {
   "name": "Heart of Gold",
   "id": 3132,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Ruby Crystal"
+    1028
   ],
-  "buildsInto": [
-    "Locket of the Iron Solari",
-    "Lord Van Damm's Pillager",
-    "Randuin's Omen"
-  ],
+  "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3051_renewal_tunic.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "+ 5 per 10 seconds."
+      "effects": "+ 5 per 10 seconds.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -26,8 +25,6 @@
     "health": {
       "flat": 200.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

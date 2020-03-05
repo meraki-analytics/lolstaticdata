@@ -1,25 +1,41 @@
 {
   "name": "Luden's Echo",
   "id": 3285,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Lost Chapter",
-    "Blasting Wand"
+    3802,
+    1026
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3285.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Haste",
-      "effects": "Grants an additional 10% cooldown reduction."
+      "effects": "Grants an additional 10% cooldown reduction.",
+      "range": null,
+      "stats": [
+        {
+          "cooldownReduction": {
+            "flat": 0.0,
+            "percent": 10.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
     },
     {
       "unique": true,
       "name": "Echo",
-      "effects": "Gains charges upon moving or casting. At 100 charges, the next instance of ability damage you deal will expend all charges to deal 100 (+ 10% AP) bonus magic damage to the first enemy hit and to 3 nearby enemies, prioritizing enemies damaged by the ability and champions over minions.Echo grants vision around you to the enemies."
+      "effects": "Gains charges upon moving or casting. At 100 charges, the next instance of ability damage you deal will expend all charges to deal 100 (+ 10% AP) bonus magic damage to the first enemy hit and to 3 nearby enemies, prioritizing enemies damaged by the ability and champions over minions.Echo grants vision around you to the enemies.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -28,18 +44,14 @@
     "abilityPower": {
       "flat": 90.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
     },
     "cooldownReduction": {
-      "flat": 10.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 10.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -48,8 +60,6 @@
     "mana": {
       "flat": 600.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

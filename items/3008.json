@@ -1,30 +1,37 @@
 {
   "name": "Manamune (Quick Charge)",
   "id": 3008,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Tear of the Goddess (Quick Charge)",
-    "Pickaxe"
+    3073,
+    1037
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3008.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Awe",
-      "effects": "Grants bonus attack damage equal to 2% maximum mana. Refunds 15% of mana spent."
+      "effects": "Grants bonus attack damage equal to 2% maximum mana. Refunds 15% of mana spent.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Mana Charge",
-      "effects": "Grants a charge every 4 seconds, up to 3 charges. Each basic attack or mana expenditure consumes a charge and grants +6 mana, up to a maximum of 750 mana."
+      "effects": "Grants a charge every 4 seconds, up to 3 charges. Each basic attack or mana expenditure consumes a charge and grants +6 mana, up to a maximum of 750 mana.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": false,
       "name": null,
-      "effects": "Transforms into Muramana at +750 mana."
+      "effects": "Transforms into Muramana at +750 mana.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -33,8 +40,6 @@
     "attackDamage": {
       "flat": 35.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -43,8 +48,6 @@
     "mana": {
       "flat": 250.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

@@ -1,26 +1,31 @@
 {
   "name": "Thornmail",
   "id": 3075,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Bramble Vest",
-    "Ruby Crystal",
-    "Warden's Mail"
+    3076,
+    1028,
+    3082
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3075.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Thorns",
-      "effects": "Upon being hit by a basic attack on-hit, reflects 25 (+ 10% bonus armor) magic damage, while also inflicting Grievous Wounds on the attacker for 3 seconds."
+      "effects": "Upon being hit by a basic attack on-hit, reflects 25 (+ 10% bonus armor) magic damage, while also inflicting Grievous Wounds on the attacker for 3 seconds.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Cold Steel",
-      "effects": "When hit by basic attacks, cripples source's attack speed by 15% for 1 second."
+      "effects": "When hit by basic attacks, cripples source's attack speed by 15% for 1 second.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -29,8 +34,6 @@
     "armor": {
       "flat": 80.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -39,8 +42,6 @@
     "health": {
       "flat": 250.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

@@ -1,17 +1,22 @@
 {
   "name": "Furor",
   "id": 1315,
-  "tier": "Tier 1",
-  "buildsFrom": [],
+  "tier": 1,
+  "buildsFrom": [
+    3047
+  ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/1315_enchantment_furor.png",
   "noEffects": true,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Furor",
-      "effects": "Whenever you deal damage with a single target attack or spell, you gain 12% movement speed that decays over 2 seconds."
+      "effects": "Whenever you deal damage with a single target attack or spell, you gain 12% movement speed that decays over 2 seconds.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],

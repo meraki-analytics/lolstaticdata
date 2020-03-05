@@ -1,29 +1,33 @@
 {
   "name": "Salvation",
   "id": 3382,
-  "tier": "Tier 4",
+  "tier": 4,
   "buildsFrom": [
-    "Redemption"
+    3107
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3382.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "ornn,forge",
+  "nicknames": [
+    "ornn",
+    "forge"
+  ],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": null,
-      "effects": "You reveal the target area for 3 seconds. After a 2.5 second delay, a beam of light strikes the ground. Allies within the area are healed for 30 \u2212 370 (based on target's level), which is increased by 3 \u00d7 your Heal Power, while enemy champions take 10% of target's maximum health true damage and enemy minions and monsters take 250 true damage (120 second cooldown). Can be used while dead."
+      "effects": "You reveal the target area for 3 seconds. After a 2.5 second delay, a beam of light strikes the ground. Allies within the area are healed for 30 \u2212 370 (based on target's level), which is increased by 3 \u00d7 your Heal Power, while enemy champions take 10% of target's maximum health true damage and enemy minions and monsters take 250 true damage (120 second cooldown). Can be used while dead.",
+      "range": null,
+      "cooldown": 120.0
     }
   ],
   "auras": [],
   "stats": {
     "cooldownReduction": {
-      "flat": 10.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 10.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -32,8 +36,6 @@
     "healAndShieldPower": {
       "flat": 10.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -42,8 +44,6 @@
     "health": {
       "flat": 300.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -52,8 +52,6 @@
     "healthRegen": {
       "flat": 0.0,
       "percent": 150.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -62,8 +60,6 @@
     "manaRegen": {
       "flat": 0.0,
       "percent": 200.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

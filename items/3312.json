@@ -1,32 +1,43 @@
 {
   "name": "Timeworn Frost Queen's Claim",
   "id": 3312,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Timeworn Frostfang",
-    "Blasting Wand"
+    3311,
+    1026
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3092_kages_last_breath.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "Support, Economy, Gold",
+  "nicknames": [
+    "Support",
+    "Economy",
+    "Gold"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Tribute",
-      "effects": "Grants a charge every 10 seconds, up to 3 charges. Damaging spells and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge deals them 18 bonus magic damage, and if an allied champion is nearby, also grants 22. Before quest completion, killing a minion or non-epic monster pauses Tribute generation and the passive gold generation for 12 seconds per unit slain."
+      "effects": "Grants a charge every 10 seconds, up to 3 charges. Damaging spells and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge deals them 18 bonus magic damage, and if an allied champion is nearby, also grants 22. Before quest completion, killing a minion or non-epic monster pauses Tribute generation and the passive gold generation for 12 seconds per unit slain.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Quest",
-      "effects": "Earn 750 using this item. Reward: Tribute is upgraded to Queen's Tribute, giving you 50% bonus movement speed for 1 second (additional stacks extend duration) for each charge consumed."
+      "effects": "Earn 750 using this item. Reward: Tribute is upgraded to Queen's Tribute, giving you 50% bonus movement speed for 1 second (additional stacks extend duration) for each charge consumed.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [
     {
       "unique": true,
       "name": null,
-      "effects": "Summon 2 icy ghosts for 6 seconds that seek out nearby enemy champions. Ghosts reveal enemies on contact and slow them by 40% for 2 \u2212 5 (based on distance traveled) seconds (90 second cooldown)."
+      "effects": "Summon 2 icy ghosts for 6 seconds that seek out nearby enemy champions. Ghosts reveal enemies on contact and slow them by 40% for 2 \u2212 5 (based on distance traveled) seconds (90 second cooldown).",
+      "range": null,
+      "cooldown": 90.0
     }
   ],
   "auras": [],
@@ -34,18 +45,14 @@
     "abilityPower": {
       "flat": 60.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
     },
     "cooldownReduction": {
-      "flat": 10.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 10.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -54,8 +61,6 @@
     "goldPer10": {
       "flat": 2.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -64,8 +69,6 @@
     "manaRegen": {
       "flat": 0.0,
       "percent": 50.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

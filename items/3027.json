@@ -1,25 +1,32 @@
 {
   "name": "Rod of Ages",
   "id": 3027,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Catalyst of Aeons",
-    "Blasting Wand"
+    3010,
+    1026
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3027.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "roa",
+  "nicknames": [
+    "roa"
+  ],
   "passives": [
     {
       "unique": false,
       "name": null,
-      "effects": "This item gains 20 health, 10 mana and 4 ability power every minute, up to 10 times, for a maximum of 200 health, 100 mana and 40 ability power."
+      "effects": "This item gains 20 health, 10 mana and 4 ability power every minute, up to 10 times, for a maximum of 200 health, 100 mana and 40 ability power.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Eternity",
-      "effects": "Restore mana equal to 15% of damage taken from champions. Restore health equal to 20% of mana spent, up to 25 health per cast, while toggle abilities can heal for up to 25 per second."
+      "effects": "Restore mana equal to 15% of damage taken from champions. Restore health equal to 20% of mana spent, up to 25 health per cast, while toggle abilities can heal for up to 25 per second.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -28,8 +35,6 @@
     "abilityPower": {
       "flat": 60.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -38,8 +43,6 @@
     "health": {
       "flat": 300.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -48,8 +51,6 @@
     "mana": {
       "flat": 300.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

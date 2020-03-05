@@ -1,21 +1,26 @@
 {
   "name": "Mariner's Vengeance",
   "id": 4026,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "B. F. Sword",
-    "Chain Vest",
-    "Stopwatch"
+    1038,
+    1031,
+    2420
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/4026_mariners_vengeance.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "ga",
+  "nicknames": [
+    "ga"
+  ],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "Upon taking lethal damage, removes all crowd controls, refreshes your basic abilities cooldowns, while also becoming invulnerable for 4 seconds, after which you die (210 second cooldown)."
+      "effects": "Upon taking lethal damage, removes all crowd controls, refreshes your basic abilities cooldowns, while also becoming invulnerable for 4 seconds, after which you die (210 second cooldown).",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -24,8 +29,6 @@
     "armor": {
       "flat": 40.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -34,8 +37,6 @@
     "attackDamage": {
       "flat": 45.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

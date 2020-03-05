@@ -1,17 +1,22 @@
 {
   "name": "Travel Size Elixir of Wrath",
   "id": 2060,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/2060_travel_size_elixir_of_wrath.png",
   "noEffects": true,
   "removed": true,
-  "nickname": "kleptomancy",
+  "nicknames": [
+    "kleptomancy"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Bloodlust",
-      "effects": "Dealing physical damage to champions heals for 10% of the damage dealt. Area of effect physical damage only heals 3.3% for every unit affected."
+      "effects": "Dealing physical damage to champions heals for 10% of the damage dealt. Area of effect physical damage only heals 3.3% for every unit affected.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],

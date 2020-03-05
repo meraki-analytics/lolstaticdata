@@ -1,19 +1,22 @@
 {
   "name": "Refillable Potion",
   "id": 2031,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
-  "buildsInto": [
-    "Corrupting Potion"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2031.png",
   "noEffects": true,
   "removed": false,
-  "nickname": "Green Potion",
+  "nicknames": [
+    "Green Potion"
+  ],
   "passives": [
     {
       "unique": false,
       "name": null,
-      "effects": "Holds up to 2 charges that refill upon visiting the store."
+      "effects": "Holds up to 2 charges that refill upon visiting the store.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],

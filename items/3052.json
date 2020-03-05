@@ -1,24 +1,23 @@
 {
   "name": "Jaurim's Fist",
   "id": 3052,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Long Sword",
-    "Ruby Crystal"
+    1036,
+    1028
   ],
-  "buildsInto": [
-    "Frozen Mallet",
-    "Sterak's Gage",
-    "Titanic Hydra"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3052.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "Killing a unit grants 5 bonus health, stacking up to 20 times for a maximum of 100 bonus health."
+      "effects": "Killing a unit grants 5 bonus health, stacking up to 20 times for a maximum of 100 bonus health.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -27,8 +26,6 @@
     "attackDamage": {
       "flat": 15.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -37,8 +34,6 @@
     "health": {
       "flat": 200.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

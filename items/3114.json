@@ -1,26 +1,30 @@
 {
   "name": "Malady",
   "id": 3114,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Dagger",
-    "Dagger",
-    "Amplifying Tome"
+    1004,
+    1004
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3114.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "Basic attacks deal 15 (+ 10% AP) bonus magic damage."
+      "effects": "Basic attacks deal 15 (+ 10% AP) bonus magic damage.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": null,
-      "effects": "Basic attacks reduce the target's magic resistance by 4 for 8 seconds. Stacks up to 7 times for a total of -28 magic resistance reduction."
+      "effects": "Basic attacks reduce the target's magic resistance by 4 for 8 seconds. Stacks up to 7 times for a total of -28 magic resistance reduction.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -29,8 +33,6 @@
     "abilityPower": {
       "flat": 25.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -39,8 +41,6 @@
     "attackSpeed": {
       "flat": 45.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

@@ -1,25 +1,41 @@
 {
   "name": "Duskblade of Draktharr",
   "id": 3147,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Serrated Dirk",
-    "Caulfield's Warhammer"
+    3134,
+    3133
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3147.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "+21 Lethality (13.07 \u2212 21 (based on level) armor penetration)"
+      "effects": "+21 Lethality (13.07 \u2212 21 (based on level) armor penetration)",
+      "range": null,
+      "stats": [
+        {
+          "lethality": {
+            "flat": 21.0,
+            "percent": 0.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
     },
     {
       "unique": true,
       "name": "Nightstalker",
-      "effects": "After being unseen for at least 1 second, your next basic attack against an enemy champion deals 30 \u2212 150 (based on level) bonus on-hit physical damage and after a 0.25-second delay it slows them by 99% for 0.5 seconds. The enhanced attack lasts 5 seconds after being seen by an enemy champion."
+      "effects": "After being unseen for at least 1 second, your next basic attack against an enemy champion deals 30 \u2212 150 (based on level) bonus on-hit physical damage and after a 0.25-second delay it slows them by 99% for 0.5 seconds. The enhanced attack lasts 5 seconds after being seen by an enemy champion.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -28,18 +44,14 @@
     "attackDamage": {
       "flat": 60.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
     },
     "cooldownReduction": {
-      "flat": 10.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 10.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

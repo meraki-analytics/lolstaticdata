@@ -1,19 +1,25 @@
 {
   "name": "Forgefire Cape",
   "id": 3373,
-  "tier": "Tier 4",
+  "tier": 4,
   "buildsFrom": [
-    "Sunfire Cape"
+    3068
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3373.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "ornn,forge",
+  "nicknames": [
+    "ornn",
+    "forge"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Immolate",
-      "effects": "Deals 26 \u2212 43 (based on level) magic damage per second to nearby enemies (325 range).Hitting an enemy with an immobilizing ability deals 26 \u2212 43 (based on level) (+ 4% bonus health) bonus magic damage and releases a fire nova that also deals that bonus damage to nearby enemies (12 second cooldown).Immolate's damage is increased by 50% against minions and monsters."
+      "effects": "Deals 26 \u2212 43 (based on level) magic damage per second to nearby enemies (325 range).Hitting an enemy with an immobilizing ability deals 26 \u2212 43 (based on level) (+ 4% bonus health) bonus magic damage and releases a fire nova that also deals that bonus damage to nearby enemies (12 second cooldown).Immolate's damage is increased by 50% against minions and monsters.",
+      "range": 325,
+      "stats": []
     }
   ],
   "active": [],
@@ -22,8 +28,6 @@
     "armor": {
       "flat": 100.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -32,8 +36,6 @@
     "health": {
       "flat": 750.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

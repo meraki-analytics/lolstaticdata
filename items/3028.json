@@ -1,24 +1,24 @@
 {
   "name": "Chalice of Harmony",
   "id": 3028,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Faerie Charm",
-    "Null-Magic Mantle",
-    "Faerie Charm"
+    1004,
+    1033,
+    1004
   ],
-  "buildsInto": [
-    "Athene's Unholy Grail",
-    "Mikael's Crucible"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3028.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Harmony",
-      "effects": "Gain +25% base health regeneration for every additional 25% base mana regeneration."
+      "effects": "Gain +25% base health regeneration for every additional 25% base mana regeneration.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -27,8 +27,6 @@
     "magicResistance": {
       "flat": 30.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -37,8 +35,6 @@
     "manaRegen": {
       "flat": 0.0,
       "percent": 50.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

@@ -1,28 +1,31 @@
 {
   "name": "Avarice Blade",
   "id": 3093,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Brawler's Gloves"
+    1042
   ],
   "buildsInto": [
-    "Atma's Impaler",
-    "Statikk Shiv",
-    "Youmuu's Ghostblade"
+    3210
   ],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3093_avarice_blade.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Avarice",
-      "effects": "+ 3 per 10 seconds"
+      "effects": "+ 3 per 10 seconds",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Greed",
-      "effects": "Grants 2 upon killing a unit."
+      "effects": "Grants 2 upon killing a unit.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -31,8 +34,6 @@
     "criticalStrikeChance": {
       "flat": 0.0,
       "percent": 10.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

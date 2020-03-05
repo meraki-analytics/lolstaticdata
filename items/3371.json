@@ -1,14 +1,18 @@
 {
   "name": "Molten Edge",
   "id": 3371,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Infinity Edge"
+    3031
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3371.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "ornn,forge",
+  "nicknames": [
+    "ornn",
+    "forge"
+  ],
   "passives": [],
   "active": [],
   "auras": [],
@@ -16,8 +20,6 @@
     "attackDamage": {
       "flat": 110.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -26,8 +28,6 @@
     "criticalStrikeChance": {
       "flat": 0.0,
       "percent": 25.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

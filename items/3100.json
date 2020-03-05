@@ -1,21 +1,24 @@
 {
   "name": "Lich Bane",
   "id": 3100,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Sheen",
-    "Aether Wisp",
-    "Blasting Wand"
+    3057,
+    3113,
+    1026
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3100.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Spellblade",
-      "effects": "After using an ability, your next basic attack within 10 seconds deals 75% base AD (+ 50% AP) bonus magic damage on-hit (1.5 second cooldown)."
+      "effects": "After using an ability, your next basic attack within 10 seconds deals 75% base AD (+ 50% AP) bonus magic damage on-hit (1.5 second cooldown).",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -24,18 +27,14 @@
     "abilityPower": {
       "flat": 80.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
     },
     "cooldownReduction": {
-      "flat": 10.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 10.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -44,8 +43,6 @@
     "mana": {
       "flat": 250.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -54,8 +51,6 @@
     "movespeed": {
       "flat": 0.0,
       "percent": 7.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

@@ -1,25 +1,26 @@
 {
   "name": "Philosopher's Stone",
   "id": 3096,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Faerie Charm",
-    "Rejuvenation Bead"
+    1006,
+    3301
   ],
   "buildsInto": [
-    "Mikael's Crucible",
-    "Ohmwrecker",
-    "Eleisa's Miracle",
-    "Shurelya's Reverie"
+    3069,
+    2302
   ],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3062_soul_pendant.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Transmute",
-      "effects": "+ 5 per 10 seconds."
+      "effects": "+ 5 per 10 seconds.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],

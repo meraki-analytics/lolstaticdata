@@ -1,41 +1,42 @@
 {
   "name": "Caulfield's Warhammer",
   "id": 3133,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Long Sword",
-    "Long Sword"
+    1036,
+    1036
   ],
-  "buildsInto": [
-    "Death's Dance",
-    "Duskblade of Draktharr",
-    "Essence Reaver",
-    "Maw of Malmortius",
-    "Warrior",
-    "Youmuu's Ghostblade"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3133.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
-  "passives": [],
+  "nicknames": [],
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "10.0% cooldown reduction",
+      "range": null,
+      "stats": [
+        {
+          "cooldownReduction": {
+            "flat": 0.0,
+            "percent": 10.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    }
+  ],
   "active": [],
   "auras": [],
   "stats": {
     "attackDamage": {
       "flat": 25.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
-      "perLevel": 0.0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
-    },
-    "cooldownReduction": {
-      "flat": 0.0,
-      "percent": 0.0,
-      "unique": 10.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

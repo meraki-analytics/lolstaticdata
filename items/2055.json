@@ -1,17 +1,26 @@
 {
   "name": "Control Ward",
   "id": 2055,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2055.png",
   "noEffects": true,
   "removed": false,
-  "nickname": "green,red,pink,kleptomancy,oracles",
+  "nicknames": [
+    "green",
+    "red",
+    "pink",
+    "kleptomancy",
+    "oracles"
+  ],
   "passives": [
     {
       "unique": false,
       "name": null,
-      "effects": "Limit 1 Control Ward on the map per player."
+      "effects": "Limit 1 Control Ward on the map per player.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],

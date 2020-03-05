@@ -1,30 +1,31 @@
 {
   "name": "Shurelya's Reverie",
   "id": 2065,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Forbidden Idol",
-    "Crystalline Bracer"
+    3114,
+    3801
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2065.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": null,
-      "effects": "Grants you and nearby allies 40% bonus movement speed for 3 seconds (90 second cooldown)."
+      "effects": "Grants you and nearby allies 40% bonus movement speed for 3 seconds (90 second cooldown).",
+      "range": null,
+      "cooldown": 90.0
     }
   ],
   "auras": [],
   "stats": {
     "cooldownReduction": {
-      "flat": 10.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 10.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -33,8 +34,6 @@
     "healAndShieldPower": {
       "flat": 10.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -43,8 +42,6 @@
     "health": {
       "flat": 300.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -53,8 +50,6 @@
     "healthRegen": {
       "flat": 0.0,
       "percent": 100.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -63,8 +58,6 @@
     "manaRegen": {
       "flat": 0.0,
       "percent": 100.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

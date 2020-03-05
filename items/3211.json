@@ -1,23 +1,25 @@
 {
   "name": "Spectre's Cowl",
   "id": 3211,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Ruby Crystal",
-    "Null-Magic Mantle"
+    1028,
+    1033
   ],
-  "buildsInto": [
-    "Adaptive Helm",
-    "Spirit Visage"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3211.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "hat",
+  "nicknames": [
+    "hat"
+  ],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "After taking damage from an enemy champion, gains 150% base health regeneration for 10 seconds."
+      "effects": "After taking damage from an enemy champion, gains 150% base health regeneration for 10 seconds.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -26,8 +28,6 @@
     "health": {
       "flat": 250.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -36,8 +36,6 @@
     "magicResistance": {
       "flat": 25.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

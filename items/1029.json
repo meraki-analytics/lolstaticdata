@@ -1,20 +1,13 @@
 {
   "name": "Cloth Armor",
   "id": 1029,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
-  "buildsInto": [
-    "Aegis of the Legion",
-    "Bramble Vest",
-    "Chain Vest",
-    "Glacial Shroud",
-    "Ninja Tabi",
-    "Seeker's Armguard",
-    "Warden's Mail"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1029.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [],
   "auras": [],
@@ -22,8 +15,6 @@
     "armor": {
       "flat": 15.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

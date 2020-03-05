@@ -1,41 +1,43 @@
 {
   "name": "Puppeteer",
   "id": 3745,
-  "tier": "Tier 3",
-  "buildsFrom": [
-    "Chalice of Harmony",
-    "Kindlegem"
-  ],
-  "buildsInto": [],
+  "tier": 3,
+  "buildsFrom": null,
+  "buildsInto": null,
+  "icon": null,
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Mana Font",
-      "effects": "Restores 2% of your missing mana every 5 seconds."
+      "effects": "Restores 2% of your missing mana every 5 seconds.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": null,
-      "effects": "Basic attacks mark champions with a string for 6 seconds, which breaks if they move more than 1000 units away."
+      "effects": "Basic attacks mark champions with a string for 6 seconds, which breaks if they move more than 1000 units away.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [
     {
       "unique": true,
       "name": null,
-      "effects": "Pulls all marked champions up to 250 units toward you (45 second cooldown)."
+      "effects": "Pulls all marked champions up to 250 units toward you (45 second cooldown).",
+      "range": null,
+      "cooldown": 45.0
     }
   ],
   "auras": [],
   "stats": {
     "cooldownReduction": {
-      "flat": 20.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 20.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -44,8 +46,6 @@
     "health": {
       "flat": 250.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -54,8 +54,6 @@
     "healthRegen": {
       "flat": 0.0,
       "percent": 50.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -64,8 +62,6 @@
     "magicResistance": {
       "flat": 25.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

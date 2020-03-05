@@ -1,40 +1,40 @@
 {
   "name": "Frozen Heart",
   "id": 3110,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Warden's Mail",
-    "Glacial Shroud"
+    3082,
+    3024
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3110.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "fh",
+  "nicknames": [
+    "fh"
+  ],
   "passives": [],
   "active": [],
   "auras": [
     {
       "unique": true,
       "name": null,
-      "effects": "Cripples nearby enemies' attack speed by 15% (700 range)."
+      "effects": "Cripples nearby enemies' attack speed by 15% (700 range).",
+      "range": 700
     }
   ],
   "stats": {
     "armor": {
       "flat": 110.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
     },
     "cooldownReduction": {
-      "flat": 20.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 20.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -43,8 +43,6 @@
     "mana": {
       "flat": 400.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

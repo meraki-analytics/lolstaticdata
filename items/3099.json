@@ -1,31 +1,30 @@
 {
   "name": "Soul Shroud",
   "id": 3099,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Mana Manipulator",
-    "Kindlegem",
-    "Ruby Crystal"
+    3067,
+    1028
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3063_soul_shroud.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [],
   "auras": [
     {
       "unique": true,
       "name": null,
-      "effects": "Nearby champions gain 10% cooldown reduction and 12 mana regeneration (1200 range)."
+      "effects": "Nearby champions gain 10% cooldown reduction and 12 mana regeneration (1200 range).",
+      "range": 1200
     }
   ],
   "stats": {
     "health": {
       "flat": 520.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

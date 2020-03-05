@@ -1,17 +1,20 @@
 {
   "name": "Prospector's Ring",
   "id": 1063,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/1063_prospectorsring2.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": false,
-      "name": "+6 mana regeneration per 5 seconds\nUnique ",
-      "effects": "Prospector: +150 health"
+      "name": null,
+      "effects": "+6 mana regeneration per 5 seconds\nUnique : Prospector: +150 health",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -20,8 +23,6 @@
     "abilityPower": {
       "flat": 35.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

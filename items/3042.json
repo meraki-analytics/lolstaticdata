@@ -1,24 +1,27 @@
 {
   "name": "Muramana",
   "id": 3042,
-  "tier": "Tier 4",
-  "buildsFrom": [
-    "Manamune"
-  ],
+  "tier": 4,
+  "buildsFrom": [],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3042.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Awe",
-      "effects": "Grants bonus attack damage equal to 2% maximum mana. Refunds 15% of mana spent."
+      "effects": "Grants bonus attack damage equal to 2% maximum mana. Refunds 15% of mana spent.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Shock",
-      "effects": "Basic attacks and single targeted abilities against champions (on-hit) consume 3% current mana to deal 6% current mana bonus physical damage. This effect only activates while you have greater than 20% maximum mana."
+      "effects": "Basic attacks and single targeted abilities against champions (on-hit) consume 3% current mana to deal 6% current mana bonus physical damage. This effect only activates while you have greater than 20% maximum mana.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -27,8 +30,6 @@
     "attackDamage": {
       "flat": 35.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -37,8 +38,6 @@
     "mana": {
       "flat": 1000.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

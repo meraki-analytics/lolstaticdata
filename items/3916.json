@@ -1,22 +1,34 @@
 {
   "name": "Oblivion Orb",
   "id": 3916,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Ruby Crystal",
-    "Amplifying Tome"
+    1028,
+    1052
   ],
-  "buildsInto": [
-    "Morellonomicon"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3916.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Touch of Death",
-      "effects": "+15 magic penetration."
+      "effects": "+15 magic penetration.",
+      "range": null,
+      "stats": [
+        {
+          "magicPenetration": {
+            "flat": "15",
+            "percent": 0.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
     }
   ],
   "active": [],
@@ -25,8 +37,6 @@
     "abilityPower": {
       "flat": 20.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -35,8 +45,6 @@
     "health": {
       "flat": 200.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

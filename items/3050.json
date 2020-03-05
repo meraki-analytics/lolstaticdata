@@ -1,30 +1,30 @@
 {
   "name": "Zeke's Herald",
   "id": 3050,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Kindlegem",
-    "Vampiric Scepter"
+    3105,
+    3024
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3050.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [],
   "auras": [
     {
       "unique": true,
       "name": null,
-      "effects": "Nearby allied champions gain +20 attack damage and +10% life steal. (1100 Range)"
+      "effects": "Nearby allied champions gain +20 attack damage and +10% life steal. (1100 Range)",
+      "range": null
     }
   ],
   "stats": {
     "cooldownReduction": {
-      "flat": 20.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 20.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -33,8 +33,6 @@
     "health": {
       "flat": 250.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

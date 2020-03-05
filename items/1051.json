@@ -1,15 +1,15 @@
 {
   "name": "Brawler's Gloves",
   "id": 1051,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [
-    "Phantom Dancer",
-    "Zeal"
+    3122
   ],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/1051_brawlers_gloves.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [],
   "auras": [],
@@ -17,8 +17,6 @@
     "criticalStrikeChance": {
       "flat": 0.0,
       "percent": 10.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

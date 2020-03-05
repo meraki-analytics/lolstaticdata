@@ -1,21 +1,21 @@
 {
   "name": "Mana Manipulator",
   "id": 3037,
-  "tier": "Tier 2",
-  "buildsFrom": [
-    "Faerie Charm"
-  ],
-  "buildsInto": [],
+  "tier": 2,
+  "buildsFrom": null,
+  "buildsInto": null,
+  "icon": null,
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [],
   "auras": [
     {
       "unique": true,
       "name": "Mana Warp",
-      "effects": "Nearby allied champions gain 5 mana regeneration (1100 range)."
+      "effects": "Nearby allied champions gain 5 mana regeneration (1100 range).",
+      "range": 1100
     }
   ],
   "stats": {},

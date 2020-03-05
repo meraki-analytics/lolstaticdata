@@ -1,21 +1,24 @@
 {
   "name": "Madred's Bloodrazor",
   "id": 3126,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Madred's Razors",
-    "Pickaxe",
-    "Recurve Bow"
+    3106,
+    1037,
+    1043
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3126_madreds_bloodrazor.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "Basic attacks deal 4% of the target's maximum health bonus magic damage on-hit, capped at 120 damage against monsters."
+      "effects": "Basic attacks deal 4% of the target's maximum health bonus magic damage on-hit, capped at 120 damage against monsters.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -24,8 +27,6 @@
     "armor": {
       "flat": 25.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -34,8 +35,6 @@
     "attackDamage": {
       "flat": 40.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -44,8 +43,6 @@
     "attackSpeed": {
       "flat": 40.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

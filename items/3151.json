@@ -1,25 +1,32 @@
 {
   "name": "Liandry's Torment",
   "id": 3151,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Haunting Guise",
-    "Blasting Wand"
+    3136,
+    1026
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3151.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "mask",
+  "nicknames": [
+    "mask"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Madness",
-      "effects": "Damaging an enemy champion generates one stack every second for the next 4 seconds. Deal 2% increased damage for each stack, up to a maximum of 10%."
+      "effects": "Damaging an enemy champion generates one stack every second for the next 4 seconds. Deal 2% increased damage for each stack, up to a maximum of 10%.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Torment",
-      "effects": "Dealing ability damage applies a damage over time effect for 3 seconds that deals a total of 4.5% of target's maximum health bonus magic damage, with each tick of damage occurring every 0.5 seconds. This total damage is increased to 7.5% of target's maximum health against slowed or immobilized units, and capped at 100 damage per second against monsters."
+      "effects": "Dealing ability damage applies a damage over time effect for 3 seconds that deals a total of 4.5% of target's maximum health bonus magic damage, with each tick of damage occurring every 0.5 seconds. This total damage is increased to 7.5% of target's maximum health against slowed or immobilized units, and capped at 100 damage per second against monsters.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -28,8 +35,6 @@
     "abilityPower": {
       "flat": 75.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -38,8 +43,6 @@
     "health": {
       "flat": 300.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

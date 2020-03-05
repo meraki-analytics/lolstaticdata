@@ -1,37 +1,51 @@
 {
   "name": "Tracker's Knife",
   "id": 3711,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Hunter's Machete",
-    "Hunter's Talisman"
+    1039,
+    1041
   ],
   "buildsInto": [
-    "Bloodrazor",
-    "Cinderhulk",
-    "Runic Echoes",
-    "Warrior"
+    1408,
+    1409,
+    1410,
+    1418,
+    3721,
+    3719,
+    3720
   ],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3711_poachers_knife.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "jungle, Sightstone, Ward",
+  "nicknames": [
+    "jungle",
+    "Sightstone",
+    "Ward"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Tooth and Nail",
-      "effects": "Basic attacks versus monsters deal 30 bonus physical damage and grant 15% bonus attack speed for 2 seconds. Damaging a monster by any means set it aflame, dealing an additional 80 magic damage over 5 seconds while causing you to restore 6 health per second for every enemy you're burning."
+      "effects": "Basic attacks versus monsters deal 30 bonus physical damage and grant 15% bonus attack speed for 2 seconds. Damaging a monster by any means set it aflame, dealing an additional 80 magic damage over 5 seconds while causing you to restore 6 health per second for every enemy you're burning.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": false,
       "name": null,
-      "effects": "Killing large or epic monsters grants +50 bonus experience, and gain +50 bonus experience for each level higher the monster is than you."
+      "effects": "Killing large or epic monsters grants +50 bonus experience, and gain +50 bonus experience for each level higher the monster is than you.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [
     {
       "unique": true,
       "name": "Warding",
-      "effects": "Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area for 150 seconds. Holds up to 2 charges which refill upon visiting the shop."
+      "effects": "Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area for 150 seconds. Holds up to 2 charges which refill upon visiting the shop.",
+      "range": 600,
+      "cooldown": null
     }
   ],
   "auras": [],

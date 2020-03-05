@@ -1,21 +1,27 @@
 {
   "name": "Spirit Stone",
   "id": 1080,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Hunter's Machete",
-    "Faerie Charm",
-    "Rejuvenation Bead"
+    1039,
+    1004,
+    1006
   ],
-  "buildsInto": [],
+  "buildsInto": [
+    3206,
+    3209
+  ],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/1080_souleater.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Butcher",
-      "effects": "Against monsters, deal 20% bonus damage and restore 6% of damage dealt as health and 3% as mana."
+      "effects": "Against monsters, deal 20% bonus damage and restore 6% of damage dealt as health and 3% as mana.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],

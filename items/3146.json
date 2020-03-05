@@ -1,27 +1,32 @@
 {
   "name": "Hextech Gunblade",
   "id": 3146,
-  "tier": "Tier 4",
+  "tier": 4,
   "buildsFrom": [
-    "Bilgewater Cutlass",
-    "Hextech Revolver"
+    3144,
+    3145
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3146.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "Heals for 15% of all damage dealt. Area of effect and pets damage only heals 5% for every unit affected."
+      "effects": "Heals for 15% of all damage dealt. Area of effect and pets damage only heals 5% for every unit affected.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [
     {
       "unique": true,
       "name": "Lightning Bolt",
-      "effects": "Instantly deal 175 \u2212 253 (based on level) (+ 30% AP) magic damage and slows the target champion by 40% for 2 seconds ( 700 radius) (40 second cooldown, shared with other Hextech items)."
+      "effects": "Instantly deal 175 \u2212 253 (based on level) (+ 30% AP) magic damage and slows the target champion by 40% for 2 seconds ( 700 radius) (40 second cooldown, shared with other Hextech items).",
+      "range": null,
+      "cooldown": 40.0
     }
   ],
   "auras": [],
@@ -29,8 +34,6 @@
     "abilityPower": {
       "flat": 80.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -39,8 +42,6 @@
     "attackDamage": {
       "flat": 40.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

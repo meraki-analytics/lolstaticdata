@@ -1,26 +1,33 @@
 {
   "name": "Trinity Force",
   "id": 3078,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Stinger",
-    "Sheen",
-    "Phage"
+    3101,
+    3057,
+    3044
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3078.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "triforce",
+  "nicknames": [
+    "triforce"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Rage",
-      "effects": "Basic attacks (on-hit) grant +20 flat movement speed for 2 seconds. Killing a unit grants +60 flat movement speed instead. Bonus movement speed is halved on ranged champions."
+      "effects": "Basic attacks (on-hit) grant +20 flat movement speed for 2 seconds. Killing a unit grants +60 flat movement speed instead. Bonus movement speed is halved on ranged champions.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Spellblade",
-      "effects": "After using an ability, your next basic attack within 10 seconds deals 200% base AD bonus physical damage on-hit (1.5 second cooldown)."
+      "effects": "After using an ability, your next basic attack within 10 seconds deals 200% base AD bonus physical damage on-hit (1.5 second cooldown).",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -29,8 +36,6 @@
     "attackDamage": {
       "flat": 25.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -39,18 +44,14 @@
     "attackSpeed": {
       "flat": 40.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
     },
     "cooldownReduction": {
-      "flat": 20.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 20.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -59,8 +60,6 @@
     "health": {
       "flat": 250.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -69,8 +68,6 @@
     "mana": {
       "flat": 250.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -79,8 +76,6 @@
     "movespeed": {
       "flat": 0.0,
       "percent": 5.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

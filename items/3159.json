@@ -1,38 +1,47 @@
 {
   "name": "Grez's Spectral Lantern",
   "id": 3159,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Madred's Razors",
-    "Long Sword",
-    "Dagger"
+    3106,
+    1036,
+    1042
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3159_soulsight_lantern.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Maim",
-      "effects": "Basic attacks against monsters deal 75 bonus magic damage and restore 10 health."
+      "effects": "Basic attacks against monsters deal 75 bonus magic damage and restore 10 health.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": null,
-      "effects": "Gain 30% increased gold from monsters."
+      "effects": "Gain 30% increased gold from monsters.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Trap Detection",
-      "effects": "Nearby stealthed enemy traps are revealed."
+      "effects": "Nearby stealthed enemy traps are revealed.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [
     {
       "unique": true,
       "name": null,
-      "effects": "Summons a stealth-detecting mist that grants vision in the target area for 5 seconds and reveals enemies that enter it for 3 seconds (60 second cooldown) (800 range, 375 AoE)."
+      "effects": "Summons a stealth-detecting mist that grants vision in the target area for 5 seconds and reveals enemies that enter it for 3 seconds (60 second cooldown) (800 range, 375 AoE).",
+      "range": 800,
+      "cooldown": 60.0
     }
   ],
   "auras": [],
@@ -40,8 +49,6 @@
     "attackDamage": {
       "flat": 15.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -50,8 +57,6 @@
     "attackSpeed": {
       "flat": 30.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

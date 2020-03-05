@@ -1,22 +1,25 @@
 {
   "name": "Wriggle's Lantern",
   "id": 3154,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Vampiric Scepter",
-    "Long Sword",
-    "Dagger"
+    1053,
+    1036,
+    1042
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3154_wriggleslantern.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": null,
-      "effects": "Places a Stealth Ward at target location (600 range) (180 seconds cooldown)."
+      "effects": "Places a Stealth Ward at target location (600 range) (180 seconds cooldown).",
+      "range": 600,
+      "cooldown": 180.0
     }
   ],
   "auras": [],
@@ -24,8 +27,6 @@
     "attackDamage": {
       "flat": 25.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -34,8 +35,6 @@
     "attackSpeed": {
       "flat": 20.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -44,8 +43,6 @@
     "lifesteal": {
       "flat": 0.0,
       "percent": 12.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

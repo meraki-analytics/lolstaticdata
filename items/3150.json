@@ -1,28 +1,29 @@
 {
   "name": "Mirage Blade",
   "id": 3150,
-  "tier": "Tier 3",
-  "buildsFrom": [
-    "Vampiric Scepter",
-    "Pickaxe",
-    "Cloak of Agility"
-  ],
-  "buildsInto": [],
+  "tier": 3,
+  "buildsFrom": null,
+  "buildsInto": null,
+  "icon": null,
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Mark of the Sands",
-      "effects": "Basic attacks apply a Mark of the Sands to the target, revealing them for 3 seconds. Only a single enemy can be marked at a time."
+      "effects": "Basic attacks apply a Mark of the Sands to the target, revealing them for 3 seconds. Only a single enemy can be marked at a time.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [
     {
       "unique": true,
       "name": "Mirage Step",
-      "effects": "Blinks 350 units directly away from the marked target (60 second cooldown)."
+      "effects": "Blinks 350 units directly away from the marked target (60 second cooldown).",
+      "range": null,
+      "cooldown": 60.0
     }
   ],
   "auras": [],
@@ -30,8 +31,6 @@
     "attackDamage": {
       "flat": 60.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -40,8 +39,6 @@
     "criticalStrikeChance": {
       "flat": 0.0,
       "percent": 15.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -50,8 +47,6 @@
     "lifesteal": {
       "flat": 0.0,
       "percent": 12.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

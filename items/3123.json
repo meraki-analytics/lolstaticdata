@@ -1,21 +1,22 @@
 {
   "name": "Executioner's Calling",
   "id": 3123,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Long Sword"
+    1036
   ],
-  "buildsInto": [
-    "Mortal Reminder"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3123.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Executioner",
-      "effects": "Physical damage inflicts Grievous Wounds on enemy champions for 3 seconds."
+      "effects": "Physical damage inflicts Grievous Wounds on enemy champions for 3 seconds.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -24,8 +25,6 @@
     "attackDamage": {
       "flat": 15.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

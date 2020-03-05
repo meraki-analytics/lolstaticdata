@@ -1,24 +1,31 @@
 {
   "name": "Hunter's Potion",
   "id": 2032,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Refillable Potion"
+    2031
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/2032_hunters_potion.png",
   "noEffects": true,
   "removed": true,
-  "nickname": "Green Potion",
+  "nicknames": [
+    "Green Potion"
+  ],
   "passives": [
     {
       "unique": false,
       "name": null,
-      "effects": "Holds up to 5 charges that refill upon visiting the store. Killing large monsters grants one charge."
+      "effects": "Holds up to 5 charges that refill upon visiting the store. Killing large monsters grants one charge.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": false,
       "name": null,
-      "effects": "Killing a large monster at maximum charges will trigger the restoration at no cost to the charges."
+      "effects": "Killing a large monster at maximum charges will trigger the restoration at no cost to the charges.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],

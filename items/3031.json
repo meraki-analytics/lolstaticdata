@@ -1,16 +1,19 @@
 {
   "name": "Infinity Edge",
   "id": 3031,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "B. F. Sword",
-    "Pickaxe",
-    "Cloak of Agility"
+    1038,
+    1037,
+    1018
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3031.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "ie",
+  "nicknames": [
+    "ie"
+  ],
   "passives": [],
   "active": [],
   "auras": [],
@@ -18,8 +21,6 @@
     "attackDamage": {
       "flat": 80.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -28,8 +29,6 @@
     "criticalStrikeChance": {
       "flat": 0.0,
       "percent": 25.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

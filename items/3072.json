@@ -1,26 +1,44 @@
 {
   "name": "Bloodthirster",
   "id": 3072,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "B. F. Sword",
-    "Vampiric Scepter",
-    "Long Sword"
+    1038,
+    1036,
+    1053
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3072.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "bt",
+  "nicknames": [
+    "bt"
+  ],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "+20% life steal"
+      "effects": "+20% life steal",
+      "range": null,
+      "stats": [
+        {
+          "lifesteal": {
+            "flat": 0.0,
+            "percent": 20.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
     },
     {
       "unique": true,
       "name": null,
-      "effects": "Your life steal overheals you, converting the excess healing into a shield that absorbs up to 50 \u2212 350 (based on level) damage and decays when out-of-combat for 25 seconds."
+      "effects": "Your life steal overheals you, converting the excess healing into a shield that absorbs up to 50 \u2212 350 (based on level) damage and decays when out-of-combat for 25 seconds.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -29,8 +47,6 @@
     "attackDamage": {
       "flat": 80.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

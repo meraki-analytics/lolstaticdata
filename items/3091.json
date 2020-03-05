@@ -1,21 +1,24 @@
 {
   "name": "Wit's End",
   "id": 3091,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Recurve Bow",
-    "Negatron Cloak",
-    "Dagger"
+    1043,
+    1057,
+    1042
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3091.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "At Wit's End",
-      "effects": "Basic attacks deal 15 \u2212 80 (based on level) bonus magic damage on-hit. While below 50% health, heal for 33% of this effect's post-mitigation damage, increased to 100% for melee champions."
+      "effects": "Basic attacks deal 15 \u2212 80 (based on level) bonus magic damage on-hit. While below 50% health, heal for 33% of this effect's post-mitigation damage, increased to 100% for melee champions.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -24,8 +27,6 @@
     "attackSpeed": {
       "flat": 50.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -34,8 +35,6 @@
     "magicResistance": {
       "flat": 50.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -44,8 +43,6 @@
     "movespeed": {
       "flat": 0.0,
       "percent": 5.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

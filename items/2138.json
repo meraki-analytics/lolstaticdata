@@ -1,17 +1,20 @@
 {
   "name": "Elixir of Iron",
   "id": 2138,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2138.png",
   "noEffects": true,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Path of Iron",
-      "effects": "Leaves a path behind that grants allied champions 15% bonus movement speed."
+      "effects": "Leaves a path behind that grants allied champions 15% bonus movement speed.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],

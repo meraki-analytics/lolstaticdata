@@ -1,20 +1,21 @@
 {
   "name": "Oracle's Lens",
   "id": 3364,
-  "tier": "Tier 2",
-  "buildsFrom": [
-    "Sweeping Lens"
-  ],
+  "tier": 2,
+  "buildsFrom": [],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3364.png",
   "noEffects": true,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [
     {
       "unique": false,
       "name": null,
-      "effects": "Summons a drone at the target location for 6 seconds (600 range). The drone reveals and disables all invisible traps and wards within an 600-unit radius. (75 second cooldown).\nAdditionally, your champion gains true sight for 10 seconds."
+      "effects": "Summons a drone at the target location for 6 seconds (600 range). The drone reveals and disables all invisible traps and wards within an 600-unit radius. (75 second cooldown).\nAdditionally, your champion gains true sight for 10 seconds.",
+      "range": 600,
+      "cooldown": 75.0
     }
   ],
   "auras": [],

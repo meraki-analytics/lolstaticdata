@@ -1,18 +1,23 @@
 {
   "name": "Sweeping Lens",
   "id": 3341,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3341_redtrinket.png",
   "noEffects": true,
   "removed": true,
-  "nickname": "red",
+  "nicknames": [
+    "red"
+  ],
   "passives": [],
   "active": [
     {
       "unique": false,
       "name": null,
-      "effects": "Summons a Sweeper Drone at the target location for 6 seconds (500 \u2212 2000 (based on level) cast range; 90 \u2212 60 (based on level) second cooldown). The drone has a 450 \u2212 575 (based on level)-unit detection radius."
+      "effects": "Summons a Sweeper Drone at the target location for 6 seconds (500 \u2212 2000 (based on level) cast range; 90 \u2212 60 (based on level) second cooldown). The drone has a 450 \u2212 575 (based on level)-unit detection radius.",
+      "range": null,
+      "cooldown": null
     }
   ],
   "auras": [],

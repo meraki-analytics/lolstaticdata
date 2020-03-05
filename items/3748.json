@@ -1,28 +1,33 @@
 {
   "name": "Titanic Hydra",
   "id": 3748,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Tiamat",
-    "Ruby Crystal",
-    "Jaurim's Fist"
+    3077,
+    1028,
+    3052
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3748.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Cleave",
-      "effects": "Basic attacks deal 5 (+ 1% maximum health) bonus physical damage on-hit. Additionally, basic attacks also deal 40 (+ 2.5% maximum health) physical damage in a cone to units behind the target."
+      "effects": "Basic attacks deal 5 (+ 1.5% maximum health) bonus physical damage on-hit. Additionally, basic attacks also deal 40 (+ 3% maximum health) physical damage in a cone to units behind the target.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [
     {
       "unique": true,
       "name": "Crescent",
-      "effects": "On your next basic attack, Cleave will instead deal 40 (+ 10% maximum health) to all targets and has a larger cone (20 second cooldown). Crescent resets your autoattack timer."
+      "effects": "On your next basic attack, Cleave will instead deal 40 (+ 10% maximum health) to all targets and has a larger cone (20 second cooldown). Crescent resets your autoattack timer.",
+      "range": null,
+      "cooldown": 20.0
     }
   ],
   "auras": [],
@@ -30,8 +35,6 @@
     "attackDamage": {
       "flat": 40.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -40,8 +43,6 @@
     "health": {
       "flat": 450.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -50,8 +51,6 @@
     "healthRegen": {
       "flat": 0.0,
       "percent": 100.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

@@ -1,27 +1,36 @@
 {
   "name": "Timeworn Targon's Brace",
   "id": 3308,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Timeworn Relic Shield",
-    "Rejuvenation Bead"
+    3307,
+    1006
   ],
   "buildsInto": [
-    "Timeworn Face of the Mountain"
+    3309
   ],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3097_reaperemblem.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "Support, Gold, Economy",
+  "nicknames": [
+    "Support",
+    "Gold",
+    "Economy"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Spoils of War",
-      "effects": "Grants a charge every 30 seconds, up to 3 charges. Melee basic attacks can consume one charge to execute minions below 210 \u2212 380 (based on level) (+ 100% AD) health. Killing a minion by any means with a charge heals you and the nearest allied champion for 10 \u2212 60 (based on missing health) health and grants them kill gold. Healing is halved if the owner is ranged. These effects require an allied champion to be nearby."
+      "effects": "Grants a charge every 30 seconds, up to 3 charges. Melee basic attacks can consume one charge to execute minions below 210 \u2212 380 (based on level) (+ 100% AD) health. Killing a minion by any means with a charge heals you and the nearest allied champion for 10 \u2212 60 (based on missing health) health and grants them kill gold. Healing is halved if the owner is ranged. These effects require an allied champion to be nearby.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Quest",
-      "effects": "Earn 750 using this item. Reward: Shield Battery, a permanent shield for 255 \u2212 510 (based on level) health. The shield regenerates slowly when out-of-combat. Executing minions with Spoils of War regenerates 64 \u2212 85 (based on level) shield value."
+      "effects": "Earn 750 using this item. Reward: Shield Battery, a permanent shield for 255 \u2212 510 (based on level) health. The shield regenerates slowly when out-of-combat. Executing minions with Spoils of War regenerates 64 \u2212 85 (based on level) shield value.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -30,8 +39,6 @@
     "goldPer10": {
       "flat": 4.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -40,8 +47,6 @@
     "health": {
       "flat": 125.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -50,8 +55,6 @@
     "healthRegen": {
       "flat": 0.0,
       "percent": 50.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

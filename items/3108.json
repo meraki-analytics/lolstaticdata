@@ -1,40 +1,41 @@
 {
   "name": "Fiendish Codex",
   "id": 3108,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Amplifying Tome"
+    1052
   ],
-  "buildsInto": [
-    "Athene's Unholy Grail",
-    "Banshee's Veil",
-    "Nashor's Tooth",
-    "Runic Echoes",
-    "Twin Shadows",
-    "Zhonya's Hourglass"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3108.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
-  "passives": [],
+  "nicknames": [],
+  "passives": [
+    {
+      "unique": true,
+      "name": null,
+      "effects": "10.0% cooldown reduction",
+      "range": null,
+      "stats": [
+        {
+          "cooldownReduction": {
+            "flat": 0.0,
+            "percent": 10.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    }
+  ],
   "active": [],
   "auras": [],
   "stats": {
     "abilityPower": {
       "flat": 35.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
-      "perLevel": 0.0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
-    },
-    "cooldownReduction": {
-      "flat": 0.0,
-      "percent": 0.0,
-      "unique": 10.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

@@ -1,24 +1,32 @@
 {
   "name": "Frozen Fist",
   "id": 3387,
-  "tier": "Tier 4",
+  "tier": 4,
   "buildsFrom": [
-    "Iceborn Gauntlet"
+    3025
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3387.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "ornn,forge",
+  "nicknames": [
+    "ornn",
+    "forge"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Spellblade",
-      "effects": "After using an ability, your next basic attack within 10 seconds deals 100% base AD bonus physical damage on-hit (1.5 second cooldown)."
+      "effects": "After using an ability, your next basic attack within 10 seconds deals 100% base AD bonus physical damage on-hit (1.5 second cooldown).",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Icy Zone",
-      "effects": "Triggering Spellblade also deals 100% base AD physical damage to enemies surrounding the target and creates a icy zone for 2 seconds, which slows enemies within by 30%. The zone has a radius of 180 (+ 55% bonus armor) units."
+      "effects": "Triggering Spellblade also deals 100% base AD physical damage to enemies surrounding the target and creates a icy zone for 2 seconds, which slows enemies within by 30%. The zone has a radius of 180 (+ 55% bonus armor) units.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -27,18 +35,14 @@
     "armor": {
       "flat": 125.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
     },
     "cooldownReduction": {
-      "flat": 20.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 20.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -47,8 +51,6 @@
     "mana": {
       "flat": 700.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

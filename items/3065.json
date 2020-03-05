@@ -1,30 +1,44 @@
 {
   "name": "Spirit Visage",
   "id": 3065,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Kindlegem",
-    "Spectre's Cowl"
+    3211,
+    3067
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3065.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "sv",
+  "nicknames": [
+    "sv"
+  ],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "Increases effectiveness of all sources of health restoration by 30% (including health regeneration, life steal and spell vamp)."
+      "effects": "Increases effectiveness of all sources of health restoration by 30% (including health regeneration, life steal and spell vamp).",
+      "range": null,
+      "stats": [
+        {
+          "lifesteal": {
+            "flat": 0.0,
+            "percent": 30.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
     }
   ],
   "active": [],
   "auras": [],
   "stats": {
     "cooldownReduction": {
-      "flat": 10.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 10.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -33,8 +47,6 @@
     "health": {
       "flat": 450.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -43,8 +55,6 @@
     "healthRegen": {
       "flat": 0.0,
       "percent": 100.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -53,8 +63,6 @@
     "magicResistance": {
       "flat": 55.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

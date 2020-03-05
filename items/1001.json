@@ -1,25 +1,34 @@
 {
   "name": "Boots of Speed",
   "id": 1001,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
-  "buildsInto": [
-    "Berserker's Greaves",
-    "Boots of Mobility",
-    "Boots of Swiftness",
-    "Ionian Boots of Lucidity",
-    "Mercury's Treads",
-    "Ninja Tabi",
-    "Sorcerer's Shoes"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1001.png",
   "noEffects": true,
   "removed": false,
-  "nickname": "boots, hat",
+  "nicknames": [
+    "boots",
+    "hat"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Enhanced Movement",
-      "effects": "+25 flat movement speed"
+      "effects": "+25 flat movement speed",
+      "range": null,
+      "stats": [
+        {
+          "movespeed": {
+            "flat": 25.0,
+            "percent": 0.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
     }
   ],
   "active": [],

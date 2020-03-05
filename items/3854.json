@@ -1,24 +1,31 @@
 {
   "name": "Steel Shoulderguards",
   "id": 3854,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
-  "buildsInto": [
-    "Runesteel Spaulders"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3854.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "Support, Gold, Economy",
+  "nicknames": [
+    "Support",
+    "Gold",
+    "Economy"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Spoils of War",
-      "effects": "Grants a charge every 45 seconds, up to 3 charges. Basic attacks can consume a charge to execute minions. Melee basic attacks execute minions below 50% of their maximum health and ranged basic attacks below 30% of their maximum health. Killing a minion by any means with a charge grants you and the nearest allied champion kill gold. These effects require an allied champion to be nearby. Receive diminishing gold from excessive minion kills."
+      "effects": "Grants a charge every 45 seconds, up to 3 charges. Basic attacks can consume a charge to execute minions. Melee basic attacks execute minions below 50% of their maximum health and ranged basic attacks below 30% of their maximum health. Killing a minion by any means with a charge grants you and the nearest allied champion kill gold. These effects require an allied champion to be nearby. Receive diminishing gold from excessive minion kills.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Quest",
-      "effects": "Earn 500 using this item to upgrade to Runesteel Spaulders, gaining the Warding active with 3 wards in stock."
+      "effects": "Earn 500 using this item to upgrade to Runesteel Spaulders, gaining the Warding active with 3 wards in stock.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -27,8 +34,6 @@
     "attackDamage": {
       "flat": 3.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -37,8 +42,6 @@
     "goldPer10": {
       "flat": 2.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -47,8 +50,6 @@
     "health": {
       "flat": 30.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -57,8 +58,6 @@
     "healthRegen": {
       "flat": 0.0,
       "percent": 25.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

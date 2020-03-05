@@ -1,19 +1,15 @@
 {
   "name": "Giant's Belt",
   "id": 1011,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Ruby Crystal"
+    1028
   ],
-  "buildsInto": [
-    "Dead Man's Plate",
-    "Frozen Mallet",
-    "Randuin's Omen",
-    "Warmog's Armor"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1011.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [],
   "auras": [],
@@ -21,8 +17,6 @@
     "health": {
       "flat": 380.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

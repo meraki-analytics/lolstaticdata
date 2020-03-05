@@ -1,21 +1,22 @@
 {
   "name": "Giant Slayer",
   "id": 3034,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Long Sword"
+    1036
   ],
-  "buildsInto": [
-    "Lord Dominik's Regards"
-  ],
+  "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3034_giant_slayer.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Giant Slayer",
-      "effects": "Grants 0% \u2212 10% (based on health difference) bonus physical damage against enemy champions with greater maximum health than you."
+      "effects": "Grants 0% \u2212 10% (based on health difference) bonus physical damage against enemy champions with greater maximum health than you.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -24,8 +25,6 @@
     "attackDamage": {
       "flat": 10.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

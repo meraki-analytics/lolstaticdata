@@ -1,23 +1,25 @@
 {
   "name": "Last Whisper",
   "id": 3035,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Long Sword",
-    "Long Sword"
+    1036,
+    1036
   ],
-  "buildsInto": [
-    "Lord Dominik's Regards",
-    "Mortal Reminder"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3035.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "lw",
+  "nicknames": [
+    "lw"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Last Whisper",
-      "effects": "+20% total armor penetration."
+      "effects": "+20% total armor penetration.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -26,8 +28,6 @@
     "attackDamage": {
       "flat": 20.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

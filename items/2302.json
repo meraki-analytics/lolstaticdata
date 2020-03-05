@@ -1,46 +1,59 @@
 {
   "name": "Eye of the Oasis",
   "id": 2302,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Sightstone",
-    "Nomad's Medallion"
+    2049,
+    3096
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/2302_shurimas_eye.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "Support, Economy, Gold, Sightstone, Ward",
+  "nicknames": [
+    "Support",
+    "Economy",
+    "Gold",
+    "Sightstone",
+    "Ward"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Favor",
-      "effects": "Nearby enemy minions, killed by any ally other than you, will sometimes drop a coin that can be picked up to either grant 40 or restore 6% missing mana (minimum 10). Cannon minions will drop a coin as long as you don't kill them."
+      "effects": "Nearby enemy minions, killed by any ally other than you, will sometimes drop a coin that can be picked up to either grant 40 or restore 6% missing mana (minimum 10). Cannon minions will drop a coin as long as you don't kill them.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Bandit",
-      "effects": "Grants Bandit."
+      "effects": "Grants Bandit.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Quest",
-      "effects": "Earn 750 using this item. Reward: Favor is upgraded to Emperor's Favor making champion takedowns grant both the gold and mana. You also grant 8% bonus movement speed to nearby allied champions moving toward you (1250 range)."
+      "effects": "Earn 750 using this item. Reward: Favor is upgraded to Emperor's Favor making champion takedowns grant both the gold and mana. You also grant 8% bonus movement speed to nearby allied champions moving toward you (1250 range).",
+      "range": 1250,
+      "stats": []
     }
   ],
   "active": [
     {
       "unique": true,
       "name": "Warding",
-      "effects": "Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area for 150 seconds. Holds up to 4 charges which refill upon visiting the shop."
+      "effects": "Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area for 150 seconds. Holds up to 4 charges which refill upon visiting the shop.",
+      "range": 600,
+      "cooldown": null
     }
   ],
   "auras": [],
   "stats": {
     "cooldownReduction": {
-      "flat": 10.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 10.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -49,8 +62,6 @@
     "goldPer10": {
       "flat": 2.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -59,8 +70,6 @@
     "health": {
       "flat": 200.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -69,8 +78,6 @@
     "healthRegen": {
       "flat": 0.0,
       "percent": 125.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

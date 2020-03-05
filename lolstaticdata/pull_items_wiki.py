@@ -7,26 +7,53 @@ import re
 from lolstaticdata.utils import download_webpage
 from collections import OrderedDict
 
-from modelitem import Stats, Shop, Item, Passive, Active, Aura, ItemAttributes
-from modelcommon import DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, CriticalStrikeChance, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration
+from ddragon import ddragon, cdragon
+
+from modelitem import Stats, Shop, Item, Passive, PassiveStats, Active, Aura, ItemAttributes
+from modelcommon import ArmorPenetration, DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, CriticalStrikeChance, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration
 
 
 class ItemParser:
     @classmethod
-    def parse_passives(cls, item_data: dict) -> List[Passive]:
+    def parse_passives(cls, item_data: dict) -> List[PassiveStats]:
         effects = []
+        get_range = re.compile("\d+ range")
+        not_unique = re.compile('[0-9]')
+        if not_unique.search(item_data["cdrunique"]):
+            cooldown = cls._parse_float(item_data['cdrunique'])
+            description = "{}% cooldown reduction".format(cooldown)
+            stats = cls.parse_passive_descriptions(description)
+            effect = PassiveStats(unique=True, name=None, effects=description, range=None, stats=stats)
+            effects.append(effect)
+        if not_unique.search(item_data['critunique']):
+            crit = cls._parse_float(item_data['critunique'])
+            description = "{}% critical strike chance".format(crit)
+            stats = cls.parse_passive_descriptions(description)
+            effect = PassiveStats(unique=True, name=None, effects=description, range=None, stats=stats)
+            effects.append(effect)
+
         for i in range(1, 6):
             passive = "pass" + str(i)
             if passive == "pass1":
                 passive = "pass"
             passive = item_data[passive].strip()
             if passive:
+
                 effect = cls._parse_passive(passive)
+
+                stats = cls.parse_passive_descriptions(effect.effects)
+                if get_range.search(effect.effects):
+                    itemrange = get_range.search(effect.effects).group(0).split(" ", 1)
+                    itemrange = cls._parse_int(itemrange[0])
+                else:
+                    itemrange = None
+                effect = PassiveStats(unique=effect.unique,name=effect.name,effects=effect.effects,range=itemrange, stats=stats)
                 effects.append(effect)
         return effects
 
     @classmethod
     def parse_auras(cls, item_data: dict) -> List[Aura]:
+        get_range = re.compile("\d+ range")
         effects = []
         for i in range(1, 4):
             passive = "aura" + str(i)
@@ -35,18 +62,37 @@ class ItemParser:
             passive = item_data[passive].strip()
             if passive:
                 effect = cls._parse_passive(passive)
-                effect = Aura(unique=effect.unique, name=effect.name, effects=effect.effects)  # This is hacky...
+                if get_range.search(effect.effects):
+                    itemrange = get_range.search(effect.effects).group(0).split(" ", 1)
+                    itemrange = cls._parse_int(itemrange[0])
+                else:
+                    itemrange = None
+                effect = Aura(unique=effect.unique, name=effect.name, effects=effect.effects, range = itemrange)  # This is hacky...
                 effects.append(effect)
         return effects
 
     @classmethod
     def parse_actives(cls, item_data: dict) -> List[Active]:
+        get_cooldown = re.compile("(\d+ second cooldown)|(\d+ seconds cooldown)")
+        get_range = re.compile("\d+ range")
         effects = []
         passive = item_data["act"].strip()
         if passive:
             effect = cls._parse_passive(passive)
-            effect = Active(unique=effect.unique, name=effect.name, effects=effect.effects)  # This is hacky...
+            if get_cooldown.search(effect.effects):
+                cooldown = get_cooldown.search(effect.effects).group(0).split(" ",1)
+                cooldown = cls._parse_float(cooldown[0])
+            else:
+                cooldown = None
+            if get_range.search(effect.effects):
+                range = get_range.search(effect.effects).group(0).split(" ",1)
+                range = cls._parse_int(range[0])
+            else:
+                range = None
+            effect = Active(unique=effect.unique, name=effect.name, effects=effect.effects, cooldown = cooldown, range = range)  # This is hacky...
+
             effects.append(effect)
+        stuff = [x for x in effects]
         return effects
 
     @staticmethod
@@ -63,7 +109,8 @@ class ItemParser:
         if unique:
             # I changed util to detect unique items regardless of name or not
             # Before it had "Unique \u2013 passive name :"
-            if ':' in passive:
+            #print(" ".join(passive.split()[:4]))
+            if ':' in " ".join(passive.split()[:4]):
                 unique_split = passive.split(':')
                 name = unique_split[0]
                 passive = ':'.join(unique_split[1:])
@@ -76,7 +123,8 @@ class ItemParser:
             )
         else:
             # return normal passive
-            if ':' in passive:
+            #print(" ".join(passive.split()[:4]))
+            if ':' in " ".join(passive.split()[:4]):
                 not_unique_split = passive.split(':')
                 name = not_unique_split[0]
                 passive = ':'.join(not_unique_split[1:])
@@ -88,6 +136,95 @@ class ItemParser:
                 effects=passive.strip()
             )
         return effect
+
+    @classmethod
+    def parse_passive_descriptions(cls, passive: str) -> Passive:
+        #regex stuff
+        cdr = re.compile("\d.* cooldown reduction")
+        crit = re.compile("\d.* critical strike chance")
+        lethality = re.compile("\d.* lethality", re.IGNORECASE)
+        movementspeed = re.compile('\d+.*? flat movement speed$', re.IGNORECASE)#movespeed needs fixing
+        armorpen = re.compile('\d+.*? armor penetration\.\"')
+        magicpen = re.compile('\d+.*? magic penetration')
+        lifesteal = re.compile('\d+.*? life steal')
+        abilityPower = re.compile('\+\d+% ability power')
+
+        if cdr.search(passive):
+            cooldown = cdr.search(passive).group(0).split("%")[0]
+            cooldown = cls._parse_float(cooldown)
+        else:
+            cooldown = 0.
+
+        if movementspeed.search(passive):
+            movementspeed = movementspeed.search(passive).group(0).split("flat")[0]
+            movementspeed = cls._parse_float(movementspeed)
+        else:
+            movementspeed = 0.
+
+        if crit.search(passive):
+            crit = crit.search(passive).group(0).split("%")[0]
+            crit = cls._parse_float(crit)
+        else:
+            crit = 0.
+
+
+        if abilityPower.search(passive):
+            ap = abilityPower.search(passive).group(0).split("%")[0]
+            ap = cls._parse_float(ap)
+        else:
+            ap = 0.0
+        if lethality.search(passive):
+            lethal = lethality.search(passive).group(0).split(" ")[0]
+            lethal = cls._parse_float(lethal)
+        else:
+            lethal = 0.
+        if armorpen.search(passive):
+            armorpen = armorpen.search(passive).group(0).split("%")[0]
+            armorpen = cls._parse_float(armorpen)
+        else:
+            armorpen = cls._parse_float(0.0)
+
+        if magicpen.search(passive):
+            magicpen = magicpen.search(passive).group(0)
+            if "%" in magicpen:
+                magicpen = MagicPenetration(percent=magicpen.split("%")[0])
+            else:
+                magicpen = MagicPenetration(flat=magicpen.split(" ")[0])
+        else:
+            magicpen =  MagicPenetration(flat=0.0)
+
+        if lifesteal.search(passive):
+            lifesteal = lifesteal.search(passive).group(0).split("%")[0]
+            lifesteal = cls._parse_float(lifesteal)
+        else:
+            lifesteal = 0.
+        stats1 = Stats(
+            ability_power=AbilityPower(percent=ap),
+            armor=Armor(flat=cls._parse_float(0.0)),
+            armor_penetration=ArmorPenetration(percent=armorpen),
+            attack_damage=AttackDamage(flat=cls._parse_float(0.0)),
+            attack_speed=AttackSpeed(flat=cls._parse_float(0.0)),
+            cooldown_reduction=CooldownReduction(
+                percent=cooldown),
+            critical_strike_chance=CriticalStrikeChance(
+                percent=cls._parse_float(crit)),
+            gold_per_10=GoldPer10(flat=cls._parse_float(0.0)),
+            heal_and_shield_power=HealAndShieldPower(flat=cls._parse_float(0.0)),
+            health=Health(flat=cls._parse_float(0.0)),
+            health_regen=HealthRegen(
+                flat=cls._parse_float(0.0)),
+            lethality=Lethality(flat=lethal),
+            lifesteal=Lifesteal(percent=lifesteal),
+            magic_penetration=magicpen,
+            magic_resistance=MagicResistance(flat=cls._parse_float(0.0)),
+            mana=Mana(flat=cls._parse_float(0.0)),
+            mana_regen=ManaRegen(
+                flat=cls._parse_float(0.0)),
+            movespeed=Movespeed(
+                flat=cls._parse_float(movementspeed))
+            ),
+        return stats1
+
 
     @staticmethod
     def _parse_float(number: str, backup: float = 0.) -> float:
@@ -195,6 +332,18 @@ class ItemParser:
         return tags
 
     @classmethod
+    def _parse_recipe_build(cls, item: str):
+        item = item.replace(" ", "_")
+        url = "https://leagueoflegends.fandom.com/wiki/Template:Item_data_" + item
+        use_cache = False
+        html = download_webpage(url, use_cache)
+        soup = BeautifulSoup(html, 'lxml')
+        code =  soup.findAll('td', {"data-name": "code"})
+        for x in code:
+
+            return(cls._parse_item_id(code=x.text))
+
+    @classmethod
     def download(cls, url: str):
         # All item data has a html attribute "data-name" so I put them all in an ordered dict while stripping the new lines and spaces from the data
         use_cache = False
@@ -208,14 +357,24 @@ class ItemParser:
             # replace("\n", "")
             values = values.lstrip().rstrip()
             item_data[attributes] = values
-        item = cls._parse_item_data(item_data)
-        return item
+        if cls._parse_item_id(item_data["code"]) is not None:
+            item = cls._parse_item_data(item_data)
+            return item
+        else:
+            pass
 
     @classmethod
     def _parse_item_data(cls, item_data: dict) -> Item:
         not_unique = re.compile('[A-z]')
         builds_into = []
         builds_from = []
+        nicknames = []
+        try:
+            tier = eval(item_data["tier"].replace("Tier ", ""))
+        except SyntaxError:
+            tier = None
+        except NameError:
+            tier=item_data["tier"]
         # Create the json files from the classes in modelitem.py
         if item_data["removed"] == "true":
             removed = True
@@ -225,31 +384,62 @@ class ItemParser:
             no_effects = True
         else:
             no_effects = False
-        if not_unique.search(item_data["builds"]):
-            build = item_data["builds"]
-            if "," in build:
-                for i in build.split(","):
-                    builds_into.append(i.strip())
-            else:
-                builds_into.append(build.strip())
 
-        if not_unique.match(item_data["recipe"]):
-            component = item_data["recipe"]
-            if "," in component:
-                for i in component.split(","):
-                    builds_from.append(i.strip())
+        if not_unique.search(item_data["nickname"]):
+            nickname = item_data["nickname"]
+            if "," in nickname:
+                for i in nickname.split(","):
+                    nicknames.append(i.strip())
             else:
-                builds_from.append(component.strip())
+                nicknames.append(nickname.strip())
 
+        # if not_unique.search(item_data["builds"]):
+        #     build = item_data["builds"]
+        #     if "," in build:
+        #         for i in build.split(","):
+        #             i = cls._parse_recipe_build(i.strip())
+        #             if i is not None:
+        #                 builds_into.append(i)
+        #             else:
+        #                 continue
+        #     else:
+        #         build = cls._parse_recipe_build(build.strip())
+        #         builds_into.append(build)
+        #
+        # if not_unique.match(item_data["recipe"]):
+        #     component = item_data["recipe"]
+        #     if "," in component:
+        #         for i in component.split(","):
+        #             i = cls._parse_recipe_build(i.strip())
+        #             if i is not None:
+        #                 builds_from.append(i)
+        #             else:
+        #                 continue
+        #     else:
+        #         component = cls._parse_recipe_build(component.strip())
+        #         builds_from.append(component)
+        try:
+            datadragon = ddragon._get_item_ddragon(item_data["code"].strip())
+        except KeyError:
+            datadragon = cdragon._get_item_cdragon(cls._parse_item_id(item_data["code"].strip()))
+        if datadragon is not None:
+            builds_from = datadragon.builds_from
+            builds_into = datadragon.builds_into
+            icon = datadragon.icon
+        else:
+            builds_from = None
+            builds_into = None
+            icon = None
         item = Item(
             name=item_data["1"],
             id=cls._parse_item_id(code=item_data["code"].strip()),
-            tier=item_data["tier"],
+            tier=tier,
             builds_from=builds_from,
             builds_into=builds_into,
+            icon=icon,
             no_effects=no_effects,
             removed=removed,
-            nickname=item_data["nickname"],
+            nicknames=nicknames,
             passives=cls.parse_passives(item_data),
             auras=cls.parse_auras(item_data),
             active=cls.parse_actives(item_data),
@@ -260,12 +450,9 @@ class ItemParser:
                 attack_damage=AttackDamage(flat=cls._parse_float(item_data['ad'])),
                 attack_speed=AttackSpeed(flat=cls._parse_float(item_data['as'])),
                 cooldown_reduction=CooldownReduction(
-                    flat=cls._parse_float(item_data['cdr']),
-                    unique=cls._parse_float(item_data['cdrunique']),
-                ),
+                    percent=cls._parse_float(item_data['cdr'])),
                 critical_strike_chance=CriticalStrikeChance(
-                    percent=cls._parse_float(item_data['crit']),
-                    unique_percent=cls._parse_float(item_data['critunique']),
+                    percent=cls._parse_float(item_data['crit'])
                 ),
                 gold_per_10=GoldPer10(flat=cls._parse_float(item_data["gp10"])),
                 heal_and_shield_power=HealAndShieldPower(flat=cls._parse_float(item_data["hsp"])),
@@ -274,6 +461,7 @@ class ItemParser:
                     flat=cls._parse_float(item_data["hp5flat"]),
                     percent=cls._parse_float(item_data["hp5"]),
                 ),
+                lethality=Lethality(flat=0.0),
                 lifesteal=Lifesteal(percent=cls._parse_float(item_data["lifesteal"])),
                 magic_penetration=MagicPenetration(flat=cls._parse_float(item_data["mpen"])),
                 magic_resistance=MagicResistance(flat=cls._parse_float(item_data["mr"])),
@@ -284,8 +472,7 @@ class ItemParser:
                 ),
                 movespeed=Movespeed(
                     flat=cls._parse_float(item_data["msflat"]),
-                    percent=cls._parse_float(item_data["ms"]),
-                    unique_percent=cls._parse_float(item_data["msunique"]),
+                    percent=cls._parse_float(item_data["ms"]) + cls._parse_float(item_data["msunique"])
                 ),
             ),
             shop=Shop(
@@ -304,7 +491,7 @@ def get_item_urls(use_cache: bool) -> List[str]:
     while True:
         html = download_webpage(url, use_cache)
         soup = BeautifulSoup(html, 'lxml')
-        urls = soup.find_all("a", href=re.compile("/wiki/Template:Item_data_"))
+        urls = soup.find_all("a", {"class": "category-page__member-link"})
         all_urls.extend(urls)
         next_button = soup.find("a", {"class": "category-page__pagination-next wds-button wds-is-secondary"})
         if not next_button:
@@ -317,21 +504,22 @@ def get_item_urls(use_cache: bool) -> List[str]:
 
 
 def main():
-    directory = os.path.dirname(os.path.realpath(__file__)) + "/"
+    directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), "..","items"))
     use_cache = False
-
+    if not os.path.exists(directory):
+        os.mkdir(directory)
     item_urls = get_item_urls(use_cache)
     jsons = {}
     for url in item_urls:
         item = ItemParser.download(url)
-        if item.id is not None:
-            jsonfn = directory + f"/../items/{item.id}.json"
+        if item is not None:
+            jsonfn = os.path.join(directory, str(item.id) + ".json")
             with open(jsonfn, 'w') as f:
                 f.write(item.__json__(indent=2))
             jsons[item.id] = json.loads(item.__json__())
             print(item.id, url)
 
-    jsonfn = directory + "/../items.json"
+    jsonfn = os.path.join(directory,"items.json")
     with open(jsonfn, 'w') as f:
         json.dump(jsons, f, indent=2)
     del jsons

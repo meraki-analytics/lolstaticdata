@@ -1,17 +1,22 @@
 {
   "name": "Travel Size Elixir of Sorcery",
   "id": 2059,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/2059_travel_size_elixir_of_sorcery.png",
   "noEffects": true,
   "removed": true,
-  "nickname": "kleptomancy",
+  "nicknames": [
+    "kleptomancy"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Sorcery",
-      "effects": "Damaging a champion or turret deals 15 bonus true damage (5 second cooldown against champions, no cooldown against turrets)."
+      "effects": "Damaging a champion or turret deals 15 bonus true damage (5 second cooldown against champions, no cooldown against turrets).",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],

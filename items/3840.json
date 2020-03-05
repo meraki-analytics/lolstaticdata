@@ -1,30 +1,28 @@
 {
   "name": "Globe of Trust",
   "id": 3840,
-  "tier": "Tier 3",
-  "buildsFrom": [
-    "Swindler's Orb",
-    "Forbidden Idol"
-  ],
-  "buildsInto": [],
+  "tier": 3,
+  "buildsFrom": null,
+  "buildsInto": null,
+  "icon": null,
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": "Safe Harbor",
-      "effects": "Lobs a bubble that shields allies hit from the next 150 damage. You generate 1 for every 4 damage absorbed for a maximum of 150 per cast (maximum of 37.5 per ally). Self-cast shields will not generate gold from monster damage. 15 second cooldown."
+      "effects": "Lobs a bubble that shields allies hit from the next 150 damage. You generate 1 for every 4 damage absorbed for a maximum of 150 per cast (maximum of 37.5 per ally). Self-cast shields will not generate gold from monster damage. 15 second cooldown.",
+      "range": null,
+      "cooldown": 15.0
     }
   ],
   "auras": [],
   "stats": {
     "cooldownReduction": {
-      "flat": 20.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 20.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -33,8 +31,6 @@
     "manaRegen": {
       "flat": 0.0,
       "percent": 150.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

@@ -1,17 +1,22 @@
 {
   "name": "Enchantment: Homeguard",
   "id": 1314,
-  "tier": "Tier 1",
-  "buildsFrom": [],
+  "tier": 1,
+  "buildsFrom": [
+    3020
+  ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/1314_enchantment_homeguard.png",
   "noEffects": true,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Homeguard",
-      "effects": "Visiting the shop vastly increases health and mana regeneration and grants 200% bonus movement speed that decays over 8 seconds. Bonus movement speed and regeneration are disabled for 8 seconds upon dealing or taking damage."
+      "effects": "Visiting the shop vastly increases health and mana regeneration and grants 200% bonus movement speed that decays over 8 seconds. Bonus movement speed and regeneration are disabled for 8 seconds upon dealing or taking damage.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],

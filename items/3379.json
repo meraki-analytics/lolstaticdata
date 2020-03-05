@@ -1,19 +1,25 @@
 {
   "name": "Infernal Mask",
   "id": 3379,
-  "tier": "Tier 4",
+  "tier": 4,
   "buildsFrom": [
-    "Abyssal Mask"
+    3001
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3379.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "ornn,forge",
+  "nicknames": [
+    "ornn",
+    "forge"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Eternity",
-      "effects": "Restore mana equal to 15% of damage taken from champions. Restore health equal to 20% of mana spent, up to 25 health per cast, while toggle abilities can heal for up to 25 per second."
+      "effects": "Restore mana equal to 15% of damage taken from champions. Restore health equal to 20% of mana spent, up to 25 health per cast, while toggle abilities can heal for up to 25 per second.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -21,15 +27,14 @@
     {
       "unique": true,
       "name": null,
-      "effects": "Nearby enemy champions take 15% more magic damage (325 range)."
+      "effects": "Nearby enemy champions take 15% more magic damage (325 range).",
+      "range": 325
     }
   ],
   "stats": {
     "cooldownReduction": {
-      "flat": 10.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 10.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -38,8 +43,6 @@
     "health": {
       "flat": 750.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -48,8 +51,6 @@
     "magicResistance": {
       "flat": 100.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -58,8 +59,6 @@
     "mana": {
       "flat": 300.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

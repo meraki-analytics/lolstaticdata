@@ -1,24 +1,24 @@
 {
   "name": "Bilgewater Cutlass",
   "id": 3144,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Vampiric Scepter",
-    "Long Sword"
+    1053,
+    1036
   ],
-  "buildsInto": [
-    "Blade of the Ruined King",
-    "Hextech Gunblade"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3144.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": null,
-      "effects": "Deals 100 magic damage and slows the target enemy champion by 25% for 2 seconds (90 second cooldown)."
+      "effects": "Deals 100 magic damage and slows the target enemy champion by 25% for 2 seconds (90 second cooldown).",
+      "range": null,
+      "cooldown": 90.0
     }
   ],
   "auras": [],
@@ -26,8 +26,6 @@
     "attackDamage": {
       "flat": 25.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -36,8 +34,6 @@
     "lifesteal": {
       "flat": 0.0,
       "percent": 10.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

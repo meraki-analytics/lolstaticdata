@@ -1,26 +1,31 @@
 {
   "name": "Death's Dance",
   "id": 3812,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Caulfield's Warhammer",
-    "Pickaxe",
-    "Vampiric Scepter"
+    1053,
+    1037,
+    3133
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3812.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "Instantly heal for 15% of all damage dealt, including physical damage, magic damage, and true damage. Area of effect and pet damage only heals 5% for every unit affected."
+      "effects": "Instantly heal for 15% of all damage dealt, including physical damage, magic damage, and true damage. Area of effect and pet damage only heals 5% for every unit affected.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": null,
-      "effects": "Stores 30% of all post-mitigation physical and magic damage received, which is successively taken as damage over time true damage instead, dealing one-third of the stored damage every second.The last tick of stored damage cannot deal lethal damage, leaving the champion with 1 health."
+      "effects": "Stores 30% of all post-mitigation physical and magic damage received, which is successively taken as damage over time true damage instead, dealing one-third of the stored damage every second.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -29,18 +34,14 @@
     "attackDamage": {
       "flat": 80.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
     },
     "cooldownReduction": {
-      "flat": 10.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 10.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

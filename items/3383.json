@@ -1,20 +1,26 @@
 {
   "name": "Circlet of the Iron Solari",
   "id": 3383,
-  "tier": "Tier 4",
+  "tier": 4,
   "buildsFrom": [
-    "Locket of the Iron Solari"
+    3190
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3383.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "ornn,forge",
+  "nicknames": [
+    "ornn",
+    "forge"
+  ],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": null,
-      "effects": "Grants a decaying shield to nearby allied champions and yourself for up to 2.5 seconds, absorbing up to 130 \u2212 300 (based on highest level between target and caster) (+ 20% of caster's bonus health) damage ( 650 radius) (120 second cooldown). Shielded targets are Eclipsed for 20 seconds."
+      "effects": "Grants a decaying shield to nearby allied champions and yourself for up to 2.5 seconds, absorbing up to 130 \u2212 300 (based on highest level between target and caster) (+ 20% of caster's bonus health) damage ( 650 radius) (120 second cooldown). Shielded targets are Eclipsed for 20 seconds.",
+      "range": null,
+      "cooldown": 120.0
     }
   ],
   "auras": [],
@@ -22,8 +28,6 @@
     "armor": {
       "flat": 45.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -32,8 +36,6 @@
     "magicResistance": {
       "flat": 75.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

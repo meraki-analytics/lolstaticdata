@@ -1,25 +1,30 @@
 {
   "name": "Dead Man's Plate",
   "id": 3742,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Chain Vest",
-    "Giant's Belt"
+    1031,
+    1011
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3742.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Dreadnought",
-      "effects": "Generates a maximum of 100 Momentum stacks by moving, which grant up to 60 bonus movement speed. Momentum decays while immobilized or pacified."
+      "effects": "Generates a maximum of 100 Momentum stacks by moving, which grant up to 60 bonus movement speed. Momentum decays while immobilized or pacified.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Crushing Blow",
-      "effects": "Basic attacks discharge all stacks to deal (1 per stack) bonus magic damage on-hit, up to 100. Basic attacks at 100 stacks also slow by 50% for 1 second."
+      "effects": "Basic attacks discharge all stacks to deal (1 per stack) bonus magic damage on-hit, up to 100. Basic attacks at 100 stacks also slow by 50% for 1 second.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -28,8 +33,6 @@
     "armor": {
       "flat": 60.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -38,8 +41,6 @@
     "health": {
       "flat": 425.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

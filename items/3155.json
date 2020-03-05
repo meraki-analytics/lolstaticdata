@@ -1,22 +1,23 @@
 {
   "name": "Hexdrinker (old)",
   "id": 3155,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Long Sword",
-    "Null-Magic Mantle"
+    1036,
+    1033
   ],
-  "buildsInto": [
-    "Runegorger"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3155.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "After taking magic damage you gain attack damage for 8 seconds. Bonus stacks up to 25 attack damage after taking 600 magic damage."
+      "effects": "After taking magic damage you gain attack damage for 8 seconds. Bonus stacks up to 25 attack damage after taking 600 magic damage.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -25,8 +26,6 @@
     "attackDamage": {
       "flat": 20.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -35,8 +34,6 @@
     "magicResistance": {
       "flat": 30.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

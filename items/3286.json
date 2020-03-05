@@ -1,20 +1,23 @@
 {
   "name": "Luden's Echo (3286)",
   "id": 3286,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Blasting Wand",
-    "Aether Wisp"
+    1026,
+    3113
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3286_ludens_echo_cs.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "Gains charges upon moving or casting. At 100 charges, the next instance of ability damage you deal will expend all charges to deal 100 (+ 10% AP) bonus magic damage to the first enemy hit and summon up to 3 lesser bolts that target nearby enemies, prioritizing enemies damaged by the ability and champions over minions."
+      "effects": "Gains charges upon moving or casting. At 100 charges, the next instance of ability damage you deal will expend all charges to deal 100 (+ 10% AP) bonus magic damage to the first enemy hit and summon up to 3 lesser bolts that target nearby enemies, prioritizing enemies damaged by the ability and champions over minions.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -23,8 +26,6 @@
     "abilityPower": {
       "flat": 100.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -33,8 +34,6 @@
     "movespeed": {
       "flat": 0.0,
       "percent": 7.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

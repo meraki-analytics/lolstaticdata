@@ -1,22 +1,25 @@
 {
   "name": "Quicksilver Sash",
   "id": 3140,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Null-Magic Mantle"
+    1033
   ],
-  "buildsInto": [
-    "Mercurial Scimitar"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3140.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "qss",
+  "nicknames": [
+    "qss"
+  ],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": "Quicksilver",
-      "effects": "Removes all crowd control debuffs from your champion (90 second cooldown)."
+      "effects": "Removes all crowd control debuffs from your champion (90 second cooldown).",
+      "range": null,
+      "cooldown": 90.0
     }
   ],
   "auras": [],
@@ -24,8 +27,6 @@
     "magicResistance": {
       "flat": 30.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

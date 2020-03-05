@@ -1,21 +1,20 @@
 {
   "name": "Madred's Razors",
   "id": 3106,
-  "tier": "Tier 2",
-  "buildsFrom": [
-    "Dagger"
-  ],
-  "buildsInto": [
-    "Grez's Spectral Lantern"
-  ],
+  "tier": 2,
+  "buildsFrom": null,
+  "buildsInto": null,
+  "icon": null,
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Maim",
-      "effects": "Basic attacks against monsters deal 50 bonus magic damage and restore 8 health."
+      "effects": "Basic attacks against monsters deal 50 bonus magic damage and restore 8 health.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -24,8 +23,6 @@
     "attackSpeed": {
       "flat": 15.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

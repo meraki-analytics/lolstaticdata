@@ -1,22 +1,23 @@
 {
   "name": "Bramble Vest",
   "id": 3076,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Cloth Armor",
-    "Cloth Armor"
+    1029,
+    1029
   ],
-  "buildsInto": [
-    "Thornmail"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3076.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Thorns",
-      "effects": "Upon being hit by a basic attack, reflects 3 (+ 10% bonus armor) magic damage, while also inflicting Grievous Wounds on the attacker for 3 seconds."
+      "effects": "Upon being hit by a basic attack, reflects 3 (+ 10% bonus armor) magic damage, while also inflicting Grievous Wounds on the attacker for 3 seconds.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -25,8 +26,6 @@
     "armor": {
       "flat": 35.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

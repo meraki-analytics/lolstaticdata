@@ -1,26 +1,29 @@
 {
   "name": "Hex Core mk-2",
   "id": 3197,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Hex Core mk-1"
+    3196
   ],
-  "buildsInto": [
-    "Perfect Hex Core"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3197.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": false,
       "name": null,
-      "effects": "Grants 6 \u2212 108 (based on level) ability power and 20 \u2212 360 (based on level) mana."
+      "effects": "Grants 6 \u2212 108 (based on level) ability power and 20 \u2212 360 (based on level) mana.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Progress",
-      "effects": "Viktor can upgrade one of his basic abilities."
+      "effects": "Viktor can upgrade one of his basic abilities.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],

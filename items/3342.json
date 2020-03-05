@@ -1,20 +1,23 @@
 {
   "name": "Scrying Orb",
   "id": 3342,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
-  "buildsInto": [
-    "Farsight Orb"
-  ],
+  "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3342_bluetrinket.png",
   "noEffects": true,
   "removed": true,
-  "nickname": "blue",
+  "nicknames": [
+    "blue"
+  ],
   "passives": [],
   "active": [
     {
       "unique": false,
       "name": null,
-      "effects": "Reveals small location within 2500 / 3500 (based on level) range for 2 seconds (120 second cooldown). Enemy champions hit will be revealed for 5 seconds. This does not affect stealth champions."
+      "effects": "Reveals small location within 2500 / 3500 (based on level) range for 2 seconds (120 second cooldown). Enemy champions hit will be revealed for 5 seconds. This does not affect stealth champions.",
+      "range": null,
+      "cooldown": 120.0
     }
   ],
   "auras": [],

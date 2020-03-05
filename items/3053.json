@@ -1,36 +1,45 @@
 {
   "name": "Sterak's Gage",
   "id": 3053,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Jaurim's Fist",
-    "Pickaxe",
-    "Ruby Crystal"
+    3052,
+    1037,
+    1028
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3053.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Giant Strength",
-      "effects": "Gain 50% of base attack damage as bonus attack damage."
+      "effects": "Gain 50% of base attack damage as bonus attack damage.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Lifeline",
-      "effects": "If you take 400 \u2212 1800 (based on level) damage within 5 seconds, you gain a shield for up to 3.75 seconds equal to 75% bonus health, which start decaying after 0.75 seconds (60 second cooldown)."
+      "effects": "If you take 400 \u2212 1800 (based on level) damage within 5 seconds, you gain a shield for up to 3.75 seconds equal to 75% bonus health, which start decaying after 0.75 seconds (60 second cooldown).",
+      "range": null,
+      "stats": []
     },
     {
       "unique": false,
       "name": null,
-      "effects": "Triggering Lifeline grants Sterak's Fury."
+      "effects": "Triggering Lifeline grants Sterak's Fury.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Sterak's Fury",
-      "effects": "Grants increased size and +30% Tenacity for 8 seconds."
+      "effects": "Grants increased size and +30% Tenacity for 8 seconds.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -39,8 +48,6 @@
     "health": {
       "flat": 450.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

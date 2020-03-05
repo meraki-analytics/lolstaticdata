@@ -1,17 +1,22 @@
 {
   "name": "Travel Size Elixir of Iron",
   "id": 2058,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/2058_travel_size_elixir_of_iron.png",
   "noEffects": true,
   "removed": true,
-  "nickname": "kleptomancy",
+  "nicknames": [
+    "kleptomancy"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Path of Iron",
-      "effects": "Leaves a path behind that grants allied champions 15% bonus movement speed."
+      "effects": "Leaves a path behind that grants allied champions 15% bonus movement speed.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],

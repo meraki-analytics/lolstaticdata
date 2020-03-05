@@ -1,24 +1,23 @@
 {
   "name": "Hextech Revolver",
   "id": 3145,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Amplifying Tome",
-    "Amplifying Tome"
+    1052,
+    1052
   ],
-  "buildsInto": [
-    "Hextech Gunblade",
-    "Hextech GLP-800",
-    "Hextech Protobelt-01"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3145.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Magic Bolt",
-      "effects": "Damaging an enemy champion with a basic attack shocks them for 50 \u2212 125 (based on level) bonus magic damage on-hit (40 second cooldown, shared with other Hextech items)."
+      "effects": "Damaging an enemy champion with a basic attack shocks them for 50 \u2212 125 (based on level) bonus magic damage on-hit (40 second cooldown, shared with other Hextech items).",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -27,8 +26,6 @@
     "abilityPower": {
       "flat": 40.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

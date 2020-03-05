@@ -1,25 +1,30 @@
 {
   "name": "Staff of Flowing Water",
   "id": 3744,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Chalice of Harmony",
-    "Amplifying Tome"
+    3028,
+    1052
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3744_staff_of_flowing_water.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Mana Font",
-      "effects": "Every 5 seconds, restores 2% of your missing mana."
+      "effects": "Every 5 seconds, restores 2% of your missing mana.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": null,
-      "effects": "While in the river, grants +30% movement speed and +10 flat mana regeneration."
+      "effects": "While in the river, grants +30% movement speed and +10 flat mana regeneration.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -28,8 +33,6 @@
     "abilityPower": {
       "flat": 40.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -38,8 +41,6 @@
     "magicResistance": {
       "flat": 25.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -48,8 +49,6 @@
     "manaRegen": {
       "flat": 0.0,
       "percent": 50.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

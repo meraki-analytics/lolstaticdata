@@ -1,28 +1,33 @@
 {
   "name": "Gargoyle Stoneplate",
   "id": 3193,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Chain Vest",
-    "Stopwatch",
-    "Negatron Cloak"
+    1031,
+    1057,
+    2420
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3193.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Stone Skin",
-      "effects": "If 3 or more enemy champions are within 850 radius, grants 40 bonus armor and 40 bonus magic resistance."
+      "effects": "If 3 or more enemy champions are within 850 radius, grants 40 bonus armor and 40 bonus magic resistance.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [
     {
       "unique": true,
       "name": "Metallicize",
-      "effects": "Increases current and maximum health by 40%, as well as champion size, but reduces the damage you deal by 60% for 4 seconds. If Stone Skin is active, instead increases health by 100% (90 second cooldown). Current health percentage is conserved when the effect ends, as well."
+      "effects": "Increases current and maximum health by 40%, as well as champion size, but reduces the damage you deal by 60% for 4 seconds. If Stone Skin is active, instead increases health by 100% (90 second cooldown). Current health percentage is conserved when the effect ends, as well.",
+      "range": null,
+      "cooldown": 90.0
     }
   ],
   "auras": [],
@@ -30,8 +35,6 @@
     "armor": {
       "flat": 40.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -40,8 +43,6 @@
     "magicResistance": {
       "flat": 40.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

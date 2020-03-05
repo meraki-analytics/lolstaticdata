@@ -1,28 +1,29 @@
 {
   "name": "Kircheis Shard",
   "id": 2015,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Dagger"
+    1042
   ],
-  "buildsInto": [
-    "Rapid Firecannon",
-    "Statikk Shiv",
-    "Stormrazor"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2015.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Energized",
-      "effects": "Moving and basic attacking generates Energize stacks, up to 100."
+      "effects": "Moving and basic attacking generates Energize stacks, up to 100.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Jolt",
-      "effects": "When fully Energized, your next basic attack deals 80 bonus magic damage on-hit."
+      "effects": "When fully Energized, your next basic attack deals 80 bonus magic damage on-hit.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -31,8 +32,6 @@
     "attackSpeed": {
       "flat": 15.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

@@ -1,32 +1,39 @@
 {
   "name": "Knight's Vow",
   "id": 3109,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Kindlegem",
-    "Chain Vest"
+    3067,
+    1031
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3109.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "If your Partner is nearby, gain 20 armor, and 15% bonus movement speed while moving toward them."
+      "effects": "If your Partner is nearby, gain 20 armor, and 15% bonus movement speed while moving toward them.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": null,
-      "effects": "While within 1000 range of your Partner, heal for 12% of the damage your Partner deals to champions and redirect 12% of the damage your Partner takes from champions (after reductions) to you as true damage. Both effects are reduced to 6% if the item holder is ranged."
+      "effects": "While within 1000 range of your Partner, heal for 12% of the damage your Partner deals to champions and redirect 12% of the damage your Partner takes from champions (after reductions) to you as true damage. Both effects are reduced to 6% if the item holder is ranged.",
+      "range": 1000,
+      "stats": []
     }
   ],
   "active": [
     {
       "unique": true,
       "name": null,
-      "effects": "Designate an allied champion within 1000 range as your Partner (90 second cooldown)."
+      "effects": "Designate an allied champion within 1000 range as your Partner (90 second cooldown).",
+      "range": 1000,
+      "cooldown": 90.0
     }
   ],
   "auras": [],
@@ -34,18 +41,14 @@
     "armor": {
       "flat": 40.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
     },
     "cooldownReduction": {
-      "flat": 10.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 10.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -54,8 +57,6 @@
     "health": {
       "flat": 250.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

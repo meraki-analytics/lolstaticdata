@@ -1,27 +1,32 @@
 {
   "name": "Spellbinder",
   "id": 3907,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Aether Wisp",
-    "Needlessly Large Rod"
+    1058,
+    3113
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3907.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "Gains a charge each time an enemy or allied champion within 1800 range, including yourself, casts an ability, up to a maximum of 100 charges."
+      "effects": "Gains a charge each time an enemy or allied champion within 1800 range, including yourself, casts an ability, up to a maximum of 100 charges.",
+      "range": 1800,
+      "stats": []
     }
   ],
   "active": [
     {
       "unique": true,
       "name": null,
-      "effects": "Grants 0 \u2212 80 (based on charges) ability power and a decaying 0% \u2212 50% (based on charges) bonus movement speed for 4 seconds (60 second cooldown)."
+      "effects": "Grants 0 \u2212 80 (based on charges) ability power and a decaying 0% \u2212 50% (based on charges) bonus movement speed for 4 seconds (60 second cooldown).",
+      "range": null,
+      "cooldown": 60.0
     }
   ],
   "auras": [],
@@ -29,8 +34,6 @@
     "abilityPower": {
       "flat": 120.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -39,8 +42,6 @@
     "movespeed": {
       "flat": 0.0,
       "percent": 10.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

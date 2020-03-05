@@ -1,20 +1,26 @@
 {
   "name": "Zhonya's Paradox",
   "id": 3386,
-  "tier": "Tier 4",
+  "tier": 4,
   "buildsFrom": [
-    "Zhonya's Hourglass"
+    3157
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3386.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "ornn,forge",
+  "nicknames": [
+    "ornn",
+    "forge"
+  ],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": "Stasis",
-      "effects": "Put yourself in stasis for 2.5 seconds, rendering yourself untargetable and invulnerable for the duration, but also becoming unable to move and pacified during this time (120 second cooldown)."
+      "effects": "Put yourself in stasis for 2.5 seconds, rendering yourself untargetable and invulnerable for the duration, but also becoming unable to move and pacified during this time (120 second cooldown).",
+      "range": null,
+      "cooldown": 120.0
     }
   ],
   "auras": [],
@@ -22,8 +28,6 @@
     "abilityPower": {
       "flat": 100.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -32,18 +36,14 @@
     "armor": {
       "flat": 60.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
     },
     "cooldownReduction": {
-      "flat": 10.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 10.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

@@ -1,20 +1,23 @@
 {
   "name": "Lord Van Damm's Pillager",
   "id": 3104,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Caulfield's Warhammer",
-    "Jaurim's Fist"
+    3133,
+    3052
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3104_lord_van_damms_pillager.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Ashes to Ashes",
-      "effects": "Controlling the Altar on the allied side of the map sets you aflame, dealing 26 \u2212 43 (based on level) magic damage per second to nearby enemies. Deals [ 50% bonus ][ 39 \u2212 64.5 (based on level) ] magic damage to minions and monsters.Controlling the Altar on the enemy's side of the map causes your basic attacks to burn targets for 12 \u2212 114 (based on level) true damage over 3 seconds."
+      "effects": "Controlling the Altar on the allied side of the map sets you aflame, dealing 26 \u2212 43 (based on level) magic damage per second to nearby enemies. Deals [ 50% bonus ][ 39 \u2212 64.5 (based on level) ] magic damage to minions and monsters.Controlling the Altar on the enemy's side of the map causes your basic attacks to burn targets for 12 \u2212 114 (based on level) true damage over 3 seconds.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -23,18 +26,14 @@
     "attackDamage": {
       "flat": 50.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
     },
     "cooldownReduction": {
-      "flat": 10.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 10.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -43,8 +42,6 @@
     "health": {
       "flat": 300.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

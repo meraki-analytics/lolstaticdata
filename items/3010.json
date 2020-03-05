@@ -1,23 +1,23 @@
 {
   "name": "Catalyst the Protector",
   "id": 3010,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Ruby Crystal",
-    "Sapphire Crystal"
+    1028,
+    1027
   ],
-  "buildsInto": [
-    "Righteous Glory",
-    "Rod of Ages"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3010.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Valor's Reward",
-      "effects": "On leveling up, restores 150 health and 200 mana over 8 seconds."
+      "effects": "On leveling up, restores 150 health and 200 mana over 8 seconds.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -26,8 +26,6 @@
     "health": {
       "flat": 225.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -36,8 +34,6 @@
     "mana": {
       "flat": 300.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

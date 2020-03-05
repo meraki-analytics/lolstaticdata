@@ -1,26 +1,38 @@
 {
   "name": "Shard of True Ice",
   "id": 3092,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Frostfang"
+    3098,
+    1028
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3092_frejlord_eye.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "Support, Economy, Gold, Sightstone, Ward",
+  "nicknames": [
+    "Support",
+    "Economy",
+    "Gold",
+    "Sightstone",
+    "Ward"
+  ],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "Receives diminishing gold from excessive minion kills."
+      "effects": "Receives diminishing gold from excessive minion kills.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [
     {
       "unique": true,
       "name": "Warding",
-      "effects": "Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area. Holds up to 4 charges which refill upon visiting the shop."
+      "effects": "Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area. Holds up to 4 charges which refill upon visiting the shop.",
+      "range": 600,
+      "cooldown": null
     }
   ],
   "auras": [],
@@ -28,8 +40,6 @@
     "abilityPower": {
       "flat": 45.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -38,8 +48,6 @@
     "goldPer10": {
       "flat": 3.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -48,8 +56,6 @@
     "health": {
       "flat": 100.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -58,8 +64,6 @@
     "manaRegen": {
       "flat": 0.0,
       "percent": 100.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

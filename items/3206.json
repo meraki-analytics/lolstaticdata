@@ -1,30 +1,37 @@
 {
   "name": "Spirit of the Spectral Wraith",
   "id": 3206,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Spirit Stone",
-    "Fiendish Codex"
+    1080,
+    3108
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3206_souleaterwraith.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Spirit Drain",
-      "effects": "Grants 2 ability power for every large monster kill, up to 30 ability power."
+      "effects": "Grants 2 ability power for every large monster kill, up to 30 ability power.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Butcher",
-      "effects": "Against monsters, deal 30% bonus damage and restore 6% of damage dealt to monsters as health and 3% as mana."
+      "effects": "Against monsters, deal 30% bonus damage and restore 6% of damage dealt to monsters as health and 3% as mana.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Conservation",
-      "effects": "You generate Conservation stacks every 1.5 seconds, up to 80. Killing a large monster will consume up to 40 stacks and grant 1 per stack consumed. You may only be in possession of 1 Gold Income item."
+      "effects": "You generate Conservation stacks every 1.5 seconds, up to 80. Killing a large monster will consume up to 40 stacks and grant 1 per stack consumed. You may only be in possession of 1 Gold Income item.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -33,18 +40,14 @@
     "abilityPower": {
       "flat": 50.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
     },
     "cooldownReduction": {
-      "flat": 10.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 10.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

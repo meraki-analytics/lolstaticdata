@@ -1,23 +1,23 @@
 {
   "name": "Phage",
   "id": 3044,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Ruby Crystal",
-    "Long Sword"
+    1028,
+    1036
   ],
-  "buildsInto": [
-    "Black Cleaver",
-    "Trinity Force"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3044.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Rage",
-      "effects": "Basic attacks (on-hit) grant +20 flat movement speed for 2 seconds. Killing a Unit grants +60 flat movement speed instead."
+      "effects": "Basic attacks (on-hit) grant +20 flat movement speed for 2 seconds. Killing a Unit grants +60 flat movement speed instead.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -26,8 +26,6 @@
     "attackDamage": {
       "flat": 15.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -36,8 +34,6 @@
     "health": {
       "flat": 200.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

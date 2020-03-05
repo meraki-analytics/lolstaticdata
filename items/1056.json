@@ -1,17 +1,20 @@
 {
   "name": "Doran's Ring",
   "id": 1056,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1056.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": false,
       "name": null,
-      "effects": "Basic attacks deal an additional 5 physical damage to minions on hit."
+      "effects": "Basic attacks deal an additional 5 physical damage to minions on-hit.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -20,8 +23,6 @@
     "abilityPower": {
       "flat": 15.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -30,8 +31,6 @@
     "health": {
       "flat": 60.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -40,8 +39,6 @@
     "manaRegen": {
       "flat": 5.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

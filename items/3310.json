@@ -1,24 +1,33 @@
 {
   "name": "Timeworn Spellthief's Edge",
   "id": 3310,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [
-    "Timeworn Frostfang"
+    3311
   ],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3090_thoughtbreaker.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "Support, Economy, Gold",
+  "nicknames": [
+    "Support",
+    "Economy",
+    "Gold"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Tribute",
-      "effects": "Grants a charge every 10 seconds, up to 3 charges. Damaging spells and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge deals them 13 bonus magic damage, and if an allied champion is nearby, also grants 11. Before quest completion, killing a minion or non-epic monster pauses Tribute generation and the passive gold generation for 12 seconds per unit slain."
+      "effects": "Grants a charge every 10 seconds, up to 3 charges. Damaging spells and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge deals them 13 bonus magic damage, and if an allied champion is nearby, also grants 11. Before quest completion, killing a minion or non-epic monster pauses Tribute generation and the passive gold generation for 12 seconds per unit slain.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Quest",
-      "effects": "Earn 750 using this item and upgrade to Timeworn Frostfang. Reward: Tribute is upgraded to Queen's Tribute, giving you 50% bonus movement speed for 1 second (additional stacks extend duration) for each charge consumed."
+      "effects": "Earn 750 using this item and upgrade to Timeworn Frostfang. Reward: Tribute is upgraded to Queen's Tribute, giving you 50% bonus movement speed for 1 second (additional stacks extend duration) for each charge consumed.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -27,8 +36,6 @@
     "abilityPower": {
       "flat": 10.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -37,8 +44,6 @@
     "goldPer10": {
       "flat": 2.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -47,8 +52,6 @@
     "manaRegen": {
       "flat": 0.0,
       "percent": 25.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

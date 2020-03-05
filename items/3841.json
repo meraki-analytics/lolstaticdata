@@ -1,29 +1,28 @@
 {
   "name": "Swindler's Orb",
   "id": 3841,
-  "tier": "Tier 2",
-  "buildsFrom": [
-    "Murksphere"
-  ],
-  "buildsInto": [],
+  "tier": 2,
+  "buildsFrom": null,
+  "buildsInto": null,
+  "icon": null,
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": "Swindler's Shield",
-      "effects": "Shields target ally from the next 60 damage. You generate 1 for every 4 damage absorbed (maximum of 15). Self-cast shields will not generate gold from monster damage. 15 second cooldown."
+      "effects": "Shields target ally from the next 60 damage. You generate 1 for every 4 damage absorbed (maximum of 15). Self-cast shields will not generate gold from monster damage. 15 second cooldown.",
+      "range": null,
+      "cooldown": 15.0
     }
   ],
   "auras": [],
   "stats": {
     "cooldownReduction": {
-      "flat": 10.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 10.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -32,8 +31,6 @@
     "manaRegen": {
       "flat": 0.0,
       "percent": 50.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

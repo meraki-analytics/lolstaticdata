@@ -1,22 +1,25 @@
 {
   "name": "Haunting Guise",
   "id": 3136,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Ruby Crystal",
-    "Amplifying Tome"
+    1028,
+    1052
   ],
-  "buildsInto": [
-    "Liandry's Torment"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3136.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "mask",
+  "nicknames": [
+    "mask"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Madness",
-      "effects": "Damaging an enemy champion generates one stack every second for the next 4 seconds. Deal 2% increased damage for each stack, up to a maximum of 10%."
+      "effects": "Damaging an enemy champion generates one stack every second for the next 4 seconds. Deal 2% increased damage for each stack, up to a maximum of 10%.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -25,8 +28,6 @@
     "abilityPower": {
       "flat": 35.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -35,8 +36,6 @@
     "health": {
       "flat": 200.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

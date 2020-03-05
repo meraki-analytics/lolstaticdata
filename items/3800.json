@@ -1,21 +1,24 @@
 {
   "name": "Righteous Glory",
   "id": 3800,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Glacial Shroud",
-    "Crystalline Bracer"
+    3024,
+    3801
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3800.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": null,
-      "effects": "For 4 seconds, grants 75% bonus movement speed when moving towards enemy champions and turrets. After the duration or when an enemy champion is within 225 range, you emit a shockwave, slowing enemy champions within 450 range by 75% for 2 seconds (90 second cooldown)."
+      "effects": "For 4 seconds, grants 75% bonus movement speed when moving towards enemy champions and turrets. After the duration or when an enemy champion is within 225 range, you emit a shockwave, slowing enemy champions within 450 range by 75% for 2 seconds (90 second cooldown).",
+      "range": 225,
+      "cooldown": 90.0
     }
   ],
   "auras": [],
@@ -23,18 +26,14 @@
     "armor": {
       "flat": 30.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
     },
     "cooldownReduction": {
-      "flat": 10.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 10.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -43,8 +42,6 @@
     "health": {
       "flat": 400.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -53,8 +50,6 @@
     "healthRegen": {
       "flat": 0.0,
       "percent": 100.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -63,8 +58,6 @@
     "mana": {
       "flat": 300.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

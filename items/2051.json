@@ -1,17 +1,22 @@
 {
   "name": "Guardian's Horn",
   "id": 2051,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2051.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "The Golden Bicep of Kobe",
+  "nicknames": [
+    "The Golden Bicep of Kobe"
+  ],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "Blocks 12 damage from all champions sources (3 damage vs. damage over time abilities)."
+      "effects": "Blocks 12 damage from all champions sources (3 damage vs. damage over time abilities).",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -20,8 +25,6 @@
     "health": {
       "flat": 150.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -30,8 +33,6 @@
     "healthRegen": {
       "flat": 20.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

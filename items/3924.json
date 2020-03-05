@@ -1,27 +1,29 @@
 {
   "name": "Flesheater",
   "id": 3924,
-  "tier": "Tier 3",
-  "buildsFrom": [
-    "Vampiric Scepter",
-    "Long Sword"
-  ],
-  "buildsInto": [],
+  "tier": 3,
+  "buildsFrom": null,
+  "buildsInto": null,
+  "icon": null,
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "Basic attacks build Flesh charges. At 5 charges, you gain the ability to cast Flesheater."
+      "effects": "Basic attacks build Flesh charges. At 5 charges, you gain the ability to cast Flesheater.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [
     {
       "unique": true,
       "name": "Flesheater",
-      "effects": "Rip the flesh from the target enemy minion, dealing 200 (+ 75% AD) true damage and restoring 50 (+ 75% AD) health. Each cast of Fleasheater permanently increases the item's attack damage by 1."
+      "effects": "Rip the flesh from the target enemy minion, dealing 200 (+ 75% AD) true damage and restoring 50 (+ 75% AD) health. Each cast of Fleasheater permanently increases the item's attack damage by 1.",
+      "range": null,
+      "cooldown": null
     }
   ],
   "auras": [],
@@ -29,8 +31,6 @@
     "attackDamage": {
       "flat": 20.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -39,8 +39,6 @@
     "lifesteal": {
       "flat": 0.0,
       "percent": 10.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

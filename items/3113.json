@@ -1,19 +1,15 @@
 {
   "name": "Aether Wisp",
   "id": 3113,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Amplifying Tome"
+    1052
   ],
-  "buildsInto": [
-    "Ardent Censer",
-    "Lich Bane",
-    "Spellbinder",
-    "Twin Shadows"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3113.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [],
   "auras": [],
@@ -21,8 +17,6 @@
     "abilityPower": {
       "flat": 30.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -30,9 +24,7 @@
     },
     "movespeed": {
       "flat": 0.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 5.0,
+      "percent": 5.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

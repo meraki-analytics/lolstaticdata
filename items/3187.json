@@ -1,27 +1,32 @@
 {
   "name": "Arcane Sweeper (Item)",
   "id": 3187,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Glacial Shroud",
-    "Kindlegem"
+    3024,
+    3067
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3187_hextechsweeper.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Trap Detection",
-      "effects": "Nearby stealthed enemy traps are revealed."
+      "effects": "Nearby stealthed enemy traps are revealed.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [
     {
       "unique": true,
       "name": null,
-      "effects": "Covers an area with stealth-detecting mist for 5 seconds, granting vision of units which pass through it for 3 seconds. (60 second cooldown) (800 range, 375 AoE estimated)"
+      "effects": "Covers an area with stealth-detecting mist for 5 seconds, granting vision of units which pass through it for 3 seconds. (60 second cooldown) (800 range, 375 AoE estimated)",
+      "range": 800,
+      "cooldown": 60.0
     }
   ],
   "auras": [],
@@ -29,18 +34,14 @@
     "armor": {
       "flat": 25.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
     },
     "cooldownReduction": {
-      "flat": 20.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 20.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -49,8 +50,6 @@
     "health": {
       "flat": 225.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -59,8 +58,6 @@
     "mana": {
       "flat": 250.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

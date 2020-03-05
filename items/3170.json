@@ -1,20 +1,23 @@
 {
   "name": "Moonflair Spellblade",
   "id": 3170,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Seeker's Armguard",
-    "Negatron Cloak"
+    3191,
+    1057
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3170_moonflairspellblade.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Tenacity",
-      "effects": "Reduces the duration of all crowd control effects by 35% (except for Suppression, Stasis, and Displacements)"
+      "effects": "Reduces the duration of all crowd control effects by 35% (except for Suppression, Stasis, and Displacements)",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -23,8 +26,6 @@
     "abilityPower": {
       "flat": 50.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -33,8 +34,6 @@
     "armor": {
       "flat": 50.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -43,8 +42,6 @@
     "magicResistance": {
       "flat": 50.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

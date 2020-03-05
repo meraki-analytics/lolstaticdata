@@ -1,41 +1,50 @@
 {
   "name": "Timeworn Face of the Mountain",
   "id": 3309,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Timeworn Targon's Brace",
-    "Kindlegem"
+    3308,
+    3067
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3401_martyrsshroud.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "Support, Economy, Gold",
+  "nicknames": [
+    "Support",
+    "Economy",
+    "Gold"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Spoils of War",
-      "effects": "Grants a charge every 20 seconds, up to 4 charges. Melee basic attacks can consume one charge to execute minions below 340 \u2212 680 (based on level) (+ 100% AD) health. Melee basic attacks that would trigger Spoils of War gain 150 bonus range and 30% bonus attack speed. Killing a minion by any means with a charge heals you and the nearest allied champion for 15 \u2212 90 (based on missing health) health and grants them kill gold. Healing is halved if the owner is ranged. These effects require an allied champion to be nearby."
+      "effects": "Grants a charge every 20 seconds, up to 4 charges. Melee basic attacks can consume one charge to execute minions below 340 \u2212 680 (based on level) (+ 100% AD) health. Melee basic attacks that would trigger Spoils of War gain 150 bonus range and 30% bonus attack speed. Killing a minion by any means with a charge heals you and the nearest allied champion for 15 \u2212 90 (based on missing health) health and grants them kill gold. Healing is halved if the owner is ranged. These effects require an allied champion to be nearby.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Quest",
-      "effects": "Earn 750 using this item. Reward: Shield Battery, a permanent shield for 255 \u2212 510 (based on level) health. The shield regenerates slowly when out-of-combat. Executing minions with Spoils of War regenerates 64 \u2212 85 (based on level) shield value."
+      "effects": "Earn 750 using this item. Reward: Shield Battery, a permanent shield for 255 \u2212 510 (based on level) health. The shield regenerates slowly when out-of-combat. Executing minions with Spoils of War regenerates 64 \u2212 85 (based on level) shield value.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [
     {
       "unique": true,
       "name": "Deadly Phalanx",
-      "effects": "Grant a shield to yourself and an ally equal to 10% of your maximum health for 4 seconds. After 4 seconds, the shield explodes to slow nearby enemies by 40% for 2 seconds (60 second cooldown)."
+      "effects": "Grant a shield to yourself and an ally equal to 10% of your maximum health for 4 seconds. After 4 seconds, the shield explodes to slow nearby enemies by 40% for 2 seconds (60 second cooldown).",
+      "range": null,
+      "cooldown": 60.0
     }
   ],
   "auras": [],
   "stats": {
     "cooldownReduction": {
-      "flat": 10.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 10.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -44,8 +53,6 @@
     "goldPer10": {
       "flat": 4.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -54,8 +61,6 @@
     "health": {
       "flat": 300.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -64,8 +69,6 @@
     "healthRegen": {
       "flat": 0.0,
       "percent": 100.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

@@ -1,21 +1,26 @@
 {
   "name": "Deathfire Grasp",
   "id": 3128,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Needlessly Large Rod",
-    "Fiendish Codex"
+    1058,
+    3108
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3128_deathfire_grasp.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "dfg",
+  "nicknames": [
+    "dfg"
+  ],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": null,
-      "effects": "Deals 15% of the target champion's maximum health in magic damage and increases all subsequent magic damage taken by the target by 20% for 4 seconds (750 range) (90 second cooldown)."
+      "effects": "Deals 15% of the target champion's maximum health in magic damage and increases all subsequent magic damage taken by the target by 20% for 4 seconds (750 range) (90 second cooldown).",
+      "range": 750,
+      "cooldown": 90.0
     }
   ],
   "auras": [],
@@ -23,18 +28,14 @@
     "abilityPower": {
       "flat": 120.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
     },
     "cooldownReduction": {
-      "flat": 10.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 10.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

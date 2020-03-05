@@ -1,34 +1,41 @@
 {
   "name": "Timeworn Ancient Coin",
   "id": 3304,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [
-    "Timeworn Nomad's Medallion"
+    3305
   ],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3301_babyphilo.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "Support, Gold, Economy",
+  "nicknames": [
+    "Support",
+    "Gold",
+    "Economy"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Favor",
-      "effects": "Nearby enemy minions, killed by any ally other than you, will sometimes drop a coin that can be picked up to either grant 28 or restore 6% missing mana (minimum 10). Gold coin can only drop if an allied champion is nearby. Cannon minions will drop a coin as long as you don't kill them."
+      "effects": "Nearby enemy minions, killed by any ally other than you, will sometimes drop a coin that can be picked up to either grant 28 or restore 6% missing mana (minimum 10). Gold coin can only drop if an allied champion is nearby. Cannon minions will drop a coin as long as you don't kill them.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Quest",
-      "effects": "Earn 750 using this item and upgrade to Timeworn Nomad's Medallion. Reward: Favor is upgraded to Emperor's Favor making champion takedowns grant both the gold and mana. You also grant 8% bonus movement speed to nearby allied champions moving toward you."
+      "effects": "Earn 750 using this item and upgrade to Timeworn Nomad's Medallion. Reward: Favor is upgraded to Emperor's Favor making champion takedowns grant both the gold and mana. You also grant 8% bonus movement speed to nearby allied champions moving toward you.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
   "auras": [],
   "stats": {
     "cooldownReduction": {
-      "flat": 5.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 5.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -37,8 +44,6 @@
     "goldPer10": {
       "flat": 2.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -47,8 +52,6 @@
     "movespeed": {
       "flat": 5.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

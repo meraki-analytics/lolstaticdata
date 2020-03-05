@@ -1,20 +1,41 @@
 {
   "name": "Nashor's Tooth",
   "id": 3115,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Stinger",
-    "Fiendish Codex"
+    3101,
+    3108
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3115.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "Basic attacks deal 15 (+ 15% AP) bonus magic damage on-hit."
+      "effects": "20.0% cooldown reduction",
+      "range": null,
+      "stats": [
+        {
+          "cooldownReduction": {
+            "flat": 0.0,
+            "percent": 20.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "unique": true,
+      "name": null,
+      "effects": "Basic attacks deal 15 (+ 15% AP) bonus magic damage on-hit.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -23,8 +44,6 @@
     "abilityPower": {
       "flat": 80.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -33,18 +52,6 @@
     "attackSpeed": {
       "flat": 50.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
-      "perLevel": 0.0,
-      "percentPerLevel": 0.0,
-      "percentBase": 0.0,
-      "percentBonus": 0.0
-    },
-    "cooldownReduction": {
-      "flat": 0.0,
-      "percent": 0.0,
-      "unique": 20.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

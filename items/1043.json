@@ -1,25 +1,23 @@
 {
   "name": "Recurve Bow",
   "id": 1043,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Dagger",
-    "Dagger"
+    1042,
+    1042
   ],
-  "buildsInto": [
-    "Blade of the Ruined King",
-    "Bloodrazor",
-    "Guinsoo's Rageblade",
-    "Wit's End"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1043.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "Basic attacks deal 15 bonus physical damage on-hit."
+      "effects": "Basic attacks deal 15 bonus physical damage on-hit.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -28,8 +26,6 @@
     "attackSpeed": {
       "flat": 25.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

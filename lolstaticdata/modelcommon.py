@@ -21,8 +21,6 @@ class DamageType(OrderedEnum):
 class Stat:
     flat: Number = 0.
     percent: Number = 0.
-    unique: Number = 0.
-    unique_percent: Number = 0.
     per_level: Number = 0.
     percent_per_level: Number = 0.
     percent_base: Number = 0.
@@ -31,7 +29,10 @@ class Stat:
     @staticmethod
     def _grow_stat(base, per_level, level):
         """Grow a base stat based on the level of the champion."""
-        return base + per_level*(7./400.*(level*level-1) + 267./400.*(level-1))
+        #OLD FORMULA return base + per_level*(7./400.*(level*level-1) + 267./400.*(level-1))
+        return (base + per_level *(level - 1)*(0.7025 + 0.0175*(level - 1)))
+
+        # NEW formula = b+g×(n−1)×(0.7025+0.0175×(n−1))
 
     def total(self, level: int):
         """Calculate the total stat value given all its attributes."""
@@ -118,4 +119,7 @@ class Lifesteal(Stat):
 
 
 class MagicPenetration(Stat):
+    pass
+
+class ArmorPenetration(Stat):
     pass

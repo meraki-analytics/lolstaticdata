@@ -1,21 +1,24 @@
 {
   "name": "Sunfire Cape",
   "id": 3068,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Bami's Cinder",
-    "Ruby Crystal",
-    "Chain Vest"
+    1031,
+    1028,
+    3751
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3068.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Immolate",
-      "effects": "Deals 26 \u2212 43 (based on level) magic damage per second to nearby enemies (325 range).Hitting an enemy with an immobilizing ability deals 26 \u2212 43 (based on level) (+ 4% bonus health) bonus magic damage and releases a fire nova that also deals that bonus damage to nearby enemies (12 second cooldown).Immolate's damage is increased by 50% against minions and monsters."
+      "effects": "Deals 26 \u2212 43 (based on level) magic damage per second to nearby enemies (325 range).Hitting an enemy with an immobilizing ability deals 26 \u2212 43 (based on level) (+ 4% bonus health) bonus magic damage and releases a fire nova that also deals that bonus damage to nearby enemies (12 second cooldown).Immolate's damage is increased by 50% against minions and monsters.",
+      "range": 325,
+      "stats": []
     }
   ],
   "active": [],
@@ -24,8 +27,6 @@
     "armor": {
       "flat": 60.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -34,8 +35,6 @@
     "health": {
       "flat": 425.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

@@ -1,22 +1,22 @@
 {
   "name": "Bami's Cinder",
   "id": 3751,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Ruby Crystal"
+    1028
   ],
-  "buildsInto": [
-    "Cinderhulk",
-    "Sunfire Cape"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3751.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Immolate",
-      "effects": "Deals 6 \u2212 23 (based on level) magic damage per second to nearby enemies (325 range).Hitting an enemy with an immobilizing ability deals 6 \u2212 23 (based on level) (+ 1% bonus health) bonus magic damage and releases a fire nova that also deals that bonus damage to nearby enemies (12 second cooldown).Immolate's damage is increased by 100% against minions and monsters."
+      "effects": "Deals 6 \u2212 23 (based on level) magic damage per second to nearby enemies (325 range).Hitting an enemy with an immobilizing ability deals 6 \u2212 23 (based on level) (+ 1% bonus health) bonus magic damage and releases a fire nova that also deals that bonus damage to nearby enemies (12 second cooldown).Immolate's damage is increased by 100% against minions and monsters.",
+      "range": 325,
+      "stats": []
     }
   ],
   "active": [],
@@ -25,8 +25,6 @@
     "health": {
       "flat": 200.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

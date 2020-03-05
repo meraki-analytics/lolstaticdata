@@ -1,23 +1,28 @@
 {
   "name": "Raptor Cloak",
   "id": 2053,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    "Rejuvenation Bead",
-    "Cloth Armor"
+    1006,
+    1029
   ],
   "buildsInto": [
-    "Ohmwrecker",
-    "Zz'Rot Portal"
+    3056,
+    3306,
+    3060,
+    3512
   ],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/2053_raptor_cloak.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Point Runner",
-      "effects": "Builds up to 20% bonus movement speed over 2 seconds while near turrets, fallen turrets and Void Gates."
+      "effects": "Builds up to 20% bonus movement speed over 2 seconds while near turrets, fallen turrets and Void Gates.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -26,8 +31,6 @@
     "armor": {
       "flat": 30.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -36,8 +39,6 @@
     "healthRegen": {
       "flat": 0.0,
       "percent": 125.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

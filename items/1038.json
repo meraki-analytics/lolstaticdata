@@ -1,18 +1,15 @@
 {
   "name": "B. F. Sword",
   "id": 1038,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
-  "buildsInto": [
-    "Bloodthirster",
-    "Essence Reaver",
-    "Guardian Angel",
-    "Infinity Edge",
-    "Stormrazor"
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1038.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "bf",
+  "nicknames": [
+    "bf"
+  ],
   "passives": [],
   "active": [],
   "auras": [],
@@ -20,8 +17,6 @@
     "attackDamage": {
       "flat": 40.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

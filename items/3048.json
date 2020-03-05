@@ -1,31 +1,47 @@
 {
   "name": "Seraph's Embrace (Quick Charge)",
   "id": 3048,
-  "tier": "Tier 4",
-  "buildsFrom": [
-    "Archangel's Staff (Quick Charge)"
-  ],
+  "tier": 4,
+  "buildsFrom": [],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3048.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Haste",
-      "effects": "Grants an additional 10% cooldown reduction."
+      "effects": "Grants an additional 10% cooldown reduction.",
+      "range": null,
+      "stats": [
+        {
+          "cooldownReduction": {
+            "flat": 0.0,
+            "percent": 10.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
     },
     {
       "unique": true,
       "name": "Awe",
-      "effects": "Grants bonus ability power equal to 3% maximum mana. Refunds 25% of mana spent."
+      "effects": "Grants bonus ability power equal to 3% maximum mana. Refunds 25% of mana spent.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [
     {
       "unique": true,
       "name": "Mana Shield",
-      "effects": "Drains 15% of your current mana to shield yourself for an equal amount plus 150 for 2 seconds (120 second cooldown)."
+      "effects": "Drains 15% of your current mana to shield yourself for an equal amount plus 150 for 2 seconds (120 second cooldown).",
+      "range": null,
+      "cooldown": 120.0
     }
   ],
   "auras": [],
@@ -33,18 +49,14 @@
     "abilityPower": {
       "flat": 50.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
     },
     "cooldownReduction": {
-      "flat": 10.0,
-      "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
+      "flat": 0.0,
+      "percent": 10.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -53,8 +65,6 @@
     "mana": {
       "flat": 1400.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

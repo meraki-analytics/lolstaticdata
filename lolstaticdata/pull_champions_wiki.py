@@ -9,6 +9,8 @@ from modelchampion import Champion, Stats, Ability, AttackType, AttributeRatings
 from modelcommon import DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration
 from utils import download_webpage, parse_top_level_parentheses, grouper, to_enum_like
 
+#TODO Maybe look into dynamic descriptions. See Knight's response to I-Made-This post in Discord
+
 
 class UnparsableLeveling(Exception):
     pass
@@ -81,7 +83,7 @@ class LolWikiDataHandler:
         html = download_webpage(url, self.use_cache)
         soup = BeautifulSoup(html, 'lxml')
 
-        # Pull the relevant champData from the html tags
+        # Pull the relevant data from the html tags
         spans = soup.find_all('span')
         start = None
         for i, span in enumerate(spans):
@@ -99,7 +101,7 @@ class LolWikiDataHandler:
             if brackets["{"] == brackets["}"] and brackets["{"] > 0:
                 break
 
-        # Sanitize the champData
+        # Sanitize the data
         data = data.replace('=', ':')
         data = data.replace('["', '"')
         data = data.replace('"]', '"')
@@ -110,7 +112,7 @@ class LolWikiDataHandler:
         data = data.replace('[5]', '5')
         data = data.replace('[6]', '6')
 
-        # Return the champData as a list of Champions
+        # Return the data as a list of Champions
         data = eval(data)
         for name, d in data.items():
             if name == "Kled & Skaarl":
@@ -121,6 +123,9 @@ class LolWikiDataHandler:
     def _render_champion_data(self, name: str, data: Dict) -> Champion:
         if name == "Kled & Skaarl":
             name = "Kled"
+        data["skill_p"] = data["skill_i"]
+        del data["skill_i"]
+        #I don't actually think I need to do this but I did it anyway
         print(name)
         adaptive_type = data["adaptivetype"]
         if adaptive_type.upper() in ("PHYSICAL", "MIXED,PHYSICAL"):
@@ -216,8 +221,8 @@ class LolWikiDataHandler:
             abilities=dict([
                 self._render_abilities(champion_name=name, abilities=[
                     self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                    for ability_name in data["skill_i"].values() if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
-                ]),
+                    for ability_name in data["skill_p"].values() if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
+                ]),#swapped skill_i to skill_p
                 self._render_abilities(champion_name=name, abilities=[
                     self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                     for ability_name in data["skill_q"].values() if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
@@ -254,12 +259,17 @@ class LolWikiDataHandler:
         return HTMLAbilityWrapper(soup)
 
     def _render_abilities(self, champion_name, abilities: List[HTMLAbilityWrapper]) -> Tuple[str, List[Ability]]:
-        inputs, abilities = abilities, []  # rename variables
+        inputs, abilities = abilities, [] # rename variables
         skill_key = inputs[0]["skill"]
+        #swap I to P to make it cleaner
+        if skill_key == "I":
+            skill_key = "P"
         for data in inputs:
             _skill_key = data["skill"]
+            if _skill_key == "I":
+                _skill_key = "P"
             if champion_name == "Aphelios" and data["name"] in ("Calibrum", "Severum", "Gravitum", "Infernum", "Crescendum"):
-                _skill_key = "I"
+                _skill_key = "P"
             if champion_name == "Gnar" and data["name"] in ("Boulder Toss",):
                 _skill_key = "Q"
             assert _skill_key == skill_key
@@ -270,7 +280,7 @@ class LolWikiDataHandler:
                 raise ValueError(data)
 
             nvalues = 5 if _skill_key in ('Q', 'W', 'E') else 3
-            if champion_name == "Aphelios" and _skill_key == "I":
+            if champion_name == "Aphelios" and _skill_key == "P":
                 nvalues = 6
             elif champion_name == "Heimerdinger":
                 nvalues = None
@@ -282,7 +292,7 @@ class LolWikiDataHandler:
                 nvalues = 6
             elif champion_name == "Karma":
                 nvalues = None
-            elif champion_name == "Kindred" and _skill_key == "I":
+            elif champion_name == "Kindred" and _skill_key == "P":
                 nvalues = 2
             elif champion_name == "Nidalee":
                 nvalues = None
@@ -534,7 +544,7 @@ class ParsingAndRegex:
     def get_units(not_parsed: List[str]) -> str:
         assert len(not_parsed) == 2
         assert not_parsed[0] == ''
-        return not_parsed[1]
+        return not_parsed[1].strip() #strip to remove space from start
 
     @staticmethod
     def get_modifier(mod: str, nvalues: int) -> [List[str], List[Union[int, float]]]:
@@ -559,7 +569,7 @@ class ParsingAndRegex:
             scalings = parse_top_level_parentheses(numbers)
         scalings = [scaling for scaling in scalings if scaling != '(based on level)']
         for scaling in scalings:
-            numbers = numbers.replace(scaling, '').strip()  # remove the scaling part of the string for processing later
+            numbers = numbers.replace(scaling, '').strip()# remove the scaling part of the string for processing later
         scalings = [x.strip() for x in scalings]
         for i, scaling in enumerate(scalings):
             if scaling.startswith('(') and scaling.endswith(')'):
@@ -569,19 +579,32 @@ class ParsingAndRegex:
             scalings[i] = scaling
         return numbers, scalings
 
-
 def main():
     handler = LolWikiDataHandler(use_cache=False)
+<<<<<<< HEAD:lolstaticdata/lolwiki2.py
+    directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), "..","champData"))
+    if not os.path.exists(directory):
+        os.mkdir(directory)
+    champions = []
+    for champion in handler.get_champions():
+        champions.append(champion)
+        jsonfn = os.path.join(directory, champion.key + ".json")
+=======
     directory = os.path.dirname(os.path.realpath(__file__)) + "/"
 
     champions = []
     for champion in handler.get_champions():
         champions.append(champion)
         jsonfn = directory + f"/../champions/{champion.key}.json"
+>>>>>>> origin/master:lolstaticdata/pull_champions_wiki.py
         with open(jsonfn, 'w') as f:
             f.write(champion.__json__(indent=2))
 
+<<<<<<< HEAD:lolstaticdata/lolwiki2.py
+    jsonfn = os.path.join(directory, "champions.json")
+=======
     jsonfn = directory + f"/../champions.json"
+>>>>>>> origin/master:lolstaticdata/pull_champions_wiki.py
     jsons = {}
     for champion in champions:
         jsons[champion.key] = json.loads(champion.__json__())

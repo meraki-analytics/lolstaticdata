@@ -1,25 +1,41 @@
 {
   "name": "Morellonomicon",
   "id": 3165,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Oblivion Orb",
-    "Blasting Wand"
+    3916,
+    1026
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3165.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Touch of Death",
-      "effects": "+15 magic penetration."
+      "effects": "+15 magic penetration.",
+      "range": null,
+      "stats": [
+        {
+          "magicPenetration": {
+            "flat": "15",
+            "percent": 0.0,
+            "perLevel": 0.0,
+            "percentPerLevel": 0.0,
+            "percentBase": 0.0,
+            "percentBonus": 0.0
+          }
+        }
+      ]
     },
     {
       "unique": true,
       "name": "Cursed Strike",
-      "effects": "Dealing magic damage to an enemy champion inflicts them with Grievous Wounds for 3 seconds."
+      "effects": "Dealing magic damage to an enemy champion inflicts them with Grievous Wounds for 3 seconds.",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -28,8 +44,6 @@
     "abilityPower": {
       "flat": 70.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -38,8 +52,6 @@
     "health": {
       "flat": 300.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,

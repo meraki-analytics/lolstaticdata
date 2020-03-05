@@ -1,25 +1,32 @@
 {
   "name": "Phantom Dancer",
   "id": 3046,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    "Dagger",
-    "Zeal"
+    1042,
+    3086
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3046.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "pd",
+  "nicknames": [
+    "pd"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Spectral Waltz",
-      "effects": "Basic attacking a champion grants ghosting and 7% bonus movement speed for 2 seconds."
+      "effects": "Basic attacking a champion grants ghosting and 7% bonus movement speed for 2 seconds.",
+      "range": null,
+      "stats": []
     },
     {
       "unique": true,
       "name": "Lifeline",
-      "effects": "If you would take damage that would reduce maximum health below 30%, you first gain a shield that absorbs 240 \u2212 600 (based on level) damage decaying over 2 seconds (90 second cooldown)."
+      "effects": "If you would take damage that would reduce maximum health below 30%, you first gain a shield that absorbs 240 \u2212 600 (based on level) damage decaying over 2 seconds (90 second cooldown).",
+      "range": null,
+      "stats": []
     }
   ],
   "active": [],
@@ -28,8 +35,6 @@
     "attackSpeed": {
       "flat": 30.0,
       "percent": 0.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -38,8 +43,6 @@
     "criticalStrikeChance": {
       "flat": 0.0,
       "percent": 25.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -48,8 +51,6 @@
     "movespeed": {
       "flat": 0.0,
       "percent": 5.0,
-      "unique": 0.0,
-      "uniquePercent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
