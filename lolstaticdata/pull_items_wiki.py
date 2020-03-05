@@ -504,16 +504,16 @@ def get_item_urls(use_cache: bool) -> List[str]:
 
 
 def main():
-    directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), "..","items"))
+    directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), ".."))
     use_cache = False
-    if not os.path.exists(directory):
-        os.mkdir(directory)
+    if not os.path.exists(os.path.join(directory,"items")):
+        os.mkdir(os.path.join(directory,"items"))
     item_urls = get_item_urls(use_cache)
     jsons = {}
     for url in item_urls:
         item = ItemParser.download(url)
         if item is not None:
-            jsonfn = os.path.join(directory, str(item.id) + ".json")
+            jsonfn = os.path.join(directory,"items" ,str(item.id) + ".json")
             with open(jsonfn, 'w') as f:
                 f.write(item.__json__(indent=2))
             jsons[item.id] = json.loads(item.__json__())

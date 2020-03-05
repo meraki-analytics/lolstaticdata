@@ -1,0 +1,1081 @@
+{
+  "id": 78,
+  "key": "Poppy",
+  "name": "Poppy",
+  "title": "Keeper of the Hammer",
+  "fullName": "",
+  "resource": "MANA",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "stats": {
+    "health": {
+      "flat": 540,
+      "percent": 0.0,
+      "perLevel": 90,
+      "percentPerLevel": 0.0
+    },
+    "healthRegen": {
+      "flat": 8,
+      "percent": 0.0,
+      "perLevel": 0.8,
+      "percentPerLevel": 0.0
+    },
+    "mana": {
+      "flat": 280,
+      "percent": 0.0,
+      "perLevel": 40,
+      "percentPerLevel": 0.0
+    },
+    "manaRegen": {
+      "flat": 7,
+      "percent": 0.0,
+      "perLevel": 0.7,
+      "percentPerLevel": 0.0
+    },
+    "armor": {
+      "flat": 38,
+      "percent": 0.0,
+      "perLevel": 3.5,
+      "percentPerLevel": 0.0
+    },
+    "magicResistance": {
+      "flat": 32,
+      "percent": 0.0,
+      "perLevel": 1.25,
+      "percentPerLevel": 0.0
+    },
+    "attackDamage": {
+      "flat": 64,
+      "percent": 0.0,
+      "perLevel": 4,
+      "percentPerLevel": 0.0
+    },
+    "movespeed": {
+      "flat": 345,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "acquisitionRadius": 400,
+    "selectionRadius": 95,
+    "pathingRadius": 35,
+    "gameplayRadius": 55,
+    "criticalStrikeDamage": 200,
+    "criticalStrikeDamageModifier": 1.0,
+    "attackSpeed": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 2.5,
+      "percentPerLevel": 0.0
+    },
+    "attackSpeedRatio": 0.625,
+    "attackCastTime": 0.375,
+    "attackTotalTime": 1.60000002384185,
+    "attackDelayOffset": 0,
+    "attackRange": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageTaken": 0.95,
+    "aramDamageDealt": 1.0,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 1.0,
+    "urfDamageDealt": 1.0,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "FIGHTER",
+    "TANK",
+    "WARDEN"
+  ],
+  "attributeRatings": {
+    "damage": 2,
+    "toughness": 3,
+    "control": 3,
+    "mobility": 2,
+    "utility": 1,
+    "abilityReliance": 75,
+    "attack": 6,
+    "defense": 7,
+    "magic": 2,
+    "difficulty": 2
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Iron Ambassador",
+        "effects": [
+          {
+            "description": "Innate: Poppy periodically  throws her buckler as her next basic attack, gaining  350 bonus range and dealing 20 \u2212 180 (based on level)  bonus magic damage. The buckler then falls near her target, where it remains for up to 4 seconds.",
+            "icon": "Iron Ambassador.png",
+            "leveling": []
+          },
+          {
+            "description": "When Poppy picks up the buckler, she  shields herself for  15 / 17.5 / 20% (based on level) maximum health for 3 seconds. If the buckler kills its target, it bounces back to Poppy automatically. Enemy  champions can step on the buckler to destroy it.",
+            "icon": "Iron Ambassador 2.png",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                16,
+                12,
+                8
+              ],
+              "units": [
+                " (based on level)",
+                " (based on level)",
+                " (based on level)"
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": "False",
+        "resource": null,
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "Proc",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "PENDING FOR TEST: Iron Ambassador's  interactions with  dodging,  blocking, and  blinding effects.",
+        "blurb": "Poppy throws her buckler, gaining range and bonus magic damage. The buckler lands at a nearby location and Poppy can pick it up to gain a shield. Enemies can step on the buckler to destroy it.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "Iron Ambassador",
+        "effects": [
+          {
+            "description": "Innate: Poppy periodically  throws her buckler as her next basic attack, gaining  350 bonus range and dealing 20 \u2212 180 (based on level)  bonus magic damage. The buckler then falls near her target, where it remains for up to 4 seconds.",
+            "icon": "Iron Ambassador.png",
+            "leveling": []
+          },
+          {
+            "description": "When Poppy picks up the buckler, she  shields herself for  15 / 17.5 / 20% (based on level) maximum health for 3 seconds. If the buckler kills its target, it bounces back to Poppy automatically. Enemy  champions can step on the buckler to destroy it.",
+            "icon": "Iron Ambassador 2.png",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                16,
+                12,
+                8
+              ],
+              "units": [
+                " (based on level)",
+                " (based on level)",
+                " (based on level)"
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": "False",
+        "resource": null,
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "Proc",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "PENDING FOR TEST: Iron Ambassador's  interactions with  dodging,  blocking, and  blinding effects.",
+        "blurb": "Poppy throws her buckler, gaining range and bonus magic damage. The buckler lands at a nearby location and Poppy can pick it up to gain a shield. Enemies can step on the buckler to destroy it.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Hammer Shock",
+        "effects": [
+          {
+            "description": "Active: Poppy smashes the ground in front of her, dealing  physical damage to all enemies hit. Against  monsters, the damage based on their maximum health is capped.",
+            "icon": "Hammer Shock.png",
+            "leveling": [
+              {
+                "attribute": "Initial Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      60,
+                      80,
+                      100,
+                      120
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      90,
+                      90,
+                      90,
+                      90,
+                      90
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      8,
+                      8,
+                      8,
+                      8,
+                      8
+                    ],
+                    "units": [
+                      "% of target's maximum health",
+                      "% of target's maximum health",
+                      "% of target's maximum health",
+                      "% of target's maximum health",
+                      "% of target's maximum health"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      80,
+                      120,
+                      160,
+                      200,
+                      240
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      180,
+                      180,
+                      180,
+                      180,
+                      180
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      16,
+                      16,
+                      16,
+                      16,
+                      16
+                    ],
+                    "units": [
+                      "% of target's maximum health",
+                      "% of target's maximum health",
+                      "% of target's maximum health",
+                      "% of target's maximum health",
+                      "% of target's maximum health"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Initial Monster Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      90,
+                      140,
+                      190,
+                      240,
+                      290
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      90,
+                      90,
+                      90,
+                      90,
+                      90
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Monster Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      180,
+                      280,
+                      380,
+                      480,
+                      580
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      180,
+                      180,
+                      180,
+                      180,
+                      180
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "The impacted ground becomes unstable,  slowing enemies standing on it before erupting after 1 second, dealing the same physical damage to all enemies hit.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Slow",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      25,
+                      30,
+                      35,
+                      40
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                35,
+                40,
+                45,
+                50,
+                55
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                8,
+                7,
+                6,
+                5,
+                4
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "Special",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": "FALSE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Spell shields will block only a single instance of damage.",
+        "blurb": "Poppy swings her hammer, dealing damage and creating a zone that will slow enemies and explode after a delay.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "430"
+      }
+    ],
+    "W": [
+      {
+        "name": "Steadfast Presence",
+        "effects": [
+          {
+            "description": "Passive - Stubborn to a Fault: Poppy's  total armor and  total magic resistance are both increased by 10%, doubled to 20% when she falls  below 40% maximum health.",
+            "icon": "Stubborn to a Fault.png",
+            "leveling": []
+          },
+          {
+            "description": "Active: Poppy gains  40% bonus movement speed for 2 seconds and generates a barrier around herself for the duration, causing all enemies who  dash within to be  knocked down, dealt magic damage, and are both  grounded and  slowed by 25% for 2 seconds.",
+            "icon": "Steadfast Presence.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      70,
+                      110,
+                      150,
+                      190,
+                      230
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      70,
+                      70,
+                      70,
+                      70,
+                      70
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Steadfast Presence can only block a single dash per enemy per cast.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                24,
+                22,
+                20,
+                18,
+                16
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "none",
+        "affects": "Self",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "aoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Steadfast Presence has no cast time and does not interrupt Poppy's previous orders.\n Steadfast Presence does not stop  dashes that are classified as  unstoppable or they are  untargetable while dashing ( Playful /  Trickster,  Onslaught of Shadows,  Cataclysm,  Fate's Call,  Unstoppable Force,  Twisted Advance,  Paranoia,  Void Rush,  Assault and Battery,  Infinite Duress,  Death Mark).\n Steadfast Presence does not stop  lunging effects.",
+        "blurb": "Poppy passively gains Armor and Magic Resist. This bonus increases when she is low on Health. Poppy can activate Steadfast Presence to stop enemy dashes around her and gain movement speed.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "400",
+        "targetRange": null
+      },
+      {
+        "name": "Steadfast Presence",
+        "effects": [
+          {
+            "description": "Passive - Stubborn to a Fault: Poppy's  total armor and  total magic resistance are both increased by 10%, doubled to 20% when she falls  below 40% maximum health.",
+            "icon": "Stubborn to a Fault.png",
+            "leveling": []
+          },
+          {
+            "description": "Active: Poppy gains  40% bonus movement speed for 2 seconds and generates a barrier around herself for the duration, causing all enemies who  dash within to be  knocked down, dealt magic damage, and are both  grounded and  slowed by 25% for 2 seconds.",
+            "icon": "Steadfast Presence.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      70,
+                      110,
+                      150,
+                      190,
+                      230
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      70,
+                      70,
+                      70,
+                      70,
+                      70
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Steadfast Presence can only block a single dash per enemy per cast.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                24,
+                22,
+                20,
+                18,
+                16
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "none",
+        "affects": "Self",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "aoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Steadfast Presence has no cast time and does not interrupt Poppy's previous orders.\n Steadfast Presence does not stop  dashes that are classified as  unstoppable or they are  untargetable while dashing ( Playful /  Trickster,  Onslaught of Shadows,  Cataclysm,  Fate's Call,  Unstoppable Force,  Twisted Advance,  Paranoia,  Void Rush,  Assault and Battery,  Infinite Duress,  Death Mark).\n Steadfast Presence does not stop  lunging effects.",
+        "blurb": "Poppy passively gains Armor and Magic Resist. This bonus increases when she is low on Health. Poppy can activate Steadfast Presence to stop enemy dashes around her and gain movement speed.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "400",
+        "targetRange": null
+      }
+    ],
+    "E": [
+      {
+        "name": "Heroic Charge",
+        "effects": [
+          {
+            "description": "Active: Poppy  dashes to the target enemy, dealing physical damage and  carrying them along with her for up to 300 units.",
+            "icon": "Heroic Charge.png",
+            "leveling": [
+              {
+                "attribute": "Initial Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      80,
+                      100,
+                      120,
+                      140
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      50,
+                      50,
+                      50,
+                      50,
+                      50
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      120,
+                      160,
+                      200,
+                      240,
+                      280
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If they collide with terrain, she deals them the same physical damage again and  stuns them.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Stun Duration",
+                "modifiers": [
+                  {
+                    "values": [
+                      1.6,
+                      1.7,
+                      1.8,
+                      1.9,
+                      2
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Heroic Charge applies spell effects twice (once when Poppy hits her target and once she stuns them against a wall).\n Poppy can use Heroic Charge to go through walls provided her target is on the opposite side when she casts.\n Heroic Charge interacts with impassable player-created terrain ( Crystallize,  Emperor's Divide,  Cataclysm,  Pillar of Ice).",
+        "blurb": "Poppy dashes to the target and pushes it back. If the target is pushed into a wall, it is stunned.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "475"
+      }
+    ],
+    "R": [
+      {
+        "name": "Keeper's Verdict",
+        "effects": [
+          {
+            "description": "Active: Poppy  charges for up to 4 seconds,  slowing herself by 15% for the duration. Keeper's Verdict can be recast at any time within its duration, and its  cooldown is set to 30 seconds if canceled.",
+            "icon": "Keeper's Verdict.png",
+            "leveling": []
+          },
+          {
+            "description": "Recast: Poppy smashes the ground, sending out a shockwave that travels in the target direction. When it hits an enemy champion, a massive hammer erupts, dealing physical damage to all enemies around it. Enemies struck by the hammer are  knocked back an incredible distance towards their fountain.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      200,
+                      300,
+                      400
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      90,
+                      90,
+                      90
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Instantly releasing the ability ends the charge, dealing 50% reduced damage and  knocking up all enemies around Poppy for 0.75 seconds.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Reduced Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      100,
+                      150,
+                      200
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      45,
+                      45,
+                      45
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Poppy has  sight of enemies she knocks  airborne and they are rendered  untargetable for the duration, with their displacement distance increasing based on how long Keeper's Verdict was charged. An uncharged attack does not render enemies  untargetable.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                140,
+                120,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Area of effect",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Keeper's Verdict only interacts with  Yasuo's  Last Breath when instantly released due to enemies hit becoming  untargetable for the displacement's duration when charged.",
+        "blurb": "Poppy channels a hammer strike that knocks enemies very far away.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "2000",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "1900"
+      }
+    ]
+  },
+  "releaseDate": "2010-01-13",
+  "releasePatch": "1.0.0.70",
+  "patchLastChanged": "10.5",
+  "price": {
+    "blueEssence": 450,
+    "rp": 260
+  }
+}

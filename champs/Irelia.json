@@ -1,0 +1,816 @@
+{
+  "id": 39,
+  "key": "Irelia",
+  "name": "Irelia",
+  "title": "the Blade Dancer",
+  "fullName": "Xan Irelia",
+  "resource": "MANA",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "stats": {
+    "health": {
+      "flat": 580,
+      "percent": 0.0,
+      "perLevel": 95,
+      "percentPerLevel": 0.0
+    },
+    "healthRegen": {
+      "flat": 8.5,
+      "percent": 0.0,
+      "perLevel": 0.85,
+      "percentPerLevel": 0.0
+    },
+    "mana": {
+      "flat": 350,
+      "percent": 0.0,
+      "perLevel": 30,
+      "percentPerLevel": 0.0
+    },
+    "manaRegen": {
+      "flat": 8,
+      "percent": 0.0,
+      "perLevel": 0.8,
+      "percentPerLevel": 0.0
+    },
+    "armor": {
+      "flat": 36,
+      "percent": 0.0,
+      "perLevel": 3,
+      "percentPerLevel": 0.0
+    },
+    "magicResistance": {
+      "flat": 32,
+      "percent": 0.0,
+      "perLevel": 1.25,
+      "percentPerLevel": 0.0
+    },
+    "attackDamage": {
+      "flat": 63,
+      "percent": 0.0,
+      "perLevel": 4,
+      "percentPerLevel": 0.0
+    },
+    "movespeed": {
+      "flat": 335,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "acquisitionRadius": 600,
+    "selectionRadius": 100,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrikeDamage": 200,
+    "criticalStrikeDamageModifier": 1.0,
+    "attackSpeed": {
+      "flat": 0.656,
+      "percent": 0.0,
+      "perLevel": 2.5,
+      "percentPerLevel": 0.0
+    },
+    "attackSpeedRatio": 0.656000018119812,
+    "attackCastTime": 0.300000011920928,
+    "attackTotalTime": 1.52499997615814,
+    "attackDelayOffset": 0,
+    "attackRange": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageTaken": 0.95,
+    "aramDamageDealt": 1.05,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 0.85,
+    "urfDamageDealt": 1.05,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "ASSASSIN",
+    "DIVER",
+    "FIGHTER"
+  ],
+  "attributeRatings": {
+    "damage": 2,
+    "toughness": 2,
+    "control": 2,
+    "mobility": 3,
+    "utility": 2,
+    "abilityReliance": 30,
+    "attack": 7,
+    "defense": 4,
+    "magic": 5,
+    "difficulty": 2
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Ionian Fervor",
+        "effects": [
+          {
+            "description": "Innate: Irelia gains 1 Ionian Fervor stack for every enemy champion hit by her abilities, or if she hits at least one non-champion, stacking up to 5 times. Ionian Fervor lasts for 6 seconds, with basic attacks against champions and large and epic monsters refreshing the duration.",
+            "icon": "Ionian Fervor.png",
+            "leveling": []
+          },
+          {
+            "description": "Ionian Fervor: Irelia gains 8% \u2212 12% (based on level)  bonus attack speed per stack, up to 40% \u2212 60% (based on level).",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "At maximum stacks, Irelia's basic attacks deal 15 \u2212 66 (based on level) (+ 25% bonus AD)  bonus magic damage on-hit.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "Proc",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Bladesurge",
+        "effects": [
+          {
+            "description": "Passive: Enemy champions and large monsters hit by  Flawless Duet and  Vanguard's Edge's initial barrage are marked for 5 seconds, consumed with Bladesurge.",
+            "icon": "Bladesurge.png",
+            "leveling": []
+          },
+          {
+            "description": "Active: Irelia  dashes through the target enemy, dealing  physical damage, applying on-hit effects and  healing herself. Bladesurge deals increased damage to  minions.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      5,
+                      25,
+                      45,
+                      65,
+                      85
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Minion Bonus Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      55,
+                      75,
+                      95,
+                      115,
+                      135
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Minion Total Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      100,
+                      140,
+                      180,
+                      220
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Heal",
+                "modifiers": [
+                  {
+                    "values": [
+                      12,
+                      14,
+                      16,
+                      18,
+                      20
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Bladesurge's  cooldown is refunded if the target was marked or if it dies to or after Bladesurge has been cast.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Enemies, Self",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Attack",
+        "projectile": null,
+        "onHitEffects": "True",
+        "occurrence": null,
+        "notes": "Bladesurge will only allow Irelia to dash through walls if there is enough space for her on the other side.\n Damage is not dealt to the target if Irelia is disrupted before she reaches their location.\n But the damage cannot be dodged via instant displacement ( Urchin Strike).\n If the target dies within a very short time (~0.5 seconds) of performing Bladesurge, its cooldown will still refresh.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1500 (+ 100% movement speed)",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "600"
+      }
+    ],
+    "W": [
+      {
+        "name": "Defiant Dance",
+        "effects": [
+          {
+            "description": "First Cast: Irelia winds up for up to 1.5 seconds, during which she reduces incoming physical damage by 50% (+ 7% per 100 AP).",
+            "icon": "Defiant Dance.png",
+            "leveling": []
+          },
+          {
+            "description": "Second Cast: After a 0.07-second delay, Irelia swipes with her blades in the target direction, dealing physical damage to all enemies around her and in a line, increased by 0% \u2212 100% (based on channel time).",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Minimum Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      10,
+                      25,
+                      40,
+                      55,
+                      70
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      50,
+                      50,
+                      50,
+                      50,
+                      50
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      40,
+                      40,
+                      40,
+                      40,
+                      40
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      50,
+                      80,
+                      110,
+                      140
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      80,
+                      80,
+                      80,
+                      80,
+                      80
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "The Second Cast activates automatically toward the cursor's direction at the end of the duration.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                70,
+                75,
+                80,
+                85,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                20,
+                18,
+                16,
+                14,
+                12
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "None / Direction",
+        "affects": "Self / Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Area of effect",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Quick Casting utilizes hold-and-release for the two casts.\n Defiant Dance reaches 100% physical damage reduction at 714.29 AP.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "825"
+      }
+    ],
+    "E": [
+      {
+        "name": "Flawless Duet",
+        "effects": [
+          {
+            "description": "Active: Irelia sends a blade to the target location for up to 3.5 seconds. After a 0.15-second delay, Flawless Duet may be recast to send another blade out, and does so automatically at Irelia's position if the first blade would expire, though not if she is  muted or channeling  Defiant Dance or  Teleport.",
+            "icon": "Flawless Duet.png",
+            "leveling": []
+          },
+          {
+            "description": "Once both blades have been placed, they fly toward each other after a 0.25-second delay, dealing magic damage and  stunning all enemies struck for 0.75 seconds after converging.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      70,
+                      110,
+                      150,
+                      190,
+                      230
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      80,
+                      80,
+                      80,
+                      80,
+                      80
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                18,
+                16.5,
+                15,
+                13.5,
+                12
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Ground",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "Area of effect",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Irelia can launch the second blade even if  silenced.\n  Sheen will proc on both casts.\n The blades will not stun or deal damage if they do not converge (i.e  Yasuo's  Wind Wall).",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "775"
+      }
+    ],
+    "R": [
+      {
+        "name": "Vanguard's Edge",
+        "effects": [
+          {
+            "description": "Active: Irelia launches a barrage of blades in the target direction, expanding outward upon hitting an enemy champion and dealing magic damage to all enemies hit.",
+            "icon": "Vanguard's Edge.png",
+            "leveling": [
+              {
+                "attribute": "Barrage Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      125,
+                      225,
+                      325
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      70,
+                      70,
+                      70
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "After expanding, the blades drop on the ground, knocking all enemy units away from them, though not rendering them  airborne, and forming a spade-shaped perimeter around the enemy champion hit for 2.5 seconds. Enemies that pass through the blades are dealt magic damage and are  slowed by 90% for 1.5 seconds.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Perimeter Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      125,
+                      200,
+                      275
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      70,
+                      70,
+                      70
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "The perimeter will point at the same angle Irelia cast it from, but based on the target's center.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                140,
+                120,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Enemies that cross the perimeter are not marked for  Bladesurge.",
+        "blurb": null,
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "1000"
+      }
+    ]
+  },
+  "releaseDate": "2010-11-16",
+  "releasePatch": "1.0.0.105",
+  "patchLastChanged": "9.15",
+  "price": {
+    "blueEssence": 4800,
+    "rp": 880
+  }
+}
