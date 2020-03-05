@@ -119,7 +119,6 @@ class Item(object):
     tier: int
     builds_from: List[int]
     builds_into: List[int]
-    icon: str
     no_effects: bool
     removed: bool
     nicknames: List[str]

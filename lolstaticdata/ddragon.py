@@ -1,6 +1,6 @@
 import requests
 import json
-from modelddragonitem import Item
+from modelitem import Dragon
 
 
 class ddragon:
@@ -36,12 +36,8 @@ class ddragon:
                 recipes.append(eval(x))
         except:
             recipes = []
-        data = Item(
-            builds_from = recipes,
-            builds_into = builds,
-            icon = cls._get_icon(item["image"]["full"])
-        )
-        return data
+        icon = cls._get_icon(item["image"]["full"])
+        return recipes, builds, icon
 
 
 class cdragon:
@@ -66,14 +62,8 @@ class cdragon:
                        print(x)
                except:
                     recipes = []
-               icon = i["iconPath"].replace("icons2d/", "Icons2d")
-               print(i["iconPath"].split("Icons2D")[1])
-               data = Item(
-                   builds_from=recipes,
-                   builds_into=builds,
-                   icon="https://raw.communitydragon.org/latest/game/data/items/icons2d" + i["iconPath"].split("Icons2D")[1].lower()
-               )
-               return data
+               icon="https://raw.communitydragon.org/latest/game/data/items/icons2d" + i["iconPath"].split("Icons2D")[1].lower()
+               return recipes, builds, icon
 
 
 

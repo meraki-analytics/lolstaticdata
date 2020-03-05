@@ -572,13 +572,13 @@ class ParsingAndRegex:
 def main():
     handler = LolWikiDataHandler(use_cache=False)
     directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), ".."))
-    if not os.path.exists(os.path.join(directory,"champs")):
-        os.mkdir(os.path.join(directory,"champs"))
+    if not os.path.exists(os.path.join(directory,"champions")):
+        os.mkdir(os.path.join(directory,"champions"))
 
     champions = []
     for champion in handler.get_champions():
         champions.append(champion)
-        jsonfn = os.path.join(directory,"champs",str(champion.key) + ".json")
+        jsonfn = os.path.join(directory,"champions",str(champion.key) + ".json")
         with open(jsonfn, 'w') as f:
             f.write(champion.__json__(indent=2))
 

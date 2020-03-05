@@ -7,7 +7,6 @@ import re
 from lolstaticdata.utils import download_webpage
 from collections import OrderedDict
 
-from ddragon import ddragon, cdragon
 
 from modelitem import Stats, Shop, Item, Passive, PassiveStats, Active, Aura, ItemAttributes
 from modelcommon import ArmorPenetration, DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, CriticalStrikeChance, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration
@@ -393,50 +392,37 @@ class ItemParser:
             else:
                 nicknames.append(nickname.strip())
 
-        # if not_unique.search(item_data["builds"]):
-        #     build = item_data["builds"]
-        #     if "," in build:
-        #         for i in build.split(","):
-        #             i = cls._parse_recipe_build(i.strip())
-        #             if i is not None:
-        #                 builds_into.append(i)
-        #             else:
-        #                 continue
-        #     else:
-        #         build = cls._parse_recipe_build(build.strip())
-        #         builds_into.append(build)
-        #
-        # if not_unique.match(item_data["recipe"]):
-        #     component = item_data["recipe"]
-        #     if "," in component:
-        #         for i in component.split(","):
-        #             i = cls._parse_recipe_build(i.strip())
-        #             if i is not None:
-        #                 builds_from.append(i)
-        #             else:
-        #                 continue
-        #     else:
-        #         component = cls._parse_recipe_build(component.strip())
-        #         builds_from.append(component)
-        try:
-            datadragon = ddragon._get_item_ddragon(item_data["code"].strip())
-        except KeyError:
-            datadragon = cdragon._get_item_cdragon(cls._parse_item_id(item_data["code"].strip()))
-        if datadragon is not None:
-            builds_from = datadragon.builds_from
-            builds_into = datadragon.builds_into
-            icon = datadragon.icon
-        else:
-            builds_from = None
-            builds_into = None
-            icon = None
+        if not_unique.search(item_data["builds"]):
+            build = item_data["builds"]
+            if "," in build:
+                for i in build.split(","):
+                    i = cls._parse_recipe_build(i.strip())
+                    if i is not None:
+                        builds_into.append(i)
+                    else:
+                        continue
+            else:
+                build = cls._parse_recipe_build(build.strip())
+                builds_into.append(build)
+
+        if not_unique.match(item_data["recipe"]):
+            component = item_data["recipe"]
+            if "," in component:
+                for i in component.split(","):
+                    i = cls._parse_recipe_build(i.strip())
+                    if i is not None:
+                        builds_from.append(i)
+                    else:
+                        continue
+            else:
+                component = cls._parse_recipe_build(component.strip())
+                builds_from.append(component)
         item = Item(
             name=item_data["1"],
             id=cls._parse_item_id(code=item_data["code"].strip()),
             tier=tier,
             builds_from=builds_from,
             builds_into=builds_into,
-            icon=icon,
             no_effects=no_effects,
             removed=removed,
             nicknames=nicknames,
