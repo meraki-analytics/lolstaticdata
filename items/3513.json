@@ -1,17 +1,19 @@
 {
   "name": "Eye of the Herald",
   "id": 3513,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3513.png",
   "noEffects": true,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Glimpse of the Void",
       "effects": "The holder of the Eye of the Herald has Empowered Recall. This passive is lost when the Eye is crushed.",
+      "range": null,
       "stats": []
     }
   ],

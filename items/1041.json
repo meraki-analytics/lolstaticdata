@@ -1,26 +1,28 @@
 {
   "name": "Hunter's Machete",
   "id": 1041,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
-  "buildsInto": [
-    3715,
-    3706
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1041.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "jungle",
+  "nicknames": [
+    "jungle"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Nail",
       "effects": "Basic attacks against monsters deal 35 bonus on-hit physical damage.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Monster Hunter",
       "effects": "Killing large or epic monsters grants +60 bonus experience. Once per game, killing a large monster also grants an additional +150 bonus experience. If your gold from minions is greater than half your gold from monsters, lane minion kills will grant 13 less gold. This penalty is removed at 14 minutes.",
+      "range": null,
       "stats": []
     }
   ],

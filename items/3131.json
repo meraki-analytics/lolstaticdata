@@ -1,21 +1,25 @@
 {
   "name": "Sword of the Divine",
   "id": 3131,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3134,
     1042,
     1042
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3084_widowmaker.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "sotd",
+  "nicknames": [
+    "sotd"
+  ],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "+18 Lethality (11.2 \u2212 18 (based on level) armor penetration)",
+      "range": null,
       "stats": [
         {
           "lethality": {
@@ -35,7 +39,7 @@
       "unique": true,
       "name": null,
       "effects": "For 3 seconds or your next 3 basic attacks, grants 100% bonus attack speed and 100% critical strike chance (90 second cooldown).",
-      "range": 0,
+      "range": null,
       "cooldown": 90.0
     }
   ],

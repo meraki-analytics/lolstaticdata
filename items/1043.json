@@ -1,25 +1,22 @@
 {
   "name": "Recurve Bow",
   "id": 1043,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1042,
     1042
   ],
-  "buildsInto": [
-    3153,
-    null,
-    3124,
-    3091
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1043.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "Basic attacks deal 15 bonus physical damage on-hit.",
+      "range": null,
       "stats": []
     }
   ],

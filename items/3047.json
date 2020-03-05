@@ -1,20 +1,22 @@
 {
   "name": "Ninja Tabi",
   "id": 3047,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1001,
     1029
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3047.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Enhanced Movement",
       "effects": "+45 flat movement speed",
+      "range": null,
       "stats": [
         {
           "movespeed": {
@@ -32,6 +34,7 @@
       "unique": true,
       "name": null,
       "effects": "Reduces incoming damage from all basic attacks by 12% (excluding turret shots).",
+      "range": null,
       "stats": []
     }
   ],

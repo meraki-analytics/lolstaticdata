@@ -1,29 +1,29 @@
 {
   "name": "Tear of the Goddess",
   "id": 3070,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1027,
     1004
   ],
-  "buildsInto": [
-    3003,
-    3004
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3070.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Awe",
       "effects": "Refunds 10% of mana spent.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Mana Charge",
       "effects": "Grants a charge every 4 seconds, up to 3 charges. Each mana expenditure consumes a charge and grants +4 mana, up to a maximum of 750 mana.",
+      "range": null,
       "stats": []
     }
   ],

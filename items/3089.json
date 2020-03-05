@@ -1,20 +1,22 @@
 {
   "name": "Zhonya's Ring",
   "id": 3089,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    1026,
+    1058,
     1058
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3089.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "+25% ability power.",
+      "range": null,
       "stats": [
         {
           "abilityPower": {
@@ -34,7 +36,7 @@
       "unique": true,
       "name": "Stasis",
       "effects": "Put yourself in stasis for 2 seconds, rendering yourself untargetable and invulnerable for the duration, but also unable to move, attack, cast spells, or use items during this time (90 second cooldown).",
-      "range": 0,
+      "range": null,
       "cooldown": 90.0
     }
   ],

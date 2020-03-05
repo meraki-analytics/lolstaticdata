@@ -1,17 +1,21 @@
 {
   "name": "Stealth Ward (Item)",
   "id": 2044,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/1020_glowing_orb.png",
   "noEffects": true,
   "removed": true,
-  "nickname": "green",
+  "nicknames": [
+    "green"
+  ],
   "passives": [
     {
       "unique": false,
       "name": null,
       "effects": "Limit 3 Stealth Wards on the map per player.",
+      "range": null,
       "stats": []
     }
   ],

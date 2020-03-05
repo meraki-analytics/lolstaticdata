@@ -1,25 +1,25 @@
 {
   "name": "Philosopher's Stone",
   "id": 3096,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    1004,
-    1006
+    1006,
+    3301
   ],
   "buildsInto": [
-    3222,
-    3056,
-    3173,
-    2065
+    3069,
+    2302
   ],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3062_soul_pendant.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Transmute",
       "effects": "+ 5 per 10 seconds.",
+      "range": null,
       "stats": []
     }
   ],

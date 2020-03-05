@@ -1,23 +1,24 @@
 {
   "name": "Mercurial Scimitar",
   "id": 3139,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3140,
     1037,
     1053
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3139.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": "Quicksilver",
       "effects": "Removes all crowd control debuffs from your champion and grants +50% movement speed for 1 second (90 second cooldown).",
-      "range": 0,
+      "range": null,
       "cooldown": 90.0
     }
   ],

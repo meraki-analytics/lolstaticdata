@@ -1,24 +1,22 @@
 {
   "name": "Warden's Mail",
   "id": 3082,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1029,
     1029
   ],
-  "buildsInto": [
-    3110,
-    3143,
-    3075
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3082.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Cold Steel",
       "effects": "When hit by basic attacks, cripples source's attack speed by 15% for 1 second.",
+      "range": null,
       "stats": []
     }
   ],

@@ -1,21 +1,23 @@
 {
   "name": "Runaan's Hurricane",
   "id": 3085,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     1042,
     3086,
     1042
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3085.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Wind's Fury",
       "effects": "Basic attacks on-attack fire additional bolts at up to 2 enemies in front of you, each dealing 40% AD physical damage. Bolts apply on-hit effects and are affected by critical strike modifiers.The bolts will target the closest enemies to you that are not the main target.",
+      "range": null,
       "stats": []
     }
   ],

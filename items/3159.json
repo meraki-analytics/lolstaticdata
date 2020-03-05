@@ -1,33 +1,37 @@
 {
   "name": "Grez's Spectral Lantern",
   "id": 3159,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3106,
     1036,
     1042
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3159_soulsight_lantern.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Maim",
       "effects": "Basic attacks against monsters deal 75 bonus magic damage and restore 10 health.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": null,
       "effects": "Gain 30% increased gold from monsters.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Trap Detection",
       "effects": "Nearby stealthed enemy traps are revealed.",
+      "range": null,
       "stats": []
     }
   ],

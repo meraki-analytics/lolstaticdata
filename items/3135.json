@@ -1,20 +1,22 @@
 {
   "name": "Void Staff",
   "id": 3135,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1026,
     1052
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3135.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Dissolve",
       "effects": "Grants 40% magic penetration.",
+      "range": null,
       "stats": [
         {
           "magicPenetration": {

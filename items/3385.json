@@ -1,19 +1,24 @@
 {
   "name": "Wooglet's Witchcrown",
   "id": 3385,
-  "tier": "Tier 4",
+  "tier": 4,
   "buildsFrom": [
     3090
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3385_forge_wooglets_witchcap.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "ornn,forge",
+  "nicknames": [
+    "ornn",
+    "forge"
+  ],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "+25% ability power",
+      "range": null,
       "stats": [
         {
           "abilityPower": {
@@ -33,7 +38,7 @@
       "unique": true,
       "name": "Stasis",
       "effects": "Put yourself in stasis for 2.5 seconds, rendering yourself untargetable and invulnerable for the duration, but also unable to move, attack, cast spells, or use items during this time (120 second cooldown).",
-      "range": 0,
+      "range": null,
       "cooldown": 120.0
     }
   ],

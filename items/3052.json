@@ -1,24 +1,22 @@
 {
   "name": "Jaurim's Fist",
   "id": 3052,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1036,
     1028
   ],
-  "buildsInto": [
-    3022,
-    3053,
-    3748
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3052.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "Killing a unit grants 5 bonus health, stacking up to 20 times for a maximum of 100 bonus health.",
+      "range": null,
       "stats": []
     }
   ],

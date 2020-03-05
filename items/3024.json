@@ -1,25 +1,22 @@
 {
   "name": "Glacial Shroud",
   "id": 3024,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1027,
     1029
   ],
-  "buildsInto": [
-    3110,
-    3025,
-    3800,
-    3050
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3024.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "10.0% cooldown reduction",
+      "range": null,
       "stats": [
         {
           "cooldownReduction": {

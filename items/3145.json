@@ -1,24 +1,22 @@
 {
   "name": "Hextech Revolver",
   "id": 3145,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1052,
     1052
   ],
-  "buildsInto": [
-    3146,
-    3030,
-    3152
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3145.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Magic Bolt",
       "effects": "Damaging an enemy champion with a basic attack shocks them for 50 \u2212 125 (based on level) bonus magic damage on-hit (40 second cooldown, shared with other Hextech items).",
+      "range": null,
       "stats": []
     }
   ],

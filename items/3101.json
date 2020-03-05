@@ -1,23 +1,22 @@
 {
   "name": "Stinger",
   "id": 3101,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1042,
     1042
   ],
-  "buildsInto": [
-    3115,
-    3078
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3101.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "10.0% cooldown reduction",
+      "range": null,
       "stats": [
         {
           "cooldownReduction": {

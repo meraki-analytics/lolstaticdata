@@ -1,19 +1,23 @@
 {
   "name": "Sightstone",
   "id": 2049,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1028
   ],
   "buildsInto": [
-    2303,
+    2045,
+    2301,
     2302,
-    3092,
-    2045
+    2303
   ],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/2049_sightstone.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "Support, Ward",
+  "nicknames": [
+    "Support",
+    "Ward"
+  ],
   "passives": [],
   "active": [
     {
@@ -21,7 +25,7 @@
       "name": "Warding",
       "effects": "Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area for 150 seconds. Holds up to 3 charges which refill upon visiting the shop.",
       "range": 600,
-      "cooldown": 0.0
+      "cooldown": null
     }
   ],
   "auras": [],

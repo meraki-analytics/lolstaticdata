@@ -1,20 +1,24 @@
 {
   "name": "Spirit Visage",
   "id": 3065,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    3067,
-    3211
+    3211,
+    3067
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3065.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "sv",
+  "nicknames": [
+    "sv"
+  ],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "Increases effectiveness of all sources of health restoration by 30% (including health regeneration, life steal and spell vamp).",
+      "range": null,
       "stats": [
         {
           "lifesteal": {

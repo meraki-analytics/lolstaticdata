@@ -1,17 +1,21 @@
 {
   "name": "Vision Ward",
   "id": 2043,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/096_eye_of_the_observer.png",
   "noEffects": true,
   "removed": true,
-  "nickname": "pink",
+  "nicknames": [
+    "pink"
+  ],
   "passives": [
     {
       "unique": false,
       "name": null,
       "effects": "Limit 1 Vision Ward on the map per player.",
+      "range": null,
       "stats": []
     }
   ],

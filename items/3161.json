@@ -1,27 +1,30 @@
 {
   "name": "Spear of Shojin",
   "id": 3161,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     1038,
     3067,
     1036
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3161.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "After casting your ultimate, your next basic attack on-hit within 10 seconds grants Awakened Dragon for 6 seconds (30 second cooldown).",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Awakened Dragon",
       "effects": "Gain 50% bonus attack speed, and basic attacks refund 20% of your remaining basic abilities cooldowns on-attack. Abilities that trigger on-hit effects refund the cooldown on-hit.",
+      "range": null,
       "stats": []
     }
   ],

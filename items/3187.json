@@ -1,20 +1,22 @@
 {
   "name": "Arcane Sweeper (Item)",
   "id": 3187,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3024,
     3067
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3187_hextechsweeper.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Trap Detection",
       "effects": "Nearby stealthed enemy traps are revealed.",
+      "range": null,
       "stats": []
     }
   ],

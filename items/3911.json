@@ -1,22 +1,20 @@
 {
   "name": "Martyr's Gambit",
   "id": 3911,
-  "tier": "Tier 3",
-  "buildsFrom": [
-    3801,
-    3067
-  ],
-  "buildsInto": [],
+  "tier": 3,
+  "buildsFrom": null,
+  "buildsInto": null,
+  "icon": null,
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": null,
       "effects": "Binds yourself to the target allied champion for the next 3 seconds, redirecting 60% of all damage dealt to them to yourself (30 second cooldown).",
-      "range": 0,
+      "range": null,
       "cooldown": 30.0
     }
   ],

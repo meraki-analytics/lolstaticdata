@@ -1,21 +1,19 @@
 {
   "name": "Orb of Winter",
   "id": 3112,
-  "tier": "Tier 3",
-  "buildsFrom": [
-    1057,
-    1006,
-    1006
-  ],
+  "tier": 3,
+  "buildsFrom": [],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3112.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "Grants a shield that absorbs damage. The shield will refresh after a short period without taking damage.",
+      "range": null,
       "stats": []
     }
   ],

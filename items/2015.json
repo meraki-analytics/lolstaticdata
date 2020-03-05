@@ -1,29 +1,28 @@
 {
   "name": "Kircheis Shard",
   "id": 2015,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1042
   ],
-  "buildsInto": [
-    3094,
-    3087,
-    3095
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2015.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Energized",
       "effects": "Moving and basic attacking generates Energize stacks, up to 100.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Jolt",
       "effects": "When fully Energized, your next basic attack deals 80 bonus magic damage on-hit.",
+      "range": null,
       "stats": []
     }
   ],

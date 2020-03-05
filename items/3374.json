@@ -1,19 +1,24 @@
 {
   "name": "Rabadon's Deathcrown",
   "id": 3374,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3089
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3374.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "ornn,forge",
+  "nicknames": [
+    "ornn",
+    "forge"
+  ],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "+40% ability power.",
+      "range": null,
       "stats": [
         {
           "abilityPower": {

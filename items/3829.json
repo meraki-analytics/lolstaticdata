@@ -1,20 +1,19 @@
 {
   "name": "Trickster's Glass",
   "id": 3829,
-  "tier": "Tier 3",
-  "buildsFrom": [
-    3136,
-    1028
-  ],
-  "buildsInto": [],
+  "tier": 3,
+  "buildsFrom": null,
+  "buildsInto": null,
+  "icon": null,
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Eyes of Pain",
       "effects": "+15 magic penetration",
+      "range": null,
       "stats": [
         {
           "magicPenetration": {

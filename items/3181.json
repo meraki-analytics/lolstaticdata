@@ -1,20 +1,22 @@
 {
   "name": "Sanguine Blade",
   "id": 3181,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3134,
     1053
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3181.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "+10 Lethality (6.22 \u2212 10 (based on level) armor penetration)",
+      "range": null,
       "stats": [
         {
           "lethality": {
@@ -32,6 +34,7 @@
       "unique": true,
       "name": "Blood Pursuit",
       "effects": "While near one or fewer visible enemy champions gain 8 lethality and 20% \u2212 80% (based on level) bonus attack speed, decaying over 3 seconds if other enemy champions get too close (1350 range).",
+      "range": 1350,
       "stats": [
         {
           "lethality": {

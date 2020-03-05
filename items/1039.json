@@ -1,26 +1,28 @@
 {
   "name": "Hunter's Talisman",
   "id": 1039,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
-  "buildsInto": [
-    3715,
-    3706
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1039.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "jungle",
+  "nicknames": [
+    "jungle"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Tooth",
       "effects": "Damaging a monster by any means set it aflame, dealing an additional 60 magic damage over 5 seconds while causing you to restore 6 health per second for every enemy you're burning. While in the jungle or river, regenerate 0 \u2212 8 (based on missing mana) mana per second.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Monster Hunter",
       "effects": "Killing large or epic monsters grants +60 bonus experience. Once per game, killing a large monster also grants an additional +150 bonus experience. If your gold from minions is greater than half your gold from monsters, lane minion kills will grant 13 less gold. This penalty is removed at 14 minutes.",
+      "range": null,
       "stats": []
     }
   ],

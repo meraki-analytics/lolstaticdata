@@ -1,24 +1,21 @@
 {
   "name": "Replica Stopwatch",
   "id": 2419,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
-  "buildsInto": [
-    3193,
-    3026,
-    3157
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2419.png",
   "noEffects": true,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": "Stasis",
       "effects": "Put yourself in stasis for 2.5 seconds, rendering yourself untargetable and invulnerable for the duration, but also unable to move, attack, cast spells, or use items during this time.",
-      "range": 0,
-      "cooldown": 0.0
+      "range": null,
+      "cooldown": null
     }
   ],
   "auras": [],

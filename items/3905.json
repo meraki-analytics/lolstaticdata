@@ -1,22 +1,23 @@
 {
   "name": "Twin Shadows",
   "id": 3905,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3108,
     3113
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3905.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": "Spectral Pursuit",
       "effects": "Summons 2 ghosts for 6 seconds that seek out nearby enemy champions. Ghosts, on contact, reveal and slow enemy champion by 40% for 2 \u2212 5 (based on distance traveled) seconds (90 second cooldown).",
-      "range": 0,
+      "range": null,
       "cooldown": 90.0
     }
   ],

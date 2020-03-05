@@ -1,17 +1,22 @@
 {
   "name": "Stat-Stick of Stoicism",
   "id": 4403,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     1038,
     1053,
     3086,
-    1058
+    1058,
+    3067,
+    3105
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/1034_big_stick.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "debug",
+  "nicknames": [
+    "debug"
+  ],
   "passives": [],
   "active": [],
   "auras": [],

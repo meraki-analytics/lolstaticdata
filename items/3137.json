@@ -1,22 +1,23 @@
 {
   "name": "Dervish Blade",
   "id": 3137,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3140,
     3101
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3137.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": "Quicksilver",
       "effects": "Removes all debuffs from your champion. Melee champions also gain +50% movement speed for 1 second. 90 second cooldown.",
-      "range": 0,
+      "range": null,
       "cooldown": 90.0
     }
   ],

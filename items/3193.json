@@ -1,21 +1,23 @@
 {
   "name": "Gargoyle Stoneplate",
   "id": 3193,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     1031,
-    2420,
-    1057
+    1057,
+    2420
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3193.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Stone Skin",
       "effects": "If 3 or more enemy champions are within 850 radius, grants 40 bonus armor and 40 bonus magic resistance.",
+      "range": null,
       "stats": []
     }
   ],
@@ -24,7 +26,7 @@
       "unique": true,
       "name": "Metallicize",
       "effects": "Increases current and maximum health by 40%, as well as champion size, but reduces the damage you deal by 60% for 4 seconds. If Stone Skin is active, instead increases health by 100% (90 second cooldown). Current health percentage is conserved when the effect ends, as well.",
-      "range": 0,
+      "range": null,
       "cooldown": 90.0
     }
   ],

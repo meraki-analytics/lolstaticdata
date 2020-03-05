@@ -1,21 +1,22 @@
 {
   "name": "Greater Stealth Totem",
   "id": 3361,
-  "tier": "Tier 2",
-  "buildsFrom": [
-    3340
-  ],
+  "tier": 2,
+  "buildsFrom": [],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3361.png",
   "noEffects": true,
   "removed": true,
-  "nickname": "yellow",
+  "nicknames": [
+    "yellow"
+  ],
   "passives": [],
   "active": [
     {
       "unique": false,
       "name": null,
       "effects": "Places an Stealth Ward that lasts 180 seconds (60 second cooldown).\nStore a charge every 60 seconds, up to 2 total.",
-      "range": 0,
+      "range": null,
       "cooldown": 60.0
     }
   ],

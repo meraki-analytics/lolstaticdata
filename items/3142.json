@@ -1,20 +1,22 @@
 {
   "name": "Youmuu's Ghostblade",
   "id": 3142,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3133,
     3134
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3142.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "+18 Lethality (11.2 \u2212 18 (based on level) armor penetration)",
+      "range": null,
       "stats": [
         {
           "lethality": {
@@ -32,6 +34,7 @@
       "unique": true,
       "name": null,
       "effects": "+40 movement speed out-of-combat.",
+      "range": null,
       "stats": []
     }
   ],
@@ -40,7 +43,7 @@
       "unique": true,
       "name": null,
       "effects": "Gain +20% movement speed and ghosting for 6 seconds (45 second cooldown).",
-      "range": 0,
+      "range": null,
       "cooldown": 45.0
     }
   ],

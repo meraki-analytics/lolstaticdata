@@ -1,21 +1,23 @@
 {
   "name": "Adaptive Helm",
   "id": 3194,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     1033,
     3211,
     1006
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3194.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "Taking magic damage from a spell or effect reduces all subsequent magic damage taken from that spell or effect by 20% for 4 seconds. Multiple sources of magic damage can have this effect active at any one time and the duration is tracked separately per source.",
+      "range": null,
       "stats": []
     }
   ],

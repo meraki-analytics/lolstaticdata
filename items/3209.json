@@ -1,33 +1,37 @@
 {
   "name": "Spirit of the Elder Lizard",
   "id": 3209,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     1080,
     1036,
     1036
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3209_souleaterlizard.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Incinerate",
       "effects": "Dealing physical damage also deals 14 \u2212 48 (based on level) bonus true damage over 3 seconds.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Butcher",
       "effects": "Against monsters, deal 20% bonus damage and restore 6% of damage dealt to monsters as health and 3% as mana.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Conservation",
       "effects": "You generate Conservation stacks every 1.5 seconds, up to 80. Killing a large monster will consume up to 40 stacks and grant 1 per stack consumed. You may only be in possession of 1 Gold Income item.",
+      "range": null,
       "stats": []
     }
   ],

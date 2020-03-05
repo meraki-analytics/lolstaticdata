@@ -1,15 +1,16 @@
 {
   "name": "Runic Bulwark",
   "id": 3107,
-  "tier": "Tier 4",
+  "tier": 4,
   "buildsFrom": [
-    3097,
-    1033
+    3114,
+    3801
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3107.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [],
   "auras": [
@@ -17,7 +18,7 @@
       "unique": true,
       "name": "Legion",
       "effects": "Nearby allied units gain 10 armor, 25 magic resistance and 10 health regeneration. Nearby minions gain 15 armor, 37.5 magic resistance and 15 health regeneration.",
-      "range": 0
+      "range": null
     }
   ],
   "stats": {

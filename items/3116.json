@@ -1,21 +1,23 @@
 {
   "name": "Rylai's Crystal Scepter",
   "id": 3116,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     1026,
     1052,
     1028
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3116.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Icy",
       "effects": "Damaging abilities and pet attacks slow affected units by 20% for 1 second.",
+      "range": null,
       "stats": []
     }
   ],

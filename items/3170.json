@@ -1,20 +1,22 @@
 {
   "name": "Moonflair Spellblade",
   "id": 3170,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3191,
     1057
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3170_moonflairspellblade.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Tenacity",
       "effects": "Reduces the duration of all crowd control effects by 35% (except for Suppression, Stasis, and Displacements)",
+      "range": null,
       "stats": []
     }
   ],

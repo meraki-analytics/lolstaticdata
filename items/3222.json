@@ -1,20 +1,22 @@
 {
   "name": "Mikael's Crucible",
   "id": 3222,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3028,
     3114
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3222.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Harmony",
       "effects": "Gain +25% base health regeneration for every additional 25% base mana regeneration.",
+      "range": null,
       "stats": []
     }
   ],
@@ -23,7 +25,7 @@
       "unique": true,
       "name": null,
       "effects": "Instantly removes all stuns, roots, taunts, fears, charms, silences and slows on an allied champion, as well as granting 2 seconds of slow immunity. Successfully cleansing an effect will also grant the target 40% bonus movement speed for 2 seconds (120 second cooldown).",
-      "range": 0,
+      "range": null,
       "cooldown": 120.0
     }
   ],

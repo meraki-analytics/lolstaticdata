@@ -1,26 +1,26 @@
 {
   "name": "Puppeteer",
   "id": 3745,
-  "tier": "Tier 3",
-  "buildsFrom": [
-    3028,
-    3067
-  ],
-  "buildsInto": [],
+  "tier": 3,
+  "buildsFrom": null,
+  "buildsInto": null,
+  "icon": null,
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Mana Font",
       "effects": "Restores 2% of your missing mana every 5 seconds.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": null,
       "effects": "Basic attacks mark champions with a string for 6 seconds, which breaks if they move more than 1000 units away.",
+      "range": null,
       "stats": []
     }
   ],
@@ -29,7 +29,7 @@
       "unique": true,
       "name": null,
       "effects": "Pulls all marked champions up to 250 units toward you (45 second cooldown).",
-      "range": 0,
+      "range": null,
       "cooldown": 45.0
     }
   ],

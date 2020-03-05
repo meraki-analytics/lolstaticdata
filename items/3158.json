@@ -1,19 +1,21 @@
 {
   "name": "Ionian Boots of Lucidity",
   "id": 3158,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1001
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3158.png",
   "noEffects": true,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "10.0% cooldown reduction",
+      "range": null,
       "stats": [
         {
           "cooldownReduction": {
@@ -31,6 +33,7 @@
       "unique": true,
       "name": "Enhanced Movement",
       "effects": "+45 flat movement speed",
+      "range": null,
       "stats": [
         {
           "movespeed": {
@@ -48,6 +51,7 @@
       "unique": true,
       "name": null,
       "effects": "Reduces summoner spell cooldowns by 10%.",
+      "range": null,
       "stats": []
     }
   ],

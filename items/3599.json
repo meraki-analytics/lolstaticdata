@@ -1,20 +1,21 @@
 {
   "name": "Black Spear",
   "id": 3599,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3599.png",
   "noEffects": true,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [
     {
       "unique": false,
       "name": "Oathsworn Bond",
       "effects": "Binds with an ally for the remainder of the game, becoming Oathsworn Allies that link within 1100 units.",
-      "range": 0,
-      "cooldown": 0.0
+      "range": null,
+      "cooldown": null
     }
   ],
   "auras": [],

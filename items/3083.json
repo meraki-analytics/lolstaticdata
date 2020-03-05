@@ -1,21 +1,23 @@
 {
   "name": "Warmog's Armor",
   "id": 3083,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     1011,
     3067,
     3801
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3083.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "10.0% cooldown reduction",
+      "range": null,
       "stats": [
         {
           "cooldownReduction": {
@@ -33,12 +35,14 @@
       "unique": false,
       "name": null,
       "effects": "Grants Warmog's Heart if you have at least 3000 maximum health.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Warmog's Heart",
       "effects": "Regenerate [ 2.5% maximum health every half-second ][ 25% maximum health every 5 seconds ]if damage has not been taken in the last 6 seconds (3 second for minions).",
+      "range": null,
       "stats": []
     }
   ],

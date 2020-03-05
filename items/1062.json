@@ -1,17 +1,19 @@
 {
   "name": "Prospector's Blade",
   "id": 1062,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/1062_prospectorsblade.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Prospector",
       "effects": "+150 health",
+      "range": null,
       "stats": []
     }
   ],

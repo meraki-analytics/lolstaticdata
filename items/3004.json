@@ -1,32 +1,36 @@
 {
   "name": "Manamune",
   "id": 3004,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3070,
     1037
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3004.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Awe",
       "effects": "Grants bonus attack damage equal to 2% maximum mana. Refunds 15% of mana spent.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Mana Charge",
       "effects": "Grants a charge every 4 seconds, up to 3 charges. Each basic attack on-hit or mana expenditure consumes a charge and grants +5 mana, up to a maximum of 750 mana.",
+      "range": null,
       "stats": []
     },
     {
       "unique": false,
       "name": null,
       "effects": "Transforms into Muramana at +750 mana.",
+      "range": null,
       "stats": []
     }
   ],

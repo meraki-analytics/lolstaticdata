@@ -1,23 +1,24 @@
 {
   "name": "Spectre's Cowl",
   "id": 3211,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1028,
     1033
   ],
-  "buildsInto": [
-    3194,
-    3065
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3211.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "hat",
+  "nicknames": [
+    "hat"
+  ],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "After taking damage from an enemy champion, gains 150% base health regeneration for 10 seconds.",
+      "range": null,
       "stats": []
     }
   ],

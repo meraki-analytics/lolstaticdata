@@ -1,20 +1,22 @@
 {
   "name": "Ohmwrecker",
   "id": 3056,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     2053,
     3067
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3056_ohmwrecker.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Point Runner",
       "effects": "Builds up to 20% bonus movement speed over 2 seconds while near turrets, fallen turrets and Void Gates.",
+      "range": null,
       "stats": []
     }
   ],
@@ -23,7 +25,7 @@
       "unique": true,
       "name": null,
       "effects": "Targetable enemy turrets within 950 units are prevented from attacking for 3 seconds (120 second cooldown). This effect cannot be applied on the same tower for 8 seconds afterwards.",
-      "range": 0,
+      "range": null,
       "cooldown": 120.0
     }
   ],

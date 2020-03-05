@@ -1,25 +1,34 @@
 {
   "name": "Eleisa's Miracle",
   "id": 3173,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    3096
+    1001
   ],
-  "buildsInto": [],
+  "buildsInto": [
+    1331,
+    1333,
+    1330,
+    1332,
+    1334
+  ],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3158_ionian_boots_of_lucidity.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Aid",
       "effects": "Your Summoner Heal, Clarity and Clairvoyance cooldowns are reduced by 25%.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Eleisa's Blessing",
       "effects": "If you gain 3 levels with this item, you gain all the effects permanently and this item is consumed.",
+      "range": null,
       "stats": []
     }
   ],

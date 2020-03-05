@@ -1,27 +1,32 @@
 {
   "name": "Trinity Force",
   "id": 3078,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3101,
     3057,
     3044
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3078.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "triforce",
+  "nicknames": [
+    "triforce"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Rage",
       "effects": "Basic attacks (on-hit) grant +20 flat movement speed for 2 seconds. Killing a unit grants +60 flat movement speed instead. Bonus movement speed is halved on ranged champions.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Spellblade",
       "effects": "After using an ability, your next basic attack within 10 seconds deals 200% base AD bonus physical damage on-hit (1.5 second cooldown).",
+      "range": null,
       "stats": []
     }
   ],

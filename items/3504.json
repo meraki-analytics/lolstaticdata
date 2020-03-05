@@ -1,20 +1,22 @@
 {
   "name": "Ardent Censer",
   "id": 3504,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3114,
     3113
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3504.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
-      "name": "Outgoing healing and shielding (excluding yourself) enhances you and affected allies with Frenzy for 6 seconds.Frenzy",
-      "effects": "Grants 10% \u2212 30% (based on target's level) bonus attack speed and 5 \u2212 20 (based on target's level) bonus magic damage on-hit.",
+      "name": null,
+      "effects": "Outgoing healing and shielding (excluding yourself) enhances you and affected allies with Frenzy for 6 seconds.Frenzy: Grants 10% \u2212 30% (based on target's level) bonus attack speed and 5 \u2212 20 (based on target's level) bonus magic damage on-hit.",
+      "range": null,
       "stats": []
     }
   ],

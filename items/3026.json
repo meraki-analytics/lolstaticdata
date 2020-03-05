@@ -1,21 +1,25 @@
 {
   "name": "Guardian Angel",
   "id": 3026,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     1038,
     1031,
     2420
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3026.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "ga",
+  "nicknames": [
+    "ga"
+  ],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "Upon taking lethal damage, restores 50% of base health and 30% of maximum mana after 4 seconds of stasis (300 second cooldown).",
+      "range": null,
       "stats": []
     }
   ],

@@ -1,20 +1,22 @@
 {
   "name": "Twin Shadows (3290)",
   "id": 3290,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    3113,
-    3108
+    3108,
+    3113
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3290_wraith_collar_cs.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Trap Detection",
       "effects": "Nearby stealthed enemy traps are revealed.",
+      "range": null,
       "stats": []
     }
   ],
@@ -23,7 +25,7 @@
       "unique": true,
       "name": "Hunt",
       "effects": "Summons up to 2 invulnerable ghosts that seek out the 2 nearest enemy champions for 6 seconds. If a ghost reaches its target, it reveals the target and reduces their movement speed by 40% for 2.5 seconds. If a ghost cannot find a target, it tries to return to the caster. Ghosts that successfully return in this way reduce the item's cooldown by 20 seconds (60 second cooldown).",
-      "range": 0,
+      "range": null,
       "cooldown": 60.0
     }
   ],

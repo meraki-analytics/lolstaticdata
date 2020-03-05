@@ -1,22 +1,23 @@
 {
   "name": "Shurelya's Reverie",
   "id": 2065,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3114,
     3801
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2065.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": null,
       "effects": "Grants you and nearby allies 40% bonus movement speed for 3 seconds (90 second cooldown).",
-      "range": 0,
+      "range": null,
       "cooldown": 90.0
     }
   ],

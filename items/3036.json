@@ -1,20 +1,22 @@
 {
   "name": "Lord Dominik's Regards",
   "id": 3036,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3035,
     1037
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3036.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Last Whisper",
       "effects": "+35% total armor penetration.",
+      "range": null,
       "stats": []
     }
   ],

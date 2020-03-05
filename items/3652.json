@@ -1,20 +1,19 @@
 {
   "name": "Typhoon Claws",
   "id": 3652,
-  "tier": "Tier 2",
-  "buildsFrom": [
-    1037,
-    1042
-  ],
-  "buildsInto": [],
+  "tier": 2,
+  "buildsFrom": null,
+  "buildsInto": null,
+  "icon": null,
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Phantom Hit",
       "effects": "You generate a stack of Malice for 3 seconds each time you attack. At 3 stacks, your next 3 attacks occur in the span of one attack at maximum attack speed (for an effective attack speed of 7.5). The flurried attacks are modified to deal only 50% damage, but otherwise behave like standard attacks.",
+      "range": null,
       "stats": []
     }
   ],

@@ -1,20 +1,22 @@
 {
   "name": "Nashor's Tooth",
   "id": 3115,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3101,
     3108
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3115.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "20.0% cooldown reduction",
+      "range": null,
       "stats": [
         {
           "cooldownReduction": {
@@ -32,6 +34,7 @@
       "unique": true,
       "name": null,
       "effects": "Basic attacks deal 15 (+ 15% AP) bonus magic damage on-hit.",
+      "range": null,
       "stats": []
     }
   ],

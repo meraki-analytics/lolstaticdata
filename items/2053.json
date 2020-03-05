@@ -1,23 +1,27 @@
 {
   "name": "Raptor Cloak",
   "id": 2053,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1006,
     1029
   ],
   "buildsInto": [
     3056,
+    3306,
+    3060,
     3512
   ],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/2053_raptor_cloak.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Point Runner",
       "effects": "Builds up to 20% bonus movement speed over 2 seconds while near turrets, fallen turrets and Void Gates.",
+      "range": null,
       "stats": []
     }
   ],

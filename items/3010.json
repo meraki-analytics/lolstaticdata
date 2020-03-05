@@ -1,23 +1,22 @@
 {
   "name": "Catalyst the Protector",
   "id": 3010,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1028,
     1027
   ],
-  "buildsInto": [
-    3800,
-    3027
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3010.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Valor's Reward",
       "effects": "On leveling up, restores 150 health and 200 mana over 8 seconds.",
+      "range": null,
       "stats": []
     }
   ],

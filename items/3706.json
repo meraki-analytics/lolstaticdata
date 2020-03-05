@@ -1,43 +1,45 @@
 {
   "name": "Stalker's Blade",
   "id": 3706,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    1041,
-    1039
+    1039,
+    1041
   ],
-  "buildsInto": [
-    null,
-    null,
-    null,
-    null
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3706.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "jungle",
+  "nicknames": [
+    "jungle"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Chilling Smite",
       "effects": "Upgrades Smite to Chilling Smite.",
+      "range": null,
       "stats": []
     },
     {
       "unique": false,
       "name": null,
       "effects": "Chilling Smite can be cast on enemy champions, dealing 28 \u2212 166 (based on level) true damage and slowing the target by 20% for 2 seconds, while also increasing your own movement speed by 20% for the same duration.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Tooth and Nail",
       "effects": "Basic attacks versus monsters deal 40 bonus physical damage. Damaging a monster by any means set it aflame, dealing an additional 80 magic damage over 5 seconds while causing you to restore 6 health per second for every enemy you're burning. While in the jungle or river, regenerate 0 \u2212 8 (based on missing mana) mana per second.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Monster Hunter",
       "effects": "Killing large or epic monsters grants +60 bonus experience. Once per game, killing a large monster also grants an additional +150 bonus experience. If your gold from minions is greater than half your gold from monsters, lane minion kills will grant 13 less gold. This penalty is removed at 14 minutes.",
+      "range": null,
       "stats": []
     }
   ],

@@ -1,25 +1,21 @@
 {
   "name": "Kindlegem",
   "id": 3067,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1028
   ],
-  "buildsInto": [
-    3071,
-    3152,
-    3109,
-    3065,
-    3083
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3067.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "10.0% cooldown reduction",
+      "range": null,
       "stats": [
         {
           "cooldownReduction": {

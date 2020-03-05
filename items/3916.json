@@ -1,22 +1,22 @@
 {
   "name": "Oblivion Orb",
   "id": 3916,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1028,
     1052
   ],
-  "buildsInto": [
-    3165
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3916.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Touch of Death",
       "effects": "+15 magic penetration.",
+      "range": null,
       "stats": [
         {
           "magicPenetration": {

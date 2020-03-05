@@ -1,26 +1,29 @@
 {
   "name": "Randuin's Omen",
   "id": 3143,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3082,
     1011
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3143.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "-20% critical strike damage taken from basic attacks.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Cold Steel",
       "effects": "When hit by basic attacks, cripples source's attack speed by 15% for 1 second.",
+      "range": null,
       "stats": []
     }
   ],
@@ -29,7 +32,7 @@
       "unique": true,
       "name": null,
       "effects": "Slows all enemy units within 500 units range by 55% for 2 seconds (60 second cooldown).",
-      "range": 0,
+      "range": null,
       "cooldown": 60.0
     }
   ],

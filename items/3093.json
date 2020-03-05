@@ -1,29 +1,30 @@
 {
   "name": "Avarice Blade",
   "id": 3093,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
-    1051
+    1042
   ],
   "buildsInto": [
-    3005,
-    3087,
-    3142
+    3210
   ],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3093_avarice_blade.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Avarice",
       "effects": "+ 3 per 10 seconds",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Greed",
       "effects": "Grants 2 upon killing a unit.",
+      "range": null,
       "stats": []
     }
   ],

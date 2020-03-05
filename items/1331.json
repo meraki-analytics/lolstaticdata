@@ -1,17 +1,21 @@
 {
   "name": "Alacrity",
   "id": 1331,
-  "tier": "Tier 1",
-  "buildsFrom": [],
+  "tier": 1,
+  "buildsFrom": [
+    3158
+  ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/1331_enchantment_alacrity.png",
   "noEffects": true,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Alacrity",
       "effects": "Grants +20 bonus movement speed.",
+      "range": null,
       "stats": []
     }
   ],

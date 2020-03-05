@@ -1,20 +1,22 @@
 {
   "name": "Ionic Spark",
   "id": 3178,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1043,
     1028
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3178_ionicspark.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "Every fourth basic attack unleashes a chain lightning, dealing 125 magic damage to up to 4 targets (400 bounce range). Targets cannot be hit twice by the same lightning.",
+      "range": null,
       "stats": []
     }
   ],

@@ -1,21 +1,25 @@
 {
   "name": "Bloodthirster",
   "id": 3072,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     1038,
-    1053,
-    1036
+    1036,
+    1053
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3072.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "bt",
+  "nicknames": [
+    "bt"
+  ],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "+20% life steal",
+      "range": null,
       "stats": [
         {
           "lifesteal": {
@@ -33,6 +37,7 @@
       "unique": true,
       "name": null,
       "effects": "Your life steal overheals you, converting the excess healing into a shield that absorbs up to 50 \u2212 350 (based on level) damage and decays when out-of-combat for 25 seconds.",
+      "range": null,
       "stats": []
     }
   ],

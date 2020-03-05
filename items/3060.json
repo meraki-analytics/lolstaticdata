@@ -1,20 +1,24 @@
 {
   "name": "Banner of Command",
   "id": 3060,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3105,
     2053
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3060_banner_of_command.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "flag",
+  "nicknames": [
+    "flag"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Point Runner",
       "effects": "Builds up to 20% bonus movement speed over 2 seconds while near turrets, fallen turrets and Void Gates.",
+      "range": null,
       "stats": []
     }
   ],

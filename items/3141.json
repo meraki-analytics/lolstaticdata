@@ -1,19 +1,21 @@
 {
   "name": "Sword of the Occult",
   "id": 3141,
-  "tier": "Tier 2",
-  "buildsFrom": [
-    1036
-  ],
+  "tier": 2,
+  "buildsFrom": [],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3034_kenyus_kukri.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "soto",
+  "nicknames": [
+    "soto"
+  ],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "Grants 5 attack damage per stack and starts with 5 stacks upon first purchase. Grants 2 stacks for a kill or 1 stack for an assist, maximum 20 stacks, for a total of 100 attack damage. Half of the stacks are lost upon death. At 20 stacks, grants 20% bonus attack speed.",
+      "range": null,
       "stats": []
     }
   ],

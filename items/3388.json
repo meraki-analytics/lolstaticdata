@@ -1,19 +1,24 @@
 {
   "name": "Youmuu's Wraithblade",
   "id": 3388,
-  "tier": "Tier 4",
+  "tier": 4,
   "buildsFrom": [
     3142
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3388.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "ornn,forge",
+  "nicknames": [
+    "ornn",
+    "forge"
+  ],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "+25 Lethality (15.56 \u2212 25 (based on level) armor penetration)",
+      "range": null,
       "stats": [
         {
           "lethality": {
@@ -31,6 +36,7 @@
       "unique": true,
       "name": null,
       "effects": "+40 movement speed out-of-combat.",
+      "range": null,
       "stats": []
     }
   ],
@@ -39,7 +45,7 @@
       "unique": true,
       "name": null,
       "effects": "Gain +20% movement speed and ghosting for 6 seconds (45 second cooldown).",
-      "range": 0,
+      "range": null,
       "cooldown": 45.0
     }
   ],

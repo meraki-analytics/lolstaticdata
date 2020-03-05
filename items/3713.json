@@ -1,30 +1,39 @@
 {
   "name": "Ranger's Trailblazer",
   "id": 3713,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
+    1039,
     1041
   ],
   "buildsInto": [
-    null,
-    3708,
-    null,
-    null
+    1417,
+    1404,
+    1405,
+    1406,
+    3724,
+    3723,
+    3725
   ],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3713_rangers_trailblazer.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "jungle",
+  "nicknames": [
+    "jungle"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Blasting Smite",
       "effects": "Upgrades Smite to Blasting Smite. Blasting Smite deals 50% splash damage to all surrounding minions and monsters and stuns all damaged units for 1.5 seconds. If cast on a monster, you will also restore 15% of your missing health and mana.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Jungler",
       "effects": "Deal 45 magic damage on hit to monsters over 2 seconds and gain 10 health and 5 mana per second while in combat with monsters.",
+      "range": null,
       "stats": []
     }
   ],

@@ -1,17 +1,19 @@
 {
   "name": "Crystalline Flask",
   "id": 2041,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/2041_crystalline_flask.png",
   "noEffects": true,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "Holds 3 charges and refills upon visiting the shop.",
+      "range": null,
       "stats": []
     }
   ],

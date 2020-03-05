@@ -1,20 +1,26 @@
 {
   "name": "Blade of the Ruined King",
   "id": 3153,
-  "tier": "Tier 4",
+  "tier": 4,
   "buildsFrom": [
     3144,
     1043
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3153.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "brk,bork,botrk",
+  "nicknames": [
+    "brk",
+    "bork",
+    "botrk"
+  ],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "Basic attacks deal 12% of the target's current health bonus physical damage on-hit, with a minimum of 15 damage against all targets, and a maximum of 60 damage against minions and monsters.",
+      "range": null,
       "stats": []
     }
   ],

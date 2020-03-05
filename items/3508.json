@@ -1,21 +1,25 @@
 {
   "name": "Essence Reaver",
   "id": 3508,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     1038,
     3133,
     1018
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3508.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "bloothirster",
+  "nicknames": [
+    "bloothirster"
+  ],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "20.0% cooldown reduction",
+      "range": null,
       "stats": [
         {
           "cooldownReduction": {
@@ -33,6 +37,7 @@
       "unique": true,
       "name": null,
       "effects": "Basic attacks refund 1.5% of missing mana on-hit.",
+      "range": null,
       "stats": []
     }
   ],

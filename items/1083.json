@@ -1,23 +1,26 @@
 {
   "name": "Cull",
   "id": 1083,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1083.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "Killing a minion grants +1, up to a maximum of +100.",
+      "range": null,
       "stats": []
     },
     {
       "unique": false,
       "name": null,
       "effects": "After having killed 100 minions, grants an additional +350 and permanently disables this passive.",
+      "range": null,
       "stats": []
     }
   ],

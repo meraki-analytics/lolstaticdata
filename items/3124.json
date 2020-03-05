@@ -1,33 +1,37 @@
 {
   "name": "Guinsoo's Rageblade",
   "id": 3124,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     1052,
     1043,
     1037
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3124.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": false,
       "name": null,
       "effects": "Basic attacks deal 15 bonus magic damage on-hit.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Last Whisper",
       "effects": "Grants 15% total armor penetration.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Dissolve",
       "effects": "Grants 15% magic penetration.",
+      "range": null,
       "stats": [
         {
           "magicPenetration": {
@@ -43,8 +47,9 @@
     },
     {
       "unique": true,
-      "name": "Basic attacks grant 8% bonus attack speed on-attack, after a 0.15 second delay, for 5 seconds, stacking up to 6 times for a maximum of 48% bonus attack speed. Melee champions can fully stack it with their fourth basic attack. While at 6 stacks gain Guinsoo's Rage",
-      "effects": "Every third basic attack triggers a Phantom Hit on-attack that applies on-hit effects to the target unit after a 0.15 second delay.",
+      "name": null,
+      "effects": "Basic attacks grant 8% bonus attack speed on-attack, after a 0.15 second delay, for 5 seconds, stacking up to 6 times for a maximum of 48% bonus attack speed. Melee champions can fully stack it with their fourth basic attack. While at 6 stacks gain Guinsoo's Rage: Every third basic attack triggers a Phantom Hit on-attack that applies on-hit effects to the target unit after a 0.15 second delay.",
+      "range": null,
       "stats": []
     }
   ],

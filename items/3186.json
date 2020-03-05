@@ -1,20 +1,22 @@
 {
   "name": "Kitae's Bloodrazor",
   "id": 3186,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1037,
     1043
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3186_kitaesbloodrazor.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "Basic attack deal 2.5% of target's maximum health bonus magic damage.",
+      "range": null,
       "stats": []
     }
   ],

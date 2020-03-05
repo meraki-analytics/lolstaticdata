@@ -1,38 +1,47 @@
 {
   "name": "Talisman of Ascension",
   "id": 3069,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3096,
-    2053
+    1028
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3069_shurimas_eye.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "Support, Economy, Gold",
+  "nicknames": [
+    "Support",
+    "Economy",
+    "Gold"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Point Runner",
       "effects": "Builds up to 20% bonus movement speed over 2 seconds while near turrets, fallen turrets and Void Gates.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Favor",
       "effects": "Nearby enemy minions, killed by any ally other than you, will sometimes drop a coin that can be picked up to either grant 40 or restore 6% missing mana (minimum 10). Cannon minions will drop a coin as long as you don't kill them.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Bandit",
       "effects": "Grants Bandit.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Quest",
       "effects": "Earn 750 using this item. Reward: Favor is upgraded to Emperor's Favor making champion takedowns grant both the gold and mana. You also grant 8% bonus movement speed to nearby allied champions moving toward you (1250 range).",
+      "range": 1250,
       "stats": []
     }
   ],

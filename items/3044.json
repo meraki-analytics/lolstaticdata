@@ -1,23 +1,22 @@
 {
   "name": "Phage",
   "id": 3044,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1028,
     1036
   ],
-  "buildsInto": [
-    3071,
-    3078
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3044.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Rage",
       "effects": "Basic attacks (on-hit) grant +20 flat movement speed for 2 seconds. Killing a Unit grants +60 flat movement speed instead.",
+      "range": null,
       "stats": []
     }
   ],

@@ -1,26 +1,29 @@
 {
   "name": "Statikk Shiv",
   "id": 3087,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3086,
     2015
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3087.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Energized",
       "effects": "Moving and basic attacking generates Energize stacks, up to 100.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Electroshock",
       "effects": "When fully Energized, your next basic attack deals 120 bonus magic damage on-hit. Energized attacks bounce to 7 targets.",
+      "range": null,
       "stats": []
     }
   ],

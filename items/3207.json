@@ -1,38 +1,43 @@
 {
   "name": "Spirit of the Ancient Golem",
   "id": 3207,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3205,
     3067
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3207_souleatergolem.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "+25% bonus health.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Sapping Barbs",
       "effects": "Grants 60 health regeneration and 45 mana regeneration for 5 seconds whenever you take damage from a monster. Additionally, monsters who attack you bleed for 5% of their maximum health over 3 seconds (capped at 150 damage). Sapping Barbs cannot deal lethal damage.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Conservation",
       "effects": "You generate Conservation stacks every 1.5 seconds, up to 80. Killing a large monster will consume up to 40 stacks and grant 1 per stack consumed. You may only be in possession of 1 Gold Income item.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Trap Detection",
       "effects": "Nearby stealthed enemy traps are revealed.",
+      "range": null,
       "stats": []
     }
   ],

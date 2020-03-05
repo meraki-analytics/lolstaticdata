@@ -1,20 +1,19 @@
 {
   "name": "Pox Arcana",
   "id": 3434,
-  "tier": "Tier 4",
-  "buildsFrom": [
-    3802,
-    1052
-  ],
-  "buildsInto": [],
+  "tier": 4,
+  "buildsFrom": null,
+  "buildsInto": null,
+  "icon": null,
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Pox",
       "effects": "Applies a stack of Pox for 10 seconds whenever you deal ability damage, stacking up to 5 times.",
+      "range": null,
       "stats": []
     }
   ],
@@ -23,7 +22,7 @@
       "unique": true,
       "name": "Disease Harvest",
       "effects": "Deals 100 magic damage plus 20 (+ 5% AP) per stack of Pox (maximum of 200 (+ 25% AP)) to all nearby enemies affected by Pox, and restores 5% of your maximum mana for every Pox stack harvested (60 second cooldown).",
-      "range": 0,
+      "range": null,
       "cooldown": 60.0
     }
   ],

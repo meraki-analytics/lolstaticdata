@@ -1,23 +1,26 @@
 {
   "name": "Doran's Shield",
   "id": 1054,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1054.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": false,
       "name": null,
       "effects": "Basic attacks deal an additional 5 physical damage to minions on-hit.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": null,
       "effects": "After taking damage from an enemy champion, gain health regeneration equal to 0 \u2212 40 (based on current missing health) over 8 seconds. Regeneration is reduced to 66% effectiveness on ranged champions or when triggered by AoE, DoT, or proc effects.",
+      "range": null,
       "stats": []
     }
   ],

@@ -1,26 +1,22 @@
 {
   "name": "Serrated Dirk",
   "id": 3134,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1036,
     1036
   ],
-  "buildsInto": [
-    3147,
-    3814,
-    3181,
-    null,
-    3142
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3134.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "+10 Lethality (6.22 \u2212 10 (based on level) armor penetration)",
+      "range": null,
       "stats": [
         {
           "lethality": {

@@ -1,25 +1,23 @@
 {
   "name": "Lost Chapter",
   "id": 3802,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1052,
     1027,
     1052
   ],
-  "buildsInto": [
-    3003,
-    3030,
-    3285
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3802.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Haste",
       "effects": "Grants an additional 10% cooldown reduction.",
+      "range": null,
       "stats": [
         {
           "cooldownReduction": {
@@ -37,6 +35,7 @@
       "unique": true,
       "name": null,
       "effects": "Upon leveling, restores 20% of your maximum mana over 3 seconds.",
+      "range": null,
       "stats": []
     }
   ],

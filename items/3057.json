@@ -1,23 +1,21 @@
 {
   "name": "Sheen",
   "id": 3057,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1027
   ],
-  "buildsInto": [
-    3025,
-    3100,
-    3078
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3057.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Spellblade",
       "effects": "After using an ability, your next basic attack within 10 seconds deals 100% base AD bonus physical damage on-hit (1.5 second cooldown, begins after using the empowered attack).",
+      "range": null,
       "stats": []
     }
   ],

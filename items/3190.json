@@ -1,22 +1,23 @@
 {
   "name": "Locket of the Iron Solari",
   "id": 3190,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3105,
     1033
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3190.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": null,
       "effects": "Grants a decaying shield to nearby allied champions and yourself for up to 2.5 seconds, absorbing up to 130 \u2212 300 (based on highest level between target and caster) (+ 20% of caster's bonus health) damage ( 650 radius) (120 second cooldown). Shielded targets are Eclipsed for 20 seconds.",
-      "range": 0,
+      "range": null,
       "cooldown": 120.0
     }
   ],

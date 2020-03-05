@@ -1,17 +1,19 @@
 {
   "name": "Elixir of Ruin",
   "id": 2137,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/2137_elixirofruin.png",
   "noEffects": true,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Siege Commander",
       "effects": "Grants nearby minions 15% bonus damage to turrets and bonus movement speed based on your movement speed.",
+      "range": null,
       "stats": []
     }
   ],

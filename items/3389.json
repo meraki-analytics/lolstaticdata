@@ -1,19 +1,24 @@
 {
   "name": "Might of the Ruined King",
   "id": 3389,
-  "tier": "Tier 5",
+  "tier": 5,
   "buildsFrom": [
     3153
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3389.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "ornn,forge",
+  "nicknames": [
+    "ornn",
+    "forge"
+  ],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "Basic attacks deal 12% of the target's current health bonus physical damage on-hit, with a minimum of 15 damage against all targets, and a maximum of 60 damage against minions and monsters.",
+      "range": null,
       "stats": []
     }
   ],

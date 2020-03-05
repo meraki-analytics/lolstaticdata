@@ -1,7 +1,7 @@
 {
   "name": "Wicked Hatchet",
   "id": 3122,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1051,
     1036
@@ -9,14 +9,16 @@
   "buildsInto": [
     3185
   ],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3122_wicked_hatchet.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "Critical strikes cause enemies to bleed for an additional 60% bonus AD as magic damage over 3 seconds.",
+      "range": null,
       "stats": []
     }
   ],

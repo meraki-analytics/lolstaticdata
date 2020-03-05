@@ -1,26 +1,29 @@
 {
   "name": "Mortal Reminder",
   "id": 3033,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    3123,
-    3035
+    3035,
+    3123
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3033.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Executioner",
       "effects": "Physical damage inflicts Grievous Wounds on enemy champions for 5 seconds.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Last Whisper",
       "effects": "+25% total armor penetration.",
+      "range": null,
       "stats": []
     }
   ],

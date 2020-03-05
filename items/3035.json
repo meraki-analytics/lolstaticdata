@@ -1,23 +1,24 @@
 {
   "name": "Last Whisper",
   "id": 3035,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1036,
     1036
   ],
-  "buildsInto": [
-    3036,
-    3033
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3035.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "lw",
+  "nicknames": [
+    "lw"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Last Whisper",
       "effects": "+20% total armor penetration.",
+      "range": null,
       "stats": []
     }
   ],

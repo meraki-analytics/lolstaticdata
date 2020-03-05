@@ -1,26 +1,31 @@
 {
   "name": "Runeglaive",
   "id": 3708,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    3057,
-    1052
+    3706,
+    3057
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3706_stalkers_blade4.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "jungle",
+  "nicknames": [
+    "jungle"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Spellblade",
       "effects": "After using an ability, your next basic attack (on-hit) deals 100% base AD + (30% AP) bonus magic damage (1.5 second cooldown).",
+      "range": null,
       "stats": []
     },
     {
       "unique": false,
       "name": null,
       "effects": "Against monsters, Spellblade deals area of effect magic damage around the target and restores 8% missing mana. Spellblade also deals double damage (200% base AD + (60% AP)) against the first monster hit.",
+      "range": null,
       "stats": []
     }
   ],

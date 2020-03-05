@@ -1,25 +1,32 @@
 {
   "name": "Timeworn Relic Shield",
   "id": 3307,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [
     3308
   ],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3052_reverb_coil.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "Support, Gold, Economy",
+  "nicknames": [
+    "Support",
+    "Gold",
+    "Economy"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Spoils of War",
       "effects": "Grants a charge every 40 seconds, up to 2 charges. Melee basic attacks can consume one charge to execute minions below 200 \u2212 285 (based on level) (+ 100% AD) health. Killing a minion by any means with a charge heals you and the nearest allied champion for 5 \u2212 30 (based on missing health) health and grants them kill gold. Healing is halved if the owner is ranged. These effects require an allied champion to be nearby.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Quest",
       "effects": "Earn 750 using this item and upgrade to Timeworn Targon's Brace. Reward: Shield Battery, a permanent shield for 255 \u2212 340 (based on level) health. The shield regenerates slowly when out-of-combat. Executing minions with Spoils of War regenerates 64 \u2212 85 (based on level) shield value.",
+      "range": null,
       "stats": []
     }
   ],

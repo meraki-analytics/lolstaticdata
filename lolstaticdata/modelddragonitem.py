@@ -9,34 +9,41 @@ from utils import OrderedEnum, ExtendedEncoder
 
 
 class ItemAttributes(OrderedEnum):
-    STARTER_ITEMS = "STARTER_ITEMS"
+    START = "STARTER_ITEMS"
     TOOLS = "TOOLS"
     DEFENSE = "DEFENSE"
     ATTACK = "ATTACK"
     MAGIC = "MAGIC"
     MOVEMENT = "MOVEMENT"
-    JUNGLING = "JUNGLING"
-    LANING = "LANING"
-    ARMOR_PENETRATION = "ARMOR_PENETRATION"
-    MAGIC_PENETRATION = "MAGIC_PENETRATION"
+    JUNGLE = "JUNGLING"
+    LANE = "LANING"
+    ARMORPENETRATION = "ARMOR_PENETRATION"
+    MAGICPENETRATION = "MAGIC_PENETRATION"
     CONSUMABLE = "CONSUMABLE"
-    GOLD_INCOME = "GOLD_INCOME"
-    VISION_AND_TRINKETS = "VISION_AND_TRINKETS"
+    GOLDPER = "GOLD_INCOME"
+    VISION = "VISION_AND_TRINKETS"
     ARMOR = "ARMOR"
     HEALTH = "HEALTH"
-    HEALTH_REGEN = "HEALTH_REGEN"
-    MAGIC_RESISTANCE = "MAGIC_RESISTANCE"
-    MAGIC_RESIST = "MAGIC_RESIST"
-    ATTACK_SPEED = "ATTACK_SPEED"
-    CRITICAL_STRIKE = "CRITICAL_STRIKE"
+    HEALTHREGEN = "HEALTH_REGEN"
+    SPELLBLOCK = "MAGIC_RESISTANCE"
+    ATTACKSPEED = "ATTACK_SPEED"
+    CRITICALSTRIKE = "CRITICAL_STRIKE"
     DAMAGE = "ATTACK_DAMAGE"
-    LIFE_STEAL = "LIFE_STEAL"
-    COOLDOWN_REDUCTION = "COOLDOWN_REDUCTION"
+    LIFESTEAL = "LIFE_STEAL"
+    COOLDOWNREDUCTION = "COOLDOWN_REDUCTION"
     MANA = "MANA"
-    MANA_REGEN= "MANA_REGEN"
-    ABILITY_POWER = "ABILITY_POWER"
+    MANAREGEN= "MANA_REGEN"
+    SPELLDAMAGE = "ABILITY_POWER"
     BOOTS = "BOOTS"
-    OTHER_MOVEMENT_ITEMS = "OTHER_MOVEMENT_ITEMS"
+    NONBOOTSMOVEMENT = "OTHER_MOVEMENT_ITEMS"
+    ACTIVE = "ACTIVE"
+    AURA = "AURA"
+    ONHIT = "ON_HIT"
+    TRINKET = "TRINKET"
+    SLOW = "SLOW"
+    STEALTH = "STEALTH"
+    SPELLVAMP = "SPELLVAMP"
+    TENACITY = "TENACITY"
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
@@ -114,20 +121,10 @@ class Aura(object):
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
 class Item(object):
-    name: str
-    id: int
-    tier: int
     builds_from: List[int]
     builds_into: List[int]
     icon: str
-    no_effects: bool
-    removed: bool
-    nicknames: List[str]
-    passives: List[PassiveStats]
-    active: List[Active]
-    auras: List[Aura]
-    stats: Stats
-    shop: Shop
+
 
     def __json__(self, *args, **kwargs):
         d = self.to_dict()

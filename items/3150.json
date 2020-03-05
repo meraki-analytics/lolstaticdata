@@ -1,21 +1,19 @@
 {
   "name": "Mirage Blade",
   "id": 3150,
-  "tier": "Tier 3",
-  "buildsFrom": [
-    1053,
-    1037,
-    1018
-  ],
-  "buildsInto": [],
+  "tier": 3,
+  "buildsFrom": null,
+  "buildsInto": null,
+  "icon": null,
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Mark of the Sands",
       "effects": "Basic attacks apply a Mark of the Sands to the target, revealing them for 3 seconds. Only a single enemy can be marked at a time.",
+      "range": null,
       "stats": []
     }
   ],
@@ -24,7 +22,7 @@
       "unique": true,
       "name": "Mirage Step",
       "effects": "Blinks 350 units directly away from the marked target (60 second cooldown).",
-      "range": 0,
+      "range": null,
       "cooldown": 60.0
     }
   ],

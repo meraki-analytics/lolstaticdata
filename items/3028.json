@@ -1,24 +1,23 @@
 {
   "name": "Chalice of Harmony",
   "id": 3028,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1004,
     1033,
     1004
   ],
-  "buildsInto": [
-    3174,
-    3222
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3028.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Harmony",
       "effects": "Gain +25% base health regeneration for every additional 25% base mana regeneration.",
+      "range": null,
       "stats": []
     }
   ],

@@ -1,17 +1,23 @@
 {
   "name": "Elixir of Wrath",
   "id": 2140,
-  "tier": "Tier 1",
+  "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2140.png",
   "noEffects": true,
   "removed": false,
-  "nickname": "red potion,fortitude,rage",
+  "nicknames": [
+    "red potion",
+    "fortitude",
+    "rage"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Bloodlust",
       "effects": "Dealing physical damage to champions heals for 15% of the damage dealt. Area of effect physical damage only heals 5% for every unit affected.",
+      "range": null,
       "stats": []
     }
   ],

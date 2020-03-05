@@ -1,21 +1,23 @@
 {
   "name": "Zephyr",
   "id": 3172,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1038,
     1042,
     1042
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3172_zephyr.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Tenacity",
       "effects": "Reduces the duration of all crowd control effects by 35% (except for Suppression, Stasis, and Displacements).",
+      "range": null,
       "stats": []
     }
   ],

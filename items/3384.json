@@ -1,25 +1,31 @@
 {
   "name": "Trinity Fusion",
   "id": 3384,
-  "tier": "Tier 4",
+  "tier": 4,
   "buildsFrom": [
     3078
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3384.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "ornn,forge",
+  "nicknames": [
+    "ornn",
+    "forge"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Rage",
       "effects": "Basic attacks (on-hit) grant +20 flat movement speed for 2 seconds. Killing a unit grants +60 flat movement speed instead. Bonus movement speed is halved on ranged champions.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Spellblade",
       "effects": "After using an ability, your next basic attack within 10 seconds deals 200% base AD bonus physical damage on-hit (1.5 second cooldown).",
+      "range": null,
       "stats": []
     }
   ],

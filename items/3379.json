@@ -1,19 +1,24 @@
 {
   "name": "Infernal Mask",
   "id": 3379,
-  "tier": "Tier 4",
+  "tier": 4,
   "buildsFrom": [
     3001
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3379.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "ornn,forge",
+  "nicknames": [
+    "ornn",
+    "forge"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Eternity",
       "effects": "Restore mana equal to 15% of damage taken from champions. Restore health equal to 20% of mana spent, up to 25 health per cast, while toggle abilities can heal for up to 25 per second.",
+      "range": null,
       "stats": []
     }
   ],

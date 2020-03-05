@@ -1,28 +1,30 @@
 {
   "name": "Odyn's Veil",
   "id": 3180,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     1057,
     3010
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3180_odynsveil.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "Reduces and stores 10% of magic damage received.",
+      "range": null,
       "stats": []
     }
   ],
   "active": [
     {
       "unique": true,
-      "name": "Deals 200 + (stored magic damage ",
-      "effects": "max 400) magic damage to nearby enemy units (90 second cooldown) (525 range).",
+      "name": null,
+      "effects": "Deals 200 + (stored magic damage : max 400) magic damage to nearby enemy units (90 second cooldown) (525 range).",
       "range": 525,
       "cooldown": 90.0
     }

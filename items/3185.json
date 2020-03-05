@@ -1,26 +1,31 @@
 {
   "name": "Lightbringer",
   "id": 3185,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3122,
     1018
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3185_lightbringer.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "lb",
+  "nicknames": [
+    "lb"
+  ],
   "passives": [
     {
       "unique": true,
       "name": "Critical Vision",
       "effects": "Critical strikes cause enemies to bleed for an additional 90% bonus AD as magic damage over 3 seconds and reveal them for the duration.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Trap Detection",
       "effects": "Nearby stealthed enemy traps are revealed.",
+      "range": null,
       "stats": []
     }
   ],

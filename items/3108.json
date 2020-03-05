@@ -1,26 +1,21 @@
 {
   "name": "Fiendish Codex",
   "id": 3108,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1052
   ],
-  "buildsInto": [
-    3174,
-    3102,
-    3115,
-    null,
-    3905,
-    3157
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3108.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "10.0% cooldown reduction",
+      "range": null,
       "stats": [
         {
           "cooldownReduction": {

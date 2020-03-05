@@ -1,19 +1,19 @@
 {
   "name": "Seraph's Embrace",
   "id": 3040,
-  "tier": "Tier 4",
-  "buildsFrom": [
-    3003
-  ],
+  "tier": 4,
+  "buildsFrom": [],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3040.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Haste",
       "effects": "Grants an additional 10% cooldown reduction.",
+      "range": null,
       "stats": [
         {
           "cooldownReduction": {
@@ -31,6 +31,7 @@
       "unique": true,
       "name": "Awe",
       "effects": "Grants bonus ability power equal to 3% maximum mana. Refunds 25% of mana spent.",
+      "range": null,
       "stats": []
     }
   ],
@@ -39,7 +40,7 @@
       "unique": true,
       "name": "Mana Shield",
       "effects": "Drains 15% of your current mana to shield yourself for an equal amount plus 150 for 2 seconds (120 second cooldown).",
-      "range": 0,
+      "range": null,
       "cooldown": 120.0
     }
   ],

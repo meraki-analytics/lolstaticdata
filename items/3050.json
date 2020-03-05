@@ -1,15 +1,16 @@
 {
   "name": "Zeke's Herald",
   "id": 3050,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    3067,
-    1053
+    3105,
+    3024
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3050.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [],
   "active": [],
   "auras": [
@@ -17,7 +18,7 @@
       "unique": true,
       "name": null,
       "effects": "Nearby allied champions gain +20 attack damage and +10% life steal. (1100 Range)",
-      "range": 0
+      "range": null
     }
   ],
   "stats": {

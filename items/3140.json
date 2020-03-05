@@ -1,23 +1,24 @@
 {
   "name": "Quicksilver Sash",
   "id": 3140,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1033
   ],
-  "buildsInto": [
-    3139
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3140.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "qss",
+  "nicknames": [
+    "qss"
+  ],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": "Quicksilver",
       "effects": "Removes all crowd control debuffs from your champion (90 second cooldown).",
-      "range": 0,
+      "range": null,
       "cooldown": 90.0
     }
   ],

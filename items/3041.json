@@ -1,25 +1,28 @@
 {
   "name": "Mejai's Soulstealer",
   "id": 3041,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1082
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3041.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Dread",
       "effects": "Grants +5 ability power per stack of Glory. Grants +10% bonus movement speed at 10 Glory.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Do or Die",
       "effects": "Grants 4 Glory (+20 AP) for a champion kill and 2 Glory (+10 AP) for an assist, up to 25 Glory (+125 AP). Upon death, lose 10 Glory stacks (-50 AP).",
+      "range": null,
       "stats": []
     }
   ],

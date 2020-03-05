@@ -1,23 +1,27 @@
 {
   "name": "Zhonya's Hourglass",
   "id": 3157,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3191,
-    2420,
-    3108
+    3108,
+    2420
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3157.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "zhg,zonya",
+  "nicknames": [
+    "zhg",
+    "zonya"
+  ],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": "Stasis",
       "effects": "Put yourself in stasis for 2.5 seconds, rendering yourself untargetable and invulnerable for the duration, but also becoming unable to move and pacified during this time (120 second cooldown).",
-      "range": 0,
+      "range": null,
       "cooldown": 120.0
     }
   ],

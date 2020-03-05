@@ -1,20 +1,19 @@
 {
   "name": "Netherstride Grimoire",
   "id": 3431,
-  "tier": "Tier 4",
-  "buildsFrom": [
-    3802,
-    1052
-  ],
-  "buildsInto": [],
+  "tier": 4,
+  "buildsFrom": null,
+  "buildsInto": null,
+  "icon": null,
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Malice",
       "effects": "Gain 20% movement speed for 2 seconds whenever you deal ability damage.",
+      "range": null,
       "stats": []
     }
   ],

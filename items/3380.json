@@ -1,25 +1,31 @@
 {
   "name": "Obsidian Cleaver",
   "id": 3380,
-  "tier": "Tier 4",
+  "tier": 4,
   "buildsFrom": [
     3071
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3380.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "ornn,forge",
+  "nicknames": [
+    "ornn",
+    "forge"
+  ],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "Dealing physical damage to an enemy champion Cleaves them, reducing their armor by 4% for 6 seconds, stacking up to 6 times for a maximum of 24%.",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": "Rage",
       "effects": "Dealing physical damage grants 20 movement speed for 2 seconds. Assists on Cleaved enemy champions or kills on any unit grant 60 movement speed for 2 seconds instead. This movement speed bonus is halved for ranged champions.",
+      "range": null,
       "stats": []
     }
   ],

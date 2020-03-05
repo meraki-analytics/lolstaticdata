@@ -1,25 +1,28 @@
 {
   "name": "Poacher's Dirk",
   "id": 3252,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1036
   ],
   "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3252_poachers_dirk.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Headhunter",
       "effects": "After killing any enemy, your next damaging spell will deal 40 bonus physical damage to all enemies it hits (30 second cooldown).",
+      "range": null,
       "stats": []
     },
     {
       "unique": true,
       "name": null,
       "effects": "After poaching 4 large monsters from the enemy jungle, transforms into a Serrated Dirk.",
+      "range": null,
       "stats": []
     }
   ],

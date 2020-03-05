@@ -1,27 +1,22 @@
 {
   "name": "Caulfield's Warhammer",
   "id": 3133,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1036,
     1036
   ],
-  "buildsInto": [
-    3812,
-    3147,
-    3508,
-    3156,
-    null,
-    3142
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3133.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "10.0% cooldown reduction",
+      "range": null,
       "stats": [
         {
           "cooldownReduction": {

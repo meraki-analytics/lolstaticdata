@@ -1,24 +1,23 @@
 {
   "name": "Tiamat",
   "id": 3077,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1036,
     1006,
     1036
   ],
-  "buildsInto": [
-    3074,
-    3748
-  ],
+  "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3077.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Cleave",
       "effects": "Basic attacks deal (20% to 60% AD) physical damage to units around your target : (20% AD near the edge).",
+      "range": null,
       "stats": []
     }
   ],
@@ -27,7 +26,7 @@
       "unique": true,
       "name": "Crescent",
       "effects": "Deals (60% to 100% AD) physical damage to units around you : (60% AD near the edge) (10 second cooldown).",
-      "range": 0,
+      "range": null,
       "cooldown": 10.0
     }
   ],

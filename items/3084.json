@@ -1,20 +1,22 @@
 {
   "name": "Overlord's Bloodmail",
   "id": 3084,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
-    3801,
-    1011
+    1011,
+    3801
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3084.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "On kill or assist, heal for 300 health over 5 seconds.",
+      "range": null,
       "stats": []
     }
   ],

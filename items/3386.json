@@ -1,21 +1,25 @@
 {
   "name": "Zhonya's Paradox",
   "id": 3386,
-  "tier": "Tier 4",
+  "tier": 4,
   "buildsFrom": [
     3157
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3386.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "ornn,forge",
+  "nicknames": [
+    "ornn",
+    "forge"
+  ],
   "passives": [],
   "active": [
     {
       "unique": true,
       "name": "Stasis",
       "effects": "Put yourself in stasis for 2.5 seconds, rendering yourself untargetable and invulnerable for the duration, but also becoming unable to move and pacified during this time (120 second cooldown).",
-      "range": 0,
+      "range": null,
       "cooldown": 120.0
     }
   ],

@@ -1,21 +1,19 @@
 {
   "name": "Madred's Razors",
   "id": 3106,
-  "tier": "Tier 2",
-  "buildsFrom": [
-    1042
-  ],
-  "buildsInto": [
-    3159
-  ],
+  "tier": 2,
+  "buildsFrom": null,
+  "buildsInto": null,
+  "icon": null,
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Maim",
       "effects": "Basic attacks against monsters deal 50 bonus magic damage and restore 8 health.",
+      "range": null,
       "stats": []
     }
   ],

@@ -1,23 +1,21 @@
 {
   "name": "Heart of Gold",
   "id": 3132,
-  "tier": "Tier 2",
+  "tier": 2,
   "buildsFrom": [
     1028
   ],
-  "buildsInto": [
-    3190,
-    3104,
-    3143
-  ],
+  "buildsInto": [],
+  "icon": "https://raw.communitydragon.org/latest/game/data/items/icons2d/3051_renewal_tunic.png",
   "noEffects": false,
   "removed": true,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": null,
       "effects": "+ 5 per 10 seconds.",
+      "range": null,
       "stats": []
     }
   ],

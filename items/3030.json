@@ -1,20 +1,22 @@
 {
   "name": "Hextech GLP-800",
   "id": 3030,
-  "tier": "Tier 3",
+  "tier": 3,
   "buildsFrom": [
     3802,
     3145
   ],
   "buildsInto": [],
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3030.png",
   "noEffects": false,
   "removed": false,
-  "nickname": "",
+  "nicknames": [],
   "passives": [
     {
       "unique": true,
       "name": "Haste",
       "effects": "Grants an additional 10% cooldown reduction.",
+      "range": null,
       "stats": [
         {
           "cooldownReduction": {
@@ -34,7 +36,7 @@
       "unique": true,
       "name": "Frost Bolt",
       "effects": "After a 0.25-second delay, fires over 0.2 seconds a spray of five icy bolts in a cone, which each bolt dealing 100 \u2212 200 (based on level) (+ 20% AP) magic damage and slowing by 65%, decaying over 2 second, the first units hit (40 second cooldown, shared with other Hextech items).",
-      "range": 0,
+      "range": null,
       "cooldown": 40.0
     }
   ],
