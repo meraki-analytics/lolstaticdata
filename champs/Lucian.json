@@ -1,0 +1,1060 @@
+{
+  "id": 236,
+  "key": "Lucian",
+  "name": "Lucian",
+  "title": "the Purifier",
+  "fullName": "",
+  "resource": "MANA",
+  "attackType": "RANGED",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "stats": {
+    "health": {
+      "flat": 571,
+      "percent": 0.0,
+      "perLevel": 86,
+      "percentPerLevel": 0.0
+    },
+    "healthRegen": {
+      "flat": 3.75,
+      "percent": 0.0,
+      "perLevel": 0.65,
+      "percentPerLevel": 0.0
+    },
+    "mana": {
+      "flat": 348.88,
+      "percent": 0.0,
+      "perLevel": 38,
+      "percentPerLevel": 0.0
+    },
+    "manaRegen": {
+      "flat": 8.176,
+      "percent": 0.0,
+      "perLevel": 0.7,
+      "percentPerLevel": 0.0
+    },
+    "armor": {
+      "flat": 28,
+      "percent": 0.0,
+      "perLevel": 3,
+      "percentPerLevel": 0.0
+    },
+    "magicResistance": {
+      "flat": 30,
+      "percent": 0.0,
+      "perLevel": 0.5,
+      "percentPerLevel": 0.0
+    },
+    "attackDamage": {
+      "flat": 64,
+      "percent": 0.0,
+      "perLevel": 2.75,
+      "percentPerLevel": 0.0
+    },
+    "movespeed": {
+      "flat": 335,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "acquisitionRadius": 800,
+    "selectionRadius": 100,
+    "pathingRadius": 40.6800003051757,
+    "gameplayRadius": 65,
+    "criticalStrikeDamage": 200,
+    "criticalStrikeDamageModifier": 1.0,
+    "attackSpeed": {
+      "flat": 0.638,
+      "percent": 0.0,
+      "perLevel": 3.3,
+      "percentPerLevel": 0.0
+    },
+    "attackSpeedRatio": 0.638000011444091,
+    "attackCastTime": 0.3,
+    "attackTotalTime": 1.6,
+    "attackDelayOffset": -0.150000005960464,
+    "attackRange": {
+      "flat": 500,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageTaken": 1.0,
+    "aramDamageDealt": 1.05,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 1.0,
+    "urfDamageDealt": 1.0,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "MARKSMAN"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 1,
+    "control": 1,
+    "mobility": 3,
+    "utility": 1,
+    "abilityReliance": 30,
+    "attack": 8,
+    "defense": 5,
+    "magic": 3,
+    "difficulty": 2
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Lightslinger",
+        "effects": [
+          {
+            "description": "Innate: After using an ability, Lucian's next basic attack within 3 seconds shoots twice, the second shot dealing 50 / 55 / 60% (based on level) AD  physical damage, increased to 100% AD against minions.",
+            "icon": "Lightslinger.png",
+            "leveling": []
+          },
+          {
+            "description": "The second shot applies  on-hits and on-attack effects at full effect and can  critically strike for (75% +  18.75%) bonus physical damage, increased to (100% +  25%) against minions.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "If Lucian's primary target is killed before the second shot can go off, he automatically shoots another enemy.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Enemies",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "attack",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": "On-hit",
+        "notes": "Lightslinger is triggered and consumed by the first attack.\n The second attack will prioritize enemy champions (even if hidden in fog of war or in  brush) and enemy  minions with  low health.\n Lightslinger will still be consumed if no second target is found when Lucian fires.\n\n Lucian can move freely while firing Lightslinger since the second attack is integrated into the first one (like  Double Strike) and has special movement animations depending on the direction he is moving while firing.",
+        "blurb": "Whenever Lucian uses an ability, his next attack becomes a double-shot.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Piercing Light",
+        "effects": [
+          {
+            "description": "Active: After a 0.4 \u2212 0.25 (based on level)-second delay, Lucian fires a laser in the direction of the target enemy, dealing physical damage to all enemies in a line.",
+            "icon": "Piercing Light.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      85,
+                      120,
+                      155,
+                      190,
+                      225
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      75,
+                      90,
+                      105,
+                      120
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                60,
+                70,
+                80,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                9,
+                8,
+                7,
+                6,
+                5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "AoE",
+        "projectile": "FALSE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Piercing Light will attempt to lead the target if it is moving but does not adjust further during cast time (enemies can dodge the laser if they change their velocity by a sufficient amount during the delay).",
+        "blurb": "Lucian shoots a bolt of piercing light through a target.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "900",
+        "targetRange": "500"
+      }
+    ],
+    "W": [
+      {
+        "name": "Ardent Blaze",
+        "effects": [
+          {
+            "description": "Active: After a 0.25-second delay, Lucian fires a shot that explodes in a cross pattern upon hitting an enemy or reaching the end of its path, dealing  magic damage and  revealing the area for 1 second.",
+            "icon": "Ardent Blaze.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      75,
+                      110,
+                      145,
+                      180,
+                      215
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      90,
+                      90,
+                      90,
+                      90,
+                      90
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Enemies hit are marked for 6 seconds.",
+            "icon": "Ardent Blaze 2.png",
+            "leveling": []
+          },
+          {
+            "description": "Lucian gains  bonus movement speed for 1 second if he or allied champions damage a marked target.",
+            "icon": "Ardent Blaze 3.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      65,
+                      70,
+                      75,
+                      80
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies / Self, Allies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Lucian will not gain Ardent Blaze's bonus movement speed if attacks on marked targets are  dodged,  blocked, or if he is  blinded.\n DoT will proc Ardent Blaze only once.",
+        "blurb": "Lucian shoots a missile that explodes in a star shape, marking enemies. Lucian gains Movement Speed for attacking marked enemies.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "900"
+      },
+      {
+        "name": "Ardent Blaze",
+        "effects": [
+          {
+            "description": "Active: After a 0.25-second delay, Lucian fires a shot that explodes in a cross pattern upon hitting an enemy or reaching the end of its path, dealing  magic damage and  revealing the area for 1 second.",
+            "icon": "Ardent Blaze.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      75,
+                      110,
+                      145,
+                      180,
+                      215
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      90,
+                      90,
+                      90,
+                      90,
+                      90
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Enemies hit are marked for 6 seconds.",
+            "icon": "Ardent Blaze 2.png",
+            "leveling": []
+          },
+          {
+            "description": "Lucian gains  bonus movement speed for 1 second if he or allied champions damage a marked target.",
+            "icon": "Ardent Blaze 3.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      65,
+                      70,
+                      75,
+                      80
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies / Self, Allies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Lucian will not gain Ardent Blaze's bonus movement speed if attacks on marked targets are  dodged,  blocked, or if he is  blinded.\n DoT will proc Ardent Blaze only once.",
+        "blurb": "Lucian shoots a missile that explodes in a star shape, marking enemies. Lucian gains Movement Speed for attacking marked enemies.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "900"
+      },
+      {
+        "name": "Ardent Blaze",
+        "effects": [
+          {
+            "description": "Active: After a 0.25-second delay, Lucian fires a shot that explodes in a cross pattern upon hitting an enemy or reaching the end of its path, dealing  magic damage and  revealing the area for 1 second.",
+            "icon": "Ardent Blaze.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      75,
+                      110,
+                      145,
+                      180,
+                      215
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      90,
+                      90,
+                      90,
+                      90,
+                      90
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Enemies hit are marked for 6 seconds.",
+            "icon": "Ardent Blaze 2.png",
+            "leveling": []
+          },
+          {
+            "description": "Lucian gains  bonus movement speed for 1 second if he or allied champions damage a marked target.",
+            "icon": "Ardent Blaze 3.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      65,
+                      70,
+                      75,
+                      80
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies / Self, Allies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Lucian will not gain Ardent Blaze's bonus movement speed if attacks on marked targets are  dodged,  blocked, or if he is  blinded.\n DoT will proc Ardent Blaze only once.",
+        "blurb": "Lucian shoots a missile that explodes in a star shape, marking enemies. Lucian gains Movement Speed for attacking marked enemies.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "900"
+      }
+    ],
+    "E": [
+      {
+        "name": "Relentless Pursuit",
+        "effects": [
+          {
+            "description": "Passive: Relentless Pursuit's  cooldown is reduced by 1 second for each  Lightslinger shot landed, doubled to 2 seconds against enemy champions.",
+            "icon": "Relentless Pursuit.png",
+            "leveling": []
+          },
+          {
+            "description": "Active: Lucian  dashes in the target direction.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Relentless Pursuit resets Lucian's basic attack timer.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Relentless Pursuit can be cast during  The Culling and other abilities can be cast during Relentless Pursuit.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                40,
+                30,
+                20,
+                10,
+                0
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                22,
+                20,
+                18,
+                16,
+                14
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Additional on-hits during Lightslinger are not considered for the cooldown reduction (i.e  Runaan's Hurricane,  Guinsoo's Rageblade).",
+        "blurb": "Lucian quickly dashes a short distance. Lightslinger attacks reduce Relentless Pursuit's cooldown.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "425"
+      }
+    ],
+    "R": [
+      {
+        "name": "The Culling",
+        "effects": [
+          {
+            "description": "Active: Lucian rapidly fires shots in the target direction for 3 seconds, dealing physical damage to the first enemy they collide with. The damage is doubled against enemy  minions.",
+            "icon": "The Culling.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage Per Shot",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      40,
+                      60
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      25,
+                      25,
+                      25
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      10,
+                      10,
+                      10
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Non-Minion Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      400,
+                      1000,
+                      1800
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      500,
+                      625,
+                      750
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      200,
+                      250,
+                      300
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Minion Damage Per Shot",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      80,
+                      120
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      50,
+                      50,
+                      50
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      20,
+                      20,
+                      20
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Minion Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      800,
+                      2000,
+                      3600
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      1000,
+                      1250,
+                      1500
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      400,
+                      500,
+                      600
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Shots Fired",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      25,
+                      30
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "While using The Culling, Lucian always faces in the casted direction and is  ghosted.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "The Culling can be reactivated to end its effects prematurely.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                110,
+                100,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Self, Enemies",
+        "spellshieldable": "Special",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "aoedot",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Lucian can interact with  Dark Passage or  Devour without  interrupting The Culling.\n Since The Culling is made up of two parallel skillshots it is possible for enemies to take only half the damage (half of Lucian's shots) if they stand on the edge of The Culling's fire line.\n Even though each bullet can only hit one target, it will not proc  Muramana since The Culling applies spell effects as  area of effect.\n The damage dealt by each bullet of The Culling is calculated when the bullet reaches the target.\n  Spell shield only blocks one instance of damage.",
+        "blurb": "Lucian unleashes a torrent of shots from his weapons.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "1200"
+      }
+    ]
+  },
+  "releaseDate": "2013-08-22",
+  "releasePatch": "3.10a",
+  "patchLastChanged": "10.3",
+  "price": {
+    "blueEssence": 4800,
+    "rp": 880
+  }
+}

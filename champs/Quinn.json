@@ -1,0 +1,642 @@
+{
+  "id": 133,
+  "key": "Quinn",
+  "name": "Quinn",
+  "title": "Demacia's Wings",
+  "fullName": "Quinn and Valor",
+  "resource": "MANA",
+  "attackType": "RANGED",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "stats": {
+    "health": {
+      "flat": 532.8,
+      "percent": 0.0,
+      "perLevel": 85,
+      "percentPerLevel": 0.0
+    },
+    "healthRegen": {
+      "flat": 5.5,
+      "percent": 0.0,
+      "perLevel": 0.55,
+      "percentPerLevel": 0.0
+    },
+    "mana": {
+      "flat": 268.8,
+      "percent": 0.0,
+      "perLevel": 35,
+      "percentPerLevel": 0.0
+    },
+    "manaRegen": {
+      "flat": 6.972,
+      "percent": 0.0,
+      "perLevel": 0.4,
+      "percentPerLevel": 0.0
+    },
+    "armor": {
+      "flat": 28,
+      "percent": 0.0,
+      "perLevel": 3.5,
+      "percentPerLevel": 0.0
+    },
+    "magicResistance": {
+      "flat": 30,
+      "percent": 0.0,
+      "perLevel": 0.5,
+      "percentPerLevel": 0.0
+    },
+    "attackDamage": {
+      "flat": 59,
+      "percent": 0.0,
+      "perLevel": 2.4,
+      "percentPerLevel": 0.0
+    },
+    "movespeed": {
+      "flat": 335,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "acquisitionRadius": 800,
+    "selectionRadius": 120,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrikeDamage": 200,
+    "criticalStrikeDamageModifier": 1.0,
+    "attackSpeed": {
+      "flat": 0.668,
+      "percent": 0.0,
+      "perLevel": 3.1,
+      "percentPerLevel": 0.0
+    },
+    "attackSpeedRatio": 0.667999982833862,
+    "attackCastTime": 0.3,
+    "attackTotalTime": 1.6,
+    "attackDelayOffset": -0.12456139922142,
+    "attackRange": {
+      "flat": 525,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageTaken": 0.92,
+    "aramDamageDealt": 1.08,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 1.0,
+    "urfDamageDealt": 1.15,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "ASSASSIN",
+    "MARKSMAN",
+    "SPECIALIST"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 1,
+    "control": 2,
+    "mobility": 3,
+    "utility": 1,
+    "abilityReliance": 20,
+    "attack": 9,
+    "defense": 4,
+    "magic": 2,
+    "difficulty": 2
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Harrier",
+        "effects": [
+          {
+            "description": "Innate:  Valor periodically marks a nearby visible enemy unit as Vulnerable,  revealing them for 4 seconds. Enemies hit by  Blinding Assault,  Vault and  Skystrike will also be marked as Vulnerable.",
+            "icon": "Harrier.png",
+            "leveling": []
+          },
+          {
+            "description": "Quinn's next basic attack against a Vulnerable target deals 10 \u2212 95 (based on level) (+ 16% \u2212 50% (based on level) AD)  bonus physical damage.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Harrier is disabled while  Behind Enemy Lines is active and for a few seconds after a target's mark ends.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            "8 \u2212  2.93 (based on critical strike chance)"
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Auto",
+        "affects": "Self",
+        "spellshieldable": "False",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Proc",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Harrier's targeting priority:\n Last unit hit (if it was a small minion it appears to select a different target).\n Lowest-health enemy champion.\n Lowest-health enemy minion.\n\n The enhanced attack will apply other on-hit effects and can  critically strike as normal.\n  Critical strikes do not interact with Harrier's bonus damage.\n As with most on-hit physical damage Harrier's bonus damage will apply  life steal.\n Harrier is consumed but does no damage if the enhanced attack is  dodged,  blocked, or if Quinn is  blinded.\n Harrier's bonus damage will not affect structures even if Quinn is seen using its attack animation against them if the ensuing basic attack was the last one prior.\n Basic attacks that are already in-flight will trigger and consume Harrier mark.\n If a mark was originally applied by  Blinding Assault or  Vault, attacking that Vulnerable target will place Harrier's passive application on a 1 second cooldown instead of its full duration.",
+        "blurb": "Valor periodically marks enemies as Vulnerable. Quinn's first basic attack against Vulnerable targets will deal bonus physical damage.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "525",
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Blinding Assault",
+        "effects": [
+          {
+            "description": "Active: Quinn signals  Valor to fly forward in a line, stopping upon colliding with an enemy unit, dealing physical damage to all nearby enemies and applying  nearsight to the target for 1.5 seconds.",
+            "icon": "Blinding Assault.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      45,
+                      70,
+                      95,
+                      120
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      80,
+                      90,
+                      100,
+                      110,
+                      120
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      50,
+                      50,
+                      50,
+                      50,
+                      50
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Non-champion targets are  disarmed instead for the same duration.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                55,
+                60,
+                65,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                11,
+                10.5,
+                10,
+                9.5,
+                9
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": "Quinn calls Valor to mark an enemy and hinder its vision before damaging all enemies in the immediate area.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "210",
+        "targetRange": "1025"
+      }
+    ],
+    "W": [
+      {
+        "name": "Heightened Senses",
+        "effects": [
+          {
+            "description": "Passive: Attacking a  Vulnerable target grants Quinn  bonus attack speed and  bonus movement speed for 2 seconds.",
+            "icon": "Heightened Senses.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Attack Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      35,
+                      50,
+                      65,
+                      80
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Bonus Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      25,
+                      30,
+                      35,
+                      40
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Active: Quinn orders  Valor to  reveal the area around her for 2 seconds.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                45,
+                40,
+                35,
+                30
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Auto",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": "Passively grants Quinn Attack Speed and Movement Speed after she attacks a Vulnerable target. Activate to have Valor reveal a large area nearby.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "2100",
+        "targetRange": null
+      }
+    ],
+    "E": [
+      {
+        "name": "Vault",
+        "effects": [
+          {
+            "description": "Active: Quinn  dashes to the target unit,  knocking them back, dealing them physical damage, and  slowing them by 50% which decays over 1.5 seconds, before  leaping back and landing 525 units away from them.",
+            "icon": "Vault.png",
+            "leveling": [
+              {
+                "attribute": "Physical damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      70,
+                      100,
+                      130,
+                      160
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      20,
+                      20,
+                      20,
+                      20,
+                      20
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Spell",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Quinn will automatically attempt to attack the target once she completes Vault.\n Unlike its constant cast range Vault's bounce's can vary to allow Quinn to close or to make a gap between herself and the target (depending on casting position) or even to jump through a wall (if there is enough landing room on the other side).\n Quinn will track and follow the target if they move through  dashes and  blinks.\n This will not occur if the target is travelling to a very far distance (e.g,  Recall,  Teleport,  Stand United).",
+        "blurb": "Quinn dashes to an enemy, dealing physical damage and slowing the target's Movement Speed. Upon reaching the target, she leaps off the target, briefly interrupting it, and lands near her maximum Attack Range away from the target.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "675"
+      }
+    ],
+    "R": [
+      {
+        "name": "Behind Enemy Lines",
+        "effects": [
+          {
+            "description": "Active: Quinn  channels for 2 seconds. Upon completing it successfully,  Valor picks her up and they unite, increasing her  total movement speed and gaining the ability to use  Skystrike.",
+            "icon": "Behind Enemy Lines.png",
+            "leveling": [
+              {
+                "attribute": "Total Movement Speed Increase",
+                "modifiers": [
+                  {
+                    "values": [
+                      70,
+                      100,
+                      130
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Taking damage from champions, monsters, or  turrets while Behind Enemy Lines is active disables the  bonus movement speed for 3 seconds.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "If you have a least one point in Behind Enemy Lines, respawning or returning to the summoning platform will spawn  Valor.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                50,
+                0
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": null,
+        "targeting": "none",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "If Quinn uses  Vault while Behind Enemy Lines is active,  Skystrike will activate at her target's location after she bounces back.",
+        "blurb": "Quinn and Valor team up to fly around at great speed.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "Skystrike",
+        "effects": [
+          {
+            "description": "Active: Quinn detaches from  Valor, ending  Behind Enemy Lines' effects, and deals  40% AD  physical damage to all units around her.",
+            "icon": "Skystrike.png",
+            "leveling": []
+          },
+          {
+            "description": "Launching a basic attack,  Blinding Assault, or  Vault during  Behind Enemy Lines automatically activates Skystrike.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Auto",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "If Quinn uses  Vault while  Behind Enemy Lines is active, Skystrike will activate at her target's location after she bounces back.",
+        "blurb": "Quinn and Valor team up to fly around at great speed.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "700",
+        "targetRange": null
+      }
+    ]
+  },
+  "releaseDate": "2013-03-01",
+  "releasePatch": "3.03",
+  "patchLastChanged": "9.4",
+  "price": {
+    "blueEssence": 4800,
+    "rp": 880
+  }
+}

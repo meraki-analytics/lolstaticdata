@@ -1,0 +1,2411 @@
+{
+  "id": 141,
+  "key": "Kayn",
+  "name": "Kayn",
+  "title": "the Shadow Reaper",
+  "fullName": "Shieda Kayn",
+  "resource": "MANA",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "stats": {
+    "health": {
+      "flat": 585,
+      "percent": 0.0,
+      "perLevel": 85,
+      "percentPerLevel": 0.0
+    },
+    "healthRegen": {
+      "flat": 8,
+      "percent": 0.0,
+      "perLevel": 0.75,
+      "percentPerLevel": 0.0
+    },
+    "mana": {
+      "flat": 410,
+      "percent": 0.0,
+      "perLevel": 50,
+      "percentPerLevel": 0.0
+    },
+    "manaRegen": {
+      "flat": 11.5,
+      "percent": 0.0,
+      "perLevel": 0.95,
+      "percentPerLevel": 0.0
+    },
+    "armor": {
+      "flat": 38,
+      "percent": 0.0,
+      "perLevel": 3.3,
+      "percentPerLevel": 0.0
+    },
+    "magicResistance": {
+      "flat": 32.1,
+      "percent": 0.0,
+      "perLevel": 1.25,
+      "percentPerLevel": 0.0
+    },
+    "attackDamage": {
+      "flat": 68,
+      "percent": 0.0,
+      "perLevel": 3.3,
+      "percentPerLevel": 0.0
+    },
+    "movespeed": {
+      "flat": 340,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "acquisitionRadius": 400,
+    "selectionRadius": 135,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrikeDamage": 200,
+    "criticalStrikeDamageModifier": 1.0,
+    "attackSpeed": {
+      "flat": 0.669,
+      "percent": 0.0,
+      "perLevel": 2.7,
+      "percentPerLevel": 0.0
+    },
+    "attackSpeedRatio": 0.669000029563903,
+    "attackCastTime": 0.280000001192092,
+    "attackTotalTime": 1.49500000476837,
+    "attackDelayOffset": -0.100000001490116,
+    "attackRange": {
+      "flat": 175,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageTaken": 1.0,
+    "aramDamageDealt": 1.0,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 1.0,
+    "urfDamageDealt": 1.0,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "ASSASSIN",
+    "FIGHTER",
+    "SKIRMISHER"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 1,
+    "control": 1,
+    "mobility": 3,
+    "utility": 1,
+    "abilityReliance": 0,
+    "attack": 10,
+    "defense": 6,
+    "magic": 1,
+    "difficulty": 3
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "The Darkin Scythe",
+        "effects": [
+          {
+            "description": "Innate:  Kayn wields an ancient, sentient weapon, that battles with him for control. Each instance of damage Kayn deals against champions (excluding damage over time) and  takedowns causes them to drop orbs, red by  melee champions and blue by  ranged champions, that are automatically collected upon leaving combat, filling a bar around Kayn's portrait.",
+            "icon": "The Darkin Scythe.png",
+            "leveling": []
+          },
+          {
+            "description": "Once the bar is filled, Kayn can return to the summoning platform to interact with his portrait to either be overwhelmed by  Rhaast or expel him to become the  Shadow Assassin, or wait 4 minutes until the other form becomes available, reduced by 5 seconds for each collected orb of their type after that.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "The transformation type is decided based on the highest amount of damage dealt to the respective range type. If the two forms are within 8% of each other, the last champion range type hit will determine the transformation. If both types are hit at the same time the trasformation will default to  Rhaast. The transformation will permanently change Kayn's abilities and grant him Homeguard.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Shadow Assassin: If Kayn has been out of champion combat for over 8 seconds, or he casts  Umbral Trespass, he deals 12% \u2212 44% (based on level) of post-mitigation damage dealt against champions as  bonus magic damage, lasting for 3 seconds upon entering combat and also applying on the first instance of damage dealt.",
+            "icon": "The Darkin Scythe A.png",
+            "leveling": []
+          },
+          {
+            "description": "Rhaast: Rhaast  heals for 34.5% \u2212 43% (based on level) of the post-mitigation  physical damage that he deals with abilities against enemy champions.",
+            "icon": "The Darkin Scythe R.png",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The bar gets filled up completely at 500 points.\n Melee orbs grant 2 points per hit and 6 points per takedown.\n Ranged orbs grant 3 points per hit and 7 points per takedown.\n Each bar has a bucket system.\n The bucket starts at 60 points.\n Each time an orb is taken the system checks if there's an amount of points in the bucket equal to or higher than the amount received from the orb.If there is, Kayn is given an additional orb of the same type he received, while also subtracting that amount of points from the bucket.\n The bucket fills by 0.8 points per second if out of champion combat for 70 seconds.\n\n The amount of points received per orb increases constantly (every second) after 5 minutes, flatting out at 13 minutes.\n\n The orbs will be collected even if Kayn dies.",
+        "blurb": "At one point in the game, Kayn will permanently transform into either a Shadow Assassin or a Darkin.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "The Darkin Scythe",
+        "effects": [
+          {
+            "description": "Innate:  Kayn wields an ancient, sentient weapon, that battles with him for control. Each instance of damage Kayn deals against champions (excluding damage over time) and  takedowns causes them to drop orbs, red by  melee champions and blue by  ranged champions, that are automatically collected upon leaving combat, filling a bar around Kayn's portrait.",
+            "icon": "The Darkin Scythe.png",
+            "leveling": []
+          },
+          {
+            "description": "Once the bar is filled, Kayn can return to the summoning platform to interact with his portrait to either be overwhelmed by  Rhaast or expel him to become the  Shadow Assassin, or wait 4 minutes until the other form becomes available, reduced by 5 seconds for each collected orb of their type after that.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "The transformation type is decided based on the highest amount of damage dealt to the respective range type. If the two forms are within 8% of each other, the last champion range type hit will determine the transformation. If both types are hit at the same time the trasformation will default to  Rhaast. The transformation will permanently change Kayn's abilities and grant him Homeguard.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Shadow Assassin: If Kayn has been out of champion combat for over 8 seconds, or he casts  Umbral Trespass, he deals 12% \u2212 44% (based on level) of post-mitigation damage dealt against champions as  bonus magic damage, lasting for 3 seconds upon entering combat and also applying on the first instance of damage dealt.",
+            "icon": "The Darkin Scythe A.png",
+            "leveling": []
+          },
+          {
+            "description": "Rhaast: Rhaast  heals for 34.5% \u2212 43% (based on level) of the post-mitigation  physical damage that he deals with abilities against enemy champions.",
+            "icon": "The Darkin Scythe R.png",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The bar gets filled up completely at 500 points.\n Melee orbs grant 2 points per hit and 6 points per takedown.\n Ranged orbs grant 3 points per hit and 7 points per takedown.\n Each bar has a bucket system.\n The bucket starts at 60 points.\n Each time an orb is taken the system checks if there's an amount of points in the bucket equal to or higher than the amount received from the orb.If there is, Kayn is given an additional orb of the same type he received, while also subtracting that amount of points from the bucket.\n The bucket fills by 0.8 points per second if out of champion combat for 70 seconds.\n\n The amount of points received per orb increases constantly (every second) after 5 minutes, flatting out at 13 minutes.\n\n The orbs will be collected even if Kayn dies.",
+        "blurb": "At one point in the game, Kayn will permanently transform into either a Shadow Assassin or a Darkin.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "The Darkin Scythe",
+        "effects": [
+          {
+            "description": "Innate:  Kayn wields an ancient, sentient weapon, that battles with him for control. Each instance of damage Kayn deals against champions (excluding damage over time) and  takedowns causes them to drop orbs, red by  melee champions and blue by  ranged champions, that are automatically collected upon leaving combat, filling a bar around Kayn's portrait.",
+            "icon": "The Darkin Scythe.png",
+            "leveling": []
+          },
+          {
+            "description": "Once the bar is filled, Kayn can return to the summoning platform to interact with his portrait to either be overwhelmed by  Rhaast or expel him to become the  Shadow Assassin, or wait 4 minutes until the other form becomes available, reduced by 5 seconds for each collected orb of their type after that.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "The transformation type is decided based on the highest amount of damage dealt to the respective range type. If the two forms are within 8% of each other, the last champion range type hit will determine the transformation. If both types are hit at the same time the trasformation will default to  Rhaast. The transformation will permanently change Kayn's abilities and grant him Homeguard.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Shadow Assassin: If Kayn has been out of champion combat for over 8 seconds, or he casts  Umbral Trespass, he deals 12% \u2212 44% (based on level) of post-mitigation damage dealt against champions as  bonus magic damage, lasting for 3 seconds upon entering combat and also applying on the first instance of damage dealt.",
+            "icon": "The Darkin Scythe A.png",
+            "leveling": []
+          },
+          {
+            "description": "Rhaast: Rhaast  heals for 34.5% \u2212 43% (based on level) of the post-mitigation  physical damage that he deals with abilities against enemy champions.",
+            "icon": "The Darkin Scythe R.png",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The bar gets filled up completely at 500 points.\n Melee orbs grant 2 points per hit and 6 points per takedown.\n Ranged orbs grant 3 points per hit and 7 points per takedown.\n Each bar has a bucket system.\n The bucket starts at 60 points.\n Each time an orb is taken the system checks if there's an amount of points in the bucket equal to or higher than the amount received from the orb.If there is, Kayn is given an additional orb of the same type he received, while also subtracting that amount of points from the bucket.\n The bucket fills by 0.8 points per second if out of champion combat for 70 seconds.\n\n The amount of points received per orb increases constantly (every second) after 5 minutes, flatting out at 13 minutes.\n\n The orbs will be collected even if Kayn dies.",
+        "blurb": "At one point in the game, Kayn will permanently transform into either a Shadow Assassin or a Darkin.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Reaping Slash",
+        "effects": [
+          {
+            "description": "Active: Kayn  dashes forward, dealing physical damage to enemies he passes through, before swinging his scythe, dealing the same damage to surrounding enemies.",
+            "icon": "Reaping Slash.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      75,
+                      95,
+                      115,
+                      135,
+                      155
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      65,
+                      65,
+                      65,
+                      65,
+                      65
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Non-Monster Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      150,
+                      190,
+                      230,
+                      270,
+                      310
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      130,
+                      130,
+                      130,
+                      130,
+                      130
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Both instances of Reaping Slash deal 40 bonus damage against monsters.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Monster Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      115,
+                      135,
+                      155,
+                      175,
+                      195
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      65,
+                      65,
+                      65,
+                      65,
+                      65
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Monster Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      230,
+                      270,
+                      310,
+                      350,
+                      390
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      130,
+                      130,
+                      130,
+                      130,
+                      130
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Rhaast: Reaping Slash's damage is modified to deal 55% AD (+ 5% (+ 4% per 100 bonus AD) of the target's maximum health) physical damage for both instances. This damage is capped against monsters.",
+            "icon": "Reaping Slash R.png",
+            "leveling": [
+              {
+                "attribute": "Max. Monster Damage per Hit",
+                "modifiers": [
+                  {
+                    "values": [
+                      200,
+                      250,
+                      300,
+                      350,
+                      400
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Maximum Monster Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      400,
+                      500,
+                      600,
+                      700,
+                      800
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "The dash's speed scales with Kayn's  total movement speed.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                7,
+                6.5,
+                6,
+                5.5,
+                5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "Special",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Area of effect",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Spell shields will block only a single instance of damage - either the dash or the slash.\n As  Shadow Assassin, an alternate icon for  Reaping Slash is used but has no modified effect.\n Other abilities can be queued while casting Reaping Slash.",
+        "blurb": "Kayn dashes, then slashes. Both deal damage.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "350"
+      },
+      {
+        "name": "Reaping Slash",
+        "effects": [
+          {
+            "description": "Active: Kayn  dashes forward, dealing physical damage to enemies he passes through, before swinging his scythe, dealing the same damage to surrounding enemies.",
+            "icon": "Reaping Slash.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      75,
+                      95,
+                      115,
+                      135,
+                      155
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      65,
+                      65,
+                      65,
+                      65,
+                      65
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Non-Monster Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      150,
+                      190,
+                      230,
+                      270,
+                      310
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      130,
+                      130,
+                      130,
+                      130,
+                      130
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Both instances of Reaping Slash deal 40 bonus damage against monsters.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Monster Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      115,
+                      135,
+                      155,
+                      175,
+                      195
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      65,
+                      65,
+                      65,
+                      65,
+                      65
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Monster Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      230,
+                      270,
+                      310,
+                      350,
+                      390
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      130,
+                      130,
+                      130,
+                      130,
+                      130
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Rhaast: Reaping Slash's damage is modified to deal 55% AD (+ 5% (+ 4% per 100 bonus AD) of the target's maximum health) physical damage for both instances. This damage is capped against monsters.",
+            "icon": "Reaping Slash R.png",
+            "leveling": [
+              {
+                "attribute": "Max. Monster Damage per Hit",
+                "modifiers": [
+                  {
+                    "values": [
+                      200,
+                      250,
+                      300,
+                      350,
+                      400
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Maximum Monster Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      400,
+                      500,
+                      600,
+                      700,
+                      800
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "The dash's speed scales with Kayn's  total movement speed.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                7,
+                6.5,
+                6,
+                5.5,
+                5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "Special",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Area of effect",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Spell shields will block only a single instance of damage - either the dash or the slash.\n As  Shadow Assassin, an alternate icon for  Reaping Slash is used but has no modified effect.\n Other abilities can be queued while casting Reaping Slash.",
+        "blurb": "Kayn dashes, then slashes. Both deal damage.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "350"
+      },
+      {
+        "name": "Reaping Slash",
+        "effects": [
+          {
+            "description": "Active: Kayn  dashes forward, dealing physical damage to enemies he passes through, before swinging his scythe, dealing the same damage to surrounding enemies.",
+            "icon": "Reaping Slash.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      75,
+                      95,
+                      115,
+                      135,
+                      155
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      65,
+                      65,
+                      65,
+                      65,
+                      65
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Non-Monster Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      150,
+                      190,
+                      230,
+                      270,
+                      310
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      130,
+                      130,
+                      130,
+                      130,
+                      130
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Both instances of Reaping Slash deal 40 bonus damage against monsters.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Monster Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      115,
+                      135,
+                      155,
+                      175,
+                      195
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      65,
+                      65,
+                      65,
+                      65,
+                      65
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Monster Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      230,
+                      270,
+                      310,
+                      350,
+                      390
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      130,
+                      130,
+                      130,
+                      130,
+                      130
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Rhaast: Reaping Slash's damage is modified to deal 55% AD (+ 5% (+ 4% per 100 bonus AD) of the target's maximum health) physical damage for both instances. This damage is capped against monsters.",
+            "icon": "Reaping Slash R.png",
+            "leveling": [
+              {
+                "attribute": "Max. Monster Damage per Hit",
+                "modifiers": [
+                  {
+                    "values": [
+                      200,
+                      250,
+                      300,
+                      350,
+                      400
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Total Maximum Monster Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      400,
+                      500,
+                      600,
+                      700,
+                      800
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "The dash's speed scales with Kayn's  total movement speed.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                7,
+                6.5,
+                6,
+                5.5,
+                5
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "Special",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Area of effect",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Spell shields will block only a single instance of damage - either the dash or the slash.\n As  Shadow Assassin, an alternate icon for  Reaping Slash is used but has no modified effect.\n Other abilities can be queued while casting Reaping Slash.",
+        "blurb": "Kayn dashes, then slashes. Both deal damage.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "350"
+      }
+    ],
+    "W": [
+      {
+        "name": "Blade's Reach",
+        "effects": [
+          {
+            "description": "Active: Kayn performs an upwards sweep with his scythe, dealing physical damage to all enemies in a line in the target direction and  slowing them by 70% decaying over 1.5 seconds.",
+            "icon": "Blade's Reach.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      90,
+                      135,
+                      180,
+                      225,
+                      270
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      130,
+                      130,
+                      130,
+                      130,
+                      130
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Shadow Assassin: Blade's Reach's range is increased by 200. Additionally, Kayn conjures a living shadow at the casting position to perform Blade's Reach in his stead, reducing the ability's cast time to 0.",
+            "icon": "Blade's Reach A.png",
+            "leveling": []
+          },
+          {
+            "description": "Rhaast: Blade's Reach  knocks up enemies for 1 second.",
+            "icon": "Blade's Reach R.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                60,
+                65,
+                70,
+                75,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                13,
+                12,
+                11,
+                10,
+                9
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Area of effect",
+        "projectile": "FALSE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The shadow created by the Shadow Assassin is considered a champion for  Turret Plating's  gold sharing.",
+        "blurb": "Kayn damages and slows targets in a line.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "0.55",
+        "effectRadius": null,
+        "targetRange": "700"
+      },
+      {
+        "name": "Blade's Reach",
+        "effects": [
+          {
+            "description": "Active: Kayn performs an upwards sweep with his scythe, dealing physical damage to all enemies in a line in the target direction and  slowing them by 70% decaying over 1.5 seconds.",
+            "icon": "Blade's Reach.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      90,
+                      135,
+                      180,
+                      225,
+                      270
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      130,
+                      130,
+                      130,
+                      130,
+                      130
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Shadow Assassin: Blade's Reach's range is increased by 200. Additionally, Kayn conjures a living shadow at the casting position to perform Blade's Reach in his stead, reducing the ability's cast time to 0.",
+            "icon": "Blade's Reach A.png",
+            "leveling": []
+          },
+          {
+            "description": "Rhaast: Blade's Reach  knocks up enemies for 1 second.",
+            "icon": "Blade's Reach R.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                60,
+                65,
+                70,
+                75,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                13,
+                12,
+                11,
+                10,
+                9
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Area of effect",
+        "projectile": "FALSE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The shadow created by the Shadow Assassin is considered a champion for  Turret Plating's  gold sharing.",
+        "blurb": "Kayn damages and slows targets in a line.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "0.55",
+        "effectRadius": null,
+        "targetRange": "700"
+      },
+      {
+        "name": "Blade's Reach",
+        "effects": [
+          {
+            "description": "Active: Kayn performs an upwards sweep with his scythe, dealing physical damage to all enemies in a line in the target direction and  slowing them by 70% decaying over 1.5 seconds.",
+            "icon": "Blade's Reach.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      90,
+                      135,
+                      180,
+                      225,
+                      270
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      130,
+                      130,
+                      130,
+                      130,
+                      130
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Shadow Assassin: Blade's Reach's range is increased by 200. Additionally, Kayn conjures a living shadow at the casting position to perform Blade's Reach in his stead, reducing the ability's cast time to 0.",
+            "icon": "Blade's Reach A.png",
+            "leveling": []
+          },
+          {
+            "description": "Rhaast: Blade's Reach  knocks up enemies for 1 second.",
+            "icon": "Blade's Reach R.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                60,
+                65,
+                70,
+                75,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                13,
+                12,
+                11,
+                10,
+                9
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Area of effect",
+        "projectile": "FALSE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The shadow created by the Shadow Assassin is considered a champion for  Turret Plating's  gold sharing.",
+        "blurb": "Kayn damages and slows targets in a line.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "0.55",
+        "effectRadius": null,
+        "targetRange": "700"
+      }
+    ],
+    "E": [
+      {
+        "name": "Shadow Step",
+        "effects": [
+          {
+            "description": "Active: Kayn gains  40% bonus movement speed, is  ghosted and can ignore terrain collision for 1.5 seconds.  Immobilizing effects will interrupt Shadow Step.",
+            "icon": "Shadow Step.png",
+            "leveling": []
+          },
+          {
+            "description": "Kayn  heals himself upon moving through terrain for the first time and, if he's not in combat with enemy champions, Shadow Step's duration is increased. While inside terrain, Kayn has  unobstructed vision.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Heal",
+                "modifiers": [
+                  {
+                    "values": [
+                      100,
+                      115,
+                      130,
+                      145,
+                      160
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      40,
+                      40,
+                      40,
+                      40,
+                      40
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Empowered Duration",
+                "modifiers": [
+                  {
+                    "values": [
+                      7,
+                      7.5,
+                      8,
+                      8.5,
+                      9
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Receiving damage from an enemy  champion or dealing ability damage to them after the effect is enhanced reduces the remaining duration to 1.5 seconds. The effect also cannot remain active out of terrain for longer than 1.5 seconds and will cancel completely if Kayn uses a basic attack.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Shadow Assassin: Shadow Step's cooldown is  reduced to 8 seconds at all ranks. Casting Shadow Step  cleanses Kayn from all  slows and makes him immune to them for the duration. Additionally, entering terrain will increase the  bonus movement speed to 80% for the remaining duration.",
+            "icon": "Shadow Step A.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                90,
+                90,
+                90,
+                90,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                21,
+                19,
+                17,
+                15,
+                13
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "none",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": "Heal",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "As  Rhaast, an alternate icon for  Shadow Step is used but has no modified effect.\n Effects such as  Vayne's  Condemn and  Poppy's  Heroic Charge apply an  immobilizing effect and so  interrupt Shadow Step.\n Enemies cannot see Kayn while he is inside of terrain unless they have terrain-piercing vision, such as  Heightened Senses,  Hawkshot or  Comet of Legend.\n However, enemies will be notified if nearby terrain is infested if Kayn is within 1000 units - with an indicator being placed on the terrain with a direct line between Kayn and the enemy champion. Slightly less than standard sight radius, but more than the  camouflage detection radius.\n\n Kayn can move up to 550 units beyond the outer-edge of the battlefield.\n While in terrain, Kayn will not be considered unseen for the sake of  Duskblade of Draktharr.\n Kayn's  sight radius is not extended beyond merged terrain while  nearsighted.",
+        "blurb": "Kayn can walk through terrain.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "Shadow Step",
+        "effects": [
+          {
+            "description": "Active: Kayn gains  40% bonus movement speed, is  ghosted and can ignore terrain collision for 1.5 seconds.  Immobilizing effects will interrupt Shadow Step.",
+            "icon": "Shadow Step.png",
+            "leveling": []
+          },
+          {
+            "description": "Kayn  heals himself upon moving through terrain for the first time and, if he's not in combat with enemy champions, Shadow Step's duration is increased. While inside terrain, Kayn has  unobstructed vision.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Heal",
+                "modifiers": [
+                  {
+                    "values": [
+                      100,
+                      115,
+                      130,
+                      145,
+                      160
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      40,
+                      40,
+                      40,
+                      40,
+                      40
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Empowered Duration",
+                "modifiers": [
+                  {
+                    "values": [
+                      7,
+                      7.5,
+                      8,
+                      8.5,
+                      9
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Receiving damage from an enemy  champion or dealing ability damage to them after the effect is enhanced reduces the remaining duration to 1.5 seconds. The effect also cannot remain active out of terrain for longer than 1.5 seconds and will cancel completely if Kayn uses a basic attack.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Shadow Assassin: Shadow Step's cooldown is  reduced to 8 seconds at all ranks. Casting Shadow Step  cleanses Kayn from all  slows and makes him immune to them for the duration. Additionally, entering terrain will increase the  bonus movement speed to 80% for the remaining duration.",
+            "icon": "Shadow Step A.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                90,
+                90,
+                90,
+                90,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                21,
+                19,
+                17,
+                15,
+                13
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "none",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": "Heal",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "As  Rhaast, an alternate icon for  Shadow Step is used but has no modified effect.\n Effects such as  Vayne's  Condemn and  Poppy's  Heroic Charge apply an  immobilizing effect and so  interrupt Shadow Step.\n Enemies cannot see Kayn while he is inside of terrain unless they have terrain-piercing vision, such as  Heightened Senses,  Hawkshot or  Comet of Legend.\n However, enemies will be notified if nearby terrain is infested if Kayn is within 1000 units - with an indicator being placed on the terrain with a direct line between Kayn and the enemy champion. Slightly less than standard sight radius, but more than the  camouflage detection radius.\n\n Kayn can move up to 550 units beyond the outer-edge of the battlefield.\n While in terrain, Kayn will not be considered unseen for the sake of  Duskblade of Draktharr.\n Kayn's  sight radius is not extended beyond merged terrain while  nearsighted.",
+        "blurb": "Kayn can walk through terrain.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "Shadow Step",
+        "effects": [
+          {
+            "description": "Active: Kayn gains  40% bonus movement speed, is  ghosted and can ignore terrain collision for 1.5 seconds.  Immobilizing effects will interrupt Shadow Step.",
+            "icon": "Shadow Step.png",
+            "leveling": []
+          },
+          {
+            "description": "Kayn  heals himself upon moving through terrain for the first time and, if he's not in combat with enemy champions, Shadow Step's duration is increased. While inside terrain, Kayn has  unobstructed vision.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Heal",
+                "modifiers": [
+                  {
+                    "values": [
+                      100,
+                      115,
+                      130,
+                      145,
+                      160
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      40,
+                      40,
+                      40,
+                      40,
+                      40
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Empowered Duration",
+                "modifiers": [
+                  {
+                    "values": [
+                      7,
+                      7.5,
+                      8,
+                      8.5,
+                      9
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Receiving damage from an enemy  champion or dealing ability damage to them after the effect is enhanced reduces the remaining duration to 1.5 seconds. The effect also cannot remain active out of terrain for longer than 1.5 seconds and will cancel completely if Kayn uses a basic attack.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Shadow Assassin: Shadow Step's cooldown is  reduced to 8 seconds at all ranks. Casting Shadow Step  cleanses Kayn from all  slows and makes him immune to them for the duration. Additionally, entering terrain will increase the  bonus movement speed to 80% for the remaining duration.",
+            "icon": "Shadow Step A.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                90,
+                90,
+                90,
+                90,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                21,
+                19,
+                17,
+                15,
+                13
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "none",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": "Heal",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "As  Rhaast, an alternate icon for  Shadow Step is used but has no modified effect.\n Effects such as  Vayne's  Condemn and  Poppy's  Heroic Charge apply an  immobilizing effect and so  interrupt Shadow Step.\n Enemies cannot see Kayn while he is inside of terrain unless they have terrain-piercing vision, such as  Heightened Senses,  Hawkshot or  Comet of Legend.\n However, enemies will be notified if nearby terrain is infested if Kayn is within 1000 units - with an indicator being placed on the terrain with a direct line between Kayn and the enemy champion. Slightly less than standard sight radius, but more than the  camouflage detection radius.\n\n Kayn can move up to 550 units beyond the outer-edge of the battlefield.\n While in terrain, Kayn will not be considered unseen for the sake of  Duskblade of Draktharr.\n Kayn's  sight radius is not extended beyond merged terrain while  nearsighted.",
+        "blurb": "Kayn can walk through terrain.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "R": [
+      {
+        "name": "Umbral Trespass",
+        "effects": [
+          {
+            "description": "Passive: Kayn marks enemy champions he damaged in the last 3.15 seconds.",
+            "icon": "Umbral Trespass.png",
+            "leveling": []
+          },
+          {
+            "description": "Active: Kayn becomes  untargetable and  infests a marked enemy  champion for up to 2.5 seconds, gaining  true sight of them for the duration. Reactivating Umbral Trespass ends it earlier.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Upon reactivation or at the end of the duration, Kayn  dashes out from their body 300-units away in the target direction, dealing physical damage to the target.",
+            "icon": "Umbral Trespass 2.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      150,
+                      250,
+                      350
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      175,
+                      175,
+                      175
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Shadow Assassin: Umbral Trespass gains up to 200 bonus cast range and emerge range. Additionally, emerging will reset  The Darkin Scythe's  cooldown.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Rhaast: Umbral Trespass is modified to deal 10% (+ 13% per 100 bonus AD) of target's maximum health physical damage, and  heals him for[ 70% of the pre-mitigation damage. ][ 7% (+ 9.1% per 100 bonus AD) of target's maximum health. ]",
+            "icon": "Umbral Trespass 2 R.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                120,
+                100,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit / Direction",
+        "affects": "Enemies, Self",
+        "spellshieldable": "Special",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "As  Rhaast, an alternate icon is used for the initial activation of  Umbral Trespass.\n Until the second cast, the ability will have had no effect on the target for the purposes of  Electrocute or the 'in-combat' status.\n  Spell shields will prevent Kayn from infesting the target, but will do nothing to mitigate the damage once he has already infested them.\n If Kayn targets an enemy with a spell shield, the ability will simply go on cooldown without making him dash to his target.\n This is also true for  Fiora's  Riposte.\n\n The damage is not blocked if the target is  untargetable.\n Kayn can only be  knocked down upon  emerging from the target.\n Duskblade of Draktharr's passive, Nightstalker, will not be activated by this ability, despite Kayn being unseen for over a second (bug).",
+        "blurb": "Kayn hides in an enemy's body, dealing massive damage when he bursts out.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "550"
+      },
+      {
+        "name": "Umbral Trespass",
+        "effects": [
+          {
+            "description": "Passive: Kayn marks enemy champions he damaged in the last 3.15 seconds.",
+            "icon": "Umbral Trespass.png",
+            "leveling": []
+          },
+          {
+            "description": "Active: Kayn becomes  untargetable and  infests a marked enemy  champion for up to 2.5 seconds, gaining  true sight of them for the duration. Reactivating Umbral Trespass ends it earlier.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Upon reactivation or at the end of the duration, Kayn  dashes out from their body 300-units away in the target direction, dealing physical damage to the target.",
+            "icon": "Umbral Trespass 2.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      150,
+                      250,
+                      350
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      175,
+                      175,
+                      175
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Shadow Assassin: Umbral Trespass gains up to 200 bonus cast range and emerge range. Additionally, emerging will reset  The Darkin Scythe's  cooldown.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Rhaast: Umbral Trespass is modified to deal 10% (+ 13% per 100 bonus AD) of target's maximum health physical damage, and  heals him for[ 70% of the pre-mitigation damage. ][ 7% (+ 9.1% per 100 bonus AD) of target's maximum health. ]",
+            "icon": "Umbral Trespass 2 R.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                120,
+                100,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit / Direction",
+        "affects": "Enemies, Self",
+        "spellshieldable": "Special",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "As  Rhaast, an alternate icon is used for the initial activation of  Umbral Trespass.\n Until the second cast, the ability will have had no effect on the target for the purposes of  Electrocute or the 'in-combat' status.\n  Spell shields will prevent Kayn from infesting the target, but will do nothing to mitigate the damage once he has already infested them.\n If Kayn targets an enemy with a spell shield, the ability will simply go on cooldown without making him dash to his target.\n This is also true for  Fiora's  Riposte.\n\n The damage is not blocked if the target is  untargetable.\n Kayn can only be  knocked down upon  emerging from the target.\n Duskblade of Draktharr's passive, Nightstalker, will not be activated by this ability, despite Kayn being unseen for over a second (bug).",
+        "blurb": "Kayn hides in an enemy's body, dealing massive damage when he bursts out.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "550"
+      },
+      {
+        "name": "Umbral Trespass",
+        "effects": [
+          {
+            "description": "Passive: Kayn marks enemy champions he damaged in the last 3.15 seconds.",
+            "icon": "Umbral Trespass.png",
+            "leveling": []
+          },
+          {
+            "description": "Active: Kayn becomes  untargetable and  infests a marked enemy  champion for up to 2.5 seconds, gaining  true sight of them for the duration. Reactivating Umbral Trespass ends it earlier.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Upon reactivation or at the end of the duration, Kayn  dashes out from their body 300-units away in the target direction, dealing physical damage to the target.",
+            "icon": "Umbral Trespass 2.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      150,
+                      250,
+                      350
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      175,
+                      175,
+                      175
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Shadow Assassin: Umbral Trespass gains up to 200 bonus cast range and emerge range. Additionally, emerging will reset  The Darkin Scythe's  cooldown.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Rhaast: Umbral Trespass is modified to deal 10% (+ 13% per 100 bonus AD) of target's maximum health physical damage, and  heals him for[ 70% of the pre-mitigation damage. ][ 7% (+ 9.1% per 100 bonus AD) of target's maximum health. ]",
+            "icon": "Umbral Trespass 2 R.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                120,
+                100,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit / Direction",
+        "affects": "Enemies, Self",
+        "spellshieldable": "Special",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "As  Rhaast, an alternate icon is used for the initial activation of  Umbral Trespass.\n Until the second cast, the ability will have had no effect on the target for the purposes of  Electrocute or the 'in-combat' status.\n  Spell shields will prevent Kayn from infesting the target, but will do nothing to mitigate the damage once he has already infested them.\n If Kayn targets an enemy with a spell shield, the ability will simply go on cooldown without making him dash to his target.\n This is also true for  Fiora's  Riposte.\n\n The damage is not blocked if the target is  untargetable.\n Kayn can only be  knocked down upon  emerging from the target.\n Duskblade of Draktharr's passive, Nightstalker, will not be activated by this ability, despite Kayn being unseen for over a second (bug).",
+        "blurb": "Kayn hides in an enemy's body, dealing massive damage when he bursts out.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "550"
+      },
+      {
+        "name": "Umbral Trespass",
+        "effects": [
+          {
+            "description": "Passive: Kayn marks enemy champions he damaged in the last 3.15 seconds.",
+            "icon": "Umbral Trespass.png",
+            "leveling": []
+          },
+          {
+            "description": "Active: Kayn becomes  untargetable and  infests a marked enemy  champion for up to 2.5 seconds, gaining  true sight of them for the duration. Reactivating Umbral Trespass ends it earlier.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Upon reactivation or at the end of the duration, Kayn  dashes out from their body 300-units away in the target direction, dealing physical damage to the target.",
+            "icon": "Umbral Trespass 2.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      150,
+                      250,
+                      350
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      175,
+                      175,
+                      175
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Shadow Assassin: Umbral Trespass gains up to 200 bonus cast range and emerge range. Additionally, emerging will reset  The Darkin Scythe's  cooldown.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Rhaast: Umbral Trespass is modified to deal 10% (+ 13% per 100 bonus AD) of target's maximum health physical damage, and  heals him for[ 70% of the pre-mitigation damage. ][ 7% (+ 9.1% per 100 bonus AD) of target's maximum health. ]",
+            "icon": "Umbral Trespass 2 R.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                120,
+                100,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit / Direction",
+        "affects": "Enemies, Self",
+        "spellshieldable": "Special",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "As  Rhaast, an alternate icon is used for the initial activation of  Umbral Trespass.\n Until the second cast, the ability will have had no effect on the target for the purposes of  Electrocute or the 'in-combat' status.\n  Spell shields will prevent Kayn from infesting the target, but will do nothing to mitigate the damage once he has already infested them.\n If Kayn targets an enemy with a spell shield, the ability will simply go on cooldown without making him dash to his target.\n This is also true for  Fiora's  Riposte.\n\n The damage is not blocked if the target is  untargetable.\n Kayn can only be  knocked down upon  emerging from the target.\n Duskblade of Draktharr's passive, Nightstalker, will not be activated by this ability, despite Kayn being unseen for over a second (bug).",
+        "blurb": "Kayn hides in an enemy's body, dealing massive damage when he bursts out.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "550"
+      }
+    ]
+  },
+  "releaseDate": "2017-07-12",
+  "releasePatch": "7.14",
+  "patchLastChanged": "10.5",
+  "price": {
+    "blueEssence": 6300,
+    "rp": 975
+  }
+}

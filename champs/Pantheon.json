@@ -1,0 +1,840 @@
+{
+  "id": 80,
+  "key": "Pantheon",
+  "name": "Pantheon",
+  "title": "the Unbreakable Spear",
+  "fullName": "Atreus",
+  "resource": "MANA",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "stats": {
+    "health": {
+      "flat": 580,
+      "percent": 0.0,
+      "perLevel": 95,
+      "percentPerLevel": 0.0
+    },
+    "healthRegen": {
+      "flat": 10,
+      "percent": 0.0,
+      "perLevel": 0.65,
+      "percentPerLevel": 0.0
+    },
+    "mana": {
+      "flat": 317.12,
+      "percent": 0.0,
+      "perLevel": 31,
+      "percentPerLevel": 0.0
+    },
+    "manaRegen": {
+      "flat": 7.356,
+      "percent": 0.0,
+      "perLevel": 0.45,
+      "percentPerLevel": 0.0
+    },
+    "armor": {
+      "flat": 40,
+      "percent": 0.0,
+      "perLevel": 3.75,
+      "percentPerLevel": 0.0
+    },
+    "magicResistance": {
+      "flat": 28,
+      "percent": 0.0,
+      "perLevel": 1.25,
+      "percentPerLevel": 0.0
+    },
+    "attackDamage": {
+      "flat": 64,
+      "percent": 0.0,
+      "perLevel": 3.3,
+      "percentPerLevel": 0.0
+    },
+    "movespeed": {
+      "flat": 355,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "acquisitionRadius": 600,
+    "selectionRadius": 125,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrikeDamage": 200,
+    "criticalStrikeDamageModifier": 1.0,
+    "attackSpeed": {
+      "flat": 0.644,
+      "percent": 0.0,
+      "perLevel": 2.95,
+      "percentPerLevel": 0.0
+    },
+    "attackSpeedRatio": 0.643999993801116,
+    "attackCastTime": 0.3,
+    "attackTotalTime": 1.6,
+    "attackDelayOffset": -0.109687499701976,
+    "attackRange": {
+      "flat": 175,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageTaken": 1.0,
+    "aramDamageDealt": 1.05,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 0.95,
+    "urfDamageDealt": 1.0,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "ASSASSIN",
+    "DIVER",
+    "FIGHTER"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 2,
+    "control": 2,
+    "mobility": 2,
+    "utility": 1,
+    "abilityReliance": 75,
+    "attack": 9,
+    "defense": 4,
+    "magic": 3,
+    "difficulty": 1
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Mortal Will",
+        "effects": [
+          {
+            "description": "Innate: Pantheon gains a stack of Mortal Will when he lands a basic attack  on-hit or casts an ability, up to a maximum of 5. At 5 stacks, Pantheon's next basic ability consume the stacks to grant additional effects.",
+            "icon": "Mortal Will.png",
+            "leveling": []
+          },
+          {
+            "description": "Pantheon gains full stacks upon starting the game and upon respawning.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": "After five basic attacks or ability cast, Pantheon's next basic ability (Q, W, or E) is empowered.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Comet Spear",
+        "effects": [
+          {
+            "description": "Active: Pantheon winds up for up to 4 seconds, increasing Comet Spear's range while being  slowed by 10%. Comet Spear can be recast at any time within its duration.",
+            "icon": "Comet Spear.png",
+            "leveling": []
+          },
+          {
+            "description": "Recast: Pantheon hurls his spear, dealing  physical damage to all enemies hit, increased against enemies below 20% of their maximum health but reduced by 30% against  minions and by 50% against enemies beyond the first.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      75,
+                      110,
+                      145,
+                      180,
+                      215
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Increased Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      155,
+                      240,
+                      325,
+                      410,
+                      495
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      200,
+                      200,
+                      200,
+                      200,
+                      200
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Secondary Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      37.5,
+                      55,
+                      72.5,
+                      90,
+                      107.5
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      50,
+                      50,
+                      50,
+                      50,
+                      50
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Increased Secondary Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      77.5,
+                      120,
+                      162.5,
+                      205,
+                      247.5
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Releasing the ability within 0.35 seconds causes Pantheon to instead thrust his spear forward, dealing the same physical damage to all enemies hit and refunding 50% of Comet Spear's  cooldown. The thrust's damage is not reduced against enemies beyond the first.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "If Pantheon is  interrupted during the charge, or the charge completes without reactivation, Comet Spear is cancelled and the ability is put on full cooldown but refunds  half the mana cost.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Mortal Will: Deals an additional 20 \u2212 240 (based on level) (+ 100% bonus AD) bonus physical damage, affected by the previous damage reductions, to all enemies hit and  slows them for 2.5 seconds.",
+            "icon": "Comet Spear 2.png",
+            "leveling": [
+              {
+                "attribute": "Slow",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      25,
+                      30,
+                      35,
+                      40
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                10,
+                9.5,
+                9,
+                8.5,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": "Tap: Pantheon strikes in a direction, damaging all enemies in a line. Hold: Pantheon throws his spear in a line. Empowered: Enemies take extra damage and are slowed.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1500",
+        "width": "120",
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "575 / 1200 (based on channel time)"
+      }
+    ],
+    "W": [
+      {
+        "name": "Shield Vault",
+        "effects": [
+          {
+            "description": "Active: Pantheon  dashes to the target enemy unit, dealing them physical damage and  stunning them for 1 second.",
+            "icon": "Shield Vault.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      60,
+                      80,
+                      100,
+                      120,
+                      140
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Mortal Will: Pantheon's next basic attack within 4 seconds strikes his target 3 times, dealing 45% \u2212 55% (based on level) AD physical damage per hit, up to 135% \u2212 165% (based on level) AD. Each hit is affected by  critical strike modifiers and applies on-hit effects.",
+            "icon": "Shield Vault 2.png",
+            "leveling": []
+          },
+          {
+            "description": "The Empowered Shield Vault resets Pantheon's basic attack timer.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "The ability can be dodged if the target moves 800 units away.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Pantheon will attempt to automatically basic attack his target at the end of the dash.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                55,
+                55,
+                55,
+                55,
+                55
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                13,
+                12,
+                11,
+                10,
+                9
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "special",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Applies  spell damage on the initial vault. Deals  default damage on the additional attacks from the empowered ability.\n The 3 strikes that occurs after Empowered Shield Vault each apply a stack of  Mortal Will.\n If Shield Vault is used without Mortal Will beyond Pantheon's basic attack range, the auto attack following will not grant any stack of  Conqueror,  Electrocute,  Phase Rush or  Spellthief's Edge.\n PENDING FOR TEST:  Enhanced Shield Vault's interactions with  dodging,  blocking, and  blinding effects.",
+        "blurb": "Pantheon leaps to a target enemy, dealing damage and stunning them. Empowered: Pantheon's next basic attack hits three times, each at reduced damage.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "600"
+      }
+    ],
+    "E": [
+      {
+        "name": "Aegis Assault",
+        "effects": [
+          {
+            "description": "Active: Pantheon braces his shield in the target direction for 1.5 seconds, during which he is  slowed for between 0% \u2212 50% (based on his movement direction). Aegis Assault can't be  interrupted.",
+            "icon": "Aegis Assault.png",
+            "leveling": []
+          },
+          {
+            "description": "For the duration, Pantheon is  invulnerable against damage dealt by enemies ( turrets included) from the target direction, and deals[ up to 100% AD physical damage over the duration ][ 8.3% AD physical damage every 0.125 seconds ] in a cone to all enemies struck, reduced by 50% against  minions.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "At the end of the duration, Pantheon slams with his shield after a 0.25-second delay, dealing physical damage. Aegis Assault can be recast after 0.3 seconds.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Slam Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      55,
+                      105,
+                      155,
+                      205,
+                      255
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      150,
+                      150,
+                      150,
+                      150,
+                      150
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Recast: Pantheon slams with his shield early.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Mortal Will: Aegis Assault's duration is increased to 2.5 seconds, dealing[ up to 166.6% AD physical damage over the duration ][ 8.3% AD physical damage every 0.125 seconds ].",
+            "icon": "Aegis Assault 2.png",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                80,
+                80,
+                80,
+                80,
+                80
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                22,
+                20.5,
+                19,
+                17.5,
+                16
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "special",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "aoe",
+        "projectile": "FALSE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Blink ability damage is calculated before the displacement.\n  Spell shield will only block the slam's damage.",
+        "blurb": "Pantheon sets his shield in a direction, gaining invulnerability to damage from enemies in that direction and dealing damage continuously. The last hit is extra powerful and still activates if E is canceled early. Empowered: Aegis Assault lasts longer.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": "60\u00b0 / 120\u00b0",
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "400"
+      }
+    ],
+    "R": [
+      {
+        "name": "Grand Starfall",
+        "effects": [
+          {
+            "description": "Active: Pantheon channels for 2 seconds to leap high into the air, then marks and  reveals his destination before crashing down along the target area 2.7 seconds later. He remains  vanished until the landing is complete.",
+            "icon": "Grand Starfall.png",
+            "leveling": []
+          },
+          {
+            "description": "The landing deals  magic damage, decreased by up to 50% at the edges of the area.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      300,
+                      500,
+                      700
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Minimum Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      150,
+                      250,
+                      350
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      50,
+                      50,
+                      50
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Grand Starfall instantly readies  Mortal Will.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Grand Starfall's  cooldown is reduced to 30 seconds if the channel is  interrupted.",
+            "icon": null,
+            "leveling": []
+          },
+          {
+            "description": "Grand Starfall will cast at max range if cast beyond that.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                180,
+                165,
+                150
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction / Ground",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Abilities that target Pantheon will redirect to the last location.\n  Umbral Trespass will damage Pantheon during the travel, but will stay at the previous location.\n\n Pinging the ability will inform allies in chat which  visible  enemy champions are in range of Grand Starfall.",
+        "blurb": "Pantheon leaps into the air and then hurtles back toward a target location, damaging enemies as he passes through. Mortal Will activates immediately when he lands.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": "125",
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "450",
+        "targetRange": "5500 / 1350"
+      }
+    ]
+  },
+  "releaseDate": "2010-02-02",
+  "releasePatch": "1.0.0.72",
+  "patchLastChanged": "9.22",
+  "price": {
+    "blueEssence": 3150,
+    "rp": 790
+  }
+}

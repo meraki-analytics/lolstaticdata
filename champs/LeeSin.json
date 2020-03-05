@@ -1,0 +1,921 @@
+{
+  "id": 64,
+  "key": "LeeSin",
+  "name": "Lee Sin",
+  "title": "the Blind Monk",
+  "fullName": "",
+  "resource": "ENERGY",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "stats": {
+    "health": {
+      "flat": 575,
+      "percent": 0.0,
+      "perLevel": 85,
+      "percentPerLevel": 0.0
+    },
+    "healthRegen": {
+      "flat": 7.5,
+      "percent": 0.0,
+      "perLevel": 0.7,
+      "percentPerLevel": 0.0
+    },
+    "mana": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
+    "manaRegen": {
+      "flat": 50,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
+    "armor": {
+      "flat": 33,
+      "percent": 0.0,
+      "perLevel": 3.7,
+      "percentPerLevel": 0.0
+    },
+    "magicResistance": {
+      "flat": 32.1,
+      "percent": 0.0,
+      "perLevel": 1.25,
+      "percentPerLevel": 0.0
+    },
+    "attackDamage": {
+      "flat": 70,
+      "percent": 0.0,
+      "perLevel": 3.2,
+      "percentPerLevel": 0.0
+    },
+    "movespeed": {
+      "flat": 345,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "acquisitionRadius": 400,
+    "selectionRadius": 102.777801513671,
+    "pathingRadius": 35,
+    "gameplayRadius": 65,
+    "criticalStrikeDamage": 200,
+    "criticalStrikeDamageModifier": 1.0,
+    "attackSpeed": {
+      "flat": 0.651,
+      "percent": 0.0,
+      "perLevel": 3,
+      "percentPerLevel": 0.0
+    },
+    "attackSpeedRatio": 0.651000022888183,
+    "attackCastTime": 0.3,
+    "attackTotalTime": 1.6,
+    "attackDelayOffset": -0.104687497019767,
+    "attackRange": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageTaken": 0.9,
+    "aramDamageDealt": 1.08,
+    "aramHealing": 1.0,
+    "aramShielding": 1.0,
+    "urfDamageTaken": 0.95,
+    "urfDamageDealt": 1.05,
+    "urfHealing": 1.0,
+    "urfShielding": 1.0
+  },
+  "roles": [
+    "ASSASSIN",
+    "DIVER",
+    "FIGHTER"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 2,
+    "control": 2,
+    "mobility": 3,
+    "utility": 1,
+    "abilityReliance": 55,
+    "attack": 8,
+    "defense": 5,
+    "magic": 3,
+    "difficulty": 2
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Flurry",
+        "effects": [
+          {
+            "description": "Innate: After using an ability, Lee Sin's next 2 basic attacks within 3 seconds gain  40% bonus attack speed, returning  20 / 30 / 40 (based on level) energy on the first attack and [ half of that ][  10 / 15 / 20 (based on level) energy ] on the second.",
+            "icon": "Flurry.png",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Flurry will still restore energy even if the attacks are  dodged,  blocked, or  missed.",
+        "blurb": "After Lee Sin uses an ability, his next 2 basic attacks gain 40% Attack Speed and return 20/10 Energy.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Sonic Wave",
+        "effects": [
+          {
+            "description": "Active: Lee Sin fires a sonic blast in the target direction, dealing  physical damage to the first enemy it hits and granting  true sight of them for 3 seconds.",
+            "icon": "Sonic Wave.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      55,
+                      80,
+                      105,
+                      130,
+                      155
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If Sonic Wave hits, Lee Sin can cast  Resonating Strike within the next 3 seconds.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                11,
+                10,
+                9,
+                8,
+                7
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "ENERGY",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Spell",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Sonic Wave's  true sight is consumed when Lee Sin casts Resonating Strike.",
+        "blurb": "Lee Sin projects a discordant wave of sound to locate his enemies, dealing physical damage to the first enemy it encounters. If Sonic Wave hits, Lee Sin can cast Resonating Strike for the next 3 seconds.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1750",
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "1200"
+      },
+      {
+        "name": "Resonating Strike",
+        "effects": [
+          {
+            "description": "Active: Lee Sin  dashes to the enemy marked by  Sonic Wave, placing himself on top of the target and dealing physical damage, increased by 0% \u2212 100% (based on target's missing health).",
+            "icon": "Resonating Strike.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      55,
+                      80,
+                      105,
+                      130,
+                      155
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      110,
+                      160,
+                      210,
+                      260,
+                      310
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      200,
+                      200,
+                      200,
+                      200,
+                      200
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": null,
+        "targeting": "Auto",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "ENERGY",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Spell",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Lee Sin will travel to the target's last location if they die during his  dash.\n The target may escape the damage if they  blink the instant they're hit.",
+        "blurb": "Lee Sin dashes to the enemy hit by Sonic Wave, dealing physical damage.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "1300",
+        "targetRange": null
+      }
+    ],
+    "W": [
+      {
+        "name": "Safeguard",
+        "effects": [
+          {
+            "description": "Active: Lee Sin  dashes to the target ally or friendly  ward. If the ally is a  champion, both they and Lee Sin are  shielded for 2 seconds and Safeguard's  cooldown is reduced by 50%. Lee Sin can self-cast Safeguard to shield himself.",
+            "icon": "Safeguard.png",
+            "leveling": [
+              {
+                "attribute": "Shield",
+                "modifiers": [
+                  {
+                    "values": [
+                      55,
+                      110,
+                      165,
+                      220,
+                      275
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      80,
+                      80,
+                      80,
+                      80,
+                      80
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If Safeguard is used, Lee Sin can cast  Iron Will within 3 seconds.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                12,
+                12,
+                12,
+                12,
+                12
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit / Self",
+        "affects": null,
+        "spellshieldable": null,
+        "resource": "ENERGY",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Lee Sin cannot self-cast Safeguard if he is  immobilized.\n Safeguard can be used on any targetable allied unit (e.g,  champions,  minions,  wards,  Demacian Standard,  Lantern) with the exception of structures.\n Casting Safeguard will  interrupt  Resonating Strike's  dash, preventing any potential damage.",
+        "blurb": "Lee Sin rushes to target ally, shielding himself from damage. If the ally is a champion, they are also shielded. After using Safeguard, Lee Sin can cast Iron Will for the next 3 seconds.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "700"
+      },
+      {
+        "name": "Iron Will",
+        "effects": [
+          {
+            "description": "Active: For 4 seconds, Lee Sin gains  bonus life steal and  bonus spell vamp.",
+            "icon": "Iron Will.png",
+            "leveling": [
+              {
+                "attribute": "Bonus Sustain",
+                "modifiers": [
+                  {
+                    "values": [
+                      10,
+                      15,
+                      20,
+                      25,
+                      30
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": null,
+        "targeting": "none",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": "ENERGY",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional details.",
+        "blurb": "Lee Sin's intense training allows him to thrive in battle. For 4 seconds, Lee Sin gains Life Steal and Spell Vamp.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "E": [
+      {
+        "name": "Tempest",
+        "effects": [
+          {
+            "description": "Active: Lee Sin smashes the ground, dealing magic damage to nearby enemies and granting  sight of them for 4 seconds.",
+            "icon": "Tempest.png",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      80,
+                      120,
+                      160,
+                      200,
+                      240
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "If Tempest hits an enemy, Lee Sin can cast  Cripple within the next 3 seconds.",
+            "icon": null,
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Auto",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "ENERGY",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Tempest's  sight is not removed when Lee Sin casts Cripple (unlike  Sonic Wave's).",
+        "blurb": "Lee Sin smashes the ground, sending out a shockwave that deals magic damage and reveals enemy units hit. If Tempest hits an enemy, Lee Sin can cast cripple for the next 3 seconds.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "350",
+        "targetRange": null
+      },
+      {
+        "name": "Cripple",
+        "effects": [
+          {
+            "description": "Active: Lee Sin  slows all nearby enemies marked by  Tempest for 4 seconds, decaying over the duration.",
+            "icon": "Cripple.png",
+            "leveling": [
+              {
+                "attribute": "Slow",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      30,
+                      40,
+                      50,
+                      60
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": null,
+        "targeting": "Auto",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "ENERGY",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Tempest's  reveal is not removed when Lee Sin casts Cripple.",
+        "blurb": "Lee Sin cripples nearby enemies damaged by Tempest, reducing their Movement Speed for 4 seconds. Movement Speed recovers gradually over the duration.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "500",
+        "targetRange": null
+      }
+    ],
+    "R": [
+      {
+        "name": "Dragon's Rage",
+        "effects": [
+          {
+            "description": "Active: Lee Sin instantly  roots the target enemy champion for 0.25 seconds after which he roundhouse kicks them dealing physical damage and  knocking them back 1200 units over 1 second.",
+            "icon": "Dragon's Rage.png",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      175,
+                      400,
+                      625
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      200,
+                      200,
+                      200
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Enemies hit by the displaced enemy receive bonus physical damage and are  knocked up for 1 second.",
+            "icon": null,
+            "leveling": [
+              {
+                "attribute": "Collision Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      175,
+                      400,
+                      625
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      200,
+                      200,
+                      200
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      12,
+                      15,
+                      18
+                    ],
+                    "units": [
+                      "% of kicked target's bonus health",
+                      "% of kicked target's bonus health",
+                      "% of kicked target's bonus health"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": null,
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                110,
+                85,
+                60
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": false
+        },
+        "targeting": "Unit / Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Special",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Applies  spell damage to the primary target and  area damage to secondary targets.\n If Dragon's Rage's target dies when first hit there will be no displacement of any kind.\n The  displacement's direction is decided at the moment of impact and not by Lee Sin and his target's relative locations on-cast (the only way for Lee Sin to control where his target is displaced is by using  Flash before Dragon's Rage's cast time ends).\n The collision damage buff of the target remains for the normal duration even if its trajectory is  displaced by another source (i.e  Headbutt).\n\n\n The ability will only go on  cooldown after doing the kick.\n Because of this, if  Electrocute triggers from the  root and kills the enemy, the ability will not go on cooldown. \n\n If the  knock back ends normally and is not  interrupted early, the target may still knock other enemies for a brief period after they reach their destination.",
+        "blurb": "Lee Sin performs a powerful roundhouse kick launching his target back, dealing physical damage to the target and any enemies they collide with. Enemies the target collides with are knocked into the air for a short duration. This technique was taught to him by Jesse Perring, although Lee Sin does not kick players off the map.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": "375"
+      }
+    ]
+  },
+  "releaseDate": "2011-04-01",
+  "releasePatch": "1.0.0.114",
+  "patchLastChanged": "10.3",
+  "price": {
+    "blueEssence": 4800,
+    "rp": 880
+  }
+}
