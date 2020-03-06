@@ -9,6 +9,7 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3742.png",
   "nicknames": [],
   "passives": [
     {
@@ -16,14 +17,14 @@
       "name": "Dreadnought",
       "effects": "Generates a maximum of 100 Momentum stacks by moving, which grant up to 60 bonus movement speed. Momentum decays while immobilized or pacified.",
       "range": null,
-      "stats": []
+      "stats": {}
     },
     {
       "unique": true,
       "name": "Crushing Blow",
       "effects": "Basic attacks discharge all stacks to deal (1 per stack) bonus magic damage on-hit, up to 100. Basic attacks at 100 stacks also slow by 50% for 1 second.",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],

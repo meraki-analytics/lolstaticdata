@@ -9,6 +9,7 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3006.png",
   "nicknames": [
     "boots"
   ],
@@ -18,18 +19,16 @@
       "name": "Enhanced Movement",
       "effects": "+45 flat movement speed",
       "range": null,
-      "stats": [
-        {
-          "movespeed": {
-            "flat": 45.0,
-            "percent": 0.0,
-            "perLevel": 0.0,
-            "percentPerLevel": 0.0,
-            "percentBase": 0.0,
-            "percentBonus": 0.0
-          }
+      "stats": {
+        "movespeed": {
+          "flat": 45.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
         }
-      ]
+      }
     }
   ],
   "active": [],

@@ -10,6 +10,7 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3508.png",
   "nicknames": [
     "bloothirster"
   ],
@@ -19,25 +20,23 @@
       "name": null,
       "effects": "20.0% cooldown reduction",
       "range": null,
-      "stats": [
-        {
-          "cooldownReduction": {
-            "flat": 0.0,
-            "percent": 20.0,
-            "perLevel": 0.0,
-            "percentPerLevel": 0.0,
-            "percentBase": 0.0,
-            "percentBonus": 0.0
-          }
+      "stats": {
+        "cooldownReduction": {
+          "flat": 0.0,
+          "percent": 20.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
         }
-      ]
+      }
     },
     {
       "unique": true,
       "name": null,
       "effects": "Basic attacks refund 1.5% of missing mana on-hit.",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],

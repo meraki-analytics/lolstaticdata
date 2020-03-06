@@ -7,9 +7,12 @@
     3057,
     3044
   ],
-  "buildsInto": [],
+  "buildsInto": [
+    3384
+  ],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3078.png",
   "nicknames": [
     "triforce"
   ],
@@ -19,14 +22,14 @@
       "name": "Rage",
       "effects": "Basic attacks (on-hit) grant +20 flat movement speed for 2 seconds. Killing a unit grants +60 flat movement speed instead. Bonus movement speed is halved on ranged champions.",
       "range": null,
-      "stats": []
+      "stats": {}
     },
     {
       "unique": true,
       "name": "Spellblade",
       "effects": "After using an ability, your next basic attack within 10 seconds deals 200% base AD bonus physical damage on-hit (1.5 second cooldown).",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],

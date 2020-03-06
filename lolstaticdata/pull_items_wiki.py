@@ -1,34 +1,29 @@
-from typing import List, Optional
-import bs4
+from typing import List, Optional, Tuple
 from bs4 import BeautifulSoup
-import os
-import json
 import re
-from lolstaticdata.utils import download_webpage
+from lolstaticdata.utils import download_soup
 from collections import OrderedDict
 
-
-from modelitem import Stats, Shop, Item, Passive, PassiveStats, Active, Aura, ItemAttributes
+from modelitem import Stats, Shop, Item, Passive, Active, Aura, ItemAttributes
 from modelcommon import ArmorPenetration, DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, CriticalStrikeChance, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration
 
 
-class ItemParser:
+class WikiItem:
     @classmethod
-    def parse_passives(cls, item_data: dict) -> List[PassiveStats]:
+    def _parse_passives(cls, item_data: dict) -> List[Passive]:
         effects = []
-        get_range = re.compile("\d+ range")
         not_unique = re.compile('[0-9]')
         if not_unique.search(item_data["cdrunique"]):
             cooldown = cls._parse_float(item_data['cdrunique'])
             description = "{}% cooldown reduction".format(cooldown)
-            stats = cls.parse_passive_descriptions(description)
-            effect = PassiveStats(unique=True, name=None, effects=description, range=None, stats=stats)
+            stats = cls._parse_passive_descriptions(description)
+            effect = Passive(unique=True, name=None, effects=description, range=None, stats=stats)
             effects.append(effect)
         if not_unique.search(item_data['critunique']):
             crit = cls._parse_float(item_data['critunique'])
             description = "{}% critical strike chance".format(crit)
-            stats = cls.parse_passive_descriptions(description)
-            effect = PassiveStats(unique=True, name=None, effects=description, range=None, stats=stats)
+            stats = cls._parse_passive_descriptions(description)
+            effect = Passive(unique=True, name=None, effects=description, range=None, stats=stats)
             effects.append(effect)
 
         for i in range(1, 6):
@@ -37,22 +32,14 @@ class ItemParser:
                 passive = "pass"
             passive = item_data[passive].strip()
             if passive:
-
-                effect = cls._parse_passive(passive)
-
-                stats = cls.parse_passive_descriptions(effect.effects)
-                if get_range.search(effect.effects):
-                    itemrange = get_range.search(effect.effects).group(0).split(" ", 1)
-                    itemrange = cls._parse_int(itemrange[0])
-                else:
-                    itemrange = None
-                effect = PassiveStats(unique=effect.unique,name=effect.name,effects=effect.effects,range=itemrange, stats=stats)
+                unique, passive_name, passive_effects, item_range = cls._parse_passive_info(passive)
+                stats = cls._parse_passive_descriptions(passive_effects)
+                effect = Passive(unique=unique, name=passive_name, effects=passive_effects, range=item_range, stats=stats)
                 effects.append(effect)
         return effects
 
     @classmethod
-    def parse_auras(cls, item_data: dict) -> List[Aura]:
-        get_range = re.compile("\d+ range")
+    def _parse_auras(cls, item_data: dict) -> List[Aura]:
         effects = []
         for i in range(1, 4):
             passive = "aura" + str(i)
@@ -60,42 +47,30 @@ class ItemParser:
                 passive = "aura"
             passive = item_data[passive].strip()
             if passive:
-                effect = cls._parse_passive(passive)
-                if get_range.search(effect.effects):
-                    itemrange = get_range.search(effect.effects).group(0).split(" ", 1)
-                    itemrange = cls._parse_int(itemrange[0])
-                else:
-                    itemrange = None
-                effect = Aura(unique=effect.unique, name=effect.name, effects=effect.effects, range = itemrange)  # This is hacky...
+                unique, passive_name, passive_effects, item_range = cls._parse_passive_info(passive)
+                effect = Aura(unique=unique, name=passive_name, effects=passive_effects, range=item_range)  # This is hacky...
                 effects.append(effect)
         return effects
 
     @classmethod
-    def parse_actives(cls, item_data: dict) -> List[Active]:
-        get_cooldown = re.compile("(\d+ second cooldown)|(\d+ seconds cooldown)")
-        get_range = re.compile("\d+ range")
+    def _parse_actives(cls, item_data: dict) -> List[Active]:
+        get_cooldown = re.compile(r"(\d+ second cooldown)|(\d+ seconds cooldown)")
         effects = []
         passive = item_data["act"].strip()
         if passive:
-            effect = cls._parse_passive(passive)
-            if get_cooldown.search(effect.effects):
-                cooldown = get_cooldown.search(effect.effects).group(0).split(" ",1)
+            unique, passive_name, passive_effects, item_range = cls._parse_passive_info(passive)
+            if get_cooldown.search(passive_effects):
+                cooldown = get_cooldown.search(passive_effects).group(0).split(" ", 1)
                 cooldown = cls._parse_float(cooldown[0])
             else:
                 cooldown = None
-            if get_range.search(effect.effects):
-                range = get_range.search(effect.effects).group(0).split(" ",1)
-                range = cls._parse_int(range[0])
-            else:
-                range = None
-            effect = Active(unique=effect.unique, name=effect.name, effects=effect.effects, cooldown = cooldown, range = range)  # This is hacky...
+            effect = Active(unique=unique, name=passive_name, effects=passive_effects, cooldown=cooldown, range=item_range)  # This is hacky...
 
             effects.append(effect)
-        stuff = [x for x in effects]
         return effects
 
-    @staticmethod
-    def _parse_passive(passive: str) -> Passive:
+    @classmethod
+    def _parse_passive_info(cls, passive: str) -> Tuple[bool, Optional[str], str, Optional[int]]:
         if passive.startswith("Unique"):
             unique = True
             passive = passive[len("Unique"):].strip()
@@ -108,45 +83,42 @@ class ItemParser:
         if unique:
             # I changed util to detect unique items regardless of name or not
             # Before it had "Unique \u2013 passive name :"
-            #print(" ".join(passive.split()[:4]))
             if ':' in " ".join(passive.split()[:4]):
                 unique_split = passive.split(':')
                 name = unique_split[0]
                 passive = ':'.join(unique_split[1:])
             else:
                 name = None
-            effect = Passive(
-                unique=unique,
-                name=name,
-                effects=passive.strip()
-            )
         else:
-            # return normal passive
-            #print(" ".join(passive.split()[:4]))
+            # Return normal passive
             if ':' in " ".join(passive.split()[:4]):
                 not_unique_split = passive.split(':')
                 name = not_unique_split[0]
                 passive = ':'.join(not_unique_split[1:])
             else:
                 name = None
-            effect = Passive(
-                unique=unique,
-                name=name,
-                effects=passive.strip()
-            )
-        return effect
+
+        passive = passive.strip()
+
+        get_range = re.compile(r"\d+ range")
+        if get_range.search(passive):
+            item_range = get_range.search(passive).group(0).split(" ", 1)
+            item_range = cls._parse_int(item_range[0])
+        else:
+            item_range = None
+        return unique, name, passive, item_range
 
     @classmethod
-    def parse_passive_descriptions(cls, passive: str) -> Passive:
-        #regex stuff
-        cdr = re.compile("\d.* cooldown reduction")
-        crit = re.compile("\d.* critical strike chance")
-        lethality = re.compile("\d.* lethality", re.IGNORECASE)
-        movementspeed = re.compile('\d+.*? flat movement speed$', re.IGNORECASE)#movespeed needs fixing
-        armorpen = re.compile('\d+.*? armor penetration\.\"')
-        magicpen = re.compile('\d+.*? magic penetration')
-        lifesteal = re.compile('\d+.*? life steal')
-        abilityPower = re.compile('\+\d+% ability power')
+    def _parse_passive_descriptions(cls, passive: str) -> Stats:
+        # Regex stuff
+        cdr = re.compile(r"\d.* cooldown reduction")
+        crit = re.compile(r"\d.* critical strike chance")
+        lethality = re.compile(r"\d.* lethality", re.IGNORECASE)
+        movespeed = re.compile(r"\d+.*? flat movement speed$", re.IGNORECASE)  # movespeed needs fixing
+        armorpen = re.compile(r"\d+.*? armor penetration\.\"")
+        magicpen = re.compile(r"\d+.*? magic penetration")
+        lifesteal = re.compile(r"\d+.*? life steal")
+        ability_power = re.compile(r"\+\d+% ability power")
 
         if cdr.search(passive):
             cooldown = cdr.search(passive).group(0).split("%")[0]
@@ -154,11 +126,11 @@ class ItemParser:
         else:
             cooldown = 0.
 
-        if movementspeed.search(passive):
-            movementspeed = movementspeed.search(passive).group(0).split("flat")[0]
-            movementspeed = cls._parse_float(movementspeed)
+        if movespeed.search(passive):
+            movespeed = movespeed.search(passive).group(0).split("flat")[0]
+            movespeed = cls._parse_float(movespeed)
         else:
-            movementspeed = 0.
+            movespeed = 0.
 
         if crit.search(passive):
             crit = crit.search(passive).group(0).split("%")[0]
@@ -166,12 +138,11 @@ class ItemParser:
         else:
             crit = 0.
 
-
-        if abilityPower.search(passive):
-            ap = abilityPower.search(passive).group(0).split("%")[0]
+        if ability_power.search(passive):
+            ap = ability_power.search(passive).group(0).split("%")[0]
             ap = cls._parse_float(ap)
         else:
-            ap = 0.0
+            ap = 0.
         if lethality.search(passive):
             lethal = lethality.search(passive).group(0).split(" ")[0]
             lethal = cls._parse_float(lethal)
@@ -181,7 +152,7 @@ class ItemParser:
             armorpen = armorpen.search(passive).group(0).split("%")[0]
             armorpen = cls._parse_float(armorpen)
         else:
-            armorpen = cls._parse_float(0.0)
+            armorpen = 0.
 
         if magicpen.search(passive):
             magicpen = magicpen.search(passive).group(0)
@@ -190,40 +161,34 @@ class ItemParser:
             else:
                 magicpen = MagicPenetration(flat=magicpen.split(" ")[0])
         else:
-            magicpen =  MagicPenetration(flat=0.0)
+            magicpen =  MagicPenetration(flat=0.)
 
         if lifesteal.search(passive):
             lifesteal = lifesteal.search(passive).group(0).split("%")[0]
             lifesteal = cls._parse_float(lifesteal)
         else:
             lifesteal = 0.
-        stats1 = Stats(
+        stats = Stats(
             ability_power=AbilityPower(percent=ap),
             armor=Armor(flat=cls._parse_float(0.0)),
             armor_penetration=ArmorPenetration(percent=armorpen),
             attack_damage=AttackDamage(flat=cls._parse_float(0.0)),
             attack_speed=AttackSpeed(flat=cls._parse_float(0.0)),
-            cooldown_reduction=CooldownReduction(
-                percent=cooldown),
-            critical_strike_chance=CriticalStrikeChance(
-                percent=cls._parse_float(crit)),
+            cooldown_reduction=CooldownReduction(percent=cooldown),
+            critical_strike_chance=CriticalStrikeChance(percent=cls._parse_float(crit)),
             gold_per_10=GoldPer10(flat=cls._parse_float(0.0)),
             heal_and_shield_power=HealAndShieldPower(flat=cls._parse_float(0.0)),
             health=Health(flat=cls._parse_float(0.0)),
-            health_regen=HealthRegen(
-                flat=cls._parse_float(0.0)),
+            health_regen=HealthRegen(flat=cls._parse_float(0.0)),
             lethality=Lethality(flat=lethal),
             lifesteal=Lifesteal(percent=lifesteal),
             magic_penetration=magicpen,
             magic_resistance=MagicResistance(flat=cls._parse_float(0.0)),
             mana=Mana(flat=cls._parse_float(0.0)),
-            mana_regen=ManaRegen(
-                flat=cls._parse_float(0.0)),
-            movespeed=Movespeed(
-                flat=cls._parse_float(movementspeed))
-            ),
-        return stats1
-
+            mana_regen=ManaRegen(flat=cls._parse_float(0.0)),
+            movespeed=Movespeed(flat=cls._parse_float(movespeed))
+            )
+        return stats
 
     @staticmethod
     def _parse_float(number: str, backup: float = 0.) -> float:
@@ -335,18 +300,16 @@ class ItemParser:
         item = item.replace(" ", "_")
         url = "https://leagueoflegends.fandom.com/wiki/Template:Item_data_" + item
         use_cache = False
-        html = download_webpage(url, use_cache)
+        html = download_soup(url, use_cache)
         soup = BeautifulSoup(html, 'lxml')
-        code =  soup.findAll('td', {"data-name": "code"})
-        for x in code:
-
-            return(cls._parse_item_id(code=x.text))
+        code = soup.findAll('td', {"data-name": "code"})
+        return cls._parse_item_id(code=code[0].text)
 
     @classmethod
-    def download(cls, url: str):
+    def get(cls, url: str) -> Optional[Item]:
         # All item data has a html attribute "data-name" so I put them all in an ordered dict while stripping the new lines and spaces from the data
         use_cache = False
-        html = download_webpage(url, use_cache)
+        html = download_soup(url, use_cache)
         soup = BeautifulSoup(html, 'lxml')
         item_data = OrderedDict()
         for td in soup.findAll('td', {"data-name": True}):
@@ -360,7 +323,7 @@ class ItemParser:
             item = cls._parse_item_data(item_data)
             return item
         else:
-            pass
+            raise ValueError(f"Item at url {url} has no id!")
 
     @classmethod
     def _parse_item_data(cls, item_data: dict) -> Item:
@@ -373,7 +336,7 @@ class ItemParser:
         except SyntaxError:
             tier = None
         except NameError:
-            tier=item_data["tier"]
+            tier = item_data["tier"]
         # Create the json files from the classes in modelitem.py
         if item_data["removed"] == "true":
             removed = True
@@ -426,20 +389,18 @@ class ItemParser:
             no_effects=no_effects,
             removed=removed,
             nicknames=nicknames,
-            passives=cls.parse_passives(item_data),
-            auras=cls.parse_auras(item_data),
-            active=cls.parse_actives(item_data),
+            icon="",
+            passives=cls._parse_passives(item_data),
+            auras=cls._parse_auras(item_data),
+            active=cls._parse_actives(item_data),
             stats=Stats(
                 ability_power=AbilityPower(flat=cls._parse_float(item_data["ap"])),
                 armor=Armor(flat=cls._parse_float(item_data['armor'])),
-                armor_penetration=cls._parse_float(item_data['rpen']),
+                armor_penetration=ArmorPenetration(flat=cls._parse_float(item_data['rpen'])),
                 attack_damage=AttackDamage(flat=cls._parse_float(item_data['ad'])),
                 attack_speed=AttackSpeed(flat=cls._parse_float(item_data['as'])),
-                cooldown_reduction=CooldownReduction(
-                    percent=cls._parse_float(item_data['cdr'])),
-                critical_strike_chance=CriticalStrikeChance(
-                    percent=cls._parse_float(item_data['crit'])
-                ),
+                cooldown_reduction=CooldownReduction(percent=cls._parse_float(item_data['cdr'])),
+                critical_strike_chance=CriticalStrikeChance(percent=cls._parse_float(item_data['crit'])),
                 gold_per_10=GoldPer10(flat=cls._parse_float(item_data["gp10"])),
                 heal_and_shield_power=HealAndShieldPower(flat=cls._parse_float(item_data["hsp"])),
                 health=Health(flat=cls._parse_float(item_data["health"])),
@@ -475,7 +436,7 @@ def get_item_urls(use_cache: bool) -> List[str]:
     all_urls = []
     url = 'https://leagueoflegends.fandom.com/wiki/Category:Item_data_templates?from=A'
     while True:
-        html = download_webpage(url, use_cache)
+        html = download_soup(url, use_cache)
         soup = BeautifulSoup(html, 'lxml')
         urls = soup.find_all("a", {"class": "category-page__member-link"})
         all_urls.extend(urls)
@@ -487,29 +448,3 @@ def get_item_urls(use_cache: bool) -> List[str]:
     base_url = 'https://leagueoflegends.fandom.com'
     all_urls = [base_url + url['href'] for url in all_urls]
     return all_urls
-
-
-def main():
-    directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), ".."))
-    use_cache = False
-    if not os.path.exists(os.path.join(directory,"items")):
-        os.mkdir(os.path.join(directory,"items"))
-    item_urls = get_item_urls(use_cache)
-    jsons = {}
-    for url in item_urls:
-        item = ItemParser.download(url)
-        if item is not None:
-            jsonfn = os.path.join(directory,"items" ,str(item.id) + ".json")
-            with open(jsonfn, 'w') as f:
-                f.write(item.__json__(indent=2))
-            jsons[item.id] = json.loads(item.__json__())
-            print(item.id, url)
-
-    jsonfn = os.path.join(directory,"items.json")
-    with open(jsonfn, 'w') as f:
-        json.dump(jsons, f, indent=2)
-    del jsons
-
-
-if __name__ == "__main__":
-    main()

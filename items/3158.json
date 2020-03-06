@@ -8,6 +8,7 @@
   "buildsInto": [],
   "noEffects": true,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3158.png",
   "nicknames": [],
   "passives": [
     {
@@ -15,43 +16,39 @@
       "name": null,
       "effects": "10.0% cooldown reduction",
       "range": null,
-      "stats": [
-        {
-          "cooldownReduction": {
-            "flat": 0.0,
-            "percent": 10.0,
-            "perLevel": 0.0,
-            "percentPerLevel": 0.0,
-            "percentBase": 0.0,
-            "percentBonus": 0.0
-          }
+      "stats": {
+        "cooldownReduction": {
+          "flat": 0.0,
+          "percent": 10.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
         }
-      ]
+      }
     },
     {
       "unique": true,
       "name": "Enhanced Movement",
       "effects": "+45 flat movement speed",
       "range": null,
-      "stats": [
-        {
-          "movespeed": {
-            "flat": 45.0,
-            "percent": 0.0,
-            "perLevel": 0.0,
-            "percentPerLevel": 0.0,
-            "percentBase": 0.0,
-            "percentBonus": 0.0
-          }
+      "stats": {
+        "movespeed": {
+          "flat": 45.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
         }
-      ]
+      }
     },
     {
       "unique": true,
       "name": null,
       "effects": "Reduces summoner spell cooldowns by 10%.",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],

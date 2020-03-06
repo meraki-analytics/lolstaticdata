@@ -2,12 +2,11 @@
   "name": "Muramana",
   "id": 3042,
   "tier": 4,
-  "buildsFrom": [
-    3004
-  ],
+  "buildsFrom": [],
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3042.png",
   "nicknames": [],
   "passives": [
     {
@@ -15,14 +14,14 @@
       "name": "Awe",
       "effects": "Grants bonus attack damage equal to 2% maximum mana. Refunds 15% of mana spent.",
       "range": null,
-      "stats": []
+      "stats": {}
     },
     {
       "unique": true,
       "name": "Shock",
       "effects": "Basic attacks and single targeted abilities against champions (on-hit) consume 3% current mana to deal 6% current mana bonus physical damage. This effect only activates while you have greater than 20% maximum mana.",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],

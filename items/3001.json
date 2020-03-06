@@ -6,9 +6,12 @@
     3010,
     1057
   ],
-  "buildsInto": [],
+  "buildsInto": [
+    3379
+  ],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3001.png",
   "nicknames": [],
   "passives": [
     {
@@ -16,7 +19,7 @@
       "name": "Eternity",
       "effects": "Restore mana equal to 15% of damage taken from champions. Restore health equal to 20% of mana spent, up to 25 health per cast, while toggle abilities can heal for up to 25 per second.",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],

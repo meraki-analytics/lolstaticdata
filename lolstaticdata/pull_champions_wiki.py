@@ -7,7 +7,7 @@ from collections import Counter
 
 from modelchampion import Champion, Stats, Ability, AttackType, AttributeRatings, Cooldown, Cost, Effect, Price, Resource, Modifier, Role, Leveling
 from modelcommon import DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration
-from utils import download_webpage, parse_top_level_parentheses, grouper, to_enum_like
+from utils import download_soup, parse_top_level_parentheses, grouper, to_enum_like
 
 
 class UnparsableLeveling(Exception):
@@ -78,7 +78,7 @@ class LolWikiDataHandler:
     def get_champions(self) -> Iterator[Champion]:
         # Download the page source
         url = "https://leagueoflegends.fandom.com/wiki/Module:ChampionData/data"
-        html = download_webpage(url, self.use_cache)
+        html = download_soup(url, self.use_cache)
         soup = BeautifulSoup(html, 'lxml')
 
         # Pull the relevant champData from the html tags
@@ -249,7 +249,7 @@ class LolWikiDataHandler:
 
         # Pull the html from the wiki
         url = f"https://leagueoflegends.fandom.com/wiki/Template:Data_{champion_name}/{ability_name}"
-        html = download_webpage(url, self.use_cache)
+        html = download_soup(url, self.use_cache)
         soup = BeautifulSoup(html, 'lxml')
         return HTMLAbilityWrapper(soup)
 

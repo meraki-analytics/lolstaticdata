@@ -32,14 +32,17 @@ class OrderedEnum(Enum):
         if self.__class__ is other.__class__:
             return self.value >= other.value
         return NotImplemented
+
     def __gt__(self, other):
         if self.__class__ is other.__class__:
             return self.value > other.value
         return NotImplemented
+
     def __le__(self, other):
         if self.__class__ is other.__class__:
             return self.value <= other.value
         return NotImplemented
+
     def __lt__(self, other):
         if self.__class__ is other.__class__:
             return self.value < other.value
@@ -100,6 +103,7 @@ def parenthetic_contents(string):
             start = stack.pop()
             yield (len(stack), string[start + 1: i])
 
+
 def parse_top_level_parentheses(string):
     parsed = parenthetic_contents(string)
     results = []
@@ -109,9 +113,22 @@ def parse_top_level_parentheses(string):
     return results
 
 
+def download_json(url: str, use_cache: bool = True) -> Json:
+    directory = os.path.dirname(os.path.realpath(__file__)) + "/"
+    fn = directory + f"../__cache__/{url.replace('/', '@')}"
+    if use_cache and os.path.exists(fn):
+        with open(fn) as f:
+            j = json.load(f)
+    else:
+        page = requests.get(url)
+        j = page.json()
+        if use_cache:
+            with open(fn, 'w') as f:
+                json.dump(j, f)
+    return j
 
-#NONASCII = Counter()
-def download_webpage(url: str, use_cache: bool = True):
+
+def download_soup(url: str, use_cache: bool = True):
     directory = os.path.dirname(os.path.realpath(__file__)) + "/"
     fn = directory + f"../__cache__/{url.replace('/', '@')}"
     if use_cache and os.path.exists(fn):
@@ -134,19 +151,7 @@ def download_webpage(url: str, use_cache: bool = True):
     html = html.replace(u'\u2013', u':')  # left-to-right mark
     html = html.replace(u'\xa0', u' ')
     html = html.replace(u"\uFF06", u'&')
-    #html = html.replace(u'☂', u'')
-    #html = html.replace(u'•', u'*')
-    #html = html.replace(u'’', u'')
-    #html = html.replace(u'↑', u'')
-    #html = html.replace(u'…', u'...')
-    #html = html.replace(u'↑', u'')
-    #NON-ASCII CHARACTERS: Counter({'…': 130, '°': 76, '×': 74, '–': 28, '÷': 20, '∞': 18, '\u200e': 8, '≈': 4, '≤': 2})
-
-    #for a in html:
-    #    if ord(a) > 127:
-    #        NONASCII[a] += 1
-    #if NONASCII:
-    #    print("NON-ASCII CHARACTERS:", NONASCII)
+    # NON-ASCII CHARACTERS: Counter({'…': 130, '°': 76, '×': 74, '–': 28, '÷': 20, '∞': 18, '\u200e': 8, '≈': 4, '≤': 2})
 
     assert u'\xa0' not in html
     return html

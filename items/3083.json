@@ -10,6 +10,7 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3083.png",
   "nicknames": [],
   "passives": [
     {
@@ -17,32 +18,30 @@
       "name": null,
       "effects": "10.0% cooldown reduction",
       "range": null,
-      "stats": [
-        {
-          "cooldownReduction": {
-            "flat": 0.0,
-            "percent": 10.0,
-            "perLevel": 0.0,
-            "percentPerLevel": 0.0,
-            "percentBase": 0.0,
-            "percentBonus": 0.0
-          }
+      "stats": {
+        "cooldownReduction": {
+          "flat": 0.0,
+          "percent": 10.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
         }
-      ]
+      }
     },
     {
       "unique": false,
       "name": null,
       "effects": "Grants Warmog's Heart if you have at least 3000 maximum health.",
       "range": null,
-      "stats": []
+      "stats": {}
     },
     {
       "unique": true,
       "name": "Warmog's Heart",
       "effects": "Regenerate [ 2.5% maximum health every half-second ][ 25% maximum health every 5 seconds ]if damage has not been taken in the last 6 seconds (3 second for minions).",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],

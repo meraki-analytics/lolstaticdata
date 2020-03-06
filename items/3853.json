@@ -1,39 +1,41 @@
 {
-  "name": "Spellthief's Edge",
-  "id": 3303,
-  "tier": 1,
+  "name": "Shard of True Ice",
+  "id": 3853,
+  "tier": 3,
   "buildsFrom": [],
-  "buildsInto": [
-    3098
-  ],
+  "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3853.png",
   "nicknames": [
     "Support",
     "Economy",
-    "Gold"
+    "Gold",
+    "Sightstone",
+    "Ward"
   ],
   "passives": [
     {
       "unique": true,
-      "name": "Tribute",
-      "effects": "Grants a charge every 10 seconds, up to 3 charges. If an allied champion is nearby, damaging abilities and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge grants 15. Receive diminishing gold from excessive minion kills.",
+      "name": null,
+      "effects": "Receives diminishing gold from excessive minion kills.",
       "range": null,
-      "stats": []
-    },
-    {
-      "unique": true,
-      "name": "Quest",
-      "effects": "Earn 500 using this item to upgrade to Frostfang, gaining the Warding active with 3 wards in stock.",
-      "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
-  "active": [],
+  "active": [
+    {
+      "unique": true,
+      "name": "Warding",
+      "effects": "Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area. Holds up to 4 charges which refill upon visiting the shop.",
+      "range": 600,
+      "cooldown": null
+    }
+  ],
   "auras": [],
   "stats": {
     "abilityPower": {
-      "flat": 8.0,
+      "flat": 45.0,
       "percent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
@@ -41,7 +43,7 @@
       "percentBonus": 0.0
     },
     "goldPer10": {
-      "flat": 2.0,
+      "flat": 3.0,
       "percent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
@@ -49,7 +51,7 @@
       "percentBonus": 0.0
     },
     "health": {
-      "flat": 10.0,
+      "flat": 100.0,
       "percent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
@@ -58,7 +60,7 @@
     },
     "manaRegen": {
       "flat": 0.0,
-      "percent": 25.0,
+      "percent": 100.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -70,7 +72,6 @@
     "priceCombined": 0,
     "priceSell": 160,
     "tags": [
-      "STARTER ITEMS:LANING",
       "TOOLS:GOLD_INCOME",
       "MAGIC:MANA_REGEN",
       "MAGIC:ABILITY_POWER",

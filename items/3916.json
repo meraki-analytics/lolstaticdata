@@ -11,6 +11,7 @@
   ],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3916.png",
   "nicknames": [],
   "passives": [
     {
@@ -18,18 +19,16 @@
       "name": "Touch of Death",
       "effects": "+15 magic penetration.",
       "range": null,
-      "stats": [
-        {
-          "magicPenetration": {
-            "flat": "15",
-            "percent": 0.0,
-            "perLevel": 0.0,
-            "percentPerLevel": 0.0,
-            "percentBase": 0.0,
-            "percentBonus": 0.0
-          }
+      "stats": {
+        "magicPenetration": {
+          "flat": "15",
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
         }
-      ]
+      }
     }
   ],
   "active": [],

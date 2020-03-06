@@ -1,15 +1,12 @@
 {
   "name": "Frostfang",
-  "id": 3098,
+  "id": 3851,
   "tier": 2,
-  "buildsFrom": [
-    3303
-  ],
-  "buildsInto": [
-    3092
-  ],
+  "buildsFrom": [],
+  "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3851.png",
   "nicknames": [
     "Support",
     "Economy",
@@ -23,14 +20,14 @@
       "name": "Tribute",
       "effects": "Grants a charge every 10 seconds, up to 3 charges. If an allied champion is nearby, damaging abilities and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge grants 15. Receive diminishing gold from excessive minion kills.",
       "range": null,
-      "stats": []
+      "stats": {}
     },
     {
       "unique": true,
       "name": "Quest",
       "effects": "Earn 500 using this item to upgrade to Shard of True Ice, increasing the Warding active to instead have 4 wards in stock.",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [

@@ -9,11 +9,13 @@
   ],
   "buildsInto": [
     3003,
+    3007,
     3030,
     3285
   ],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3802.png",
   "nicknames": [],
   "passives": [
     {
@@ -21,25 +23,23 @@
       "name": "Haste",
       "effects": "Grants an additional 10% cooldown reduction.",
       "range": null,
-      "stats": [
-        {
-          "cooldownReduction": {
-            "flat": 0.0,
-            "percent": 10.0,
-            "perLevel": 0.0,
-            "percentPerLevel": 0.0,
-            "percentBase": 0.0,
-            "percentBonus": 0.0
-          }
+      "stats": {
+        "cooldownReduction": {
+          "flat": 0.0,
+          "percent": 10.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
         }
-      ]
+      }
     },
     {
       "unique": true,
       "name": null,
       "effects": "Upon leveling, restores 20% of your maximum mana over 3 seconds.",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],

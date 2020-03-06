@@ -6,9 +6,12 @@
     3044,
     3067
   ],
-  "buildsInto": [],
+  "buildsInto": [
+    3380
+  ],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3071.png",
   "nicknames": [
     "bc"
   ],
@@ -18,14 +21,14 @@
       "name": null,
       "effects": "Dealing physical damage to an enemy champion Cleaves them, reducing their armor by 4% for 6 seconds, stacking up to 6 times for a maximum of 24%.",
       "range": null,
-      "stats": []
+      "stats": {}
     },
     {
       "unique": true,
       "name": "Rage",
       "effects": "Dealing physical damage grants 20 movement speed for 2 seconds. Assists on Cleaved enemy champions or kills on any unit grant 60 movement speed for 2 seconds instead. This movement speed bonus is halved for ranged champions.",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],

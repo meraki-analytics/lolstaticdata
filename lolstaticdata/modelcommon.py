@@ -44,10 +44,10 @@ class Stat:
         return total
 
     def __add__(self, other: "Stat"):
-        return Stat(flat=self.flat + other.flat, percent=self.percent + other.percent, unique=self.unique + other.unique, unique_percent=self.unique_percent + other.unique_percent, per_level=self.per_level + other.per_level, percent_per_level=self.percent_per_level + other.percent_per_level, percent_base=self.percent_base + other.percent_base, percent_bonus=self.percent_bonus + other.percent_bonus)
+        return Stat(flat=self.flat + other.flat, percent=self.percent + other.percent, per_level=self.per_level + other.per_level, percent_per_level=self.percent_per_level + other.percent_per_level, percent_base=self.percent_base + other.percent_base, percent_bonus=self.percent_bonus + other.percent_bonus)
 
     def __sub__(self, other: "Stat"):
-        return Stat(flat=self.flat - other.flat, percent=self.percent - other.percent, unique=self.unique - other.unique, unique_percent=self.unique_percent - other.unique_percent, per_level=self.per_level - other.per_level, percent_per_level=self.percent_per_level - other.percent_per_level, percent_base=self.percent_base - other.percent_base, percent_bonus=self.percent_bonus - other.percent_bonus)
+        return Stat(flat=self.flat - other.flat, percent=self.percent - other.percent, per_level=self.per_level - other.per_level, percent_per_level=self.percent_per_level - other.percent_per_level, percent_base=self.percent_base - other.percent_base, percent_bonus=self.percent_bonus - other.percent_bonus)
 
 
 class Health(Stat):

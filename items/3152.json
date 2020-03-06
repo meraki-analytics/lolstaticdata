@@ -1,29 +1,30 @@
 {
-  "name": "Will of the Ancients",
+  "name": "Hextech Protobelt-01",
   "id": 3152,
   "tier": 3,
   "buildsFrom": [
     3145,
-    3108
+    3067
   ],
   "buildsInto": [],
   "noEffects": false,
-  "removed": true,
+  "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3152.png",
   "nicknames": [],
-  "passives": [
+  "passives": [],
+  "active": [
     {
       "unique": true,
-      "name": null,
-      "effects": "Abilities instantly heal for 15% of raw damage dealt, including physical, magical and true damage. Area of effect abilities only heal 5% for every unit affected.",
+      "name": "Fire Bolt",
+      "effects": "Dash forward dealing 75 \u2212 150 (based on level) (+ 25% AP) magic damage on your way and behind you, after which you fire a nova of seven fire bolts in a cone, with each bolt dealing the same magic damage. Against champions and monsters, each instance of damage beyond the first deals 90% reduced damage (40 second cooldown, shared with other Hextech items).\nFire Bolt resets the user's basic attack timer.",
       "range": null,
-      "stats": []
+      "cooldown": 40.0
     }
   ],
-  "active": [],
   "auras": [],
   "stats": {
     "abilityPower": {
-      "flat": 80.0,
+      "flat": 60.0,
       "percent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
@@ -37,13 +38,22 @@
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 300.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
     }
   },
   "shop": {
-    "priceTotal": 2300,
-    "priceCombined": 300,
-    "priceSell": 1610,
+    "priceTotal": 2500,
+    "priceCombined": 650,
+    "priceSell": 1750,
     "tags": [
+      "DEFENSE:HEALTH",
       "MAGIC:ABILITY_POWER",
       "MAGIC:COOLDOWN_REDUCTION"
     ]

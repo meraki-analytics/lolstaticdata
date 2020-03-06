@@ -3,12 +3,13 @@
   "id": 3033,
   "tier": 3,
   "buildsFrom": [
-    3123,
-    3035
+    3035,
+    3123
   ],
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3033.png",
   "nicknames": [],
   "passives": [
     {
@@ -16,14 +17,14 @@
       "name": "Executioner",
       "effects": "Physical damage inflicts Grievous Wounds on enemy champions for 5 seconds.",
       "range": null,
-      "stats": []
+      "stats": {}
     },
     {
       "unique": true,
       "name": "Last Whisper",
       "effects": "+25% total armor penetration.",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],

@@ -3,12 +3,13 @@
   "id": 3907,
   "tier": 3,
   "buildsFrom": [
-    3113,
-    1058
+    1058,
+    3113
   ],
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3907.png",
   "nicknames": [],
   "passives": [
     {
@@ -16,7 +17,7 @@
       "name": null,
       "effects": "Gains a charge each time an enemy or allied champion within 1800 range, including yourself, casts an ability, up to a maximum of 100 charges.",
       "range": 1800,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [

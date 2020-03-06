@@ -8,6 +8,7 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3387.png",
   "nicknames": [
     "ornn",
     "forge"
@@ -18,14 +19,14 @@
       "name": "Spellblade",
       "effects": "After using an ability, your next basic attack within 10 seconds deals 100% base AD bonus physical damage on-hit (1.5 second cooldown).",
       "range": null,
-      "stats": []
+      "stats": {}
     },
     {
       "unique": true,
       "name": "Icy Zone",
       "effects": "Triggering Spellblade also deals 100% base AD physical damage to enemies surrounding the target and creates a icy zone for 2 seconds, which slows enemies within by 30%. The zone has a radius of 180 (+ 55% bonus armor) units.",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],

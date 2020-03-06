@@ -3,12 +3,13 @@
   "id": 3094,
   "tier": 3,
   "buildsFrom": [
-    2015,
-    3086
+    3086,
+    2015
   ],
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3094.png",
   "nicknames": [],
   "passives": [
     {
@@ -16,14 +17,14 @@
       "name": "Energized",
       "effects": "Moving and basic attacking generates Energize stacks, up to 100.",
       "range": null,
-      "stats": []
+      "stats": {}
     },
     {
       "unique": true,
       "name": "Sharpshooter",
       "effects": "When fully Energized, your next basic attack deals 120 bonus magic damage on-hit. Energized attacks gain 35% bonus range (+150 range maximum).",
       "range": 150,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],

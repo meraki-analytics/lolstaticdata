@@ -1,12 +1,12 @@
 {
-  "name": "Steel Shoulderguards",
-  "id": 3854,
+  "name": "Relic Shield",
+  "id": 3858,
   "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
-  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3854.png",
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3858.png",
   "nicknames": [
     "Support",
     "Gold",
@@ -23,7 +23,7 @@
     {
       "unique": true,
       "name": "Quest",
-      "effects": "Earn 500 using this item to upgrade to Runesteel Spaulders, gaining the Warding active with 3 wards in stock.",
+      "effects": "Earn 500 using this item to upgrade to Targon's Buckler, gaining the Warding active with 3 wards in stock.",
       "range": null,
       "stats": {}
     }
@@ -31,8 +31,8 @@
   "active": [],
   "auras": [],
   "stats": {
-    "attackDamage": {
-      "flat": 3.0,
+    "abilityPower": {
+      "flat": 5.0,
       "percent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
@@ -73,7 +73,7 @@
       "TOOLS:GOLD_INCOME",
       "DEFENSE:HEALTH_REGEN",
       "DEFENSE:HEALTH",
-      "ATTACK:DAMAGE"
+      "MAGIC:ABILITY_POWER"
     ]
   }
 }

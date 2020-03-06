@@ -7,11 +7,12 @@
   ],
   "buildsInto": [
     3094,
-    3087,
-    3095
+    3095,
+    3087
   ],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2015.png",
   "nicknames": [],
   "passives": [
     {
@@ -19,14 +20,14 @@
       "name": "Energized",
       "effects": "Moving and basic attacking generates Energize stacks, up to 100.",
       "range": null,
-      "stats": []
+      "stats": {}
     },
     {
       "unique": true,
       "name": "Jolt",
       "effects": "When fully Energized, your next basic attack deals 80 bonus magic damage on-hit.",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],

@@ -1,5 +1,5 @@
 {
-  "name": "Hexdrinker (old)",
+  "name": "Hexdrinker",
   "id": 3155,
   "tier": 2,
   "buildsFrom": [
@@ -7,18 +7,19 @@
     1033
   ],
   "buildsInto": [
-    null
+    3156
   ],
   "noEffects": false,
-  "removed": true,
+  "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3155.png",
   "nicknames": [],
   "passives": [
     {
       "unique": true,
-      "name": null,
-      "effects": "After taking magic damage you gain attack damage for 8 seconds. Bonus stacks up to 25 attack damage after taking 600 magic damage.",
+      "name": "Lifeline",
+      "effects": "If you would take magic damage that would reduce maximum health below 30%, you first gain a shield that absorbs 110 \u2212 280 (based on level) magic damage for 5 seconds (90 second cooldown).",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],
@@ -33,7 +34,7 @@
       "percentBonus": 0.0
     },
     "magicResistance": {
-      "flat": 30.0,
+      "flat": 35.0,
       "percent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
@@ -43,8 +44,8 @@
   },
   "shop": {
     "priceTotal": 1300,
-    "priceCombined": 485,
-    "priceSell": 0,
+    "priceCombined": 500,
+    "priceSell": 910,
     "tags": [
       "ATTACK:DAMAGE",
       "DEFENSE:MAGIC_RESIST"

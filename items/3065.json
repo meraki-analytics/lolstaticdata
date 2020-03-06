@@ -3,12 +3,13 @@
   "id": 3065,
   "tier": 3,
   "buildsFrom": [
-    3067,
-    3211
+    3211,
+    3067
   ],
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3065.png",
   "nicknames": [
     "sv"
   ],
@@ -18,18 +19,16 @@
       "name": null,
       "effects": "Increases effectiveness of all sources of health restoration by 30% (including health regeneration, life steal and spell vamp).",
       "range": null,
-      "stats": [
-        {
-          "lifesteal": {
-            "flat": 0.0,
-            "percent": 30.0,
-            "perLevel": 0.0,
-            "percentPerLevel": 0.0,
-            "percentBase": 0.0,
-            "percentBonus": 0.0
-          }
+      "stats": {
+        "lifesteal": {
+          "flat": 0.0,
+          "percent": 30.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
         }
-      ]
+      }
     }
   ],
   "active": [],

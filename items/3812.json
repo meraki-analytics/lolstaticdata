@@ -3,13 +3,14 @@
   "id": 3812,
   "tier": 3,
   "buildsFrom": [
-    3133,
+    1053,
     1037,
-    1053
+    3133
   ],
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3812.png",
   "nicknames": [],
   "passives": [
     {
@@ -17,14 +18,14 @@
       "name": null,
       "effects": "Instantly heal for 15% of all damage dealt, including physical damage, magic damage, and true damage. Area of effect and pet damage only heals 5% for every unit affected.",
       "range": null,
-      "stats": []
+      "stats": {}
     },
     {
       "unique": true,
       "name": null,
       "effects": "Stores 30% of all post-mitigation physical and magic damage received, which is successively taken as damage over time true damage instead, dealing one-third of the stored damage every second.",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],

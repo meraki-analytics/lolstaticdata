@@ -6,10 +6,14 @@
     1028
   ],
   "buildsInto": [
-    3068
+    3068,
+    1401,
+    1413,
+    3672
   ],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3751.png",
   "nicknames": [],
   "passives": [
     {
@@ -17,7 +21,7 @@
       "name": "Immolate",
       "effects": "Deals 6 \u2212 23 (based on level) magic damage per second to nearby enemies (325 range).Hitting an enemy with an immobilizing ability deals 6 \u2212 23 (based on level) (+ 1% bonus health) bonus magic damage and releases a fire nova that also deals that bonus damage to nearby enemies (12 second cooldown).Immolate's damage is increased by 100% against minions and monsters.",
       "range": 325,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],

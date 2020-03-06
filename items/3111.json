@@ -9,6 +9,7 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3111.png",
   "nicknames": [
     "boots"
   ],
@@ -18,25 +19,23 @@
       "name": "Enhanced Movement",
       "effects": "+45 flat movement speed",
       "range": null,
-      "stats": [
-        {
-          "movespeed": {
-            "flat": 45.0,
-            "percent": 0.0,
-            "perLevel": 0.0,
-            "percentPerLevel": 0.0,
-            "percentBase": 0.0,
-            "percentBonus": 0.0
-          }
+      "stats": {
+        "movespeed": {
+          "flat": 45.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
         }
-      ]
+      }
     },
     {
       "unique": true,
       "name": "Tenacity",
       "effects": "Reduces the duration of all crowd control effects by 30% (except for Suppression, Stasis, Nearsight, and Displacements).",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],

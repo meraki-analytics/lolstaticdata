@@ -9,11 +9,12 @@
   "buildsInto": [
     3110,
     3025,
-    3800,
-    3050
+    3050,
+    3800
   ],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3024.png",
   "nicknames": [],
   "passives": [
     {
@@ -21,18 +22,16 @@
       "name": null,
       "effects": "10.0% cooldown reduction",
       "range": null,
-      "stats": [
-        {
-          "cooldownReduction": {
-            "flat": 0.0,
-            "percent": 10.0,
-            "perLevel": 0.0,
-            "percentPerLevel": 0.0,
-            "percentBase": 0.0,
-            "percentBonus": 0.0
-          }
+      "stats": {
+        "cooldownReduction": {
+          "flat": 0.0,
+          "percent": 10.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
         }
-      ]
+      }
     }
   ],
   "active": [],

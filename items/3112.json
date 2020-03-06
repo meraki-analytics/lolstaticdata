@@ -1,38 +1,35 @@
 {
-  "name": "Orb of Winter",
+  "name": "Guardian's Orb",
   "id": 3112,
-  "tier": 3,
-  "buildsFrom": [
-    1057,
-    1006,
-    1006
-  ],
+  "tier": 1,
+  "buildsFrom": [],
   "buildsInto": [],
   "noEffects": false,
-  "removed": true,
+  "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3112.png",
   "nicknames": [],
-  "passives": [
-    {
-      "unique": true,
-      "name": null,
-      "effects": "Grants a shield that absorbs damage. The shield will refresh after a short period without taking damage.",
-      "range": null,
-      "stats": []
-    }
-  ],
+  "passives": [],
   "active": [],
   "auras": [],
   "stats": {
-    "healthRegen": {
-      "flat": 0.0,
-      "percent": 100.0,
+    "abilityPower": {
+      "flat": 35.0,
+      "percent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
     },
-    "magicResistance": {
-      "flat": 70.0,
+    "health": {
+      "flat": 150.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 10.0,
       "percent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
@@ -41,12 +38,14 @@
     }
   },
   "shop": {
-    "priceTotal": 2200,
-    "priceCombined": 950,
-    "priceSell": 1540,
+    "priceTotal": 950,
+    "priceCombined": 0,
+    "priceSell": 380,
     "tags": [
-      "DEFENSE:MAGIC_RESIST",
-      "DEFENSE:HEALTH_REGEN"
+      "STARTER ITEMS:LANING",
+      "DEFENSE:HEALTH",
+      "MAGIC:ABILITY_POWER",
+      "MAGIC:MANA_REGEN"
     ]
   }
 }

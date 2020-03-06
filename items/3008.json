@@ -9,6 +9,7 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3008.png",
   "nicknames": [],
   "passives": [
     {
@@ -16,21 +17,21 @@
       "name": "Awe",
       "effects": "Grants bonus attack damage equal to 2% maximum mana. Refunds 15% of mana spent.",
       "range": null,
-      "stats": []
+      "stats": {}
     },
     {
       "unique": true,
       "name": "Mana Charge",
       "effects": "Grants a charge every 4 seconds, up to 3 charges. Each basic attack or mana expenditure consumes a charge and grants +6 mana, up to a maximum of 750 mana.",
       "range": null,
-      "stats": []
+      "stats": {}
     },
     {
       "unique": false,
       "name": null,
       "effects": "Transforms into Muramana at +750 mana.",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],

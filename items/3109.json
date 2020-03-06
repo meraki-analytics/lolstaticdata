@@ -9,6 +9,7 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3109.png",
   "nicknames": [],
   "passives": [
     {
@@ -16,14 +17,14 @@
       "name": null,
       "effects": "If your Partner is nearby, gain 20 armor, and 15% bonus movement speed while moving toward them.",
       "range": null,
-      "stats": []
+      "stats": {}
     },
     {
       "unique": true,
       "name": null,
       "effects": "While within 1000 range of your Partner, heal for 12% of the damage your Partner deals to champions and redirect 12% of the damage your Partner takes from champions (after reductions) to you as true damage. Both effects are reduced to 6% if the item holder is ranged.",
       "range": 1000,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [

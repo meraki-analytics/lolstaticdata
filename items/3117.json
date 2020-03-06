@@ -8,6 +8,7 @@
   "buildsInto": [],
   "noEffects": true,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3117.png",
   "nicknames": [],
   "passives": [
     {
@@ -15,25 +16,23 @@
       "name": "Enhanced Movement",
       "effects": "+25 flat movement speed",
       "range": null,
-      "stats": [
-        {
-          "movespeed": {
-            "flat": 25.0,
-            "percent": 0.0,
-            "perLevel": 0.0,
-            "percentPerLevel": 0.0,
-            "percentBase": 0.0,
-            "percentBonus": 0.0
-          }
+      "stats": {
+        "movespeed": {
+          "flat": 25.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
         }
-      ]
+      }
     },
     {
       "unique": false,
       "name": null,
       "effects": "Increases to +115 flat movement speed when out-of-combat. Receiving damage, dealing damage or debuffing units will put you in-combat, disabling this passive for 5 seconds.",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],

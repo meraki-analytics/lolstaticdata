@@ -4,12 +4,13 @@
   "tier": 3,
   "buildsFrom": [
     1031,
-    2420,
-    1057
+    1057,
+    2420
   ],
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3193.png",
   "nicknames": [],
   "passives": [
     {
@@ -17,7 +18,7 @@
       "name": "Stone Skin",
       "effects": "If 3 or more enemy champions are within 850 radius, grants 40 bonus armor and 40 bonus magic resistance.",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [

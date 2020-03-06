@@ -9,6 +9,7 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3165.png",
   "nicknames": [],
   "passives": [
     {
@@ -16,25 +17,23 @@
       "name": "Touch of Death",
       "effects": "+15 magic penetration.",
       "range": null,
-      "stats": [
-        {
-          "magicPenetration": {
-            "flat": "15",
-            "percent": 0.0,
-            "perLevel": 0.0,
-            "percentPerLevel": 0.0,
-            "percentBase": 0.0,
-            "percentBonus": 0.0
-          }
+      "stats": {
+        "magicPenetration": {
+          "flat": "15",
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
         }
-      ]
+      }
     },
     {
       "unique": true,
       "name": "Cursed Strike",
       "effects": "Dealing magic damage to an enemy champion inflicts them with Grievous Wounds for 3 seconds.",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],

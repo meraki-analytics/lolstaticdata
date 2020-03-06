@@ -9,6 +9,7 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3156.png",
   "nicknames": [],
   "passives": [
     {
@@ -16,21 +17,21 @@
       "name": "Lifeline",
       "effects": "If you would take magic damage that would reduce maximum health below 30%, you first gain a shield that absorbs 350 magic damage for 5 seconds (90 second cooldown).",
       "range": null,
-      "stats": []
+      "stats": {}
     },
     {
       "unique": false,
       "name": null,
       "effects": "Triggering Lifeline grants Lifegrip.",
       "range": null,
-      "stats": []
+      "stats": {}
     },
     {
       "unique": true,
       "name": "Lifegrip",
       "effects": "Grants +20 attack damage, +10% spell vamp and +10% life steal until out-of-combat.",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],

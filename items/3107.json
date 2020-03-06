@@ -1,28 +1,40 @@
 {
-  "name": "Runic Bulwark",
+  "name": "Redemption",
   "id": 3107,
-  "tier": 4,
+  "tier": 3,
   "buildsFrom": [
-    3097,
-    1033
+    3114,
+    3801
   ],
-  "buildsInto": [],
+  "buildsInto": [
+    3382
+  ],
   "noEffects": false,
-  "removed": true,
+  "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3107.png",
   "nicknames": [],
   "passives": [],
-  "active": [],
-  "auras": [
+  "active": [
     {
       "unique": true,
-      "name": "Legion",
-      "effects": "Nearby allied units gain 10 armor, 25 magic resistance and 10 health regeneration. Nearby minions gain 15 armor, 37.5 magic resistance and 15 health regeneration.",
-      "range": null
+      "name": null,
+      "effects": "You reveal the target area for 3 seconds. After a 2.5 second delay, a beam of light strikes the ground. Allies within the area are healed for 30 \u2212 370 (based on target's level), which is increased by 3 \u00d7 your Heal Power, while enemy champions take 10% of target's maximum health true damage and enemy minions and monsters take 250 true damage (120 second cooldown). Can be used while dead.",
+      "range": null,
+      "cooldown": 120.0
     }
   ],
+  "auras": [],
   "stats": {
-    "armor": {
-      "flat": 20.0,
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healAndShieldPower": {
+      "flat": 10.0,
       "percent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
@@ -30,16 +42,24 @@
       "percentBonus": 0.0
     },
     "health": {
-      "flat": 300.0,
+      "flat": 200.0,
       "percent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
     },
-    "magicResistance": {
-      "flat": 30.0,
-      "percent": 0.0,
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 50.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 0.0,
+      "percent": 150.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
@@ -47,13 +67,14 @@
     }
   },
   "shop": {
-    "priceTotal": 2950,
-    "priceCombined": 400,
-    "priceSell": 2065,
+    "priceTotal": 2100,
+    "priceCombined": 650,
+    "priceSell": 1470,
     "tags": [
       "DEFENSE:HEALTH",
-      "DEFENSE:ARMOR",
-      "DEFENSE:HEALTH_REGEN"
+      "DEFENSE:HEALTH_REGEN",
+      "MAGIC:MANA_REGEN",
+      "MAGIC:COOLDOWN_REDUCTION"
     ]
   }
 }

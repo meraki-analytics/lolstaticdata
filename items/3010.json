@@ -1,5 +1,5 @@
 {
-  "name": "Catalyst the Protector",
+  "name": "Catalyst of Aeons",
   "id": 3010,
   "tier": 2,
   "buildsFrom": [
@@ -7,19 +7,21 @@
     1027
   ],
   "buildsInto": [
-    3800,
-    3027
+    3027,
+    3029,
+    3001
   ],
   "noEffects": false,
-  "removed": true,
+  "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3010.png",
   "nicknames": [],
   "passives": [
     {
       "unique": true,
-      "name": "Valor's Reward",
-      "effects": "On leveling up, restores 150 health and 200 mana over 8 seconds.",
+      "name": "Eternity",
+      "effects": "Restore mana equal to 15% of damage taken from champions. Restore health equal to 20% of mana spent, up to 15 health per cast, while toggle abilities can heal for up to 15 per second.",
       "range": null,
-      "stats": []
+      "stats": {}
     }
   ],
   "active": [],
@@ -43,9 +45,9 @@
     }
   },
   "shop": {
-    "priceTotal": 1200,
-    "priceCombined": 450,
-    "priceSell": 840,
+    "priceTotal": 1100,
+    "priceCombined": 350,
+    "priceSell": 770,
     "tags": [
       "DEFENSE:HEALTH",
       "MAGIC:MANA"

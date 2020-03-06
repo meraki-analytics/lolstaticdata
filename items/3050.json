@@ -1,35 +1,68 @@
 {
-  "name": "Zeke's Herald",
+  "name": "Zeke's Convergence",
   "id": 3050,
   "tier": 3,
   "buildsFrom": [
-    3067,
-    1053
+    3105,
+    3024
   ],
   "buildsInto": [],
   "noEffects": false,
-  "removed": true,
+  "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3050.png",
   "nicknames": [],
-  "passives": [],
-  "active": [],
-  "auras": [
+  "passives": [
     {
       "unique": true,
       "name": null,
-      "effects": "Nearby allied champions gain +20 attack damage and +10% life steal. (1100 Range)",
-      "range": null
+      "effects": "Casting your ultimate near your Conduit grant both of you bonus effects for 10 seconds. You are surrounded with a 300 range Frost storm which slows enemies within it by 20%, and your Conduit's basic attacks burn their target with Fire dealing 30% bonus magic damage over 2 seconds (45 second cooldown).",
+      "range": 300,
+      "stats": {}
+    },
+    {
+      "unique": true,
+      "name": "Frostfire Covenant",
+      "effects": "If an enemy is both struck by Frost and Fire, your Frost storm ignites and becomes Frostfire. A Frostfire storm, deals 40 magic damage per second to nearby enemies and slows by 40% instead for 3 seconds.",
+      "range": null,
+      "stats": {}
     }
   ],
+  "active": [
+    {
+      "unique": true,
+      "name": "Conduit",
+      "effects": "Designate an allied champion within 1000 range as your Conduit (0.5 second cooldown).",
+      "range": 1000,
+      "cooldown": 5.0
+    }
+  ],
+  "auras": [],
   "stats": {
-    "cooldownReduction": {
-      "flat": 0.0,
-      "percent": 20.0,
+    "armor": {
+      "flat": 60.0,
+      "percent": 0.0,
       "perLevel": 0.0,
       "percentPerLevel": 0.0,
       "percentBase": 0.0,
       "percentBonus": 0.0
     },
-    "health": {
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 10.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 30.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
       "flat": 250.0,
       "percent": 0.0,
       "perLevel": 0.0,
@@ -39,13 +72,13 @@
     }
   },
   "shop": {
-    "priceTotal": 2450,
-    "priceCombined": 800,
-    "priceSell": 1715,
+    "priceTotal": 2250,
+    "priceCombined": 250,
+    "priceSell": 1575,
     "tags": [
-      "DEFENSE:HEALTH",
-      "ATTACK:DAMAGE",
-      "ATTACK:LIFE_STEAL",
+      "MAGIC:MANA",
+      "DEFENSE:ARMOR",
+      "DEFENSE:MAGIC_RESISTANCE",
       "MAGIC:COOLDOWN_REDUCTION"
     ]
   }

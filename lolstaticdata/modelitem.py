@@ -77,15 +77,6 @@ class Passive(object):
     unique: bool
     name: str
     effects: str
-#    stats : Stats
-
-
-@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
-@dataclass
-class PassiveStats(object):
-    unique: bool
-    name: str
-    effects: str
     range: int
     stats : Stats
 
@@ -96,7 +87,6 @@ class Active(object):
     unique: bool
     name: str
     effects: str
-    #stats: Stats
     range : int
     cooldown : float
 
@@ -107,7 +97,6 @@ class Aura(object):
     unique: bool
     name: str
     effects: str
-    #stats: Stats
     range : int
 
 
@@ -121,58 +110,41 @@ class Item(object):
     builds_into: List[int]
     no_effects: bool
     removed: bool
+    icon: str
     nicknames: List[str]
-    passives: List[PassiveStats]
+    passives: List[Passive]
     active: List[Active]
     auras: List[Aura]
     stats: Stats
     shop: Shop
 
     def __json__(self, *args, **kwargs):
+        stat_names = ["health", "health_regen", "mana", "mana_regen", "armor", "magic_resistance", "attack_damage", "movespeed", "critical_strike_chance", "attack_speed", "ability_power", "cooldown_reduction", "gold_per_10", "heal_and_shield_power", "lifesteal", "magic_penetration", "lethality", "armor_penetration"]
+
+        # Use dataclasses_json to get the dict
         d = self.to_dict()
-        for name in ("health", "health_regen", "mana", "mana_regen", "armor", "magic_resistance", "attack_damage", "movespeed", "critical_strike_chance", "attack_speed", "ability_power", "cooldown_reduction", "gold_per_10", "heal_and_shield_power", "lifesteal", "magic_penetration", "lethality"):
+
+        # Remove armor pen if it's 0 (default)
+        if d['stats'].get('armorPenetration') == 0:
+            del d['stats']['armorPenetration']
+
+        # Remove stats if they are empty
+        for name in stat_names:
             stat = getattr(self.stats, name)
             if stat.flat == stat.percent == stat.per_level == stat.percent_per_level == stat.percent_base == stat.percent_bonus == 0:
                 camel = stringcase.camelcase(name)
                 del d['stats'][camel]
-        for i in range(len(d["passives"])):
-            for name in (
-            "health", "health_regen", "mana", "mana_regen", "armor", "magic_resistance", "attack_damage", "movespeed",
-            "critical_strike_chance", "attack_speed", "ability_power", "cooldown_reduction", "gold_per_10",
-            "heal_and_shield_power", "lifesteal", "magic_penetration", "armorPenetration", "lethality"):
-                stats = d["passives"][i]["stats"]
-                camel = stringcase.camelcase(name)
-                if stats[0][camel]["flat"] == stats[0][camel]["percent"] == stats[0][camel]["perLevel"] == stats[0][camel]["percentPerLevel"] == stats[0][camel]["percentBase"] == stats[0][camel]["percentBonus"] == 0:
 
-                    del stats[0][camel]
-                    test = [x for x in stats if x]
+        # Remove passive/active/aura stats if they are empty
+        for passive_active_aura in ("passives",): # "actives", "auras"):  # Actually, actives and auras don't have stats
+            for i in range(len(d[passive_active_aura])):
+                dstats = d[passive_active_aura][i]["stats"]
+                stats = getattr(self, passive_active_aura)[i].stats
+                for name in stat_names:
+                    camel = stringcase.camelcase(name)
+                    stat = getattr(stats, name)
+                    if stat.flat == stat.percent == stat.per_level == stat.percent_per_level == stat.percent_base == stat.percent_bonus == 0:
+                        del dstats[camel]
 
-                d["passives"][i]["stats"] = test
-        #
-        # for i in range(len(d["auras"])):
-        #
-        #     for name in (
-        #     "health", "health_regen", "mana", "mana_regen", "armor", "magic_resistance", "attack_damage", "movespeed",
-        #     "critical_strike_chance", "attack_speed", "ability_power", "cooldown_reduction", "gold_per_10",
-        #     "heal_and_shield_power", "lifesteal", "magic_penetration", "armorPenetration", "lethality"):
-        #         stats = d["auras"][i]["stats"]
-        #         camel = stringcase.camelcase(name)
-        #         if stats[0][camel]["flat"] == stats[0][camel]["percent"] == stats[0][camel]["perLevel"] == stats[0][camel]["percentPerLevel"] == stats[0][camel]["percentBase"] == stats[0][camel]["percentBonus"] == 0:
-        #
-        #             del stats[0][camel]
-        #
-        # for i in range(len(d["active"])):
-        #
-        #     for name in (
-        #     "health", "health_regen", "mana", "mana_regen", "armor", "magic_resistance", "attack_damage", "movespeed",
-        #     "critical_strike_chance", "attack_speed", "ability_power", "cooldown_reduction", "gold_per_10",
-        #     "heal_and_shield_power", "lifesteal", "magic_penetration", "armorPenetration", "lethality"):
-        #         stats = d["active"][i]["stats"]
-        #         camel = stringcase.camelcase(name)
-        #         if stats[0][camel]["flat"] == stats[0][camel]["percent"] == stats[0][camel]["perLevel"] == stats[0][camel]["percentPerLevel"] == stats[0][camel]["percentBase"] == stats[0][camel]["percentBonus"] == 0:
-        #
-        #             del stats[0][camel]
-
-        if d['stats'].get('armorPenetration') == 0:
-            del d['stats']['armorPenetration']
+        # Return the modified dict
         return json.dumps(d, cls=ExtendedEncoder, *args, **kwargs)
