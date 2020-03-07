@@ -8,8 +8,8 @@ from pull_items_dragon import DDragonItem, CDragonItem
 def main():
     directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), ".."))
     use_cache = True
-    if not os.path.exists(os.path.join(directory,"items")):
-        os.mkdir(os.path.join(directory,"items"))
+    if not os.path.exists(os.path.join(directory, "items")):
+        os.mkdir(os.path.join(directory, "items"))
     item_urls = get_item_urls(use_cache)
     jsons = {}
     for url in item_urls:
@@ -30,14 +30,14 @@ def main():
         item.builds_into = ddragon_item.builds_into
 
         if item is not None:
-            jsonfn = os.path.join(directory,"items" ,str(item.id) + ".json")
+            jsonfn = os.path.join(directory, "items", str(item.id) + ".json")
             with open(jsonfn, 'w') as f:
                 j = item.__json__(indent=2)
                 f.write(j)
             jsons[item.id] = json.loads(item.__json__())
             print(item.id)
 
-    jsonfn = os.path.join(directory,"items.json")
+    jsonfn = os.path.join(directory, "items.json")
     with open(jsonfn, 'w') as f:
         json.dump(jsons, f, indent=2)
     del jsons
