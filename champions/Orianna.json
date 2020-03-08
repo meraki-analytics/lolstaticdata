@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 525,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 525,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.658,
       "percent": 0.0,
       "perLevel": 3.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.657999992370605,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.124561406672,
+    "attackSpeedRatio": {
+      "flat": 0.657999992370605,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.124561406672,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 525,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.05,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "BURST",
@@ -115,7 +205,7 @@
             "leveling": []
           },
           {
-            "description": "Innate - Clockwork Winding: Orianna's basic attacks deal 10 \u2212 50 (based on level) (+ 15% AP)  bonus magic damage  on-hit and gain Clockwork Winding for 4 seconds, stacking up to twice. Clockwork Windup deals[ 20% bonus damage ][ 2 \u2212 10 (based on level) (+ 3% AP) bonus damage ] per stack, up to 14 \u2212 70 (based on level) (+ 21% AP) total bonus magic damage.",
+            "description": "Innate - Clockwork Winding: Orianna's basic attacks deal 10 − 50 (based on level) (+ 15% AP) bonus magic damage on-hit and gain Clockwork Winding for 4 seconds, stacking up to twice. Clockwork Windup deals[ 20% bonus damage ][ 2 − 10 (based on level) (+ 3% AP) bonus damage ] per stack, up to 14 − 70 (based on level) (+ 21% AP) total bonus magic damage.",
             "icon": "Clockwork Winding.png",
             "leveling": []
           },
@@ -160,7 +250,7 @@
             "leveling": []
           },
           {
-            "description": "Innate - Clockwork Winding: Orianna's basic attacks deal 10 \u2212 50 (based on level) (+ 15% AP)  bonus magic damage  on-hit and gain Clockwork Winding for 4 seconds, stacking up to twice. Clockwork Windup deals[ 20% bonus damage ][ 2 \u2212 10 (based on level) (+ 3% AP) bonus damage ] per stack, up to 14 \u2212 70 (based on level) (+ 21% AP) total bonus magic damage.",
+            "description": "Innate - Clockwork Winding: Orianna's basic attacks deal 10 − 50 (based on level) (+ 15% AP) bonus magic damage on-hit and gain Clockwork Winding for 4 seconds, stacking up to twice. Clockwork Windup deals[ 20% bonus damage ][ 2 − 10 (based on level) (+ 3% AP) bonus damage ] per stack, up to 14 − 70 (based on level) (+ 21% AP) total bonus magic damage.",
             "icon": "Clockwork Winding.png",
             "leveling": []
           },
@@ -202,7 +292,7 @@
         "name": "Command: Attack",
         "effects": [
           {
-            "description": "Active: Orianna commands  The Ball to fly to the target location and remain there, dealing magic damage to all enemies it passes through, reduced to 100% \u2212 40% (based on enemies hit).",
+            "description": "Active: Orianna commands The Ball to fly to the target location and remain there, dealing magic damage to all enemies it passes through, reduced to 100% − 40% (based on enemies hit).",
             "icon": "Command Attack.png",
             "leveling": [
               {
@@ -353,7 +443,7 @@
         "name": "Command: Dissonance",
         "effects": [
           {
-            "description": "Active: Orianna commands  The Ball to emit an electric pulse around its current location, dealing magic damage to all enemies around it and leaving an electric field on the area for 3 seconds.",
+            "description": "Active: Orianna commands The Ball to emit an electric pulse around its current location, dealing magic damage to all enemies around it and leaving an electric field on the area for 3 seconds.",
             "icon": "Command Dissonance.png",
             "leveling": [
               {
@@ -396,7 +486,7 @@
             ]
           },
           {
-            "description": "Orianna and her allies gain  bonus movement speed upon stepping on the field. Enemies, in turn, are  slowed for the same amount, decaying over 2 seconds after leaving the field.",
+            "description": "Orianna and her allies gain bonus movement speed upon stepping on the field. Enemies, in turn, are slowed for the same amount, decaying over 2 seconds after leaving the field.",
             "icon": null,
             "leveling": [
               {
@@ -494,7 +584,7 @@
         "name": "Command: Protect",
         "effects": [
           {
-            "description": "Passive:  The Ball grants whomever it is attached to bonus  armor and  magic resistance.",
+            "description": "Passive: The Ball grants whomever it is attached to bonus armor and magic resistance.",
             "icon": "Command Protect.png",
             "leveling": [
               {
@@ -521,7 +611,7 @@
             ]
           },
           {
-            "description": "Active: Orianna commands The Ball to fly to the targeted allied  champion or herself and attach itself to her target, dealing magic damage to all enemies it passes through and  shielding her target on arrival for 2.5 seconds.",
+            "description": "Active: Orianna commands The Ball to fly to the targeted allied champion or herself and attach itself to her target, dealing magic damage to all enemies it passes through and shielding her target on arrival for 2.5 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -672,7 +762,7 @@
         "name": "Command: Shockwave",
         "effects": [
           {
-            "description": "Active: Orianna commands  The Ball to unleash a shockwave after a 0.75 seconds delay, dealing magic damage to all nearby enemies and  pulling them 350 units towards The Ball.",
+            "description": "Active: Orianna commands The Ball to unleash a shockwave after a 0.75 seconds delay, dealing magic damage to all nearby enemies and pulling them 350 units towards The Ball.",
             "icon": "Command Shockwave.png",
             "leveling": [
               {

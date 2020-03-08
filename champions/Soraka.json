@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 110,
-    "pathingRadius": 44.2000007629394,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 110,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 44.2000007629394,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2.14,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.112999998033046,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.112999998033046,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ENCHANTER",
@@ -110,7 +200,7 @@
         "name": "Salvation",
         "effects": [
           {
-            "description": "Innate: Soraka gains  70% bonus movement speed when moving towards allied champions below  40% of their maximum health.",
+            "description": "Innate: Soraka gains 70% bonus movement speed when moving towards allied champions below 40% of their maximum health.",
             "icon": "Salvation.png",
             "leveling": []
           }
@@ -147,7 +237,7 @@
         "name": "Starcall",
         "effects": [
           {
-            "description": "Active: Soraka calls down a star at the target area, landing after 0.25 \u2212 1 (based on target range) seconds, dealing  magic damage and  slowing enemies hit by 30% for 2 seconds.",
+            "description": "Active: Soraka calls down a star at the target area, landing after 0.25 − 1 (based on target range) seconds, dealing magic damage and slowing enemies hit by 30% for 2 seconds.",
             "icon": "Starcall.png",
             "leveling": [
               {
@@ -190,7 +280,7 @@
             ]
           },
           {
-            "description": "Hitting at least one enemy champion returns the star dust toward Soraka, granting her Rejuvenation for 2.5 seconds,  healing her every 0.5 seconds and granting her  bonus movement speed, decaying over the duration.",
+            "description": "Hitting at least one enemy champion returns the star dust toward Soraka, granting her Rejuvenation for 2.5 seconds, healing her every 0.5 seconds and granting her bonus movement speed, decaying over the duration.",
             "icon": null,
             "leveling": [
               {
@@ -254,7 +344,7 @@
             ]
           },
           {
-            "description": "While Soraka is Rejuvenated she can Rejuvenate other allies with  Astral Infusion, granting them the same effects for the same duration.",
+            "description": "While Soraka is Rejuvenated she can Rejuvenate other allies with Astral Infusion, granting them the same effects for the same duration.",
             "icon": null,
             "leveling": []
           }
@@ -330,7 +420,7 @@
         "name": "Astral Infusion",
         "effects": [
           {
-            "description": "Active: Soraka  heals the target ally champion.",
+            "description": "Active: Soraka heals the target ally champion.",
             "icon": "Astral Infusion.png",
             "leveling": [
               {
@@ -373,7 +463,7 @@
             ]
           },
           {
-            "description": "If cast while  Rejuvenated, the health cost with be reduced by a percentage.",
+            "description": "If cast while Rejuvenated, the health cost with be reduced by a percentage.",
             "icon": null,
             "leveling": [
               {
@@ -400,7 +490,7 @@
             ]
           },
           {
-            "description": "Astral Infusion cannot be self-cast, nor can it be cast if Soraka is  below 5% maximum health.",
+            "description": "Astral Infusion cannot be self-cast, nor can it be cast if Soraka is below 5% maximum health.",
             "icon": null,
             "leveling": []
           }
@@ -476,7 +566,7 @@
         "name": "Equinox",
         "effects": [
           {
-            "description": "Active: Soraka deals magic damage to all enemy champions in an area and creates a zone within that  silences enemy champions standing on it.",
+            "description": "Active: Soraka deals magic damage to all enemy champions in an area and creates a zone within that silences enemy champions standing on it.",
             "icon": "Equinox.png",
             "leveling": [
               {
@@ -556,7 +646,7 @@
             ]
           },
           {
-            "description": "After 1.5 seconds the zone detonates, dealing the same magic damage to all enemy champions within and briefly  rooting them.",
+            "description": "After 1.5 seconds the zone detonates, dealing the same magic damage to all enemy champions within and briefly rooting them.",
             "icon": null,
             "leveling": [
               {
@@ -654,7 +744,7 @@
         "name": "Wish",
         "effects": [
           {
-            "description": "Active: Soraka calls upon the stars, instantly  healing all allied champions, and herself, which is increased by 50% on targets below  40% of their maximum health.",
+            "description": "Active: Soraka calls upon the stars, instantly healing all allied champions, and herself, which is increased by 50% on targets below 40% of their maximum health.",
             "icon": "Wish.png",
             "leveling": [
               {

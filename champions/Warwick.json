@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 111.111099243164,
-    "pathingRadius": 35,
-    "gameplayRadius": 55,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 111.111099243164,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 55,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.638,
       "percent": 0.0,
       "perLevel": 2.3,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.638000011444091,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.125,
+    "attackSpeedRatio": {
+      "flat": 0.638000011444091,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.92,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.92,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "DIVER",
@@ -110,12 +200,12 @@
         "name": "Eternal Hunger",
         "effects": [
           {
-            "description": "Innate: Warwick's basic attacks deal 10 \u2212 44 (based on level)  bonus magic damage on-hit.",
+            "description": "Innate: Warwick's basic attacks deal 10 − 44 (based on level) bonus magic damage on-hit.",
             "icon": "Eternal Hunger.png",
             "leveling": []
           },
           {
-            "description": "While  below 50% maximum health he is also  healed by the amount of post-mitigation damage Eternal Hunger deals. This healing is increased[ by 150% ][ to 25 \u2212 110 (based on level) ]while  below 25% maximum health.",
+            "description": "While below 50% maximum health he is also healed by the amount of post-mitigation damage Eternal Hunger deals. This healing is increased[ by 150% ][ to 25 − 110 (based on level) ]while below 25% maximum health.",
             "icon": null,
             "leveling": []
           }
@@ -152,7 +242,7 @@
         "name": "Jaws of the Beast",
         "effects": [
           {
-            "description": "Active: Warwick  dashes  unstoppably to the target enemy and bites them, dealing magic damage, applying  on-hit and on-attack effects and  healing himself for a portion of the post-mitigation damage dealt. The on-hits apply after the healing is calculated.",
+            "description": "Active: Warwick dashes unstoppably to the target enemy and bites them, dealing magic damage, applying on-hit and on-attack effects and healing himself for a portion of the post-mitigation damage dealt. The on-hits apply after the healing is calculated.",
             "icon": "Jaws of the Beast.png",
             "leveling": [
               {
@@ -232,7 +322,7 @@
             ]
           },
           {
-            "description": "If Jaws of the Beast is held, Warwick will lock his teeth into his target and use them to swing himself around to their far side. Warwick is  unable to act while swinging around his target, and will move wherever they move until he jumps off. Warwick is unstoppable while attached to an enemy.",
+            "description": "If Jaws of the Beast is held, Warwick will lock his teeth into his target and use them to swing himself around to their far side. Warwick is unable to act while swinging around his target, and will move wherever they move until he jumps off. Warwick is unstoppable while attached to an enemy.",
             "icon": null,
             "leveling": []
           }
@@ -287,7 +377,7 @@
         "projectile": null,
         "onHitEffects": "True",
         "occurrence": null,
-        "notes": "The ability will not cancel if the target dies during its cast time.\n Warwick cannot be  displaced while attached to an enemy, but can be  knocked down prior to reaching them.\n The button must be held until Warwick reaches his target to trigger the second effect. \n While Jaws of the Beast does not use Quick Casting by default, click-and-hold is comparable to the input required to use  Piercing Arrow or  Decimating Smash while using Quick Casting. It does not accept two-click input (e.g. First Cast and Second Cast) that Standard Casters will be used to on the aforementioned abilities.\n The distance traveled past the target depends on how long the ability was held after Warwick reached the target.",
+        "notes": "The ability will not cancel if the target dies during its cast time.\n Warwick cannot be  displaced while attached to an enemy, but can be  knocked down prior to reaching them.\n The button must be held until Warwick reaches his target to trigger the second effect. \n Warwick will specifically not follow an enemy's  Recall.\n While Jaws of the Beast does not use Quick Casting by default, click-and-hold is comparable to the input required to use  Piercing Arrow or  Decimating Smash while using Quick Casting. It does not accept two-click input (e.g. First Cast and Second Cast) that Standard Casters will be used to on the aforementioned abilities.\n The distance traveled past the target depends on how long the ability was held after Warwick reached the target.",
         "blurb": "Warwick lunges forward and bites his target, dealing damage based on their maximum health and healing for damage dealt.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -308,7 +398,7 @@
         "name": "Blood Hunt",
         "effects": [
           {
-            "description": "Passive: Warwick senses all enemy  champions below  below 50% of their maximum health, marking them as Blood Hunted as well as highlighting their position to his team. Warwick additionally sees a \"blood trail\" highlighting the shortest path to the Blood Hunted target, and gains  bonus movement speed while following it.",
+            "description": "Passive: Warwick senses all enemy champions below below 50% of their maximum health, marking them as Blood Hunted as well as highlighting their position to his team. Warwick additionally sees a \"blood trail\" highlighting the shortest path to the Blood Hunted target, and gains bonus movement speed while following it.",
             "icon": "Blood Hunt.png",
             "leveling": [
               {
@@ -356,7 +446,7 @@
             ]
           },
           {
-            "description": "Warwick also gains  bonus attack speed upon attacking a Blood Hunted target or an enemy unit  below 50% of their maximum health.",
+            "description": "Warwick also gains bonus attack speed upon attacking a Blood Hunted target or an enemy unit below 50% of their maximum health.",
             "icon": null,
             "leveling": [
               {
@@ -404,12 +494,12 @@
             ]
           },
           {
-            "description": "The bonus movement and attack speed is increased by 150% against enemies  below 20% maximum health.",
+            "description": "The bonus movement and attack speed is increased by 150% against enemies below 20% maximum health.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Active: Warwick briefly senses all enemies and then Blood Hunts the nearest enemy champion within a large radius for 8 seconds, regardless of their  current health.",
+            "description": "Active: Warwick briefly senses all enemies and then Blood Hunts the nearest enemy champion within a large radius for 8 seconds, regardless of their current health.",
             "icon": "Warwick Blood Hunt Mark.png",
             "leveling": []
           },
@@ -517,12 +607,12 @@
             ]
           },
           {
-            "description": "Second Cast: Warwick unleashes a howl, ending the damage reduction in the process, and causing all nearby enemies to  flee for 1 second as well as  slowing them by 90%.",
+            "description": "Second Cast: Warwick unleashes a howl, ending the damage reduction in the process, and causing all nearby enemies to flee for 1 second as well as slowing them by 90%.",
             "icon": "Primal Howl 2.png",
             "leveling": []
           },
           {
-            "description": "Landing  Infinite Duress will instantly reactivate Primal Howl without prematurely ending the damage reduction buff.",
+            "description": "Landing Infinite Duress will instantly reactivate Primal Howl without prematurely ending the damage reduction buff.",
             "icon": null,
             "leveling": []
           }
@@ -598,12 +688,12 @@
         "name": "Infinite Duress",
         "effects": [
           {
-            "description": "Active: Warwick  leaps  unstoppably in the target direction,  suppressing the first enemy  champion he collides with for 1.5 seconds.",
+            "description": "Active: Warwick leaps unstoppably in the target direction, suppressing the first enemy champion he collides with for 1.5 seconds.",
             "icon": "Infinite Duress.png",
             "leveling": []
           },
           {
-            "description": "Warwick  channels while the target is  suppressed, dealing magic damage by hitting the target up to 6 times while also applying  on-hit and on-attack effects up to 3 times. Infinite Duress  heals Warwick for all the damage dealt.",
+            "description": "Warwick channels while the target is suppressed, dealing magic damage by hitting the target up to 6 times while also applying on-hit and on-attack effects up to 3 times. Infinite Duress heals Warwick for all the damage dealt.",
             "icon": null,
             "leveling": [
               {

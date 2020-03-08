@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2.9,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.197999998927116,
-    "attackTotalTime": 1.60000002384185,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.197999998927116,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.60000002384185,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.95,
-    "aramDamageDealt": 1.05,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.05,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN"
@@ -108,12 +198,12 @@
         "name": "Blade's End",
         "effects": [
           {
-            "description": "Innate: Talon's abilities wound enemy  champions and  monsters every time they deal damage, lasting 6 seconds and stacking up to 3 times. Basic attacks refresh the duration on-hit.",
+            "description": "Innate: Talon's abilities wound enemy champions and monsters every time they deal damage, lasting 6 seconds and stacking up to 3 times. Basic attacks refresh the duration on-hit.",
             "icon": "Blade's End.png",
             "leveling": []
           },
           {
-            "description": "Talon's next basic attack against a target with 3 wounds will consume them, causing the target to bleed for 75 \u2212 245 (based on level) (+ 200% bonus AD)  physical damage over 2 seconds, with each tick occurring every 0.125 seconds. The total damage is increased by 20% against monsters.",
+            "description": "Talon's next basic attack against a target with 3 wounds will consume them, causing the target to bleed for 75 − 245 (based on level) (+ 200% bonus AD) physical damage over 2 seconds, with each tick occurring every 0.125 seconds. The total damage is increased by 20% against monsters.",
             "icon": null,
             "leveling": []
           }
@@ -150,12 +240,12 @@
         "name": "Noxian Diplomacy",
         "effects": [
           {
-            "description": "Active: Noxian Diplomacy has a different effect depending on the  range with the target.",
+            "description": "Active: Noxian Diplomacy has a different effect depending on the range with the target.",
             "icon": "Noxian Diplomacy.png",
             "leveling": []
           },
           {
-            "description": "Standard - Outside 170 units: Talon  dashes onto his target, dealing physical damage on-arrival.",
+            "description": "Standard - Outside 170 units: Talon dashes onto his target, dealing physical damage on-arrival.",
             "icon": null,
             "leveling": [
               {
@@ -198,12 +288,12 @@
             ]
           },
           {
-            "description": "Melee - Within 170 units: Talon skewers his target, causing Noxian Diplomacy to  critically strike for (50% +  25%) bonus physical damage.",
+            "description": "Melee - Within 170 units: Talon skewers his target, causing Noxian Diplomacy to critically strike for (50% + 25%) bonus physical damage.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "If Noxian Diplomacy kills its target, Talon  heals for  20 \u2212 71 (based on level) and 50% of its  cooldown is refunded.",
+            "description": "If Noxian Diplomacy kills its target, Talon heals for 20 − 71 (based on level) and 50% of its cooldown is refunded.",
             "icon": null,
             "leveling": []
           },
@@ -327,7 +417,7 @@
             ]
           },
           {
-            "description": "The daggers linger for 0.75 seconds before flying back to Talon, dealing physical damage to all enemies they pass through and  slowing them for 1 second.",
+            "description": "The daggers linger for 0.75 seconds before flying back to Talon, dealing physical damage to all enemies they pass through and slowing them for 1 second.",
             "icon": null,
             "leveling": [
               {
@@ -488,7 +578,7 @@
         "innerRadius": null,
         "speed": null,
         "width": null,
-        "angle": "22\u00b0",
+        "angle": "22°",
         "castTime": null,
         "effectRadius": null,
         "targetRange": "900"
@@ -499,7 +589,7 @@
         "name": "Assassin's Path",
         "effects": [
           {
-            "description": "Active: Talon  dashes a maximum of 800 units over the target structure or piece of terrain, with the dash's speed based on his own  movement speed.",
+            "description": "Active: Talon dashes a maximum of 800 units over the target structure or piece of terrain, with the dash's speed based on his own movement speed.",
             "icon": "Assassin's Path.png",
             "leveling": []
           },
@@ -561,7 +651,7 @@
         "name": "Shadow Assault",
         "effects": [
           {
-            "description": "Active: Talon disperses a ring of blades, dealing physical damage to all enemies hit, while gaining  invisibility and  bonus movement speed for up to 2.5 seconds.",
+            "description": "Active: Talon disperses a ring of blades, dealing physical damage to all enemies hit, while gaining invisibility and bonus movement speed for up to 2.5 seconds.",
             "icon": "Shadow Assault.png",
             "leveling": [
               {
@@ -642,7 +732,7 @@
             ]
           },
           {
-            "description": "When Talon emerges from  invisibility, the blades converge to his location, dealing the same physical damage to all enemies they pass through. Breaking  invisibility with a basic attack or  Noxian Diplomacy causes the blades to converge to his target instead.",
+            "description": "When Talon emerges from invisibility, the blades converge to his location, dealing the same physical damage to all enemies they pass through. Breaking invisibility with a basic attack or Noxian Diplomacy causes the blades to converge to his target instead.",
             "icon": null,
             "leveling": []
           }

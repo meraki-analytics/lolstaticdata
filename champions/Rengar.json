@@ -26,6 +26,12 @@
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
+    "manaRegen": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
     "armor": {
       "flat": 34,
       "percent": 0.0,
@@ -50,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 70,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 70,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.667,
       "percent": 0.0,
       "perLevel": 3,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.666999995708465,
-    "attackCastTime": 0.300000011920928,
-    "attackTotalTime": 1.5,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.666999995708465,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.300000011920928,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.5,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.9,
-    "aramDamageDealt": 1.05,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -104,17 +200,17 @@
         "name": "Unseen Predator",
         "effects": [
           {
-            "description": "Innate: Rengar generates 1 Ferocity whenever he casts a basic ability. Reaching 4 Ferocity makes his next ability empowered, granting an additional cast along with 30 / 40 / 50% (based on level)  bonus movement speed for 1.5 seconds at the cost of all Ferocity. Reaching 4 Ferocity with  Savagery or  Bola Strike  locks its empowered version for 0.1 seconds before and after casting it. All Ferocity is lost after being out-of-combat for 8 seconds.",
+            "description": "Innate: Rengar generates 1 Ferocity whenever he casts a basic ability. Reaching 4 Ferocity makes his next ability empowered, granting an additional cast along with 30 / 40 / 50% (based on level) bonus movement speed for 1.5 seconds at the cost of all Ferocity. Reaching 4 Ferocity with Savagery or Bola Strike locks its empowered version for 0.1 seconds before and after casting it. All Ferocity is lost after being out-of-combat for 8 seconds.",
             "icon": "Unseen Predator.png",
             "leveling": []
           },
           {
-            "description": "While in  brush, Rengar's basic attacks have  725 range and cause him to  leap to enemies beyond his normal  melee range. This effect lingers for 0.25 seconds upon exiting brush. Leaping with 0 Ferocity generates 1 Ferocity.",
+            "description": "While in brush, Rengar's basic attacks have 725 range and cause him to leap to enemies beyond his normal melee range. This effect lingers for 0.25 seconds upon exiting brush. Leaping with 0 Ferocity generates 1 Ferocity.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Innate - Bonetooth Necklace:  Takedowns within 1.5 seconds of being damaged by Rengar grant him a Trophy per unique enemy champion, up to 5. An  additional one is made available through the event The Hunt is On!. Trophies grant 1% \u2212 36% (based on  trophies) bonus AD as bonus attack damage.",
+            "description": "Innate - Bonetooth Necklace: Takedowns within 1.5 seconds of being damaged by Rengar grant him a Trophy per unique enemy champion, up to 5. An additional one is made available through the event The Hunt is On!. Trophies grant 1% − 36% (based on trophies) bonus AD as bonus attack damage.",
             "icon": "Bonetooth Necklace.png",
             "leveling": []
           }
@@ -149,17 +245,17 @@
         "name": "Unseen Predator",
         "effects": [
           {
-            "description": "Innate: Rengar generates 1 Ferocity whenever he casts a basic ability. Reaching 4 Ferocity makes his next ability empowered, granting an additional cast along with 30 / 40 / 50% (based on level)  bonus movement speed for 1.5 seconds at the cost of all Ferocity. Reaching 4 Ferocity with  Savagery or  Bola Strike  locks its empowered version for 0.1 seconds before and after casting it. All Ferocity is lost after being out-of-combat for 8 seconds.",
+            "description": "Innate: Rengar generates 1 Ferocity whenever he casts a basic ability. Reaching 4 Ferocity makes his next ability empowered, granting an additional cast along with 30 / 40 / 50% (based on level) bonus movement speed for 1.5 seconds at the cost of all Ferocity. Reaching 4 Ferocity with Savagery or Bola Strike locks its empowered version for 0.1 seconds before and after casting it. All Ferocity is lost after being out-of-combat for 8 seconds.",
             "icon": "Unseen Predator.png",
             "leveling": []
           },
           {
-            "description": "While in  brush, Rengar's basic attacks have  725 range and cause him to  leap to enemies beyond his normal  melee range. This effect lingers for 0.25 seconds upon exiting brush. Leaping with 0 Ferocity generates 1 Ferocity.",
+            "description": "While in brush, Rengar's basic attacks have 725 range and cause him to leap to enemies beyond his normal melee range. This effect lingers for 0.25 seconds upon exiting brush. Leaping with 0 Ferocity generates 1 Ferocity.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Innate - Bonetooth Necklace:  Takedowns within 1.5 seconds of being damaged by Rengar grant him a Trophy per unique enemy champion, up to 5. An  additional one is made available through the event The Hunt is On!. Trophies grant 1% \u2212 36% (based on  trophies) bonus AD as bonus attack damage.",
+            "description": "Innate - Bonetooth Necklace: Takedowns within 1.5 seconds of being damaged by Rengar grant him a Trophy per unique enemy champion, up to 5. An additional one is made available through the event The Hunt is On!. Trophies grant 1% − 36% (based on trophies) bonus AD as bonus attack damage.",
             "icon": "Bonetooth Necklace.png",
             "leveling": []
           }
@@ -196,7 +292,7 @@
         "name": "Savagery",
         "effects": [
           {
-            "description": "Active: Rengar's next two basic attacks within 3 seconds gain  40% bonus attack speed, with the first also gaining  25 bonus range and dealing  bonus physical damage.",
+            "description": "Active: Rengar's next two basic attacks within 3 seconds gain 40% bonus attack speed, with the first also gaining 25 bonus range and dealing bonus physical damage.",
             "icon": "Savagery.png",
             "leveling": [
               {
@@ -239,7 +335,7 @@
             ]
           },
           {
-            "description": "Empowered Active: Savagery's bonus physical damage is modified and grants Rengar 50% \u2212 101% (based on level)  bonus attack speed for 5 seconds.",
+            "description": "Empowered Active: Savagery's bonus physical damage is modified and grants Rengar 50% − 101% (based on level) bonus attack speed for 5 seconds.",
             "icon": "Savagery 2.png",
             "leveling": [
               {
@@ -370,7 +466,7 @@
             "leveling": []
           },
           {
-            "description": "Active: Rengar lets out a battle roar, dealing  magic damage to nearby enemies and  healing Rengar for his Grey Health.",
+            "description": "Active: Rengar lets out a battle roar, dealing magic damage to nearby enemies and healing Rengar for his Grey Health.",
             "icon": "Battle Roar.png",
             "leveling": [
               {
@@ -413,7 +509,7 @@
             ]
           },
           {
-            "description": "Empowered Active: Battle Roar's magic damage is modified and additionally  cleanses Rengar of all  crowd control.",
+            "description": "Empowered Active: Battle Roar's magic damage is modified and additionally cleanses Rengar of all crowd control.",
             "icon": "Battle Roar 2.png",
             "leveling": [
               {
@@ -534,7 +630,7 @@
         "name": "Bola Strike",
         "effects": [
           {
-            "description": "Active: Rengar throws a bola in the target direction, dealing physical damage to the first enemy hit and  slowing them for 1.75 seconds.",
+            "description": "Active: Rengar throws a bola in the target direction, dealing physical damage to the first enemy hit and slowing them for 1.75 seconds.",
             "icon": "Bola Strike.png",
             "leveling": [
               {
@@ -598,7 +694,7 @@
             ]
           },
           {
-            "description": "Empowered Active: Bola Strike's physical damage is modified and  roots its target for 1.75 seconds.",
+            "description": "Empowered Active: Bola Strike's physical damage is modified and roots its target for 1.75 seconds.",
             "icon": "Bola Strike 2.png",
             "leveling": [
               {
@@ -719,7 +815,7 @@
         "name": "Thrill of the Hunt",
         "effects": [
           {
-            "description": "Active: Rengar  channels his predatory instincts,  revealing the nearest enemy champion and gaining  bonus movement speed for a duration.",
+            "description": "Active: Rengar channels his predatory instincts, revealing the nearest enemy champion and gaining bonus movement speed for a duration.",
             "icon": "Thrill of the Hunt.png",
             "leveling": [
               {
@@ -759,7 +855,7 @@
             ]
           },
           {
-            "description": "After 2 seconds he also becomes  camouflaged and gains  Unseen Predator for the remaining duration. His next basic attack within normal attack range against any unit or with Unseen Predator against the nearest enemy champion deals  50% AD  bonus physical damage and reduces the target's  armor for 4 seconds.",
+            "description": "After 2 seconds he also becomes camouflaged and gains Unseen Predator for the remaining duration. His next basic attack within normal attack range against any unit or with Unseen Predator against the nearest enemy champion deals 50% AD bonus physical damage and reduces the target's armor for 4 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -782,7 +878,7 @@
             ]
           },
           {
-            "description": "The nearest enemy champion to Rengar alerts all of their allies within 1200 range about his presence. Attacking or casting any spell, though not  Savagery, ends Thrill of the Hunt immediately.",
+            "description": "The nearest enemy champion to Rengar alerts all of their allies within 1200 range about his presence. Attacking or casting any spell, though not Savagery, ends Thrill of the Hunt immediately.",
             "icon": null,
             "leveling": []
           }

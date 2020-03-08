@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.721,
       "percent": 0.0,
       "perLevel": 2.7,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.667999982833862,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0994652435183525,
+    "attackSpeedRatio": {
+      "flat": 0.667999982833862,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0994652435183525,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.92,
-    "aramDamageDealt": 1.08,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 0.95,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.92,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.08,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -109,17 +199,17 @@
         "name": "Umbra Blades",
         "effects": [
           {
-            "description": "Innate: Nocturne's basic attack is periodically enhanced, dealing  20% AD  bonus physical damage to his target and  120% AD physical damage to surrounding enemies, while also  healing himself for 15 \u2212 40 (based on level) ( + 15% AP) per enemy hit.",
+            "description": "Innate: Nocturne's basic attack is periodically enhanced, dealing 20% AD bonus physical damage to his target and 120% AD physical damage to surrounding enemies, while also healing himself for 15 − 40 (based on level) ( + 15% AP) per enemy hit.",
             "icon": "Umbra Blades.png",
             "leveling": []
           },
           {
-            "description": "Umbra Blades's damage to the primary target can  critically strike for  2.5%  AD bonus physical damage.",
+            "description": "Umbra Blades's damage to the primary target can critically strike for 2.5% AD bonus physical damage.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Basic attacks reduce Umbra Blades'  cooldown by 1 second, increased to 2 seconds against enemy champions.",
+            "description": "Basic attacks reduce Umbra Blades' cooldown by 1 second, increased to 2 seconds against enemy champions.",
             "icon": "Steel Blades.png",
             "leveling": []
           }
@@ -172,7 +262,7 @@
         "name": "Duskbringer",
         "effects": [
           {
-            "description": "Active: Nocturne sends out a shadow blade in a line that leaves a Dusk Trail on its path, dealing physical damage to enemies it passes through and causing enemy  champions hit to also leave a Dusk Trail behind their  movement for 5 seconds.",
+            "description": "Active: Nocturne sends out a shadow blade in a line that leaves a Dusk Trail on its path, dealing physical damage to enemies it passes through and causing enemy champions hit to also leave a Dusk Trail behind their movement for 5 seconds.",
             "icon": "Duskbringer.png",
             "leveling": [
               {
@@ -215,7 +305,7 @@
             ]
           },
           {
-            "description": "While on the Dusk Trail, Nocturne is  ghosted and gains  bonus movement speed and  bonus attack damage.",
+            "description": "While on the Dusk Trail, Nocturne is ghosted and gains bonus movement speed and bonus attack damage.",
             "icon": null,
             "leveling": [
               {
@@ -334,7 +424,7 @@
         "name": "Shroud of Darkness",
         "effects": [
           {
-            "description": "Passive: Nocturne empowers his blades, permanently gaining  bonus attack speed.",
+            "description": "Passive: Nocturne empowers his blades, permanently gaining bonus attack speed.",
             "icon": "Shroud of Darkness.png",
             "leveling": [
               {
@@ -382,12 +472,12 @@
             ]
           },
           {
-            "description": "Active: Nocturne gains a  spell shield for 1.5 seconds.",
+            "description": "Active: Nocturne gains a spell shield for 1.5 seconds.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Blocking an ability will double Shroud of Darkness' passive  bonus attack speed for 5 seconds.",
+            "description": "Blocking an ability will double Shroud of Darkness' passive bonus attack speed for 5 seconds.",
             "icon": null,
             "leveling": []
           }
@@ -463,12 +553,12 @@
         "name": "Unspeakable Horror",
         "effects": [
           {
-            "description": "Passive: Nocturne gains  335 bonus movement speed when moving toward  fleeing targets.",
+            "description": "Passive: Nocturne gains 335 bonus movement speed when moving toward fleeing targets.",
             "icon": "Unspeakable Horror.png",
             "leveling": []
           },
           {
-            "description": "Active: Nocturne plants nightmares into his target's mind, dealing  magic damage over 2 seconds and forming a tether between him and his target.",
+            "description": "Active: Nocturne plants nightmares into his target's mind, dealing magic damage over 2 seconds and forming a tether between him and his target.",
             "icon": null,
             "leveling": [
               {
@@ -511,7 +601,7 @@
             ]
           },
           {
-            "description": "If the target does not break the tether by moving out of range, they are made to  flee from Nocturne for a short duration while  slowed by 90%.",
+            "description": "If the target does not break the tether by moving out of range, they are made to flee from Nocturne for a short duration while slowed by 90%.",
             "icon": null,
             "leveling": [
               {
@@ -609,12 +699,12 @@
         "name": "Paranoia",
         "effects": [
           {
-            "description": "Active: After a brief delay, Nocturne applies  nearsight to all enemy champions for 6 seconds, and the ability to recast Paranoia for the duration.",
+            "description": "Active: After a brief delay, Nocturne applies nearsight to all enemy champions for 6 seconds, and the ability to recast Paranoia for the duration.",
             "icon": "Paranoia.png",
             "leveling": []
           },
           {
-            "description": "Recast: Nocturne  dashes  unstoppably to the target enemy  champion, dealing them physical damage.",
+            "description": "Recast: Nocturne dashes unstoppably to the target enemy champion, dealing them physical damage.",
             "icon": null,
             "leveling": [
               {

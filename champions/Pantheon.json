@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 125,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.644,
       "percent": 0.0,
       "perLevel": 2.95,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.643999993801116,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.109687499701976,
+    "attackSpeedRatio": {
+      "flat": 0.643999993801116,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.109687499701976,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 175,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.05,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.95,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -110,7 +200,7 @@
         "name": "Mortal Will",
         "effects": [
           {
-            "description": "Innate: Pantheon gains a stack of Mortal Will when he lands a basic attack  on-hit or casts an ability, up to a maximum of 5. At 5 stacks, Pantheon's next basic ability consume the stacks to grant additional effects.",
+            "description": "Innate: Pantheon gains a stack of Mortal Will when he lands a basic attack on-hit or casts an ability, up to a maximum of 5. At 5 stacks, Pantheon's next basic ability consume the stacks to grant additional effects.",
             "icon": "Mortal Will.png",
             "leveling": []
           },
@@ -152,12 +242,12 @@
         "name": "Comet Spear",
         "effects": [
           {
-            "description": "Active: Pantheon winds up for up to 4 seconds, increasing Comet Spear's range while being  slowed by 10%. Comet Spear can be recast at any time within its duration.",
+            "description": "Active: Pantheon winds up for up to 4 seconds, increasing Comet Spear's range while being slowed by 10%. Comet Spear can be recast at any time within its duration.",
             "icon": "Comet Spear.png",
             "leveling": []
           },
           {
-            "description": "Recast: Pantheon hurls his spear, dealing  physical damage to all enemies hit, increased against enemies below 20% of their maximum health but reduced by 30% against  minions and by 50% against enemies beyond the first.",
+            "description": "Recast: Pantheon hurls his spear, dealing physical damage to all enemies hit, increased against enemies below 20% of their maximum health but reduced by 30% against minions and by 50% against enemies beyond the first.",
             "icon": null,
             "leveling": [
               {
@@ -311,17 +401,17 @@
             ]
           },
           {
-            "description": "Releasing the ability within 0.35 seconds causes Pantheon to instead thrust his spear forward, dealing the same physical damage to all enemies hit and refunding 50% of Comet Spear's  cooldown. The thrust's damage is not reduced against enemies beyond the first.",
+            "description": "Releasing the ability within 0.35 seconds causes Pantheon to instead thrust his spear forward, dealing the same physical damage to all enemies hit and refunding 50% of Comet Spear's cooldown. The thrust's damage is not reduced against enemies beyond the first.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "If Pantheon is  interrupted during the charge, or the charge completes without reactivation, Comet Spear is cancelled and the ability is put on full cooldown but refunds  half the mana cost.",
+            "description": "If Pantheon is interrupted during the charge, or the charge completes without reactivation, Comet Spear is cancelled and the ability is put on full cooldown but refunds half the mana cost.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Mortal Will: Deals an additional 20 \u2212 240 (based on level) (+ 100% bonus AD) bonus physical damage, affected by the previous damage reductions, to all enemies hit and  slows them for 2.5 seconds.",
+            "description": "Mortal Will: Deals an additional 20 − 240 (based on level) (+ 100% bonus AD) bonus physical damage, affected by the previous damage reductions, to all enemies hit and slows them for 2.5 seconds.",
             "icon": "Comet Spear 2.png",
             "leveling": [
               {
@@ -419,7 +509,7 @@
         "name": "Shield Vault",
         "effects": [
           {
-            "description": "Active: Pantheon  dashes to the target enemy unit, dealing them physical damage and  stunning them for 1 second.",
+            "description": "Active: Pantheon dashes to the target enemy unit, dealing them physical damage and stunning them for 1 second.",
             "icon": "Shield Vault.png",
             "leveling": [
               {
@@ -462,7 +552,7 @@
             ]
           },
           {
-            "description": "Mortal Will: Pantheon's next basic attack within 4 seconds strikes his target 3 times, dealing 45% \u2212 55% (based on level) AD physical damage per hit, up to 135% \u2212 165% (based on level) AD. Each hit is affected by  critical strike modifiers and applies on-hit effects.",
+            "description": "Mortal Will: Pantheon's next basic attack within 4 seconds strikes his target 3 times, dealing 45% − 55% (based on level) AD physical damage per hit, up to 135% − 165% (based on level) AD. Each hit is affected by critical strike modifiers and applies on-hit effects.",
             "icon": "Shield Vault 2.png",
             "leveling": []
           },
@@ -553,12 +643,12 @@
         "name": "Aegis Assault",
         "effects": [
           {
-            "description": "Active: Pantheon braces his shield in the target direction for 1.5 seconds, during which he is  slowed for between 0% \u2212 50% (based on his movement direction). Aegis Assault can't be  interrupted.",
+            "description": "Active: Pantheon braces his shield in the target direction for 1.5 seconds, during which he is slowed for between 0% − 50% (based on his movement direction). Aegis Assault can't be interrupted.",
             "icon": "Aegis Assault.png",
             "leveling": []
           },
           {
-            "description": "For the duration, Pantheon is  invulnerable against damage dealt by enemies ( turrets included) from the target direction, and deals[ up to 100% AD physical damage over the duration ][ 8.3% AD physical damage every 0.125 seconds ] in a cone to all enemies struck, reduced by 50% against  minions.",
+            "description": "For the duration, Pantheon is invulnerable against damage dealt by enemies ( turrets included) from the target direction, and deals[ up to 100% AD physical damage over the duration ][ 8.3% AD physical damage every 0.125 seconds ] in a cone to all enemies struck, reduced by 50% against minions.",
             "icon": null,
             "leveling": []
           },
@@ -676,7 +766,7 @@
         "innerRadius": null,
         "speed": null,
         "width": null,
-        "angle": "60\u00b0 / 120\u00b0",
+        "angle": "60° / 120°",
         "castTime": null,
         "effectRadius": null,
         "targetRange": "400"
@@ -687,12 +777,12 @@
         "name": "Grand Starfall",
         "effects": [
           {
-            "description": "Active: Pantheon channels for 2 seconds to leap high into the air, then marks and  reveals his destination before crashing down along the target area 2.7 seconds later. He remains  vanished until the landing is complete.",
+            "description": "Active: Pantheon channels for 2 seconds to leap high into the air, then marks and reveals his destination before crashing down along the target area 2.7 seconds later. He remains vanished until the landing is complete.",
             "icon": "Grand Starfall.png",
             "leveling": []
           },
           {
-            "description": "The landing deals  magic damage, decreased by up to 50% at the edges of the area.",
+            "description": "The landing deals magic damage, decreased by up to 50% at the edges of the area.",
             "icon": null,
             "leveling": [
               {
@@ -756,12 +846,12 @@
             ]
           },
           {
-            "description": "Grand Starfall instantly readies  Mortal Will.",
+            "description": "Grand Starfall instantly readies Mortal Will.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Grand Starfall's  cooldown is reduced to 30 seconds if the channel is  interrupted.",
+            "description": "Grand Starfall's cooldown is reduced to 30 seconds if the channel is interrupted.",
             "icon": null,
             "leveling": []
           },

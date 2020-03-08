@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 135,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 135,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.638,
       "percent": 0.0,
       "perLevel": 2.3,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.638000011444091,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.200000002980232,
+    "attackSpeedRatio": {
+      "flat": 0.638000011444091,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.200000002980232,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.95,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.1,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "MARKSMAN"
@@ -108,12 +198,12 @@
         "name": "Hextech Munitions",
         "effects": [
           {
-            "description": "Innate - Hextech Shrapnel Shells: Corki's basic attacks are permanently modified to deal 20% AD  physical damage and 80% AD  magic damage.",
+            "description": "Innate - Hextech Shrapnel Shells: Corki's basic attacks are permanently modified to deal 20% AD physical damage and 80% AD magic damage.",
             "icon": "Hextech Munitions.png",
             "leveling": []
           },
           {
-            "description": "Innate - The Package: After 8 minutes elapse,  The Package is delivered to both corners of Corki's fountain, which he can pick up after channeling for 1 second. Doing so grants him one cast of  Special Delivery which must be cast before  Valkyrie within the next 60 seconds, as well as  40% bonus movement speed out of combat prior to the ability being cast, after which  The Package goes on  cooldown before being delivered again.",
+            "description": "Innate - The Package: After 8 minutes elapse, The Package is delivered to both corners of Corki's fountain, which he can pick up after channeling for 1 second. Doing so grants him one cast of Special Delivery which must be cast before Valkyrie within the next 60 seconds, as well as 40% bonus movement speed out of combat prior to the ability being cast, after which The Package goes on cooldown before being delivered again.",
             "icon": "The Package.png",
             "leveling": []
           }
@@ -164,12 +254,12 @@
         "name": "Hextech Munitions",
         "effects": [
           {
-            "description": "Innate - Hextech Shrapnel Shells: Corki's basic attacks are permanently modified to deal 20% AD  physical damage and 80% AD  magic damage.",
+            "description": "Innate - Hextech Shrapnel Shells: Corki's basic attacks are permanently modified to deal 20% AD physical damage and 80% AD magic damage.",
             "icon": "Hextech Munitions.png",
             "leveling": []
           },
           {
-            "description": "Innate - The Package: After 8 minutes elapse,  The Package is delivered to both corners of Corki's fountain, which he can pick up after channeling for 1 second. Doing so grants him one cast of  Special Delivery which must be cast before  Valkyrie within the next 60 seconds, as well as  40% bonus movement speed out of combat prior to the ability being cast, after which  The Package goes on  cooldown before being delivered again.",
+            "description": "Innate - The Package: After 8 minutes elapse, The Package is delivered to both corners of Corki's fountain, which he can pick up after channeling for 1 second. Doing so grants him one cast of Special Delivery which must be cast before Valkyrie within the next 60 seconds, as well as 40% bonus movement speed out of combat prior to the ability being cast, after which The Package goes on cooldown before being delivered again.",
             "icon": "The Package.png",
             "leveling": []
           }
@@ -281,7 +371,7 @@
             ]
           },
           {
-            "description": "The bomb  reveals the area as it travels and for 6 seconds afterwards, as well as all affected enemies.",
+            "description": "The bomb reveals the area as it travels and for 6 seconds afterwards, as well as all affected enemies.",
             "icon": null,
             "leveling": []
           }
@@ -357,7 +447,7 @@
         "name": "Valkyrie",
         "effects": [
           {
-            "description": "Active: Corki  dashes to the target location, dropping bombs that leave up to 3 blazing patches along his path, depending on the distance traveled, lasting for 2 seconds.",
+            "description": "Active: Corki dashes to the target location, dropping bombs that leave up to 3 blazing patches along his path, depending on the distance traveled, lasting for 2 seconds.",
             "icon": "Valkyrie.png",
             "leveling": []
           },
@@ -511,17 +601,17 @@
         "name": "Special Delivery",
         "effects": [
           {
-            "description": "Active: Corki  dashes  unstoppably to the target location with extreme speed,  knocking aside all enemies hit 500 units and leaving behind a fire trail for 5 seconds.",
+            "description": "Active: Corki dashes unstoppably to the target location with extreme speed, knocking aside all enemies hit 500 units and leaving behind a fire trail for 5 seconds.",
             "icon": "Special Delivery.png",
             "leveling": []
           },
           {
-            "description": "Enemies knocked aside or within the trail are burned for 1.5 seconds, refreshing while inside the trail,  slowing them by 90% and dealing 7.5 \u2212  25 (based on level) (+ 50% bonus AD) (+ 6% AP) magic damage every 0.25 seconds, for a maximum of 150 \u2212  500 (based on level) (+ 1000% bonus AD) (+ 120% AP) magic damage.",
+            "description": "Enemies knocked aside or within the trail are burned for 1.5 seconds, refreshing while inside the trail, slowing them by 90% and dealing 7.5 − 25 (based on level) (+ 50% bonus AD) (+ 6% AP) magic damage every 0.25 seconds, for a maximum of 150 − 500 (based on level) (+ 1000% bonus AD) (+ 120% AP) magic damage.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Casting Special Delivery instantly resets Valkyrie's  cooldown.",
+            "description": "Casting Special Delivery instantly resets Valkyrie's cooldown.",
             "icon": null,
             "leveling": []
           }
@@ -558,7 +648,7 @@
         "name": "Gatling Gun",
         "effects": [
           {
-            "description": "Active: Corki sprays bullets in a frontal cone for 4 seconds, dealing equal parts physical and magic damage every 0.25 seconds to all enemies hit, and reducing the target's  armor and  magic resistance each tick, stacking up to 8 times, lingering for 2 seconds.",
+            "description": "Active: Corki sprays bullets in a frontal cone for 4 seconds, dealing equal parts physical and magic damage every 0.25 seconds to all enemies hit, and reducing the target's armor and magic resistance each tick, stacking up to 8 times, lingering for 2 seconds.",
             "icon": "Gatling Gun.png",
             "leveling": [
               {
@@ -740,7 +830,7 @@
         "innerRadius": null,
         "speed": null,
         "width": null,
-        "angle": "35\u00b0",
+        "angle": "35°",
         "castTime": "false",
         "effectRadius": "600",
         "targetRange": null
@@ -844,7 +934,7 @@
             ]
           },
           {
-            "description": "Every third missile Corki fires is a  Big One, dealing 100% increased damage with increased range and explosion radius.",
+            "description": "Every third missile Corki fires is a Big One, dealing 100% increased damage with increased range and explosion radius.",
             "icon": "Big One.png",
             "leveling": []
           }
@@ -1007,7 +1097,7 @@
             ]
           },
           {
-            "description": "Every third missile Corki fires is a  Big One, dealing 100% increased damage with increased range and explosion radius.",
+            "description": "Every third missile Corki fires is a Big One, dealing 100% increased damage with increased range and explosion radius.",
             "icon": "Big One.png",
             "leveling": []
           }

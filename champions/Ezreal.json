@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 550,
-    "selectionRadius": 115,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 550,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 115,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.111613474786281,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.111613474786281,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "MAGE",
@@ -109,7 +199,7 @@
         "name": "Rising Spell Force",
         "effects": [
           {
-            "description": "Innate: Every time Ezreal hits an enemy unit with one of his abilities, he gains  10% bonus attack speed for 6 seconds, stacking up to 5 times for a maximum of 50%.",
+            "description": "Innate: Every time Ezreal hits an enemy unit with one of his abilities, he gains 10% bonus attack speed for 6 seconds, stacking up to 5 times for a maximum of 50%.",
             "icon": "Rising Spell Force.png",
             "leveling": []
           }
@@ -146,7 +236,7 @@
         "name": "Mystic Shot",
         "effects": [
           {
-            "description": "Active: Ezreal fires a bolt of energy in a line, dealing  physical damage to the first enemy hit, applying on-hit and on-attack effects and healing off  life steal instead of  spell vamp.",
+            "description": "Active: Ezreal fires a bolt of energy in a line, dealing physical damage to the first enemy hit, applying on-hit and on-attack effects and healing off life steal instead of spell vamp.",
             "icon": "Mystic Shot.png",
             "leveling": [
               {
@@ -205,7 +295,7 @@
             ]
           },
           {
-            "description": "If Mystic Shot successfully hits an enemy, Ezreal's abilities'  cooldowns are reduced by 1.5 seconds (including Mystic Shot's).",
+            "description": "If Mystic Shot successfully hits an enemy, Ezreal's abilities' cooldowns are reduced by 1.5 seconds (including Mystic Shot's).",
             "icon": null,
             "leveling": []
           }
@@ -281,12 +371,12 @@
         "name": "Essence Flux",
         "effects": [
           {
-            "description": "Active: Ezreal fires an orb that sticks to first enemy  champion,  epic monster, or structure hit for 4 seconds.",
+            "description": "Active: Ezreal fires an orb that sticks to first enemy champion, epic monster, or structure hit for 4 seconds.",
             "icon": "Essence Flux.png",
             "leveling": []
           },
           {
-            "description": "Hitting the target with a damaging ability or basic attack detonates the orb, dealing  magic damage.",
+            "description": "Hitting the target with a damaging ability or basic attack detonates the orb, dealing magic damage.",
             "icon": null,
             "leveling": [
               {
@@ -345,7 +435,7 @@
             ]
           },
           {
-            "description": "Detonating with an ability fully refunds the cost of that ability and restores  60 mana.",
+            "description": "Detonating with an ability fully refunds the cost of that ability and restores 60 mana.",
             "icon": null,
             "leveling": []
           }
@@ -421,7 +511,7 @@
         "name": "Arcane Shift",
         "effects": [
           {
-            "description": "Active: Ezreal  blinks to the target location, firing a homing bolt that deals magic damage to the nearest enemy.",
+            "description": "Active: Ezreal blinks to the target location, firing a homing bolt that deals magic damage to the nearest enemy.",
             "icon": "Arcane Shift.png",
             "leveling": [
               {
@@ -480,7 +570,7 @@
             ]
           },
           {
-            "description": "Arcane Shift  prioritizes target hit by  Essence Flux.",
+            "description": "Arcane Shift prioritizes target hit by Essence Flux.",
             "icon": null,
             "leveling": []
           }
@@ -556,7 +646,7 @@
         "name": "Trueshot Barrage",
         "effects": [
           {
-            "description": "Active: Ezreal fires an  energy projectile in the target direction, briefly  revealing the area it flies through and dealing magic damage to enemies it passes through.",
+            "description": "Active: Ezreal fires an energy projectile in the target direction, briefly revealing the area it flies through and dealing magic damage to enemies it passes through.",
             "icon": "Trueshot Barrage.png",
             "leveling": [
               {
@@ -603,7 +693,7 @@
             ]
           },
           {
-            "description": "Minions and non-epic  monsters take 50% reduced damage.",
+            "description": "Minions and non-epic monsters take 50% reduced damage.",
             "icon": null,
             "leveling": [
               {

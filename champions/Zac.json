@@ -20,6 +20,18 @@
       "perLevel": 0.5,
       "percentPerLevel": 0.0
     },
+    "mana": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
+    "manaRegen": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
     "armor": {
       "flat": 33,
       "percent": 0.0,
@@ -44,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 90,
-    "pathingRadius": 43.0749015808105,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 90,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 43.0749015808105,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.736,
       "percent": 0.0,
       "perLevel": 1.6,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.638000011444091,
-    "attackCastTime": 0.363000005483627,
-    "attackTotalTime": 1.567999958992,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.638000011444091,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.363000005483627,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.567999958992,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 175,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.85,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.85,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -98,7 +200,7 @@
         "name": "Cell Division",
         "effects": [
           {
-            "description": "The Secret Weapon: Zac's size scales with  his current health, getting larger when it exceeds  his base health and getting smaller the higher  his missing health.",
+            "description": "The Secret Weapon: Zac's size scales with his current health, getting larger when it exceeds his base health and getting smaller the higher his missing health.",
             "icon": "false",
             "leveling": []
           },
@@ -108,12 +210,12 @@
             "leveling": []
           },
           {
-            "description": "Both Zac and his enemies can interact with these chunks by being within 50 units of them: Zac can move over them to consume them, restoring  4 / 5 / 6 / 7% (based on  Let's Bounce!'s rank) of his maximum health; enemies can move over them to destroy them.",
+            "description": "Both Zac and his enemies can interact with these chunks by being within 50 units of them: Zac can move over them to consume them, restoring 4 / 5 / 6 / 7% (based on Let's Bounce!'s rank) of his maximum health; enemies can move over them to destroy them.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Periodically, upon taking fatal damage, Zac splits into 4 uncontrollable bloblets that move to his final location over 8 / 7 / 6 / 5 / 4 (based on level) seconds. If any of these bloblets remain at the end of the duration, Zac  recombines and returns at  10 - 50% maximum health.",
+            "description": "Periodically, upon taking fatal damage, Zac splits into 4 uncontrollable bloblets that move to his final location over 8 / 7 / 6 / 5 / 4 (based on level) seconds. If any of these bloblets remain at the end of the duration, Zac recombines and returns at 10 - 50% maximum health.",
             "icon": "Cell Division 2.png",
             "leveling": []
           },
@@ -169,7 +271,7 @@
         "name": "Cell Division",
         "effects": [
           {
-            "description": "The Secret Weapon: Zac's size scales with  his current health, getting larger when it exceeds  his base health and getting smaller the higher  his missing health.",
+            "description": "The Secret Weapon: Zac's size scales with his current health, getting larger when it exceeds his base health and getting smaller the higher his missing health.",
             "icon": "false",
             "leveling": []
           },
@@ -179,12 +281,12 @@
             "leveling": []
           },
           {
-            "description": "Both Zac and his enemies can interact with these chunks by being within 50 units of them: Zac can move over them to consume them, restoring  4 / 5 / 6 / 7% (based on  Let's Bounce!'s rank) of his maximum health; enemies can move over them to destroy them.",
+            "description": "Both Zac and his enemies can interact with these chunks by being within 50 units of them: Zac can move over them to consume them, restoring 4 / 5 / 6 / 7% (based on Let's Bounce!'s rank) of his maximum health; enemies can move over them to destroy them.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Periodically, upon taking fatal damage, Zac splits into 4 uncontrollable bloblets that move to his final location over 8 / 7 / 6 / 5 / 4 (based on level) seconds. If any of these bloblets remain at the end of the duration, Zac  recombines and returns at  10 - 50% maximum health.",
+            "description": "Periodically, upon taking fatal damage, Zac splits into 4 uncontrollable bloblets that move to his final location over 8 / 7 / 6 / 5 / 4 (based on level) seconds. If any of these bloblets remain at the end of the duration, Zac recombines and returns at 10 - 50% maximum health.",
             "icon": "Cell Division 2.png",
             "leveling": []
           },
@@ -242,7 +344,7 @@
         "name": "Stretching Strikes",
         "effects": [
           {
-            "description": "Active: Zac stretches his left arm in the target direction, dealing  magic damage and  slowing the first enemy hit by 40% for 0.5 seconds, and attaching it to the target for 2 seconds.",
+            "description": "Active: Zac stretches his left arm in the target direction, dealing magic damage and slowing the first enemy hit by 40% for 0.5 seconds, and attaching it to the target for 2 seconds.",
             "icon": "Stretching Strikes.png",
             "leveling": [
               {
@@ -354,17 +456,17 @@
             ]
           },
           {
-            "description": "While his arm is attached, his next basic attack has  200 range and is replaced by a second Stretching Strike, dealing the same magic damage and  slow.",
+            "description": "While his arm is attached, his next basic attack has 200 range and is replaced by a second Stretching Strike, dealing the same magic damage and slow.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "If the two Stretching Strikes affect different targets, he  roots both targets for 0.5 seconds and then  flings them towards each other for 300 range.",
+            "description": "If the two Stretching Strikes affect different targets, he roots both targets for 0.5 seconds and then flings them towards each other for 300 range.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "If the two targets are near each other, they're instead slammed against each other, both taking the initial magic damage and applied the  slow again.",
+            "description": "If the two targets are near each other, they're instead slammed against each other, both taking the initial magic damage and applied the slow again.",
             "icon": null,
             "leveling": []
           }
@@ -440,7 +542,7 @@
         "name": "Unstable Matter",
         "effects": [
           {
-            "description": "Active: Zac's body explodes outward, dealing magic damage to all nearby enemies, capped against  minions and  monsters, and becoming  ghosted for 5 seconds against monsters hit.",
+            "description": "Active: Zac's body explodes outward, dealing magic damage to all nearby enemies, capped against minions and monsters, and becoming ghosted for 5 seconds against monsters hit.",
             "icon": "Unstable Matter.png",
             "leveling": [
               {
@@ -504,7 +606,7 @@
             ]
           },
           {
-            "description": "Unstable Matter's  cooldown is reduced by 1 second every time Zac picks up a  Cell Division chunk.",
+            "description": "Unstable Matter's cooldown is reduced by 1 second every time Zac picks up a Cell Division chunk.",
             "icon": null,
             "leveling": []
           }
@@ -580,7 +682,7 @@
         "name": "Elastic Slingshot",
         "effects": [
           {
-            "description": "Active: Zac channels up to 4.5 seconds, increasing Elastic Slingshot's  range over a cone in the target direction.",
+            "description": "Active: Zac channels up to 4.5 seconds, increasing Elastic Slingshot's range over a cone in the target direction.",
             "icon": "Elastic Slingshot.png",
             "leveling": [
               {
@@ -607,12 +709,12 @@
             ]
           },
           {
-            "description": "Moving during the channel automatically cancels it, refunding 50% of the cost and  cooldown.",
+            "description": "Moving during the channel automatically cancels it, refunding 50% of the cost and cooldown.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Second Cast: Zac  dashes to the target location, dealing magic damage to all nearby enemies on impact and  knocking them up for 0.5 \u2212 1 (based on duration of the charge) seconds.",
+            "description": "Second Cast: Zac dashes to the target location, dealing magic damage to all nearby enemies on impact and knocking them up for 0.5 − 1 (based on duration of the charge) seconds.",
             "icon": null,
             "leveling": [
               {
@@ -726,7 +828,7 @@
         "name": "Let's Bounce!",
         "effects": [
           {
-            "description": "Passive: Increases  Cell Division's healing from chunks.",
+            "description": "Passive: Increases Cell Division's healing from chunks.",
             "icon": "Let's Bounce!.png",
             "leveling": [
               {
@@ -749,12 +851,12 @@
             ]
           },
           {
-            "description": "Active: After a small delay, Zac bounces 4 times over 3 seconds, gaining 20% \u2212 50% (based on duration) bonus movement speed, but becoming  disarmed and unable to use  Stretching Strikes and  Elastic Slingshot for the duration. There is a 1-second delay between each bounce.",
+            "description": "Active: After a small delay, Zac bounces 4 times over 3 seconds, gaining 20% − 50% (based on duration) bonus movement speed, but becoming disarmed and unable to use Stretching Strikes and Elastic Slingshot for the duration. There is a 1-second delay between each bounce.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Each bounce deals magic damage to all nearby enemies,  knocking them back for 1 second and subsequently  slowing them by 20% for the same duration.",
+            "description": "Each bounce deals magic damage to all nearby enemies, knocking them back for 1 second and subsequently slowing them by 20% for the same duration.",
             "icon": null,
             "leveling": [
               {
@@ -847,7 +949,7 @@
             ]
           },
           {
-            "description": "Enemies can be damaged by multiple bounces, with each beyond the first dealing 50% damage but not  displacing them.",
+            "description": "Enemies can be damaged by multiple bounces, with each beyond the first dealing 50% damage but not displacing them.",
             "icon": null,
             "leveling": []
           }

@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 100,
-    "pathingRadius": 30,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 30,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 3.2,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.160999998450279,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.160999998450279,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.85,
-    "aramDamageDealt": 1.18,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.15,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.85,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.18,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.15,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN"
@@ -108,17 +198,17 @@
         "name": "Assassin's Mark",
         "effects": [
           {
-            "description": "Innate: Akali's ability damage against enemy  champions creates a 500-unit ring around them for 4 seconds and grants her  40 / 50 / 60 / 70% (based on level) bonus movement speed for 2 seconds while moving away from them.",
+            "description": "Innate: Akali's ability damage against enemy champions creates a 500-unit ring around them for 4 seconds and grants her 40 / 50 / 60 / 70% (based on level) bonus movement speed for 2 seconds while moving away from them.",
             "icon": "Assassin's Mark.png",
             "leveling": []
           },
           {
-            "description": "If Akali leaves the ring within its duration, she regains the  bonus movement speed towards enemy champions for 2 seconds and gains Swinging Kama for 4 seconds.",
+            "description": "If Akali leaves the ring within its duration, she regains the bonus movement speed towards enemy champions for 2 seconds and gains Swinging Kama for 4 seconds.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Swinging Kama: Akali's next basic attack range is doubled, deals 39 \u2212  180 (based on level) (+ 60% bonus AD) (+ 50% AP)  bonus magic damage and restores  10 / 15 / 20 (based on level) energy.",
+            "description": "Swinging Kama: Akali's next basic attack range is doubled, deals 39 − 180 (based on level) (+ 60% bonus AD) (+ 50% AP) bonus magic damage and restores 10 / 15 / 20 (based on level) energy.",
             "icon": null,
             "leveling": []
           }
@@ -155,7 +245,7 @@
         "name": "Five Point Strike",
         "effects": [
           {
-            "description": "Active: Akali throws a flurry of kunais in the target direction, dealing magic damage to enemies hit. Enemies hit at maximum range are also  slowed by 50% for 0.5 seconds.",
+            "description": "Active: Akali throws a flurry of kunais in the target direction, dealing magic damage to enemies hit. Enemies hit at maximum range are also slowed by 50% for 0.5 seconds.",
             "icon": "Five Point Strike.png",
             "leveling": [
               {
@@ -214,7 +304,7 @@
             ]
           },
           {
-            "description": "At rank 5, deals[ 25% bonus magic damage ][ 156.25 (+ 81.25% AD) (+ 75% AP) total magic damage ]to  minions and  monsters.",
+            "description": "At rank 5, deals[ 25% bonus magic damage ][ 156.25 (+ 81.25% AD) (+ 75% AP) total magic damage ]to minions and monsters.",
             "icon": null,
             "leveling": []
           }
@@ -279,7 +369,7 @@
         "innerRadius": null,
         "speed": null,
         "width": "350",
-        "angle": "20\u00b0",
+        "angle": "20°",
         "castTime": null,
         "effectRadius": null,
         "targetRange": "500 / 120"
@@ -290,7 +380,7 @@
         "name": "Twilight Shroud",
         "effects": [
           {
-            "description": "Active: Akali restores  80 energy, gains  bonus movement speed that decays over 2 seconds, and detonates a smoke bomb in the target direction, creating a circular shroud that expands over the next 5 seconds into a ring. The shroud does not permeate terrain.",
+            "description": "Active: Akali restores 80 energy, gains bonus movement speed that decays over 2 seconds, and detonates a smoke bomb in the target direction, creating a circular shroud that expands over the next 5 seconds into a ring. The shroud does not permeate terrain.",
             "icon": "Twilight Shroud.png",
             "leveling": [
               {
@@ -338,17 +428,17 @@
             ]
           },
           {
-            "description": "Entering the shroud renders Akali  invisible.",
+            "description": "Entering the shroud renders Akali invisible.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Akali's basic attacks and abilities will break the invisibility for 1 \u2212 0.625 (based on minutes) seconds.",
+            "description": "Akali's basic attacks and abilities will break the invisibility for 1 − 0.625 (based on minutes) seconds.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "The  marked section of Twilight Shroud's will linger for the mark's duration, even after the shroud ends.",
+            "description": "The marked section of Twilight Shroud's will linger for the mark's duration, even after the shroud ends.",
             "icon": null,
             "leveling": []
           }
@@ -405,7 +495,7 @@
         "name": "Shuriken Flip",
         "effects": [
           {
-            "description": "Active: Akali  flips backward and fires a shuriken forward, stopping with the first enemy hit and dealing  physical damage.",
+            "description": "Active: Akali flips backward and fires a shuriken forward, stopping with the first enemy hit and dealing physical damage.",
             "icon": "Shuriken Flip.png",
             "leveling": [
               {
@@ -464,7 +554,7 @@
             ]
           },
           {
-            "description": "The shuriken marks the enemy or the last  smoke section hit for 3 seconds. While the target is marked, Akali can reactivate Shuriken Flip.",
+            "description": "The shuriken marks the enemy or the last smoke section hit for 3 seconds. While the target is marked, Akali can reactivate Shuriken Flip.",
             "icon": null,
             "leveling": []
           },
@@ -599,7 +689,7 @@
         "name": "Perfect Execution",
         "effects": [
           {
-            "description": "Active: Akali  dashes 675 \u2212  825 (based on distance from target) units towards the target enemy champion, dealing physical damage to all enemies hit.",
+            "description": "Active: Akali dashes 675 − 825 (based on distance from target) units towards the target enemy champion, dealing physical damage to all enemies hit.",
             "icon": "Perfect Execution.png",
             "leveling": [
               {
@@ -639,7 +729,7 @@
             "leveling": []
           },
           {
-            "description": "Recast: Akali  dashes in the target direction, dealing magic damage to enemies hit, increased by 0% \u2212 200% (based on target's missing health).",
+            "description": "Recast: Akali dashes in the target direction, dealing magic damage to enemies hit, increased by 0% − 200% (based on target's missing health).",
             "icon": "Perfect Execution 2.png",
             "leveling": [
               {

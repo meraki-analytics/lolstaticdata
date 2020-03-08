@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 550,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 550,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 1,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.25,
-    "attackTotalTime": 1.60000002384185,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.25,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.60000002384185,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 500,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 0.85,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 0.85,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ENCHANTER",
@@ -110,12 +200,12 @@
         "name": "Bop 'n' Block",
         "effects": [
           {
-            "description": "Innate: Periodically, Yuumi's next basic attack against an enemy  champion gains  50 bonus range and won't use a  projectile. This attack restores 50 \u2212 160 (based on level) mana and grants her a 60 \u2212  400 (based on level) (+ 30% AP)  shield that lasts until it is broken.",
+            "description": "Innate: Periodically, Yuumi's next basic attack against an enemy champion gains 50 bonus range and becomes non-projectile. This attack restores 50 − 160 (based on level) mana and grants her a 60 − 400 (based on level) (+ 30% AP) shield that lasts until it is broken.",
             "icon": "Bop 'n' Block.png",
             "leveling": []
           },
           {
-            "description": "While  Attached, the shield transfers to her Anchor.",
+            "description": "While Attached, the shield transfers to her Anchor.",
             "icon": null,
             "leveling": []
           }
@@ -177,7 +267,7 @@
         "projectile": "FALSE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "No additional details.",
+        "notes": "This ability will apply to a basic attack already in flight, but will not augment it into a non-projectile.",
         "blurb": "Every so often, Yuumi's next attack against an opponent restores mana and generates a shield. If Yuumi is Attached, the shield protects her ally. The shield protects Yuumi or her ally until it's broken.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -198,7 +288,7 @@
         "name": "Prowling Projectile",
         "effects": [
           {
-            "description": "Active: Yuumi fires an errant missile that deals  magic damage to the first enemy hit.",
+            "description": "Active: Yuumi fires an errant missile that deals magic damage to the first enemy hit.",
             "icon": "Prowling Projectile.png",
             "leveling": [
               {
@@ -245,7 +335,7 @@
             ]
           },
           {
-            "description": "If the missile is in flight for 1 second, it deals increased magic damage, and  slows enemy  champions struck by 20% for 1 second.",
+            "description": "If the missile is in flight for 1 second, it deals increased magic damage, and slows enemy champions struck by 20% for 1 second.",
             "icon": null,
             "leveling": [
               {
@@ -310,7 +400,7 @@
             ]
           },
           {
-            "description": "While  Attached, Yuumi  can direct the trajectory of the missile instead using her mouse for up to 2 seconds before fizzling, during which she and the Anchor can see the effective range.",
+            "description": "While Attached, Yuumi can direct the trajectory of the missile instead using her mouse for up to 2 seconds before fizzling, during which she and the Anchor can see the effective range.",
             "icon": "Prowling Projectile 2.png",
             "leveling": []
           }
@@ -390,7 +480,7 @@
         "name": "You and Me!",
         "effects": [
           {
-            "description": "Passive: Yuumi and her Anchor gain flat  adaptive force plus a percentage of the Anchor's  adaptive force and a percentage of its bonus attack damage or ability power, whichever is higher, as  adaptive force. Additionally, Yuumi starts with a point in You and Me! and  Prowling Projectile instead has 6 ranks.",
+            "description": "Passive: Yuumi and her Anchor gain flat adaptive force plus a percentage of the Anchor's adaptive force and a percentage of its bonus attack damage or ability power, whichever is higher, as adaptive force. Additionally, Yuumi starts with a point in You and Me! and Prowling Projectile instead has 6 ranks.",
             "icon": "false",
             "leveling": [
               {
@@ -475,17 +565,17 @@
             ]
           },
           {
-            "description": "Active: After a 0.25-second channel, Yuumi  dashes to an allied champion and attaches to them. While Attached, Yuumi is  disarmed,  untargetable (except from  turrets and in-flight projectiles targeting her) and follows her Anchor's movement, and retains the ability to cast (except movement spells).",
+            "description": "Active: After a 0.25-second channel, Yuumi dashes to an allied champion and attaches to them. While attached, Yuumi follows her Anchor's movement, and becomes untargetable (except from turrets and in-flight projectiles targeting her). She is also disarmed and retains the ability to cast (except movement spells). The cooldown starts ticking down upon attaching to the first Anchor.",
             "icon": "You and Me!.png",
             "leveling": []
           },
           {
-            "description": "Active - Change of Plan: Yuumi can switch her Anchor at no cooldown, and will detach automatically if her Anchor dies. If re-activated without a valid target, Yuumi will detach from her Anchor and dash up to 250 units in the target direction, triggering the cooldown. The cooldown starts ticking down when attaching to the first ally.",
+            "description": "Change of Plan - Active: Yuumi can switch her Anchor at no cooldown, and will detach automatically if her Anchor dies. If re-activated without a valid target, Yuumi will detach from her Anchor and dash up to 250 units in the target direction, putting the ability on cooldown.",
             "icon": "Change of Plan.png",
             "leveling": []
           },
           {
-            "description": "The dash is interrupted by any  immobilizing crowd control, and also places You and Me! on a 5-second cooldown.",
+            "description": "The dash is interrupted by any immobilizing crowd control, placing You and Me! on a 5-second cooldown.",
             "icon": null,
             "leveling": []
           }
@@ -517,7 +607,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "If Yuumi is attached to an ally that  Teleports, she will detach before the  Teleport completes.\n Her  monster aggression transfers to the Anchor.\n Enemies gain an assist on Yuumi if they damage an attached ally.\n You and Me! gives assists on  champion  takedowns from her teammates when she first attaches to a participating ally.\n You and Me! will follow an Anchor under  stealth, becoming herself stealthed as well. She can cast her abilities without breaking stealth.\n If the Anchor  recalls, Yuumi will detach automatically when they arrive at the fountain.\n If Yuumi is on the blue team, she will remain attached on the southwest side, and if Yuumi is on the red team, she will attach to the northeast.\n Yuumi can dash to zombie state targets (i.e  Sion's  Glory in Death), but she cannot stay attached. \n Yuumi detaches when going into  resurrection.",
+        "notes": "Yuumi will automatically detach in specific circumstances:\n Right before the Anchor completes a  Teleport channel. \n After the Anchor completes a  Recall channel.\n Entering  resurrection.\n\n Her  monster aggression transfers to the Anchor.\n Enemies gain an assist on Yuumi if they damaged the Anchor.\n Yuumi gains assists on  champion  takedowns from her first Anchor.\n Yuumi will become  stealthed along with the Anchor, and can cast her abilities without breaking stealth.\n If Yuumi is on the blue team, she will remain attached on the southwest side; if Yuumi is on the red team, she will remain on the northeast.\n Yuumi can dash to zombie state targets (i.e  Sion's  Glory in Death), but she cannot attach. \n Yuumi doesn't detach instantly when her Anchor dies. There's a small grace period of time in which she can cast  Change of Plan to another champion without the channel.",
         "blurb": null,
         "missileSpeed": null,
         "rechargeRate": null,
@@ -538,7 +628,7 @@
         "name": "Zoomies",
         "effects": [
           {
-            "description": "Active: Yuumi  heals herself and gains 15% (+ 10% per 100 AP)  bonus movement speed and bonus attack speed for 3 seconds.",
+            "description": "Active: Yuumi heals herself and gains 15% (+ 10% per 100 AP) bonus movement speed and bonus attack speed for 3 seconds.",
             "icon": "Zoomies.png",
             "leveling": [
               {
@@ -602,7 +692,7 @@
             ]
           },
           {
-            "description": "While  Attached, the Anchor is targeted by the ability instead.",
+            "description": "While Attached, the Anchor is targeted by the ability instead.",
             "icon": null,
             "leveling": []
           }
@@ -678,7 +768,7 @@
         "name": "Final Chapter",
         "effects": [
           {
-            "description": "Active: Yuumi  recoils X units in the opposite direction, after which Book channels to launch 7 waves over 3.5 seconds, each dealing magic damage. Enemy  champions hit take only 50% damage from subsequent waves, and when struck with three waves, they are  rooted for 1.75 seconds.",
+            "description": "Active: Yuumi recoils X units in the opposite direction, after which Book channels to launch 7 waves over 3.5 seconds, each dealing magic damage. Enemy champions hit take only 50% damage from subsequent waves, and when struck with three waves, they are rooted for 1.75 seconds.",
             "icon": "Final Chapter.png",
             "leveling": [
               {
@@ -800,7 +890,7 @@
             ]
           },
           {
-            "description": "Yuumi can move and cast both  You and Me! and  Zoomies during Final Chapter.",
+            "description": "Yuumi can move and cast both You and Me! and Zoomies during Final Chapter.",
             "icon": null,
             "leveling": []
           }

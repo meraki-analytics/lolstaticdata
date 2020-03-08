@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 525,
-    "selectionRadius": 93,
-    "pathingRadius": 30,
-    "gameplayRadius": 55,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 525,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 93,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 30,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 55,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2.24,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.109062500298023,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.109062500298023,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.1,
-    "aramDamageDealt": 0.92,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 0.95,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 0.92,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "BURST",
@@ -109,12 +199,12 @@
         "name": "Phenomenal Evil Power",
         "effects": [
           {
-            "description": "Innate: Veigar gains a stack of Phenomenal Evil whenever he hits an enemy  champion with an ability, and 5 stacks whenever he scores a champion  takedown.",
+            "description": "Innate: Veigar gains a stack of Phenomenal Evil whenever he hits an enemy champion with an ability, and 5 stacks whenever he scores a champion takedown.",
             "icon": "Phenomenal Evil Power.png",
             "leveling": []
           },
           {
-            "description": "Veigar gains  1 ability power for every stack of Phenomenal Evil.",
+            "description": "Veigar gains 1 ability power for every stack of Phenomenal Evil.",
             "icon": null,
             "leveling": []
           }
@@ -151,12 +241,12 @@
         "name": "Baleful Strike",
         "effects": [
           {
-            "description": "Passive: Killing a unit with Baleful Strike grants 1 stack of  Phenomenal Evil, doubled against large  minions and  monsters.",
+            "description": "Passive: Killing a unit with Baleful Strike grants 1 stack of Phenomenal Evil, doubled against large minions and monsters.",
             "icon": "Baleful Strike.png",
             "leveling": []
           },
           {
-            "description": "Active: Veigar unleashes a bolt of dark energy in the target direction, dealing  magic damage to the first two enemies hit.",
+            "description": "Active: Veigar unleashes a bolt of dark energy in the target direction, dealing magic damage to the first two enemies hit.",
             "icon": null,
             "leveling": [
               {
@@ -313,7 +403,7 @@
             ]
           },
           {
-            "description": "Dark Matter's  cooldown is reduced by a percentage, scaling with  Phenomenal Evil.",
+            "description": "Dark Matter's cooldown is reduced by a percentage, scaling with Phenomenal Evil.",
             "icon": null,
             "leveling": []
           }
@@ -340,7 +430,22 @@
         },
         "cooldown": {
           "modifiers": [
-            "8 \u2212 0 (based on  Phenomenal Evil stacks)"
+            {
+              "values": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "units": [
+                "8 − 0 (based on Phenomenal Evil stacks)",
+                "8 − 0 (based on Phenomenal Evil stacks)",
+                "8 − 0 (based on Phenomenal Evil stacks)",
+                "8 − 0 (based on Phenomenal Evil stacks)",
+                "8 − 0 (based on Phenomenal Evil stacks)"
+              ]
+            }
           ],
           "affectedByCdr": false
         },
@@ -374,7 +479,7 @@
         "name": "Event Horizon",
         "effects": [
           {
-            "description": "Active: Veigar forms a cage around the target location which materializes after a 0.5 second delay and lasts for 3 seconds,  knocking down and  stunning all enemies who pass through its edges for the first time.",
+            "description": "Active: Veigar forms a cage around the target location which materializes after a 0.5 second delay and lasts for 3 seconds, knocking down and stunning all enemies who pass through its edges for the first time.",
             "icon": "Event Horizon.png",
             "leveling": [
               {
@@ -472,7 +577,7 @@
         "name": "Primordial Burst",
         "effects": [
           {
-            "description": "Active: Veigar blasts the target enemy champion with primordial energy, dealing magic damage to them, increased by 0% \u2212 100% (based on target's missing health).",
+            "description": "Active: Veigar blasts the target enemy champion with primordial energy, dealing magic damage to them, increased by 0% − 100% (based on target's missing health).",
             "icon": "Primordial Burst.png",
             "leveling": [
               {

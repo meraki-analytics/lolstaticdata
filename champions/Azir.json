@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 700,
-    "selectionRadius": 88.8889007568359,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 700,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 88.8889007568359,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 3,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.25,
-    "attackTotalTime": 1.60000002384185,
-    "attackDelayOffset": -0.150000005960464,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.25,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.60000002384185,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.150000005960464,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 525,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.1,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "MAGE",
@@ -110,12 +200,12 @@
         "name": "Shurima's Legacy",
         "effects": [
           {
-            "description": "Innate: Azir periodically places a marker above the ruins of all destroyed  turrets outside the enemy base.",
+            "description": "Innate: Azir periodically places a marker above the ruins of all destroyed turrets outside the enemy base.",
             "icon": "Shurima's Legacy.png",
             "leveling": []
           },
           {
-            "description": "Innate - Disc of the Sun: Azir can target a marker to construct the Sun Disc above the ruins, which functions like a standard inner turret but gains ( 15% AP)  bonus attack damage and grants Azir any kill it does. The Sun Disc's  health decays over 60 seconds and loses  100 armor if Azir dies or moves too far away.",
+            "description": "Innate - Disc of the Sun: Azir can target a marker to construct the Sun Disc above the ruins, which functions like a standard inner turret but gains ( 15% AP) bonus attack damage and grants Azir any kill it does. The Sun Disc's health decays over 60 seconds and loses 100 armor if Azir dies or moves too far away.",
             "icon": null,
             "leveling": []
           }
@@ -168,7 +258,7 @@
         "name": "Conquering Sands",
         "effects": [
           {
-            "description": "Active: Azir orders all Sand Soldiers to dash toward the target location, dealing  magic damage to all enemies they pass through and  slowing them by 25% for 1 second.",
+            "description": "Active: Azir orders all Sand Soldiers to dash toward the target location, dealing magic damage to all enemies they pass through and slowing them by 25% for 1 second.",
             "icon": "Conquering Sands.png",
             "leveling": [
               {
@@ -211,7 +301,7 @@
             ]
           },
           {
-            "description": "Enemies hit by subsequent soldiers are instead  slowed by an additional 25% per soldier.",
+            "description": "Enemies hit by subsequent soldiers are instead slowed by an additional 25% per soldier.",
             "icon": null,
             "leveling": []
           },
@@ -292,7 +382,7 @@
         "name": "Arise!",
         "effects": [
           {
-            "description": "Passive: Azir periodically stocks a Sand Soldier, up to a maximum of 2. He also gains  bonus attack speed, doubled for 5 seconds if he summons a third concurrent soldier.",
+            "description": "Passive: Azir periodically stocks a Sand Soldier, up to a maximum of 2. He also gains bonus attack speed, doubled for 5 seconds if he summons a third concurrent soldier.",
             "icon": "Arise!.png",
             "leveling": [
               {
@@ -340,17 +430,17 @@
             ]
           },
           {
-            "description": "Active: Azir summons an  untargetable Sand Soldier at the target location that lasts 10 seconds, expiring twice as fast while within range of an enemy  turret, and expiring instantly if Azir is not in control range.",
+            "description": "Active: Azir summons an untargetable Sand Soldier at the target location that lasts 10 seconds, expiring twice as fast while within range of an enemy turret, and expiring instantly if Azir is not in control range.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "When Azir selects an enemy in a soldier's attack range, the Sand Soldier attacks in his stead, dealing 60 \u2212  160 (based on level) (+ 60% AP) magic damage in a line. Targets beyond the closest take 25 / 50 / 75 / 100% (based on level) damage. Subsequent Sand Soldiers beyond the first deal 25% damage.",
+            "description": "When Azir selects an enemy in a soldier's attack range, the Sand Soldier attacks in his stead, dealing 60 − 160 (based on level) (+ 60% AP) magic damage in a line. Targets beyond the closest take 25 / 50 / 75 / 100% (based on level) damage. Subsequent Sand Soldiers beyond the first deal 25% damage.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Sand Soldiers cannot attack  structures,  wards,  trinkets and  traps.",
+            "description": "Sand Soldiers cannot attack structures, wards, trinkets and traps.",
             "icon": null,
             "leveling": []
           }
@@ -432,7 +522,7 @@
         "name": "Shifting Sands",
         "effects": [
           {
-            "description": "Active: Azir  shields himself for 1.5 seconds and  dashes to the target Sand Soldiers, dealing magic damage to enemies he passes through.",
+            "description": "Active: Azir shields himself for 1.5 seconds and dashes to the target Sand Soldiers, dealing magic damage to enemies he passes through.",
             "icon": "Shifting Sands.png",
             "leveling": [
               {
@@ -512,7 +602,7 @@
             ]
           },
           {
-            "description": "If Azir hits an enemy champion, he stops moving and gains a charge of  Arise!.",
+            "description": "If Azir hits an enemy champion, he stops moving and gains a charge of Arise!.",
             "icon": null,
             "leveling": []
           }
@@ -611,7 +701,7 @@
             ]
           },
           {
-            "description": "Enemies impacted by the charge are dealt magic damage and  knocked back.",
+            "description": "Enemies impacted by the charge are dealt magic damage and knocked back.",
             "icon": null,
             "leveling": [
               {

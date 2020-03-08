@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 300,
-    "selectionRadius": 135,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 300,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 135,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.613,
       "percent": 0.0,
       "perLevel": 1.9,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.612999975681304,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0638512670993805,
+    "attackSpeedRatio": {
+      "flat": 0.612999975681304,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0638512670993805,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 0.95,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -110,7 +200,7 @@
         "name": "Noxious Slipstream",
         "effects": [
           {
-            "description": "Innate: Moving near a  champion grants Singed  20% bonus movement speed for 2 seconds. The effects of Noxious Slipstream can stack up to 25 times.",
+            "description": "Innate: Moving near a champion grants Singed 20% bonus movement speed for 2 seconds. The effects of Noxious Slipstream can stack up to 25 times.",
             "icon": "Noxious Slipstream.png",
             "leveling": []
           },
@@ -152,12 +242,12 @@
         "name": "Poison Trail",
         "effects": [
           {
-            "description": "Toggle: Singed leaves a  poison cloud behind him for 3.25 seconds.",
+            "description": "Toggle: Singed leaves a poison cloud behind him for 3.25 seconds.",
             "icon": "Poison Trail.png",
             "leveling": []
           },
           {
-            "description": "Enemies standing in the cloud's trail are  poisoned for 2 seconds, taking  magic damage every 0.25 seconds for the duration, continually refreshing while remaining in the affected area.",
+            "description": "Enemies standing in the cloud's trail are poisoned for 2 seconds, taking magic damage every 0.25 seconds for the duration, continually refreshing while remaining in the affected area.",
             "icon": null,
             "leveling": [
               {
@@ -308,7 +398,7 @@
         "name": "Mega Adhesive",
         "effects": [
           {
-            "description": "Active: Singed covers the target area with a potent adhesive for 3 seconds,  slowing by 60% and  grounding all enemies within.",
+            "description": "Active: Singed covers the target area with a potent adhesive for 3 seconds, slowing by 60% and grounding all enemies within.",
             "icon": "Mega Adhesive.png",
             "leveling": []
           }
@@ -384,7 +474,7 @@
         "name": "Fling",
         "effects": [
           {
-            "description": "Active: Singed  flings the target enemy over his shoulder, dropping at a location 550 units behind Singed after 1 second and dealing magic damage, capped against  minions and  monsters.",
+            "description": "Active: Singed flings the target enemy over his shoulder, dropping at a location 550 units behind Singed after 1 second and dealing magic damage, capped against minions and monsters.",
             "icon": "Fling.png",
             "leveling": [
               {
@@ -480,7 +570,7 @@
             ]
           },
           {
-            "description": "Targets flung into  Mega Adhesive's area of effect are temporarily  rooted.",
+            "description": "Targets flung into Mega Adhesive's area of effect are temporarily rooted.",
             "icon": null,
             "leveling": [
               {
@@ -578,7 +668,7 @@
         "name": "Insanity Potion",
         "effects": [
           {
-            "description": "Active: Singed drinks a potent chemical brew, gaining  bonus ability power,  bonus armor,  bonus magic resistance,  bonus movement speed,  bonus health regeneration, and  bonus mana regeneration, all for the next 25 seconds.",
+            "description": "Active: Singed drinks a potent chemical brew, gaining bonus ability power, bonus armor, bonus magic resistance, bonus movement speed, bonus health regeneration, and bonus mana regeneration, all for the next 25 seconds.",
             "icon": "Insanity Potion.png",
             "leveling": [
               {

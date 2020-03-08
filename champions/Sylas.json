@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 525,
-    "selectionRadius": 100,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 525,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.645,
       "percent": 0.0,
       "perLevel": 3.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.644999980926513,
-    "attackCastTime": 0.259999990463256,
-    "attackTotalTime": 1.54999995231628,
-    "attackDelayOffset": -0.0994649976491928,
+    "attackSpeedRatio": {
+      "flat": 0.644999980926513,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.259999990463256,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.54999995231628,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0994649976491928,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 175,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.95,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -111,22 +201,22 @@
         "name": "Petricite Burst",
         "effects": [
           {
-            "description": "Innate: Casting an ability grants an Unshackled stack for 4 seconds, up to maximum of 3. While Sylas has stacks of Unshackled, he gains  80% bonus attack speed.",
+            "description": "Innate: Casting an ability grants an Unshackled stack for 4 seconds, up to maximum of 3. While Sylas has stacks of Unshackled, he gains 80% bonus attack speed.",
             "icon": "Petricite Burst.png",
             "leveling": []
           },
           {
-            "description": "Unshackled: Sylas' next basic attack is modified to whirl his chains around him, dealing 130% AD (+ 25% AP)  magic damage to his primary target, and 40% AD (+ 20% AP) magic damage to nearby secondary targets. This attack consumes a stack.",
+            "description": "Unshackled: Sylas' next basic attack is modified to whirl his chains around him, dealing 130% AD (+ 25% AP) magic damage to his primary target, and 40% AD (+ 20% AP) magic damage to nearby secondary targets. This attack consumes a stack.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Damage to secondary targets executes  minions below 25 health.",
+            "description": "Damage to secondary targets executes minions below 25 health.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "The empowered attack applies on-hit effects to the primary target but disables Sylas'  critical strikes' bonus damage. Spell effects only apply to secondary targets.",
+            "description": "The empowered attack applies on-hit effects to the primary target but disables Sylas' critical strikes' bonus damage. Spell effects only apply to secondary targets.",
             "icon": null,
             "leveling": []
           }
@@ -163,7 +253,7 @@
         "name": "Chain Lash",
         "effects": [
           {
-            "description": "Active: Sylas lashes out two lines that converge to the target location and extend beyond it up to a maximum range, dealing magic damage and  slowing enemies hit for 1.5 seconds.",
+            "description": "Active: Sylas lashes out two lines that converge to the target location and extend beyond it up to a maximum range, dealing magic damage and slowing enemies hit for 1.5 seconds.",
             "icon": "Chain Lash.png",
             "leveling": [
               {
@@ -227,7 +317,7 @@
             ]
           },
           {
-            "description": "After a 0.6-second delay, the chains' intersection detonates, dealing magic damage. Against  minions and  monsters the detonation deals 60% reduced damage.",
+            "description": "After a 0.6-second delay, the chains' intersection detonates, dealing magic damage. Against minions and monsters the detonation deals 60% reduced damage.",
             "icon": null,
             "leveling": [
               {
@@ -452,7 +542,7 @@
         "name": "Kingslayer",
         "effects": [
           {
-            "description": "Active: Sylas  lunges at a target enemy with a powerful strike, dealing magic damage.",
+            "description": "Active: Sylas lunges at a target enemy with a powerful strike, dealing magic damage.",
             "icon": "Kingslayer.png",
             "leveling": [
               {
@@ -495,7 +585,7 @@
             ]
           },
           {
-            "description": "Against enemy  champions, Sylas is also  healed, increased by 0% \u2212 100% (based on Sylas' missing health).",
+            "description": "Against enemy champions, Sylas is also healed, increased by 0% − 100% (based on Sylas' missing health).",
             "icon": null,
             "leveling": [
               {
@@ -646,12 +736,12 @@
         "name": "Abscond",
         "effects": [
           {
-            "description": "Active - Abscond: Sylas  dashes forward to the target location.",
+            "description": "Active - Abscond: Sylas dashes forward to the target location.",
             "icon": "Abscond.png",
             "leveling": []
           },
           {
-            "description": "For the next 3.5 seconds, Sylas may cast  Abduct.",
+            "description": "For the next 3.5 seconds, Sylas may cast Abduct.",
             "icon": null,
             "leveling": []
           }
@@ -725,7 +815,7 @@
         "name": "Abduct",
         "effects": [
           {
-            "description": "Active - Abduct: Sylas whips out his chains in the target direction, dealing magic damage and  stunning the first enemy hit,  pulling himself towards them, and  knocking them up for 0.35 seconds upon arrival.",
+            "description": "Active - Abduct: Sylas whips out his chains in the target direction, dealing magic damage and stunning the first enemy hit, pulling himself towards them, and knocking them up for 0.35 seconds upon arrival.",
             "icon": "Abduct.png",
             "leveling": [
               {
@@ -768,7 +858,7 @@
             ]
           },
           {
-            "description": "Sylas may still move, basic attack and cast  Kingslayer or  Hijack before the chains reach his target.",
+            "description": "Sylas may still move, basic attack and cast Kingslayer or Hijack before the chains reach his target.",
             "icon": null,
             "leveling": []
           },
@@ -820,7 +910,7 @@
             "leveling": []
           },
           {
-            "description": "All Hijacked ultimates and abilities that do not scale with  ability power have their  attack damage ratios converted to  ability power ratios, scaling with 0.6% AP per 1% total AD, and 0.4% AP per 1% bonus AD.",
+            "description": "All Hijacked ultimates and abilities that do not scale with ability power have their attack damage ratios converted to ability power ratios, scaling with 0.6% AP per 1% total AD, and 0.4% AP per 1% bonus AD.",
             "icon": null,
             "leveling": []
           }

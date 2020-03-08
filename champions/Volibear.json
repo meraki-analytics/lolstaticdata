@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 125,
-    "pathingRadius": 50,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 50,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.658,
       "percent": 0.0,
       "perLevel": 2.67,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.657999992370605,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0700000002980232,
+    "attackSpeedRatio": {
+      "flat": 0.657999992370605,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0700000002980232,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -110,7 +200,7 @@
         "name": "Chosen of the Storm",
         "effects": [
           {
-            "description": "Innate: When Volibear's health drops  below 30% of his maximum health he regenerates [  30% of his maximum health over 6 seconds ][  2.5% of his maximum health every 0.5 seconds ].",
+            "description": "Innate: When Volibear's health drops below 30% of his maximum health he regenerates [ 30% of his maximum health over 6 seconds ][ 2.5% of his maximum health every 0.5 seconds ].",
             "icon": "Chosen of the Storm.png",
             "leveling": []
           }
@@ -163,7 +253,7 @@
         "name": "Rolling Thunder",
         "effects": [
           {
-            "description": "Active: Volibear drops on all fours and gains  bonus movement speed for the next 4 seconds, increased when moving towards a nearby  visible enemy champion within 1800 units of him.",
+            "description": "Active: Volibear drops on all fours and gains bonus movement speed for the next 4 seconds, increased when moving towards a nearby visible enemy champion within 1800 units of him.",
             "icon": "Rolling Thunder.png",
             "leveling": [
               {
@@ -211,7 +301,7 @@
             ]
           },
           {
-            "description": "For the duration, Volibear's next basic attack deals  bonus physical damage and  flings his target over and behind himself.",
+            "description": "For the duration, Volibear's next basic attack deals bonus physical damage and flings his target over and behind himself.",
             "icon": null,
             "leveling": [
               {
@@ -314,7 +404,7 @@
         "name": "Frenzy",
         "effects": [
           {
-            "description": "Passive: Volibear's basic attacks grant  bonus attack speed for 4 seconds, stacking up to 3 times. At 3 stacks, Volibear gains the ability to cast Frenzy.",
+            "description": "Passive: Volibear's basic attacks grant bonus attack speed for 4 seconds, stacking up to 3 times. At 3 stacks, Volibear gains the ability to cast Frenzy.",
             "icon": "Frenzy.png",
             "leveling": [
               {
@@ -362,7 +452,7 @@
             ]
           },
           {
-            "description": "Active: Volibear bites the target enemy, dealing physical damage, increasing by 0% \u2212 100% (based on target's missing health).",
+            "description": "Active: Volibear bites the target enemy, dealing physical damage, increasing by 0% − 100% (based on target's missing health).",
             "icon": null,
             "leveling": [
               {
@@ -442,7 +532,7 @@
             ]
           },
           {
-            "description": "Frenzy's  cooldown is halved if it is used on a  minion or  monster.",
+            "description": "Frenzy's cooldown is halved if it is used on a minion or monster.",
             "icon": null,
             "leveling": []
           }
@@ -518,7 +608,7 @@
         "name": "Majestic Roar",
         "effects": [
           {
-            "description": "Active: Volibear roars with might, dealing  magic damage to all nearby enemies, slightly  knocking them back and  slowing them for 3 seconds.  Minions and  monsters are instead  feared and slowed by 100% for the same duration.",
+            "description": "Active: Volibear roars with might, dealing magic damage to all nearby enemies, slightly knocking them back and slowing them for 3 seconds. Minions and monsters are instead feared and slowed by 100% for the same duration.",
             "icon": "Majestic Roar.png",
             "leveling": [
               {
@@ -582,7 +672,7 @@
             ]
           },
           {
-            "description": "Enemies who are  dashing or are  airborne during Majestic Roar are dealt an additional 8% of their maximum health as magic damage.",
+            "description": "Enemies who are dashing or are airborne during Majestic Roar are dealt an additional 8% of their maximum health as magic damage.",
             "icon": null,
             "leveling": []
           }
@@ -658,7 +748,7 @@
         "name": "Thunder Claws",
         "effects": [
           {
-            "description": "Active: After a 0.1 second delay, Volibear erupts with thunder, increasing in size and striking up to 8 nearby enemies with chain lightning, dealing them  magic damage.",
+            "description": "Active: After a 0.1 second delay, Volibear erupts with thunder, increasing in size and striking up to 8 nearby enemies with chain lightning, dealing them magic damage.",
             "icon": "Thunder Claws.png",
             "leveling": [
               {
@@ -693,7 +783,7 @@
             ]
           },
           {
-            "description": "Afterwards, for 12 seconds, Volibear's basic attacks are empowered with the lightning, dealing the same damage as bonus magic damage  on-hit that also instantly bounces to up to 7 nearby unaffected enemies.",
+            "description": "Afterwards, for 12 seconds, Volibear's basic attacks are empowered with the lightning, dealing the same damage as bonus magic damage on-hit that also instantly bounces to up to 7 nearby unaffected enemies.",
             "icon": null,
             "leveling": []
           }

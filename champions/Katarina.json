@@ -20,6 +20,18 @@
       "perLevel": 0.7,
       "percentPerLevel": 0.0
     },
+    "mana": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
+    "manaRegen": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
     "armor": {
       "flat": 27.88,
       "percent": 0.0,
@@ -44,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.658,
       "percent": 0.0,
       "perLevel": 2.74,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.657999992370605,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.150000005960464,
+    "attackSpeedRatio": {
+      "flat": 0.657999992370605,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.150000005960464,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.95,
-    "aramDamageDealt": 1.05,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.95,
-    "urfDamageDealt": 1.1,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -97,12 +199,12 @@
         "name": "Voracity",
         "effects": [
           {
-            "description": "Innate: Whenever an enemy champion dies within 3 seconds of Katarina damaging them, her abilities'  cooldowns are reduced by 15 seconds.",
+            "description": "Innate: Whenever an enemy champion dies within 3 seconds of Katarina damaging them, her abilities' cooldowns are reduced by 15 seconds.",
             "icon": "Voracity.png",
             "leveling": []
           },
           {
-            "description": "Innate - Sinister Steel: Whenever Katarina retrieves a Dagger, she uses it to slash through all nearby enemies, dealing 68 \u2212 240 (based on level) (+ 100% bonus AD) (+ 55 / 70 / 85 / 100% (based on level) AP)  magic damage and reducing  Shunpo's  cooldown by 78 / 84 / 90 / 96% (based on level).",
+            "description": "Innate - Sinister Steel: Whenever Katarina retrieves a Dagger, she uses it to slash through all nearby enemies, dealing 68 − 240 (based on level) (+ 100% bonus AD) (+ 55 / 70 / 85 / 100% (based on level) AP) magic damage and reducing Shunpo's cooldown by 78 / 84 / 90 / 96% (based on level).",
             "icon": "Sinister Steel.png",
             "leveling": []
           },
@@ -142,12 +244,12 @@
         "name": "Voracity",
         "effects": [
           {
-            "description": "Innate: Whenever an enemy champion dies within 3 seconds of Katarina damaging them, her abilities'  cooldowns are reduced by 15 seconds.",
+            "description": "Innate: Whenever an enemy champion dies within 3 seconds of Katarina damaging them, her abilities' cooldowns are reduced by 15 seconds.",
             "icon": "Voracity.png",
             "leveling": []
           },
           {
-            "description": "Innate - Sinister Steel: Whenever Katarina retrieves a Dagger, she uses it to slash through all nearby enemies, dealing 68 \u2212 240 (based on level) (+ 100% bonus AD) (+ 55 / 70 / 85 / 100% (based on level) AP)  magic damage and reducing  Shunpo's  cooldown by 78 / 84 / 90 / 96% (based on level).",
+            "description": "Innate - Sinister Steel: Whenever Katarina retrieves a Dagger, she uses it to slash through all nearby enemies, dealing 68 − 240 (based on level) (+ 100% bonus AD) (+ 55 / 70 / 85 / 100% (based on level) AP) magic damage and reducing Shunpo's cooldown by 78 / 84 / 90 / 96% (based on level).",
             "icon": "Sinister Steel.png",
             "leveling": []
           },
@@ -289,7 +391,7 @@
         "name": "Preparation",
         "effects": [
           {
-            "description": "Active: Katarina tosses a Dagger into the air above her current location, gaining  ghost and a decaying  bonus movement speed until it lands after 1.25 seconds.",
+            "description": "Active: Katarina tosses a Dagger into the air above her current location, gaining ghost and a decaying bonus movement speed until it lands after 1.25 seconds.",
             "icon": "Preparation.png",
             "leveling": [
               {
@@ -368,7 +470,7 @@
         "name": "Shunpo",
         "effects": [
           {
-            "description": "Active: After a short delay, Katarina  blinks to the target location around the target unit or Dagger, dealing magic damage to the nearest enemy in range.",
+            "description": "Active: After a short delay, Katarina blinks to the target location around the target unit or Dagger, dealing magic damage to the nearest enemy in range.",
             "icon": "Shunpo.png",
             "leveling": [
               {
@@ -489,7 +591,7 @@
         "name": "Death Lotus",
         "effects": [
           {
-            "description": "Active: Katarina rapidly channels for 2.5 seconds, throwing a dagger every 0.166 seconds to up to 3 nearby enemy champions, dealing magic damage and applying  Grievous Wounds for 3 seconds, reducing healing on the target by 60%.",
+            "description": "Active: Katarina rapidly channels for 2.5 seconds, throwing a dagger every 0.166 seconds to up to 3 nearby enemy champions, dealing magic damage and applying Grievous Wounds for 3 seconds, reducing healing on the target by 60%.",
             "icon": "Death Lotus.png",
             "leveling": [
               {
@@ -577,7 +679,7 @@
             ]
           },
           {
-            "description": "Katarina does not need to have  vision of the targets to hit them, and she will prioritize the closest ones.",
+            "description": "Katarina does not need to have vision of the targets to hit them, and she will prioritize the closest ones.",
             "icon": null,
             "leveling": []
           }

@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 100,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.644,
       "percent": 0.0,
       "perLevel": 2,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.643999993801116,
-    "attackCastTime": 0.360000014305114,
-    "attackTotalTime": 1.60000002384185,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.643999993801116,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.360000014305114,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.60000002384185,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.05,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 0.95,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -110,12 +200,12 @@
         "name": "Blast Shield",
         "effects": [
           {
-            "description": "Innate: Hitting an enemy with an ability grants Vi a  15% maximum health shield for up to 3 seconds.",
+            "description": "Innate: Hitting an enemy with an ability grants Vi a 15% maximum health shield for up to 3 seconds.",
             "icon": "Blast Shield.png",
             "leveling": []
           },
           {
-            "description": "Blast Shield's  cooldown is reduced by 3 seconds for every trigger of  Denting Blows.",
+            "description": "Blast Shield's cooldown is reduced by 3 seconds for every trigger of Denting Blows.",
             "icon": null,
             "leveling": []
           }
@@ -198,12 +288,12 @@
         "name": "Vault Breaker",
         "effects": [
           {
-            "description": "Active: Vi  charges for up to 4 seconds to increase Vault Breaker's  range, speed, and damage over 1.25 seconds. While charging, Vi is  pacified and  slowed by 15%. Vault Breaker can be recast at any time within its duration.",
+            "description": "Active: Vi charges for up to 4 seconds to increase Vault Breaker's range, speed, and damage over 1.25 seconds. While charging, Vi is pacified and slowed by 15%. Vault Breaker can be recast at any time within its duration.",
             "icon": "Vault Breaker.png",
             "leveling": []
           },
           {
-            "description": "Recast: Vi  dashes in the target direction, dealing  physical damage to all enemies she passes through, increased by 0% \u2212 100% (based on channel time).",
+            "description": "Recast: Vi dashes in the target direction, dealing physical damage to all enemies she passes through, increased by 0% − 100% (based on channel time).",
             "icon": null,
             "leveling": [
               {
@@ -283,12 +373,12 @@
             ]
           },
           {
-            "description": "Vi stops upon colliding with an enemy champion,  knocking them back while other units are instead  pulled towards her.",
+            "description": "Vi stops upon colliding with an enemy champion, knocking them back while other units are instead pulled towards her.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Vault Breaker will go on a 3 second cooldown and refund  50% of its mana cost if Vi is  interrupted during the channeling.",
+            "description": "Vault Breaker will go on a 3 second cooldown and refund 50% of its mana cost if Vi is interrupted during the channeling.",
             "icon": null,
             "leveling": []
           }
@@ -351,12 +441,12 @@
         "tetherRadius": null,
         "onTargetCdStatic": null,
         "innerRadius": null,
-        "speed": "1250 \u2212 1400 (based on channel time)",
+        "speed": "1250 − 1400 (based on channel time)",
         "width": null,
         "angle": null,
         "castTime": null,
         "effectRadius": null,
-        "targetRange": "250 \u2212 725 (based on channel time)"
+        "targetRange": "250 − 725 (based on channel time)"
       }
     ],
     "W": [
@@ -364,7 +454,7 @@
         "name": "Denting Blows",
         "effects": [
           {
-            "description": "Passive: Vi's basic attacks and  Vault Breaker apply Denting Blows to enemies hit, stacking up to 3 times. At 3 Denting Blows, Vi consumes them to deal bonus physical damage, capped at 300 against non-champions.",
+            "description": "Passive: Vi's basic attacks and Vault Breaker apply Denting Blows to enemies hit, stacking up to 3 times. At 3 Denting Blows, Vi consumes them to deal bonus physical damage, capped at 300 against non-champions.",
             "icon": "Denting Blows.png",
             "leveling": [
               {
@@ -386,13 +476,28 @@
                       "%  of target's maximum health"
                     ]
                   },
-                  "[ 1% per 35 ][ 2.86% per 100 ]bonus AD"
+                  {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "units": [
+                      "[ 1% per 35 ][ 2.86% per 100 ]bonus AD",
+                      "[ 1% per 35 ][ 2.86% per 100 ]bonus AD",
+                      "[ 1% per 35 ][ 2.86% per 100 ]bonus AD",
+                      "[ 1% per 35 ][ 2.86% per 100 ]bonus AD",
+                      "[ 1% per 35 ][ 2.86% per 100 ]bonus AD"
+                    ]
+                  }
                 ]
               }
             ]
           },
           {
-            "description": "For the next 4 seconds, Vi gains  bonus attack speed and the target has 20% reduced  armor.",
+            "description": "For the next 4 seconds, Vi gains bonus attack speed and the target has 20% reduced armor.",
             "icon": "Denting Blows 2.png",
             "leveling": [
               {
@@ -449,7 +554,7 @@
         "name": "Denting Blows",
         "effects": [
           {
-            "description": "Passive: Vi's basic attacks and  Vault Breaker apply Denting Blows to enemies hit, stacking up to 3 times. At 3 Denting Blows, Vi consumes them to deal bonus physical damage, capped at 300 against non-champions.",
+            "description": "Passive: Vi's basic attacks and Vault Breaker apply Denting Blows to enemies hit, stacking up to 3 times. At 3 Denting Blows, Vi consumes them to deal bonus physical damage, capped at 300 against non-champions.",
             "icon": "Denting Blows.png",
             "leveling": [
               {
@@ -471,13 +576,28 @@
                       "%  of target's maximum health"
                     ]
                   },
-                  "[ 1% per 35 ][ 2.86% per 100 ]bonus AD"
+                  {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "units": [
+                      "[ 1% per 35 ][ 2.86% per 100 ]bonus AD",
+                      "[ 1% per 35 ][ 2.86% per 100 ]bonus AD",
+                      "[ 1% per 35 ][ 2.86% per 100 ]bonus AD",
+                      "[ 1% per 35 ][ 2.86% per 100 ]bonus AD",
+                      "[ 1% per 35 ][ 2.86% per 100 ]bonus AD"
+                    ]
+                  }
                 ]
               }
             ]
           },
           {
-            "description": "For the next 4 seconds, Vi gains  bonus attack speed and the target has 20% reduced  armor.",
+            "description": "For the next 4 seconds, Vi gains bonus attack speed and the target has 20% reduced armor.",
             "icon": "Denting Blows 2.png",
             "leveling": [
               {
@@ -541,7 +661,7 @@
             "leveling": []
           },
           {
-            "description": "Active: Vi's next basic attack gains  50 bonus range and deals physical damage to all enemies in a cone in front of her. The damage can  critically strike for (100% +  25%) AD bonus physical damage.",
+            "description": "Active: Vi's next basic attack gains 50 bonus range and deals physical damage to all enemies in a cone in front of her. The damage can critically strike for (100% + 25%) AD bonus physical damage.",
             "icon": "Excessive Force 2.png",
             "leveling": [
               {
@@ -605,7 +725,7 @@
             "leveling": []
           },
           {
-            "description": "Excessive Force only affects  structures if they're the primary target.",
+            "description": "Excessive Force only affects structures if they're the primary target.",
             "icon": null,
             "leveling": []
           }
@@ -690,7 +810,7 @@
             "leveling": []
           },
           {
-            "description": "Active: Vi's next basic attack gains  50 bonus range and deals physical damage to all enemies in a cone in front of her. The damage can  critically strike for (100% +  25%) AD bonus physical damage.",
+            "description": "Active: Vi's next basic attack gains 50 bonus range and deals physical damage to all enemies in a cone in front of her. The damage can critically strike for (100% + 25%) AD bonus physical damage.",
             "icon": "Excessive Force 2.png",
             "leveling": [
               {
@@ -754,7 +874,7 @@
             "leveling": []
           },
           {
-            "description": "Excessive Force only affects  structures if they're the primary target.",
+            "description": "Excessive Force only affects structures if they're the primary target.",
             "icon": null,
             "leveling": []
           }
@@ -836,7 +956,7 @@
         "name": "Assault and Battery",
         "effects": [
           {
-            "description": "Active: Vi rushes  unstoppably to the target enemy  champion dealing physical damage upon arrival and  knocking them up for 1.25 seconds.",
+            "description": "Active: Vi rushes unstoppably to the target enemy champion dealing physical damage upon arrival and knocking them up for 1.25 seconds.",
             "icon": "Assault and Battery.png",
             "leveling": [
               {
@@ -871,7 +991,7 @@
             ]
           },
           {
-            "description": "Enemies along the way are  knocked aside by 350 units for 0.75 seconds and dealt the same damage.",
+            "description": "Enemies along the way are knocked aside by 350 units for 0.75 seconds and dealt the same damage.",
             "icon": null,
             "leveling": []
           }

@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 95,
-    "pathingRadius": 35,
-    "gameplayRadius": 55,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 55,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.375,
-    "attackTotalTime": 1.60000002384185,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.375,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.60000002384185,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.95,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -110,12 +200,12 @@
         "name": "Iron Ambassador",
         "effects": [
           {
-            "description": "Innate: Poppy periodically  throws her buckler as her next basic attack, gaining  350 bonus range and dealing 20 \u2212 180 (based on level)  bonus magic damage. The buckler then falls near her target, where it remains for up to 4 seconds.",
+            "description": "Innate: Poppy periodically throws her buckler as her next basic attack, gaining 350 bonus range and dealing 20 − 180 (based on level) bonus magic damage. The buckler then falls near her target, where it remains for up to 4 seconds.",
             "icon": "Iron Ambassador.png",
             "leveling": []
           },
           {
-            "description": "When Poppy picks up the buckler, she  shields herself for  15 / 17.5 / 20% (based on level) maximum health for 3 seconds. If the buckler kills its target, it bounces back to Poppy automatically. Enemy  champions can step on the buckler to destroy it.",
+            "description": "When Poppy picks up the buckler, she shields herself for 15 / 17.5 / 20% (based on level) maximum health for 3 seconds. If the buckler kills its target, it bounces back to Poppy automatically. Enemy champions can step on the buckler to destroy it.",
             "icon": "Iron Ambassador 2.png",
             "leveling": []
           }
@@ -166,12 +256,12 @@
         "name": "Iron Ambassador",
         "effects": [
           {
-            "description": "Innate: Poppy periodically  throws her buckler as her next basic attack, gaining  350 bonus range and dealing 20 \u2212 180 (based on level)  bonus magic damage. The buckler then falls near her target, where it remains for up to 4 seconds.",
+            "description": "Innate: Poppy periodically throws her buckler as her next basic attack, gaining 350 bonus range and dealing 20 − 180 (based on level) bonus magic damage. The buckler then falls near her target, where it remains for up to 4 seconds.",
             "icon": "Iron Ambassador.png",
             "leveling": []
           },
           {
-            "description": "When Poppy picks up the buckler, she  shields herself for  15 / 17.5 / 20% (based on level) maximum health for 3 seconds. If the buckler kills its target, it bounces back to Poppy automatically. Enemy  champions can step on the buckler to destroy it.",
+            "description": "When Poppy picks up the buckler, she shields herself for 15 / 17.5 / 20% (based on level) maximum health for 3 seconds. If the buckler kills its target, it bounces back to Poppy automatically. Enemy champions can step on the buckler to destroy it.",
             "icon": "Iron Ambassador 2.png",
             "leveling": []
           }
@@ -224,7 +314,7 @@
         "name": "Hammer Shock",
         "effects": [
           {
-            "description": "Active: Poppy smashes the ground in front of her, dealing  physical damage to all enemies hit. Against  monsters, the damage based on their maximum health is capped.",
+            "description": "Active: Poppy smashes the ground in front of her, dealing physical damage to all enemies hit. Against monsters, the damage based on their maximum health is capped.",
             "icon": "Hammer Shock.png",
             "leveling": [
               {
@@ -410,7 +500,7 @@
             ]
           },
           {
-            "description": "The impacted ground becomes unstable,  slowing enemies standing on it before erupting after 1 second, dealing the same physical damage to all enemies hit.",
+            "description": "The impacted ground becomes unstable, slowing enemies standing on it before erupting after 1 second, dealing the same physical damage to all enemies hit.",
             "icon": null,
             "leveling": [
               {
@@ -508,12 +598,12 @@
         "name": "Steadfast Presence",
         "effects": [
           {
-            "description": "Passive - Stubborn to a Fault: Poppy's  total armor and  total magic resistance are both increased by 10%, doubled to 20% when she falls  below 40% maximum health.",
+            "description": "Passive - Stubborn to a Fault: Poppy's total armor and total magic resistance are both increased by 10%, doubled to 20% when she falls below 40% maximum health.",
             "icon": "Stubborn to a Fault.png",
             "leveling": []
           },
           {
-            "description": "Active: Poppy gains  40% bonus movement speed for 2 seconds and generates a barrier around herself for the duration, causing all enemies who  dash within to be  knocked down, dealt magic damage, and are both  grounded and  slowed by 25% for 2 seconds.",
+            "description": "Active: Poppy gains 40% bonus movement speed for 2 seconds and generates a barrier around herself for the duration, causing all enemies who dash within to be knocked down, dealt magic damage, and are both grounded and slowed by 25% for 2 seconds.",
             "icon": "Steadfast Presence.png",
             "leveling": [
               {
@@ -630,12 +720,12 @@
         "name": "Steadfast Presence",
         "effects": [
           {
-            "description": "Passive - Stubborn to a Fault: Poppy's  total armor and  total magic resistance are both increased by 10%, doubled to 20% when she falls  below 40% maximum health.",
+            "description": "Passive - Stubborn to a Fault: Poppy's total armor and total magic resistance are both increased by 10%, doubled to 20% when she falls below 40% maximum health.",
             "icon": "Stubborn to a Fault.png",
             "leveling": []
           },
           {
-            "description": "Active: Poppy gains  40% bonus movement speed for 2 seconds and generates a barrier around herself for the duration, causing all enemies who  dash within to be  knocked down, dealt magic damage, and are both  grounded and  slowed by 25% for 2 seconds.",
+            "description": "Active: Poppy gains 40% bonus movement speed for 2 seconds and generates a barrier around herself for the duration, causing all enemies who dash within to be knocked down, dealt magic damage, and are both grounded and slowed by 25% for 2 seconds.",
             "icon": "Steadfast Presence.png",
             "leveling": [
               {
@@ -754,7 +844,7 @@
         "name": "Heroic Charge",
         "effects": [
           {
-            "description": "Active: Poppy  dashes to the target enemy, dealing physical damage and  carrying them along with her for up to 300 units.",
+            "description": "Active: Poppy dashes to the target enemy, dealing physical damage and carrying them along with her for up to 300 units.",
             "icon": "Heroic Charge.png",
             "leveling": [
               {
@@ -834,7 +924,7 @@
             ]
           },
           {
-            "description": "If they collide with terrain, she deals them the same physical damage again and  stuns them.",
+            "description": "If they collide with terrain, she deals them the same physical damage again and stuns them.",
             "icon": null,
             "leveling": [
               {
@@ -932,12 +1022,12 @@
         "name": "Keeper's Verdict",
         "effects": [
           {
-            "description": "Active: Poppy  charges for up to 4 seconds,  slowing herself by 15% for the duration. Keeper's Verdict can be recast at any time within its duration, and its  cooldown is set to 30 seconds if canceled.",
+            "description": "Active: Poppy charges for up to 4 seconds, slowing herself by 15% for the duration. Keeper's Verdict can be recast at any time within its duration, and its cooldown is set to 30 seconds if canceled.",
             "icon": "Keeper's Verdict.png",
             "leveling": []
           },
           {
-            "description": "Recast: Poppy smashes the ground, sending out a shockwave that travels in the target direction. When it hits an enemy champion, a massive hammer erupts, dealing physical damage to all enemies around it. Enemies struck by the hammer are  knocked back an incredible distance towards their fountain.",
+            "description": "Recast: Poppy smashes the ground, sending out a shockwave that travels in the target direction. When it hits an enemy champion, a massive hammer erupts, dealing physical damage to all enemies around it. Enemies struck by the hammer are knocked back an incredible distance towards their fountain.",
             "icon": null,
             "leveling": [
               {
@@ -972,7 +1062,7 @@
             ]
           },
           {
-            "description": "Instantly releasing the ability ends the charge, dealing 50% reduced damage and  knocking up all enemies around Poppy for 0.75 seconds.",
+            "description": "Instantly releasing the ability ends the charge, dealing 50% reduced damage and knocking up all enemies around Poppy for 0.75 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -1007,7 +1097,7 @@
             ]
           },
           {
-            "description": "Poppy has  sight of enemies she knocks  airborne and they are rendered  untargetable for the duration, with their displacement distance increasing based on how long Keeper's Verdict was charged. An uncharged attack does not render enemies  untargetable.",
+            "description": "Poppy has sight of enemies she knocks airborne and they are rendered untargetable for the duration, with their displacement distance increasing based on how long Keeper's Verdict was charged. An uncharged attack does not render enemies untargetable.",
             "icon": null,
             "leveling": []
           }

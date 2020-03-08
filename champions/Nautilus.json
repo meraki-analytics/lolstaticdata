@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 125,
-    "pathingRadius": 50,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 50,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.706,
       "percent": 0.0,
       "perLevel": 1,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.611999988555908,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": 0.00637254910543561,
+    "attackSpeedRatio": {
+      "flat": 0.611999988555908,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0.00637254910543561,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 175,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.08,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.08,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -110,7 +200,7 @@
         "name": "Staggering Blow",
         "effects": [
           {
-            "description": "Innate: Nautilus's basic attacks deal 8 \u2212 110 (based on level)  bonus physical damage and  root his target for 0.75 \u2212 1.5 (based on level) seconds.",
+            "description": "Innate: Nautilus's basic attacks deal 8 − 110 (based on level) bonus physical damage and root his target for 0.75 − 1.5 (based on level) seconds.",
             "icon": "Staggering Blow.png",
             "leveling": []
           },
@@ -152,7 +242,7 @@
         "name": "Dredge Line",
         "effects": [
           {
-            "description": "Active: Nautilus hurls his anchor forward in a line, simultaneously  dragging the enemy hit towards him while  dashing towards them within 0.9 seconds, dealing  magic damage and  rooting them for 0.1 seconds.",
+            "description": "Active: Nautilus hurls his anchor forward in a line, simultaneously dragging the enemy hit towards him while dashing towards them within 0.9 seconds, dealing magic damage and rooting them for 0.1 seconds.",
             "icon": "Dredge Line.png",
             "leveling": [
               {
@@ -195,7 +285,7 @@
             ]
           },
           {
-            "description": "If the anchor hits terrain, Nautilus dashes to the very end of its path, Dredge Line's  cooldown is reduced by 50% and refunds  half its mana cost.",
+            "description": "If the anchor hits terrain, Nautilus dashes to the very end of its path, Dredge Line's cooldown is reduced by 50% and refunds half its mana cost.",
             "icon": null,
             "leveling": []
           },
@@ -276,7 +366,7 @@
         "name": "Titan's Wrath",
         "effects": [
           {
-            "description": "Active: Nautilus  shields himself for up to 6 seconds.",
+            "description": "Active: Nautilus shields himself for up to 6 seconds.",
             "icon": "Titan's Wrath.png",
             "leveling": [
               {
@@ -399,7 +489,7 @@
             ]
           },
           {
-            "description": "Titan's Wrath resets Nautilus'  basic attack timer.",
+            "description": "Titan's Wrath resets Nautilus' basic attack timer.",
             "icon": null,
             "leveling": []
           }
@@ -475,7 +565,7 @@
         "name": "Riptide",
         "effects": [
           {
-            "description": "Active: Nautilus creates 3 waves of explosions that radiate from him, each dealing magic damage to all enemies hit and  slowing them by an amount that decays over 1.5 seconds.",
+            "description": "Active: Nautilus creates 3 waves of explosions that radiate from him, each dealing magic damage to all enemies hit and slowing them by an amount that decays over 1.5 seconds.",
             "icon": "Riptide.png",
             "leveling": [
               {
@@ -690,7 +780,7 @@
         "name": "Depth Charge",
         "effects": [
           {
-            "description": "Active: Nautilus sends out a  Depth Charge that chases the target enemy champion, dealing magic damage while  knocking them up for 1 second and  stunning them on arrival.",
+            "description": "Active: Nautilus sends out a Depth Charge that chases the target enemy champion, dealing magic damage while knocking them up for 1 second and stunning them on arrival.",
             "icon": "Depth Charge.png",
             "leveling": [
               {
@@ -742,7 +832,7 @@
             ]
           },
           {
-            "description": "All enemies hit along the way are dealt less damage,  knocked up for 1 second, and are also  stunned.",
+            "description": "All enemies hit along the way are dealt less damage, knocked up for 1 second, and are also stunned.",
             "icon": "Depth Charge 2.png",
             "leveling": [
               {
@@ -838,7 +928,7 @@
         "name": "Depth Charge",
         "effects": [
           {
-            "description": "Active: Nautilus sends out a  Depth Charge that chases the target enemy champion, dealing magic damage while  knocking them up for 1 second and  stunning them on arrival.",
+            "description": "Active: Nautilus sends out a Depth Charge that chases the target enemy champion, dealing magic damage while knocking them up for 1 second and stunning them on arrival.",
             "icon": "Depth Charge.png",
             "leveling": [
               {
@@ -890,7 +980,7 @@
             ]
           },
           {
-            "description": "All enemies hit along the way are dealt less damage,  knocked up for 1 second, and are also  stunned.",
+            "description": "All enemies hit along the way are dealt less damage, knocked up for 1 second, and are also stunned.",
             "icon": "Depth Charge 2.png",
             "leveling": [
               {

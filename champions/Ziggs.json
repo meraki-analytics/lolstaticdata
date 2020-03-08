@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 800,
-    "selectionRadius": 100,
-    "pathingRadius": 30,
-    "gameplayRadius": 55,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 800,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 30,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 55,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.656,
       "percent": 0.0,
       "perLevel": 2,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.656000018119812,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0916666686534881,
+    "attackSpeedRatio": {
+      "flat": 0.656000018119812,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0916666686534881,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.1,
-    "aramDamageDealt": 0.85,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 0.85,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ARTILLERY",
@@ -109,12 +199,12 @@
         "name": "Short Fuse",
         "effects": [
           {
-            "description": "Innate: Ziggs's basic attacks are periodically empowered to deal 20 \u2212 160 (based on level) (+ 30 / 40 / 50% (based on level) AP)  bonus magic damage, doubled to 40 \u2212 320 (based on level) (+ 60 / 80 / 100% (based on level) AP) against structures.",
+            "description": "Innate: Ziggs's basic attacks are periodically empowered to deal 20 − 160 (based on level) (+ 30 / 40 / 50% (based on level) AP) bonus magic damage, doubled to 40 − 320 (based on level) (+ 60 / 80 / 100% (based on level) AP) against structures.",
             "icon": "Short Fuse.png",
             "leveling": []
           },
           {
-            "description": "Ziggs reduces Short Fuse's  cooldown by 4 / 5 / 6 (based on level) seconds whenever he uses an ability.",
+            "description": "Ziggs reduces Short Fuse's cooldown by 4 / 5 / 6 (based on level) seconds whenever he uses an ability.",
             "icon": null,
             "leveling": []
           }
@@ -286,12 +376,12 @@
         "name": "Satchel Charge",
         "effects": [
           {
-            "description": "Active: Ziggs flings an explosive charge towards the target area,  revealing its surroundings, and exploding after 4 seconds or upon reactivation.",
+            "description": "Active: Ziggs flings an explosive charge towards the target area, revealing its surroundings, and exploding after 4 seconds or upon reactivation.",
             "icon": "Satchel Charge.png",
             "leveling": []
           },
           {
-            "description": "When exploding, the Satchel Charge deals magic damage and  knocks back all surrounding enemies by 250 units. If Ziggs is within the explosion radius, he instead  flies up to 500 units away while taking no damage in the process.",
+            "description": "When exploding, the Satchel Charge deals magic damage and knocks back all surrounding enemies by 250 units. If Ziggs is within the explosion radius, he instead flies up to 500 units away while taking no damage in the process.",
             "icon": null,
             "leveling": [
               {
@@ -334,7 +424,7 @@
             ]
           },
           {
-            "description": "Turret Explosion: Satchel Charge's explosion can demolish  turrets below a  percentile health threshold.",
+            "description": "Turret Explosion: Satchel Charge's explosion can demolish turrets below a percentile health threshold.",
             "icon": null,
             "leveling": [
               {
@@ -437,7 +527,7 @@
             "leveling": []
           },
           {
-            "description": "Mines explode on contact with an enemy,  slowing them for 1.5 seconds and dealing magic damage. Targets detonating more than one mine take 40% damage from subsequent mines.",
+            "description": "Mines explode on contact with an enemy, slowing them for 1.5 seconds and dealing magic damage. Targets detonating more than one mine take 40% damage from subsequent mines.",
             "icon": null,
             "leveling": [
               {
@@ -646,7 +736,7 @@
         "name": "Mega Inferno Bomb",
         "effects": [
           {
-            "description": "Active: Ziggs deploys his ultimate creation, the  Mega Inferno Bomb, hurling it to the target area, granting  sight within a 350 unit radius as it travels.",
+            "description": "Active: Ziggs deploys his ultimate creation, the Mega Inferno Bomb, hurling it to the target area, granting sight within a 350 unit radius as it travels.",
             "icon": "Mega Inferno Bomb.png",
             "leveling": []
           },

@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 800,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 800,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 3.3,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.282999992370605,
-    "attackTotalTime": 1.60000002384185,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.282999992370605,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.60000002384185,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 525,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 0.88,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.88,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "MARKSMAN"
@@ -108,7 +198,7 @@
         "name": "Clean Cuts",
         "effects": [
           {
-            "description": "Innate: After casting an ability, Xayah's next 3 basic attacks penetrate through all enemies along a 900 range line, dealing 100% damage to her main target and 30 / 40 / 50% (based on level) pass-through damage to other enemies.  At the end of their path, a Feather will be left in the ground for 6 seconds.",
+            "description": "Innate: After casting an ability, Xayah's next 3 basic attacks penetrate through all enemies along a 900 range line, dealing 100% damage to her main target and 30 / 40 / 50% (based on level) pass-through damage to other enemies. At the end of their path, a Feather will be left in the ground for 6 seconds.",
             "icon": "Clean Cuts.png",
             "leveling": []
           },
@@ -118,7 +208,7 @@
             "leveling": []
           },
           {
-            "description": "Lover's Leap: If either Xayah or  Rakan is  recalling, the other may move nearby and activate their own recall to join them. Both reach base at the time of which the initiator's recall ends.",
+            "description": "Lover's Leap: If either Xayah or Rakan is recalling, the other may move nearby and activate their own recall to join them. Both reach base at the time of which the initiator's recall ends.",
             "icon": "ProfileIcon1634 Blazing Feathers.png",
             "leveling": []
           }
@@ -153,7 +243,7 @@
         "name": "Clean Cuts",
         "effects": [
           {
-            "description": "Innate: After casting an ability, Xayah's next 3 basic attacks penetrate through all enemies along a 900 range line, dealing 100% damage to her main target and 30 / 40 / 50% (based on level) pass-through damage to other enemies.  At the end of their path, a Feather will be left in the ground for 6 seconds.",
+            "description": "Innate: After casting an ability, Xayah's next 3 basic attacks penetrate through all enemies along a 900 range line, dealing 100% damage to her main target and 30 / 40 / 50% (based on level) pass-through damage to other enemies. At the end of their path, a Feather will be left in the ground for 6 seconds.",
             "icon": "Clean Cuts.png",
             "leveling": []
           },
@@ -163,7 +253,7 @@
             "leveling": []
           },
           {
-            "description": "Lover's Leap: If either Xayah or  Rakan is  recalling, the other may move nearby and activate their own recall to join them. Both reach base at the time of which the initiator's recall ends.",
+            "description": "Lover's Leap: If either Xayah or Rakan is recalling, the other may move nearby and activate their own recall to join them. Both reach base at the time of which the initiator's recall ends.",
             "icon": "ProfileIcon1634 Blazing Feathers.png",
             "leveling": []
           }
@@ -200,7 +290,7 @@
         "name": "Double Daggers",
         "effects": [
           {
-            "description": "Active: Xayah throws two feather-blades in quick succession, dealing  physical damage to all enemies hit and leaving two Feathers on the ground.",
+            "description": "Active: Xayah throws two feather-blades in quick succession, dealing physical damage to all enemies hit and leaving two Feathers on the ground.",
             "icon": "Double Daggers.png",
             "leveling": [
               {
@@ -431,7 +521,7 @@
         "name": "Deadly Plumage",
         "effects": [
           {
-            "description": "Active: Xayah creates a storm of blades for 4 seconds that grants her  bonus attack speed and cause her basic attacks to strike an additional time for 20% damage.",
+            "description": "Active: Xayah creates a storm of blades for 4 seconds that grants her bonus attack speed and cause her basic attacks to strike an additional time for 20% damage.",
             "icon": "Deadly Plumage.png",
             "leveling": [
               {
@@ -458,12 +548,12 @@
             ]
           },
           {
-            "description": "If Deadly Plumage strikes an enemy champion, Xayah gains  30% bonus movement speed for 1.5 seconds.",
+            "description": "If Deadly Plumage strikes an enemy champion, Xayah gains 30% bonus movement speed for 1.5 seconds.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "If  Rakan is nearby he will also gain the effects of Deadly Plumage, while also gaining the bonus movement speed when Xayah strikes an enemy champion.",
+            "description": "If Rakan is nearby he will also gain the effects of Deadly Plumage, while also gaining the bonus movement speed when Xayah strikes an enemy champion.",
             "icon": null,
             "leveling": []
           }
@@ -539,7 +629,7 @@
         "name": "Bladecaller",
         "effects": [
           {
-            "description": "Active: Xayah calls all Feathers back to her, dealing physical damage to enemies they pass through, increased by 0% \u2212 50% (based on critical chance).  Minions take 50% damage.",
+            "description": "Active: Xayah calls all Feathers back to her, dealing physical damage to enemies they pass through, increased by 0% − 50% (based on critical chance). Minions take 50% damage.",
             "icon": "Bladecaller.png",
             "leveling": [
               {
@@ -619,12 +709,12 @@
             ]
           },
           {
-            "description": "Enemies take 100% \u2212 10% (based on feathers hit) damage from a Feather.",
+            "description": "Enemies take 100% − 10% (based on feathers hit) damage from a Feather.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Enemies hit by at least 3 Feathers are  rooted for 1.25 seconds.",
+            "description": "Enemies hit by at least 3 Feathers are rooted for 1.25 seconds.",
             "icon": null,
             "leveling": []
           }
@@ -679,7 +769,7 @@
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Spell shield will only block a single instance of damage.\n This ability cannot be ranked at Level 1.\n The damage dealt by Bladecaller follows a diminishing returns formula not mentioned in the ability's description, successively reducing extra damage from feathers beyond the first.\n This formula is: \n For feathers <=10: Damage of one feather \u00d7 (n \u2212 0.1 \u00d7 (n \u2212 1) \u00f7 2 \u00d7 n) where n stands for the number of feathers hit.\n For feathers >=11: Damage of one feather \u00d7 (5.5 + 0.1 \u00d7 (n \u2212 10)) where n stands for the number of feathers hit.\n\n For example, at rank 1 Bladecaller deals 55 \u2212 302.5 (based on feathers hit).",
+        "notes": "Spell shield will only block a single instance of damage.\n This ability cannot be ranked at Level 1.\n The damage dealt by Bladecaller follows a diminishing returns formula not mentioned in the ability's description, successively reducing extra damage from feathers beyond the first.\n This formula is: \n For feathers <=10: Damage of one feather × (n − 0.1 × (n − 1) ÷ 2 × n) where n stands for the number of feathers hit.\n For feathers >=11: Damage of one feather × (5.5 + 0.1 × (n − 10)) where n stands for the number of feathers hit.\n\n For example, at rank 1 Bladecaller deals 55 − 302.5 (based on feathers hit).",
         "blurb": "Xayah calls back all her dropped Feathers dealing damage and rooting enemies.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -700,7 +790,7 @@
         "name": "Featherstorm",
         "effects": [
           {
-            "description": "Active: Xayah leaps into the air, becoming  untargetable for 1.5 seconds, during which she is still able to move, then rains down daggers which deal physical damage and leave behind a line of 5 Feathers.",
+            "description": "Active: Xayah leaps into the air, becoming untargetable for 1.5 seconds, during which she is still able to move, then rains down daggers which deal physical damage and leave behind a line of 5 Feathers.",
             "icon": "Featherstorm.png",
             "leveling": [
               {

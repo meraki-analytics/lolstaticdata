@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 550,
-    "selectionRadius": 100,
-    "pathingRadius": 30,
-    "gameplayRadius": 55,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 550,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 30,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 55,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 3.4,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.689999997615814,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.100000001490116,
+    "attackSpeedRatio": {
+      "flat": 0.689999997615814,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.100000001490116,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.95,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "MAGE",
@@ -110,12 +200,12 @@
         "name": "Mark of the Storm",
         "effects": [
           {
-            "description": "Innate: Enemies hit by Kennen's abilities receive a Mark of the Storm for 6 seconds, stacking up to 3 times. At three stacks, the marks consume themselves to  stun the target for 1.25 seconds and restore  25 energy.",
+            "description": "Innate: Enemies hit by Kennen's abilities receive a Mark of the Storm for 6 seconds, stacking up to 3 times. At three stacks, the marks consume themselves to stun the target for 1.25 seconds and restore 25 energy.",
             "icon": "Mark of the Storm.png",
             "leveling": []
           },
           {
-            "description": "If the  stun is applied more than once within 6 seconds, its duration is reduced to 0.5 seconds.",
+            "description": "If the stun is applied more than once within 6 seconds, its duration is reduced to 0.5 seconds.",
             "icon": null,
             "leveling": []
           }
@@ -152,7 +242,7 @@
         "name": "Thundering Shuriken",
         "effects": [
           {
-            "description": "Active: Kennen throws a charged shuriken in a line in front of him, dealing  magic damage to the first enemy it hits.",
+            "description": "Active: Kennen throws a charged shuriken in a line in front of him, dealing magic damage to the first enemy it hits.",
             "icon": "Thundering Shuriken.png",
             "leveling": [
               {
@@ -325,7 +415,7 @@
             ]
           },
           {
-            "description": "Active: Kennen sends out a surge of electricity to all nearby enemies afflicted by Mark of the Storm or caught in  Slicing Maelstrom, dealing magic damage.",
+            "description": "Active: Kennen sends out a surge of electricity to all nearby enemies afflicted by Mark of the Storm or caught in Slicing Maelstrom, dealing magic damage.",
             "icon": null,
             "leveling": [
               {
@@ -439,12 +529,12 @@
         "name": "Lightning Rush",
         "effects": [
           {
-            "description": "Active: Kennen transforms into a ball of electricity,  disarming himself but becoming  ghosted and gaining  100% bonus movement speed for 2 seconds.",
+            "description": "Active: Kennen transforms into a ball of electricity, disarming himself but becoming ghosted and gaining 100% bonus movement speed for 2 seconds.",
             "icon": "Lightning Rush.png",
             "leveling": []
           },
           {
-            "description": "Kennen deals magic damage to all enemies he passes through, halved against non-champions and restores  40 energy the first time Lightning Rush damages an enemy.",
+            "description": "Kennen deals magic damage to all enemies he passes through, halved against non-champions and restores 40 energy the first time Lightning Rush damages an enemy.",
             "icon": null,
             "leveling": [
               {
@@ -524,7 +614,7 @@
             ]
           },
           {
-            "description": "Kennen gains  bonus attack speed for 4 seconds upon exiting Lightning Rush.",
+            "description": "Kennen gains bonus attack speed for 4 seconds upon exiting Lightning Rush.",
             "icon": null,
             "leveling": [
               {
@@ -627,7 +717,7 @@
         "name": "Slicing Maelstrom",
         "effects": [
           {
-            "description": "Active: Kennen summons Shuriken Storm, a magical storm around himself for 3 seconds, gaining  bonus armor and  bonus magic resistance and dealing magic damage to all enemies within range every 0.5 seconds.",
+            "description": "Active: Kennen summons Shuriken Storm, a magical storm around himself for 3 seconds, gaining bonus armor and bonus magic resistance and dealing magic damage to all enemies within range every 0.5 seconds.",
             "icon": "Slicing Maelstrom.png",
             "leveling": [
               {

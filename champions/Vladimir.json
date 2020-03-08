@@ -26,6 +26,12 @@
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
+    "manaRegen": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
     "armor": {
       "flat": 23,
       "percent": 0.0,
@@ -50,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.658,
       "percent": 0.0,
       "perLevel": 2,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.657999992370605,
-    "attackCastTime": 0.300000011920928,
-    "attackTotalTime": 1.51999998092651,
-    "attackDelayOffset": -0.0721089988946914,
+    "attackSpeedRatio": {
+      "flat": 0.657999992370605,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.300000011920928,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.51999998092651,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0721089988946914,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 450,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 0.92,
-    "urfHealing": 0.95,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.92,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "BATTLEMAGE",
@@ -103,7 +199,7 @@
         "name": "Crimson Pact",
         "effects": [
           {
-            "description": "Innate: Vladimir gains (2.5% bonus health)  bonus ability power and (140% AP)  bonus health. These two bonuses do not stack with each other.",
+            "description": "Innate: Vladimir gains (2.5% bonus health) bonus ability power and (140% AP) bonus health. These two bonuses do not stack with each other.",
             "icon": "Crimson Pact.png",
             "leveling": []
           }
@@ -140,7 +236,7 @@
         "name": "Transfusion",
         "effects": [
           {
-            "description": "Active: Vladimir drains the lifeforce of the target enemy, dealing  magic damage and  healing himself.",
+            "description": "Active: Vladimir drains the lifeforce of the target enemy, dealing magic damage and healing himself.",
             "icon": "Transfusion.png",
             "leveling": [
               {
@@ -220,12 +316,12 @@
             ]
           },
           {
-            "description": "Each cast of Transfusion generates a stack of  Bloodthirst over its  cooldown, which is displayed in his secondary resource bar. At 2 stacks, Vladimir gains Crimson Rush for 2.5 seconds and  10% bonus movement speed for 0.5 seconds.",
+            "description": "Each cast of Transfusion generates a stack of Bloodthirst over its cooldown, which is displayed in his secondary resource bar. At 2 stacks, Vladimir gains Crimson Rush for 2.5 seconds and 10% bonus movement speed for 0.5 seconds.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Crimson Rush: The next Transfusion deals 85% increased damage and heals for an additional 30 \u2212 200 (based on level) (+ 5% (+ 4% per 100 AP) missing health), reduced to 35% against minions.",
+            "description": "Crimson Rush: The next Transfusion deals 85% increased damage and heals for an additional 30 − 200 (based on level) (+ 5% (+ 4% per 100 AP) missing health), reduced to 35% against minions.",
             "icon": "Crimson Rush.png",
             "leveling": [
               {
@@ -318,7 +414,7 @@
         "name": "Transfusion",
         "effects": [
           {
-            "description": "Active: Vladimir drains the lifeforce of the target enemy, dealing  magic damage and  healing himself.",
+            "description": "Active: Vladimir drains the lifeforce of the target enemy, dealing magic damage and healing himself.",
             "icon": "Transfusion.png",
             "leveling": [
               {
@@ -398,12 +494,12 @@
             ]
           },
           {
-            "description": "Each cast of Transfusion generates a stack of  Bloodthirst over its  cooldown, which is displayed in his secondary resource bar. At 2 stacks, Vladimir gains Crimson Rush for 2.5 seconds and  10% bonus movement speed for 0.5 seconds.",
+            "description": "Each cast of Transfusion generates a stack of Bloodthirst over its cooldown, which is displayed in his secondary resource bar. At 2 stacks, Vladimir gains Crimson Rush for 2.5 seconds and 10% bonus movement speed for 0.5 seconds.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Crimson Rush: The next Transfusion deals 85% increased damage and heals for an additional 30 \u2212 200 (based on level) (+ 5% (+ 4% per 100 AP) missing health), reduced to 35% against minions.",
+            "description": "Crimson Rush: The next Transfusion deals 85% increased damage and heals for an additional 30 − 200 (based on level) (+ 5% (+ 4% per 100 AP) missing health), reduced to 35% against minions.",
             "icon": "Crimson Rush.png",
             "leveling": [
               {
@@ -498,12 +594,12 @@
         "name": "Sanguine Pool",
         "effects": [
           {
-            "description": "Active: Vladimir sinks into a pool of blood, gaining  37.5% bonus movement speed which decays exponentially over 1 second and becoming  untargetable and  ghosted for 2 seconds.",
+            "description": "Active: Vladimir sinks into a pool of blood, gaining 37.5% bonus movement speed which decays exponentially over 1 second and becoming untargetable and ghosted for 2 seconds.",
             "icon": "Sanguine Pool.png",
             "leveling": []
           },
           {
-            "description": "Enemies who stand upon the pool are  slowed by 40% and dealt magic damage every half second, while Vladimir  heals himself for 15% of Sanguine Pool's damage dealt.",
+            "description": "Enemies who stand upon the pool are slowed by 40% and dealt magic damage every half second, while Vladimir heals himself for 15% of Sanguine Pool's damage dealt.",
             "icon": null,
             "leveling": [
               {
@@ -659,7 +755,7 @@
         "name": "Tides of Blood",
         "effects": [
           {
-            "description": "First Cast: Vladimir winds up for up to 1.5 seconds,  slowing himself by 20% over the last 0.5 seconds. If Vladimir finishes charging or is  interrupted, he automatically initiates the second cast.",
+            "description": "First Cast: Vladimir winds up for up to 1.5 seconds, slowing himself by 20% over the last 0.5 seconds. If Vladimir finishes charging or is interrupted, he automatically initiates the second cast.",
             "icon": "Tides of Blood.png",
             "leveling": []
           },
@@ -776,7 +872,7 @@
             ]
           },
           {
-            "description": "If Tides of Blood was charged for at least 1 second, affected enemies are also  slowed for 0.5 seconds.",
+            "description": "If Tides of Blood was charged for at least 1 second, affected enemies are also slowed for 0.5 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -914,7 +1010,7 @@
             ]
           },
           {
-            "description": "The detonation brings the blood from  enemy champions hit to Vladimir,  healing him for the pre-mitigation damage dealt against them once the blood reaches him, reduced to 50% after the first.",
+            "description": "The detonation brings the blood from enemy champions hit to Vladimir, healing him for the pre-mitigation damage dealt against them once the blood reaches him, reduced to 50% after the first.",
             "icon": null,
             "leveling": [
               {

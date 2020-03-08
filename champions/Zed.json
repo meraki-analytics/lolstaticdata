@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 100,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.651,
       "percent": 0.0,
       "perLevel": 3.3,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.651000022888183,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.102405503392219,
+    "attackSpeedRatio": {
+      "flat": 0.651000022888183,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.102405503392219,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.05,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 0.9,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN"
@@ -108,7 +198,7 @@
         "name": "Contempt for the Weak",
         "effects": [
           {
-            "description": "Innate: Zed's basic attacks against targets  below 50% maximum health deal 6 / 8 / 10% (based on level) of target's maximum health as  bonus magic damage. Against monsters, the damage is increased by 100%, but is capped at 200 / 350 / 500 (based on level).",
+            "description": "Innate: Zed's basic attacks against targets below 50% maximum health deal 6 / 8 / 10% (based on level) of target's maximum health as bonus magic damage. Against monsters, the damage is increased by 100%, but is capped at 200 / 350 / 500 (based on level).",
             "icon": "Contempt for the Weak.png",
             "leveling": []
           },
@@ -150,7 +240,7 @@
         "name": "Razor Shuriken",
         "effects": [
           {
-            "description": "Active: Zed and his  Shadows throw their spinning blades toward the target location. Each blade deals  physical damage to all enemies struck, reduced to 60% against units beyond the first.",
+            "description": "Active: Zed and his Shadows throw their spinning blades toward the target location. Each blade deals physical damage to all enemies struck, reduced to 60% against units beyond the first.",
             "icon": "Razor Shuriken.png",
             "leveling": [
               {
@@ -301,12 +391,12 @@
         "name": "Living Shadow",
         "effects": [
           {
-            "description": "First Cast: Zed's  Shadow dashes in the target direction, remaining in place for 5 seconds and being able to mimic  Razor Shuriken and  Shadow Slash while in range of each other.",
+            "description": "First Cast: Zed's Shadow dashes in the target direction, remaining in place for 5 seconds and being able to mimic Razor Shuriken and Shadow Slash while in range of each other.",
             "icon": "Living Shadow.png",
             "leveling": []
           },
           {
-            "description": "Zed restores  energy whenever a  Shadow lands a mimicked ability on the same target he does. This may only happen once per cast ability.",
+            "description": "Zed restores energy whenever a Shadow lands a mimicked ability on the same target he does. This may only happen once per cast ability.",
             "icon": null,
             "leveling": [
               {
@@ -333,7 +423,7 @@
             ]
           },
           {
-            "description": "Second Cast - Shadow Swap: While in range of each other, Zed and his  Shadow  blink to their respective locations, swapping places.",
+            "description": "Second Cast - Shadow Swap: While in range of each other, Zed and his Shadow blink to their respective locations, swapping places.",
             "icon": "Living Shadow 2.png",
             "leveling": []
           }
@@ -407,12 +497,12 @@
         "name": "Living Shadow",
         "effects": [
           {
-            "description": "First Cast: Zed's  Shadow dashes in the target direction, remaining in place for 5 seconds and being able to mimic  Razor Shuriken and  Shadow Slash while in range of each other.",
+            "description": "First Cast: Zed's Shadow dashes in the target direction, remaining in place for 5 seconds and being able to mimic Razor Shuriken and Shadow Slash while in range of each other.",
             "icon": "Living Shadow.png",
             "leveling": []
           },
           {
-            "description": "Zed restores  energy whenever a  Shadow lands a mimicked ability on the same target he does. This may only happen once per cast ability.",
+            "description": "Zed restores energy whenever a Shadow lands a mimicked ability on the same target he does. This may only happen once per cast ability.",
             "icon": null,
             "leveling": [
               {
@@ -439,7 +529,7 @@
             ]
           },
           {
-            "description": "Second Cast - Shadow Swap: While in range of each other, Zed and his  Shadow  blink to their respective locations, swapping places.",
+            "description": "Second Cast - Shadow Swap: While in range of each other, Zed and his Shadow blink to their respective locations, swapping places.",
             "icon": "Living Shadow 2.png",
             "leveling": []
           }
@@ -515,7 +605,7 @@
         "name": "Shadow Slash",
         "effects": [
           {
-            "description": "Active: Zed and his  Shadows slash, dealing  physical damage to surrounding enemies.",
+            "description": "Active: Zed and his Shadows slash, dealing physical damage to surrounding enemies.",
             "icon": "Shadow Slash.png",
             "leveling": [
               {
@@ -558,7 +648,7 @@
             ]
           },
           {
-            "description": "Enemies hit by a  Shadow's Shadow Slash are  slowed for 1.5 seconds. Enemies hit by multiple slashes take no additional damage but the slow's potency is increased by 50%.",
+            "description": "Enemies hit by a Shadow's Shadow Slash are slowed for 1.5 seconds. Enemies hit by multiple slashes take no additional damage but the slow's potency is increased by 50%.",
             "icon": null,
             "leveling": [
               {
@@ -606,7 +696,7 @@
             ]
           },
           {
-            "description": "Each enemy champion hit by Zed's slash reduces  Living Shadow's  cooldown by 2 seconds.",
+            "description": "Each enemy champion hit by Zed's slash reduces Living Shadow's cooldown by 2 seconds.",
             "icon": null,
             "leveling": []
           }
@@ -682,12 +772,12 @@
         "name": "Death Mark",
         "effects": [
           {
-            "description": "First Cast: Zed becomes  untargetable for 0.6 seconds after which he  dashes through the target enemy  champion over 0.4 seconds, marking them, becoming  ghosted for 3 seconds, and spawning a  Shadow at the cast location which lasts for 6.5 seconds. After 0.5 seconds of his reappearance, he can activate  Death Mark Shadow.",
+            "description": "First Cast: Zed becomes untargetable for 0.6 seconds after which he dashes through the target enemy champion over 0.4 seconds, marking them, becoming ghosted for 3 seconds, and spawning a Shadow at the cast location which lasts for 6.5 seconds. After 0.5 seconds of his reappearance, he can activate Death Mark Shadow.",
             "icon": "Death Mark.png",
             "leveling": []
           },
           {
-            "description": "For the next 3 seconds, the mark stores a percentage of all pre-mitigation  physical damage and  magical damage Zed and his  Shadows deal to the target, detonating at the end of the duration to deal  physical damage.",
+            "description": "For the next 3 seconds, the mark stores a percentage of all pre-mitigation physical damage and magical damage Zed and his Shadows deal to the target, detonating at the end of the duration to deal physical damage.",
             "icon": null,
             "leveling": [
               {
@@ -722,12 +812,12 @@
             ]
           },
           {
-            "description": "Second Cast - Death Mark Shadow: Regardless of distance between each other, Zed and the Death Mark  Shadow  blink to their respective locations, swapping places.",
+            "description": "Second Cast - Death Mark Shadow: Regardless of distance between each other, Zed and the Death Mark Shadow blink to their respective locations, swapping places.",
             "icon": "Death Mark 2.png",
             "leveling": []
           },
           {
-            "description": "If the target dies or is 1950 units away before the dash begins, Death Mark is canceled, goes on a 5 second  cooldown, and Zed reappears at the cast location.",
+            "description": "If the target dies or is 1950 units away before the dash begins, Death Mark is canceled, goes on a 5 second cooldown, and Zed reappears at the cast location.",
             "icon": null,
             "leveling": []
           }
@@ -778,12 +868,12 @@
         "name": "Death Mark",
         "effects": [
           {
-            "description": "First Cast: Zed becomes  untargetable for 0.6 seconds after which he  dashes through the target enemy  champion over 0.4 seconds, marking them, becoming  ghosted for 3 seconds, and spawning a  Shadow at the cast location which lasts for 6.5 seconds. After 0.5 seconds of his reappearance, he can activate  Death Mark Shadow.",
+            "description": "First Cast: Zed becomes untargetable for 0.6 seconds after which he dashes through the target enemy champion over 0.4 seconds, marking them, becoming ghosted for 3 seconds, and spawning a Shadow at the cast location which lasts for 6.5 seconds. After 0.5 seconds of his reappearance, he can activate Death Mark Shadow.",
             "icon": "Death Mark.png",
             "leveling": []
           },
           {
-            "description": "For the next 3 seconds, the mark stores a percentage of all pre-mitigation  physical damage and  magical damage Zed and his  Shadows deal to the target, detonating at the end of the duration to deal  physical damage.",
+            "description": "For the next 3 seconds, the mark stores a percentage of all pre-mitigation physical damage and magical damage Zed and his Shadows deal to the target, detonating at the end of the duration to deal physical damage.",
             "icon": null,
             "leveling": [
               {
@@ -818,12 +908,12 @@
             ]
           },
           {
-            "description": "Second Cast - Death Mark Shadow: Regardless of distance between each other, Zed and the Death Mark  Shadow  blink to their respective locations, swapping places.",
+            "description": "Second Cast - Death Mark Shadow: Regardless of distance between each other, Zed and the Death Mark Shadow blink to their respective locations, swapping places.",
             "icon": "Death Mark 2.png",
             "leveling": []
           },
           {
-            "description": "If the target dies or is 1950 units away before the dash begins, Death Mark is canceled, goes on a 5 second  cooldown, and Zed reappears at the cast location.",
+            "description": "If the target dies or is 1950 units away before the dash begins, Death Mark is canceled, goes on a 5 second cooldown, and Zed reappears at the cast location.",
             "icon": null,
             "leveling": []
           }

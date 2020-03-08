@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 125,
-    "pathingRadius": 50,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 50,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.8,
       "percent": 0.0,
       "perLevel": 2.125,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.694999992847442,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.694999992847442,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.12,
-    "aramDamageDealt": 0.85,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.95,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 0.95,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.12,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 0.85,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "MAGE",
@@ -110,17 +200,17 @@
         "name": "Sap Magic",
         "effects": [
           {
-            "description": "Innate: Periodically, Maokai's next basic attack, after a 0.25-seconds delay, against a non-structure  heals him for 5 \u2212 65 (based on level) (+ 6% \u2212 13% (based on level) maximum health).",
+            "description": "Innate: Periodically, Maokai's next basic attack, after a 0.25-seconds delay, against a non-structure heals him for 5 − 65 (based on level) (+ 6% − 13% (based on level) maximum health).",
             "icon": "Sap Magic.png",
             "leveling": []
           },
           {
-            "description": "Each time Maokai casts an ability or is struck by an enemy's ability, Sap Magic's  cooldown is reduced by 4 seconds.",
+            "description": "Each time Maokai casts an ability or is struck by an enemy's ability, Sap Magic's cooldown is reduced by 4 seconds.",
             "icon": "Sap Magic 2.png",
             "leveling": []
           },
           {
-            "description": "Sap Magic will not activate if Maokai is above 95% maximum  health.",
+            "description": "Sap Magic will not activate if Maokai is above 95% maximum health.",
             "icon": null,
             "leveling": []
           }
@@ -171,17 +261,17 @@
         "name": "Sap Magic",
         "effects": [
           {
-            "description": "Innate: Periodically, Maokai's next basic attack, after a 0.25-seconds delay, against a non-structure  heals him for 5 \u2212 65 (based on level) (+ 6% \u2212 13% (based on level) maximum health).",
+            "description": "Innate: Periodically, Maokai's next basic attack, after a 0.25-seconds delay, against a non-structure heals him for 5 − 65 (based on level) (+ 6% − 13% (based on level) maximum health).",
             "icon": "Sap Magic.png",
             "leveling": []
           },
           {
-            "description": "Each time Maokai casts an ability or is struck by an enemy's ability, Sap Magic's  cooldown is reduced by 4 seconds.",
+            "description": "Each time Maokai casts an ability or is struck by an enemy's ability, Sap Magic's cooldown is reduced by 4 seconds.",
             "icon": "Sap Magic 2.png",
             "leveling": []
           },
           {
-            "description": "Sap Magic will not activate if Maokai is above 95% maximum  health.",
+            "description": "Sap Magic will not activate if Maokai is above 95% maximum health.",
             "icon": null,
             "leveling": []
           }
@@ -234,7 +324,7 @@
         "name": "Bramble Smash",
         "effects": [
           {
-            "description": "Active: After a 0.35-seconds delay, Maokai releases an arcane shockwave that travels forth in a line, dealing  magic damage to all enemies it passes through and  slowing them by 99% for 0.25 seconds.",
+            "description": "Active: After a 0.35-seconds delay, Maokai releases an arcane shockwave that travels forth in a line, dealing magic damage to all enemies it passes through and slowing them by 99% for 0.25 seconds.",
             "icon": "Bramble Smash.png",
             "leveling": [
               {
@@ -277,7 +367,7 @@
             ]
           },
           {
-            "description": "Enemies near Maokai are also  knocked back up to 300 units based on their proximity to him.",
+            "description": "Enemies near Maokai are also knocked back up to 300 units based on their proximity to him.",
             "icon": null,
             "leveling": []
           }
@@ -353,7 +443,7 @@
         "name": "Twisted Advance",
         "effects": [
           {
-            "description": "Active: Maokai  dashes to the target enemy, becoming  untargetable for the duration, dealing magic damage on arrival and briefly  rooting them.",
+            "description": "Active: Maokai dashes to the target enemy, becoming untargetable for the duration, dealing magic damage on arrival and briefly rooting them.",
             "icon": "Twisted Advance.png",
             "leveling": [
               {
@@ -488,12 +578,12 @@
         "name": "Sapling Toss",
         "effects": [
           {
-            "description": "Active: Maokai flings a Sapling to the target location, remaining there for 30 seconds and granting  sight around itself.",
+            "description": "Active: Maokai flings a Sapling to the target location, remaining there for 30 seconds and granting sight around itself.",
             "icon": "Sapling Toss.png",
             "leveling": []
           },
           {
-            "description": "Saplings tether to nearby enemies, chasing them for up to 2.5 seconds, exploding upon impact or at the end of its duration, dealing magic damage to all nearby enemies upon detonation, capped at 300 against non-champions, and  slowing them by 35% for 2 seconds.",
+            "description": "Saplings tether to nearby enemies, chasing them for up to 2.5 seconds, exploding upon impact or at the end of its duration, dealing magic damage to all nearby enemies upon detonation, capped at 300 against non-champions, and slowing them by 35% for 2 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -536,7 +626,7 @@
             ]
           },
           {
-            "description": "Saplings placed in a  brush instead have 30 (+ 2.5% bonus health) duration and deal double damage over 2 seconds to all enemies hit, capped at 600 against non-champions.",
+            "description": "Saplings placed in a brush instead have 30 (+ 2.5% bonus health) duration and deal double damage over 2 seconds to all enemies hit, capped at 600 against non-champions.",
             "icon": null,
             "leveling": [
               {
@@ -655,7 +745,7 @@
             "leveling": []
           },
           {
-            "description": "Each thorny bramble deals magic damage and  roots for 0.8 \u2212  2.6 (based on distance traveled) seconds.",
+            "description": "Each thorny bramble deals magic damage and roots for 0.8 − 2.6 (based on distance traveled) seconds.",
             "icon": null,
             "leveling": [
               {

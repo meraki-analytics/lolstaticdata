@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 85,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 85,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.658,
       "percent": 0.0,
       "perLevel": 3.2,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.657999992370605,
-    "attackCastTime": 0.25,
-    "attackTotalTime": 1.51999998092651,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.657999992370605,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.25,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.51999998092651,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.15,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.15,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -109,17 +199,17 @@
         "name": "Trial by Fire",
         "effects": [
           {
-            "description": "Innate: Gangplank periodically empowers his next basic attack to burn the target, dealing 55 \u2212 225 (based on level) (+ 100% bonus AD)  bonus true damage over 2.5 seconds, ticking every 0.25 seconds.  Turrets receive 50% reduced damage.",
+            "description": "Innate: Gangplank periodically empowers his next basic attack to burn the target, dealing 55 − 225 (based on level) (+ 100% bonus AD) bonus true damage over 2.5 seconds, ticking every 0.25 seconds. Turrets receive 50% reduced damage.",
             "icon": "Trial by Fire.png",
             "leveling": []
           },
           {
-            "description": "If Gangplank successfully hits a target with Trial by Fire, he gains  30% bonus movement speed for 2 seconds. Destroying a  Powder Keg resets the  cooldown for Trial by Fire and grants its  bonus movement speed.",
+            "description": "If Gangplank successfully hits a target with Trial by Fire, he gains 30% bonus movement speed for 2 seconds. Destroying a Powder Keg resets the cooldown for Trial by Fire and grants its bonus movement speed.",
             "icon": "Trial by Fire 2.png",
             "leveling": []
           },
           {
-            "description": "Trial by Fire cannot be applied with  Parrrley or  Powder Keg.",
+            "description": "Trial by Fire cannot be applied with Parrrley or Powder Keg.",
             "icon": null,
             "leveling": []
           }
@@ -170,17 +260,17 @@
         "name": "Trial by Fire",
         "effects": [
           {
-            "description": "Innate: Gangplank periodically empowers his next basic attack to burn the target, dealing 55 \u2212 225 (based on level) (+ 100% bonus AD)  bonus true damage over 2.5 seconds, ticking every 0.25 seconds.  Turrets receive 50% reduced damage.",
+            "description": "Innate: Gangplank periodically empowers his next basic attack to burn the target, dealing 55 − 225 (based on level) (+ 100% bonus AD) bonus true damage over 2.5 seconds, ticking every 0.25 seconds. Turrets receive 50% reduced damage.",
             "icon": "Trial by Fire.png",
             "leveling": []
           },
           {
-            "description": "If Gangplank successfully hits a target with Trial by Fire, he gains  30% bonus movement speed for 2 seconds. Destroying a  Powder Keg resets the  cooldown for Trial by Fire and grants its  bonus movement speed.",
+            "description": "If Gangplank successfully hits a target with Trial by Fire, he gains 30% bonus movement speed for 2 seconds. Destroying a Powder Keg resets the cooldown for Trial by Fire and grants its bonus movement speed.",
             "icon": "Trial by Fire 2.png",
             "leveling": []
           },
           {
-            "description": "Trial by Fire cannot be applied with  Parrrley or  Powder Keg.",
+            "description": "Trial by Fire cannot be applied with Parrrley or Powder Keg.",
             "icon": null,
             "leveling": []
           }
@@ -233,7 +323,7 @@
         "name": "Parrrley",
         "effects": [
           {
-            "description": "Active: Gangplank shoots the target enemy with his pistol, dealing  physical damage and applying on-hit and on-attack effects.",
+            "description": "Active: Gangplank shoots the target enemy with his pistol, dealing physical damage and applying on-hit and on-attack effects.",
             "icon": "Parrrley.png",
             "leveling": [
               {
@@ -276,12 +366,12 @@
             ]
           },
           {
-            "description": "Parrrley can  critically strike for (100% +  25%) AD bonus physical damage.",
+            "description": "Parrrley can critically strike for (100% + 25%) AD bonus physical damage.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "If Parrrley kills the target, Gangplank plunders  gold and  Silver Serpents, the latter of which can be spent to upgrade  Cannon Barrage.",
+            "description": "If Parrrley kills the target, Gangplank plunders gold and Silver Serpents, the latter of which can be spent to upgrade Cannon Barrage.",
             "icon": "Silver Serpents.png",
             "leveling": [
               {
@@ -400,7 +490,7 @@
         "name": "Remove Scurvy",
         "effects": [
           {
-            "description": "Active: Gangplank consumes a large quantity of citrus fruit,  cleansing himself from all  crowd control and  healing himself.",
+            "description": "Active: Gangplank consumes a large quantity of citrus fruit, cleansing himself from all crowd control and healing himself.",
             "icon": "Remove Scurvy.png",
             "leveling": [
               {
@@ -545,7 +635,7 @@
             "leveling": []
           },
           {
-            "description": "An exploding keg deals the attack's damage to all nearby enemies, plus bonus physical damage against  champions, ignoring 40% of their armor, as well as  slowing them for 2 seconds. Enemies can only be damaged once per chain.",
+            "description": "An exploding keg deals the attack's damage to all nearby enemies, plus bonus physical damage against champions, ignoring 40% of their armor, as well as slowing them for 2 seconds. Enemies can only be damaged once per chain.",
             "icon": null,
             "leveling": [
               {
@@ -650,12 +740,12 @@
         "name": "Cannon Barrage",
         "effects": [
           {
-            "description": "Active: Gangplank signals his ship off-shore to fire upon the target area for 8 seconds, calling down 12 waves of cannonballs in clusters of 3 every 2 seconds, and  revealing it for the duration. Each wave deals  magic damage to all enemies within the area and  slows them by 30% for 0.5 seconds.",
+            "description": "Active: Gangplank signals his ship off-shore to fire upon the target area for 8 seconds, calling down 12 waves of cannonballs in clusters of 3 every 2 seconds, and revealing it for the duration. Each wave deals magic damage to all enemies within the area and slows them by 30% for 0.5 seconds.",
             "icon": "Cannon Barrage.png",
             "leveling": []
           },
           {
-            "description": "Gangplank can purchase upgrades for his ship in the store at the cost of 500  Silver Serpents each, which improve Cannon Barrage:",
+            "description": "Gangplank can purchase upgrades for his ship in the store at the cost of 500 Silver Serpents each, which improve Cannon Barrage:",
             "icon": null,
             "leveling": [
               {
@@ -719,7 +809,7 @@
             ]
           },
           {
-            "description": "Death's Daughter: An initial cannonball lands in the center of the barrage, dealing a cluster's worth of true damage to all enemies it hits and  slowing them by 60% for 1.5 seconds.",
+            "description": "Death's Daughter: An initial cannonball lands in the center of the barrage, dealing a cluster's worth of true damage to all enemies it hits and slowing them by 60% for 1.5 seconds.",
             "icon": "Death's Daughter item.png",
             "leveling": [
               {
@@ -812,7 +902,7 @@
             ]
           },
           {
-            "description": "Raise Morale: The barrage grants allies  30% bonus movement speed while they are inside the area, persisting for 2 seconds after leaving it.",
+            "description": "Raise Morale: The barrage grants allies 30% bonus movement speed while they are inside the area, persisting for 2 seconds after leaving it.",
             "icon": "Raise Morale item.png",
             "leveling": []
           },

@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 800,
-    "selectionRadius": 140,
-    "pathingRadius": 40,
-    "gameplayRadius": 70,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 800,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 140,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 40,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 70,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.644,
       "percent": 0.0,
       "perLevel": 3.4,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.643999993801116,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0700000002980232,
+    "attackSpeedRatio": {
+      "flat": 0.643999993801116,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0700000002980232,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 475,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.9,
-    "urfDamageDealt": 1.1,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "CATCHER",
@@ -110,12 +200,12 @@
         "name": "Friend of the Forest",
         "effects": [
           {
-            "description": "Innate: Ivern cannot attack or damage non-epic monsters. Instead, targeting a jungle camp initiates a 2.5 seconds channel that, upon completion, places the monsters within a grove. Placing a grove costs  131.63 \u2212 121 (based on level) health and  148.5 \u2212 110.25 (based on level) mana, and cannot be cast if Ivern lacks the resources. The channel cannot be cancelled in the first 0.15 seconds and in the last 0.5 seconds.",
+            "description": "Innate: Ivern cannot attack or damage non-epic monsters. Instead, targeting a jungle camp initiates a 2.5 seconds channel that, upon completion, places the monsters within a grove. Placing a grove costs 131.63 − 121 (based on level) health and 148.5 − 110.25 (based on level) mana, and cannot be cast if Ivern lacks the resources. The channel cannot be cancelled in the first 0.15 seconds and in the last 0.5 seconds.",
             "icon": "Friend of the Forest.png",
             "leveling": []
           },
           {
-            "description": "The grove matures over 40 \u2212 1 (based on level) seconds. When fully matured, Ivern can interact with the camp again to free the monsters after 0.5 seconds, sending them away while receiving their  full gold and  full experience bounties.  Smiting a large monster within a grove will instantly free the camp's monsters, regardless of its maturity or the monsters' current health.",
+            "description": "The grove matures over 40 − 1 (based on level) seconds. When fully matured, Ivern can interact with the camp again to free the monsters after 0.5 seconds, sending them away while receiving their full gold and full experience bounties. Smiting a large monster within a grove will instantly free the camp's monsters, regardless of its maturity or the monsters' current health.",
             "icon": null,
             "leveling": []
           },
@@ -125,7 +215,7 @@
             "leveling": []
           },
           {
-            "description": "Starting at level 5, freeing the  Red Brambleback or the  Blue Sentinel leaves behind a sapling for 1 minute that can be picked up by an allied champion to gain the camp's buff, consuming it in the process. If at least one allied champion is nearby, Ivern can pick up the sapling to transfer it to the nearest one in range. If an ally kills either monster, they also leave behind a sapling that only Ivern can consume.",
+            "description": "Starting at level 5, freeing the Red Brambleback or the Blue Sentinel leaves behind a sapling for 1 minute that can be picked up by an allied champion to gain the camp's buff, consuming it in the process. If at least one allied champion is nearby, Ivern can pick up the sapling to transfer it to the nearest one in range. If an ally kills either monster, they also leave behind a sapling that only Ivern can consume.",
             "icon": null,
             "leveling": []
           }
@@ -141,7 +231,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Freeing a  Krugs camp will only give the  gold and  experience of the present Krugs, i.e the  Ancient Krug and a Medium  Krug, for a total of  70 \u2212 87.5 (based on monster's level) experience instead of 160 \u2212 200 (based on monster's level), and  75 gold instead of  125.\n Friend of the Forest can be used while Ivern or the camp is in combat and, once the grove is placed,  Smite can be used to instantly claim the camp. Interrupting the channel or killing Ivern is the only way to contest jungle camps, short of killing the camp during the channel time.\n  If the large monster in a camp is still alive, Ivern must gain vision of it to use Friend of the Forest on that camp.\n If the large monster in a camp is still alive, Ivern will walk towards it to use Friend of the Forest. Attempting to use Friend of the Forest on the camp\u2019s smaller monster will not change the total distance that Ivern walks.\n Friend of the Forest will leave Ivern at 1 current health if cast with exactly the required amount. Friend of the Forest cannot be cast with less, unlike other abilities with health costs.\n Non-epic monsters turned hostile by an allied or an enemy champion will still attack Ivern if he is the closest target (he is not immune to monster damage) yet he still cannot return fire if so (despite not being the one turning the monsters hostile)\n  Daisy also cannot attack non-epic monsters.\n Monsters are not hurt nor do they become hostile by Ivern when he is equipped with an item that has the Immolate effect.\n In Nexus Blitz, Friend of the Forest will not affect monsters. Ivern becomes hostile with them.",
+        "notes": "Freeing a  Krugs camp will only give the  gold and  experience of the present Krugs, i.e the  Ancient Krug and a Medium  Krug, for a total of  70 − 87.5 (based on monster's level) experience instead of 160 − 200 (based on monster's level), and  75 gold instead of  125.\n Friend of the Forest can be used while Ivern or the camp is in combat and, once the grove is placed,  Smite can be used to instantly claim the camp. Interrupting the channel or killing Ivern is the only way to contest jungle camps, short of killing the camp during the channel time.\n  If the large monster in a camp is still alive, Ivern must gain vision of it to use Friend of the Forest on that camp.\n If the large monster in a camp is still alive, Ivern will walk towards it to use Friend of the Forest. Attempting to use Friend of the Forest on the camp’s smaller monster will not change the total distance that Ivern walks.\n Friend of the Forest will leave Ivern at 1 current health if cast with exactly the required amount. Friend of the Forest cannot be cast with less, unlike other abilities with health costs.\n Non-epic monsters turned hostile by an allied or an enemy champion will still attack Ivern if he is the closest target (he is not immune to monster damage) yet he still cannot return fire if so (despite not being the one turning the monsters hostile)\n  Daisy also cannot attack non-epic monsters.\n Monsters are not hurt nor do they become hostile by Ivern when he is equipped with an item that has the Immolate effect.\n In Nexus Blitz, Friend of the Forest will not affect monsters. Ivern becomes hostile with them.",
         "blurb": "Ivern cannot attack or be attacked by non-epic monsters. Ivern can create magical groves on jungle camps which grow over time. When the grove is fully grown, Ivern may free the monsters to receive gold and experience. After level 5 Ivern can share jungle buffs with allies.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -162,7 +252,7 @@
         "name": "Rootcaller",
         "effects": [
           {
-            "description": "Active: Ivern throws a vine in the target direction, dealing  magic damage to the first enemy hit and  rooting them for a short duration.",
+            "description": "Active: Ivern throws a vine in the target direction, dealing magic damage to the first enemy hit and rooting them for a short duration.",
             "icon": "Rootcaller.png",
             "leveling": [
               {
@@ -226,7 +316,7 @@
             ]
           },
           {
-            "description": "Ivern and his allies can target enemies  rooted by Rootcaller to  dash to them, with allies stopping at  their attack range and Ivern stopping at  125 range from the target.",
+            "description": "Ivern and his allies can target enemies rooted by Rootcaller to dash to them, with allies stopping at their attack range and Ivern stopping at 125 range from the target.",
             "icon": null,
             "leveling": []
           }
@@ -302,7 +392,7 @@
         "name": "Brushmaker",
         "effects": [
           {
-            "description": "Passive: While in  brush, Ivern's basic attacks deal bonus magic damage. This bonus persists for 3 seconds after leaving brush.",
+            "description": "Passive: While in brush, Ivern's basic attacks deal bonus magic damage. This bonus persists for 3 seconds after leaving brush.",
             "icon": "Brushmaker.png",
             "leveling": [
               {
@@ -350,7 +440,7 @@
             "leveling": []
           },
           {
-            "description": "Active: Ivern grows a patch of brush at the target location for 30 seconds,  revealing the area within and around it for 3 seconds. Brushmaker spawns more brush if used near terrain or other brush.",
+            "description": "Active: Ivern grows a patch of brush at the target location for 30 seconds, revealing the area within and around it for 3 seconds. Brushmaker spawns more brush if used near terrain or other brush.",
             "icon": null,
             "leveling": []
           }
@@ -432,7 +522,7 @@
         "name": "Triggerseed",
         "effects": [
           {
-            "description": "Active: Ivern gifts a Triggerseed to the target allied champion, himself or  Daisy,  shielding them for 2 seconds.",
+            "description": "Active: Ivern gifts a Triggerseed to the target allied champion, himself or Daisy, shielding them for 2 seconds.",
             "icon": "Triggerseed.png",
             "leveling": [
               {
@@ -475,7 +565,7 @@
             ]
           },
           {
-            "description": "At the end of its duration, Triggerseed bursts, dealing magic damage to all nearby enemies and  slowing them for 2 seconds.",
+            "description": "At the end of its duration, Triggerseed bursts, dealing magic damage to all nearby enemies and slowing them for 2 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -610,12 +700,12 @@
         "name": "Daisy!",
         "effects": [
           {
-            "description": "Active: Ivern summons his sentinel friend  Daisy at his side, who remains on the field for 60 seconds as a controllable  pet.",
+            "description": "Active: Ivern summons his sentinel friend Daisy at his side, who remains on the field for 60 seconds as a controllable pet.",
             "icon": "Daisy!.png",
             "leveling": []
           },
           {
-            "description": "Recast: Ivern commands Daisy! to move to the target location. If cast on Ivern,  Daisy will follow him.",
+            "description": "Recast: Ivern commands Daisy! to move to the target location. If cast on Ivern, Daisy will follow him.",
             "icon": "Daisy, wait!.png",
             "leveling": []
           }
@@ -681,12 +771,12 @@
         "name": "Daisy!",
         "effects": [
           {
-            "description": "Active: Ivern summons his sentinel friend  Daisy at his side, who remains on the field for 60 seconds as a controllable  pet.",
+            "description": "Active: Ivern summons his sentinel friend Daisy at his side, who remains on the field for 60 seconds as a controllable pet.",
             "icon": "Daisy!.png",
             "leveling": []
           },
           {
-            "description": "Recast: Ivern commands Daisy! to move to the target location. If cast on Ivern,  Daisy will follow him.",
+            "description": "Recast: Ivern commands Daisy! to move to the target location. If cast on Ivern, Daisy will follow him.",
             "icon": "Daisy, wait!.png",
             "leveling": []
           }

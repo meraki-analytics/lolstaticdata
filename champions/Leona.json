@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 75,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 75,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2.9,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0708333328366279,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0708333328366279,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.9,
-    "urfDamageDealt": 1.05,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "SUPPORT",
@@ -115,7 +205,7 @@
             "leveling": []
           },
           {
-            "description": "Any damage dealt by allies (other than herself) consumes Sunlight, dealing  25 \u2212 144 (based on level) bonus magic damage.",
+            "description": "Any damage dealt by allies (other than herself) consumes Sunlight, dealing 25 − 144 (based on level) bonus magic damage.",
             "icon": null,
             "leveling": []
           }
@@ -152,7 +242,7 @@
         "name": "Shield of Daybreak",
         "effects": [
           {
-            "description": "Active: Leona's next basic attack gains  50 bonus range, deals bonus magic damage and  stuns her target for 1 second.",
+            "description": "Active: Leona's next basic attack gains 50 bonus range, deals bonus magic damage and stuns her target for 1 second.",
             "icon": "Shield of Daybreak.png",
             "leveling": [
               {
@@ -271,7 +361,7 @@
         "name": "Eclipse",
         "effects": [
           {
-            "description": "Active: For 3 seconds, Leona takes reduced pre-mitigation damage from each tick of damage, up to a maximum of 50% reduction. Leona also gains  bonus armor and  bonus magic resistance.",
+            "description": "Active: For 3 seconds, Leona takes reduced pre-mitigation damage from each tick of damage, up to a maximum of 50% reduction. Leona also gains bonus armor and bonus magic resistance.",
             "icon": "Eclipse.png",
             "leveling": [
               {
@@ -529,7 +619,7 @@
             ]
           },
           {
-            "description": "If she damages an enemy champion, she will  dash to the last one struck and  root them for 0.5 seconds.",
+            "description": "If she damages an enemy champion, she will dash to the last one struck and root them for 0.5 seconds.",
             "icon": null,
             "leveling": []
           },
@@ -610,7 +700,7 @@
         "name": "Solar Flare",
         "effects": [
           {
-            "description": "Active: Leona calls down a beam of solar energy to the target location, dealing magic damage to all enemies it hits and  slowing them by 80% for 1.5 seconds.",
+            "description": "Active: Leona calls down a beam of solar energy to the target location, dealing magic damage to all enemies it hits and slowing them by 80% for 1.5 seconds.",
             "icon": "Solar Flare.png",
             "leveling": [
               {
@@ -645,7 +735,7 @@
             ]
           },
           {
-            "description": "Enemies hit by the flare's center are instead  stunned for the same duration.",
+            "description": "Enemies hit by the flare's center are instead stunned for the same duration.",
             "icon": null,
             "leveling": []
           }

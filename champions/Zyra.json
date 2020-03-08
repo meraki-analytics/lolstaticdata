@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 575,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 575,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2.11,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.154166668653488,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.154166668653488,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 575,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.06,
-    "aramDamageDealt": 0.94,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.06,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 0.94,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "CATCHER",
@@ -110,7 +200,7 @@
         "name": "Garden of Thorns",
         "effects": [
           {
-            "description": "Innate: Zyra periodically spawns one or two Seeds nearby that last for 30 seconds, briefly granting  sight over the surrounding area.",
+            "description": "Innate: Zyra periodically spawns one or two Seeds nearby that last for 30 seconds, briefly granting sight over the surrounding area.",
             "icon": "Garden of Thorns.png",
             "leveling": []
           },
@@ -152,7 +242,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Zyra tries to plant Seeds in brush and not on top of walls.\n Zyra tries not to plant Seeds too close together and at different angles.\n Zyra does not plant any Seeds if she is concealed within a brush (unless there is an enemy ward in it, in which case it takes her a little longer to plant the Seed) or when there is no room for additional ones.\n PENDING FOR TEST: Zyra tries to plant Seeds close to an enemy near her.\n PENDING FOR TEST: Zyra tries to plant Seeds under enemy structures only if she is in basic attack range of them.\n PENDING FOR TEST: Zyra tries to plant Seeds on the other side of the wall she is facing and/or standing right next to.\n PENDING FOR TEST: Zyra tries to plant Seeds in the direction she is facing and/or moving.\n PENDING FOR TEST: Zyra tries to plant Seeds near jungle path entrances.\n PENDING FOR TEST: Zyra tries to plant Seeds behind herself when she is walking through the river and there are no jungle path entrances near her.\n PENDING FOR TEST: Zyra tries to plant SeedsSeeds between herself and the enemy champion she has vision of (or is heading towards her) in a 45\u00b0 angle to the left or to the right depending on where on lane she is standing.\n PENDING FOR TEST: Zyra tries to plant Seeds against the inner walls of epic monster pits ( Dragon,  Rift Herald,  Baron Nashor)",
+        "notes": "Zyra tries to plant Seeds in brush and not on top of walls.\n Zyra tries not to plant Seeds too close together and at different angles.\n Zyra does not plant any Seeds if she is concealed within a brush (unless there is an enemy ward in it, in which case it takes her a little longer to plant the Seed) or when there is no room for additional ones.\n PENDING FOR TEST: Zyra tries to plant Seeds close to an enemy near her.\n PENDING FOR TEST: Zyra tries to plant Seeds under enemy structures only if she is in basic attack range of them.\n PENDING FOR TEST: Zyra tries to plant Seeds on the other side of the wall she is facing and/or standing right next to.\n PENDING FOR TEST: Zyra tries to plant Seeds in the direction she is facing and/or moving.\n PENDING FOR TEST: Zyra tries to plant Seeds near jungle path entrances.\n PENDING FOR TEST: Zyra tries to plant Seeds behind herself when she is walking through the river and there are no jungle path entrances near her.\n PENDING FOR TEST: Zyra tries to plant SeedsSeeds between herself and the enemy champion she has vision of (or is heading towards her) in a 45° angle to the left or to the right depending on where on lane she is standing.\n PENDING FOR TEST: Zyra tries to plant Seeds against the inner walls of epic monster pits ( Dragon,  Rift Herald,  Baron Nashor)",
         "blurb": "Seeds spawn around Zyra periodically, becoming faster with level and lasting 30 seconds. If an enemy Champion steps on a seed, it dies. Zyra can cast spells near seeds to grow plants. Extra plants striking the same target deal reduced damage.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -173,7 +263,7 @@
         "name": "Deadly Spines",
         "effects": [
           {
-            "description": "Active: Zyra sprouts thorny spines at the target location that appear after a 0.625-seconds delay, dealing  magic damage to all enemies they hit.",
+            "description": "Active: Zyra sprouts thorny spines at the target location that appear after a 0.625-seconds delay, dealing magic damage to all enemies they hit.",
             "icon": "Deadly Spines.png",
             "leveling": [
               {
@@ -216,7 +306,7 @@
             ]
           },
           {
-            "description": "If Deadly Spines hits a Seed, it sprouts into a  Thorn Spitter, which remains on the battlefield for 8 seconds.",
+            "description": "If Deadly Spines hits a Seed, it sprouts into a Thorn Spitter, which remains on the battlefield for 8 seconds.",
             "icon": null,
             "leveling": []
           }
@@ -292,17 +382,17 @@
         "name": "Rampant Growth",
         "effects": [
           {
-            "description": "Passive: Zyra periodically stores a Seed, up to 2. Unit kills grant 20% charge toward a Seed, increased to 100% for large units killed and enemy  champion  takedowns.",
+            "description": "Passive: Zyra periodically stores a Seed, up to 2. Unit kills grant 20% charge toward a Seed, increased to 100% for large units killed and enemy champion takedowns.",
             "icon": "Rampant Growth.png",
             "leveling": []
           },
           {
-            "description": "Active: Zyra plants a Seed at the target location, which lasts for 60 seconds and briefly grants  sight of the spot Zyra planted it in.",
+            "description": "Active: Zyra plants a Seed at the target location, which lasts for 60 seconds and briefly grants sight of the spot Zyra planted it in.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "After 1.5 seconds, enemy champions can destroy Seeds by stepping on them, but doing so  reveals them for 2 seconds.",
+            "description": "After 1.5 seconds, enemy champions can destroy Seeds by stepping on them, but doing so reveals them for 2 seconds.",
             "icon": null,
             "leveling": []
           }
@@ -364,7 +454,7 @@
         "name": "Grasping Roots",
         "effects": [
           {
-            "description": "Active: Zyra sends a surge of vines in the target direction, dealing magic damage to all enemies hit and  rooting them for a short duration.",
+            "description": "Active: Zyra sends a surge of vines in the target direction, dealing magic damage to all enemies hit and rooting them for a short duration.",
             "icon": "Grasping Roots.png",
             "leveling": [
               {
@@ -428,7 +518,7 @@
             ]
           },
           {
-            "description": "If Grasping Roots hits a Seed, it sprouts into a  Vine Lasher, which remains on the battlefield for 8 seconds.",
+            "description": "If Grasping Roots hits a Seed, it sprouts into a Vine Lasher, which remains on the battlefield for 8 seconds.",
             "icon": null,
             "leveling": []
           }
@@ -539,12 +629,12 @@
             ]
           },
           {
-            "description": "After 2 seconds, the vines snap upward,  knocking up all enemies caught in the thicket for 1 second.",
+            "description": "After 2 seconds, the vines snap upward, knocking up all enemies caught in the thicket for 1 second.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Plants hit by the thicket are enraged, restoring  50% of their current health, increasing their  maximum health by 50%, and resetting their duration for the full duration of the thicket, for a maximum bonus duration of 2 seconds. Additionally they attack in a flurry, launching two shots per attack, dealing [ 150% damage per flurry ][ 75% damage per shot ].",
+            "description": "Plants hit by the thicket are enraged, restoring 50% of their current health, increasing their maximum health by 50%, and resetting their duration for the full duration of the thicket, for a maximum bonus duration of 2 seconds. Additionally they attack in a flurry, launching two shots per attack, dealing [ 150% damage per flurry ][ 75% damage per shot ].",
             "icon": null,
             "leveling": []
           }

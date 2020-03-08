@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 900,
-    "selectionRadius": 100,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 900,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.694,
       "percent": 0.0,
       "perLevel": 4,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.694000005722045,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": 0.0599999986588954,
+    "attackSpeedRatio": {
+      "flat": 0.694000005722045,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0.0599999986588954,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 525,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.05,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.1,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "MARKSMAN"
@@ -108,12 +198,12 @@
         "name": "Martial Poise",
         "effects": [
           {
-            "description": "Innate: Kalista's basic attacks have unique properties:\n Deals 90% AD physical damage.\n  Miss if she loses  sight of her target before they hit.\n Cannot cancel their wind-up, but can select a new target within range.\n Makes her  dash in the target direction after issuing a movement command during a wind-up or right after casting  Pierce.\n The distance scales with her boots tier. The wind-up while dashing is only reduced by 0.66% per  1% bonus attack speed.",
+            "description": "Innate: Kalista's basic attacks have unique properties:\n Deals 90% AD physical damage.\n Miss if she loses sight of her target before they hit.\n Cannot cancel their wind-up, but can select a new target within range.\n Makes her dash in the target direction after issuing a movement command during a wind-up or right after casting Pierce.\n The distance scales with her boots tier. The wind-up while dashing is only reduced by 0.66% per 1% bonus attack speed.",
             "icon": "Martial Poise.png",
             "leveling": []
           },
           {
-            "description": "Innate - Oathsworn Bond: Kalista begins the game with  Black Spear, a unique item.",
+            "description": "Innate - Oathsworn Bond: Kalista begins the game with Black Spear, a unique item.",
             "icon": null,
             "leveling": []
           }
@@ -150,7 +240,7 @@
         "name": "Pierce",
         "effects": [
           {
-            "description": "Active: Kalista hurls a fast and narrow spear, dealing  physical damage to the first enemy hit.",
+            "description": "Active: Kalista hurls a fast and narrow spear, dealing physical damage to the first enemy hit.",
             "icon": "Pierce.png",
             "leveling": [
               {
@@ -193,7 +283,7 @@
             ]
           },
           {
-            "description": "If Pierce kills its target, the spear continues onward, transferring all of the dead victim's  Rend stacks to the next enemy it hits. This can repeat indefinitely until the spear reaches its maximum distance.",
+            "description": "If Pierce kills its target, the spear continues onward, transferring all of the dead victim's Rend stacks to the next enemy it hits. This can repeat indefinitely until the spear reaches its maximum distance.",
             "icon": null,
             "leveling": []
           }
@@ -269,12 +359,12 @@
         "name": "Sentinel",
         "effects": [
           {
-            "description": "Passive - Soul-Marked: While Kalista and her  Oathsworn are linked, their basic attacks and  Pierce apply a Soul-Mark to their targets.",
+            "description": "Passive - Soul-Marked: While Kalista and her Oathsworn are linked, their basic attacks and Pierce apply a Soul-Mark to their targets.",
             "icon": "Oathsworn.png",
             "leveling": []
           },
           {
-            "description": "If both Soul-Marks are applied within 4 seconds, the target takes  bonus magic damage (capped against non-champions), and cannot be Soul-Marked for 10 seconds. Soul-Mark deals 75 minimum damage to  minions and executes them if they're below  125 health.",
+            "description": "If both Soul-Marks are applied within 4 seconds, the target takes bonus magic damage (capped against non-champions), and cannot be Soul-Marked for 10 seconds. Soul-Mark deals 75 minimum damage to minions and executes them if they're below 125 health.",
             "icon": "Soul-Mark.png",
             "leveling": [
               {
@@ -327,7 +417,7 @@
             "leveling": []
           },
           {
-            "description": "Active: Kalista summons a Sentinel to  patrol along the target area.",
+            "description": "Active: Kalista summons a Sentinel to patrol along the target area.",
             "icon": "Sentinel.png",
             "leveling": []
           }
@@ -409,12 +499,12 @@
         "name": "Rend",
         "effects": [
           {
-            "description": "Passive: Kalista's basic attacks and  Pierce each lodge a spear in the target for 4 seconds, stacking up to 254 times.",
+            "description": "Passive: Kalista's basic attacks and Pierce each lodge a spear in the target for 4 seconds, stacking up to 254 times.",
             "icon": "Rend.png",
             "leveling": []
           },
           {
-            "description": "Active: Kalista rips all lodged spears from nearby enemies, dealing physical damage and  slowing them for 2 seconds. The damage is increased with additional spears, but with reduced efficiency. Rend deals 50% reduced damage against epic  monsters.",
+            "description": "Active: Kalista rips all lodged spears from nearby enemies, dealing physical damage and slowing them for 2 seconds. The damage is increased with additional spears, but with reduced efficiency. Rend deals 50% reduced damage against epic monsters.",
             "icon": null,
             "leveling": [
               {
@@ -515,7 +605,7 @@
             ]
           },
           {
-            "description": "Rend resets its  cooldown and refunds  mana if it kills at least one target.",
+            "description": "Rend resets its cooldown and refunds mana if it kills at least one target.",
             "icon": null,
             "leveling": [
               {
@@ -618,12 +708,12 @@
         "name": "Fate's Call",
         "effects": [
           {
-            "description": "Active: Kalista invokes her  link, retrieving her Oathsworn and carrying them in  stasis for 4 seconds.",
+            "description": "Active: Kalista invokes her link, retrieving her Oathsworn and carrying them in stasis for 4 seconds.",
             "icon": "Fate's Call.png",
             "leveling": []
           },
           {
-            "description": "Kalista's Oathsworn can emerge to a target location, stopping at the first enemy hit,  knocking up all surrounding enemies and landing themselves at their basic attack range relative to the target hit.",
+            "description": "Kalista's Oathsworn can emerge to a target location, stopping at the first enemy hit, knocking up all surrounding enemies and landing themselves at their basic attack range relative to the target hit.",
             "icon": null,
             "leveling": [
               {

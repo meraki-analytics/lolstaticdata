@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 130,
-    "pathingRadius": 50,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 130,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 50,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2.1,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.11999999731779,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.11999999731779,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "DIVER",
@@ -110,22 +200,22 @@
         "name": "Crystal Spires",
         "effects": [
           {
-            "description": "Crystal Spires: Skarner's presence causes 6 Crystal Spires to appear at set points on the battlefield:\n One beside  Baron Nashor's pit\n One beside  Dragon's pit\n One nearby each buff  monster",
+            "description": "Crystal Spires: Skarner's presence causes 6 Crystal Spires to appear at set points on the battlefield:\n One beside Baron Nashor's pit\n One beside Dragon's pit\n One nearby each buff monster",
             "icon": "Crystal Spires.png",
             "leveling": []
           },
           {
-            "description": "Crystal Spires can be captured by  champions after  minions have spawned by standing near them for 2 seconds. Once captured, Crystal Spires are owned until contested and the defending team can stand on the spire to prevent the opposing team from capturing it.",
+            "description": "Crystal Spires can be captured by champions after minions have spawned by standing near them for 2 seconds. Once captured, Crystal Spires are owned until contested and the defending team can stand on the spire to prevent the opposing team from capturing it.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Crystal Spires grant  30 gold split among its captors upon being captured, or  15 gold if only a single champion participated in its capture, and provide  sight around them for 1.5 seconds upon being captured, becoming unable to be recaptured for 15 seconds.",
+            "description": "Crystal Spires grant 30 gold split among its captors upon being captured, or 15 gold if only a single champion participated in its capture, and provide sight around them for 1.5 seconds upon being captured, becoming unable to be recaptured for 15 seconds.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Crystal Charge: While within range of a Crystal Spire controlled by his team, or while an enemy is  stunned with  Fracture or  suppressed with  Impale, Skarner gains 70 \u2212 120 (based on level)  bonus movement speed, 43% \u2212 160% (based on level)  bonus attack speed and restores  2% maximum mana every second.",
+            "description": "Crystal Charge: While within range of a Crystal Spire controlled by his team, or while an enemy is stunned with Fracture or suppressed with Impale, Skarner gains 70 − 120 (based on level) bonus movement speed, 43% − 160% (based on level) bonus attack speed and restores 2% maximum mana every second.",
             "icon": null,
             "leveling": []
           },
@@ -167,7 +257,7 @@
         "name": "Crystal Slash",
         "effects": [
           {
-            "description": "Active: Skarner deals  physical damage to all enemies in range.",
+            "description": "Active: Skarner deals physical damage to all enemies in range.",
             "icon": "Crystal Slash.png",
             "leveling": [
               {
@@ -194,7 +284,7 @@
             ]
           },
           {
-            "description": "If an enemy is hit, subsequent uses of Crystal Slash within 4 seconds deal  bonus magic damage.",
+            "description": "If an enemy is hit, subsequent uses of Crystal Slash within 4 seconds deal bonus magic damage.",
             "icon": null,
             "leveling": [
               {
@@ -274,7 +364,7 @@
             ]
           },
           {
-            "description": "Basic attacks against non-structures reduce Crystal Slash's  cooldown by 0.25 seconds, quadrupled to 1 against enemy champions.",
+            "description": "Basic attacks against non-structures reduce Crystal Slash's cooldown by 0.25 seconds, quadrupled to 1 against enemy champions.",
             "icon": null,
             "leveling": []
           }
@@ -350,7 +440,7 @@
         "name": "Crystalline Exoskeleton",
         "effects": [
           {
-            "description": "Active: Skarner crystallizes himself, gaining a  shield for up to 6 seconds and initial  bonus movement speed that accelerates by 100% over 3 seconds while the shield holds.",
+            "description": "Active: Skarner crystallizes himself, gaining a shield for up to 6 seconds and initial bonus movement speed that accelerates by 100% over 3 seconds while the shield holds.",
             "icon": "Crystalline Exoskeleton.png",
             "leveling": [
               {
@@ -506,7 +596,7 @@
         "name": "Fracture",
         "effects": [
           {
-            "description": "Active: Skarner launches a blast of crystalline energy in the target direction, dealing magic damage to all enemies struck and  slowing them for 2.5 seconds, as well as marking them with  Crystal Venom for 5 seconds. The blast's speed slows down each time it passes through an enemy unit.",
+            "description": "Active: Skarner launches a blast of crystalline energy in the target direction, dealing magic damage to all enemies struck and slowing them for 2.5 seconds, as well as marking them with Crystal Venom for 5 seconds. The blast's speed slows down each time it passes through an enemy unit.",
             "icon": "Fracture.png",
             "leveling": [
               {
@@ -570,7 +660,7 @@
             ]
           },
           {
-            "description": "Skarner's next basic attack against a target marked with  Crystal Venom consumes the mark to deal them bonus physical damage and  stun them for 1.25 seconds.",
+            "description": "Skarner's next basic attack against a target marked with Crystal Venom consumes the mark to deal them bonus physical damage and stun them for 1.25 seconds.",
             "icon": "Crystal Venom.png",
             "leveling": [
               {
@@ -597,7 +687,7 @@
             ]
           },
           {
-            "description": "Every time he  stuns a target with Fracture or  suppresses an enemy with  Impale, Fracture's  cooldown is reduced by the corresponding duration of the disable.",
+            "description": "Every time he stuns a target with Fracture or suppresses an enemy with Impale, Fracture's cooldown is reduced by the corresponding duration of the disable.",
             "icon": null,
             "leveling": []
           }
@@ -671,7 +761,7 @@
         "name": "Fracture",
         "effects": [
           {
-            "description": "Active: Skarner launches a blast of crystalline energy in the target direction, dealing magic damage to all enemies struck and  slowing them for 2.5 seconds, as well as marking them with  Crystal Venom for 5 seconds. The blast's speed slows down each time it passes through an enemy unit.",
+            "description": "Active: Skarner launches a blast of crystalline energy in the target direction, dealing magic damage to all enemies struck and slowing them for 2.5 seconds, as well as marking them with Crystal Venom for 5 seconds. The blast's speed slows down each time it passes through an enemy unit.",
             "icon": "Fracture.png",
             "leveling": [
               {
@@ -735,7 +825,7 @@
             ]
           },
           {
-            "description": "Skarner's next basic attack against a target marked with  Crystal Venom consumes the mark to deal them bonus physical damage and  stun them for 1.25 seconds.",
+            "description": "Skarner's next basic attack against a target marked with Crystal Venom consumes the mark to deal them bonus physical damage and stun them for 1.25 seconds.",
             "icon": "Crystal Venom.png",
             "leveling": [
               {
@@ -762,7 +852,7 @@
             ]
           },
           {
-            "description": "Every time he  stuns a target with Fracture or  suppresses an enemy with  Impale, Fracture's  cooldown is reduced by the corresponding duration of the disable.",
+            "description": "Every time he stuns a target with Fracture or suppresses an enemy with Impale, Fracture's cooldown is reduced by the corresponding duration of the disable.",
             "icon": null,
             "leveling": []
           }
@@ -838,7 +928,7 @@
         "name": "Impale",
         "effects": [
           {
-            "description": "Active: Skarner  roots the target enemy for 0.25 seconds, during which he rears his stinger and brings it down, dealing them magic damage,  60% AD physical damage and being able to  drag them for 1.75 seconds. At the end of the duration, the target takes the same damage again.",
+            "description": "Active: Skarner roots the target enemy for 0.25 seconds, during which he rears his stinger and brings it down, dealing them magic damage, 60% AD physical damage and being able to drag them for 1.75 seconds. At the end of the duration, the target takes the same damage again.",
             "icon": "Impale.png",
             "leveling": [
               {

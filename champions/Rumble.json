@@ -26,6 +26,12 @@
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
+    "manaRegen": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
     "armor": {
       "flat": 31,
       "percent": 0.0,
@@ -50,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 165,
-    "pathingRadius": 35,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 165,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.644,
       "percent": 0.0,
       "perLevel": 1.85,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.643999993801116,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0708333328366279,
+    "attackSpeedRatio": {
+      "flat": 0.643999993801116,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0708333328366279,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.9,
-    "urfDamageDealt": 0.9,
-    "urfHealing": 1.0,
-    "urfShielding": 0.9
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "BATTLEMAGE",
@@ -104,17 +200,17 @@
         "name": "Junkyard Titan",
         "effects": [
           {
-            "description": "Heat: Rumble gains  Heat each time he uses a basic ability (20 for  Flamespitter, 20 for  Scrap Shield, 10 for  Electro Harpoon) and loses 10  Heat per second after not using any abilities for 4 seconds.",
+            "description": "Heat: Rumble gains Heat each time he uses a basic ability (20 for Flamespitter, 20 for Scrap Shield, 10 for Electro Harpoon) and loses 10 Heat per second after not using any abilities for 4 seconds.",
             "icon": "Junkyard Titan.png",
             "leveling": []
           },
           {
-            "description": "Danger Zone: Rumble's basic abilities are enhanced when cast at/above 50  Heat.",
+            "description": "Danger Zone: Rumble's basic abilities are enhanced when cast at/above 50 Heat.",
             "icon": "Junkyard Titan 2.png",
             "leveling": []
           },
           {
-            "description": "Overheating: At 100  Heat, Rumble becomes Overheated, disabling his abilities for 6 seconds. During this time, his basic attacks deal 25 \u2212 110 (based on level) (+ 30% AP)  bonus magic damage to non- structures while his  Heat decays back to 0 over the duration.",
+            "description": "Overheating: At 100 Heat, Rumble becomes Overheated, disabling his abilities for 6 seconds. During this time, his basic attacks deal 25 − 110 (based on level) (+ 30% AP) bonus magic damage to non- structures while his Heat decays back to 0 over the duration.",
             "icon": "Junkyard Titan 3.png",
             "leveling": []
           }
@@ -149,17 +245,17 @@
         "name": "Junkyard Titan",
         "effects": [
           {
-            "description": "Heat: Rumble gains  Heat each time he uses a basic ability (20 for  Flamespitter, 20 for  Scrap Shield, 10 for  Electro Harpoon) and loses 10  Heat per second after not using any abilities for 4 seconds.",
+            "description": "Heat: Rumble gains Heat each time he uses a basic ability (20 for Flamespitter, 20 for Scrap Shield, 10 for Electro Harpoon) and loses 10 Heat per second after not using any abilities for 4 seconds.",
             "icon": "Junkyard Titan.png",
             "leveling": []
           },
           {
-            "description": "Danger Zone: Rumble's basic abilities are enhanced when cast at/above 50  Heat.",
+            "description": "Danger Zone: Rumble's basic abilities are enhanced when cast at/above 50 Heat.",
             "icon": "Junkyard Titan 2.png",
             "leveling": []
           },
           {
-            "description": "Overheating: At 100  Heat, Rumble becomes Overheated, disabling his abilities for 6 seconds. During this time, his basic attacks deal 25 \u2212 110 (based on level) (+ 30% AP)  bonus magic damage to non- structures while his  Heat decays back to 0 over the duration.",
+            "description": "Overheating: At 100 Heat, Rumble becomes Overheated, disabling his abilities for 6 seconds. During this time, his basic attacks deal 25 − 110 (based on level) (+ 30% AP) bonus magic damage to non- structures while his Heat decays back to 0 over the duration.",
             "icon": "Junkyard Titan 3.png",
             "leveling": []
           }
@@ -194,17 +290,17 @@
         "name": "Junkyard Titan",
         "effects": [
           {
-            "description": "Heat: Rumble gains  Heat each time he uses a basic ability (20 for  Flamespitter, 20 for  Scrap Shield, 10 for  Electro Harpoon) and loses 10  Heat per second after not using any abilities for 4 seconds.",
+            "description": "Heat: Rumble gains Heat each time he uses a basic ability (20 for Flamespitter, 20 for Scrap Shield, 10 for Electro Harpoon) and loses 10 Heat per second after not using any abilities for 4 seconds.",
             "icon": "Junkyard Titan.png",
             "leveling": []
           },
           {
-            "description": "Danger Zone: Rumble's basic abilities are enhanced when cast at/above 50  Heat.",
+            "description": "Danger Zone: Rumble's basic abilities are enhanced when cast at/above 50 Heat.",
             "icon": "Junkyard Titan 2.png",
             "leveling": []
           },
           {
-            "description": "Overheating: At 100  Heat, Rumble becomes Overheated, disabling his abilities for 6 seconds. During this time, his basic attacks deal 25 \u2212 110 (based on level) (+ 30% AP)  bonus magic damage to non- structures while his  Heat decays back to 0 over the duration.",
+            "description": "Overheating: At 100 Heat, Rumble becomes Overheated, disabling his abilities for 6 seconds. During this time, his basic attacks deal 25 − 110 (based on level) (+ 30% AP) bonus magic damage to non- structures while his Heat decays back to 0 over the duration.",
             "icon": "Junkyard Titan 3.png",
             "leveling": []
           }
@@ -241,7 +337,7 @@
         "name": "Flamespitter",
         "effects": [
           {
-            "description": "Active: Rumble activates his flamethrower for 3 seconds, granting 20  Heat and dealing magic damage every 0.25 seconds to all enemies in a cone in front of him. Deals reduced damage to  minions.",
+            "description": "Active: Rumble activates his flamethrower for 3 seconds, granting 20 Heat and dealing magic damage every 0.25 seconds to all enemies in a cone in front of him. Deals reduced damage to minions.",
             "icon": "Flamespitter.png",
             "leveling": [
               {
@@ -622,7 +718,7 @@
         "name": "Scrap Shield",
         "effects": [
           {
-            "description": "Active: Rumble gains a  shield for 1.5 seconds.",
+            "description": "Active: Rumble gains a shield for 1.5 seconds.",
             "icon": "Scrap Shield.png",
             "leveling": [
               {
@@ -665,7 +761,7 @@
             ]
           },
           {
-            "description": "While shielding himself Rumble gains  bonus movement speed until the duration of the shield ends or if the shield is broken.",
+            "description": "While shielding himself Rumble gains bonus movement speed until the duration of the shield ends or if the shield is broken.",
             "icon": "Scrap Shield 2.png",
             "leveling": [
               {
@@ -806,7 +902,7 @@
         "name": "Scrap Shield",
         "effects": [
           {
-            "description": "Active: Rumble gains a  shield for 1.5 seconds.",
+            "description": "Active: Rumble gains a shield for 1.5 seconds.",
             "icon": "Scrap Shield.png",
             "leveling": [
               {
@@ -849,7 +945,7 @@
             ]
           },
           {
-            "description": "While shielding himself Rumble gains  bonus movement speed until the duration of the shield ends or if the shield is broken.",
+            "description": "While shielding himself Rumble gains bonus movement speed until the duration of the shield ends or if the shield is broken.",
             "icon": "Scrap Shield 2.png",
             "leveling": [
               {
@@ -997,7 +1093,7 @@
             "leveling": []
           },
           {
-            "description": "Active: Rumble shoots a harpoon, dealing magic damage to the first enemy hit and  slowing them for 2 seconds. Hitting the same target with another harpoon enhances the  slow (stacks additively).",
+            "description": "Active: Rumble shoots a harpoon, dealing magic damage to the first enemy hit and slowing them for 2 seconds. Hitting the same target with another harpoon enhances the slow (stacks additively).",
             "icon": "Electro Harpoon 2.png",
             "leveling": [
               {
@@ -1284,7 +1380,7 @@
             "leveling": []
           },
           {
-            "description": "Enemies within the line of rockets take magic damage every 0.5 seconds and are  slowed by 35%. After leaving the area the damage will linger for 1 second.",
+            "description": "Enemies within the line of rockets take magic damage every 0.5 seconds and are slowed by 35%. After leaving the area the damage will linger for 1 second.",
             "icon": null,
             "leveling": [
               {

@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 575,
-    "selectionRadius": 88.8889007568359,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 575,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 88.8889007568359,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 1.36,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.100000001490116,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.100000001490116,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 525,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 0.9,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 0.95,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ARTILLERY",
@@ -114,7 +204,7 @@
             "leveling": []
           },
           {
-            "description": "The third stack consumes them all, dealing 33 \u2212 169 (based on level) (+ 50% AP)  bonus true damage.",
+            "description": "The third stack consumes them all, dealing 33 − 169 (based on level) (+ 50% AP) bonus true damage.",
             "icon": null,
             "leveling": []
           }
@@ -151,7 +241,7 @@
         "name": "Plasma Fission",
         "effects": [
           {
-            "description": "Active: Vel'Koz fires an energy bolt that collides with the first enemy hit to deal  magic damage and  slow by 70% for a few seconds, decaying over the duration.",
+            "description": "Active: Vel'Koz fires an energy bolt that collides with the first enemy hit to deal magic damage and slow by 70% for a few seconds, decaying over the duration.",
             "icon": "Plasma Fission.png",
             "leveling": [
               {
@@ -220,7 +310,7 @@
             "leveling": []
           },
           {
-            "description": "Plasma Fission restores  mana per target killed.",
+            "description": "Plasma Fission restores mana per target killed.",
             "icon": null,
             "leveling": [
               {
@@ -337,7 +427,7 @@
         "name": "Plasma Fission",
         "effects": [
           {
-            "description": "Active: Vel'Koz fires an energy bolt that collides with the first enemy hit to deal  magic damage and  slow by 70% for a few seconds, decaying over the duration.",
+            "description": "Active: Vel'Koz fires an energy bolt that collides with the first enemy hit to deal magic damage and slow by 70% for a few seconds, decaying over the duration.",
             "icon": "Plasma Fission.png",
             "leveling": [
               {
@@ -406,7 +496,7 @@
             "leveling": []
           },
           {
-            "description": "Plasma Fission restores  mana per target killed.",
+            "description": "Plasma Fission restores mana per target killed.",
             "icon": null,
             "leveling": [
               {
@@ -724,7 +814,7 @@
         "name": "Tectonic Disruption",
         "effects": [
           {
-            "description": "Active: Vel'Koz hurls a disruptive anomaly that reaches the target location after 0.55 seconds, briefly providing  sight, dealing magic damage and  suspending enemies in the area for 0.75 seconds. If the area is created close to Vel'Koz, enemies hit are also slightly  knocked back in the direction of the cast.",
+            "description": "Active: Vel'Koz hurls a disruptive anomaly that reaches the target location after 0.55 seconds, briefly providing sight, dealing magic damage and suspending enemies in the area for 0.75 seconds. If the area is created close to Vel'Koz, enemies hit are also slightly knocked back in the direction of the cast.",
             "icon": "Tectonic Disruption.png",
             "leveling": [
               {
@@ -838,7 +928,7 @@
         "name": "Life Form Disintegration Ray",
         "effects": [
           {
-            "description": "Passive - Researched:  Deconstructing enemy champions marks them as  Researched for 7 seconds. Basic attacks and ability damage refresh the duration on-hit.",
+            "description": "Passive - Researched: Deconstructing enemy champions marks them as Researched for 7 seconds. Basic attacks and ability damage refresh the duration on-hit.",
             "icon": "Researched.png",
             "leveling": []
           },
@@ -848,7 +938,7 @@
             "leveling": []
           },
           {
-            "description": "The ray deals magic damage in 0.25 seconds intervals, and  slows by 20% for 1 second.  Deconstruction is applied every 0.7 seconds to enemies hit.  Researched enemies take  true damage instead.",
+            "description": "The ray deals magic damage in 0.25 seconds intervals, and slows by 20% for 1 second. Deconstruction is applied every 0.7 seconds to enemies hit. Researched enemies take true damage instead.",
             "icon": null,
             "leveling": [
               {
@@ -973,7 +1063,7 @@
         "name": "Life Form Disintegration Ray",
         "effects": [
           {
-            "description": "Passive - Researched:  Deconstructing enemy champions marks them as  Researched for 7 seconds. Basic attacks and ability damage refresh the duration on-hit.",
+            "description": "Passive - Researched: Deconstructing enemy champions marks them as Researched for 7 seconds. Basic attacks and ability damage refresh the duration on-hit.",
             "icon": "Researched.png",
             "leveling": []
           },
@@ -983,7 +1073,7 @@
             "leveling": []
           },
           {
-            "description": "The ray deals magic damage in 0.25 seconds intervals, and  slows by 20% for 1 second.  Deconstruction is applied every 0.7 seconds to enemies hit.  Researched enemies take  true damage instead.",
+            "description": "The ray deals magic damage in 0.25 seconds intervals, and slows by 20% for 1 second. Deconstruction is applied every 0.7 seconds to enemies hit. Researched enemies take true damage instead.",
             "icon": null,
             "leveling": [
               {

@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 145,
-    "pathingRadius": 50,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 145,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 50,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2.125,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.95,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.9,
-    "urfDamageDealt": 1.15,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.15,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "SUPPORT",
@@ -110,12 +200,12 @@
         "name": "Triumphant Roar",
         "effects": [
           {
-            "description": "Innate: Alistar gains a stack of Triumph every time he  stuns or  displaces at least one enemy champion, and every time a minion, a small monster or a pet dies.",
+            "description": "Innate: Alistar gains a stack of Triumph every time he stuns or displaces at least one enemy champion, and every time a minion, a small monster or a pet dies.",
             "icon": "Triumphant Roar.png",
             "leveling": []
           },
           {
-            "description": "At 7 Triumph stacks, Alistar consumes them and roars,  healing himself for  25 \u2212 161 (based on level) health and all nearby allied champions for[ double the amount ][  50 \u2212 322 (based on level) health ].",
+            "description": "At 7 Triumph stacks, Alistar consumes them and roars, healing himself for 25 − 161 (based on level) health and all nearby allied champions for[ double the amount ][ 50 − 322 (based on level) health ].",
             "icon": null,
             "leveling": []
           },
@@ -173,7 +263,7 @@
         "name": "Pulverize",
         "effects": [
           {
-            "description": "Active: Alistar slams the ground beneath him, dealing  magic damage to all nearby enemies and  knocking them up for 1 second.",
+            "description": "Active: Alistar slams the ground beneath him, dealing magic damage to all nearby enemies and knocking them up for 1 second.",
             "icon": "Pulverize.png",
             "leveling": [
               {
@@ -287,7 +377,7 @@
         "name": "Headbutt",
         "effects": [
           {
-            "description": "Active: Alistar  dashes to the target enemy location. If the target is still in range on arrival, he deals them magic damage and  stuns them for 1 second while also  knocking them back 650 units.",
+            "description": "Active: Alistar dashes to the target enemy location. If the target is still in range on arrival, he deals them magic damage and stuns them for 1 second while also knocking them back 650 units.",
             "icon": "Headbutt.png",
             "leveling": [
               {
@@ -401,7 +491,7 @@
         "name": "Trample",
         "effects": [
           {
-            "description": "Active: Alistar becomes  ghosted and tramples the ground around him every 0.5 seconds for 5 seconds, dealing magic damage to all nearby enemies and gaining a Trample stack every time the ability damages at least one enemy champion.",
+            "description": "Active: Alistar becomes ghosted and tramples the ground around him every 0.5 seconds for 5 seconds, dealing magic damage to all nearby enemies and gaining a Trample stack every time the ability damages at least one enemy champion.",
             "icon": "Trample.png",
             "leveling": [
               {
@@ -481,7 +571,7 @@
             ]
           },
           {
-            "description": "At 5 Trample stacks, Alistar empowers his next basic attack within 6 seconds to deal 35 \u2212 290 (based on level) bonus magic damage and  stun his target for 1 second.",
+            "description": "At 5 Trample stacks, Alistar empowers his next basic attack within 6 seconds to deal 35 − 290 (based on level) bonus magic damage and stun his target for 1 second.",
             "icon": "Trample 2.png",
             "leveling": []
           }
@@ -557,7 +647,7 @@
         "name": "Unbreakable Will",
         "effects": [
           {
-            "description": "Active: Alistar  cleanses himself of all  crowd control. For the next 7 seconds, Alistar reduces incoming damage received.",
+            "description": "Active: Alistar cleanses himself of all crowd control. For the next 7 seconds, Alistar reduces incoming damage received.",
             "icon": "Unbreakable Will.png",
             "leveling": [
               {

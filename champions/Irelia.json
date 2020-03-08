@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 100,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.656,
       "percent": 0.0,
       "perLevel": 2.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.656000018119812,
-    "attackCastTime": 0.300000011920928,
-    "attackTotalTime": 1.52499997615814,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.656000018119812,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.300000011920928,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.52499997615814,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 200,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.95,
-    "aramDamageDealt": 1.05,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.85,
-    "urfDamageDealt": 1.05,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.85,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -115,12 +205,12 @@
             "leveling": []
           },
           {
-            "description": "Ionian Fervor: Irelia gains 8% \u2212 12% (based on level)  bonus attack speed per stack, up to 40% \u2212 60% (based on level).",
+            "description": "Ionian Fervor: Irelia gains 8% − 12% (based on level) bonus attack speed per stack, up to 40% − 60% (based on level).",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "At maximum stacks, Irelia's basic attacks deal 15 \u2212 66 (based on level) (+ 25% bonus AD)  bonus magic damage on-hit.",
+            "description": "At maximum stacks, Irelia's basic attacks deal 15 − 66 (based on level) (+ 25% bonus AD) bonus magic damage on-hit.",
             "icon": null,
             "leveling": []
           }
@@ -157,12 +247,12 @@
         "name": "Bladesurge",
         "effects": [
           {
-            "description": "Passive: Enemy champions and large monsters hit by  Flawless Duet and  Vanguard's Edge's initial barrage are marked for 5 seconds, consumed with Bladesurge.",
+            "description": "Passive: Enemy champions and large monsters hit by Flawless Duet and Vanguard's Edge's initial barrage are marked for 5 seconds, consumed with Bladesurge.",
             "icon": "Bladesurge.png",
             "leveling": []
           },
           {
-            "description": "Active: Irelia  dashes through the target enemy, dealing  physical damage, applying on-hit effects and  healing herself. Bladesurge deals increased damage to  minions.",
+            "description": "Active: Irelia dashes through the target enemy, dealing physical damage, applying on-hit effects and healing herself. Bladesurge deals increased damage to minions.",
             "icon": null,
             "leveling": [
               {
@@ -284,7 +374,7 @@
             ]
           },
           {
-            "description": "Bladesurge's  cooldown is refunded if the target was marked or if it dies to or after Bladesurge has been cast.",
+            "description": "Bladesurge's cooldown is refunded if the target was marked or if it dies to or after Bladesurge has been cast.",
             "icon": null,
             "leveling": []
           }
@@ -365,7 +455,7 @@
             "leveling": []
           },
           {
-            "description": "Second Cast: After a 0.07-second delay, Irelia swipes with her blades in the target direction, dealing physical damage to all enemies around her and in a line, increased by 0% \u2212 100% (based on channel time).",
+            "description": "Second Cast: After a 0.07-second delay, Irelia swipes with her blades in the target direction, dealing physical damage to all enemies around her and in a line, increased by 0% − 100% (based on channel time).",
             "icon": null,
             "leveling": [
               {
@@ -553,12 +643,12 @@
         "name": "Flawless Duet",
         "effects": [
           {
-            "description": "Active: Irelia sends a blade to the target location for up to 3.5 seconds. After a 0.15-second delay, Flawless Duet may be recast to send another blade out, and does so automatically at Irelia's position if the first blade would expire, though not if she is  muted or channeling  Defiant Dance or  Teleport.",
+            "description": "Active: Irelia sends a blade to the target location for up to 3.5 seconds. After a 0.15-second delay, Flawless Duet may be recast to send another blade out, and does so automatically at Irelia's position if the first blade would expire, though not if she is muted or channeling Defiant Dance or Teleport.",
             "icon": "Flawless Duet.png",
             "leveling": []
           },
           {
-            "description": "Once both blades have been placed, they fly toward each other after a 0.25-second delay, dealing magic damage and  stunning all enemies struck for 0.75 seconds after converging.",
+            "description": "Once both blades have been placed, they fly toward each other after a 0.25-second delay, dealing magic damage and stunning all enemies struck for 0.75 seconds after converging.",
             "icon": null,
             "leveling": [
               {
@@ -707,7 +797,7 @@
             ]
           },
           {
-            "description": "After expanding, the blades drop on the ground, knocking all enemy units away from them, though not rendering them  airborne, and forming a spade-shaped perimeter around the enemy champion hit for 2.5 seconds. Enemies that pass through the blades are dealt magic damage and are  slowed by 90% for 1.5 seconds.",
+            "description": "After expanding, the blades drop on the ground, knocking all enemy units away from them, though not rendering them airborne, and forming a spade-shaped perimeter around the enemy champion hit for 2.5 seconds. Enemies that pass through the blades are dealt magic damage and are slowed by 90% for 1.5 seconds.",
             "icon": null,
             "leveling": [
               {

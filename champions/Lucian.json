@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 800,
-    "selectionRadius": 100,
-    "pathingRadius": 40.6800003051757,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 800,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 40.6800003051757,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.638,
       "percent": 0.0,
       "perLevel": 3.3,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.638000011444091,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.150000005960464,
+    "attackSpeedRatio": {
+      "flat": 0.638000011444091,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.150000005960464,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 500,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.05,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "MARKSMAN"
@@ -108,12 +198,12 @@
         "name": "Lightslinger",
         "effects": [
           {
-            "description": "Innate: After using an ability, Lucian's next basic attack within 3 seconds shoots twice, the second shot dealing 50 / 55 / 60% (based on level) AD  physical damage, increased to 100% AD against minions.",
+            "description": "Innate: After using an ability, Lucian's next basic attack within 3 seconds shoots twice, the second shot dealing 50 / 55 / 60% (based on level) AD physical damage, increased to 100% AD against minions.",
             "icon": "Lightslinger.png",
             "leveling": []
           },
           {
-            "description": "The second shot applies  on-hits and on-attack effects at full effect and can  critically strike for (75% +  18.75%) bonus physical damage, increased to (100% +  25%) against minions.",
+            "description": "The second shot applies on-hits and on-attack effects at full effect and can critically strike for (75% + 18.75%) bonus physical damage, increased to (100% + 25%) against minions.",
             "icon": null,
             "leveling": []
           },
@@ -155,7 +245,7 @@
         "name": "Piercing Light",
         "effects": [
           {
-            "description": "Active: After a 0.4 \u2212 0.25 (based on level)-second delay, Lucian fires a laser in the direction of the target enemy, dealing physical damage to all enemies in a line.",
+            "description": "Active: After a 0.4 − 0.25 (based on level)-second delay, Lucian fires a laser in the direction of the target enemy, dealing physical damage to all enemies in a line.",
             "icon": "Piercing Light.png",
             "leveling": [
               {
@@ -269,7 +359,7 @@
         "name": "Ardent Blaze",
         "effects": [
           {
-            "description": "Active: After a 0.25-second delay, Lucian fires a shot that explodes in a cross pattern upon hitting an enemy or reaching the end of its path, dealing  magic damage and  revealing the area for 1 second.",
+            "description": "Active: After a 0.25-second delay, Lucian fires a shot that explodes in a cross pattern upon hitting an enemy or reaching the end of its path, dealing magic damage and revealing the area for 1 second.",
             "icon": "Ardent Blaze.png",
             "leveling": [
               {
@@ -317,7 +407,7 @@
             "leveling": []
           },
           {
-            "description": "Lucian gains  bonus movement speed for 1 second if he or allied champions damage a marked target.",
+            "description": "Lucian gains bonus movement speed for 1 second if he or allied champions damage a marked target.",
             "icon": "Ardent Blaze 3.png",
             "leveling": [
               {
@@ -413,7 +503,7 @@
         "name": "Ardent Blaze",
         "effects": [
           {
-            "description": "Active: After a 0.25-second delay, Lucian fires a shot that explodes in a cross pattern upon hitting an enemy or reaching the end of its path, dealing  magic damage and  revealing the area for 1 second.",
+            "description": "Active: After a 0.25-second delay, Lucian fires a shot that explodes in a cross pattern upon hitting an enemy or reaching the end of its path, dealing magic damage and revealing the area for 1 second.",
             "icon": "Ardent Blaze.png",
             "leveling": [
               {
@@ -461,7 +551,7 @@
             "leveling": []
           },
           {
-            "description": "Lucian gains  bonus movement speed for 1 second if he or allied champions damage a marked target.",
+            "description": "Lucian gains bonus movement speed for 1 second if he or allied champions damage a marked target.",
             "icon": "Ardent Blaze 3.png",
             "leveling": [
               {
@@ -557,7 +647,7 @@
         "name": "Ardent Blaze",
         "effects": [
           {
-            "description": "Active: After a 0.25-second delay, Lucian fires a shot that explodes in a cross pattern upon hitting an enemy or reaching the end of its path, dealing  magic damage and  revealing the area for 1 second.",
+            "description": "Active: After a 0.25-second delay, Lucian fires a shot that explodes in a cross pattern upon hitting an enemy or reaching the end of its path, dealing magic damage and revealing the area for 1 second.",
             "icon": "Ardent Blaze.png",
             "leveling": [
               {
@@ -605,7 +695,7 @@
             "leveling": []
           },
           {
-            "description": "Lucian gains  bonus movement speed for 1 second if he or allied champions damage a marked target.",
+            "description": "Lucian gains bonus movement speed for 1 second if he or allied champions damage a marked target.",
             "icon": "Ardent Blaze 3.png",
             "leveling": [
               {
@@ -703,12 +793,12 @@
         "name": "Relentless Pursuit",
         "effects": [
           {
-            "description": "Passive: Relentless Pursuit's  cooldown is reduced by 1 second for each  Lightslinger shot landed, doubled to 2 seconds against enemy champions.",
+            "description": "Passive: Relentless Pursuit's cooldown is reduced by 1 second for each Lightslinger shot landed, doubled to 2 seconds against enemy champions.",
             "icon": "Relentless Pursuit.png",
             "leveling": []
           },
           {
-            "description": "Active: Lucian  dashes in the target direction.",
+            "description": "Active: Lucian dashes in the target direction.",
             "icon": null,
             "leveling": []
           },
@@ -718,7 +808,7 @@
             "leveling": []
           },
           {
-            "description": "Relentless Pursuit can be cast during  The Culling and other abilities can be cast during Relentless Pursuit.",
+            "description": "Relentless Pursuit can be cast during The Culling and other abilities can be cast during Relentless Pursuit.",
             "icon": null,
             "leveling": []
           }
@@ -794,7 +884,7 @@
         "name": "The Culling",
         "effects": [
           {
-            "description": "Active: Lucian rapidly fires shots in the target direction for 3 seconds, dealing physical damage to the first enemy they collide with. The damage is doubled against enemy  minions.",
+            "description": "Active: Lucian rapidly fires shots in the target direction for 3 seconds, dealing physical damage to the first enemy they collide with. The damage is doubled against enemy minions.",
             "icon": "The Culling.png",
             "leveling": [
               {
@@ -981,7 +1071,7 @@
             ]
           },
           {
-            "description": "While using The Culling, Lucian always faces in the casted direction and is  ghosted.",
+            "description": "While using The Culling, Lucian always faces in the casted direction and is ghosted.",
             "icon": null,
             "leveling": []
           },

@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.656,
       "percent": 0.0,
       "perLevel": 2.215,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0708333328366279,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0708333328366279,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.88,
-    "urfDamageDealt": 1.15,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.88,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.15,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -110,7 +200,7 @@
         "name": "Spiked Shell",
         "effects": [
           {
-            "description": "Innate: Basic attacks deal 10 (+ 10% armor)  bonus magic damage, increased by 50% to 15 (+ 15% armor) bonus magic damage while  Defensive Ball Curl is active.",
+            "description": "Innate: Basic attacks deal 10 (+ 10% armor) bonus magic damage, increased by 50% to 15 (+ 15% armor) bonus magic damage while Defensive Ball Curl is active.",
             "icon": "Spiked Shell.png",
             "leveling": []
           }
@@ -147,12 +237,12 @@
         "name": "Powerball",
         "effects": [
           {
-            "description": "Active: Rammus tucks into a ball and begins to roll, channeling for up to 6 seconds, gaining 25% \u2212 39.17% (based on level)  bonus movement speed per second over the duration, up to a maximum of 150% \u2212 235% (based on level)  bonus movement speed.",
+            "description": "Active: Rammus tucks into a ball and begins to roll, channeling for up to 6 seconds, gaining 25% − 39.17% (based on level) bonus movement speed per second over the duration, up to a maximum of 150% − 235% (based on level) bonus movement speed.",
             "icon": "Powerball.png",
             "leveling": []
           },
           {
-            "description": "Rammus stops rolling upon colliding with an enemy,  knocking back all nearby enemies 100 units over 0.75 seconds, dealing them magic damage, and  slowing them for 1 second. Powerball can be recast after 1 second.",
+            "description": "Rammus stops rolling upon colliding with an enemy, knocking back all nearby enemies 100 units over 0.75 seconds, dealing them magic damage, and slowing them for 1 second. Powerball can be recast after 1 second.",
             "icon": null,
             "leveling": [
               {
@@ -216,7 +306,7 @@
             ]
           },
           {
-            "description": "Recast: Rammus ends the  channel early.",
+            "description": "Recast: Rammus ends the channel early.",
             "icon": null,
             "leveling": []
           }
@@ -292,7 +382,7 @@
         "name": "Defensive Ball Curl",
         "effects": [
           {
-            "description": "Active: Rammus drops into a defensive stance for 6 seconds, gaining  bonus armor and  bonus magic resistance, increasing  Spiked Shell's damage by 50%, and applying it to enemies whenever they use basic attacks against him. Rammus is  slowed by 30% for the duration.",
+            "description": "Active: Rammus drops into a defensive stance for 6 seconds, gaining bonus armor and bonus magic resistance, increasing Spiked Shell's damage by 50%, and applying it to enemies whenever they use basic attacks against him. Rammus is slowed by 30% for the duration.",
             "icon": "Defensive Ball Curl.png",
             "leveling": [
               {
@@ -372,7 +462,7 @@
             ]
           },
           {
-            "description": "Defensive Ball Curl can be canceled instantly by reactivating the ability or by activating  Powerball.",
+            "description": "Defensive Ball Curl can be canceled instantly by reactivating the ability or by activating Powerball.",
             "icon": null,
             "leveling": []
           }
@@ -448,7 +538,7 @@
         "name": "Frenzying Taunt",
         "effects": [
           {
-            "description": "Active: Rammus  taunts the target enemy, gaining  bonus attack speed for the duration.",
+            "description": "Active: Rammus taunts the target enemy, gaining bonus attack speed for the duration.",
             "icon": "Frenzying Taunt.png",
             "leveling": [
               {
@@ -496,7 +586,7 @@
             ]
           },
           {
-            "description": "While  Powerball,  Defensive Ball Curl or  Tremors is active, the  bonus attack speed remains active.",
+            "description": "While Powerball, Defensive Ball Curl or Tremors is active, the bonus attack speed remains active.",
             "icon": null,
             "leveling": []
           }
@@ -572,7 +662,7 @@
         "name": "Tremors",
         "effects": [
           {
-            "description": "Active: Rammus creates an earthquake around himself for 8 seconds,  slowing and dealing magic damage each second to nearby enemies for the duration. Structures receive double damage.",
+            "description": "Active: Rammus creates an earthquake around himself for 8 seconds, slowing and dealing magic damage each second to nearby enemies for the duration. Structures receive double damage.",
             "icon": "Tremors.png",
             "leveling": [
               {
@@ -694,7 +784,7 @@
             ]
           },
           {
-            "description": "The  slow persists for 1.5 seconds and stacks up to 8 times.",
+            "description": "The slow persists for 1.5 seconds and stacks up to 8 times.",
             "icon": null,
             "leveling": [
               {

@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 800,
-    "selectionRadius": 110,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 800,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 110,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.638,
       "percent": 0.0,
       "perLevel": 3.22,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.638000011444091,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.150000005960464,
+    "attackSpeedRatio": {
+      "flat": 0.638000011444091,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.150000005960464,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 525,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.12,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.95,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.12,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -110,12 +200,12 @@
         "name": "Prowl",
         "effects": [
           {
-            "description": "Innate - Prowl: Being in  brush grants Nidalee  10% bonus movement speed for 2 seconds, increased to 30% when facing a nearby  visible enemy  champion.",
+            "description": "Innate - Prowl: Being in brush grants Nidalee 10% bonus movement speed for 2 seconds, increased to 30% when facing a nearby visible enemy champion.",
             "icon": "Prowl.png",
             "leveling": []
           },
           {
-            "description": "Innate - Hunt: Hitting nearby  monsters or enemy champions with  Javelin Toss or  Bushwhack marks them as Hunted,  revealing them for 4 seconds and granting Nidalee  10% bonus movement speed for the same duration, increased to 30% when facing a nearby Hunted target. Additionally, Nidalee's first use of  Takedown and  Pounce against Hunted targets are empowered.",
+            "description": "Innate - Hunt: Hitting nearby monsters or enemy champions with Javelin Toss or Bushwhack marks them as Hunted, revealing them for 4 seconds and granting Nidalee 10% bonus movement speed for the same duration, increased to 30% when facing a nearby Hunted target. Additionally, Nidalee's first use of Takedown and Pounce against Hunted targets are empowered.",
             "icon": null,
             "leveling": []
           },
@@ -157,7 +247,7 @@
         "name": "Javelin Toss",
         "effects": [
           {
-            "description": "Active: Nidalee hurls a javelin forward in a line, dealing  magic damage to the first enemy it hits, which is increased by 0% \u2212 200% (based on distance traveled).",
+            "description": "Active: Nidalee hurls a javelin forward in a line, dealing magic damage to the first enemy it hits, which is increased by 0% − 200% (based on distance traveled).",
             "icon": "Javelin Toss.png",
             "leveling": [
               {
@@ -282,7 +372,7 @@
         "name": "Takedown",
         "effects": [
           {
-            "description": "Active: Nidalee's next basic attack gains  75 bonus range and is modified to deal magic damage, increased by an amount for every 1% of target's missing health.",
+            "description": "Active: Nidalee's next basic attack gains 75 bonus range and is modified to deal magic damage, increased by an amount for every 1% of target's missing health.",
             "icon": "Takedown.png",
             "leveling": [
               {
@@ -545,7 +635,7 @@
         "name": "Bushwhack",
         "effects": [
           {
-            "description": "Active: Nidalee lays a trap at the target location, which  stealths and arms after a brief delay and lasts for up to 2 minutes. The next enemy who springs the trap takes magic damage over 4 seconds and are  revealed for the duration.",
+            "description": "Active: Nidalee lays a trap at the target location, which stealths and arms after a brief delay and lasts for up to 2 minutes. The next enemy who springs the trap takes magic damage over 4 seconds and are revealed for the duration.",
             "icon": "Bushwhack.png",
             "leveling": [
               {
@@ -609,7 +699,7 @@
             ]
           },
           {
-            "description": "Traps have  6 maximum health and can only be damaged by champion basic attacks (2 hit points from  ranged and 3 hit points from  melee). Up to a maximum of 4 / 6 / 8 / 10 (based on level) traps may be active at once.",
+            "description": "Traps have 6 maximum health and can only be damaged by champion basic attacks (2 hit points from ranged and 3 hit points from melee). Up to a maximum of 4 / 6 / 8 / 10 (based on level) traps may be active at once.",
             "icon": null,
             "leveling": []
           }
@@ -683,7 +773,7 @@
         "name": "Pounce",
         "effects": [
           {
-            "description": "Active: Nidalee  dashes a fixed distance in the direction of the cursor, dealing magic damage to enemies around her landing point.",
+            "description": "Active: Nidalee dashes a fixed distance in the direction of the cursor, dealing magic damage to enemies around her landing point.",
             "icon": "Pounce.png",
             "leveling": []
           },
@@ -721,7 +811,7 @@
             ]
           },
           {
-            "description": "Killing a unit while in Cougar Form or using Pounce's Hunt bonus reduces Pounce's remaining  cooldown to a value. This has no effect if the remaining cooldown is already lower than that value.",
+            "description": "Killing a unit while in Cougar Form or using Pounce's Hunt bonus reduces Pounce's remaining cooldown to a value. This has no effect if the remaining cooldown is already lower than that value.",
             "icon": null,
             "leveling": [
               {
@@ -790,7 +880,7 @@
         "name": "Primal Surge",
         "effects": [
           {
-            "description": "Active: Nidalee evokes the spirit of the cougar,  healing the target allied champion or herself, increased by 0% \u2212 100% (based on target's missing health), and granting them  bonus attack speed for 7 seconds.",
+            "description": "Active: Nidalee evokes the spirit of the cougar, healing the target allied champion or herself, increased by 0% − 100% (based on target's missing health), and granting them bonus attack speed for 7 seconds.",
             "icon": "Primal Surge.png",
             "leveling": [
               {
@@ -1002,7 +1092,7 @@
         "innerRadius": null,
         "speed": null,
         "width": null,
-        "angle": "180\u00b0",
+        "angle": "180°",
         "castTime": null,
         "effectRadius": "300",
         "targetRange": null
@@ -1013,17 +1103,17 @@
         "name": "Aspect of the Cougar",
         "effects": [
           {
-            "description": "Active: Nidalee transforms herself into a cougar, gaining  melee attacks with  125 range as well as new abilities.",
+            "description": "Active: Nidalee transforms herself into a cougar, gaining melee attacks with 125 range as well as new abilities.",
             "icon": "Aspect of the Cougar.png",
             "leveling": []
           },
           {
-            "description": "Active: Nidalee transforms herself into a human, gaining  ranged attacks with 525  range as well as new abilities.",
+            "description": "Active: Nidalee transforms herself into a human, gaining ranged attacks with 525 range as well as new abilities.",
             "icon": "Aspect of the Cougar 2.png",
             "leveling": []
           },
           {
-            "description": "Triggering  Hunt resets Aspect of the Cougar's  cooldown if Nidalee is in human form.",
+            "description": "Triggering Hunt resets Aspect of the Cougar's cooldown if Nidalee is in human form.",
             "icon": null,
             "leveling": []
           },

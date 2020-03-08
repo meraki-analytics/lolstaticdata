@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 125,
-    "pathingRadius": 50,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 50,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.736,
       "percent": 0.0,
       "perLevel": 3.4,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.638000011444091,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0503188781440258,
+    "attackSpeedRatio": {
+      "flat": 0.638000011444091,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0503188781440258,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 0.95,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -110,12 +200,12 @@
         "name": "Granite Shield",
         "effects": [
           {
-            "description": "Innate- Shard of the Monolith: Malphite's size scales with  his total armor (before applying  Thunderclap's bonus armor), capped at 850 total armor.",
+            "description": "Innate- Shard of the Monolith: Malphite's size scales with his total armor (before applying Thunderclap's bonus armor), capped at 850 total armor.",
             "icon": "false",
             "leveling": []
           },
           {
-            "description": "Innate: Malphite  shields himself for  10% maximum health.\nThe shield lasts until it is broken, and refreshes if he has not taken damage in the last few seconds.",
+            "description": "Innate: Malphite shields himself for 10% maximum health.\nThe shield lasts until it is broken, and refreshes if he has not taken damage in the last few seconds.",
             "icon": "Granite Shield.png",
             "leveling": []
           }
@@ -168,7 +258,7 @@
         "name": "Seismic Shard",
         "effects": [
           {
-            "description": "Active: Malphite sends a rock rolling to the target enemy, dealing  magic damage to them upon impact,  slowing them for 3 seconds and gaining  bonus movement speed equal to the raw amount the target lost.",
+            "description": "Active: Malphite sends a rock rolling to the target enemy, dealing magic damage to them upon impact, slowing them for 3 seconds and gaining bonus movement speed equal to the raw amount the target lost.",
             "icon": "Seismic Shard.png",
             "leveling": [
               {
@@ -303,7 +393,7 @@
         "name": "Thunderclap",
         "effects": [
           {
-            "description": "Passive: Malphite gains  bonus armor, tripled while  Granite Shield is active.",
+            "description": "Passive: Malphite gains bonus armor, tripled while Granite Shield is active.",
             "icon": "Thunderclap.png",
             "leveling": [
               {
@@ -539,7 +629,7 @@
         "name": "Ground Slam",
         "effects": [
           {
-            "description": "Active: Malphite slams the ground, dealing magic damage to all nearby enemies and  crippling them for 3 seconds.",
+            "description": "Active: Malphite slams the ground, dealing magic damage to all nearby enemies and crippling them for 3 seconds.",
             "icon": "Ground Slam.png",
             "leveling": [
               {
@@ -690,7 +780,7 @@
         "name": "Unstoppable Force",
         "effects": [
           {
-            "description": "Active: Malphite  dashes  unstoppably to the target location and, upon impact, deals magic damage to all nearby enemies and  knocks them up for 1.5 seconds.",
+            "description": "Active: Malphite dashes unstoppably to the target location and, upon impact, deals magic damage to all nearby enemies and knocks them up for 1.5 seconds.",
             "icon": "Unstoppable Force.png",
             "leveling": [
               {

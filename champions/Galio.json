@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 125,
-    "pathingRadius": 50,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 50,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 1.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.330000013113021,
-    "attackTotalTime": 1.60000002384185,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.330000013113021,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.60000002384185,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 150,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "MAGE",
@@ -110,12 +200,12 @@
         "name": "Colossal Smash",
         "effects": [
           {
-            "description": "Innate: Galio's next basic attack deals 15 \u2212 200 (based on level) (+ 100% AD) (+ 50% AP) (+ 60% bonus magic resistance)  total magic damage to its target and all enemies around it.",
+            "description": "Innate: Galio's next basic attack deals 15 − 200 (based on level) (+ 100% AD) (+ 50% AP) (+ 60% bonus magic resistance) total magic damage to its target and all enemies around it.",
             "icon": "Colossal Smash.png",
             "leveling": []
           },
           {
-            "description": "Colossal Smash can  critically strike, dealing (100% +  25%) AD bonus magic damage to all targets hit.",
+            "description": "Colossal Smash can critically strike, dealing (100% + 25%) AD bonus magic damage to all targets hit.",
             "icon": null,
             "leveling": []
           }
@@ -211,7 +301,7 @@
             ]
           },
           {
-            "description": "When the blasts meet, the gusts form a tornado that advances for 2 seconds, dealing magic damage every 0.5 seconds to every enemy within, with the target's health ratio capped at 150 damage against  monsters.",
+            "description": "When the blasts meet, the gusts form a tornado that advances for 2 seconds, dealing magic damage every 0.5 seconds to every enemy within, with the target's health ratio capped at 150 damage against monsters.",
             "icon": null,
             "leveling": [
               {
@@ -367,7 +457,7 @@
             "leveling": []
           },
           {
-            "description": "Anti-Magic Bulwark: Galio gains a  shield that exclusively blocks magic damage.",
+            "description": "Anti-Magic Bulwark: Galio gains a shield that exclusively blocks magic damage.",
             "icon": null,
             "leveling": [
               {
@@ -394,7 +484,7 @@
             ]
           },
           {
-            "description": "First Cast: Galio charges for up to 3 seconds,  grounding and  slowing himself by 15%, and gaining magic damage reduction and half of that amount as physical damage reduction. Charging increases Shield of Durand's radius, damage and  taunt duration.",
+            "description": "First Cast: Galio charges for up to 3 seconds, grounding and slowing himself by 15%, and gaining magic damage reduction and half of that amount as physical damage reduction. Charging increases Shield of Durand's radius, damage and taunt duration.",
             "icon": "Shield of Durand.png",
             "leveling": [
               {
@@ -506,12 +596,12 @@
             ]
           },
           {
-            "description": "Second Cast: Galio refreshes the damage reduction for 2 seconds,  taunts nearby enemies and sets their  movement speed to a static 60 for 0.5 \u2212 1.5 (based on charge time) seconds.",
+            "description": "Second Cast: Galio refreshes the damage reduction for 2 seconds, taunts nearby enemies and sets their movement speed to a static 60 for 0.5 − 1.5 (based on charge time) seconds.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Affected enemies take magic damage, increased by 0% \u2212 200% (based on charge time).",
+            "description": "Affected enemies take magic damage, increased by 0% − 200% (based on charge time).",
             "icon": null,
             "leveling": [
               {
@@ -653,7 +743,7 @@
         "width": null,
         "angle": null,
         "castTime": null,
-        "effectRadius": "175 \u2212 350 (based on charge time)",
+        "effectRadius": "175 − 350 (based on charge time)",
         "targetRange": null
       },
       {
@@ -665,7 +755,7 @@
             "leveling": []
           },
           {
-            "description": "Anti-Magic Bulwark: Galio gains a  shield that exclusively blocks magic damage.",
+            "description": "Anti-Magic Bulwark: Galio gains a shield that exclusively blocks magic damage.",
             "icon": null,
             "leveling": [
               {
@@ -692,7 +782,7 @@
             ]
           },
           {
-            "description": "First Cast: Galio charges for up to 3 seconds,  grounding and  slowing himself by 15%, and gaining magic damage reduction and half of that amount as physical damage reduction. Charging increases Shield of Durand's radius, damage and  taunt duration.",
+            "description": "First Cast: Galio charges for up to 3 seconds, grounding and slowing himself by 15%, and gaining magic damage reduction and half of that amount as physical damage reduction. Charging increases Shield of Durand's radius, damage and taunt duration.",
             "icon": "Shield of Durand.png",
             "leveling": [
               {
@@ -804,12 +894,12 @@
             ]
           },
           {
-            "description": "Second Cast: Galio refreshes the damage reduction for 2 seconds,  taunts nearby enemies and sets their  movement speed to a static 60 for 0.5 \u2212 1.5 (based on charge time) seconds.",
+            "description": "Second Cast: Galio refreshes the damage reduction for 2 seconds, taunts nearby enemies and sets their movement speed to a static 60 for 0.5 − 1.5 (based on charge time) seconds.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Affected enemies take magic damage, increased by 0% \u2212 200% (based on charge time).",
+            "description": "Affected enemies take magic damage, increased by 0% − 200% (based on charge time).",
             "icon": null,
             "leveling": [
               {
@@ -951,7 +1041,7 @@
         "width": null,
         "angle": null,
         "castTime": null,
-        "effectRadius": "175 \u2212 350 (based on charge time)",
+        "effectRadius": "175 − 350 (based on charge time)",
         "targetRange": null
       }
     ],
@@ -960,12 +1050,12 @@
         "name": "Justice Punch",
         "effects": [
           {
-            "description": "Active: Galio steps backwards, and after 0.4 seconds he  dashes forward, though not through terrain.",
+            "description": "Active: Galio steps backwards, and after 0.4 seconds he dashes forward, though not through terrain.",
             "icon": "Justice Punch.png",
             "leveling": []
           },
           {
-            "description": "He stops upon hitting an enemy champion, dealing them and all enemies along the way magic damage, while also  knocking them up for 0.75 seconds. Non-champions receive 50% reduced damage.",
+            "description": "He stops upon hitting an enemy champion, dealing them and all enemies along the way magic damage, while also knocking them up for 0.75 seconds. Non-champions receive 50% reduced damage.",
             "icon": null,
             "leveling": [
               {
@@ -1116,7 +1206,7 @@
         "name": "Hero's Entrance",
         "effects": [
           {
-            "description": "Active: Galio designates the target allied champion's location at the time of cast as his landing spot,  channels for 1.25 seconds, and then becomes  untargetable and  dashes to them, dealing magic damage to all nearby enemies on impact and  knocking them up for 0.75 seconds.",
+            "description": "Active: Galio designates the target allied champion's location at the time of cast as his landing spot, channels for 1.25 seconds, and then becomes untargetable and dashes to them, dealing magic damage to all nearby enemies on impact and knocking them up for 0.75 seconds.",
             "icon": "Hero's Entrance.png",
             "leveling": [
               {

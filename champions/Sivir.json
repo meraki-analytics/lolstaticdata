@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 500,
-    "selectionRadius": 115,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 500,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 115,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 1.6,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.180000007152557,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.180000007152557,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 500,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 0.92,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 0.92,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 0.92,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.92,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "MARKSMAN"
@@ -108,7 +198,7 @@
         "name": "Fleet of Foot",
         "effects": [
           {
-            "description": "Innate: Sivir gains  30 \u2212 50 (based on level) bonus movement speed for 2 seconds when she damages an enemy champion with an ability or a basic attack.",
+            "description": "Innate: Sivir gains 30 − 50 (based on level) bonus movement speed for 2 seconds when she damages an enemy champion with an ability or a basic attack.",
             "icon": "Fleet of Foot.png",
             "leveling": []
           }
@@ -145,7 +235,7 @@
         "name": "Boomerang Blade",
         "effects": [
           {
-            "description": "Active: Sivir hurls her crossblade in the target direction. Enemies in its path take  physical damage, reduced to 100% \u2212 40% (based on non-champions hit). Upon reaching maximum range the crossblade returns to her, dealing the same damage.",
+            "description": "Active: Sivir hurls her crossblade in the target direction. Enemies in its path take physical damage, reduced to 100% − 40% (based on non-champions hit). Upon reaching maximum range the crossblade returns to her, dealing the same damage.",
             "icon": "Boomerang Blade.png",
             "leveling": [
               {
@@ -434,7 +524,7 @@
             ]
           },
           {
-            "description": "If Sivir  critically strikes her target, the bounces do so as well.",
+            "description": "If Sivir critically strikes her target, the bounces do so as well.",
             "icon": null,
             "leveling": []
           },
@@ -515,12 +605,12 @@
         "name": "Spell Shield",
         "effects": [
           {
-            "description": "Active: After a brief delay, Sivir gains a  spell shield for 1.5 seconds.",
+            "description": "Active: After a brief delay, Sivir gains a spell shield for 1.5 seconds.",
             "icon": "Spell Shield.png",
             "leveling": []
           },
           {
-            "description": "If Sivir blocks an ability with this shield, she restores  mana.",
+            "description": "If Sivir blocks an ability with this shield, she restores mana.",
             "icon": null,
             "leveling": [
               {
@@ -599,7 +689,7 @@
         "name": "On the Hunt",
         "effects": [
           {
-            "description": "Passive: Sivir gains  bonus attack speed while  Ricochet is active.",
+            "description": "Passive: Sivir gains bonus attack speed while Ricochet is active.",
             "icon": "On the Hunt.png",
             "leveling": [
               {
@@ -622,7 +712,7 @@
             ]
           },
           {
-            "description": "Active: Sivir rallies all nearby allies for 8 seconds, granting them and herself  bonus movement speed that decays to half of that amount after a few seconds.",
+            "description": "Active: Sivir rallies all nearby allies for 8 seconds, granting them and herself bonus movement speed that decays to half of that amount after a few seconds.",
             "icon": null,
             "leveling": [
               {

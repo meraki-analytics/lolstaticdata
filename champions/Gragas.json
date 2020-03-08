@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 155,
-    "pathingRadius": 50,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 155,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 50,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.675,
       "percent": 0.0,
       "perLevel": 2.05,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.050000000745058,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.050000000745058,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -110,7 +200,7 @@
         "name": "Happy Hour",
         "effects": [
           {
-            "description": "Innate: Gragas periodically  heals for  6% maximum health upon using an ability.",
+            "description": "Innate: Gragas periodically heals for 6% maximum health upon using an ability.",
             "icon": "Happy Hour.png",
             "leveling": []
           }
@@ -163,7 +253,7 @@
         "name": "Barrel Roll",
         "effects": [
           {
-            "description": "Active: Gragas rolls a cask to the target location, granting  sight around it and fermenting over 2 seconds, increasing its damage and  slow strength, up to a maximum of 150%. Barrel Roll can be recast after the cask has fully travelled.",
+            "description": "Active: Gragas rolls a cask to the target location, granting sight around it and fermenting over 2 seconds, increasing its damage and slow strength, up to a maximum of 150%. Barrel Roll can be recast after the cask has fully travelled.",
             "icon": "Barrel Roll.png",
             "leveling": [
               {
@@ -359,7 +449,7 @@
             ]
           },
           {
-            "description": "After 4 seconds the cask  detonates, dealing  magic damage to all surrounding enemies, reduced by 30% against  minions, and  slowing them for 2 seconds.",
+            "description": "After 4 seconds the cask detonates, dealing magic damage to all surrounding enemies, reduced by 30% against minions, and slowing them for 2 seconds.",
             "icon": "Barrel Roll 2.png",
             "leveling": []
           },
@@ -438,7 +528,7 @@
         "name": "Barrel Roll",
         "effects": [
           {
-            "description": "Active: Gragas rolls a cask to the target location, granting  sight around it and fermenting over 2 seconds, increasing its damage and  slow strength, up to a maximum of 150%. Barrel Roll can be recast after the cask has fully travelled.",
+            "description": "Active: Gragas rolls a cask to the target location, granting sight around it and fermenting over 2 seconds, increasing its damage and slow strength, up to a maximum of 150%. Barrel Roll can be recast after the cask has fully travelled.",
             "icon": "Barrel Roll.png",
             "leveling": [
               {
@@ -634,7 +724,7 @@
             ]
           },
           {
-            "description": "After 4 seconds the cask  detonates, dealing  magic damage to all surrounding enemies, reduced by 30% against  minions, and  slowing them for 2 seconds.",
+            "description": "After 4 seconds the cask detonates, dealing magic damage to all surrounding enemies, reduced by 30% against minions, and slowing them for 2 seconds.",
             "icon": "Barrel Roll 2.png",
             "leveling": []
           },
@@ -758,7 +848,7 @@
             ]
           },
           {
-            "description": "Upon completing the  channel, Gragas' next basic attack within 5 seconds gains  50 bonus range and deals bonus magic damage to the target and nearby enemies, capped at 300 against  monsters.",
+            "description": "Upon completing the channel, Gragas' next basic attack within 5 seconds gains 50 bonus range and deals bonus magic damage to the target and nearby enemies, capped at 300 against monsters.",
             "icon": "Drunken Rage 2.png",
             "leveling": [
               {
@@ -966,7 +1056,7 @@
             ]
           },
           {
-            "description": "Upon completing the  channel, Gragas' next basic attack within 5 seconds gains  50 bonus range and deals bonus magic damage to the target and nearby enemies, capped at 300 against  monsters.",
+            "description": "Upon completing the channel, Gragas' next basic attack within 5 seconds gains 50 bonus range and deals bonus magic damage to the target and nearby enemies, capped at 300 against monsters.",
             "icon": "Drunken Rage 2.png",
             "leveling": [
               {
@@ -1133,7 +1223,7 @@
         "name": "Body Slam",
         "effects": [
           {
-            "description": "Active: Gragas  charges forward, dealing magic damage to all nearby enemies upon colliding with one as well as  knocking them back and  stunning them for 1 second.",
+            "description": "Active: Gragas charges forward, dealing magic damage to all nearby enemies upon colliding with one as well as knocking them back and stunning them for 1 second.",
             "icon": "Body Slam.png",
             "leveling": [
               {
@@ -1176,7 +1266,7 @@
             ]
           },
           {
-            "description": "Body Slam's  cooldown is reduced by 3 seconds if Gragas hits an enemy.",
+            "description": "Body Slam's cooldown is reduced by 3 seconds if Gragas hits an enemy.",
             "icon": null,
             "leveling": []
           }
@@ -1252,7 +1342,7 @@
         "name": "Explosive Cask",
         "effects": [
           {
-            "description": "Active: Gragas hurls a cask for 0.55 seconds to the target location exploding on impact, damaging all nearby enemies and  knocking them back 900 units from the epicenter of the explosion, while also briefly granting  sight of the nearby surroundings.",
+            "description": "Active: Gragas hurls a cask for 0.55 seconds to the target location exploding on impact, damaging all nearby enemies and knocking them back 900 units from the epicenter of the explosion, while also briefly granting sight of the nearby surroundings.",
             "icon": "Explosive Cask.png",
             "leveling": [
               {
@@ -1348,7 +1438,7 @@
   },
   "releaseDate": "2010-02-02",
   "releasePatch": "1.0.0.72",
-  "patchLastChanged": "9.19",
+  "patchLastChanged": "10.5",
   "price": {
     "blueEssence": 3150,
     "rp": 790

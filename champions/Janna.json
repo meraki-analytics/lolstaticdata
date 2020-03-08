@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 550,
-    "selectionRadius": 125,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 550,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2.95,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0799999982118606,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0799999982118606,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.1,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 0.9,
-    "aramShielding": 0.9,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 0.92
+    "aramDamageTaken": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 0.92,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ENCHANTER",
@@ -110,12 +200,12 @@
         "name": "Tailwind",
         "effects": [
           {
-            "description": "Innate: Janna passively gains  8% bonus movement speed and grants the same amount to nearby allied champions moving towards her.",
+            "description": "Innate: Janna passively gains 8% bonus movement speed and grants the same amount to nearby allied champions moving towards her.",
             "icon": "Tailwind.png",
             "leveling": []
           },
           {
-            "description": "Janna's basic attacks and  Zephyr deal bonus on-hit magic damage equal to 25 / 35% (based on level) of her bonus  movement speed.",
+            "description": "Janna's basic attacks and Zephyr deal bonus on-hit magic damage equal to 25 / 35% (based on level) of her bonus movement speed.",
             "icon": null,
             "leveling": []
           }
@@ -152,7 +242,7 @@
         "name": "Howling Gale",
         "effects": [
           {
-            "description": "Active: Janna summons a whirlwind at her current location which charges up over 3 seconds. Its range, speed, damage, and  knockup duration increase for each second it is left charging.",
+            "description": "Active: Janna summons a whirlwind at her current location which charges up over 3 seconds. Its range, speed, damage, and knockup duration increase for each second it is left charging.",
             "icon": "Howling Gale.png",
             "leveling": [
               {
@@ -269,7 +359,7 @@
             ]
           },
           {
-            "description": "At the end of the duration, or upon reactivation, the whirlwind launches itself for 1.5 seconds in the target direction, dealing magic damage to all enemies it passes through and  knocking them up for 0.5 \u2212 1.25 (based on seconds charged) seconds.",
+            "description": "At the end of the duration, or upon reactivation, the whirlwind launches itself for 1.5 seconds in the target direction, dealing magic damage to all enemies it passes through and knocking them up for 0.5 − 1.25 (based on seconds charged) seconds.",
             "icon": null,
             "leveling": []
           }
@@ -332,12 +422,12 @@
         "tetherRadius": null,
         "onTargetCdStatic": null,
         "innerRadius": null,
-        "speed": "666.67 \u2212 1166.67 (based on seconds charged)",
+        "speed": "666.67 − 1166.67 (based on seconds charged)",
         "width": null,
         "angle": null,
         "castTime": null,
         "effectRadius": null,
-        "targetRange": "1000 \u2212 1750 (based on seconds charged)"
+        "targetRange": "1000 − 1750 (based on seconds charged)"
       }
     ],
     "W": [
@@ -345,7 +435,7 @@
         "name": "Zephyr",
         "effects": [
           {
-            "description": "Passive: While Zephyr is not on cooldown, Janna is aided by an air elemental who  ghosts her and grants her  bonus movement speed.",
+            "description": "Passive: While Zephyr is not on cooldown, Janna is aided by an air elemental who ghosts her and grants her bonus movement speed.",
             "icon": "Zephyr.png",
             "leveling": [
               {
@@ -388,7 +478,7 @@
             ]
           },
           {
-            "description": "Active: Janna commands her air elemental to attack the target enemy, dealing them magic damage and  slowing them for 2 seconds by an amount, capped at a maximum of 99%.",
+            "description": "Active: Janna commands her air elemental to attack the target enemy, dealing them magic damage and slowing them for 2 seconds by an amount, capped at a maximum of 99%.",
             "icon": null,
             "leveling": [
               {
@@ -549,7 +639,7 @@
         "name": "Eye of the Storm",
         "effects": [
           {
-            "description": "Active: Janna  shields the target allied champion or herself for 5 seconds, decaying over the duration after 0.75 seconds.",
+            "description": "Active: Janna shields the target allied champion or herself for 5 seconds, decaying over the duration after 0.75 seconds.",
             "icon": "Eye of the Storm.png",
             "leveling": [
               {
@@ -592,7 +682,7 @@
             ]
           },
           {
-            "description": "While the shield holds, her target gains  bonus attack damage.",
+            "description": "While the shield holds, her target gains bonus attack damage.",
             "icon": null,
             "leveling": [
               {
@@ -635,12 +725,12 @@
             ]
           },
           {
-            "description": "Each ability that  slows or applies  airborne effects to an enemy champion reduces Eye of the Storm's cooldown by 20%, up to once per ability cast.",
+            "description": "Each ability that slows or applies airborne effects to an enemy champion reduces Eye of the Storm's cooldown by 20%, up to once per ability cast.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Eye of the Storm can be used on  turrets, causing Janna to be credited for any  champion kills it earns while the shield holds.",
+            "description": "Eye of the Storm can be used on turrets, causing Janna to be credited for any champion kills it earns while the shield holds.",
             "icon": null,
             "leveling": []
           }
@@ -716,12 +806,12 @@
         "name": "Monsoon",
         "effects": [
           {
-            "description": "Active: Janna  channels for 3 seconds,  knocking back all nearby enemies up to 875 units based on their proximity to her, while  stunning them for 0.5 seconds.",
+            "description": "Active: Janna channels for 3 seconds, knocking back all nearby enemies up to 875 units based on their proximity to her, while stunning them for 0.5 seconds.",
             "icon": "Monsoon.png",
             "leveling": []
           },
           {
-            "description": "While channeling, she releases soothing winds that  heal nearby allies every half-second.",
+            "description": "While channeling, she releases soothing winds that heal nearby allies every half-second.",
             "icon": null,
             "leveling": [
               {

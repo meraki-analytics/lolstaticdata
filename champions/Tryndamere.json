@@ -26,6 +26,12 @@
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
+    "manaRegen": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
     "armor": {
       "flat": 33,
       "percent": 0.0,
@@ -50,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 135,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 135,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.67,
       "percent": 0.0,
       "perLevel": 2.9,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.6700000166893,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.109999999403953,
+    "attackSpeedRatio": {
+      "flat": 0.6700000166893,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.109999999403953,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.9,
-    "aramDamageDealt": 1.1,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -104,12 +200,12 @@
         "name": "Battle Fury",
         "effects": [
           {
-            "description": "Fury: Tryndamere gains  5 Fury each time he lands a basic attack, and 10 Fury on  critical strikes and each time he kills an enemy. After not dealing or receiving damage for 8 seconds, Tryndamere loses 5 Fury per second.",
+            "description": "Fury: Tryndamere gains 5 Fury each time he lands a basic attack, and 10 Fury on critical strikes and each time he kills an enemy. After not dealing or receiving damage for 8 seconds, Tryndamere loses 5 Fury per second.",
             "icon": "Battle Fury.png",
             "leveling": []
           },
           {
-            "description": "Battle Fury: Tryndamere gains 0.35% \u2212 0.5% (based on level) critical strike chance per point of Fury, up to a maximum of 35% \u2212 50% (based on level) critical strike chance.",
+            "description": "Battle Fury: Tryndamere gains 0.35% − 0.5% (based on level) critical strike chance per point of Fury, up to a maximum of 35% − 50% (based on level) critical strike chance.",
             "icon": null,
             "leveling": []
           }
@@ -146,7 +242,7 @@
         "name": "Bloodlust",
         "effects": [
           {
-            "description": "Passive: Tryndamere permanently has bonus attack damage, and gains additional bonus attack damage per  1% of his missing health.",
+            "description": "Passive: Tryndamere permanently has bonus attack damage, and gains additional bonus attack damage per 1% of his missing health.",
             "icon": "Bloodlust.png",
             "leveling": [
               {
@@ -215,7 +311,7 @@
             ]
           },
           {
-            "description": "Active: Tryndamere consumes all of his  Fury and heals himself, increased for every point of Fury consumed.",
+            "description": "Active: Tryndamere consumes all of his Fury and heals himself, increased for every point of Fury consumed.",
             "icon": null,
             "leveling": [
               {
@@ -430,7 +526,7 @@
             ]
           },
           {
-            "description": "Targets who have their backs turned to him are also  slowed for the duration.",
+            "description": "Targets who have their backs turned to him are also slowed for the duration.",
             "icon": null,
             "leveling": [
               {
@@ -509,7 +605,7 @@
         "name": "Spinning Slash",
         "effects": [
           {
-            "description": "Active: Tryndamere  dashes to a target location, dealing  physical damage to enemies in his path and gaining  2 Fury per enemy hit.",
+            "description": "Active: Tryndamere dashes to a target location, dealing physical damage to enemies in his path and gaining 2 Fury per enemy hit.",
             "icon": "Spinning Slash.png",
             "leveling": [
               {
@@ -568,7 +664,7 @@
             ]
           },
           {
-            "description": "Spinning Slash's  cooldown is reduced by 1 second whenever Tryndamere  critically strikes, increased to 2 seconds against enemy champions.",
+            "description": "Spinning Slash's cooldown is reduced by 1 second whenever Tryndamere critically strikes, increased to 2 seconds against enemy champions.",
             "icon": null,
             "leveling": []
           }
@@ -625,7 +721,7 @@
         "name": "Undying Rage",
         "effects": [
           {
-            "description": "Active: Tryndamere instantly gains  Fury and becomes immune to death for 5 seconds, during which his health cannot fall below a certain amount.",
+            "description": "Active: Tryndamere instantly gains Fury and becomes immune to death for 5 seconds, during which his health cannot fall below a certain amount.",
             "icon": "Undying Rage.png",
             "leveling": [
               {

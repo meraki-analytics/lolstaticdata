@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 550,
-    "selectionRadius": 100,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 550,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.644,
       "percent": 0.0,
       "perLevel": 2.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.643999993801116,
-    "attackCastTime": 0.300000011920928,
-    "attackTotalTime": 1.55200004577636,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.643999993801116,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.300000011920928,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.55200004577636,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.94,
-    "aramDamageDealt": 1.06,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.95,
-    "urfDamageDealt": 1.05,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.94,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.06,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "DIVER",
@@ -110,7 +200,7 @@
         "name": "Adaptive Defenses",
         "effects": [
           {
-            "description": "Innate: Periodically, Camille's next basic attack against enemy champions is enhanced to  shield her for 20% of her maximum health for 2 seconds from either exclusively  physical damage or  magic damage, based on which type would mitigate the most damage from her target.",
+            "description": "Innate: Periodically, Camille's next basic attack against enemy champions is enhanced to shield her for 20% of her maximum health for 2 seconds from either exclusively physical damage or magic damage, based on which type would mitigate the most damage from her target.",
             "icon": "Adaptive Defenses.png",
             "leveling": []
           }
@@ -163,7 +253,7 @@
         "name": "Precision Protocol",
         "effects": [
           {
-            "description": "First cast - Active: Camille's next basic attack has  50 bonus range, deals bonus physical damage and grants  bonus movement speed for 1 second.",
+            "description": "First cast - Active: Camille's next basic attack has 50 bonus range, deals bonus physical damage and grants bonus movement speed for 1 second.",
             "icon": "Precision Protocol.png",
             "leveling": [
               {
@@ -216,7 +306,7 @@
             "leveling": []
           },
           {
-            "description": "Second cast - Active: If recast at least 1.5 seconds after the first attack, Precision Protocol's damage is doubled and 40% \u2212 100% (based on level) of the total damage is dealt as  true damage.",
+            "description": "Second cast - Active: If recast at least 1.5 seconds after the first attack, Precision Protocol's damage is doubled and 40% − 100% (based on level) of the total damage is dealt as true damage.",
             "icon": "Precision Protocol 3.png",
             "leveling": [
               {
@@ -317,7 +407,7 @@
         "name": "Precision Protocol",
         "effects": [
           {
-            "description": "First cast - Active: Camille's next basic attack has  50 bonus range, deals bonus physical damage and grants  bonus movement speed for 1 second.",
+            "description": "First cast - Active: Camille's next basic attack has 50 bonus range, deals bonus physical damage and grants bonus movement speed for 1 second.",
             "icon": "Precision Protocol.png",
             "leveling": [
               {
@@ -370,7 +460,7 @@
             "leveling": []
           },
           {
-            "description": "Second cast - Active: If recast at least 1.5 seconds after the first attack, Precision Protocol's damage is doubled and 40% \u2212 100% (based on level) of the total damage is dealt as  true damage.",
+            "description": "Second cast - Active: If recast at least 1.5 seconds after the first attack, Precision Protocol's damage is doubled and 40% − 100% (based on level) of the total damage is dealt as true damage.",
             "icon": "Precision Protocol 3.png",
             "leveling": [
               {
@@ -471,7 +561,7 @@
         "name": "Precision Protocol",
         "effects": [
           {
-            "description": "First cast - Active: Camille's next basic attack has  50 bonus range, deals bonus physical damage and grants  bonus movement speed for 1 second.",
+            "description": "First cast - Active: Camille's next basic attack has 50 bonus range, deals bonus physical damage and grants bonus movement speed for 1 second.",
             "icon": "Precision Protocol.png",
             "leveling": [
               {
@@ -524,7 +614,7 @@
             "leveling": []
           },
           {
-            "description": "Second cast - Active: If recast at least 1.5 seconds after the first attack, Precision Protocol's damage is doubled and 40% \u2212 100% (based on level) of the total damage is dealt as  true damage.",
+            "description": "Second cast - Active: If recast at least 1.5 seconds after the first attack, Precision Protocol's damage is doubled and 40% − 100% (based on level) of the total damage is dealt as true damage.",
             "icon": "Precision Protocol 3.png",
             "leveling": [
               {
@@ -627,7 +717,7 @@
         "name": "Tactical Sweep",
         "effects": [
           {
-            "description": "Active: After a 1.1 second delay, Camille sweeps her leg to deal physical damage to all enemies in a cone in the target direction,  disarming herself for the duration.",
+            "description": "Active: After a 1.1 second delay, Camille sweeps her leg to deal physical damage to all enemies in a cone in the target direction, disarming herself for the duration.",
             "icon": "Tactical Sweep.png",
             "leveling": [
               {
@@ -707,7 +797,7 @@
             ]
           },
           {
-            "description": "Enemies hit by the outer half of the cone take bonus physical damage and are  slowed by 80% that decays over 2 seconds, capped at 300 damage against  monsters. Camille is  healed for the bonus damage dealt against enemy  champions.",
+            "description": "Enemies hit by the outer half of the cone take bonus physical damage and are slowed by 80% that decays over 2 seconds, capped at 300 damage against monsters. Camille is healed for the bonus damage dealt against enemy champions.",
             "icon": null,
             "leveling": [
               {
@@ -857,7 +947,7 @@
         "innerRadius": null,
         "speed": null,
         "width": null,
-        "angle": "70\u00b0",
+        "angle": "70°",
         "castTime": "false",
         "effectRadius": "650",
         "targetRange": null
@@ -868,12 +958,12 @@
         "name": "Hookshot",
         "effects": [
           {
-            "description": "Active: Camille fires a grapple toward the target location. If the grapple collides with terrain, Camille will  dash toward and bind to the terrain for 0.75 seconds. While bound, she gains the ability to cast  Wall Dive.",
+            "description": "Active: Camille fires a grapple toward the target location. If the grapple collides with terrain, Camille will dash toward and bind to the terrain for 0.75 seconds. While bound, she gains the ability to cast Wall Dive.",
             "icon": "Hookshot.png",
             "leveling": []
           },
           {
-            "description": "Other abilities can be cast during the ability. Casting  The Hextech Ultimatum will cancel the grapple.",
+            "description": "Other abilities can be cast during the ability. Casting The Hextech Ultimatum will cancel the grapple.",
             "icon": null,
             "leveling": []
           }
@@ -947,7 +1037,7 @@
         "name": "Wall Dive",
         "effects": [
           {
-            "description": "Active: Camille  dashes in the target direction, dealing physical damage to enemies near the landing location. The range is doubled towards enemy  champions within 1400 range.",
+            "description": "Active: Camille dashes in the target direction, dealing physical damage to enemies near the landing location. The range is doubled towards enemy champions within 1400 range.",
             "icon": "Wall Dive.png",
             "leveling": [
               {
@@ -990,7 +1080,7 @@
             ]
           },
           {
-            "description": "She prematurely stops upon colliding with an enemy champion,  knocking back and  stunning them and all nearby enemy champions for 0.75 seconds, while also gaining  bonus attack speed for 5 seconds.",
+            "description": "She prematurely stops upon colliding with an enemy champion, knocking back and stunning them and all nearby enemy champions for 0.75 seconds, while also gaining bonus attack speed for 5 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -1017,7 +1107,7 @@
             ]
           },
           {
-            "description": "Other abilities besides  The Hextech Ultimatum can be cast while grappled or during the dash.",
+            "description": "Other abilities besides The Hextech Ultimatum can be cast while grappled or during the dash.",
             "icon": null,
             "leveling": []
           }
@@ -1054,12 +1144,12 @@
         "name": "The Hextech Ultimatum",
         "effects": [
           {
-            "description": "Active: Camille becomes  untargetable and  leaps  unstoppably towards the target  enemy champion.",
+            "description": "Active: Camille becomes untargetable and leaps unstoppably towards the target enemy champion.",
             "icon": "The Hextech Ultimatum.png",
             "leveling": []
           },
           {
-            "description": "When she lands, she creates a hexagonal zone around the target's current location for a duration,  interrupting them and  knocking away all other nearby enemies on impact.",
+            "description": "When she lands, she creates a hexagonal zone around the target's current location for a duration, interrupting them and knocking away all other nearby enemies on impact.",
             "icon": null,
             "leveling": [
               {

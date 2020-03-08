@@ -64,10 +64,16 @@ class Stats(object):
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
+class Prices(object):
+    total: int
+    combined: int
+    sell: int
+
+
+@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
+@dataclass
 class Shop(object):
-    price_total: int
-    price_combined: int
-    price_sell: int
+    prices: Prices
     tags: List[str]
 
 
@@ -93,15 +99,6 @@ class Active(object):
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
-class Aura(object):
-    unique: bool
-    name: str
-    effects: str
-    range : int
-
-
-@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
-@dataclass
 class Item(object):
     name: str
     id: int
@@ -114,37 +111,11 @@ class Item(object):
     nicknames: List[str]
     passives: List[Passive]
     active: List[Active]
-    auras: List[Aura]
     stats: Stats
     shop: Shop
 
     def __json__(self, *args, **kwargs):
-        stat_names = ["health", "health_regen", "mana", "mana_regen", "armor", "magic_resistance", "attack_damage", "movespeed", "critical_strike_chance", "attack_speed", "ability_power", "cooldown_reduction", "gold_per_10", "heal_and_shield_power", "lifesteal", "magic_penetration", "lethality", "armor_penetration"]
-
         # Use dataclasses_json to get the dict
         d = self.to_dict()
-
-        # Remove armor pen if it's 0 (default)
-        if d['stats'].get('armorPenetration') == 0:
-            del d['stats']['armorPenetration']
-
-        # Remove stats if they are empty
-        for name in stat_names:
-            stat = getattr(self.stats, name)
-            if stat.flat == stat.percent == stat.per_level == stat.percent_per_level == stat.percent_base == stat.percent_bonus == 0:
-                camel = stringcase.camelcase(name)
-                del d['stats'][camel]
-
-        # Remove passive/active/aura stats if they are empty
-        for passive_active_aura in ("passives",): # "actives", "auras"):  # Actually, actives and auras don't have stats
-            for i in range(len(d[passive_active_aura])):
-                dstats = d[passive_active_aura][i]["stats"]
-                stats = getattr(self, passive_active_aura)[i].stats
-                for name in stat_names:
-                    camel = stringcase.camelcase(name)
-                    stat = getattr(stats, name)
-                    if stat.flat == stat.percent == stat.per_level == stat.percent_per_level == stat.percent_base == stat.percent_bonus == 0:
-                        del dstats[camel]
-
-        # Return the modified dict
+        # Return the (un)modified dict
         return json.dumps(d, cls=ExtendedEncoder, *args, **kwargs)

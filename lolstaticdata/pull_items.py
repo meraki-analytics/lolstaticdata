@@ -31,15 +31,15 @@ def main():
 
         if item is not None:
             jsonfn = os.path.join(directory, "items", str(item.id) + ".json")
-            with open(jsonfn, 'w') as f:
-                j = item.__json__(indent=2)
+            with open(jsonfn, 'w', encoding='utf8') as f:
+                j = item.__json__(indent=2, ensure_ascii=False)
                 f.write(j)
-            jsons[item.id] = json.loads(item.__json__())
+            jsons[item.id] = json.loads(item.__json__(ensure_ascii=False))
             print(item.id)
 
     jsonfn = os.path.join(directory, "items.json")
-    with open(jsonfn, 'w') as f:
-        json.dump(jsons, f, indent=2)
+    with open(jsonfn, 'w', encoding='utf8') as f:
+        json.dump(jsons, f, indent=2, ensure_ascii=False)
     del jsons
 
 

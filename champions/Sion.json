@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 125,
-    "pathingRadius": 25.7665996551513,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 25.7665996551513,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.679,
       "percent": 0.0,
       "perLevel": 1.3,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.67900002002716,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0509057976305484,
+    "attackSpeedRatio": {
+      "flat": 0.67900002002716,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0509057976305484,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 175,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.08,
-    "aramDamageDealt": 0.92,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.85,
-    "urfDamageDealt": 1.1,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.08,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 0.92,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.85,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -110,17 +200,17 @@
         "name": "Glory in Death",
         "effects": [
           {
-            "description": "Innate: Upon taking fatal damage, Sion becomes  untargetable for 1.5 seconds, after which he enters a frenzy, restoring himself to  100% maximum health but losing 2 \u2212 19 (based on level) every 0.265 seconds, increasing by [ 70% of the base value ][ 1.4 \u2212 13.3 (based on level) ] per subsequent tick.",
+            "description": "Innate: Upon taking fatal damage, Sion becomes untargetable for 1.5 seconds, after which he enters a frenzy, restoring himself to 100% maximum health but losing 2 − 19 (based on level) every 0.265 seconds, increasing by [ 70% of the base value ][ 1.4 − 13.3 (based on level) ] per subsequent tick.",
             "icon": "Glory in Death.png",
             "leveling": []
           },
           {
-            "description": "Sion can freely move and use basic attacks during this time, gaining  100% life steal, attacking at  1.75 attack speed, and dealing 10% of the target\u2019s maximum health bonus physical damage on-hit, capped at 75 against minions and monsters.",
+            "description": "Sion can freely move and use basic attacks during this time, gaining 100% life steal, attacking at 1.75 attack speed, and dealing 10% of the target’s maximum health bonus physical damage on-hit, capped at 75 against minions and monsters.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Glory in Death cannot last more than 60 seconds. Reaching the time will cause Sion to instantly die, regardless of his remaining health. While Glory in Death is active Sion's standard abilities are replaced with  Death Surge.",
+            "description": "Glory in Death cannot last more than 60 seconds. Reaching the time will cause Sion to instantly die, regardless of his remaining health. While Glory in Death is active Sion's standard abilities are replaced with Death Surge.",
             "icon": null,
             "leveling": []
           }
@@ -136,7 +226,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Glory in Death will still trigger if Sion is killed by the Nexus Obelisk and will always trigger after other revive effects (e.g  Guardian Angel).\n Sion's death timer starts ticking when he first dies and not when Glory in Death's duration ends.\n If Sion lives longer than his death timer lasts for, he will not revive until Glory in Death has ended. When it has ended, he will revive instantly, which can result in some odd interactions and bugs at times.\n\n Glory in Death does not trigger on clones of Sion, such as with  Test of Spirit.\n Upon death, Sion will drop 'most' non-permanent buffs and debuffs before transitioning into Glory in Death. These effects include undisplayed statuses, for example the 'already stunned by this'-flag of  Veigar's  Event Horizon or  Viktor's  Gravity Field.\n Sion's transition will not remove effects that presist through death, such as  Brand's  Blaze.\n\n All projectiles targeting Sion are destroyed at the start of becoming  untargetable.\n Projectiles created after the fact will still travel to Sion, but only affect him if he's no longer untargetable.\n\n If a projectile is targeting Sion at the end of Glory in Death and he revives instantly, it will not be destroyed.\n At the start of Glory in Death, Sion's mana drops to 0, but will still be affected by mana restoration.\n During Glory in Death Sion: \n Has all sources of self-healing other than  life steal and  spell vamp reduced by 100%.\n This includes item passives such as  Hextech Gunblade and  Blade of the Ruined King's special lifesteal-affected on-hit, as well as runes such as  Ravenous Hunter.\n  Spirit Visage's unique passive is unaffected and furthermore 'lowers' this reduction to 70% due to the way it factors in.\n\n Can  critically strike, but will use no special animation and no special sound effect.\n Can use item actives.\n Cannot use summoner spells.\n Cannot take  Dark Passage.\n Cannot be targeted by  Devour.\n Can use  Magical Journey.\n Cannot be  banished to the  Realm of Death.\n\n Sion's attack speed during Glory in Death is fixed at 1.75 and it's unaffected by attack speed slows/buffs for the duration.\n Buffs that allow for the normal 2.5 attack speed cap to be broken, such as  Lethal Tempo and  Hail of Blades, will also break the upper limit of the 1.75 cap, but not the lower one. This means that while these buffs are active, Sion can exceed 1.75 attack speed, but cannot fall below it.\n After the effect ends, the attack speed cap will not revert to 1.75 but to 2.5. However Sion will still not be able to go below 1.75 attack speed.\n\n Buffs from jungle monsters Sion gains during Glory in Death ( Crest of Cinders,  Crest of Insight) will not be lost once the duration ends.\n By surviving for the full duration of 60 seconds, Sion will suffer 36.4k \u2212 345.5k (based on level) self-damage.\n After Glory in Death ends, the corpse of Sion will retain body block despite being dead on the ground.\n Even though its visuals are present,  Dark Harvest can never be gained from Sion under the effect of Glory in Death.\n Sion cannot  Recall while under the effect of Glory in Death.\n The effect that heals Sion back to full health at the start of Glory in Death cannot be modified by  healing reductions and does not count towards the 'Damage Healed' statistic at the end of game lobby.",
+        "notes": "Glory in Death will still trigger if Sion is killed by the Nexus Obelisk and will always trigger after other revive effects (e.g  Guardian Angel).\n Sion's death timer starts ticking when he first dies and not when Glory in Death's duration ends.\n If Sion lives longer than his death timer lasts for, he will not revive until Glory in Death has ended. When it has ended, he will revive instantly, which can result in some odd interactions and bugs at times.\n\n Glory in Death does not trigger on clones of Sion, such as with  Test of Spirit.\n Upon death, Sion will drop 'most' non-permanent buffs and debuffs before transitioning into Glory in Death. These effects include undisplayed statuses, for example the 'already stunned by this'-flag of  Veigar's  Event Horizon or  Viktor's  Gravity Field.\n Sion's transition will not remove effects that presist through death, such as  Brand's  Blaze.\n\n All projectiles targeting Sion are destroyed at the start of becoming  untargetable.\n Projectiles created after the fact will still travel to Sion, but only affect him if he's no longer untargetable.\n\n If a projectile is targeting Sion at the end of Glory in Death and he revives instantly, it will not be destroyed.\n At the start of Glory in Death, Sion's mana drops to 0, but will still be affected by mana restoration.\n During Glory in Death Sion: \n Has all sources of self-healing other than  life steal and  spell vamp reduced by 100%.\n This includes item passives such as  Hextech Gunblade and  Blade of the Ruined King's special lifesteal-affected on-hit, as well as runes such as  Ravenous Hunter.\n  Spirit Visage's unique passive is unaffected and furthermore 'lowers' this reduction to 70% due to the way it factors in.\n\n Can  critically strike, but will use no special animation and no special sound effect.\n Can use item actives.\n Cannot use summoner spells.\n Cannot take  Dark Passage.\n Cannot be targeted by  Devour.\n Can use  Magical Journey.\n Cannot be  banished to the  Realm of Death.\n\n Sion's attack speed during Glory in Death is fixed at 1.75 and it's unaffected by attack speed slows/buffs for the duration.\n Buffs that allow for the normal 2.5 attack speed cap to be broken, such as  Lethal Tempo and  Hail of Blades, will also break the upper limit of the 1.75 cap, but not the lower one. This means that while these buffs are active, Sion can exceed 1.75 attack speed, but cannot fall below it.\n After the effect ends, the attack speed cap will not revert to 1.75 but to 2.5. However Sion will still not be able to go below 1.75 attack speed.\n\n Buffs from jungle monsters Sion gains during Glory in Death ( Crest of Cinders,  Crest of Insight) will not be lost once the duration ends.\n By surviving for the full duration of 60 seconds, Sion will suffer 36.4k − 345.5k (based on level) self-damage.\n After Glory in Death ends, the corpse of Sion will retain body block despite being dead on the ground.\n Even though its visuals are present,  Dark Harvest can never be gained from Sion under the effect of Glory in Death.\n Sion cannot  Recall while under the effect of Glory in Death.\n The effect that heals Sion back to full health at the start of Glory in Death cannot be modified by  healing reductions and does not count towards the 'Damage Healed' statistic at the end of game lobby.",
         "blurb": "After being killed, Sion will reanimate with rapidly decaying Health. His attacks become very rapid, gain 100% Lifesteal and deal bonus physical damage equal to 10% of his target's maximum Health (max 75 to monsters). All his abilities are replaced with Death Surge, which grants a burst of Movement Speed.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -155,7 +245,7 @@
         "name": "Death Surge",
         "effects": [
           {
-            "description": "Active: Sion gains  50% bonus movement speed that decays over 1.5 seconds.",
+            "description": "Active: Sion gains 50% bonus movement speed that decays over 1.5 seconds.",
             "icon": "Death Surge.png",
             "leveling": []
           }
@@ -208,7 +298,7 @@
         "name": "Decimating Smash",
         "effects": [
           {
-            "description": "Active: Sion  channels for up to 2 seconds to swing in the target direction, increasing Decimating Smash's damage every 0.25 seconds, up to a bonus cap for the base physical damage and up to 200% bonus for the scaling physical damage. Decimating Smash can be recast at any time within its duration.",
+            "description": "Active: Sion channels for up to 2 seconds to swing in the target direction, increasing Decimating Smash's damage every 0.25 seconds, up to a bonus cap for the base physical damage and up to 200% bonus for the scaling physical damage. Decimating Smash can be recast at any time within its duration.",
             "icon": "Decimating Smash.png",
             "leveling": [
               {
@@ -309,12 +399,12 @@
             ]
           },
           {
-            "description": "If the channel is  interrupted, Decimating Smash goes on a reduced  2 seconds cooldown, but no mana is refunded.",
+            "description": "If the channel is interrupted, Decimating Smash goes on a reduced 2 seconds cooldown, but no mana is refunded.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Recast: Sion flails his axe, dealing physical damage to all enemies in the target area, and  slowing them by 50% for 0.25 seconds. Decimating Smash deals 60% damage against minions.",
+            "description": "Recast: Sion flails his axe, dealing physical damage to all enemies in the target area, and slowing them by 50% for 0.25 seconds. Decimating Smash deals 60% damage against minions.",
             "icon": null,
             "leveling": [
               {
@@ -394,7 +484,7 @@
             ]
           },
           {
-            "description": "If Decimating Smash was charged for at least 1 second, Sion instead slams his axe down,  knocking up all enemies hit for 0.5 \u2212 1 (based on channel time) seconds and  stunning them for 1.25 \u2212 2.25 (based on channel time) seconds.",
+            "description": "If Decimating Smash was charged for at least 1 second, Sion instead slams his axe down, knocking up all enemies hit for 0.5 − 1 (based on channel time) seconds and stunning them for 1.25 − 2.25 (based on channel time) seconds.",
             "icon": null,
             "leveling": []
           }
@@ -462,7 +552,7 @@
         "angle": null,
         "castTime": null,
         "effectRadius": "300",
-        "targetRange": "300 \u2212 600 (based on channel time)"
+        "targetRange": "300 − 600 (based on channel time)"
       }
     ],
     "W": [
@@ -470,12 +560,12 @@
         "name": "Soul Furnace",
         "effects": [
           {
-            "description": "Passive: Sion permanently gains  4 bonus health whenever he kills an enemy, increased to 15 bonus health against large enemies and enemy champion  takedowns.",
+            "description": "Passive: Sion permanently gains 4 bonus health whenever he kills an enemy, increased to 15 bonus health against large enemies and enemy champion takedowns.",
             "icon": "false",
             "leveling": []
           },
           {
-            "description": "First Cast: Sion  shields himself for up to 6 seconds. After 3 seconds, Soul Furnace can be reactivated to detonate the shield, detonating automatically if it persists for the full duration.",
+            "description": "First Cast: Sion shields himself for up to 6 seconds. After 3 seconds, Soul Furnace can be reactivated to detonate the shield, detonating automatically if it persists for the full duration.",
             "icon": "Soul Furnace.png",
             "leveling": [
               {
@@ -534,7 +624,7 @@
             ]
           },
           {
-            "description": "Second Cast: Soul Furnace's shield detonates to deal  magic damage to enemies around Sion, capped at 400 against minions and monsters.",
+            "description": "Second Cast: Soul Furnace's shield detonates to deal magic damage to enemies around Sion, capped at 400 against minions and monsters.",
             "icon": "Soul Furnace 2.png",
             "leveling": [
               {
@@ -662,12 +752,12 @@
         "name": "Soul Furnace",
         "effects": [
           {
-            "description": "Passive: Sion permanently gains  4 bonus health whenever he kills an enemy, increased to 15 bonus health against large enemies and enemy champion  takedowns.",
+            "description": "Passive: Sion permanently gains 4 bonus health whenever he kills an enemy, increased to 15 bonus health against large enemies and enemy champion takedowns.",
             "icon": "false",
             "leveling": []
           },
           {
-            "description": "First Cast: Sion  shields himself for up to 6 seconds. After 3 seconds, Soul Furnace can be reactivated to detonate the shield, detonating automatically if it persists for the full duration.",
+            "description": "First Cast: Sion shields himself for up to 6 seconds. After 3 seconds, Soul Furnace can be reactivated to detonate the shield, detonating automatically if it persists for the full duration.",
             "icon": "Soul Furnace.png",
             "leveling": [
               {
@@ -726,7 +816,7 @@
             ]
           },
           {
-            "description": "Second Cast: Soul Furnace's shield detonates to deal  magic damage to enemies around Sion, capped at 400 against minions and monsters.",
+            "description": "Second Cast: Soul Furnace's shield detonates to deal magic damage to enemies around Sion, capped at 400 against minions and monsters.",
             "icon": "Soul Furnace 2.png",
             "leveling": [
               {
@@ -856,7 +946,7 @@
         "name": "Roar of the Slayer",
         "effects": [
           {
-            "description": "Active: Sion bellows in the target direction, dealing magic damage to the first enemy hit,  slowing them for 2.5 seconds as well as  reducing their  armor by 20% for 4 seconds.",
+            "description": "Active: Sion bellows in the target direction, dealing magic damage to the first enemy hit, slowing them for 2.5 seconds as well as reducing their armor by 20% for 4 seconds.",
             "icon": "Roar of the Slayer.png",
             "leveling": [
               {
@@ -920,7 +1010,7 @@
             ]
           },
           {
-            "description": "If the target is a  minion or non-epic  monster, it is  knocked back, in the same line, up to 1300 units away from Sion, dealing the same damage and applying the same effects to all enemies it passes through as well as briefly  revealing the area it goes through. Projectile enemies are  invulnerable to minion damage and take their damage once they are stopped, by either colliding with terrain or reaching the end of their trajectory.",
+            "description": "If the target is a minion or non-epic monster, it is knocked back, in the same line, up to 1300 units away from Sion, dealing the same damage and applying the same effects to all enemies it passes through as well as briefly revealing the area it goes through. Projectile enemies are invulnerable to minion damage and take their damage once they are stopped, by either colliding with terrain or reaching the end of their trajectory.",
             "icon": null,
             "leveling": []
           }
@@ -996,17 +1086,17 @@
         "name": "Unstoppable Onslaught",
         "effects": [
           {
-            "description": "Active: Sion  charges forward in the target direction for up to 8 seconds during which he is  pacified, immune to crowd control, and can steer at a slow turn rate.",
+            "description": "Active: Sion charges forward in the target direction for up to 8 seconds during which he is pacified, immune to crowd control, and can steer at a slow turn rate.",
             "icon": "Unstoppable Onslaught.png",
             "leveling": []
           },
           {
-            "description": "Upon re-activating the ability or reaching the end of the duration, Sion  leaps forward 200-units, slamming the ground around him upon landing. Colliding with an enemy champion or terrain will stop Unstoppable Onslaught prematurely. Charging into terrain will also  stun Sion for 0.5 seconds.",
+            "description": "Upon re-activating the ability or reaching the end of the duration, Sion leaps forward 200-units, slamming the ground around him upon landing. Colliding with an enemy champion or terrain will stop Unstoppable Onslaught prematurely. Charging into terrain will also stun Sion for 0.5 seconds.",
             "icon": "Unstoppable Onslaught 2.png",
             "leveling": []
           },
           {
-            "description": "Both the charge and slam deal physical damage to all enemies and  turrets struck, with the base damage increasing by 0% \u2212 166.67% (based on charge time), the bonus AD ratio increasing by 0% \u2212 100% (based on charge time), and  slowing them for 3 seconds.",
+            "description": "Both the charge and slam deal physical damage to all enemies and turrets struck, with the base damage increasing by 0% − 166.67% (based on charge time), the bonus AD ratio increasing by 0% − 100% (based on charge time), and slowing them for 3 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -1087,7 +1177,7 @@
             ]
           },
           {
-            "description": "When colliding with at least one enemy champion, Sion will additionally  pull all enemies around him over 0.5 seconds, after which they're  stunned for 0.25 \u2212  1.75 (based on charge time) seconds, increased to 0.75 \u2212  1.75 (based on charge time) if hit by the leap.",
+            "description": "When colliding with at least one enemy champion, Sion will additionally pull all enemies around him over 0.5 seconds, after which they're stunned for 0.25 − 1.75 (based on charge time) seconds, increased to 0.75 − 1.75 (based on charge time) if hit by the leap.",
             "icon": null,
             "leveling": []
           }
@@ -1153,17 +1243,17 @@
         "name": "Unstoppable Onslaught",
         "effects": [
           {
-            "description": "Active: Sion  charges forward in the target direction for up to 8 seconds during which he is  pacified, immune to crowd control, and can steer at a slow turn rate.",
+            "description": "Active: Sion charges forward in the target direction for up to 8 seconds during which he is pacified, immune to crowd control, and can steer at a slow turn rate.",
             "icon": "Unstoppable Onslaught.png",
             "leveling": []
           },
           {
-            "description": "Upon re-activating the ability or reaching the end of the duration, Sion  leaps forward 200-units, slamming the ground around him upon landing. Colliding with an enemy champion or terrain will stop Unstoppable Onslaught prematurely. Charging into terrain will also  stun Sion for 0.5 seconds.",
+            "description": "Upon re-activating the ability or reaching the end of the duration, Sion leaps forward 200-units, slamming the ground around him upon landing. Colliding with an enemy champion or terrain will stop Unstoppable Onslaught prematurely. Charging into terrain will also stun Sion for 0.5 seconds.",
             "icon": "Unstoppable Onslaught 2.png",
             "leveling": []
           },
           {
-            "description": "Both the charge and slam deal physical damage to all enemies and  turrets struck, with the base damage increasing by 0% \u2212 166.67% (based on charge time), the bonus AD ratio increasing by 0% \u2212 100% (based on charge time), and  slowing them for 3 seconds.",
+            "description": "Both the charge and slam deal physical damage to all enemies and turrets struck, with the base damage increasing by 0% − 166.67% (based on charge time), the bonus AD ratio increasing by 0% − 100% (based on charge time), and slowing them for 3 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -1244,7 +1334,7 @@
             ]
           },
           {
-            "description": "When colliding with at least one enemy champion, Sion will additionally  pull all enemies around him over 0.5 seconds, after which they're  stunned for 0.25 \u2212  1.75 (based on charge time) seconds, increased to 0.75 \u2212  1.75 (based on charge time) if hit by the leap.",
+            "description": "When colliding with at least one enemy champion, Sion will additionally pull all enemies around him over 0.5 seconds, after which they're stunned for 0.25 − 1.75 (based on charge time) seconds, increased to 0.75 − 1.75 (based on charge time) if hit by the leap.",
             "icon": null,
             "leveling": []
           }

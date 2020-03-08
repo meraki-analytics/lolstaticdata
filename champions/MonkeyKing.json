@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 100,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.711,
       "percent": 0.0,
       "perLevel": 3,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.657999992370605,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0916666686534881,
+    "attackSpeedRatio": {
+      "flat": 0.657999992370605,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0916666686534881,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 175,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 0.95,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "DIVER",
@@ -110,7 +200,7 @@
         "name": "Stone Skin",
         "effects": [
           {
-            "description": "Innate: Wukong gains 4 / 6 / 8 (based on level) bonus  armor and  magic resistance for each  visible enemy  champion nearby.",
+            "description": "Innate: Wukong gains 4 / 6 / 8 (based on level) bonus armor and magic resistance for each visible enemy champion nearby.",
             "icon": "Stone Skin.png",
             "leveling": []
           }
@@ -147,7 +237,7 @@
         "name": "Crushing Blow",
         "effects": [
           {
-            "description": "Active: Wukong empowers his staff, causing his next basic attack within 5 seconds to gain  125 bonus range, deal  modified physical damage and reduce  his target's armor for 3 seconds.",
+            "description": "Active: Wukong empowers his staff, causing his next basic attack within 5 seconds to gain 125 bonus range, deal modified physical damage and reduce his target's armor for 3 seconds.",
             "icon": "Crushing Blow.png",
             "leveling": [
               {
@@ -287,12 +377,12 @@
         "name": "Decoy",
         "effects": [
           {
-            "description": "Active: Wukong is  pushed 100 units away, entering  invisibility for 1.5 seconds and leaving behind a decoy of himself.",
+            "description": "Active: Wukong is pushed 100 units away, entering invisibility for 1.5 seconds and leaving behind a decoy of himself.",
             "icon": "Decoy.png",
             "leveling": []
           },
           {
-            "description": "After 1.5 seconds, the decoy performs a circular attack around itself for 0.5 seconds, dealing  magic damage to all nearby enemies before disappearing.",
+            "description": "After 1.5 seconds, the decoy performs a circular attack around itself for 0.5 seconds, dealing magic damage to all nearby enemies before disappearing.",
             "icon": null,
             "leveling": [
               {
@@ -406,7 +496,7 @@
         "name": "Nimbus Strike",
         "effects": [
           {
-            "description": "Active: Wukong  dashes on a cloud to the target enemy and sends out  untargetable clones to attack up to two additional enemies near the primary target, dealing physical damage to each enemy struck. The clones can block non-targeted attacks or abilities for 0.25 seconds after hitting their targets.",
+            "description": "Active: Wukong dashes on a cloud to the target enemy and sends out untargetable clones to attack up to two additional enemies near the primary target, dealing physical damage to each enemy struck. The clones can block non-targeted attacks or abilities for 0.25 seconds after hitting their targets.",
             "icon": "Nimbus Strike.png",
             "leveling": [
               {
@@ -449,7 +539,7 @@
             ]
           },
           {
-            "description": "Upon hitting his target, Wukong gains  bonus attack speed for 4 seconds.",
+            "description": "Upon hitting his target, Wukong gains bonus attack speed for 4 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -547,12 +637,12 @@
         "name": "Cyclone",
         "effects": [
           {
-            "description": "Active: Wukong spins his staff around for up to 4 seconds, becomes  pacified and gains  5% \u2212 40% (based on time active) bonus movement speed. Wukong can reactivate Cyclone after 1 second cancelling it immediately.",
+            "description": "Active: Wukong spins his staff around for up to 4 seconds, becomes pacified and gains 5% − 40% (based on time active) bonus movement speed. Wukong can reactivate Cyclone after 1 second cancelling it immediately.",
             "icon": "Cyclone.png",
             "leveling": []
           },
           {
-            "description": "The spin deals physical damage to nearby enemies every 0.5 seconds. Enemies affected by Cyclone for the first time are briefly  knocked up.",
+            "description": "The spin deals physical damage to nearby enemies every 0.5 seconds. Enemies affected by Cyclone for the first time are briefly knocked up.",
             "icon": null,
             "leveling": [
               {

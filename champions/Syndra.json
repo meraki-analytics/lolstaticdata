@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 575,
-    "selectionRadius": 125,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 575,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.112499997019767,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.112499997019767,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.05,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.95,
-    "urfDamageDealt": 0.9,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "BURST",
@@ -147,7 +237,7 @@
         "name": "Dark Sphere",
         "effects": [
           {
-            "description": "Active: After 0.6 seconds, Syndra conjures a Dark Sphere at the target location, dealing  magic damage to all enemies hit, which then remains for 6 seconds.",
+            "description": "Active: After 0.6 seconds, Syndra conjures a Dark Sphere at the target location, dealing magic damage to all enemies hit, which then remains for 6 seconds.",
             "icon": "Dark Sphere.png",
             "leveling": [
               {
@@ -341,12 +431,12 @@
         "name": "Force of Will",
         "effects": [
           {
-            "description": "First Active: Syndra telekinetically grabs the nearest  Dark Sphere, enemy minion or non-epic monster within 400 range from the target location for 5 seconds, or if not found it grabs the nearest Dark Sphere. If a Dark Sphere is grabbed, its duration is refreshed. If a minion or monster is grabbed, it is put in  stasis.",
+            "description": "First Active: Syndra telekinetically grabs the nearest Dark Sphere, enemy minion or non-epic monster within 400 range from the target location for 5 seconds, or if not found it grabs the nearest Dark Sphere. If a Dark Sphere is grabbed, its duration is refreshed. If a minion or monster is grabbed, it is put in stasis.",
             "icon": "Force of Will.png",
             "leveling": []
           },
           {
-            "description": "Second Active: Syndra throws the grabbed target to the designated area, granting  sight of the projectile's surroundings as they fall. Enemies struck, including the grabbed target, take magic damage and are  slowed for 1.5 seconds.",
+            "description": "Second Active: Syndra throws the grabbed target to the designated area, granting sight of the projectile's surroundings as they fall. Enemies struck, including the grabbed target, take magic damage and are slowed for 1.5 seconds.",
             "icon": "Force of Will 2.png",
             "leveling": [
               {
@@ -410,7 +500,7 @@
             ]
           },
           {
-            "description": "Transcendent Bonus: Force of Will deals  20% bonus true damage.",
+            "description": "Transcendent Bonus: Force of Will deals 20% bonus true damage.",
             "icon": null,
             "leveling": [
               {
@@ -540,7 +630,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Force of Will has no cast time and does not interrupt Syndra's previous orders.\n Syndra cannot grab any of the following units:\n  Baron Nashor\n  Dragon\n Champions\n  Traps\n  Shaco's  Jack in the Box is the exception.\n\n  Champion clones\n\n Casting  Teleport will cause Syndra to cancel Force of Will and drop anything she is holding.\n Grabbing prioritizes Dark Spheres.\n Even if the unit is put in stasis minion attacks may still kill it during it. The dead unit may still, however, be launched.\n Once upgraded to maximum rank Syndra gains a total damage increase of (20 + enemy's MR \u00f7 5)%.\n Enemy pets that passively have an effect on their surroundings will continue to affect the area around them while they are being held. For example,  Annie's  Tibbers will continue to inflict burn damage on surrounding units while in stasis.\n Grabbing a  Dark Sphere will cause the duration on it to refresh, but only on the first cast, not when it is thrown.\n Force of Will has additional effects when targeting the  Blue Sentinel and  Red Brambleback. Throwing the former will refund 10 mana to Syndra upon cast and will reduce the  Cooldown of Force of Will by 1 second, while throwing the latter will apply the  Crest of Cinders burn to any affected units in the area of effect.",
+        "notes": "Force of Will has no cast time and does not interrupt Syndra's previous orders.\n Syndra cannot grab any of the following units:\n  Baron Nashor\n  Dragon\n Champions\n  Traps\n  Shaco's  Jack in the Box is the exception.\n\n  Champion clones\n\n Casting  Teleport will cause Syndra to cancel Force of Will and drop anything she is holding.\n Grabbing prioritizes Dark Spheres.\n Even if the unit is put in stasis minion attacks may still kill it during it. The dead unit may still, however, be launched.\n Once upgraded to maximum rank Syndra gains a total damage increase of (20 + enemy's MR ÷ 5)%.\n Enemy pets that passively have an effect on their surroundings will continue to affect the area around them while they are being held. For example,  Annie's  Tibbers will continue to inflict burn damage on surrounding units while in stasis.\n Grabbing a  Dark Sphere will cause the duration on it to refresh, but only on the first cast, not when it is thrown.\n Force of Will has additional effects when targeting the  Blue Sentinel and  Red Brambleback. Throwing the former will refund 10 mana to Syndra upon cast and will reduce the  Cooldown of Force of Will by 1 second, while throwing the latter will apply the  Crest of Cinders burn to any affected units in the area of effect.",
         "blurb": "Syndra picks up and throws a Dark Sphere or enemy minion dealing magic damage and slowing the Movement Speed of enemies.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -561,7 +651,7 @@
         "name": "Scatter the Weak",
         "effects": [
           {
-            "description": "Active: Syndra  knocks back all enemy units for 400 units and up to 800 units away from Syndra, dealing magic damage.",
+            "description": "Active: Syndra knocks back all enemy units for 400 units and up to 800 units away from Syndra, dealing magic damage.",
             "icon": "Scatter the Weak.png",
             "leveling": [
               {
@@ -604,7 +694,7 @@
             ]
           },
           {
-            "description": "Dark Spheres can also be knocked back for 1000 units and up to 1300 units away from Syndra, knocking back all enemy units they collide with for 100 units and  stunning them for 1.5 seconds, dealing Scatter the Weak's damage to enemies who weren't affected by the initial cast.",
+            "description": "Dark Spheres can also be knocked back for 1000 units and up to 1300 units away from Syndra, knocking back all enemy units they collide with for 100 units and stunning them for 1.5 seconds, dealing Scatter the Weak's damage to enemies who weren't affected by the initial cast.",
             "icon": null,
             "leveling": []
           },
@@ -674,7 +764,7 @@
         "innerRadius": null,
         "speed": "2500",
         "width": null,
-        "angle": "40\u00b0 / 60\u00b0",
+        "angle": "40° / 60°",
         "castTime": null,
         "effectRadius": null,
         "targetRange": "700 / 800"
@@ -685,7 +775,7 @@
         "name": "Unleashed Power",
         "effects": [
           {
-            "description": "Active: After a short delay, Syndra grabs up to 4 nearby  Dark Spheres and the three orbiting around her and hurls them at the target enemy  champion, dealing magic damage per sphere.",
+            "description": "Active: After a short delay, Syndra grabs up to 4 nearby Dark Spheres and the three orbiting around her and hurls them at the target enemy champion, dealing magic damage per sphere.",
             "icon": "Unleashed Power.png",
             "leveling": [
               {
@@ -778,7 +868,7 @@
             ]
           },
           {
-            "description": "The  Dark Spheres will then remain on the ground for 6 seconds.",
+            "description": "The Dark Spheres will then remain on the ground for 6 seconds.",
             "icon": null,
             "leveling": []
           },

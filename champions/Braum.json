@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 800,
-    "selectionRadius": 100,
-    "pathingRadius": 50,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 800,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 50,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.644,
       "percent": 0.0,
       "perLevel": 3.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.643999993801116,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0700000002980232,
+    "attackSpeedRatio": {
+      "flat": 0.643999993801116,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0700000002980232,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.75,
-    "urfDamageDealt": 1.1,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.75,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "SUPPORT",
@@ -110,17 +200,17 @@
         "name": "Concussive Blows",
         "effects": [
           {
-            "description": "Innate: Braum's basic attacks and  Winter's Bite each apply Concussive Blows to his target for 4 seconds, stacking up to 4 times. Once the first stack has been applied, any allied champion's basic attack on the target generates an additional stack.",
+            "description": "Innate: Braum's basic attacks and Winter's Bite each apply Concussive Blows to his target for 4 seconds, stacking up to 4 times. Once the first stack has been applied, any allied champion's basic attack on the target generates an additional stack.",
             "icon": "Concussive Blows.png",
             "leveling": []
           },
           {
-            "description": "At 4 stacks, Concussive Blows is consumed to  stun the target for 1.25 \u2212 1.75 (based on level) seconds and deal 26 \u2212 196 (based on level) magic damage.",
+            "description": "At 4 stacks, Concussive Blows is consumed to stun the target for 1.25 − 1.75 (based on level) seconds and deal 26 − 196 (based on level) magic damage.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "This effect cannot occur on the same target more than once every few seconds, but during this immunity period, affected targets instead take[ 20% of the trigger damage ][ 5.2 \u2212 39.2 (based on level) ] as bonus magic damage from Braum's basic attacks and  Winter's Bite.",
+            "description": "This effect cannot occur on the same target more than once every few seconds, but during this immunity period, affected targets instead take[ 20% of the trigger damage ][ 5.2 − 39.2 (based on level) ] as bonus magic damage from Braum's basic attacks and Winter's Bite.",
             "icon": null,
             "leveling": []
           }
@@ -157,7 +247,7 @@
         "name": "Winter's Bite",
         "effects": [
           {
-            "description": "Active: Braum propels ice from his shield in the target direction, dealing magic damage to the first enemy hit and  slowing them by 70% decaying over 2 seconds.",
+            "description": "Active: Braum propels ice from his shield in the target direction, dealing magic damage to the first enemy hit and slowing them by 70% decaying over 2 seconds.",
             "icon": "Winter's Bite.png",
             "leveling": [
               {
@@ -271,7 +361,7 @@
         "name": "Stand Behind Me",
         "effects": [
           {
-            "description": "Active: Braum  dashes to the target ally, positioning himself between them and the closest enemy champion, gaining  bonus armor and  bonus magic resistance for 3 seconds. If his target is a  champion, they also receive some bonus resistances.",
+            "description": "Active: Braum dashes to the target ally, positioning himself between them and the closest enemy champion, gaining bonus armor and bonus magic resistance for 3 seconds. If his target is a champion, they also receive some bonus resistances.",
             "icon": "Stand Behind Me.png",
             "leveling": [
               {
@@ -496,7 +586,7 @@
         "name": "Unbreakable",
         "effects": [
           {
-            "description": "Active: Braum raises his shield in the target direction, creating a barrier that intercepts incoming non-turret enemy  projectiles and reduces the damage he takes through the shield. The first instance of damage blocked by his shield is negated completely.",
+            "description": "Active: Braum raises his shield in the target direction, creating a barrier that intercepts incoming non-turret enemy projectiles and reduces the damage he takes through the shield. The first instance of damage blocked by his shield is negated completely.",
             "icon": "Unbreakable.png",
             "leveling": [
               {
@@ -544,7 +634,7 @@
             ]
           },
           {
-            "description": "While his shield is raised, Braum also gains  10% bonus movement speed and is  ghosted.",
+            "description": "While his shield is raised, Braum also gains 10% bonus movement speed and is ghosted.",
             "icon": null,
             "leveling": []
           }
@@ -609,7 +699,7 @@
         "innerRadius": null,
         "speed": null,
         "width": null,
-        "angle": "180\u00b0",
+        "angle": "180°",
         "castTime": "false",
         "effectRadius": null,
         "targetRange": null
@@ -655,7 +745,7 @@
             ]
           },
           {
-            "description": "The first target hit is  knocked up for at least 0.3 seconds, increased if they are further away from Braum. All other enemies hit are  knocked up for 0.3 seconds.",
+            "description": "The first target hit is knocked up for at least 0.3 seconds, increased if they are further away from Braum. All other enemies hit are knocked up for 0.3 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -678,7 +768,7 @@
             ]
           },
           {
-            "description": "A field of ice then remains at the fissure's location for 4 seconds,  slowing enemies within, persisting for 0.25 seconds.",
+            "description": "A field of ice then remains at the fissure's location for 4 seconds, slowing enemies within, persisting for 0.25 seconds.",
             "icon": null,
             "leveling": [
               {

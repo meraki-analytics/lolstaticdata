@@ -4,7 +4,7 @@ import re
 from lolstaticdata.utils import download_soup
 from collections import OrderedDict
 
-from modelitem import Stats, Shop, Item, Passive, Active, Aura, ItemAttributes
+from modelitem import Stats, Prices, Shop, Item, Passive, Active, ItemAttributes
 from modelcommon import ArmorPenetration, DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, CriticalStrikeChance, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration
 
 
@@ -26,30 +26,31 @@ class WikiItem:
             effect = Passive(unique=True, name=None, effects=description, range=None, stats=stats)
             effects.append(effect)
 
+        # Parse both passives and auras the same way
+        def _parse(passive: str) -> Passive:
+            unique, passive_name, passive_effects, item_range = cls._parse_passive_info(passive)
+            stats = cls._parse_passive_descriptions(passive_effects)
+            effect = Passive(unique=unique, name=passive_name, effects=passive_effects, range=item_range, stats=stats)
+            return effect
+
+        # Passives
         for i in range(1, 6):
             passive = "pass" + str(i)
             if passive == "pass1":
                 passive = "pass"
             passive = item_data[passive].strip()
             if passive:
-                unique, passive_name, passive_effects, item_range = cls._parse_passive_info(passive)
-                stats = cls._parse_passive_descriptions(passive_effects)
-                effect = Passive(unique=unique, name=passive_name, effects=passive_effects, range=item_range, stats=stats)
+                effect = _parse(passive)
                 effects.append(effect)
-        return effects
 
-    @classmethod
-    def _parse_auras(cls, item_data: dict) -> List[Aura]:
-        effects = []
+        # Auras
         for i in range(1, 4):
             passive = "aura" + str(i)
             if passive == "aura1":
                 passive = "aura"
             passive = item_data[passive].strip()
             if passive:
-                unique, passive_name, passive_effects, item_range = cls._parse_passive_info(passive)
-                effect = Aura(unique=unique, name=passive_name, effects=passive_effects, range=item_range)  # This is hacky...
-                effects.append(effect)
+                effect = _parse(passive)
         return effects
 
     @classmethod
@@ -293,6 +294,8 @@ class WikiItem:
                     # Titanic Hydra decided to mess everything up so I needed to put something to allow a Primary tag without a secondary tag
                     tag = primary_tag.upper() + ":None"
                     tags.append(tag)
+        # After all that, let's just return the secondary tag and drop the primary tag.
+        tags = [tag.split(':')[1] for tag in tags]
         return tags
 
     @classmethod
@@ -391,7 +394,6 @@ class WikiItem:
             nicknames=nicknames,
             icon="",
             passives=cls._parse_passives(item_data),
-            auras=cls._parse_auras(item_data),
             active=cls._parse_actives(item_data),
             stats=Stats(
                 ability_power=AbilityPower(flat=cls._parse_float(item_data["ap"])),
@@ -423,9 +425,11 @@ class WikiItem:
                 ),
             ),
             shop=Shop(
-                price_total=cls._parse_int(item_data["buy"]),
-                price_combined=cls._parse_int(item_data["comb"]),
-                price_sell=cls._parse_int(item_data["sell"]),
+                prices=Prices(
+                    total=cls._parse_int(item_data["buy"]),
+                    combined=cls._parse_int(item_data["comb"]),
+                    sell=cls._parse_int(item_data["sell"]),
+                ),
                 tags=cls.get_item_attributes(item_data)
             )
         )

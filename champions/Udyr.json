@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 125,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.658,
       "percent": 0.0,
       "perLevel": 2.67,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.657999992370605,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.101577997207641,
+    "attackSpeedRatio": {
+      "flat": 0.657999992370605,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.101577997207641,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.92,
-    "aramDamageDealt": 1.08,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.85,
-    "urfDamageDealt": 1.1,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.92,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.08,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.85,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -110,7 +200,7 @@
         "name": "Monkey's Agility",
         "effects": [
           {
-            "description": "Innate: Udyr gains  5 bonus movement speed and  10% bonus attack speed for 5 seconds every time he uses an ability, stacking up to 3 times, up to a maximum of  15 bonus movement speed and  30% bonus attack speed.",
+            "description": "Innate: Udyr gains 5 bonus movement speed and 10% bonus attack speed for 5 seconds every time he uses an ability, stacking up to 3 times, up to a maximum of 15 bonus movement speed and 30% bonus attack speed.",
             "icon": "Monkey's Agility.png",
             "leveling": []
           },
@@ -157,7 +247,7 @@
         "name": "Tiger Stance",
         "effects": [
           {
-            "description": "Stance: Udyr's basic attacks generate Tiger stacks on-hit, up to 3. At 3 stacks, Udyr's next basic attack is a Tiger Strike, which deals  bonus physical damage over 2 seconds as well as instantly dealing any remaining damage from any previous Tiger Strikes.",
+            "description": "Stance: Udyr's basic attacks generate Tiger stacks on-hit, up to 3. At 3 stacks, Udyr's next basic attack is a Tiger Strike, which deals bonus physical damage over 2 seconds as well as instantly dealing any remaining damage from any previous Tiger Strikes.",
             "icon": "Tiger Stance.png",
             "leveling": [
               {
@@ -245,7 +335,7 @@
             ]
           },
           {
-            "description": "Active - Tiger Speed: Udyr gains  bonus attack speed for 5 seconds, and instantly generates 3 Tiger stacks.",
+            "description": "Active - Tiger Speed: Udyr gains bonus attack speed for 5 seconds, and instantly generates 3 Tiger stacks.",
             "icon": null,
             "leveling": [
               {
@@ -373,12 +463,12 @@
         "name": "Turtle Stance",
         "effects": [
           {
-            "description": "Stance: Udyr's basic attacks generate Turtle stacks on-hit, up to 3. At 3 stacks, Udyr's next basic attack  heals him for  2.5% \u2212 5% (based on missing health) of his maximum health.",
+            "description": "Stance: Udyr's basic attacks generate Turtle stacks on-hit, up to 3. At 3 stacks, Udyr's next basic attack heals him for 2.5% − 5% (based on missing health) of his maximum health.",
             "icon": "Turtle Stance.png",
             "leveling": []
           },
           {
-            "description": "Active - Spiritual Shell: Udyr  shields himself for up to 5 seconds, and instantly generates 3 Turtle stacks.",
+            "description": "Active - Spiritual Shell: Udyr shields himself for up to 5 seconds, and instantly generates 3 Turtle stacks.",
             "icon": null,
             "leveling": [
               {
@@ -524,12 +614,12 @@
         "name": "Bear Stance",
         "effects": [
           {
-            "description": "Stance: Udyr's basic attacks  stun his target for 1 second. This effect cannot occur on the same target more than once every few seconds.",
+            "description": "Stance: Udyr's basic attacks stun his target for 1 second. This effect cannot occur on the same target more than once every few seconds.",
             "icon": "Bear Stance.png",
             "leveling": []
           },
           {
-            "description": "Active - Primal Charge: Udyr gains  bonus movement speed and is  ghosted for the next few seconds. Additionally, his next basic attack gains  50 bonus range and causes him to  lunge to his target.",
+            "description": "Active - Primal Charge: Udyr gains bonus movement speed and is ghosted for the next few seconds. Additionally, his next basic attack gains 50 bonus range and causes him to lunge to his target.",
             "icon": null,
             "leveling": [
               {
@@ -680,7 +770,7 @@
         "name": "Phoenix Stance",
         "effects": [
           {
-            "description": "Stance: Udyr's basic attacks generate Phoenix stacks on-hit, up to 3. At 3 stacks, Udyr's next basic attack unleashes fire in a cone in front of him that deals  magic damage to all enemies hit.",
+            "description": "Stance: Udyr's basic attacks generate Phoenix stacks on-hit, up to 3. At 3 stacks, Udyr's next basic attack unleashes fire in a cone in front of him that deals magic damage to all enemies hit.",
             "icon": "Phoenix Stance.png",
             "leveling": [
               {

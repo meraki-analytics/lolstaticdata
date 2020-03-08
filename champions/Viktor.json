@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 525,
-    "selectionRadius": 160,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 525,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 160,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.658,
       "percent": 0.0,
       "perLevel": 2.11,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.657999992370605,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.11999999731779,
+    "attackSpeedRatio": {
+      "flat": 0.657999992370605,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.11999999731779,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 525,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 0.95,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "BATTLEMAGE",
@@ -109,7 +199,7 @@
         "name": "Glorious Evolution",
         "effects": [
           {
-            "description": "Innate: Viktor starts each game with an exclusive  Prototype Hex Core, which permanently occupies one of his item slots. For some additional gold, Viktor can upgrade his Hex Core to increase its bonuses and grant him one Evolution point, which he can use to augment one of his basic abilities. Once he augments all of his basic abilities, Viktor automatically augments his ultimate ability,  Chaos Storm.\n  Prototype Hex Core: Grants 1 \u2212 18 (based on level) ability power and 10 \u2212 180 (based on level) mana.\n  Hex Core mk-1: Grants 3 \u2212 54 (based on level) ability power and 15 \u2212 270 (based on level) mana. And one Evolution Point.\n  Hex Core mk-2: Grants 6 \u2212 108 (based on level) ability power and  20 \u2212 360 (based on level) mana. And one Evolution Point.\n  Perfect Hex Core: Grants 10 \u2212 180 (based on level) ability power and 25 \u2212 450 (based on level) mana. And one Evolution Point.",
+            "description": "Innate: Viktor starts each game with an exclusive Prototype Hex Core, which permanently occupies one of his item slots. For some additional gold, Viktor can upgrade his Hex Core to increase its bonuses and grant him one Evolution point, which he can use to augment one of his basic abilities. Once he augments all of his basic abilities, Viktor automatically augments his ultimate ability, Chaos Storm.\n Prototype Hex Core: Grants 1 − 18 (based on level) ability power and 10 − 180 (based on level) mana.\n Hex Core mk-1: Grants 3 − 54 (based on level) ability power and 15 − 270 (based on level) mana. And one Evolution Point.\n Hex Core mk-2: Grants 6 − 108 (based on level) ability power and 20 − 360 (based on level) mana. And one Evolution Point.\n Perfect Hex Core: Grants 10 − 180 (based on level) ability power and 25 − 450 (based on level) mana. And one Evolution Point.",
             "icon": "Glorious Evolution.png",
             "leveling": []
           }
@@ -146,7 +236,7 @@
         "name": "Siphon Power",
         "effects": [
           {
-            "description": "Active: Viktor  shields himself for 30 \u2212 115 (based on level) (+ 15% AP) for 2.5 seconds, deals  magic damage to the target enemy, and gains  Discharge for 3.5 seconds.",
+            "description": "Active: Viktor shields himself for 30 − 115 (based on level) (+ 15% AP) for 2.5 seconds, deals magic damage to the target enemy, and gains Discharge for 3.5 seconds.",
             "icon": "Siphon Power.png",
             "leveling": [
               {
@@ -189,7 +279,7 @@
             ]
           },
           {
-            "description": "Discharge: Viktor's next basic attack won't use a  projectile and is modified to deal magic damage against non- structures.",
+            "description": "Discharge: Viktor's next basic attack won't use a projectile and is modified to deal magic damage against non- structures.",
             "icon": "Discharge.png",
             "leveling": [
               {
@@ -301,7 +391,7 @@
             ]
           },
           {
-            "description": "Augment: Turbocharge: Viktor instantly gains  30% bonus movement speed for 2.5 seconds after using Siphon Power, while also increasing the shield's value by 60%, up to 48 \u2212 184 (based on level) (+ 24% AP).",
+            "description": "Augment: Turbocharge: Viktor instantly gains 30% bonus movement speed for 2.5 seconds after using Siphon Power, while also increasing the shield's value by 60%, up to 48 − 184 (based on level) (+ 24% AP).",
             "icon": "Augment- Turbocharge.png",
             "leveling": []
           }
@@ -377,7 +467,7 @@
         "name": "Gravity Field",
         "effects": [
           {
-            "description": "Active: Viktor deploys a gravitational imprisonment device at the target location which arms after a brief delay. For 4 seconds, the trap  slows all enemies that pass through its field, persisting for 0.25 seconds after leaving.",
+            "description": "Active: Viktor deploys a gravitational imprisonment device at the target location which arms after a brief delay. For 4 seconds, the trap slows all enemies that pass through its field, persisting for 0.25 seconds after leaving.",
             "icon": "Gravity Field.png",
             "leveling": [
               {
@@ -404,12 +494,12 @@
             ]
           },
           {
-            "description": "Whilst under the trap's effects, enemies generate a stack every 0.5 seconds. At 3 stacks, enemies are  knocked down and  stunned for 1.5 seconds.",
+            "description": "Whilst under the trap's effects, enemies generate a stack every 0.5 seconds. At 3 stacks, enemies are knocked down and stunned for 1.5 seconds.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Augment: Magnetize:  Siphon Power's and  Death Ray's ticks,  slow enemies hit by 20% for 1 second.",
+            "description": "Augment: Magnetize: Siphon Power's and Death Ray's ticks, slow enemies hit by 20% for 1 second.",
             "icon": "Augment- Magnetize.png",
             "leveling": []
           }
@@ -679,7 +769,7 @@
         "name": "Chaos Storm",
         "effects": [
           {
-            "description": "First Cast: Viktor conjures an arcane singularity at the target location, dealing magic damage to every enemy it hits and  interrupting  channeled abilities. The singularity remains active for 6.5 seconds afterwards, dealing magic damage to all nearby enemies every second.",
+            "description": "First Cast: Viktor conjures an arcane singularity at the target location, dealing magic damage to every enemy it hits and interrupting channeled abilities. The singularity remains active for 6.5 seconds afterwards, dealing magic damage to all nearby enemies every second.",
             "icon": "Chaos Storm.png",
             "leveling": [
               {
@@ -772,7 +862,7 @@
             ]
           },
           {
-            "description": "Second Cast: Viktor directs the singularity to the target location. Once the singularity damages an enemy  champion, it automatically follows them until the target dies or escapes it. The singularity moves faster depending on its proximity to Viktor.",
+            "description": "Second Cast: Viktor directs the singularity to the target location. Once the singularity damages an enemy champion, it automatically follows them until the target dies or escapes it. The singularity moves faster depending on its proximity to Viktor.",
             "icon": "Chaos Storm 2.png",
             "leveling": []
           },
@@ -843,7 +933,7 @@
         "name": "Chaos Storm",
         "effects": [
           {
-            "description": "First Cast: Viktor conjures an arcane singularity at the target location, dealing magic damage to every enemy it hits and  interrupting  channeled abilities. The singularity remains active for 6.5 seconds afterwards, dealing magic damage to all nearby enemies every second.",
+            "description": "First Cast: Viktor conjures an arcane singularity at the target location, dealing magic damage to every enemy it hits and interrupting channeled abilities. The singularity remains active for 6.5 seconds afterwards, dealing magic damage to all nearby enemies every second.",
             "icon": "Chaos Storm.png",
             "leveling": [
               {
@@ -936,7 +1026,7 @@
             ]
           },
           {
-            "description": "Second Cast: Viktor directs the singularity to the target location. Once the singularity damages an enemy  champion, it automatically follows them until the target dies or escapes it. The singularity moves faster depending on its proximity to Viktor.",
+            "description": "Second Cast: Viktor directs the singularity to the target location. Once the singularity damages an enemy champion, it automatically follows them until the target dies or escapes it. The singularity moves faster depending on its proximity to Viktor.",
             "icon": "Chaos Storm 2.png",
             "leveling": []
           },

@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 525,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 525,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2.3,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.138541668653488,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.138541668653488,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 525,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "BURST",
@@ -110,7 +200,7 @@
         "name": "Gathering Fire",
         "effects": [
           {
-            "description": "Innate: Karma reduces  Mantra's  cooldown by 2 / 3 / 4 (based on level) seconds every time she damages an enemy  champion with an ability, or by 1 / 1.5 / 2 (based on level) with her basic attacks on-hit.",
+            "description": "Innate: Karma reduces Mantra's cooldown by 2 / 3 / 4 (based on level) seconds every time she damages an enemy champion with an ability, or by 1 / 1.5 / 2 (based on level) with her basic attacks on-hit.",
             "icon": "Gathering Fire.png",
             "leveling": []
           }
@@ -147,7 +237,7 @@
         "name": "Inner Flame",
         "effects": [
           {
-            "description": "Active: Karma fires a burst of spiritual energy in the target direction, detonating with the first enemy hit, dealing  magic damage and  slowing all enemies around the target by 35% for 1.5 seconds.",
+            "description": "Active: Karma fires a burst of spiritual energy in the target direction, detonating with the first enemy hit, dealing magic damage and slowing all enemies around the target by 35% for 1.5 seconds.",
             "icon": "Inner Flame.png",
             "leveling": [
               {
@@ -251,7 +341,7 @@
         "name": "Soulflare",
         "effects": [
           {
-            "description": "Mantra - Active: Inner Flame detonates upon hitting an enemy or reaching maximum range, dealing bonus magic damage in an increased  area.",
+            "description": "Mantra - Active: Inner Flame detonates upon hitting an enemy or reaching maximum range, dealing bonus magic damage in an increased area.",
             "icon": "Soulflare.png",
             "leveling": [
               {
@@ -327,7 +417,7 @@
             ]
           },
           {
-            "description": "A field lingers around the detonation for 1.5 seconds,  slowing enemies by 50%, after which it explodes, dealing magic damage to all enemies inside.",
+            "description": "A field lingers around the detonation for 1.5 seconds, slowing enemies by 50%, after which it explodes, dealing magic damage to all enemies inside.",
             "icon": null,
             "leveling": [
               {
@@ -430,7 +520,7 @@
             ]
           },
           {
-            "description": "Soulflare scales with  Mantra's rank.",
+            "description": "Soulflare scales with Mantra's rank.",
             "icon": null,
             "leveling": []
           }
@@ -467,7 +557,7 @@
         "name": "Focused Resolve",
         "effects": [
           {
-            "description": "Active: Karma exerts her will over a target enemy champion or monster, dealing magic damage and forming a tether between them for up to 2 seconds, during which the target is  revealed.",
+            "description": "Active: Karma exerts her will over a target enemy champion or monster, dealing magic damage and forming a tether between them for up to 2 seconds, during which the target is revealed.",
             "icon": "Focused Resolve.png",
             "leveling": [
               {
@@ -502,7 +592,7 @@
             ]
           },
           {
-            "description": "If the tether holds for the duration, the target is dealt the same magic damage and is  revealed and  rooted for a duration.",
+            "description": "If the tether holds for the duration, the target is dealt the same magic damage and is revealed and rooted for a duration.",
             "icon": null,
             "leveling": [
               {
@@ -619,7 +709,7 @@
         "name": "Renewal",
         "effects": [
           {
-            "description": "Mantra - Active: Focused Resolve's  root duration is increased, and  heals Karma for  20% (+ 1% per 100 AP) of missing health on-cast and once more when the target is  rooted, or if the target  dies while tethered.",
+            "description": "Mantra - Active: Focused Resolve's root duration is increased, and heals Karma for 20% (+ 1% per 100 AP) of missing health on-cast and once more when the target is rooted, or if the target dies while tethered.",
             "icon": "Renewal.png",
             "leveling": [
               {
@@ -660,7 +750,7 @@
             ]
           },
           {
-            "description": "Renewal scales with  Mantra's rank.",
+            "description": "Renewal scales with Mantra's rank.",
             "icon": null,
             "leveling": []
           }
@@ -697,7 +787,7 @@
         "name": "Inspire",
         "effects": [
           {
-            "description": "Active: Karma  shields the target allied champion or herself for 2.5 seconds, granting them  bonus movement speed for 1.5 seconds.",
+            "description": "Active: Karma shields the target allied champion or herself for 2.5 seconds, granting them bonus movement speed for 1.5 seconds.",
             "icon": "Inspire.png",
             "leveling": [
               {
@@ -941,7 +1031,7 @@
             ]
           },
           {
-            "description": "Defiance scales with  Mantra's rank.",
+            "description": "Defiance scales with Mantra's rank.",
             "icon": null,
             "leveling": []
           }

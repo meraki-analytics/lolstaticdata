@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 125,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.658,
       "percent": 0.0,
       "perLevel": 2.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.657999992370605,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.124559998512268,
+    "attackSpeedRatio": {
+      "flat": 0.657999992370605,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.124559998512268,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 175,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.95,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "DIVER",
@@ -110,7 +200,7 @@
         "name": "Martial Cadence",
         "effects": [
           {
-            "description": "Innate: Jarvan IV's basic attacks deal 8% of target's current health  physical damage, with a minimum of 20 damage and capped at 400 damage against non-champions.",
+            "description": "Innate: Jarvan IV's basic attacks deal 8% of target's current health physical damage, with a minimum of 20 damage and capped at 400 damage against non-champions.",
             "icon": "Martial Cadence.png",
             "leveling": []
           },
@@ -152,7 +242,7 @@
         "name": "Dragon Strike",
         "effects": [
           {
-            "description": "Active: Jarvan IV extends his lance in the target direction, dealing physical damage to all enemies and  reducing their armor for 3 seconds.",
+            "description": "Active: Jarvan IV extends his lance in the target direction, dealing physical damage to all enemies and reducing their armor for 3 seconds.",
             "icon": "Dragon Strike.png",
             "leveling": [
               {
@@ -216,7 +306,7 @@
             ]
           },
           {
-            "description": "If the lance connects with a deployed  Demacian Standard, Jarvan IV  dashes to it,  knocking up nearby enemies along his path for 0.75 seconds.",
+            "description": "If the lance connects with a deployed Demacian Standard, Jarvan IV dashes to it, knocking up nearby enemies along his path for 0.75 seconds.",
             "icon": null,
             "leveling": []
           }
@@ -292,7 +382,7 @@
         "name": "Golden Aegis",
         "effects": [
           {
-            "description": "Active: Jarvan IV  slows all nearby enemies for 2 seconds.",
+            "description": "Active: Jarvan IV slows all nearby enemies for 2 seconds.",
             "icon": "Golden Aegis.png",
             "leveling": [
               {
@@ -319,7 +409,7 @@
             ]
           },
           {
-            "description": "Jarvan IV also  shields himself for 5 seconds, increased by 1.5% of Jarvan IV's maximum health for each enemy champion hit by Golden Aegis.",
+            "description": "Jarvan IV also shields himself for 5 seconds, increased by 1.5% of Jarvan IV's maximum health for each enemy champion hit by Golden Aegis.",
             "icon": null,
             "leveling": [
               {
@@ -417,7 +507,7 @@
         "name": "Demacian Standard",
         "effects": [
           {
-            "description": "Passive: Jarvan IV gains permanent  bonus attack speed.",
+            "description": "Passive: Jarvan IV gains permanent bonus attack speed.",
             "icon": "false",
             "leveling": [
               {
@@ -444,7 +534,7 @@
             ]
           },
           {
-            "description": "Active: Jarvan IV throws a Demacian flag to the target location, dealing  magic damage to all nearby enemies.",
+            "description": "Active: Jarvan IV throws a Demacian flag to the target location, dealing magic damage to all nearby enemies.",
             "icon": "Demacian Standard.png",
             "leveling": [
               {
@@ -487,7 +577,7 @@
             ]
           },
           {
-            "description": "The flag then remains for 8 seconds, granting  sight around it and providing an aura that grants Demacian Standard's bonus attack speed to all nearby allied champions.",
+            "description": "The flag then remains for 8 seconds, granting sight around it and providing an aura that grants Demacian Standard's bonus attack speed to all nearby allied champions.",
             "icon": null,
             "leveling": []
           }
@@ -563,7 +653,7 @@
         "name": "Cataclysm",
         "effects": [
           {
-            "description": "Active: Jarvan IV  leaps  unstoppably to an enemy champion and deals physical damage to all nearby enemies upon arrival.",
+            "description": "Active: Jarvan IV leaps unstoppably to an enemy champion and deals physical damage to all nearby enemies upon arrival.",
             "icon": "Cataclysm.png",
             "leveling": [
               {
@@ -598,7 +688,7 @@
             ]
           },
           {
-            "description": "Upon impact, he creates a circle of impassable terrain for 3.5 seconds that grants  sight around it. Jarvan IV can reactivate Cataclysm to destroy the circle.",
+            "description": "Upon impact, he creates a circle of impassable terrain for 3.5 seconds that grants sight around it. Jarvan IV can reactivate Cataclysm to destroy the circle.",
             "icon": null,
             "leveling": []
           }

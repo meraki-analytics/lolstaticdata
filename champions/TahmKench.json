@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 125,
-    "pathingRadius": 50,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 50,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.658,
       "percent": 0.0,
       "perLevel": 2.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.657999992370605,
-    "attackCastTime": 0.379999995231628,
-    "attackTotalTime": 1.51900005340576,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.657999992370605,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.379999995231628,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.51900005340576,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 175,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.95,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.75,
-    "urfDamageDealt": 1.25,
-    "urfHealing": 1.1,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.75,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.25,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "SUPPORT",
@@ -110,12 +200,12 @@
         "name": "An Acquired Taste",
         "effects": [
           {
-            "description": "Innate: Tahm Kench's basic attacks deal 4% of his maximum health  bonus magic damage. Against enemy  champions they also apply An Acquired Taste stack for 5 seconds, stacking up to 3 times. The stacks decay once every 0.67 seconds after the stacks reach the full duration.",
+            "description": "Innate: Tahm Kench's basic attacks deal 4% of his maximum health bonus magic damage. Against enemy champions they also apply An Acquired Taste stack for 5 seconds, stacking up to 3 times. The stacks decay once every 0.67 seconds after the stacks reach the full duration.",
             "icon": "An Acquired Taste.png",
             "leveling": []
           },
           {
-            "description": "Tongue Lash and  Devour gain additional effects against enemies with three stacks.",
+            "description": "Tongue Lash and Devour gain additional effects against enemies with three stacks.",
             "icon": null,
             "leveling": []
           }
@@ -131,7 +221,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "By calculating An Acquired Taste's base damage, using Tahm Kench's base health, An Acquired Taste's damage can be acquired in a different way: 24 \u2212 92 (based on level) (+ 4% bonus health).",
+        "notes": "By calculating An Acquired Taste's base damage, using Tahm Kench's base health, An Acquired Taste's damage can be acquired in a different way: 24 − 92 (based on level) (+ 4% bonus health).",
         "blurb": "Tahm Kench puts the heft of his immense body behind his attacks and abilities, gaining extra damage based on his total health. Damaging enemy champions builds stacks of An Acquired Taste. At three stacks, he can use Devour on an enemy champion.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -152,7 +242,7 @@
         "name": "Tongue Lash",
         "effects": [
           {
-            "description": "Active: After a brief delay, Tahm Kench lashes his tongue in the target direction, dealing magic damage to the first enemy hit and  slowing them for 3 seconds.",
+            "description": "Active: After a brief delay, Tahm Kench lashes his tongue in the target direction, dealing magic damage to the first enemy hit and slowing them for 3 seconds.",
             "icon": "Tongue Lash.png",
             "leveling": [
               {
@@ -216,12 +306,12 @@
             ]
           },
           {
-            "description": "If an enemy champion is struck while at three  An Acquired Taste stacks, they're also  stunned for 2 seconds, consuming all stacks.",
+            "description": "If an enemy champion is struck while at three An Acquired Taste stacks, they're also stunned for 2 seconds, consuming all stacks.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "During Tongue Lash,  Devour can be cast for no  mana expenditure to devour the  minion or non-epic  monster struck at the cost of no longer dealing Tongue Lash's damage. Devour's  mana refund does not apply in this case.",
+            "description": "During Tongue Lash, Devour can be cast for no mana expenditure to devour the minion or non-epic monster struck at the cost of no longer dealing Tongue Lash's damage. Devour's mana refund does not apply in this case.",
             "icon": null,
             "leveling": []
           }
@@ -297,22 +387,22 @@
         "name": "Devour",
         "effects": [
           {
-            "description": "Active : Devour: Tahm Kench swallows an enemy minion, non-epic monster or allied champion, making them  untargetable and unable to take any actions for 4 seconds.",
+            "description": "Active : Devour: Tahm Kench swallows an enemy minion, non-epic monster or allied champion, making them untargetable and unable to take any actions for 4 seconds.",
             "icon": "Devour.png",
             "leveling": []
           },
           {
-            "description": "Tahm Kench can swallow an enemy champion if they have three  An Acquired Taste stacks. If Tahm Kench swallows an allied or enemy champion, he is  grounded and  slowed by 95% for the duration. Swallowing a targeted enemy champion only lasts for half the duration, down to 2 seconds, consumes all their An Acquired Taste stacks,  suppresses and makes them  untargetable.",
+            "description": "Tahm Kench can swallow an enemy champion if they have three An Acquired Taste stacks. If Tahm Kench swallows an allied or enemy champion, he is grounded and slowed by 95% for the duration. Swallowing a targeted enemy champion only lasts for half the duration, down to 2 seconds, consumes all their An Acquired Taste stacks, suppresses and makes them untargetable.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Swallowing an enemy refunds  50% of the cooldown and  50% of the mana cost.",
+            "description": "Swallowing an enemy refunds 50% of the cooldown and 50% of the mana cost.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "After 1 second, Devour can be recast into  Regurgitate while Tahm Kench's belly is full. Allied champions can exit at will after the same delay, unless they're  immobilized.",
+            "description": "After 1 second, Devour can be recast into Regurgitate while Tahm Kench's belly is full. Allied champions can exit at will after the same delay, unless they're immobilized.",
             "icon": null,
             "leveling": []
           }
@@ -531,12 +621,12 @@
             ]
           },
           {
-            "description": "While Thick Skin is available, and after taking no damage for 2.5 seconds, Tahm Kench rapidly  heals for 30% \u2212 100% (based on level) of his Grey Health over time.",
+            "description": "While Thick Skin is available, and after taking no damage for 2.5 seconds, Tahm Kench rapidly heals for 30% − 100% (based on level) of his Grey Health over time.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Active: Tahm Kench converts his current Grey Health into a  shield that lasts for 2 seconds.",
+            "description": "Active: Tahm Kench converts his current Grey Health into a shield that lasts for 2 seconds.",
             "icon": null,
             "leveling": []
           }
@@ -593,17 +683,17 @@
         "name": "Abyssal Voyage",
         "effects": [
           {
-            "description": "Active: Tahm Kench  channels for up to 6 seconds, highlighting the path to his intended destination to allied champions while opening his maw to offer up to one of them the chance to come with him. If an ally has climbed in, Tahm Kench automatically begins a 1 second channel.",
+            "description": "Active: Tahm Kench channels for up to 6 seconds, highlighting the path to his intended destination to allied champions while opening his maw to offer up to one of them the chance to come with him. If an ally has climbed in, Tahm Kench automatically begins a 1 second channel.",
             "icon": "Abyssal Voyage.png",
             "leveling": []
           },
           {
-            "description": "After a 0.25-second delay, Tahm Kench can reactivate  Abyssal Voyage to begin the channel without an ally. Once the channel is completed, Tahm Kench and the ally that has climbed in will  blink to the target location, arriving after a 0.5-second delay.",
+            "description": "After a 0.25-second delay, Tahm Kench can reactivate Abyssal Voyage to begin the channel without an ally. Once the channel is completed, Tahm Kench and the ally that has climbed in will blink to the target location, arriving after a 0.5-second delay.",
             "icon": "Abyssal Voyage 2.png",
             "leveling": []
           },
           {
-            "description": "Taking damage or cancelling the channel interrupts Abyssal Voyage, putting it on a  10 second cooldown. Abyssal Voyage cannot be activated while Tahm Kench has a  full belly.",
+            "description": "Taking damage or cancelling the channel interrupts Abyssal Voyage, putting it on a 10 second cooldown. Abyssal Voyage cannot be activated while Tahm Kench has a full belly.",
             "icon": null,
             "leveling": []
           }
@@ -669,17 +759,17 @@
         "name": "Abyssal Voyage",
         "effects": [
           {
-            "description": "Active: Tahm Kench  channels for up to 6 seconds, highlighting the path to his intended destination to allied champions while opening his maw to offer up to one of them the chance to come with him. If an ally has climbed in, Tahm Kench automatically begins a 1 second channel.",
+            "description": "Active: Tahm Kench channels for up to 6 seconds, highlighting the path to his intended destination to allied champions while opening his maw to offer up to one of them the chance to come with him. If an ally has climbed in, Tahm Kench automatically begins a 1 second channel.",
             "icon": "Abyssal Voyage.png",
             "leveling": []
           },
           {
-            "description": "After a 0.25-second delay, Tahm Kench can reactivate  Abyssal Voyage to begin the channel without an ally. Once the channel is completed, Tahm Kench and the ally that has climbed in will  blink to the target location, arriving after a 0.5-second delay.",
+            "description": "After a 0.25-second delay, Tahm Kench can reactivate Abyssal Voyage to begin the channel without an ally. Once the channel is completed, Tahm Kench and the ally that has climbed in will blink to the target location, arriving after a 0.5-second delay.",
             "icon": "Abyssal Voyage 2.png",
             "leveling": []
           },
           {
-            "description": "Taking damage or cancelling the channel interrupts Abyssal Voyage, putting it on a  10 second cooldown. Abyssal Voyage cannot be activated while Tahm Kench has a  full belly.",
+            "description": "Taking damage or cancelling the channel interrupts Abyssal Voyage, putting it on a 10 second cooldown. Abyssal Voyage cannot be activated while Tahm Kench has a full belly.",
             "icon": null,
             "leveling": []
           }

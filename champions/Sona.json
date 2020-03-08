@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 800,
-    "selectionRadius": 110,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 800,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 110,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.644,
       "percent": 0.0,
       "perLevel": 2.3,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.643999993801116,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.12817870080471,
+    "attackSpeedRatio": {
+      "flat": 0.643999993801116,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.12817870080471,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.15,
-    "aramDamageDealt": 0.85,
-    "aramHealing": 0.82,
-    "aramShielding": 0.82,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 0.95,
-    "urfHealing": 0.95,
-    "urfShielding": 0.95
+    "aramDamageTaken": {
+      "flat": 1.15,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 0.85,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 0.82,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 0.82,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ENCHANTER",
@@ -115,7 +205,7 @@
             "leveling": []
           },
           {
-            "description": "Power Chord: After casting 3 basic abilities, Sona's next basic attack deals 20 \u2212  240 (based on level) (+ 20% AP)  bonus magic damage, with an additional effect depending on the last basic ability cast.",
+            "description": "Power Chord: After casting 3 basic abilities, Sona's next basic attack deals 20 − 240 (based on level) (+ 20% AP) bonus magic damage, with an additional effect depending on the last basic ability cast.",
             "icon": "Power Chord.png",
             "leveling": []
           },
@@ -157,7 +247,7 @@
         "name": "Hymn of Valor",
         "effects": [
           {
-            "description": "Active: Sona sends out bolts of sound that deal magic damage to the two nearest  visible enemies, prioritizing champions.",
+            "description": "Active: Sona sends out bolts of sound that deal magic damage to the two nearest visible enemies, prioritizing champions.",
             "icon": "Hymn of Valor.png",
             "leveling": [
               {
@@ -232,7 +322,7 @@
             "leveling": []
           },
           {
-            "description": "Power Chord : Staccato: Power Chord deals[ 28 \u2212  336 (based on level) (+ 28% AP) total magic damage. ][ 40% bonus magic damage. ]",
+            "description": "Power Chord : Staccato: Power Chord deals[ 28 − 336 (based on level) (+ 28% AP) total magic damage. ][ 40% bonus magic damage. ]",
             "icon": null,
             "leveling": []
           }
@@ -306,7 +396,7 @@
         "name": "Aria of Perseverance",
         "effects": [
           {
-            "description": "Active: Sona  heals herself and the most wounded nearby allied champion.",
+            "description": "Active: Sona heals herself and the most wounded nearby allied champion.",
             "icon": "Aria of Perseverance.png",
             "leveling": [
               {
@@ -341,7 +431,7 @@
             ]
           },
           {
-            "description": "Aura: Sona and tagged allied champions receive a  shield lasting up to 1.5 seconds.",
+            "description": "Aura: Sona and tagged allied champions receive a shield lasting up to 1.5 seconds.",
             "icon": "Tempo Aria of Perseverance.png",
             "leveling": [
               {
@@ -455,12 +545,12 @@
         "name": "Song of Celerity",
         "effects": [
           {
-            "description": "Active: Sona gains 20% (+ 3% per 100 AP)  bonus movement speed for 3 seconds, extended to up to 7 seconds if she doesn't take damage.",
+            "description": "Active: Sona gains 20% (+ 3% per 100 AP) bonus movement speed for 3 seconds, extended to up to 7 seconds if she doesn't take damage.",
             "icon": "Song of Celerity.png",
             "leveling": []
           },
           {
-            "description": "Aura: Tagged allied champions gain  bonus movement speed for 3 seconds.",
+            "description": "Aura: Tagged allied champions gain bonus movement speed for 3 seconds.",
             "icon": "Tempo Song of Celerity.png",
             "leveling": [
               {
@@ -502,7 +592,7 @@
             "leveling": []
           },
           {
-            "description": "Power Chord : Tempo: Power Chord  slows its target by 40% (+ 4% per 100 AP) for 2 seconds.",
+            "description": "Power Chord : Tempo: Power Chord slows its target by 40% (+ 4% per 100 AP) for 2 seconds.",
             "icon": null,
             "leveling": []
           }
@@ -568,7 +658,7 @@
         "name": "Crescendo",
         "effects": [
           {
-            "description": "Passive: Reduces the base  cooldown of Sona's basic abilities.",
+            "description": "Passive: Reduces the base cooldown of Sona's basic abilities.",
             "icon": "false",
             "leveling": [
               {
@@ -591,7 +681,7 @@
             ]
           },
           {
-            "description": "Active: After a 0.2-second delay, Sona plays an irresistible chord in the target direction, dealing magic damage to all enemy champions struck and  stunning them for 1.5 seconds.",
+            "description": "Active: After a 0.2-second delay, Sona plays an irresistible chord in the target direction, dealing magic damage to all enemy champions struck and stunning them for 1.5 seconds.",
             "icon": "Crescendo.png",
             "leveling": [
               {

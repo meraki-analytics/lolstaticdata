@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.647,
       "percent": 0.0,
       "perLevel": 1.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.647000014781951,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.108000002801418,
+    "attackSpeedRatio": {
+      "flat": 0.647000014781951,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.108000002801418,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 0.9,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "BATTLEMAGE",
@@ -109,7 +199,7 @@
         "name": "Serpentine Grace",
         "effects": [
           {
-            "description": "Innate: Cassiopeia cannot purchase boots and instead gains 4 \u2212 72 (based on level)  base movement speed, for a total of 332 \u2212 400 (based on level)  movement speed.",
+            "description": "Innate: Cassiopeia cannot purchase boots and instead gains 4 − 72 (based on level) base movement speed, for a total of 332 − 400 (based on level) movement speed.",
             "icon": "Serpentine Grace.png",
             "leveling": []
           }
@@ -146,7 +236,7 @@
         "name": "Noxious Blast",
         "effects": [
           {
-            "description": "Active: After a 0.4-second delay, Cassiopeia blasts the target area with  Noxious Poison, dealing  magic damage every second for 3 seconds to all enemies it hits.",
+            "description": "Active: After a 0.4-second delay, Cassiopeia blasts the target area with Noxious Poison, dealing magic damage every second for 3 seconds to all enemies it hits.",
             "icon": "Noxious Blast.png",
             "leveling": [
               {
@@ -226,7 +316,7 @@
             ]
           },
           {
-            "description": "Cassiopeia gains  bonus movement speed that decays over 3 seconds if Noxious Blast hits an enemy  champion.",
+            "description": "Cassiopeia gains bonus movement speed that decays over 3 seconds if Noxious Blast hits an enemy champion.",
             "icon": null,
             "leveling": [
               {
@@ -324,12 +414,12 @@
         "name": "Miasma",
         "effects": [
           {
-            "description": "Active: Cassiopeia spits forth eight bolts of venom in an arc, leaving toxic clouds of  Debilitating Poison where they hit the ground for 5 seconds.",
+            "description": "Active: Cassiopeia spits forth eight bolts of venom in an arc, leaving toxic clouds of Debilitating Poison where they hit the ground for 5 seconds.",
             "icon": "Miasma.png",
             "leveling": []
           },
           {
-            "description": "Debilitating Poison deals magic damage to enemies standing upon it every second, also  grounding them and applying a  slow that decays over the area's duration.",
+            "description": "Debilitating Poison deals magic damage to enemies standing upon it every second, also grounding them and applying a slow that decays over the area's duration.",
             "icon": null,
             "leveling": [
               {
@@ -501,12 +591,12 @@
         "name": "Twin Fang",
         "effects": [
           {
-            "description": "Active: Cassiopeia launches her fangs at the target enemy, dealing 52 \u2212 120 (based on level) (+ 10% AP) magic damage. If Twin Fang kills its target, or the target is killed mid-flight, its  mana cost is refunded.",
+            "description": "Active: Cassiopeia launches her fangs at the target enemy, dealing 52 − 120 (based on level) (+ 10% AP) magic damage. If Twin Fang kills its target, or the target is killed mid-flight, its mana cost is refunded.",
             "icon": "Twin Fang.png",
             "leveling": []
           },
           {
-            "description": "If the target is  poisoned, Twin Fang deals bonus magic damage and  heals Cassiopeia. The heal is only 25% as effective against minions and small monsters.",
+            "description": "If the target is poisoned, Twin Fang deals bonus magic damage and heals Cassiopeia. The heal is only 25% as effective against minions and small monsters.",
             "icon": null,
             "leveling": [
               {
@@ -697,7 +787,7 @@
             ]
           },
           {
-            "description": "Enemies facing Cassiopeia are  stunned for 2 seconds upon being hit by Petrifying Gaze, and all other affected enemies are instead  slowed by 40% for the same duration.",
+            "description": "Enemies facing Cassiopeia are stunned for 2 seconds upon being hit by Petrifying Gaze, and all other affected enemies are instead slowed by 40% for the same duration.",
             "icon": null,
             "leveling": []
           }
@@ -754,7 +844,7 @@
         "innerRadius": null,
         "speed": null,
         "width": null,
-        "angle": "80\u00b0",
+        "angle": "80°",
         "castTime": null,
         "effectRadius": "825",
         "targetRange": null

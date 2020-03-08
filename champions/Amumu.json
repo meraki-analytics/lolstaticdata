@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 100,
-    "pathingRadius": 30,
-    "gameplayRadius": 55,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 30,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 55,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.736,
       "percent": 0.0,
       "perLevel": 2.18,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.638000011444091,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0661564618349075,
+    "attackSpeedRatio": {
+      "flat": 0.638000011444091,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0661564618349075,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "MAGE",
@@ -110,12 +200,12 @@
         "name": "Cursed Touch",
         "effects": [
           {
-            "description": "Innate: Amumu's basic attacks and  Curse of the Sad Mummy apply a Curse for 3 seconds, refreshing with each subsequent basic attack.",
+            "description": "Innate: Amumu's basic attacks and Curse of the Sad Mummy apply a Curse for 3 seconds, refreshing with each subsequent basic attack.",
             "icon": "Cursed Touch.png",
             "leveling": []
           },
           {
-            "description": "Cursed targets receive  10% bonus true damage from all incoming pre-mitigation magic damage.",
+            "description": "Cursed targets receive 10% bonus true damage from all incoming pre-mitigation magic damage.",
             "icon": null,
             "leveling": []
           }
@@ -152,7 +242,7 @@
         "name": "Bandage Toss",
         "effects": [
           {
-            "description": "Active: Amumu tosses a bandage in the target direction that  stuns the first enemy it hits for 1 second, dealing  magic damage and  pulling him to their location.",
+            "description": "Active: Amumu tosses a bandage in the target direction that stuns the first enemy it hits for 1 second, dealing magic damage and pulling him to their location.",
             "icon": "Bandage Toss.png",
             "leveling": [
               {
@@ -482,7 +572,7 @@
             ]
           },
           {
-            "description": "Tantrum's  cooldown is reduced by 0.5 seconds every time Amumu is hit by a basic attack.",
+            "description": "Tantrum's cooldown is reduced by 0.5 seconds every time Amumu is hit by a basic attack.",
             "icon": null,
             "leveling": []
           }
@@ -558,7 +648,7 @@
         "name": "Curse of the Sad Mummy",
         "effects": [
           {
-            "description": "Active: Amumu  knocks down and  entangles nearby enemies for 2 seconds, dealing magic damage.",
+            "description": "Active: Amumu knocks down and entangles nearby enemies for 2 seconds, dealing magic damage.",
             "icon": "Curse of the Sad Mummy.png",
             "leveling": [
               {

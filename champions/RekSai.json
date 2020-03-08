@@ -26,6 +26,12 @@
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
+    "manaRegen": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
     "armor": {
       "flat": 36,
       "percent": 0.0,
@@ -50,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 100,
-    "pathingRadius": 30,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 30,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.667,
       "percent": 0.0,
       "perLevel": 2,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.666999995708465,
-    "attackCastTime": 0.400000005960464,
-    "attackTotalTime": 1.5,
-    "attackDelayOffset": -0.0916666686534881,
+    "attackSpeedRatio": {
+      "flat": 0.666999995708465,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.400000005960464,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.5,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0916666686534881,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 175,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.9,
-    "aramDamageDealt": 1.12,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.8,
-    "urfDamageDealt": 1.05,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.12,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.8,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "DIVER",
@@ -103,12 +199,12 @@
         "name": "Fury of the Xer'Sai",
         "effects": [
           {
-            "description": "Innate: Rek'Sai generates  25 Fury upon dealing damage with basic attack,  Prey Seeker,  Unburrow or  Furious Bite, and loses 20 Fury per second if she hasn't generated any in the last 5 seconds.",
+            "description": "Innate: Rek'Sai generates 25 Fury upon dealing damage with basic attack, Prey Seeker, Unburrow or Furious Bite, and loses 20 Fury per second if she hasn't generated any in the last 5 seconds.",
             "icon": "Fury of the Xer'Sai.png",
             "leveling": []
           },
           {
-            "description": "While  burrowed, Rek'Sai consumes her current Fury over 3 seconds,  healing up to  20 \u2212 190 (based on level) health at 100 Fury, stopping once she consumes it all or returns to  full health.",
+            "description": "While burrowed, Rek'Sai consumes her current Fury over 3 seconds, healing up to 20 − 190 (based on level) health at 100 Fury, stopping once she consumes it all or returns to full health.",
             "icon": null,
             "leveling": []
           }
@@ -145,7 +241,7 @@
         "name": "Queen's Wrath",
         "effects": [
           {
-            "description": "Unburrowed - Active: Rek'Sai's next three basic attacks within 5 seconds deal  bonus physical damage to her target and all surrounding enemies. The damage to the primary target is affected by  critical strike modifiers.",
+            "description": "Unburrowed - Active: Rek'Sai's next three basic attacks within 5 seconds deal bonus physical damage to her target and all surrounding enemies. The damage to the primary target is affected by critical strike modifiers.",
             "icon": "Queen's Wrath.png",
             "leveling": [
               {
@@ -280,7 +376,7 @@
         "name": "Prey Seeker",
         "effects": [
           {
-            "description": "Burrowed - Active: Rek'Sai fires a void-charged pulse in a target direction, stopping at the first enemy hit, dealing physical damage to enemies in the area and  revealing them for 2.5 seconds.",
+            "description": "Burrowed - Active: Rek'Sai fires a void-charged pulse in a target direction, stopping at the first enemy hit, dealing physical damage to enemies in the area and revealing them for 2.5 seconds.",
             "icon": "Prey Seeker.png",
             "leveling": [
               {
@@ -391,12 +487,12 @@
         "name": "Burrow",
         "effects": [
           {
-            "description": "Unburrowed - Active: Rek'Sai burrows into the ground,  self-disarming and reducing her sight radius to 250, but gaining 15 / 20 / 25 / 30 (based on level)  bonus movement speed, becoming  ghosted, accessing an alternate set of basic abilities, and activating Tremor Sense.",
+            "description": "Unburrowed - Active: Rek'Sai burrows into the ground, self-disarming and reducing her sight radius to 250, but gaining 15 / 20 / 25 / 30 (based on level) bonus movement speed, becoming ghosted, accessing an alternate set of basic abilities, and activating Tremor Sense.",
             "icon": "Burrow.png",
             "leveling": []
           },
           {
-            "description": "Tremor Sense: Rek'Sai gains  obscured vision of nearby enemy and neutral units in fog of war every 1.5 seconds if they are moving.",
+            "description": "Tremor Sense: Rek'Sai gains obscured vision of nearby enemy and neutral units in fog of war every 1.5 seconds if they are moving.",
             "icon": null,
             "leveling": []
           }
@@ -451,7 +547,7 @@
         "name": "Unburrow",
         "effects": [
           {
-            "description": "Burrowed - Active: Rek'Sai bursts out of the ground, dealing physical damage to surrounding enemies and  knocking them aside 250 units. The enemy closest to the center is  knocked up for 1 second instead, and cannot be affected again by Unburrow for some time.",
+            "description": "Burrowed - Active: Rek'Sai bursts out of the ground, dealing physical damage to surrounding enemies and knocking them aside 250 units. The enemy closest to the center is knocked up for 1 second instead, and cannot be affected again by Unburrow for some time.",
             "icon": "Unburrow.png",
             "leveling": [
               {
@@ -494,7 +590,7 @@
             ]
           },
           {
-            "description": "Rek'Sai can also trigger Unburrow by issuing an attack command, applying the full  knock up against her target.",
+            "description": "Rek'Sai can also trigger Unburrow by issuing an attack command, applying the full knock up against her target.",
             "icon": null,
             "leveling": []
           }
@@ -594,7 +690,7 @@
             ]
           },
           {
-            "description": "At maximum  Fury the damage is doubled and converted to  true damage.",
+            "description": "At maximum Fury the damage is doubled and converted to true damage.",
             "icon": null,
             "leveling": [
               {
@@ -687,17 +783,17 @@
         "name": "Tunnel",
         "effects": [
           {
-            "description": "Burrowed - Active: Rek'Sai  dashes in the cursor's direction, leaving behind a Tunnel with two interconnected entrances, lasting up to 10 minutes. The Tunnel can be traversed again if Rek'Sai targets either entrance, shutting down the Tunnel for a few seconds.",
+            "description": "Burrowed - Active: Rek'Sai dashes in the cursor's direction, leaving behind a Tunnel with two interconnected entrances, lasting up to 10 minutes. The Tunnel can be traversed again if Rek'Sai targets either entrance, shutting down the Tunnel for a few seconds.",
             "icon": "Tunnel.png",
             "leveling": []
           },
           {
-            "description": "Rek'Sai can have up to 8 pairs of entrances active on the map at the same time. Enemy  champions can destroy a Tunnel by standing on either entrance for 1.5 seconds.",
+            "description": "Rek'Sai can have up to 8 pairs of entrances active on the map at the same time. Enemy champions can destroy a Tunnel by standing on either entrance for 1.5 seconds.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "An Unburrowed Rek'Sai will automatically  Burrow before entering the Tunnel and automatically  Unburrow after exiting it. This does not put  Burrow on cooldown nor trigger  Fury of the Xer'Sai, but does trigger other Burrow effects and  Unburrow.",
+            "description": "An Unburrowed Rek'Sai will automatically Burrow before entering the Tunnel and automatically Unburrow after exiting it. This does not put Burrow on cooldown nor trigger Fury of the Xer'Sai, but does trigger other Burrow effects and Unburrow.",
             "icon": null,
             "leveling": []
           }
@@ -759,7 +855,7 @@
             "leveling": []
           },
           {
-            "description": "Active: Rek'Sai selects an enemy champion with Mark as Prey and  vanishes into the ground. After 1.5 seconds, she emerges from the ground near her target and  pounces  unstoppably a fixed distance in their direction to deal physical damage if she hits them.",
+            "description": "Active: Rek'Sai selects an enemy champion with Mark as Prey and vanishes into the ground. After 1.5 seconds, she emerges from the ground near her target and pounces unstoppably a fixed distance in their direction to deal physical damage if she hits them.",
             "icon": "Void Rush.png",
             "leveling": [
               {

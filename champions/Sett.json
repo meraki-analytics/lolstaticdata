@@ -20,6 +20,18 @@
       "perLevel": 0.5,
       "percentPerLevel": 0.0
     },
+    "mana": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
+    "manaRegen": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
     "armor": {
       "flat": 33,
       "percent": 0.0,
@@ -44,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 100,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 1.75,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.95,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -103,12 +205,12 @@
             "leveling": []
           },
           {
-            "description": "Sett's right punch gains  50 bonus range, attacks at 8 times the left punch's attack speed, and deals 5 \u2212 90 (based on level) (+  15% AD)  bonus physical damage.",
+            "description": "Sett's right punch gains 50 bonus range, attacks at 8 times the left punch's attack speed, and deals 5 − 90 (based on level) (+ 15% AD) bonus physical damage.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Innate - Heart of the Half-Beast: Sett gains  0.25 / 0.5 / 1 / 2 (based on level) health regeneration per second for every 5% of his missing  health.",
+            "description": "Innate - Heart of the Half-Beast: Sett gains 0.25 / 0.5 / 1 / 2 (based on level) health regeneration per second for every 5% of his missing health.",
             "icon": null,
             "leveling": []
           }
@@ -145,7 +247,7 @@
         "name": "Knuckle Down",
         "effects": [
           {
-            "description": "Active: For the first 1.5 seconds, Sett gains  30% bonus movement speed while moving towards an enemy  champion.",
+            "description": "Active: For the first 1.5 seconds, Sett gains 30% bonus movement speed while moving towards an enemy champion.",
             "icon": "Looking for a Fight.png",
             "leveling": []
           },
@@ -230,7 +332,7 @@
             ]
           },
           {
-            "description": "Knuckle Down resets Sett's basic attack timer and  Pit Grit's punch cadence. The second attack will be a right punch.",
+            "description": "Knuckle Down resets Sett's basic attack timer and Pit Grit's punch cadence. The second attack will be a right punch.",
             "icon": null,
             "leveling": []
           }
@@ -292,7 +394,7 @@
             "leveling": []
           },
           {
-            "description": "Active: Sett blasts an area in the target direction, dealing  physical damage to enemies hit. Enemies hit through the center take  true damage instead.",
+            "description": "Active: Sett blasts an area in the target direction, dealing physical damage to enemies hit. Enemies hit through the center take true damage instead.",
             "icon": null,
             "leveling": [
               {
@@ -335,7 +437,7 @@
             ]
           },
           {
-            "description": "Down but not out: Sett also gains a rapidly decaying  shield for 3 seconds equal to the Grit expended.",
+            "description": "Down but not out: Sett also gains a rapidly decaying shield for 3 seconds equal to the Grit expended.",
             "icon": null,
             "leveling": []
           }
@@ -400,7 +502,7 @@
         "innerRadius": null,
         "speed": null,
         "width": "805 / 180",
-        "angle": "27\u00b0",
+        "angle": "27°",
         "castTime": "0.75",
         "effectRadius": null,
         "targetRange": "790"
@@ -411,7 +513,7 @@
         "name": "Facebreaker",
         "effects": [
           {
-            "description": "Active: Sett  pulls in enemies at his front and back, dealing physical damage and  slowing them by 50% for 0.5 seconds.",
+            "description": "Active: Sett pulls in enemies at his front and back, dealing physical damage and slowing them by 50% for 0.5 seconds.",
             "icon": "Facebreaker.png",
             "leveling": [
               {
@@ -454,7 +556,7 @@
             ]
           },
           {
-            "description": "If Facebreaker affects at least one enemy on each side, all enemies are  stunned for 1 second upon landing.",
+            "description": "If Facebreaker affects at least one enemy on each side, all enemies are stunned for 1 second upon landing.",
             "icon": null,
             "leveling": []
           }
@@ -511,12 +613,12 @@
         "name": "The Show Stopper",
         "effects": [
           {
-            "description": "Active: Sett  suppresses the target enemy  champion and then  dashes  unstoppably at a fixed distance toward them,  carrying the target for 1.5 seconds before slamming them into the ground.",
+            "description": "Active: Sett suppresses the target enemy champion and then dashes unstoppably at a fixed distance toward them, carrying the target for 1.5 seconds before slamming them into the ground.",
             "icon": "The Show Stopper.png",
             "leveling": []
           },
           {
-            "description": "Enemies within the impact area take physical damage, reduced by up to 40% at the edge, and are  slowed by 99% for 1 second.",
+            "description": "Enemies within the impact area take physical damage, reduced by up to 40% at the edge, and are slowed by 99% for 1 second.",
             "icon": null,
             "leveling": [
               {

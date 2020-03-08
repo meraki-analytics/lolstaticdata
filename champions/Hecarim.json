@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 800,
-    "selectionRadius": 140,
-    "pathingRadius": 50,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 800,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 140,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 50,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.67,
       "percent": 0.0,
       "perLevel": 2.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.6700000166893,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.050000000745058,
+    "attackSpeedRatio": {
+      "flat": 0.6700000166893,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.050000000745058,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 175,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.9,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "DIVER",
@@ -110,7 +200,7 @@
         "name": "Warpath",
         "effects": [
           {
-            "description": "Innate: Hecarim gains 15% \u2212 30% (based on level) of his bonus  movement speed as bonus attack damage.",
+            "description": "Innate: Hecarim gains 15% − 30% (based on level) of his bonus movement speed as bonus attack damage.",
             "icon": "Warpath.png",
             "leveling": []
           }
@@ -147,7 +237,7 @@
         "name": "Rampage",
         "effects": [
           {
-            "description": "Active: Hecarim cleaves nearby enemies, dealing  physical damage, reduced to 66.6% against minions.",
+            "description": "Active: Hecarim cleaves nearby enemies, dealing physical damage, reduced to 66.6% against minions.",
             "icon": "Rampage.png",
             "leveling": [
               {
@@ -227,7 +317,7 @@
             ]
           },
           {
-            "description": "If Hecarim damages at least one enemy with Rampage, its base  cooldown is reduced by 1 second and the damage is increased by 5% for 8 seconds, stacking up to two times.",
+            "description": "If Hecarim damages at least one enemy with Rampage, its base cooldown is reduced by 1 second and the damage is increased by 5% for 8 seconds, stacking up to two times.",
             "icon": null,
             "leveling": [
               {
@@ -378,7 +468,7 @@
         "name": "Spirit of Dread",
         "effects": [
           {
-            "description": "Active: Hecarim surrounds himself with the spirit of dread for 4 seconds, dealing  magic damage per second to all enemies within its reach.",
+            "description": "Active: Hecarim surrounds himself with the spirit of dread for 4 seconds, dealing magic damage per second to all enemies within its reach.",
             "icon": "Spirit of Dread.png",
             "leveling": [
               {
@@ -458,7 +548,7 @@
             ]
           },
           {
-            "description": "While Spirit of Dread is active, Hecarim is  healed for 30% of the damage taken by enemies from any source within the area, capped from minions and monsters.",
+            "description": "While Spirit of Dread is active, Hecarim is healed for 30% of the damage taken by enemies from any source within the area, capped from minions and monsters.",
             "icon": null,
             "leveling": [
               {
@@ -556,12 +646,12 @@
         "name": "Devastating Charge",
         "effects": [
           {
-            "description": "Active: Hecarim is temporarily  ghosted and gains  25% \u2212 75% (based on time active) bonus movement speed for 4 seconds.",
+            "description": "Active: Hecarim is temporarily ghosted and gains 25% − 75% (based on time active) bonus movement speed for 4 seconds.",
             "icon": "Devastating Charge.png",
             "leveling": []
           },
           {
-            "description": "While in effect, Hecarim's next basic attack gains 50 \u2212 250 (based on distance traveled)  bonus range and causes him to  dash to the target,  knocking them back 250 \u2212 450 (based on distance traveled) units and dealing modified physical damage, increased by 0% \u2212 100% (based on distance traveled), and ending the ability in the process.",
+            "description": "While in effect, Hecarim's next basic attack gains 50 − 250 (based on distance traveled) bonus range and causes him to dash to the target, knocking them back 250 − 450 (based on distance traveled) units and dealing modified physical damage, increased by 0% − 100% (based on distance traveled), and ending the ability in the process.",
             "icon": null,
             "leveling": [
               {
@@ -712,7 +802,7 @@
         "name": "Onslaught of Shadows",
         "effects": [
           {
-            "description": "Active: Hecarim summons spectral riders and  dashes  unstoppably in the target direction with them, dealing magic damage to all enemies in their path.",
+            "description": "Active: Hecarim summons spectral riders and dashes unstoppably in the target direction with them, dealing magic damage to all enemies in their path.",
             "icon": "Onslaught of Shadows.png",
             "leveling": [
               {
@@ -747,7 +837,7 @@
             ]
           },
           {
-            "description": "Enemies within range of where Hecarim stops are also made to  flee from him for 0.75 \u2212 1.5 (based on distance traveled) seconds, also gradually  slowing them by up to 99% over the duration. This slow cannot be reduced.",
+            "description": "Enemies within range of where Hecarim stops are also made to flee from him for 0.75 − 1.5 (based on distance traveled) seconds, also gradually slowing them by up to 99% over the duration. This slow cannot be reduced.",
             "icon": null,
             "leveling": []
           },

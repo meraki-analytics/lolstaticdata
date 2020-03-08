@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 135,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 135,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.694,
       "percent": 0.0,
       "perLevel": 3,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.694000005722045,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0784961655735969,
+    "attackSpeedRatio": {
+      "flat": 0.694000005722045,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0784961655735969,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 0.88,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.88,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN"
@@ -108,12 +198,12 @@
         "name": "Backstab",
         "effects": [
           {
-            "description": "Innate: Shaco's basic attacks deal an additional 10 \u2212 25 (based on level) (+ 15% bonus AD) bonus physical damage when striking a non- structure from behind. This damage can  critically strike.",
+            "description": "Innate: Shaco's basic attacks deal an additional 10 − 25 (based on level) (+ 15% bonus AD) bonus physical damage when striking a non- structure from behind. This damage can critically strike.",
             "icon": "Backstab.png",
             "leveling": []
           },
           {
-            "description": "Deceive and  Two-Shiv Poison also have additional effects when striking an enemy from behind.",
+            "description": "Deceive and Two-Shiv Poison also have additional effects when striking an enemy from behind.",
             "icon": null,
             "leveling": []
           }
@@ -150,7 +240,7 @@
         "name": "Deceive",
         "effects": [
           {
-            "description": "Active: After a 0.125-second delay, Shaco  blinks  to the target location, temporarily becoming  invisible for a few seconds.",
+            "description": "Active: After a 0.125-second delay, Shaco blinks to the target location, temporarily becoming invisible for a few seconds.",
             "icon": "Deceive.png",
             "leveling": [
               {
@@ -177,7 +267,7 @@
             ]
           },
           {
-            "description": "After exiting invisibility, his next basic attack within 0.25 seconds deals bonus physical damage. This damage can  critically strike.",
+            "description": "After exiting invisibility, his next basic attack within 0.25 seconds deals bonus physical damage. This damage can critically strike.",
             "icon": null,
             "leveling": [
               {
@@ -220,12 +310,12 @@
             ]
           },
           {
-            "description": "Deceive's  invisibility is not removed when Shaco casts  Hallucinate, while casting  Jack in the Box causes him to shimmer without removing it.",
+            "description": "Deceive's invisibility is not removed when Shaco casts Hallucinate, while casting Jack in the Box causes him to shimmer without removing it.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Backstab: Guarantees the basic attack to  critically strike for (30% +  25%) bonus physical damage.",
+            "description": "Backstab: Guarantees the basic attack to critically strike for (30% + 25%) bonus physical damage.",
             "icon": null,
             "leveling": []
           }
@@ -301,12 +391,12 @@
         "name": "Jack in the Box",
         "effects": [
           {
-            "description": "Active: Shaco summons a Jack in the Box at the target location, lasting for up to 40 (+ 5% AP) seconds. The box arms after a 2 second delay, becoming  stealthed and  untargetable to enemies.",
+            "description": "Active: Shaco summons a Jack in the Box at the target location, lasting for up to 40 (+ 5% AP) seconds. The box arms after a 2 second delay, becoming stealthed and untargetable to enemies.",
             "icon": "Jack in the Box.png",
             "leveling": []
           },
           {
-            "description": "Triggering the box will  startle nearby enemies for 0.5 seconds as well as cause them to turn and  flee for 2 seconds, reduced against champions. While fleeing,  minions and  monsters have a static 60  movement speed and  champions have a static 100  movement speed.",
+            "description": "Triggering the box will startle nearby enemies for 0.5 seconds as well as cause them to turn and flee for 2 seconds, reduced against champions. While fleeing, minions and monsters have a static 60 movement speed and champions have a static 100 movement speed.",
             "icon": null,
             "leveling": [
               {
@@ -333,7 +423,7 @@
             ]
           },
           {
-            "description": "Once triggered, the box will also become targetable and automatically start firing every 0.5 seconds at all nearby  visible enemies, dealing  magic damage with each attack, reduced by 50% against  structures. If the box attacks only one unit, it deals increased damage.",
+            "description": "Once triggered, the box will also become targetable and automatically start firing every 0.5 seconds at all nearby visible enemies, dealing magic damage with each attack, reduced by 50% against structures. If the box attacks only one unit, it deals increased damage.",
             "icon": null,
             "leveling": [
               {
@@ -489,7 +579,7 @@
         "name": "Two-Shiv Poison",
         "effects": [
           {
-            "description": "Passive: Shaco's basic attacks  slow enemies for 2 seconds while Two-Shiv Poison is off cooldown.",
+            "description": "Passive: Shaco's basic attacks slow enemies for 2 seconds while Two-Shiv Poison is off cooldown.",
             "icon": "false",
             "leveling": [
               {
@@ -516,7 +606,7 @@
             ]
           },
           {
-            "description": "Active: Shaco throws a dagger at the target enemy,  slowing them for 3 seconds and dealing magic damage, increased by 50% against targets below 30% of their maximum health.",
+            "description": "Active: Shaco throws a dagger at the target enemy, slowing them for 3 seconds and dealing magic damage, increased by 50% against targets below 30% of their maximum health.",
             "icon": "Two-Shiv Poison.png",
             "leveling": [
               {
@@ -628,7 +718,7 @@
             ]
           },
           {
-            "description": "Backstab: Deals an additional 15 \u2212 50 (based on level) (+ 10% AP) bonus magic damage, increased to 22.5 \u2212 75 (based on level) (+ 15% AP) when the target is below 30% of their maximum health.",
+            "description": "Backstab: Deals an additional 15 − 50 (based on level) (+ 10% AP) bonus magic damage, increased to 22.5 − 75 (based on level) (+ 15% AP) when the target is below 30% of their maximum health.",
             "icon": null,
             "leveling": []
           }
@@ -704,7 +794,7 @@
         "name": "Hallucinate",
         "effects": [
           {
-            "description": "First Cast: Shaco  vanishes for 0.5 seconds and then  blinks in the target direction while creating a clone of himself that blinks in the opposite direction, remaining within tether range of him as a controllable  pet for up to 18 seconds.",
+            "description": "First Cast: Shaco vanishes for 0.5 seconds and then blinks in the target direction while creating a clone of himself that blinks in the opposite direction, remaining within tether range of him as a controllable pet for up to 18 seconds.",
             "icon": "Hallucinate.png",
             "leveling": []
           },
@@ -714,7 +804,7 @@
             "leveling": []
           },
           {
-            "description": "When the Hallucination dies or expires, it explodes, dealing magic damage to enemy units around it and leaving three  mini-boxes behind which activate instantly, causing nearby enemies to  flee for 1 second.",
+            "description": "When the Hallucination dies or expires, it explodes, dealing magic damage to enemy units around it and leaving three mini-boxes behind which activate instantly, causing nearby enemies to flee for 1 second.",
             "icon": null,
             "leveling": [
               {
@@ -749,7 +839,7 @@
             ]
           },
           {
-            "description": "The three boxes possess Jack in the Box's effects, except they have a doubled, but shared  health, and deal modified magic damage with each attack, increased if attacking a single unit.",
+            "description": "The three boxes possess Jack in the Box's effects, except they have a doubled, but shared health, and deal modified magic damage with each attack, increased if attacking a single unit.",
             "icon": null,
             "leveling": [
               {

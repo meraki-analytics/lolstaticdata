@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 525,
-    "selectionRadius": 100,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 525,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 1.4,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.133333340287208,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.133333340287208,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 525,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.85,
-    "aramDamageDealt": 1.15,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.1,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.85,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.15,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -110,7 +200,7 @@
         "name": "Mirror Image",
         "effects": [
           {
-            "description": "Innate: When LeBlanc reaches  below 40% maximum health, she creates a controllable clone of herself with the same items, statistics, health and mana, after which they both instantly become  invisible for 1 second.",
+            "description": "Innate: When LeBlanc reaches below 40% maximum health, she creates a controllable clone of herself with the same items, statistics, health and mana, after which they both instantly become invisible for 1 second.",
             "icon": "Mirror Image.png",
             "leveling": []
           },
@@ -173,7 +263,7 @@
         "name": "Sigil of Malice",
         "effects": [
           {
-            "description": "Active: LeBlanc projects an orb towards the target enemy, dealing  magic damage and marking them for 3.5 seconds.",
+            "description": "Active: LeBlanc projects an orb towards the target enemy, dealing magic damage and marking them for 3.5 seconds.",
             "icon": "Sigil of Malice.png",
             "leveling": [
               {
@@ -330,7 +420,7 @@
         "name": "Distortion",
         "effects": [
           {
-            "description": "Active: LeBlanc  dashes to the target location, damaging all nearby enemies upon arrival and leaving a return pad at the cast location for 4 seconds. After 0.2 seconds she can recast  Distortion at no additional cost.",
+            "description": "Active: LeBlanc dashes to the target location, damaging all nearby enemies upon arrival and leaving a return pad at the cast location for 4 seconds. After 0.2 seconds she can recast Distortion at no additional cost.",
             "icon": "Distortion.png",
             "leveling": [
               {
@@ -373,7 +463,7 @@
             ]
           },
           {
-            "description": "Recast: LeBlanc  blinks to Distortion's return pad, regardless of range.",
+            "description": "Recast: LeBlanc blinks to Distortion's return pad, regardless of range.",
             "icon": "Distortion 2.png",
             "leveling": []
           }
@@ -447,7 +537,7 @@
         "name": "Distortion",
         "effects": [
           {
-            "description": "Active: LeBlanc  dashes to the target location, damaging all nearby enemies upon arrival and leaving a return pad at the cast location for 4 seconds. After 0.2 seconds she can recast  Distortion at no additional cost.",
+            "description": "Active: LeBlanc dashes to the target location, damaging all nearby enemies upon arrival and leaving a return pad at the cast location for 4 seconds. After 0.2 seconds she can recast Distortion at no additional cost.",
             "icon": "Distortion.png",
             "leveling": [
               {
@@ -490,7 +580,7 @@
             ]
           },
           {
-            "description": "Recast: LeBlanc  blinks to Distortion's return pad, regardless of range.",
+            "description": "Recast: LeBlanc blinks to Distortion's return pad, regardless of range.",
             "icon": "Distortion 2.png",
             "leveling": []
           }
@@ -609,7 +699,7 @@
             ]
           },
           {
-            "description": "The target is  revealed while the tether is attached, and if it is not broken the target will be  revealed and  rooted for 1.5 seconds and dealt additional magic damage.",
+            "description": "The target is revealed while the tether is attached, and if it is not broken the target will be revealed and rooted for 1.5 seconds and dealt additional magic damage.",
             "icon": null,
             "leveling": [
               {

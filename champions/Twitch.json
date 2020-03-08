@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 575,
-    "selectionRadius": 135,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 575,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 135,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.679,
       "percent": 0.0,
       "perLevel": 3.38,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.67900002002716,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0980840176343917,
+    "attackSpeedRatio": {
+      "flat": 0.67900002002716,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0980840176343917,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -109,12 +199,12 @@
         "name": "Deadly Venom",
         "effects": [
           {
-            "description": "Innate: Twitch's basic attacks  poison his target with Deadly Venom, each attack adding one stack on-hit.",
+            "description": "Innate: Twitch's basic attacks poison his target with Deadly Venom, each attack adding one stack on-hit.",
             "icon": "Deadly Venom.png",
             "leveling": []
           },
           {
-            "description": "Each Deadly Venom stack deals 1 / 2 / 3 / 4 / 5 (based on level)  true damage per second over 6 seconds, stacking up to 6 times for a maximum 6 / 12 / 18 / 24 / 30 (based on level)  true damage per second.",
+            "description": "Each Deadly Venom stack deals 1 / 2 / 3 / 4 / 5 (based on level) true damage per second over 6 seconds, stacking up to 6 times for a maximum 6 / 12 / 18 / 24 / 30 (based on level) true damage per second.",
             "icon": null,
             "leveling": []
           },
@@ -156,7 +246,7 @@
         "name": "Ambush",
         "effects": [
           {
-            "description": "Active: After a 1 second delay, Twitch becomes  camouflaged for a duration. Entering stealth cancels Twitch's current basic attack. Basic attacks and abilities break the stealth on-cast.",
+            "description": "Active: After a 1 second delay, Twitch becomes camouflaged for a duration. Entering stealth cancels Twitch's current basic attack. Basic attacks and abilities break the stealth on-cast.",
             "icon": "Ambush.png",
             "leveling": [
               {
@@ -183,12 +273,12 @@
             ]
           },
           {
-            "description": "While stealthed he gains  10% bonus movement speed, increased to 30% when he moves toward enemy champions within a 1000-range radius who cannot see him.",
+            "description": "While stealthed he gains 10% bonus movement speed, increased to 30% when he moves toward enemy champions within a 1000-range radius who cannot see him.",
             "icon": "Ambush 2.png",
             "leveling": []
           },
           {
-            "description": "Upon breaking stealth he gains  bonus attack speed for 5 seconds.",
+            "description": "Upon breaking stealth he gains bonus attack speed for 5 seconds.",
             "icon": "Ambush 3.png",
             "leveling": [
               {
@@ -215,7 +305,7 @@
             ]
           },
           {
-            "description": "Ambush's  cooldown is reset if an enemy champion dies while affected by  Deadly Venom.",
+            "description": "Ambush's cooldown is reset if an enemy champion dies while affected by Deadly Venom.",
             "icon": null,
             "leveling": []
           }
@@ -289,7 +379,7 @@
         "name": "Ambush",
         "effects": [
           {
-            "description": "Active: After a 1 second delay, Twitch becomes  camouflaged for a duration. Entering stealth cancels Twitch's current basic attack. Basic attacks and abilities break the stealth on-cast.",
+            "description": "Active: After a 1 second delay, Twitch becomes camouflaged for a duration. Entering stealth cancels Twitch's current basic attack. Basic attacks and abilities break the stealth on-cast.",
             "icon": "Ambush.png",
             "leveling": [
               {
@@ -316,12 +406,12 @@
             ]
           },
           {
-            "description": "While stealthed he gains  10% bonus movement speed, increased to 30% when he moves toward enemy champions within a 1000-range radius who cannot see him.",
+            "description": "While stealthed he gains 10% bonus movement speed, increased to 30% when he moves toward enemy champions within a 1000-range radius who cannot see him.",
             "icon": "Ambush 2.png",
             "leveling": []
           },
           {
-            "description": "Upon breaking stealth he gains  bonus attack speed for 5 seconds.",
+            "description": "Upon breaking stealth he gains bonus attack speed for 5 seconds.",
             "icon": "Ambush 3.png",
             "leveling": [
               {
@@ -348,7 +438,7 @@
             ]
           },
           {
-            "description": "Ambush's  cooldown is reset if an enemy champion dies while affected by  Deadly Venom.",
+            "description": "Ambush's cooldown is reset if an enemy champion dies while affected by Deadly Venom.",
             "icon": null,
             "leveling": []
           }
@@ -422,7 +512,7 @@
         "name": "Ambush",
         "effects": [
           {
-            "description": "Active: After a 1 second delay, Twitch becomes  camouflaged for a duration. Entering stealth cancels Twitch's current basic attack. Basic attacks and abilities break the stealth on-cast.",
+            "description": "Active: After a 1 second delay, Twitch becomes camouflaged for a duration. Entering stealth cancels Twitch's current basic attack. Basic attacks and abilities break the stealth on-cast.",
             "icon": "Ambush.png",
             "leveling": [
               {
@@ -449,12 +539,12 @@
             ]
           },
           {
-            "description": "While stealthed he gains  10% bonus movement speed, increased to 30% when he moves toward enemy champions within a 1000-range radius who cannot see him.",
+            "description": "While stealthed he gains 10% bonus movement speed, increased to 30% when he moves toward enemy champions within a 1000-range radius who cannot see him.",
             "icon": "Ambush 2.png",
             "leveling": []
           },
           {
-            "description": "Upon breaking stealth he gains  bonus attack speed for 5 seconds.",
+            "description": "Upon breaking stealth he gains bonus attack speed for 5 seconds.",
             "icon": "Ambush 3.png",
             "leveling": [
               {
@@ -481,7 +571,7 @@
             ]
           },
           {
-            "description": "Ambush's  cooldown is reset if an enemy champion dies while affected by  Deadly Venom.",
+            "description": "Ambush's cooldown is reset if an enemy champion dies while affected by Deadly Venom.",
             "icon": null,
             "leveling": []
           }
@@ -557,12 +647,12 @@
         "name": "Venom Cask",
         "effects": [
           {
-            "description": "Active: Twitch hurls a cask of venom at the target area, infecting all enemies hit with a  Deadly Venom stack.",
+            "description": "Active: Twitch hurls a cask of venom at the target area, infecting all enemies hit with a Deadly Venom stack.",
             "icon": "Venom Cask.png",
             "leveling": []
           },
           {
-            "description": "The target area becomes contaminated for 3 seconds, applying a  Deadly Venom stack each second and  slowing all enemies inside it.",
+            "description": "The target area becomes contaminated for 3 seconds, applying a Deadly Venom stack each second and slowing all enemies inside it.",
             "icon": null,
             "leveling": [
               {
@@ -660,7 +750,7 @@
         "name": "Contaminate",
         "effects": [
           {
-            "description": "Active: Twitch deals  physical damage to all nearby enemies afflicted by  Deadly Venom, with each stack granting bonus damage.",
+            "description": "Active: Twitch deals physical damage to all nearby enemies afflicted by Deadly Venom, with each stack granting bonus damage.",
             "icon": "Contaminate.png",
             "leveling": [
               {
@@ -917,7 +1007,7 @@
         "name": "Spray and Pray",
         "effects": [
           {
-            "description": "Active: Twitch gains bonus attack damage and his basic attacks gain  300 bonus range for 5 seconds.",
+            "description": "Active: Twitch gains bonus attack damage and his basic attacks gain 300 bonus range for 5 seconds.",
             "icon": "Spray and Pray.png",
             "leveling": [
               {
@@ -940,7 +1030,7 @@
             ]
           },
           {
-            "description": "Additionally, Twitch's basic attacks travel across their full range and skewer every enemy they pass through for the duration, dealing 100% \u2212 40% (based on enemy hit) damage. These attacks apply  on-hit effects to all affected enemies and can  critically strike against each individual target.",
+            "description": "Additionally, Twitch's basic attacks travel across their full range and skewer every enemy they pass through for the duration, dealing 100% − 40% (based on enemy hit) damage. These attacks apply on-hit effects to all affected enemies and can critically strike against each individual target.",
             "icon": null,
             "leveling": []
           }

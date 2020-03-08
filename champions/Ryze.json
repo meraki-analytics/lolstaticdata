@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 575,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 575,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2.112,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.100000001490116,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.100000001490116,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.95,
-    "aramDamageDealt": 1.05,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.9,
-    "urfDamageDealt": 1.02,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.02,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "BATTLEMAGE",
@@ -110,7 +200,7 @@
         "name": "Arcane Mastery",
         "effects": [
           {
-            "description": "Innate: Ryze gains (5% per 100 AP)  bonus mana.",
+            "description": "Innate: Ryze gains (5% per 100 AP) bonus mana.",
             "icon": "Arcane Mastery.png",
             "leveling": []
           }
@@ -126,7 +216,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Arcane Mastery stacks recursively with  Seraph's Embrace and multiplicatively with other sources of % ability power. Examples on how they calculate below:\n Case 1: With  Rabadon's Deathcap you get a total of (40% AP) bonus ability power and ((7% AP)% mana)) bonus mana.\n Case 2: With  Seraph's Embrace you get a total of ((3 + 0.15% AP)% mana) \u00f7 (1 - 0.0015% mana) bonus ability power and ((0.15% mana + 5% AP)% mana) \u00f7 (1 - 0.0015% mana) bonus mana.\n Case 3: With  Rabadon's Deathcap +  Seraph's Embrace you get a total of ((4.2 + 0.21% AP)% mana) \u00f7 (1 - 0.0021% mana) bonus ability power and ((0.21% mana + 7% AP)% mana) \u00f7 (1 - 0.0021% mana) bonus mana.",
+        "notes": "Arcane Mastery stacks recursively with  Seraph's Embrace and multiplicatively with other sources of % ability power. Examples on how they calculate below:\n Case 1: With  Rabadon's Deathcap you get a total of (40% AP) bonus ability power and ((7% AP)% mana)) bonus mana.\n Case 2: With  Seraph's Embrace you get a total of ((3 + 0.15% AP)% mana) ÷ (1 - 0.0015% mana) bonus ability power and ((0.15% mana + 5% AP)% mana) ÷ (1 - 0.0015% mana) bonus mana.\n Case 3: With  Rabadon's Deathcap +  Seraph's Embrace you get a total of ((4.2 + 0.21% AP)% mana) ÷ (1 - 0.0021% mana) bonus ability power and ((0.21% mana + 7% AP)% mana) ÷ (1 - 0.0021% mana) bonus mana.",
         "blurb": "Ryze's spells deal extra damage based on his Bonus Mana, and he gains a percentage increase to his maximum Mana based on his Ability Power.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -147,12 +237,12 @@
         "name": "Overload",
         "effects": [
           {
-            "description": "Passive: Ryze's other basic abilities reset  Overload's cooldown and charge a  Rune for 4 seconds, up to 2.",
+            "description": "Passive: Ryze's other basic abilities reset Overload's cooldown and charge a Rune for 4 seconds, up to 2.",
             "icon": "Overload 5.png",
             "leveling": []
           },
           {
-            "description": "Active: Ryze unleashes a runic blast in the target direction, dealing  magic damage to the first enemy struck and consuming all of his  Runes.",
+            "description": "Active: Ryze unleashes a runic blast in the target direction, dealing magic damage to the first enemy struck and consuming all of his Runes.",
             "icon": "Overload.png",
             "leveling": [
               {
@@ -211,7 +301,7 @@
             ]
           },
           {
-            "description": "If Ryze consumes 2 Runes, he gains  bonus movement speed for 2 seconds.",
+            "description": "If Ryze consumes 2 Runes, he gains bonus movement speed for 2 seconds.",
             "icon": "Overload 4.png",
             "leveling": [
               {
@@ -238,7 +328,7 @@
             ]
           },
           {
-            "description": "Flux: Overload deals 10 / 40 / 70 / 100% (based on  Realm Warp's rank) increased damage, and spreads to all nearby enemies marked with Flux.",
+            "description": "Flux: Overload deals 10 / 40 / 70 / 100% (based on Realm Warp's rank) increased damage, and spreads to all nearby enemies marked with Flux.",
             "icon": null,
             "leveling": []
           }
@@ -312,12 +402,12 @@
         "name": "Overload",
         "effects": [
           {
-            "description": "Passive: Ryze's other basic abilities reset  Overload's cooldown and charge a  Rune for 4 seconds, up to 2.",
+            "description": "Passive: Ryze's other basic abilities reset Overload's cooldown and charge a Rune for 4 seconds, up to 2.",
             "icon": "Overload 5.png",
             "leveling": []
           },
           {
-            "description": "Active: Ryze unleashes a runic blast in the target direction, dealing  magic damage to the first enemy struck and consuming all of his  Runes.",
+            "description": "Active: Ryze unleashes a runic blast in the target direction, dealing magic damage to the first enemy struck and consuming all of his Runes.",
             "icon": "Overload.png",
             "leveling": [
               {
@@ -376,7 +466,7 @@
             ]
           },
           {
-            "description": "If Ryze consumes 2 Runes, he gains  bonus movement speed for 2 seconds.",
+            "description": "If Ryze consumes 2 Runes, he gains bonus movement speed for 2 seconds.",
             "icon": "Overload 4.png",
             "leveling": [
               {
@@ -403,7 +493,7 @@
             ]
           },
           {
-            "description": "Flux: Overload deals 10 / 40 / 70 / 100% (based on  Realm Warp's rank) increased damage, and spreads to all nearby enemies marked with Flux.",
+            "description": "Flux: Overload deals 10 / 40 / 70 / 100% (based on Realm Warp's rank) increased damage, and spreads to all nearby enemies marked with Flux.",
             "icon": null,
             "leveling": []
           }
@@ -477,12 +567,12 @@
         "name": "Overload",
         "effects": [
           {
-            "description": "Passive: Ryze's other basic abilities reset  Overload's cooldown and charge a  Rune for 4 seconds, up to 2.",
+            "description": "Passive: Ryze's other basic abilities reset Overload's cooldown and charge a Rune for 4 seconds, up to 2.",
             "icon": "Overload 5.png",
             "leveling": []
           },
           {
-            "description": "Active: Ryze unleashes a runic blast in the target direction, dealing  magic damage to the first enemy struck and consuming all of his  Runes.",
+            "description": "Active: Ryze unleashes a runic blast in the target direction, dealing magic damage to the first enemy struck and consuming all of his Runes.",
             "icon": "Overload.png",
             "leveling": [
               {
@@ -541,7 +631,7 @@
             ]
           },
           {
-            "description": "If Ryze consumes 2 Runes, he gains  bonus movement speed for 2 seconds.",
+            "description": "If Ryze consumes 2 Runes, he gains bonus movement speed for 2 seconds.",
             "icon": "Overload 4.png",
             "leveling": [
               {
@@ -568,7 +658,7 @@
             ]
           },
           {
-            "description": "Flux: Overload deals 10 / 40 / 70 / 100% (based on  Realm Warp's rank) increased damage, and spreads to all nearby enemies marked with Flux.",
+            "description": "Flux: Overload deals 10 / 40 / 70 / 100% (based on Realm Warp's rank) increased damage, and spreads to all nearby enemies marked with Flux.",
             "icon": null,
             "leveling": []
           }
@@ -642,12 +732,12 @@
         "name": "Overload",
         "effects": [
           {
-            "description": "Passive: Ryze's other basic abilities reset  Overload's cooldown and charge a  Rune for 4 seconds, up to 2.",
+            "description": "Passive: Ryze's other basic abilities reset Overload's cooldown and charge a Rune for 4 seconds, up to 2.",
             "icon": "Overload 5.png",
             "leveling": []
           },
           {
-            "description": "Active: Ryze unleashes a runic blast in the target direction, dealing  magic damage to the first enemy struck and consuming all of his  Runes.",
+            "description": "Active: Ryze unleashes a runic blast in the target direction, dealing magic damage to the first enemy struck and consuming all of his Runes.",
             "icon": "Overload.png",
             "leveling": [
               {
@@ -706,7 +796,7 @@
             ]
           },
           {
-            "description": "If Ryze consumes 2 Runes, he gains  bonus movement speed for 2 seconds.",
+            "description": "If Ryze consumes 2 Runes, he gains bonus movement speed for 2 seconds.",
             "icon": "Overload 4.png",
             "leveling": [
               {
@@ -733,7 +823,7 @@
             ]
           },
           {
-            "description": "Flux: Overload deals 10 / 40 / 70 / 100% (based on  Realm Warp's rank) increased damage, and spreads to all nearby enemies marked with Flux.",
+            "description": "Flux: Overload deals 10 / 40 / 70 / 100% (based on Realm Warp's rank) increased damage, and spreads to all nearby enemies marked with Flux.",
             "icon": null,
             "leveling": []
           }
@@ -807,12 +897,12 @@
         "name": "Overload",
         "effects": [
           {
-            "description": "Passive: Ryze's other basic abilities reset  Overload's cooldown and charge a  Rune for 4 seconds, up to 2.",
+            "description": "Passive: Ryze's other basic abilities reset Overload's cooldown and charge a Rune for 4 seconds, up to 2.",
             "icon": "Overload 5.png",
             "leveling": []
           },
           {
-            "description": "Active: Ryze unleashes a runic blast in the target direction, dealing  magic damage to the first enemy struck and consuming all of his  Runes.",
+            "description": "Active: Ryze unleashes a runic blast in the target direction, dealing magic damage to the first enemy struck and consuming all of his Runes.",
             "icon": "Overload.png",
             "leveling": [
               {
@@ -871,7 +961,7 @@
             ]
           },
           {
-            "description": "If Ryze consumes 2 Runes, he gains  bonus movement speed for 2 seconds.",
+            "description": "If Ryze consumes 2 Runes, he gains bonus movement speed for 2 seconds.",
             "icon": "Overload 4.png",
             "leveling": [
               {
@@ -898,7 +988,7 @@
             ]
           },
           {
-            "description": "Flux: Overload deals 10 / 40 / 70 / 100% (based on  Realm Warp's rank) increased damage, and spreads to all nearby enemies marked with Flux.",
+            "description": "Flux: Overload deals 10 / 40 / 70 / 100% (based on Realm Warp's rank) increased damage, and spreads to all nearby enemies marked with Flux.",
             "icon": null,
             "leveling": []
           }
@@ -974,7 +1064,7 @@
         "name": "Rune Prison",
         "effects": [
           {
-            "description": "Active: Ryze instantly deals magic damage and  slows the target enemy by 35% for 1.5 seconds.",
+            "description": "Active: Ryze instantly deals magic damage and slows the target enemy by 35% for 1.5 seconds.",
             "icon": "Rune Prison.png",
             "leveling": [
               {
@@ -1033,7 +1123,7 @@
             ]
           },
           {
-            "description": "Flux: Rune Prison's  slow is converted to a  root for the same duration.",
+            "description": "Flux: Rune Prison's slow is converted to a root for the same duration.",
             "icon": null,
             "leveling": []
           }
@@ -1244,7 +1334,7 @@
         "name": "Realm Warp",
         "effects": [
           {
-            "description": "Passive: Increases  Overload's damage against targets marked with  Spell Flux.",
+            "description": "Passive: Increases Overload's damage against targets marked with Spell Flux.",
             "icon": "Realm Warp.png",
             "leveling": [
               {
@@ -1267,7 +1357,7 @@
             ]
           },
           {
-            "description": "Active: Ryze opens a portal on the ground at his current location and begins channeling. If Ryze successfully channels for 2 seconds, all allied units within the portal  blink to the target location and very briefly become  untargetable. Realm Warp can affect untargetable allies.",
+            "description": "Active: Ryze opens a portal on the ground at his current location and begins channeling. If Ryze successfully channels for 2 seconds, all allied units within the portal blink to the target location and very briefly become untargetable. Realm Warp can affect untargetable allies.",
             "icon": null,
             "leveling": []
           }

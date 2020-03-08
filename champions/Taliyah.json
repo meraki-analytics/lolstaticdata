@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 550,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 550,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 1.36,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.138541668653488,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.138541668653488,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 525,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.05,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.95,
-    "urfDamageDealt": 1.15,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.15,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "BATTLEMAGE",
@@ -110,12 +200,12 @@
         "name": "Rock Surfing",
         "effects": [
           {
-            "description": "Innate: Taliyah gains up to 20% \u2212 45% (based on level)  bonus movement speed, which builds up over 1 second if she had been near terrain or structures for at least 0.4 seconds and decays by the same amount if out of range for at least 0.8 seconds.",
+            "description": "Innate: Taliyah gains up to 20% − 45% (based on level) bonus movement speed, which builds up over 1 second if she had been near terrain or structures for at least 0.4 seconds and decays by the same amount if out of range for at least 0.8 seconds.",
             "icon": "Rock Surfing.png",
             "leveling": []
           },
           {
-            "description": "Entering combat or casting an ability puts Rock Surfing on a 2 second  cooldown that is continuously refreshed while remaining in combat.",
+            "description": "Entering combat or casting an ability puts Rock Surfing on a 2 second cooldown that is continuously refreshed while remaining in combat.",
             "icon": null,
             "leveling": []
           }
@@ -152,7 +242,7 @@
         "name": "Threaded Volley",
         "effects": [
           {
-            "description": "Active: After 0.25 seconds, Taliyah unleashes 5 Stone Shards in quick succession in the target direction over 1.5 seconds, dealing  magic damage to the first target hit. Units hit by multiple Stone Shards take 50% damage beyond the first.",
+            "description": "Active: After 0.25 seconds, Taliyah unleashes 5 Stone Shards in quick succession in the target direction over 1.5 seconds, dealing magic damage to the first target hit. Units hit by multiple Stone Shards take 50% damage beyond the first.",
             "icon": "Threaded Volley.png",
             "leveling": [
               {
@@ -274,7 +364,7 @@
             "leveling": []
           },
           {
-            "description": "Casting Threaded Volley creates an area of Worked Ground 450 units radius wide around Taliyah that lasts 45 seconds. While on Worked Ground, Taliyah only hurls one Stone Shard upon casting Threaded Volley and reduces its  mana cost to 1.",
+            "description": "Casting Threaded Volley creates an area of Worked Ground 450 units radius wide around Taliyah that lasts 45 seconds. While on Worked Ground, Taliyah only hurls one Stone Shard upon casting Threaded Volley and reduces its mana cost to 1.",
             "icon": "Threaded Volley 2.png",
             "leveling": []
           }
@@ -348,7 +438,7 @@
         "name": "Threaded Volley",
         "effects": [
           {
-            "description": "Active: After 0.25 seconds, Taliyah unleashes 5 Stone Shards in quick succession in the target direction over 1.5 seconds, dealing  magic damage to the first target hit. Units hit by multiple Stone Shards take 50% damage beyond the first.",
+            "description": "Active: After 0.25 seconds, Taliyah unleashes 5 Stone Shards in quick succession in the target direction over 1.5 seconds, dealing magic damage to the first target hit. Units hit by multiple Stone Shards take 50% damage beyond the first.",
             "icon": "Threaded Volley.png",
             "leveling": [
               {
@@ -470,7 +560,7 @@
             "leveling": []
           },
           {
-            "description": "Casting Threaded Volley creates an area of Worked Ground 450 units radius wide around Taliyah that lasts 45 seconds. While on Worked Ground, Taliyah only hurls one Stone Shard upon casting Threaded Volley and reduces its  mana cost to 1.",
+            "description": "Casting Threaded Volley creates an area of Worked Ground 450 units radius wide around Taliyah that lasts 45 seconds. While on Worked Ground, Taliyah only hurls one Stone Shard upon casting Threaded Volley and reduces its mana cost to 1.",
             "icon": "Threaded Volley 2.png",
             "leveling": []
           }
@@ -546,7 +636,7 @@
         "name": "Seismic Shove",
         "effects": [
           {
-            "description": "Active: After 0.25 seconds, Taliyah marks the target location and selects a direction. After 1 second, the ground erupts, dealing magic damage to all enemies hit and  knocking them in the chosen direction for 1 second.",
+            "description": "Active: After 0.25 seconds, Taliyah marks the target location and selects a direction. After 1 second, the ground erupts, dealing magic damage to all enemies hit and knocking them in the chosen direction for 1 second.",
             "icon": "Seismic Shove.png",
             "leveling": [
               {
@@ -740,12 +830,12 @@
             ]
           },
           {
-            "description": "The boulders then remain for 4 seconds,  slowing all enemies within the area by 20% (+ 4% per 100 AP). At the end of their duration, all remaining boulders explode, dealing Unraveled Earth's initial damage once more.",
+            "description": "The boulders then remain for 4 seconds, slowing all enemies within the area by 20% (+ 4% per 100 AP). At the end of their duration, all remaining boulders explode, dealing Unraveled Earth's initial damage once more.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Enemies who  dash over or are  knocked through the boulders will detonate them instantly, each dealing magic damage. Enemies can detonate multiple boulders, but they will only take damage from a maximum of 4, reduced by 0% \u2212 45% (based on boulder hit).",
+            "description": "Enemies who dash over or are knocked through the boulders will detonate them instantly, each dealing magic damage. Enemies can detonate multiple boulders, but they will only take damage from a maximum of 4, reduced by 0% − 45% (based on boulder hit).",
             "icon": null,
             "leveling": [
               {
@@ -885,7 +975,7 @@
         "innerRadius": null,
         "speed": null,
         "width": null,
-        "angle": "80\u00b0",
+        "angle": "80°",
         "castTime": null,
         "effectRadius": "800",
         "targetRange": null
@@ -896,12 +986,12 @@
         "name": "Weaver's Wall",
         "effects": [
           {
-            "description": "Active: Taliyah channels for 1 second before summoning a massive wall of spiraling rock that tears through the battlefield in the target direction, creating impassable terrain for 5 seconds and  knocking aside allied and enemy champions it passes through as it emerges.",
+            "description": "Active: Taliyah channels for 1 second before summoning a massive wall of spiraling rock that tears through the battlefield in the target direction, creating impassable terrain for 5 seconds and knocking aside allied and enemy champions it passes through as it emerges.",
             "icon": "Weaver's Wall.png",
             "leveling": []
           },
           {
-            "description": "Taliyah can reactivate Weaver's Wall while channeling to  ride atop the wall at 1500 speed as it emerges. Taking damage during or after the cast time will force her off the wall, which will continue along its path normally. After 0.75 seconds she can input a movement command to manually jump off the wall.",
+            "description": "Taliyah can reactivate Weaver's Wall while channeling to ride atop the wall at 1500 speed as it emerges. Taking damage during or after the cast time will force her off the wall, which will continue along its path normally. After 0.75 seconds she can input a movement command to manually jump off the wall.",
             "icon": "Weaver's Wall 2.png",
             "leveling": []
           },
@@ -972,12 +1062,12 @@
         "name": "Weaver's Wall",
         "effects": [
           {
-            "description": "Active: Taliyah channels for 1 second before summoning a massive wall of spiraling rock that tears through the battlefield in the target direction, creating impassable terrain for 5 seconds and  knocking aside allied and enemy champions it passes through as it emerges.",
+            "description": "Active: Taliyah channels for 1 second before summoning a massive wall of spiraling rock that tears through the battlefield in the target direction, creating impassable terrain for 5 seconds and knocking aside allied and enemy champions it passes through as it emerges.",
             "icon": "Weaver's Wall.png",
             "leveling": []
           },
           {
-            "description": "Taliyah can reactivate Weaver's Wall while channeling to  ride atop the wall at 1500 speed as it emerges. Taking damage during or after the cast time will force her off the wall, which will continue along its path normally. After 0.75 seconds she can input a movement command to manually jump off the wall.",
+            "description": "Taliyah can reactivate Weaver's Wall while channeling to ride atop the wall at 1500 speed as it emerges. Taking damage during or after the cast time will force her off the wall, which will continue along its path normally. After 0.75 seconds she can input a movement command to manually jump off the wall.",
             "icon": "Weaver's Wall 2.png",
             "leveling": []
           },

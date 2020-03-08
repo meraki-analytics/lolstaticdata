@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 135,
-    "pathingRadius": 25.7665996551513,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 135,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 25.7665996551513,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.67,
       "percent": 0.0,
       "perLevel": 2.9,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.6700000166893,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0916666686534881,
+    "attackSpeedRatio": {
+      "flat": 0.6700000166893,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0916666686534881,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 175,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 0.9,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -110,7 +200,7 @@
         "name": "King's Tribute",
         "effects": [
           {
-            "description": "Innate: Whenever an enemy dies near Trundle, he  heals for  2 / 3 / 4 / 5 / 6% (based on level) of their maximum health.",
+            "description": "Innate: Whenever an enemy dies near Trundle, he heals for 2 / 3 / 4 / 5 / 6% (based on level) of their maximum health.",
             "icon": "King's Tribute.png",
             "leveling": []
           }
@@ -147,7 +237,7 @@
         "name": "Chomp",
         "effects": [
           {
-            "description": "Active: Trundle's next basic attack deals  bonus physical damage and  slows his target by 75% for 0.1 seconds.",
+            "description": "Active: Trundle's next basic attack deals bonus physical damage and slows his target by 75% for 0.1 seconds.",
             "icon": "Chomp.png",
             "leveling": [
               {
@@ -314,7 +404,7 @@
         "name": "Frozen Domain",
         "effects": [
           {
-            "description": "Active: Trundle coats the target area in ice for 8 seconds. While inside, he gains  bonus attack speed,  bonus movement speed, and 25% increased health restoration from all sources.",
+            "description": "Active: Trundle coats the target area in ice for 8 seconds. While inside, he gains bonus attack speed, bonus movement speed, and 25% increased health restoration from all sources.",
             "icon": "Frozen Domain.png",
             "leveling": [
               {
@@ -433,7 +523,7 @@
         "name": "Pillar of Ice",
         "effects": [
           {
-            "description": "Active: Trundle projects a pillar of ice at the target location for 6 seconds,  knocking back everyone directly over it 225 units on cast, acting as impassable terrain for the duration and  slowing enemies around it.",
+            "description": "Active: Trundle projects a pillar of ice at the target location for 6 seconds, knocking back everyone directly over it 225 units on cast, acting as impassable terrain for the duration and slowing enemies around it.",
             "icon": "Pillar of Ice.png",
             "leveling": [
               {
@@ -531,7 +621,7 @@
         "name": "Subjugate",
         "effects": [
           {
-            "description": "Active: After 0.5 seconds, Trundle starts draining the life force out of the target enemy champion,  healing for a percentage of the target's maximum health, dealing the same amount as  magic damage and stealing  40% of their armor and  magic resistance. Half of the total damage and stealing is applied instantly, and the other half is applied over the next 4 seconds.",
+            "description": "Active: After 0.5 seconds, Trundle starts draining the life force out of the target enemy champion, healing for a percentage of the target's maximum health, dealing the same amount as magic damage and stealing 40% of their armor and magic resistance. Half of the total damage and stealing is applied instantly, and the other half is applied over the next 4 seconds.",
             "icon": "Subjugate.png",
             "leveling": [
               {

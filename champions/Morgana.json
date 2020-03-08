@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 1.53,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.159999996423721,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.159999996423721,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 450,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 0.94,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 0.92,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 0.94,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.92,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "CATCHER",
@@ -110,7 +200,7 @@
         "name": "Soul Siphon",
         "effects": [
           {
-            "description": "Innate: Morgana  heals herself equal to 20% of ability damage dealt to  champions, large  minions, and large  monsters.",
+            "description": "Innate: Morgana heals herself equal to 20% of ability damage dealt to champions, large minions, and large monsters.",
             "icon": "Soul Siphon.png",
             "leveling": []
           }
@@ -147,7 +237,7 @@
         "name": "Dark Binding",
         "effects": [
           {
-            "description": "Active: Morgana releases a sphere of dark magic that travels in a line, dealing  magic damage to the first enemy hit and  rooting them.",
+            "description": "Active: Morgana releases a sphere of dark magic that travels in a line, dealing magic damage to the first enemy hit and rooting them.",
             "icon": "Dark Binding.png",
             "leveling": [
               {
@@ -282,7 +372,7 @@
         "name": "Tormented Soil",
         "effects": [
           {
-            "description": "Active: Morgana infects the target area for 5 seconds, causing enemies who stand on the location to take magic damage every half second, increased by 0% \u2212 50% (based on target's missing health).",
+            "description": "Active: Morgana infects the target area for 5 seconds, causing enemies who stand on the location to take magic damage every half second, increased by 0% − 50% (based on target's missing health).",
             "icon": "Tormented Soil.png",
             "leveling": [
               {
@@ -436,7 +526,7 @@
             ]
           },
           {
-            "description": "Tormented Soil's cooldown is reduced by 5% whenever  Soul Siphon triggers.",
+            "description": "Tormented Soil's cooldown is reduced by 5% whenever Soul Siphon triggers.",
             "icon": null,
             "leveling": []
           }
@@ -512,7 +602,7 @@
         "name": "Black Shield",
         "effects": [
           {
-            "description": "Active: Morgana  shields the target allied champion for up to 5 seconds, which absorbs magic damage and dispels  crowd control effects while the shield holds.",
+            "description": "Active: Morgana shields the target allied champion for up to 5 seconds, which absorbs magic damage and dispels crowd control effects while the shield holds.",
             "icon": "Black Shield.png",
             "leveling": [
               {
@@ -690,7 +780,7 @@
             ]
           },
           {
-            "description": "The tethers maintain at range for 3 seconds,  revealing affected enemies and  slowing them by 20%. Additionally, Morgana gains bonus movement speed towards them.",
+            "description": "The tethers maintain at range for 3 seconds, revealing affected enemies and slowing them by 20%. Additionally, Morgana gains bonus movement speed towards them.",
             "icon": null,
             "leveling": [
               {
@@ -713,7 +803,7 @@
             ]
           },
           {
-            "description": "When the duration ends, tethered targets are  revealed and  stunned for 1.5 seconds and dealt the same magic damage again.",
+            "description": "When the duration ends, tethered targets are revealed and stunned for 1.5 seconds and dealt the same magic damage again.",
             "icon": null,
             "leveling": []
           }

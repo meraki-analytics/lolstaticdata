@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 200,
-    "selectionRadius": 75,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 75,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.658,
       "percent": 0.0,
       "perLevel": 3,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.657999992370605,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.20499999821186,
+    "attackSpeedRatio": {
+      "flat": 0.657999992370605,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.20499999821186,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 0.95,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ARTILLERY",
@@ -110,7 +200,7 @@
         "name": "Hextech Capacitor",
         "effects": [
           {
-            "description": "Innate: Each time Jayce switches between  Hammer Stance and  Cannon Stance he is  ghosted and gains  40 bonus movement speed for 1.25 seconds.",
+            "description": "Innate: Each time Jayce switches between Hammer Stance and Cannon Stance he is ghosted and gains 40 bonus movement speed for 1.25 seconds.",
             "icon": "Hextech Capacitor.png",
             "leveling": []
           }
@@ -147,7 +237,7 @@
         "name": "To the Skies!",
         "effects": [
           {
-            "description": "Active: Jayce  leaps to the target enemy's location and smashes his hammer on the ground, dealing  physical damage to all enemies in the area and  slowing them for 2 seconds.",
+            "description": "Active: Jayce leaps to the target enemy's location and smashes his hammer on the ground, dealing physical damage to all enemies in the area and slowing them for 2 seconds.",
             "icon": "To the Skies!.png",
             "leveling": [
               {
@@ -290,7 +380,7 @@
         "name": "Shock Blast",
         "effects": [
           {
-            "description": "Active: Jayce fires an orb of electricity that detonates upon hitting an enemy or reaching the end of its path, dealing physical damage to all enemies around them and briefly granting  sight of the area.",
+            "description": "Active: Jayce fires an orb of electricity that detonates upon hitting an enemy or reaching the end of its path, dealing physical damage to all enemies around them and briefly granting sight of the area.",
             "icon": "Shock Blast.png",
             "leveling": [
               {
@@ -378,7 +468,7 @@
             ]
           },
           {
-            "description": "If Shock Blast is fired through  Acceleration Gate its area of effect, range and damage are increased by 40%, and its speed by 30.34%.",
+            "description": "If Shock Blast is fired through Acceleration Gate its area of effect, range and damage are increased by 40%, and its speed by 30.34%.",
             "icon": null,
             "leveling": []
           }
@@ -458,7 +548,7 @@
         "name": "Lightning Field",
         "effects": [
           {
-            "description": "Passive: Jayce restores  mana each time he hits an enemy with a basic attack.",
+            "description": "Passive: Jayce restores mana each time he hits an enemy with a basic attack.",
             "icon": "Lightning Field.png",
             "leveling": [
               {
@@ -487,7 +577,7 @@
             ]
           },
           {
-            "description": "Active: Jayce surrounds himself with an electric field for 4 seconds, dealing  magic damage each second to all nearby enemies.",
+            "description": "Active: Jayce surrounds himself with an electric field for 4 seconds, dealing magic damage each second to all nearby enemies.",
             "icon": null,
             "leveling": [
               {
@@ -648,7 +738,7 @@
         "name": "Hyper Charge",
         "effects": [
           {
-            "description": "Active: Jayce gains  300% bonus attack speed on his next 3 basic attacks within 4 seconds, with each one dealing modified damage.",
+            "description": "Active: Jayce gains 300% bonus attack speed on his next 3 basic attacks within 4 seconds, with each one dealing modified damage.",
             "icon": "Hyper Charge.png",
             "leveling": [
               {
@@ -677,7 +767,7 @@
             ]
           },
           {
-            "description": "Hyper Charge resets Jayce's basic attack timer, and the modified damage is affected by  critical strikes.",
+            "description": "Hyper Charge resets Jayce's basic attack timer, and the modified damage is affected by critical strikes.",
             "icon": null,
             "leveling": []
           }
@@ -757,7 +847,7 @@
         "name": "Thundering Blow",
         "effects": [
           {
-            "description": "Active: Jayce swings his hammer at the target enemy, dealing magic damage, capped against monsters, while also marking a location 500 units away from him in the direction of the target,  pulling them to it.",
+            "description": "Active: Jayce swings his hammer at the target enemy, dealing magic damage, capped against monsters, while also marking a location 500 units away from him in the direction of the target, pulling them to it.",
             "icon": "Thundering Blow.png",
             "leveling": [
               {
@@ -900,7 +990,7 @@
         "name": "Acceleration Gate",
         "effects": [
           {
-            "description": "Active: Jayce deploys an energy gate for 4 seconds, briefly granting  sight of the area and granting all allied  champions who pass through it, including himself,  bonus movement speed that decays over 3 seconds.",
+            "description": "Active: Jayce deploys an energy gate for 4 seconds, briefly granting sight of the area and granting all allied champions who pass through it, including himself, bonus movement speed that decays over 3 seconds.",
             "icon": "Acceleration Gate.png",
             "leveling": [
               {
@@ -1004,7 +1094,7 @@
         "name": "Transform Mercury Cannon",
         "effects": [
           {
-            "description": "Active: Jayce transforms the  Mercury Hammer into the Mercury Cannon, gaining access to its abilities, having  ranged attacks with 500  range, and causing his next basic attack to reduce his target's  armor and  magic resistance by 10 / 15 / 20 / 25% (based on level) for 5 seconds.",
+            "description": "Active: Jayce transforms the Mercury Hammer into the Mercury Cannon, gaining access to its abilities, having ranged attacks with 500 range, and causing his next basic attack to reduce his target's armor and magic resistance by 10 / 15 / 20 / 25% (based on level) for 5 seconds.",
             "icon": "Transform Mercury Cannon.png",
             "leveling": []
           },
@@ -1066,7 +1156,7 @@
         "name": "Transform Mercury Hammer",
         "effects": [
           {
-            "description": "Active: Jayce transforms the  Mercury Cannon into the Mercury Hammer, gaining new abilities, becoming  melee with  125 range, gaining 5 / 15 / 25 / 35 (based on level)  bonus armor and  bonus magic resistance, and causing his next basic attack to deal 25 / 65 / 105 / 145 (based on level) (+ 25% bonus AD) bonus magic damage.",
+            "description": "Active: Jayce transforms the Mercury Cannon into the Mercury Hammer, gaining new abilities, becoming melee with 125 range, gaining 5 / 15 / 25 / 35 (based on level) bonus armor and bonus magic resistance, and causing his next basic attack to deal 25 / 65 / 105 / 145 (based on level) (+ 25% bonus AD) bonus magic damage.",
             "icon": "Transform Mercury Hammer.png",
             "leveling": []
           },

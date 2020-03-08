@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 800,
-    "selectionRadius": 140,
-    "pathingRadius": 50,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 800,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 140,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 50,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.688,
       "percent": 0.0,
       "perLevel": 3.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.300000011920928,
-    "attackTotalTime": 1.60000002384185,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.300000011920928,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.60000002384185,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 150,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.92,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.9,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.92,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -110,17 +200,17 @@
         "name": "Fury of the North",
         "effects": [
           {
-            "description": "Frost Armor: Sejuani receives  Frost Armor if she hasn't taken damage from monsters or enemy champions in the last 12 seconds, lingering for 3 seconds after taking damage.",
+            "description": "Frost Armor: Sejuani receives Frost Armor if she hasn't taken damage from monsters or enemy champions in the last 12 seconds, lingering for 3 seconds after taking damage.",
             "icon": "Fury of the North.png",
             "leveling": []
           },
           {
-            "description": "Frost Armor engulfs  Bristle in True Ice, becoming immune to  slows and gains  10 (+ 50% bonus armor) bonus armor and  10 (+ 50% bonus magic resistance) bonus magic resistance.",
+            "description": "Frost Armor engulfs Bristle in True Ice, becoming immune to slows and gains 10 (+ 50% bonus armor) bonus armor and 10 (+ 50% bonus magic resistance) bonus magic resistance.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Icebreaker: Enemies  stunned by Sejuani are Frozen. Sejuani's basic attacks and abilities against Frozen enemies consume the effect to deal 10% of their maximum health  bonus magic damage, capped to 300 against epic monsters.",
+            "description": "Icebreaker: Enemies stunned by Sejuani are Frozen. Sejuani's basic attacks and abilities against Frozen enemies consume the effect to deal 10% of their maximum health bonus magic damage, capped to 300 against epic monsters.",
             "icon": null,
             "leveling": []
           }
@@ -157,7 +247,7 @@
         "name": "Arctic Assault",
         "effects": [
           {
-            "description": "Active: Sejuani signals  Bristle to  dash in the target direction, dealing magic damage and  knocking up all enemies hit for 0.5 seconds. The charge will prematurely end upon colliding with an enemy champion.",
+            "description": "Active: Sejuani signals Bristle to dash in the target direction, dealing magic damage and knocking up all enemies hit for 0.5 seconds. The charge will prematurely end upon colliding with an enemy champion.",
             "icon": "Arctic Assault.png",
             "leveling": [
               {
@@ -271,7 +361,7 @@
         "name": "Winter's Wrath",
         "effects": [
           {
-            "description": "Active: After a 0.25-seconds delay, Sejuani swings her flail in a cone in the target direction, dealing  physical damage to all enemies hit and  knocking back  minions and  monsters.",
+            "description": "Active: After a 0.25-seconds delay, Sejuani swings her flail in a cone in the target direction, dealing physical damage to all enemies hit and knocking back minions and monsters.",
             "icon": "Winter's Wrath.png",
             "leveling": [
               {
@@ -330,7 +420,7 @@
             ]
           },
           {
-            "description": "She then lashes out with her flail after 0.75 seconds in a straight line in the same direction, dealing additional physical damage and  slowing all enemies hit by 75% for 0.25 seconds.",
+            "description": "She then lashes out with her flail after 0.75 seconds in a straight line in the same direction, dealing additional physical damage and slowing all enemies hit by 75% for 0.25 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -518,12 +608,12 @@
         "name": "Permafrost",
         "effects": [
           {
-            "description": "Passive:  Winter's Wrath and both Sejuani's and nearby allied  melee champions' basic attacks apply Frost to enemy champions, epic, large and medium monsters, super minions and siege minions for 5 seconds, stacking up to 4 times.",
+            "description": "Passive: Winter's Wrath and both Sejuani's and nearby allied melee champions' basic attacks apply Frost to enemy champions, epic, large and medium monsters, super minions and siege minions for 5 seconds, stacking up to 4 times.",
             "icon": "Sejuani Frost Stack.png",
             "leveling": []
           },
           {
-            "description": "Active: If the targeted enemy has 4 stacks of Frost, Sejuani consumes all stacks to deal magic damage,  knock them down, and  stun them for 1 second.",
+            "description": "Active: If the targeted enemy has 4 stacks of Frost, Sejuani consumes all stacks to deal magic damage, knock them down, and stun them for 1 second.",
             "icon": "Permafrost.png",
             "leveling": [
               {
@@ -566,7 +656,7 @@
             ]
           },
           {
-            "description": "Enemy champions  stunned by Sejuani cannot gain Frost for 10 / 9 / 8 (based on level) seconds.",
+            "description": "Enemy champions stunned by Sejuani cannot gain Frost for 10 / 9 / 8 (based on level) seconds.",
             "icon": null,
             "leveling": []
           },
@@ -647,7 +737,7 @@
         "name": "Glacial Prison",
         "effects": [
           {
-            "description": "Active: Sejuani throws an ice bola in the target direction, stopping at the first enemy champion hit, dealing magic damage,  knocking them down, and  stunning them for 1 second.",
+            "description": "Active: Sejuani throws an ice bola in the target direction, stopping at the first enemy champion hit, dealing magic damage, knocking them down, and stunning them for 1 second.",
             "icon": "Glacial Prison.png",
             "leveling": [
               {
@@ -711,12 +801,12 @@
             ]
           },
           {
-            "description": "The bola deals increased damage,  stuns for 1.5 seconds and shatters upon reaching maximum range or upon colliding with a unit beyond 400 range, creating a storm for 2 seconds that  slows enemies within by 30%.",
+            "description": "The bola deals increased damage, stuns for 1.5 seconds and shatters upon reaching maximum range or upon colliding with a unit beyond 400 range, creating a storm for 2 seconds that slows enemies within by 30%.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "At the end of the duration, the storm shatters the ground, dealing the same damage and  slowing enemies by 80% for 1 second.",
+            "description": "At the end of the duration, the storm shatters the ground, dealing the same damage and slowing enemies by 80% for 1 second.",
             "icon": null,
             "leveling": [
               {

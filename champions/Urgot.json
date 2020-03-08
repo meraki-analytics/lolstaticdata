@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 550,
-    "selectionRadius": 136.111099243164,
-    "pathingRadius": 50,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 550,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 136.111099243164,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 50,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 3.75,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.150000005960464,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.150000005960464,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 350,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -115,7 +205,7 @@
             "leveling": []
           },
           {
-            "description": "The next basic attack  on-hit in the direction and range of a loaded shotgun causes it to fire, instantly dealing 40% \u2212 100% (based on level) AD (+ 2% \u2212 6% (based on level) of target's maximum health) physical damage to enemies in a cone, up to 60 \u2212 360 (based on level) against  monsters.",
+            "description": "The next basic attack on-hit in the direction and range of a loaded shotgun causes it to fire, instantly dealing 40% − 100% (based on level) AD (+ 2% − 6% (based on level) of target's maximum health) physical damage to enemies in a cone, up to 60 − 360 (based on level) against monsters.",
             "icon": null,
             "leveling": []
           }
@@ -141,7 +231,7 @@
         "innerRadius": null,
         "speed": null,
         "width": null,
-        "angle": "60\u00b0",
+        "angle": "60°",
         "castTime": null,
         "effectRadius": "490",
         "targetRange": null
@@ -152,7 +242,7 @@
         "name": "Corrosive Charge",
         "effects": [
           {
-            "description": "Active: Urgot launches a canister at the target location that explodes after 0.6 seconds, dealing physical damage and  slowing all enemies hit for 1 second.",
+            "description": "Active: Urgot launches a canister at the target location that explodes after 0.6 seconds, dealing physical damage and slowing all enemies hit for 1 second.",
             "icon": "Corrosive Charge.png",
             "leveling": [
               {
@@ -292,12 +382,12 @@
             "leveling": []
           },
           {
-            "description": "Active: For 4 seconds, Urgot is  ghosted, gains 40%  slow resist and autonomously basic attacks the nearest enemy at  3.0 attack speed, prioritizing  marked with Purge, refreshing the mark with every attack. Urgot can keep attacking without  interrupting his movement, but while firing his base movement speed is reduced by 125.",
+            "description": "Active: For 4 seconds, Urgot is ghosted, gains 40% slow resist and autonomously basic attacks the nearest enemy at 3.0 attack speed, prioritizing marked with Purge, refreshing the mark with every attack. Urgot can keep attacking without interrupting his movement, but while firing his base movement speed is reduced by 125.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Attacks deal modified damage, down to a minimum of 50 damage against  minions, with only 50%  on-hit damage and cannot  critically strike.",
+            "description": "Attacks deal modified damage, down to a minimum of 50 damage against minions, with only 50% on-hit damage and cannot critically strike.",
             "icon": null,
             "leveling": [
               {
@@ -421,7 +511,7 @@
         "name": "Disdain",
         "effects": [
           {
-            "description": "Active: Urgot  shields himself for 4 seconds.",
+            "description": "Active: Urgot shields himself for 4 seconds.",
             "icon": "Disdain.png",
             "leveling": [
               {
@@ -480,7 +570,7 @@
             ]
           },
           {
-            "description": "After 0.25 seconds, Urgot  dashes in the target direction, though not through terrain, dealing physical damage to all enemies in the way and  knocking them aside.",
+            "description": "After 0.25 seconds, Urgot dashes in the target direction, though not through terrain, dealing physical damage to all enemies in the way and knocking them aside.",
             "icon": null,
             "leveling": [
               {
@@ -523,7 +613,7 @@
             ]
           },
           {
-            "description": "Urgot comes to a stop upon colliding with an enemy champion,  flinging them over himself and  stunning them for 0.75 seconds after they land.",
+            "description": "Urgot comes to a stop upon colliding with an enemy champion, flinging them over himself and stunning them for 0.75 seconds after they land.",
             "icon": null,
             "leveling": []
           }
@@ -599,7 +689,7 @@
         "name": "Fear Beyond Death",
         "effects": [
           {
-            "description": "First Cast: After a 0.5-second delay, Urgot fires a chem-drill forward that impales the first enemy champion struck, dealing physical damage, leashing them for 4 seconds and  slowing them by 0% \u2212 75% (based on target's missing health).",
+            "description": "First Cast: After a 0.5-second delay, Urgot fires a chem-drill forward that impales the first enemy champion struck, dealing physical damage, leashing them for 4 seconds and slowing them by 0% − 75% (based on target's missing health).",
             "icon": "Fear Beyond Death.png",
             "leveling": [
               {
@@ -634,17 +724,17 @@
             ]
           },
           {
-            "description": "If the target is below  25% of their maximum health, Fear Beyond Death can be re-activated, and automatically does so after 4 seconds if the target is within the threshold.",
+            "description": "If the target is below 25% of their maximum health, Fear Beyond Death can be re-activated, and automatically does so after 4 seconds if the target is within the threshold.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Second Cast: Urgot begins  channeling as he launches chains at the target,  suppressing them and pushing them up to 1000 units away, after which they're reeled in over 1.5 seconds, during which they are  untargetable.",
+            "description": "Second Cast: Urgot begins channeling as he launches chains at the target, suppressing them and pushing them up to 1000 units away, after which they're reeled in over 1.5 seconds, during which they are untargetable.",
             "icon": "Fear Beyond Death 2.png",
             "leveling": []
           },
           {
-            "description": "If the channel is successful, the target is executed and surrounding enemies are  feared for 1.5 seconds,  slowing them by 75%.",
+            "description": "If the channel is successful, the target is executed and surrounding enemies are feared for 1.5 seconds, slowing them by 75%.",
             "icon": null,
             "leveling": []
           }

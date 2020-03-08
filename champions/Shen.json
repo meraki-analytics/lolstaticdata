@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 100,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.751,
       "percent": 0.0,
       "perLevel": 3,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.651000022888183,
-    "attackCastTime": 0.266660004854202,
-    "attackTotalTime": 1.53600001335144,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.651000022888183,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.266660004854202,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.53600001335144,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "TANK",
@@ -109,7 +199,7 @@
         "name": "Ki Barrier",
         "effects": [
           {
-            "description": "Innate: After completing an ability's effects, Shen  shields himself from 50 \u2212 101 (based on level) (+ 14% bonus health) damage for 2.5 seconds. If the triggering ability successfully affected at least one  champion, Ki Barrier's  cooldown is reduced by 4 \u2212 7.5 (based on level) seconds.",
+            "description": "Innate: After completing an ability's effects, Shen shields himself from 50 − 101 (based on level) (+ 14% bonus health) damage for 2.5 seconds. If the triggering ability successfully affected at least one champion, Ki Barrier's cooldown is reduced by 4 − 7.5 (based on level) seconds.",
             "icon": "Ki Barrier.png",
             "leveling": []
           },
@@ -167,7 +257,7 @@
         "name": "Twilight Assault",
         "effects": [
           {
-            "description": "Active: Shen recalls his Spirit Blade to his location. Enemies the blade collides with are  slowed for the next 2 seconds when moving away from Shen.",
+            "description": "Active: Shen recalls his Spirit Blade to his location. Enemies the blade collides with are slowed for the next 2 seconds when moving away from Shen.",
             "icon": "Twilight Assault.png",
             "leveling": [
               {
@@ -194,7 +284,7 @@
             ]
           },
           {
-            "description": "Once it arrives, Shen empowers his next 3 basic attacks within 8 seconds to gain  75 bonus range and deal  bonus magic damage.",
+            "description": "Once it arrives, Shen empowers his next 3 basic attacks within 8 seconds to gain 75 bonus range and deal bonus magic damage.",
             "icon": "Twilight Assault 2.png",
             "leveling": [
               {
@@ -326,7 +416,7 @@
             ]
           },
           {
-            "description": "If the Spirit Blade collides with an enemy  champion, the empowerment is enhanced, dealing increased bonus magic damage and gaining  50% bonus attack speed.",
+            "description": "If the Spirit Blade collides with an enemy champion, the empowerment is enhanced, dealing increased bonus magic damage and gaining 50% bonus attack speed.",
             "icon": "Twilight Assault 3.png",
             "leveling": [
               {
@@ -458,7 +548,7 @@
             ]
           },
           {
-            "description": "Empowered attacks against  monsters instead deal 100% bonus damage, but their total damage is capped.",
+            "description": "Empowered attacks against monsters instead deal 100% bonus damage, but their total damage is capped.",
             "icon": null,
             "leveling": [
               {
@@ -554,7 +644,7 @@
         "name": "Twilight Assault",
         "effects": [
           {
-            "description": "Active: Shen recalls his Spirit Blade to his location. Enemies the blade collides with are  slowed for the next 2 seconds when moving away from Shen.",
+            "description": "Active: Shen recalls his Spirit Blade to his location. Enemies the blade collides with are slowed for the next 2 seconds when moving away from Shen.",
             "icon": "Twilight Assault.png",
             "leveling": [
               {
@@ -581,7 +671,7 @@
             ]
           },
           {
-            "description": "Once it arrives, Shen empowers his next 3 basic attacks within 8 seconds to gain  75 bonus range and deal  bonus magic damage.",
+            "description": "Once it arrives, Shen empowers his next 3 basic attacks within 8 seconds to gain 75 bonus range and deal bonus magic damage.",
             "icon": "Twilight Assault 2.png",
             "leveling": [
               {
@@ -713,7 +803,7 @@
             ]
           },
           {
-            "description": "If the Spirit Blade collides with an enemy  champion, the empowerment is enhanced, dealing increased bonus magic damage and gaining  50% bonus attack speed.",
+            "description": "If the Spirit Blade collides with an enemy champion, the empowerment is enhanced, dealing increased bonus magic damage and gaining 50% bonus attack speed.",
             "icon": "Twilight Assault 3.png",
             "leveling": [
               {
@@ -845,7 +935,7 @@
             ]
           },
           {
-            "description": "Empowered attacks against  monsters instead deal 100% bonus damage, but their total damage is capped.",
+            "description": "Empowered attacks against monsters instead deal 100% bonus damage, but their total damage is capped.",
             "icon": null,
             "leveling": [
               {
@@ -941,7 +1031,7 @@
         "name": "Twilight Assault",
         "effects": [
           {
-            "description": "Active: Shen recalls his Spirit Blade to his location. Enemies the blade collides with are  slowed for the next 2 seconds when moving away from Shen.",
+            "description": "Active: Shen recalls his Spirit Blade to his location. Enemies the blade collides with are slowed for the next 2 seconds when moving away from Shen.",
             "icon": "Twilight Assault.png",
             "leveling": [
               {
@@ -968,7 +1058,7 @@
             ]
           },
           {
-            "description": "Once it arrives, Shen empowers his next 3 basic attacks within 8 seconds to gain  75 bonus range and deal  bonus magic damage.",
+            "description": "Once it arrives, Shen empowers his next 3 basic attacks within 8 seconds to gain 75 bonus range and deal bonus magic damage.",
             "icon": "Twilight Assault 2.png",
             "leveling": [
               {
@@ -1100,7 +1190,7 @@
             ]
           },
           {
-            "description": "If the Spirit Blade collides with an enemy  champion, the empowerment is enhanced, dealing increased bonus magic damage and gaining  50% bonus attack speed.",
+            "description": "If the Spirit Blade collides with an enemy champion, the empowerment is enhanced, dealing increased bonus magic damage and gaining 50% bonus attack speed.",
             "icon": "Twilight Assault 3.png",
             "leveling": [
               {
@@ -1232,7 +1322,7 @@
             ]
           },
           {
-            "description": "Empowered attacks against  monsters instead deal 100% bonus damage, but their total damage is capped.",
+            "description": "Empowered attacks against monsters instead deal 100% bonus damage, but their total damage is capped.",
             "icon": null,
             "leveling": [
               {
@@ -1406,12 +1496,12 @@
         "name": "Shadow Dash",
         "effects": [
           {
-            "description": "Passive: Damage from Shadow Dash and  Twilight Assault recovers  30 / 35 / 40 (based on level) energy.",
+            "description": "Passive: Damage from Shadow Dash and Twilight Assault recovers 30 / 35 / 40 (based on level) energy.",
             "icon": "Shadow Dash.png",
             "leveling": []
           },
           {
-            "description": "Active: Shen  dashes in the target direction, dealing physical damage to all enemy champions and  monsters he hits and  taunting them for 1.5 seconds.",
+            "description": "Active: Shen dashes in the target direction, dealing physical damage to all enemy champions and monsters he hits and taunting them for 1.5 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -1525,7 +1615,7 @@
         "name": "Stand United",
         "effects": [
           {
-            "description": "Active: Shen channels for 3 seconds,  shielding the target allied champion for up to 5 seconds, increased by 0% \u2212 60% (based on target's missing health).",
+            "description": "Active: Shen channels for 3 seconds, shielding the target allied champion for up to 5 seconds, increased by 0% − 60% (based on target's missing health).",
             "icon": "Stand United 2.png",
             "leveling": [
               {
@@ -1589,7 +1679,7 @@
             ]
           },
           {
-            "description": "Upon completing the channel, Shen and his  Spirit Blade  blink to the target ally's location.",
+            "description": "Upon completing the channel, Shen and his Spirit Blade blink to the target ally's location.",
             "icon": "Stand United.png",
             "leveling": []
           }
@@ -1640,7 +1730,7 @@
         "name": "Stand United",
         "effects": [
           {
-            "description": "Active: Shen channels for 3 seconds,  shielding the target allied champion for up to 5 seconds, increased by 0% \u2212 60% (based on target's missing health).",
+            "description": "Active: Shen channels for 3 seconds, shielding the target allied champion for up to 5 seconds, increased by 0% − 60% (based on target's missing health).",
             "icon": "Stand United 2.png",
             "leveling": [
               {
@@ -1704,7 +1794,7 @@
             ]
           },
           {
-            "description": "Upon completing the channel, Shen and his  Spirit Blade  blink to the target ally's location.",
+            "description": "Upon completing the channel, Shen and his Spirit Blade blink to the target ally's location.",
             "icon": "Stand United.png",
             "leveling": []
           }

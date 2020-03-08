@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 500,
-    "selectionRadius": 100,
-    "pathingRadius": 30,
-    "gameplayRadius": 55,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 500,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 30,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 55,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.69,
       "percent": 0.0,
       "perLevel": 3.38,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.689999997615814,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0842565968632698,
+    "attackSpeedRatio": {
+      "flat": 0.689999997615814,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0842565968632698,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 500,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.05,
-    "aramDamageDealt": 0.9,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 0.95,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -110,12 +200,12 @@
         "name": "Guerrilla Warfare",
         "effects": [
           {
-            "description": "Innate: Teemo gains  invisibility if he stands still for 1.5 seconds without acting or being acted upon. He will remain stealthed so long as he does not move or act, and is not  displaced. If within  brush, Teemo gains stealth after 1.5 seconds even while moving and may move freely within its boundaries without breaking stealth.",
+            "description": "Innate: Teemo gains invisibility if he stands still for 1.5 seconds without acting or being acted upon. He will remain stealthed so long as he does not move or act, and is not displaced. If within brush, Teemo gains stealth after 1.5 seconds even while moving and may move freely within its boundaries without breaking stealth.",
             "icon": "Guerrilla Warfare.png",
             "leveling": []
           },
           {
-            "description": "Element of Surprise: When Teemo breaks stealth, he gains the Element of Surprise for 3 seconds, granting him  20 / 40 / 60 / 80% (based on level) bonus attack speed.",
+            "description": "Element of Surprise: When Teemo breaks stealth, he gains the Element of Surprise for 3 seconds, granting him 20 / 40 / 60 / 80% (based on level) bonus attack speed.",
             "icon": "Element of Surprise.png",
             "leveling": []
           }
@@ -152,7 +242,7 @@
         "name": "Blinding Dart",
         "effects": [
           {
-            "description": "Active: Teemo shoots a dart at the target enemy, dealing them  magic damage and  blinding them for a short duration.",
+            "description": "Active: Teemo shoots a dart at the target enemy, dealing them magic damage and blinding them for a short duration.",
             "icon": "Blinding Dart.png",
             "leveling": [
               {
@@ -287,7 +377,7 @@
         "name": "Move Quick",
         "effects": [
           {
-            "description": "Passive: Teemo gains  bonus movement speed if he hasn't taken damage from enemy champions or turrets for 5 seconds.",
+            "description": "Passive: Teemo gains bonus movement speed if he hasn't taken damage from enemy champions or turrets for 5 seconds.",
             "icon": "Move Quick.png",
             "leveling": [
               {
@@ -314,7 +404,7 @@
             ]
           },
           {
-            "description": "Active: Teemo doubles his  bonus movement speed for 3 seconds and prevents it from being disabled by damage for the duration.",
+            "description": "Active: Teemo doubles his bonus movement speed for 3 seconds and prevents it from being disabled by damage for the duration.",
             "icon": null,
             "leveling": [
               {
@@ -412,7 +502,7 @@
         "name": "Toxic Shot",
         "effects": [
           {
-            "description": "Passive: Teemo's basic attacks deal bonus magic damage and  poison his target.",
+            "description": "Passive: Teemo's basic attacks deal bonus magic damage and poison his target.",
             "icon": "Toxic Shot.png",
             "leveling": [
               {
@@ -455,7 +545,7 @@
             ]
           },
           {
-            "description": "Poisoned targets suffer magic damage for 4 seconds, with subsequent attacks refreshing the  poison's duration.",
+            "description": "Poisoned targets suffer magic damage for 4 seconds, with subsequent attacks refreshing the poison's duration.",
             "icon": null,
             "leveling": [
               {
@@ -627,7 +717,7 @@
             ]
           },
           {
-            "description": "Active: Teemo tosses a  mushroom trap on the ground, which stealths and arms after 1 second, lasting up to 5 minutes. While armed, mushrooms grant  sight around them. Mushrooms bounce forward if they land on top of another mushroom. This can happen an infinite amount of times while Teemo is alive. If Teemo dies before the mushroom lands on another mushroom, the mushroom will disappear.",
+            "description": "Active: Teemo tosses a mushroom trap on the ground, which stealths and arms after 1 second, lasting up to 5 minutes. While armed, mushrooms grant sight around them. Mushrooms bounce forward if they land on top of another mushroom. This can happen an infinite amount of times while Teemo is alive. If Teemo dies before the mushroom lands on another mushroom, the mushroom will disappear.",
             "icon": "Noxious Trap.png",
             "leveling": [
               {
@@ -650,7 +740,7 @@
             ]
           },
           {
-            "description": "If an enemy steps on a mushroom, it detonates,  poisoning all nearby enemies,  slowing them, granting  sight of them, and dealing them magic damage over 4 seconds.",
+            "description": "If an enemy steps on a mushroom, it detonates, poisoning all nearby enemies, slowing them, granting sight of them, and dealing them magic damage over 4 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -731,7 +821,7 @@
             ]
           },
           {
-            "description": "Noxious Trap have  6 maximum health and can only be damaged by champion basic attacks (2 damage from  ranged and 3 from  melee).",
+            "description": "Noxious Trap have 6 maximum health and can only be damaged by champion basic attacks (2 damage from ranged and 3 from melee).",
             "icon": null,
             "leveling": []
           }

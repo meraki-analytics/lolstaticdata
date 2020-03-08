@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 102.777801513671,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 102.777801513671,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.651,
       "percent": 0.0,
       "perLevel": 3,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.651000022888183,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.104687497019767,
+    "attackSpeedRatio": {
+      "flat": 0.651000022888183,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.104687497019767,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.9,
-    "aramDamageDealt": 1.08,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.95,
-    "urfDamageDealt": 1.05,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.08,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -110,7 +200,7 @@
         "name": "Flurry",
         "effects": [
           {
-            "description": "Innate: After using an ability, Lee Sin's next 2 basic attacks within 3 seconds gain  40% bonus attack speed, returning  20 / 30 / 40 (based on level) energy on the first attack and [ half of that ][  10 / 15 / 20 (based on level) energy ] on the second.",
+            "description": "Innate: After using an ability, Lee Sin's next 2 basic attacks within 3 seconds gain 40% bonus attack speed, returning 20 / 30 / 40 (based on level) energy on the first attack and [ half of that ][ 10 / 15 / 20 (based on level) energy ] on the second.",
             "icon": "Flurry.png",
             "leveling": []
           }
@@ -147,7 +237,7 @@
         "name": "Sonic Wave",
         "effects": [
           {
-            "description": "Active: Lee Sin fires a sonic blast in the target direction, dealing  physical damage to the first enemy it hits and granting  true sight of them for 3 seconds.",
+            "description": "Active: Lee Sin fires a sonic blast in the target direction, dealing physical damage to the first enemy it hits and granting true sight of them for 3 seconds.",
             "icon": "Sonic Wave.png",
             "leveling": [
               {
@@ -190,7 +280,7 @@
             ]
           },
           {
-            "description": "If Sonic Wave hits, Lee Sin can cast  Resonating Strike within the next 3 seconds.",
+            "description": "If Sonic Wave hits, Lee Sin can cast Resonating Strike within the next 3 seconds.",
             "icon": null,
             "leveling": []
           }
@@ -264,7 +354,7 @@
         "name": "Resonating Strike",
         "effects": [
           {
-            "description": "Active: Lee Sin  dashes to the enemy marked by  Sonic Wave, placing himself on top of the target and dealing physical damage, increased by 0% \u2212 100% (based on target's missing health).",
+            "description": "Active: Lee Sin dashes to the enemy marked by Sonic Wave, placing himself on top of the target and dealing physical damage, increased by 0% − 100% (based on target's missing health).",
             "icon": "Resonating Strike.png",
             "leveling": [
               {
@@ -395,7 +485,7 @@
         "name": "Safeguard",
         "effects": [
           {
-            "description": "Active: Lee Sin  dashes to the target ally or friendly  ward. If the ally is a  champion, both they and Lee Sin are  shielded for 2 seconds and Safeguard's  cooldown is reduced by 50%. Lee Sin can self-cast Safeguard to shield himself.",
+            "description": "Active: Lee Sin dashes to the target ally or friendly ward. If the ally is a champion, both they and Lee Sin are shielded for 2 seconds and Safeguard's cooldown is reduced by 50%. Lee Sin can self-cast Safeguard to shield himself.",
             "icon": "Safeguard.png",
             "leveling": [
               {
@@ -438,7 +528,7 @@
             ]
           },
           {
-            "description": "If Safeguard is used, Lee Sin can cast  Iron Will within 3 seconds.",
+            "description": "If Safeguard is used, Lee Sin can cast Iron Will within 3 seconds.",
             "icon": null,
             "leveling": []
           }
@@ -512,7 +602,7 @@
         "name": "Iron Will",
         "effects": [
           {
-            "description": "Active: For 4 seconds, Lee Sin gains  bonus life steal and  bonus spell vamp.",
+            "description": "Active: For 4 seconds, Lee Sin gains bonus life steal and bonus spell vamp.",
             "icon": "Iron Will.png",
             "leveling": [
               {
@@ -590,7 +680,7 @@
         "name": "Tempest",
         "effects": [
           {
-            "description": "Active: Lee Sin smashes the ground, dealing magic damage to nearby enemies and granting  sight of them for 4 seconds.",
+            "description": "Active: Lee Sin smashes the ground, dealing magic damage to nearby enemies and granting sight of them for 4 seconds.",
             "icon": "Tempest.png",
             "leveling": [
               {
@@ -633,7 +723,7 @@
             ]
           },
           {
-            "description": "If Tempest hits an enemy, Lee Sin can cast  Cripple within the next 3 seconds.",
+            "description": "If Tempest hits an enemy, Lee Sin can cast Cripple within the next 3 seconds.",
             "icon": null,
             "leveling": []
           }
@@ -707,7 +797,7 @@
         "name": "Cripple",
         "effects": [
           {
-            "description": "Active: Lee Sin  slows all nearby enemies marked by  Tempest for 4 seconds, decaying over the duration.",
+            "description": "Active: Lee Sin slows all nearby enemies marked by Tempest for 4 seconds, decaying over the duration.",
             "icon": "Cripple.png",
             "leveling": [
               {
@@ -785,7 +875,7 @@
         "name": "Dragon's Rage",
         "effects": [
           {
-            "description": "Active: Lee Sin instantly  roots the target enemy champion for 0.25 seconds after which he roundhouse kicks them dealing physical damage and  knocking them back 1200 units over 1 second.",
+            "description": "Active: Lee Sin instantly roots the target enemy champion for 0.25 seconds after which he roundhouse kicks them dealing physical damage and knocking them back 1200 units over 1 second.",
             "icon": "Dragon's Rage.png",
             "leveling": [
               {
@@ -820,7 +910,7 @@
             ]
           },
           {
-            "description": "Enemies hit by the displaced enemy receive bonus physical damage and are  knocked up for 1 second.",
+            "description": "Enemies hit by the displaced enemy receive bonus physical damage and are knocked up for 1 second.",
             "icon": null,
             "leveling": [
               {

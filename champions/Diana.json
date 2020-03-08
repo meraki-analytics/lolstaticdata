@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 75,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 75,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2.25,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0916666686534881,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0916666686534881,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 150,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.95,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -111,12 +201,12 @@
         "name": "Moonsilver Blade",
         "effects": [
           {
-            "description": "Innate: Diana permanently has  10% \u2212  40% (based on level) bonus attack speed. After casting an ability, this bonus is tripled to 30% \u2212  120% (based on level) for 3 seconds.",
+            "description": "Innate: Diana permanently has 10% − 40% (based on level) bonus attack speed. After casting an ability, this bonus is tripled to 30% − 120% (based on level) for 3 seconds.",
             "icon": "Moonsilver Blade.png",
             "leveling": []
           },
           {
-            "description": "Diana's basic attacks on-hit grant a stack for 3.5 seconds. At 2 stacks, Diana's next basic attack on-hit additionally cleaves nearby enemies for 20 \u2212  250 (based on level) (+ 40% AP)  magic damage, consuming all stacks. This damage is increased by 50% against non-epic monsters.",
+            "description": "Diana's basic attacks on-hit grant a stack for 3.5 seconds. At 2 stacks, Diana's next basic attack on-hit additionally cleaves nearby enemies for 20 − 250 (based on level) (+ 40% AP) magic damage, consuming all stacks. This damage is increased by 50% against non-epic monsters.",
             "icon": null,
             "leveling": []
           }
@@ -153,7 +243,7 @@
         "name": "Crescent Strike",
         "effects": [
           {
-            "description": "Active: Diana unleashes a bolt of lunar energy that travels in a counter-clockwise arc before exploding at the target location, dealing magic damage to enemies hit and afflicting them with Moonlight for 3 seconds,  revealing them for the duration.",
+            "description": "Active: Diana unleashes a bolt of lunar energy that travels in a counter-clockwise arc before exploding at the target location, dealing magic damage to enemies hit and afflicting them with Moonlight for 3 seconds, revealing them for the duration.",
             "icon": "Crescent Strike.png",
             "leveling": [
               {
@@ -196,7 +286,7 @@
             ]
           },
           {
-            "description": "Moonlight has interactions with  Lunar Rush.",
+            "description": "Moonlight has interactions with Lunar Rush.",
             "icon": null,
             "leveling": []
           }
@@ -272,7 +362,7 @@
         "name": "Pale Cascade",
         "effects": [
           {
-            "description": "Active: Diana  shields herself for up to 5 seconds and creates three spheres that orbit her for the duration, detonating upon contact with an enemy and dealing magic damage to nearby enemies upon detonation.",
+            "description": "Active: Diana shields herself for up to 5 seconds and creates three spheres that orbit her for the duration, detonating upon contact with an enemy and dealing magic damage to nearby enemies upon detonation.",
             "icon": "Pale Cascade.png",
             "leveling": [
               {
@@ -534,7 +624,7 @@
         "name": "Moonfall",
         "effects": [
           {
-            "description": "Active:  Reveals,  draws in, and successively  slows all nearby enemies for 2 seconds.",
+            "description": "Active: Reveals, draws in, and successively slows all nearby enemies for 2 seconds.",
             "icon": "Moonfall.png",
             "leveling": [
               {
@@ -713,7 +803,7 @@
         "name": "Lunar Rush",
         "effects": [
           {
-            "description": "Active: Diana  dashes to an enemy, dealing magic damage to the target and consuming  Moonlight from all enemies. If the target is within 400 range, Diana will dash through them.",
+            "description": "Active: Diana dashes to an enemy, dealing magic damage to the target and consuming Moonlight from all enemies. If the target is within 400 range, Diana will dash through them.",
             "icon": "Lunar Rush.png",
             "leveling": [
               {
@@ -756,7 +846,7 @@
             ]
           },
           {
-            "description": "If Moonlight is consumed from the target or the target dies mid-dash while being afflicted by Moonlight, Lunar Rush's  cooldown is reset.",
+            "description": "If Moonlight is consumed from the target or the target dies mid-dash while being afflicted by Moonlight, Lunar Rush's cooldown is reset.",
             "icon": null,
             "leveling": []
           },

@@ -4,7 +4,7 @@ import dataclasses_json
 import json
 import stringcase
 
-from modelcommon import DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration
+from modelcommon import DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration, Stat
 from utils import OrderedEnum, ExtendedEncoder
 
 
@@ -68,26 +68,26 @@ class Stats(object):
     magic_resistance: MagicResistance
     attack_damage: AttackDamage
     movespeed: Movespeed
-    acquisition_radius: float
-    selection_radius: float
-    pathing_radius: float
-    gameplay_radius: float
-    critical_strike_damage: float
-    critical_strike_damage_modifier: float
+    acquisition_radius: Stat
+    selection_radius: Stat
+    pathing_radius: Stat
+    gameplay_radius: Stat
+    critical_strike_damage: Stat
+    critical_strike_damage_modifier: Stat
     attack_speed: AttackSpeed
-    attack_speed_ratio: float
-    attack_cast_time: float
-    attack_total_time: float
-    attack_delay_offset: float
+    attack_speed_ratio: Stat
+    attack_cast_time: Stat
+    attack_total_time: Stat
+    attack_delay_offset: Stat
     attack_range: AttackRange
-    aram_damage_taken: float
-    aram_damage_dealt: float
-    aram_healing: float
-    aram_shielding: float
-    urf_damage_taken: float
-    urf_damage_dealt: float
-    urf_healing: float
-    urf_shielding: float
+    aram_damage_taken: Stat
+    aram_damage_dealt: Stat
+    aram_healing: Stat
+    aram_shielding: Stat
+    urf_damage_taken: Stat
+    urf_damage_dealt: Stat
+    urf_healing: Stat
+    urf_shielding: Stat
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
@@ -200,16 +200,12 @@ class Champion(object):
     price: Price
 
     def __json__(self, *args, **kwargs):
+        # Use dataclasses_json to get the dict
         d = self.to_dict()
-        for name in ("health", "health_regen", "mana", "mana_regen", "armor", "magic_resistance", "attack_damage", "movespeed", "attack_speed", "attack_range"):
-            stat = getattr(self.stats, name)
-            if stat.flat == stat.percent == stat.per_level == stat.percent_per_level == stat.percent_base == stat.percent_bonus == 0:
-                camel = stringcase.camelcase(name)
-                del d['stats'][camel]
-
+        # Delete the two stat objects that don't apply to champions
         for name, stat in d['stats'].items():
             if isinstance(stat, dict):
                 del stat['percentBase']
                 del stat['percentBonus']
-
+        # Return the (un)modified dict
         return json.dumps(d, cls=ExtendedEncoder, *args, **kwargs)

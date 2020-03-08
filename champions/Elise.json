@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 550,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 550,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 1.75,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.112499997019767,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.112499997019767,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.9,
-    "aramDamageDealt": 1.05,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.9,
-    "urfDamageDealt": 1.1,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "DIVER",
@@ -110,12 +200,12 @@
         "name": "Spider Queen",
         "effects": [
           {
-            "description": "Innate - Human Form: When Elise's abilities hits a target she gains one dormant Spiderling, up to 2 / 3 / 4 / 5 (based on  Human Form's Rank).",
+            "description": "Innate - Human Form: When Elise's abilities hits a target she gains one dormant Spiderling, up to 2 / 3 / 4 / 5 (based on Human Form's Rank).",
             "icon": "Spider Queen.png",
             "leveling": []
           },
           {
-            "description": "Innate - Spider Form: Elise's basic attacks against non- structures deal 10 / 20 / 30 / 40 (based on  Spider Form's Rank) (+ 30% AP)  bonus magic damage and  heal her for  4 / 6 / 8 / 10 (based on  Spider Form's Rank) (+ 10% AP) health on-hit.",
+            "description": "Innate - Spider Form: Elise's basic attacks against non- structures deal 10 / 20 / 30 / 40 (based on Spider Form's Rank) (+ 30% AP) bonus magic damage and heal her for 4 / 6 / 8 / 10 (based on Spider Form's Rank) (+ 10% AP) health on-hit.",
             "icon": null,
             "leveling": []
           }
@@ -152,7 +242,7 @@
         "name": "Neurotoxin",
         "effects": [
           {
-            "description": "Active: Elise fires toxin at the target enemy unit, dealing magic damage, capped against  monsters.",
+            "description": "Active: Elise fires toxin at the target enemy unit, dealing magic damage, capped against monsters.",
             "icon": "Neurotoxin.png",
             "leveling": [
               {
@@ -285,7 +375,7 @@
         "name": "Venomous Bite",
         "effects": [
           {
-            "description": "Active: Elise  lunges at the target enemy with her fangs and bites them, dealing magic damage, capped against  monsters.",
+            "description": "Active: Elise lunges at the target enemy with her fangs and bites them, dealing magic damage, capped against monsters.",
             "icon": "Venomous Bite.png",
             "leveling": [
               {
@@ -349,7 +439,7 @@
             ]
           },
           {
-            "description": "If there are active  Spiderlings or a  Volatile Spiderling nearby, they will  dash alongside Elise towards Venomous Bite's target and reprioritize them.",
+            "description": "If there are active Spiderlings or a Volatile Spiderling nearby, they will dash alongside Elise towards Venomous Bite's target and reprioritize them.",
             "icon": null,
             "leveling": []
           }
@@ -406,7 +496,7 @@
         "name": "Volatile Spiderling",
         "effects": [
           {
-            "description": "Active: Elise summons an  untargetable venom-gorged spider for 3 seconds, which moves in the target direction.",
+            "description": "Active: Elise summons an untargetable venom-gorged spider for 3 seconds, which moves in the target direction.",
             "icon": "Volatile Spiderling.png",
             "leveling": []
           },
@@ -454,7 +544,7 @@
             ]
           },
           {
-            "description": "If the spider does not hit an enemy before reaching the target location, it chases down a nearby enemy, prioritizing  champions. The spider gains  bonus movement speed, based on its proximity to its target.",
+            "description": "If the spider does not hit an enemy before reaching the target location, it chases down a nearby enemy, prioritizing champions. The spider gains bonus movement speed, based on its proximity to its target.",
             "icon": null,
             "leveling": []
           }
@@ -528,7 +618,7 @@
         "name": "Skittering Frenzy",
         "effects": [
           {
-            "description": "Passive: Elise's  Spiderlings gain  bonus attack speed.",
+            "description": "Passive: Elise's Spiderlings gain bonus attack speed.",
             "icon": "Skittering Frenzy.png",
             "leveling": [
               {
@@ -555,7 +645,7 @@
             ]
           },
           {
-            "description": "Active: Elise and her  Spiderlings gain  bonus attack speed for 3 seconds.",
+            "description": "Active: Elise and her Spiderlings gain bonus attack speed for 3 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -639,7 +729,7 @@
         "name": "Cocoon",
         "effects": [
           {
-            "description": "Active: Elise fires a web in the target direction, granting  sight of the first enemy hit for 1 second and  stunning them.",
+            "description": "Active: Elise fires a web in the target direction, granting sight of the first enemy hit for 1 second and stunning them.",
             "icon": "Cocoon.png",
             "leveling": [
               {
@@ -735,12 +825,12 @@
         "name": "Rappel",
         "effects": [
           {
-            "description": "Active: Elise lifts up into the air, becoming  untargetable for up to 2 seconds and  revealing the area for the duration. While she is in the air she can select a target to instantly descend upon their location.",
+            "description": "Active: Elise lifts up into the air, becoming untargetable for up to 2 seconds and revealing the area for the duration. While she is in the air she can select a target to instantly descend upon their location.",
             "icon": "Rappel.png",
             "leveling": []
           },
           {
-            "description": "If cast directly on an enemy, Elise automatically descends upon them after 1 second. Upon landing, Elise's  Spider Queen bonuses are increased for 5 seconds.",
+            "description": "If cast directly on an enemy, Elise automatically descends upon them after 1 second. Upon landing, Elise's Spider Queen bonuses are increased for 5 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -819,17 +909,17 @@
         "name": "Spider Form / Human Form",
         "effects": [
           {
-            "description": "Passive:  Spider Queen's bonuses are increased.",
+            "description": "Passive: Spider Queen's bonuses are increased.",
             "icon": "Spider Form.png",
             "leveling": []
           },
           {
-            "description": "Human Form - Active: Elise transforms into a menacing spider, gaining  25 bonus movement speed,  melee basic attacks with 125  range, and access to her arachnid abilities. Additionally, Elise unleashes all stored Spiderlings.",
+            "description": "Human Form - Active: Elise transforms into a menacing spider, gaining 25 bonus movement speed, melee basic attacks with 125 range, and access to her arachnid abilities. Additionally, Elise unleashes all stored Spiderlings.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Spider Form - Active: Elise transforms into her human form, gaining  ranged basic attacks, and access to her human abilities. Additionally, Elise stores all unleashed Spiderlings.",
+            "description": "Spider Form - Active: Elise transforms into her human form, gaining ranged basic attacks, and access to her human abilities. Additionally, Elise stores all unleashed Spiderlings.",
             "icon": null,
             "leveling": []
           },
@@ -885,17 +975,17 @@
         "name": "Spider Form / Human Form",
         "effects": [
           {
-            "description": "Passive:  Spider Queen's bonuses are increased.",
+            "description": "Passive: Spider Queen's bonuses are increased.",
             "icon": "Spider Form.png",
             "leveling": []
           },
           {
-            "description": "Human Form - Active: Elise transforms into a menacing spider, gaining  25 bonus movement speed,  melee basic attacks with 125  range, and access to her arachnid abilities. Additionally, Elise unleashes all stored Spiderlings.",
+            "description": "Human Form - Active: Elise transforms into a menacing spider, gaining 25 bonus movement speed, melee basic attacks with 125 range, and access to her arachnid abilities. Additionally, Elise unleashes all stored Spiderlings.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Spider Form - Active: Elise transforms into her human form, gaining  ranged basic attacks, and access to her human abilities. Additionally, Elise stores all unleashed Spiderlings.",
+            "description": "Spider Form - Active: Elise transforms into her human form, gaining ranged basic attacks, and access to her human abilities. Additionally, Elise stores all unleashed Spiderlings.",
             "icon": null,
             "leveling": []
           },

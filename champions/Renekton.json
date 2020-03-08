@@ -26,6 +26,12 @@
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
+    "manaRegen": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
     "armor": {
       "flat": 35,
       "percent": 0.0,
@@ -50,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 125,
-    "pathingRadius": 50,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 50,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.665,
       "percent": 0.0,
       "perLevel": 2.75,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.665000021457672,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.122695036232471,
+    "attackSpeedRatio": {
+      "flat": 0.665000021457672,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.122695036232471,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.95,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "DIVER",
@@ -104,7 +200,7 @@
         "name": "Reign of Anger",
         "effects": [
           {
-            "description": "Innate: Renekton generates  5 Fury each time he lands a basic attack on an enemy, and loses 4 Fury per second if he hasn't dealt or taken damage in the last 12 seconds.",
+            "description": "Innate: Renekton generates 5 Fury each time he lands a basic attack on an enemy, and loses 4 Fury per second if he hasn't dealt or taken damage in the last 12 seconds.",
             "icon": "Reign of Anger.png",
             "leveling": []
           },
@@ -114,7 +210,7 @@
             "leveling": []
           },
           {
-            "description": "Renekton generates 50% bonus Fury from all sources while  below 50% of his maximum health.",
+            "description": "Renekton generates 50% bonus Fury from all sources while below 50% of his maximum health.",
             "icon": null,
             "leveling": []
           }
@@ -151,7 +247,7 @@
         "name": "Cull the Meek",
         "effects": [
           {
-            "description": "Active: Renekton deals  physical damage to all nearby enemies and  heals himself for each enemy hit, up to a cap.",
+            "description": "Active: Renekton deals physical damage to all nearby enemies and heals himself for each enemy hit, up to a cap.",
             "icon": "Cull the Meek.png",
             "leveling": [
               {
@@ -347,12 +443,12 @@
             ]
           },
           {
-            "description": "Renekton also generates  2.5 Fury for each non-champion hit and 10 Fury for each champion hit, with the Fury generated per cast capped at 30.",
+            "description": "Renekton also generates 2.5 Fury for each non-champion hit and 10 Fury for each champion hit, with the Fury generated per cast capped at 30.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Against  champions, the healing is increased by 300%.",
+            "description": "Against champions, the healing is increased by 300%.",
             "icon": null,
             "leveling": [
               {
@@ -489,7 +585,7 @@
         "name": "Ruthless Predator",
         "effects": [
           {
-            "description": "Active: Renekton's next basic attack within 7 seconds gains  50 bonus range and strikes his target twice dealing  modified physical damage and  stunning them for 0.75 seconds. Each slash applies  on-hit effects and grants  Fury. Hitting an enemy  champion grants 10 bonus Fury.",
+            "description": "Active: Renekton's next basic attack within 7 seconds gains 50 bonus range and strikes his target twice dealing modified physical damage and stunning them for 0.75 seconds. Each slash applies on-hit effects and grants Fury. Hitting an enemy champion grants 10 bonus Fury.",
             "icon": "Ruthless Predator.png",
             "leveling": [
               {
@@ -569,7 +665,7 @@
             ]
           },
           {
-            "description": "Reign of Anger: Renekton destroys damage-mitigating shields on the target before striking them 3 times, dealing 50% bonus damage and increasing the  stun duration to 1.5 seconds.",
+            "description": "Reign of Anger: Renekton destroys damage-mitigating shields on the target before striking them 3 times, dealing 50% bonus damage and increasing the stun duration to 1.5 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -669,7 +765,7 @@
         "name": "Slice",
         "effects": [
           {
-            "description": "Active - Slice: Renekton  dashes in the target direction, dealing physical damage to all enemies he passes through.",
+            "description": "Active - Slice: Renekton dashes in the target direction, dealing physical damage to all enemies he passes through.",
             "icon": "Slice.png",
             "leveling": [
               {
@@ -767,7 +863,7 @@
         "name": "Dice",
         "effects": [
           {
-            "description": "Active: Renekton  dashes in the target direction, dealing the same physical damage to all enemies he passes through.",
+            "description": "Active: Renekton dashes in the target direction, dealing the same physical damage to all enemies he passes through.",
             "icon": "Dice.png",
             "leveling": [
               {
@@ -810,12 +906,12 @@
             ]
           },
           {
-            "description": "Both Slice and Dice generate  2 Fury for each non-champion hit, and 10 Fury for each champion hit, with the Fury generated per dash capped at 30.",
+            "description": "Both Slice and Dice generate 2 Fury for each non-champion hit, and 10 Fury for each champion hit, with the Fury generated per dash capped at 30.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Reign of Anger: Dice deals additional damage to all enemies and reduces their  armor for 4 seconds.",
+            "description": "Reign of Anger: Dice deals additional damage to all enemies and reduces their armor for 4 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -948,7 +1044,7 @@
         "name": "Dominus",
         "effects": [
           {
-            "description": "Active: Renekton empowers himself for 15 seconds, gaining  bonus health, increased size,  25 bonus range and  20 Fury.",
+            "description": "Active: Renekton empowers himself for 15 seconds, gaining bonus health, increased size, 25 bonus range and 20 Fury.",
             "icon": "Dominus.png",
             "leveling": [
               {
@@ -971,7 +1067,7 @@
             ]
           },
           {
-            "description": "For the duration, he deals  magic damage each half second to all nearby enemies and generates 5 Fury per second, up to a maximum of 75 Fury.",
+            "description": "For the duration, he deals magic damage each half second to all nearby enemies and generates 5 Fury per second, up to a maximum of 75 Fury.",
             "icon": null,
             "leveling": [
               {

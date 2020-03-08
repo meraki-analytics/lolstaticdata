@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.681,
       "percent": 0.0,
       "perLevel": 4,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.568000018596649,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.122916668653488,
+    "attackSpeedRatio": {
+      "flat": 0.568000018596649,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.122916668653488,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 650,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "MARKSMAN"
@@ -108,7 +198,7 @@
         "name": "Headshot",
         "effects": [
           {
-            "description": "Innate: Caitlyn's basic attacks generate a stack of Headshot on-attack, doubled when attacking from  brush. At 6 stacks, or 5 while in brush, Caitlyn's next basic attack deals (50 / 75 / 100% (based on level) + (125% +  15.625%) critical strike chance) AD  bonus physical damage, increased to (100% + (125% +  15.625%) critical strike chance) AD against non-champions.",
+            "description": "Innate: Caitlyn's basic attacks generate a stack of Headshot on-attack, doubled when attacking from brush. At 6 stacks, or 5 while in brush, Caitlyn's next basic attack deals (50 / 75 / 100% (based on level) + (125% + 15.625%) critical strike chance) AD bonus physical damage, increased to (100% + (125% + 15.625%) critical strike chance) AD against non-champions.",
             "icon": "Headshot.png",
             "leveling": []
           },
@@ -118,7 +208,7 @@
             "leveling": []
           },
           {
-            "description": "Enemies  rooted by  Yordle Snap Trap or  slowed by  90 Caliber Net can grant an additional headshot at  1300 range for 1.8 seconds.",
+            "description": "Enemies rooted by Yordle Snap Trap or slowed by 90 Caliber Net can grant an additional headshot at 1300 range for 1.8 seconds.",
             "icon": "Headshot 2.png",
             "leveling": []
           }
@@ -235,7 +325,7 @@
             ]
           },
           {
-            "description": "Enemies  revealed by  Yordle Snap Trap always take full damage from Piltover Peacemaker.",
+            "description": "Enemies revealed by Yordle Snap Trap always take full damage from Piltover Peacemaker.",
             "icon": null,
             "leveling": []
           }
@@ -338,7 +428,7 @@
             ]
           },
           {
-            "description": "Active: Caitlyn sets a visible  untargetable trap at the target location which briefly grants  sight of the area and arms after 1 second, lasting for a duration. After the maximum amount of traps is laid down, deploying another immediately destroys the oldest one.",
+            "description": "Active: Caitlyn sets a visible untargetable trap at the target location which briefly grants sight of the area and arms after 1 second, lasting for a duration. After the maximum amount of traps is laid down, deploying another immediately destroys the oldest one.",
             "icon": null,
             "leveling": [
               {
@@ -365,7 +455,7 @@
             ]
           },
           {
-            "description": "The next enemy champion that springs the trap is  rooted for 1.5 seconds,  revealed for 3 seconds, takes additional damage from  Headshot, and becomes immune to Yordle Snap Traps for 2 seconds, increased by 1 second for each Yordle Snap Trap they're consecutively affected.",
+            "description": "The next enemy champion that springs the trap is rooted for 1.5 seconds, revealed for 3 seconds, takes additional damage from Headshot, and becomes immune to Yordle Snap Traps for 2 seconds, increased by 1 second for each Yordle Snap Trap they're consecutively affected.",
             "icon": null,
             "leveling": [
               {
@@ -485,7 +575,7 @@
         "name": "90 Caliber Net",
         "effects": [
           {
-            "description": "Active: Caitlyn fires a net and  recoils 400 units in the opposite direction, dealing  magic damage to the first enemy hit and  slowing them by 50% for 1 second.",
+            "description": "Active: Caitlyn fires a net and recoils 400 units in the opposite direction, dealing magic damage to the first enemy hit and slowing them by 50% for 1 second.",
             "icon": "90 Caliber Net.png",
             "leveling": [
               {
@@ -599,7 +689,7 @@
         "name": "Ace in the Hole",
         "effects": [
           {
-            "description": "Active: After a brief delay, Caitlyn locks onto a target enemy champion and channels for 1 second, gaining  true sight of the target and  revealing herself to the enemies.",
+            "description": "Active: After a brief delay, Caitlyn locks onto a target enemy champion and channels for 1 second, gaining true sight of the target and revealing herself to the enemies.",
             "icon": "Ace in the Hole.png",
             "leveling": []
           },

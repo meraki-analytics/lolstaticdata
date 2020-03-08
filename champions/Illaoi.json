@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 100,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.571,
       "percent": 0.0,
       "perLevel": 2.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.570999979972839,
-    "attackCastTime": 0.375,
-    "attackTotalTime": 1.75,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.570999979972839,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.375,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.75,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.05,
-    "aramDamageDealt": 0.95,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.05,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -110,12 +200,12 @@
         "name": "Prophet of an Elder God",
         "effects": [
           {
-            "description": "Innate: Periodically, Illaoi spawns a Tentacle on a nearby impassable terrain if no other Tentacles are nearby. Tentacles fully spawn after a 2 second delay and are  untargetable in the meantime.",
+            "description": "Innate: Periodically, Illaoi spawns a Tentacle on a nearby impassable terrain if no other Tentacles are nearby. Tentacles fully spawn after a 2 second delay and are untargetable in the meantime.",
             "icon": "Prophet of an Elder God.png",
             "leveling": []
           },
           {
-            "description": "Tentacles deal 10 \u2212 180 (based on level) (+ 120% AD) (+ 40% AP)  physical damage to all enemies struck when commanded to attack by her abilities. Each Tentacle also  heals Illaoi for 5% missing health if it hits at least one enemy  champion. See Pet Details for more details.",
+            "description": "Tentacles deal 10 − 180 (based on level) (+ 120% AD) (+ 40% AP) physical damage to all enemies struck when commanded to attack by her abilities. Each Tentacle also heals Illaoi for 5% missing health if it hits at least one enemy champion. See Pet Details for more details.",
             "icon": null,
             "leveling": []
           }
@@ -301,12 +391,12 @@
         "name": "Harsh Lesson",
         "effects": [
           {
-            "description": "Active: Illaoi's next basic attack within 6 seconds gains  225 bonus range and causes her to  leap to her target if they're beyond her normal basic attack range.",
+            "description": "Active: Illaoi's next basic attack within 6 seconds gains 225 bonus range and causes her to leap to her target if they're beyond her normal basic attack range.",
             "icon": "Harsh Lesson.png",
             "leveling": []
           },
           {
-            "description": "The attack deals bonus physical damage, with a minimum threshold, and capped at 300 against non-champions, and commands all Tentacles in range to attack her target. The minimum bonus damage can also be applied against  turrets.",
+            "description": "The attack deals bonus physical damage, with a minimum threshold, and capped at 300 against non-champions, and commands all Tentacles in range to attack her target. The minimum bonus damage can also be applied against turrets.",
             "icon": null,
             "leveling": [
               {
@@ -446,12 +536,12 @@
         "name": "Test of Spirit",
         "effects": [
           {
-            "description": "Active: Illaoi fires a projectile in the target direction, stopping at the first enemy hit. If the enemy is a  champion, their Spirit is pulled in front of Illaoi over 0.75 seconds. The target is tethered to the Spirit for 7 seconds, and is  revealed while the tether remains.",
+            "description": "Active: Illaoi fires a projectile in the target direction, stopping at the first enemy hit. If the enemy is a champion, their Spirit is pulled in front of Illaoi over 0.75 seconds. The target is tethered to the Spirit for 7 seconds, and is revealed while the tether remains.",
             "icon": "Test of Spirit.png",
             "leveling": []
           },
           {
-            "description": "The Spirit has the target's  current health,  armor and  magic resist, and redirects a portion of the pre-mitigation damage received to the tethered champion.",
+            "description": "The Spirit has the target's current health, armor and magic resist, and redirects a portion of the pre-mitigation damage received to the tethered champion.",
             "icon": null,
             "leveling": [
               {
@@ -494,7 +584,7 @@
             ]
           },
           {
-            "description": "When the Spirit is killed or the target moves too far away, the tether is severed, marking the target as a Vessel for 10 seconds,  revealing the area around them for a few seconds, and  slowing them by 80% for 1.5 seconds once the tether returns back to them. Each Tentacle autonomously attacks the closest Vessel or Spirit once every 5.5 / 4.5 / 3.5 (based on level) seconds.",
+            "description": "When the Spirit is killed or the target moves too far away, the tether is severed, marking the target as a Vessel for 10 seconds, revealing the area around them for a few seconds, and slowing them by 80% for 1.5 seconds once the tether returns back to them. Each Tentacle autonomously attacks the closest Vessel or Spirit once every 5.5 / 4.5 / 3.5 (based on level) seconds.",
             "icon": null,
             "leveling": []
           },
@@ -504,7 +594,7 @@
             "leveling": []
           },
           {
-            "description": "Vessels can cleanse the debuff by  taking down Illaoi.",
+            "description": "Vessels can cleanse the debuff by taking down Illaoi.",
             "icon": null,
             "leveling": []
           }
@@ -559,7 +649,7 @@
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Spirits are classified as Decoys.\n Spirits can only be targeted by Illaoi's team and neutral monsters. The Spirit's allies cannot target it.\n Spirits take 50% damage from turrets and do not cause turrets to  Warm Up their attacks.\n Spirits cannot be  healed or  shielded ( Summon Aery excluded).\n The Spirit levels up when the Vessel does. Doing so will increase the Spirit's health, armor, and magic resist, and additionally extend its lifetime by 1 second.\n Killing the Spirit awards  25 and  44.\n\n Redirected damage is calculated by taking the premitigation damage, applying Test of Spirit's damage modifier, and then capping it to the Spirit's current health. This damage will then be affected by damage modifiers (resistances and other effects) of the Vessel.\n If the Spirit's damage modifier is lower than Test of Spirit's, it will cause a reduction in total redirected damage, else it will cause an increase.\n If the Spirit's damage modifier is lower than the Vessel's, it will cause an increase in total redirected damage, else it will cause a decrease.\n Illaoi needs 937.5 / 875 / 812.5 / 750 / 687.5 total AD to reach 100% redirected damage. As per above, the damage is still dependent on the Spirit's and Vessel's damage modifiers and may not always be able to deal 100% of the target's current health as total redirected damage.\n The damage displayed as being received by the Spirit is not representative of the damage redirected to the Vessel, as the combat text shown adjacent to the Spirit uses the Spirit's resistances.\n\n  Spell shields may only prevent the initial spirit grab and the slow upon becoming a Vessel. Spell shields will not prevent becoming a Vessel or Tentacles from attacking.\n The spirit pull is not considered a  crowd control effect and will not be blocked by cc-immune effects, with the exception of  Morgana's  Black Shield.\n If the target becomes a Vessel within range of a dormant Tentacle, that Tentacle will skip its first attack.\n The tentacle model of the first cast is connected to Illaoi's body and will stop moving when Illaoi does (e.g  stasis,  sleep,  airborne). However, the projectile will not, and will be able to hit enemies away from its model position. It will also not be seen by enemies if Illaoi is not  visible, but it will be heard if the tentacle passes through their vision. \n Using  Flash during the cast time will change Illaoi's position but the tentacle will still be directed towards the previous pointed location.\n Grabbing the Spirit of a champion that has their resource bar white (i.e  Flow) will make the Spirit's lifetime (the white bar below the lifebar) disappear.\n Grabbing the Spirit of a target that is  camouflaged while there\u2019s a control ward revealing them will make the Spirit invisible.\n Only Illaoi can see who's been Vesseled, with their model covered in watery effects. The Vessel itself will instead have its screen covered in watery effects.\n If the enemy champion is reviving when the conditions for becoming a Vessel are met, then they will not revive as a Vessel.\n Runes consider the Spirit as a champion for their effects and stat-tracking.\n  Predator only reflects double bonus damage, not taking into account actual damage done to the Spirit (e.g if  Predator would deal 60 bonus damage, what would get reflected is 120 damage).\n\n Transferred damage will apply on-damage effects, such as  The Black Cleaver,  Morellonomicon,  Executioner's Calling,  Aspect of the Dragon burn damage and the healing from  Death's Dance or  Hextech Gunblade.\n Transferred damage will not doubly apply on-hit or on-spell effects versus the target (e.g.  Liandry's Torment,  Phase Rush stacks). These effects are only applied versus the Spirit.\n Attacking the Vessel and its Spirit simultaneously will only apply one  The Black Cleaver to the Vessel.\n\n Once the Spirit vanishes, whether defeated or not, Illaoi will get  Rage's full movement speed bonus and 1 creep score in-game (not included in the post-game counter).\n The Spirit is immune to  stasis (i.e.  Bard's  Tempered Fate).\n  Fiora's  Riposte can be used to prevent becoming a Vessel if used before the Spirit is killed or while leaving the tether's range.\n  Sion's Spirit cannot be spawned during  Glory in Death. Spirits created before Sion's undeath will remain active.",
+        "notes": "Spirits are classified as Decoys.\n Spirits can only be targeted by Illaoi's team and neutral monsters. The Spirit's allies cannot target it.\n Spirits take 50% damage from turrets and do not cause turrets to  Warm Up their attacks.\n Spirits cannot be  healed or  shielded ( Summon Aery excluded).\n The Spirit levels up when the Vessel does. Doing so will increase the Spirit's health, armor, and magic resist, and additionally extend its lifetime by 1 second.\n Killing the Spirit awards  25 and  44.\n\n Redirected damage is calculated by taking the premitigation damage, applying Test of Spirit's damage modifier, and then capping it to the Spirit's current health. This damage will then be affected by damage modifiers (resistances and other effects) of the Vessel.\n If the Spirit's damage modifier is lower than Test of Spirit's, it will cause a reduction in total redirected damage, else it will cause an increase.\n If the Spirit's damage modifier is lower than the Vessel's, it will cause an increase in total redirected damage, else it will cause a decrease.\n Illaoi needs 937.5 / 875 / 812.5 / 750 / 687.5 total AD to reach 100% redirected damage. As per above, the damage is still dependent on the Spirit's and Vessel's damage modifiers and may not always be able to deal 100% of the target's current health as total redirected damage.\n The damage displayed as being received by the Spirit is not representative of the damage redirected to the Vessel, as the combat text shown adjacent to the Spirit uses the Spirit's resistances.\n\n  Spell shields may only prevent the initial spirit grab and the slow upon becoming a Vessel. Spell shields will not prevent becoming a Vessel or Tentacles from attacking.\n The spirit pull is not considered a  crowd control effect and will not be blocked by cc-immune effects, with the exception of  Morgana's  Black Shield.\n If the target becomes a Vessel within range of a dormant Tentacle, that Tentacle will skip its first attack.\n The tentacle model of the first cast is connected to Illaoi's body and will stop moving when Illaoi does (e.g  stasis,  sleep,  airborne). However, the projectile will not, and will be able to hit enemies away from its model position. It will also not be seen by enemies if Illaoi is not  visible, but it will be heard if the tentacle passes through their vision. \n Using  Flash during the cast time will change Illaoi's position but the tentacle will still be directed towards the previous pointed location.\n Grabbing the Spirit of a champion that has their resource bar white (i.e  Flow) will make the Spirit's lifetime (the white bar below the lifebar) disappear.\n Grabbing the Spirit of a target that is  camouflaged while there’s a control ward revealing them will make the Spirit invisible.\n Only Illaoi can see who's been Vesseled, with their model covered in watery effects. The Vessel itself will instead have its screen covered in watery effects.\n If the enemy champion is reviving when the conditions for becoming a Vessel are met, then they will not revive as a Vessel.\n Runes consider the Spirit as a champion for their effects and stat-tracking.\n  Predator only reflects double bonus damage, not taking into account actual damage done to the Spirit (e.g if  Predator would deal 60 bonus damage, what would get reflected is 120 damage).\n\n Transferred damage will apply on-damage effects, such as  The Black Cleaver,  Morellonomicon,  Executioner's Calling,  Aspect of the Dragon burn damage and the healing from  Death's Dance or  Hextech Gunblade.\n Transferred damage will not doubly apply on-hit or on-spell effects versus the target (e.g.  Liandry's Torment,  Phase Rush stacks). These effects are only applied versus the Spirit.\n Attacking the Vessel and its Spirit simultaneously will only apply one  The Black Cleaver to the Vessel.\n\n Once the Spirit vanishes, whether defeated or not, Illaoi will get  Rage's full movement speed bonus and 1 creep score in-game (not included in the post-game counter).\n The Spirit is immune to  stasis (i.e.  Bard's  Tempered Fate).\n  Fiora's  Riposte can be used to prevent becoming a Vessel if used before the Spirit is killed or while leaving the tether's range.\n  Sion's Spirit cannot be spawned during  Glory in Death. Spirits created before Sion's undeath will remain active.",
         "blurb": "Illaoi rips the spirit from a foe's body, forcing it to stand before her. Spirits echo a percentage of the damage they take to the original target. If killed, or if the target gets too far from the spirit, the target will become a Vessel and begin spawning Tentacles.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -578,12 +668,12 @@
         "name": "Test of Spirit",
         "effects": [
           {
-            "description": "Active: Illaoi fires a projectile in the target direction, stopping at the first enemy hit. If the enemy is a  champion, their Spirit is pulled in front of Illaoi over 0.75 seconds. The target is tethered to the Spirit for 7 seconds, and is  revealed while the tether remains.",
+            "description": "Active: Illaoi fires a projectile in the target direction, stopping at the first enemy hit. If the enemy is a champion, their Spirit is pulled in front of Illaoi over 0.75 seconds. The target is tethered to the Spirit for 7 seconds, and is revealed while the tether remains.",
             "icon": "Test of Spirit.png",
             "leveling": []
           },
           {
-            "description": "The Spirit has the target's  current health,  armor and  magic resist, and redirects a portion of the pre-mitigation damage received to the tethered champion.",
+            "description": "The Spirit has the target's current health, armor and magic resist, and redirects a portion of the pre-mitigation damage received to the tethered champion.",
             "icon": null,
             "leveling": [
               {
@@ -626,7 +716,7 @@
             ]
           },
           {
-            "description": "When the Spirit is killed or the target moves too far away, the tether is severed, marking the target as a Vessel for 10 seconds,  revealing the area around them for a few seconds, and  slowing them by 80% for 1.5 seconds once the tether returns back to them. Each Tentacle autonomously attacks the closest Vessel or Spirit once every 5.5 / 4.5 / 3.5 (based on level) seconds.",
+            "description": "When the Spirit is killed or the target moves too far away, the tether is severed, marking the target as a Vessel for 10 seconds, revealing the area around them for a few seconds, and slowing them by 80% for 1.5 seconds once the tether returns back to them. Each Tentacle autonomously attacks the closest Vessel or Spirit once every 5.5 / 4.5 / 3.5 (based on level) seconds.",
             "icon": null,
             "leveling": []
           },
@@ -636,7 +726,7 @@
             "leveling": []
           },
           {
-            "description": "Vessels can cleanse the debuff by  taking down Illaoi.",
+            "description": "Vessels can cleanse the debuff by taking down Illaoi.",
             "icon": null,
             "leveling": []
           }
@@ -691,7 +781,7 @@
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Spirits are classified as Decoys.\n Spirits can only be targeted by Illaoi's team and neutral monsters. The Spirit's allies cannot target it.\n Spirits take 50% damage from turrets and do not cause turrets to  Warm Up their attacks.\n Spirits cannot be  healed or  shielded ( Summon Aery excluded).\n The Spirit levels up when the Vessel does. Doing so will increase the Spirit's health, armor, and magic resist, and additionally extend its lifetime by 1 second.\n Killing the Spirit awards  25 and  44.\n\n Redirected damage is calculated by taking the premitigation damage, applying Test of Spirit's damage modifier, and then capping it to the Spirit's current health. This damage will then be affected by damage modifiers (resistances and other effects) of the Vessel.\n If the Spirit's damage modifier is lower than Test of Spirit's, it will cause a reduction in total redirected damage, else it will cause an increase.\n If the Spirit's damage modifier is lower than the Vessel's, it will cause an increase in total redirected damage, else it will cause a decrease.\n Illaoi needs 937.5 / 875 / 812.5 / 750 / 687.5 total AD to reach 100% redirected damage. As per above, the damage is still dependent on the Spirit's and Vessel's damage modifiers and may not always be able to deal 100% of the target's current health as total redirected damage.\n The damage displayed as being received by the Spirit is not representative of the damage redirected to the Vessel, as the combat text shown adjacent to the Spirit uses the Spirit's resistances.\n\n  Spell shields may only prevent the initial spirit grab and the slow upon becoming a Vessel. Spell shields will not prevent becoming a Vessel or Tentacles from attacking.\n The spirit pull is not considered a  crowd control effect and will not be blocked by cc-immune effects, with the exception of  Morgana's  Black Shield.\n If the target becomes a Vessel within range of a dormant Tentacle, that Tentacle will skip its first attack.\n The tentacle model of the first cast is connected to Illaoi's body and will stop moving when Illaoi does (e.g  stasis,  sleep,  airborne). However, the projectile will not, and will be able to hit enemies away from its model position. It will also not be seen by enemies if Illaoi is not  visible, but it will be heard if the tentacle passes through their vision. \n Using  Flash during the cast time will change Illaoi's position but the tentacle will still be directed towards the previous pointed location.\n Grabbing the Spirit of a champion that has their resource bar white (i.e  Flow) will make the Spirit's lifetime (the white bar below the lifebar) disappear.\n Grabbing the Spirit of a target that is  camouflaged while there\u2019s a control ward revealing them will make the Spirit invisible.\n Only Illaoi can see who's been Vesseled, with their model covered in watery effects. The Vessel itself will instead have its screen covered in watery effects.\n If the enemy champion is reviving when the conditions for becoming a Vessel are met, then they will not revive as a Vessel.\n Runes consider the Spirit as a champion for their effects and stat-tracking.\n  Predator only reflects double bonus damage, not taking into account actual damage done to the Spirit (e.g if  Predator would deal 60 bonus damage, what would get reflected is 120 damage).\n\n Transferred damage will apply on-damage effects, such as  The Black Cleaver,  Morellonomicon,  Executioner's Calling,  Aspect of the Dragon burn damage and the healing from  Death's Dance or  Hextech Gunblade.\n Transferred damage will not doubly apply on-hit or on-spell effects versus the target (e.g.  Liandry's Torment,  Phase Rush stacks). These effects are only applied versus the Spirit.\n Attacking the Vessel and its Spirit simultaneously will only apply one  The Black Cleaver to the Vessel.\n\n Once the Spirit vanishes, whether defeated or not, Illaoi will get  Rage's full movement speed bonus and 1 creep score in-game (not included in the post-game counter).\n The Spirit is immune to  stasis (i.e.  Bard's  Tempered Fate).\n  Fiora's  Riposte can be used to prevent becoming a Vessel if used before the Spirit is killed or while leaving the tether's range.\n  Sion's Spirit cannot be spawned during  Glory in Death. Spirits created before Sion's undeath will remain active.",
+        "notes": "Spirits are classified as Decoys.\n Spirits can only be targeted by Illaoi's team and neutral monsters. The Spirit's allies cannot target it.\n Spirits take 50% damage from turrets and do not cause turrets to  Warm Up their attacks.\n Spirits cannot be  healed or  shielded ( Summon Aery excluded).\n The Spirit levels up when the Vessel does. Doing so will increase the Spirit's health, armor, and magic resist, and additionally extend its lifetime by 1 second.\n Killing the Spirit awards  25 and  44.\n\n Redirected damage is calculated by taking the premitigation damage, applying Test of Spirit's damage modifier, and then capping it to the Spirit's current health. This damage will then be affected by damage modifiers (resistances and other effects) of the Vessel.\n If the Spirit's damage modifier is lower than Test of Spirit's, it will cause a reduction in total redirected damage, else it will cause an increase.\n If the Spirit's damage modifier is lower than the Vessel's, it will cause an increase in total redirected damage, else it will cause a decrease.\n Illaoi needs 937.5 / 875 / 812.5 / 750 / 687.5 total AD to reach 100% redirected damage. As per above, the damage is still dependent on the Spirit's and Vessel's damage modifiers and may not always be able to deal 100% of the target's current health as total redirected damage.\n The damage displayed as being received by the Spirit is not representative of the damage redirected to the Vessel, as the combat text shown adjacent to the Spirit uses the Spirit's resistances.\n\n  Spell shields may only prevent the initial spirit grab and the slow upon becoming a Vessel. Spell shields will not prevent becoming a Vessel or Tentacles from attacking.\n The spirit pull is not considered a  crowd control effect and will not be blocked by cc-immune effects, with the exception of  Morgana's  Black Shield.\n If the target becomes a Vessel within range of a dormant Tentacle, that Tentacle will skip its first attack.\n The tentacle model of the first cast is connected to Illaoi's body and will stop moving when Illaoi does (e.g  stasis,  sleep,  airborne). However, the projectile will not, and will be able to hit enemies away from its model position. It will also not be seen by enemies if Illaoi is not  visible, but it will be heard if the tentacle passes through their vision. \n Using  Flash during the cast time will change Illaoi's position but the tentacle will still be directed towards the previous pointed location.\n Grabbing the Spirit of a champion that has their resource bar white (i.e  Flow) will make the Spirit's lifetime (the white bar below the lifebar) disappear.\n Grabbing the Spirit of a target that is  camouflaged while there’s a control ward revealing them will make the Spirit invisible.\n Only Illaoi can see who's been Vesseled, with their model covered in watery effects. The Vessel itself will instead have its screen covered in watery effects.\n If the enemy champion is reviving when the conditions for becoming a Vessel are met, then they will not revive as a Vessel.\n Runes consider the Spirit as a champion for their effects and stat-tracking.\n  Predator only reflects double bonus damage, not taking into account actual damage done to the Spirit (e.g if  Predator would deal 60 bonus damage, what would get reflected is 120 damage).\n\n Transferred damage will apply on-damage effects, such as  The Black Cleaver,  Morellonomicon,  Executioner's Calling,  Aspect of the Dragon burn damage and the healing from  Death's Dance or  Hextech Gunblade.\n Transferred damage will not doubly apply on-hit or on-spell effects versus the target (e.g.  Liandry's Torment,  Phase Rush stacks). These effects are only applied versus the Spirit.\n Attacking the Vessel and its Spirit simultaneously will only apply one  The Black Cleaver to the Vessel.\n\n Once the Spirit vanishes, whether defeated or not, Illaoi will get  Rage's full movement speed bonus and 1 creep score in-game (not included in the post-game counter).\n The Spirit is immune to  stasis (i.e.  Bard's  Tempered Fate).\n  Fiora's  Riposte can be used to prevent becoming a Vessel if used before the Spirit is killed or while leaving the tether's range.\n  Sion's Spirit cannot be spawned during  Glory in Death. Spirits created before Sion's undeath will remain active.",
         "blurb": "Illaoi rips the spirit from a foe's body, forcing it to stand before her. Spirits echo a percentage of the damage they take to the original target. If killed, or if the target gets too far from the spirit, the target will become a Vessel and begin spawning Tentacles.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -712,7 +802,7 @@
         "name": "Leap of Faith",
         "effects": [
           {
-            "description": "Active: Illaoi leaps into the air  unstoppably before slamming her idol into the ground, dealing physical damage to nearby enemies. For each enemy champion hit, a Tentacle is summoned for 8 seconds (up to a maximum of 6 summons).",
+            "description": "Active: Illaoi leaps into the air unstoppably before slamming her idol into the ground, dealing physical damage to nearby enemies. For each enemy champion hit, a Tentacle is summoned for 8 seconds (up to a maximum of 6 summons).",
             "icon": "Leap of Faith.png",
             "leveling": [
               {
@@ -747,7 +837,7 @@
             ]
           },
           {
-            "description": "For the duration,  Harsh Lesson's  cooldown is halved, all Tentacles awakened by Illaoi are  untargetable, will not show their hitboxes, nor go dormant, and will take half the amount of time to make an attack.",
+            "description": "For the duration, Harsh Lesson's cooldown is halved, all Tentacles awakened by Illaoi are untargetable, will not show their hitboxes, nor go dormant, and will take half the amount of time to make an attack.",
             "icon": null,
             "leveling": []
           }

@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 800,
-    "selectionRadius": 108.333297729492,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 800,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 108.333297729492,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.645,
       "percent": 0.0,
       "perLevel": 3.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.644999980926513,
-    "attackCastTime": 0.289999991655349,
-    "attackTotalTime": 1.54999995231628,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.644999980926513,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.289999991655349,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.54999995231628,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 175,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.95,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -110,17 +200,17 @@
         "name": "Determination",
         "effects": [
           {
-            "description": "Innate: Xin Zhao gains a Determination I and Determination II stack for every  Wind Becomes Lightning strike or basic attack on-hit, up to a maximum of two.",
+            "description": "Innate: Xin Zhao gains a Determination I and Determination II stack for every Wind Becomes Lightning strike or basic attack on-hit, up to a maximum of two.",
             "icon": "Determination.png",
             "leveling": []
           },
           {
-            "description": "At two Determination I stacks, Xin Zhao's next  Wind Becomes Lightning strike or basic attack on-hit consumes the stacks to  heal him for  10 \u2212 78 (based on level) (+ 10% AD) (+ 40% AP) health.",
+            "description": "At two Determination I stacks, Xin Zhao's next Wind Becomes Lightning strike or basic attack on-hit consumes the stacks to heal him for 10 − 78 (based on level) (+ 10% AD) (+ 40% AP) health.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "At two Determination II stacks, Xin Zhao's next  Wind Becomes Lightning strike or basic attack on-attack consumes the stacks to deal 15 / 25 / 35 / 45% (based on level) AD  bonus physical damage.",
+            "description": "At two Determination II stacks, Xin Zhao's next Wind Becomes Lightning strike or basic attack on-attack consumes the stacks to deal 15 / 25 / 35 / 45% (based on level) AD bonus physical damage.",
             "icon": null,
             "leveling": []
           }
@@ -157,7 +247,7 @@
         "name": "Three Talon Strike",
         "effects": [
           {
-            "description": "Active: For the next 5 seconds, Xin Zhao's next 3 basic attacks on-attack each deal bonus physical damage and reduce his other ability  cooldowns by 1 second each.",
+            "description": "Active: For the next 5 seconds, Xin Zhao's next 3 basic attacks on-attack each deal bonus physical damage and reduce his other ability cooldowns by 1 second each.",
             "icon": "Three Talon Strike.png",
             "leveling": [
               {
@@ -237,12 +327,12 @@
             ]
           },
           {
-            "description": "Talon Strike is affected by  critical strike modifiers.",
+            "description": "Talon Strike is affected by critical strike modifiers.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "The third basic attack  knocks up the target for 0.75 seconds.",
+            "description": "The third basic attack knocks up the target for 0.75 seconds.",
             "icon": null,
             "leveling": []
           },
@@ -403,7 +493,7 @@
             ]
           },
           {
-            "description": "The first deals physical damage to all enemies in an arc, and the second deals physical damage in a line,  slowing all enemies hit by 50% for 1.5 seconds.",
+            "description": "The first deals physical damage to all enemies in an arc, and the second deals physical damage in a line, slowing all enemies hit by 50% for 1.5 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -483,7 +573,7 @@
             ]
           },
           {
-            "description": "Both strikes deal 50% reduced damage against minions, benefit from 33.3% of Xin Zhao's  life steal and the duration of his other abilities is paused during the effect.",
+            "description": "Both strikes deal 50% reduced damage against minions, benefit from 33.3% of Xin Zhao's life steal and the duration of his other abilities is paused during the effect.",
             "icon": null,
             "leveling": [
               {
@@ -623,7 +713,7 @@
         "innerRadius": null,
         "speed": null,
         "width": null,
-        "angle": "180\u00b0",
+        "angle": "180°",
         "castTime": null,
         "effectRadius": null,
         "targetRange": "900"
@@ -634,7 +724,7 @@
         "name": "Audacious Charge",
         "effects": [
           {
-            "description": "Active: Xin Zhao  dashes to the target enemy, dealing  magic damage to all nearby units and  slowing them by 30% for 0.5 seconds.",
+            "description": "Active: Xin Zhao dashes to the target enemy, dealing magic damage to all nearby units and slowing them by 30% for 0.5 seconds.",
             "icon": "Audacious Charge.png",
             "leveling": [
               {
@@ -677,7 +767,7 @@
             ]
           },
           {
-            "description": "Xin Zhao then gains  bonus attack speed for 5 seconds.",
+            "description": "Xin Zhao then gains bonus attack speed for 5 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -775,12 +865,12 @@
         "name": "Crescent Guard",
         "effects": [
           {
-            "description": "Passive - Challenge: The last enemy champion targeted by Xin Zhao's basic attacks or  Audacious Charge is  Challenged for 3 seconds.",
+            "description": "Passive - Challenge: The last enemy champion targeted by Xin Zhao's basic attacks or Audacious Charge is Challenged for 3 seconds.",
             "icon": "Challenge.png",
             "leveling": []
           },
           {
-            "description": "Active - Awareness: After 0.35 seconds, Xin Zhao sweeps around him, dealing physical damage to enemies hit, capped at 600 (+ 100% bonus AD) against monsters, while also  knocking back all non- Challenged enemies hit.",
+            "description": "Active - Awareness: After 0.35 seconds, Xin Zhao sweeps around him, dealing physical damage to enemies hit, capped at 600 (+ 100% bonus AD) against monsters, while also knocking back all non- Challenged enemies hit.",
             "icon": "Crescent Guard.png",
             "leveling": [
               {
@@ -827,7 +917,7 @@
             ]
           },
           {
-            "description": "For the next 3 seconds, Xin Zhao is  invulnerable against enemy  champions more than 450-units away from him. His basic attacks and other spell casts extend the duration by 0.3 seconds.",
+            "description": "For the next 3 seconds, Xin Zhao is invulnerable against enemy champions more than 450-units away from him. His basic attacks and other spell casts extend the duration by 0.3 seconds.",
             "icon": null,
             "leveling": []
           }

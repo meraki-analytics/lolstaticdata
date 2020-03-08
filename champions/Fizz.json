@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 108.333297729492,
-    "pathingRadius": 30,
-    "gameplayRadius": 55,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 108.333297729492,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 30,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 55,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.658,
       "percent": 0.0,
       "perLevel": 3.1,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.657999992370605,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0970000028610229,
+    "attackSpeedRatio": {
+      "flat": 0.657999992370605,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0970000028610229,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 175,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.95,
-    "aramDamageDealt": 1.05,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 0.9,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -109,7 +199,7 @@
         "name": "Nimble Fighter",
         "effects": [
           {
-            "description": "Innate: Fizz is permanently  ghosted, and takes 4 (+ 1% AP) reduced pre-mitigation damage from each tick of damage, up to a maximum of 50% reduction.",
+            "description": "Innate: Fizz is permanently ghosted, and takes 4 (+ 1% AP) reduced pre-mitigation damage from each tick of damage, up to a maximum of 50% reduction.",
             "icon": "Nimble Fighter.png",
             "leveling": []
           }
@@ -146,7 +236,7 @@
         "name": "Urchin Strike",
         "effects": [
           {
-            "description": "Active: Fizz  dashes a fixed distance towards the target enemy, dealing them  magic damage plus 100% AD physical damage.",
+            "description": "Active: Fizz dashes a fixed distance towards the target enemy, dealing them magic damage plus 100% AD physical damage.",
             "icon": "Urchin Strike.png",
             "leveling": [
               {
@@ -345,7 +435,7 @@
             ]
           },
           {
-            "description": "Active: Fizz's next basic attack is empowered, dealing bonus magic damage and gaining  50 bonus range.",
+            "description": "Active: Fizz's next basic attack is empowered, dealing bonus magic damage and gaining 50 bonus range.",
             "icon": null,
             "leveling": [
               {
@@ -388,7 +478,7 @@
             ]
           },
           {
-            "description": "If Seastone Trident kills its target, its  cooldown is reduced to 1 second and refunds  mana. Otherwise, if Seastone Trident doesn't kill its target, Fizz's basic attacks gain bonus on-hit magic damage for 5 seconds.",
+            "description": "If Seastone Trident kills its target, its cooldown is reduced to 1 second and refunds mana. Otherwise, if Seastone Trident doesn't kill its target, Fizz's basic attacks gain bonus on-hit magic damage for 5 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -528,12 +618,12 @@
         "name": "Playful",
         "effects": [
           {
-            "description": "Active: Fizz  vaults towards the target location, becoming  untargetable for up to 0.75 seconds while balancing on his trident. While balancing, Fizz gains the ability to cast  Trickster.",
+            "description": "Active: Fizz vaults towards the target location, becoming untargetable for up to 0.75 seconds while balancing on his trident. While balancing, Fizz gains the ability to cast Trickster.",
             "icon": "Playful.png",
             "leveling": []
           },
           {
-            "description": "Fizz then splashes onto the ground below him, dealing magic damage to nearby enemies and  slowing them for 2 seconds.",
+            "description": "Fizz then splashes onto the ground below him, dealing magic damage to nearby enemies and slowing them for 2 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -666,12 +756,12 @@
         "name": "Trickster",
         "effects": [
           {
-            "description": "Active: Fizz dismounts from his trident toward the target location in quick succession. Upon landing, he deals magic damage to nearby enemies. The damage dealt is the same as  Playful's, but in a smaller radius, and without applying the  slow.",
+            "description": "Active: Fizz dismounts from his trident toward the target location in quick succession. Upon landing, he deals magic damage to nearby enemies. The damage dealt is the same as Playful's, but in a smaller radius, and without applying the slow.",
             "icon": "Trickster.png",
             "leveling": []
           },
           {
-            "description": "Both  dashes may be directed separately.",
+            "description": "Both dashes may be directed separately.",
             "icon": null,
             "leveling": []
           }
@@ -708,7 +798,7 @@
         "name": "Chum the Waters",
         "effects": [
           {
-            "description": "Active: Fizz throws down a lure at the target location that attracts a shark,  revealing the affected area before emerging after 2 seconds, dealing magic damage,  knocking aside surrounding enemies and  slowing them for 2 seconds. The further the lure travels in its initial flight, the larger the shark that is attracted, increasing its slow, eruption radius and knockback distance.",
+            "description": "Active: Fizz throws down a lure at the target location that attracts a shark, revealing the affected area before emerging after 2 seconds, dealing magic damage, knocking aside surrounding enemies and slowing them for 2 seconds. The further the lure travels in its initial flight, the larger the shark that is attracted, increasing its slow, eruption radius and knockback distance.",
             "icon": "Chum the Waters.png",
             "leveling": []
           },
@@ -818,7 +908,7 @@
             ]
           },
           {
-            "description": "Enemy  champions can intercept the lure, which attaches to them and causes the shark to emerge at their position. The lure's holder is  slowed and  revealed for the duration and  knocked up for 1 second instead of away.",
+            "description": "Enemy champions can intercept the lure, which attaches to them and causes the shark to emerge at their position. The lure's holder is slowed and revealed for the duration and knocked up for 1 second instead of away.",
             "icon": null,
             "leveling": []
           }

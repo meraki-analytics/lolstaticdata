@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.688,
       "percent": 0.0,
       "perLevel": 3.3,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.259999990463256,
-    "attackTotalTime": 1.60000002384185,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.259999990463256,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.60000002384185,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -114,7 +204,7 @@
             "leveling": []
           },
           {
-            "description": "At 3 stacks, Resonance is consumed to deal 30 \u2212  140 (based on level) (+ 80% AP)  magic damage, increased by 50% against  monsters, dealing 45 \u2212  210 (based on level) (+ 120% AP), but capped at 600.",
+            "description": "At 3 stacks, Resonance is consumed to deal 30 − 140 (based on level) (+ 80% AP) magic damage, increased by 50% against monsters, dealing 45 − 210 (based on level) (+ 120% AP), but capped at 600.",
             "icon": null,
             "leveling": []
           },
@@ -124,7 +214,7 @@
             "leveling": []
           },
           {
-            "description": "Innate - Stolen Time: Triggering Resonance against a  champion grants 50 / 60 / 70 / 80% (based on level)  bonus movement speed for 2 / 2.5 / 3 (based on level) seconds.",
+            "description": "Innate - Stolen Time: Triggering Resonance against a champion grants 50 / 60 / 70 / 80% (based on level) bonus movement speed for 2 / 2.5 / 3 (based on level) seconds.",
             "icon": "Z-Drive Resonance 2.png",
             "leveling": []
           }
@@ -204,7 +294,7 @@
             ]
           },
           {
-            "description": "After traveling 700 units or upon hitting an enemy champion, the grenade slows down for 1.75 seconds, expanding and creating a Temporal Sickness field that  slows nearby enemies, while continuing to travel in its direction for another 190 units and expanding for another 50 units.",
+            "description": "After traveling 700 units or upon hitting an enemy champion, the grenade slows down for 1.75 seconds, expanding and creating a Temporal Sickness field that slows nearby enemies, while continuing to travel in its direction for another 190 units and expanding for another 50 units.",
             "icon": null,
             "leveling": [
               {
@@ -387,17 +477,17 @@
         "name": "Parallel Convergence",
         "effects": [
           {
-            "description": "Passive: Ekko's basic attacks deal 3% (+ 3% per 100 AP) of the target's missing health bonus magic damage to targets below  30% of their maximum health. The damage has a minimum threshold of 15 and is capped at 150 against  minions and  monsters.",
+            "description": "Passive: Ekko's basic attacks deal 3% (+ 3% per 100 AP) of the target's missing health bonus magic damage to targets below 30% of their maximum health. The damage has a minimum threshold of 15 and is capped at 150 against minions and monsters.",
             "icon": "Parallel Convergence.png",
             "leveling": []
           },
           {
-            "description": "Active: Ekko calls upon an afterimage that bats a device to the target location. After traveling over 3 seconds, the device expands to  slow enemies by 40%, only revealing itself to enemies in the last 1 second.",
+            "description": "Active: Ekko calls upon an afterimage that bats a device to the target location. After traveling over 3 seconds, the device expands to slow enemies by 40%, only revealing itself to enemies in the last 1 second.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "If Ekko enters the expansion within the next 1.5 seconds after it lands, it detonates to  shield him for 2 seconds and  stun any enemies within for 2.25 seconds.",
+            "description": "If Ekko enters the expansion within the next 1.5 seconds after it lands, it detonates to shield him for 2 seconds and stun any enemies within for 2.25 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -511,7 +601,7 @@
         "name": "Phase Dive",
         "effects": [
           {
-            "description": "Active: Ekko  dashes towards the target location. The next basic attack thereafter has  300 bonus range, deals bonus magic damage, and causes him to  blink within 125  range of the target.",
+            "description": "Active: Ekko dashes towards the target location. The next basic attack thereafter has 300 bonus range, deals bonus magic damage, and causes him to blink within 125 range of the target.",
             "icon": "Phase Dive.png",
             "leveling": [
               {
@@ -635,7 +725,7 @@
             "leveling": []
           },
           {
-            "description": "Active: Ekko  traces back to his afterimage, entering  stasis during the transportation, dealing magic damage to surrounding enemies on arrival and  healing himself.",
+            "description": "Active: Ekko traces back to his afterimage, entering stasis during the transportation, dealing magic damage to surrounding enemies on arrival and healing himself.",
             "icon": null,
             "leveling": [
               {
@@ -694,7 +784,18 @@
                       "% AP"
                     ]
                   },
-                  "increased by 3% per 1% of health lost in the past 4 seconds"
+                  {
+                    "values": [
+                      3,
+                      3,
+                      3
+                    ],
+                    "units": [
+                      "% per 1% of health lost in the past 4 seconds",
+                      "% per 1% of health lost in the past 4 seconds",
+                      "% per 1% of health lost in the past 4 seconds"
+                    ]
+                  }
                 ]
               }
             ]

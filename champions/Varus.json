@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.658,
       "percent": 0.0,
       "perLevel": 3,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.657999992370605,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.124561406672,
+    "attackSpeedRatio": {
+      "flat": 0.657999992370605,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.124561406672,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 575,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ARTILLERY",
@@ -110,7 +200,7 @@
         "name": "Living Vengeance",
         "effects": [
           {
-            "description": "Innate: Varus gains 40% (+ 30% bonus attack speed)  bonus attack speed for 5 seconds upon an enemy champion  takedown, and 20% (+ 15% bonus attack speed) bonus attack speed on non-champion kills.",
+            "description": "Innate: Varus gains 40% (+ 30% bonus attack speed) bonus attack speed for 5 seconds upon an enemy champion takedown, and 20% (+ 15% bonus attack speed) bonus attack speed on non-champion kills.",
             "icon": "Living Vengeance.png",
             "leveling": []
           }
@@ -147,17 +237,17 @@
         "name": "Piercing Arrow",
         "effects": [
           {
-            "description": "Active: Varus  charges for up to 4 seconds to gradually increase Piercing Arrow's  range and damage over the next 2 seconds, during which he is  pacified and  slowed by 20%. Piercing Arrow can be recast at any time within its duration.",
+            "description": "Active: Varus charges for up to 4 seconds to gradually increase Piercing Arrow's range and damage over the next 2 seconds, during which he is pacified and slowed by 20%. Piercing Arrow can be recast at any time within its duration.",
             "icon": "Piercing Arrow.png",
             "leveling": []
           },
           {
-            "description": "If the charge completes without reactivation, Piercing Arrow is cancelled, refunding  half of the mana cost.",
+            "description": "If the charge completes without reactivation, Piercing Arrow is cancelled, refunding half of the mana cost.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Recast: Varus fires a piercing arrow dealing  physical damage to all enemies struck, which is increased by 0% \u2212 50% (based on Channel time). The arrow's damage is reduced to 100% \u2212 33% (based on enemy hit).",
+            "description": "Recast: Varus fires a piercing arrow dealing physical damage to all enemies struck, which is increased by 0% − 50% (based on Channel time). The arrow's damage is reduced to 100% − 33% (based on enemy hit).",
             "icon": null,
             "leveling": [
               {
@@ -311,7 +401,7 @@
             ]
           },
           {
-            "description": "Detonating  Blight stacks on an enemy champion reduces Piercing Arrow's  cooldown by 3 seconds.",
+            "description": "Detonating Blight stacks on an enemy champion reduces Piercing Arrow's cooldown by 3 seconds.",
             "icon": null,
             "leveling": []
           }
@@ -379,7 +469,7 @@
         "angle": null,
         "castTime": null,
         "effectRadius": null,
-        "targetRange": "925 \u2212 1625 (based on channel time)"
+        "targetRange": "925 − 1625 (based on channel time)"
       }
     ],
     "W": [
@@ -387,7 +477,7 @@
         "name": "Blighted Quiver",
         "effects": [
           {
-            "description": "Passive: Varus' basic attacks deal  bonus magic damage and apply Blight for 6 seconds, stacking up to 3 times.",
+            "description": "Passive: Varus' basic attacks deal bonus magic damage and apply Blight for 6 seconds, stacking up to 3 times.",
             "icon": "Blighted Quiver.png",
             "leveling": [
               {
@@ -510,12 +600,12 @@
             ]
           },
           {
-            "description": "Active: Varus' next  Piercing Arrow deals 6% \u2212 14% (based on level) of the target's missing health bonus magic damage, increased by 0% \u2212 50% (based on Piercing Arrow channel time), for a maximum of 9% \u2212 21% (based on level) of the target's missing health. This damage is capped at 360 against monsters.",
+            "description": "Active: Varus' next Piercing Arrow deals 6% − 14% (based on level) of the target's missing health bonus magic damage, increased by 0% − 50% (based on Piercing Arrow channel time), for a maximum of 9% − 21% (based on level) of the target's missing health. This damage is capped at 360 against monsters.",
             "icon": "Blighted Quiver 2.png",
             "leveling": []
           },
           {
-            "description": "Blighted Quiver can be cast during the first 0.25 seconds of  Piercing Arrow. If the arrow is not fired within 5 seconds, Blighted Quiver is placed on a 1 second cooldown, or on full cooldown if the charge is canceled.",
+            "description": "Blighted Quiver can be cast during the first 0.25 seconds of Piercing Arrow. If the arrow is not fired within 5 seconds, Blighted Quiver is placed on a 1 second cooldown, or on full cooldown if the charge is canceled.",
             "icon": null,
             "leveling": []
           }
@@ -615,7 +705,7 @@
             ]
           },
           {
-            "description": "The area is desecrated for 4 seconds,  slowing all enemies within and applying  Grievous Wounds.",
+            "description": "The area is desecrated for 4 seconds, slowing all enemies within and applying Grievous Wounds.",
             "icon": null,
             "leveling": [
               {
@@ -713,7 +803,7 @@
         "name": "Chain of Corruption",
         "effects": [
           {
-            "description": "Active: Varus flings out a tendril of corruption that infects the first enemy champion hit, dealing magic damage and  rooting them for 2 seconds while inflicting them with full stacks of  Blight over 1.5 seconds.",
+            "description": "Active: Varus flings out a tendril of corruption that infects the first enemy champion hit, dealing magic damage and rooting them for 2 seconds while inflicting them with full stacks of Blight over 1.5 seconds.",
             "icon": "Chain of Corruption.png",
             "leveling": [
               {

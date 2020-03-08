@@ -20,6 +20,18 @@
       "perLevel": 0.5,
       "percentPerLevel": 0.0
     },
+    "mana": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
+    "manaRegen": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
     "armor": {
       "flat": 36,
       "percent": 0.0,
@@ -44,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 75,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 75,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 3.65,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.11999999731779,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.11999999731779,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 175,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.1,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -98,12 +200,12 @@
         "name": "Perseverance",
         "effects": [
           {
-            "description": "Innate: Garen  restores[ 1.5% \u2212  10.1% (based on level) of his maximum health every 5 seconds ][ 0.15% \u2212  1.01% (based on level) of his maximum health every 0.5 seconds ].",
+            "description": "Innate: Garen restores[ 1.5% − 10.1% (based on level) of his maximum health every 5 seconds ][ 0.15% − 1.01% (based on level) of his maximum health every 0.5 seconds ].",
             "icon": "Perseverance.png",
             "leveling": []
           },
           {
-            "description": "Perseverance is  interrupted for 7 seconds if Garen takes damage from epic  monsters,  turrets, or  champions, or if he is hit by an enemy ability.",
+            "description": "Perseverance is interrupted for 7 seconds if Garen takes damage from epic monsters, turrets, or champions, or if he is hit by an enemy ability.",
             "icon": null,
             "leveling": []
           }
@@ -140,7 +242,7 @@
         "name": "Decisive Strike",
         "effects": [
           {
-            "description": "Active: Garen  cleanses himself of all  slows and gains  30% bonus movement speed for a few seconds.",
+            "description": "Active: Garen cleanses himself of all slows and gains 30% bonus movement speed for a few seconds.",
             "icon": "Decisive Strike.png",
             "leveling": [
               {
@@ -167,7 +269,7 @@
             ]
           },
           {
-            "description": "Additionally, Garen's next basic attack within 4.5 seconds  lunges him towards the target, dealing  bonus physical damage and  silencing the target for 1.5 seconds.",
+            "description": "Additionally, Garen's next basic attack within 4.5 seconds lunges him towards the target, dealing bonus physical damage and silencing the target for 1.5 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -267,7 +369,7 @@
         "name": "Courage",
         "effects": [
           {
-            "description": "Passive: Garen permanently gains  0.25 bonus armor and  0.25 bonus magic resistance every time he kills an enemy, up to a maximum of 30 bonus resistances at 120 unit kills.",
+            "description": "Passive: Garen permanently gains 0.25 bonus armor and 0.25 bonus magic resistance every time he kills an enemy, up to a maximum of 30 bonus resistances at 120 unit kills.",
             "icon": "Courage.png",
             "leveling": []
           },
@@ -277,7 +379,7 @@
             "leveling": []
           },
           {
-            "description": "Active: Garen reduces incoming damage by 30% for a few seconds. For the first 0.75 seconds, Garen is additionally  shielded and gains 60%  tenacity.",
+            "description": "Active: Garen reduces incoming damage by 30% for a few seconds. For the first 0.75 seconds, Garen is additionally shielded and gains 60% tenacity.",
             "icon": null,
             "leveling": [
               {
@@ -393,7 +495,7 @@
         "name": "Judgment",
         "effects": [
           {
-            "description": "Active: Garen becomes  ghosted and rapidly spins his sword around his body 7 \u2212  \u221e (based on bonus attack speed) times over 3 seconds, dealing physical damage with each spin to nearby enemies. Judgment can  critically strike for (50% +  25%) bonus physical damage. The total damage is increased by 50% against non-epic monsters.",
+            "description": "Active: Garen becomes ghosted and rapidly spins his sword around his body 7 − ∞ (based on bonus attack speed) times over 3 seconds, dealing physical damage with each spin to nearby enemies. Judgment can critically strike for (50% + 25%) bonus physical damage. The total damage is increased by 50% against non-epic monsters.",
             "icon": "Judgment.png",
             "leveling": [
               {
@@ -557,12 +659,12 @@
             ]
           },
           {
-            "description": "The nearest enemy is dealt 25% bonus damage per spin. Enemy champions hit 6 times have their  armor reduced by 25% for 6 seconds. Hits after the 6th refresh the duration of the debuff.",
+            "description": "The nearest enemy is dealt 25% bonus damage per spin. Enemy champions hit 6 times have their armor reduced by 25% for 6 seconds. Hits after the 6th refresh the duration of the debuff.",
             "icon": "Judgment 3.png",
             "leveling": []
           },
           {
-            "description": "After 1 second, Garen can reactivate to cancel it immediately, reducing its  cooldown by its remaining duration.",
+            "description": "After 1 second, Garen can reactivate to cancel it immediately, reducing its cooldown by its remaining duration.",
             "icon": "Judgment 2.png",
             "leveling": []
           }
@@ -617,7 +719,7 @@
         "name": "Judgment",
         "effects": [
           {
-            "description": "Active: Garen becomes  ghosted and rapidly spins his sword around his body 7 \u2212  \u221e (based on bonus attack speed) times over 3 seconds, dealing physical damage with each spin to nearby enemies. Judgment can  critically strike for (50% +  25%) bonus physical damage. The total damage is increased by 50% against non-epic monsters.",
+            "description": "Active: Garen becomes ghosted and rapidly spins his sword around his body 7 − ∞ (based on bonus attack speed) times over 3 seconds, dealing physical damage with each spin to nearby enemies. Judgment can critically strike for (50% + 25%) bonus physical damage. The total damage is increased by 50% against non-epic monsters.",
             "icon": "Judgment.png",
             "leveling": [
               {
@@ -781,12 +883,12 @@
             ]
           },
           {
-            "description": "The nearest enemy is dealt 25% bonus damage per spin. Enemy champions hit 6 times have their  armor reduced by 25% for 6 seconds. Hits after the 6th refresh the duration of the debuff.",
+            "description": "The nearest enemy is dealt 25% bonus damage per spin. Enemy champions hit 6 times have their armor reduced by 25% for 6 seconds. Hits after the 6th refresh the duration of the debuff.",
             "icon": "Judgment 3.png",
             "leveling": []
           },
           {
-            "description": "After 1 second, Garen can reactivate to cancel it immediately, reducing its  cooldown by its remaining duration.",
+            "description": "After 1 second, Garen can reactivate to cancel it immediately, reducing its cooldown by its remaining duration.",
             "icon": "Judgment 2.png",
             "leveling": []
           }
@@ -843,7 +945,7 @@
         "name": "Demacian Justice",
         "effects": [
           {
-            "description": "Active: Garen gains  true sight of the target champion for 1 second, dealing them  true damage after a 0.5 second delay.",
+            "description": "Active: Garen gains true sight of the target champion for 1 second, dealing them true damage after a 0.5 second delay.",
             "icon": "Demacian Justice.png",
             "leveling": [
               {

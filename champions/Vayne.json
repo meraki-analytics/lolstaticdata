@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 575,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 575,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.658,
       "percent": 0.0,
       "perLevel": 3.3,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.657999992370605,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.124561406672,
+    "attackSpeedRatio": {
+      "flat": 0.657999992370605,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.124561406672,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -109,7 +199,7 @@
         "name": "Night Hunter",
         "effects": [
           {
-            "description": "Innate: Vayne gains  30 bonus movement speed when moving towards a nearby  visible enemy champion.",
+            "description": "Innate: Vayne gains 30 bonus movement speed when moving towards a nearby visible enemy champion.",
             "icon": "Night Hunter.png",
             "leveling": []
           },
@@ -151,7 +241,7 @@
         "name": "Tumble",
         "effects": [
           {
-            "description": "Active: Vayne  dashes forward, though not through terrain, and her next basic attack within 7 seconds deals  bonus physical damage.",
+            "description": "Active: Vayne dashes forward, though not through terrain, and her next basic attack within 7 seconds deals bonus physical damage.",
             "icon": "Tumble.png",
             "leveling": [
               {
@@ -254,12 +344,12 @@
         "name": "Silver Bolts",
         "effects": [
           {
-            "description": "Passive: Vayne's basic attacks and  Condemn apply a Silver Bolts stack for 3.5 seconds, up to 3 times. Attacking a new enemy removes all stacks from the previous target.",
+            "description": "Passive: Vayne's basic attacks and Condemn apply a Silver Bolts stack for 3.5 seconds, up to 3 times. Attacking a new enemy removes all stacks from the previous target.",
             "icon": "Silver Bolts.png",
             "leveling": []
           },
           {
-            "description": "The third stack consumes them all to deal  bonus true damage, with a minimum threshold, and capped at 200 against  monsters.",
+            "description": "The third stack consumes them all to deal bonus true damage, with a minimum threshold, and capped at 200 against monsters.",
             "icon": null,
             "leveling": [
               {
@@ -339,7 +429,7 @@
         "name": "Condemn",
         "effects": [
           {
-            "description": "Active: Vayne fires a heavy bolt at the target unit, dealing physical damage,  knocking them back 475 units, and applying a  Silver Bolts stack.",
+            "description": "Active: Vayne fires a heavy bolt at the target unit, dealing physical damage, knocking them back 475 units, and applying a Silver Bolts stack.",
             "icon": "Condemn.png",
             "leveling": [
               {
@@ -382,7 +472,7 @@
             ]
           },
           {
-            "description": "If the target collides with terrain, they take bonus physical damage and are  stunned for 1.5 seconds.",
+            "description": "If the target collides with terrain, they take bonus physical damage and are stunned for 1.5 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -533,7 +623,7 @@
         "name": "Final Hour",
         "effects": [
           {
-            "description": "Active: For a duration, Vayne gains bonus attack damage and triples  Night Hunter's bonus.",
+            "description": "Active: For a duration, Vayne gains bonus attack damage and triples Night Hunter's bonus.",
             "icon": "Final Hour.png",
             "leveling": [
               {
@@ -573,7 +663,7 @@
             ]
           },
           {
-            "description": "Additionally,  Tumble gains  cooldown reduction, and casting it grants  invisibility for 1 second.",
+            "description": "Additionally, Tumble gains cooldown reduction, and casting it grants invisibility for 1 second.",
             "icon": null,
             "leveling": [
               {
@@ -596,7 +686,7 @@
             ]
           },
           {
-            "description": "While active, whenever an enemy  champion damaged by Vayne dies within 3 seconds, Final Hour's duration is extended by 4 seconds, up to a maximum of the original duration.",
+            "description": "While active, whenever an enemy champion damaged by Vayne dies within 3 seconds, Final Hour's duration is extended by 4 seconds, up to a maximum of the original duration.",
             "icon": null,
             "leveling": [
               {

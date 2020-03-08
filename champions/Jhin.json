@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 800,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 800,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 3,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0,
-    "attackCastTime": 0.25,
-    "attackTotalTime": 1.60000002384185,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.25,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.60000002384185,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 0.9,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.2,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.2,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "CATCHER",
@@ -110,22 +200,22 @@
         "name": "Whisper",
         "effects": [
           {
-            "description": "Innate - Death In 4 Acts: Jhin's basic attacks consume ammunition, requiring him to  reload after attacking 4 times, which takes 2.5 seconds. Jhin will also begin reloading after 10 seconds of not being in combat, which can be interrupted by declaring an attack or casting an ability.",
+            "description": "Innate - Death In 4 Acts: Jhin's basic attacks consume ammunition, requiring him to reload after attacking 4 times, which takes 2.5 seconds. Jhin will also begin reloading after 10 seconds of not being in combat, which can be interrupted by declaring an attack or casting an ability.",
             "icon": "Whisper.png",
             "leveling": []
           },
           {
-            "description": "Jhin's fourth attack will  critically strike and deal 15 / 20 / 25% (based on level) of the target's missing health  bonus physical damage. This critical strike will occur versus structures but deals only (20% +  15%) AD bonus physical damage.",
+            "description": "Jhin's fourth attack will critically strike and deal 15 / 20 / 25% (based on level) of the target's missing health bonus physical damage. This critical strike will occur versus structures but deals only (20% + 15%) AD bonus physical damage.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Innate - Every Moment Matters: Jhin gains 4% \u2212 44% (based on level)[ (+ 0.4% per 1% critical strike chance) (+ 0.25% per 1% bonus attack speed) ][ (+ 40% of his critical strike chance) (+ 25% of his bonus attack speed) ] bonus  attack damage.",
+            "description": "Innate - Every Moment Matters: Jhin gains 4% − 44% (based on level)[ (+ 0.4% per 1% critical strike chance) (+ 0.25% per 1% bonus attack speed) ][ (+ 40% of his critical strike chance) (+ 25% of his bonus attack speed) ] bonus attack damage.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Additionally,  critical strikes grant Jhin 10% (+ 0.4% per 1% bonus attack speed)  bonus movement speed for 2 seconds.",
+            "description": "Additionally, critical strikes grant Jhin 10% (+ 0.4% per 1% bonus attack speed) bonus movement speed for 2 seconds.",
             "icon": null,
             "leveling": []
           }
@@ -141,7 +231,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The penalty to Jhin's critical damage also reduces the base damage ((100 + 100) \u00d7 0.75 rather than 100 + 100 \u00d7 0.75) and stacks with other sources (i.e  Infinity Edge) ((100 + 100 \u00d7 1.25) \u00d7 0.75).\n This penalty does not affect  Curtain Call.\n\n The 4th attack versus a structure is classified as a critical strike for effects such as  Statikk Shiv.\n The attack damage multiplier stacks additively with  Dragon Slayer's.\n Every Moment Matter's bonus AD will benefit from any amount of bonus attack speed, even in excess of an amount that would usually reach the attacks per second cap (2.5).\n The maximum modifier without attack speed is 84%.\n 44% base modifier at level 18.\n 40% from critical strike chance on account of the 100% cap.\n Attack speed slows will only affect Jhin's bonus attack damage from his passive and will ignore his attack speed as it is fixed.\n\n\n Attack damage reductions apply before the multiplier causing them to be stronger against Jhin than advertised or versus other champions.",
+        "notes": "The penalty to Jhin's critical damage also reduces the base damage ((100 + 100) × 0.75 rather than 100 + 100 × 0.75) and stacks with other sources (i.e  Infinity Edge) ((100 + 100 × 1.25) × 0.75).\n This penalty does not affect  Curtain Call.\n\n The 4th attack versus a structure is classified as a critical strike for effects such as  Statikk Shiv.\n The attack damage multiplier stacks additively with  Dragon Slayer's.\n Every Moment Matter's bonus AD will benefit from any amount of bonus attack speed, even in excess of an amount that would usually reach the attacks per second cap (2.5).\n The maximum modifier without attack speed is 84%.\n 44% base modifier at level 18.\n 40% from critical strike chance on account of the 100% cap.\n Attack speed slows will only affect Jhin's bonus attack damage from his passive and will ignore his attack speed as it is fixed.\n\n\n Attack damage reductions apply before the multiplier causing them to be stronger against Jhin than advertised or versus other champions.",
         "blurb": "Jhin's hand cannon, Whisper, is a precise instrument designed to deal superior damage. It fires at a fixed rate and carries only four shots. Jhin imbues the final bullet with dark magics to critically strike and deal bonus execute damage. Whenever Whisper crits, it inspires Jhin with a burst of movement speed.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -350,12 +440,12 @@
         "name": "Deadly Flourish",
         "effects": [
           {
-            "description": "Passive: Enemy  champions slowed by a  Lotus Trap or damaged by Jhin or his allies, are Caught Out for 4 seconds.",
+            "description": "Passive: Enemy champions slowed by a Lotus Trap or damaged by Jhin or his allies, are Caught Out for 4 seconds.",
             "icon": "Caught Out.png",
             "leveling": []
           },
           {
-            "description": "Active: Jhin fires a shot in the target direction that deals physical damage to all enemies in a line until colliding with an enemy  champion. Deals 75% damage against non-champions.",
+            "description": "Active: Jhin fires a shot in the target direction that deals physical damage to all enemies in a line until colliding with an enemy champion. Deals 75% damage against non-champions.",
             "icon": "Deadly Flourish.png",
             "leveling": [
               {
@@ -435,7 +525,7 @@
             ]
           },
           {
-            "description": "Caught Out champions are also  rooted, granting Jhin  Every Moment Matters'  bonus movement speed.",
+            "description": "Caught Out champions are also rooted, granting Jhin Every Moment Matters' bonus movement speed.",
             "icon": null,
             "leveling": [
               {
@@ -531,12 +621,12 @@
         "name": "Deadly Flourish",
         "effects": [
           {
-            "description": "Passive: Enemy  champions slowed by a  Lotus Trap or damaged by Jhin or his allies, are Caught Out for 4 seconds.",
+            "description": "Passive: Enemy champions slowed by a Lotus Trap or damaged by Jhin or his allies, are Caught Out for 4 seconds.",
             "icon": "Caught Out.png",
             "leveling": []
           },
           {
-            "description": "Active: Jhin fires a shot in the target direction that deals physical damage to all enemies in a line until colliding with an enemy  champion. Deals 75% damage against non-champions.",
+            "description": "Active: Jhin fires a shot in the target direction that deals physical damage to all enemies in a line until colliding with an enemy champion. Deals 75% damage against non-champions.",
             "icon": "Deadly Flourish.png",
             "leveling": [
               {
@@ -616,7 +706,7 @@
             ]
           },
           {
-            "description": "Caught Out champions are also  rooted, granting Jhin  Every Moment Matters'  bonus movement speed.",
+            "description": "Caught Out champions are also rooted, granting Jhin Every Moment Matters' bonus movement speed.",
             "icon": null,
             "leveling": [
               {
@@ -724,12 +814,12 @@
             "leveling": []
           },
           {
-            "description": "Active: Jhin places a Lotus Trap at the target location which  stealths and arms after a brief delay, lasting up to 180 seconds. The Lotus Trap blooms upon enemy contact,  revealing enemies in the area for 4 seconds.",
+            "description": "Active: Jhin places a Lotus Trap at the target location which stealths and arms after a brief delay, lasting up to 180 seconds. The Lotus Trap blooms upon enemy contact, revealing enemies in the area for 4 seconds.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Blooming Lotus Traps  slow enemies for 35% for 2 seconds before detonating, dealing magic damage. Lotus Traps deal 65% damage against non-champions and champions recently hit by one.",
+            "description": "Blooming Lotus Traps slow enemies for 35% for 2 seconds before detonating, dealing magic damage. Lotus Traps deal 65% damage against non-champions and champions recently hit by one.",
             "icon": null,
             "leveling": [
               {
@@ -918,12 +1008,12 @@
         "name": "Curtain Call",
         "effects": [
           {
-            "description": "Active: Jhin begins channeling, gaining a wider field of view, though not a larger  vision range, during which he has the ability to cancel or recast Curtain Call up to four times. Jhin cannot cancel the channeling or fire the first shot until after 1 second, and has 10 seconds in which to use all casts.",
+            "description": "Active: Jhin begins channeling, gaining a wider field of view, though not a larger vision range, during which he has the ability to cancel or recast Curtain Call up to four times. Jhin cannot cancel the channeling or fire the first shot until after 1 second, and has 10 seconds in which to use all casts.",
             "icon": "Curtain Call.png",
             "leveling": []
           },
           {
-            "description": "Recast: After 0.25 seconds, Jhin fires a round in the target direction that deals physical damage to all enemies hit, increased by 0% \u2212 300% (based on target's missing health), until colliding with an enemy  champion,  revealing the traveled area for 0.5 seconds and all enemies hit for 2 seconds while also  slowing them by 80% for 0.5 seconds.",
+            "description": "Recast: After 0.25 seconds, Jhin fires a round in the target direction that deals physical damage to all enemies hit, increased by 0% − 300% (based on target's missing health), until colliding with an enemy champion, revealing the traveled area for 0.5 seconds and all enemies hit for 2 seconds while also slowing them by 80% for 0.5 seconds.",
             "icon": "Curtain Call 2.png",
             "leveling": [
               {
@@ -987,7 +1077,7 @@
             ]
           },
           {
-            "description": "The fourth shot will  critically strike for (100% +  25%) bonus physical damage.",
+            "description": "The fourth shot will critically strike for (100% + 25%) bonus physical damage.",
             "icon": "Curtain Call 3.png",
             "leveling": []
           }
@@ -1044,7 +1134,7 @@
         "innerRadius": null,
         "speed": "5000",
         "width": null,
-        "angle": "60\u00b0",
+        "angle": "60°",
         "castTime": null,
         "effectRadius": "3500",
         "targetRange": null
@@ -1053,12 +1143,12 @@
         "name": "Curtain Call",
         "effects": [
           {
-            "description": "Active: Jhin begins channeling, gaining a wider field of view, though not a larger  vision range, during which he has the ability to cancel or recast Curtain Call up to four times. Jhin cannot cancel the channeling or fire the first shot until after 1 second, and has 10 seconds in which to use all casts.",
+            "description": "Active: Jhin begins channeling, gaining a wider field of view, though not a larger vision range, during which he has the ability to cancel or recast Curtain Call up to four times. Jhin cannot cancel the channeling or fire the first shot until after 1 second, and has 10 seconds in which to use all casts.",
             "icon": "Curtain Call.png",
             "leveling": []
           },
           {
-            "description": "Recast: After 0.25 seconds, Jhin fires a round in the target direction that deals physical damage to all enemies hit, increased by 0% \u2212 300% (based on target's missing health), until colliding with an enemy  champion,  revealing the traveled area for 0.5 seconds and all enemies hit for 2 seconds while also  slowing them by 80% for 0.5 seconds.",
+            "description": "Recast: After 0.25 seconds, Jhin fires a round in the target direction that deals physical damage to all enemies hit, increased by 0% − 300% (based on target's missing health), until colliding with an enemy champion, revealing the traveled area for 0.5 seconds and all enemies hit for 2 seconds while also slowing them by 80% for 0.5 seconds.",
             "icon": "Curtain Call 2.png",
             "leveling": [
               {
@@ -1122,7 +1212,7 @@
             ]
           },
           {
-            "description": "The fourth shot will  critically strike for (100% +  25%) bonus physical damage.",
+            "description": "The fourth shot will critically strike for (100% + 25%) bonus physical damage.",
             "icon": "Curtain Call 3.png",
             "leveling": []
           }
@@ -1179,7 +1269,7 @@
         "innerRadius": null,
         "speed": "5000",
         "width": null,
-        "angle": "60\u00b0",
+        "angle": "60°",
         "castTime": null,
         "effectRadius": "3500",
         "targetRange": null
@@ -1188,12 +1278,12 @@
         "name": "Curtain Call",
         "effects": [
           {
-            "description": "Active: Jhin begins channeling, gaining a wider field of view, though not a larger  vision range, during which he has the ability to cancel or recast Curtain Call up to four times. Jhin cannot cancel the channeling or fire the first shot until after 1 second, and has 10 seconds in which to use all casts.",
+            "description": "Active: Jhin begins channeling, gaining a wider field of view, though not a larger vision range, during which he has the ability to cancel or recast Curtain Call up to four times. Jhin cannot cancel the channeling or fire the first shot until after 1 second, and has 10 seconds in which to use all casts.",
             "icon": "Curtain Call.png",
             "leveling": []
           },
           {
-            "description": "Recast: After 0.25 seconds, Jhin fires a round in the target direction that deals physical damage to all enemies hit, increased by 0% \u2212 300% (based on target's missing health), until colliding with an enemy  champion,  revealing the traveled area for 0.5 seconds and all enemies hit for 2 seconds while also  slowing them by 80% for 0.5 seconds.",
+            "description": "Recast: After 0.25 seconds, Jhin fires a round in the target direction that deals physical damage to all enemies hit, increased by 0% − 300% (based on target's missing health), until colliding with an enemy champion, revealing the traveled area for 0.5 seconds and all enemies hit for 2 seconds while also slowing them by 80% for 0.5 seconds.",
             "icon": "Curtain Call 2.png",
             "leveling": [
               {
@@ -1257,7 +1347,7 @@
             ]
           },
           {
-            "description": "The fourth shot will  critically strike for (100% +  25%) bonus physical damage.",
+            "description": "The fourth shot will critically strike for (100% + 25%) bonus physical damage.",
             "icon": "Curtain Call 3.png",
             "leveling": []
           }
@@ -1314,7 +1404,7 @@
         "innerRadius": null,
         "speed": "5000",
         "width": null,
-        "angle": "60\u00b0",
+        "angle": "60°",
         "castTime": null,
         "effectRadius": "3500",
         "targetRange": null

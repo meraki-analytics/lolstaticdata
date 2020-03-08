@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 90,
-    "pathingRadius": 35,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 90,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 3.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.67,
-    "attackCastTime": 0.333000004291534,
-    "attackTotalTime": 1.54999995231628,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.67,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.333000004291534,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.54999995231628,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "BURST",
@@ -111,17 +201,17 @@
         "name": "Inherent Glamour",
         "effects": [
           {
-            "description": "Innate: Neeko is offered a selection of  allied champions to take their appearance. Once selected, there's a 2.5 seconds delay before another champion can be selected.",
+            "description": "Innate: Neeko is offered a selection of allied champions to take their appearance. Once selected, there's a 2.5 seconds delay before another champion can be selected.",
             "icon": "Inherent Glamour.png",
             "leveling": []
           },
           {
-            "description": "While disguised, Neeko can use basic attacks while keeping her form. Taking damage from enemy champions, or casting either  Blooming Burst or  Tangle-Barbs breaks the illusion and puts Inherent Glamour on  cooldown.",
+            "description": "While disguised, Neeko can use basic attacks while keeping her form. Taking damage from enemy champions, or casting either Blooming Burst or Tangle-Barbs breaks the illusion and puts Inherent Glamour on cooldown.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "When disguised, Neeko can select herself to deactivate her disguise, putting Inherent Glamour on a 2-second  cooldown.",
+            "description": "When disguised, Neeko can select herself to deactivate her disguise, putting Inherent Glamour on a 2-second cooldown.",
             "icon": null,
             "leveling": []
           }
@@ -204,7 +294,7 @@
         "name": "Blooming Burst",
         "effects": [
           {
-            "description": "Active: Neeko propels a seed into a target area dealing  magic damage to enemies within.",
+            "description": "Active: Neeko propels a seed into a target area dealing magic damage to enemies within.",
             "icon": "Blooming Burst.png",
             "leveling": [
               {
@@ -247,7 +337,7 @@
             ]
           },
           {
-            "description": "If the seed kills an enemy unit or damages a champion or large  monster, it will bloom again after a short delay to deal magic damage. This cannot happen more than twice per Blooming Burst.",
+            "description": "If the seed kills an enemy unit or damages a champion or large monster, it will bloom again after a short delay to deal magic damage. This cannot happen more than twice per Blooming Burst.",
             "icon": null,
             "leveling": [
               {
@@ -398,7 +488,7 @@
         "name": "Shapesplitter",
         "effects": [
           {
-            "description": "Passive: Basic attacks on-hit grant Neeko a stack of Shapesplitter, up to a maximum of two. At 2 stacks, Neeko's next basic attack on-attack consumes the stacks to turn her attack into a  non-projectile, dealing bonus magic damage and granting her  bonus movement speed for 1 second.",
+            "description": "Passive: Basic attacks on-hit grant Neeko a stack of Shapesplitter, up to a maximum of two. At 2 stacks, Neeko's next basic attack on-attack consumes the stacks to turn her attack into a non-projectile, dealing bonus magic damage and granting her bonus movement speed for 1 second.",
             "icon": "Shapesplitter.png",
             "leveling": [
               {
@@ -462,7 +552,7 @@
             ]
           },
           {
-            "description": "Active: Neeko becomes  invisible for 0.5 seconds, sending a temporary clone of her  current form sprinting in the target direction for 3 seconds and up to 900 units away. The clone is  untargetable for the first 0.5 seconds.",
+            "description": "Active: Neeko becomes invisible for 0.5 seconds, sending a temporary clone of her current form sprinting in the target direction for 3 seconds and up to 900 units away. The clone is untargetable for the first 0.5 seconds.",
             "icon": null,
             "leveling": []
           },
@@ -546,7 +636,7 @@
         "name": "Tangle-Barbs",
         "effects": [
           {
-            "description": "Active: Neeko slings a magical spiral in a target direction, dealing magic damage and  rooting enemies it passes through.",
+            "description": "Active: Neeko slings a magical spiral in a target direction, dealing magic damage and rooting enemies it passes through.",
             "icon": "Tangle-Barbs.png",
             "leveling": [
               {
@@ -708,12 +798,12 @@
         "name": "Pop Blossom",
         "effects": [
           {
-            "description": "Active: Neeko winds up over 1.25 seconds, creating a zone around her. The zone is invisible to enemies while she is  disguised.",
+            "description": "Active: Neeko winds up over 1.25 seconds, creating a zone around her. The zone is invisible to enemies while she is disguised.",
             "icon": "Pop Blossom.png",
             "leveling": []
           },
           {
-            "description": "Neeko then  shields herself for 2 seconds, increased for each enemy champion nearby, as she leaps into the air for 0.6 seconds.",
+            "description": "Neeko then shields herself for 2 seconds, increased for each enemy champion nearby, as she leaps into the air for 0.6 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -806,7 +896,7 @@
             ]
           },
           {
-            "description": "Upon landing, Neeko bursts with spiritual energy, dealing magic damage and  stunning nearby enemies for 1.25 seconds.",
+            "description": "Upon landing, Neeko bursts with spiritual energy, dealing magic damage and stunning nearby enemies for 1.25 seconds.",
             "icon": null,
             "leveling": [
               {

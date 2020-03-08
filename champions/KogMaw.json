@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 900,
-    "selectionRadius": 130,
-    "pathingRadius": 30,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 900,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 130,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 30,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.665,
       "percent": 0.0,
       "perLevel": 2.65,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.665000021457672,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.13377659022808,
+    "attackSpeedRatio": {
+      "flat": 0.665000021457672,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.13377659022808,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 500,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 0.9,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "MAGE",
@@ -109,7 +199,7 @@
         "name": "Icathian Surprise",
         "effects": [
           {
-            "description": "Innate: Upon taking fatal damage, Kog'Maw remains active for 4 seconds, becoming  pacified,  invulnerable,  untargetable and gaining up to  40% bonus movement speed over the duration. He then explodes, dealing 125 \u2212 550 (based on level)  true damage to all nearby enemies.",
+            "description": "Innate: Upon taking fatal damage, Kog'Maw remains active for 4 seconds, becoming pacified, invulnerable, untargetable and gaining up to 40% bonus movement speed over the duration. He then explodes, dealing 125 − 550 (based on level) true damage to all nearby enemies.",
             "icon": "Icathian Surprise.png",
             "leveling": []
           }
@@ -146,7 +236,7 @@
         "name": "Caustic Spittle",
         "effects": [
           {
-            "description": "Passive: Kog'Maw gains  bonus attack speed.",
+            "description": "Passive: Kog'Maw gains bonus attack speed.",
             "icon": "Caustic Spittle.png",
             "leveling": [
               {
@@ -173,7 +263,7 @@
             ]
           },
           {
-            "description": "Active: Kog'Maw launches a corrosive  projectile in a target direction, dealing  magic damage to the first enemy it hits and   reducing their  armor and  magic resistance for 4 seconds.",
+            "description": "Active: Kog'Maw launches a corrosive projectile in a target direction, dealing magic damage to the first enemy it hits and reducing their armor and magic resistance for 4 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -308,7 +398,7 @@
         "name": "Bio-Arcane Barrage",
         "effects": [
           {
-            "description": "Active: For the next 8 seconds, Kog'Maw's basic attacks gain  bonus range and deal bonus magic damage on-hit against non- structures, capped at 100 against  minions and  monsters.",
+            "description": "Active: For the next 8 seconds, Kog'Maw's basic attacks gain bonus range and deal bonus magic damage on-hit against non- structures, capped at 100 against minions and monsters.",
             "icon": "Bio-Arcane Barrage.png",
             "leveling": [
               {
@@ -443,7 +533,7 @@
         "name": "Void Ooze",
         "effects": [
           {
-            "description": "Active: Kog'Maw spews a ball of ooze in the target direction, dealing magic damage and  slowing enemies for 1 second.",
+            "description": "Active: Kog'Maw spews a ball of ooze in the target direction, dealing magic damage and slowing enemies for 1 second.",
             "icon": "Void Ooze.png",
             "leveling": [
               {
@@ -507,7 +597,7 @@
             ]
           },
           {
-            "description": "The ooze lingers for 4 seconds,  slowing all enemies within the area for an additional 0.25 seconds.",
+            "description": "The ooze lingers for 4 seconds, slowing all enemies within the area for an additional 0.25 seconds.",
             "icon": null,
             "leveling": []
           }
@@ -583,7 +673,7 @@
         "name": "Living Artillery",
         "effects": [
           {
-            "description": "Active: Kog'Maw launches a ball of acid into the air that drops after 0.6 seconds at the target location, dealing magic damage, increased by 0% \u2212 50% (based on target's missing health), and  revealing enemies hit for 2 seconds.",
+            "description": "Active: Kog'Maw launches a ball of acid into the air that drops after 0.6 seconds at the target location, dealing magic damage, increased by 0% − 50% (based on target's missing health), and revealing enemies hit for 2 seconds.",
             "icon": "Living Artillery.png",
             "leveling": [
               {
@@ -712,14 +802,25 @@
             ]
           },
           {
-            "description": "Living Artillery's damage is doubled against enemies below  40% maximum health. Each subsequent Living Artillery within the next 8 seconds costs an additional  40 mana, capping at  400 per cast.",
+            "description": "Living Artillery's damage is doubled against enemies below 40% maximum health. Each subsequent Living Artillery within the next 8 seconds costs an additional 40 mana, capping at 400 per cast.",
             "icon": null,
             "leveling": []
           }
         ],
         "cost": {
           "modifiers": [
-            "40 \u2212 400 (based on casts)"
+            {
+              "values": [
+                0,
+                0,
+                0
+              ],
+              "units": [
+                "40 − 400 (based on casts)",
+                "40 − 400 (based on casts)",
+                "40 − 400 (based on casts)"
+              ]
+            }
           ]
         },
         "cooldown": {

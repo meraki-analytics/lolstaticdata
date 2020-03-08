@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 350,
-    "selectionRadius": 135,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 350,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 135,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.11999999731779,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.11999999731779,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 150,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ENCHANTER",
@@ -111,7 +201,7 @@
         "name": "Bravado",
         "effects": [
           {
-            "description": "Innate: After casting an ability, Taric's next two basic attacks within 4 seconds gain  100% total attack speed, each dealing 25 \u2212 93 (based on level) (+ 15% bonus armor)  bonus magic damage and reducing the  cooldowns of his basic abilities by 1 second.",
+            "description": "Innate: After casting an ability, Taric's next two basic attacks within 4 seconds gain 100% total attack speed, each dealing 25 − 93 (based on level) (+ 15% bonus armor) bonus magic damage and reducing the cooldowns of his basic abilities by 1 second.",
             "icon": "Bravado.png",
             "leveling": []
           }
@@ -127,7 +217,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The attacks will apply  on-hit effects and can  critically strike as normal.\n  Critical strikes do not interact with Bravado's bonus damage.\n\n The more cooldown reduction taric has the less bravado will reduce his cooldowns from 1 to 0.60 seconds (from 0% to 40% cooldown reduction).\n The empowered attacks will not apply the bonus damage against structures but will reduce Taric's cooldowns.\n The empowered basic attacks can be  dodged or  blocked but will still reduce Taric's cooldowns.\n Being  blinded does not block Bravado's bonus magic damage or the  cooldown reduction.",
+        "notes": "The attacks will apply  on-hit effects and can  critically strike as normal.\n  Critical strikes do not interact with Bravado's bonus damage.\n\n The on-hit cooldown reduction scales with the  cooldown reduction stat; with 40% CDR, Bravado reduces 0.6 seconds of cooldown.\n This means each Bravado attack reduces a constant:\n 33.33% for  Starlight's Touch.\n 6.67% for  Bastion.\n 5.88 / 6.33 / 6.79 / 7.24 / 7.69% for  Dazzle.\n\n\n The empowered attacks will not apply the bonus damage against structures but will reduce Taric's cooldowns.\n The empowered basic attacks can be  dodged or  blocked but will still reduce Taric's cooldowns.\n Being  blinded does not block Bravado's bonus magic damage or the  cooldown reduction.",
         "blurb": "Spellcasts empower Taric's next 2 basic attacks to deal bonus magic damage, reduce his spell cooldowns, and attack in quick succession.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -148,7 +238,7 @@
         "name": "Starlight's Touch",
         "effects": [
           {
-            "description": "Passive: Taric stores a charge of Starlight's Touch periodically, up to a maximum at once.  Bravado empowered attacks grant one charge.",
+            "description": "Passive: Taric stores a charge of Starlight's Touch periodically, up to a maximum at once. Bravado empowered attacks grant one charge.",
             "icon": "Starlight's Touch.png",
             "leveling": [
               {
@@ -175,7 +265,7 @@
             ]
           },
           {
-            "description": "Active: Taric  heals himself and all nearby allied champions for 30 (+ 20% AP) (+ 1% of Taric's maximum health) per stored charge at the time of cast, up to a maximum of 150 (+ 100% AP) (+ 5% of Taric's maximum health) at 5 charges.",
+            "description": "Active: Taric heals himself and all nearby allied champions for 30 (+ 20% AP) (+ 1% of Taric's maximum health) per stored charge at the time of cast, up to a maximum of 150 (+ 100% AP) (+ 5% of Taric's maximum health) at 5 charges.",
             "icon": null,
             "leveling": []
           }
@@ -257,7 +347,7 @@
         "name": "Bastion",
         "effects": [
           {
-            "description": "Passive: Taric gains  bonus armor and links to his ally. While tethered, the bonus armor and Taric's abilities are replicated on the ally, though the effects do not stack.",
+            "description": "Passive: Taric gains bonus armor and links to his ally. While tethered, the bonus armor and Taric's abilities are replicated on the ally, though the effects do not stack.",
             "icon": "Bastion.png",
             "leveling": [
               {
@@ -284,7 +374,7 @@
             ]
           },
           {
-            "description": "Active: Taric  shields himself and the target allied champion for 2.5 seconds, blessing them with the Bastion link.",
+            "description": "Active: Taric shields himself and the target allied champion for 2.5 seconds, blessing them with the Bastion link.",
             "icon": "Bastion 2.png",
             "leveling": [
               {
@@ -385,7 +475,7 @@
         "name": "Bastion",
         "effects": [
           {
-            "description": "Passive: Taric gains  bonus armor and links to his ally. While tethered, the bonus armor and Taric's abilities are replicated on the ally, though the effects do not stack.",
+            "description": "Passive: Taric gains bonus armor and links to his ally. While tethered, the bonus armor and Taric's abilities are replicated on the ally, though the effects do not stack.",
             "icon": "Bastion.png",
             "leveling": [
               {
@@ -412,7 +502,7 @@
             ]
           },
           {
-            "description": "Active: Taric  shields himself and the target allied champion for 2.5 seconds, blessing them with the Bastion link.",
+            "description": "Active: Taric shields himself and the target allied champion for 2.5 seconds, blessing them with the Bastion link.",
             "icon": "Bastion 2.png",
             "leveling": [
               {
@@ -515,7 +605,7 @@
         "name": "Dazzle",
         "effects": [
           {
-            "description": "Active: Taric projects a beam of starlight towards the target location, erupting after a 1 second delay, dealing magic damage to all enemies hit and  stunning them for 1.25 seconds.",
+            "description": "Active: Taric projects a beam of starlight towards the target location, erupting after a 1 second delay, dealing magic damage to all enemies hit and stunning them for 1.25 seconds.",
             "icon": "Dazzle.png",
             "leveling": [
               {
@@ -645,7 +735,7 @@
         "name": "Cosmic Radiance",
         "effects": [
           {
-            "description": "Active: After a 2.5-second delay, cosmic energy descends upon Taric and all nearby allied champions, rendering them  invulnerable for 2.5 seconds.",
+            "description": "Active: After a 2.5-second delay, cosmic energy descends upon Taric and all nearby allied champions, rendering them invulnerable for 2.5 seconds.",
             "icon": "Cosmic Radiance.png",
             "leveling": []
           }

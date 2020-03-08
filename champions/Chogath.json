@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 500,
-    "selectionRadius": 130,
-    "pathingRadius": 50,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 500,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 130,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 50,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 1.44,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0810000002384185,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0810000002384185,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "MAGE",
@@ -110,7 +200,7 @@
         "name": "Carnivore",
         "effects": [
           {
-            "description": "Innate: Whenever Cho'Gath kills an enemy or destroys an enemy structure, he restores  20 \u2212 71 (based on level) health and  3.5 \u2212 7.75 (based on level) mana.",
+            "description": "Innate: Whenever Cho'Gath kills an enemy or destroys an enemy structure, he restores 20 − 71 (based on level) health and 3.5 − 7.75 (based on level) mana.",
             "icon": "Carnivore.png",
             "leveling": []
           }
@@ -147,7 +237,7 @@
         "name": "Rupture",
         "effects": [
           {
-            "description": "Active: Cho'Gath gains  sight of the target area which, after a 0.625 seconds delay, he ruptures dealing  magic damage and  knocking up enemies hit for 1 second,  slowing them by 60% for 1.5 seconds afterwards.",
+            "description": "Active: Cho'Gath gains sight of the target area which, after a 0.625 seconds delay, he ruptures dealing magic damage and knocking up enemies hit for 1 second, slowing them by 60% for 1.5 seconds afterwards.",
             "icon": "Rupture.png",
             "leveling": [
               {
@@ -261,7 +351,7 @@
         "name": "Feral Scream",
         "effects": [
           {
-            "description": "Active: Cho'Gath roars in the target direction, dealing magic damage to enemies in a cone and  silencing them for a duration.",
+            "description": "Active: Cho'Gath roars in the target direction, dealing magic damage to enemies in a cone and silencing them for a duration.",
             "icon": "Feral Scream.png",
             "leveling": [
               {
@@ -385,7 +475,7 @@
         "innerRadius": null,
         "speed": null,
         "width": null,
-        "angle": "60\u00b0",
+        "angle": "60°",
         "castTime": null,
         "effectRadius": null,
         "targetRange": "650"
@@ -396,7 +486,7 @@
         "name": "Vorpal Spikes",
         "effects": [
           {
-            "description": "Active: Cho'Gath's next 3 basic attacks within 6 seconds have  50 bonus range and launch a volley of spikes in a line, dealing magic damage and applying a decaying  slow over the next 1.5 seconds to enemies hit.",
+            "description": "Active: Cho'Gath's next 3 basic attacks within 6 seconds have 50 bonus range and launch a volley of spikes in a line, dealing magic damage and applying a decaying slow over the next 1.5 seconds to enemies hit.",
             "icon": "Vorpal Spikes.png",
             "leveling": [
               {
@@ -605,7 +695,7 @@
         "name": "Feast",
         "effects": [
           {
-            "description": "Active: Cho'Gath attempts to eat the target enemy, dealing  true damage. Against non-champions, the base damage is increased to 1000.",
+            "description": "Active: Cho'Gath attempts to eat the target enemy, dealing true damage. Against non-champions, the base damage is increased to 1000.",
             "icon": "Feast.png",
             "leveling": [
               {
@@ -657,7 +747,7 @@
             "leveling": []
           },
           {
-            "description": "Each stack grants  bonus health, which can stack up to 255 times, as well as  bonus attack range and increased size that stack up to 17 / 13 / 10 (based on Rank) times, for a maximum  75 bonus attack range.",
+            "description": "Each stack grants bonus health, which can stack up to 255 times, as well as bonus attack range and increased size that stack up to 17 / 13 / 10 (based on Rank) times, for a maximum 75 bonus attack range.",
             "icon": null,
             "leveling": [
               {

@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 800,
-    "selectionRadius": 100,
-    "pathingRadius": 30,
-    "gameplayRadius": 55,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 800,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 30,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 55,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.656,
       "percent": 0.0,
       "perLevel": 1.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.656000018119812,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.151993364095687,
+    "attackSpeedRatio": {
+      "flat": 0.656000018119812,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.151993364095687,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 525,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.05,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -109,7 +199,7 @@
         "name": "Draw a Bead",
         "effects": [
           {
-            "description": "Innate: The  range of Tristana's basic attacks,  Explosive Charge and  Buster Shot is increased by 0 \u2212 136 (based on level) for a total of 525 \u2212 661 (based on level) range.",
+            "description": "Innate: The range of Tristana's basic attacks, Explosive Charge and Buster Shot is increased by 0 − 136 (based on level) for a total of 525 − 661 (based on level) range.",
             "icon": "Draw a Bead.png",
             "leveling": []
           }
@@ -146,7 +236,7 @@
         "name": "Rapid Fire",
         "effects": [
           {
-            "description": "Active: Tristana gains  bonus attack speed for 7 seconds.",
+            "description": "Active: Tristana gains bonus attack speed for 7 seconds.",
             "icon": "Rapid Fire.png",
             "leveling": [
               {
@@ -225,7 +315,7 @@
         "name": "Rocket Jump",
         "effects": [
           {
-            "description": "Active: Tristana  jumps to the target location, dealing  magic damage to all nearby enemies on impact and  slowing them by 60%.",
+            "description": "Active: Tristana jumps to the target location, dealing magic damage to all nearby enemies on impact and slowing them by 60%.",
             "icon": "Rocket Jump.png",
             "leveling": [
               {
@@ -289,7 +379,7 @@
             ]
           },
           {
-            "description": "On enemy champion  takedowns or upon detonating  Explosive Charge at maximum stacks on an enemy champion, Rocket Jump's  cooldown is reset.",
+            "description": "On enemy champion takedowns or upon detonating Explosive Charge at maximum stacks on an enemy champion, Rocket Jump's cooldown is reset.",
             "icon": null,
             "leveling": []
           }
@@ -365,7 +455,7 @@
         "name": "Explosive Charge",
         "effects": [
           {
-            "description": "Passive: Enemies explode when killed by Tristana's basic attacks, dealing magic damage to all nearby enemies, including  structures.",
+            "description": "Passive: Enemies explode when killed by Tristana's basic attacks, dealing magic damage to all nearby enemies, including structures.",
             "icon": "Explosive Charge.png",
             "leveling": [
               {
@@ -408,7 +498,7 @@
             ]
           },
           {
-            "description": "Active: Tristana places an explosive charge on the target enemy or enemy turret. After 4 seconds the charge explodes, dealing  physical damage to nearby enemies, including  structures. The explosion radius is increased when used on a  turret.",
+            "description": "Active: Tristana places an explosive charge on the target enemy or enemy turret. After 4 seconds the charge explodes, dealing physical damage to nearby enemies, including structures. The explosion radius is increased when used on a turret.",
             "icon": null,
             "leveling": [
               {
@@ -642,7 +732,7 @@
         "angle": null,
         "castTime": null,
         "effectRadius": "210 / 300 / 500",
-        "targetRange": "525 \u2212 661 (based on level)"
+        "targetRange": "525 − 661 (based on level)"
       }
     ],
     "R": [
@@ -650,7 +740,7 @@
         "name": "Buster Shot",
         "effects": [
           {
-            "description": "Active: Tristana fires a massive cannonball at the target enemy, dealing magic damage and  knocking back the target and all enemies around them.",
+            "description": "Active: Tristana fires a massive cannonball at the target enemy, dealing magic damage and knocking back the target and all enemies around them.",
             "icon": "Buster Shot.png",
             "leveling": [
               {
@@ -757,7 +847,7 @@
         "angle": null,
         "castTime": null,
         "effectRadius": "200",
-        "targetRange": "525 \u2212 661 (based on level)"
+        "targetRange": "525 − 661 (based on level)"
       }
     ]
   },

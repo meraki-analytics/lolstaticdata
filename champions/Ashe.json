@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 100,
-    "criticalStrikeDamageModifier": 100,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.658,
       "percent": 0.0,
       "perLevel": 3.33,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.657999992370605,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0807017534971237,
+    "attackSpeedRatio": {
+      "flat": 0.657999992370605,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0807017534971237,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 600,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 0.95,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "MARKSMAN",
@@ -109,12 +199,12 @@
         "name": "Frost Shot",
         "effects": [
           {
-            "description": "Innate - Frost Shot: Ashe's basic attacks and abilities apply Frost to enemies,  slowing them by 20% \u2212  30% (based on level) for 2 seconds and causing subsequent basic attacks against them to deal 10% (+ (100% +  25%) critical strike chance) AD  bonus physical damage while they remain  slowed.",
+            "description": "Innate - Frost Shot: Ashe's basic attacks and abilities apply Frost to enemies, slowing them by 20% − 30% (based on level) for 2 seconds and causing subsequent basic attacks against them to deal 10% (+ (100% + 25%) critical strike chance) AD bonus physical damage while they remain slowed.",
             "icon": "Frost Shot.png",
             "leveling": []
           },
           {
-            "description": "Innate - Critical Slow: Ashe's  critical strikes double Frost's slow strength to 40% \u2212  60% (based on level), decaying over 1 second to its normal strength.",
+            "description": "Innate - Critical Slow: Ashe's critical strikes double Frost's slow strength to 40% − 60% (based on level), decaying over 1 second to its normal strength.",
             "icon": "Frost Shot 2.png",
             "leveling": []
           }
@@ -149,12 +239,12 @@
         "name": "Frost Shot",
         "effects": [
           {
-            "description": "Innate - Frost Shot: Ashe's basic attacks and abilities apply Frost to enemies,  slowing them by 20% \u2212  30% (based on level) for 2 seconds and causing subsequent basic attacks against them to deal 10% (+ (100% +  25%) critical strike chance) AD  bonus physical damage while they remain  slowed.",
+            "description": "Innate - Frost Shot: Ashe's basic attacks and abilities apply Frost to enemies, slowing them by 20% − 30% (based on level) for 2 seconds and causing subsequent basic attacks against them to deal 10% (+ (100% + 25%) critical strike chance) AD bonus physical damage while they remain slowed.",
             "icon": "Frost Shot.png",
             "leveling": []
           },
           {
-            "description": "Innate - Critical Slow: Ashe's  critical strikes double Frost's slow strength to 40% \u2212  60% (based on level), decaying over 1 second to its normal strength.",
+            "description": "Innate - Critical Slow: Ashe's critical strikes double Frost's slow strength to 40% − 60% (based on level), decaying over 1 second to its normal strength.",
             "icon": "Frost Shot 2.png",
             "leveling": []
           }
@@ -191,12 +281,12 @@
         "name": "Ranger's Focus",
         "effects": [
           {
-            "description": "Passive - Focus: While Ranger's Focus is inactive, Ashe's basic attacks on-attack against  non-structures grant Focus for 4 seconds, stacking up to 4 times, with the duration also refreshing on structure attacks. After 4 seconds, each stack thereafter will fall off every second.",
+            "description": "Passive - Focus: While Ranger's Focus is inactive, Ashe's basic attacks on-attack against non-structures grant Focus for 4 seconds, stacking up to 4 times, with the duration also refreshing on structure attacks. After 4 seconds, each stack thereafter will fall off every second.",
             "icon": "Focus.png",
             "leveling": []
           },
           {
-            "description": "Active: Ashe gains  bonus attack speed for 4 seconds and causes each of her basic attacks to fire a flurry of five arrows.",
+            "description": "Active: Ashe gains bonus attack speed for 4 seconds and causes each of her basic attacks to fire a flurry of five arrows.",
             "icon": "Ranger's Focus.png",
             "leveling": [
               {
@@ -223,7 +313,7 @@
             ]
           },
           {
-            "description": "Flurries trigger on-hit effects only once, and each arrow deals modified physical damage that benefits from  Frost Shots and  life steal.",
+            "description": "Flurries trigger on-hit effects only once, and each arrow deals modified physical damage that benefits from Frost Shots and life steal.",
             "icon": "Ranger's Focus 2.png",
             "leveling": [
               {
@@ -306,7 +396,7 @@
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": "On-hit",
-        "notes": "Ranger's Focus first bolt deals  basic damage with the subsequent 4 bolts dealing a non-reactive damage type (e.g.  default damage or  proc damage).  The entire effect is classified as a basic attack on a script-level, which disables  Ravenous Hunter, but is considered an ability for other effects (i.e  Sap Magic), which is likely due to a mistaken script-level tag.\n Although Ranger's Focus has no actual cooldown, 4 stacks of focus are needed before Ranger's Focus can be reactivated. The time before being able to reactivate Ranger's Focus is 6.08 \u2212 1.6 (based on attack speed) seconds.\n The multi-attack effect is similar to  Lightslinger and  Double Strike, except that on-hit effects aren't applied by the extra attacks.\n Each arrow from a flurry applies  Frost and the bonus damage from  Frost Shot is calculated individually per arrow.\n Similarly, since a flurry is 5 instances of physical damage,  The Black Cleaver allows her to cleave the enemy target 5 times per flurry.\n  Amumu's  Tantrum will reduce each arrow's damage, for a total of 10 \u2212 50 (based on E Rank) per flurry.\n\n Each additional arrow from  Runaan's Hurricane will also split into 5 arrows.\n The arrows are evenly distributed among secondary enemies but one enemy cannot be hit by more than 5 arrows.\n The flurry will trigger on-hit effects once to each enemy hit.\n Wind's Fury's splash damage is affected by the damage modifier of Ranger's Focus Rank 1 and doesn't increase based on its Rank - always dealing[ (8.4% AD) damage per arrow ][ (42% AD) damage per flurry ]to each secondary target.\n\n The Flurry attack can be used on structures.",
+        "notes": "Ranger's Focus first bolt deals  basic damage with the subsequent 4 bolts dealing a non-reactive damage type (e.g.  default damage or  proc damage).  The entire effect is classified as a basic attack on a script-level, which disables  Ravenous Hunter, but is considered an ability for other effects (i.e  Sap Magic), which is likely due to a mistaken script-level tag.\n Although Ranger's Focus has no actual cooldown, 4 stacks of focus are needed before Ranger's Focus can be reactivated. The time before being able to reactivate Ranger's Focus is 6.08 − 1.6 (based on attack speed) seconds.\n The multi-attack effect is similar to  Lightslinger and  Double Strike, except that on-hit effects aren't applied by the extra attacks.\n Each arrow from a flurry applies  Frost and the bonus damage from  Frost Shot is calculated individually per arrow.\n Similarly, since a flurry is 5 instances of physical damage,  The Black Cleaver allows her to cleave the enemy target 5 times per flurry.\n  Amumu's  Tantrum will reduce each arrow's damage, for a total of 10 − 50 (based on E Rank) per flurry.\n\n Each additional arrow from  Runaan's Hurricane will also split into 5 arrows.\n The arrows are evenly distributed among secondary enemies but one enemy cannot be hit by more than 5 arrows.\n The flurry will trigger on-hit effects once to each enemy hit.\n Wind's Fury's splash damage is affected by the damage modifier of Ranger's Focus Rank 1 and doesn't increase based on its Rank - always dealing[ (8.4% AD) damage per arrow ][ (42% AD) damage per flurry ]to each secondary target.\n\n The Flurry attack can be used on structures.",
         "blurb": "Ashe builds up Focus by attacking. At maximum Focus, Ashe can cast Ranger's Focus to consume all stacks of Focus, temporarily increasing her Attack Speed and transforming her basic attack into a powerful flurry attack for the duration.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -325,12 +415,12 @@
         "name": "Ranger's Focus",
         "effects": [
           {
-            "description": "Passive - Focus: While Ranger's Focus is inactive, Ashe's basic attacks on-attack against  non-structures grant Focus for 4 seconds, stacking up to 4 times, with the duration also refreshing on structure attacks. After 4 seconds, each stack thereafter will fall off every second.",
+            "description": "Passive - Focus: While Ranger's Focus is inactive, Ashe's basic attacks on-attack against non-structures grant Focus for 4 seconds, stacking up to 4 times, with the duration also refreshing on structure attacks. After 4 seconds, each stack thereafter will fall off every second.",
             "icon": "Focus.png",
             "leveling": []
           },
           {
-            "description": "Active: Ashe gains  bonus attack speed for 4 seconds and causes each of her basic attacks to fire a flurry of five arrows.",
+            "description": "Active: Ashe gains bonus attack speed for 4 seconds and causes each of her basic attacks to fire a flurry of five arrows.",
             "icon": "Ranger's Focus.png",
             "leveling": [
               {
@@ -357,7 +447,7 @@
             ]
           },
           {
-            "description": "Flurries trigger on-hit effects only once, and each arrow deals modified physical damage that benefits from  Frost Shots and  life steal.",
+            "description": "Flurries trigger on-hit effects only once, and each arrow deals modified physical damage that benefits from Frost Shots and life steal.",
             "icon": "Ranger's Focus 2.png",
             "leveling": [
               {
@@ -440,7 +530,7 @@
         "projectile": "TRUE",
         "onHitEffects": null,
         "occurrence": "On-hit",
-        "notes": "Ranger's Focus first bolt deals  basic damage with the subsequent 4 bolts dealing a non-reactive damage type (e.g.  default damage or  proc damage).  The entire effect is classified as a basic attack on a script-level, which disables  Ravenous Hunter, but is considered an ability for other effects (i.e  Sap Magic), which is likely due to a mistaken script-level tag.\n Although Ranger's Focus has no actual cooldown, 4 stacks of focus are needed before Ranger's Focus can be reactivated. The time before being able to reactivate Ranger's Focus is 6.08 \u2212 1.6 (based on attack speed) seconds.\n The multi-attack effect is similar to  Lightslinger and  Double Strike, except that on-hit effects aren't applied by the extra attacks.\n Each arrow from a flurry applies  Frost and the bonus damage from  Frost Shot is calculated individually per arrow.\n Similarly, since a flurry is 5 instances of physical damage,  The Black Cleaver allows her to cleave the enemy target 5 times per flurry.\n  Amumu's  Tantrum will reduce each arrow's damage, for a total of 10 \u2212 50 (based on E Rank) per flurry.\n\n Each additional arrow from  Runaan's Hurricane will also split into 5 arrows.\n The arrows are evenly distributed among secondary enemies but one enemy cannot be hit by more than 5 arrows.\n The flurry will trigger on-hit effects once to each enemy hit.\n Wind's Fury's splash damage is affected by the damage modifier of Ranger's Focus Rank 1 and doesn't increase based on its Rank - always dealing[ (8.4% AD) damage per arrow ][ (42% AD) damage per flurry ]to each secondary target.\n\n The Flurry attack can be used on structures.",
+        "notes": "Ranger's Focus first bolt deals  basic damage with the subsequent 4 bolts dealing a non-reactive damage type (e.g.  default damage or  proc damage).  The entire effect is classified as a basic attack on a script-level, which disables  Ravenous Hunter, but is considered an ability for other effects (i.e  Sap Magic), which is likely due to a mistaken script-level tag.\n Although Ranger's Focus has no actual cooldown, 4 stacks of focus are needed before Ranger's Focus can be reactivated. The time before being able to reactivate Ranger's Focus is 6.08 − 1.6 (based on attack speed) seconds.\n The multi-attack effect is similar to  Lightslinger and  Double Strike, except that on-hit effects aren't applied by the extra attacks.\n Each arrow from a flurry applies  Frost and the bonus damage from  Frost Shot is calculated individually per arrow.\n Similarly, since a flurry is 5 instances of physical damage,  The Black Cleaver allows her to cleave the enemy target 5 times per flurry.\n  Amumu's  Tantrum will reduce each arrow's damage, for a total of 10 − 50 (based on E Rank) per flurry.\n\n Each additional arrow from  Runaan's Hurricane will also split into 5 arrows.\n The arrows are evenly distributed among secondary enemies but one enemy cannot be hit by more than 5 arrows.\n The flurry will trigger on-hit effects once to each enemy hit.\n Wind's Fury's splash damage is affected by the damage modifier of Ranger's Focus Rank 1 and doesn't increase based on its Rank - always dealing[ (8.4% AD) damage per arrow ][ (42% AD) damage per flurry ]to each secondary target.\n\n The Flurry attack can be used on structures.",
         "blurb": "Ashe builds up Focus by attacking. At maximum Focus, Ashe can cast Ranger's Focus to consume all stacks of Focus, temporarily increasing her Attack Speed and transforming her basic attack into a powerful flurry attack for the duration.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -461,7 +551,7 @@
         "name": "Volley",
         "effects": [
           {
-            "description": "Active: Ashe fires 9 arrows in a cone in the target direction, each dealing physical damage to the first enemy struck, and applying  Critical Slow to enemy  champions.",
+            "description": "Active: Ashe fires 9 arrows in a cone in the target direction, each dealing physical damage to the first enemy struck, and applying Critical Slow to enemy champions.",
             "icon": "Volley.png",
             "leveling": [
               {
@@ -569,7 +659,7 @@
         "innerRadius": null,
         "speed": "2000",
         "width": null,
-        "angle": "57.5\u00b0",
+        "angle": "57.5°",
         "castTime": null,
         "effectRadius": "1200",
         "targetRange": null
@@ -585,7 +675,7 @@
             "leveling": []
           },
           {
-            "description": "Active: Ashe sends a hawk spirit toward the target location,  exposing the area along its path for 2 seconds and in a large radius at its destination for 5 seconds.",
+            "description": "Active: Ashe sends a hawk spirit toward the target location, exposing the area along its path for 2 seconds and in a large radius at its destination for 5 seconds.",
             "icon": null,
             "leveling": []
           }
@@ -667,7 +757,7 @@
         "name": "Enchanted Crystal Arrow",
         "effects": [
           {
-            "description": "Active: Ashe fires a  missile of ice in the target direction,  revealing the area it flies through for 1 second. The arrow shatters upon hitting an  enemy champion, dealing  magic damage,  stunning them for 1 \u2212 3.5 (based on distance traveled) seconds, and revealing the area around them for 1 second.",
+            "description": "Active: Ashe fires a missile of ice in the target direction, revealing the area it flies through for 1 second. The arrow shatters upon hitting an enemy champion, dealing magic damage, stunning them for 1 − 3.5 (based on distance traveled) seconds, and revealing the area around them for 1 second.",
             "icon": "Enchanted Crystal Arrow.png",
             "leveling": [
               {

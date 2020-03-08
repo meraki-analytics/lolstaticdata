@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 625,
-    "selectionRadius": 100,
-    "pathingRadius": 30,
-    "gameplayRadius": 55,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 30,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 55,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.579,
       "percent": 0.0,
       "perLevel": 1.36,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.578999996185302,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.10420524328947,
+    "attackSpeedRatio": {
+      "flat": 0.578999996185302,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.10420524328947,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 625,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "BURST",
@@ -114,7 +204,7 @@
             "leveling": []
           },
           {
-            "description": "Energized: When Annie succeeds in her next cast damaging ability, she consumes all Pyromania stacks and  stuns enemies hit for 1.25 / 1.5 / 1.75 (based on level) seconds.",
+            "description": "Energized: When Annie succeeds in her next cast damaging ability, she consumes all Pyromania stacks and stuns enemies hit for 1.25 / 1.5 / 1.75 (based on level) seconds.",
             "icon": null,
             "leveling": []
           },
@@ -156,7 +246,7 @@
         "name": "Disintegrate",
         "effects": [
           {
-            "description": "Active: Annie hurls a fireball at the target enemy, dealing  magic damage.",
+            "description": "Active: Annie hurls a fireball at the target enemy, dealing magic damage.",
             "icon": "Disintegrate.png",
             "leveling": [
               {
@@ -199,7 +289,7 @@
             ]
           },
           {
-            "description": "If Disintegrate kills its target, it refunds its  mana cost and half of its  cooldown is immediately refreshed.",
+            "description": "If Disintegrate kills its target, it refunds its mana cost and half of its cooldown is immediately refreshed.",
             "icon": null,
             "leveling": []
           }
@@ -378,7 +468,7 @@
         "innerRadius": null,
         "speed": null,
         "width": null,
-        "angle": "49.52\u00b0",
+        "angle": "49.52°",
         "castTime": "0.25",
         "effectRadius": "600",
         "targetRange": null
@@ -389,7 +479,7 @@
         "name": "Molten Shield",
         "effects": [
           {
-            "description": "Active: Annie wraps herself and  Tibbers in a fiery aura, gaining  30% \u2212 60% (based on level) bonus movement speed decaying over 1.5 seconds, and reducing damage taken for 3 seconds.",
+            "description": "Active: Annie wraps herself and Tibbers in a fiery aura, gaining 30% − 60% (based on level) bonus movement speed decaying over 1.5 seconds, and reducing damage taken for 3 seconds.",
             "icon": "Molten Shield.png",
             "leveling": [
               {
@@ -416,7 +506,7 @@
             ]
           },
           {
-            "description": "Enemies who deal basic attack damage on Annie or  Tibbers during this time are dealt magic damage.",
+            "description": "Enemies who deal basic attack damage on Annie or Tibbers during this time are dealt magic damage.",
             "icon": null,
             "leveling": [
               {
@@ -530,7 +620,7 @@
         "name": "Summon: Tibbers",
         "effects": [
           {
-            "description": "First Cast: Annie summons  Tibbers to the target location in a burst of flame, dealing magic damage to surrounding enemies.",
+            "description": "First Cast: Annie summons Tibbers to the target location in a burst of flame, dealing magic damage to surrounding enemies.",
             "icon": "Summon Tibbers.png",
             "leveling": [
               {

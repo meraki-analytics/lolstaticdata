@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 125,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.644,
       "percent": 0.0,
       "perLevel": 2.61,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.643999993801116,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.11999999731779,
+    "attackSpeedRatio": {
+      "flat": 0.643999993801116,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.11999999731779,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.05,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 0.9,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 0.95,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ENCHANTER",
@@ -110,7 +200,7 @@
         "name": "Surging Tides",
         "effects": [
           {
-            "description": "Innate: All allied champions touched by any of Nami's abilities gain  60 (+ 20% AP) bonus movement speed for 1.5 seconds,[ doubled ][ 120 (+ 40% AP) ] when touched by  Tidal Wave.",
+            "description": "Innate: All allied champions touched by any of Nami's abilities gain 60 (+ 20% AP) bonus movement speed for 1.5 seconds,[ doubled ][ 120 (+ 40% AP) ] when touched by Tidal Wave.",
             "icon": "Surging Tides.png",
             "leveling": []
           }
@@ -147,7 +237,7 @@
         "name": "Aqua Prison",
         "effects": [
           {
-            "description": "Active: Nami sends a bubble towards the targeted area, dealing  magic damage to all enemies hit,  revealing them, and  suspending them for 1.5 seconds.",
+            "description": "Active: Nami sends a bubble towards the targeted area, dealing magic damage to all enemies hit, revealing them, and suspending them for 1.5 seconds.",
             "icon": "Aqua Prison.png",
             "leveling": [
               {
@@ -261,12 +351,12 @@
         "name": "Ebb and Flow",
         "effects": [
           {
-            "description": "Active: Nami unleashes a stream of water onto the target  champion or herself, which then bounces to nearby unaffected champions up to twice, alternating between enemies and allies and herself.",
+            "description": "Active: Nami unleashes a stream of water onto the target champion or herself, which then bounces to nearby unaffected champions up to twice, alternating between enemies and allies and herself.",
             "icon": "Ebb and Flow.png",
             "leveling": []
           },
           {
-            "description": "Ebb and Flow  heals allies and deals magic damage to enemies, with each bounce being ((7.5 per 100 AP) - 15)% more effective as the first one.",
+            "description": "Ebb and Flow heals allies and deals magic damage to enemies, with each bounce being ((7.5 per 100 AP) - 15)% more effective as the first one.",
             "icon": null,
             "leveling": [
               {
@@ -491,7 +581,7 @@
         "name": "Tidecaller's Blessing",
         "effects": [
           {
-            "description": "Active: Nami blesses the target allied champion or herself for 6 seconds, causing her target's next three basic attacks or abilities to each deal bonus magic damage and  slow their target for 1 second.",
+            "description": "Active: Nami blesses the target allied champion or herself for 6 seconds, causing her target's next three basic attacks or abilities to each deal bonus magic damage and slow their target for 1 second.",
             "icon": "Tidecaller's Blessing.png",
             "leveling": [
               {
@@ -608,7 +698,7 @@
             ]
           },
           {
-            "description": "Empowered abilities that apply  area damage or  persistent area damage only deal 33% \u2212 66% (based on level) of the bonus damage to non-champions.",
+            "description": "Empowered abilities that apply area damage or persistent area damage only deal 33% − 66% (based on level) of the bonus damage to non-champions.",
             "icon": null,
             "leveling": []
           }
@@ -684,7 +774,7 @@
         "name": "Tidal Wave",
         "effects": [
           {
-            "description": "Active: Nami summons a tidal wave that surges forth, dealing magic damage to all units it hits,  knocking them up for 0.5 seconds and then  slowing them for 2 \u2212  4 (based on distance traveled) seconds.",
+            "description": "Active: Nami summons a tidal wave that surges forth, dealing magic damage to all units it hits, knocking them up for 0.5 seconds and then slowing them for 2 − 4 (based on distance traveled) seconds.",
             "icon": "Tidal Wave.png",
             "leveling": [
               {

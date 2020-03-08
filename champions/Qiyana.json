@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 800,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 800,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2.1,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.230000004172325,
-    "attackTotalTime": 1.5,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.230000004172325,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.5,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 150,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.9,
-    "aramDamageDealt": 1.1,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.9,
-    "urfDamageDealt": 1.05,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -109,7 +199,7 @@
         "name": "Royal Privilege",
         "effects": [
           {
-            "description": "Innate: Qiyana's next basic attack or damaging ability deals 15 \u2212 83 (based on level) (+ 55% bonus AD) (+ 30% AP)  bonus physical damage to all enemies hit.",
+            "description": "Innate: Qiyana's next basic attack or damaging ability deals 15 − 83 (based on level) (+ 55% bonus AD) (+ 30% AP) bonus physical damage to all enemies hit.",
             "icon": "Royal Privilege.png",
             "leveling": []
           },
@@ -119,7 +209,7 @@
             "leveling": []
           },
           {
-            "description": "Royal Privilege's cooldown is  reset on all targets upon gathering or changing an  Element.",
+            "description": "Royal Privilege's cooldown is reset on all targets upon gathering or changing an Element.",
             "icon": null,
             "leveling": []
           }
@@ -236,7 +326,7 @@
             ]
           },
           {
-            "description": "Upon gathering an  Element, Edge of Ixtal is upgraded to Elemental Wrath and its cooldown is  reset.",
+            "description": "Upon gathering an Element, Edge of Ixtal is upgraded to Elemental Wrath and its cooldown is reset.",
             "icon": null,
             "leveling": []
           }
@@ -310,7 +400,7 @@
         "name": "Elemental Wrath",
         "effects": [
           {
-            "description": "Active: Qiyana consumes her current Element and  hurls her blade, detonating in a line upon colliding with an enemy or reaching maximum range, and applying a bonus effect based on the consumed Element.",
+            "description": "Active: Qiyana consumes her current Element and hurls her blade, detonating in a line upon colliding with an enemy or reaching maximum range, and applying a bonus effect based on the consumed Element.",
             "icon": "false",
             "leveling": []
           },
@@ -395,12 +485,12 @@
             ]
           },
           {
-            "description": "Brush: The blade raises a grass trail behind for 3.5 seconds, granting Qiyana  invisibility and  20% bonus movement speed until she attacks or exits.",
+            "description": "Brush: The blade raises a grass trail behind for 3.5 seconds, granting Qiyana invisibility and 20% bonus movement speed until she attacks or exits.",
             "icon": "Edge of Ixtal Brush.png",
             "leveling": []
           },
           {
-            "description": "River:  Roots for 0.5 seconds, then  slows by 20% for 1 second.",
+            "description": "River: Roots for 0.5 seconds, then slows by 20% for 1 second.",
             "icon": "Edge of Ixtal River.png",
             "leveling": []
           },
@@ -554,7 +644,7 @@
         "name": "Terrashape",
         "effects": [
           {
-            "description": "Passive: While holding an Element, Qiyana gains  bonus attack speed,  25 bonus range, her basic attacks and basic abilities deal  bonus magic damage, and she gains out-of-combat  bonus movement speed while moving near the Element currently being held.",
+            "description": "Passive: While holding an Element, Qiyana gains bonus attack speed, 25 bonus range, her basic attacks and basic abilities deal bonus magic damage, and she gains out-of-combat bonus movement speed while moving near the Element currently being held.",
             "icon": "Terrashape.png",
             "leveling": [
               {
@@ -655,7 +745,7 @@
             ]
           },
           {
-            "description": "Active: Qiyana  dashes towards a target location, gathering an Element of the nearest  Brush,  River or  Terrain she targeted.",
+            "description": "Active: Qiyana dashes towards a target location, gathering an Element of the nearest Brush, River or Terrain she targeted.",
             "icon": null,
             "leveling": []
           },
@@ -736,7 +826,7 @@
         "name": "Audacity",
         "effects": [
           {
-            "description": "Active: Qiyana  dashes a fixed distance towards the target unit, dealing physical damage.",
+            "description": "Active: Qiyana dashes a fixed distance towards the target unit, dealing physical damage.",
             "icon": "Audacity.png",
             "leveling": [
               {
@@ -779,7 +869,7 @@
             ]
           },
           {
-            "description": "Casting  Edge of Ixtal during Audacity will aim at the dash target.",
+            "description": "Casting Edge of Ixtal during Audacity will aim at the dash target.",
             "icon": null,
             "leveling": []
           }
@@ -855,12 +945,12 @@
         "name": "Supreme Display of Talent",
         "effects": [
           {
-            "description": "Active: Qiyana sends a windblast in the target direction that  knocks back enemies. The windblast stops upon hitting terrain.",
+            "description": "Active: Qiyana sends a windblast in the target direction that knocks back enemies. The windblast stops upon hitting terrain.",
             "icon": "Supreme Display of Talent.png",
             "leveling": []
           },
           {
-            "description": "The windblast then creates a shockwave across any River or Brush it passes through, as well as around the borders of terrain it reaches, dealing physical damage, with the percentage damage capped against monsters, and  stunning enemies for 1 \u2212 0.5 (based on proximity) seconds.",
+            "description": "The windblast then creates a shockwave across any River or Brush it passes through, as well as around the borders of terrain it reaches, dealing physical damage, with the percentage damage capped against monsters, and stunning enemies for 1 − 0.5 (based on proximity) seconds.",
             "icon": null,
             "leveling": [
               {

@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 125,
-    "pathingRadius": 25.7665996551513,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 25.7665996551513,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 1,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.100000001490116,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.100000001490116,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 175,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.9,
-    "urfDamageDealt": 1.1,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -110,17 +200,17 @@
         "name": "Hemorrhage",
         "effects": [
           {
-            "description": "Innate: Dealing damage to non- structure targets with basic attacks on-attack or abilities, causes them to bleed every 1.25 seconds for 5 seconds, dealing 13 \u2212 30 (based on level) (+ 30% bonus AD)  physical damage over the duration. This can stack up to 5 times for a maximum of 65 \u2212 150 (based on level) (+ 150% bonus AD) physical damage over the duration. The total damage is increased by 75% against monsters.",
+            "description": "Innate: Dealing damage to non- structure targets with basic attacks on-attack or abilities, causes them to bleed every 1.25 seconds for 5 seconds, dealing 13 − 30 (based on level) (+ 30% bonus AD) physical damage over the duration. This can stack up to 5 times for a maximum of 65 − 150 (based on level) (+ 150% bonus AD) physical damage over the duration. The total damage is increased by 75% against monsters.",
             "icon": "Hemorrhage.png",
             "leveling": []
           },
           {
-            "description": "Upon applying full Hemorrhage stacks to an enemy  champion or killing one with  Noxian Guillotine, Darius gains Noxian Might for 5 seconds.",
+            "description": "Upon applying full Hemorrhage stacks to an enemy champion or killing one with Noxian Guillotine, Darius gains Noxian Might for 5 seconds.",
             "icon": "Hemorrhage 3.png",
             "leveling": []
           },
           {
-            "description": "Noxian Might: Darius gains 30 \u2212 230 (based on level) bonus attack damage and instantly applies full Hemorrhage stacks through his usual means.",
+            "description": "Noxian Might: Darius gains 30 − 230 (based on level) bonus attack damage and instantly applies full Hemorrhage stacks through his usual means.",
             "icon": "Hemorrhage 2.png",
             "leveling": []
           }
@@ -157,7 +247,7 @@
         "name": "Decimate",
         "effects": [
           {
-            "description": "Active: Darius hefts his axe,  disarming himself for 0.75 seconds. He then swings it around himself, dealing physical damage to nearby enemies, reduced to 35% against enemies hit by the handle.",
+            "description": "Active: Darius hefts his axe, disarming himself for 0.75 seconds. He then swings it around himself, dealing physical damage to nearby enemies, reduced to 35% against enemies hit by the handle.",
             "icon": "Decimate.png",
             "leveling": [
               {
@@ -237,7 +327,7 @@
             ]
           },
           {
-            "description": "Against champions and large monsters, Darius  heals for  15% \u2212 45% (based on enemies hit by the blade) missing health. The handle of Darius' axe will not apply  hemorrhage or heal him.",
+            "description": "Against champions and large monsters, Darius heals for 15% − 45% (based on enemies hit by the blade) missing health. The handle of Darius' axe will not apply hemorrhage or heal him.",
             "icon": null,
             "leveling": []
           }
@@ -313,7 +403,7 @@
         "name": "Crippling Strike",
         "effects": [
           {
-            "description": "Active: Darius' next basic attack within 4 seconds gains  25 bonus range, dealing bonus physical damage and  slowing the target by 90% for 1 second.",
+            "description": "Active: Darius' next basic attack within 4 seconds gains 25 bonus range, dealing bonus physical damage and slowing the target by 90% for 1 second.",
             "icon": "Crippling Strike.png",
             "leveling": [
               {
@@ -340,17 +430,17 @@
             ]
           },
           {
-            "description": "If Crippling Strike kills the target, it refunds its  mana cost and half of its  cooldown.",
+            "description": "If Crippling Strike kills the target, it refunds its mana cost and half of its cooldown.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Crippling Strike resets Darius's basic attack timer, and is affected by  critical strike modifiers.",
+            "description": "Crippling Strike resets Darius's basic attack timer, and is affected by critical strike modifiers.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "The attack's animation can be cancelled by casting  Decimate, but the attack will still land.",
+            "description": "The attack's animation can be cancelled by casting Decimate, but the attack will still land.",
             "icon": null,
             "leveling": []
           }
@@ -426,7 +516,7 @@
         "name": "Apprehend",
         "effects": [
           {
-            "description": "Passive: Darius gains  armor penetration.",
+            "description": "Passive: Darius gains armor penetration.",
             "icon": "Apprehend.png",
             "leveling": [
               {
@@ -453,7 +543,7 @@
             ]
           },
           {
-            "description": "Active: Darius  pulls in all enemies in front of him,  slowing them by 40% for 1 second, and briefly gains  sight of the area around the pull.",
+            "description": "Active: Darius pulls in all enemies in front of him, slowing them by 40% for 1 second, and briefly gains sight of the area around the pull.",
             "icon": null,
             "leveling": []
           }
@@ -518,7 +608,7 @@
         "innerRadius": null,
         "speed": null,
         "width": null,
-        "angle": "50\u00b0",
+        "angle": "50°",
         "castTime": "0.25",
         "effectRadius": "535",
         "targetRange": null
@@ -529,7 +619,7 @@
         "name": "Noxian Guillotine",
         "effects": [
           {
-            "description": "Active: Darius attempts to execute the targeted enemy champion,  leaping towards them over 0.366 seconds to deal  true damage, increased by 0% \u2212  100% (based on  Hemorrhage stacks).",
+            "description": "Active: Darius attempts to execute the targeted enemy champion, leaping towards them over 0.366 seconds to deal true damage, increased by 0% − 100% (based on Hemorrhage stacks).",
             "icon": "Noxian Guillotine.png",
             "leveling": [
               {
@@ -622,12 +712,12 @@
             ]
           },
           {
-            "description": "If the target dies within 0.15 seconds after being hit by Noxian Guillotine, Darius causes all nearby  minions and  monsters to  flee for 3 seconds during which they are rapidly  slowed by up to 99% over the duration, and is able to recast the ability within 20 seconds at no cost.",
+            "description": "If the target dies within 0.15 seconds after being hit by Noxian Guillotine, Darius causes all nearby minions and monsters to flee for 3 seconds during which they are rapidly slowed by up to 99% over the duration, and is able to recast the ability within 20 seconds at no cost.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "At rank 3, Noxian Guillotine instead completely resets its  cooldown.",
+            "description": "At rank 3, Noxian Guillotine instead completely resets its cooldown.",
             "icon": null,
             "leveling": []
           }
@@ -674,7 +764,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "The ability does not go on  cooldown or consume  mana if it's interrupted during the leap. This may only happen if:\n Darius or his target dies during the leap.\n Darius loses  sight of his target.\n The target becomes  untargetable.\n\n Noxian Guillotine's cooldown after the recast or recast window is calculated by taking the values at the end, and using this formula: (Noxian Guillotine's Cooldown - time since first cast) \u00d7 (1 -  cdr).\n Noxian Guillotine applies  Hemorrhage after the damage.\n Darius will only leap if the target is too far away.\n This leap can pass very thin terrain and will otherwise not be able to. In any case, Darius will still hit the target.",
+        "notes": "The ability does not go on  cooldown or consume  mana if it's interrupted during the leap. This may only happen if:\n Darius or his target dies during the leap.\n Darius loses  sight of his target.\n The target becomes  untargetable.\n\n Noxian Guillotine's cooldown after the recast or recast window is calculated by taking the values at the end, and using this formula: (Noxian Guillotine's Cooldown - time since first cast) × (1 -  cdr).\n Noxian Guillotine applies  Hemorrhage after the damage.\n Darius will only leap if the target is too far away.\n This leap can pass very thin terrain and will otherwise not be able to. In any case, Darius will still hit the target.",
         "blurb": "Darius leaps to an enemy champion and strikes a lethal blow, dealing true damage. This damage is increased for each stack of Hemorrhage on the target. If Noxian Guillotine is a killing blow, its cooldown is refreshed for a brief duration.",
         "missileSpeed": null,
         "rechargeRate": null,

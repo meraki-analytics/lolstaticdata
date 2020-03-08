@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.64,
       "percent": 0.0,
       "perLevel": 3.7,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.639999985694885,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.150000005960464,
+    "attackSpeedRatio": {
+      "flat": 0.639999985694885,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.150000005960464,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 150,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.9,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.9,
-    "urfDamageDealt": 1.05,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -109,7 +199,7 @@
         "name": "Void Stone",
         "effects": [
           {
-            "description": "Innate: Kassadin is permanently  ghosted and takes 15% reduced  magic damage.",
+            "description": "Innate: Kassadin is permanently ghosted and takes 15% reduced magic damage.",
             "icon": "Void Stone.png",
             "leveling": []
           }
@@ -146,7 +236,7 @@
         "name": "Null Sphere",
         "effects": [
           {
-            "description": "Active: Kassadin fires an orb of void energy at the target enemy, dealing magic damage and  disrupting ongoing  channels on them.",
+            "description": "Active: Kassadin fires an orb of void energy at the target enemy, dealing magic damage and disrupting ongoing channels on them.",
             "icon": "Null Sphere.png",
             "leveling": [
               {
@@ -189,7 +279,7 @@
             ]
           },
           {
-            "description": "The excess energy forms around Kassadin, granting him a  shield that exclusively absorbs magic damage for 1.5 seconds.",
+            "description": "The excess energy forms around Kassadin, granting him a shield that exclusively absorbs magic damage for 1.5 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -308,7 +398,7 @@
             "leveling": []
           },
           {
-            "description": "Active: Kassadin's next basic attack against non- structures gains  50 bonus range, deals increased bonus magic damage and restores  mana, with the amount quintupled against  champions.",
+            "description": "Active: Kassadin's next basic attack against non- structures gains 50 bonus range, deals increased bonus magic damage and restores mana, with the amount quintupled against champions.",
             "icon": null,
             "leveling": [
               {
@@ -474,7 +564,7 @@
             "leveling": []
           },
           {
-            "description": "Active: Kassadin emits a pulse of void energy, dealing magic damage to all enemies in a cone in the target direction and  slowing them for 1 second.",
+            "description": "Active: Kassadin emits a pulse of void energy, dealing magic damage to all enemies in a cone in the target direction and slowing them for 1 second.",
             "icon": null,
             "leveling": [
               {
@@ -598,7 +688,7 @@
         "innerRadius": null,
         "speed": null,
         "width": null,
-        "angle": "80\u00b0",
+        "angle": "80°",
         "castTime": null,
         "effectRadius": "600",
         "targetRange": null
@@ -609,7 +699,7 @@
         "name": "Riftwalk",
         "effects": [
           {
-            "description": "Active: After a small delay, Kassadin  blinks to the target location, dealing magic damage to all nearby enemies on arrival.",
+            "description": "Active: After a small delay, Kassadin blinks to the target location, dealing magic damage to all nearby enemies on arrival.",
             "icon": "Riftwalk.png",
             "leveling": [
               {

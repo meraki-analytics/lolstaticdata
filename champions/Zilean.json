@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 550,
-    "selectionRadius": 135,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 550,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 135,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2.13,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.11999999731779,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.11999999731779,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.95,
-    "urfDamageDealt": 1.2,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.2,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "MAGE",
@@ -110,17 +200,17 @@
         "name": "Time in a Bottle",
         "effects": [
           {
-            "description": "Innate: Zilean generates  2 / 3.5 / 5 / 6 / 12 (based on level) experience (does not count towards level up) every 5 seconds. Time in a Bottle is on cooldown when the game starts.",
+            "description": "Innate: Zilean generates 2 / 3.5 / 5 / 6 / 12 (based on level) experience (does not count towards level up) every 5 seconds. Time in a Bottle is on cooldown when the game starts.",
             "icon": "Time in a Bottle.png",
             "leveling": []
           },
           {
-            "description": "When the amount stored is enough to level up an allied champion and Zilean has been out of combat for the last 10 seconds, he can right-click the target ally to initiate a 1 second  channel (if interrupted, Time in a Bottle goes on a 2 second  cooldown).",
+            "description": "When the amount stored is enough to level up an allied champion and Zilean has been out of combat for the last 10 seconds, he can right-click the target ally to initiate a 1 second channel (if interrupted, Time in a Bottle goes on a 2 second cooldown).",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "A successful channel levels up the target and grants Zilean the stored amount as  experience of his own.",
+            "description": "A successful channel levels up the target and grants Zilean the stored amount as experience of his own.",
             "icon": null,
             "leveling": []
           }
@@ -173,7 +263,7 @@
         "name": "Time Bomb",
         "effects": [
           {
-            "description": "Active: Zilean throws a ticking time bomb to the target location that detonates after 3 seconds, dealing  magic damage to all surrounding enemies.",
+            "description": "Active: Zilean throws a ticking time bomb to the target location that detonates after 3 seconds, dealing magic damage to all surrounding enemies.",
             "icon": "Time Bomb.png",
             "leveling": [
               {
@@ -221,7 +311,7 @@
             "leveling": []
           },
           {
-            "description": "Time Bomb detonates immediately if another one attaches itself to the same unit, briefly  stunning all affected enemies.",
+            "description": "Time Bomb detonates immediately if another one attaches itself to the same unit, briefly stunning all affected enemies.",
             "icon": null,
             "leveling": [
               {
@@ -319,7 +409,7 @@
         "name": "Rewind",
         "effects": [
           {
-            "description": "Active: Zilean reduces  Time Bomb's and  Time Warp's  cooldowns by 10 seconds each.",
+            "description": "Active: Zilean reduces Time Bomb's and Time Warp's cooldowns by 10 seconds each.",
             "icon": "Rewind.png",
             "leveling": []
           }
@@ -395,7 +485,7 @@
         "name": "Time Warp",
         "effects": [
           {
-            "description": "Active: Zilean bends time around the target champion,  slowing enemies for 2.5 seconds or granting allies or himself  bonus movement speed for the same duration.",
+            "description": "Active: Zilean bends time around the target champion, slowing enemies for 2.5 seconds or granting allies or himself bonus movement speed for the same duration.",
             "icon": "Time Warp.png",
             "leveling": [
               {
@@ -498,7 +588,7 @@
             "leveling": []
           },
           {
-            "description": "If the target takes fatal damage during that time, they are put in  stasis for 3 seconds and then  revived, regaining a set amount of  health.",
+            "description": "If the target takes fatal damage during that time, they are put in stasis for 3 seconds and then revived, regaining a set amount of health.",
             "icon": null,
             "leveling": [
               {
@@ -594,7 +684,7 @@
   },
   "releaseDate": "2009-04-18",
   "releasePatch": "pril 18, 2009 Patch",
-  "patchLastChanged": "10.3",
+  "patchLastChanged": "10.5",
   "price": {
     "blueEssence": 1350,
     "rp": 585

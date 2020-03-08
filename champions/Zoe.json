@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 550,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 550,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.138541668653488,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.138541668653488,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.05,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.1,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "BURST",
@@ -110,7 +200,7 @@
         "name": "More Sparkles!",
         "effects": [
           {
-            "description": "Innate: After casting an ability, Zoe's next basic attack or  Spell Thief bubble within 5 seconds won't use a  projectile and deals 16 \u2212 130 (based on level) (+ 20% AP)  bonus magic damage.",
+            "description": "Innate: After casting an ability, Zoe's next basic attack or Spell Thief bubble within 5 seconds won't use a projectile and deals 16 − 130 (based on level) (+ 20% AP) bonus magic damage.",
             "icon": "More Sparkles!.png",
             "leveling": []
           }
@@ -147,7 +237,7 @@
         "name": "Paddle Star",
         "effects": [
           {
-            "description": "First Cast: Zoe shoots a star in the target direction that collides with the first enemy hit, dealing magic damage in a small area, reduced to 80% to enemies hit beyond the first. The total damage is increased by 0% \u2212 150% (based on distance traveled).",
+            "description": "First Cast: Zoe shoots a star in the target direction that collides with the first enemy hit, dealing magic damage in a small area, reduced to 80% to enemies hit beyond the first. The total damage is increased by 0% − 150% (based on distance traveled).",
             "icon": "Paddle Star.png",
             "leveling": [
               {
@@ -390,7 +480,7 @@
         "name": "Paddle Star",
         "effects": [
           {
-            "description": "First Cast: Zoe shoots a star in the target direction that collides with the first enemy hit, dealing magic damage in a small area, reduced to 80% to enemies hit beyond the first. The total damage is increased by 0% \u2212 150% (based on distance traveled).",
+            "description": "First Cast: Zoe shoots a star in the target direction that collides with the first enemy hit, dealing magic damage in a small area, reduced to 80% to enemies hit beyond the first. The total damage is increased by 0% − 150% (based on distance traveled).",
             "icon": "Paddle Star.png",
             "leveling": [
               {
@@ -635,7 +725,7 @@
         "name": "Spell Thief",
         "effects": [
           {
-            "description": "Passive - Spell Thief: Whenever enemy champions cast a  summoner spell or  item active, they drop the corresponding  Spell Shard onto the ground that grants  sight over a 100-radius area and remains for 40 seconds. Some enemy  minions spawn with random Spell Shards that only drop to the ground for 20 seconds if killed by Zoe.",
+            "description": "Passive - Spell Thief: Whenever enemy champions cast a summoner spell or item active, they drop the corresponding Spell Shard onto the ground that grants sight over a 100-radius area and remains for 40 seconds. Some enemy minions spawn with random Spell Shards that only drop to the ground for 20 seconds if killed by Zoe.",
             "icon": "Spell Thief.png",
             "leveling": []
           },
@@ -650,7 +740,7 @@
             "leveling": []
           },
           {
-            "description": "Passive - Wheeeee: Casting Spell Thief or one of her own summoner spells grants Zoe  bonus movement speed for the next few seconds, and summons three bubbles that orbit her for the next 10 seconds.",
+            "description": "Passive - Wheeeee: Casting Spell Thief or one of her own summoner spells grants Zoe bonus movement speed for the next few seconds, and summons three bubbles that orbit her for the next 10 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -698,7 +788,7 @@
             ]
           },
           {
-            "description": "If Zoe is not  immobilized she hurls one bubble at a time at the nearest enemy in range, prioritizing her attack target, dealing magic damage.",
+            "description": "If Zoe is not immobilized she hurls one bubble at a time at the nearest enemy in range, prioritizing her attack target, dealing magic damage.",
             "icon": null,
             "leveling": [
               {
@@ -835,7 +925,7 @@
             "leveling": []
           },
           {
-            "description": "The bubble deals magic damage on contact with an enemy and renders them  drowsy for 1.4 seconds, which gradually  slows them, after which they fall  asleep for 2.25 seconds.",
+            "description": "The bubble deals magic damage on contact with an enemy and renders them drowsy for 1.4 seconds, which gradually slows them, after which they fall asleep for 2.25 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -899,7 +989,7 @@
             ]
           },
           {
-            "description": "The next  non-dot champion or turret damage taken by the  sleeping target deals  bonus true damage equal to the post-mitigation damage dealt, capped at Sleepy Trouble Bubble's damage. The bonus damage is dealt before the triggering damage.",
+            "description": "The next non-dot champion or turret damage taken by the sleeping target deals bonus true damage equal to the post-mitigation damage dealt, capped at Sleepy Trouble Bubble's damage. The bonus damage is dealt before the triggering damage.",
             "icon": null,
             "leveling": [
               {
@@ -1013,12 +1103,12 @@
         "name": "Portal Jump",
         "effects": [
           {
-            "description": "Active: After a brief delay, Zoe dives into a portal that she opens beneath her,  blinking to the target location.",
+            "description": "Active: After a brief delay, Zoe dives into a portal that she opens beneath her, blinking to the target location.",
             "icon": "Portal Jump.png",
             "leveling": []
           },
           {
-            "description": "Zoe remains able to attack and cast abilities during Portal Jump, and can  see over walls, but is unable to move. After 1 second, she blinks back to her cast location.",
+            "description": "Zoe remains able to attack and cast abilities during Portal Jump, and can see over walls, but is unable to move. After 1 second, she blinks back to her cast location.",
             "icon": null,
             "leveling": []
           }

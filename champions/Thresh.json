@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 475,
-    "selectionRadius": 125,
-    "pathingRadius": 36,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 475,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 36,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 3.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0604166686534881,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0604166686534881,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 450,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.9,
-    "urfDamageDealt": 1.1,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "CATCHER",
@@ -110,17 +200,17 @@
         "name": "Damnation",
         "effects": [
           {
-            "description": "Innate: Enemy  champions, large  minions and large  monsters that die near Thresh drop a Soul for 8 seconds. Epic monsters drop 2 Souls instead. Small minions and lesser monsters have a 33.33% chance to drop a Soul.",
+            "description": "Innate: Enemy champions, large minions and large monsters that die near Thresh drop a Soul for 8 seconds. Epic monsters drop 2 Souls instead. Small minions and lesser monsters have a 33.33% chance to drop a Soul.",
             "icon": "Damnation.png",
             "leveling": []
           },
           {
-            "description": "Thresh autonomously collects Souls near him or his  lantern. Souls are visible to allies and only become visible to enemies if their team has  sight of Thresh.",
+            "description": "Thresh autonomously collects Souls near him or his lantern. Souls are visible to allies and only become visible to enemies if their team has sight of Thresh.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Each collected Soul grants Thresh  0.75 bonus ability power and  0.75 bonus armor.",
+            "description": "Each collected Soul grants Thresh 0.75 bonus ability power and 0.75 bonus armor.",
             "icon": null,
             "leveling": []
           }
@@ -157,12 +247,12 @@
         "name": "Death Sentence",
         "effects": [
           {
-            "description": "First Cast - Death Sentence: Thresh throws out his scythe in the target direction. Thresh is  entangled while the scythe is in flight.",
+            "description": "First Cast - Death Sentence: Thresh throws out his scythe in the target direction. Thresh is entangled while the scythe is in flight.",
             "icon": "Death Sentence.png",
             "leveling": []
           },
           {
-            "description": "The scythe stops with the first enemy it hits, dealing magic damage and  stunning them for 1.5 seconds, while also forming a tether between Thresh and them for the duration. Hitting an enemy reduces Death Sentence's  cooldown by 3 seconds.",
+            "description": "The scythe stops with the first enemy it hits, dealing magic damage and stunning them for 1.5 seconds, while also forming a tether between Thresh and them for the duration. Hitting an enemy reduces Death Sentence's cooldown by 3 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -205,12 +295,12 @@
             ]
           },
           {
-            "description": "While the tether persists, Thresh is  disarmed and periodically tugs at his scythe's chain,  pulling the target a short distance towards himself.",
+            "description": "While the tether persists, Thresh is disarmed and periodically tugs at his scythe's chain, pulling the target a short distance towards himself.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Second Cast - Death Leap: After 0.5 seconds or instantly after hitting a minion or monster,Thresh can recast this ability to   dash to the tethered enemy, removing the  stun but becoming able to attack again.",
+            "description": "Second Cast - Death Leap: After 0.5 seconds or instantly after hitting a minion or monster,Thresh can recast this ability to dash to the tethered enemy, removing the stun but becoming able to attack again.",
             "icon": "Death Leap.png",
             "leveling": []
           }
@@ -284,12 +374,12 @@
         "name": "Death Sentence",
         "effects": [
           {
-            "description": "First Cast - Death Sentence: Thresh throws out his scythe in the target direction. Thresh is  entangled while the scythe is in flight.",
+            "description": "First Cast - Death Sentence: Thresh throws out his scythe in the target direction. Thresh is entangled while the scythe is in flight.",
             "icon": "Death Sentence.png",
             "leveling": []
           },
           {
-            "description": "The scythe stops with the first enemy it hits, dealing magic damage and  stunning them for 1.5 seconds, while also forming a tether between Thresh and them for the duration. Hitting an enemy reduces Death Sentence's  cooldown by 3 seconds.",
+            "description": "The scythe stops with the first enemy it hits, dealing magic damage and stunning them for 1.5 seconds, while also forming a tether between Thresh and them for the duration. Hitting an enemy reduces Death Sentence's cooldown by 3 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -332,12 +422,12 @@
             ]
           },
           {
-            "description": "While the tether persists, Thresh is  disarmed and periodically tugs at his scythe's chain,  pulling the target a short distance towards himself.",
+            "description": "While the tether persists, Thresh is disarmed and periodically tugs at his scythe's chain, pulling the target a short distance towards himself.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Second Cast - Death Leap: After 0.5 seconds or instantly after hitting a minion or monster,Thresh can recast this ability to   dash to the tethered enemy, removing the  stun but becoming able to attack again.",
+            "description": "Second Cast - Death Leap: After 0.5 seconds or instantly after hitting a minion or monster,Thresh can recast this ability to dash to the tethered enemy, removing the stun but becoming able to attack again.",
             "icon": "Death Leap.png",
             "leveling": []
           }
@@ -413,12 +503,12 @@
         "name": "Dark Passage",
         "effects": [
           {
-            "description": "Active: Thresh throws his lantern to the target location for 6 seconds or until he moves too far away from it,  revealing its surroundings.",
+            "description": "Active: Thresh throws his lantern to the target location for 6 seconds or until he moves too far away from it, revealing its surroundings.",
             "icon": "Dark Passage.png",
             "leveling": []
           },
           {
-            "description": "Thresh and the first allied champion to come near the lantern is  shielded for 4 seconds. An ally can select the lantern while in proximity of it,  dashing to Thresh's current location and gaining the shield.",
+            "description": "Thresh and the first allied champion to come near the lantern is shielded for 4 seconds. An ally can select the lantern while in proximity of it, dashing to Thresh's current location and gaining the shield.",
             "icon": null,
             "leveling": [
               {
@@ -461,7 +551,7 @@
             ]
           },
           {
-            "description": "An ally cannot select the lantern while  silenced,  grounded or  immobilized.",
+            "description": "An ally cannot select the lantern while silenced, grounded or immobilized.",
             "icon": null,
             "leveling": []
           }
@@ -537,7 +627,7 @@
         "name": "Flay",
         "effects": [
           {
-            "description": "Passive: Thresh's basic attacks deal bonus magic damage, with the  AD ratio increasing based on the time spent not attacking enemy or neutral units.",
+            "description": "Passive: Thresh's basic attacks deal bonus magic damage, with the AD ratio increasing based on the time spent not attacking enemy or neutral units.",
             "icon": "false",
             "leveling": [
               {
@@ -617,7 +707,7 @@
             ]
           },
           {
-            "description": "Active: Thresh sweeps his chain around him and in a broad line towards the target direction, dealing magic damage to enemies hit,  knocking them in the chain's direction, and  slowing them afterwards for 1 second.",
+            "description": "Active: Thresh sweeps his chain around him and in a broad line towards the target direction, dealing magic damage to enemies hit, knocking them in the chain's direction, and slowing them afterwards for 1 second.",
             "icon": "Flay.png",
             "leveling": [
               {
@@ -750,7 +840,7 @@
         "name": "Flay",
         "effects": [
           {
-            "description": "Passive: Thresh's basic attacks deal bonus magic damage, with the  AD ratio increasing based on the time spent not attacking enemy or neutral units.",
+            "description": "Passive: Thresh's basic attacks deal bonus magic damage, with the AD ratio increasing based on the time spent not attacking enemy or neutral units.",
             "icon": "false",
             "leveling": [
               {
@@ -830,7 +920,7 @@
             ]
           },
           {
-            "description": "Active: Thresh sweeps his chain around him and in a broad line towards the target direction, dealing magic damage to enemies hit,  knocking them in the chain's direction, and  slowing them afterwards for 1 second.",
+            "description": "Active: Thresh sweeps his chain around him and in a broad line towards the target direction, dealing magic damage to enemies hit, knocking them in the chain's direction, and slowing them afterwards for 1 second.",
             "icon": "Flay.png",
             "leveling": [
               {
@@ -963,7 +1053,7 @@
         "name": "Flay",
         "effects": [
           {
-            "description": "Passive: Thresh's basic attacks deal bonus magic damage, with the  AD ratio increasing based on the time spent not attacking enemy or neutral units.",
+            "description": "Passive: Thresh's basic attacks deal bonus magic damage, with the AD ratio increasing based on the time spent not attacking enemy or neutral units.",
             "icon": "false",
             "leveling": [
               {
@@ -1043,7 +1133,7 @@
             ]
           },
           {
-            "description": "Active: Thresh sweeps his chain around him and in a broad line towards the target direction, dealing magic damage to enemies hit,  knocking them in the chain's direction, and  slowing them afterwards for 1 second.",
+            "description": "Active: Thresh sweeps his chain around him and in a broad line towards the target direction, dealing magic damage to enemies hit, knocking them in the chain's direction, and slowing them afterwards for 1 second.",
             "icon": "Flay.png",
             "leveling": [
               {
@@ -1176,7 +1266,7 @@
         "name": "Flay",
         "effects": [
           {
-            "description": "Passive: Thresh's basic attacks deal bonus magic damage, with the  AD ratio increasing based on the time spent not attacking enemy or neutral units.",
+            "description": "Passive: Thresh's basic attacks deal bonus magic damage, with the AD ratio increasing based on the time spent not attacking enemy or neutral units.",
             "icon": "false",
             "leveling": [
               {
@@ -1256,7 +1346,7 @@
             ]
           },
           {
-            "description": "Active: Thresh sweeps his chain around him and in a broad line towards the target direction, dealing magic damage to enemies hit,  knocking them in the chain's direction, and  slowing them afterwards for 1 second.",
+            "description": "Active: Thresh sweeps his chain around him and in a broad line towards the target direction, dealing magic damage to enemies hit, knocking them in the chain's direction, and slowing them afterwards for 1 second.",
             "icon": "Flay.png",
             "leveling": [
               {
@@ -1389,7 +1479,7 @@
         "name": "Flay",
         "effects": [
           {
-            "description": "Passive: Thresh's basic attacks deal bonus magic damage, with the  AD ratio increasing based on the time spent not attacking enemy or neutral units.",
+            "description": "Passive: Thresh's basic attacks deal bonus magic damage, with the AD ratio increasing based on the time spent not attacking enemy or neutral units.",
             "icon": "false",
             "leveling": [
               {
@@ -1469,7 +1559,7 @@
             ]
           },
           {
-            "description": "Active: Thresh sweeps his chain around him and in a broad line towards the target direction, dealing magic damage to enemies hit,  knocking them in the chain's direction, and  slowing them afterwards for 1 second.",
+            "description": "Active: Thresh sweeps his chain around him and in a broad line towards the target direction, dealing magic damage to enemies hit, knocking them in the chain's direction, and slowing them afterwards for 1 second.",
             "icon": "Flay.png",
             "leveling": [
               {
@@ -1604,7 +1694,7 @@
         "name": "The Box",
         "effects": [
           {
-            "description": "Active: Thresh surrounds himself with 5 spectral walls, each lasting for up to 5 seconds. Walls break upon contact with an enemy champion, dealing magic damage and  slowing by 99% for 2 seconds.",
+            "description": "Active: Thresh surrounds himself with 5 spectral walls, each lasting for up to 5 seconds. Walls break upon contact with an enemy champion, dealing magic damage and slowing by 99% for 2 seconds.",
             "icon": "The Box.png",
             "leveling": [
               {
@@ -1639,7 +1729,7 @@
             ]
           },
           {
-            "description": "Enemy champions hitting any wall beyond the first take no damage and are  slowed for only 1 second.",
+            "description": "Enemy champions hitting any wall beyond the first take no damage and are slowed for only 1 second.",
             "icon": null,
             "leveling": []
           }

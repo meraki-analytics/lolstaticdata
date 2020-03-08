@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 525,
-    "selectionRadius": 100,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 525,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.668,
       "percent": 0.0,
       "perLevel": 2,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.667999982833862,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0994649976491928,
+    "attackSpeedRatio": {
+      "flat": 0.667999982833862,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0994649976491928,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 0.92,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.92,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -110,7 +200,7 @@
         "name": "Vastayan Grace",
         "effects": [
           {
-            "description": "Innate: Whenever Ahri lands 2 ability hits against a champion within 1.5 seconds, she gains  20% bonus movement speed for 3 seconds.",
+            "description": "Innate: Whenever Ahri lands 2 ability hits against a champion within 1.5 seconds, she gains 20% bonus movement speed for 3 seconds.",
             "icon": "Vastayan Grace.png",
             "leveling": []
           }
@@ -163,12 +253,12 @@
         "name": "Orb of Deception",
         "effects": [
           {
-            "description": "Passive: Ability hits grant an Essence Theft stack, up to a maximum of 3 per cast. At a maximum of 9 stacks, the next Orb of Deception consumes them all to  heal Ahri for  3 / 5 / 9 / 18 (based on level) (+ 9% AP) every time an enemy is hit. Essence Theft is not stacked within the same instance.",
+            "description": "Passive: Ability hits grant an Essence Theft stack, up to a maximum of 3 per cast. At a maximum of 9 stacks, the next Orb of Deception consumes them all to heal Ahri for 3 / 5 / 9 / 18 (based on level) (+ 9% AP) every time an enemy is hit. Essence Theft is not stacked within the same instance.",
             "icon": "Essence Theft.png",
             "leveling": []
           },
           {
-            "description": "Active: Ahri sends an orb of arcane energy in the target direction, dealing  magic damage to all enemies it passes through. At maximum range, it homes back to Ahri, dealing  true damage instead.",
+            "description": "Active: Ahri sends an orb of arcane energy in the target direction, dealing magic damage to all enemies it passes through. At maximum range, it homes back to Ahri, dealing true damage instead.",
             "icon": "Orb of Deception.png",
             "leveling": [
               {
@@ -324,7 +414,7 @@
             "leveling": []
           },
           {
-            "description": "Flames prioritize champions hit by  Charm, then the target of Ahri's last basic attack within 3 seconds.",
+            "description": "Flames prioritize champions hit by Charm, then the target of Ahri's last basic attack within 3 seconds.",
             "icon": null,
             "leveling": []
           },
@@ -523,7 +613,7 @@
         "name": "Charm",
         "effects": [
           {
-            "description": "Active: Ahri blows a kiss in the target direction that deals magic damage to the first enemy hit, interrupting in-progress dashes,  charming and  slowing them by 65%.",
+            "description": "Active: Ahri blows a kiss in the target direction that deals magic damage to the first enemy hit, interrupting in-progress dashes, charming and slowing them by 65%.",
             "icon": "Charm.png",
             "leveling": [
               {
@@ -663,7 +753,7 @@
         "name": "Spirit Rush",
         "effects": [
           {
-            "description": "Active: Ahri  dashes in the target direction and then fires energy bolts to up to 3  visible targets, dealing magic damage. Spirit Rush can be recast twice more at a 1 second static cooldown within 10 seconds of activation at no additional cost.",
+            "description": "Active: Ahri dashes in the target direction and then fires energy bolts to up to 3 visible targets, dealing magic damage. Spirit Rush can be recast twice more at a 1 second static cooldown within 10 seconds of activation at no additional cost.",
             "icon": "Spirit Rush.png",
             "leveling": [
               {
@@ -698,7 +788,7 @@
             ]
           },
           {
-            "description": "Recast: Ahri  dashes, mimicking the first cast's effects.",
+            "description": "Recast: Ahri dashes, mimicking the first cast's effects.",
             "icon": null,
             "leveling": [
               {

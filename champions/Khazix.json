@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 130,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 130,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.668,
       "percent": 0.0,
       "perLevel": 2.7,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.667999982833862,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0994652435183525,
+    "attackSpeedRatio": {
+      "flat": 0.667999982833862,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0994652435183525,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.92,
-    "aramDamageDealt": 1.08,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.92,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.08,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN"
@@ -108,12 +198,12 @@
         "name": "Unseen Threat",
         "effects": [
           {
-            "description": "Innate - Isolation: Kha'Zix marks all enemy units who do not have any of their allies nearby as Isolated.  Taste Their Fear and  Void Spike have special interactions against Isolated targets.",
+            "description": "Innate - Isolation: Kha'Zix marks all enemy units who do not have any of their allies nearby as Isolated. Taste Their Fear and Void Spike have special interactions against Isolated targets.",
             "icon": "Unseen Threat 2.png",
             "leveling": []
           },
           {
-            "description": "Innate: Kha'Zix gains Unseen Threat while out of enemy  sight, causing his next basic attack against an enemy champion to deal 14 \u2212 150 (based on level) (+ 40% bonus AD)  bonus magic damage and  slow them by 25% for 2 seconds.",
+            "description": "Innate: Kha'Zix gains Unseen Threat while out of enemy sight, causing his next basic attack against an enemy champion to deal 14 − 150 (based on level) (+ 40% bonus AD) bonus magic damage and slow them by 25% for 2 seconds.",
             "icon": "Unseen Threat.png",
             "leveling": []
           }
@@ -150,7 +240,7 @@
         "name": "Taste Their Fear",
         "effects": [
           {
-            "description": "Active: Kha'Zix slashes the target enemy, dealing  physical damage, increased by 100% against Isolated targets.",
+            "description": "Active: Kha'Zix slashes the target enemy, dealing physical damage, increased by 100% against Isolated targets.",
             "icon": "Taste Their Fear.png",
             "leveling": [
               {
@@ -299,12 +389,12 @@
         "name": "Evolved Reaper Claws",
         "effects": [
           {
-            "description": "Passive - Evolved Reaper Claws: Kha'Zix gains  50 bonus range on his basic attacks and Taste Their Fear.",
+            "description": "Passive - Evolved Reaper Claws: Kha'Zix gains 50 bonus range on his basic attacks and Taste Their Fear.",
             "icon": "Evolved Reaper Claws.png",
             "leveling": []
           },
           {
-            "description": "If the target is Isolated,  45% of the cooldown is refunded.",
+            "description": "If the target is Isolated, 45% of the cooldown is refunded.",
             "icon": null,
             "leveling": []
           }
@@ -384,7 +474,7 @@
             ]
           },
           {
-            "description": "Kha'Zix  heals himself if he is within detonation radius.",
+            "description": "Kha'Zix heals himself if he is within detonation radius.",
             "icon": null,
             "leveling": [
               {
@@ -496,12 +586,12 @@
         "name": "Evolved Spike Racks",
         "effects": [
           {
-            "description": "Passive - Evolved Spike Racks: Void Spike fires three clusters in a cone,  slows by 60% and grants  sight of enemy champions hit for 2 seconds. Multiple explosions do not deal extra damage to the same target or provide Kha'Zix with additional healing.",
+            "description": "Passive - Evolved Spike Racks: Void Spike fires three clusters in a cone, slows by 60% and grants sight of enemy champions hit for 2 seconds. Multiple explosions do not deal extra damage to the same target or provide Kha'Zix with additional healing.",
             "icon": "Evolved Spike Racks.png",
             "leveling": []
           },
           {
-            "description": "Isolated targets hit by Evolved Void Spike are  slowed by 90% instead.",
+            "description": "Isolated targets hit by Evolved Void Spike are slowed by 90% instead.",
             "icon": null,
             "leveling": []
           }
@@ -538,7 +628,7 @@
         "name": "Leap",
         "effects": [
           {
-            "description": "Active: Kha'Zix  leaps to the target location, dealing physical damage to nearby enemies upon landing.",
+            "description": "Active: Kha'Zix leaps to the target location, dealing physical damage to nearby enemies upon landing.",
             "icon": "Leap.png",
             "leveling": [
               {
@@ -655,7 +745,7 @@
         "name": "Evolved Wings",
         "effects": [
           {
-            "description": "Passive - Evolved Wings: Leap gains increased range and its  cooldown is reset on enemy champion  takedowns.",
+            "description": "Passive - Evolved Wings: Leap gains increased range and its cooldown is reset on enemy champion takedowns.",
             "icon": "Evolved Wings.png",
             "leveling": []
           }
@@ -697,12 +787,12 @@
             "leveling": []
           },
           {
-            "description": "Active: Kha'Zix enters  invisibility for 1.25 seconds, gaining  40% bonus movement speed, and  ghosting while stealthed.",
+            "description": "Active: Kha'Zix enters invisibility for 1.25 seconds, gaining 40% bonus movement speed, and ghosting while stealthed.",
             "icon": "Void Assault.png",
             "leveling": []
           },
           {
-            "description": "After 2 seconds of leaving  stealth, and for the next 10 seconds, Void Assault can be cast a second time at no additional cost.",
+            "description": "After 2 seconds of leaving stealth, and for the next 10 seconds, Void Assault can be cast a second time at no additional cost.",
             "icon": "Void Assault 2.png",
             "leveling": []
           }
@@ -768,7 +858,7 @@
         "name": "Evolved Adaptive Cloaking",
         "effects": [
           {
-            "description": "Passive - Evolved Adaptive Cloaking: Increases the  invisibility duration to 2 seconds, and can be cast up to 3 times.",
+            "description": "Passive - Evolved Adaptive Cloaking: Increases the invisibility duration to 2 seconds, and can be cast up to 3 times.",
             "icon": "Evolved Adaptive Cloaking.png",
             "leveling": []
           }
@@ -808,12 +898,12 @@
             "leveling": []
           },
           {
-            "description": "Active: Kha'Zix enters  invisibility for 1.25 seconds, gaining  40% bonus movement speed, and  ghosting while stealthed.",
+            "description": "Active: Kha'Zix enters invisibility for 1.25 seconds, gaining 40% bonus movement speed, and ghosting while stealthed.",
             "icon": "Void Assault.png",
             "leveling": []
           },
           {
-            "description": "After 2 seconds of leaving  stealth, and for the next 10 seconds, Void Assault can be cast a second time at no additional cost.",
+            "description": "After 2 seconds of leaving stealth, and for the next 10 seconds, Void Assault can be cast a second time at no additional cost.",
             "icon": "Void Assault 2.png",
             "leveling": []
           }

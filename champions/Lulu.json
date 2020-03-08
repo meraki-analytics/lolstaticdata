@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 625,
-    "selectionRadius": 100,
-    "pathingRadius": 30,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 30,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2.25,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.112499997019767,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.112499997019767,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ENCHANTER",
@@ -110,12 +200,12 @@
         "name": "Pix, Faerie Companion",
         "effects": [
           {
-            "description": "Innate: Lulu is assisted by Pix, a faerie, who fires a barrage of 3 bolts to her target every time she uses a basic attack against an enemy, dealing 5 \u2212 39 (based on level) (+ 5% AP)  bonus magic damage with each bolt for a total of 15 \u2212 117 (based on level) (+ 15% AP) bonus magic damage per basic attack. The bolts can be blocked by units in the way of Lulu's target.",
+            "description": "Innate: Lulu is assisted by Pix, a faerie, who fires a barrage of 3 bolts to her target every time she uses a basic attack against an enemy, dealing 5 − 39 (based on level) (+ 5% AP) bonus magic damage with each bolt for a total of 15 − 117 (based on level) (+ 15% AP) bonus magic damage per basic attack. The bolts can be blocked by units in the way of Lulu's target.",
             "icon": "Pix, Faerie Companion.png",
             "leveling": []
           },
           {
-            "description": "Casting  Help, Pix! on an ally champion transfers Pix's help to them for 6 seconds.",
+            "description": "Casting Help, Pix! on an ally champion transfers Pix's help to them for 6 seconds.",
             "icon": null,
             "leveling": []
           }
@@ -152,7 +242,7 @@
         "name": "Glitterlance",
         "effects": [
           {
-            "description": "Active: Lulu and  Pix each fire a magic bolt towards the target point, dealing magic damage to the first enemy they pass through, reduced to 70% against enemies thereafter, and  slowing them by 80%, decaying over 2 seconds.",
+            "description": "Active: Lulu and Pix each fire a magic bolt towards the target point, dealing magic damage to the first enemy they pass through, reduced to 70% against enemies thereafter, and slowing them by 80%, decaying over 2 seconds.",
             "icon": "Glitterlance.png",
             "leveling": [
               {
@@ -232,7 +322,7 @@
             ]
           },
           {
-            "description": "If an enemy is hit by both bolts, the second bolt will deal no damage if the first bolt dealt full damage to them, or 30% damage if the first bolt hit another unit before them. The second hit will refresh the  slow.",
+            "description": "If an enemy is hit by both bolts, the second bolt will deal no damage if the first bolt dealt full damage to them, or 30% damage if the first bolt hit another unit before them. The second hit will refresh the slow.",
             "icon": null,
             "leveling": []
           }
@@ -308,7 +398,7 @@
         "name": "Whimsy",
         "effects": [
           {
-            "description": "Enemy Cast: Lulu launches a spell on the target enemy champion  polymorphing them into a harmless critter, reducing their base movement speed by 60 for a short duration.",
+            "description": "Enemy Cast: Lulu launches a spell on the target enemy champion polymorphing them into a harmless critter, reducing their base movement speed by 60 for a short duration.",
             "icon": "Whimsy.png",
             "leveling": [
               {
@@ -335,7 +425,7 @@
             ]
           },
           {
-            "description": "Ally Cast: Lulu casts erratic magic upon an ally champion, giving them  bonus attack speed and  30% (+ 5% per 100 AP) bonus movement speed for the next few seconds.",
+            "description": "Ally Cast: Lulu casts erratic magic upon an ally champion, giving them bonus attack speed and 30% (+ 5% per 100 AP) bonus movement speed for the next few seconds.",
             "icon": null,
             "leveling": [
               {
@@ -454,7 +544,7 @@
         "name": "Help, Pix!",
         "effects": [
           {
-            "description": "Enemy Cast: Lulu sends  Pix to the target enemy, dealing magic damage and granting  true sight of them for 4 seconds.",
+            "description": "Enemy Cast: Lulu sends Pix to the target enemy, dealing magic damage and granting true sight of them for 4 seconds.",
             "icon": "Help, Pix!.png",
             "leveling": [
               {
@@ -497,7 +587,7 @@
             ]
           },
           {
-            "description": "Ally Cast: Lulu sends  Pix to the target ally,  shielding them for 2.5 seconds if they are a champion.",
+            "description": "Ally Cast: Lulu sends Pix to the target ally, shielding them for 2.5 seconds if they are a champion.",
             "icon": null,
             "leveling": [
               {
@@ -611,7 +701,7 @@
         "name": "Wild Growth",
         "effects": [
           {
-            "description": "Active: Lulu enlarges the target allied champion,  knocking up units around them for 0.75 seconds, increasing their  bonus health and causing them to  slow nearby units for 7 seconds.",
+            "description": "Active: Lulu enlarges the target allied champion, knocking up units around them for 0.75 seconds, increasing their bonus health and causing them to slow nearby units for 7 seconds.",
             "icon": "Wild Growth.png",
             "leveling": [
               {

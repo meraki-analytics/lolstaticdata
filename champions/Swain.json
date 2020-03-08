@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 525,
-    "selectionRadius": 100,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 525,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2.11,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.159999996423721,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.159999996423721,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 525,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.06,
-    "aramDamageDealt": 0.94,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.06,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 0.94,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "BATTLEMAGE",
@@ -110,7 +200,7 @@
         "name": "Ravenous Flock",
         "effects": [
           {
-            "description": "Innate - Ravenous: Swain can periodically target a nearby  immobilized enemy champion to rip out a Soul Fragment from them, dealing 20 \u2212 105 (based on level) (+ 30% AP)  magic damage and  pulling them 290-units towards him. If the target would be brought past Swain, they are instead  knocked back the excess distance.",
+            "description": "Innate - Ravenous: Swain can periodically target a nearby immobilized enemy champion to rip out a Soul Fragment from them, dealing 20 − 105 (based on level) (+ 30% AP) magic damage and pulling them 290-units towards him. If the target would be brought past Swain, they are instead knocked back the excess distance.",
             "icon": "Ravenous Flock.png",
             "leveling": []
           },
@@ -120,7 +210,7 @@
             "leveling": []
           },
           {
-            "description": "Innate - Flock: Swain's ravens bring nearby Soul Fragments to him,  healing him for 4 / 5.5 / 7% (based on level) of his maximum health and restoring 4 / 5.5 / 7% (based on level) of his maximum mana. Each Soul Fragment collected permanently increases his maximum health by 5.",
+            "description": "Innate - Flock: Swain's ravens bring nearby Soul Fragments to him, healing him for 4 / 5.5 / 7% (based on level) of his maximum health and restoring 4 / 5.5 / 7% (based on level) of his maximum mana. Each Soul Fragment collected permanently increases his maximum health by 5.",
             "icon": null,
             "leveling": []
           }
@@ -339,7 +429,7 @@
         "innerRadius": null,
         "speed": null,
         "width": null,
-        "angle": "40\u00b0",
+        "angle": "40°",
         "castTime": null,
         "effectRadius": "725",
         "targetRange": null
@@ -350,7 +440,7 @@
         "name": "Vision of Empire",
         "effects": [
           {
-            "description": "Active: Swain summons a demonic eye at the target area,  revealing it for 2 seconds, which explodes after 1.5 seconds, dealing magic damage to all enemies hit, halved against minions, and  slowing them for 2.5 seconds.",
+            "description": "Active: Swain summons a demonic eye at the target area, revealing it for 2 seconds, which explodes after 1.5 seconds, dealing magic damage to all enemies hit, halved against minions, and slowing them for 2.5 seconds.",
             "icon": "Vision of Empire.png",
             "leveling": [
               {
@@ -451,7 +541,7 @@
             ]
           },
           {
-            "description": "Enemy champions are  revealed for an additional duration and have a Soul Fragment ripped from them.",
+            "description": "Enemy champions are revealed for an additional duration and have a Soul Fragment ripped from them.",
             "icon": null,
             "leveling": [
               {
@@ -592,7 +682,7 @@
             ]
           },
           {
-            "description": "Upon reaching its maximum distance, the wave returns to Swain, detonating at the first enemy hit, dealing magic damage to all nearby enemies and  rooting them for 1.5 seconds.",
+            "description": "Upon reaching its maximum distance, the wave returns to Swain, detonating at the first enemy hit, dealing magic damage to all nearby enemies and rooting them for 1.5 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -743,7 +833,7 @@
         "name": "Demonic Ascension",
         "effects": [
           {
-            "description": "Active: Swain frees the demon within for 12 seconds, gaining   bonus health and doubling the health gained from Soul Fragments.",
+            "description": "Active: Swain frees the demon within for 12 seconds, gaining bonus health and doubling the health gained from Soul Fragments.",
             "icon": "Demonic Ascension.png",
             "leveling": [
               {
@@ -766,7 +856,7 @@
             ]
           },
           {
-            "description": "While Demonic Ascension is active, Swain drains all nearby enemies, dealing magic damage to them each second, and  healing himself for each enemy hit, reduced by 90% against minions and monsters.",
+            "description": "While Demonic Ascension is active, Swain drains all nearby enemies, dealing magic damage to them each second, and healing himself for each enemy hit, reduced by 90% against minions and monsters.",
             "icon": null,
             "leveling": [
               {
@@ -946,7 +1036,7 @@
             ]
           },
           {
-            "description": "After draining any amount of health with Demonic Ascension, Swain can end its effects early to cast  Demonflare, and automatically does so at the end of its duration.",
+            "description": "After draining any amount of health with Demonic Ascension, Swain can end its effects early to cast Demonflare, and automatically does so at the end of its duration.",
             "icon": null,
             "leveling": []
           },
@@ -1017,7 +1107,7 @@
         "name": "Demonflare",
         "effects": [
           {
-            "description": "Active: Swain releases a nova of energy, dealing a base amount of magic damage to all nearby enemies plus 37.5% of the health drained during  Demonic Ascension, with the total damage capped.",
+            "description": "Active: Swain releases a nova of energy, dealing a base amount of magic damage to all nearby enemies plus 37.5% of the health drained during Demonic Ascension, with the total damage capped.",
             "icon": "Demonflare.png",
             "leveling": [
               {

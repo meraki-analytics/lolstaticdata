@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 475,
-    "selectionRadius": 125,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 475,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.635,
       "percent": 0.0,
       "perLevel": 3,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.634999990463256,
-    "attackCastTime": 0.270000010728836,
-    "attackTotalTime": 1.57500004768371,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.634999990463256,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.270000010728836,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.57500004768371,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 300,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 0.9
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "CATCHER",
@@ -109,17 +199,17 @@
         "name": "Fey Feathers",
         "effects": [
           {
-            "description": "Innate: Rakan periodically generates a 33 \u2212 254 (based on level) (+ 90% AP)  shield that lasts until broken. If the shield is damaged, but not destroyed after being out of combat for 5 seconds, it will regenerate 10% of its maximum value every second.",
+            "description": "Innate: Rakan periodically generates a 33 − 254 (based on level) (+ 90% AP) shield that lasts until broken. If the shield is damaged, but not destroyed after being out of combat for 5 seconds, it will regenerate 10% of its maximum value every second.",
             "icon": "Fey Feathers.png",
             "leveling": []
           },
           {
-            "description": "Basic attacks and abilities reduce Fey Feathers's  cooldown by 1 second for each enemy  champion hit.",
+            "description": "Basic attacks and abilities reduce Fey Feathers's cooldown by 1 second for each enemy champion hit.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Innate - Lover's Leap: If either Rakan or  Xayah is  recalling, the other may move nearby and activate their own recall to join them. Both reach base at the time of which the initiator's recall ends.",
+            "description": "Innate - Lover's Leap: If either Rakan or Xayah is recalling, the other may move nearby and activate their own recall to join them. Both reach base at the time of which the initiator's recall ends.",
             "icon": "ProfileIcon1634 Blazing Feathers.png",
             "leveling": []
           }
@@ -200,17 +290,17 @@
         "name": "Fey Feathers",
         "effects": [
           {
-            "description": "Innate: Rakan periodically generates a 33 \u2212 254 (based on level) (+ 90% AP)  shield that lasts until broken. If the shield is damaged, but not destroyed after being out of combat for 5 seconds, it will regenerate 10% of its maximum value every second.",
+            "description": "Innate: Rakan periodically generates a 33 − 254 (based on level) (+ 90% AP) shield that lasts until broken. If the shield is damaged, but not destroyed after being out of combat for 5 seconds, it will regenerate 10% of its maximum value every second.",
             "icon": "Fey Feathers.png",
             "leveling": []
           },
           {
-            "description": "Basic attacks and abilities reduce Fey Feathers's  cooldown by 1 second for each enemy  champion hit.",
+            "description": "Basic attacks and abilities reduce Fey Feathers's cooldown by 1 second for each enemy champion hit.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Innate - Lover's Leap: If either Rakan or  Xayah is  recalling, the other may move nearby and activate their own recall to join them. Both reach base at the time of which the initiator's recall ends.",
+            "description": "Innate - Lover's Leap: If either Rakan or Xayah is recalling, the other may move nearby and activate their own recall to join them. Both reach base at the time of which the initiator's recall ends.",
             "icon": "ProfileIcon1634 Blazing Feathers.png",
             "leveling": []
           }
@@ -293,7 +383,7 @@
         "name": "Gleaming Quill",
         "effects": [
           {
-            "description": "Active: Rakan slings an enchanted feather forward, dealing  magic damage to the first enemy hit.",
+            "description": "Active: Rakan slings an enchanted feather forward, dealing magic damage to the first enemy hit.",
             "icon": "Gleaming Quill.png",
             "leveling": [
               {
@@ -341,7 +431,7 @@
             "leveling": []
           },
           {
-            "description": "After 3 seconds or if an ally champion comes within the marked area, Rakan  heals himself and surrounding allies by 18 \u2212 120 (based on level) (+ 70% AP).",
+            "description": "After 3 seconds or if an ally champion comes within the marked area, Rakan heals himself and surrounding allies by 18 − 120 (based on level) (+ 70% AP).",
             "icon": null,
             "leveling": []
           }
@@ -417,12 +507,12 @@
         "name": "Grand Entrance",
         "effects": [
           {
-            "description": "Active: Rakan  dashes to the target location.",
+            "description": "Active: Rakan dashes to the target location.",
             "icon": "Grand Entrance.png",
             "leveling": []
           },
           {
-            "description": "After a 0.35-second delay, he leaps into the air, dealing magic damage and  knocking up surrounding enemies for 1 second.",
+            "description": "After a 0.35-second delay, he leaps into the air, dealing magic damage and knocking up surrounding enemies for 1 second.",
             "icon": null,
             "leveling": [
               {
@@ -465,7 +555,7 @@
             ]
           },
           {
-            "description": "Rakan will be  knocked down by any  immobilizing crowd control during Grand Entrance.",
+            "description": "Rakan will be knocked down by any immobilizing crowd control during Grand Entrance.",
             "icon": null,
             "leveling": []
           }
@@ -541,7 +631,7 @@
         "name": "Battle Dance",
         "effects": [
           {
-            "description": "Active: Rakan  shields the target allied champion for 3 seconds while also  dashing to and around them. Battle Dance can be recast within 5 seconds at no cost.",
+            "description": "Active: Rakan shields the target allied champion for 3 seconds while also dashing to and around them. Battle Dance can be recast within 5 seconds at no cost.",
             "icon": "Battle Dance.png",
             "leveling": [
               {
@@ -589,7 +679,7 @@
             "leveling": []
           },
           {
-            "description": "If  Xayah is the target, Battle Dance can be cast from an increased range.",
+            "description": "If Xayah is the target, Battle Dance can be cast from an increased range.",
             "icon": null,
             "leveling": []
           }
@@ -663,7 +753,7 @@
         "name": "Battle Dance",
         "effects": [
           {
-            "description": "Active: Rakan  shields the target allied champion for 3 seconds while also  dashing to and around them. Battle Dance can be recast within 5 seconds at no cost.",
+            "description": "Active: Rakan shields the target allied champion for 3 seconds while also dashing to and around them. Battle Dance can be recast within 5 seconds at no cost.",
             "icon": "Battle Dance.png",
             "leveling": [
               {
@@ -711,7 +801,7 @@
             "leveling": []
           },
           {
-            "description": "If  Xayah is the target, Battle Dance can be cast from an increased range.",
+            "description": "If Xayah is the target, Battle Dance can be cast from an increased range.",
             "icon": null,
             "leveling": []
           }
@@ -787,7 +877,7 @@
         "name": "The Quickness",
         "effects": [
           {
-            "description": "Active: Rakan breaks into a captivating sprint for 4 seconds, gaining  50% bonus movement speed for the duration. During this time he deals magic damage to all enemy units he collides with,  charming and  slowing them by 75%. This may only occur once per unit.",
+            "description": "Active: Rakan breaks into a captivating sprint for 4 seconds, gaining 50% bonus movement speed for the duration. During this time he deals magic damage to all enemy units he collides with, charming and slowing them by 75%. This may only occur once per unit.",
             "icon": "The Quickness.png",
             "leveling": [
               {
@@ -839,7 +929,7 @@
             ]
           },
           {
-            "description": "When Rakan collides with his first enemy  champion he gains an additional  100% bonus movement speed, which starts decaying after 0.5 seconds by 20% every 0.5 seconds.",
+            "description": "When Rakan collides with his first enemy champion he gains an additional 100% bonus movement speed, which starts decaying after 0.5 seconds by 20% every 0.5 seconds.",
             "icon": null,
             "leveling": []
           },

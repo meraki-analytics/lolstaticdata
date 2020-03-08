@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 800,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 800,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.668,
       "percent": 0.0,
       "perLevel": 3.1,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.667999982833862,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.12456139922142,
+    "attackSpeedRatio": {
+      "flat": 0.667999982833862,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.12456139922142,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 525,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.92,
-    "aramDamageDealt": 1.08,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.15,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.92,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.08,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.15,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -110,17 +200,17 @@
         "name": "Harrier",
         "effects": [
           {
-            "description": "Innate:  Valor periodically marks a nearby visible enemy unit as Vulnerable,  revealing them for 4 seconds. Enemies hit by  Blinding Assault,  Vault and  Skystrike will also be marked as Vulnerable.",
+            "description": "Innate: Valor periodically marks a nearby visible enemy unit as Vulnerable, revealing them for 4 seconds. Enemies hit by Blinding Assault, Vault and Skystrike will also be marked as Vulnerable.",
             "icon": "Harrier.png",
             "leveling": []
           },
           {
-            "description": "Quinn's next basic attack against a Vulnerable target deals 10 \u2212 95 (based on level) (+ 16% \u2212 50% (based on level) AD)  bonus physical damage.",
+            "description": "Quinn's next basic attack against a Vulnerable target deals 10 − 95 (based on level) (+ 16% − 50% (based on level) AD) bonus physical damage.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Harrier is disabled while  Behind Enemy Lines is active and for a few seconds after a target's mark ends.",
+            "description": "Harrier is disabled while Behind Enemy Lines is active and for a few seconds after a target's mark ends.",
             "icon": null,
             "leveling": []
           }
@@ -128,7 +218,18 @@
         "cost": null,
         "cooldown": {
           "modifiers": [
-            "8 \u2212  2.93 (based on critical strike chance)"
+            {
+              "values": [
+                0,
+                0,
+                0
+              ],
+              "units": [
+                "8 − 2.93 (based on critical strike chance)",
+                "8 − 2.93 (based on critical strike chance)",
+                "8 − 2.93 (based on critical strike chance)"
+              ]
+            }
           ],
           "affectedByCdr": true
         },
@@ -162,7 +263,7 @@
         "name": "Blinding Assault",
         "effects": [
           {
-            "description": "Active: Quinn signals  Valor to fly forward in a line, stopping upon colliding with an enemy unit, dealing physical damage to all nearby enemies and applying  nearsight to the target for 1.5 seconds.",
+            "description": "Active: Quinn signals Valor to fly forward in a line, stopping upon colliding with an enemy unit, dealing physical damage to all nearby enemies and applying nearsight to the target for 1.5 seconds.",
             "icon": "Blinding Assault.png",
             "leveling": [
               {
@@ -221,7 +322,7 @@
             ]
           },
           {
-            "description": "Non-champion targets are  disarmed instead for the same duration.",
+            "description": "Non-champion targets are disarmed instead for the same duration.",
             "icon": null,
             "leveling": []
           }
@@ -297,7 +398,7 @@
         "name": "Heightened Senses",
         "effects": [
           {
-            "description": "Passive: Attacking a  Vulnerable target grants Quinn  bonus attack speed and  bonus movement speed for 2 seconds.",
+            "description": "Passive: Attacking a Vulnerable target grants Quinn bonus attack speed and bonus movement speed for 2 seconds.",
             "icon": "Heightened Senses.png",
             "leveling": [
               {
@@ -345,7 +446,7 @@
             ]
           },
           {
-            "description": "Active: Quinn orders  Valor to  reveal the area around her for 2 seconds.",
+            "description": "Active: Quinn orders Valor to reveal the area around her for 2 seconds.",
             "icon": null,
             "leveling": []
           }
@@ -402,7 +503,7 @@
         "name": "Vault",
         "effects": [
           {
-            "description": "Active: Quinn  dashes to the target unit,  knocking them back, dealing them physical damage, and  slowing them by 50% which decays over 1.5 seconds, before  leaping back and landing 525 units away from them.",
+            "description": "Active: Quinn dashes to the target unit, knocking them back, dealing them physical damage, and slowing them by 50% which decays over 1.5 seconds, before leaping back and landing 525 units away from them.",
             "icon": "Vault.png",
             "leveling": [
               {
@@ -516,7 +617,7 @@
         "name": "Behind Enemy Lines",
         "effects": [
           {
-            "description": "Active: Quinn  channels for 2 seconds. Upon completing it successfully,  Valor picks her up and they unite, increasing her  total movement speed and gaining the ability to use  Skystrike.",
+            "description": "Active: Quinn channels for 2 seconds. Upon completing it successfully, Valor picks her up and they unite, increasing her total movement speed and gaining the ability to use Skystrike.",
             "icon": "Behind Enemy Lines.png",
             "leveling": [
               {
@@ -539,12 +640,12 @@
             ]
           },
           {
-            "description": "Taking damage from champions, monsters, or  turrets while Behind Enemy Lines is active disables the  bonus movement speed for 3 seconds.",
+            "description": "Taking damage from champions, monsters, or turrets while Behind Enemy Lines is active disables the bonus movement speed for 3 seconds.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "If you have a least one point in Behind Enemy Lines, respawning or returning to the summoning platform will spawn  Valor.",
+            "description": "If you have a least one point in Behind Enemy Lines, respawning or returning to the summoning platform will spawn Valor.",
             "icon": null,
             "leveling": []
           }
@@ -594,12 +695,12 @@
         "name": "Skystrike",
         "effects": [
           {
-            "description": "Active: Quinn detaches from  Valor, ending  Behind Enemy Lines' effects, and deals  40% AD  physical damage to all units around her.",
+            "description": "Active: Quinn detaches from Valor, ending Behind Enemy Lines' effects, and deals 40% AD physical damage to all units around her.",
             "icon": "Skystrike.png",
             "leveling": []
           },
           {
-            "description": "Launching a basic attack,  Blinding Assault, or  Vault during  Behind Enemy Lines automatically activates Skystrike.",
+            "description": "Launching a basic attack, Blinding Assault, or Vault during Behind Enemy Lines automatically activates Skystrike.",
             "icon": null,
             "leveling": []
           }

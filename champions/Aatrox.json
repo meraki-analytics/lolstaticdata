@@ -20,6 +20,18 @@
       "perLevel": 1,
       "percentPerLevel": 0.0
     },
+    "mana": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
+    "manaRegen": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
     "armor": {
       "flat": 38,
       "percent": 0.0,
@@ -44,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 475,
-    "selectionRadius": 135,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 475,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 135,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.651,
       "percent": 0.0,
       "perLevel": 2.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.651000022888183,
-    "attackCastTime": 0.300000011920928,
-    "attackTotalTime": 1.51999998092651,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.651000022888183,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.300000011920928,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.51999998092651,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 175,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.95,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.75,
-    "urfDamageDealt": 1.25,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.75,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.25,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -98,17 +200,17 @@
         "name": "Deathbringer Stance",
         "effects": [
           {
-            "description": "Innate: Aatrox periodically empowers his next basic attack to gain  50 bonus range and deal 5% \u2212 12% (based on level) of the target's  maximum health as  bonus physical damage on non- structures, capped at 100 against monsters, and  healing him for 100% of the  bonus physical damage dealt, reduced to 25% against  minions.",
+            "description": "Innate: Aatrox periodically empowers his next basic attack to gain 50 bonus range and deal 5% − 12% (based on level) of the target's maximum health as bonus physical damage on non- structures, capped at 100 against monsters, and healing him for 100% of the bonus physical damage dealt, reduced to 25% against minions.",
             "icon": "Deathbringer Stance.png",
             "leveling": []
           },
           {
-            "description": "Deathbringer Stance's  cooldown is reduced by 2 seconds whenever Aatrox hits a  champion or  large monster with a basic attack on-hit or an ability, doubled if he hits with the edge of  The Darkin Blade. The cooldown reduction for  The Darkin Blade applies only once and prioritizes for the unit hit by the edge.",
+            "description": "Deathbringer Stance's cooldown is reduced by 2 seconds whenever Aatrox hits a champion or large monster with a basic attack on-hit or an ability, doubled if he hits with the edge of The Darkin Blade. The cooldown reduction for The Darkin Blade applies only once and prioritizes for the unit hit by the edge.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "The cooldown is also reduced by 2 seconds if Aatrox misses  The Darkin Blade by up to 50 units.",
+            "description": "The cooldown is also reduced by 2 seconds if Aatrox misses The Darkin Blade by up to 50 units.",
             "icon": null,
             "leveling": []
           }
@@ -191,7 +293,7 @@
         "name": "The Darkin Blade",
         "effects": [
           {
-            "description": "Active: Aatrox swings his greatsword in the target direction, striking all enemies in a line, dealing them physical damage. Enemies hit by the far end are dealt 50% bonus damage and  knocked up for 0.25 seconds, doubled to 0.5 seconds against  monsters. The Darkin Blade can then be reactivated twice within 4 seconds, with each cast refreshing the timer. There's a 1 second cooldown between each cast.",
+            "description": "Active: Aatrox swings his greatsword in the target direction, striking all enemies in a line, dealing them physical damage. Enemies hit by the far end are dealt 50% bonus damage and knocked up for 0.25 seconds, doubled to 0.5 seconds against monsters. The Darkin Blade can then be reactivated twice within 4 seconds, with each cast refreshing the timer. There's a 1 second cooldown between each cast.",
             "icon": "The Darkin Blade.png",
             "leveling": [
               {
@@ -271,7 +373,7 @@
             ]
           },
           {
-            "description": "First Recast: Aatrox strikes all enemies in a cone, dealing them 125% of the first strike's physical damage. Enemies hit by the far end are dealt 50% bonus damage and  knocked up for 0.25 seconds, doubled to 0.5 seconds against  monsters.",
+            "description": "First Recast: Aatrox strikes all enemies in a cone, dealing them 125% of the first strike's physical damage. Enemies hit by the far end are dealt 50% bonus damage and knocked up for 0.25 seconds, doubled to 0.5 seconds against monsters.",
             "icon": "The Darkin Blade 2.png",
             "leveling": [
               {
@@ -351,7 +453,7 @@
             ]
           },
           {
-            "description": "Second Recast: Aatrox strikes all enemies in a circle, dealing them 150% of the first strike's physical damage. Enemies hit by the center are dealt 50% bonus damage and  knocked up for 0.25 seconds, doubled to 0.5 seconds against  monsters.",
+            "description": "Second Recast: Aatrox strikes all enemies in a circle, dealing them 150% of the first strike's physical damage. Enemies hit by the center are dealt 50% bonus damage and knocked up for 0.25 seconds, doubled to 0.5 seconds against monsters.",
             "icon": "The Darkin Blade 3.png",
             "leveling": [
               {
@@ -431,7 +533,7 @@
             ]
           },
           {
-            "description": "Each strike deals 55% damage against  minions.",
+            "description": "Each strike deals 55% damage against minions.",
             "icon": null,
             "leveling": [
               {
@@ -515,7 +617,7 @@
         "innerRadius": null,
         "speed": null,
         "width": "200",
-        "angle": "70\u00b0",
+        "angle": "70°",
         "castTime": "0.6",
         "effectRadius": "300",
         "targetRange": "650 / 525 / 225 / 180"
@@ -526,7 +628,7 @@
         "name": "Infernal Chains",
         "effects": [
           {
-            "description": "Active: Aatrox smashes the ground in the target direction, creating a chain that stops on the first enemy hit, dealing physical damage, doubled against  minions, and  slowing them by 25% for 1.5 seconds.",
+            "description": "Active: Aatrox smashes the ground in the target direction, creating a chain that stops on the first enemy hit, dealing physical damage, doubled against minions, and slowing them by 25% for 1.5 seconds.",
             "icon": "Infernal Chains.png",
             "leveling": [
               {
@@ -606,7 +708,7 @@
             ]
           },
           {
-            "description": "If Infernal Chains hits a  champion or large monster, they are chained to the impact area. If the chained enemy is still in the impact area after 1.5 seconds, they are  dragged to the center and take the same damage again.",
+            "description": "If Infernal Chains hits a champion or large monster, they are chained to the impact area. If the chained enemy is still in the impact area after 1.5 seconds, they are dragged to the center and take the same damage again.",
             "icon": null,
             "leveling": [
               {
@@ -701,7 +803,7 @@
         "name": "Umbral Dash",
         "effects": [
           {
-            "description": "Passive: Aatrox  heals for a percentage of the non-periodic damage he deals against champions.",
+            "description": "Passive: Aatrox heals for a percentage of the non-periodic damage he deals against champions.",
             "icon": "Umbral Dash.png",
             "leveling": [
               {
@@ -728,7 +830,7 @@
             ]
           },
           {
-            "description": "Active: Aatrox  dashes in the target direction.",
+            "description": "Active: Aatrox dashes in the target direction.",
             "icon": null,
             "leveling": []
           },
@@ -790,7 +892,7 @@
         "name": "World Ender",
         "effects": [
           {
-            "description": "Active: Aatrox unleashes his true demonic form for 10 seconds, gaining  bonus movement speed, decaying by 10% of the current bonus every 0.25 seconds, and  fearing nearby enemy  minions and pets,  slowing them by up to 99% for 3 seconds.",
+            "description": "Active: Aatrox unleashes his true demonic form for 10 seconds, gaining bonus movement speed, decaying by 10% of the current bonus every 0.25 seconds, and fearing nearby enemy minions and pets, slowing them by up to 99% for 3 seconds.",
             "icon": "World Ender.png",
             "leveling": [
               {
@@ -813,7 +915,7 @@
             ]
           },
           {
-            "description": "While transformed, Aatrox gains increased size and  bonus attack damage, and receives increased  self-healing from all sources ( spell vamp exception).",
+            "description": "While transformed, Aatrox gains increased size and bonus attack damage, and receives increased self-healing from all sources ( spell vamp exception).",
             "icon": null,
             "leveling": [
               {
@@ -853,7 +955,7 @@
             ]
           },
           {
-            "description": "With each  enemy champion  takedown, World Ender is extended by 5 seconds, refreshing its effects, up to the original amount.",
+            "description": "With each enemy champion takedown, World Ender is extended by 5 seconds, refreshing its effects, up to the original amount.",
             "icon": null,
             "leveling": []
           }

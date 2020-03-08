@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 800,
-    "selectionRadius": 100,
-    "pathingRadius": 40.6800003051757,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 800,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 40.6800003051757,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.644,
       "percent": 0.0,
       "perLevel": 1.8,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.643999993801116,
-    "attackCastTime": 0.25,
-    "attackTotalTime": 1.55200004577636,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.643999993801116,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.25,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.55200004577636,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 525,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.12,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 0.95,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.12,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "MARKSMAN"
@@ -108,12 +198,12 @@
         "name": "Second Skin",
         "effects": [
           {
-            "description": "Innate: Kai'Sa's basic attacks deal 4 \u2212 10 (based on level) (+ 1 \u2212 5 (based on level) per Plasma stack) (+ 10% \u2212 20% (based on Plasma stacks) AP)  bonus magic damage.",
+            "description": "Innate: Kai'Sa's basic attacks deal 4 − 10 (based on level) (+ 1 − 5 (based on level) per Plasma stack) (+ 10% − 20% (based on Plasma stacks) AP) bonus magic damage.",
             "icon": "Second Skin.png",
             "leveling": []
           },
           {
-            "description": "Innate - Caustic Wounds: Kai'Sa's basic attacks,  Void Seeker, and nearby allies'  immobilizing effects mark enemies with Plasma for 4 seconds, stacking up to 4 times. Kai'Sa's attacks or  Void Seeker can then rupture enemies with 4 Plasma, consuming them to deal 15% (+ 2.5% per 100 AP) of the target's missing health magic damage, capped at 400 against monsters.",
+            "description": "Innate - Caustic Wounds: Kai'Sa's basic attacks, Void Seeker, and nearby allies' immobilizing effects mark enemies with Plasma for 4 seconds, stacking up to 4 times. Kai'Sa's attacks or Void Seeker can then rupture enemies with 4 Plasma, consuming them to deal 15% (+ 2.5% per 100 AP) of the target's missing health magic damage, capped at 400 against monsters.",
             "icon": "Kai'Sa Plasma.png",
             "leveling": []
           },
@@ -155,7 +245,7 @@
         "name": "Icathian Rain",
         "effects": [
           {
-            "description": "Active: Kai'Sa releases a swarm of 6 missiles that evenly distributes among nearby  visible enemies, each dealing  physical damage.  Minions below  35% health take double damage.",
+            "description": "Active: Kai'Sa releases a swarm of 6 missiles that evenly distributes among nearby visible enemies, each dealing physical damage. Minions below 35% health take double damage.",
             "icon": "Icathian Rain.png",
             "leveling": [
               {
@@ -326,7 +416,7 @@
             ]
           },
           {
-            "description": "Living Weapon: Requires  100 \u2212 72 (based on level) bonus attack damage to upgrade : Icathian Rain fires 12 missiles.",
+            "description": "Living Weapon: Requires 100 − 72 (based on level) bonus attack damage to upgrade : Icathian Rain fires 12 missiles.",
             "icon": "Icathian Rain 2.png",
             "leveling": [
               {
@@ -454,7 +544,7 @@
         "name": "Icathian Rain",
         "effects": [
           {
-            "description": "Active: Kai'Sa releases a swarm of 6 missiles that evenly distributes among nearby  visible enemies, each dealing  physical damage.  Minions below  35% health take double damage.",
+            "description": "Active: Kai'Sa releases a swarm of 6 missiles that evenly distributes among nearby visible enemies, each dealing physical damage. Minions below 35% health take double damage.",
             "icon": "Icathian Rain.png",
             "leveling": [
               {
@@ -625,7 +715,7 @@
             ]
           },
           {
-            "description": "Living Weapon: Requires  100 \u2212 72 (based on level) bonus attack damage to upgrade : Icathian Rain fires 12 missiles.",
+            "description": "Living Weapon: Requires 100 − 72 (based on level) bonus attack damage to upgrade : Icathian Rain fires 12 missiles.",
             "icon": "Icathian Rain 2.png",
             "leveling": [
               {
@@ -755,7 +845,7 @@
         "name": "Void Seeker",
         "effects": [
           {
-            "description": "Active: Kai'Sa fires a Void blast in the target direction, stopping at the first enemy hit, dealing magic damage, gaining  true sight of them for 4 seconds and applying 2 Plasma.",
+            "description": "Active: Kai'Sa fires a Void blast in the target direction, stopping at the first enemy hit, dealing magic damage, gaining true sight of them for 4 seconds and applying 2 Plasma.",
             "icon": "Void Seeker.png",
             "leveling": [
               {
@@ -814,7 +904,7 @@
             ]
           },
           {
-            "description": "Living Weapon: Requires  100 ability power to upgrade : Void Seeker applies 3 Plasma and refunds 70% of the  cooldown against  champions.",
+            "description": "Living Weapon: Requires 100 ability power to upgrade : Void Seeker applies 3 Plasma and refunds 70% of the cooldown against champions.",
             "icon": "Void Seeker 2.png",
             "leveling": []
           }
@@ -888,7 +978,7 @@
         "name": "Void Seeker",
         "effects": [
           {
-            "description": "Active: Kai'Sa fires a Void blast in the target direction, stopping at the first enemy hit, dealing magic damage, gaining  true sight of them for 4 seconds and applying 2 Plasma.",
+            "description": "Active: Kai'Sa fires a Void blast in the target direction, stopping at the first enemy hit, dealing magic damage, gaining true sight of them for 4 seconds and applying 2 Plasma.",
             "icon": "Void Seeker.png",
             "leveling": [
               {
@@ -947,7 +1037,7 @@
             ]
           },
           {
-            "description": "Living Weapon: Requires  100 ability power to upgrade : Void Seeker applies 3 Plasma and refunds 70% of the  cooldown against  champions.",
+            "description": "Living Weapon: Requires 100 ability power to upgrade : Void Seeker applies 3 Plasma and refunds 70% of the cooldown against champions.",
             "icon": "Void Seeker 2.png",
             "leveling": []
           }
@@ -1023,7 +1113,7 @@
         "name": "Supercharge",
         "effects": [
           {
-            "description": "Active: Kai'Sa  charges for 1.2 \u2212 0.6 (based on bonus attack speed) seconds, gaining  bonus movement speed, increased by 0% \u2212 100% (based on bonus attack speed).",
+            "description": "Active: Kai'Sa charges for 1.2 − 0.6 (based on bonus attack speed) seconds, gaining bonus movement speed, increased by 0% − 100% (based on bonus attack speed).",
             "icon": "Supercharge.png",
             "leveling": [
               {
@@ -1071,7 +1161,7 @@
             ]
           },
           {
-            "description": "After charging up, Kai'Sa gains  bonus attack speed and her basic attack windup percentage is reduced to 6.44% for 4 seconds.",
+            "description": "After charging up, Kai'Sa gains bonus attack speed and her basic attack windup percentage is reduced to 6.44% for 4 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -1098,12 +1188,12 @@
             ]
           },
           {
-            "description": "Supercharge's  cooldown is reduced by 0.5 seconds on-attack.",
+            "description": "Supercharge's cooldown is reduced by 0.5 seconds on-attack.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Living Weapon: Requires  100% \u2212 70% (based on level) bonus attack speed to upgrade : Supercharge grants  invisibility for 0.5 seconds.",
+            "description": "Living Weapon: Requires 100% − 70% (based on level) bonus attack speed to upgrade : Supercharge grants invisibility for 0.5 seconds.",
             "icon": "Supercharge 2.png",
             "leveling": []
           }
@@ -1177,7 +1267,7 @@
         "name": "Supercharge",
         "effects": [
           {
-            "description": "Active: Kai'Sa  charges for 1.2 \u2212 0.6 (based on bonus attack speed) seconds, gaining  bonus movement speed, increased by 0% \u2212 100% (based on bonus attack speed).",
+            "description": "Active: Kai'Sa charges for 1.2 − 0.6 (based on bonus attack speed) seconds, gaining bonus movement speed, increased by 0% − 100% (based on bonus attack speed).",
             "icon": "Supercharge.png",
             "leveling": [
               {
@@ -1225,7 +1315,7 @@
             ]
           },
           {
-            "description": "After charging up, Kai'Sa gains  bonus attack speed and her basic attack windup percentage is reduced to 6.44% for 4 seconds.",
+            "description": "After charging up, Kai'Sa gains bonus attack speed and her basic attack windup percentage is reduced to 6.44% for 4 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -1252,12 +1342,12 @@
             ]
           },
           {
-            "description": "Supercharge's  cooldown is reduced by 0.5 seconds on-attack.",
+            "description": "Supercharge's cooldown is reduced by 0.5 seconds on-attack.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Living Weapon: Requires  100% \u2212 70% (based on level) bonus attack speed to upgrade : Supercharge grants  invisibility for 0.5 seconds.",
+            "description": "Living Weapon: Requires 100% − 70% (based on level) bonus attack speed to upgrade : Supercharge grants invisibility for 0.5 seconds.",
             "icon": "Supercharge 2.png",
             "leveling": []
           }
@@ -1333,7 +1423,7 @@
         "name": "Killer Instinct",
         "effects": [
           {
-            "description": "Active: Kai'Sa  shields herself and  dashes to a target location near an enemy champion recently affected by Plasma. The shield holds for 2 seconds upon arrival.",
+            "description": "Active: Kai'Sa shields herself and dashes to a target location near an enemy champion recently affected by Plasma. The shield holds for 2 seconds upon arrival.",
             "icon": "Killer Instinct.png",
             "leveling": [
               {

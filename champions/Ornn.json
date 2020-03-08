@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 125,
-    "pathingRadius": 25.7665996551513,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 25.7665996551513,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.349999994039535,
-    "attackTotalTime": 1.60000002384185,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.349999994039535,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.60000002384185,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 175,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.75,
-    "urfDamageDealt": 1.1,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.75,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -110,27 +200,27 @@
         "name": "Living Forge",
         "effects": [
           {
-            "description": "Innate: Ornn gains an additional  10% bonus armor and  10% bonus magic resistance from all sources.",
+            "description": "Innate: Ornn gains an additional 10% bonus armor and 10% bonus magic resistance from all sources.",
             "icon": "Living Forge.png",
             "leveling": []
           },
           {
-            "description": "Innate - Living Forge: Ornn can purchase non-consumable items from anywhere on the field by forging them himself, and is also presented a Forge Menu with his recommended items to select to be forged.  Forging takes 4 seconds and the process is  interrupted if Ornn enters combat, disabling Living Forge.",
+            "description": "Innate - Living Forge: Ornn can purchase non-consumable items from anywhere on the field by forging them himself, and is also presented a Forge Menu with his recommended items to select to be forged. Forging takes 4 seconds and the process is interrupted if Ornn enters combat, disabling Living Forge.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Innate - Master Craftman: When Ornn reaches level 13, any upgradable (Masterwork) item Ornn owns or purchases for the rest of the game is upgraded for free, up to a maximum of 2. Additionally, for each level after 13 (level 14, 15, 16 and 17), Ornn can upgrade one of his ally's upgradable items (Masterwork) by getting within 600 range of them and clicking on them, up to a maximum of 1 per ally.\n Masterwork items: \n Attack Damage Items:  Might of the Ruined King,  Molten Edge,  Obsidian Cleaver,  Trinity Fusion,  Youmuu's Wraithblade.\n Ability Power Items:  Luden's Pulse,  Rabadon's Deathcrown,  Zhonya's Paradox.\n Tank Items:  Forgefire Cape,  Frozen Fist,  Infernal Mask.\n Support Items:  Circlet of the Iron Solari,  Salvation.",
+            "description": "Innate - Master Craftman: When Ornn reaches level 13, any upgradable (Masterwork) item Ornn owns or purchases for the rest of the game is upgraded for free, up to a maximum of 2. Additionally, for each level after 13 (level 14, 15, 16 and 17), Ornn can upgrade one of his ally's upgradable items (Masterwork) by getting within 600 range of them and clicking on them, up to a maximum of 1 per ally.\n Masterwork items: \n Attack Damage Items: Might of the Ruined King, Molten Edge, Obsidian Cleaver, Trinity Fusion, Youmuu's Wraithblade.\n Ability Power Items: Luden's Pulse, Rabadon's Deathcrown, Zhonya's Paradox.\n Tank Items: Forgefire Cape, Frozen Fist, Infernal Mask.\n Support Items: Circlet of the Iron Solari, Salvation.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Innate - Temper: Ornn's basic attacks against  Brittle enemies briefly  knocks them back.",
+            "description": "Innate - Temper: Ornn's basic attacks against Brittle enemies briefly knocks them back.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Enemies made  Brittle by Ornn take 10% \u2212 18% (based on Ornn's level) of their maximum health as  bonus magic damage the next time they are  immobilized by Ornn or his allies, consuming Brittle.",
+            "description": "Enemies made Brittle by Ornn take 10% − 18% (based on Ornn's level) of their maximum health as bonus magic damage the next time they are immobilized by Ornn or his allies, consuming Brittle.",
             "icon": null,
             "leveling": []
           }
@@ -165,27 +255,27 @@
         "name": "Living Forge",
         "effects": [
           {
-            "description": "Innate: Ornn gains an additional  10% bonus armor and  10% bonus magic resistance from all sources.",
+            "description": "Innate: Ornn gains an additional 10% bonus armor and 10% bonus magic resistance from all sources.",
             "icon": "Living Forge.png",
             "leveling": []
           },
           {
-            "description": "Innate - Living Forge: Ornn can purchase non-consumable items from anywhere on the field by forging them himself, and is also presented a Forge Menu with his recommended items to select to be forged.  Forging takes 4 seconds and the process is  interrupted if Ornn enters combat, disabling Living Forge.",
+            "description": "Innate - Living Forge: Ornn can purchase non-consumable items from anywhere on the field by forging them himself, and is also presented a Forge Menu with his recommended items to select to be forged. Forging takes 4 seconds and the process is interrupted if Ornn enters combat, disabling Living Forge.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Innate - Master Craftman: When Ornn reaches level 13, any upgradable (Masterwork) item Ornn owns or purchases for the rest of the game is upgraded for free, up to a maximum of 2. Additionally, for each level after 13 (level 14, 15, 16 and 17), Ornn can upgrade one of his ally's upgradable items (Masterwork) by getting within 600 range of them and clicking on them, up to a maximum of 1 per ally.\n Masterwork items: \n Attack Damage Items:  Might of the Ruined King,  Molten Edge,  Obsidian Cleaver,  Trinity Fusion,  Youmuu's Wraithblade.\n Ability Power Items:  Luden's Pulse,  Rabadon's Deathcrown,  Zhonya's Paradox.\n Tank Items:  Forgefire Cape,  Frozen Fist,  Infernal Mask.\n Support Items:  Circlet of the Iron Solari,  Salvation.",
+            "description": "Innate - Master Craftman: When Ornn reaches level 13, any upgradable (Masterwork) item Ornn owns or purchases for the rest of the game is upgraded for free, up to a maximum of 2. Additionally, for each level after 13 (level 14, 15, 16 and 17), Ornn can upgrade one of his ally's upgradable items (Masterwork) by getting within 600 range of them and clicking on them, up to a maximum of 1 per ally.\n Masterwork items: \n Attack Damage Items: Might of the Ruined King, Molten Edge, Obsidian Cleaver, Trinity Fusion, Youmuu's Wraithblade.\n Ability Power Items: Luden's Pulse, Rabadon's Deathcrown, Zhonya's Paradox.\n Tank Items: Forgefire Cape, Frozen Fist, Infernal Mask.\n Support Items: Circlet of the Iron Solari, Salvation.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Innate - Temper: Ornn's basic attacks against  Brittle enemies briefly  knocks them back.",
+            "description": "Innate - Temper: Ornn's basic attacks against Brittle enemies briefly knocks them back.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Enemies made  Brittle by Ornn take 10% \u2212 18% (based on Ornn's level) of their maximum health as  bonus magic damage the next time they are  immobilized by Ornn or his allies, consuming Brittle.",
+            "description": "Enemies made Brittle by Ornn take 10% − 18% (based on Ornn's level) of their maximum health as bonus magic damage the next time they are immobilized by Ornn or his allies, consuming Brittle.",
             "icon": null,
             "leveling": []
           }
@@ -222,7 +312,7 @@
         "name": "Volcanic Rupture",
         "effects": [
           {
-            "description": "Active: Ornn slams the ground, sending a fissure in the target direction that stops at maximum range or 200 units behind a hit enemy champion, dealing  physical damage and  slowing enemies hit by 40% for 2 seconds.",
+            "description": "Active: Ornn slams the ground, sending a fissure in the target direction that stops at maximum range or 200 units behind a hit enemy champion, dealing physical damage and slowing enemies hit by 40% for 2 seconds.",
             "icon": "Volcanic Rupture.png",
             "leveling": [
               {
@@ -265,12 +355,12 @@
             ]
           },
           {
-            "description": "After a 1.125-second delay, a  magma pillar erupts at maximum range,  knocking aside enemies hit and lingering as impassible terrain for 4 seconds.",
+            "description": "After a 1.125-second delay, a magma pillar erupts at maximum range, knocking aside enemies hit and lingering as impassible terrain for 4 seconds.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "The pillar will not expire while Ornn is  charging.",
+            "description": "The pillar will not expire while Ornn is charging.",
             "icon": null,
             "leveling": []
           }
@@ -346,12 +436,12 @@
         "name": "Bellows Breath",
         "effects": [
           {
-            "description": "Active: Ornn marches  unstoppably in the target direction with 35% reduced  movement speed for 0.75 seconds.",
+            "description": "Active: Ornn marches unstoppably in the target direction with 35% reduced movement speed for 0.75 seconds.",
             "icon": "Bellows Breath.png",
             "leveling": []
           },
           {
-            "description": "Over the march he belches fire over a cone in front of him, dealing magic damage every 0.15 seconds to enemies hit. The final bout of flame will apply  Brittle for 3 seconds.",
+            "description": "Over the march he belches fire over a cone in front of him, dealing magic damage every 0.15 seconds to enemies hit. The final bout of flame will apply Brittle for 3 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -399,7 +489,7 @@
             ]
           },
           {
-            "description": "Bellows Breath has a minimum damage threshold, which is also the damage dealt to  minions.  Monsters take modified damage as well.",
+            "description": "Bellows Breath has a minimum damage threshold, which is also the damage dealt to minions. Monsters take modified damage as well.",
             "icon": null,
             "leveling": [
               {
@@ -560,7 +650,7 @@
         "name": "Searing Charge",
         "effects": [
           {
-            "description": "Active: Ornn  charges forward, dealing physical damage to enemies he passes through, stopping upon colliding with terrain.",
+            "description": "Active: Ornn charges forward, dealing physical damage to enemies he passes through, stopping upon colliding with terrain.",
             "icon": "Searing Charge.png",
             "leveling": [
               {
@@ -619,12 +709,12 @@
             ]
           },
           {
-            "description": "If Ornn collides with terrain while charging he creates a shockwave that deals the same damage and  knocks up enemies within for 1 second. Enemies can only be damaged once by Searing Charge.",
+            "description": "If Ornn collides with terrain while charging he creates a shockwave that deals the same damage and knocks up enemies within for 1 second. Enemies can only be damaged once by Searing Charge.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "The shockwave destroys  Magma pillars and partially destroys terrain created by enemy champions.",
+            "description": "The shockwave destroys Magma pillars and partially destroys terrain created by enemy champions.",
             "icon": null,
             "leveling": []
           }
@@ -700,7 +790,7 @@
         "name": "Call of the Forge God",
         "effects": [
           {
-            "description": "Active: Ornn summons an elemental at maximum range in the target direction that stampedes towards his direction for 3000 range on increasing speed, dealing magic damage and  slowing enemies hit for 2 seconds, as well as applying  Brittle for 3 seconds. The  slow scales with the distance traveled by the elemental, with a minimum of 10%.",
+            "description": "Active: Ornn summons an elemental at maximum range in the target direction that stampedes towards his direction for 3000 range on increasing speed, dealing magic damage and slowing enemies hit for 2 seconds, as well as applying Brittle for 3 seconds. The slow scales with the distance traveled by the elemental, with a minimum of 10%.",
             "icon": "Call of the Forge God.png",
             "leveling": [
               {
@@ -786,7 +876,7 @@
             "leveling": []
           },
           {
-            "description": "Recast: Ornn  dashes 300 units in the target direction (but not through terrain). If Ornn collides with the elemental, he headbutts it, sending it stampeding again in the new direction and empowering it to  knock up enemies hit for 1 second, reduced to 0.5 seconds after the first enemy champion hit. Call of the Forge God can affect enemies twice and applies  Brittle on each hit.",
+            "description": "Recast: Ornn dashes 300 units in the target direction (but not through terrain). If Ornn collides with the elemental, he headbutts it, sending it stampeding again in the new direction and empowering it to knock up enemies hit for 1 second, reduced to 0.5 seconds after the first enemy champion hit. Call of the Forge God can affect enemies twice and applies Brittle on each hit.",
             "icon": "Call of the Forge God 2.png",
             "leveling": []
           }

@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 520,
-    "selectionRadius": 135,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 520,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 135,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2.11,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0708333328366279,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0708333328366279,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 480,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 0.95,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "MAGE",
@@ -110,7 +200,7 @@
         "name": "Dread",
         "effects": [
           {
-            "description": "Innate: Standing still or  channeling abilities for 1.5 seconds grants Fiddlesticks  25 / 30 / 35 / 40% (based on level) bonus movement speed, that lasts for 1.5 seconds once he starts moving. Being  immobilized will not trigger Dread, and will reset the timer.",
+            "description": "Innate: Standing still or channeling abilities for 1.5 seconds grants Fiddlesticks 25 / 30 / 35 / 40% (based on level) bonus movement speed, that lasts for 1.5 seconds once he starts moving. Being immobilized will not trigger Dread, and will reset the timer.",
             "icon": "Dread.png",
             "leveling": []
           },
@@ -152,7 +242,7 @@
         "name": "Terrify",
         "effects": [
           {
-            "description": "Active: Fiddlesticks causes the target enemy to  flee as well as  slowing them by 90%.",
+            "description": "Active: Fiddlesticks causes the target enemy to flee as well as slowing them by 90%.",
             "icon": "Terrify.png",
             "leveling": [
               {
@@ -250,7 +340,7 @@
         "name": "Drain",
         "effects": [
           {
-            "description": "Active: Fiddlesticks tethers himself to the target enemy and  channels for up to 5 seconds. While channeling, he deals  magic damage each second, and  heals himself for a percentage of the damage done.",
+            "description": "Active: Fiddlesticks tethers himself to the target enemy and channels for up to 5 seconds. While channeling, he deals magic damage each second, and heals himself for a percentage of the damage done.",
             "icon": "Drain.png",
             "leveling": [
               {
@@ -425,7 +515,7 @@
             ]
           },
           {
-            "description": "If the target breaks the tether by moving out of range, Drain ends immediately. If the target dies before the channel completes, the  cooldown is reduced by its remaining duration.",
+            "description": "If the target breaks the tether by moving out of range, Drain ends immediately. If the target dies before the channel completes, the cooldown is reduced by its remaining duration.",
             "icon": null,
             "leveling": []
           }
@@ -501,7 +591,7 @@
         "name": "Dark Wind",
         "effects": [
           {
-            "description": "Active: Fiddlesticks sends a crow to the target enemy that bounces to nearby enemies up to 5 times, prioritizing targets not yet hit or targets affected by  Drain, dealing magic damage with each bounce and  silencing them for 1.25 seconds once.",
+            "description": "Active: Fiddlesticks sends a crow to the target enemy that bounces to nearby enemies up to 5 times, prioritizing targets not yet hit or targets affected by Drain, dealing magic damage with each bounce and silencing them for 1.25 seconds once.",
             "icon": "Dark Wind.png",
             "leveling": [
               {
@@ -732,7 +822,7 @@
         "name": "Crowstorm",
         "effects": [
           {
-            "description": "Active: After  channeling for 1.5 seconds, Fiddlesticks  blinks to the target location with a murder of crows flying wildly around him for 5 seconds, dealing magic damage to nearby enemies each second.",
+            "description": "Active: After channeling for 1.5 seconds, Fiddlesticks blinks to the target location with a murder of crows flying wildly around him for 5 seconds, dealing magic damage to nearby enemies each second.",
             "icon": "Crowstorm.png",
             "leveling": [
               {

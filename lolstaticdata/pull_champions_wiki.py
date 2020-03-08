@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from collections import Counter
 
 from modelchampion import Champion, Stats, Ability, AttackType, AttributeRatings, Cooldown, Cost, Effect, Price, Resource, Modifier, Role, Leveling
-from modelcommon import DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration
+from modelcommon import DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration, Stat
 from utils import download_soup, parse_top_level_parentheses, grouper, to_enum_like
 
 
@@ -169,29 +169,29 @@ class LolWikiDataHandler:
                     flat=data["stats"]["as_base"],
                     per_level=data["stats"]["as_lvl"],
                 ),
-                attack_speed_ratio=data["stats"]["as_ratio"],
-                attack_cast_time=data["stats"].get("attack_cast_time", 0.3),  # I don't know if this default is correct, but going off the values the wiki provides, it seems reasonable.
-                attack_total_time=data["stats"].get("attack_total_time", 1.6),  # ibid
-                attack_delay_offset=data["stats"].get("attack_delay_offset", 0),
+                attack_speed_ratio=Stat(flat=data["stats"]["as_ratio"]),
+                attack_cast_time=Stat(flat=data["stats"].get("attack_cast_time", 0.3)),  # I don't know if this default is correct, but going off the values the wiki provides, it seems reasonable.
+                attack_total_time=Stat(flat=data["stats"].get("attack_total_time", 1.6)),  # ibid
+                attack_delay_offset=Stat(flat=data["stats"].get("attack_delay_offset", 0)),
                 attack_range=AttackRange(
                     flat=data["stats"]["range"],
                     per_level=data["stats"].get("range_lvl", 0),
                 ),
-                critical_strike_damage=data["stats"].get("crit_base", 200),
-                critical_strike_damage_modifier=data["stats"].get("crit_base", 1.0),
+                critical_strike_damage=Stat(flat=data["stats"].get("crit_base", 200)),
+                critical_strike_damage_modifier=Stat(flat=data["stats"].get("crit_base", 1.0)),
                 movespeed=Movespeed(flat=data["stats"]["ms"]),
-                acquisition_radius=data["stats"].get("acquisition_radius", 800),
-                selection_radius=data["stats"].get("selection_radius", 100),
-                pathing_radius=data["stats"].get("pathing_radius", 35),
-                gameplay_radius=data["stats"].get("gameplay_radius", 65),
-                aram_damage_taken=data["stats"].get("aram_dmg_taken", 1.0),
-                aram_damage_dealt=data["stats"].get("aram_dmg_dealt", 1.0),
-                aram_healing=data["stats"].get("aram_healing", 1.0),
-                aram_shielding=data["stats"].get("aram_shielding", 1.0),
-                urf_damage_taken=data["stats"].get("urf_dmg_taken", 1.0),
-                urf_damage_dealt=data["stats"].get("urf_dmg_dealt", 1.0),
-                urf_healing=data["stats"].get("urf_healing", 1.0),
-                urf_shielding=data["stats"].get("urf_shielding", 1.0),
+                acquisition_radius=Stat(flat=data["stats"].get("acquisition_radius", 800)),
+                selection_radius=Stat(flat=data["stats"].get("selection_radius", 100)),
+                pathing_radius=Stat(flat=data["stats"].get("pathing_radius", 35)),
+                gameplay_radius=Stat(flat=data["stats"].get("gameplay_radius", 65)),
+                aram_damage_taken=Stat(flat=data["stats"].get("aram_dmg_taken", 1.0)),
+                aram_damage_dealt=Stat(flat=data["stats"].get("aram_dmg_dealt", 1.0)),
+                aram_healing=Stat(flat=data["stats"].get("aram_healing", 1.0)),
+                aram_shielding=Stat(flat=data["stats"].get("aram_shielding", 1.0)),
+                urf_damage_taken=Stat(flat=data["stats"].get("urf_dmg_taken", 1.0)),
+                urf_damage_dealt=Stat(flat=data["stats"].get("urf_dmg_dealt", 1.0)),
+                urf_healing=Stat(flat=data["stats"].get("urf_healing", 1.0)),
+                urf_shielding=Stat(flat=data["stats"].get("urf_shielding", 1.0)),
             ),
             roles=sorted({
                 *(Role.from_string(r) for r in data["role"]),
@@ -342,6 +342,8 @@ class LolWikiDataHandler:
             effects = []
             for ending in ['', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']:
                 description = data.get(f"description{ending}")
+                while description and '  ' in description:
+                    description = description.replace('  ', ' ')
                 icon = data.get(f"icon{ending}")
                 leveling = data.get_source(f"leveling{ending}")
                 leveling = self._render_levelings(leveling, nvalues) if leveling else []
@@ -441,7 +443,19 @@ class LolWikiDataHandler:
             except Exception as error:
                 print(f"ERROR: FAILURE TO PARSE MODIFIER:  {lvling}")
                 print("ERROR:", error)
-                modifiers.append(lvling)
+                while '  ' in lvling:
+                    lvling = lvling.replace('  ', ' ')
+                value = 0
+                if lvling.lower() == "Siphoning Strike Stacks".lower():  # Nasus
+                    value = 1
+                if lvling.lower() == "increased by 3% per 1% of health lost in the past 4 seconds".lower():  # Ekko
+                    value = 3
+                    lvling = "% per 1% of health lost in the past 4 seconds"
+                modifier = Modifier(
+                    values=[value for _ in range(nvalues)],
+                    units=[lvling for _ in range(nvalues)]
+                )
+                modifiers.append(modifier)
         return modifiers
 
     def _render_modifier(self, mod: str, nvalues: int) -> Modifier:
@@ -579,15 +593,15 @@ def main():
     for champion in handler.get_champions():
         champions.append(champion)
         jsonfn = os.path.join(directory,"champions",str(champion.key) + ".json")
-        with open(jsonfn, 'w') as f:
-            f.write(champion.__json__(indent=2))
+        with open(jsonfn, 'w', encoding='utf8') as f:
+            f.write(champion.__json__(indent=2, ensure_ascii=False))
 
     jsonfn = os.path.join(directory, "champions.json")
     jsons = {}
     for champion in champions:
-        jsons[champion.key] = json.loads(champion.__json__())
-    with open(jsonfn, 'w') as f:
-        json.dump(jsons, f, indent=2)
+        jsons[champion.key] = json.loads(champion.__json__(ensure_ascii=False))
+    with open(jsonfn, 'w', encoding='utf8') as f:
+        json.dump(jsons, f, indent=2, ensure_ascii=False)
     del jsons
 
 

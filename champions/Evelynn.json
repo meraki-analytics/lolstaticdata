@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.667,
       "percent": 0.0,
       "perLevel": 2.1,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.666999995708465,
-    "attackCastTime": 0.230000004172325,
-    "attackTotalTime": 1.5,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.666999995708465,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.230000004172325,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.5,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.85,
-    "aramDamageDealt": 1.15,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.2,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.85,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.15,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.2,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -114,7 +204,7 @@
             "leveling": []
           },
           {
-            "description": "Demon Shade: While below  250 \u2212 590 (based on level) (+ 250% AP) health, Evelynn  restores  15 \u2212 75 (based on level) health every second. From level 6 onward, Demon Shade also grants  camouflage.",
+            "description": "Demon Shade: While below 250 − 590 (based on level) (+ 250% AP) health, Evelynn restores 15 − 75 (based on level) health every second. From level 6 onward, Demon Shade also grants camouflage.",
             "icon": null,
             "leveling": []
           }
@@ -151,7 +241,7 @@
         "name": "Hate Spike",
         "effects": [
           {
-            "description": "Active: Evelynn launches a dart in the target direction, dealing  magic damage to the first enemy hit. Hitting a  monster refunds  50% of the cooldown.",
+            "description": "Active: Evelynn launches a dart in the target direction, dealing magic damage to the first enemy hit. Hitting a monster refunds 50% of the cooldown.",
             "icon": "Hate Spike.png",
             "leveling": [
               {
@@ -472,7 +562,7 @@
             "leveling": []
           },
           {
-            "description": "Evelynn's next basic attack or ability against the accursed expunges them,  slowing them by 65%.",
+            "description": "Evelynn's next basic attack or ability against the accursed expunges them, slowing them by 65%.",
             "icon": null,
             "leveling": [
               {
@@ -520,12 +610,12 @@
             ]
           },
           {
-            "description": "Expunging a target will refund Allure's  mana cost. If the target is cursed for at least 2.5 seconds she also  charms them, as well as applying additional effects based on the target type.",
+            "description": "Expunging a target will refund Allure's mana cost. If the target is cursed for at least 2.5 seconds she also charms them, as well as applying additional effects based on the target type.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Against  champions, the expunge also reduces their magic resistance for 4 seconds.Against  monsters, the expunge deals bonus magic damage and the  charm lasts for 2 more seconds.",
+            "description": "Against champions, the expunge also reduces their magic resistance for 4 seconds.Against monsters, the expunge deals bonus magic damage and the charm lasts for 2 more seconds.",
             "icon": null,
             "leveling": [
               {
@@ -703,12 +793,12 @@
             ]
           },
           {
-            "description": "Evelynn also gains  30% bonus movement speed for 2 seconds.",
+            "description": "Evelynn also gains 30% bonus movement speed for 2 seconds.",
             "icon": "Whiplash 2.png",
             "leveling": []
           },
           {
-            "description": "Gaining  Demon Shade resets Whiplash's  cooldown and  empowers the next cast.",
+            "description": "Gaining Demon Shade resets Whiplash's cooldown and empowers the next cast.",
             "icon": null,
             "leveling": []
           }
@@ -782,7 +872,7 @@
         "name": "Empowered Whiplash",
         "effects": [
           {
-            "description": "Active: Evelynn  dashes toward the target enemy, dealing increased damage as well as damaging all enemies she passes through. On-hit effects are only applied to her target.",
+            "description": "Active: Evelynn dashes toward the target enemy, dealing increased damage as well as damaging all enemies she passes through. On-hit effects are only applied to her target.",
             "icon": "Empowered Whiplash.png",
             "leveling": [
               {
@@ -825,7 +915,7 @@
             ]
           },
           {
-            "description": "The percentile health damage deals a minimum of 25 and is capped at 450 against  monsters.",
+            "description": "The percentile health damage deals a minimum of 25 and is capped at 450 against monsters.",
             "icon": null,
             "leveling": []
           }
@@ -862,12 +952,12 @@
         "name": "Last Caress",
         "effects": [
           {
-            "description": "Active: Evelynn becomes  untargetable as she reveals her true form to all enemies in front of her, before  blinking back 700 units.",
+            "description": "Active: Evelynn becomes untargetable as she reveals her true form to all enemies in front of her, before blinking back 700 units.",
             "icon": "Last Caress.png",
             "leveling": []
           },
           {
-            "description": "Enemies caught in her reveal are devastated, taking magic damage, with enemies below  30% of their maximum health receiving 140% bonus damage.",
+            "description": "Enemies caught in her reveal are devastated, taking magic damage, with enemies below 30% of their maximum health receiving 140% bonus damage.",
             "icon": "Last Caress 2.png",
             "leveling": [
               {
@@ -983,7 +1073,7 @@
         "innerRadius": null,
         "speed": null,
         "width": null,
-        "angle": "180\u00b0",
+        "angle": "180°",
         "castTime": null,
         "effectRadius": "500",
         "targetRange": null

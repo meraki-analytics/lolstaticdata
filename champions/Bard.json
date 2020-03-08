@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 88.8889007568359,
-    "pathingRadius": 35,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 88.8889007568359,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 2,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.300000011920928,
-    "attackTotalTime": 1.60000002384185,
-    "attackDelayOffset": -0.100000001490116,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.300000011920928,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.60000002384185,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.100000001490116,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 500,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.85,
-    "aramDamageDealt": 1.1,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.9,
-    "urfDamageDealt": 1.2,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.85,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.2,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "CATCHER",
@@ -110,12 +200,12 @@
         "name": "Traveler's Call",
         "effects": [
           {
-            "description": "Innate - Ancient Chimes: Bard's presence causes sacred chimes to appear at random locations and linger for up to 10 minutes. Collecting a chime grants Bard  24% bonus movement speed out of combat for 7 seconds, stacking up to 5 times, with every other chime collected beyond the first granting an additional 14% bonus movement speed, up to a total of 80% bonus movement speed,  20 + (1 per minute after 5 minutes) experience, and  12% maximum mana. Bard empowers his  Meeps each time he collects 5 chimes.",
+            "description": "Innate - Ancient Chimes: Bard's presence causes sacred chimes to appear at random locations and linger for up to 10 minutes. Collecting a chime grants Bard 24% bonus movement speed out of combat for 7 seconds, stacking up to 5 times, with every other chime collected beyond the first granting an additional 14% bonus movement speed, up to a total of 80% bonus movement speed, 20 + (1 per minute after 5 minutes) experience, and 12% maximum mana. Bard empowers his Meeps each time he collects 5 chimes.",
             "icon": "Traveler's Call.png",
             "leveling": []
           },
           {
-            "description": "Innate - Meeps: Bard's presence attracts small spirits known as Meeps to his side. On-attack he consumes a Meep, dealing 40 (+ 12 per 5 chimes collected) (+ 30% AP)  bonus magic damage. At 5 chimes, Meeps start  slowing damaged enemies by 25% \u2212 75% (based on number of Chimes) for 1 second, and at 15 chimes they deal splash damage to enemies within 150 units of his target as well as those in a cone behind them, with the cone's size increasing at 35 chimes. Meeps spawn every 8 \u2212 4 (based on number of Chimes) seconds and Bard can keep up to 1 \u2212 9 (based on number of Chimes) of them at a time.",
+            "description": "Innate - Meeps: Bard's presence attracts small spirits known as Meeps to his side. On-attack he consumes a Meep, dealing 40 (+ 12 per 5 chimes collected) (+ 30% AP) bonus magic damage. At 5 chimes, Meeps start slowing damaged enemies by 25% − 75% (based on number of Chimes) for 1 second, and at 15 chimes they deal splash damage to enemies within 150 units of his target as well as those in a cone behind them, with the cone's size increasing at 35 chimes. Meeps spawn every 8 − 4 (based on number of Chimes) seconds and Bard can keep up to 1 − 9 (based on number of Chimes) of them at a time.",
             "icon": "Traveler's Call 2.png",
             "leveling": []
           }
@@ -150,12 +240,12 @@
         "name": "Traveler's Call",
         "effects": [
           {
-            "description": "Innate - Ancient Chimes: Bard's presence causes sacred chimes to appear at random locations and linger for up to 10 minutes. Collecting a chime grants Bard  24% bonus movement speed out of combat for 7 seconds, stacking up to 5 times, with every other chime collected beyond the first granting an additional 14% bonus movement speed, up to a total of 80% bonus movement speed,  20 + (1 per minute after 5 minutes) experience, and  12% maximum mana. Bard empowers his  Meeps each time he collects 5 chimes.",
+            "description": "Innate - Ancient Chimes: Bard's presence causes sacred chimes to appear at random locations and linger for up to 10 minutes. Collecting a chime grants Bard 24% bonus movement speed out of combat for 7 seconds, stacking up to 5 times, with every other chime collected beyond the first granting an additional 14% bonus movement speed, up to a total of 80% bonus movement speed, 20 + (1 per minute after 5 minutes) experience, and 12% maximum mana. Bard empowers his Meeps each time he collects 5 chimes.",
             "icon": "Traveler's Call.png",
             "leveling": []
           },
           {
-            "description": "Innate - Meeps: Bard's presence attracts small spirits known as Meeps to his side. On-attack he consumes a Meep, dealing 40 (+ 12 per 5 chimes collected) (+ 30% AP)  bonus magic damage. At 5 chimes, Meeps start  slowing damaged enemies by 25% \u2212 75% (based on number of Chimes) for 1 second, and at 15 chimes they deal splash damage to enemies within 150 units of his target as well as those in a cone behind them, with the cone's size increasing at 35 chimes. Meeps spawn every 8 \u2212 4 (based on number of Chimes) seconds and Bard can keep up to 1 \u2212 9 (based on number of Chimes) of them at a time.",
+            "description": "Innate - Meeps: Bard's presence attracts small spirits known as Meeps to his side. On-attack he consumes a Meep, dealing 40 (+ 12 per 5 chimes collected) (+ 30% AP) bonus magic damage. At 5 chimes, Meeps start slowing damaged enemies by 25% − 75% (based on number of Chimes) for 1 second, and at 15 chimes they deal splash damage to enemies within 150 units of his target as well as those in a cone behind them, with the cone's size increasing at 35 chimes. Meeps spawn every 8 − 4 (based on number of Chimes) seconds and Bard can keep up to 1 − 9 (based on number of Chimes) of them at a time.",
             "icon": "Traveler's Call 2.png",
             "leveling": []
           }
@@ -192,7 +282,7 @@
         "name": "Cosmic Binding",
         "effects": [
           {
-            "description": "Active: Bard fires a burst of spirit energy in the target direction, dealing magic damage to the first enemy struck and briefly  slowing them by 60%.",
+            "description": "Active: Bard fires a burst of spirit energy in the target direction, dealing magic damage to the first enemy struck and briefly slowing them by 60%.",
             "icon": "Cosmic Binding.png",
             "leveling": [
               {
@@ -256,7 +346,7 @@
             ]
           },
           {
-            "description": "After Cosmic Binding hits an enemy, the energy continues behind them for 300 units. If the burst hits a wall or a second enemy, it  stuns both targets for the same duration, dealing the same magic damage to the second target as well.",
+            "description": "After Cosmic Binding hits an enemy, the energy continues behind them for 300 units. If the burst hits a wall or a second enemy, it stuns both targets for the same duration, dealing the same magic damage to the second target as well.",
             "icon": null,
             "leveling": []
           }
@@ -337,7 +427,7 @@
             "leveling": []
           },
           {
-            "description": "If the champion was an ally or Bard himself, they are  healed for an amount based on the shrine's power and gain  50% bonus movement speed that decays over 1.5 seconds.",
+            "description": "If the champion was an ally or Bard himself, they are healed for an amount based on the shrine's power and gain 50% bonus movement speed that decays over 1.5 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -493,7 +583,7 @@
             "leveling": []
           },
           {
-            "description": "Both allies and enemies can  pass through the corridor by right-clicking on it or its exit, with allies and Bard travelling at 33.3% increased speed.",
+            "description": "Both allies and enemies can pass through the corridor by right-clicking on it or its exit, with allies and Bard travelling at 33.3% increased speed.",
             "icon": null,
             "leveling": []
           }
@@ -569,12 +659,12 @@
         "name": "Tempered Fate",
         "effects": [
           {
-            "description": "Active: Bard sends magical energy arcing to the target location, putting all units and structures in the target area into  stasis for 2.5 seconds upon impact.",
+            "description": "Active: Bard sends magical energy arcing to the target location, putting all units and structures in the target area into stasis for 2.5 seconds upon impact.",
             "icon": "Tempered Fate.png",
             "leveling": []
           },
           {
-            "description": "Despite normally being immune to crowd control,  epic monsters and  turrets (excluding the  Nexus Obelisk) also enter  stasis.",
+            "description": "Despite normally being immune to crowd control, epic monsters and turrets (excluding the Nexus Obelisk) also enter stasis.",
             "icon": null,
             "leveling": []
           }

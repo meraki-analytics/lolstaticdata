@@ -26,6 +26,12 @@
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
+    "manaRegen": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
     "armor": {
       "flat": 38,
       "percent": 0.0,
@@ -50,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 100,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.658,
       "percent": 0.0,
       "perLevel": 2.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.657999992370605,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.102631576359272,
+    "attackSpeedRatio": {
+      "flat": 0.657999992370605,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.102631576359272,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.95,
-    "aramDamageDealt": 1.05,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -104,12 +200,12 @@
         "name": "Fury of the Dragonborn",
         "effects": [
           {
-            "description": "Innate: Shyvana deals 20% bonus physical and magic damage to  Dragons.",
+            "description": "Innate: Shyvana deals 20% bonus physical and magic damage to Dragons.",
             "icon": "Fury of the Dragonborn.png",
             "leveling": []
           },
           {
-            "description": "Additionally, Shyvana starts with  5 bonus armor and  5 bonus magic resistance, which is permanently increased by 5 for every elemental drake ( Cloud Drake,  Infernal Drake,  Mountain Drake, and  Ocean Drake) and  Elder Dragon her team slays.",
+            "description": "Additionally, Shyvana starts with 5 bonus armor and 5 bonus magic resistance, which is permanently increased by 5 for every elemental drake ( Cloud Drake, Infernal Drake, Mountain Drake, and Ocean Drake) and Elder Dragon her team slays.",
             "icon": null,
             "leveling": []
           }
@@ -146,7 +242,7 @@
         "name": "Twin Bite",
         "effects": [
           {
-            "description": "Active: Shyvana's next basic attack within 6 seconds strikes an additional time after 0.25 seconds, dealing  bonus physical damage.",
+            "description": "Active: Shyvana's next basic attack within 6 seconds strikes an additional time after 0.25 seconds, dealing bonus physical damage.",
             "icon": "Twin Bite.png",
             "leveling": [
               {
@@ -173,12 +269,12 @@
             ]
           },
           {
-            "description": "The second strike applies  on-hit and on-attack effects and is affected by  critical strike modifiers.",
+            "description": "The second strike applies on-hit and on-attack effects and is affected by critical strike modifiers.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Shyvana's basic attacks against non-structures reduce Twin Bite's  cooldown by 0.5 seconds on-hit.",
+            "description": "Shyvana's basic attacks against non-structures reduce Twin Bite's cooldown by 0.5 seconds on-hit.",
             "icon": null,
             "leveling": []
           },
@@ -188,7 +284,7 @@
             "leveling": []
           },
           {
-            "description": "Dragon Form: Shyvana instantly strikes all enemies in a cone in front of her twice, applying on-hit effects twice to each target hit. The second strike cannot  critically strike on the primary target and doesn't trigger on-attack effects.",
+            "description": "Dragon Form: Shyvana instantly strikes all enemies in a cone in front of her twice, applying on-hit effects twice to each target hit. The second strike cannot critically strike on the primary target and doesn't trigger on-attack effects.",
             "icon": null,
             "leveling": []
           }
@@ -245,7 +341,7 @@
         "name": "Burnout",
         "effects": [
           {
-            "description": "Active: Shyvana surrounds herself in flames for 3 seconds, gaining  bonus movement speed and dealing  magic damage to surrounding enemies each second.",
+            "description": "Active: Shyvana surrounds herself in flames for 3 seconds, gaining bonus movement speed and dealing magic damage to surrounding enemies each second.",
             "icon": "Burnout.png",
             "leveling": [
               {
@@ -379,7 +475,7 @@
             ]
           },
           {
-            "description": "Dragon Form: Burnout has increased effect radius, scaling with  Dragon's Descent's rank.",
+            "description": "Dragon Form: Burnout has increased effect radius, scaling with Dragon's Descent's rank.",
             "icon": null,
             "leveling": []
           }
@@ -500,7 +596,7 @@
             "leveling": []
           },
           {
-            "description": "Dragon Form: Flame Breath explodes upon hitting a champion or reaching the target location, dealing increased magic damage to them and surrounding enemies (area radius scales with  Dragon's Descent's rank) and scorching the earth for 4 seconds. Enemies standing on scorched earth take 60 \u2212 120 (based on level) (+ 10% AD) (+ 20% AP) magic damage per second and are persistently marked.",
+            "description": "Dragon Form: Flame Breath explodes upon hitting a champion or reaching the target location, dealing increased magic damage to them and surrounding enemies (area radius scales with Dragon's Descent's rank) and scorching the earth for 4 seconds. Enemies standing on scorched earth take 60 − 120 (based on level) (+ 10% AD) (+ 20% AP) magic damage per second and are persistently marked.",
             "icon": null,
             "leveling": [
               {
@@ -653,7 +749,7 @@
         "name": "Dragon's Descent",
         "effects": [
           {
-            "description": "Passive - Fury: Dragon's Descent has no cooldown or initial cost but can only be activated when Shyvana has  100 Fury. Shyvana passively generates Fury per second while in human form, 2 Fury per basic attack on-hit in either form, and 100 Fury when Dragon's Descent is first learned.",
+            "description": "Passive - Fury: Dragon's Descent has no cooldown or initial cost but can only be activated when Shyvana has 100 Fury. Shyvana passively generates Fury per second while in human form, 2 Fury per basic attack on-hit in either form, and 100 Fury when Dragon's Descent is first learned.",
             "icon": "Dragon's Descent.png",
             "leveling": [
               {
@@ -676,7 +772,7 @@
             ]
           },
           {
-            "description": "Active - Dragon Form: Shyvana transforms into a ferocious dragon and  dashes  unstoppably to the target location,  carrying and dealing magic damage to all enemies she runs through.",
+            "description": "Active - Dragon Form: Shyvana transforms into a ferocious dragon and dashes unstoppably to the target location, carrying and dealing magic damage to all enemies she runs through.",
             "icon": null,
             "leveling": [
               {
@@ -711,7 +807,7 @@
             ]
           },
           {
-            "description": "Shyvana's dragon form grants her  bonus health,  bonus attack range, and empowers her basic abilities at the cost of 2.5 Fury per 0.5 seconds, returning to human form once depleted.",
+            "description": "Shyvana's dragon form grants her bonus health, bonus attack range, and empowers her basic abilities at the cost of 2.5 Fury per 0.5 seconds, returning to human form once depleted.",
             "icon": null,
             "leveling": [
               {

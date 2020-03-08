@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 111.111099243164,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 111.111099243164,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.679,
       "percent": 0.0,
       "perLevel": 2.7,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.67900002002716,
-    "attackCastTime": 0.230000004172325,
-    "attackTotalTime": 1.47300004959106,
-    "attackDelayOffset": -0.118840597569942,
+    "attackSpeedRatio": {
+      "flat": 0.67900002002716,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.230000004172325,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.47300004959106,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.118840597569942,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "MARKSMAN"
@@ -108,17 +198,17 @@
         "name": "League of Draven",
         "effects": [
           {
-            "description": "Innate: When Draven catches a  Spinning Axe, kills a non-champion or destroys a turret, he gains a stack of Adoration.",
+            "description": "Innate: When Draven catches a Spinning Axe, kills a non-champion or destroys a turret, he gains a stack of Adoration.",
             "icon": "League of Draven.png",
             "leveling": []
           },
           {
-            "description": "In addition, killing a minion or champion summoned unit grants a  Strike stack for 10 seconds, up to a maximum of 6. If he drops an  axe he loses all Strike stacks. At 6 stacks, he consumes all of his Strike stacks and gains 2 Adoration stacks.",
+            "description": "In addition, killing a minion or champion summoned unit grants a Strike stack for 10 seconds, up to a maximum of 6. If he drops an axe he loses all Strike stacks. At 6 stacks, he consumes all of his Strike stacks and gains 2 Adoration stacks.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "When Draven kills an enemy champion, he consumes all of his Adoration stacks and gains  25 + (2 \u00d7 stacks) bonus gold.",
+            "description": "When Draven kills an enemy champion, he consumes all of his Adoration stacks and gains 25 + (2 × stacks) bonus gold.",
             "icon": null,
             "leveling": []
           },
@@ -160,7 +250,7 @@
         "name": "Spinning Axe",
         "effects": [
           {
-            "description": "Active: Draven starts spinning his axe, causing his next basic attack within 5.8 seconds to deal  bonus physical damage.",
+            "description": "Active: Draven starts spinning his axe, causing his next basic attack within 5.8 seconds to deal bonus physical damage.",
             "icon": "Spinning Axe.png",
             "leveling": [
               {
@@ -284,7 +374,7 @@
         "name": "Blood Rush",
         "effects": [
           {
-            "description": "Active: Draven becomes  ghosted for 1.5 seconds, gaining  bonus attack speed for 3 seconds and  bonus movement speed which decays over 1.5 seconds.",
+            "description": "Active: Draven becomes ghosted for 1.5 seconds, gaining bonus attack speed for 3 seconds and bonus movement speed which decays over 1.5 seconds.",
             "icon": "Blood Rush.png",
             "leveling": [
               {
@@ -332,7 +422,7 @@
             ]
           },
           {
-            "description": "Catching a  Spinning Axe resets Blood Rush's  cooldown.",
+            "description": "Catching a Spinning Axe resets Blood Rush's cooldown.",
             "icon": null,
             "leveling": []
           }
@@ -408,7 +498,7 @@
         "name": "Stand Aside",
         "effects": [
           {
-            "description": "Active: Draven throws his axes in a line, dealing physical damage to all enemies hit,  knocking them aside and  slowing them for 2 seconds.",
+            "description": "Active: Draven throws his axes in a line, dealing physical damage to all enemies hit, knocking them aside and slowing them for 2 seconds.",
             "icon": "Stand Aside.png",
             "leveling": [
               {
@@ -543,7 +633,7 @@
         "name": "Whirling Death",
         "effects": [
           {
-            "description": "Active: Draven hurls two  massive axes in the target direction, dealing physical damage to all enemies struck.",
+            "description": "Active: Draven hurls two massive axes in the target direction, dealing physical damage to all enemies struck.",
             "icon": "Whirling Death.png",
             "leveling": [
               {
@@ -612,7 +702,7 @@
             "leveling": []
           },
           {
-            "description": "Whirling Death deals 100% \u2212 40% (based on enemy hit) damage, this reduction resets when the axes reverse direction.",
+            "description": "Whirling Death deals 100% − 40% (based on enemy hit) damage, this reduction resets when the axes reverse direction.",
             "icon": null,
             "leveling": [
               {
@@ -737,7 +827,7 @@
         "name": "Whirling Death",
         "effects": [
           {
-            "description": "Active: Draven hurls two  massive axes in the target direction, dealing physical damage to all enemies struck.",
+            "description": "Active: Draven hurls two massive axes in the target direction, dealing physical damage to all enemies struck.",
             "icon": "Whirling Death.png",
             "leveling": [
               {
@@ -806,7 +896,7 @@
             "leveling": []
           },
           {
-            "description": "Whirling Death deals 100% \u2212 40% (based on enemy hit) damage, this reduction resets when the axes reverse direction.",
+            "description": "Whirling Death deals 100% − 40% (based on enemy hit) damage, this reduction resets when the axes reverse direction.",
             "icon": null,
             "leveling": [
               {

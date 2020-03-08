@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 125,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.679,
       "percent": 0.0,
       "perLevel": 2,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.67900002002716,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0562499985098838,
+    "attackSpeedRatio": {
+      "flat": 0.67900002002716,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0562499985098838,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.1,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 0.9,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -110,12 +200,12 @@
         "name": "Double Strike",
         "effects": [
           {
-            "description": "Innate: Master Yi gains a stack of Double Strike for every basic attack on-hit within 4 seconds of each other. At 3 stacks, Master Yi's next basic attack on-attack within 4 seconds consumes the stacks to strike twice, the second strike dealing 50% AD  physical damage.",
+            "description": "Innate: Master Yi gains a stack of Double Strike for every basic attack on-hit within 4 seconds of each other. At 3 stacks, Master Yi's next basic attack on-attack within 4 seconds consumes the stacks to strike twice, the second strike dealing 50% AD physical damage.",
             "icon": "Double Strike.png",
             "leveling": []
           },
           {
-            "description": "The second strike applies on-attack and on-hit effects at full effect and is affected by  critical strike modifiers.",
+            "description": "The second strike applies on-attack and on-hit effects at full effect and is affected by critical strike modifiers.",
             "icon": null,
             "leveling": []
           },
@@ -125,7 +215,7 @@
             "leveling": []
           },
           {
-            "description": "The second strike can  critically strike  structures.",
+            "description": "The second strike can critically strike structures.",
             "icon": null,
             "leveling": []
           }
@@ -162,12 +252,12 @@
         "name": "Alpha Strike",
         "effects": [
           {
-            "description": "Active: Master Yi  vanishes and, after 0.225 seconds, marks his target and then moves to mark the nearest  visible un-marked enemy within 600 units, recurring up to 3 times, once every 0.225 seconds.",
+            "description": "Active: Master Yi vanishes and, after 0.225 seconds, marks his target and then moves to mark the nearest visible un-marked enemy within 600 units, recurring up to 3 times, once every 0.225 seconds.",
             "icon": "Alpha Strike.png",
             "leveling": []
           },
           {
-            "description": "Upon finishing marking, or if there're no other enemies in range, he  re-appears after a 0.15 second delay in front of his target and deals physical damage to all marked enemies, increased against monsters. If his target dies during the delay, he will reappear at the cast location instead.",
+            "description": "Upon finishing marking, or if there're no other enemies in range, he re-appears after a 0.15 second delay in front of his target and deals physical damage to all marked enemies, increased against monsters. If his target dies during the delay, he will reappear at the cast location instead.",
             "icon": null,
             "leveling": [
               {
@@ -422,12 +512,12 @@
             ]
           },
           {
-            "description": "Alpha Strike's primary and lesser damage can  critically strike for (60% +  15%) AD bonus physical damage and (15% +  3.75%) AD bonus physical damage respectively.",
+            "description": "Alpha Strike's primary and lesser damage can critically strike for (60% + 15%) AD bonus physical damage and (15% + 3.75%) AD bonus physical damage respectively.",
             "icon": null,
             "leveling": []
           },
           {
-            "description": "Basic attacks reduce Alpha Strike's  cooldown by 1 second.",
+            "description": "Basic attacks reduce Alpha Strike's cooldown by 1 second.",
             "icon": null,
             "leveling": []
           }
@@ -503,7 +593,7 @@
         "name": "Meditate",
         "effects": [
           {
-            "description": "Active: Master Yi  channels for up to 4 seconds,  healing himself every 0.5 seconds, increased by 0% \u2212 100% (based on missing health).",
+            "description": "Active: Master Yi channels for up to 4 seconds, healing himself every 0.5 seconds, increased by 0% − 100% (based on missing health).",
             "icon": "Meditate.png",
             "leveling": [
               {
@@ -657,7 +747,7 @@
             ]
           },
           {
-            "description": "While channeling, Master Yi reduces incoming damage, halved against turrets, pauses  Wuju Style's and  Highlander's duration, and grants one stack of  Double Strike per second.",
+            "description": "While channeling, Master Yi reduces incoming damage, halved against turrets, pauses Wuju Style's and Highlander's duration, and grants one stack of Double Strike per second.",
             "icon": null,
             "leveling": [
               {
@@ -781,7 +871,7 @@
         "name": "Wuju Style",
         "effects": [
           {
-            "description": "Active: Master Yi's basic attacks deal  bonus true damage for 5 seconds.",
+            "description": "Active: Master Yi's basic attacks deal bonus true damage for 5 seconds.",
             "icon": "Wuju Style.png",
             "leveling": [
               {
@@ -876,12 +966,12 @@
         "name": "Highlander",
         "effects": [
           {
-            "description": "Passive: Champion  takedowns reduce the current  cooldown of Master Yi's basic abilities by 70%.",
+            "description": "Passive: Champion takedowns reduce the current cooldown of Master Yi's basic abilities by 70%.",
             "icon": "false",
             "leveling": []
           },
           {
-            "description": "Active: For 7 seconds, Master Yi is  ghosted, gains  bonus attack speed and  bonus movement speed, and becomes immune to  slows and  cripples.",
+            "description": "Active: For 7 seconds, Master Yi is ghosted, gains bonus attack speed and bonus movement speed, and becomes immune to slows and cripples.",
             "icon": "Highlander.png",
             "leveling": [
               {
@@ -921,7 +1011,7 @@
             ]
           },
           {
-            "description": "While active, champion  takedowns extend the duration of Highlander by 7 seconds.",
+            "description": "While active, champion takedowns extend the duration of Highlander by 7 seconds.",
             "icon": null,
             "leveling": []
           }

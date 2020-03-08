@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 550,
-    "selectionRadius": 120,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 550,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 1,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.270000010728836,
-    "attackTotalTime": 1.60000002384185,
-    "attackDelayOffset": 0,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.270000010728836,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.60000002384185,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 525,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 0.95,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "MARKSMAN"
@@ -108,12 +198,12 @@
         "name": "Get Excited!",
         "effects": [
           {
-            "description": "Innate: Whenever an enemy champion, epic monster, turret or inhibitor dies within 3 seconds of being damaged by Jinx, she gains  175% bonus movement speed which decays over 6 seconds.",
+            "description": "Innate: Whenever an enemy champion, epic monster, turret or inhibitor dies within 3 seconds of being damaged by Jinx, she gains 175% bonus movement speed which decays over 6 seconds.",
             "icon": "Get Excited!.png",
             "leveling": []
           },
           {
-            "description": "Additionally, she gains  15% total attack speed and removes the attack speed cap for the same duration.",
+            "description": "Additionally, she gains 15% total attack speed and removes the attack speed cap for the same duration.",
             "icon": null,
             "leveling": []
           }
@@ -150,7 +240,7 @@
         "name": "Switcheroo!",
         "effects": [
           {
-            "description": "Pow-Pow - Passive: Jinx's basic attacks make her  Rev'd up for 2.5 seconds, granting  bonus attack speed, stacking up to 3 times.",
+            "description": "Pow-Pow - Passive: Jinx's basic attacks make her Rev'd up for 2.5 seconds, granting bonus attack speed, stacking up to 3 times.",
             "icon": "Pow-Pow.png",
             "leveling": [
               {
@@ -177,7 +267,7 @@
             ]
           },
           {
-            "description": "Fishbones - Toggle: Jinx loses  25% of her bonus attack speed and her basic attacks cost  mana on-attack. They gain  bonus range, deal 10% AD  bonus physical damage, and hit all enemies near the main target. The bonus damage from Fishbones is affected by  critical strike modifiers.",
+            "description": "Fishbones - Toggle: Jinx loses 25% of her bonus attack speed and her basic attacks cost mana on-attack. They gain bonus range, deal 10% AD bonus physical damage, and hit all enemies near the main target. The bonus damage from Fishbones is affected by critical strike modifiers.",
             "icon": "Switcheroo!.png",
             "leveling": [
               {
@@ -259,7 +349,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Jinx's first attack after switching to  Fishbones can be triggered after 0.4 seconds, instead of using the attack timer.\n Toggling Switcheroo! is not considered an activation for the purposes of Spellblade.\n Despite Jinx starting the game using  Pow-Pow she doesn't receive any bonus attack speed until Switcheroo! is unlocked.\n  Fishbones splash damage affects structures (minions will target Jinx) but does not affect targets if Jinx's attacks are  blocked,  dodged, or if they  miss.\n With  Runaan's Hurricane  Pow-Pow generates one stack per enemy hit.\n Both weapons apply on-hit effects (the splash damage of  Fishbones does not) and can  critically strike.  Fishbones's bonus damage also applies  life steal.\n Each of  Runaan's Hurricane's additional bolts apply  Fishbones' splash damage, which stacks with each other.\n Damage for  Fishbones: 110% AD (100% + 10%).\n Critical strike damage for  Fishbones: 220% AD ((100% + 10%) \u00d7 2).\n Critical strike damage for  Fishbones with  Infinity Edge: 247.5% AD ((100% + 10%) \u00d7 2.25).\n Damage per  Fishbones  bolt: 44% AD ((100% + 10%) \u00d7  0.4).\n Critical strike damage per  Fishbones  bolt: 88% AD (((100% + 10%) \u00d7  0.4) \u00d7 2).\n Critical strike damage per  Fishbones  bolt with  Infinity Edge: 99% AD (((100% + 10%) \u00d7  0.4) \u00d7 2.25).\n Potential damage on stacked enemies with  Fishbones and  Runaan's Hurricane: 198% AD (110% + 44% + 44%).\n Potential critical strike damage on stacked enemies with  Fishbones and  Runaan's Hurricane: 396% AD (220% + 88% + 88%).\n Potential critical strike damage on stacked enemies with  Fishbones,  Runaan's Hurricane, and  Infinity Edge: 445.5% AD ((247.5% + 99% + 99%)).",
+        "notes": "Jinx's first attack after switching to  Fishbones can be triggered after 0.4 seconds, instead of using the attack timer.\n Toggling Switcheroo! is not considered an activation for the purposes of Spellblade.\n Despite Jinx starting the game using  Pow-Pow she doesn't receive any bonus attack speed until Switcheroo! is unlocked.\n  Fishbones splash damage affects structures (minions will target Jinx) but does not affect targets if Jinx's attacks are  blocked,  dodged, or if they  miss.\n With  Runaan's Hurricane  Pow-Pow generates one stack per enemy hit.\n Both weapons apply on-hit effects (the splash damage of  Fishbones does not) and can  critically strike.  Fishbones's bonus damage also applies  life steal.\n Each of  Runaan's Hurricane's additional bolts apply  Fishbones' splash damage, which stacks with each other.\n Damage for  Fishbones: 110% AD (100% + 10%).\n Critical strike damage for  Fishbones: 220% AD ((100% + 10%) × 2).\n Critical strike damage for  Fishbones with  Infinity Edge: 247.5% AD ((100% + 10%) × 2.25).\n Damage per  Fishbones  bolt: 44% AD ((100% + 10%) ×  0.4).\n Critical strike damage per  Fishbones  bolt: 88% AD (((100% + 10%) ×  0.4) × 2).\n Critical strike damage per  Fishbones  bolt with  Infinity Edge: 99% AD (((100% + 10%) ×  0.4) × 2.25).\n Potential damage on stacked enemies with  Fishbones and  Runaan's Hurricane: 198% AD (110% + 44% + 44%).\n Potential critical strike damage on stacked enemies with  Fishbones and  Runaan's Hurricane: 396% AD (220% + 88% + 88%).\n Potential critical strike damage on stacked enemies with  Fishbones,  Runaan's Hurricane, and  Infinity Edge: 445.5% AD ((247.5% + 99% + 99%)).",
         "blurb": "Jinx modifies her basic attacks by swapping between Pow-Pow, her minigun and Fishbones, her rocket launcher. Attacks with Pow-Pow grant Attack Speed, while attacks with Fishbones deal area of effect damage, gain increased range, and drain Mana.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -278,7 +368,7 @@
         "name": "Switcheroo!",
         "effects": [
           {
-            "description": "Pow-Pow - Passive: Jinx's basic attacks make her  Rev'd up for 2.5 seconds, granting  bonus attack speed, stacking up to 3 times.",
+            "description": "Pow-Pow - Passive: Jinx's basic attacks make her Rev'd up for 2.5 seconds, granting bonus attack speed, stacking up to 3 times.",
             "icon": "Pow-Pow.png",
             "leveling": [
               {
@@ -305,7 +395,7 @@
             ]
           },
           {
-            "description": "Fishbones - Toggle: Jinx loses  25% of her bonus attack speed and her basic attacks cost  mana on-attack. They gain  bonus range, deal 10% AD  bonus physical damage, and hit all enemies near the main target. The bonus damage from Fishbones is affected by  critical strike modifiers.",
+            "description": "Fishbones - Toggle: Jinx loses 25% of her bonus attack speed and her basic attacks cost mana on-attack. They gain bonus range, deal 10% AD bonus physical damage, and hit all enemies near the main target. The bonus damage from Fishbones is affected by critical strike modifiers.",
             "icon": "Switcheroo!.png",
             "leveling": [
               {
@@ -387,7 +477,7 @@
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "Jinx's first attack after switching to  Fishbones can be triggered after 0.4 seconds, instead of using the attack timer.\n Toggling Switcheroo! is not considered an activation for the purposes of Spellblade.\n Despite Jinx starting the game using  Pow-Pow she doesn't receive any bonus attack speed until Switcheroo! is unlocked.\n  Fishbones splash damage affects structures (minions will target Jinx) but does not affect targets if Jinx's attacks are  blocked,  dodged, or if they  miss.\n With  Runaan's Hurricane  Pow-Pow generates one stack per enemy hit.\n Both weapons apply on-hit effects (the splash damage of  Fishbones does not) and can  critically strike.  Fishbones's bonus damage also applies  life steal.\n Each of  Runaan's Hurricane's additional bolts apply  Fishbones' splash damage, which stacks with each other.\n Damage for  Fishbones: 110% AD (100% + 10%).\n Critical strike damage for  Fishbones: 220% AD ((100% + 10%) \u00d7 2).\n Critical strike damage for  Fishbones with  Infinity Edge: 247.5% AD ((100% + 10%) \u00d7 2.25).\n Damage per  Fishbones  bolt: 44% AD ((100% + 10%) \u00d7  0.4).\n Critical strike damage per  Fishbones  bolt: 88% AD (((100% + 10%) \u00d7  0.4) \u00d7 2).\n Critical strike damage per  Fishbones  bolt with  Infinity Edge: 99% AD (((100% + 10%) \u00d7  0.4) \u00d7 2.25).\n Potential damage on stacked enemies with  Fishbones and  Runaan's Hurricane: 198% AD (110% + 44% + 44%).\n Potential critical strike damage on stacked enemies with  Fishbones and  Runaan's Hurricane: 396% AD (220% + 88% + 88%).\n Potential critical strike damage on stacked enemies with  Fishbones,  Runaan's Hurricane, and  Infinity Edge: 445.5% AD ((247.5% + 99% + 99%)).",
+        "notes": "Jinx's first attack after switching to  Fishbones can be triggered after 0.4 seconds, instead of using the attack timer.\n Toggling Switcheroo! is not considered an activation for the purposes of Spellblade.\n Despite Jinx starting the game using  Pow-Pow she doesn't receive any bonus attack speed until Switcheroo! is unlocked.\n  Fishbones splash damage affects structures (minions will target Jinx) but does not affect targets if Jinx's attacks are  blocked,  dodged, or if they  miss.\n With  Runaan's Hurricane  Pow-Pow generates one stack per enemy hit.\n Both weapons apply on-hit effects (the splash damage of  Fishbones does not) and can  critically strike.  Fishbones's bonus damage also applies  life steal.\n Each of  Runaan's Hurricane's additional bolts apply  Fishbones' splash damage, which stacks with each other.\n Damage for  Fishbones: 110% AD (100% + 10%).\n Critical strike damage for  Fishbones: 220% AD ((100% + 10%) × 2).\n Critical strike damage for  Fishbones with  Infinity Edge: 247.5% AD ((100% + 10%) × 2.25).\n Damage per  Fishbones  bolt: 44% AD ((100% + 10%) ×  0.4).\n Critical strike damage per  Fishbones  bolt: 88% AD (((100% + 10%) ×  0.4) × 2).\n Critical strike damage per  Fishbones  bolt with  Infinity Edge: 99% AD (((100% + 10%) ×  0.4) × 2.25).\n Potential damage on stacked enemies with  Fishbones and  Runaan's Hurricane: 198% AD (110% + 44% + 44%).\n Potential critical strike damage on stacked enemies with  Fishbones and  Runaan's Hurricane: 396% AD (220% + 88% + 88%).\n Potential critical strike damage on stacked enemies with  Fishbones,  Runaan's Hurricane, and  Infinity Edge: 445.5% AD ((247.5% + 99% + 99%)).",
         "blurb": "Jinx modifies her basic attacks by swapping between Pow-Pow, her minigun and Fishbones, her rocket launcher. Attacks with Pow-Pow grant Attack Speed, while attacks with Fishbones deal area of effect damage, gain increased range, and drain Mana.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -408,7 +498,7 @@
         "name": "Zap!",
         "effects": [
           {
-            "description": "Active: After 0.6 \u2212 0.4 (based on bonus attack speed) seconds, Jinx fires a shock blast that deals physical damage to the first enemy it hits,  revealing and  slowing them for 2 seconds.",
+            "description": "Active: After 0.6 − 0.4 (based on bonus attack speed) seconds, Jinx fires a shock blast that deals physical damage to the first enemy it hits, revealing and slowing them for 2 seconds.",
             "icon": "Zap!.png",
             "leveling": [
               {
@@ -623,7 +713,7 @@
             ]
           },
           {
-            "description": "Chompers prematurely explode on  enemy champion contact,  knocking down and  rooting them for the same duration. A champion can set off only a single Chomper and be damaged by one.",
+            "description": "Chompers prematurely explode on enemy champion contact, knocking down and rooting them for the same duration. A champion can set off only a single Chomper and be damaged by one.",
             "icon": "Flame Chompers! 2.png",
             "leveling": []
           }
@@ -777,7 +867,7 @@
             ]
           },
           {
-            "description": "Chompers prematurely explode on  enemy champion contact,  knocking down and  rooting them for the same duration. A champion can set off only a single Chomper and be damaged by one.",
+            "description": "Chompers prematurely explode on enemy champion contact, knocking down and rooting them for the same duration. A champion can set off only a single Chomper and be damaged by one.",
             "icon": "Flame Chompers! 2.png",
             "leveling": []
           }
@@ -853,12 +943,12 @@
         "name": "Super Mega Death Rocket!",
         "effects": [
           {
-            "description": "Active: Jinx fires a  rocket in the target direction, briefly  revealing the area it flies through. The rocket explodes upon enemy champion contact, dealing physical damage and briefly revealing the area around them.",
+            "description": "Active: Jinx fires a rocket in the target direction, briefly revealing the area it flies through. The rocket explodes upon enemy champion contact, dealing physical damage and briefly revealing the area around them.",
             "icon": "Super Mega Death Rocket!.png",
             "leveling": []
           },
           {
-            "description": "The rocket deals 10% \u2212 100% (based on distance traveled) of its flat damage.",
+            "description": "The rocket deals 10% − 100% (based on distance traveled) of its flat damage.",
             "icon": null,
             "leveling": [
               {

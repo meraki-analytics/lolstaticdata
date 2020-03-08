@@ -20,6 +20,18 @@
       "perLevel": 0.75,
       "percentPerLevel": 0.0
     },
+    "mana": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
+    "manaRegen": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
     "armor": {
       "flat": 36,
       "percent": 0.0,
@@ -44,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 135,
-    "pathingRadius": 50,
-    "gameplayRadius": 80,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 135,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 50,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.721,
       "percent": 0.0,
       "perLevel": 2.8,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.139687493443489,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.139687493443489,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.1,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "FIGHTER",
@@ -98,7 +200,7 @@
         "name": "Adrenaline Rush",
         "effects": [
           {
-            "description": "Innate: Dr. Mundo passively regenerates[  1.5% of his maximum health every 5 seconds ][  0.3% of his maximum health each second ].",
+            "description": "Innate: Dr. Mundo passively regenerates[ 1.5% of his maximum health every 5 seconds ][ 0.3% of his maximum health each second ].",
             "icon": "Adrenaline Rush.png",
             "leveling": []
           }
@@ -135,7 +237,7 @@
         "name": "Infected Cleaver",
         "effects": [
           {
-            "description": "Active: Dr. Mundo hurls a cleaver in the target direction, dealing  magic damage to the first enemy it hits and  slowing it by 40% for 2 seconds.",
+            "description": "Active: Dr. Mundo hurls a cleaver in the target direction, dealing magic damage to the first enemy it hits and slowing it by 40% for 2 seconds.",
             "icon": "Infected Cleaver.png",
             "leveling": [
               {
@@ -162,7 +264,7 @@
             ]
           },
           {
-            "description": "Infected Cleaver has a minimum damage threshold, and is capped against  minions and  monsters.",
+            "description": "Infected Cleaver has a minimum damage threshold, and is capped against minions and monsters.",
             "icon": null,
             "leveling": [
               {
@@ -210,7 +312,7 @@
             ]
           },
           {
-            "description": "If Infected Cleaver hits an enemy, 40% of the  health cost is refunded, and if it kills it, 80% of the health cost is refunded.",
+            "description": "If Infected Cleaver hits an enemy, 40% of the health cost is refunded, and if it kills it, 80% of the health cost is refunded.",
             "icon": null,
             "leveling": [
               {
@@ -329,7 +431,7 @@
         "name": "Burning Agony",
         "effects": [
           {
-            "description": "Toggle: Dr. Mundo sets himself on fire, dealing magic damage every 0.25 seconds to nearby enemies and gaining  30% Tenacity.",
+            "description": "Toggle: Dr. Mundo sets himself on fire, dealing magic damage every 0.25 seconds to nearby enemies and gaining 30% Tenacity.",
             "icon": "Burning Agony.png",
             "leveling": [
               {
@@ -443,7 +545,7 @@
         "name": "Masochism",
         "effects": [
           {
-            "description": "Passive: Taking magic damage or paying a  health cost increases Dr. Mundo's  magic resistance by 3% for 2 seconds, stacking up to an amount.",
+            "description": "Passive: Taking magic damage or paying a health cost increases Dr. Mundo's magic resistance by 3% for 2 seconds, stacking up to an amount.",
             "icon": "Masochism.png",
             "leveling": [
               {
@@ -491,7 +593,7 @@
             ]
           },
           {
-            "description": "Active: Dr. Mundo gains bonus attack damage for 5 seconds, increased by 0% \u2212 100% (based on missing health).",
+            "description": "Active: Dr. Mundo gains bonus attack damage for 5 seconds, increased by 0% − 100% (based on missing health).",
             "icon": null,
             "leveling": [
               {
@@ -539,7 +641,7 @@
             ]
           },
           {
-            "description": "Additionally, Dr. Mundo's next basic attack within the duration will cost health, but gains  25 bonus range and deals  bonus physical damage.",
+            "description": "Additionally, Dr. Mundo's next basic attack within the duration will cost health, but gains 25 bonus range and deals bonus physical damage.",
             "icon": null,
             "leveling": [
               {
@@ -644,7 +746,7 @@
         "name": "Sadism",
         "effects": [
           {
-            "description": "Active: Dr. Mundo regenerates  health over 12 seconds and gains  bonus movement speed for the duration.",
+            "description": "Active: Dr. Mundo regenerates health over 12 seconds and gains bonus movement speed for the duration.",
             "icon": "Sadism.png",
             "leveling": [
               {

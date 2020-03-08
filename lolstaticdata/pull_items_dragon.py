@@ -33,7 +33,7 @@ class DDragonItem:
         except:
             recipes = []
         icon = cls._get_icon(item["image"]["full"])
-        item = Item(builds_from=recipes, builds_into=builds, icon=icon, name=None, id=None, tier=None, no_effects=None, removed=None, nicknames=None, passives=None, active=None, auras=None, stats=None, shop=None)
+        item = Item(builds_from=recipes, builds_into=builds, icon=icon, name=None, id=None, tier=None, no_effects=None, removed=None, nicknames=None, passives=None, active=None, stats=None, shop=None)
         return item
 
 
@@ -59,5 +59,5 @@ class CDragonItem:
                 except:
                     recipes = []
                 icon = "https://raw.communitydragon.org/latest/game/data/items/icons2d" + i["iconPath"].split("Icons2D")[1].lower()
-                item = Item(builds_from=recipes, builds_into=builds, icon=icon, name=None, id=None, tier=None, no_effects=None, removed=None, nicknames=None, passives=None, active=None, auras=None, stats=None, shop=None)
+                item = Item(builds_from=recipes, builds_into=builds, icon=icon, name=None, id=None, tier=None, no_effects=None, removed=None, nicknames=None, passives=None, active=None, stats=None, shop=None)
                 return item

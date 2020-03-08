@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 140,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 140,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 1.68,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.00833333283662796,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.00833333283662796,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 600,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.9,
-    "urfDamageDealt": 1.15,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.15,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "BATTLEMAGE",
@@ -110,12 +200,12 @@
         "name": "Rebirth",
         "effects": [
           {
-            "description": "Innate: Periodically, upon taking fatal damage, Anivia  dispels all debuffs and transforms into Eggnivia, while also recovering all of her  health.",
+            "description": "Innate: Periodically, upon taking fatal damage, Anivia dispels all debuffs and transforms into Eggnivia, while also recovering all of her health.",
             "icon": "Rebirth.png",
             "leveling": []
           },
           {
-            "description": "Eggnivia cannot act but gains -40 \u2212 20 (based on level)  bonus armor and  bonus magic resistance. After 6 seconds, if Eggnivia is still alive, Anivia is  reborn with  Eggnivia's current health.",
+            "description": "Eggnivia cannot act but gains -40 − 20 (based on level) bonus armor and bonus magic resistance. After 6 seconds, if Eggnivia is still alive, Anivia is reborn with Eggnivia's current health.",
             "icon": null,
             "leveling": []
           }
@@ -168,7 +258,7 @@
         "name": "Flash Frost",
         "effects": [
           {
-            "description": "Active: Anivia launches a massive chunk of ice which flies toward the target location, dealing  magic damage and  slowing all enemies it passes through by 20% \u2212 40% (based on  Glacial Storm's Rank) for 3 seconds.",
+            "description": "Active: Anivia launches a massive chunk of ice which flies toward the target location, dealing magic damage and slowing all enemies it passes through by 20% − 40% (based on Glacial Storm's Rank) for 3 seconds.",
             "icon": "Flash Frost.png",
             "leveling": [
               {
@@ -248,7 +338,7 @@
             ]
           },
           {
-            "description": "Recast: Anivia shatters the orb, dealing the same magic damage to enemies within the detonation and  stunning them.",
+            "description": "Recast: Anivia shatters the orb, dealing the same magic damage to enemies within the detonation and stunning them.",
             "icon": null,
             "leveling": [
               {
@@ -351,7 +441,7 @@
         "name": "Crystallize",
         "effects": [
           {
-            "description": "Active: Anivia summons an impassable wall of ice at the target location perpendicular to which way she is facing,  knocking units away from it. The wall lasts 5 seconds.",
+            "description": "Active: Anivia summons an impassable wall of ice at the target location perpendicular to which way she is facing, knocking units away from it. The wall lasts 5 seconds.",
             "icon": "Crystallize.png",
             "leveling": [
               {
@@ -449,7 +539,7 @@
         "name": "Frostbite",
         "effects": [
           {
-            "description": "Active: Anivia blasts the target with a freezing wind, dealing magic damage that is doubled against targets stunned by  Flash Frost within the last 3 seconds or damaged by a fully formed  Glacial Storm within the last 2 seconds.",
+            "description": "Active: Anivia blasts the target with a freezing wind, dealing magic damage that is doubled against targets stunned by Flash Frost within the last 3 seconds or damaged by a fully formed Glacial Storm within the last 2 seconds.",
             "icon": "Frostbite.png",
             "leveling": [
               {
@@ -600,7 +690,7 @@
         "name": "Glacial Storm",
         "effects": [
           {
-            "description": "Active: Anivia calls forth a driving rain of ice and hail at the target location, dealing magic damage each second to enemies within,  slowing them for 1 second.",
+            "description": "Active: Anivia calls forth a driving rain of ice and hail at the target location, dealing magic damage each second to enemies within, slowing them for 1 second.",
             "icon": "Glacial Storm.png",
             "leveling": [
               {
@@ -703,7 +793,7 @@
             "leveling": []
           },
           {
-            "description": "After Glacial Storm has been active for at least 1 second, Anivia can cast the ability again to deactivate it, dealing one last tick of damage. The ability will deactivate automatically if she gets too far away or runs out of  mana. Additionally, Glacial Storm is deactivated by all forms of  interrupting crowd control.",
+            "description": "After Glacial Storm has been active for at least 1 second, Anivia can cast the ability again to deactivate it, dealing one last tick of damage. The ability will deactivate automatically if she gets too far away or runs out of mana. Additionally, Glacial Storm is deactivated by all forms of interrupting crowd control.",
             "icon": null,
             "leveling": []
           }
@@ -762,7 +852,7 @@
         "width": null,
         "angle": null,
         "castTime": null,
-        "effectRadius": "200 \u2212  400 (based on time active)",
+        "effectRadius": "200 −  400 (based on time active)",
         "targetRange": "750"
       }
     ]

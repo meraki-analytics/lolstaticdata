@@ -26,6 +26,12 @@
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
+    "manaRegen": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
     "armor": {
       "flat": 30,
       "percent": 0.0,
@@ -50,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 400,
-    "selectionRadius": 75,
-    "pathingRadius": 32,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 75,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 32,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.697,
       "percent": 0.0,
       "perLevel": 2.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.6700000166893,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.0799999982118606,
+    "attackSpeedRatio": {
+      "flat": 0.6700000166893,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0799999982118606,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 175,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -104,12 +200,12 @@
         "name": "Way of the Wanderer",
         "effects": [
           {
-            "description": "Intent: Yasuo doubles his  total critical strike chance from all other sources, but his  critical strikes deal only (80% +  22.5%) AD  bonus physical damage.",
+            "description": "Intent: Yasuo doubles his total critical strike chance from all other sources, but his critical strikes deal only (80% + 22.5%) AD bonus physical damage.",
             "icon": "Way of the Wanderer.png",
             "leveling": []
           },
           {
-            "description": "Resolve: Yasuo generates  Flow for every 59 / 52.5 / 46 (based on level) units he travels by any means. At [ 100 stacks ][ 5900 / 5250 / 4600 (based on level) units traveled ] and upon taking champion or monster damage, Yasuo consumes  all Flow to  shield himself for 100 \u2212 510 (based on level) for up to 1 second.",
+            "description": "Resolve: Yasuo generates Flow for every 59 / 52.5 / 46 (based on level) units he travels by any means. At [ 100 stacks ][ 5900 / 5250 / 4600 (based on level) units traveled ] and upon taking champion or monster damage, Yasuo consumes all Flow to shield himself for 100 − 510 (based on level) for up to 1 second.",
             "icon": null,
             "leveling": []
           }
@@ -146,7 +242,7 @@
         "name": "Steel Tempest",
         "effects": [
           {
-            "description": "First Cast - Steel Tempest: Yasuo thrusts his sword in the target direction, dealing physical damage to enemies hit and applying on-hit and on-attack effects to the first enemy hit. The ability can  critically strike for (60% +  20%) AD bonus physical damage.",
+            "description": "First Cast - Steel Tempest: Yasuo thrusts his sword in the target direction, dealing physical damage to enemies hit and applying on-hit and on-attack effects to the first enemy hit. The ability can critically strike for (60% + 20%) AD bonus physical damage.",
             "icon": "Steel Tempest.png",
             "leveling": [
               {
@@ -199,12 +295,12 @@
             "leveling": []
           },
           {
-            "description": "Third Cast - Gathering Storm: Yasuo consumes his stacks to unleash a whirlwind that travels in the target direction, dealing the same damage and  knocking up all enemies hit.",
+            "description": "Third Cast - Gathering Storm: Yasuo consumes his stacks to unleash a whirlwind that travels in the target direction, dealing the same damage and knocking up all enemies hit.",
             "icon": "Steel Tempest 3.png",
             "leveling": []
           },
           {
-            "description": "Casting Steel Tempest, Steel Wind Rising or Gathering Storm during  Sweeping Blade will instead affect enemies around Yasuo at the end of the dash, or doing so immediately at his landing location after  blinking while ending the dash prematurely. Gathering Storm's whirlwind is not released when cast during  Sweeping Blade, but instead  knocks up all enemies hit around Yasuo for the same duration.",
+            "description": "Casting Steel Tempest, Steel Wind Rising or Gathering Storm during Sweeping Blade will instead affect enemies around Yasuo at the end of the dash, or doing so immediately at his landing location after blinking while ending the dash prematurely. Gathering Storm's whirlwind is not released when cast during Sweeping Blade, but instead knocks up all enemies hit around Yasuo for the same duration.",
             "icon": null,
             "leveling": []
           }
@@ -212,7 +308,22 @@
         "cost": null,
         "cooldown": {
           "modifiers": [
-            "4 \u2212 1.33 (based on bonus attack speed)"
+            {
+              "values": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "units": [
+                "4 − 1.33 (based on bonus attack speed)",
+                "4 − 1.33 (based on bonus attack speed)",
+                "4 − 1.33 (based on bonus attack speed)",
+                "4 − 1.33 (based on bonus attack speed)",
+                "4 − 1.33 (based on bonus attack speed)"
+              ]
+            }
           ],
           "affectedByCdr": true
         },
@@ -236,7 +347,7 @@
         "speed": null,
         "width": null,
         "angle": null,
-        "castTime": "0.4 \u2212 0.133 (based on bonus attack speed)",
+        "castTime": "0.4 − 0.133 (based on bonus attack speed)",
         "effectRadius": "375",
         "targetRange": "475 / 900"
       },
@@ -244,7 +355,7 @@
         "name": "Steel Tempest",
         "effects": [
           {
-            "description": "First Cast - Steel Tempest: Yasuo thrusts his sword in the target direction, dealing physical damage to enemies hit and applying on-hit and on-attack effects to the first enemy hit. The ability can  critically strike for (60% +  20%) AD bonus physical damage.",
+            "description": "First Cast - Steel Tempest: Yasuo thrusts his sword in the target direction, dealing physical damage to enemies hit and applying on-hit and on-attack effects to the first enemy hit. The ability can critically strike for (60% + 20%) AD bonus physical damage.",
             "icon": "Steel Tempest.png",
             "leveling": [
               {
@@ -297,12 +408,12 @@
             "leveling": []
           },
           {
-            "description": "Third Cast - Gathering Storm: Yasuo consumes his stacks to unleash a whirlwind that travels in the target direction, dealing the same damage and  knocking up all enemies hit.",
+            "description": "Third Cast - Gathering Storm: Yasuo consumes his stacks to unleash a whirlwind that travels in the target direction, dealing the same damage and knocking up all enemies hit.",
             "icon": "Steel Tempest 3.png",
             "leveling": []
           },
           {
-            "description": "Casting Steel Tempest, Steel Wind Rising or Gathering Storm during  Sweeping Blade will instead affect enemies around Yasuo at the end of the dash, or doing so immediately at his landing location after  blinking while ending the dash prematurely. Gathering Storm's whirlwind is not released when cast during  Sweeping Blade, but instead  knocks up all enemies hit around Yasuo for the same duration.",
+            "description": "Casting Steel Tempest, Steel Wind Rising or Gathering Storm during Sweeping Blade will instead affect enemies around Yasuo at the end of the dash, or doing so immediately at his landing location after blinking while ending the dash prematurely. Gathering Storm's whirlwind is not released when cast during Sweeping Blade, but instead knocks up all enemies hit around Yasuo for the same duration.",
             "icon": null,
             "leveling": []
           }
@@ -310,7 +421,22 @@
         "cost": null,
         "cooldown": {
           "modifiers": [
-            "4 \u2212 1.33 (based on bonus attack speed)"
+            {
+              "values": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "units": [
+                "4 − 1.33 (based on bonus attack speed)",
+                "4 − 1.33 (based on bonus attack speed)",
+                "4 − 1.33 (based on bonus attack speed)",
+                "4 − 1.33 (based on bonus attack speed)",
+                "4 − 1.33 (based on bonus attack speed)"
+              ]
+            }
           ],
           "affectedByCdr": true
         },
@@ -334,7 +460,7 @@
         "speed": null,
         "width": null,
         "angle": null,
-        "castTime": "0.4 \u2212 0.133 (based on bonus attack speed)",
+        "castTime": "0.4 − 0.133 (based on bonus attack speed)",
         "effectRadius": "375",
         "targetRange": "475 / 900"
       },
@@ -342,7 +468,7 @@
         "name": "Steel Tempest",
         "effects": [
           {
-            "description": "First Cast - Steel Tempest: Yasuo thrusts his sword in the target direction, dealing physical damage to enemies hit and applying on-hit and on-attack effects to the first enemy hit. The ability can  critically strike for (60% +  20%) AD bonus physical damage.",
+            "description": "First Cast - Steel Tempest: Yasuo thrusts his sword in the target direction, dealing physical damage to enemies hit and applying on-hit and on-attack effects to the first enemy hit. The ability can critically strike for (60% + 20%) AD bonus physical damage.",
             "icon": "Steel Tempest.png",
             "leveling": [
               {
@@ -395,12 +521,12 @@
             "leveling": []
           },
           {
-            "description": "Third Cast - Gathering Storm: Yasuo consumes his stacks to unleash a whirlwind that travels in the target direction, dealing the same damage and  knocking up all enemies hit.",
+            "description": "Third Cast - Gathering Storm: Yasuo consumes his stacks to unleash a whirlwind that travels in the target direction, dealing the same damage and knocking up all enemies hit.",
             "icon": "Steel Tempest 3.png",
             "leveling": []
           },
           {
-            "description": "Casting Steel Tempest, Steel Wind Rising or Gathering Storm during  Sweeping Blade will instead affect enemies around Yasuo at the end of the dash, or doing so immediately at his landing location after  blinking while ending the dash prematurely. Gathering Storm's whirlwind is not released when cast during  Sweeping Blade, but instead  knocks up all enemies hit around Yasuo for the same duration.",
+            "description": "Casting Steel Tempest, Steel Wind Rising or Gathering Storm during Sweeping Blade will instead affect enemies around Yasuo at the end of the dash, or doing so immediately at his landing location after blinking while ending the dash prematurely. Gathering Storm's whirlwind is not released when cast during Sweeping Blade, but instead knocks up all enemies hit around Yasuo for the same duration.",
             "icon": null,
             "leveling": []
           }
@@ -408,7 +534,22 @@
         "cost": null,
         "cooldown": {
           "modifiers": [
-            "4 \u2212 1.33 (based on bonus attack speed)"
+            {
+              "values": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "units": [
+                "4 − 1.33 (based on bonus attack speed)",
+                "4 − 1.33 (based on bonus attack speed)",
+                "4 − 1.33 (based on bonus attack speed)",
+                "4 − 1.33 (based on bonus attack speed)",
+                "4 − 1.33 (based on bonus attack speed)"
+              ]
+            }
           ],
           "affectedByCdr": true
         },
@@ -432,7 +573,7 @@
         "speed": null,
         "width": null,
         "angle": null,
-        "castTime": "0.4 \u2212 0.133 (based on bonus attack speed)",
+        "castTime": "0.4 − 0.133 (based on bonus attack speed)",
         "effectRadius": "375",
         "targetRange": "475 / 900"
       }
@@ -442,7 +583,7 @@
         "name": "Wind Wall",
         "effects": [
           {
-            "description": "Active: Yasuo creates a gust of wind that travels in the target direction over 0.25 seconds to form a wall in front of him. The wall slowly drifts forward 50 units over 3.75 seconds, blocking all hostile non- turret  projectiles.",
+            "description": "Active: Yasuo creates a gust of wind that travels in the target direction over 0.25 seconds to form a wall in front of him. The wall slowly drifts forward 50 units over 3.75 seconds, blocking all hostile non- turret projectiles.",
             "icon": "Wind Wall.png",
             "leveling": [
               {
@@ -521,7 +662,7 @@
         "name": "Sweeping Blade",
         "effects": [
           {
-            "description": "Active: Yasuo  dashes a fixed distance toward a target enemy, dealing  magic damage.",
+            "description": "Active: Yasuo dashes a fixed distance toward a target enemy, dealing magic damage.",
             "icon": "Sweeping Blade.png",
             "leveling": [
               {
@@ -686,7 +827,7 @@
             "leveling": []
           },
           {
-            "description": "Yasuo will be  knocked down by any  immobilizing crowd control during Sweeping Blade.",
+            "description": "Yasuo will be knocked down by any immobilizing crowd control during Sweeping Blade.",
             "icon": null,
             "leveling": []
           }
@@ -743,12 +884,12 @@
         "name": "Last Breath",
         "effects": [
           {
-            "description": "Active: Yasuo  blinks to the other side of a  visible  airborne enemy champion nearest to the cursor, instantly generating maximum  Flow while resetting  Steel Tempest's stacks.",
+            "description": "Active: Yasuo blinks to the other side of a visible airborne enemy champion nearest to the cursor, instantly generating maximum Flow while resetting Steel Tempest's stacks.",
             "icon": "Last Breath.png",
             "leveling": []
           },
           {
-            "description": "Upon arrival, he  suspends all nearby  airborne enemies around the target for 1 second, dealing  physical damage thereafter.",
+            "description": "Upon arrival, he suspends all nearby airborne enemies around the target for 1 second, dealing physical damage thereafter.",
             "icon": null,
             "leveling": [
               {
@@ -783,7 +924,7 @@
             ]
           },
           {
-            "description": "For the next 15 seconds, Yasuo's  critical strikes gain  50% armor penetration versus  bonus armor.",
+            "description": "For the next 15 seconds, Yasuo's critical strikes gain 50% armor penetration versus bonus armor.",
             "icon": null,
             "leveling": []
           },

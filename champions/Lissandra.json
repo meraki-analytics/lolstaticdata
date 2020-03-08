@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 88.8889007568359,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 88.8889007568359,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.656,
       "percent": 0.0,
       "perLevel": 1.36,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.112499997019767,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.112499997019767,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.0,
-    "aramDamageDealt": 1.0,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "BURST",
@@ -114,7 +204,7 @@
             "leveling": []
           },
           {
-            "description": "Frozen Thralls chase nearby enemies, prioritizing champions,  slowing nearby enemies by 25% and shattering after 4 seconds, dealing 120 \u2212 520 (based on level) (+ 50% AP)  magic damage. Frozen Thralls initially have a slow movement speed, which increases over the duration.",
+            "description": "Frozen Thralls chase nearby enemies, prioritizing champions, slowing nearby enemies by 25% and shattering after 4 seconds, dealing 120 − 520 (based on level) (+ 50% AP) magic damage. Frozen Thralls initially have a slow movement speed, which increases over the duration.",
             "icon": null,
             "leveling": []
           }
@@ -151,7 +241,7 @@
         "name": "Ice Shard",
         "effects": [
           {
-            "description": "Active: Lissandra hurls a spear of ice in a line which deals magic damage to the first enemy it hits and  slows them for 1.5 seconds.",
+            "description": "Active: Lissandra hurls a spear of ice in a line which deals magic damage to the first enemy it hits and slows them for 1.5 seconds.",
             "icon": "Ice Shard.png",
             "leveling": [
               {
@@ -291,7 +381,7 @@
         "name": "Ring of Frost",
         "effects": [
           {
-            "description": "Active: Lissandra freezes all nearby enemies, dealing them magic damage and briefly  rooting them.",
+            "description": "Active: Lissandra freezes all nearby enemies, dealing them magic damage and briefly rooting them.",
             "icon": "Ring of Frost.png",
             "leveling": [
               {
@@ -469,7 +559,7 @@
             ]
           },
           {
-            "description": "Reactivating Glacial Path consumes the claw and  blinks Lissandra to its current location.",
+            "description": "Reactivating Glacial Path consumes the claw and blinks Lissandra to its current location.",
             "icon": null,
             "leveling": []
           }
@@ -545,12 +635,12 @@
         "name": "Frozen Tomb",
         "effects": [
           {
-            "description": "Enemy Cast: After a 0.5-second delay, Lissandra freezes the target enemy champion,  knocking down and  stunning the target for 1.5 seconds.",
+            "description": "Enemy Cast: After a 0.5-second delay, Lissandra freezes the target enemy champion, knocking down and stunning the target for 1.5 seconds.",
             "icon": "Frozen Tomb.png",
             "leveling": []
           },
           {
-            "description": "Self Cast: Lissandra instantly entombs herself, placing herself in  stasis for 2.5 seconds while  healing herself over the duration, with the heal increased by 0% \u2212 100% (based on missing health) at time of cast.",
+            "description": "Self Cast: Lissandra instantly entombs herself, placing herself in stasis for 2.5 seconds while healing herself over the duration, with the heal increased by 0% − 100% (based on missing health) at time of cast.",
             "icon": null,
             "leveling": [
               {
@@ -614,7 +704,7 @@
             ]
           },
           {
-            "description": "Upon cast, after a 0.5-second delay, Black Ice spreads from Frozen Tomb's target and lasts for 3 seconds, dealing magic damage to all unique enemies entering the area, and  slowing them while they remain within.",
+            "description": "Upon cast, after a 0.5-second delay, Black Ice spreads from Frozen Tomb's target and lasts for 3 seconds, dealing magic damage to all unique enemies entering the area, and slowing them while they remain within.",
             "icon": null,
             "leveling": [
               {

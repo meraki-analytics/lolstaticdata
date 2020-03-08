@@ -56,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 625,
-    "selectionRadius": 100,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 100,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.669,
       "percent": 0.0,
       "perLevel": 1,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.143749997019767,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.143749997019767,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 550,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 1.1,
-    "aramDamageDealt": 0.9,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 1.0,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ARTILLERY",
@@ -116,7 +206,7 @@
             "leveling": []
           },
           {
-            "description": "Her basic attacks and  Final Spark consume the mark, dealing 20 \u2212 190 (based on level) (+ 20% AP)  bonus magic damage.",
+            "description": "Her basic attacks and Final Spark consume the mark, dealing 20 − 190 (based on level) (+ 20% AP) bonus magic damage.",
             "icon": null,
             "leveling": []
           }
@@ -128,11 +218,11 @@
         "spellshieldable": "False",
         "resource": null,
         "damageType": "MAGIC_DAMAGE",
-        "spellEffects": "Single target",
+        "spellEffects": "Proc",
         "projectile": null,
         "onHitEffects": null,
         "occurrence": null,
-        "notes": "No additional effects.",
+        "notes": "Does not trigger spell effects.",
         "blurb": "Lux's damaging spells charge the target with energy for 6 seconds. Lux's next attack ignites the energy, dealing bonus magic damage (depending on Lux's level) to the target.",
         "missileSpeed": null,
         "rechargeRate": null,
@@ -153,7 +243,7 @@
         "name": "Light Binding",
         "effects": [
           {
-            "description": "Active: Lux releases a sphere of light in a line that deals magic damage to the first two enemies hit and  roots them for 2 seconds.",
+            "description": "Active: Lux releases a sphere of light in a line that deals magic damage to the first two enemies hit and roots them for 2 seconds.",
             "icon": "Light Binding.png",
             "leveling": [
               {
@@ -272,7 +362,7 @@
             "leveling": []
           },
           {
-            "description": "The outgoing wand  shields Lux and all allied champions it touches for 2.5 seconds.",
+            "description": "The outgoing wand shields Lux and all allied champions it touches for 2.5 seconds.",
             "icon": null,
             "leveling": [
               {
@@ -434,7 +524,7 @@
         "name": "Lucent Singularity",
         "effects": [
           {
-            "description": "Active: Lux sends an anomaly of twisted light to the target area for up to 5 seconds,  slowing enemies inside and granting a 600 radius  vision around it.",
+            "description": "Active: Lux sends an anomaly of twisted light to the target area for up to 5 seconds, slowing enemies inside and granting a 600 radius vision around it.",
             "icon": "Lucent Singularity.png",
             "leveling": [
               {
@@ -580,7 +670,7 @@
         "name": "Final Spark",
         "effects": [
           {
-            "description": "Active: Lux fires a giant laser in a line that deals magic damage, briefly  revealing enemies as well as the surrounding area.",
+            "description": "Active: Lux fires a giant laser in a line that deals magic damage, briefly revealing enemies as well as the surrounding area.",
             "icon": "Final Spark.png",
             "leveling": [
               {

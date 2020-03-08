@@ -20,6 +20,18 @@
       "perLevel": 0.5,
       "percentPerLevel": 0.0
     },
+    "mana": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
+    "manaRegen": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
     "armor": {
       "flat": 33,
       "percent": 0.0,
@@ -44,36 +56,126 @@
       "perLevel": 0.0,
       "percentPerLevel": 0.0
     },
-    "acquisitionRadius": 600,
-    "selectionRadius": 130,
-    "pathingRadius": 35,
-    "gameplayRadius": 65,
-    "criticalStrikeDamage": 200,
-    "criticalStrikeDamageModifier": 1.0,
+    "acquisitionRadius": {
+      "flat": 600,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 130,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 200,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackSpeed": {
       "flat": 0.625,
       "percent": 0.0,
       "perLevel": 3.5,
       "percentPerLevel": 0.0
     },
-    "attackSpeedRatio": 0.625,
-    "attackCastTime": 0.3,
-    "attackTotalTime": 1.6,
-    "attackDelayOffset": -0.133333340287208,
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.133333340287208,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
     "attackRange": {
       "flat": 125,
       "percent": 0.0,
       "perLevel": 0,
       "percentPerLevel": 0.0
     },
-    "aramDamageTaken": 0.95,
-    "aramDamageDealt": 1.05,
-    "aramHealing": 1.0,
-    "aramShielding": 1.0,
-    "urfDamageTaken": 0.9,
-    "urfDamageDealt": 1.0,
-    "urfHealing": 1.0,
-    "urfShielding": 1.0
+    "aramDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
   },
   "roles": [
     "ASSASSIN",
@@ -98,12 +200,12 @@
         "name": "Runic Blade",
         "effects": [
           {
-            "description": "Innate: Riven's blade gains a Charge for 6 seconds every time she uses an ability, stacking up to 3 times. Riven's basic attacks consume a Charge to deal 25% \u2212 50% (based on level) AD  bonus physical damage.",
+            "description": "Innate: Riven's blade gains a Charge for 6 seconds every time she uses an ability, stacking up to 3 times. Riven's basic attacks consume a Charge to deal 25% − 50% (based on level) AD bonus physical damage.",
             "icon": "Runic Blade.png",
             "leveling": []
           },
           {
-            "description": "Runic Blade is affected by  critical strike modifiers.",
+            "description": "Runic Blade is affected by critical strike modifiers.",
             "icon": null,
             "leveling": []
           }
@@ -140,7 +242,7 @@
         "name": "Broken Wings",
         "effects": [
           {
-            "description": "Active: Riven  dashes towards the target nearest to the cursor or in the direction she is currently facing, dealing physical damage to all enemies in front of her. Broken Wings can then be reactivated twice within the next 4 seconds, with the second cast refreshing the timer.",
+            "description": "Active: Riven dashes towards the target nearest to the cursor or in the direction she is currently facing, dealing physical damage to all enemies in front of her. Broken Wings can then be reactivated twice within the next 4 seconds, with the second cast refreshing the timer.",
             "icon": "Broken Wings.png",
             "leveling": [
               {
@@ -220,7 +322,7 @@
             ]
           },
           {
-            "description": "The third cast  knocks up and damages all enemies around Riven in an expanded radius. The third cast is also the only cast able to dash over terrain, and can do so longer than its normal range.",
+            "description": "The third cast knocks up and damages all enemies around Riven in an expanded radius. The third cast is also the only cast able to dash over terrain, and can do so longer than its normal range.",
             "icon": null,
             "leveling": []
           },
@@ -230,7 +332,7 @@
             "leveling": []
           },
           {
-            "description": "Targeted Broken Wings casts grant  sight of an area around Riven to the enemies.",
+            "description": "Targeted Broken Wings casts grant sight of an area around Riven to the enemies.",
             "icon": null,
             "leveling": []
           }
@@ -287,7 +389,7 @@
         "name": "Ki Burst",
         "effects": [
           {
-            "description": "Active: Riven's sword emits a burst of runic energy that shocks nearby enemies, dealing physical damage and applying a  stun for 0.75 seconds.",
+            "description": "Active: Riven's sword emits a burst of runic energy that shocks nearby enemies, dealing physical damage and applying a stun for 0.75 seconds.",
             "icon": "Ki Burst.png",
             "leveling": [
               {
@@ -382,7 +484,7 @@
         "name": "Valor",
         "effects": [
           {
-            "description": "Active: Riven  dashes in the direction of the cursor (but not through terrain),  shielding herself for 1.5 seconds. If she targets an enemy with Valor, she briefly  reveals herself and the area around her to the enemies.",
+            "description": "Active: Riven dashes in the direction of the cursor (but not through terrain), shielding herself for 1.5 seconds. If she targets an enemy with Valor, she briefly reveals herself and the area around her to the enemies.",
             "icon": "Valor.png",
             "leveling": [
               {
@@ -425,7 +527,7 @@
             ]
           },
           {
-            "description": "Other abilities can be cast during the dash and  Broken Wings may be cast during their cast time if they're used at the end or briefly after the dash.",
+            "description": "Other abilities can be cast during the dash and Broken Wings may be cast during their cast time if they're used at the end or briefly after the dash.",
             "icon": null,
             "leveling": []
           }
@@ -482,7 +584,7 @@
         "name": "Blade of the Exile",
         "effects": [
           {
-            "description": "Active: Riven empowers her sword for 15 seconds, gaining 20% AD  bonus attack damage,  75 bonus range on her basic attacks, increased range on  Broken Wings and  Ki Burst, and the ability to cast  Wind Slash once for the duration.",
+            "description": "Active: Riven empowers her sword for 15 seconds, gaining 20% AD bonus attack damage, 75 bonus range on her basic attacks, increased range on Broken Wings and Ki Burst, and the ability to cast Wind Slash once for the duration.",
             "icon": "Blade of the Exile.png",
             "leveling": []
           }
@@ -533,7 +635,7 @@
         "name": "Wind Slash",
         "effects": [
           {
-            "description": "Active: Riven unleashes a wave of energy in a cone, dealing physical damage to all enemies hit, increased by 0% \u2212 200% (based on missing health).",
+            "description": "Active: Riven unleashes a wave of energy in a cone, dealing physical damage to all enemies hit, increased by 0% − 200% (based on missing health).",
             "icon": "Wind Slash.png",
             "leveling": [
               {
@@ -597,7 +699,7 @@
             ]
           },
           {
-            "description": "If Wind Slash hits an enemy, it will briefly grant  vision of the area around Riven to the enemies.",
+            "description": "If Wind Slash hits an enemy, it will briefly grant vision of the area around Riven to the enemies.",
             "icon": null,
             "leveling": []
           }
@@ -623,7 +725,7 @@
         "innerRadius": null,
         "speed": "1600",
         "width": null,
-        "angle": "75\u00b0",
+        "angle": "75°",
         "castTime": null,
         "effectRadius": "900",
         "targetRange": null
