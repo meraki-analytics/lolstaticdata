@@ -11,7 +11,10 @@
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3076.png",
+  "simpleDescription": "Prevents enemies from using Life Steal against you.",
   "nicknames": [],
   "passives": [
     {
@@ -320,6 +323,7 @@
       "combined": 400,
       "sell": 700
     },
+    "purchasable": true,
     "tags": [
       "ARMOR"
     ]

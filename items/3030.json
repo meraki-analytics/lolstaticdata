@@ -9,7 +9,10 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3030.png",
+  "simpleDescription": "Activate to fire icy bolts to slow enemies",
   "nicknames": [],
   "passives": [
     {
@@ -326,6 +329,7 @@
       "combined": 450,
       "sell": 1960
     },
+    "purchasable": true,
     "tags": [
       "ABILITY_POWER",
       "MANA",

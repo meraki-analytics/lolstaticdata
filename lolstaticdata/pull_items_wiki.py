@@ -398,6 +398,9 @@ class WikiItem:
             icon="",
             passives=cls._parse_passives(item_data),
             active=cls._parse_actives(item_data),
+            required_champion = "",
+            required_ally = "",
+            simple_description = "",
             stats=Stats(
                 ability_power=AbilityPower(flat=cls._parse_float(item_data["ap"])),
                 armor=Armor(flat=cls._parse_float(item_data['armor'])),
@@ -433,7 +436,8 @@ class WikiItem:
                     combined=cls._parse_int(item_data["comb"]),
                     sell=cls._parse_int(item_data["sell"]),
                 ),
-                tags=cls.get_item_attributes(item_data)
+                tags=cls.get_item_attributes(item_data),
+                purchasable=""
             )
         )
         return item

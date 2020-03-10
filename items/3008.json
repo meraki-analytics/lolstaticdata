@@ -9,7 +9,10 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3008.png",
+  "simpleDescription": "Increases Attack Damage based on maximum Mana",
   "nicknames": [],
   "passives": [
     {
@@ -622,6 +625,7 @@
       "combined": 675,
       "sell": 1680
     },
+    "purchasable": true,
     "tags": [
       "MANA",
       "DAMAGE",

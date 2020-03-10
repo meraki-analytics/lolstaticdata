@@ -13,7 +13,10 @@
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3155.png",
+  "simpleDescription": "Increases Attack Damage and Magic Resist",
   "nicknames": [],
   "passives": [
     {
@@ -322,6 +325,7 @@
       "combined": 500,
       "sell": 910
     },
+    "purchasable": true,
     "tags": [
       "DAMAGE",
       "MAGIC_RESIST"

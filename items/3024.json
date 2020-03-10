@@ -15,7 +15,10 @@
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3024.png",
+  "simpleDescription": "Increases Armor and Cooldown Reduction",
   "nicknames": [],
   "passives": [
     {
@@ -324,6 +327,7 @@
       "combined": 250,
       "sell": 630
     },
+    "purchasable": true,
     "tags": [
       "ARMOR",
       "COOLDOWN_REDUCTION",

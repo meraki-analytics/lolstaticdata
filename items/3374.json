@@ -8,7 +8,10 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "Ornn",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3374.png",
+  "simpleDescription": "Massively increases Ability Power",
   "nicknames": [
     "ornn",
     "forge"
@@ -320,6 +323,7 @@
       "combined": 0,
       "sell": 2520
     },
+    "purchasable": true,
     "tags": [
       "ABILITY_POWER"
     ]

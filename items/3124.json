@@ -10,7 +10,10 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3124.png",
+  "simpleDescription": "Increases Attack Speed, Armor Penetration, and Magic Penetration",
   "nicknames": [],
   "passives": [
     {
@@ -775,6 +778,7 @@
       "combined": 790,
       "sell": 2170
     },
+    "purchasable": true,
     "tags": [
       "DAMAGE",
       "ATTACK_SPEED",

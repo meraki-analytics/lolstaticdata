@@ -10,7 +10,10 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": true,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3161.png",
+  "simpleDescription": "After casting your ultimate, your basic attacks reduces your remaining non-ultimate cooldowns.",
   "nicknames": [],
   "passives": [
     {
@@ -471,6 +474,7 @@
       "combined": 950,
       "sell": 2380
     },
+    "purchasable": true,
     "tags": [
       "DAMAGE",
       "COOLDOWN_REDUCTION",

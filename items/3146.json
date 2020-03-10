@@ -9,7 +9,10 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3146.png",
+  "simpleDescription": "Increases Attack Damage and Ability Power, activate to slow a target",
   "nicknames": [],
   "passives": [
     {
@@ -326,6 +329,7 @@
       "combined": 750,
       "sell": 2380
     },
+    "purchasable": true,
     "tags": [
       "DAMAGE",
       "LIFE_STEAL",

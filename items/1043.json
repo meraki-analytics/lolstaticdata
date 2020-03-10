@@ -23,7 +23,10 @@
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1043.png",
+  "simpleDescription": "Greatly increases Attack Speed",
   "nicknames": [],
   "passives": [
     {
@@ -332,6 +335,7 @@
       "combined": 400,
       "sell": 700
     },
+    "purchasable": true,
     "tags": [
       "ATTACK_SPEED"
     ]

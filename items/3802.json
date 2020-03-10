@@ -15,7 +15,10 @@
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3802.png",
+  "simpleDescription": "Restores Mana upon levelling up.",
   "nicknames": [],
   "passives": [
     {
@@ -476,6 +479,7 @@
       "combined": 80,
       "sell": 910
     },
+    "purchasable": true,
     "tags": [
       "ABILITY_POWER",
       "MANA",

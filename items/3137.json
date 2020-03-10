@@ -9,7 +9,10 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": true,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3137.png",
+  "simpleDescription": "Activate to remove all debuffs and grant massive Movement Speed",
   "nicknames": [],
   "passives": [],
   "active": [
@@ -173,6 +176,7 @@
       "combined": 300,
       "sell": 1890
     },
+    "purchasable": true,
     "tags": [
       "MAGIC_RESIST",
       "ATTACK_SPEED",

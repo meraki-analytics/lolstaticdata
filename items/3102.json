@@ -10,7 +10,10 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3102.png",
+  "simpleDescription": "Periodically blocks enemy abilities",
   "nicknames": [
     "bv"
   ],
@@ -321,6 +324,7 @@
       "combined": 800,
       "sell": 2100
     },
+    "purchasable": true,
     "tags": [
       "MAGIC_RESIST",
       "ABILITY_POWER",

@@ -10,7 +10,10 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3812.png",
+  "simpleDescription": "Trades incoming damage now for incoming damage later",
   "nicknames": [],
   "passives": [
     {
@@ -471,6 +474,7 @@
       "combined": 625,
       "sell": 2450
     },
+    "purchasable": true,
     "tags": [
       "DAMAGE",
       "LIFE_STEAL",

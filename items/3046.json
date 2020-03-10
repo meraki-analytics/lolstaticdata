@@ -9,7 +9,10 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3046.png",
+  "simpleDescription": "Move faster while attacking enemies and gain a shield when on low health.",
   "nicknames": [
     "pd"
   ],
@@ -472,6 +475,7 @@
       "combined": 900,
       "sell": 1820
     },
+    "purchasable": true,
     "tags": [
       "ATTACK_SPEED",
       "CRITICAL_STRIKE",

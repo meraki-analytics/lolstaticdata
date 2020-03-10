@@ -16,7 +16,10 @@
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3057.png",
+  "simpleDescription": "Grants a bonus to next attack after spell cast",
   "nicknames": [],
   "passives": [
     {
@@ -325,6 +328,7 @@
       "combined": 700,
       "sell": 735
     },
+    "purchasable": true,
     "tags": [
       "COOLDOWN_REDUCTION",
       "MANA"

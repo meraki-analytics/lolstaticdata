@@ -14,7 +14,10 @@
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3114.png",
+  "simpleDescription": "Increases Heal and Shield Power, Mana Regeneration, and Cooldown Reduction",
   "nicknames": [],
   "passives": [
     {
@@ -323,6 +326,7 @@
       "combined": 550,
       "sell": 560
     },
+    "purchasable": true,
     "tags": [
       "COOLDOWN_REDUCTION",
       "MANA_REGEN"

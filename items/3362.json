@@ -1,12 +1,15 @@
 {
-  "name": "Greater Vision Totem (Trinket)",
+  "name": "Warding Totem",
   "id": "3362",
   "tier": 1,
   "buildsFrom": [],
   "buildsInto": [],
   "noEffects": true,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3362.png",
+  "simpleDescription": "Periodically place a Vision Ward",
   "nicknames": [
     "yellow"
   ],
@@ -172,6 +175,7 @@
       "combined": 0,
       "sell": 0
     },
+    "purchasable": false,
     "tags": [
       "LANING",
       "VISION_AND_TRINKETS"

@@ -9,7 +9,10 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3907.png",
+  "simpleDescription": "Stores nearby spellcasts and can consume them to grant Movement Speed and Ability Power.",
   "nicknames": [],
   "passives": [
     {
@@ -326,6 +329,7 @@
       "combined": 800,
       "sell": 2030
     },
+    "purchasable": true,
     "tags": [
       "OTHER_MOVEMENT_ITEMS",
       "ABILITY_POWER"
