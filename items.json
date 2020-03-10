@@ -3,7 +3,8 @@
     "name": "Boots of Speed",
     "id": "1001",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3006,
       3047,
       3020,
@@ -14,7 +15,6 @@
       4001,
       3173
     ],
-    "buildsInto": [],
     "noEffects": true,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1001.png",
@@ -338,7 +338,8 @@
     "name": "Faerie Charm",
     "id": "1004",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3028,
       3070,
       3073,
@@ -347,7 +348,6 @@
       3114,
       3311
     ],
-    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1004.png",
@@ -515,7 +515,8 @@
     "name": "Rejuvenation Bead",
     "id": "1006",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3077,
       3801,
       3183,
@@ -528,7 +529,6 @@
       3305,
       4401
     ],
-    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1006.png",
@@ -697,14 +697,14 @@
     "id": "1011",
     "tier": 2,
     "buildsFrom": [
+      1028
+    ],
+    "buildsInto": [
       3083,
       3084,
       3022,
       3143,
       3742
-    ],
-    "buildsInto": [
-      1028
     ],
     "noEffects": false,
     "removed": false,
@@ -873,14 +873,14 @@
     "name": "Cloak of Agility",
     "id": "1018",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3185,
       3031,
       3095,
       3086,
       3508
     ],
-    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1018.png",
@@ -1048,7 +1048,8 @@
     "name": "Blasting Wand",
     "id": "1026",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3135,
       3029,
       3165,
@@ -1064,7 +1065,6 @@
       3285,
       3286
     ],
-    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1026.png",
@@ -1232,7 +1232,8 @@
     "name": "Sapphire Crystal",
     "id": "1027",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3057,
       3070,
       3010,
@@ -1243,7 +1244,6 @@
       3802,
       4104
     ],
-    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1027.png",
@@ -1413,7 +1413,8 @@
     "name": "Ruby Crystal",
     "id": "1028",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       1011,
       3801,
       3092,
@@ -1441,7 +1442,6 @@
       3748,
       3814
     ],
-    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1028.png",
@@ -1611,7 +1611,8 @@
     "name": "Cloth Armor",
     "id": "1029",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3047,
       1031,
       3191,
@@ -1623,7 +1624,6 @@
       3204,
       3205
     ],
-    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1029.png",
@@ -1792,6 +1792,9 @@
     "id": "1031",
     "tier": 2,
     "buildsFrom": [
+      1029
+    ],
+    "buildsInto": [
       3068,
       3026,
       4026,
@@ -1799,9 +1802,6 @@
       3109,
       3118,
       3742
-    ],
-    "buildsInto": [
-      1029
     ],
     "noEffects": false,
     "removed": false,
@@ -1970,7 +1970,8 @@
     "name": "Null-Magic Mantle",
     "id": "1033",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3111,
       3211,
       1057,
@@ -1982,7 +1983,6 @@
       3190,
       3194
     ],
-    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1033.png",
@@ -2150,7 +2150,8 @@
     "name": "Long Sword",
     "id": "1036",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3072,
       1053,
       1059,
@@ -2175,7 +2176,6 @@
       3209,
       3252
     ],
-    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1036.png",
@@ -2343,7 +2343,8 @@
     "name": "Pickaxe",
     "id": "1037",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3124,
       3031,
       3008,
@@ -2361,7 +2362,6 @@
       3813,
       3814
     ],
-    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1037.png",
@@ -2529,7 +2529,8 @@
     "name": "B. F. Sword",
     "id": "1038",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3026,
       4026,
       3072,
@@ -2541,7 +2542,6 @@
       4403,
       3508
     ],
-    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1038.png",
@@ -2711,7 +2711,8 @@
     "name": "Hunter's Talisman",
     "id": "1039",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3706,
       3715,
       1080,
@@ -2721,7 +2722,6 @@
       3205,
       3711
     ],
-    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1039.png",
@@ -3197,13 +3197,13 @@
     "name": "Hunter's Machete",
     "id": "1041",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3706,
       3715,
       3713,
       3711
     ],
-    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1041.png",
@@ -3679,7 +3679,8 @@
     "name": "Dagger",
     "id": "1042",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       1043,
       3006,
       2015,
@@ -3695,7 +3696,6 @@
       3154,
       3172
     ],
-    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1042.png",
@@ -3864,6 +3864,10 @@
     "id": "1043",
     "tier": 2,
     "buildsFrom": [
+      1042,
+      1042
+    ],
+    "buildsInto": [
       3091,
       3153,
       1417,
@@ -3877,10 +3881,6 @@
       3178,
       3186,
       4105
-    ],
-    "buildsInto": [
-      1042,
-      1042
     ],
     "noEffects": false,
     "removed": false,
@@ -4202,7 +4202,8 @@
     "name": "Amplifying Tome",
     "id": "1052",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3108,
       3191,
       3136,
@@ -4219,7 +4220,6 @@
       3802,
       3744
     ],
-    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1052.png",
@@ -4388,6 +4388,9 @@
     "id": "1053",
     "tier": 2,
     "buildsFrom": [
+      1036
+    ],
+    "buildsInto": [
       3072,
       3144,
       3074,
@@ -4396,9 +4399,6 @@
       3181,
       4403,
       3812
-    ],
-    "buildsInto": [
-      1036
     ],
     "noEffects": false,
     "removed": false,
@@ -5542,6 +5542,9 @@
     "id": "1057",
     "tier": 2,
     "buildsFrom": [
+      1033
+    ],
+    "buildsInto": [
       3193,
       3001,
       3039,
@@ -5550,9 +5553,6 @@
       3180,
       3512,
       4401
-    ],
-    "buildsInto": [
-      1033
     ],
     "noEffects": false,
     "removed": false,
@@ -5721,14 +5721,14 @@
     "name": "Needlessly Large Rod",
     "id": "1058",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3089,
       3907,
       3090,
       3128,
       4403
     ],
-    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1058.png",
@@ -5896,10 +5896,10 @@
     "name": "Dark Seal",
     "id": "1082",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3041
     ],
-    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1082.png",
@@ -6848,11 +6848,11 @@
     "name": "Enchantment: Warrior",
     "id": "1400",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3133,
       3706
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1400.png",
@@ -7025,11 +7025,11 @@
     "name": "Enchantment: Cinderhulk",
     "id": "1401",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3751,
       3706
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1401.png",
@@ -7506,12 +7506,12 @@
     "name": "Enchantment: Runic Echoes",
     "id": "1402",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3108,
       1027,
       3706
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1402.png",
@@ -7990,11 +7990,11 @@
     "name": "Enchantment: Warrior",
     "id": "1412",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3133,
       3715
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1412.png",
@@ -8167,11 +8167,11 @@
     "name": "Enchantment: Cinderhulk",
     "id": "1413",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3751,
       3715
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1413.png",
@@ -8648,12 +8648,12 @@
     "name": "Enchantment: Runic Echoes",
     "id": "1414",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3108,
       1027,
       3715
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1414.png",
@@ -9132,11 +9132,11 @@
     "name": "Enchantment: Bloodrazor",
     "id": "1416",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1043,
       3706
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1416.png",
@@ -9462,11 +9462,11 @@
     "name": "Enchantment: Bloodrazor",
     "id": "1419",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1043,
       3715
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1419.png",
@@ -10306,12 +10306,12 @@
     "id": "2015",
     "tier": 2,
     "buildsFrom": [
+      1042
+    ],
+    "buildsInto": [
       3095,
       3087,
       3094
-    ],
-    "buildsInto": [
-      1042
     ],
     "noEffects": false,
     "removed": false,
@@ -10785,11 +10785,11 @@
     "name": "Refillable Potion",
     "id": "2031",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       2033,
       2032
     ],
-    "buildsInto": [],
     "noEffects": true,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2031.png",
@@ -11115,10 +11115,10 @@
     "name": "Corrupting Potion",
     "id": "2033",
     "tier": 2,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       2031
     ],
+    "buildsInto": [],
     "noEffects": true,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2033.png",
@@ -12739,11 +12739,11 @@
     "name": "Shurelya's Reverie",
     "id": "2065",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3114,
       3801
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2065.png",
@@ -14071,7 +14071,8 @@
     "name": "Stopwatch",
     "id": "2420",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3157,
       3026,
       3193,
@@ -14079,7 +14080,6 @@
       4026,
       4003
     ],
-    "buildsInto": [],
     "noEffects": true,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2420.png",
@@ -14253,13 +14253,13 @@
     "name": "Broken Stopwatch",
     "id": "2421",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3157,
       3026,
       3193,
       3090
     ],
-    "buildsInto": [],
     "noEffects": true,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2421.png",
@@ -14433,7 +14433,8 @@
     "name": "Slightly Magical Boots",
     "id": "2422",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3006,
       3047,
       3020,
@@ -14443,7 +14444,6 @@
       3009,
       4001
     ],
-    "buildsInto": [],
     "noEffects": true,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2422.png",
@@ -14916,13 +14916,13 @@
     "name": "Perfectly Timed Stopwatch",
     "id": "2423",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3157,
       3026,
       3193,
       3090
     ],
-    "buildsInto": [],
     "noEffects": true,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2423.png",
@@ -15097,11 +15097,11 @@
     "id": "3001",
     "tier": 3,
     "buildsFrom": [
-      3379
-    ],
-    "buildsInto": [
       3010,
       1057
+    ],
+    "buildsInto": [
+      3379
     ],
     "noEffects": false,
     "removed": false,
@@ -15428,11 +15428,11 @@
     "name": "Archangel's Staff",
     "id": "3003",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3070,
       3802
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3003.png",
@@ -16214,11 +16214,11 @@
     "name": "Manamune",
     "id": "3004",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3070,
       1037
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3004.png",
@@ -16846,15 +16846,15 @@
     "id": "3006",
     "tier": 2,
     "buildsFrom": [
+      1001,
+      1042
+    ],
+    "buildsInto": [
       1301,
       1303,
       1300,
       1302,
       1304
-    ],
-    "buildsInto": [
-      1001,
-      1042
     ],
     "noEffects": false,
     "removed": false,
@@ -17179,11 +17179,11 @@
     "name": "Archangel's Staff (Quick Charge)",
     "id": "3007",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3073,
       3802
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3007.png",
@@ -17965,11 +17965,11 @@
     "name": "Manamune (Quick Charge)",
     "id": "3008",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3073,
       1037
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3008.png",
@@ -18597,14 +18597,14 @@
     "id": "3009",
     "tier": 2,
     "buildsFrom": [
+      1001
+    ],
+    "buildsInto": [
       1306,
       1308,
       1305,
       1307,
       1309
-    ],
-    "buildsInto": [
-      1001
     ],
     "noEffects": false,
     "removed": false,
@@ -19079,16 +19079,16 @@
     "id": "3010",
     "tier": 2,
     "buildsFrom": [
+      1028,
+      1027
+    ],
+    "buildsInto": [
       3027,
       3180,
       3029,
       3176,
       3001,
       4402
-    ],
-    "buildsInto": [
-      1028,
-      1027
     ],
     "noEffects": false,
     "removed": false,
@@ -19412,14 +19412,14 @@
     "id": "3020",
     "tier": 2,
     "buildsFrom": [
+      1001
+    ],
+    "buildsInto": [
       1311,
       1313,
       1310,
       1312,
       1314
-    ],
-    "buildsInto": [
-      1001
     ],
     "noEffects": false,
     "removed": false,
@@ -19743,11 +19743,11 @@
     "name": "Frozen Mallet",
     "id": "3022",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3052,
       1011
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3022.png",
@@ -20072,15 +20072,15 @@
     "id": "3024",
     "tier": 2,
     "buildsFrom": [
+      1027,
+      1029
+    ],
+    "buildsInto": [
       3110,
       3025,
       3050,
       3800,
       3187
-    ],
-    "buildsInto": [
-      1027,
-      1029
     ],
     "noEffects": false,
     "removed": false,
@@ -20405,11 +20405,11 @@
     "id": "3025",
     "tier": 3,
     "buildsFrom": [
-      3387
-    ],
-    "buildsInto": [
       3057,
       3024
+    ],
+    "buildsInto": [
+      3387
     ],
     "noEffects": false,
     "removed": false,
@@ -20885,12 +20885,12 @@
     "name": "Guardian Angel",
     "id": "3026",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1038,
       1031,
       2420
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3026.png",
@@ -21214,11 +21214,11 @@
     "name": "Rod of Ages",
     "id": "3027",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3010,
       1026
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3027.png",
@@ -21698,14 +21698,14 @@
     "id": "3028",
     "tier": 2,
     "buildsFrom": [
-      3174,
-      3222,
-      3744
-    ],
-    "buildsInto": [
       1004,
       1033,
       1004
+    ],
+    "buildsInto": [
+      3174,
+      3222,
+      3744
     ],
     "noEffects": false,
     "removed": false,
@@ -22029,11 +22029,11 @@
     "name": "Rod of Ages (Quick Charge)",
     "id": "3029",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3010,
       1026
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3029.png",
@@ -22512,11 +22512,11 @@
     "name": "Hextech GLP-800",
     "id": "3030",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3802,
       3145
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3030.png",
@@ -22848,12 +22848,12 @@
     "id": "3031",
     "tier": 2,
     "buildsFrom": [
-      3371
-    ],
-    "buildsInto": [
       1038,
       1037,
       1018
+    ],
+    "buildsInto": [
+      3371
     ],
     "noEffects": false,
     "removed": false,
@@ -23025,11 +23025,11 @@
     "name": "Mortal Reminder",
     "id": "3033",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3035,
       3123
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3033.png",
@@ -23503,12 +23503,12 @@
     "id": "3035",
     "tier": 2,
     "buildsFrom": [
-      3033,
-      3036
-    ],
-    "buildsInto": [
       1036,
       1036
+    ],
+    "buildsInto": [
+      3033,
+      3036
     ],
     "noEffects": false,
     "removed": false,
@@ -23832,11 +23832,11 @@
     "name": "Lord Dominik's Regards",
     "id": "3036",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3035,
       1037
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3036.png",
@@ -24638,10 +24638,10 @@
     "name": "Mejai's Soulstealer",
     "id": "3041",
     "tier": 2,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1082
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3041.png",
@@ -26060,12 +26060,12 @@
     "id": "3044",
     "tier": 2,
     "buildsFrom": [
-      3078,
-      3071
-    ],
-    "buildsInto": [
       1028,
       1036
+    ],
+    "buildsInto": [
+      3078,
+      3071
     ],
     "noEffects": false,
     "removed": false,
@@ -26388,11 +26388,11 @@
     "name": "Phantom Dancer",
     "id": "3046",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1042,
       3086
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3046.png",
@@ -26870,15 +26870,15 @@
     "id": "3047",
     "tier": 2,
     "buildsFrom": [
+      1001,
+      1029
+    ],
+    "buildsInto": [
       1316,
       1318,
       1315,
       1317,
       1319
-    ],
-    "buildsInto": [
-      1001,
-      1029
     ],
     "noEffects": false,
     "removed": false,
@@ -27833,11 +27833,11 @@
     "name": "Zeke's Convergence",
     "id": "3050",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3105,
       3024
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3050.png",
@@ -28322,14 +28322,14 @@
     "id": "3052",
     "tier": 2,
     "buildsFrom": [
+      1036,
+      1028
+    ],
+    "buildsInto": [
       3022,
       3053,
       3104,
       3748
-    ],
-    "buildsInto": [
-      1036,
-      1028
     ],
     "noEffects": false,
     "removed": false,
@@ -28652,12 +28652,12 @@
     "name": "Sterak's Gage",
     "id": "3053",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3052,
       1037,
       1028
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3053.png",
@@ -29436,6 +29436,9 @@
     "id": "3057",
     "tier": 2,
     "buildsFrom": [
+      1027
+    ],
+    "buildsInto": [
       3078,
       3100,
       3025,
@@ -29443,9 +29446,6 @@
       3724,
       3716,
       3720
-    ],
-    "buildsInto": [
-      1027
     ],
     "noEffects": false,
     "removed": false,
@@ -29768,11 +29768,11 @@
     "name": "Spirit Visage",
     "id": "3065",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3211,
       3067
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3065.png",
@@ -30099,6 +30099,9 @@
     "id": "3067",
     "tier": 2,
     "buildsFrom": [
+      1028
+    ],
+    "buildsInto": [
       3187,
       3065,
       3056,
@@ -30113,9 +30116,6 @@
       3152,
       3207,
       4403
-    ],
-    "buildsInto": [
-      1028
     ],
     "noEffects": false,
     "removed": false,
@@ -30439,12 +30439,12 @@
     "id": "3068",
     "tier": 3,
     "buildsFrom": [
-      3373
-    ],
-    "buildsInto": [
       1031,
       1028,
       3751
+    ],
+    "buildsInto": [
+      3373
     ],
     "noEffects": false,
     "removed": false,
@@ -30768,12 +30768,12 @@
     "id": "3070",
     "tier": 2,
     "buildsFrom": [
-      3003,
-      3004
-    ],
-    "buildsInto": [
       1027,
       1004
+    ],
+    "buildsInto": [
+      3003,
+      3004
     ],
     "noEffects": false,
     "removed": false,
@@ -31249,11 +31249,11 @@
     "id": "3071",
     "tier": 3,
     "buildsFrom": [
-      3380
-    ],
-    "buildsInto": [
       3044,
       3067
+    ],
+    "buildsInto": [
+      3380
     ],
     "noEffects": false,
     "removed": false,
@@ -31731,12 +31731,12 @@
     "name": "Bloodthirster",
     "id": "3072",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1038,
       1036,
       1053
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3072.png",
@@ -32213,12 +32213,12 @@
     "id": "3073",
     "tier": 2,
     "buildsFrom": [
-      3007,
-      3008
-    ],
-    "buildsInto": [
       1027,
       1004
+    ],
+    "buildsInto": [
+      3007,
+      3008
     ],
     "noEffects": false,
     "removed": false,
@@ -32693,12 +32693,12 @@
     "name": "Ravenous Hydra",
     "id": "3074",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3077,
       1053,
       1037
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3074.png",
@@ -33181,12 +33181,12 @@
     "name": "Thornmail",
     "id": "3075",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3076,
       1028,
       3082
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3075.png",
@@ -33661,11 +33661,11 @@
     "id": "3076",
     "tier": 2,
     "buildsFrom": [
-      3075
-    ],
-    "buildsInto": [
       1029,
       1029
+    ],
+    "buildsInto": [
+      3075
     ],
     "noEffects": false,
     "removed": false,
@@ -33988,14 +33988,14 @@
     "id": "3077",
     "tier": 2,
     "buildsFrom": [
-      3074,
-      3748,
-      3230
-    ],
-    "buildsInto": [
       1036,
       1006,
       1036
+    ],
+    "buildsInto": [
+      3074,
+      3748,
+      3230
     ],
     "noEffects": false,
     "removed": false,
@@ -34327,12 +34327,12 @@
     "id": "3078",
     "tier": 3,
     "buildsFrom": [
-      3384
-    ],
-    "buildsInto": [
       3101,
       3057,
       3044
+    ],
+    "buildsInto": [
+      3384
     ],
     "noEffects": false,
     "removed": false,
@@ -34814,13 +34814,13 @@
     "id": "3082",
     "tier": 2,
     "buildsFrom": [
+      1029,
+      1029
+    ],
+    "buildsInto": [
       3110,
       3143,
       3075
-    ],
-    "buildsInto": [
-      1029,
-      1029
     ],
     "noEffects": false,
     "removed": false,
@@ -35142,12 +35142,12 @@
     "name": "Warmog's Armor",
     "id": "3083",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1011,
       3067,
       3801
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3083.png",
@@ -35773,11 +35773,11 @@
     "name": "Overlord's Bloodmail",
     "id": "3084",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1011,
       3801
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": true,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3084.png",
@@ -36098,12 +36098,12 @@
     "name": "Runaan's Hurricane",
     "id": "3085",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1042,
       3086,
       1042
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3085.png",
@@ -36427,15 +36427,15 @@
     "id": "3086",
     "tier": 2,
     "buildsFrom": [
+      1018,
+      1042
+    ],
+    "buildsInto": [
       3046,
       3085,
       3087,
       3094,
       4403
-    ],
-    "buildsInto": [
-      1018,
-      1042
     ],
     "noEffects": false,
     "removed": false,
@@ -36606,11 +36606,11 @@
     "name": "Statikk Shiv",
     "id": "3087",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3086,
       2015
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3087.png",
@@ -37086,11 +37086,11 @@
     "id": "3089",
     "tier": 2,
     "buildsFrom": [
-      3374
-    ],
-    "buildsInto": [
       1058,
       1058
+    ],
+    "buildsInto": [
+      3374
     ],
     "noEffects": false,
     "removed": false,
@@ -37415,12 +37415,12 @@
     "name": "Wit's End",
     "id": "3091",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1043,
       1057,
       1042
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3091.png",
@@ -37743,11 +37743,11 @@
     "name": "Rapid Firecannon",
     "id": "3094",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3086,
       2015
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3094.png",
@@ -38222,12 +38222,12 @@
     "name": "Stormrazor",
     "id": "3095",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1038,
       1018,
       2015
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3095.png",
@@ -38702,12 +38702,12 @@
     "name": "Lich Bane",
     "id": "3100",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3057,
       3113,
       1026
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3100.png",
@@ -39031,13 +39031,13 @@
     "id": "3101",
     "tier": 2,
     "buildsFrom": [
+      1042,
+      1042
+    ],
+    "buildsInto": [
       3115,
       3137,
       3078
-    ],
-    "buildsInto": [
-      1042,
-      1042
     ],
     "noEffects": false,
     "removed": false,
@@ -39360,12 +39360,12 @@
     "name": "Banshee's Veil",
     "id": "3102",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3108,
       1033,
       1026
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3102.png",
@@ -39691,15 +39691,15 @@
     "id": "3105",
     "tier": 2,
     "buildsFrom": [
+      1033,
+      1029
+    ],
+    "buildsInto": [
       3190,
       3005,
       3050,
       3060,
       4403
-    ],
-    "buildsInto": [
-      1033,
-      1029
     ],
     "noEffects": false,
     "removed": false,
@@ -39870,11 +39870,11 @@
     "id": "3107",
     "tier": 3,
     "buildsFrom": [
-      3382
-    ],
-    "buildsInto": [
       3114,
       3801
+    ],
+    "buildsInto": [
+      3382
     ],
     "noEffects": false,
     "removed": false,
@@ -40055,6 +40055,9 @@
     "id": "3108",
     "tier": 2,
     "buildsFrom": [
+      1052
+    ],
+    "buildsInto": [
       3174,
       3115,
       3023,
@@ -40068,9 +40071,6 @@
       3206,
       3905,
       4104
-    ],
-    "buildsInto": [
-      1052
     ],
     "noEffects": false,
     "removed": false,
@@ -40393,11 +40393,11 @@
     "name": "Knight's Vow",
     "id": "3109",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3067,
       1031
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3109.png",
@@ -40880,11 +40880,11 @@
     "name": "Frozen Heart",
     "id": "3110",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3082,
       3024
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3110.png",
@@ -41057,15 +41057,15 @@
     "id": "3111",
     "tier": 2,
     "buildsFrom": [
+      1001,
+      1033
+    ],
+    "buildsInto": [
       1321,
       1323,
       1320,
       1322,
       1324
-    ],
-    "buildsInto": [
-      1001,
-      1033
     ],
     "noEffects": false,
     "removed": false,
@@ -41715,6 +41715,9 @@
     "id": "3113",
     "tier": 2,
     "buildsFrom": [
+      1052
+    ],
+    "buildsInto": [
       3023,
       3290,
       1406,
@@ -41725,9 +41728,6 @@
       3286,
       3504,
       3905
-    ],
-    "buildsInto": [
-      1052
     ],
     "noEffects": false,
     "removed": false,
@@ -41898,14 +41898,14 @@
     "id": "3114",
     "tier": 2,
     "buildsFrom": [
+      1004,
+      1004
+    ],
+    "buildsInto": [
       2065,
       3107,
       3222,
       3504
-    ],
-    "buildsInto": [
-      1004,
-      1004
     ],
     "noEffects": false,
     "removed": false,
@@ -42228,11 +42228,11 @@
     "name": "Nashor's Tooth",
     "id": "3115",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3101,
       3108
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3115.png",
@@ -42707,12 +42707,12 @@
     "name": "Rylai's Crystal Scepter",
     "id": "3116",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1026,
       1052,
       1028
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3116.png",
@@ -43035,14 +43035,14 @@
     "id": "3117",
     "tier": 2,
     "buildsFrom": [
+      1001
+    ],
+    "buildsInto": [
       1326,
       1328,
       1325,
       1327,
       1329
-    ],
-    "buildsInto": [
-      1001
     ],
     "noEffects": true,
     "removed": false,
@@ -43517,10 +43517,10 @@
     "id": "3123",
     "tier": 2,
     "buildsFrom": [
-      3033
+      1036
     ],
     "buildsInto": [
-      1036
+      3033
     ],
     "noEffects": false,
     "removed": false,
@@ -43842,12 +43842,12 @@
     "name": "Guinsoo's Rageblade",
     "id": "3124",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1052,
       1043,
       1037
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3124.png",
@@ -44627,6 +44627,10 @@
     "id": "3133",
     "tier": 2,
     "buildsFrom": [
+      1036,
+      1036
+    ],
+    "buildsInto": [
       3156,
       3147,
       3671,
@@ -44642,10 +44646,6 @@
       3508,
       3812,
       3813
-    ],
-    "buildsInto": [
-      1036,
-      1036
     ],
     "noEffects": false,
     "removed": false,
@@ -44969,6 +44969,10 @@
     "id": "3134",
     "tier": 2,
     "buildsFrom": [
+      1036,
+      1036
+    ],
+    "buildsInto": [
       3142,
       4004,
       3147,
@@ -44980,10 +44984,6 @@
       3723,
       3714,
       3814
-    ],
-    "buildsInto": [
-      1036,
-      1036
     ],
     "noEffects": false,
     "removed": false,
@@ -45306,11 +45306,11 @@
     "name": "Void Staff",
     "id": "3135",
     "tier": 2,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1026,
       1052
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3135.png",
@@ -45632,11 +45632,11 @@
     "id": "3136",
     "tier": 2,
     "buildsFrom": [
-      3151
-    ],
-    "buildsInto": [
       1028,
       1052
+    ],
+    "buildsInto": [
+      3151
     ],
     "noEffects": false,
     "removed": false,
@@ -45961,11 +45961,11 @@
     "name": "Dervish Blade",
     "id": "3137",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3140,
       3101
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": true,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3137.png",
@@ -46143,12 +46143,12 @@
     "name": "Mercurial Scimitar",
     "id": "3139",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3140,
       1037,
       1053
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3139.png",
@@ -46327,12 +46327,12 @@
     "id": "3140",
     "tier": 2,
     "buildsFrom": [
+      1033
+    ],
+    "buildsInto": [
       3139,
       3137,
       3231
-    ],
-    "buildsInto": [
-      1033
     ],
     "noEffects": false,
     "removed": false,
@@ -46512,11 +46512,11 @@
     "id": "3142",
     "tier": 3,
     "buildsFrom": [
-      3388
-    ],
-    "buildsInto": [
       3133,
       3134
+    ],
+    "buildsInto": [
+      3388
     ],
     "noEffects": false,
     "removed": false,
@@ -47000,11 +47000,11 @@
     "name": "Randuin's Omen",
     "id": "3143",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3082,
       1011
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3143.png",
@@ -47487,12 +47487,12 @@
     "id": "3144",
     "tier": 3,
     "buildsFrom": [
-      3146,
-      3153
-    ],
-    "buildsInto": [
       1053,
       1036
+    ],
+    "buildsInto": [
+      3146,
+      3153
     ],
     "noEffects": false,
     "removed": false,
@@ -47671,14 +47671,14 @@
     "id": "3145",
     "tier": 2,
     "buildsFrom": [
+      1052,
+      1052
+    ],
+    "buildsInto": [
       3146,
       3152,
       3030,
       3148
-    ],
-    "buildsInto": [
-      1052,
-      1052
     ],
     "noEffects": false,
     "removed": false,
@@ -48000,11 +48000,11 @@
     "name": "Hextech Gunblade",
     "id": "3146",
     "tier": 4,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3144,
       3145
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3146.png",
@@ -48335,11 +48335,11 @@
     "name": "Duskblade of Draktharr",
     "id": "3147",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3134,
       3133
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3147.png",
@@ -48814,11 +48814,11 @@
     "name": "Liandry's Torment",
     "id": "3151",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3136,
       1026
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3151.png",
@@ -49294,11 +49294,11 @@
     "name": "Hextech Protobelt-01",
     "id": "3152",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3145,
       3067
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3152.png",
@@ -49477,11 +49477,11 @@
     "id": "3153",
     "tier": 4,
     "buildsFrom": [
-      3389
-    ],
-    "buildsInto": [
       3144,
       1043
+    ],
+    "buildsInto": [
+      3389
     ],
     "noEffects": false,
     "removed": false,
@@ -49818,13 +49818,13 @@
     "id": "3155",
     "tier": 2,
     "buildsFrom": [
+      1036,
+      1033
+    ],
+    "buildsInto": [
       3156,
       3163,
       3210
-    ],
-    "buildsInto": [
-      1036,
-      1033
     ],
     "noEffects": false,
     "removed": false,
@@ -50147,11 +50147,11 @@
     "name": "Maw of Malmortius",
     "id": "3156",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3155,
       3133
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3156.png",
@@ -50779,12 +50779,12 @@
     "id": "3157",
     "tier": 3,
     "buildsFrom": [
-      3386
-    ],
-    "buildsInto": [
       3191,
       3108,
       2420
+    ],
+    "buildsInto": [
+      3386
     ],
     "noEffects": false,
     "removed": false,
@@ -50967,14 +50967,14 @@
     "id": "3158",
     "tier": 2,
     "buildsFrom": [
+      1001
+    ],
+    "buildsInto": [
       1331,
       1333,
       1330,
       1332,
       1334
-    ],
-    "buildsInto": [
-      1001
     ],
     "noEffects": true,
     "removed": false,
@@ -51601,12 +51601,12 @@
     "name": "Spear of Shojin",
     "id": "3161",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1038,
       3067,
       1036
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": true,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3161.png",
@@ -52081,11 +52081,11 @@
     "name": "Morellonomicon",
     "id": "3165",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3916,
       1026
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3165.png",
@@ -52559,11 +52559,11 @@
     "name": "Athene's Unholy Grail",
     "id": "3174",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3108,
       3028
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3174.png",
@@ -53359,12 +53359,12 @@
     "name": "Umbral Glaive",
     "id": "3179",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3134,
       1036,
       1036
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3179.png",
@@ -53991,11 +53991,11 @@
     "name": "Sanguine Blade",
     "id": "3181",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3134,
       1053
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3181.png",
@@ -54642,11 +54642,11 @@
     "id": "3190",
     "tier": 3,
     "buildsFrom": [
-      3383
-    ],
-    "buildsInto": [
       3105,
       1033
+    ],
+    "buildsInto": [
+      3383
     ],
     "noEffects": false,
     "removed": false,
@@ -54825,14 +54825,14 @@
     "id": "3191",
     "tier": 2,
     "buildsFrom": [
-      3157,
-      3090,
-      3170
-    ],
-    "buildsInto": [
       1029,
       1052,
       1029
+    ],
+    "buildsInto": [
+      3157,
+      3090,
+      3170
     ],
     "noEffects": false,
     "removed": false,
@@ -55155,12 +55155,12 @@
     "name": "Gargoyle Stoneplate",
     "id": "3193",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1031,
       1057,
       2420
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3193.png",
@@ -55491,12 +55491,12 @@
     "name": "Adaptive Helm",
     "id": "3194",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1033,
       3211,
       1006
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3194.png",
@@ -55821,10 +55821,10 @@
     "id": "3196",
     "tier": 2,
     "buildsFrom": [
-      3197
+      3200
     ],
     "buildsInto": [
-      3200
+      3197
     ],
     "noEffects": false,
     "removed": false,
@@ -56297,10 +56297,10 @@
     "id": "3197",
     "tier": 3,
     "buildsFrom": [
-      3198
+      3196
     ],
     "buildsInto": [
-      3196
+      3198
     ],
     "noEffects": false,
     "removed": false,
@@ -56772,10 +56772,10 @@
     "name": "Perfect Hex Core",
     "id": "3198",
     "tier": 4,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3197
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3198.png",
@@ -57398,10 +57398,10 @@
     "name": "Prototype Hex Core",
     "id": "3200",
     "tier": 1,
-    "buildsFrom": [
+    "buildsFrom": [],
+    "buildsInto": [
       3196
     ],
-    "buildsInto": [],
     "noEffects": true,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3200.png",
@@ -57873,12 +57873,12 @@
     "id": "3211",
     "tier": 2,
     "buildsFrom": [
-      3065,
-      3194
-    ],
-    "buildsInto": [
       1028,
       1033
+    ],
+    "buildsInto": [
+      3065,
+      3194
     ],
     "noEffects": false,
     "removed": false,
@@ -58203,11 +58203,11 @@
     "name": "Mikael's Crucible",
     "id": "3222",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3028,
       3114
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3222.png",
@@ -58539,11 +58539,11 @@
     "id": "3285",
     "tier": 3,
     "buildsFrom": [
-      3390
-    ],
-    "buildsInto": [
       3802,
       1026
+    ],
+    "buildsInto": [
+      3390
     ],
     "noEffects": false,
     "removed": false,
@@ -60093,10 +60093,10 @@
     "name": "Molten Edge",
     "id": "3371",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3031
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3371.png",
@@ -60268,10 +60268,10 @@
     "name": "Forgefire Cape",
     "id": "3373",
     "tier": 4,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3068
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3373.png",
@@ -60596,10 +60596,10 @@
     "name": "Rabadon's Deathcrown",
     "id": "3374",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3089
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3374.png",
@@ -60923,10 +60923,10 @@
     "name": "Infernal Mask",
     "id": "3379",
     "tier": 4,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3001
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3379.png",
@@ -61255,10 +61255,10 @@
     "name": "Obsidian Cleaver",
     "id": "3380",
     "tier": 4,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3071
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3380.png",
@@ -61736,10 +61736,10 @@
     "name": "Salvation",
     "id": "3382",
     "tier": 4,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3107
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3382.png",
@@ -61921,10 +61921,10 @@
     "name": "Circlet of the Iron Solari",
     "id": "3383",
     "tier": 4,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3190
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3383.png",
@@ -62104,10 +62104,10 @@
     "name": "Trinity Fusion",
     "id": "3384",
     "tier": 4,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3078
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3384.png",
@@ -62588,10 +62588,10 @@
     "name": "Zhonya's Paradox",
     "id": "3386",
     "tier": 4,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3157
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3386.png",
@@ -62772,10 +62772,10 @@
     "name": "Frozen Fist",
     "id": "3387",
     "tier": 4,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3025
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3387.png",
@@ -63253,10 +63253,10 @@
     "name": "Youmuu's Wraithblade",
     "id": "3388",
     "tier": 4,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3142
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3388.png",
@@ -63742,10 +63742,10 @@
     "name": "Might of the Ruined King",
     "id": "3389",
     "tier": 5,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3153
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3389.png",
@@ -64079,10 +64079,10 @@
     "name": "Luden's Pulse",
     "id": "3390",
     "tier": 4,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3285
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3390.png",
@@ -66007,11 +66007,11 @@
     "name": "Ardent Censer",
     "id": "3504",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3114,
       3113
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3504.png",
@@ -66335,12 +66335,12 @@
     "name": "Essence Reaver",
     "id": "3508",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1038,
       3133,
       1018
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3508.png",
@@ -67807,10 +67807,10 @@
     "name": "Enchantment: Warrior",
     "id": "3671",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3133
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3671.png",
@@ -67983,10 +67983,10 @@
     "name": "Enchantment: Cinderhulk",
     "id": "3672",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3751
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3672.png",
@@ -68463,11 +68463,11 @@
     "name": "Enchantment: Runic Echoes",
     "id": "3673",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3113,
       1052
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3673.png",
@@ -68946,10 +68946,10 @@
     "name": "Enchantment: Bloodrazor",
     "id": "3675",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1043
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3675.png",
@@ -72016,6 +72016,10 @@
     "id": "3706",
     "tier": 2,
     "buildsFrom": [
+      1039,
+      1041
+    ],
+    "buildsInto": [
       3708,
       1400,
       1401,
@@ -72023,10 +72027,6 @@
       1416,
       3707,
       3709
-    ],
-    "buildsInto": [
-      1039,
-      1041
     ],
     "noEffects": false,
     "removed": false,
@@ -72810,6 +72810,10 @@
     "id": "3715",
     "tier": 2,
     "buildsFrom": [
+      1039,
+      1041
+    ],
+    "buildsInto": [
       1419,
       1412,
       1413,
@@ -72817,10 +72821,6 @@
       3716,
       3714,
       3717
-    ],
-    "buildsInto": [
-      1039,
-      1041
     ],
     "noEffects": false,
     "removed": false,
@@ -73603,11 +73603,11 @@
     "name": "Dead Man's Plate",
     "id": "3742",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1031,
       1011
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3742.png",
@@ -74081,12 +74081,12 @@
     "name": "Titanic Hydra",
     "id": "3748",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3077,
       1028,
       3052
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3748.png",
@@ -74419,6 +74419,9 @@
     "id": "3751",
     "tier": 2,
     "buildsFrom": [
+      1028
+    ],
+    "buildsInto": [
       3068,
       3709,
       3717,
@@ -74430,9 +74433,6 @@
       1413,
       3672,
       4103
-    ],
-    "buildsInto": [
-      1028
     ],
     "noEffects": false,
     "removed": false,
@@ -74754,11 +74754,11 @@
     "name": "Righteous Glory",
     "id": "3800",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3024,
       3801
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3800.png",
@@ -74939,15 +74939,15 @@
     "id": "3801",
     "tier": 2,
     "buildsFrom": [
+      1028,
+      1006
+    ],
+    "buildsInto": [
       3800,
       2065,
       3083,
       3084,
       3107
-    ],
-    "buildsInto": [
-      1028,
-      1006
     ],
     "noEffects": false,
     "removed": false,
@@ -75118,15 +75118,15 @@
     "id": "3802",
     "tier": 2,
     "buildsFrom": [
+      1052,
+      1027,
+      1052
+    ],
+    "buildsInto": [
       3003,
       3007,
       3030,
       3285
-    ],
-    "buildsInto": [
-      1052,
-      1027,
-      1052
     ],
     "noEffects": false,
     "removed": false,
@@ -75603,12 +75603,12 @@
     "name": "Death's Dance",
     "id": "3812",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1053,
       1037,
       3133
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3812.png",
@@ -76083,12 +76083,12 @@
     "name": "Edge of Night",
     "id": "3814",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1037,
       3134,
       1028
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3814.png",
@@ -82770,11 +82770,11 @@
     "name": "Twin Shadows",
     "id": "3905",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       3108,
       3113
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3905.png",
@@ -82952,11 +82952,11 @@
     "name": "Spellbinder",
     "id": "3907",
     "tier": 3,
-    "buildsFrom": [],
-    "buildsInto": [
+    "buildsFrom": [
       1058,
       3113
     ],
+    "buildsInto": [],
     "noEffects": false,
     "removed": false,
     "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3907.png",
@@ -83287,12 +83287,12 @@
     "id": "3916",
     "tier": 2,
     "buildsFrom": [
-      3165,
-      4010
-    ],
-    "buildsInto": [
       1028,
       1052
+    ],
+    "buildsInto": [
+      3165,
+      4010
     ],
     "noEffects": false,
     "removed": false,
