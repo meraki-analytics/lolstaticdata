@@ -41,7 +41,7 @@ def main():
         # Manual merge
         item = wiki_item
         item.name = ddragon_item.name
-        item.id = d
+        item.id = eval(d)
         item.icon = ddragon_item.icon
         item.builds_from = builds_from
         item.builds_into = builds_to
