@@ -5,10 +5,19 @@
   "buildsFrom": [
     1001
   ],
-  "buildsInto": [],
+  "buildsInto": [
+    1306,
+    1308,
+    1305,
+    1307,
+    1309
+  ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3009.png",
+  "simpleDescription": "Enhances Movement Speed and reduces the effect of slows",
   "nicknames": [],
   "passives": [
     {
@@ -469,6 +478,7 @@
       "combined": 600,
       "sell": 630
     },
+    "purchasable": true,
     "tags": [
       "BOOTS"
     ]

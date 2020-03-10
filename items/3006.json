@@ -6,10 +6,19 @@
     1001,
     1042
   ],
-  "buildsInto": [],
+  "buildsInto": [
+    1301,
+    1303,
+    1300,
+    1302,
+    1304
+  ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3006.png",
+  "simpleDescription": "Enhances Movement Speed and Attack Speed",
   "nicknames": [
     "boots"
   ],
@@ -320,6 +329,7 @@
       "combined": 500,
       "sell": 770
     },
+    "purchasable": true,
     "tags": [
       "ATTACK_SPEED",
       "BOOTS"

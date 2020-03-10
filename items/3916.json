@@ -7,11 +7,15 @@
     1052
   ],
   "buildsInto": [
-    3165
+    3165,
+    4010
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3916.png",
+  "simpleDescription": "Increases magic damage",
   "nicknames": [],
   "passives": [
     {
@@ -320,6 +324,7 @@
       "combined": 765,
       "sell": 1120
     },
+    "purchasable": true,
     "tags": [
       "ABILITY_POWER",
       "HEALTH"

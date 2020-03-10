@@ -4,16 +4,23 @@
   "tier": 1,
   "buildsFrom": [],
   "buildsInto": [
-    3095,
     3026,
-    3031,
+    4026,
     3072,
+    3031,
     3161,
+    3095,
+    3080,
+    3172,
+    4403,
     3508
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1038.png",
+  "simpleDescription": "Greatly increases Attack Damage",
   "nicknames": [
     "bf"
   ],
@@ -171,6 +178,7 @@
       "combined": 0,
       "sell": 910
     },
+    "purchasable": true,
     "tags": [
       "DAMAGE"
     ]

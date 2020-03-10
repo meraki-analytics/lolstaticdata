@@ -6,10 +6,19 @@
     1001,
     1033
   ],
-  "buildsInto": [],
+  "buildsInto": [
+    1321,
+    1323,
+    1320,
+    1322,
+    1324
+  ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3111.png",
+  "simpleDescription": "Increases Movement Speed and reduces duration of disabling effects",
   "nicknames": [
     "boots"
   ],
@@ -472,6 +481,7 @@
       "combined": 350,
       "sell": 770
     },
+    "purchasable": true,
     "tags": [
       "MAGIC_RESIST",
       "BOOTS"

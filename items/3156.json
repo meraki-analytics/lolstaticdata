@@ -9,7 +9,10 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3156.png",
+  "simpleDescription": "Grants bonus Attack Damage when Health is low",
   "nicknames": [],
   "passives": [
     {
@@ -622,6 +625,7 @@
       "combined": 850,
       "sell": 2275
     },
+    "purchasable": true,
     "tags": [
       "MAGIC_RESIST",
       "DAMAGE",

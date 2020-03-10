@@ -10,7 +10,10 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3508.png",
+  "simpleDescription": "Grants Critical Strike Chance, Cooldown Reduction, Attack Damage and restores mana on hit.",
   "nicknames": [
     "bloothirster"
   ],
@@ -473,6 +476,7 @@
       "combined": 100,
       "sell": 2310
     },
+    "purchasable": true,
     "tags": [
       "DAMAGE",
       "CRITICAL_STRIKE",

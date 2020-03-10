@@ -6,7 +6,10 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1083.png",
+  "simpleDescription": "Provides damage and Life Steal on hit - Killing minions grant bonus Gold",
   "nicknames": [],
   "passives": [
     {
@@ -467,6 +470,7 @@
       "combined": 0,
       "sell": 180
     },
+    "purchasable": true,
     "tags": [
       "DAMAGE",
       "LIFE_STEAL"

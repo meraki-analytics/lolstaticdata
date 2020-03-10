@@ -8,7 +8,10 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "Ornn",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3383.png",
+  "simpleDescription": "Activate to shield nearby allies from damage",
   "nicknames": [
     "ornn",
     "forge"
@@ -175,6 +178,7 @@
       "combined": 0,
       "sell": 1540
     },
+    "purchasable": true,
     "tags": [
       "ARMOR",
       "MAGIC_RESIST"

@@ -9,11 +9,15 @@
   "buildsInto": [
     3022,
     3053,
+    3104,
     3748
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3052.png",
+  "simpleDescription": "Attack Damage and stacking Health on Unit Kill",
   "nicknames": [],
   "passives": [
     {
@@ -322,6 +326,7 @@
       "combined": 450,
       "sell": 840
     },
+    "purchasable": true,
     "tags": [
       "DAMAGE",
       "HEALTH"

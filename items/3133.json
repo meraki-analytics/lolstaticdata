@@ -7,18 +7,28 @@
     1036
   ],
   "buildsInto": [
-    1400,
-    1412,
-    3812,
-    3142,
-    3147,
     3156,
+    3147,
+    3671,
+    1400,
+    1404,
+    1408,
+    1412,
+    4102,
+    3142,
+    3163,
+    3104,
+    4402,
     3508,
-    3671
+    3812,
+    3813
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3133.png",
+  "simpleDescription": "Attack Damage and Cooldown Reduction",
   "nicknames": [],
   "passives": [
     {
@@ -327,6 +337,7 @@
       "combined": 400,
       "sell": 770
     },
+    "purchasable": true,
     "tags": [
       "DAMAGE",
       "COOLDOWN_REDUCTION"

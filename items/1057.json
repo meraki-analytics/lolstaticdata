@@ -6,13 +6,21 @@
     1033
   ],
   "buildsInto": [
-    3091,
     3193,
-    3001
+    3001,
+    3039,
+    3091,
+    3170,
+    3180,
+    3512,
+    4401
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1057.png",
+  "simpleDescription": "Moderately increases Magic Resist",
   "nicknames": [],
   "passives": [],
   "active": [],
@@ -168,6 +176,7 @@
       "combined": 270,
       "sell": 504
     },
+    "purchasable": true,
     "tags": [
       "MAGIC_RESIST"
     ]

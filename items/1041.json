@@ -5,11 +5,16 @@
   "buildsFrom": [],
   "buildsInto": [
     3706,
-    3715
+    3715,
+    3713,
+    3711
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1041.png",
+  "simpleDescription": "Provides damage and life steal versus Monsters",
   "nicknames": [
     "jungle"
   ],
@@ -472,6 +477,7 @@
       "combined": 0,
       "sell": 245
     },
+    "purchasable": true,
     "tags": [
       "JUNGLING",
       "LIFE_STEAL"

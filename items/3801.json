@@ -7,15 +7,18 @@
     1006
   ],
   "buildsInto": [
-    3084,
-    3083,
-    2065,
     3800,
+    2065,
+    3083,
+    3084,
     3107
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3801.png",
+  "simpleDescription": "Grants Health and Health Regen",
   "nicknames": [],
   "passives": [],
   "active": [],
@@ -171,6 +174,7 @@
       "combined": 100,
       "sell": 455
     },
+    "purchasable": true,
     "tags": [
       "HEALTH",
       "HEALTH_REGEN"

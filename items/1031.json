@@ -7,14 +7,19 @@
   ],
   "buildsInto": [
     3068,
-    3109,
     3026,
+    4026,
     3193,
+    3109,
+    3118,
     3742
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1031.png",
+  "simpleDescription": "Greatly increases Armor",
   "nicknames": [],
   "passives": [],
   "active": [],
@@ -170,6 +175,7 @@
       "combined": 500,
       "sell": 560
     },
+    "purchasable": true,
     "tags": [
       "ARMOR"
     ]

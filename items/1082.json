@@ -8,7 +8,10 @@
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1082.png",
+  "simpleDescription": "Provides Ability Power and Mana.  Increases in power as you kill enemies.",
   "nicknames": [],
   "passives": [
     {
@@ -469,6 +472,7 @@
       "combined": 0,
       "sell": 140
     },
+    "purchasable": true,
     "tags": [
       "ABILITY_POWER",
       "MANA"

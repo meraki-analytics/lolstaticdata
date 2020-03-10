@@ -9,7 +9,10 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3087.png",
+  "simpleDescription": "Movement builds charges that release chain lightning on basic attack",
   "nicknames": [],
   "passives": [
     {
@@ -470,6 +473,7 @@
       "combined": 500,
       "sell": 1820
     },
+    "purchasable": true,
     "tags": [
       "CRITICAL_STRIKE",
       "ATTACK_SPEED",

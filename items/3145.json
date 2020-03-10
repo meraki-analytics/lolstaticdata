@@ -9,11 +9,15 @@
   "buildsInto": [
     3146,
     3152,
-    3030
+    3030,
+    3148
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3145.png",
+  "simpleDescription": "Increases Ability Power. Deal bonus magic damage on attack periodically.",
   "nicknames": [],
   "passives": [
     {
@@ -322,6 +326,7 @@
       "combined": 180,
       "sell": 735
     },
+    "purchasable": true,
     "tags": [
       "ABILITY_POWER"
     ]

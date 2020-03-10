@@ -6,7 +6,10 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3858.png",
+  "simpleDescription": "Gain gold and upgrade by executing minions alongside allies",
   "nicknames": [
     "Support",
     "Gold",
@@ -471,6 +474,7 @@
       "combined": 0,
       "sell": 160
     },
+    "purchasable": true,
     "tags": [
       "LANING",
       "GOLD_INCOME",

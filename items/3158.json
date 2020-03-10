@@ -5,10 +5,19 @@
   "buildsFrom": [
     1001
   ],
-  "buildsInto": [],
+  "buildsInto": [
+    1331,
+    1333,
+    1330,
+    1332,
+    1334
+  ],
   "noEffects": true,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3158.png",
+  "simpleDescription": "Increases Movement Speed and Cooldown Reduction",
   "nicknames": [],
   "passives": [
     {
@@ -621,6 +630,7 @@
       "combined": 600,
       "sell": 630
     },
+    "purchasable": true,
     "tags": [
       "COOLDOWN_REDUCTION",
       "BOOTS"

@@ -9,11 +9,15 @@
   ],
   "buildsInto": [
     3174,
-    3222
+    3222,
+    3744
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3028.png",
+  "simpleDescription": "Increases Mana and Health Regeneration",
   "nicknames": [],
   "passives": [
     {
@@ -322,6 +326,7 @@
       "combined": 100,
       "sell": 560
     },
+    "purchasable": true,
     "tags": [
       "MAGIC_RESIST",
       "MANA_REGEN",

@@ -8,15 +8,24 @@
   "buildsInto": [
     3174,
     3115,
-    3157,
+    3023,
+    3290,
+    3102,
     1402,
     1414,
-    3102,
-    3905
+    3157,
+    3128,
+    3188,
+    3206,
+    3905,
+    4104
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3108.png",
+  "simpleDescription": "Increases Ability Power and Cooldown Reduction",
   "nicknames": [],
   "passives": [
     {
@@ -325,6 +334,7 @@
       "combined": 465,
       "sell": 630
     },
+    "purchasable": true,
     "tags": [
       "ABILITY_POWER",
       "COOLDOWN_REDUCTION"

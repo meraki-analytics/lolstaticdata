@@ -6,13 +6,16 @@
     1042
   ],
   "buildsInto": [
-    3094,
     3095,
-    3087
+    3087,
+    3094
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2015.png",
+  "simpleDescription": "Attack speed and a chargable magic hit",
   "nicknames": [],
   "passives": [
     {
@@ -473,6 +476,7 @@
       "combined": 400,
       "sell": 490
     },
+    "purchasable": true,
     "tags": [
       "ATTACK_SPEED"
     ]

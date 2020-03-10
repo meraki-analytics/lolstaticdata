@@ -7,14 +7,18 @@
     1042
   ],
   "buildsInto": [
-    3085,
-    3094,
     3046,
-    3087
+    3085,
+    3087,
+    3094,
+    4403
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3086.png",
+  "simpleDescription": "Slight bonuses to Critical Strike Chance, Movement Speed and Attack Speed",
   "nicknames": [],
   "passives": [],
   "active": [],
@@ -170,6 +174,7 @@
       "combined": 300,
       "sell": 980
     },
+    "purchasable": true,
     "tags": [
       "ATTACK_SPEED",
       "CRITICAL_STRIKE",

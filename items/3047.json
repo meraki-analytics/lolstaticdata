@@ -6,10 +6,19 @@
     1001,
     1029
   ],
-  "buildsInto": [],
+  "buildsInto": [
+    1316,
+    1318,
+    1315,
+    1317,
+    1319
+  ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3047.png",
+  "simpleDescription": "Enhances Movement Speed and reduces incoming basic attack damage",
   "nicknames": [],
   "passives": [
     {
@@ -470,6 +479,7 @@
       "combined": 500,
       "sell": 770
     },
+    "purchasable": true,
     "tags": [
       "ARMOR",
       "BOOTS"

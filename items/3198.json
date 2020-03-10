@@ -8,7 +8,10 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "Viktor",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3198.png",
+  "simpleDescription": "Allows Viktor to improve an ability of his choice",
   "nicknames": [],
   "passives": [
     {
@@ -621,6 +624,7 @@
       "combined": 850,
       "sell": 0
     },
+    "purchasable": true,
     "tags": []
   }
 }

@@ -7,15 +7,20 @@
   ],
   "buildsInto": [
     3072,
-    3074,
-    3812,
-    3139,
     3144,
-    3181
+    3074,
+    3139,
+    3154,
+    3181,
+    4403,
+    3812
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1053.png",
+  "simpleDescription": "Basic attacks restore Health",
   "nicknames": [],
   "passives": [],
   "active": [],
@@ -171,6 +176,7 @@
       "combined": 550,
       "sell": 630
     },
+    "purchasable": true,
     "tags": [
       "DAMAGE",
       "LIFE_STEAL"

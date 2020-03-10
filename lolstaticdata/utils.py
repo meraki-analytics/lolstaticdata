@@ -114,8 +114,13 @@ def parse_top_level_parentheses(string):
 
 
 def download_json(url: str, use_cache: bool = True) -> Json:
-    directory = os.path.dirname(os.path.realpath(__file__)) + "/"
-    fn = directory + f"../__cache__/{url.replace('/', '@')}"
+    directory = os.path.dirname(os.path.realpath(__file__))
+    fn = os.path.join(directory, "__cache__")
+    if not os.path.exists(fn):
+        os.mkdir(fn)
+    url2 = url.replace(":", "")
+    fn = os.path.join(fn, url2.replace('/', '@'))
+
     if use_cache and os.path.exists(fn):
         with open(fn) as f:
             j = json.load(f)

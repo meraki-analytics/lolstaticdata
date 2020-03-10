@@ -1,33 +1,54 @@
 import os
 import json
 
-from pull_items_wiki import WikiItem, get_item_urls
-from pull_items_dragon import DDragonItem, CDragonItem
+from lolstaticdata.pull_items_wiki import WikiItem, get_item_urls
+from pull_items_dragon import DragonItem
 
+
+def _name_to_wiki(name: str):  # Change item name for wiki url
+    url = "https://leagueoflegends.fandom.com/wiki/Template:Item_data_"
+    name = name.replace(" ", "_")
+    if "Enchantment:" in name:
+        name = name.split("Enchantment:")[1]
+    wikiUrl = url + name.strip()
+    print(wikiUrl)
+    wiki_item = WikiItem.get(wikiUrl)
+    return wiki_item
 
 def main():
     directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), ".."))
     use_cache = True
     if not os.path.exists(os.path.join(directory, "items")):
         os.mkdir(os.path.join(directory, "items"))
-    item_urls = get_item_urls(use_cache)
+    ddragon = DragonItem.get_json_ddragon()
+    cdragon = DragonItem.get_cdragon()
     jsons = {}
-    for url in item_urls:
-        print(url)
+    for d in ddragon:
+        if str(d) in ("2006", "2054", '2419', '2424', "3520", "3684", "3685"): # WE NEED TO FIX 2419, 3520(ghost poro)
+            continue
         try:
-            wiki_item = WikiItem.get(url)
+            ddragon_item = DragonItem.get_ddragon(d, ddragon)
         except ValueError:
             continue
-        if wiki_item.removed:
-            continue
-        ddragon_item = DDragonItem.get(wiki_item.id)
-        #cdragon_item = CDragonItem.get(wiki_item.id)
-
+        for cdrag in cdragon:
+            if str(cdrag["id"]) == d:
+                builds_from = cdrag["from"]
+                builds_to = cdrag["to"]
+                maps = cdrag["mapStringIdInclusions"]
+                ally = cdrag["requiredAlly"]
+                champ = cdrag["requiredChampion"]
+        wiki_item = _name_to_wiki(ddragon_item.name)
         # Manual merge
         item = wiki_item
+        item.name = ddragon_item.name
+        item.id = eval(d)
         item.icon = ddragon_item.icon
-        item.builds_from = ddragon_item.builds_from
-        item.builds_into = ddragon_item.builds_into
+        item.builds_from = builds_from
+        item.builds_into = builds_to
+        item.simple_description = ddragon_item.simple_description
+        item.required_ally = ally
+        item.required_champion = champ
+        item.shop.purchasable = ddragon_item.shop.purchasable
 
         if item is not None:
             jsonfn = os.path.join(directory, "items", str(item.id) + ".json")

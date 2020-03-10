@@ -8,11 +8,17 @@
   ],
   "buildsInto": [
     3190,
-    3050
+    3005,
+    3050,
+    3060,
+    4403
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3105.png",
+  "simpleDescription": "Grants Armor and Magic Resistance",
   "nicknames": [],
   "passives": [],
   "active": [],
@@ -168,6 +174,7 @@
       "combined": 350,
       "sell": 770
     },
+    "purchasable": true,
     "tags": [
       "ARMOR",
       "MAGIC_RESIST"

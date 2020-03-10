@@ -74,6 +74,7 @@ class Prices(object):
 @dataclass
 class Shop(object):
     prices: Prices
+    purchasable: bool
     tags: List[str]
 
 
@@ -107,7 +108,10 @@ class Item(object):
     builds_into: List[int]
     no_effects: bool
     removed: bool
+    required_champion: str
+    required_ally: str
     icon: str
+    simple_description: str
     nicknames: List[str]
     passives: List[Passive]
     active: List[Active]

@@ -8,11 +8,16 @@
     1029
   ],
   "buildsInto": [
-    3157
+    3157,
+    3090,
+    3170
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3191.png",
+  "simpleDescription": "Increases Armor and Ability Power",
   "nicknames": [],
   "passives": [
     {
@@ -321,6 +326,7 @@
       "combined": 65,
       "sell": 840
     },
+    "purchasable": true,
     "tags": [
       "ARMOR",
       "ABILITY_POWER"

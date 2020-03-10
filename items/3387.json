@@ -8,7 +8,10 @@
   "buildsInto": [],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "Ornn",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3387.png",
+  "simpleDescription": "Basic attacks create a slow field after spell cast",
   "nicknames": [
     "ornn",
     "forge"
@@ -472,6 +475,7 @@
       "combined": 0,
       "sell": 1890
     },
+    "purchasable": true,
     "tags": [
       "ARMOR",
       "COOLDOWN_REDUCTION",

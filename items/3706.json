@@ -7,14 +7,20 @@
     1041
   ],
   "buildsInto": [
-    1401,
+    3708,
     1400,
+    1401,
     1402,
-    1416
+    1416,
+    3707,
+    3709
   ],
   "noEffects": false,
   "removed": false,
+  "requiredChampion": "",
+  "requiredAlly": "",
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3706.png",
+  "simpleDescription": "Lets your Smite slow Champions",
   "nicknames": [
     "jungle"
   ],
@@ -781,6 +787,7 @@
       "combined": 300,
       "sell": 700
     },
+    "purchasable": true,
     "tags": [
       "JUNGLING",
       "HEALTH_REGEN",
