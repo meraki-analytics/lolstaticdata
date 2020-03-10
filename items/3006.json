@@ -1,12 +1,18 @@
 {
   "name": "Berserker's Greaves",
-  "id": 3006,
+  "id": "3006",
   "tier": 2,
   "buildsFrom": [
+    1301,
+    1303,
+    1300,
+    1302,
+    1304
+  ],
+  "buildsInto": [
     1001,
     1042
   ],
-  "buildsInto": [],
   "noEffects": false,
   "removed": false,
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3006.png",

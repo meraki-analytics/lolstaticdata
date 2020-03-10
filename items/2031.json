@@ -1,11 +1,12 @@
 {
   "name": "Refillable Potion",
-  "id": 2031,
+  "id": "2031",
   "tier": 1,
-  "buildsFrom": [],
-  "buildsInto": [
-    2033
+  "buildsFrom": [
+    2033,
+    2032
   ],
+  "buildsInto": [],
   "noEffects": true,
   "removed": false,
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/2031.png",

@@ -1,8 +1,8 @@
 import os
 import json
 
-from pull_items_wiki import WikiItem, get_item_urls
-from pull_items_dragon import DDragonItem, CDragonItem
+from lolstaticdata.pull_items_wiki import WikiItem, get_item_urls
+from pull_items_dragon import DDragonItem
 
 
 def main():

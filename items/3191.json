@@ -1,14 +1,16 @@
 {
   "name": "Seeker's Armguard",
-  "id": 3191,
+  "id": "3191",
   "tier": 2,
   "buildsFrom": [
+    3157,
+    3090,
+    3170
+  ],
+  "buildsInto": [
     1029,
     1052,
     1029
-  ],
-  "buildsInto": [
-    3157
   ],
   "noEffects": false,
   "removed": false,

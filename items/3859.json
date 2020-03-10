@@ -1,0 +1,491 @@
+{
+  "name": "Targon's Buckler",
+  "id": "3859",
+  "tier": 2,
+  "buildsFrom": [],
+  "buildsInto": [],
+  "noEffects": false,
+  "removed": false,
+  "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/3859.png",
+  "nicknames": [
+    "Support",
+    "Economy",
+    "Gold",
+    "Sightstone",
+    "Ward"
+  ],
+  "passives": [
+    {
+      "unique": true,
+      "name": "Spoils of War",
+      "effects": "Grants a charge every 45 seconds, up to 3 charges. Basic attacks can consume a charge to execute minions below 50% of their maximum health. Killing a minion by any means with a charge grants you and the nearest allied champion kill gold. These effects require an allied champion to be nearby. Receive diminishing gold from excessive minion kills.",
+      "range": null,
+      "stats": {
+        "abilityPower": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "armor": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "armorPenetration": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "attackDamage": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "attackSpeed": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "cooldownReduction": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "criticalStrikeChance": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "goldPer10": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "healAndShieldPower": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "health": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "healthRegen": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "lethality": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "lifesteal": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "magicPenetration": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "magicResistance": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "mana": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "manaRegen": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "movespeed": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        }
+      }
+    },
+    {
+      "unique": true,
+      "name": "Quest",
+      "effects": "Earn 500 using this item to upgrade to Bulwark of the Mountain, increasing the Warding active to instead have 4 wards in stock.",
+      "range": null,
+      "stats": {
+        "abilityPower": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "armor": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "armorPenetration": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "attackDamage": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "attackSpeed": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "cooldownReduction": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "criticalStrikeChance": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "goldPer10": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "healAndShieldPower": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "health": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "healthRegen": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "lethality": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "lifesteal": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "magicPenetration": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "magicResistance": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "mana": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "manaRegen": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        },
+        "movespeed": {
+          "flat": 0.0,
+          "percent": 0.0,
+          "perLevel": 0.0,
+          "percentPerLevel": 0.0,
+          "percentBase": 0.0,
+          "percentBonus": 0.0
+        }
+      }
+    }
+  ],
+  "active": [
+    {
+      "unique": true,
+      "name": "Warding",
+      "effects": "Consumes a charge to place a Stealth Ward at the target location (600 range), which reveals the surrounding area. Holds up to 3 charges which refill upon visiting the shop.",
+      "range": 600,
+      "cooldown": null
+    }
+  ],
+  "stats": {
+    "abilityPower": {
+      "flat": 10.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "armor": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "armorPenetration": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackDamage": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "attackSpeed": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "cooldownReduction": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "criticalStrikeChance": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "goldPer10": {
+      "flat": 3.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healAndShieldPower": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "health": {
+      "flat": 100.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "healthRegen": {
+      "flat": 0.0,
+      "percent": 50.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "lethality": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "lifesteal": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicPenetration": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "magicResistance": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "mana": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "manaRegen": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    },
+    "movespeed": {
+      "flat": 0.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0,
+      "percentBase": 0.0,
+      "percentBonus": 0.0
+    }
+  },
+  "shop": {
+    "prices": {
+      "total": 400,
+      "combined": 0,
+      "sell": 160
+    },
+    "tags": [
+      "GOLD_INCOME",
+      "HEALTH_REGEN",
+      "HEALTH",
+      "ABILITY_POWER"
+    ]
+  }
+}

@@ -1,9 +1,8 @@
 {
   "name": "Sapphire Crystal",
-  "id": 1027,
+  "id": "1027",
   "tier": 1,
-  "buildsFrom": [],
-  "buildsInto": [
+  "buildsFrom": [
     3057,
     3070,
     3010,
@@ -11,8 +10,10 @@
     3073,
     1402,
     1414,
-    3802
+    3802,
+    4104
   ],
+  "buildsInto": [],
   "noEffects": false,
   "removed": false,
   "icon": "http://ddragon.leagueoflegends.com/cdn/10.5.1/img/item/1027.png",

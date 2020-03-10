@@ -308,6 +308,7 @@ class WikiItem:
         code = soup.findAll('td', {"data-name": "code"})
         return cls._parse_item_id(code=code[0].text)
 
+
     @classmethod
     def get(cls, url: str) -> Optional[Item]:
         # All item data has a html attribute "data-name" so I put them all in an ordered dict while stripping the new lines and spaces from the data
@@ -322,11 +323,9 @@ class WikiItem:
             # replace("\n", "")
             values = values.lstrip().rstrip()
             item_data[attributes] = values
-        if cls._parse_item_id(item_data["code"]) is not None:
-            item = cls._parse_item_data(item_data)
-            return item
-        else:
-            raise ValueError(f"Item at url {url} has no id!")
+        item = cls._parse_item_data(item_data)
+        return item
+
 
     @classmethod
     def _parse_item_data(cls, item_data: dict) -> Item:
@@ -340,11 +339,15 @@ class WikiItem:
             tier = None
         except NameError:
             tier = item_data["tier"]
+        except KeyError:
+            tier = "tier 3"
         # Create the json files from the classes in modelitem.py
+
         if item_data["removed"] == "true":
             removed = True
         else:
             removed = False
+
         if not_unique.match(item_data["noe"]):
             no_effects = True
         else:
@@ -384,11 +387,11 @@ class WikiItem:
                 component = cls._parse_recipe_build(component.strip())
                 builds_from.append(component)
         item = Item(
-            name=item_data["1"],
-            id=cls._parse_item_id(code=item_data["code"].strip()),
+            name="",
+            id="",
             tier=tier,
-            builds_from=builds_from,
-            builds_into=builds_into,
+            builds_from=[],
+            builds_into=[],
             no_effects=no_effects,
             removed=removed,
             nicknames=nicknames,
