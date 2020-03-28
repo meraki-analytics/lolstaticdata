@@ -113,12 +113,11 @@ class LolWikiDataHandler:
         for name, d in data.items():
             if name == "Kled & Skaarl":
                 name = "Kled"
+                d['id'] = 240
             champion = self._render_champion_data(name, d)
             yield champion
 
     def _render_champion_data(self, name: str, data: Dict) -> Champion:
-        if name == "Kled & Skaarl":
-            name = "Kled"
         print(name)
         adaptive_type = data["adaptivetype"]
         if adaptive_type.upper() in ("PHYSICAL", "MIXED,PHYSICAL"):
@@ -384,7 +383,15 @@ class LolWikiDataHandler:
             abilities.append(ability)
         if skill_key == "I":
             skill_key = "P"
-        return skill_key, abilities
+        # Check for duplicate abilities
+        hashes = []
+        unique_abilities = []
+        for ability in abilities:
+            h = hash(str(ability))
+            if h not in hashes:
+                hashes.append(h)
+                unique_abilities.append(ability)
+        return skill_key, unique_abilities
 
     def _render_levelings(self, html: BeautifulSoup, nvalues: int) -> List[Leveling]:
         # Do some pre-processing on the html
@@ -473,7 +480,7 @@ class LolWikiDataHandler:
         modifiers = self._render_modifiers(mods, nvalues)
         cooldown = Cooldown(
             modifiers=modifiers,
-            affected_by_cdr=static_cooldown,
+            affected_by_cdr=not static_cooldown,
         )
         return cooldown
 
