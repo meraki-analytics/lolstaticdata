@@ -1,8 +1,8 @@
 import os
 import json
 
-from lolstaticdata.pull_items_wiki import WikiItem, get_item_urls
-from pull_items_dragon import DragonItem
+from .pull_items_wiki import WikiItem, get_item_urls
+from .pull_items_dragon import DragonItem
 
 
 def _name_to_wiki(name: str):  # Change item name for wiki url
@@ -15,8 +15,9 @@ def _name_to_wiki(name: str):  # Change item name for wiki url
     wiki_item = WikiItem.get(wikiUrl)
     return wiki_item
 
+
 def main():
-    directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), ".."))
+    directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), "../.."))
     use_cache = True
     if not os.path.exists(os.path.join(directory, "items")):
         os.mkdir(os.path.join(directory, "items"))
@@ -24,7 +25,7 @@ def main():
     cdragon = DragonItem.get_cdragon()
     jsons = {}
     for d in ddragon:
-        if str(d) in ("2006", "2054", '2419', '2424', "3520", "3684", "3685"): # WE NEED TO FIX 2419, 3520(ghost poro)
+        if str(d) in ("2006", "2054", "2419", "2424", "3520", "3684", "3685",):  # WE NEED TO FIX 2419, 3520(ghost poro)
             continue
         try:
             ddragon_item = DragonItem.get_ddragon(d, ddragon)
@@ -52,14 +53,14 @@ def main():
 
         if item is not None:
             jsonfn = os.path.join(directory, "items", str(item.id) + ".json")
-            with open(jsonfn, 'w', encoding='utf8') as f:
+            with open(jsonfn, "w", encoding="utf8") as f:
                 j = item.__json__(indent=2, ensure_ascii=False)
                 f.write(j)
             jsons[item.id] = json.loads(item.__json__(ensure_ascii=False))
             print(item.id)
 
     jsonfn = os.path.join(directory, "items.json")
-    with open(jsonfn, 'w', encoding='utf8') as f:
+    with open(jsonfn, "w", encoding="utf8") as f:
         json.dump(jsons, f, indent=2, ensure_ascii=False)
     del jsons
 

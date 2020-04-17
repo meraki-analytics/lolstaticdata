@@ -2,10 +2,29 @@ from typing import Mapping, List, Union
 from dataclasses import dataclass
 import dataclasses_json
 import json
-import stringcase
 
-from modelcommon import DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration, Stat
-from utils import OrderedEnum, ExtendedEncoder
+from ..common.modelcommon import (
+    DamageType,
+    Health,
+    HealthRegen,
+    Mana,
+    ManaRegen,
+    Armor,
+    MagicResistance,
+    AttackDamage,
+    AbilityPower,
+    AttackSpeed,
+    AttackRange,
+    Movespeed,
+    Lethality,
+    CooldownReduction,
+    GoldPer10,
+    HealAndShieldPower,
+    Lifesteal,
+    MagicPenetration,
+    Stat,
+)
+from ..common.utils import OrderedEnum, ExtendedEncoder
 
 
 class Resource(OrderedEnum):
@@ -136,7 +155,6 @@ class Leveling(object):
 @dataclass
 class Effect(object):
     description: str
-    icon: str
     leveling: List[Leveling]
 
 
@@ -144,6 +162,7 @@ class Effect(object):
 @dataclass
 class Ability(object):
     name: str
+    icon: str
     effects: List[Effect]
     cost: Cost
     cooldown: Cooldown
@@ -203,9 +222,9 @@ class Champion(object):
         # Use dataclasses_json to get the dict
         d = self.to_dict()
         # Delete the two stat objects that don't apply to champions
-        for name, stat in d['stats'].items():
+        for name, stat in d["stats"].items():
             if isinstance(stat, dict):
-                del stat['percentBase']
-                del stat['percentBonus']
+                del stat["percentBase"]
+                del stat["percentBonus"]
         # Return the (un)modified dict
         return json.dumps(d, cls=ExtendedEncoder, *args, **kwargs)

@@ -13,7 +13,7 @@ Json = Union[dict, list, str, int, float, bool, None]
 
 
 def to_enum_like(string: str) -> str:
-    return string.upper().replace(' ', '_')
+    return string.upper().replace(" ", "_")
 
 
 # Monkey patch this method onto Enums
@@ -24,6 +24,8 @@ def from_string(cls: Type[Enum], string: str) -> Enum:
         if e.name == string:
             return e
     raise ValueError(f"Unknown {cls.__name__} type: {string}")
+
+
 Enum.from_string = from_string
 
 
@@ -97,11 +99,11 @@ def parenthetic_contents(string):
     """
     stack = []
     for i, c in enumerate(string):
-        if c == '(':
+        if c == "(":
             stack.append(i)
-        elif c == ')' and stack:
+        elif c == ")" and stack:
             start = stack.pop()
-            yield (len(stack), string[start + 1: i])
+            yield (len(stack), string[start + 1 : i])
 
 
 def parse_top_level_parentheses(string):
@@ -115,11 +117,11 @@ def parse_top_level_parentheses(string):
 
 def download_json(url: str, use_cache: bool = True) -> Json:
     directory = os.path.dirname(os.path.realpath(__file__))
-    fn = os.path.join(directory, "__cache__")
+    fn = os.path.join(directory, "../../__cache__")
     if not os.path.exists(fn):
         os.mkdir(fn)
     url2 = url.replace(":", "")
-    fn = os.path.join(fn, url2.replace('/', '@'))
+    fn = os.path.join(fn, url2.replace("/", "@"))
 
     if use_cache and os.path.exists(fn):
         with open(fn) as f:
@@ -128,14 +130,14 @@ def download_json(url: str, use_cache: bool = True) -> Json:
         page = requests.get(url)
         j = page.json()
         if use_cache:
-            with open(fn, 'w') as f:
+            with open(fn, "w") as f:
                 json.dump(j, f)
     return j
 
 
 def download_soup(url: str, use_cache: bool = True):
     directory = os.path.dirname(os.path.realpath(__file__)) + "/"
-    fn = directory + f"../__cache__/{url.replace('/', '@')}"
+    fn = directory + f"../../__cache__/{url.replace('/', '@')}"
     if use_cache and os.path.exists(fn):
         with open(fn) as f:
             html = f.read()
@@ -143,22 +145,22 @@ def download_soup(url: str, use_cache: bool = True):
         page = requests.get(url)
         html = page.content.decode(page.encoding)
         if use_cache:
-            with open(fn, 'w') as f:
+            with open(fn, "w") as f:
                 f.write(html)
-    soup = BeautifulSoup(html, 'lxml')
+    soup = BeautifulSoup(html, "lxml")
     html = str(soup)
-    html = html.replace(u'\u00a0', u' ')
-    html = html.replace(u'\u300c', u'[')
-    html = html.replace(u'\u300d', u']')
-    html = html.replace(u'\u00ba', u'°')
-    html = html.replace(u'\u200b', u'')  # zero width space
-    html = html.replace(u'\u200e', u'')  # left-to-right mark
-    html = html.replace(u'\u2013', u':')  # left-to-right mark
-    html = html.replace(u'\xa0', u' ')
-    html = html.replace(u"\uFF06", u'&')
+    html = html.replace("\u00a0", " ")
+    html = html.replace("\u300c", "[")
+    html = html.replace("\u300d", "]")
+    html = html.replace("\u00ba", "°")
+    html = html.replace("\u200b", "")  # zero width space
+    html = html.replace("\u200e", "")  # left-to-right mark
+    html = html.replace("\u2013", ":")  # left-to-right mark
+    html = html.replace("\xa0", " ")
+    html = html.replace("\uFF06", "&")
     # NON-ASCII CHARACTERS: Counter({'…': 130, '°': 76, '×': 74, '–': 28, '÷': 20, '∞': 18, '\u200e': 8, '≈': 4, '≤': 2})
 
-    assert u'\xa0' not in html
+    assert "\xa0" not in html
     return html
 
 
@@ -167,15 +169,16 @@ def save_json(data, filename):
         if isinstance(obj, set):
             return list(obj)
         raise TypeError(f"Cannot serialize object of type: {type(obj)} ... {obj}")
+
     sdata = json.dumps(data, indent=2, default=set_default)
-    with open(filename, 'w') as of:
+    with open(filename, "w") as of:
         of.write(sdata)
-    with open(filename, 'r') as f:
+    with open(filename, "r") as f:
         sdata = f.read()
-        sdata = sdata.replace(u'\u00a0', u' ')
-        sdata = sdata.replace(u'\u300d', u' ')
-        sdata = sdata.replace(u'\u300c', u' ')
-        sdata = sdata.replace(u'\u00ba', u' ')
-        sdata = sdata.replace(u'\xa0', u' ')
-    with open(filename, 'w') as of:
+        sdata = sdata.replace("\u00a0", " ")
+        sdata = sdata.replace("\u300d", " ")
+        sdata = sdata.replace("\u300c", " ")
+        sdata = sdata.replace("\u00ba", " ")
+        sdata = sdata.replace("\xa0", " ")
+    with open(filename, "w") as of:
         of.write(sdata)

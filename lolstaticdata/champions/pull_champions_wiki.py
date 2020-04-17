@@ -1,11 +1,50 @@
-from typing import Tuple, List, Mapping, Union, Iterator, Dict
+from typing import Tuple, List, Union, Iterator, Dict
 import re
 from bs4 import BeautifulSoup
 from collections import Counter
 
-from modelchampion import Champion, Stats, Ability, AttackType, AttributeRatings, Cooldown, Cost, Effect, Price, Resource, Modifier, Role, Leveling
-from modelcommon import DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration, Stat
-from utils import download_soup, parse_top_level_parentheses, grouper, to_enum_like
+from ..common.modelcommon import (
+    DamageType,
+    Health,
+    HealthRegen,
+    Mana,
+    ManaRegen,
+    Armor,
+    MagicResistance,
+    AttackDamage,
+    AbilityPower,
+    AttackSpeed,
+    AttackRange,
+    Movespeed,
+    Lethality,
+    CooldownReduction,
+    GoldPer10,
+    HealAndShieldPower,
+    Lifesteal,
+    MagicPenetration,
+    Stat,
+)
+from ..common.utils import (
+    download_soup,
+    parse_top_level_parentheses,
+    grouper,
+    to_enum_like,
+)
+from .modelchampion import (
+    Champion,
+    Stats,
+    Ability,
+    AttackType,
+    AttributeRatings,
+    Cooldown,
+    Cost,
+    Effect,
+    Price,
+    Resource,
+    Modifier,
+    Role,
+    Leveling,
+)
 
 
 class UnparsableLeveling(Exception):
@@ -15,10 +54,10 @@ class UnparsableLeveling(Exception):
 class HTMLAbilityWrapper:
     def __init__(self, soup):
         self.soup = soup
-        self.table = self.soup.find_all(['th', 'td'])
+        self.table = self.soup.find_all(["th", "td"])
         # Do a little html modification based on the "viewsource"
         strip_table = [item.text.strip() for item in self.table]
-        start = strip_table.index("Parameter")+3
+        start = strip_table.index("Parameter") + 3
         self.table = self.table[start:]
         self.data = {}
         for i, (parameter, value, desc) in enumerate(grouper(self.table, 3)):
@@ -60,13 +99,13 @@ class HTMLAbilityWrapper:
 
 class LolWikiDataHandler:
     MISSING_SKILLS = {
-        "Annie": ["Command Tibbers"] ,
-        "Jinx": ["Switcheroo! 2"] ,
-        "Nidalee": ["Aspect of the Cougar 2"] ,
+        "Annie": ["Command Tibbers"],
+        "Jinx": ["Switcheroo! 2"],
+        "Nidalee": ["Aspect of the Cougar 2"],
         "Pyke": ["Death from Below 2"],
-        "Rumble": ["Electro Harpoon 2"] ,
-        "Shaco": ["Command Hallucinate"] ,
-        "Syndra": ["Force of Will 2"] ,
+        "Rumble": ["Electro Harpoon 2"],
+        "Shaco": ["Command Hallucinate"],
+        "Syndra": ["Force of Will 2"],
         "Taliyah": ["Seismic Shove 2"],
     }
 
@@ -77,10 +116,10 @@ class LolWikiDataHandler:
         # Download the page source
         url = "https://leagueoflegends.fandom.com/wiki/Module:ChampionData/data"
         html = download_soup(url, self.use_cache)
-        soup = BeautifulSoup(html, 'lxml')
+        soup = BeautifulSoup(html, "lxml")
 
         # Pull the relevant champData from the html tags
-        spans = soup.find_all('span')
+        spans = soup.find_all("span")
         start = None
         for i, span in enumerate(spans):
             if str(span) == '<span class="kw1">return</span>':
@@ -98,22 +137,22 @@ class LolWikiDataHandler:
                 break
 
         # Sanitize the champData
-        data = data.replace('=', ':')
+        data = data.replace("=", ":")
         data = data.replace('["', '"')
         data = data.replace('"]', '"')
-        data = data.replace('[1]', '1')
-        data = data.replace('[2]', '2')
-        data = data.replace('[3]', '3')
-        data = data.replace('[4]', '4')
-        data = data.replace('[5]', '5')
-        data = data.replace('[6]', '6')
+        data = data.replace("[1]", "1")
+        data = data.replace("[2]", "2")
+        data = data.replace("[3]", "3")
+        data = data.replace("[4]", "4")
+        data = data.replace("[5]", "5")
+        data = data.replace("[6]", "6")
 
         # Return the champData as a list of Champions
         data = eval(data)
         for name, d in data.items():
             if name == "Kled & Skaarl":
                 name = "Kled"
-                d['id'] = 240
+                d["id"] = 240
             champion = self._render_champion_data(name, d)
             yield champion
 
@@ -134,46 +173,21 @@ class LolWikiDataHandler:
             attack_type=AttackType.from_string(data["rangetype"]),
             adaptive_type=DamageType.from_string(adaptive_type),
             stats=Stats(
-                health=Health(
-                    flat=data["stats"]["hp_base"],
-                    per_level=data["stats"]["hp_lvl"],
-                ),
-                health_regen=HealthRegen(
-                    flat=data["stats"]["hp5_base"],
-                    per_level=data["stats"]["hp5_lvl"],
-                ),
-                mana=Mana(
-                    flat=data["stats"]["mp_base"],
-                    per_level=data["stats"]["mp_lvl"],
-                ),
-                mana_regen=ManaRegen(
-                    flat=data["stats"]["mp5_base"],
-                    per_level=data["stats"]["mp5_lvl"],
-                ),
-                armor=Armor(
-                    flat=data["stats"]["arm_base"],
-                    per_level=data["stats"]["arm_lvl"],
-                ),
-                magic_resistance=MagicResistance(
-                    flat=data["stats"]["mr_base"],
-                    per_level=data["stats"]["mr_lvl"],
-                ),
-                attack_damage=AttackDamage(
-                    flat=data["stats"]["dam_base"],
-                    per_level=data["stats"]["dam_lvl"],
-                ),
-                attack_speed=AttackSpeed(
-                    flat=data["stats"]["as_base"],
-                    per_level=data["stats"]["as_lvl"],
-                ),
+                health=Health(flat=data["stats"]["hp_base"], per_level=data["stats"]["hp_lvl"],),
+                health_regen=HealthRegen(flat=data["stats"]["hp5_base"], per_level=data["stats"]["hp5_lvl"],),
+                mana=Mana(flat=data["stats"]["mp_base"], per_level=data["stats"]["mp_lvl"],),
+                mana_regen=ManaRegen(flat=data["stats"]["mp5_base"], per_level=data["stats"]["mp5_lvl"],),
+                armor=Armor(flat=data["stats"]["arm_base"], per_level=data["stats"]["arm_lvl"],),
+                magic_resistance=MagicResistance(flat=data["stats"]["mr_base"], per_level=data["stats"]["mr_lvl"],),
+                attack_damage=AttackDamage(flat=data["stats"]["dam_base"], per_level=data["stats"]["dam_lvl"],),
+                attack_speed=AttackSpeed(flat=data["stats"]["as_base"], per_level=data["stats"]["as_lvl"],),
                 attack_speed_ratio=Stat(flat=data["stats"]["as_ratio"]),
-                attack_cast_time=Stat(flat=data["stats"].get("attack_cast_time", 0.3)),  # I don't know if this default is correct, but going off the values the wiki provides, it seems reasonable.
+                attack_cast_time=Stat(
+                    flat=data["stats"].get("attack_cast_time", 0.3)
+                ),  # I don't know if this default is correct, but going off the values the wiki provides, it seems reasonable.
                 attack_total_time=Stat(flat=data["stats"].get("attack_total_time", 1.6)),  # ibid
                 attack_delay_offset=Stat(flat=data["stats"].get("attack_delay_offset", 0)),
-                attack_range=AttackRange(
-                    flat=data["stats"]["range"],
-                    per_level=data["stats"].get("range_lvl", 0),
-                ),
+                attack_range=AttackRange(flat=data["stats"]["range"], per_level=data["stats"].get("range_lvl", 0),),
                 critical_strike_damage=Stat(flat=data["stats"].get("crit_base", 200)),
                 critical_strike_damage_modifier=Stat(flat=data["stats"].get("crit_base", 1.0)),
                 movespeed=Movespeed(flat=data["stats"]["ms"]),
@@ -190,14 +204,16 @@ class LolWikiDataHandler:
                 urf_healing=Stat(flat=data["stats"].get("urf_healing", 1.0)),
                 urf_shielding=Stat(flat=data["stats"].get("urf_shielding", 1.0)),
             ),
-            roles=sorted({
-                *(Role.from_string(r) for r in data["role"]),
-                *(Role.from_string(role) for role in (
-                    data.get("herotype"),
-                    data.get("alttype"),
-                ) if role is not None
-                  )
-            }),
+            roles=sorted(
+                {
+                    *(Role.from_string(r) for r in data["role"]),
+                    *(
+                        Role.from_string(role)
+                        for role in (data.get("herotype"), data.get("alttype"),)
+                        if role is not None
+                    ),
+                }
+            ),
             attribute_ratings=AttributeRatings(
                 damage=data["damage"],
                 toughness=data["toughness"],
@@ -210,28 +226,65 @@ class LolWikiDataHandler:
                 magic=data["magic"],
                 difficulty=data["difficulty"],
             ),
-            abilities=dict([
-                self._render_abilities(champion_name=name, abilities=[
-                    self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                    for ability_name in data["skill_i"].values() if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
-                ]),
-                self._render_abilities(champion_name=name, abilities=[
-                    self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                    for ability_name in data["skill_q"].values() if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
-                ]),
-                self._render_abilities(champion_name=name, abilities=[
-                    self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                    for ability_name in data["skill_w"].values() if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
-                ]),
-                self._render_abilities(champion_name=name, abilities=[
-                    self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                    for ability_name in data["skill_e"].values() if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
-                ]),
-                self._render_abilities(champion_name=name, abilities=[
-                    self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                    for ability_name in data["skill_r"].values() if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
-                ]),
-            ]),
+            abilities=dict(
+                [
+                    self._render_abilities(
+                        champion_name=name,
+                        abilities=[
+                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
+                            for ability_name in data["skill_i"].values()
+                            if not (
+                                name in LolWikiDataHandler.MISSING_SKILLS
+                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
+                            )
+                        ],
+                    ),
+                    self._render_abilities(
+                        champion_name=name,
+                        abilities=[
+                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
+                            for ability_name in data["skill_q"].values()
+                            if not (
+                                name in LolWikiDataHandler.MISSING_SKILLS
+                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
+                            )
+                        ],
+                    ),
+                    self._render_abilities(
+                        champion_name=name,
+                        abilities=[
+                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
+                            for ability_name in data["skill_w"].values()
+                            if not (
+                                name in LolWikiDataHandler.MISSING_SKILLS
+                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
+                            )
+                        ],
+                    ),
+                    self._render_abilities(
+                        champion_name=name,
+                        abilities=[
+                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
+                            for ability_name in data["skill_e"].values()
+                            if not (
+                                name in LolWikiDataHandler.MISSING_SKILLS
+                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
+                            )
+                        ],
+                    ),
+                    self._render_abilities(
+                        champion_name=name,
+                        abilities=[
+                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
+                            for ability_name in data["skill_r"].values()
+                            if not (
+                                name in LolWikiDataHandler.MISSING_SKILLS
+                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
+                            )
+                        ],
+                    ),
+                ]
+            ),
             release_date=data["date"],
             release_patch=data["patch"][1:],  # remove the leading "V"
             patch_last_changed=data["changes"][1:],  # remove the leading "V"
@@ -242,12 +295,12 @@ class LolWikiDataHandler:
         return champion
 
     def _pull_champion_ability(self, champion_name, ability_name) -> HTMLAbilityWrapper:
-        ability_name = ability_name.replace(' ', '_')
+        ability_name = ability_name.replace(" ", "_")
 
         # Pull the html from the wiki
         url = f"https://leagueoflegends.fandom.com/wiki/Template:Data_{champion_name}/{ability_name}"
         html = download_soup(url, self.use_cache)
-        soup = BeautifulSoup(html, 'lxml')
+        soup = BeautifulSoup(html, "lxml")
         return HTMLAbilityWrapper(soup)
 
     def _render_abilities(self, champion_name, abilities: List[HTMLAbilityWrapper]) -> Tuple[str, List[Ability]]:
@@ -255,18 +308,26 @@ class LolWikiDataHandler:
         skill_key = inputs[0]["skill"]
         for data in inputs:
             _skill_key = data["skill"]
-            if champion_name == "Aphelios" and data["name"] in ("Calibrum", "Severum", "Gravitum", "Infernum", "Crescendum"):
+            if champion_name == "Aphelios" and data["name"] in (
+                "Calibrum",
+                "Severum",
+                "Gravitum",
+                "Infernum",
+                "Crescendum",
+            ):
                 _skill_key = "I"
             if champion_name == "Gnar" and data["name"] in ("Boulder Toss",):
                 _skill_key = "Q"
             assert _skill_key == skill_key
 
             if champion_name == "Pyke" and _skill_key == "I":
-                del data["Cost"]  # This is a weird one... There's an embedded table that doesn't get parsed right. It overwrites 'cost', but luckily that isn't an issue because 'cost' is empty.
+                del data[
+                    "Cost"
+                ]  # This is a weird one... There's an embedded table that doesn't get parsed right. It overwrites 'cost', but luckily that isn't an issue because 'cost' is empty.
             if data.get("Cost") is not None:
                 raise ValueError(data)
 
-            nvalues = 5 if _skill_key in ('Q', 'W', 'E') else 3
+            nvalues = 5 if _skill_key in ("Q", "W", "E") else 3
             if champion_name == "Aphelios" and _skill_key == "I":
                 nvalues = 6
             elif champion_name == "Heimerdinger":
@@ -293,7 +354,7 @@ class LolWikiDataHandler:
             damage_type = data.get("damagetype")
             if damage_type is not None:
                 damage_type = to_enum_like(damage_type)
-                if '/' in damage_type:
+                if "/" in damage_type:
                     damage_type = "MIXED_DAMAGE"
                 elif damage_type == "PHYSICAL":
                     damage_type = "PHYSICAL_DAMAGE"
@@ -310,19 +371,41 @@ class LolWikiDataHandler:
             resource = data.get("costtype")
             if resource is not None:
                 resource = to_enum_like(resource)
-                if resource in ("MANA", "NO_COST", "HEALTH", "MAXIMUM_HEALTH", "ENERGY", "CURRENT_HEALTH", "HEALTH_PER_SECOND", "MANA_PER_SECOND", "CHARGE", "FURY"):
+                if resource in (
+                    "MANA",
+                    "NO_COST",
+                    "HEALTH",
+                    "MAXIMUM_HEALTH",
+                    "ENERGY",
+                    "CURRENT_HEALTH",
+                    "HEALTH_PER_SECOND",
+                    "MANA_PER_SECOND",
+                    "CHARGE",
+                    "FURY",
+                ):
                     pass
-                elif resource in ('MANA_+_4_FOCUS', 'MANA_+_4_FROST_STACKS', 'MANA_+_6_CHARGES', 'MANA_+_1_SAND_SOLDIER', 'MANA_+_40_/_45_/_50_/_55_/_60_PER_SECOND', 'MAXIMUM_HEALTH_+_50_/_55_/_60_/_65_/_70_MANA', 'MANA_+_1_TURRET_KIT', 'MANA_+_1_MISSILE', 'MANA_+_1_CHARGE', 'MANA_+_ALL_CHARGES'):
+                elif resource in (
+                    "MANA_+_4_FOCUS",
+                    "MANA_+_4_FROST_STACKS",
+                    "MANA_+_6_CHARGES",
+                    "MANA_+_1_SAND_SOLDIER",
+                    "MANA_+_40_/_45_/_50_/_55_/_60_PER_SECOND",
+                    "MAXIMUM_HEALTH_+_50_/_55_/_60_/_65_/_70_MANA",
+                    "MANA_+_1_TURRET_KIT",
+                    "MANA_+_1_MISSILE",
+                    "MANA_+_1_CHARGE",
+                    "MANA_+_ALL_CHARGES",
+                ):
                     resource = "MANA"
-                elif resource == 'OF_CURRENT_HEALTH':
+                elif resource == "OF_CURRENT_HEALTH":
                     resource = "CURRENT_HEALTH"
-                elif resource == '%_OF_CURRENT_HEALTH':
+                elif resource == "%_OF_CURRENT_HEALTH":
                     resource = "CURRENT_HEALTH"
-                elif resource == 'CURRENT_GRIT':
+                elif resource == "CURRENT_GRIT":
                     resource = "GRIT"
                 elif resource == "CURRENT_FURY":
                     resource = "FURY"
-                elif resource == 'FURY_EVERY_0.5_SECONDS':
+                elif resource == "FURY_EVERY_0.5_SECONDS":
                     resource = "FURY"
                 else:
                     resource = "OTHER"
@@ -337,20 +420,18 @@ class LolWikiDataHandler:
                 _, recharge_rate = ParsingAndRegex.regex_simple_flat(recharge_rate, nvalues)  # ignore units
 
             effects = []
-            for ending in ['', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']:
+            for ending in ["", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]:
                 description = data.get(f"description{ending}")
-                while description and '  ' in description:
-                    description = description.replace('  ', ' ')
-                icon = data.get(f"icon{ending}")
+                while description and "  " in description:
+                    description = description.replace("  ", " ")
                 leveling = data.get_source(f"leveling{ending}")
                 leveling = self._render_levelings(leveling, nvalues) if leveling else []
-                if description or icon or leveling:
-                    effects.append(
-                        Effect(description=description, leveling=leveling, icon=icon)
-                    )
+                if description or leveling:
+                    effects.append(Effect(description=description, leveling=leveling))
 
             ability = Ability(
                 name=data["name"],
+                icon=data.get(f"icon{ending}"),
                 effects=effects,
                 cost=self._render_ability_cost(ability_cost, nvalues) if ability_cost else None,
                 cooldown=self._render_ability_cooldown(cooldown, "static" in data.data, nvalues) if cooldown else None,
@@ -397,32 +478,36 @@ class LolWikiDataHandler:
         # Do some pre-processing on the html
         if not isinstance(html, str):
             html = str(html)
-        html = html.replace('</dt>', '\n</dt>')
-        html = html.replace('</dd>', '\n</dd>')
-        html = BeautifulSoup(html, 'lxml')
+        html = html.replace("</dt>", "\n</dt>")
+        html = html.replace("</dd>", "\n</dd>")
+        html = BeautifulSoup(html, "lxml")
         html = html.text.strip()
-        while '\n\n' in html:
-            html = html.replace('\n\n', '\n')
-        while '  ' in html:
-            html = html.replace('  ', ' ')
-        levelings = html.replace(u'\xa0', u' ')
+        while "\n\n" in html:
+            html = html.replace("\n\n", "\n")
+        while "  " in html:
+            html = html.replace("  ", " ")
+        levelings = html.replace("\xa0", " ")
 
         # Get ready
         results = []
 
         # Let's parse!
-        initial_split = levelings.split('\n')
-        initial_split = [lvling.strip() for lvling in initial_split
-                         if lvling.strip() not in (
-                             "Takedown scales with Aspect of the Cougar's rank",
-                             "Swipe scales with Aspect of the Cougar's rank",
-                             "Pounce scales with Aspect of the Cougar's rank",
-                             "Cougar form's abilities rank up when Aspect of the Cougar does",
-                         )]
+        initial_split = levelings.split("\n")
+        initial_split = [
+            lvling.strip()
+            for lvling in initial_split
+            if lvling.strip()
+            not in (
+                "Takedown scales with Aspect of the Cougar's rank",
+                "Swipe scales with Aspect of the Cougar's rank",
+                "Pounce scales with Aspect of the Cougar's rank",
+                "Cougar form's abilities rank up when Aspect of the Cougar does",
+            )
+        ]
         initial_split = list(grouper(initial_split, 2))
 
         for attribute, data in initial_split:
-            if attribute.endswith(':'):
+            if attribute.endswith(":"):
                 attribute = attribute[:-1]
             result = self._render_leveling(attribute, data, nvalues)
             results.append(result)
@@ -431,10 +516,7 @@ class LolWikiDataHandler:
 
     def _render_leveling(self, attribute: str, data: str, nvalues: int) -> Leveling:
         modifiers = self._render_modifiers(data, nvalues)
-        leveling = Leveling(
-            attribute=attribute,
-            modifiers=modifiers,
-        )
+        leveling = Leveling(attribute=attribute, modifiers=modifiers,)
         return leveling
 
     def _render_modifiers(self, mods: str, nvalues: int) -> List[Modifier]:
@@ -448,27 +530,21 @@ class LolWikiDataHandler:
             except Exception as error:
                 print(f"ERROR: FAILURE TO PARSE MODIFIER:  {lvling}")
                 print("ERROR:", error)
-                while '  ' in lvling:
-                    lvling = lvling.replace('  ', ' ')
+                while "  " in lvling:
+                    lvling = lvling.replace("  ", " ")
                 value = 0
                 if lvling.lower() == "Siphoning Strike Stacks".lower():  # Nasus
                     value = 1
                 if lvling.lower() == "increased by 3% per 1% of health lost in the past 4 seconds".lower():  # Ekko
                     value = 3
                     lvling = "% per 1% of health lost in the past 4 seconds"
-                modifier = Modifier(
-                    values=[value for _ in range(nvalues)],
-                    units=[lvling for _ in range(nvalues)]
-                )
+                modifier = Modifier(values=[value for _ in range(nvalues)], units=[lvling for _ in range(nvalues)],)
                 modifiers.append(modifier)
         return modifiers
 
     def _render_modifier(self, mod: str, nvalues: int) -> Modifier:
         units, values = ParsingAndRegex.get_modifier(mod, nvalues)
-        modifier = Modifier(
-            values=values,
-            units=units,
-        )
+        modifier = Modifier(values=values, units=units,)
         return modifier
 
     def _render_ability_cost(self, mods: str, nvalues: int) -> Cost:
@@ -478,10 +554,7 @@ class LolWikiDataHandler:
 
     def _render_ability_cooldown(self, mods: str, static_cooldown: bool, nvalues: int) -> Cooldown:
         modifiers = self._render_modifiers(mods, nvalues)
-        cooldown = Cooldown(
-            modifiers=modifiers,
-            affected_by_cdr=not static_cooldown,
-        )
+        cooldown = Cooldown(modifiers=modifiers, affected_by_cdr=not static_cooldown,)
         return cooldown
 
 
@@ -494,12 +567,12 @@ class ParsingAndRegex:
     @staticmethod
     def regex_slash_separated(string: str, nvalues: int) -> Tuple[List[str], List[Union[int, float]]]:
         for i in range(20, 1, -1):
-            regex = ' / '.join([ParsingAndRegex.r_number for _ in range(i)])
+            regex = " / ".join([ParsingAndRegex.r_number for _ in range(i)])
             result = re.findall(regex, string)
             if result:
                 assert len(result) == 1
                 result = result[0]
-                parsed = ' / '.join([f'{{{j}}}' for j in range(i)]).format(*result)
+                parsed = " / ".join([f"{{{j}}}" for j in range(i)]).format(*result)
                 not_parsed = string.split(parsed)
                 values = [eval(r) for r in result]
                 # Special case...
@@ -520,7 +593,7 @@ class ParsingAndRegex:
     @staticmethod
     def regex_simple_flat(string: str, nvalues: int) -> Tuple[List[str], List[Union[int, float]]]:
         numbers = ParsingAndRegex.rc_number.findall(string)
-        if '/' in string:
+        if "/" in string:
             return ParsingAndRegex.regex_slash_separated(string, nvalues)
         elif len(ParsingAndRegex.rc_based_on_level.findall(string)) > 0:
             level = ParsingAndRegex.rc_based_on_level.findall(string)
@@ -552,7 +625,7 @@ class ParsingAndRegex:
     @staticmethod
     def get_units(not_parsed: List[str]) -> str:
         assert len(not_parsed) == 2
-        assert not_parsed[0] == ''
+        assert not_parsed[0] == ""
         return not_parsed[1]
 
     @staticmethod
@@ -576,14 +649,14 @@ class ParsingAndRegex:
         scalings = ParsingAndRegex.rc_scaling.findall(numbers)
         if scalings:
             scalings = parse_top_level_parentheses(numbers)
-        scalings = [scaling for scaling in scalings if scaling != '(based on level)']
+        scalings = [scaling for scaling in scalings if scaling != "(based on level)"]
         for scaling in scalings:
-            numbers = numbers.replace(scaling, '').strip()  # remove the scaling part of the string for processing later
+            numbers = numbers.replace(scaling, "").strip()  # remove the scaling part of the string for processing later
         scalings = [x.strip() for x in scalings]
         for i, scaling in enumerate(scalings):
-            if scaling.startswith('(') and scaling.endswith(')'):
+            if scaling.startswith("(") and scaling.endswith(")"):
                 scaling = scaling[1:-1].strip()
-            if scaling.startswith('+'):
+            if scaling.startswith("+"):
                 scaling = scaling[1:].strip()
             scalings[i] = scaling
         return numbers, scalings

@@ -4,8 +4,29 @@ import dataclasses_json
 import json
 import stringcase
 
-from modelcommon import ArmorPenetration, DamageType, Health, HealthRegen, Mana, ManaRegen, Armor, MagicResistance, AttackDamage, AbilityPower, AttackSpeed, AttackRange, Movespeed, CriticalStrikeChance, Lethality, CooldownReduction, GoldPer10, HealAndShieldPower, Lifesteal, MagicPenetration
-from utils import OrderedEnum, ExtendedEncoder
+from ..common.utils import OrderedEnum, ExtendedEncoder
+from ..common.modelcommon import (
+    ArmorPenetration,
+    DamageType,
+    Health,
+    HealthRegen,
+    Mana,
+    ManaRegen,
+    Armor,
+    MagicResistance,
+    AttackDamage,
+    AbilityPower,
+    AttackSpeed,
+    AttackRange,
+    Movespeed,
+    CriticalStrikeChance,
+    Lethality,
+    CooldownReduction,
+    GoldPer10,
+    HealAndShieldPower,
+    Lifesteal,
+    MagicPenetration,
+)
 
 
 class ItemAttributes(OrderedEnum):
@@ -33,7 +54,7 @@ class ItemAttributes(OrderedEnum):
     LIFE_STEAL = "LIFE_STEAL"
     COOLDOWN_REDUCTION = "COOLDOWN_REDUCTION"
     MANA = "MANA"
-    MANA_REGEN= "MANA_REGEN"
+    MANA_REGEN = "MANA_REGEN"
     ABILITY_POWER = "ABILITY_POWER"
     BOOTS = "BOOTS"
     OTHER_MOVEMENT_ITEMS = "OTHER_MOVEMENT_ITEMS"
@@ -85,7 +106,7 @@ class Passive(object):
     name: str
     effects: str
     range: int
-    stats : Stats
+    stats: Stats
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
@@ -94,8 +115,8 @@ class Active(object):
     unique: bool
     name: str
     effects: str
-    range : int
-    cooldown : float
+    range: int
+    cooldown: float
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
