@@ -206,6 +206,7 @@ class Champion(object):
     name: str
     title: str
     full_name: str
+    icon: str
     resource: Resource
     attack_type: AttackType
     adaptive_type: DamageType

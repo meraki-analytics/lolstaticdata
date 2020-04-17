@@ -8,6 +8,7 @@ from enum import Enum
 from datetime import datetime
 from uuid import UUID
 from decimal import Decimal
+from natsort import natsorted
 
 Json = Union[dict, list, str, int, float, bool, None]
 
@@ -182,3 +183,10 @@ def save_json(data, filename):
         sdata = sdata.replace("\xa0", " ")
     with open(filename, "w") as of:
         of.write(sdata)
+
+
+def get_latest_patch_version():
+    versions = download_json("http://ddragon.leagueoflegends.com/api/versions.json", use_cache=False)
+    versions = [v for v in versions if "_" not in v]
+    versions = natsorted(versions)
+    return versions[-1]

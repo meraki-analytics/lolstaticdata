@@ -71,11 +71,9 @@ def perform_guess(
     return best_fn, best_score, best_guess
 
 
-def get_ability_url(key, ability_key, ability_index, ability_name, ddragon_champion, filenames):
+def get_ability_url(key, ability_key, ability_index, ability_name, latest_version, ddragon_champion, filenames):
     # Use ddragon if we can
     if ability_index == 1 and ability_key in ("Q", "W", "E", "R"):
-        # TODO: Get latest version, or use Cassiopeia
-        latest_version = "10.8.1"
         spell_index = {"Q": 0, "W": 1, "E": 2, "R": 3}[ability_key]
         return f"https://ddragon.leagueoflegends.com/cdn/{latest_version}/img/spell/{ddragon_champion['spells'][spell_index]['image']['full']}"
 

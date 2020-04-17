@@ -169,6 +169,7 @@ class LolWikiDataHandler:
             name=name,
             title=data["title"],
             full_name=data.get("fullname", ""),
+            icon=None,
             resource=Resource.from_string(data["resource"]),
             attack_type=AttackType.from_string(data["rangetype"]),
             adaptive_type=DamageType.from_string(adaptive_type),

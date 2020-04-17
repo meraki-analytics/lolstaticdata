@@ -50,6 +50,13 @@ def main():
             f"http://raw.communitydragon.org/latest/game/assets/characters/{champion.key.lower()}/hud/icons2d/"
         )
 
+        # Set the champion icon
+        latest_version = utils.get_latest_patch_version()
+        champion.icon = (
+            f"http://ddragon.leagueoflegends.com/cdn/10.8.1/img/champion/{ddragon_champion['image']['full']}"
+        )
+
+        # Set the champion ability icons
         for ability_key, abilities in champion.abilities.items():
             for ability_index, ability in enumerate(abilities, start=1):
                 url = _get_ability_url(
@@ -57,6 +64,7 @@ def main():
                     ability_key_to_identifier[ability_key],
                     ability_index,
                     ability.name,
+                    latest_version,
                     ddragon_champion,
                     ability_icon_filenames,
                 )
