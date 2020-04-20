@@ -17,10 +17,13 @@ def main():
     ids = json.loads(ids)
     ids = {k: int(v) for k, v in ids.items()}
 
+    role_name_map = {"Top": "TOP", "Jungle": "JUNGLE", "Middle": "MIDDLE", "ADC": "BOTTOM", "Support": "UTILITY"}
+
     final = defaultdict(dict)
     for datum in data:
         id = ids[datum["key"]]
-        final[id][datum["role"]] = {
+        role = role_name_map[datum["role"]]
+        final[id][role] = {
             "playRate": datum["general"]["playPercent"],
             "winRate": datum["general"]["winPercent"],
             "banRate": datum["general"]["banRate"],
