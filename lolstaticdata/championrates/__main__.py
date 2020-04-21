@@ -29,6 +29,9 @@ def main():
             "banRate": datum["general"]["banRate"],
         }
     final = {"data": final, "patch": patch}
+    for id in ids.values():
+        if id not in final["data"]:
+            final["data"][id] = {}
 
     filename = "/home/meraki/code/meraki/Data/champion-rates/rates.json"
     with open(filename, "w") as f:
