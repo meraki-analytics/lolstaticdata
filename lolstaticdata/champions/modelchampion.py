@@ -29,6 +29,7 @@ from ..common.utils import OrderedEnum, ExtendedEncoder
 
 class Resource(OrderedEnum):
     NO_COST = "NO_COST"
+    BLOODTHIRST = "BLOODTHIRST"
     MANA = "MANA"
     ENERGY = "ENERGY"
     RAGE = "RAGE"
