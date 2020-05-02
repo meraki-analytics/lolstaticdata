@@ -290,6 +290,7 @@ class LolWikiDataHandler:
             release_patch=data["patch"][1:],  # remove the leading "V"
             patch_last_changed=data["changes"][1:],  # remove the leading "V"
             price=Price(rp=data["rp"], blue_essence=data["be"]),
+            lore="",
         )
         # "nickname": "nickname",
         # "disp_name": "dispName",

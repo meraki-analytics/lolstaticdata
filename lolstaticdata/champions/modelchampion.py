@@ -219,6 +219,7 @@ class Champion(object):
     release_patch: str
     patch_last_changed: str
     price: Price
+    lore: str
 
     def __json__(self, *args, **kwargs):
         # Use dataclasses_json to get the dict

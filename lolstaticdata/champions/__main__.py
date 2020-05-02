@@ -43,8 +43,8 @@ def main():
     champions = []
     for champion in handler.get_champions():
         # Load some information for pulling champion ability icons
-        if champion.key == "GnarBig":
-            champion.key = "Gnar"
+        # if champion.key == "GnarBig":
+        #    champion.key = "Gnar"
         ddragon_champion = ddragon_champions[champion.key]
         ability_icon_filenames = get_ability_filenames(
             f"http://raw.communitydragon.org/latest/game/assets/characters/{champion.key.lower()}/hud/icons2d/"
@@ -55,6 +55,7 @@ def main():
         champion.icon = (
             f"http://ddragon.leagueoflegends.com/cdn/10.8.1/img/champion/{ddragon_champion['image']['full']}"
         )
+        champion.lore = ddragon_champion["lore"]
 
         # Set the champion ability icons
         for ability_key, abilities in champion.abilities.items():
