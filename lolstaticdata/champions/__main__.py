@@ -45,17 +45,20 @@ def main():
         # Load some information for pulling champion ability icons
         # if champion.key == "GnarBig":
         #    champion.key = "Gnar"
-        ddragon_champion = ddragon_champions[champion.key]
-        ability_icon_filenames = get_ability_filenames(
-            f"http://raw.communitydragon.org/latest/game/assets/characters/{champion.key.lower()}/hud/icons2d/"
-        )
+        if champion.key != "GnarBig":
+            ddragon_champion = ddragon_champions[champion.key]
+            ability_icon_filenames = get_ability_filenames(
+                f"http://raw.communitydragon.org/latest/game/assets/characters/{champion.key.lower()}/hud/icons2d/"
+            )
 
-        # Set the champion icon
-        latest_version = utils.get_latest_patch_version()
-        champion.icon = (
-            f"http://ddragon.leagueoflegends.com/cdn/10.8.1/img/champion/{ddragon_champion['image']['full']}"
-        )
-        champion.lore = ddragon_champion["lore"]
+            # Set the champion icon
+            latest_version = utils.get_latest_patch_version()
+            champion.icon = (
+                f"http://ddragon.leagueoflegends.com/cdn/10.8.1/img/champion/{ddragon_champion['image']['full']}"
+            )
+
+            # Set the lore
+            champion.lore = ddragon_champion["lore"]
 
         # Set the champion ability icons
         for ability_key, abilities in champion.abilities.items():

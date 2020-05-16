@@ -25,7 +25,7 @@ def main():
     cdragon = DragonItem.get_cdragon()
     jsons = {}
     for d in ddragon:
-        if str(d) in ("2006", "2054", "2419", "2424", "3520", "3684", "3685",):  # WE NEED TO FIX 2419, 3520(ghost poro)
+        if str(d) in ("2006", "2054", "2419", "2424", "3520", "3684", "3685", "3330"):  # WE NEED TO FIX 2419, 3520(ghost poro)
             continue
         try:
             ddragon_item = DragonItem.get_ddragon(d, ddragon)

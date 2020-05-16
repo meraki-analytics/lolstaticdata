@@ -2,6 +2,7 @@ from typing import Tuple, List, Union, Iterator, Dict
 import re
 from bs4 import BeautifulSoup
 from collections import Counter
+from slpp import slpp as lua
 
 from ..common.modelcommon import (
     DamageType,
@@ -129,6 +130,9 @@ class LolWikiDataHandler:
         brackets = Counter()
         for span in spans:
             text = span.text
+            comment_start = text.find('--')
+            if comment_start > -1:
+                text = text[:comment_start]
             if text == "{" or text == "}":
                 brackets[text] += 1
             if brackets["{"] != 0:
@@ -136,19 +140,8 @@ class LolWikiDataHandler:
             if brackets["{"] == brackets["}"] and brackets["{"] > 0:
                 break
 
-        # Sanitize the champData
-        data = data.replace("=", ":")
-        data = data.replace('["', '"')
-        data = data.replace('"]', '"')
-        data = data.replace("[1]", "1")
-        data = data.replace("[2]", "2")
-        data = data.replace("[3]", "3")
-        data = data.replace("[4]", "4")
-        data = data.replace("[5]", "5")
-        data = data.replace("[6]", "6")
-
         # Return the champData as a list of Champions
-        data = eval(data)
+        data = lua.decode(data)
         for name, d in data.items():
             if name == "Kled & Skaarl":
                 name = "Kled"
