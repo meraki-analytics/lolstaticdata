@@ -144,8 +144,9 @@ class LolWikiDataHandler:
         data = lua.decode(data)
         for name, d in data.items():
             if name == "Kled & Skaarl":
-                name = "Kled"
-                d["id"] = 240
+                continue
+                #name = "Kled"
+                #d["id"] = 240
             champion = self._render_champion_data(name, d)
             yield champion
 
