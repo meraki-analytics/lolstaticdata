@@ -10,8 +10,13 @@ def main():
     data = [script for script in scripts if script.startswith("matchupData.stats =")][0]
     data = data[len("matchupData.stats =") :].strip()[:-1]
     data = json.loads(data)
+
     patch = [script for script in scripts if script.startswith("var currentPatch =")][0]
-    patch = json.loads(patch[len("var currentPatch =") :].split()[0].strip())
+    patch = patch[len("var currentPatch =") :].split()[0].strip()
+    if patch.endswith(";"):
+        patch = patch[:-1]
+    patch = json.loads(patch)
+
     ids = [script for script in scripts if script.startswith("var champData =")][0]
     ids = ids[len("var champData =") :].strip().split(";")[0].strip()
     ids = json.loads(ids)

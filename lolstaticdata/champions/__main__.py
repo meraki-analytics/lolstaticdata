@@ -27,9 +27,11 @@ def main():
     if not os.path.exists(os.path.join(directory, "champions")):
         os.mkdir(os.path.join(directory, "champions"))
 
+    latest_version = utils.get_latest_patch_version()
+
     # Load some information for pulling champion ability icons
     ddragon_champions = utils.download_json(
-        "http://ddragon.leagueoflegends.com/cdn/10.16.1/data/en_US/championFull.json"
+        f"http://ddragon.leagueoflegends.com/cdn/{latest_version}/data/en_US/championFull.json"
     )["data"]
     ability_key_to_identifier = {
         "P": "passive",
@@ -43,22 +45,18 @@ def main():
     champions = []
     for champion in handler.get_champions():
         # Load some information for pulling champion ability icons
-        # if champion.key == "GnarBig":
-        #    champion.key = "Gnar"
-        if champion.key != "GnarBig":
-            ddragon_champion = ddragon_champions[champion.key]
-            ability_icon_filenames = get_ability_filenames(
-                f"http://raw.communitydragon.org/latest/game/assets/characters/{champion.key.lower()}/hud/icons2d/"
-            )
+        ddragon_champion = ddragon_champions[champion.key]
+        ability_icon_filenames = get_ability_filenames(
+            f"http://raw.communitydragon.org/latest/game/assets/characters/{champion.key.lower()}/hud/icons2d/"
+        )
 
-            # Set the champion icon
-            latest_version = utils.get_latest_patch_version()
-            champion.icon = (
-                f"http://ddragon.leagueoflegends.com/cdn/10.8.1/img/champion/{ddragon_champion['image']['full']}"
-            )
+        # Set the champion icon
+        champion.icon = (
+            f"http://ddragon.leagueoflegends.com/cdn/10.8.1/img/champion/{ddragon_champion['image']['full']}"
+        )
 
-            # Set the lore
-            champion.lore = ddragon_champion["lore"]
+        # Set the lore
+        champion.lore = ddragon_champion["lore"]
 
         # Set the champion ability icons
         for ability_key, abilities in champion.abilities.items():

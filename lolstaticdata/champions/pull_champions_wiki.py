@@ -145,7 +145,7 @@ class LolWikiDataHandler:
         # Return the champData as a list of Champions
         data = lua.decode(data)
         for name, d in data.items():
-            if name == "Kled & Skaarl":
+            if name in ["Kled & Skaarl", "GnarBig", "Mega Gnar"]:
                 continue
                 #name = "Kled"
                 #d["id"] = 240
@@ -157,10 +157,12 @@ class LolWikiDataHandler:
     def _render_champion_data(self, name: str, data: Dict) -> Champion:
         print(name)
         adaptive_type = data["adaptivetype"]
-        if adaptive_type.upper() in ("PHYSICAL", "MIXED,PHYSICAL", "MIXED"):
+        if adaptive_type.upper() in ("PHYSICAL", "MIXED,PHYSICAL"):
             adaptive_type = "PHYSICAL_DAMAGE"
         if adaptive_type.upper() in ("MAGIC",):
             adaptive_type = "MAGIC_DAMAGE"
+        if adaptive_type.upper() in ("MIXED",):
+            adaptive_type = "MIXED_DAMAGE"
         champion = Champion(
             id=data["id"],
             key=data["apiname"],
@@ -298,6 +300,7 @@ class LolWikiDataHandler:
         ability_name = ability_name.replace(" ", "_")
 
         # Pull the html from the wiki
+        print(f"  {ability_name}")
         url = f"https://leagueoflegends.fandom.com/wiki/Template:Data_{champion_name}/{ability_name}"
         html = download_soup(url, self.use_cache)
         soup = BeautifulSoup(html, "lxml")
