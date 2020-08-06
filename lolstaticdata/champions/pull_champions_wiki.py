@@ -102,6 +102,8 @@ class LolWikiDataHandler:
     MISSING_SKILLS = {
         "Annie": ["Command Tibbers"],
         "Jinx": ["Switcheroo! 2"],
+        "Lillia": ["Prance"],
+        "Mordekaiser": ["Indestructible 2"],
         "Nidalee": ["Aspect of the Cougar 2"],
         "Pyke": ["Death from Below 2"],
         "Rumble": ["Electro Harpoon 2"],
@@ -147,13 +149,15 @@ class LolWikiDataHandler:
                 continue
                 #name = "Kled"
                 #d["id"] = 240
+            if name == "Samira": #Samira is on Wiki but not released yet
+                continue
             champion = self._render_champion_data(name, d)
             yield champion
 
     def _render_champion_data(self, name: str, data: Dict) -> Champion:
         print(name)
         adaptive_type = data["adaptivetype"]
-        if adaptive_type.upper() in ("PHYSICAL", "MIXED,PHYSICAL"):
+        if adaptive_type.upper() in ("PHYSICAL", "MIXED,PHYSICAL", "MIXED"):
             adaptive_type = "PHYSICAL_DAMAGE"
         if adaptive_type.upper() in ("MAGIC",):
             adaptive_type = "MAGIC_DAMAGE"

@@ -29,7 +29,7 @@ def main():
 
     # Load some information for pulling champion ability icons
     ddragon_champions = utils.download_json(
-        "http://ddragon.leagueoflegends.com/cdn/10.8.1/data/en_US/championFull.json"
+        "http://ddragon.leagueoflegends.com/cdn/10.16.1/data/en_US/championFull.json"
     )["data"]
     ability_key_to_identifier = {
         "P": "passive",
