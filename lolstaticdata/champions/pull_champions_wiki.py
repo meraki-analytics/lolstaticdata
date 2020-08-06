@@ -149,7 +149,7 @@ class LolWikiDataHandler:
                 continue
                 #name = "Kled"
                 #d["id"] = 240
-            if name == "Samira" #Samira is on Wiki but not released yet
+            if name == "Samira": #Samira is on Wiki but not released yet
                 continue
             champion = self._render_champion_data(name, d)
             yield champion
