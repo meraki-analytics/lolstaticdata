@@ -146,7 +146,7 @@ def download_soup(url: str, use_cache: bool = True):
         page = requests.get(url)
         html = page.content.decode(page.encoding)
         if use_cache:
-            with open(fn, "w") as f:
+            with open(fn, "w", encoding="utf-8") as f:
                 f.write(html)
     soup = BeautifulSoup(html, "lxml")
     html = str(soup)

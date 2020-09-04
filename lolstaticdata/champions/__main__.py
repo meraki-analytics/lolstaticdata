@@ -30,6 +30,7 @@ def main():
     latest_version = utils.get_latest_patch_version()
 
     # Load some information for pulling champion ability icons
+    latest_version = utils.get_latest_patch_version()
     ddragon_champions = utils.download_json(
         f"http://ddragon.leagueoflegends.com/cdn/{latest_version}/data/en_US/championFull.json"
     )["data"]
@@ -52,7 +53,7 @@ def main():
 
         # Set the champion icon
         champion.icon = (
-            f"http://ddragon.leagueoflegends.com/cdn/10.8.1/img/champion/{ddragon_champion['image']['full']}"
+            f"http://ddragon.leagueoflegends.com/cdn/{latest_version}/img/champion/{ddragon_champion['image']['full']}"
         )
 
         # Set the lore

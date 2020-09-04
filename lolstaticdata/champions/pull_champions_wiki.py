@@ -3,6 +3,7 @@ import re
 from bs4 import BeautifulSoup
 from collections import Counter
 from slpp import slpp as lua
+from datetime import datetime
 
 from ..common.modelcommon import (
     DamageType,
@@ -149,7 +150,7 @@ class LolWikiDataHandler:
                 continue
                 #name = "Kled"
                 #d["id"] = 240
-            if name == "Samira": #Samira is on Wiki but not released yet
+            if d["id"] == 9999 or datetime.strptime(d["date"], "%Y-%m-%d") > datetime.today(): #Champion not released yet
                 continue
             champion = self._render_champion_data(name, d)
             yield champion
