@@ -27,8 +27,6 @@ def main():
     if not os.path.exists(os.path.join(directory, "champions")):
         os.mkdir(os.path.join(directory, "champions"))
 
-    latest_version = utils.get_latest_patch_version()
-
     # Load some information for pulling champion ability icons
     latest_version = utils.get_latest_patch_version()
     ddragon_champions = utils.download_json(
