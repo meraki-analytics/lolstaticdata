@@ -48,6 +48,8 @@ class Resource(OrderedEnum):
     SHIELD = "SHIELD"
     OTHER = "OTHER"
     NONE = "NONE"
+    SOUL_UNBOUND = "SOUL_UNBOUND"
+    BLOOD_WELL = "BLOOD_WELL"
 
 
 class AttackType(OrderedEnum):
