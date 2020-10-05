@@ -3,7 +3,7 @@ from dataclasses import dataclass
 import dataclasses_json
 import json
 
-from ..common.modelcommon import (
+from  ..common.modelcommon import (
     DamageType,
     Health,
     HealthRegen,

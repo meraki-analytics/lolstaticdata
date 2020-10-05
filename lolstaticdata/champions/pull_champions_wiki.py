@@ -145,11 +145,22 @@ class LolWikiDataHandler:
 
         # Return the champData as a list of Champions
         data = lua.decode(data)
+
         for name, d in data.items():
             if name in ["Kled & Skaarl", "GnarBig", "Mega Gnar"]:
                 continue
+            if name in ["Kled"]:
+                #champion = self._render_champion_data(name, d)
+                d["skill_i"] = {1:d["skills"][1],2:d["skills"][2]}
+                d["skill_q"] = {1:d["skills"][3],2:d["skills"][4]}
+                d["skill_e"] = {1:d["skills"][6],2:d["skills"][7]}
+                d["skill_r"] = {1:d["skills"][8],2:d["skills"][9]}
+                print(d["skill_i"],d["skill_q"],d["skill_w"],d["skill_e"],d["skill_r"])
+
                 #name = "Kled"
                 #d["id"] = 240
+            if name in ["Kha'Zix"]:
+                d["skill_r"] = {1:d["skill_r"][1],2:d["skill_r"][2]}
             if d["id"] == 9999 or datetime.strptime(d["date"], "%Y-%m-%d") > datetime.today(): #Champion not released yet
                 continue
             champion = self._render_champion_data(name, d)
@@ -164,6 +175,10 @@ class LolWikiDataHandler:
             adaptive_type = "MAGIC_DAMAGE"
         if adaptive_type.upper() in ("MIXED",):
             adaptive_type = "MIXED_DAMAGE"
+        if data["patch"][0] == "V":
+            patch = data["patch"][1:]
+        else:
+            patch = data["patch"]
         champion = Champion(
             id=data["id"],
             key=data["apiname"],
@@ -288,7 +303,9 @@ class LolWikiDataHandler:
                 ]
             ),
             release_date=data["date"],
-            release_patch=data["patch"][1:],  # remove the leading "V"
+
+            release_patch=patch,
+            # remove the leading "V"
             patch_last_changed=data["changes"][1:],  # remove the leading "V"
             price=Price(rp=data["rp"], blue_essence=data["be"]),
             lore="",
@@ -301,7 +318,7 @@ class LolWikiDataHandler:
         ability_name = ability_name.replace(" ", "_")
 
         # Pull the html from the wiki
-        print(f"  {ability_name}")
+        #print(f"  {ability_name}")
         url = f"https://leagueoflegends.fandom.com/wiki/Template:Data_{champion_name}/{ability_name}"
         html = download_soup(url, self.use_cache)
         soup = BeautifulSoup(html, "lxml")
