@@ -754,7 +754,7 @@ class LolWikiDataHandler:
 
                     chromas.append(self._get_chroma_attribs(self._get_skin_id(champID,champData[s]["chromas"][chroma]["id"]),chroma))
             if "distribution" in champData[s]:
-                distribution == champData[s]["distribution"]
+                distribution = champData[s]["distribution"]
             if "set" in champData[s]:
                 for set in champData[s]["set"]:
                     sets.append(set)
