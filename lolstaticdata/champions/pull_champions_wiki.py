@@ -31,6 +31,7 @@ from ..common.utils import (
     parse_top_level_parentheses,
     grouper,
     to_enum_like,
+    download_json,
 )
 from .modelchampion import (
     Champion,
@@ -46,6 +47,10 @@ from .modelchampion import (
     Modifier,
     Role,
     Leveling,
+    Skin,
+    Chroma,
+    Description,
+    Rarities,
 )
 
 
@@ -116,6 +121,15 @@ class LolWikiDataHandler:
     def __init__(self, use_cache: bool = True):
         self.use_cache = use_cache
 
+
+    def check_ability(self,data):
+        for x in data:
+            if data[x] in self.abil_test:
+                continue
+            else:
+                return False
+
+
     def get_champions(self) -> Iterator[Champion]:
         # Download the page source
         url = "https://leagueoflegends.fandom.com/wiki/Module:ChampionData/data"
@@ -145,6 +159,8 @@ class LolWikiDataHandler:
 
         # Return the champData as a list of Champions
         data = lua.decode(data)
+        self.skinData = self._get_skins()
+
 
         for name, d in data.items():
             if name in ["Kled & Skaarl", "GnarBig", "Mega Gnar"]:
@@ -159,12 +175,17 @@ class LolWikiDataHandler:
 
                 #name = "Kled"
                 #d["id"] = 240
-            if name in ["Kha'Zix"]:
-                d["skill_r"] = {1:d["skill_r"][1],2:d["skill_r"][2]}
-            if d["id"] == 9999 or datetime.strptime(d["date"], "%Y-%m-%d") > datetime.today(): #Champion not released yet
+
+
+            # if name in "Aatrox":
+            #     print(self._get_champ_skin(name))
+            if d["id"] == 9999 or d["date"] == "Upcoming" or datetime.strptime(d["date"], "%Y-%m-%d") > datetime.today() : #Champion not released yet
                 continue
             champion = self._render_champion_data(name, d)
             yield champion
+
+
+
 
     def _render_champion_data(self, name: str, data: Dict) -> Champion:
         print(name)
@@ -299,6 +320,7 @@ class LolWikiDataHandler:
                                 and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                             )
                         ],
+
                     ),
                 ]
             ),
@@ -309,6 +331,7 @@ class LolWikiDataHandler:
             patch_last_changed=data["changes"][1:],  # remove the leading "V"
             price=Price(rp=data["rp"], blue_essence=data["be"]),
             lore="",
+            skins=self._get_champ_skin(name)
         )
         # "nickname": "nickname",
         # "disp_name": "dispName",
@@ -578,6 +601,215 @@ class LolWikiDataHandler:
         cooldown = Cooldown(modifiers=modifiers, affected_by_cdr=not static_cooldown,)
         return cooldown
 
+
+    def _get_skin_id(self,id,skinId):
+        if skinId < 10:
+            idtest = str(id) + "00" + str(skinId)
+        elif skinId >= 10 and skinId < 100:
+            idtest = str(id) + "0" + str(skinId)
+        else:
+            idtest = str(id) + str(skinId)
+
+        #If a single champion gets over 1k skin ids tell Dan he was wrong to think that it would never happen
+
+        return idtest
+
+    def _get_chroma_attribs(self,id,name):
+        if "chromas" in self.cdragDict[0]:
+
+            for c in self.cdragDict[0]["chromas"]:
+                if int(id) == c["id"]:
+                    descriptions = []
+                    rarities = []
+                    if c["descriptions"]:
+                        for desc in c["descriptions"]:
+                            descriptions.append(Description(desc["description"],desc["region"]))
+                    else:
+                        descriptions.append(Description(None,None))
+                    if c["rarities"]:
+                        for rarity in c["rarities"]:
+                            rarities.append(Rarities(rarity["rarity"],rarity["region"]))
+                    else:
+                        rarities.append(Rarities(None,None))
+
+
+                    chroma = Chroma(name=name,id=c["id"],chromaPath= self._get_skin_path(c["chromaPath"]),colors=c["colors"],descriptions=descriptions,rarities=rarities)
+
+                    return chroma
+
+
+    def _get_skins(self):
+        url = f"https://leagueoflegends.fandom.com/wiki/Module:SkinData/data"
+
+        html = download_soup(url, False)
+        soup = BeautifulSoup(html, "lxml")
+
+        # Pull the relevant champData from the html tags
+        spans = soup.find_all("span")
+        #print(soup.text)
+        start = None
+        for i, span in enumerate(spans):
+            if str(span) == '<span class="kw1">return</span>':
+                start = i
+        spans = spans[start:]
+        data = ""
+        brackets = Counter()
+        #
+        for span in spans:
+            text = span.text
+            test1 = re.compile("\w -- \w|.\w--\w|\w --\w|.\w--\s")
+            if re.search(test1, text):
+                test2 = re.search(test1, text)
+                text = text.replace(test2.group()[2] + test2.group()[3], " ")
+
+                #print(text)
+            comment_start = text.find('--')
+            #text = text.replace("-", " ")
+            if comment_start > -1:
+                text = text[:comment_start]
+            if text == "{" or text == "}":
+                brackets[text] += 1
+            if brackets["{"] != 0:
+                data += text
+            if brackets["{"] == brackets["}"] and brackets["{"] > 0:
+                break
+        skinData = lua.decode(data)
+        return skinData
+
+    def _get_skin_path(self,path):
+        if "/assets/ASSETS" in path:
+            path = path.split("ASSETS")[1]
+            path = path.lower()
+            path = "https://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/assets" + path
+            return path
+        baseUrl = "http://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/v1"
+        #/lol-game-data/assets/v1/champion-chroma-images/32/32014.png
+        path = path.split("v1")[1]
+        return baseUrl + path
+
+
+    def _get_champ_skin(self,name):
+        champData = self.skinData[name]["skins"]
+        skins = []
+        champID = self.skinData[name]["id"]
+
+        cdragon = "http://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/v1/champions/{0}.json".format(champID)
+        cdragJSON = download_json(cdragon,False)
+
+        for s in champData:
+            #Default values for LOL Wiki attributes
+            if champData[s]["id"] == None:
+                continue
+            skinID = self._get_skin_id(champID, champData[s]["id"])
+            neweffects = False
+            newrecall = False
+            newanimations = False
+            newvoice = False
+            newquotes = False
+            chromas = []
+            distribution = None
+            sets = []
+            format_name = s
+            voiceactors = []
+            splasharist = []
+            looteligible = True
+            lore = None
+            cdragonIDS = []
+            self.cdragDict = [i for i in cdragJSON["skins"] if i['id'] == int(skinID)] #Cdragon Dict
+            for skin in cdragJSON["skins"]:
+                cdragonIDS.append(skin["id"])
+            if int(skinID) not in cdragonIDS:
+                continue
+            #Cdragon Attributes
+
+            isBase = self.cdragDict[0]["isBase"]
+            splashPath = self._get_skin_path(self.cdragDict[0]["splashPath"])
+            uncenteredSplashPath =  self._get_skin_path(self.cdragDict[0]["uncenteredSplashPath"])
+            tilePath =  self._get_skin_path(self.cdragDict[0]["tilePath"])
+            loadScreenPath =  self._get_skin_path(self.cdragDict[0]["loadScreenPath"])
+            if "loadScreenVintagePath" in self.cdragDict[0]:
+                loadScreenVintagePath =  self._get_skin_path(self.cdragDict[0]["loadScreenVintagePath"])
+            else:
+                loadScreenVintagePath = None
+            rarity = self.cdragDict[0]["rarity"][1:]
+
+            if "neweffects" in champData[s]:
+                neweffects = True
+
+            if "newrecall" in champData[s]:
+                newrecall = True
+
+            if "newanimations" in champData[s]:
+                newanimations = True
+
+            if "newquotes" in champData[s]:
+                newquotes = True
+
+            if "newvoice" in champData[s]:
+                newvoice = True
+
+            if "chromas" in champData[s]:
+                for chroma in champData[s]["chromas"]:
+
+
+                    chromas.append(self._get_chroma_attribs(self._get_skin_id(champID,champData[s]["chromas"][chroma]["id"]),chroma))
+            if "distribution" in champData[s]:
+                distribution == champData[s]["distribution"]
+            if "set" in champData[s]:
+                for set in champData[s]["set"]:
+                    sets.append(set)
+
+            if "formatname" in champData[s]:
+                format_name=champData[s]["formatname"]
+            if "voiceactor" in champData[s]:
+                for va in champData[s]["voiceactor"]:
+                    voiceactors.append(va)
+            if "lore" in champData[s]:
+                lore = champData[s]["lore"]
+
+            if "splashartist" in champData[s]:
+                for sa in champData[s]["splashartist"]:
+                    splasharist.append(sa)
+
+            if "looteligible" in champData[s]:
+                looteligible=champData[s]["looteligible"]
+
+            if "release" in champData[s]:
+                if "N/A" in champData[s]["release"]:
+                    timestamp = "0000-00-00"
+                else:
+                    timestamp = champData[s]["release"]
+                    #timestamp = datetime.timestamp(timestuff)
+
+            skin = Skin(
+                name=s,
+                id=int(skinID),
+                availability=champData[s]["availability"],
+                format_name=format_name,
+                loot_eligible=looteligible,
+                cost=champData[s]["cost"],
+                release=timestamp,
+                distribution=distribution,
+                set=sets,
+                new_effects=neweffects,
+                new_animations=newanimations,
+                new_recall=newrecall,
+                voice_actor=voiceactors,
+                splash_artist=splasharist,
+                chromas=chromas,
+                lore=lore,
+                new_quotes=newquotes,
+                new_voice=newvoice,
+                isBase=isBase,
+                splashPath=splashPath,
+                uncenteredSplashPath=uncenteredSplashPath,
+                tilePath=tilePath,
+                loadScreenPath=loadScreenPath,
+                loadScreenVintagePath=loadScreenVintagePath,
+                rarity=rarity
+            )
+            skins.append(skin)
+        return skins
 
 class ParsingAndRegex:
     rc_scaling = re.compile(r"(\(\+.+?\))")

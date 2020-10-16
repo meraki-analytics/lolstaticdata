@@ -2,7 +2,7 @@ import os
 import json
 from bs4 import BeautifulSoup
 
-from ..common import utils
+from common import utils
 from .pull_champions_wiki import LolWikiDataHandler
 from .pull_champions_dragons import get_ability_url as _get_ability_url
 
