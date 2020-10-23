@@ -222,7 +222,7 @@ class Rarities(object):
 class Chroma(object):
     name: str
     id: id
-    chromaPath: str
+    chroma_path: str
     colors: list
     descriptions: List[Description]
     rarities: List[Rarities]
@@ -233,7 +233,7 @@ class Chroma(object):
 class Skin(object):
     name: str
     id: int
-    isBase: bool
+    is_base: bool
     availability: str
     format_name: str
     loot_eligible: bool
@@ -244,14 +244,11 @@ class Skin(object):
     lore: str
     release: float
     set:  list
-
-    splashPath: str
-    uncenteredSplashPath: str
-    tilePath: str
-    loadScreenPath: str
-    loadScreenVintagePath: str
-
-
+    splash_path: str
+    uncentered_splash_path: str
+    tile_path: str
+    load_screen_path: str
+    load_screen_vintage_path: str
     new_effects: bool
     new_animations: bool
     new_recall: bool
