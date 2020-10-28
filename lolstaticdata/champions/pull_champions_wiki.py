@@ -135,28 +135,24 @@ class LolWikiDataHandler:
         soup = BeautifulSoup(html, "lxml")
 
         # Pull the relevant champData from the html tags
-        spans = soup.find_all("span")
+        spans = soup.find("pre", {"class": "mw-code mw-script"})
         start = None
+        spans = spans.text.split("\n")
+
         for i, span in enumerate(spans):
-            if str(span) == '<span class="kw1">return</span>':
+            if str(span) == "return {":
                 start = i
+                spans[i] = "{"
+        split_stuff = re.compile("({)|(})")
         spans = spans[start:]
-        data = ""
-        brackets = Counter()
-        for span in spans:
-            text = span.text
-            comment_start = text.find("--")
-            if comment_start > -1:
-                text = text[:comment_start]
-            if text == "{" or text == "}":
-                brackets[text] += 1
-            if brackets["{"] != 0:
-                data += text
-            if brackets["{"] == brackets["}"] and brackets["{"] > 0:
-                break
+        for i, span in enumerate(spans):
+            if span in ["-- </pre>", "-- [[Category:Lua]]"]:
+                spans[i] = ""
+
+        spans = "".join(spans)
+        data = lua.decode(spans)
 
         # Return the champData as a list of Champions
-        data = lua.decode(data)
         self.skinData = self._get_skins()
 
         for name, d in data.items():
@@ -721,36 +717,35 @@ class LolWikiDataHandler:
 
         html = download_soup(url, False)
         soup = BeautifulSoup(html, "lxml")
-        # Pull the relevant champData from the html tags
-        spans = soup.find_all("span")
-        # print(soup.text)
-        start = None
-        for i, span in enumerate(spans):
-            if str(span) == '<span class="kw1">return</span>':
-                start = i
-        spans = spans[start:]
-        data = ""
-        brackets = Counter()
-        for span in spans:
-            text = span.text
-            test1 = re.compile("\w -- \w|.\w--\w|\w --\w|.\w--\s")
-            if re.search(test1, text):
-                test2 = re.search(test1, text)
-                text = text.replace(test2.group()[2] + test2.group()[3], " ")
 
-                # print(text)
-            comment_start = text.find("--")
+        # Pull the relevant champData from the html tags
+        spans = soup.find("pre", {"class": "mw-code mw-script"})
+        start = None
+        spans = spans.text.split("\n")
+
+        for i, span in enumerate(spans):
+            if str(span) == "return {":
+                start = i
+                spans[i] = "{"
+        spans = spans[start:]
+        test1 = re.compile("\w -- \w|.\w--\w|\w --\w|.\w--\s")
+        for i, span in enumerate(spans):
+            if span in ["-- </pre>", "-- [[Category:Lua]]"]:
+                spans[i] = ""
+
+            if re.search(test1, span):
+                test2 = re.search(test1, span)
+                spans[i] = span.replace(test2.group()[2] + test2.group()[3], " ")
+                span = spans[i]
+
+            comment_start = span.find("--")
             # text = text.replace("-", " ")
             if comment_start > -1:
-                text = text[:comment_start]
-            if text == "{" or text == "}":
-                brackets[text] += 1
-            if brackets["{"] != 0:
-                data += text
-            if brackets["{"] == brackets["}"] and brackets["{"] > 0:
-                break
-        skin_data = lua.decode(data)
-        return skin_data
+                spans[i] = span[:comment_start]
+
+        spans = "".join(spans)
+        skinData = lua.decode(spans)
+        return skinData
 
     def _get_skin_path(self, path):
         if "/assets/ASSETS" in path:

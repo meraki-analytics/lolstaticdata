@@ -208,13 +208,11 @@ class Description(object):
     region: str
 
 
-
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
 class Rarities(object):
     rarity: int
     region: str
-
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
@@ -243,7 +241,7 @@ class Skin(object):
     chromas: List[Chroma]
     lore: str
     release: float
-    set:  list
+    set: list
     splash_path: str
     uncentered_splash_path: str
     tile_path: str

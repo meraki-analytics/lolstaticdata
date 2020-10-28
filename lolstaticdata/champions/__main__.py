@@ -8,7 +8,7 @@ from .pull_champions_dragons import get_ability_url as _get_ability_url
 
 
 def get_ability_filenames(url):
-    soup = utils.download_soup(url)
+    soup = utils.download_soup(url, use_cache=False)
     soup = BeautifulSoup(soup, "lxml")
 
     filenames = []
@@ -23,7 +23,9 @@ def get_ability_filenames(url):
 
 def main():
     handler = LolWikiDataHandler(use_cache=False)
-    directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), "../.."))
+    directory = os.path.abspath(
+        os.path.join(os.path.dirname(os.path.realpath(__file__)), "../..")
+    )
     if not os.path.exists(os.path.join(directory, "champions")):
         os.mkdir(os.path.join(directory, "champions"))
 
@@ -50,9 +52,7 @@ def main():
         )
 
         # Set the champion icon
-        champion.icon = (
-            f"http://ddragon.leagueoflegends.com/cdn/{latest_version}/img/champion/{ddragon_champion['image']['full']}"
-        )
+        champion.icon = f"http://ddragon.leagueoflegends.com/cdn/{latest_version}/img/champion/{ddragon_champion['image']['full']}"
 
         # Set the lore
         champion.lore = ddragon_champion["lore"]
