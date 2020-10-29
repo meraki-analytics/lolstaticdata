@@ -203,6 +203,61 @@ class Price(object):
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
+class Description(object):
+    description: str
+    region: str
+
+
+@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
+@dataclass
+class Rarities(object):
+    rarity: int
+    region: str
+
+
+@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
+@dataclass
+class Chroma(object):
+    name: str
+    id: id
+    chroma_path: str
+    colors: list
+    descriptions: List[Description]
+    rarities: List[Rarities]
+
+
+@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
+@dataclass
+class Skin(object):
+    name: str
+    id: int
+    is_base: bool
+    availability: str
+    format_name: str
+    loot_eligible: bool
+    cost: str
+    distribution: str
+    rarity: str
+    chromas: List[Chroma]
+    lore: str
+    release: float
+    set: list
+    splash_path: str
+    uncentered_splash_path: str
+    tile_path: str
+    load_screen_path: str
+    load_screen_vintage_path: str
+    new_effects: bool
+    new_animations: bool
+    new_recall: bool
+    new_voice: bool
+    new_quotes: bool
+    voice_actor: list
+    splash_artist: list
+
+
+@dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
+@dataclass
 class Champion(object):
     id: int
     key: str
@@ -222,6 +277,7 @@ class Champion(object):
     patch_last_changed: str
     price: Price
     lore: str
+    skins: List[Skin]
 
     def __json__(self, *args, **kwargs):
         # Use dataclasses_json to get the dict
