@@ -73,5 +73,3 @@ def perform_guess(
 
 def get_ability_url(key, ability_key, ability_index, ability_name, latest_version, ddragon_champion, filenames):
     return f"https://cdn.communitydragon.org/latest/champion/{key}/ability-icon/{ability_key[0]}"
-
-
