@@ -153,7 +153,7 @@ class LolWikiDataHandler:
         data = lua.decode(spans)
 
         # Return the champData as a list of Champions
-        self.skinData = self._get_skins()
+        self.skin_data = self._get_skins()
 
         for name, d in data.items():
             if name in ["Kled & Skaarl", "GnarBig", "Mega Gnar"]:
@@ -599,7 +599,6 @@ class LolWikiDataHandler:
 
     def _get_chroma_attribs(self, id, name):
         if "chromas" in self.cdragDict[0]:
-
             for c in self.cdragDict[0]["chromas"]:
                 if int(id) == c["id"]:
                     descriptions = []
@@ -614,7 +613,6 @@ class LolWikiDataHandler:
                             rarities.append(Rarities(rarity["rarity"], rarity["region"]))
                     else:
                         rarities.append(Rarities(None, None))
-
                     chroma = Chroma(
                         name=name,
                         id=c["id"],
@@ -623,7 +621,6 @@ class LolWikiDataHandler:
                         descriptions=descriptions,
                         rarities=rarities,
                     )
-
                     return chroma
 
     def _get_skins(self):
@@ -658,8 +655,8 @@ class LolWikiDataHandler:
                 spans[i] = span[:comment_start]
 
         spans = "".join(spans)
-        skinData = lua.decode(spans)
-        return skinData
+        skin_data = lua.decode(spans)
+        return skin_data
 
     def _get_skin_path(self, path):
         if "/assets/ASSETS" in path:
@@ -675,12 +672,10 @@ class LolWikiDataHandler:
     def _get_champ_skin(self, name):
         """
         Pulls champion skin data from wiki and cdragon
-
-
         """
-        champ_data = self.skinData[name]["skins"]
+        champ_data = self.skin_data[name]["skins"]
         skins = []
-        champ_id = self.skinData[name]["id"]
+        champ_id = self.skin_data[name]["id"]
 
         cdragon = "http://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/v1/champions/{0}.json".format(
             champ_id
@@ -711,7 +706,7 @@ class LolWikiDataHandler:
                 cdragon_ids.append(skin["id"])
             if int(skin_ID) not in cdragon_ids:
                 continue
-            # Cdragon Attributes
+            # cdragon attributes
 
             is_base = self.cdragDict[0]["isBase"]
             splash_path = self._get_skin_path(self.cdragDict[0]["splashPath"])
@@ -742,7 +737,6 @@ class LolWikiDataHandler:
 
             if "chromas" in champ_data[s]:
                 for chroma in champ_data[s]["chromas"]:
-
                     chromas.append(
                         self._get_chroma_attribs(
                             self._get_skin_id(champ_id, champ_data[s]["chromas"][chroma]["id"]), chroma,
@@ -777,7 +771,6 @@ class LolWikiDataHandler:
                     timestamp = "0000-00-00"
                 else:
                     timestamp = champ_data[s]["release"]
-                    # timestamp = datetime.timestamp(timestuff)
 
             skin = Skin(
                 name=s,
