@@ -5,7 +5,7 @@ from collections import Counter
 from slpp import slpp as lua
 from datetime import datetime
 
-from ..common.modelcommon import (
+from common.modelcommon import (
     DamageType,
     Health,
     HealthRegen,
@@ -26,7 +26,7 @@ from ..common.modelcommon import (
     MagicPenetration,
     Stat,
 )
-from ..common.utils import (
+from common.utils import (
     download_soup,
     parse_top_level_parentheses,
     grouper,
@@ -170,6 +170,7 @@ class LolWikiDataHandler:
                 or datetime.strptime(d["date"], "%Y-%m-%d") > datetime.today()
             ):  # Champion not released yet
                 continue
+
             champion = self._render_champion_data(name, d)
             yield champion
 

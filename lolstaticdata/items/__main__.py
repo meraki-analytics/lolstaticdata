@@ -18,7 +18,7 @@ def _name_to_wiki(name: str):  # Change item name for wiki url
 
 def main():
     directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), "../.."))
-    use_cache = True
+    use_cache = False
     if not os.path.exists(os.path.join(directory, "items")):
         os.mkdir(os.path.join(directory, "items"))
     ddragon = DragonItem.get_json_ddragon()
