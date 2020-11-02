@@ -4,8 +4,8 @@ import re
 from collections import OrderedDict
 
 from .modelitem import Stats, Prices, Shop, Item, Passive, Active, ItemAttributes
-from ..common.utils import download_soup
-from ..common.modelcommon import (
+from common.utils import download_soup
+from common.modelcommon import (
     ArmorPenetration,
     DamageType,
     Health,

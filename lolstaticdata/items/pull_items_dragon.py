@@ -1,7 +1,7 @@
 import json
 import os
 
-from ..common.utils import download_json
+from common.utils import download_json
 from .pull_items_wiki import WikiItem
 from .modelitem import Item, Shop
 
