@@ -10,14 +10,23 @@ class DragonItem:
     @staticmethod
     def get_cdragon():  # cdragon to list
         url = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/items.json"
-        j = download_json(url, use_cache=True)
+        j = download_json(url, use_cache=False)
         cdragon = [i for i in j if str(i["id"])]
         return cdragon
+
+    def _get_skin_path(self, path):
+        if "/assets/ASSETS" in path:
+            path = path.split("ASSETS")[1]
+            path = path.lower()
+            path = (
+                "https://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/assets"
+                + path
+            )
 
     @classmethod
     def _get_latest_version(cls):
         url = "http://ddragon.leagueoflegends.com/api/versions.json"
-        j = download_json(url, use_cache=True)
+        j = download_json(url, use_cache=False)
         return j[0]
 
     @classmethod
@@ -31,7 +40,7 @@ class DragonItem:
 
     @classmethod
     def get_ddragon(cls, ddragon: int, p: dict):
-        print(ddragon)
+        #print(ddragon)
         baseurl = "http://ddragon.leagueoflegends.com/cdn/{}/img/item/".format(
             cls._get_latest_version()
         )  # icon base url

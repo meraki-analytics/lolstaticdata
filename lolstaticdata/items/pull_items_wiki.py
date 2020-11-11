@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import re
 from collections import OrderedDict
 
-from .modelitem import Stats, Prices, Shop, Item, Passive, Active, ItemAttributes
+from .NEWmodelitem import Stats, Prices, Shop, Item, Passive, Active, ItemAttributes, ItemRanks
 from common.utils import download_soup
 from common.modelcommon import (
     ArmorPenetration,
@@ -26,6 +26,8 @@ from common.modelcommon import (
     HealAndShieldPower,
     Lifesteal,
     MagicPenetration,
+    OmniVamp,
+    AbilityHaste
 )
 
 
@@ -49,9 +51,9 @@ class WikiItem:
 
         # Parse both passives and auras the same way
         def _parse(passive: str) -> Passive:
-            unique, passive_name, passive_effects, item_range = cls._parse_passive_info(passive)
+            unique, mythic, passive_name, passive_effects, item_range = cls._parse_passive_info(passive)
             stats = cls._parse_passive_descriptions(passive_effects)
-            effect = Passive(unique=unique, name=passive_name, effects=passive_effects, range=item_range, stats=stats,)
+            effect = Passive(unique=unique, name=passive_name, effects=passive_effects, range=item_range, stats=stats,mythic=mythic)
             return effect
 
         # Passives
@@ -80,7 +82,7 @@ class WikiItem:
         effects = []
         passive = item_data["act"].strip()
         if passive:
-            unique, passive_name, passive_effects, item_range = cls._parse_passive_info(passive)
+            unique, mythic, passive_name, passive_effects, item_range = cls._parse_passive_info(passive)
             if get_cooldown.search(passive_effects):
                 cooldown = get_cooldown.search(passive_effects).group(0).split(" ", 1)
                 cooldown = cls._parse_float(cooldown[0])
@@ -94,14 +96,22 @@ class WikiItem:
         return effects
 
     @classmethod
-    def _parse_passive_info(cls, passive: str) -> Tuple[bool, Optional[str], str, Optional[int]]:
+    def _parse_passive_info(cls, passive: str) -> Tuple[bool,bool, Optional[str], str, Optional[int]]:
         if passive.startswith("Unique"):
+            unique = True
+            mythic = False
+            passive = passive[len("Unique") :].strip()
+            if passive.startswith(":"):
+                passive = passive[1:].strip()
+        elif passive.startswith("Mythic"):
+            mythic = True
             unique = True
             passive = passive[len("Unique") :].strip()
             if passive.startswith(":"):
                 passive = passive[1:].strip()
         else:
             unique = False
+            mythic = False
         while "  " in passive:
             passive = passive.replace("  ", " ")
         if unique:
@@ -130,20 +140,27 @@ class WikiItem:
             item_range = cls._parse_int(item_range[0])
         else:
             item_range = None
-        return unique, name, passive, item_range
+        return unique, mythic, name, passive, item_range
 
     @classmethod
     def _parse_passive_descriptions(cls, passive: str) -> Stats:
         # Regex stuff
         cdr = re.compile(r"\d.* cooldown reduction")
         crit = re.compile(r"\d.* critical strike chance")
-        lethality = re.compile(r"\d.* lethality", re.IGNORECASE)
-        movespeed = re.compile(r"\d+.*? flat movement speed$", re.IGNORECASE)  # movespeed needs fixing
-        armorpen = re.compile(r"\d+.*? armor penetration\.\"")
-        magicpen = re.compile(r"\d+.*? magic penetration")
+        lethality = re.compile(r"(\d.*) (?:lethality|Lethality)", re.IGNORECASE)
+        movespeed = re.compile(r"(\d+)(?: bonus |% | |% bonus )movement speed", re.IGNORECASE)  # movespeed needs fixing
+        armorpen = re.compile(r"(\d+)% armor penetration")
+        magicpen = re.compile(r"(\d+).*? magic penetration")
         lifesteal = re.compile(r"\d+.*? life steal")
-        ability_power = re.compile(r"\+\d+% ability power")
+        omnivamp = re.compile(r"\d+.*? omni vamp")
+        #ability_power = re.compile(r"\+\d+% ability power")
+        ability_power = re.compile(r"(\d+)(?: |% |% bonus )ability power")
+        ability_haste = re.compile(r"(\d+) ability haste")
+        attack_speed = re.compile(r"(\d+)(?:% bonus) attack speed")
+        #onHit = re.compile(r"basic attack (?:.*?)(?: (?:as|in))?\d+ (?:bonus|seconds |deals).*? (\d+.*) (?:bonus|seconds|deals) (?:magic|physical)")
+        #test = re.compile(r"basic attack (?:.*?)(?: (?:as|in))?(\d+) (?:bonus|deals).*?")#taken from https://github.com/TheKevJames/league/blob/a62f5e3697392094aedd3d0bd1df37012824963b/league_utils/models/item/stats.py
 
+        print(passive)
         if cdr.search(passive):
             cooldown = cdr.search(passive).group(0).split("%")[0]
             cooldown = cls._parse_float(cooldown)
@@ -151,11 +168,15 @@ class WikiItem:
             cooldown = 0.0
 
         if movespeed.search(passive):
-            movespeed = movespeed.search(passive).group(0).split("flat")[0]
-            movespeed = cls._parse_float(movespeed)
+            mvspeed = movespeed.search(passive).group(0)
+
+            if "%" in mvspeed:
+
+                movespeed =Movespeed(percent=float(movespeed.search(passive).groups()[0]))
+            else:
+                movespeed =Movespeed(flat=float(movespeed.search(passive).groups()[0]))
         else:
             movespeed = 0.0
-
         if crit.search(passive):
             crit = crit.search(passive).group(0).split("%")[0]
             crit = cls._parse_float(crit)
@@ -163,27 +184,42 @@ class WikiItem:
             crit = 0.0
 
         if ability_power.search(passive):
-            ap = ability_power.search(passive).group(0).split("%")[0]
+            #ap = ability_power.search(passive).group(0).split("%")[0]
+            ap = ability_power.search(passive).groups()[0]
             ap = cls._parse_float(ap)
         else:
             ap = 0.0
+
+
+        if ability_haste.search(passive):
+            ah = ability_haste.search(passive).groups()[0]
+            ah = cls._parse_float(ah)
+        else:
+            ah = 0.0
+
+
         if lethality.search(passive):
-            lethal = lethality.search(passive).group(0).split(" ")[0]
+            lethal = lethality.search(passive).groups()[0]
             lethal = cls._parse_float(lethal)
         else:
             lethal = 0.0
+
+
         if armorpen.search(passive):
-            armorpen = armorpen.search(passive).group(0).split("%")[0]
+            armorpen = armorpen.search(passive).groups()[0]
             armorpen = cls._parse_float(armorpen)
         else:
             armorpen = 0.0
 
+        if attack_speed.search(passive):
+            attack_s = AttackSpeed(percent=float(attack_speed.search(passive).groups()[0]))
+
         if magicpen.search(passive):
-            magicpen = magicpen.search(passive).group(0)
-            if "%" in magicpen:
-                magicpen = MagicPenetration(percent=magicpen.split("%")[0])
+            magpen = magicpen.search(passive).group(0)
+            if "%" in magpen:
+                magicpen = MagicPenetration(percent=float(magicpen.search(passive).groups()[0]))
             else:
-                magicpen = MagicPenetration(flat=magicpen.split(" ")[0])
+                magicpen = MagicPenetration(flat=float(magicpen.search(passive).groups()[0]))
         else:
             magicpen = MagicPenetration(flat=0.0)
 
@@ -192,8 +228,14 @@ class WikiItem:
             lifesteal = cls._parse_float(lifesteal)
         else:
             lifesteal = 0.0
+
+        if omnivamp.search(passive):
+            omniv = omnivamp.search(passive).group(0).split("%")[0]
+            omniv = cls._parse_float(omniv)
+        else:
+            omniv = 0.0
         stats = Stats(
-            ability_power=AbilityPower(percent=ap),
+            ability_power=AbilityPower(flat=ap),
             armor=Armor(flat=cls._parse_float(0.0)),
             armor_penetration=ArmorPenetration(percent=armorpen),
             attack_damage=AttackDamage(flat=cls._parse_float(0.0)),
@@ -210,7 +252,9 @@ class WikiItem:
             magic_resistance=MagicResistance(flat=cls._parse_float(0.0)),
             mana=Mana(flat=cls._parse_float(0.0)),
             mana_regen=ManaRegen(flat=cls._parse_float(0.0)),
-            movespeed=Movespeed(flat=cls._parse_float(movespeed)),
+            movespeed=movespeed,
+            omni_vamp = OmniVamp(percent=omniv),
+            ability_haste=AbilityHaste(flat=ah)
         )
         return stats
 
@@ -324,7 +368,14 @@ class WikiItem:
                             secondary_tag = secondary_tag1.name + "," + secondary_tag2.name
                             tag = primary_tag.name + ":" + secondary_tag.upper()
                     else:
-                        secondary_tag = ItemAttributes.from_string(secondary_tag)
+                        if "Magic Pen" in secondary_tag :
+                            secondary_tag = ItemAttributes.from_string("MAGIC_PENETRATION")
+                        elif "Armor Pen" in secondary_tag :
+                            secondary_tag = ItemAttributes.from_string("ARMOR_PENETRATION")
+                        elif "Cooldown Reudction" in secondary_tag:
+                            secondary_tag = ItemAttributes.from_string("Cooldown Reduction")
+                        else:
+                            secondary_tag = ItemAttributes.from_string(secondary_tag)
                         try:
                             # there was an error with a couple primary tags not having the right tags so this fixes it
                             tag = primary_tag.name + ":" + secondary_tag.name
@@ -381,12 +432,36 @@ class WikiItem:
         except KeyError:
             tier = "tier 3"
         # Create the json files from the classes in modelitem.py
-
-        if item_data["removed"] == "true":
-            removed = True
+        # if item_data["code"]:
+        #     id = item_data["code"]
+        #
+        # else:
+        #     id = None
+        #     print("No ID")
+        # if item_data["1"]:
+        #     name = item_data["1"].strip()
+        # else:
+        #     name = None
+        if "removed" in item_data:
+            if item_data["removed"] == "true":
+                removed = True
+            else:
+                removed = False
         else:
             removed = False
-
+        if "rank" in item_data:
+            rank = []
+            if item_data["rank"]:
+                if "," in item_data["rank"]:
+                    ranks = item_data["rank"].split(",")
+                    for i in ranks:
+                        rank.append(ItemRanks.from_string(i.strip()))
+                else:
+                    rank.append(ItemRanks.from_string(item_data["rank"]))
+            else:
+                rank = None
+        else:
+            rank = []
         if not_unique.match(item_data["noe"]):
             no_effects = True
         else:
@@ -465,7 +540,10 @@ class WikiItem:
                 movespeed=Movespeed(
                     flat=cls._parse_float(item_data["msflat"]),
                     percent=cls._parse_float(item_data["ms"]) + cls._parse_float(item_data["msunique"]),
+
                 ),
+                omni_vamp=OmniVamp(percent=cls._parse_float(item_data["omnivamp"]),),
+                ability_haste=AbilityHaste(flat=cls._parse_float(item_data["ah"]))
             ),
             shop=Shop(
                 prices=Prices(
@@ -476,23 +554,34 @@ class WikiItem:
                 tags=cls.get_item_attributes(item_data),
                 purchasable="",
             ),
+            rank=rank
         )
         return item
 
 
+
 def get_item_urls(use_cache: bool) -> List[str]:
     all_urls = []
-    url = "https://leagueoflegends.fandom.com/wiki/Category:Item_data_templates?from=A"
+    url = "https://leagueoflegends.fandom.com/wiki/Category:Item_data_templates"
     while True:
         html = download_soup(url, use_cache)
         soup = BeautifulSoup(html, "lxml")
         urls = soup.find_all("a", {"class": "category-page__member-link"})
-        all_urls.extend(urls)
+        for ur in urls:
+            print(ur.attrs["href"])
+            if ur in all_urls:
+                continue
+            else:
+                if "Wild_Rift" in ur.attrs["href"] or "Itemtip" in ur.attrs["href"]:
+                    continue
+                else:
+                    all_urls.append(ur.attrs["href"])
         next_button = soup.find("a", {"class": "category-page__pagination-next wds-button wds-is-secondary"})
         if not next_button:
             break
         url = next_button["href"]
 
     base_url = "https://leagueoflegends.fandom.com"
-    all_urls = [base_url + url["href"] for url in all_urls]
+    all_urls = [base_url + url for url in all_urls]
     return all_urls
+
