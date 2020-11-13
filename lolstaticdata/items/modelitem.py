@@ -26,11 +26,8 @@ from common.modelcommon import (
     HealAndShieldPower,
     Lifesteal,
     MagicPenetration,
-
-
-
     AbilityHaste,
-    OmniVamp
+    OmniVamp,
 )
 
 
@@ -66,7 +63,7 @@ class ItemAttributes(OrderedEnum):
     ABILITY_HASTE = "ABILITY_HASTE"
     OMNIVAMP = "OMNIVAMP"
     PHYSICAL_VAMP = "PHYSICAL_VAMP"
-    #PHYSICAL_VAMP = "PHYSICAL_VAMP"
+    # PHYSICAL_VAMP = "PHYSICAL_VAMP"
     LETHALITY = "LETHALITY"
 
 
@@ -81,6 +78,7 @@ class ItemRanks(OrderedEnum):
     BOOTS = "BOOTS"
     TRINKET = "TRINKET"
     DISTRIBUTED = "DISTRIBUTED"
+
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
@@ -105,6 +103,7 @@ class Stats(object):
     movespeed: Movespeed
     ability_haste: AbilityHaste
     omni_vamp: OmniVamp
+
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass

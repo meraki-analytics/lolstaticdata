@@ -3,7 +3,16 @@ from bs4 import BeautifulSoup
 import re
 from collections import OrderedDict
 
-from .NEWmodelitem import Stats, Prices, Shop, Item, Passive, Active, ItemAttributes, ItemRanks
+from .NEWmodelitem import (
+    Stats,
+    Prices,
+    Shop,
+    Item,
+    Passive,
+    Active,
+    ItemAttributes,
+    ItemRanks,
+)
 from common.utils import download_soup
 from common.modelcommon import (
     ArmorPenetration,
@@ -27,7 +36,7 @@ from common.modelcommon import (
     Lifesteal,
     MagicPenetration,
     OmniVamp,
-    AbilityHaste
+    AbilityHaste,
 )
 
 
@@ -40,20 +49,37 @@ class WikiItem:
             cooldown = cls._parse_float(item_data["cdrunique"])
             description = "{}% cooldown reduction".format(cooldown)
             stats = cls._parse_passive_descriptions(description)
-            effect = Passive(unique=True, name=None, effects=description, range=None, stats=stats)
+            effect = Passive(
+                unique=True, name=None, effects=description, range=None, stats=stats
+            )
             effects.append(effect)
         if not_unique.search(item_data["critunique"]):
             crit = cls._parse_float(item_data["critunique"])
             description = "{}% critical strike chance".format(crit)
             stats = cls._parse_passive_descriptions(description)
-            effect = Passive(unique=True, name=None, effects=description, range=None, stats=stats)
+            effect = Passive(
+                unique=True, name=None, effects=description, range=None, stats=stats
+            )
             effects.append(effect)
 
         # Parse both passives and auras the same way
         def _parse(passive: str) -> Passive:
-            unique, mythic, passive_name, passive_effects, item_range = cls._parse_passive_info(passive)
+            (
+                unique,
+                mythic,
+                passive_name,
+                passive_effects,
+                item_range,
+            ) = cls._parse_passive_info(passive)
             stats = cls._parse_passive_descriptions(passive_effects)
-            effect = Passive(unique=unique, name=passive_name, effects=passive_effects, range=item_range, stats=stats,mythic=mythic)
+            effect = Passive(
+                unique=unique,
+                name=passive_name,
+                effects=passive_effects,
+                range=item_range,
+                stats=stats,
+                mythic=mythic,
+            )
             return effect
 
         # Passives
@@ -82,21 +108,33 @@ class WikiItem:
         effects = []
         passive = item_data["act"].strip()
         if passive:
-            unique, mythic, passive_name, passive_effects, item_range = cls._parse_passive_info(passive)
+            (
+                unique,
+                mythic,
+                passive_name,
+                passive_effects,
+                item_range,
+            ) = cls._parse_passive_info(passive)
             if get_cooldown.search(passive_effects):
                 cooldown = get_cooldown.search(passive_effects).group(0).split(" ", 1)
                 cooldown = cls._parse_float(cooldown[0])
             else:
                 cooldown = None
             effect = Active(
-                unique=unique, name=passive_name, effects=passive_effects, cooldown=cooldown, range=item_range,
+                unique=unique,
+                name=passive_name,
+                effects=passive_effects,
+                cooldown=cooldown,
+                range=item_range,
             )  # This is hacky...
 
             effects.append(effect)
         return effects
 
     @classmethod
-    def _parse_passive_info(cls, passive: str) -> Tuple[bool,bool, Optional[str], str, Optional[int]]:
+    def _parse_passive_info(
+        cls, passive: str
+    ) -> Tuple[bool, bool, Optional[str], str, Optional[int]]:
         if passive.startswith("Unique"):
             unique = True
             mythic = False
@@ -148,17 +186,19 @@ class WikiItem:
         cdr = re.compile(r"\d.* cooldown reduction")
         crit = re.compile(r"\d.* critical strike chance")
         lethality = re.compile(r"(\d.*) (?:lethality|Lethality)", re.IGNORECASE)
-        movespeed = re.compile(r"(\d+)(?: bonus |% | |% bonus )movement speed", re.IGNORECASE)  # movespeed needs fixing
+        movespeed = re.compile(
+            r"(\d+)(?: bonus |% | |% bonus )movement speed", re.IGNORECASE
+        )  # movespeed needs fixing
         armorpen = re.compile(r"(\d+)% armor penetration")
         magicpen = re.compile(r"(\d+).*? magic penetration")
         lifesteal = re.compile(r"\d+.*? life steal")
         omnivamp = re.compile(r"\d+.*? omni vamp")
-        #ability_power = re.compile(r"\+\d+% ability power")
+        # ability_power = re.compile(r"\+\d+% ability power")
         ability_power = re.compile(r"(\d+)(?: |% |% bonus )ability power")
         ability_haste = re.compile(r"(\d+) ability haste")
         attack_speed = re.compile(r"(\d+)(?:% bonus) attack speed")
-        #onHit = re.compile(r"basic attack (?:.*?)(?: (?:as|in))?\d+ (?:bonus|seconds |deals).*? (\d+.*) (?:bonus|seconds|deals) (?:magic|physical)")
-        #test = re.compile(r"basic attack (?:.*?)(?: (?:as|in))?(\d+) (?:bonus|deals).*?")#taken from https://github.com/TheKevJames/league/blob/a62f5e3697392094aedd3d0bd1df37012824963b/league_utils/models/item/stats.py
+        # onHit = re.compile(r"basic attack (?:.*?)(?: (?:as|in))?\d+ (?:bonus|seconds |deals).*? (\d+.*) (?:bonus|seconds|deals) (?:magic|physical)")
+        # test = re.compile(r"basic attack (?:.*?)(?: (?:as|in))?(\d+) (?:bonus|deals).*?")#taken from https://github.com/TheKevJames/league/blob/a62f5e3697392094aedd3d0bd1df37012824963b/league_utils/models/item/stats.py
 
         print(passive)
         if cdr.search(passive):
@@ -172,9 +212,11 @@ class WikiItem:
 
             if "%" in mvspeed:
 
-                movespeed =Movespeed(percent=float(movespeed.search(passive).groups()[0]))
+                movespeed = Movespeed(
+                    percent=float(movespeed.search(passive).groups()[0])
+                )
             else:
-                movespeed =Movespeed(flat=float(movespeed.search(passive).groups()[0]))
+                movespeed = Movespeed(flat=float(movespeed.search(passive).groups()[0]))
         else:
             movespeed = 0.0
         if crit.search(passive):
@@ -184,12 +226,11 @@ class WikiItem:
             crit = 0.0
 
         if ability_power.search(passive):
-            #ap = ability_power.search(passive).group(0).split("%")[0]
+            # ap = ability_power.search(passive).group(0).split("%")[0]
             ap = ability_power.search(passive).groups()[0]
             ap = cls._parse_float(ap)
         else:
             ap = 0.0
-
 
         if ability_haste.search(passive):
             ah = ability_haste.search(passive).groups()[0]
@@ -197,13 +238,11 @@ class WikiItem:
         else:
             ah = 0.0
 
-
         if lethality.search(passive):
             lethal = lethality.search(passive).groups()[0]
             lethal = cls._parse_float(lethal)
         else:
             lethal = 0.0
-
 
         if armorpen.search(passive):
             armorpen = armorpen.search(passive).groups()[0]
@@ -212,14 +251,20 @@ class WikiItem:
             armorpen = 0.0
 
         if attack_speed.search(passive):
-            attack_s = AttackSpeed(percent=float(attack_speed.search(passive).groups()[0]))
+            attack_s = AttackSpeed(
+                percent=float(attack_speed.search(passive).groups()[0])
+            )
 
         if magicpen.search(passive):
             magpen = magicpen.search(passive).group(0)
             if "%" in magpen:
-                magicpen = MagicPenetration(percent=float(magicpen.search(passive).groups()[0]))
+                magicpen = MagicPenetration(
+                    percent=float(magicpen.search(passive).groups()[0])
+                )
             else:
-                magicpen = MagicPenetration(flat=float(magicpen.search(passive).groups()[0]))
+                magicpen = MagicPenetration(
+                    flat=float(magicpen.search(passive).groups()[0])
+                )
         else:
             magicpen = MagicPenetration(flat=0.0)
 
@@ -253,8 +298,8 @@ class WikiItem:
             mana=Mana(flat=cls._parse_float(0.0)),
             mana_regen=ManaRegen(flat=cls._parse_float(0.0)),
             movespeed=movespeed,
-            omni_vamp = OmniVamp(percent=omniv),
-            ability_haste=AbilityHaste(flat=ah)
+            omni_vamp=OmniVamp(percent=omniv),
+            ability_haste=AbilityHaste(flat=ah),
         )
         return stats
 
@@ -310,7 +355,11 @@ class WikiItem:
                     primary_tag = ItemAttributes.from_string(primary_tag)
 
                 if item_data[menub]:
-                    if item_data[menub] in ("Health Regeneration", "Health Regen", "Health Renegeration",):
+                    if item_data[menub] in (
+                        "Health Regeneration",
+                        "Health Regen",
+                        "Health Renegeration",
+                    ):
                         secondary_tag = "Health Regen"
 
                     elif item_data[menub] in ("Magic Resist", "Magic Resistance"):
@@ -363,17 +412,29 @@ class WikiItem:
                             tag = primary_tag.name + ":" + secondary_tag.upper()
                         else:
                             secondary_tag = secondary_tag.split(";")
-                            secondary_tag1 = ItemAttributes.from_string(secondary_tag[0])
-                            secondary_tag2 = ItemAttributes.from_string(secondary_tag[1])
-                            secondary_tag = secondary_tag1.name + "," + secondary_tag2.name
+                            secondary_tag1 = ItemAttributes.from_string(
+                                secondary_tag[0]
+                            )
+                            secondary_tag2 = ItemAttributes.from_string(
+                                secondary_tag[1]
+                            )
+                            secondary_tag = (
+                                secondary_tag1.name + "," + secondary_tag2.name
+                            )
                             tag = primary_tag.name + ":" + secondary_tag.upper()
                     else:
-                        if "Magic Pen" in secondary_tag :
-                            secondary_tag = ItemAttributes.from_string("MAGIC_PENETRATION")
-                        elif "Armor Pen" in secondary_tag :
-                            secondary_tag = ItemAttributes.from_string("ARMOR_PENETRATION")
+                        if "Magic Pen" in secondary_tag:
+                            secondary_tag = ItemAttributes.from_string(
+                                "MAGIC_PENETRATION"
+                            )
+                        elif "Armor Pen" in secondary_tag:
+                            secondary_tag = ItemAttributes.from_string(
+                                "ARMOR_PENETRATION"
+                            )
                         elif "Cooldown Reudction" in secondary_tag:
-                            secondary_tag = ItemAttributes.from_string("Cooldown Reduction")
+                            secondary_tag = ItemAttributes.from_string(
+                                "Cooldown Reduction"
+                            )
                         elif "Omni Vamp" in secondary_tag:
                             secondary_tag = ItemAttributes.from_string("Omnivamp")
                         else:
@@ -520,32 +581,48 @@ class WikiItem:
             stats=Stats(
                 ability_power=AbilityPower(flat=cls._parse_float(item_data["ap"])),
                 armor=Armor(flat=cls._parse_float(item_data["armor"])),
-                armor_penetration=ArmorPenetration(flat=cls._parse_float(item_data["rpen"])),
+                armor_penetration=ArmorPenetration(
+                    flat=cls._parse_float(item_data["rpen"])
+                ),
                 attack_damage=AttackDamage(flat=cls._parse_float(item_data["ad"])),
                 attack_speed=AttackSpeed(flat=cls._parse_float(item_data["as"])),
-                cooldown_reduction=CooldownReduction(percent=cls._parse_float(item_data["cdr"])),
-                critical_strike_chance=CriticalStrikeChance(percent=cls._parse_float(item_data["crit"])),
+                cooldown_reduction=CooldownReduction(
+                    percent=cls._parse_float(item_data["cdr"])
+                ),
+                critical_strike_chance=CriticalStrikeChance(
+                    percent=cls._parse_float(item_data["crit"])
+                ),
                 gold_per_10=GoldPer10(flat=cls._parse_float(item_data["gp10"])),
-                heal_and_shield_power=HealAndShieldPower(flat=cls._parse_float(item_data["hsp"])),
+                heal_and_shield_power=HealAndShieldPower(
+                    flat=cls._parse_float(item_data["hsp"])
+                ),
                 health=Health(flat=cls._parse_float(item_data["health"])),
                 health_regen=HealthRegen(
-                    flat=cls._parse_float(item_data["hp5flat"]), percent=cls._parse_float(item_data["hp5"]),
+                    flat=cls._parse_float(item_data["hp5flat"]),
+                    percent=cls._parse_float(item_data["hp5"]),
                 ),
                 lethality=Lethality(flat=0.0),
                 lifesteal=Lifesteal(percent=cls._parse_float(item_data["lifesteal"])),
-                magic_penetration=MagicPenetration(flat=cls._parse_float(item_data["mpen"])),
-                magic_resistance=MagicResistance(flat=cls._parse_float(item_data["mr"])),
+                magic_penetration=MagicPenetration(
+                    flat=cls._parse_float(item_data["mpen"])
+                ),
+                magic_resistance=MagicResistance(
+                    flat=cls._parse_float(item_data["mr"])
+                ),
                 mana=Mana(flat=cls._parse_float(item_data["mana"])),
                 mana_regen=ManaRegen(
-                    flat=cls._parse_float(item_data["mp5flat"]), percent=cls._parse_float(item_data["mp5"]),
+                    flat=cls._parse_float(item_data["mp5flat"]),
+                    percent=cls._parse_float(item_data["mp5"]),
                 ),
                 movespeed=Movespeed(
                     flat=cls._parse_float(item_data["msflat"]),
-                    percent=cls._parse_float(item_data["ms"]) + cls._parse_float(item_data["msunique"]),
-
+                    percent=cls._parse_float(item_data["ms"])
+                    + cls._parse_float(item_data["msunique"]),
                 ),
-                omni_vamp=OmniVamp(percent=cls._parse_float(item_data["omnivamp"]),),
-                ability_haste=AbilityHaste(flat=cls._parse_float(item_data["ah"]))
+                omni_vamp=OmniVamp(
+                    percent=cls._parse_float(item_data["omnivamp"]),
+                ),
+                ability_haste=AbilityHaste(flat=cls._parse_float(item_data["ah"])),
             ),
             shop=Shop(
                 prices=Prices(
@@ -556,10 +633,9 @@ class WikiItem:
                 tags=cls.get_item_attributes(item_data),
                 purchasable="",
             ),
-            rank=rank
+            rank=rank,
         )
         return item
-
 
 
 def get_item_urls(use_cache: bool) -> List[str]:
@@ -578,7 +654,9 @@ def get_item_urls(use_cache: bool) -> List[str]:
                     continue
                 else:
                     all_urls.append(ur.attrs["href"])
-        next_button = soup.find("a", {"class": "category-page__pagination-next wds-button wds-is-secondary"})
+        next_button = soup.find(
+            "a", {"class": "category-page__pagination-next wds-button wds-is-secondary"}
+        )
         if not next_button:
             break
         url = next_button["href"]
@@ -586,4 +664,3 @@ def get_item_urls(use_cache: bool) -> List[str]:
     base_url = "https://leagueoflegends.fandom.com"
     all_urls = [base_url + url for url in all_urls]
     return all_urls
-
