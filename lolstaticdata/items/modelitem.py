@@ -102,7 +102,7 @@ class Stats(object):
     mana_regen: ManaRegen
     movespeed: Movespeed
     ability_haste: AbilityHaste
-    omni_vamp: OmniVamp
+    omnivamp: OmniVamp
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)

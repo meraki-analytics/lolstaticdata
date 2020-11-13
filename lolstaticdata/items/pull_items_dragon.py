@@ -18,10 +18,7 @@ class DragonItem:
         if "/assets/ASSETS" in path:
             path = path.split("ASSETS")[1]
             path = path.lower()
-            path = (
-                "https://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/assets"
-                + path
-            )
+            path = "https://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/assets" + path
 
     @classmethod
     def _get_latest_version(cls):
@@ -34,9 +31,7 @@ class DragonItem:
         cls,
     ):  # Main Function, gets items from ddragon, compares them with cdragon and then gets the items from the wiki
         # I didn't want make a request to cdragon for every item
-        url = "http://ddragon.leagueoflegends.com/cdn/{}/data/en_US/item.json".format(
-            cls._get_latest_version()
-        )
+        url = "http://ddragon.leagueoflegends.com/cdn/{}/data/en_US/item.json".format(cls._get_latest_version())
         p = download_json(url, use_cache=True)
         return p["data"]
 
@@ -48,9 +43,7 @@ class DragonItem:
         )  # icon base url
         icon = baseurl + p[ddragon]["image"]["full"]
         plaintext = p[ddragon]["plaintext"]  # simple description
-        purchasable = p[ddragon]["gold"][
-            "purchasable"
-        ]  # is this purchasable or is it upgraded (seraph's embrace)
+        purchasable = p[ddragon]["gold"]["purchasable"]  # is this purchasable or is it upgraded (seraph's embrace)
         name = p[ddragon]["name"]
         if str(ddragon) in "2423":  # stopwatch needs to be fixed for the wiki
             name = "Stopwatch"

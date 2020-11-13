@@ -11,39 +11,24 @@ def _name_to_wiki(name: str):  # Change item name for wiki url
     if "Enchantment:" in name:
         name = name.split("Enchantment:")[1]
     wikiUrl = url + name.strip()
-    if (
-        wikiUrl
-        == "https://leagueoflegends.fandom.com/wiki/Template:Item_data_Blade_of_The_Ruined_King"
-    ):
+    if wikiUrl == "https://leagueoflegends.fandom.com/wiki/Template:Item_data_Blade_of_The_Ruined_King":
         wikiUrl = "https://leagueoflegends.fandom.com/wiki/Template:Item_data_Blade_of_the_Ruined_King"
 
-    if (
-        wikiUrl
-        == "https://leagueoflegends.fandom.com/wiki/Template:Item_data_Slightly_Magical_Footware"
-    ):
+    if wikiUrl == "https://leagueoflegends.fandom.com/wiki/Template:Item_data_Slightly_Magical_Footware":
         wikiUrl = "https://leagueoflegends.fandom.com/wiki/Template:Item_data_Slightly_Magical_Boots"
 
-    if (
-        wikiUrl
-        == "https://leagueoflegends.fandom.com/wiki/Template:Item_data_Kalista's_Black_Spear"
-    ):
-        wikiUrl = (
-            "https://leagueoflegends.fandom.com/wiki/Template:Item_data_Black_Spear"
-        )
+    if wikiUrl == "https://leagueoflegends.fandom.com/wiki/Template:Item_data_Kalista's_Black_Spear":
+        wikiUrl = "https://leagueoflegends.fandom.com/wiki/Template:Item_data_Black_Spear"
 
     if wikiUrl == "https://leagueoflegends.fandom.com/wiki/Template:Item_data_Your_Cut":
-        wikiUrl = (
-            "https://leagueoflegends.fandom.com/wiki/Template:Item_data_%27Your_Cut%27"
-        )
+        wikiUrl = "https://leagueoflegends.fandom.com/wiki/Template:Item_data_%27Your_Cut%27"
     print(wikiUrl)
     wiki_item = WikiItem.get(wikiUrl)
     return wiki_item
 
 
 def main():
-    directory = os.path.abspath(
-        os.path.join(os.path.dirname(os.path.realpath(__file__)), "../..")
-    )
+    directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), "../.."))
     use_cache = False
     if not os.path.exists(os.path.join(directory, "items")):
         os.mkdir(os.path.join(directory, "items"))
