@@ -26,6 +26,11 @@ from common.modelcommon import (
     HealAndShieldPower,
     Lifesteal,
     MagicPenetration,
+
+
+
+    AbilityHaste,
+    OmniVamp
 )
 
 
@@ -58,7 +63,24 @@ class ItemAttributes(OrderedEnum):
     ABILITY_POWER = "ABILITY_POWER"
     BOOTS = "BOOTS"
     OTHER_MOVEMENT_ITEMS = "OTHER_MOVEMENT_ITEMS"
+    ABILITY_HASTE = "ABILITY_HASTE"
+    OMNIVAMP = "OMNIVAMP"
+    PHYSICAL_VAMP = "PHYSICAL_VAMP"
+    #PHYSICAL_VAMP = "PHYSICAL_VAMP"
+    LETHALITY = "LETHALITY"
 
+
+class ItemRanks(OrderedEnum):
+    MYTHIC = "MYTHIC"
+    LEGENDARY = "LEGENDARY"
+    EPIC = "EPIC"
+    BASIC = "BASIC"
+    STARTER = "STARTER"
+    CONSUMABLE = "CONSUMABLE"
+    POTION = "POTION"
+    BOOTS = "BOOTS"
+    TRINKET = "TRINKET"
+    DISTRIBUTED = "DISTRIBUTED"
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
@@ -81,7 +103,8 @@ class Stats(object):
     mana: Mana
     mana_regen: ManaRegen
     movespeed: Movespeed
-
+    ability_haste: AbilityHaste
+    omni_vamp: OmniVamp
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
@@ -103,6 +126,7 @@ class Shop(object):
 @dataclass
 class Passive(object):
     unique: bool
+    mythic: bool
     name: str
     effects: str
     range: int
@@ -125,6 +149,7 @@ class Item(object):
     name: str
     id: int
     tier: int
+    rank: List[str]
     builds_from: List[int]
     builds_into: List[int]
     no_effects: bool

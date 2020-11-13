@@ -374,6 +374,8 @@ class WikiItem:
                             secondary_tag = ItemAttributes.from_string("ARMOR_PENETRATION")
                         elif "Cooldown Reudction" in secondary_tag:
                             secondary_tag = ItemAttributes.from_string("Cooldown Reduction")
+                        elif "Omni Vamp" in secondary_tag:
+                            secondary_tag = ItemAttributes.from_string("Omnivamp")
                         else:
                             secondary_tag = ItemAttributes.from_string(secondary_tag)
                         try:
