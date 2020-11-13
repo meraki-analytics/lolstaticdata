@@ -16,6 +16,14 @@ Data other than that for champions and items should be covered by the data that 
 
 Note that it is impossible to represent the enormous complexity of League of Legends data in a simple JSON format, so special cases exist that need to be handled on a case-by-case basis. This is left up to you, as the developer, to create the complex interactions that are needed by your app.
 
+## Running the Code
+
+```
+git clone https://github.com/meraki-analytics/lolstaticdata.git
+cd lolstaticdata
+python -m lolstaticdata.champions  # to run the champion-pulling code
+```
+
 ## Contributing
 
 The best way to contribute is to fork this repository and create a Pull Request (PR). When you create a PR, it is _crucial_ that you are extremely careful that only champions/items that you intend to affect are affected. Because the parsing of this data is so nuanced, it is easy to write code that affects more than you originally intended. So be careful, and let us know in the PR exactly what is and what is not affected by your changes. This will make the PR review go much faster.

@@ -153,7 +153,7 @@ class LolWikiDataHandler:
         data = lua.decode(spans)
 
         # Return the champData as a list of Champions
-        self.skinData = self._get_skins()
+        self.skin_data = self._get_skins()
 
         for name, d in data.items():
             if name in ["Kled & Skaarl", "GnarBig", "Mega Gnar"]:
@@ -198,60 +198,25 @@ class LolWikiDataHandler:
             attack_type=AttackType.from_string(data["rangetype"]),
             adaptive_type=DamageType.from_string(adaptive_type),
             stats=Stats(
-                health=Health(
-                    flat=data["stats"]["hp_base"],
-                    per_level=data["stats"]["hp_lvl"],
-                ),
-                health_regen=HealthRegen(
-                    flat=data["stats"]["hp5_base"],
-                    per_level=data["stats"]["hp5_lvl"],
-                ),
-                mana=Mana(
-                    flat=data["stats"]["mp_base"],
-                    per_level=data["stats"]["mp_lvl"],
-                ),
-                mana_regen=ManaRegen(
-                    flat=data["stats"]["mp5_base"],
-                    per_level=data["stats"]["mp5_lvl"],
-                ),
-                armor=Armor(
-                    flat=data["stats"]["arm_base"],
-                    per_level=data["stats"]["arm_lvl"],
-                ),
-                magic_resistance=MagicResistance(
-                    flat=data["stats"]["mr_base"],
-                    per_level=data["stats"]["mr_lvl"],
-                ),
-                attack_damage=AttackDamage(
-                    flat=data["stats"]["dam_base"],
-                    per_level=data["stats"]["dam_lvl"],
-                ),
-                attack_speed=AttackSpeed(
-                    flat=data["stats"]["as_base"],
-                    per_level=data["stats"]["as_lvl"],
-                ),
+                health=Health(flat=data["stats"]["hp_base"], per_level=data["stats"]["hp_lvl"],),
+                health_regen=HealthRegen(flat=data["stats"]["hp5_base"], per_level=data["stats"]["hp5_lvl"],),
+                mana=Mana(flat=data["stats"]["mp_base"], per_level=data["stats"]["mp_lvl"],),
+                mana_regen=ManaRegen(flat=data["stats"]["mp5_base"], per_level=data["stats"]["mp5_lvl"],),
+                armor=Armor(flat=data["stats"]["arm_base"], per_level=data["stats"]["arm_lvl"],),
+                magic_resistance=MagicResistance(flat=data["stats"]["mr_base"], per_level=data["stats"]["mr_lvl"],),
+                attack_damage=AttackDamage(flat=data["stats"]["dam_base"], per_level=data["stats"]["dam_lvl"],),
+                attack_speed=AttackSpeed(flat=data["stats"]["as_base"], per_level=data["stats"]["as_lvl"],),
                 attack_speed_ratio=Stat(flat=data["stats"]["as_ratio"]),
                 attack_cast_time=Stat(
                     flat=data["stats"].get("attack_cast_time", 0.3)
                 ),  # I don't know if this default is correct, but going off the values the wiki provides, it seems reasonable.
-                attack_total_time=Stat(
-                    flat=data["stats"].get("attack_total_time", 1.6)
-                ),  # ibid
-                attack_delay_offset=Stat(
-                    flat=data["stats"].get("attack_delay_offset", 0)
-                ),
-                attack_range=AttackRange(
-                    flat=data["stats"]["range"],
-                    per_level=data["stats"].get("range_lvl", 0),
-                ),
+                attack_total_time=Stat(flat=data["stats"].get("attack_total_time", 1.6)),  # ibid
+                attack_delay_offset=Stat(flat=data["stats"].get("attack_delay_offset", 0)),
+                attack_range=AttackRange(flat=data["stats"]["range"], per_level=data["stats"].get("range_lvl", 0),),
                 critical_strike_damage=Stat(flat=data["stats"].get("crit_base", 200)),
-                critical_strike_damage_modifier=Stat(
-                    flat=data["stats"].get("crit_base", 1.0)
-                ),
+                critical_strike_damage_modifier=Stat(flat=data["stats"].get("crit_base", 1.0)),
                 movespeed=Movespeed(flat=data["stats"]["ms"]),
-                acquisition_radius=Stat(
-                    flat=data["stats"].get("acquisition_radius", 800)
-                ),
+                acquisition_radius=Stat(flat=data["stats"].get("acquisition_radius", 800)),
                 selection_radius=Stat(flat=data["stats"].get("selection_radius", 100)),
                 pathing_radius=Stat(flat=data["stats"].get("pathing_radius", 35)),
                 gameplay_radius=Stat(flat=data["stats"].get("gameplay_radius", 65)),
@@ -269,10 +234,7 @@ class LolWikiDataHandler:
                     *(Role.from_string(r) for r in data["role"]),
                     *(
                         Role.from_string(role)
-                        for role in (
-                            data.get("herotype"),
-                            data.get("alttype"),
-                        )
+                        for role in (data.get("herotype"), data.get("alttype"),)
                         if role is not None
                     ),
                 }
@@ -294,70 +256,55 @@ class LolWikiDataHandler:
                     self._render_abilities(
                         champion_name=name,
                         abilities=[
-                            self._pull_champion_ability(
-                                champion_name=name, ability_name=ability_name
-                            )
+                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                             for ability_name in data["skill_i"].values()
                             if not (
                                 name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name
-                                in LolWikiDataHandler.MISSING_SKILLS[name]
+                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                             )
                         ],
                     ),
                     self._render_abilities(
                         champion_name=name,
                         abilities=[
-                            self._pull_champion_ability(
-                                champion_name=name, ability_name=ability_name
-                            )
+                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                             for ability_name in data["skill_q"].values()
                             if not (
                                 name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name
-                                in LolWikiDataHandler.MISSING_SKILLS[name]
+                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                             )
                         ],
                     ),
                     self._render_abilities(
                         champion_name=name,
                         abilities=[
-                            self._pull_champion_ability(
-                                champion_name=name, ability_name=ability_name
-                            )
+                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                             for ability_name in data["skill_w"].values()
                             if not (
                                 name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name
-                                in LolWikiDataHandler.MISSING_SKILLS[name]
+                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                             )
                         ],
                     ),
                     self._render_abilities(
                         champion_name=name,
                         abilities=[
-                            self._pull_champion_ability(
-                                champion_name=name, ability_name=ability_name
-                            )
+                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                             for ability_name in data["skill_e"].values()
                             if not (
                                 name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name
-                                in LolWikiDataHandler.MISSING_SKILLS[name]
+                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                             )
                         ],
                     ),
                     self._render_abilities(
                         champion_name=name,
                         abilities=[
-                            self._pull_champion_ability(
-                                champion_name=name, ability_name=ability_name
-                            )
+                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                             for ability_name in data["skill_r"].values()
                             if not (
                                 name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name
-                                in LolWikiDataHandler.MISSING_SKILLS[name]
+                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                             )
                         ],
                     ),
@@ -385,9 +332,7 @@ class LolWikiDataHandler:
         soup = BeautifulSoup(html, "lxml")
         return HTMLAbilityWrapper(soup)
 
-    def _render_abilities(
-        self, champion_name, abilities: List[HTMLAbilityWrapper]
-    ) -> Tuple[str, List[Ability]]:
+    def _render_abilities(self, champion_name, abilities: List[HTMLAbilityWrapper]) -> Tuple[str, List[Ability]]:
         inputs, abilities = abilities, []  # rename variables
         skill_key = inputs[0]["skill"]
         for data in inputs:
@@ -501,9 +446,7 @@ class LolWikiDataHandler:
 
             recharge_rate = data.get("recharge")
             if recharge_rate:
-                _, recharge_rate = ParsingAndRegex.regex_simple_flat(
-                    recharge_rate, nvalues
-                )  # ignore units
+                _, recharge_rate = ParsingAndRegex.regex_simple_flat(recharge_rate, nvalues)  # ignore units
 
             effects = []
             for ending in ["", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]:
@@ -519,14 +462,8 @@ class LolWikiDataHandler:
                 name=data["name"],
                 icon=data.get(f"icon{ending}"),
                 effects=effects,
-                cost=self._render_ability_cost(ability_cost, nvalues)
-                if ability_cost
-                else None,
-                cooldown=self._render_ability_cooldown(
-                    cooldown, "static" in data.data, nvalues
-                )
-                if cooldown
-                else None,
+                cost=self._render_ability_cost(ability_cost, nvalues) if ability_cost else None,
+                cooldown=self._render_ability_cooldown(cooldown, "static" in data.data, nvalues) if cooldown else None,
                 targeting=data.get("targeting"),
                 affects=data.get("affects"),
                 spellshieldable=data.get("spellshield"),
@@ -537,9 +474,7 @@ class LolWikiDataHandler:
                 on_hit_effects=data.get("onhiteffects"),
                 occurrence=data.get("occurrence"),
                 blurb=data.get("blurb"),
-                notes=data.get("notes")
-                if data.get("notes") != "* No additional notes."
-                else None,
+                notes=data.get("notes") if data.get("notes") != "* No additional notes." else None,
                 missile_speed=data.get("missile_speed"),
                 recharge_rate=recharge_rate,
                 collision_radius=data.get("collision radius"),
@@ -610,10 +545,7 @@ class LolWikiDataHandler:
 
     def _render_leveling(self, attribute: str, data: str, nvalues: int) -> Leveling:
         modifiers = self._render_modifiers(data, nvalues)
-        leveling = Leveling(
-            attribute=attribute,
-            modifiers=modifiers,
-        )
+        leveling = Leveling(attribute=attribute, modifiers=modifiers,)
         return leveling
 
     def _render_modifiers(self, mods: str, nvalues: int) -> List[Modifier]:
@@ -632,25 +564,16 @@ class LolWikiDataHandler:
                 value = 0
                 if lvling.lower() == "Siphoning Strike Stacks".lower():  # Nasus
                     value = 1
-                if (
-                    lvling.lower()
-                    == "increased by 3% per 1% of health lost in the past 4 seconds".lower()
-                ):  # Ekko
+                if lvling.lower() == "increased by 3% per 1% of health lost in the past 4 seconds".lower():  # Ekko
                     value = 3
                     lvling = "% per 1% of health lost in the past 4 seconds"
-                modifier = Modifier(
-                    values=[value for _ in range(nvalues)],
-                    units=[lvling for _ in range(nvalues)],
-                )
+                modifier = Modifier(values=[value for _ in range(nvalues)], units=[lvling for _ in range(nvalues)],)
                 modifiers.append(modifier)
         return modifiers
 
     def _render_modifier(self, mod: str, nvalues: int) -> Modifier:
         units, values = ParsingAndRegex.get_modifier(mod, nvalues)
-        modifier = Modifier(
-            values=values,
-            units=units,
-        )
+        modifier = Modifier(values=values, units=units,)
         return modifier
 
     def _render_ability_cost(self, mods: str, nvalues: int) -> Cost:
@@ -658,14 +581,9 @@ class LolWikiDataHandler:
         cost = Cost(modifiers=modifiers)
         return cost
 
-    def _render_ability_cooldown(
-        self, mods: str, static_cooldown: bool, nvalues: int
-    ) -> Cooldown:
+    def _render_ability_cooldown(self, mods: str, static_cooldown: bool, nvalues: int) -> Cooldown:
         modifiers = self._render_modifiers(mods, nvalues)
-        cooldown = Cooldown(
-            modifiers=modifiers,
-            affected_by_cdr=not static_cooldown,
-        )
+        cooldown = Cooldown(modifiers=modifiers, affected_by_cdr=not static_cooldown,)
         return cooldown
 
     def _get_skin_id(self, id, skin_id):
@@ -682,26 +600,20 @@ class LolWikiDataHandler:
 
     def _get_chroma_attribs(self, id, name):
         if "chromas" in self.cdragDict[0]:
-
             for c in self.cdragDict[0]["chromas"]:
                 if int(id) == c["id"]:
                     descriptions = []
                     rarities = []
                     if c["descriptions"]:
                         for desc in c["descriptions"]:
-                            descriptions.append(
-                                Description(desc["description"], desc["region"])
-                            )
+                            descriptions.append(Description(desc["description"], desc["region"]))
                     else:
                         descriptions.append(Description(None, None))
                     if c["rarities"]:
                         for rarity in c["rarities"]:
-                            rarities.append(
-                                Rarities(rarity["rarity"], rarity["region"])
-                            )
+                            rarities.append(Rarities(rarity["rarity"], rarity["region"]))
                     else:
                         rarities.append(Rarities(None, None))
-
                     chroma = Chroma(
                         name=name,
                         id=c["id"],
@@ -710,7 +622,6 @@ class LolWikiDataHandler:
                         descriptions=descriptions,
                         rarities=rarities,
                     )
-
                     return chroma
 
     def _get_skins(self):
@@ -745,17 +656,14 @@ class LolWikiDataHandler:
                 spans[i] = span[:comment_start]
 
         spans = "".join(spans)
-        skinData = lua.decode(spans)
-        return skinData
+        skin_data = lua.decode(spans)
+        return skin_data
 
     def _get_skin_path(self, path):
         if "/assets/ASSETS" in path:
             path = path.split("ASSETS")[1]
             path = path.lower()
-            path = (
-                "https://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/assets"
-                + path
-            )
+            path = "https://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/assets" + path
             return path
         base_url = "http://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/v1"
         # /lol-game-data/assets/v1/champion-chroma-images/32/32014.png
@@ -765,12 +673,10 @@ class LolWikiDataHandler:
     def _get_champ_skin(self, name):
         """
         Pulls champion skin data from wiki and cdragon
-
-
         """
-        champ_data = self.skinData[name]["skins"]
+        champ_data = self.skin_data[name]["skins"]
         skins = []
-        champ_id = self.skinData[name]["id"]
+        champ_id = self.skin_data[name]["id"]
 
         cdragon = "http://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/v1/champions/{0}.json".format(
             champ_id
@@ -796,26 +702,20 @@ class LolWikiDataHandler:
             loot_eligible = True
             lore = None
             cdragon_ids = []
-            self.cdragDict = [
-                i for i in cdrag_json["skins"] if i["id"] == int(skin_ID)
-            ]  # Cdragon Dict
+            self.cdragDict = [i for i in cdrag_json["skins"] if i["id"] == int(skin_ID)]  # Cdragon Dict
             for skin in cdrag_json["skins"]:
                 cdragon_ids.append(skin["id"])
             if int(skin_ID) not in cdragon_ids:
                 continue
-            # Cdragon Attributes
+            # cdragon attributes
 
             is_base = self.cdragDict[0]["isBase"]
             splash_path = self._get_skin_path(self.cdragDict[0]["splashPath"])
-            uncentered_splash_path = self._get_skin_path(
-                self.cdragDict[0]["uncenteredSplashPath"]
-            )
+            uncentered_splash_path = self._get_skin_path(self.cdragDict[0]["uncenteredSplashPath"])
             tile_path = self._get_skin_path(self.cdragDict[0]["tilePath"])
             load_screen_path = self._get_skin_path(self.cdragDict[0]["loadScreenPath"])
             if "loadScreenVintagePath" in self.cdragDict[0]:
-                load_screen_vintage_path = self._get_skin_path(
-                    self.cdragDict[0]["loadScreenVintagePath"]
-                )
+                load_screen_vintage_path = self._get_skin_path(self.cdragDict[0]["loadScreenVintagePath"])
             else:
                 load_screen_vintage_path = None
 
@@ -838,13 +738,9 @@ class LolWikiDataHandler:
 
             if "chromas" in champ_data[s]:
                 for chroma in champ_data[s]["chromas"]:
-
                     chromas.append(
                         self._get_chroma_attribs(
-                            self._get_skin_id(
-                                champ_id, champ_data[s]["chromas"][chroma]["id"]
-                            ),
-                            chroma,
+                            self._get_skin_id(champ_id, champ_data[s]["chromas"][chroma]["id"]), chroma,
                         )
                     )
 
@@ -876,7 +772,6 @@ class LolWikiDataHandler:
                     timestamp = "0000-00-00"
                 else:
                     timestamp = champ_data[s]["release"]
-                    # timestamp = datetime.timestamp(timestuff)
 
             skin = Skin(
                 name=s,
@@ -916,9 +811,7 @@ class ParsingAndRegex:
     rc_based_on_level = re.compile(r"(\d+\.?\d*) ?− ?(\d+\.?\d*) \(based on level\)")
 
     @staticmethod
-    def regex_slash_separated(
-        string: str, nvalues: int
-    ) -> Tuple[List[str], List[Union[int, float]]]:
+    def regex_slash_separated(string: str, nvalues: int) -> Tuple[List[str], List[Union[int, float]]]:
         for i in range(20, 1, -1):
             regex = " / ".join([ParsingAndRegex.r_number for _ in range(i)])
             result = re.findall(regex, string)
@@ -932,9 +825,7 @@ class ParsingAndRegex:
                 if nvalues == 3 and len(values) == 5:
                     values = [values[0], values[2], values[4]]
                 if nvalues is not None and len(values) != nvalues:
-                    print(
-                        f"WARNING: Unexpected number of modifier values: {values} (expected {nvalues})"
-                    )
+                    print(f"WARNING: Unexpected number of modifier values: {values} (expected {nvalues})")
                 return not_parsed, values
         raise ValueError(f"Could not parse slash-separated string: {string}")
 
@@ -946,9 +837,7 @@ class ParsingAndRegex:
         return values
 
     @staticmethod
-    def regex_simple_flat(
-        string: str, nvalues: int
-    ) -> Tuple[List[str], List[Union[int, float]]]:
+    def regex_simple_flat(string: str, nvalues: int) -> Tuple[List[str], List[Union[int, float]]]:
         numbers = ParsingAndRegex.rc_number.findall(string)
         if "/" in string:
             return ParsingAndRegex.regex_slash_separated(string, nvalues)
@@ -965,9 +854,7 @@ class ParsingAndRegex:
                 not_parsed = not_parsed[0], parsed.join(not_parsed[1:])
             assert len(values) == 18
             return not_parsed, values
-        elif len(numbers) - len(re.findall(r" per \d", string)) == 1 + string.count(
-            "(+ "
-        ):
+        elif len(numbers) - len(re.findall(r" per \d", string)) == 1 + string.count("(+ "):
             number = numbers[0]
             not_parsed = string.split(number)
             assert len(not_parsed) >= 2
@@ -1010,9 +897,7 @@ class ParsingAndRegex:
             scalings = parse_top_level_parentheses(numbers)
         scalings = [scaling for scaling in scalings if scaling != "(based on level)"]
         for scaling in scalings:
-            numbers = numbers.replace(
-                scaling, ""
-            ).strip()  # remove the scaling part of the string for processing later
+            numbers = numbers.replace(scaling, "").strip()  # remove the scaling part of the string for processing later
         scalings = [x.strip() for x in scalings]
         for i, scaling in enumerate(scalings):
             if scaling.startswith("(") and scaling.endswith(")"):
