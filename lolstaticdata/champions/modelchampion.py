@@ -3,7 +3,7 @@ from dataclasses import dataclass
 import dataclasses_json
 import json
 
-from common.modelcommon import (
+from ..common.modelcommon import (
     DamageType,
     Health,
     HealthRegen,
@@ -24,7 +24,7 @@ from common.modelcommon import (
     MagicPenetration,
     Stat,
 )
-from common.utils import OrderedEnum, ExtendedEncoder
+from ..common.utils import OrderedEnum, ExtendedEncoder
 
 
 class Resource(OrderedEnum):

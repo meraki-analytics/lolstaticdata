@@ -4,8 +4,8 @@ import dataclasses_json
 import json
 import stringcase
 
-from common.utils import OrderedEnum, ExtendedEncoder
-from common.modelcommon import (
+from ..common.utils import OrderedEnum, ExtendedEncoder
+from ..common.modelcommon import (
     ArmorPenetration,
     DamageType,
     Health,

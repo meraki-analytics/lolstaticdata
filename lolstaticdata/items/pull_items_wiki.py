@@ -13,8 +13,8 @@ from .NEWmodelitem import (
     ItemAttributes,
     ItemRanks,
 )
-from common.utils import download_soup
-from common.modelcommon import (
+from ..common.utils import download_soup
+from ..common.modelcommon import (
     ArmorPenetration,
     DamageType,
     Health,
