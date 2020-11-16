@@ -429,13 +429,6 @@ class WikiItem:
     @classmethod
     def _parse_recipe_build(cls, item: str):
         item = item.replace(" ", "_")
-        if item in "Hextech_Alternator_Hextech_Alternator":
-            item = "Hextech_Alternator"
-        elif item in "Blasting_Wand_Blasting_Wand":
-            item = "Blasting_Wand"
-        elif item in "Ruby_Crystal_Ruby_Crystal":
-            item = "Ruby_Crystal"
-
         url = "https://leagueoflegends.fandom.com/wiki/Template:Item_data_" + item
         use_cache = False
         html = download_soup(url, use_cache)

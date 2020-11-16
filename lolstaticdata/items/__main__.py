@@ -50,7 +50,7 @@ def main():
             continue
         # if str(d) not in "6671":
         #     continue
-        if str(d)  in ["goose", "goose2"]:
+        if str(d) not in ["4636", "goose2"]:
             continue
         else:
             try:
