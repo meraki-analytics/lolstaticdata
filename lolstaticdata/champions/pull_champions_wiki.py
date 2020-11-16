@@ -156,7 +156,7 @@ class LolWikiDataHandler:
         self.skin_data = self._get_skins()
 
         for name, d in data.items():
-            if name in ["Kled & Skaarl", "GnarBig", "Mega Gnar"]:
+            if name in ["Kled & Skaarl", "GnarBig", "Mega Gnar", ]:
                 continue
             if name in ["Kled"]:
                 # champion = self._render_champion_data(name, d)
@@ -328,6 +328,9 @@ class LolWikiDataHandler:
         # Pull the html from the wiki
         # print(f"  {ability_name}")
         url = f"https://leagueoflegends.fandom.com/wiki/Template:Data_{champion_name}/{ability_name}"
+        #temporary fix for pyke passive
+        if url in "https://leagueoflegends.fandom.com/wiki/Template:Data_Pyke/Gift_of_the_Drowned_Ones":
+            url = "https://leagueoflegends.fandom.com/wiki/User:Dryan426/Sandbox"
         html = download_soup(url, self.use_cache)
         soup = BeautifulSoup(html, "lxml")
         return HTMLAbilityWrapper(soup)
