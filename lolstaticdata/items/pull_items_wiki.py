@@ -240,7 +240,7 @@ class WikiItem:
             armorpen = 0.0
 
         if attack_speed.search(passive):
-            attack_s = cls._parse_float(attack_speed.search(passive).groups()[0])
+            attack_speed = cls._parse_float(attack_speed.search(passive).groups()[0])
         else:
             attack_speed = cls._parse_float(0.0)
 
