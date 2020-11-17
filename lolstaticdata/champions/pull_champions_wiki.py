@@ -156,7 +156,11 @@ class LolWikiDataHandler:
         self.skin_data = self._get_skins()
 
         for name, d in data.items():
-            if name in ["Kled & Skaarl", "GnarBig", "Mega Gnar"]:
+            if name in [
+                "Kled & Skaarl",
+                "GnarBig",
+                "Mega Gnar",
+            ]:
                 continue
             if name in ["Kled"]:
                 # champion = self._render_champion_data(name, d)
@@ -164,11 +168,7 @@ class LolWikiDataHandler:
                 d["skill_q"] = {1: d["skills"][3], 2: d["skills"][4]}
                 d["skill_e"] = {1: d["skills"][6], 2: d["skills"][7]}
                 d["skill_r"] = {1: d["skills"][8], 2: d["skills"][9]}
-            if (
-                d["id"] == 9999
-                or d["date"] == "Upcoming"
-                or datetime.strptime(d["date"], "%Y-%m-%d") > datetime.today()
-            ):  # Champion not released yet
+            if d["id"] == 9999 or d["date"] == "Upcoming" or datetime.strptime(d["date"], "%Y-%m-%d") > datetime.today():  # Champion not released yet
                 continue
             champion = self._render_champion_data(name, d)
             yield champion
@@ -197,21 +197,46 @@ class LolWikiDataHandler:
             attack_type=AttackType.from_string(data["rangetype"]),
             adaptive_type=DamageType.from_string(adaptive_type),
             stats=Stats(
-                health=Health(flat=data["stats"]["hp_base"], per_level=data["stats"]["hp_lvl"],),
-                health_regen=HealthRegen(flat=data["stats"]["hp5_base"], per_level=data["stats"]["hp5_lvl"],),
-                mana=Mana(flat=data["stats"]["mp_base"], per_level=data["stats"]["mp_lvl"],),
-                mana_regen=ManaRegen(flat=data["stats"]["mp5_base"], per_level=data["stats"]["mp5_lvl"],),
-                armor=Armor(flat=data["stats"]["arm_base"], per_level=data["stats"]["arm_lvl"],),
-                magic_resistance=MagicResistance(flat=data["stats"]["mr_base"], per_level=data["stats"]["mr_lvl"],),
-                attack_damage=AttackDamage(flat=data["stats"]["dam_base"], per_level=data["stats"]["dam_lvl"],),
-                attack_speed=AttackSpeed(flat=data["stats"]["as_base"], per_level=data["stats"]["as_lvl"],),
+                health=Health(
+                    flat=data["stats"]["hp_base"],
+                    per_level=data["stats"]["hp_lvl"],
+                ),
+                health_regen=HealthRegen(
+                    flat=data["stats"]["hp5_base"],
+                    per_level=data["stats"]["hp5_lvl"],
+                ),
+                mana=Mana(
+                    flat=data["stats"]["mp_base"],
+                    per_level=data["stats"]["mp_lvl"],
+                ),
+                mana_regen=ManaRegen(
+                    flat=data["stats"]["mp5_base"],
+                    per_level=data["stats"]["mp5_lvl"],
+                ),
+                armor=Armor(
+                    flat=data["stats"]["arm_base"],
+                    per_level=data["stats"]["arm_lvl"],
+                ),
+                magic_resistance=MagicResistance(
+                    flat=data["stats"]["mr_base"],
+                    per_level=data["stats"]["mr_lvl"],
+                ),
+                attack_damage=AttackDamage(
+                    flat=data["stats"]["dam_base"],
+                    per_level=data["stats"]["dam_lvl"],
+                ),
+                attack_speed=AttackSpeed(
+                    flat=data["stats"]["as_base"],
+                    per_level=data["stats"]["as_lvl"],
+                ),
                 attack_speed_ratio=Stat(flat=data["stats"]["as_ratio"]),
-                attack_cast_time=Stat(
-                    flat=data["stats"].get("attack_cast_time", 0.3)
-                ),  # I don't know if this default is correct, but going off the values the wiki provides, it seems reasonable.
+                attack_cast_time=Stat(flat=data["stats"].get("attack_cast_time", 0.3)),  # I don't know if this default is correct, but going off the values the wiki provides, it seems reasonable.
                 attack_total_time=Stat(flat=data["stats"].get("attack_total_time", 1.6)),  # ibid
                 attack_delay_offset=Stat(flat=data["stats"].get("attack_delay_offset", 0)),
-                attack_range=AttackRange(flat=data["stats"]["range"], per_level=data["stats"].get("range_lvl", 0),),
+                attack_range=AttackRange(
+                    flat=data["stats"]["range"],
+                    per_level=data["stats"].get("range_lvl", 0),
+                ),
                 critical_strike_damage=Stat(flat=data["stats"].get("crit_base", 200)),
                 critical_strike_damage_modifier=Stat(flat=data["stats"].get("crit_base", 1.0)),
                 movespeed=Movespeed(flat=data["stats"]["ms"]),
@@ -233,7 +258,10 @@ class LolWikiDataHandler:
                     *(Role.from_string(r) for r in data["role"]),
                     *(
                         Role.from_string(role)
-                        for role in (data.get("herotype"), data.get("alttype"),)
+                        for role in (
+                            data.get("herotype"),
+                            data.get("alttype"),
+                        )
                         if role is not None
                     ),
                 }
@@ -257,10 +285,7 @@ class LolWikiDataHandler:
                         abilities=[
                             self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                             for ability_name in data["skill_i"].values()
-                            if not (
-                                name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
-                            )
+                            if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
                         ],
                     ),
                     self._render_abilities(
@@ -268,10 +293,7 @@ class LolWikiDataHandler:
                         abilities=[
                             self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                             for ability_name in data["skill_q"].values()
-                            if not (
-                                name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
-                            )
+                            if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
                         ],
                     ),
                     self._render_abilities(
@@ -279,10 +301,7 @@ class LolWikiDataHandler:
                         abilities=[
                             self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                             for ability_name in data["skill_w"].values()
-                            if not (
-                                name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
-                            )
+                            if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
                         ],
                     ),
                     self._render_abilities(
@@ -290,10 +309,7 @@ class LolWikiDataHandler:
                         abilities=[
                             self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                             for ability_name in data["skill_e"].values()
-                            if not (
-                                name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
-                            )
+                            if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
                         ],
                     ),
                     self._render_abilities(
@@ -301,10 +317,7 @@ class LolWikiDataHandler:
                         abilities=[
                             self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                             for ability_name in data["skill_r"].values()
-                            if not (
-                                name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
-                            )
+                            if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
                         ],
                     ),
                 ]
@@ -327,6 +340,9 @@ class LolWikiDataHandler:
         # Pull the html from the wiki
         # print(f"  {ability_name}")
         url = f"https://leagueoflegends.fandom.com/wiki/Template:Data_{champion_name}/{ability_name}"
+        # temporary fix for pyke passive
+        if url in "https://leagueoflegends.fandom.com/wiki/Template:Data_Pyke/Gift_of_the_Drowned_Ones":
+            url = "https://leagueoflegends.fandom.com/wiki/User:Dryan426/Sandbox"
         html = download_soup(url, self.use_cache)
         soup = BeautifulSoup(html, "lxml")
         return HTMLAbilityWrapper(soup)
@@ -349,9 +365,7 @@ class LolWikiDataHandler:
             assert _skill_key == skill_key
 
             if champion_name == "Pyke" and _skill_key == "I":
-                del data[
-                    "Cost"
-                ]  # This is a weird one... There's an embedded table that doesn't get parsed right. It overwrites 'cost', but luckily that isn't an issue because 'cost' is empty.
+                del data["Cost"]  # This is a weird one... There's an embedded table that doesn't get parsed right. It overwrites 'cost', but luckily that isn't an issue because 'cost' is empty.
             if data.get("Cost") is not None:
                 raise ValueError(data)
 
@@ -544,7 +558,10 @@ class LolWikiDataHandler:
 
     def _render_leveling(self, attribute: str, data: str, nvalues: int) -> Leveling:
         modifiers = self._render_modifiers(data, nvalues)
-        leveling = Leveling(attribute=attribute, modifiers=modifiers,)
+        leveling = Leveling(
+            attribute=attribute,
+            modifiers=modifiers,
+        )
         return leveling
 
     def _render_modifiers(self, mods: str, nvalues: int) -> List[Modifier]:
@@ -566,13 +583,19 @@ class LolWikiDataHandler:
                 if lvling.lower() == "increased by 3% per 1% of health lost in the past 4 seconds".lower():  # Ekko
                     value = 3
                     lvling = "% per 1% of health lost in the past 4 seconds"
-                modifier = Modifier(values=[value for _ in range(nvalues)], units=[lvling for _ in range(nvalues)],)
+                modifier = Modifier(
+                    values=[value for _ in range(nvalues)],
+                    units=[lvling for _ in range(nvalues)],
+                )
                 modifiers.append(modifier)
         return modifiers
 
     def _render_modifier(self, mod: str, nvalues: int) -> Modifier:
         units, values = ParsingAndRegex.get_modifier(mod, nvalues)
-        modifier = Modifier(values=values, units=units,)
+        modifier = Modifier(
+            values=values,
+            units=units,
+        )
         return modifier
 
     def _render_ability_cost(self, mods: str, nvalues: int) -> Cost:
@@ -582,7 +605,10 @@ class LolWikiDataHandler:
 
     def _render_ability_cooldown(self, mods: str, static_cooldown: bool, nvalues: int) -> Cooldown:
         modifiers = self._render_modifiers(mods, nvalues)
-        cooldown = Cooldown(modifiers=modifiers, affected_by_cdr=not static_cooldown,)
+        cooldown = Cooldown(
+            modifiers=modifiers,
+            affected_by_cdr=not static_cooldown,
+        )
         return cooldown
 
     def _get_skin_id(self, id, skin_id):
@@ -677,9 +703,7 @@ class LolWikiDataHandler:
         skins = []
         champ_id = self.skin_data[name]["id"]
 
-        cdragon = "http://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/v1/champions/{0}.json".format(
-            champ_id
-        )
+        cdragon = "http://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/v1/champions/{0}.json".format(champ_id)
         cdrag_json = download_json(cdragon, False)
 
         for s in champ_data:
@@ -739,7 +763,8 @@ class LolWikiDataHandler:
                 for chroma in champ_data[s]["chromas"]:
                     chromas.append(
                         self._get_chroma_attribs(
-                            self._get_skin_id(champ_id, champ_data[s]["chromas"][chroma]["id"]), chroma,
+                            self._get_skin_id(champ_id, champ_data[s]["chromas"][chroma]["id"]),
+                            chroma,
                         )
                     )
 
