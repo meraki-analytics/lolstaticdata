@@ -43,7 +43,12 @@ def build_guess(
 
 
 def perform_guess(
-    champion_name, ability_name, ability_key, ability_index, filenames, use_underscores=True,
+    champion_name,
+    ability_name,
+    ability_key,
+    ability_index,
+    filenames,
+    use_underscores=True,
 ):
     best_score = -float("inf")
     for include_champion_name in (True, False):
@@ -51,7 +56,11 @@ def perform_guess(
             for include_ability_index in (True, False):
                 for include_ability_key in (True, False):
                     if include_champion_name is True and not any(
-                        [include_ability_name, include_ability_index, include_ability_key,]
+                        [
+                            include_ability_name,
+                            include_ability_index,
+                            include_ability_key,
+                        ]
                     ):
                         continue
                     guess = build_guess(

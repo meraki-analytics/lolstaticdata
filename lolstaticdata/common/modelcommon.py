@@ -140,8 +140,10 @@ class MagicPenetration(Stat):
 class ArmorPenetration(Stat):
     pass
 
+
 class AbilityHaste(Stat):
     pass
+
 
 class OmniVamp(Stat):
     pass

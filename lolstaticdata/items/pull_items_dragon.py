@@ -71,6 +71,6 @@ class DragonItem:
             active=[],
             stats=[],
             shop=shop,
-            rank=""
+            rank="",
         )
         return item

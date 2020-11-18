@@ -168,7 +168,11 @@ class LolWikiDataHandler:
                 d["skill_q"] = {1: d["skills"][3], 2: d["skills"][4]}
                 d["skill_e"] = {1: d["skills"][6], 2: d["skills"][7]}
                 d["skill_r"] = {1: d["skills"][8], 2: d["skills"][9]}
-            if d["id"] == 9999 or d["date"] == "Upcoming" or datetime.strptime(d["date"], "%Y-%m-%d") > datetime.today():  # Champion not released yet
+            if (
+                d["id"] == 9999
+                or d["date"] == "Upcoming"
+                or datetime.strptime(d["date"], "%Y-%m-%d") > datetime.today()
+            ):  # Champion not released yet
                 continue
             champion = self._render_champion_data(name, d)
             yield champion
@@ -230,7 +234,9 @@ class LolWikiDataHandler:
                     per_level=data["stats"]["as_lvl"],
                 ),
                 attack_speed_ratio=Stat(flat=data["stats"]["as_ratio"]),
-                attack_cast_time=Stat(flat=data["stats"].get("attack_cast_time", 0.3)),  # I don't know if this default is correct, but going off the values the wiki provides, it seems reasonable.
+                attack_cast_time=Stat(
+                    flat=data["stats"].get("attack_cast_time", 0.3)
+                ),  # I don't know if this default is correct, but going off the values the wiki provides, it seems reasonable.
                 attack_total_time=Stat(flat=data["stats"].get("attack_total_time", 1.6)),  # ibid
                 attack_delay_offset=Stat(flat=data["stats"].get("attack_delay_offset", 0)),
                 attack_range=AttackRange(
@@ -285,7 +291,10 @@ class LolWikiDataHandler:
                         abilities=[
                             self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                             for ability_name in data["skill_i"].values()
-                            if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
+                            if not (
+                                name in LolWikiDataHandler.MISSING_SKILLS
+                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
+                            )
                         ],
                     ),
                     self._render_abilities(
@@ -293,7 +302,10 @@ class LolWikiDataHandler:
                         abilities=[
                             self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                             for ability_name in data["skill_q"].values()
-                            if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
+                            if not (
+                                name in LolWikiDataHandler.MISSING_SKILLS
+                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
+                            )
                         ],
                     ),
                     self._render_abilities(
@@ -301,7 +313,10 @@ class LolWikiDataHandler:
                         abilities=[
                             self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                             for ability_name in data["skill_w"].values()
-                            if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
+                            if not (
+                                name in LolWikiDataHandler.MISSING_SKILLS
+                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
+                            )
                         ],
                     ),
                     self._render_abilities(
@@ -309,7 +324,10 @@ class LolWikiDataHandler:
                         abilities=[
                             self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                             for ability_name in data["skill_e"].values()
-                            if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
+                            if not (
+                                name in LolWikiDataHandler.MISSING_SKILLS
+                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
+                            )
                         ],
                     ),
                     self._render_abilities(
@@ -317,7 +335,10 @@ class LolWikiDataHandler:
                         abilities=[
                             self._pull_champion_ability(champion_name=name, ability_name=ability_name)
                             for ability_name in data["skill_r"].values()
-                            if not (name in LolWikiDataHandler.MISSING_SKILLS and ability_name in LolWikiDataHandler.MISSING_SKILLS[name])
+                            if not (
+                                name in LolWikiDataHandler.MISSING_SKILLS
+                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
+                            )
                         ],
                     ),
                 ]
@@ -365,7 +386,9 @@ class LolWikiDataHandler:
             assert _skill_key == skill_key
 
             if champion_name == "Pyke" and _skill_key == "I":
-                del data["Cost"]  # This is a weird one... There's an embedded table that doesn't get parsed right. It overwrites 'cost', but luckily that isn't an issue because 'cost' is empty.
+                del data[
+                    "Cost"
+                ]  # This is a weird one... There's an embedded table that doesn't get parsed right. It overwrites 'cost', but luckily that isn't an issue because 'cost' is empty.
             if data.get("Cost") is not None:
                 raise ValueError(data)
 
@@ -703,7 +726,9 @@ class LolWikiDataHandler:
         skins = []
         champ_id = self.skin_data[name]["id"]
 
-        cdragon = "http://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/v1/champions/{0}.json".format(champ_id)
+        cdragon = "http://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/v1/champions/{0}.json".format(
+            champ_id
+        )
         cdrag_json = download_json(cdragon, False)
 
         for s in champ_data:
