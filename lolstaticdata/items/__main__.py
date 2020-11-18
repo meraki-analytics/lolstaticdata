@@ -64,6 +64,7 @@ def main():
                     maps = cdrag["mapStringIdInclusions"]
                     ally = cdrag["requiredAlly"]
                     champ = cdrag["requiredChampion"]
+
             wiki_item = _name_to_wiki(ddragon_item.name)
             # Manual merge
             item = wiki_item
@@ -91,6 +92,91 @@ def main():
     del jsons
 
 
+
+def rewrite():
+    directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), "../.."))
+    use_cache = False
+    if not os.path.exists(os.path.join(directory, "items")):
+        os.mkdir(os.path.join(directory, "items"))
+    ddragon = DragonItem.get_json_ddragon()
+    cdragon = DragonItem.get_cdragon()
+    wikiItems = get_item_urls(False)
+
+    #print(wikiItems)
+    for i in cdragon:
+        i["name"] = i["name"].replace("%i:ornnIcon% ", "")
+    jsons = {}
+    for x in wikiItems:
+        if str(x) in ["goose", "goose2"]:
+            continue
+        else:
+            item = None
+            print(x)
+            # try:
+            #     cdragon_item = DragonItem.get_item_cdragon(d, ddragon)
+            # except ValueError:
+            #     continue
+            if x == "'Your Cut'":
+                x = "Your Cut"
+                l = [d for d in cdragon if x.upper() == d["name"].upper()]
+                x = "'Your Cut'"
+            else:
+                l = [d for d in cdragon if x.upper() == d["name"].upper()]
+
+            if len(l) > 1:
+                print("d")
+                print("d")
+                for i in l:
+                    cdrag_item = DragonItem.get_item_cdragon(i)
+                    wiki_item = _name_to_wiki(x)
+                    item = wiki_item
+                    item.icon = cdrag_item.icon
+                    item.id = cdrag_item.id
+                    item.builds_from = cdrag_item.builds_from
+                    item.builds_into = cdrag_item.builds_into
+                    item.simple_description = cdrag_item.simple_description
+                    item.required_ally = cdrag_item.required_ally
+                    item.required_champion = cdrag_item.required_champion
+                    item.shop.purchasable = cdrag_item.shop.purchasable
+                    item.special_recipe = cdrag_item.special_recipe
+                    if item is not None:
+                        jsonfn = os.path.join(directory, "items", str(item.id) + ".json")
+                        with open(jsonfn, "w", encoding="utf8") as f:
+                            j = item.__json__(indent=2, ensure_ascii=False)
+                            f.write(j)
+                        jsons[item.id] = json.loads(item.__json__(ensure_ascii=False))
+                        print(item.id)
+            elif l:
+                for i in l:
+                    cdrag_item = DragonItem.get_item_cdragon(i)
+                    wiki_item = _name_to_wiki(x)
+                    item = wiki_item
+                    item.icon = cdrag_item.icon
+                    item.id = cdrag_item.id
+                    item.builds_from = cdrag_item.builds_from
+                    item.builds_into = cdrag_item.builds_into
+                    item.simple_description = cdrag_item.simple_description
+                    item.required_ally = cdrag_item.required_ally
+                    item.required_champion = cdrag_item.required_champion
+                    item.shop.purchasable = cdrag_item.shop.purchasable
+                    item.special_recipe = cdrag_item.special_recipe
+                    if item is not None:
+                        jsonfn = os.path.join(directory, "items", str(item.id) + ".json")
+                        with open(jsonfn, "w", encoding="utf8") as f:
+                            j = item.__json__(indent=2, ensure_ascii=False)
+                            f.write(j)
+                        jsons[item.id] = json.loads(item.__json__(ensure_ascii=False))
+                        print(item.id)
+
+    jsonfn = os.path.join(directory, "items.json")
+    with open(jsonfn, "w", encoding="utf8") as f:
+        json.dump(jsons, f, indent=2, ensure_ascii=False)
+    del jsons
+
+
+
+
+
 if __name__ == "__main__":
-    main()
+    rewrite()
     print("Hello! What a surprise, it worked!")

@@ -151,6 +151,7 @@ class Item(object):
     rank: List[str]
     builds_from: List[int]
     builds_into: List[int]
+    special_recipe: int
     no_effects: bool
     removed: bool
     required_champion: str

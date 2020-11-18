@@ -4,7 +4,7 @@ import os
 from ..common.utils import download_json
 from .pull_items_wiki import WikiItem
 from .modelitem import Item, Shop
-
+from ..common.rstParser import RstFile
 
 class DragonItem:
     @staticmethod
@@ -14,12 +14,64 @@ class DragonItem:
         cdragon = [i for i in j if str(i["id"])]
         return cdragon
 
-    def _get_skin_path(self, path):
-        if "/assets/ASSETS" in path:
-            path = path.split("ASSETS")[1]
-            path = path.lower()
-            path = "https://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/assets" + path
+    @classmethod
+    def get_item_cdragon(cls,cdrag):
+        rst = RstFile()
 
+        builds_from = []
+        builds_to = []
+        maps = []
+        ally = None
+        champ = None
+        purchasable = None
+        cdragid = None
+        icon = ""
+        builds_from = cdrag["from"]
+        builds_to = cdrag["to"]
+        maps = cdrag["mapStringIdInclusions"]
+        ally = cdrag["requiredAlly"]
+        special_recipe = cdrag["specialRecipe"]
+        champ = cdrag["requiredChampion"]
+        purchasable = cdrag["inStore"]
+        cdragid = cdrag["id"]
+        icon = cdrag["iconPath"]
+        try:
+            plaintext = rst.get_item_plaintext(cdragid)
+        except:
+            plaintext = None
+        shop = Shop(purchasable=purchasable, prices=[], tags=[])
+        item = Item(
+            builds_from=builds_from,
+            builds_into=builds_to,
+            icon=cls._get_skin_path(icon),
+            name="",
+            id=cdragid,
+            tier=[],
+            no_effects=[],
+            removed=[],
+            required_ally=ally,
+            required_champion=champ,
+            simple_description=plaintext,
+            nicknames=[],
+            passives=[],
+            active=[],
+            stats=[],
+            shop=shop,
+            rank="",
+            special_recipe=special_recipe
+        )
+        return item
+
+    @classmethod
+    def _get_skin_path(self, path):
+        if path is not None:
+            if "/assets/ASSETS" in path:
+                path = path.split("ASSETS")[1]
+                path = path.lower()
+                path = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets" + path
+                return path
+        else:
+            return None
     @classmethod
     def _get_latest_version(cls):
         url = "http://ddragon.leagueoflegends.com/api/versions.json"

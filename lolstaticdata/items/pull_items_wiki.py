@@ -49,13 +49,13 @@ class WikiItem:
             cooldown = cls._parse_float(item_data["cdrunique"])
             description = "{}% cooldown reduction".format(cooldown)
             stats = cls._parse_passive_descriptions(description)
-            effect = Passive(unique=True, name=None, effects=description, range=None, stats=stats)
+            effect = Passive(unique=True, name=None, effects=description, range=None, stats=stats,mythic=False)
             effects.append(effect)
         if not_unique.search(item_data["critunique"]):
             crit = cls._parse_float(item_data["critunique"])
             description = "{}% critical strike chance".format(crit)
             stats = cls._parse_passive_descriptions(description)
-            effect = Passive(unique=True, name=None, effects=description, range=None, stats=stats)
+            effect = Passive(unique=True, name=None, effects=description, range=None, stats=stats, mythic=False)
             effects.append(effect)
 
         # Parse both passives and auras the same way
@@ -192,7 +192,7 @@ class WikiItem:
         # onHit = re.compile(r"basic attack (?:.*?)(?: (?:as|in))?\d+ (?:bonus|seconds |deals).*? (\d+.*) (?:bonus|seconds|deals) (?:magic|physical)")
         # test = re.compile(r"basic attack (?:.*?)(?: (?:as|in))?(\d+) (?:bonus|deals).*?")#taken from https://github.com/TheKevJames/league/blob/a62f5e3697392094aedd3d0bd1df37012824963b/league_utils/models/item/stats.py
 
-        print(passive)
+        #print(passive)
         if cdr.search(passive):
             cooldown = cdr.search(passive).group(0).split("%")[0]
             cooldown = cls._parse_float(cooldown)
@@ -477,16 +477,16 @@ class WikiItem:
         except KeyError:
             tier = "tier 3"
         # Create the json files from the classes in modelitem.py
-        # if item_data["code"]:
-        #     id = item_data["code"]
-        #
-        # else:
-        #     id = None
-        #     print("No ID")
-        # if item_data["1"]:
-        #     name = item_data["1"].strip()
-        # else:
-        #     name = None
+        if item_data["code"]:
+            id = item_data["code"]
+
+        else:
+            id = None
+
+        if item_data["1"]:
+            name = item_data["1"].strip()
+        else:
+            name = None
         if "removed" in item_data:
             if item_data["removed"] == "true":
                 removed = True
@@ -546,8 +546,8 @@ class WikiItem:
                 component = cls._parse_recipe_build(component.strip())
                 builds_from.append(component)
         item = Item(
-            name="",
-            id="",
+            name=name,
+            id=id,
             tier=tier,
             builds_from=[],
             builds_into=[],
@@ -603,6 +603,7 @@ class WikiItem:
                 purchasable="",
             ),
             rank=rank,
+            special_recipe=0
         )
         return item
 
@@ -615,19 +616,19 @@ def get_item_urls(use_cache: bool) -> List[str]:
         soup = BeautifulSoup(html, "lxml")
         urls = soup.find_all("a", {"class": "category-page__member-link"})
         for ur in urls:
-            print(ur.attrs["href"])
+            #print(ur.attrs["href"])
             if ur in all_urls:
                 continue
             else:
                 if "Wild_Rift" in ur.attrs["href"] or "Itemtip" in ur.attrs["href"]:
                     continue
                 else:
-                    all_urls.append(ur.attrs["href"])
+                    all_urls.append(ur.string.split("Item data ")[1])
         next_button = soup.find("a", {"class": "category-page__pagination-next wds-button wds-is-secondary"})
         if not next_button:
             break
         url = next_button["href"]
 
-    base_url = "https://leagueoflegends.fandom.com"
-    all_urls = [base_url + url for url in all_urls]
+#    base_url = "https://leagueoflegends.fandom.com"
+#    all_urls = [base_url + url for url in all_urls]
     return all_urls
