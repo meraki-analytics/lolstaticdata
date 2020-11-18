@@ -6,6 +6,7 @@ from .pull_items_wiki import WikiItem
 from .modelitem import Item, Shop
 from ..common.rstParser import RstFile
 
+
 class DragonItem:
     @staticmethod
     def get_cdragon():  # cdragon to list
@@ -15,7 +16,7 @@ class DragonItem:
         return cdragon
 
     @classmethod
-    def get_item_cdragon(cls,cdrag):
+    def get_item_cdragon(cls, cdrag):
         rst = RstFile()
 
         builds_from = []
@@ -58,7 +59,7 @@ class DragonItem:
             stats=[],
             shop=shop,
             rank="",
-            special_recipe=special_recipe
+            special_recipe=special_recipe,
         )
         return item
 
@@ -68,10 +69,13 @@ class DragonItem:
             if "/assets/ASSETS" in path:
                 path = path.split("ASSETS")[1]
                 path = path.lower()
-                path = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets" + path
+                path = (
+                    "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets" + path
+                )
                 return path
         else:
             return None
+
     @classmethod
     def _get_latest_version(cls):
         url = "http://ddragon.leagueoflegends.com/api/versions.json"

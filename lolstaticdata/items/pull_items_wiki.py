@@ -49,7 +49,7 @@ class WikiItem:
             cooldown = cls._parse_float(item_data["cdrunique"])
             description = "{}% cooldown reduction".format(cooldown)
             stats = cls._parse_passive_descriptions(description)
-            effect = Passive(unique=True, name=None, effects=description, range=None, stats=stats,mythic=False)
+            effect = Passive(unique=True, name=None, effects=description, range=None, stats=stats, mythic=False)
             effects.append(effect)
         if not_unique.search(item_data["critunique"]):
             crit = cls._parse_float(item_data["critunique"])
@@ -192,7 +192,7 @@ class WikiItem:
         # onHit = re.compile(r"basic attack (?:.*?)(?: (?:as|in))?\d+ (?:bonus|seconds |deals).*? (\d+.*) (?:bonus|seconds|deals) (?:magic|physical)")
         # test = re.compile(r"basic attack (?:.*?)(?: (?:as|in))?(\d+) (?:bonus|deals).*?")#taken from https://github.com/TheKevJames/league/blob/a62f5e3697392094aedd3d0bd1df37012824963b/league_utils/models/item/stats.py
 
-        #print(passive)
+        # print(passive)
         if cdr.search(passive):
             cooldown = cdr.search(passive).group(0).split("%")[0]
             cooldown = cls._parse_float(cooldown)
@@ -437,7 +437,6 @@ class WikiItem:
         elif item in "Ruby_Crystal_Ruby_Crystal":
             item = "Ruby_Crystal"
 
-
         url = "https://leagueoflegends.fandom.com/wiki/Template:Item_data_" + item
         use_cache = False
         html = download_soup(url, use_cache)
@@ -603,7 +602,7 @@ class WikiItem:
                 purchasable="",
             ),
             rank=rank,
-            special_recipe=0
+            special_recipe=0,
         )
         return item
 
@@ -616,7 +615,7 @@ def get_item_urls(use_cache: bool) -> List[str]:
         soup = BeautifulSoup(html, "lxml")
         urls = soup.find_all("a", {"class": "category-page__member-link"})
         for ur in urls:
-            #print(ur.attrs["href"])
+            # print(ur.attrs["href"])
             if ur in all_urls:
                 continue
             else:
@@ -629,6 +628,6 @@ def get_item_urls(use_cache: bool) -> List[str]:
             break
         url = next_button["href"]
 
-#    base_url = "https://leagueoflegends.fandom.com"
-#    all_urls = [base_url + url for url in all_urls]
+    #    base_url = "https://leagueoflegends.fandom.com"
+    #    all_urls = [base_url + url for url in all_urls]
     return all_urls
