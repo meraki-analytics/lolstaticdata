@@ -105,6 +105,9 @@ def rewrite():
     # print(wikiItems)
     for i in cdragon:
         i["name"] = i["name"].replace("%i:ornnIcon% ", "")
+        i["name"] = i["name"].replace("<rarityLegendary>", "")
+        if "</rarityLegendary>" in i["name"]:
+            i["name"] = i["name"].split("</rarityLegendary>")[0]
     jsons = {}
     for x in wikiItems:
         if str(x) in ["Goose", "Goose2"]:
