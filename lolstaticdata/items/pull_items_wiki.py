@@ -187,6 +187,7 @@ class WikiItem:
         omnivamp = re.compile(r"\d+.*? omni vamp")
         # ability_power = re.compile(r"\+\d+% ability power")
         ability_power = re.compile(r"(\d+)(?: |% |% bonus )ability power")
+        ability_power_percent = re.compile(r"(?:ability power by )(\d+)%")
         ability_haste = re.compile(r"(\d+) ability haste")
         attack_speed = re.compile(r"(\d+)(?:% bonus) attack speed")
         # onHit = re.compile(r"basic attack (?:.*?)(?: (?:as|in))?\d+ (?:bonus|seconds |deals).*? (\d+.*) (?:bonus|seconds|deals) (?:magic|physical)")
@@ -220,6 +221,12 @@ class WikiItem:
             ap = cls._parse_float(ap)
         else:
             ap = 0.0
+
+        if ability_power_percent.search(passive):
+          ap_percent = ability_power_percent.search(passive).groups()[0]
+          ap_percent = cls._parse_float(ap_percent)
+        else:
+          ap_percent = 0.0
 
         if ability_haste.search(passive):
             ah = ability_haste.search(passive).groups()[0]
@@ -265,7 +272,7 @@ class WikiItem:
         else:
             omniv = 0.0
         stats = Stats(
-            ability_power=AbilityPower(flat=ap),
+            ability_power=AbilityPower(flat=ap, percent=ap_percent),
             armor=Armor(flat=cls._parse_float(0.0)),
             armor_penetration=ArmorPenetration(percent=armorpen),
             attack_damage=AttackDamage(flat=cls._parse_float(0.0)),
@@ -563,7 +570,7 @@ class WikiItem:
             stats=Stats(
                 ability_power=AbilityPower(flat=cls._parse_float(item_data["ap"])),
                 armor=Armor(flat=cls._parse_float(item_data["armor"])),
-                armor_penetration=ArmorPenetration(flat=cls._parse_float(item_data["rpen"])),
+                armor_penetration=ArmorPenetration(percent=cls._parse_float(item_data["rpen"])),
                 attack_damage=AttackDamage(flat=cls._parse_float(item_data["ad"])),
                 attack_speed=AttackSpeed(flat=cls._parse_float(item_data["as"])),
                 cooldown_reduction=CooldownReduction(percent=cls._parse_float(item_data["cdr"])),
@@ -577,7 +584,10 @@ class WikiItem:
                 ),
                 lethality=Lethality(flat=0.0),
                 lifesteal=Lifesteal(percent=cls._parse_float(item_data["lifesteal"])),
-                magic_penetration=MagicPenetration(flat=cls._parse_float(item_data["mpen"])),
+                magic_penetration=MagicPenetration(
+                    flat=cls._parse_float(item_data["mpenflat"]),
+                    percent=cls._parse_float(item_data["mpen"])
+                ),
                 magic_resistance=MagicResistance(flat=cls._parse_float(item_data["mr"])),
                 mana=Mana(flat=cls._parse_float(item_data["mana"])),
                 mana_regen=ManaRegen(
@@ -605,8 +615,6 @@ class WikiItem:
             rank=rank,
         )
         return item
-
-
 def get_item_urls(use_cache: bool) -> List[str]:
     all_urls = []
     url = "https://leagueoflegends.fandom.com/wiki/Category:Item_data_templates"
