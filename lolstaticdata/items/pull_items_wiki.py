@@ -223,10 +223,10 @@ class WikiItem:
             ap = 0.0
 
         if ability_power_percent.search(passive):
-          ap_percent = ability_power_percent.search(passive).groups()[0]
-          ap_percent = cls._parse_float(ap_percent)
+            ap_percent = ability_power_percent.search(passive).groups()[0]
+            ap_percent = cls._parse_float(ap_percent)
         else:
-          ap_percent = 0.0
+            ap_percent = 0.0
 
         if ability_haste.search(passive):
             ah = ability_haste.search(passive).groups()[0]
@@ -444,7 +444,6 @@ class WikiItem:
         elif item in "Ruby_Crystal_Ruby_Crystal":
             item = "Ruby_Crystal"
 
-
         url = "https://leagueoflegends.fandom.com/wiki/Template:Item_data_" + item
         use_cache = False
         html = download_soup(url, use_cache)
@@ -585,8 +584,7 @@ class WikiItem:
                 lethality=Lethality(flat=0.0),
                 lifesteal=Lifesteal(percent=cls._parse_float(item_data["lifesteal"])),
                 magic_penetration=MagicPenetration(
-                    flat=cls._parse_float(item_data["mpenflat"]),
-                    percent=cls._parse_float(item_data["mpen"])
+                    flat=cls._parse_float(item_data["mpenflat"]), percent=cls._parse_float(item_data["mpen"])
                 ),
                 magic_resistance=MagicResistance(flat=cls._parse_float(item_data["mr"])),
                 mana=Mana(flat=cls._parse_float(item_data["mana"])),
@@ -615,6 +613,8 @@ class WikiItem:
             rank=rank,
         )
         return item
+
+
 def get_item_urls(use_cache: bool) -> List[str]:
     all_urls = []
     url = "https://leagueoflegends.fandom.com/wiki/Category:Item_data_templates"
