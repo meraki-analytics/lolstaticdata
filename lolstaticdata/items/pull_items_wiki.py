@@ -184,7 +184,7 @@ class WikiItem:
         armorpen = re.compile(r"(\d+)% armor penetration")
         magicpen = re.compile(r"(\d+).*? magic penetration")
         lifesteal = re.compile(r"\d+.*? life steal")
-        omnivamp = re.compile(r"\d+.*? omni vamp")
+        omnivamp = re.compile(r"\d+.*? omni ?vamp")
         # ability_power = re.compile(r"\+\d+% ability power")
         ability_power = re.compile(r"(\d+)(?: |% |% bonus )ability power")
         ability_power_percent = re.compile(r"(?:ability power by )(\d+)%")
