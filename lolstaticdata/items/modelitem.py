@@ -163,6 +163,7 @@ class Item(object):
     active: List[Active]
     stats: Stats
     shop: Shop
+    iconOverlay: str
 
     def __json__(self, *args, **kwargs):
         # Use dataclasses_json to get the dict

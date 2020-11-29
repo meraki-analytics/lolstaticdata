@@ -7,17 +7,30 @@ from .modelitem import Item, Shop
 from ..common.rstParser import RstFile
 
 
+def get_latest_version():
+    url = "http://ddragon.leagueoflegends.com/api/versions.json"
+    j = download_json(url, use_cache=False)
+    return j[0]
+
+
 class DragonItem:
+    latest_version = get_latest_version()
+    version = latest_version.split(".")
+    version = str(version[0]) + "." + str(version[1])
+    rst = RstFile()
+
     @staticmethod
     def get_cdragon():  # cdragon to list
-        url = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/items.json"
+
+        url = "https://raw.communitydragon.org/{}/plugins/rcp-be-lol-game-data/global/default/v1/items.json".format(
+            DragonItem.version
+        )
         j = download_json(url, use_cache=False)
         cdragon = [i for i in j if str(i["id"])]
         return cdragon
 
     @classmethod
     def get_item_cdragon(cls, cdrag):
-        rst = RstFile()
 
         builds_from = []
         builds_to = []
@@ -37,7 +50,7 @@ class DragonItem:
         cdragid = cdrag["id"]
         icon = cdrag["iconPath"]
         try:
-            plaintext = rst.get_item_plaintext(cdragid)
+            plaintext = cls.rst.get_item_plaintext(cdragid)
         except:
             plaintext = None
         shop = Shop(purchasable=purchasable, prices=[], tags=[])
@@ -60,43 +73,41 @@ class DragonItem:
             shop=shop,
             rank="",
             special_recipe=special_recipe,
+            iconOverlay=None,
         )
         return item
 
     @classmethod
-    def _get_skin_path(self, path):
+    def _get_skin_path(cls, path):
+
         if path is not None:
+
             if "/assets/ASSETS" in path:
                 path = path.split("ASSETS")[1]
                 path = path.lower()
                 path = (
-                    "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets" + path
+                    "https://raw.communitydragon.org/{}/plugins/rcp-be-lol-game-data/global/default/assets".format(
+                        DragonItem.version
+                    )
+                    + path
                 )
                 return path
         else:
             return None
 
     @classmethod
-    def _get_latest_version(cls):
-        url = "http://ddragon.leagueoflegends.com/api/versions.json"
-        j = download_json(url, use_cache=False)
-        return j[0]
-
-    @classmethod
     def get_json_ddragon(
         cls,
     ):  # Main Function, gets items from ddragon, compares them with cdragon and then gets the items from the wiki
         # I didn't want make a request to cdragon for every item
-        url = "http://ddragon.leagueoflegends.com/cdn/{}/data/en_US/item.json".format(cls._get_latest_version())
+        url = "http://ddragon.leagueoflegends.com/cdn/{}/data/en_US/item.json".format(get_latest_version())
         p = download_json(url, use_cache=True)
         return p["data"]
 
     @classmethod
     def get_ddragon(cls, ddragon: int, p: dict):
         # print(ddragon)
-        baseurl = "http://ddragon.leagueoflegends.com/cdn/{}/img/item/".format(
-            cls._get_latest_version()
-        )  # icon base url
+        baseurl = "http://ddragon.leagueoflegends.com/cdn/{}/img/item/".format(get_latest_version())  # icon base url
         icon = baseurl + p[ddragon]["image"]["full"]
         plaintext = p[ddragon]["plaintext"]  # simple description
         purchasable = p[ddragon]["gold"]["purchasable"]  # is this purchasable or is it upgraded (seraph's embrace)

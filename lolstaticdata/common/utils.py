@@ -136,15 +136,23 @@ def download_json(url: str, use_cache: bool = True) -> Json:
     return j
 
 
-def download_soup(url: str, use_cache: bool = True):
-    directory = os.path.dirname(os.path.realpath(__file__)) + "/"
-    fn = directory + f"../../__cache__/{url.replace('/', '@')}"
+def download_soup(url: str, use_cache: bool = True, dir: str = f"__cache__"):
+    directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), "../.."))
+    directory = os.path.join(directory, dir)
+    if "ITEM_DATA" not in url.upper():
+        fn = os.path.join(directory, url.replace("/", "@"))
+    else:
+        url_split = url.split("Item_data_")[1]
+        if url_split == "'Your_Cut":
+            url_split.replace("'", "")
+        fn = os.path.join(directory, url_split.replace("/", "@"))
     if use_cache and os.path.exists(fn):
-        with open(fn) as f:
+        with open(fn, encoding="utf-8") as f:
             html = f.read()
     else:
         page = requests.get(url)
-        html = page.content.decode(page.encoding)
+        # html = page.content.decode(page.encoding)
+        html = page.text
         if use_cache:
             with open(fn, "w", encoding="utf-8") as f:
                 f.write(html)

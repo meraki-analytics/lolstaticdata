@@ -445,8 +445,8 @@ class WikiItem:
             item = "Ruby_Crystal"
 
         url = "https://leagueoflegends.fandom.com/wiki/Template:Item_data_" + item
-        use_cache = False
-        html = download_soup(url, use_cache)
+        use_cache = True
+        html = download_soup(url, use_cache, dir="__wiki__")
         soup = BeautifulSoup(html, "lxml")
         code = soup.findAll("td", {"data-name": "code"})
         return cls._parse_item_id(code=code[0].text)
@@ -454,8 +454,8 @@ class WikiItem:
     @classmethod
     def get(cls, url: str) -> Optional[Item]:
         # All item data has a html attribute "data-name" so I put them all in an ordered dict while stripping the new lines and spaces from the data
-        use_cache = False
-        html = download_soup(url, use_cache)
+        # use_cache = False
+        html = download_soup(url, True, "__wiki__")
         soup = BeautifulSoup(html, "lxml")
         item_data = OrderedDict()
         for td in soup.findAll("td", {"data-name": True}):
@@ -551,6 +551,11 @@ class WikiItem:
             else:
                 component = cls._parse_recipe_build(component.strip())
                 builds_from.append(component)
+        ornn = False
+        if "limit" in item_data:
+            if "ORNN" in item_data["limit"].upper():
+                print(item_data["limit"])
+                ornn = True
         item = Item(
             name=name,
             id=id,
@@ -612,6 +617,7 @@ class WikiItem:
             ),
             rank=rank,
             special_recipe=0,
+            iconOverlay=ornn,
         )
         return item
 
