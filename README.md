@@ -21,7 +21,9 @@ Note that it is impossible to represent the enormous complexity of League of Leg
 ```
 git clone https://github.com/meraki-analytics/lolstaticdata.git
 cd lolstaticdata
-python -m lolstaticdata.champions  # to run the champion-pulling code
+pip install -r requirements.txt
+python -m lolstaticdata.champions # to run the champion-pulling code
+python -m lolstaticdata.items     # to run the item-pulling code
 ```
 
 ## Contributing
@@ -34,4 +36,4 @@ Because this is a community resource, the code and data needs to have a particul
 
 In addition to providing this code, we run it and serve the resulting JSON data at http://cdn.merakianalytics.com/riot/lol/resources/latest/en-US/champions and http://cdn.merakianalytics.com/riot/lol/resources/latest/en-US/items. All champion and item data is combined, respectively, into a single file at http://cdn.merakianalytics.com/riot/lol/resources/latest/en-US/champions.json and http://cdn.merakianalytics.com/riot/lol/resources/latest/en-US/items.json
 
-Our CDN should be up 24/7, and although we can't make any promises, it's been online and serving patch data for years without going down. Providing this data has resulted in a huge increase in data consumption, so please use this data responibly. **If you use this data for your apps, cache it on your own servers/apps to reduce the load on our services, which will help keep it up for everyone to use.**
+Our CDN should be up 24/7, and although we can't make any promises, it's been online and serving patch data for years without going down. Providing this data has resulted in a huge increase in data consumption, so please use this data responsibly. **If you use this data for your apps, cache it on your own servers/apps to reduce the load on our services, which will help keep it up for everyone to use.**
