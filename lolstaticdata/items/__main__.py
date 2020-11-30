@@ -1,5 +1,6 @@
 import os
 import json
+import re
 
 from .pull_items_wiki import WikiItem, get_item_urls
 from .pull_items_dragon import DragonItem
@@ -14,7 +15,10 @@ def _name_to_wiki(name: str):  # Change item name for wiki url
     if wikiUrl == "https://leagueoflegends.fandom.com/wiki/Template:Item_data_Blade_of_The_Ruined_King":
         wikiUrl = "https://leagueoflegends.fandom.com/wiki/Template:Item_data_Blade_of_the_Ruined_King"
 
-    if wikiUrl == "https://leagueoflegends.fandom.com/wiki/Template:Item_data_Slightly_Magical_Footware" or wikiUrl == "https://leagueoflegends.fandom.com/wiki/Template:Item_data_Slightly_Magical_Footwear":
+    if (
+        wikiUrl == "https://leagueoflegends.fandom.com/wiki/Template:Item_data_Slightly_Magical_Footware"
+        or wikiUrl == "https://leagueoflegends.fandom.com/wiki/Template:Item_data_Slightly_Magical_Footwear"
+    ):
         wikiUrl = "https://leagueoflegends.fandom.com/wiki/Template:Item_data_Slightly_Magical_Boots"
 
     if wikiUrl == "https://leagueoflegends.fandom.com/wiki/Template:Item_data_Kalista's_Black_Spear":
@@ -78,17 +82,38 @@ def main():
             item.shop.purchasable = ddragon_item.shop.purchasable
 
             if item is not None:
-                jsonfn = os.path.join(directory, "items", str(item.id) + ".json")
+                jsonfn = os.path.join(directory, "items", f"{str(item.id)}.json")
                 with open(jsonfn, "w", encoding="utf8") as f:
                     j = item.__json__(indent=2, ensure_ascii=False)
                     f.write(j)
                 jsons[item.id] = json.loads(item.__json__(ensure_ascii=False))
                 print(item.id)
-
+    for cdrag in cdragon:
+        ornn_item_match = re.search(r"(?:%i:ornnIcon% )([A-Za-z0-9' \-]+)", cdrag["name"])
+        if ornn_item_match is not None:
+            ornn_item_name = ornn_item_match.groups()[0]
+            item = _name_to_wiki(ornn_item_name)
+            item.name = ornn_item_name
+            item.id = cdrag["id"]
+            item.icon = None  # This is temporary since the Masterwork Item icons are not in the DDragon
+            item.builds_from = cdrag["from"]
+            item.builds_into = cdrag["to"]
+            ddragon_item = DragonItem.get_ddragon(str(item.builds_from[0]), ddragon)
+            item.simple_description = f"An Ornn-updated item built from {ddragon_item.name}"  # This is the Mythic item that is needed for Ornn to forge the Masterwork Item
+            item.required_ally = "Ornn"  # You can't forge Masterwork Items without Ornn as your ally
+            item.required_champion = cdrag["requiredChampion"]
+            item.shop.purchasable = False  # Masterwork Items aren't purchasable, Ornn forges them
+            jsonfn = os.path.join(directory, "items", f"{str(item.id)}.json")
+            with open(jsonfn, "w", encoding="utf8") as f:
+                j = item.__json__(indent=2, ensure_ascii=False)
+                f.write(j)
+            jsons[item.id] = json.loads(item.__json__(ensure_ascii=False))
+            print(item.id)
     jsonfn = os.path.join(directory, "items.json")
     with open(jsonfn, "w", encoding="utf8") as f:
         json.dump(jsons, f, indent=2, ensure_ascii=False)
     del jsons
+    return
 
 
 if __name__ == "__main__":
