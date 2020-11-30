@@ -82,7 +82,7 @@ def main():
             item.shop.purchasable = ddragon_item.shop.purchasable
 
             if item is not None:
-                jsonfn = os.path.join(directory, "items", str(item.id) + ".json")
+                jsonfn = os.path.join(directory, "items", f"{str(item.id)}.json")
                 with open(jsonfn, "w", encoding="utf8") as f:
                     j = item.__json__(indent=2, ensure_ascii=False)
                     f.write(j)
@@ -95,20 +95,20 @@ def main():
             item = _name_to_wiki(ornn_item_name)
             item.name = ornn_item_name
             item.id = cdrag["id"]
-            item.icon = ""  # what would we do here?
+            item.icon = None  # This is temporary since the Masterwork Item icons are not in the DDragon
             item.builds_from = cdrag["from"]
             item.builds_into = cdrag["to"]
-            item.simple_description = "All stats have been improved."  # this is the caption of the item
-            item.required_ally = "Ornn"  # you can't forge Ornn items without Ornn as your ally
+            ddragon_item = DragonItem.get_ddragon(str(item.builds_from[0]), ddragon)
+            item.simple_description = f"An Ornn-updated item built from {ddragon_item.name}"  # This is the Mythic item that is needed for Ornn to forge the Masterwork Item
+            item.required_ally = "Ornn"  # You can't forge Masterwork Items without Ornn as your ally
             item.required_champion = cdrag["requiredChampion"]
-            item.shop.purchasable = False  # Ornn items aren't purchasable, Ornn forges them
-            if item is not None:
-                jsonfn = os.path.join(directory, "items", str(item.id) + ".json")
-                with open(jsonfn, "w", encoding="utf8") as f:
-                    j = item.__json__(indent=2, ensure_ascii=False)
-                    f.write(j)
-                jsons[item.id] = json.loads(item.__json__(ensure_ascii=False))
-                print(item.id)
+            item.shop.purchasable = False  # Masterwork Items aren't purchasable, Ornn forges them
+            jsonfn = os.path.join(directory, "items", f"{str(item.id)}.json")
+            with open(jsonfn, "w", encoding="utf8") as f:
+                j = item.__json__(indent=2, ensure_ascii=False)
+                f.write(j)
+            jsons[item.id] = json.loads(item.__json__(ensure_ascii=False))
+            print(item.id)
     jsonfn = os.path.join(directory, "items.json")
     with open(jsonfn, "w", encoding="utf8") as f:
         json.dump(jsons, f, indent=2, ensure_ascii=False)
