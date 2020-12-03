@@ -190,6 +190,11 @@ class LolWikiDataHandler:
             patch = data["patch"][1:]
         else:
             patch = data["patch"]
+        sale = self._get_sale()
+        sale_price = 0
+        if name in sale:
+            if sale[name]["price"] != 0:
+                sale_price = int(sale[name]["price"])
         champion = Champion(
             id=data["id"],
             key=data["apiname"],
@@ -347,9 +352,9 @@ class LolWikiDataHandler:
             release_patch=patch,
             # remove the leading "V"
             patch_last_changed=data["changes"][1:],  # remove the leading "V"
-            price=Price(rp=data["rp"], blue_essence=data["be"]),
+            price=Price(rp=data["rp"], blue_essence=data["be"], sale_rp=sale_price),
             lore="",
-            skins=self._get_champ_skin(name),
+            skins=self._get_champ_skin(name, sale),
         )
         # "nickname": "nickname",
         # "disp_name": "dispName",
@@ -634,6 +639,29 @@ class LolWikiDataHandler:
         )
         return cooldown
 
+    def _get_sale(self):
+
+        get_prices = re.compile(r"(\d+) (\d+)")
+        url = f"https://leagueoflegends.fandom.com/wiki/Sales"
+        # temporary fix for pyke passive
+        html = download_soup(url, False)
+        soup = BeautifulSoup(html, "lxml")
+        spans = soup.findAll("div", {"class": "skin_portrait skin-icon"})
+        sale = {}
+        for i in spans:
+            prices = get_prices.findall(i.text)
+            champion = i["data-champion"]
+            if not sale.get(champion):
+                sale[champion] = {}
+                sale[champion]["price"] = 0
+            skin = i["data-skin"]
+            if skin is not "":
+                sale[champion][skin] = prices[0][1]
+            else:
+                sale[champion]["price"] = prices[0][1]
+
+        return sale
+
     def _get_skin_id(self, id, skin_id):
         if skin_id < 10:
             id_test = str(id) + "00" + str(skin_id)
@@ -718,7 +746,7 @@ class LolWikiDataHandler:
         path = path.split("v1")[1]
         return base_url + path
 
-    def _get_champ_skin(self, name):
+    def _get_champ_skin(self, name, sale):
         """
         Pulls champion skin data from wiki and cdragon
         """
@@ -821,7 +849,10 @@ class LolWikiDataHandler:
                     timestamp = "0000-00-00"
                 else:
                     timestamp = champ_data[s]["release"]
-
+            sale_rp = 0
+            if name in sale:
+                if s in sale[name]:
+                    sale_rp = sale[name][s]
             skin = Skin(
                 name=s,
                 id=int(skin_ID),
@@ -829,6 +860,7 @@ class LolWikiDataHandler:
                 format_name=format_name,
                 loot_eligible=loot_eligible,
                 cost=champ_data[s]["cost"],
+                sale=int(sale_rp),
                 release=timestamp,
                 distribution=distribution,
                 set=sets,
