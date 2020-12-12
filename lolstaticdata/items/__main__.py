@@ -1,9 +1,10 @@
 import os
+import shutil
 import json
-import re
 
 from .pull_items_wiki import WikiItem, get_item_urls
 from .pull_items_dragon import DragonItem
+from collections import OrderedDict
 
 
 def _name_to_wiki(name: str):  # Change item name for wiki url
@@ -31,91 +32,85 @@ def _name_to_wiki(name: str):  # Change item name for wiki url
     return wiki_item
 
 
-def main():
+def rewrite():
     directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), "../.."))
     use_cache = False
     if not os.path.exists(os.path.join(directory, "items")):
         os.mkdir(os.path.join(directory, "items"))
-    ddragon = DragonItem.get_json_ddragon()
+
+    if os.path.exists(os.path.join(directory, "__wiki__")):
+        shutil.rmtree(os.path.join(directory, "__wiki__"))
+
+    if not os.path.exists(os.path.join(directory, "__wiki__")):
+        os.mkdir(os.path.join(directory, "__wiki__"))
+    # ddragon = DragonItem.get_json_ddragon()
     cdragon = DragonItem.get_cdragon()
+    wikiItems = get_item_urls(False)
+
+    # print(wikiItems)
+
+    for i in cdragon:
+        i["name"] = i["name"].replace("%i:ornnIcon% ", "")
+        i["name"] = i["name"].replace("<rarityLegendary>", "")
+        if "</rarityLegendary>" in i["name"]:
+            i["name"] = i["name"].split("</rarityLegendary>")[0]
     jsons = {}
-    for d in ddragon:
-        if str(d) in (
-            "2006",
-            "2054",
-            "2419",
-            "2424",
-            "3520",
-            "3684",
-            "3685",
-            "3330",
-            "4001",
-        ):  # WE NEED TO FIX 2419, 3520(ghost poro)
-            continue
-        # if str(d) not in "6671":
-        #     continue
-        if str(d) in ["goose", "goose2"]:
+    for x in wikiItems:
+        if x in ["goose", "goose1"]:
             continue
         else:
-            try:
-                ddragon_item = DragonItem.get_ddragon(d, ddragon)
-            except ValueError:
-                continue
-            for cdrag in cdragon:
-                if str(cdrag["id"]) == d:
-                    builds_from = cdrag["from"]
-                    builds_to = cdrag["to"]
-                    maps = cdrag["mapStringIdInclusions"]
-                    ally = cdrag["requiredAlly"]
-                    champ = cdrag["requiredChampion"]
-            wiki_item = _name_to_wiki(ddragon_item.name)
-            # Manual merge
-            item = wiki_item
-            item.name = ddragon_item.name
-            item.id = eval(d)
-            item.icon = ddragon_item.icon
-            item.builds_from = builds_from
-            item.builds_into = builds_to
-            item.simple_description = ddragon_item.simple_description
-            item.required_ally = ally
-            item.required_champion = champ
-            item.shop.purchasable = ddragon_item.shop.purchasable
+            item = None
+            print(x)
+            # try:
+            #     cdragon_item = DragonItem.get_item_cdragon(d, ddragon)
+            # except ValueError:
+            #     continue
+            if x == "'Your Cut'":
+                x = "Your Cut"
+                # l = [d for d in cdragon if x.upper() == d["name"].upper()]
+                l = list(filter(lambda d: d["name"].upper() == x.upper(), cdragon))
+                x = "'Your Cut'"
+            else:
+                # l = [d for d in cdragon if x.upper() == d["name"].upper()]
+                l = list(filter(lambda d: d["name"].upper() == x.upper(), cdragon))
 
-            if item is not None:
-                jsonfn = os.path.join(directory, "items", f"{str(item.id)}.json")
-                with open(jsonfn, "w", encoding="utf8") as f:
-                    j = item.__json__(indent=2, ensure_ascii=False)
-                    f.write(j)
-                jsons[item.id] = json.loads(item.__json__(ensure_ascii=False))
-                print(item.id)
-    for cdrag in cdragon:
-        ornn_item_match = re.search(r"(?:%i:ornnIcon% )([A-Za-z0-9' \-]+)", cdrag["name"])
-        if ornn_item_match is not None:
-            ornn_item_name = ornn_item_match.groups()[0]
-            item = _name_to_wiki(ornn_item_name)
-            item.name = ornn_item_name
-            item.id = cdrag["id"]
-            item.icon = None  # This is temporary since the Masterwork Item icons are not in the DDragon
-            item.builds_from = cdrag["from"]
-            item.builds_into = cdrag["to"]
-            ddragon_item = DragonItem.get_ddragon(str(item.builds_from[0]), ddragon)
-            item.simple_description = f"An Ornn-updated item built from {ddragon_item.name}"  # This is the Mythic item that is needed for Ornn to forge the Masterwork Item
-            item.required_ally = "Ornn"  # You can't forge Masterwork Items without Ornn as your ally
-            item.required_champion = cdrag["requiredChampion"]
-            item.shop.purchasable = False  # Masterwork Items aren't purchasable, Ornn forges them
-            jsonfn = os.path.join(directory, "items", f"{str(item.id)}.json")
-            with open(jsonfn, "w", encoding="utf8") as f:
-                j = item.__json__(indent=2, ensure_ascii=False)
-                f.write(j)
-            jsons[item.id] = json.loads(item.__json__(ensure_ascii=False))
-            print(item.id)
+            if len(l) >= 1:
+                for i in l:
+
+                    cdrag_item = DragonItem.get_item_cdragon(i)
+                    wiki_item = _name_to_wiki(x)
+                    item = wiki_item
+                    item.icon = cdrag_item.icon
+                    item.id = int(cdrag_item.id)
+                    item.builds_from = cdrag_item.builds_from
+                    item.builds_into = cdrag_item.builds_into
+                    item.simple_description = cdrag_item.simple_description
+                    item.required_ally = cdrag_item.required_ally
+                    item.required_champion = cdrag_item.required_champion
+                    item.shop.purchasable = cdrag_item.shop.purchasable
+                    item.special_recipe = cdrag_item.special_recipe
+                    if item.iconOverlay == True:
+                        item.iconOverlay = (
+                            "http://raw.communitydragon.org/10.24/game/data/items/icons2d/bordertreatmentornn.png"
+                        )
+                    else:
+                        item.iconOverlay = False
+                    if item is not None:
+                        jsonfn = os.path.join(directory, "items", str(item.id) + ".json")
+                        with open(jsonfn, "w", encoding="utf8") as f:
+                            j = item.__json__(indent=2, ensure_ascii=False)
+                            f.write(j)
+                        jsons[int(item.id)] = json.loads(item.__json__(ensure_ascii=False))
+                        print(item.id)
+    if os.path.exists(os.path.join(directory, "__wiki__")):
+        shutil.rmtree(os.path.join(directory, "__wiki__"))
     jsonfn = os.path.join(directory, "items.json")
+    jsons = OrderedDict(sorted(jsons.items(), key=lambda x: x[1]["id"]))
     with open(jsonfn, "w", encoding="utf8") as f:
         json.dump(jsons, f, indent=2, ensure_ascii=False)
     del jsons
-    return
 
 
 if __name__ == "__main__":
-    main()
+    rewrite()
     print("Hello! What a surprise, it worked!")

@@ -199,6 +199,7 @@ class Ability(object):
 class Price(object):
     blue_essence: int
     rp: int
+    sale_rp: int
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
@@ -236,6 +237,7 @@ class Skin(object):
     format_name: str
     loot_eligible: bool
     cost: str
+    sale: int
     distribution: str
     rarity: str
     chromas: List[Chroma]

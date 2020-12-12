@@ -151,6 +151,7 @@ class Item(object):
     rank: List[str]
     builds_from: List[int]
     builds_into: List[int]
+    special_recipe: int
     no_effects: bool
     removed: bool
     required_champion: str
@@ -162,6 +163,7 @@ class Item(object):
     active: List[Active]
     stats: Stats
     shop: Shop
+    iconOverlay: str
 
     def __json__(self, *args, **kwargs):
         # Use dataclasses_json to get the dict
