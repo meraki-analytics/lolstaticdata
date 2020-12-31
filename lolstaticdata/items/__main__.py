@@ -70,6 +70,14 @@ def rewrite():
                 # l = [d for d in cdragon if x.upper() == d["name"].upper()]
                 l = list(filter(lambda d: d["name"].upper() == x.upper(), cdragon))
                 x = "'Your Cut'"
+            elif x == "Slightly Magical Boots":
+                if list(filter(lambda d: d["name"].upper() == x.upper(), cdragon)):
+                    l = list(filter(lambda d: d["name"].upper() == x.upper(), cdragon))
+                else:
+                    x = "Slightly Magical Footwear"
+                    # l = [d for d in cdragon if x.upper() == d["name"].upper()]
+                    l = list(filter(lambda d: d["name"].upper() == x.upper(), cdragon))
+                    x = "Slightly Magical Boots"
             else:
                 # l = [d for d in cdragon if x.upper() == d["name"].upper()]
                 l = list(filter(lambda d: d["name"].upper() == x.upper(), cdragon))
