@@ -1,5 +1,4 @@
 import json
-from collections import defaultdict
 import requests
 import urllib.parse
 import cassiopeia as cass
@@ -32,19 +31,23 @@ def main():
 
     role_name_map = {"TOP": "TOP", "JUNGLE": "JUNGLE", "MID": "MIDDLE", "ADC": "BOTTOM", "SUPPORT": "UTILITY"}
 
-    final = defaultdict(dict)
+    final = {}
     for datum in data:
         id = datum["champion_id"]
         role = role_name_map[datum["role"]]
-        final[id][role] = {
-            "playRate": datum["stats"]["pickRate"],
-            "winRate": datum["stats"]["winRate"],
-            "banRate": datum["stats"]["banRate"],
+        final[id] = {
+            role: {
+                "playRate": datum["stats"]["pickRate"],
+                "winRate": datum["stats"]["winRate"],
+                "banRate": datum["stats"]["banRate"],
+            }
         }
-    final = {"data": final, "patch": patch.name}
     for champion in cass.get_champions(region="NA"):
-        if champion.id not in final["data"]:
-            final["data"][champion.id] = {}
+        if champion.id not in final:
+            final[champion.id] = {}
+
+    final = {"data": final, "patch": patch.name}
+
 
     filename = "/home/meraki/code/meraki/Data/champion-rates/rates.json"
     with open(filename, "w") as f:
