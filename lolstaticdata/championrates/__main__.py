@@ -1,42 +1,50 @@
 import json
 from collections import defaultdict
-from bs4 import BeautifulSoup
+import requests
+import urllib.parse
+import cassiopeia as cass
+
 from ..common.utils import download_soup
 
 
 def main():
-    soup = BeautifulSoup(download_soup("https://champion.gg/statistics/", use_cache=False), "lxml")
-    scripts = [script.text.strip() for script in soup.find_all("script")]
-    data = [script for script in scripts if script.startswith("matchupData.stats =")][0]
-    data = data[len("matchupData.stats =") :].strip()[:-1]
-    data = json.loads(data)
+    patch = cass.Patch.latest(region="NA")
+    query = """query ($region: String, $language: String, $queue: Int, $tier: String, $role: String, $patch: String) {{
+  lolChampionsListOverview(region: $region, language: $language, queue: $queue, tier: $tier, role: $role, patch: $patch) {{
+    champion_id
+    champion {{
+      name
+      key
+    }}
+    role
+    tier
+    stats {{
+      winRate
+      pickRate
+      banRate
+      games
+    }}
+  }}
+}}
+&variables={{"language":"en","role":"ALL","region":"world","queue":420,"tier":"PLATINUM_PLUS","patch":"{patch}"}}
+""".format(patch=patch.name)
+    data = requests.get("https://flash.blitz.gg/graphql?query=" + urllib.parse.quote(query, safe="/()=&")).json()["data"]["lolChampionsListOverview"]
 
-    patch = [script for script in scripts if script.startswith("var currentPatch =")][0]
-    patch = patch[len("var currentPatch =") :].split()[0].strip()
-    if patch.endswith(";"):
-        patch = patch[:-1]
-    patch = json.loads(patch)
-
-    ids = [script for script in scripts if script.startswith("var champData =")][0]
-    ids = ids[len("var champData =") :].strip().split(";")[0].strip()
-    ids = json.loads(ids)
-    ids = {k: int(v) for k, v in ids.items()}
-
-    role_name_map = {"Top": "TOP", "Jungle": "JUNGLE", "Middle": "MIDDLE", "ADC": "BOTTOM", "Support": "UTILITY"}
+    role_name_map = {"TOP": "TOP", "JUNGLE": "JUNGLE", "MID": "MIDDLE", "ADC": "BOTTOM", "SUPPORT": "UTILITY"}
 
     final = defaultdict(dict)
     for datum in data:
-        id = ids[datum["key"]]
+        id = datum["champion_id"]
         role = role_name_map[datum["role"]]
         final[id][role] = {
-            "playRate": datum["general"]["playPercent"],
-            "winRate": datum["general"]["winPercent"],
-            "banRate": datum["general"]["banRate"],
+            "playRate": datum["stats"]["pickRate"],
+            "winRate": datum["stats"]["winRate"],
+            "banRate": datum["stats"]["banRate"],
         }
-    final = {"data": final, "patch": patch}
-    for id in ids.values():
-        if id not in final["data"]:
-            final["data"][id] = {}
+    final = {"data": final, "patch": patch.name}
+    for champion in cass.get_champions(region="NA"):
+        if champion.id not in final["data"]:
+            final["data"][champion.id] = {}
 
     filename = "/home/meraki/code/meraki/Data/champion-rates/rates.json"
     with open(filename, "w") as f:
