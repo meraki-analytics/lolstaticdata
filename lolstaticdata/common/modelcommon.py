@@ -147,3 +147,6 @@ class AbilityHaste(Stat):
 
 class OmniVamp(Stat):
     pass
+
+class Tenacity(Stat):
+    pass
