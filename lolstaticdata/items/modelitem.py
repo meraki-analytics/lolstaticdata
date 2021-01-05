@@ -28,6 +28,7 @@ from ..common.modelcommon import (
     MagicPenetration,
     AbilityHaste,
     OmniVamp,
+    Tenacity,
 )
 
 
@@ -103,6 +104,7 @@ class Stats(object):
     movespeed: Movespeed
     ability_haste: AbilityHaste
     omnivamp: OmniVamp
+    tenacity: Tenacity
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)

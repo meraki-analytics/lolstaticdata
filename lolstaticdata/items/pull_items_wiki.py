@@ -37,6 +37,7 @@ from ..common.modelcommon import (
     MagicPenetration,
     OmniVamp,
     AbilityHaste,
+    Tenacity,
 )
 
 
@@ -190,15 +191,34 @@ class WikiItem:
         ability_power_percent = re.compile(r"(?:ability power by )(\d+)%")
         ability_haste = re.compile(r"(\d+) ability haste")
         attack_speed = re.compile(r"(\d+)(?:% bonus) attack speed")
+        health_re = re.compile(r"(\d+) (bonus health|health)")
+        bonus_ad = re.compile(r"(\d+) bonus attack damage")
         # onHit = re.compile(r"basic attack (?:.*?)(?: (?:as|in))?\d+ (?:bonus|seconds |deals).*? (\d+.*) (?:bonus|seconds|deals) (?:magic|physical)")
         # test = re.compile(r"basic attack (?:.*?)(?: (?:as|in))?(\d+) (?:bonus|deals).*?")#taken from https://github.com/TheKevJames/league/blob/a62f5e3697392094aedd3d0bd1df37012824963b/league_utils/models/item/stats.py
-
+        health = Health(flat=cls._parse_float(0.0))
+        ad = AttackDamage(flat=cls._parse_float(0.0)),
+        tenacity_re = re.compile(r"(\d+)% TENACITY")
         # print(passive)
+        if "Empowers each of your other Legendary items" in passive:
+            if health_re.search(passive):
+                print(passive)
+                health = Health(flat=float(health_re.search(passive).groups()[0]))
+
+            else:
+                health = Health(flat=cls._parse_float(0.0))
+
+            if bonus_ad.search(passive):
+                ad = AttackDamage(flat=cls._parse_float(bonus_ad.search(passive).groups()[0]))
+        if tenacity_re.search(passive.upper()):
+            tenacity = Tenacity(percent=cls._parse_float(tenacity_re.search(passive.upper()).groups()[0]))
+        else:
+            tenacity = Tenacity(percent=cls._parse_float(0.0))
         if cdr.search(passive):
             cooldown = cdr.search(passive).group(0).split("%")[0]
             cooldown = cls._parse_float(cooldown)
         else:
             cooldown = 0.0
+
         if movespeed.search(passive):
             mvspeed = movespeed.search(passive).group(0)
 
@@ -275,13 +295,13 @@ class WikiItem:
             ability_power=AbilityPower(flat=ap, percent=ap_percent),
             armor=Armor(flat=cls._parse_float(0.0)),
             armor_penetration=ArmorPenetration(percent=armorpen),
-            attack_damage=AttackDamage(flat=cls._parse_float(0.0)),
+            attack_damage=ad,
             attack_speed=AttackSpeed(percent=attack_speed),
             cooldown_reduction=CooldownReduction(percent=cooldown),
             critical_strike_chance=CriticalStrikeChance(percent=cls._parse_float(crit)),
             gold_per_10=GoldPer10(flat=cls._parse_float(0.0)),
             heal_and_shield_power=HealAndShieldPower(flat=cls._parse_float(0.0)),
-            health=Health(flat=cls._parse_float(0.0)),
+            health=health,
             health_regen=HealthRegen(flat=cls._parse_float(0.0)),
             lethality=Lethality(flat=lethal),
             lifesteal=Lifesteal(percent=lifesteal),
@@ -292,6 +312,7 @@ class WikiItem:
             movespeed=movespeed,
             omnivamp=OmniVamp(percent=omniv),
             ability_haste=AbilityHaste(flat=ah),
+            tenacity=tenacity
         )
         return stats
 
@@ -551,6 +572,11 @@ class WikiItem:
             else:
                 component = cls._parse_recipe_build(component.strip())
                 builds_from.append(component)
+        if "TENACITY" in item_data["spec"].upper():
+            tenacity = Tenacity(cls._parse_float(re.search(r"((\d+)% TENACITY)",item_data["spec"].upper()).groups()[0]))
+            print(tenacity)
+        else:
+            tenacity = Tenacity(cls._parse_float(0.0))
         ornn = False
         if "limit" in item_data:
             if "ORNN" in item_data["limit"].upper():
@@ -605,6 +631,7 @@ class WikiItem:
                     percent=cls._parse_float(item_data["omnivamp"]),  # takes omnivamp from
                 ),
                 ability_haste=AbilityHaste(flat=cls._parse_float(item_data["ah"])),
+                tenacity=tenacity
             ),
             shop=Shop(
                 prices=Prices(
@@ -637,6 +664,7 @@ def get_item_urls(use_cache: bool) -> List[str]:
                 if "Wild_Rift" in ur.attrs["href"] or "Itemtip" in ur.attrs["href"]:
                     continue
                 else:
+                    #print(ur.string.split("Item data ")[1])
                     all_urls.append(ur.string.split("Item data ")[1])
         next_button = soup.find("a", {"class": "category-page__pagination-next wds-button wds-is-secondary"})
         if not next_button:
