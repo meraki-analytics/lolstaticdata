@@ -156,6 +156,7 @@ class LolWikiDataHandler:
         self.skin_data = self._get_skins()
 
         for name, d in data.items():
+            print(name)
             if name in [
                 "Kled & Skaarl",
                 "GnarBig",
@@ -178,7 +179,7 @@ class LolWikiDataHandler:
             yield champion
 
     def _render_champion_data(self, name: str, data: Dict) -> Champion:
-        print(name)
+
         adaptive_type = data["adaptivetype"]
         if adaptive_type.upper() in ("PHYSICAL", "MIXED,PHYSICAL"):
             adaptive_type = "PHYSICAL_DAMAGE"

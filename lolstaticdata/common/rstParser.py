@@ -35,9 +35,10 @@ class BinaryParser:
         return self.f.read(self.unpack("<L")[0]).decode("utf-8")
 
 
+
 def key_to_hash(key):
     if isinstance(key, str):
-        return xxh64_intdigest(key.lower()) & 0xFFFFFFFFFF
+        return xxh64_intdigest(key.lower()) & 0xffffffffff
     else:
         return key
 
@@ -58,7 +59,6 @@ class RstFile:
             open(r"..\common\cdrag_rst.txt", "wb").write(r.content)
             with open(r"..\common\cdrag_rst.txt", "rb") as f:
                 self.parse_rst(f)
-
     def __getitem__(self, key):
         h = key_to_hash(key)
         try:
@@ -79,31 +79,30 @@ class RstFile:
     def parse_rst(self, f):
         parser = BinaryParser(f)
 
-        magic, version_major, version_minor = parser.unpack("<3sBB")
-        if magic != b"RST":
+        magic, version = parser.unpack("<3sB")
+        if magic != b'RST':
             raise ValueError("invalid magic code")
-        if (version_major, version_minor) not in ((2, 0), (2, 1)):
-            raise ValueError(f"unsupported RST version: {version_major}.{version_minor}")
 
-        if version_minor == 1:
-            (n,) = parser.unpack("<L")
-            self.font_config = parser.raw(n).decode("utf-8")
+        if version == 2:
+            if parser.unpack("<B")[0]:
+                n, = parser.unpack("<L")
+                self.font_config = parser.raw(n).decode("utf-8")
+            else:
+                self.font_config = None
+        elif version == 3:
+            pass
         else:
-            self.font_config = None
+            raise ValueError(f"unsupported RST version: {version}")
 
-        (count,) = parser.unpack("<L")
+        count, = parser.unpack("<L")
         entries = []
         for _ in range(count):
-            (v,) = parser.unpack("<Q")
-            entries.append((v >> 40, v & 0xFFFFFFFFFF))
+            v, = parser.unpack("<Q")
+            entries.append((v >> 40, v & 0xffffffffff))
 
-        b = parser.raw(1)
-        assert b[0] == version_minor
+        b = parser.raw(1)  # 0 or 1
 
         data = parser.f.read()
-        entries = [(h, data[i : data.find(b"\0", i)]) for i, h in entries]
+        entries = [(h, data[i:data.find(b"\0", i)]) for i, h in entries]
         # decode unless data starts with 0xFF (illegal UTF-8 sequence)
         self.entries = {h: v if v.startswith(b"\xff") else v.decode("utf-8") for h, v in entries}
-
-    def get_item_plaintext(self, id):
-        return self.__getitem__("game_item_plaintext_" + str(id))

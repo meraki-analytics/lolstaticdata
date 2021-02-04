@@ -121,4 +121,4 @@ def rewrite():
 
 if __name__ == "__main__":
     rewrite()
-    print("Hello! What a surprise, it worked!")
+    print("Hello! What a surprise, it worked! Remember, diamond hands!")
