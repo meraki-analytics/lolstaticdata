@@ -144,38 +144,38 @@ def rewrite_rewrite():
         if "</rarityLegendary>" in i["name"]:
             i["name"] = i["name"].split("</rarityLegendary>")[0]
     jsons = {}
-    for x in wikiItems:
-        if x in ["goose", "goose1"]:
+    for name,data in wikiItems.items():
+        if name in ["goose", "goose1"]:
             continue
         else:
             item = None
-            print(x)
+            print(name)
             # try:
             #     cdragon_item = DragonItem.get_item_cdragon(d, ddragon)
             # except ValueError:
             #     continue
-            if x == "'Your Cut'":
-                x = "Your Cut"
+            if name == "'Your Cut'":
+                name = "Your Cut"
                 # l = [d for d in cdragon if x.upper() == d["name"].upper()]
-                l = list(filter(lambda d: d["name"].upper() == x.upper(), cdragon))
-                x = "'Your Cut'"
-            elif x == "Slightly Magical Boots":
-                if list(filter(lambda d: d["name"].upper() == x.upper(), cdragon)):
-                    l = list(filter(lambda d: d["name"].upper() == x.upper(), cdragon))
+                l = list(filter(lambda d: d["name"].upper() == name.upper(), cdragon))
+                name = "'Your Cut'"
+            elif name == "Slightly Magical Boots":
+                if list(filter(lambda d: d["name"].upper() == name.upper(), cdragon)):
+                    l = list(filter(lambda d: d["name"].upper() == name.upper(), cdragon))
                 else:
-                    x = "Slightly Magical Footwear"
+                    name = "Slightly Magical Footwear"
                     # l = [d for d in cdragon if x.upper() == d["name"].upper()]
-                    l = list(filter(lambda d: d["name"].upper() == x.upper(), cdragon))
-                    x = "Slightly Magical Boots"
+                    l = list(filter(lambda d: d["name"].upper() == name.upper(), cdragon))
+                    name = "Slightly Magical Boots"
             else:
                 # l = [d for d in cdragon if x.upper() == d["name"].upper()]
-                l = list(filter(lambda d: d["name"].upper() == x.upper(), cdragon))
+                l = list(filter(lambda d: d["name"].upper() == name.upper(), cdragon))
 
             if len(l) >= 1:
                 for i in l:
 
                     cdrag_item = DragonItem.get_item_cdragon(i)
-                    wiki_item = _name_to_wiki(x)
+                    wiki_item = WikiItem._parse_item_data(data,name,wikiItems)
                     item = wiki_item
                     item.icon = cdrag_item.icon
                     item.id = int(cdrag_item.id)
@@ -209,5 +209,5 @@ def rewrite_rewrite():
 
 
 if __name__ == "__main__":
-    rewrite()
+    rewrite_rewrite()
     print("Hello! What a surprise, it worked! Remember, diamond hands!")

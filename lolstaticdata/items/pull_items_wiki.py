@@ -2,6 +2,7 @@ from typing import List, Optional, Tuple
 from bs4 import BeautifulSoup
 import re
 from collections import OrderedDict
+from slpp import slpp as lua
 
 from .modelitem import (
     Stats,
@@ -46,21 +47,10 @@ class WikiItem:
     def _parse_passives(cls, item_data: dict) -> List[Passive]:
         effects = []
         not_unique = re.compile("[0-9]")
-        if not_unique.search(item_data["cdrunique"]):
-            cooldown = cls._parse_float(item_data["cdrunique"])
-            description = "{}% cooldown reduction".format(cooldown)
-            stats = cls._parse_passive_descriptions(description)
-            effect = Passive(unique=True, name=None, effects=description, range=None, stats=stats, mythic=False)
-            effects.append(effect)
-        if not_unique.search(item_data["critunique"]):
-            crit = cls._parse_float(item_data["critunique"])
-            description = "{}% critical strike chance".format(crit)
-            stats = cls._parse_passive_descriptions(description)
-            effect = Passive(unique=True, name=None, effects=description, range=None, stats=stats, mythic=False)
-            effects.append(effect)
+
 
         # Parse both passives and auras the same way
-        def _parse(passive: str) -> Passive:
+        def _parse(passive: dict,) -> Passive:
             (
                 unique,
                 mythic,
@@ -80,30 +70,30 @@ class WikiItem:
             return effect
 
         # Passives
-        for i in range(1, 6):
-            passive = "pass" + str(i)
-            if passive == "pass1":
-                passive = "pass"
-            passive = item_data[passive].strip()
-            if passive:
-                effect = _parse(passive)
-                effects.append(effect)
-
-        # Auras
-        for i in range(1, 4):
-            passive = "aura" + str(i)
-            if passive == "aura1":
-                passive = "aura"
-            passive = item_data[passive].strip()
-            if passive:
-                effect = _parse(passive)
+        if "effects" in item_data:
+            for x in item_data["effects"]:
+                if "pass" in x:
+                    passive = item_data["effects"][x]
+                    effect = _parse(passive)
+                    effects.append(effect)
+                if "aura" in x:
+                    effect = _parse(item_data["effects"][x])
+                    effects.append((effect))
+                if "mythic" in x:
+                    effect = _parse(item_data["effects"][x])
+                    effects.append((effect))
         return effects
 
     @classmethod
     def _parse_actives(cls, item_data: dict) -> List[Active]:
         get_cooldown = re.compile(r"(\d+ second cooldown)|(\d+ seconds cooldown)")
         effects = []
-        passive = item_data["act"].strip()
+        passive = None
+        if "effects" in item_data:
+            for x in item_data["effects"]:
+                if x in "act":
+                    passive = item_data["effects"][x]
+
         if passive:
             (
                 unique,
@@ -129,51 +119,32 @@ class WikiItem:
         return effects
 
     @classmethod
-    def _parse_passive_info(cls, passive: str) -> Tuple[bool, bool, Optional[str], str, Optional[int]]:
-        if passive.startswith("Unique"):
+    def _parse_passive_info(cls, passive: dict) -> Tuple[bool, bool, Optional[str], str, Optional[int]]:
+        if "unique" in passive:
             unique = True
             mythic = False
-            passive = passive[len("Unique") :].strip()
-            if passive.startswith(":"):
-                passive = passive[1:].strip()
-        elif passive.startswith("Mythic"):
-            mythic = True
-            unique = True
-            passive = passive[len("Unique") :].strip()
-            if passive.startswith(":"):
-                passive = passive[1:].strip()
         else:
             unique = False
             mythic = False
-        while "  " in passive:
-            passive = passive.replace("  ", " ")
-        if unique:
-            # I changed util to detect unique items regardless of name or not
-            # Before it had "Unique \u2013 passive name :"
-            if ":" in " ".join(passive.split()[:4]):
-                unique_split = passive.split(":")
-                name = unique_split[0]
-                passive = ":".join(unique_split[1:])
-            else:
-                name = None
+        if "name" in passive:
+            name = passive["name"]
         else:
-            # Return normal passive
-            if ":" in " ".join(passive.split()[:4]):
-                not_unique_split = passive.split(":")
-                name = not_unique_split[0]
-                passive = ":".join(not_unique_split[1:])
-            else:
-                name = None
+            name = None
+        # elif passive.startswith("Mythic"):
+        #     mythic = True
+        #     unique = True
+        #     passive = passive[len("Unique") :].strip()
+        #     if passive.startswith(":"):
+        #         passive = passive[1:].strip()
+        passive = passive
 
-        passive = passive.strip()
-
-        get_range = re.compile(r"\d+ range")
-        if get_range.search(passive):
-            item_range = get_range.search(passive).group(0).split(" ", 1)
-            item_range = cls._parse_int(item_range[0])
+        if "radius" in passive:
+            item_range = cls._parse_int(passive["radius"])
+        elif "range" in passive:
+            item_range = cls._parse_int(passive["range"])
         else:
             item_range = None
-        return unique, mythic, name, passive, item_range
+        return unique, mythic, name, passive["description"], item_range
 
     @classmethod
     def _parse_passive_descriptions(cls, passive: str) -> Stats:
@@ -349,109 +320,11 @@ class WikiItem:
         # Gets all item attributes from the item tags
         # This is a mess. The wiki has tons of miss named tags, this is to get them
         tags = []
-        for i in range(1, 8):
-            menu = "menu" + str(i)
-            menua = menu + "a"
-            menub = menu + "b"
-            if item_data[menua]:
-                primary_tag = item_data[menua]
-                secondary_tag = item_data[menub]
-                if item_data[menua] in ("Offense", "Attack"):
-                    primary_tag = "Attack"
-                elif item_data[menua] in ("Starter Items", "Starting Items"):
-                    primary_tag = "Starter Items"
+        if "menu" in item_data:
 
-                elif item_data[menua] in ("Movement", "Movement Speed", "Other"):
-                    primary_tag = "Movement"
-
-                else:
-                    primary_tag = ItemAttributes.from_string(primary_tag)
-
-                if item_data[menub]:
-                    if item_data[menub] in (
-                        "Health Regeneration",
-                        "Health Regen",
-                        "Health Renegeration",
-                    ):
-                        secondary_tag = "Health Regen"
-
-                    elif item_data[menub] in ("Magic Resist", "Magic Resistance"):
-                        secondary_tag = "Magic Resist"
-
-                    elif item_data[menub] in ("Mana Regen", "Mana Regeneration"):
-                        secondary_tag = "Mana Regen"
-
-                    elif item_data[menub] in ("Jungling", "Jungle"):
-                        secondary_tag = "Jungling"
-
-                    elif item_data[menub] in (
-                        "Other Movement Items",
-                        "Other Movement",
-                        "Others",
-                        "Other Items",
-                        "Movement Speed",
-                    ):
-                        secondary_tag = "Other Movement Items"
-
-                    elif item_data[menub] in ("Attack Damage", "Damage", " Damage"):
-                        secondary_tag = "Damage"
-
-                    elif item_data[menub] in ("Laning", "Lane"):
-                        secondary_tag = "Laning"
-
-                    elif item_data[menub] in ("Lifesteal", "Life steal"):
-                        secondary_tag = "Life Steal"
-
-                    elif secondary_tag in (
-                        "Vision andamp;Trinkets",
-                        "VISION AND TRINKETS",
-                        "Vision and&; Trinkets",
-                        "Vision & Trinkets",
-                        "Vision",
-                    ):
-                        secondary_tag = "Vision and Trinkets"
-
-                    if ";" in item_data[menub]:
-                        secondary_tag = item_data[menub].replace("; ", ";")
-                        # I don't think this is needed (the vision stuff)
-                        if secondary_tag in (
-                            "Vision andamp;Trinkets",
-                            "VISION AND TRINKETS",
-                            "Vision and&; Trinkets",
-                            "Vision & Trinkets",
-                            "Vision",
-                        ):
-                            secondary_tag = "Vision and Trinkets"
-                            tag = primary_tag.name + ":" + secondary_tag.upper()
-                        else:
-                            secondary_tag = secondary_tag.split(";")
-                            secondary_tag1 = ItemAttributes.from_string(secondary_tag[0])
-                            secondary_tag2 = ItemAttributes.from_string(secondary_tag[1])
-                            secondary_tag = secondary_tag1.name + "," + secondary_tag2.name
-                            tag = primary_tag.name + ":" + secondary_tag.upper()
-                    else:
-                        if "Magic Pen" in secondary_tag:
-                            secondary_tag = ItemAttributes.from_string("MAGIC_PENETRATION")
-                        elif "Armor Pen" in secondary_tag:
-                            secondary_tag = ItemAttributes.from_string("ARMOR_PENETRATION")
-                        elif "Cooldown Reudction" in secondary_tag:
-                            secondary_tag = ItemAttributes.from_string("Cooldown Reduction")
-                        elif "Omni Vamp" in secondary_tag:
-                            secondary_tag = ItemAttributes.from_string("Omnivamp")
-                        else:
-                            secondary_tag = ItemAttributes.from_string(secondary_tag)
-                        try:
-                            # there was an error with a couple primary tags not having the right tags so this fixes it
-                            tag = primary_tag.name + ":" + secondary_tag.name
-                        except AttributeError:
-                            tag = primary_tag.upper() + ":" + secondary_tag.name
-                    tags.append(tag)
-                else:
-                    # Titanic Hydra decided to mess everything up so I needed to put something to allow a Primary tag without a secondary tag
-                    tag = primary_tag.upper() + ":None"
-                    tags.append(tag)
+            for tag in item_data["menu"]:
+                tags.append(ItemAttributes.from_string(tag))
         # After all that, let's just return the secondary tag and drop the primary tag.
-        tags = [tag.split(":")[1] for tag in tags]
         return tags
 
     @classmethod
@@ -490,13 +363,27 @@ class WikiItem:
         return item
 
     @classmethod
-    def _parse_item_data(cls, item_data: dict) -> Item:
+    def _parse_item_data(cls, item_data: dict, item_name:str,wiki_data:dict) -> Item:
         not_unique = re.compile("[A-z]")
-        builds_into = []
+        clear_keys = []
         builds_from = []
         nicknames = []
+
+        for x in item_data:
+            if type(item_data[x]) == str:
+                if "=>" in item_data[x]:
+                    try:
+                        item_data[x] = wiki_data[item_data[x].replace("=>", "")][x]
+                    except KeyError:
+                        clear_keys.append(x)
+            if x in "effects":
+                for l in item_data[x]:
+                    if "=>" in item_data[x][l]:
+                        item_data[x][l] = wiki_data[item_data[x][l].replace("=>", "")][x][l]
+        for key in clear_keys:
+            item_data.pop(key)
         try:
-            tier = eval(item_data["tier"].replace("Tier ", ""))
+            tier = item_data["tier"]
         except SyntaxError:
             tier = None
         except NameError:
@@ -504,16 +391,12 @@ class WikiItem:
         except KeyError:
             tier = "tier 3"
         # Create the json files from the classes in modelitem.py
-        if item_data["code"]:
-            id = item_data["code"]
+        if "id" in item_data:
+            id = item_data["id"]
 
         else:
             id = None
-
-        if item_data["1"]:
-            name = item_data["1"].strip()
-        else:
-            name = None
+        name = item_name
         if "removed" in item_data:
             if item_data["removed"] == "true":
                 removed = True
@@ -534,47 +417,50 @@ class WikiItem:
                 rank = None
         else:
             rank = []
-        if not_unique.match(item_data["noe"]):
+        if "effects" not in item_data:
             no_effects = True
         else:
             no_effects = False
+        if "buy" in item_data:
 
-        if not_unique.search(item_data["nickname"]):
+            sell = item_data["buy"] * .40
+        else:
+            sell = 0
+        if "nickname" in item_data:
             nickname = item_data["nickname"]
-            if "," in nickname:
-                for i in nickname.split(","):
-                    nicknames.append(i.strip())
-            else:
-                nicknames.append(nickname.strip())
-
-        if not_unique.search(item_data["builds"]):
-            build = item_data["builds"]
-            if "," in build:
-                for i in build.split(","):
-                    i = cls._parse_recipe_build(i.strip())
-                    if i is not None:
-                        builds_into.append(i)
-                    else:
-                        continue
-            else:
-                build = cls._parse_recipe_build(build.strip())
-                builds_into.append(build)
-
-        if not_unique.match(item_data["recipe"]):
-            component = item_data["recipe"]
-            if "," in component:
-                for i in component.split(","):
-                    i = cls._parse_recipe_build(i.strip())
-                    if i is not None:
-                        builds_from.append(i)
-                    else:
-                        continue
-            else:
-                component = cls._parse_recipe_build(component.strip())
-                builds_from.append(component)
-        if "TENACITY" in item_data["spec"].upper():
-            tenacity = Tenacity(cls._parse_float(re.search(r"((\d+)% TENACITY)",item_data["spec"].upper()).groups()[0]))
-            print(tenacity)
+            for i in nickname:
+                nicknames.append(i.strip())
+        else:
+            nickname = None
+        # if not_unique.search(item_data["builds"]):
+        #     build = item_data["builds"]
+        #     if "," in build:
+        #         for i in build.split(","):
+        #             i = cls._parse_recipe_build(i.strip())
+        #             if i is not None:
+        #                 builds_into.append(i)
+        #             else:
+        #                 continue
+        #     else:
+        #         build = cls._parse_recipe_build(build.strip())
+        #         builds_into.append(build)
+        #
+        # if not_unique.match(item_data["recipe"]):
+        #     component = item_data["recipe"]
+        #     if "," in component:
+        #         for i in component.split(","):
+        #             i = cls._parse_recipe_build(i.strip())
+        #             if i is not None:
+        #                 builds_from.append(i)
+        #             else:
+        #                 continue
+        #     else:
+        #         component = cls._parse_recipe_build(component.strip())
+        #         builds_from.append(component)
+        if "spec" in item_data:
+            if "TENACITY" in item_data["spec"].upper():
+                tenacity = Tenacity(cls._parse_float(re.search(r"((\d+)% TENACITY)",item_data["spec"].upper()).groups()[0]))
+                print(tenacity)
         else:
             tenacity = Tenacity(cls._parse_float(0.0))
         ornn = False
@@ -582,6 +468,152 @@ class WikiItem:
             if "ORNN" in item_data["limit"].upper():
                 print(item_data["limit"])
                 ornn = True
+        hp = 0.0
+        mr = 0.0
+        ah = 0.0
+        armor = 0.0
+        ap = 0.0
+        mana = 0.0
+        hsp = 0.0
+        mp5 = 0.0
+        ad = 0.0
+        mpenflat = 0.0
+        hspunique = 0.0
+        hp5flat = 0.0
+        armpen = 0.0
+        omnivamp = 0.0
+        lethality = 0.0
+        ms = 0.0
+        hp5 = 0.0
+        spec = 0.0
+        crit = 0.0
+        mpen = 0.0
+        lifesteal = 0.0
+        gp10 = 0.0
+        msflat = 0.0
+        attack_speed = 0.0
+        if "stats" in item_data:
+            if 'hp' in item_data['stats']:
+                hp = item_data['stats']['hp']
+
+
+
+            if 'mr' in item_data['stats']:
+                mr = item_data['stats']['mr']
+
+
+
+            if 'ah' in item_data['stats']:
+                ah = item_data['stats']['ah']
+
+
+
+            if 'armor' in item_data['stats']:
+                armor = item_data['stats']['armor']
+
+
+
+            if 'ap' in item_data['stats']:
+                ap = item_data['stats']['ap']
+
+
+
+            if 'mana' in item_data['stats']:
+                mana = item_data['stats']['mana']
+
+
+
+            if 'hsp' in item_data['stats']:
+                hsp = item_data['stats']['hsp']
+
+
+
+            if 'mp5' in item_data['stats']:
+                mp5 = item_data['stats']['mp5']
+
+
+
+            if 'ad' in item_data['stats']:
+                ad = item_data['stats']['ad']
+
+
+
+            if 'as' in item_data['stats']:
+                attack_speed = item_data['stats']['as']
+
+
+
+            if 'msflat' in item_data['stats']:
+                msflat = item_data['stats']['msflat']
+
+
+            if 'gp10' in item_data['stats']:
+                gp10 = item_data['stats']['gp10']
+
+
+            if 'lifesteal' in item_data['stats']:
+                lifesteal = item_data['stats']['lifesteal']
+
+
+            if 'mpen' in item_data['stats']:
+                mpen = item_data['stats']['mpen']
+
+
+
+            if 'crit' in item_data['stats']:
+                crit = item_data['stats']['crit']
+
+
+
+            if 'spec' in item_data['stats']:
+                spec = item_data['stats']['spec']
+
+
+
+            if 'hp5' in item_data['stats']:
+                hp5 = item_data['stats']['hp5']
+
+
+            if 'ms' in item_data['stats']:
+                ms = item_data['stats']['ms']
+
+
+
+            if 'lethality' in item_data['stats']:
+                lethality = item_data['stats']['lethality']
+
+
+            if 'omnivamp' in item_data['stats']:
+                omnivamp = item_data['stats']['omnivamp']
+
+
+            if 'mpenflat' in item_data['stats']:
+                mpenflat = item_data['stats']['mpenflat']
+
+
+
+            if 'hspunique' in item_data['stats']:
+                hspunique = item_data['stats']['hspunique']
+
+
+            if 'hp5flat' in item_data['stats']:
+                hp5flat = item_data['stats']['hp5flat']
+
+
+            if 'armpen' in item_data['stats']:
+                armpen = item_data['stats']['armpen']
+
+
+
+
+            if 'pvamp' in item_data['stats']:
+                pvamp = item_data['stats']['pvamp']
+            else:
+                pvamp = None
+        if "buy" in item_data:
+            buy = item_data["buy"]
+        else:
+            buy = 0
         item = Item(
             name=name,
             id=id,
@@ -598,46 +630,46 @@ class WikiItem:
             required_ally="",
             simple_description="",
             stats=Stats(
-                ability_power=AbilityPower(flat=cls._parse_float(item_data["ap"])),
-                armor=Armor(flat=cls._parse_float(item_data["armor"])),
-                armor_penetration=ArmorPenetration(percent=cls._parse_float(item_data["rpen"])),
-                attack_damage=AttackDamage(flat=cls._parse_float(item_data["ad"])),
-                attack_speed=AttackSpeed(flat=cls._parse_float(item_data["as"])),
-                cooldown_reduction=CooldownReduction(percent=cls._parse_float(item_data["cdr"])),
-                critical_strike_chance=CriticalStrikeChance(percent=cls._parse_float(item_data["crit"])),
-                gold_per_10=GoldPer10(flat=cls._parse_float(item_data["gp10"])),
-                heal_and_shield_power=HealAndShieldPower(flat=cls._parse_float(item_data["hsp"])),
-                health=Health(flat=cls._parse_float(item_data["health"])),
+                ability_power=AbilityPower(flat=cls._parse_float(ap)),
+                armor=Armor(flat=cls._parse_float(armor)),
+                armor_penetration=ArmorPenetration(percent=cls._parse_float(armpen)),
+                attack_damage=AttackDamage(flat=cls._parse_float(ad)),
+                attack_speed=AttackSpeed(flat=cls._parse_float(attack_speed)),
+                cooldown_reduction=CooldownReduction(percent=cls._parse_float(0.0)),
+                critical_strike_chance=CriticalStrikeChance(percent=cls._parse_float(crit)),
+                gold_per_10=GoldPer10(flat=cls._parse_float(gp10)),
+                heal_and_shield_power=HealAndShieldPower(flat=cls._parse_float(hsp)),
+                health=Health(flat=cls._parse_float(hp)),
                 health_regen=HealthRegen(
-                    flat=cls._parse_float(item_data["hp5flat"]),
-                    percent=cls._parse_float(item_data["hp5"]),
+                    flat=cls._parse_float(hp5flat),
+                    percent=cls._parse_float(hp5),
                 ),
                 lethality=Lethality(flat=0.0),
-                lifesteal=Lifesteal(percent=cls._parse_float(item_data["lifesteal"])),
+                lifesteal=Lifesteal(percent=cls._parse_float(lifesteal)),
                 magic_penetration=MagicPenetration(
-                    flat=cls._parse_float(item_data["mpenflat"]), percent=cls._parse_float(item_data["mpen"])
+                    flat=cls._parse_float(mpenflat), percent=cls._parse_float(mpen)
                 ),
-                magic_resistance=MagicResistance(flat=cls._parse_float(item_data["mr"])),
-                mana=Mana(flat=cls._parse_float(item_data["mana"])),
+                magic_resistance=MagicResistance(flat=cls._parse_float(mr)),
+                mana=Mana(flat=cls._parse_float(mana)),
                 mana_regen=ManaRegen(
-                    flat=cls._parse_float(item_data["mp5flat"]),
-                    percent=cls._parse_float(item_data["mp5"]),
+                    percent=cls._parse_float(mp5),
                 ),
                 movespeed=Movespeed(
-                    flat=cls._parse_float(item_data["msflat"]),
-                    percent=cls._parse_float(item_data["ms"]) + cls._parse_float(item_data["msunique"]),
+                    flat=cls._parse_float(msflat),
+                    percent=cls._parse_float(ms),
                 ),
                 omnivamp=OmniVamp(
-                    percent=cls._parse_float(item_data["omnivamp"]),  # takes omnivamp from
+                    percent=cls._parse_float(omnivamp),  # takes omnivamp from
                 ),
-                ability_haste=AbilityHaste(flat=cls._parse_float(item_data["ah"])),
+                ability_haste=AbilityHaste(flat=cls._parse_float(ah)),
                 tenacity=tenacity
             ),
+
             shop=Shop(
                 prices=Prices(
-                    total=cls._parse_int(item_data["buy"]),
-                    combined=cls._parse_int(item_data["comb"]),
-                    sell=cls._parse_int(item_data["sell"]),
+                    total=cls._parse_int(buy),
+                    combined=cls._parse_int(0),
+                    sell=cls._parse_int(sell),
                 ),
                 tags=cls.get_item_attributes(item_data),
                 purchasable="",
@@ -650,27 +682,24 @@ class WikiItem:
 
 
 def get_item_urls(use_cache: bool) -> List[str]:
-    all_urls = []
-    url = "https://leagueoflegends.fandom.com/wiki/Category:Item_data_templates"
-    while True:
-        html = download_soup(url, use_cache)
-        soup = BeautifulSoup(html, "lxml")
-        urls = soup.find_all("a", {"class": "category-page__member-link"})
-        for ur in urls:
-            # print(ur.attrs["href"])
-            if ur in all_urls:
-                continue
-            else:
-                if "Wild_Rift" in ur.attrs["href"] or "Itemtip" in ur.attrs["href"]:
-                    continue
-                else:
-                    #print(ur.string.split("Item data ")[1])
-                    all_urls.append(ur.string.split("Item data ")[1])
-        next_button = soup.find("a", {"class": "category-page__pagination-next wds-button wds-is-secondary"})
-        if not next_button:
-            break
-        url = next_button["href"]
+    url = "https://leagueoflegends.fandom.com/wiki/Module:ItemData/data"
+    html = download_soup(url, False)
+    soup = BeautifulSoup(html, "lxml")
+    spans = soup.find("pre", {"class": "mw-code mw-script"})
+    start = None
+    spans = spans.text.split("\n")
 
-    #    base_url = "https://leagueoflegends.fandom.com"
-    #    all_urls = [base_url + url for url in all_urls]
-    return all_urls
+    for i, span in enumerate(spans):
+        if str(span) == "return {":
+            start = i
+            spans[i] = "{"
+    split_stuff = re.compile("({)|(})")
+    spans = spans[start:]
+    for i, span in enumerate(spans):
+        if span in ["-- </pre>", "-- [[Category:Lua]]"]:
+            spans[i] = ""
+
+    spans = "".join(spans)
+    data = lua.decode(spans)
+    menus = []
+    return data
