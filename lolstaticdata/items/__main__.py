@@ -100,7 +100,7 @@ def rewrite():
                     item.special_recipe = cdrag_item.special_recipe
                     if item.iconOverlay == True:
                         item.iconOverlay = (
-                            "http://raw.communitydragon.org/10.24/game/data/items/icons2d/bordertreatmentornn.png"
+                            "http://raw.communitydragon.org/latest/game/data/items/icons2d/bordertreatmentornn.png"
                         )
                     else:
                         item.iconOverlay = False
@@ -188,7 +188,7 @@ def rewrite_rewrite():
                     item.special_recipe = cdrag_item.special_recipe
                     if item.iconOverlay == True:
                         item.iconOverlay = (
-                            "http://raw.communitydragon.org/10.24/game/data/items/icons2d/bordertreatmentornn.png"
+                            "http://raw.communitydragon.org/latest/game/data/items/icons2d/bordertreatmentornn.png"
                         )
                     else:
                         item.iconOverlay = False

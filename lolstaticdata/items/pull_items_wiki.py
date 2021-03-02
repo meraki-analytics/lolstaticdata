@@ -644,7 +644,7 @@ class WikiItem:
                     flat=cls._parse_float(hp5flat),
                     percent=cls._parse_float(hp5),
                 ),
-                lethality=Lethality(flat=0.0),
+                lethality=Lethality(flat=lethality),
                 lifesteal=Lifesteal(percent=cls._parse_float(lifesteal)),
                 magic_penetration=MagicPenetration(
                     flat=cls._parse_float(mpenflat), percent=cls._parse_float(mpen)
