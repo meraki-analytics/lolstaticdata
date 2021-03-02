@@ -80,7 +80,15 @@ class WikiItem:
                     effect = _parse(item_data["effects"][x])
                     effects.append((effect))
                 if "mythic" in x:
-                    effect = _parse(item_data["effects"][x])
+                    stats = cls.get_stats(item_data["effects"][x])
+                    effect = Passive(
+                unique=True,
+                name="Mythic",
+                effects=None,
+                range=0,
+                stats=stats,
+                mythic=True,
+            )
                     effects.append((effect))
         return effects
 
@@ -346,6 +354,231 @@ class WikiItem:
         return cls._parse_item_id(code=code[0].text)
 
     @classmethod
+    def get_stats(cls,item_data):
+        hp = 0.0
+        mr = 0.0
+        ah = 0.0
+        armor = 0.0
+        ap = 0.0
+        mana = 0.0
+        hsp = 0.0
+        mp5 = 0.0
+        tenacity = Tenacity(cls._parse_float(0.0))
+        ad = 0.0
+        mpenflat = 0.0
+        hspunique = 0.0
+        hp5flat = 0.0
+        armpen = 0.0
+        omnivamp = 0.0
+        lethality = 0.0
+        ms = 0.0
+        hp5 = 0.0
+        spec = 0.0
+        crit = 0.0
+        mpen = 0.0
+        lifesteal = 0.0
+        gp10 = 0.0
+        msflat = 0.0
+        attack_speed = 0.0
+        if type(item_data) == str:
+            print(item_data)
+            stats = Stats(
+                ability_power=AbilityPower(flat=cls._parse_float(ap)),
+                armor=Armor(flat=cls._parse_float(armor)),
+                armor_penetration=ArmorPenetration(percent=cls._parse_float(armpen)),
+                attack_damage=AttackDamage(flat=cls._parse_float(ad)),
+                attack_speed=AttackSpeed(flat=cls._parse_float(attack_speed)),
+                cooldown_reduction=CooldownReduction(percent=cls._parse_float(0.0)),
+                critical_strike_chance=CriticalStrikeChance(percent=cls._parse_float(crit)),
+                gold_per_10=GoldPer10(flat=cls._parse_float(gp10)),
+                heal_and_shield_power=HealAndShieldPower(flat=cls._parse_float(hsp)),
+                health=Health(flat=cls._parse_float(hp)),
+                health_regen=HealthRegen(
+                    flat=cls._parse_float(hp5flat),
+                    percent=cls._parse_float(hp5),
+                ),
+                lethality=Lethality(flat=lethality),
+                lifesteal=Lifesteal(percent=cls._parse_float(lifesteal)),
+                magic_penetration=MagicPenetration(
+                    flat=cls._parse_float(mpenflat), percent=cls._parse_float(mpen)
+                ),
+                magic_resistance=MagicResistance(flat=cls._parse_float(mr)),
+                mana=Mana(flat=cls._parse_float(mana)),
+                mana_regen=ManaRegen(
+                    percent=cls._parse_float(mp5),
+                ),
+                movespeed=Movespeed(
+                    flat=cls._parse_float(msflat),
+                    percent=cls._parse_float(ms),
+                ),
+                omnivamp=OmniVamp(
+                    percent=cls._parse_float(omnivamp),  # takes omnivamp from
+                ),
+                ability_haste=AbilityHaste(flat=cls._parse_float(ah)),
+                tenacity=tenacity
+            )
+            return stats
+
+        if 'hp' in item_data:
+            hp = item_data['hp']
+
+
+
+        if 'mr' in item_data:
+            mr = item_data['mr']
+
+
+
+        if 'ah' in item_data:
+            ah = item_data['ah']
+
+
+
+        if 'armor' in item_data:
+            armor = item_data['armor']
+
+
+
+        if 'ap' in item_data:
+            ap = item_data['ap']
+
+
+
+        if 'mana' in item_data:
+            mana = item_data['mana']
+
+
+
+        if 'hsp' in item_data:
+            hsp = item_data['hsp']
+
+
+
+        if 'mp5' in item_data:
+            mp5 = item_data['mp5']
+
+
+
+        if 'ad' in item_data:
+            ad = item_data['ad']
+
+
+
+        if 'as' in item_data:
+            attack_speed = item_data['as']
+
+
+
+        if 'msflat' in item_data:
+            msflat = item_data['msflat']
+
+
+        if 'gp10' in item_data:
+            gp10 = item_data['gp10']
+
+
+        if 'lifesteal' in item_data:
+            lifesteal = item_data['lifesteal']
+
+
+        if 'mpen' in item_data:
+            mpen = item_data['mpen']
+
+
+
+        if 'crit' in item_data:
+            crit = item_data['crit']
+
+
+
+        if 'spec' in item_data:
+            spec = item_data['spec']
+
+
+
+        if 'hp5' in item_data:
+            hp5 = item_data['hp5']
+
+
+        if 'ms' in item_data:
+            ms = item_data['ms']
+
+
+
+        if 'lethality' in item_data:
+            lethality = item_data['lethality']
+
+
+        if 'omnivamp' in item_data:
+            omnivamp = item_data['omnivamp']
+
+
+        if 'mpenflat' in item_data:
+            mpenflat = item_data['mpenflat']
+
+
+
+        if 'hspunique' in item_data:
+            hspunique = item_data['hspunique']
+
+
+        if 'hp5flat' in item_data:
+            hp5flat = item_data['hp5flat']
+
+
+        if 'armpen' in item_data:
+            armpen = item_data['armpen']
+
+        if 'pvamp' in item_data:
+            pvamp = item_data['pvamp']
+        else:
+            pvamp = None
+        if "spec" in item_data:
+            if "TENACITY" in item_data["spec"].upper():
+                tenacity = Tenacity(
+                    cls._parse_float(re.search(r"(\d+)%", item_data["spec"].upper()).groups()[0]))
+                print(tenacity)
+        stats = Stats(
+            ability_power=AbilityPower(flat=cls._parse_float(ap)),
+            armor=Armor(flat=cls._parse_float(armor)),
+            armor_penetration=ArmorPenetration(percent=cls._parse_float(armpen)),
+            attack_damage=AttackDamage(flat=cls._parse_float(ad)),
+            attack_speed=AttackSpeed(flat=cls._parse_float(attack_speed)),
+            cooldown_reduction=CooldownReduction(percent=cls._parse_float(0.0)),
+            critical_strike_chance=CriticalStrikeChance(percent=cls._parse_float(crit)),
+            gold_per_10=GoldPer10(flat=cls._parse_float(gp10)),
+            heal_and_shield_power=HealAndShieldPower(flat=cls._parse_float(hsp)),
+            health=Health(flat=cls._parse_float(hp)),
+            health_regen=HealthRegen(
+                flat=cls._parse_float(hp5flat),
+                percent=cls._parse_float(hp5),
+            ),
+            lethality=Lethality(flat=lethality),
+            lifesteal=Lifesteal(percent=cls._parse_float(lifesteal)),
+            magic_penetration=MagicPenetration(
+                flat=cls._parse_float(mpenflat), percent=cls._parse_float(mpen)
+            ),
+            magic_resistance=MagicResistance(flat=cls._parse_float(mr)),
+            mana=Mana(flat=cls._parse_float(mana)),
+            mana_regen=ManaRegen(
+                percent=cls._parse_float(mp5),
+            ),
+            movespeed=Movespeed(
+                flat=cls._parse_float(msflat),
+                percent=cls._parse_float(ms),
+            ),
+            omnivamp=OmniVamp(
+                percent=cls._parse_float(omnivamp),  # takes omnivamp from
+            ),
+            ability_haste=AbilityHaste(flat=cls._parse_float(ah)),
+            tenacity=tenacity
+        )
+        return stats
+
+
+
+
+    @classmethod
     def get(cls, url: str) -> Optional[Item]:
         # All item data has a html attribute "data-name" so I put them all in an ordered dict while stripping the new lines and spaces from the data
         # use_cache = False
@@ -457,159 +690,16 @@ class WikiItem:
         #     else:
         #         component = cls._parse_recipe_build(component.strip())
         #         builds_from.append(component)
-        if "spec" in item_data:
-            if "TENACITY" in item_data["spec"].upper():
-                tenacity = Tenacity(cls._parse_float(re.search(r"((\d+)% TENACITY)",item_data["spec"].upper()).groups()[0]))
-                print(tenacity)
+        if "stats" in item_data:
+            stats = cls.get_stats(item_data["stats"])
         else:
-            tenacity = Tenacity(cls._parse_float(0.0))
+            stats = cls.get_stats(item_data)
         ornn = False
         if "limit" in item_data:
             if "ORNN" in item_data["limit"].upper():
                 print(item_data["limit"])
                 ornn = True
-        hp = 0.0
-        mr = 0.0
-        ah = 0.0
-        armor = 0.0
-        ap = 0.0
-        mana = 0.0
-        hsp = 0.0
-        mp5 = 0.0
-        ad = 0.0
-        mpenflat = 0.0
-        hspunique = 0.0
-        hp5flat = 0.0
-        armpen = 0.0
-        omnivamp = 0.0
-        lethality = 0.0
-        ms = 0.0
-        hp5 = 0.0
-        spec = 0.0
-        crit = 0.0
-        mpen = 0.0
-        lifesteal = 0.0
-        gp10 = 0.0
-        msflat = 0.0
-        attack_speed = 0.0
-        if "stats" in item_data:
-            if 'hp' in item_data['stats']:
-                hp = item_data['stats']['hp']
 
-
-
-            if 'mr' in item_data['stats']:
-                mr = item_data['stats']['mr']
-
-
-
-            if 'ah' in item_data['stats']:
-                ah = item_data['stats']['ah']
-
-
-
-            if 'armor' in item_data['stats']:
-                armor = item_data['stats']['armor']
-
-
-
-            if 'ap' in item_data['stats']:
-                ap = item_data['stats']['ap']
-
-
-
-            if 'mana' in item_data['stats']:
-                mana = item_data['stats']['mana']
-
-
-
-            if 'hsp' in item_data['stats']:
-                hsp = item_data['stats']['hsp']
-
-
-
-            if 'mp5' in item_data['stats']:
-                mp5 = item_data['stats']['mp5']
-
-
-
-            if 'ad' in item_data['stats']:
-                ad = item_data['stats']['ad']
-
-
-
-            if 'as' in item_data['stats']:
-                attack_speed = item_data['stats']['as']
-
-
-
-            if 'msflat' in item_data['stats']:
-                msflat = item_data['stats']['msflat']
-
-
-            if 'gp10' in item_data['stats']:
-                gp10 = item_data['stats']['gp10']
-
-
-            if 'lifesteal' in item_data['stats']:
-                lifesteal = item_data['stats']['lifesteal']
-
-
-            if 'mpen' in item_data['stats']:
-                mpen = item_data['stats']['mpen']
-
-
-
-            if 'crit' in item_data['stats']:
-                crit = item_data['stats']['crit']
-
-
-
-            if 'spec' in item_data['stats']:
-                spec = item_data['stats']['spec']
-
-
-
-            if 'hp5' in item_data['stats']:
-                hp5 = item_data['stats']['hp5']
-
-
-            if 'ms' in item_data['stats']:
-                ms = item_data['stats']['ms']
-
-
-
-            if 'lethality' in item_data['stats']:
-                lethality = item_data['stats']['lethality']
-
-
-            if 'omnivamp' in item_data['stats']:
-                omnivamp = item_data['stats']['omnivamp']
-
-
-            if 'mpenflat' in item_data['stats']:
-                mpenflat = item_data['stats']['mpenflat']
-
-
-
-            if 'hspunique' in item_data['stats']:
-                hspunique = item_data['stats']['hspunique']
-
-
-            if 'hp5flat' in item_data['stats']:
-                hp5flat = item_data['stats']['hp5flat']
-
-
-            if 'armpen' in item_data['stats']:
-                armpen = item_data['stats']['armpen']
-
-
-
-
-            if 'pvamp' in item_data['stats']:
-                pvamp = item_data['stats']['pvamp']
-            else:
-                pvamp = None
         if "buy" in item_data:
             buy = item_data["buy"]
         else:
@@ -629,41 +719,7 @@ class WikiItem:
             required_champion="",
             required_ally="",
             simple_description="",
-            stats=Stats(
-                ability_power=AbilityPower(flat=cls._parse_float(ap)),
-                armor=Armor(flat=cls._parse_float(armor)),
-                armor_penetration=ArmorPenetration(percent=cls._parse_float(armpen)),
-                attack_damage=AttackDamage(flat=cls._parse_float(ad)),
-                attack_speed=AttackSpeed(flat=cls._parse_float(attack_speed)),
-                cooldown_reduction=CooldownReduction(percent=cls._parse_float(0.0)),
-                critical_strike_chance=CriticalStrikeChance(percent=cls._parse_float(crit)),
-                gold_per_10=GoldPer10(flat=cls._parse_float(gp10)),
-                heal_and_shield_power=HealAndShieldPower(flat=cls._parse_float(hsp)),
-                health=Health(flat=cls._parse_float(hp)),
-                health_regen=HealthRegen(
-                    flat=cls._parse_float(hp5flat),
-                    percent=cls._parse_float(hp5),
-                ),
-                lethality=Lethality(flat=lethality),
-                lifesteal=Lifesteal(percent=cls._parse_float(lifesteal)),
-                magic_penetration=MagicPenetration(
-                    flat=cls._parse_float(mpenflat), percent=cls._parse_float(mpen)
-                ),
-                magic_resistance=MagicResistance(flat=cls._parse_float(mr)),
-                mana=Mana(flat=cls._parse_float(mana)),
-                mana_regen=ManaRegen(
-                    percent=cls._parse_float(mp5),
-                ),
-                movespeed=Movespeed(
-                    flat=cls._parse_float(msflat),
-                    percent=cls._parse_float(ms),
-                ),
-                omnivamp=OmniVamp(
-                    percent=cls._parse_float(omnivamp),  # takes omnivamp from
-                ),
-                ability_haste=AbilityHaste(flat=cls._parse_float(ah)),
-                tenacity=tenacity
-            ),
+            stats=stats,
 
             shop=Shop(
                 prices=Prices(
@@ -679,7 +735,6 @@ class WikiItem:
             iconOverlay=ornn,
         )
         return item
-
 
 def get_item_urls(use_cache: bool) -> List[str]:
     url = "https://leagueoflegends.fandom.com/wiki/Module:ItemData/data"

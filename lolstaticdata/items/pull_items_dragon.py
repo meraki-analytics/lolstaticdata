@@ -22,9 +22,8 @@ class DragonItem:
     @staticmethod
     def get_cdragon():  # cdragon to list
 
-        url = "https://raw.communitydragon.org/{}/plugins/rcp-be-lol-game-data/global/default/v1/items.json".format(
-            DragonItem.version
-        )
+        url = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/items.json"
+
         j = download_json(url, use_cache=False)
         cdragon = [i for i in j if str(i["id"])]
         return cdragon
