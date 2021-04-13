@@ -56,6 +56,7 @@ class WikiItem:
                 mythic,
                 passive_name,
                 passive_effects,
+                cooldown,
                 item_range,
             ) = cls._parse_passive_info(passive)
             stats = cls._parse_passive_descriptions(passive_effects)
@@ -108,13 +109,9 @@ class WikiItem:
                 mythic,
                 passive_name,
                 passive_effects,
+                cooldown,
                 item_range,
             ) = cls._parse_passive_info(passive)
-            if get_cooldown.search(passive_effects):
-                cooldown = get_cooldown.search(passive_effects).group(0).split(" ", 1)
-                cooldown = cls._parse_float(cooldown[0])
-            else:
-                cooldown = None
             effect = Active(
                 unique=unique,
                 name=passive_name,
@@ -138,6 +135,11 @@ class WikiItem:
             name = passive["name"]
         else:
             name = None
+
+        if "cd" in passive:
+            cooldown = passive["cd"]
+        else:
+            cooldown = None
         # elif passive.startswith("Mythic"):
         #     mythic = True
         #     unique = True
@@ -152,7 +154,7 @@ class WikiItem:
             item_range = cls._parse_int(passive["range"])
         else:
             item_range = None
-        return unique, mythic, name, passive["description"], item_range
+        return unique, mythic, name, passive["description"], cooldown, item_range
 
     @classmethod
     def _parse_passive_descriptions(cls, passive: str) -> Stats:
