@@ -431,7 +431,6 @@ class WikiItem:
 
         if 'ah' in item_data:
             ah = item_data['ah']
-            print(ah)
 
 
         if 'armor' in item_data:
