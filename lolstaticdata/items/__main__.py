@@ -57,7 +57,7 @@ def rewrite():
             i["name"] = i["name"].split("</rarityLegendary>")[0]
     jsons = {}
     for x in wikiItems:
-        if x in ["goose", "goose1"]:
+        if x not in ["Muramana", "goose1"]:
             continue
         else:
             item = None
@@ -210,4 +210,4 @@ def rewrite_rewrite():
 
 if __name__ == "__main__":
     rewrite_rewrite()
-    print("Hello! What a surprise, it worked! Remember, diamond hands!")
+    print("Hello! What a surprise, it worked!")

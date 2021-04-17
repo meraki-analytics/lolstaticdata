@@ -433,7 +433,6 @@ class WikiItem:
             ah = item_data['ah']
 
 
-
         if 'armor' in item_data:
             armor = item_data['armor']
 
@@ -613,6 +612,10 @@ class WikiItem:
             if x in "effects":
                 for l in item_data[x]:
                     if "=>" in item_data[x][l]:
+                        item_data[x][l] = wiki_data[item_data[x][l].replace("=>", "")][x][l]
+            if x in "stats":
+                for l in item_data[x]:
+                    if type(item_data[x][l]) ==str and "=>" in item_data[x][l]:
                         item_data[x][l] = wiki_data[item_data[x][l].replace("=>", "")][x][l]
         for key in clear_keys:
             item_data.pop(key)
