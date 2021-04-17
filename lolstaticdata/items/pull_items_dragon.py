@@ -33,7 +33,6 @@ class DragonItem:
 
         builds_from = []
         builds_to = []
-        maps = []
         ally = None
         champ = None
         purchasable = None
@@ -41,7 +40,6 @@ class DragonItem:
         icon = ""
         builds_from = cdrag["from"]
         builds_to = cdrag["to"]
-        maps = cdrag["mapStringIdInclusions"]
         ally = cdrag["requiredAlly"]
         special_recipe = cdrag["specialRecipe"]
         champ = cdrag["requiredChampion"]
