@@ -27,7 +27,7 @@ def main():
 }}
 &variables={{"language":"en","role":"ALL","region":"world","queue":420,"tier":"PLATINUM_PLUS","patch":"{patch}"}}
 """.format(patch=patch.name)
-    data2 = requests.get("https://apix1.op.lol/tierlist/7/?lane=default&patch=11.8&tier=platinum_plus&queue=420&region=all").json()
+    data2 = requests.get("https://apix1.op.lol/tierlist/7/?lane=default&patch={}&tier=platinum_plus&queue=420&region=all".format(patch)).json()
     totalPicked = data2["pick"]
    # data = requests.get("https://flash.blitz.gg/graphql?query=" + urllib.parse.quote(query, safe="/()=&")).json()["data"]["lolChampionsListOverview"]
 
