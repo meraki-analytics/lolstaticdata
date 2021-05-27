@@ -4,7 +4,6 @@ import struct
 from xxhash import xxh64_intdigest
 import requests
 
-
 class BinaryParser:
     """Helper class to read from binary file object"""
 
@@ -32,8 +31,7 @@ class BinaryParser:
 
     def unpack_string(self):
         """Unpack string prefixed by its 32-bit length"""
-        return self.f.read(self.unpack("<L")[0]).decode("utf-8")
-
+        return self.f.read(self.unpack('<L')[0]).decode('utf-8')
 
 
 def key_to_hash(key):
@@ -59,15 +57,16 @@ class RstFile:
             open(r"..\common\cdrag_rst.txt", "wb").write(r.content)
             with open(r"..\common\cdrag_rst.txt", "rb") as f:
                 self.parse_rst(f)
+
     def __getitem__(self, key):
-        h = key_to_hash(key)
+        h = key_to_hash(key, self.hash_bits)
         try:
             return self.entries[h]
         except KeyError:
             raise KeyError(key)
 
     def __contains__(self, key):
-        h = key_to_hash(key)
+        h = key_to_hash(key, self.hash_bits)
         return h in self.entries
 
     def get(self, key, default=None):
@@ -91,14 +90,17 @@ class RstFile:
                 self.font_config = None
         elif version == 3:
             pass
+        elif version == 4:
+            self.hash_bits = 39
         else:
             raise ValueError(f"unsupported RST version: {version}")
 
+        hash_mask = (1 << self.hash_bits) - 1
         count, = parser.unpack("<L")
         entries = []
         for _ in range(count):
             v, = parser.unpack("<Q")
-            entries.append((v >> 40, v & 0xffffffffff))
+            entries.append((v >> self.hash_bits, v & hash_mask))
 
         b = parser.raw(1)  # 0 or 1
 
