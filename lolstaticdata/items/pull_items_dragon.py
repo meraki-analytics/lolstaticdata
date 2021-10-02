@@ -4,7 +4,6 @@ import os
 from ..common.utils import download_json
 from .pull_items_wiki import WikiItem
 from .modelitem import Item, Shop
-from ..common.rstParser import RstFile
 
 
 def get_latest_version():
@@ -17,7 +16,6 @@ class DragonItem:
     latest_version = get_latest_version()
     version = latest_version.split(".")
     version = str(version[0]) + "." + str(version[1])
-    rst = RstFile()
 
     @staticmethod
     def get_cdragon():  # cdragon to list
@@ -27,6 +25,15 @@ class DragonItem:
         j = download_json(url, use_cache=False)
         cdragon = [i for i in j if str(i["id"])]
         return cdragon
+
+    @staticmethod
+    def get_item_plaintext(item):
+        url = f"https://raw.communitydragon.org/{DragonItem.version}/game/data/menu/fontconfig_en_us.txt.json"
+        j = download_json(url, use_cache=True)
+        try:
+            return j['entries']["game_item_plaintext_" + str(item)]
+        except:
+            return None
 
     @classmethod
     def get_item_cdragon(cls, cdrag):
@@ -46,10 +53,7 @@ class DragonItem:
         purchasable = cdrag["inStore"]
         cdragid = cdrag["id"]
         icon = cdrag["iconPath"]
-        try:
-            plaintext = cls.rst.get_item_plaintext(cdragid)
-        except:
-            plaintext = None
+        plaintext = cls.get_item_plaintext(cdragid)
         shop = Shop(purchasable=purchasable, prices=[], tags=[])
         item = Item(
             builds_from=builds_from,

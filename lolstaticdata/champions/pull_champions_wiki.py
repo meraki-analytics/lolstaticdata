@@ -113,7 +113,8 @@ class LolWikiDataHandler:
         "Nidalee": ["Aspect of the Cougar 2"],
         "Pyke": ["Death from Below 2"],
         "Rumble": ["Electro Harpoon 2"],
-        "Shaco": ["Command Hallucinate"],
+        "Samira": ["splash coin"],
+        "Shaco": ["Command: Hallucinate"],
         "Syndra": ["Force of Will 2"],
         "Taliyah": ["Seismic Shove 2"],
     }
@@ -274,7 +275,7 @@ class LolWikiDataHandler:
                             data.get("herotype"),
                             data.get("alttype"),
                         )
-                        if role is not None
+                        if role is not None and role != ""
                     ),
                 }
             ),
@@ -594,9 +595,14 @@ class LolWikiDataHandler:
         return leveling
 
     def _render_modifiers(self, mods: str, nvalues: int) -> List[Modifier]:
-        parsed_modifiers = ParsingAndRegex.split_modifiers(mods)
-
         modifiers = []  # type: List[Modifier]
+        try:
+            parsed_modifiers = ParsingAndRegex.split_modifiers(mods)
+        except Exception as error:
+            print("ERROR: FAILURE TO SPLIT MODIFIER")
+            print("ERROR:", error)
+            return modifiers
+
         for lvling in parsed_modifiers:
             try:
                 modifier = self._render_modifier(lvling, nvalues)
@@ -656,7 +662,7 @@ class LolWikiDataHandler:
                 sale[champion] = {}
                 sale[champion]["price"] = 0
             skin = i["data-skin"]
-            if skin is not "":
+            if skin != "":
                 sale[champion][skin] = prices[0][1]
             else:
                 sale[champion]["price"] = prices[0][1]
