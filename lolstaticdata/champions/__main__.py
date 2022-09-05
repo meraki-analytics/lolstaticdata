@@ -33,7 +33,7 @@ def main():
         f"http://ddragon.leagueoflegends.com/cdn/{latest_version}/data/en_US/championFull.json"
     )["data"]
 
-    # load a list of champions from universe.leagueoflegends.com => added request faile detection because of unreliable source
+    # Load a list of champions from universe.leagueoflegends.com => added request fail detection because of unreliable source
     factions = {}
     try:
         universe_stats = utils.download_json(
@@ -71,8 +71,12 @@ def main():
         # Set the lore
         champion.lore = ddragon_champion["lore"]
 
-        # set the faction
+        # Set the faction
         champion.faction = factions[champion.key.lower()] if champion.key.lower() in factions else ""
+
+        # Fix faction bug for e.g. renata
+        if champion.faction == "" and champion.name.lower().replace(" ","") in factions:
+            champion.faction = factions[champion.name.lower().replace(" ","")]
 
         # Set the champion ability icons
         for ability_key, abilities in champion.abilities.items():
