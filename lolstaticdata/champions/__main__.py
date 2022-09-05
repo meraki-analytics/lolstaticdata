@@ -32,6 +32,20 @@ def main():
     ddragon_champions = utils.download_json(
         f"http://ddragon.leagueoflegends.com/cdn/{latest_version}/data/en_US/championFull.json"
     )["data"]
+
+    # load a list of champions from universe.leagueoflegends.com => added request faile detection because of unreliable source
+    factions = {}
+    try:
+        universe_stats = utils.download_json(
+            "https://universe-meeps.leagueoflegends.com/v1/en_us/champion-browse/index.json",
+            False
+        )["champions"]
+
+        for champion in universe_stats:
+            factions[champion["slug"]] = champion["associated-faction-slug"]
+    except Exception:
+        print("ERROR: Unable to load/parse universe file, location may have changed")
+
     ability_key_to_identifier = {
         "P": "passive",
         "Q": "q",
@@ -56,6 +70,9 @@ def main():
 
         # Set the lore
         champion.lore = ddragon_champion["lore"]
+
+        # set the faction
+        champion.faction = factions[champion.key.lower()] if champion.key.lower() in factions else ""
 
         # Set the champion ability icons
         for ability_key, abilities in champion.abilities.items():

@@ -279,6 +279,7 @@ class Champion(object):
     patch_last_changed: str
     price: Price
     lore: str
+    faction: str
     skins: List[Skin]
 
     def __json__(self, *args, **kwargs):
