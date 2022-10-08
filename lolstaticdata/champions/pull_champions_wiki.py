@@ -356,6 +356,7 @@ class LolWikiDataHandler:
             patch_last_changed=data["changes"][1:],  # remove the leading "V"
             price=Price(rp=data["rp"], blue_essence=data["be"], sale_rp=sale_price),
             lore="",
+            faction="",
             skins=self._get_champ_skin(name, sale),
         )
         # "nickname": "nickname",
