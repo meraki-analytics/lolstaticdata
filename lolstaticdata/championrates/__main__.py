@@ -3,20 +3,21 @@ import re
 import requests
 
 def main():
+    all_meraki_roles = ["TOP", "JUNGLE", "MIDDLE", "BOTTOM", "UTILITY"]
+    all_json_roles = ["TOP", "JUNGLE", "MIDDLE", "BOTTOM", "SUPPORT"]
     all_champs = {}
     data = requests.get("https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-champion-statistics/global/default/rcp-fe-lol-champion-statistics.js")
-    matches = re.findall('.exports=({.*)},', data.text)
-    if len(matches) > 0:
-        match = matches[0]
-        match = re.sub("([A-Z0-9]*):", r'"\1":', match)
-        match = re.sub("\.([0-9]*)", r'0.\1', match)
-        roles = json.loads(match)
-        champs = requests.get("https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json").json()
-        all_roles = ["TOP", "JUNGLE", "MIDDLE", "BOTTOM", "UTILITY"]
-        all_champs = {str(champ['id']):{role:{"playRate": 0, "banRate": 0, "winRate": 0} for role in all_roles} for champ in champs if champ['id'] != -1}
-        for role in all_roles:
-            for champion, rate in roles["SUPPORT" if role == "UTILITY" else role].items():
-                all_champs[champion][role]['playRate'] = round(rate * 100, 5)
+    champs = requests.get("https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json").json()
+    # all_champs = {str(champ['id']): {meraki_role: {"playRate": 0, "banRate": 0, "winRate": 0} for meraki_role in all_meraki_roles} for champ in champs if champ['id'] != -1}
+    all_champs = {str(champ['id']): {meraki_role: {"playRate": 0} for meraki_role in all_meraki_roles} for champ in champs if champ['id'] != -1}
+    for meraki_role, json_role in zip(all_meraki_roles, all_json_roles):
+        matches = re.findall(json_role + r":(.*?})", data.text)
+        if len(matches) > 0:
+            match = matches[0]
+            # roles = json.loads(match)
+            roles = {key: float(value) for key, value in [pair.split(":") for pair in match.replace(" ", "")[1:-1].split(",")]}  # Do a manual JSON.loads because the keys aren't in parentheses.
+            for champion, rate in roles.items():
+                all_champs[champion][meraki_role]['playRate'] = round(rate * 100, 5)
 
     version_split = requests.get("https://raw.communitydragon.org/latest/content-metadata.json").json()["version"].split(".")
     version = version_split[0] + "." + version_split[1]
@@ -26,3 +27,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
