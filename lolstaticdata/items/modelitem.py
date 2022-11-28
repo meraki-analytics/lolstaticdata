@@ -116,6 +116,7 @@ class Passive(object):
     effects: str
     range: int
     stats: Stats
+    cooldown: float
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
