@@ -115,6 +115,7 @@ class Passive(object):
     name: str
     effects: str
     range: int
+    cooldown: str
     stats: Stats
 
 

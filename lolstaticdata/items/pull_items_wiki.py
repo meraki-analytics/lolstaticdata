@@ -57,6 +57,7 @@ class WikiItem:
                 passive_name,
                 passive_effects,
                 item_range,
+				cd,
             ) = cls._parse_passive_info(passive)
             stats = cls._parse_passive_descriptions(passive_effects)
             effect = Passive(
@@ -66,6 +67,7 @@ class WikiItem:
                 range=item_range,
                 stats=stats,
                 mythic=mythic,
+				cooldown=cd,
             )
             return effect
 
@@ -86,6 +88,7 @@ class WikiItem:
                 name="Mythic",
                 effects=None,
                 range=0,
+                cooldown=0,
                 stats=stats,
                 mythic=True,
             )
@@ -109,6 +112,7 @@ class WikiItem:
                 passive_name,
                 passive_effects,
                 item_range,
+                cd,
             ) = cls._parse_passive_info(passive)
             if get_cooldown.search(passive_effects):
                 cooldown = get_cooldown.search(passive_effects).group(0).split(" ", 1)
@@ -127,7 +131,7 @@ class WikiItem:
         return effects
 
     @classmethod
-    def _parse_passive_info(cls, passive: dict) -> Tuple[bool, bool, Optional[str], str, Optional[int]]:
+    def _parse_passive_info(cls, passive: dict) -> Tuple[bool, bool, Optional[str], str, Optional[int], Optional[str]]:
         if "unique" in passive:
             unique = True
             mythic = False
@@ -138,6 +142,10 @@ class WikiItem:
             name = passive["name"]
         else:
             name = None
+        if "cd" in passive:
+            cd = passive["cd"]
+        else:
+            cd = None
         # elif passive.startswith("Mythic"):
         #     mythic = True
         #     unique = True
@@ -152,7 +160,7 @@ class WikiItem:
             item_range = cls._parse_int(passive["range"])
         else:
             item_range = None
-        return unique, mythic, name, passive["description"], item_range
+        return unique, mythic, name, passive["description"], item_range, cd
 
     @classmethod
     def _parse_passive_descriptions(cls, passive: str) -> Stats:
