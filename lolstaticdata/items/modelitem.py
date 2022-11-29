@@ -125,8 +125,8 @@ class Active(object):
     unique: bool
     name: str
     effects: str
-    range: int
-    cooldown: float
+    range: str
+    cooldown: str
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)

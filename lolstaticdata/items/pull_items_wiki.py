@@ -97,7 +97,6 @@ class WikiItem:
 
     @classmethod
     def _parse_actives(cls, item_data: dict) -> List[Active]:
-        get_cooldown = re.compile(r"(\d+ second cooldown)|(\d+ seconds cooldown)")
         effects = []
         passive = None
         if "effects" in item_data:
@@ -108,22 +107,17 @@ class WikiItem:
         if passive:
             (
                 unique,
-                mythic,
+				mythic,
                 passive_name,
                 passive_effects,
                 item_range,
                 cd,
             ) = cls._parse_passive_info(passive)
-            if get_cooldown.search(passive_effects):
-                cooldown = get_cooldown.search(passive_effects).group(0).split(" ", 1)
-                cooldown = cls._parse_float(cooldown[0])
-            else:
-                cooldown = None
             effect = Active(
                 unique=unique,
                 name=passive_name,
                 effects=passive_effects,
-                cooldown=cooldown,
+                cooldown=cd,
                 range=item_range,
             )  # This is hacky...
 
@@ -131,7 +125,7 @@ class WikiItem:
         return effects
 
     @classmethod
-    def _parse_passive_info(cls, passive: dict) -> Tuple[bool, bool, Optional[str], str, Optional[int], Optional[str]]:
+    def _parse_passive_info(cls, passive: dict) -> Tuple[bool, bool, Optional[str], str, Optional[str], Optional[str]]:
         if "unique" in passive:
             unique = True
             mythic = False
