@@ -149,9 +149,9 @@ class WikiItem:
         passive = passive
 
         if "radius" in passive:
-            item_range = cls._parse_int(passive["radius"])
+            item_range = passive["radius"]
         elif "range" in passive:
-            item_range = cls._parse_int(passive["range"])
+            item_range = passive["range"]
         else:
             item_range = None
         return unique, mythic, name, passive["description"], item_range, cd
