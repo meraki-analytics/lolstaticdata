@@ -28,7 +28,7 @@ class DragonItem:
 
     @staticmethod
     def get_item_plaintext(item):
-        url = f"https://raw.communitydragon.org/{DragonItem.version}/game/data/menu/fontconfig_en_us.txt.json"
+        url = f"https://raw.communitydragon.org/{DragonItem.version}/game/data/menu/main_en_us.stringtable.json"
         j = download_json(url, use_cache=True)
         try:
             return j['entries']["game_item_plaintext_" + str(item)]
