@@ -615,7 +615,6 @@ class WikiItem:
                     try:
                         item_data[x] = wiki_data[item_data[x].replace("=>", "")][x]
                     except KeyError as e:
-                        print(item_data[x],"ERRRRROOOORRRRR",e)
                         clear_keys.append(x)
             if x in "effects":
                 for l in item_data[x]:
