@@ -84,14 +84,14 @@ class WikiItem:
                 if "mythic" in x:
                     stats = cls.get_stats(item_data["effects"][x])
                     effect = Passive(
-                unique=True,
-                name="Mythic",
-                effects=None,
-                range=0,
-                cooldown=0,
-                stats=stats,
-                mythic=True,
-            )
+                      unique=True,
+                      name="Mythic",
+                      effects=None,
+                      range=0,
+                      cooldown=0,
+                      stats=stats,
+                      mythic=True,
+                    )
                     effects.append((effect))
         return effects
 
@@ -363,6 +363,7 @@ class WikiItem:
 
     @classmethod
     def get_stats(cls,item_data):
+        hpflat = 0.0
         hp = 0.0
         mr = 0.0
         ah = 0.0
@@ -400,7 +401,10 @@ class WikiItem:
                 critical_strike_chance=CriticalStrikeChance(percent=cls._parse_float(crit)),
                 gold_per_10=GoldPer10(flat=cls._parse_float(gp10)),
                 heal_and_shield_power=HealAndShieldPower(flat=cls._parse_float(hsp)),
-                health=Health(flat=cls._parse_float(hp)),
+                health=Health(
+                  flat=cls._parse_float(hpflat),
+                  percent=cls._parse_float(hp),
+                ),
                 health_regen=HealthRegen(
                     flat=cls._parse_float(hp5flat),
                     percent=cls._parse_float(hp5),
@@ -426,6 +430,11 @@ class WikiItem:
                 tenacity=tenacity
             )
             return stats
+
+        if 'hpflat' in item_data:
+            hpflat = item_data['hpflat']
+
+
 
         if 'hp' in item_data:
             hp = item_data['hp']
@@ -555,7 +564,10 @@ class WikiItem:
             critical_strike_chance=CriticalStrikeChance(percent=cls._parse_float(crit)),
             gold_per_10=GoldPer10(flat=cls._parse_float(gp10)),
             heal_and_shield_power=HealAndShieldPower(flat=cls._parse_float(hsp)),
-            health=Health(flat=cls._parse_float(hp)),
+            health=Health(
+              flat=cls._parse_float(hpflat),
+              percent=cls._parse_float(hp),
+            ),
             health_regen=HealthRegen(
                 flat=cls._parse_float(hp5flat),
                 percent=cls._parse_float(hp5),
