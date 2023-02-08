@@ -168,7 +168,7 @@ class WikiItem:
         cdr = re.compile(r"\d.* cooldown reduction")
         crit = re.compile(r"\d.* critical strike chance")
         lethality = re.compile(r"(\d.*) (?:lethality|Lethality)", re.IGNORECASE)
-        movespeed = re.compile(r"(\d+)(?: bonus |% | |% bonus )movement speed", re.IGNORECASE)  # movespeed needs fixing
+        movespeed = re.compile(r"(\d+)(?: '*bonus'* |% | |% '*bonus'* )movement speed", re.IGNORECASE) 
         armorpen = re.compile(r"(\d+)% armor penetration")
         magicpen = re.compile(r"(\d+).*? magic penetration")
         lifesteal = re.compile(r"\d+.*? life steal")
