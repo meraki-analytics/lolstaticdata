@@ -63,6 +63,8 @@ class ItemRanks(OrderedEnum):
     BOOTS = "BOOTS"
     TRINKET = "TRINKET"
     DISTRIBUTED = "DISTRIBUTED"
+    MINION = "MINION"
+    TURRET = "TURRET"
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)

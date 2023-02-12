@@ -648,15 +648,15 @@ class WikiItem:
                 removed = False
         else:
             removed = False
-        if "rank" in item_data:
+        if "type" in item_data:
             rank = []
-            if item_data["rank"]:
-                if "," in item_data["rank"]:
-                    ranks = item_data["rank"].split(",")
+            if item_data["type"]:
+                if "," in item_data["type"][0]:
+                    ranks = item_data["type"][0].split(",")
                     for i in ranks:
                         rank.append(ItemRanks.from_string(i.strip()))
                 else:
-                    rank.append(ItemRanks.from_string(item_data["rank"]))
+                    rank.append(ItemRanks.from_string(item_data["type"][0]))
             else:
                 rank = None
         else:
@@ -755,17 +755,20 @@ def get_item_urls(use_cache: bool) -> List[str]:
     start = None
     spans = spans.text.split("\n")
 
+    # Find beginning of item data
     for i, span in enumerate(spans):
         if str(span) == "return {":
             start = i
             spans[i] = "{"
-    split_stuff = re.compile("({)|(})")
+            break
     spans = spans[start:]
-    for i, span in enumerate(spans):
+
+    # Find end of item data
+    for i, span in enumerate(reversed(spans)):
         if span in ["-- </pre>", "-- [[Category:Lua]]"]:
-            spans[i] = ""
+            spans[len(spans) - i - 1] = ""
+            break
 
     spans = "".join(spans)
     data = lua.decode(spans)
-    menus = []
     return data
