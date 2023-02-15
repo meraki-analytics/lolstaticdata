@@ -183,14 +183,13 @@ class WikiItem:
         # onHit = re.compile(r"basic attack (?:.*?)(?: (?:as|in))?\d+ (?:bonus|seconds |deals).*? (\d+.*) (?:bonus|seconds|deals) (?:magic|physical)")
         # test = re.compile(r"basic attack (?:.*?)(?: (?:as|in))?(\d+) (?:bonus|deals).*?")#taken from https://github.com/TheKevJames/league/blob/a62f5e3697392094aedd3d0bd1df37012824963b/league_utils/models/item/stats.py
         health = Health(flat=cls._parse_float(0.0))
-        ad = AttackDamage(flat=cls._parse_float(0.0)),
+        ad = AttackDamage(flat=cls._parse_float(0.0))
         tenacity_re = re.compile(r"(\d+)% TENACITY")
         # print(passive)
         if "Empowers each of your other Legendary items" in passive:
             if health_re.search(passive):
                 print(passive)
                 health = Health(flat=float(health_re.search(passive).groups()[0]))
-
             else:
                 health = Health(flat=cls._parse_float(0.0))
 
@@ -208,14 +207,12 @@ class WikiItem:
 
         if movespeed.search(passive):
             mvspeed = movespeed.search(passive).group(0)
-
             if "%" in mvspeed:
-
                 movespeed = Movespeed(percent=float(movespeed.search(passive).groups()[0]))
             else:
                 movespeed = Movespeed(flat=float(movespeed.search(passive).groups()[0]))
         else:
-            movespeed = 0.0
+            movespeed = Movespeed(flat=cls._parse_float(0.0))
         if crit.search(passive):
             crit = crit.search(passive).group(0).split("%")[0]
             crit = cls._parse_float(crit)
