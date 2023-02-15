@@ -167,7 +167,7 @@ class WikiItem:
         # Regex stuff
         cdr = re.compile(r"\d.* cooldown reduction")
         crit = re.compile(r"\d.* critical strike chance")
-        lethality = re.compile(r"(\d.*) (?:lethality|Lethality)", re.IGNORECASE)
+        lethality = re.compile(r"(?:lethality|Lethality)\|(\d*)", re.IGNORECASE)
         movespeed = re.compile(r"(\d+)(?: '*bonus'* |% | |% '*bonus'* )movement speed", re.IGNORECASE) 
         armorpen = re.compile(r"(\d+)% armor penetration")
         magicpen = re.compile(r"(\d+).*? magic penetration")
