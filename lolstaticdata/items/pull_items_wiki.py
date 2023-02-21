@@ -726,6 +726,7 @@ class WikiItem:
             active=cls._parse_actives(item_data),
             required_champion="",
             required_ally="",
+            description="",
             simple_description="",
             stats=stats,
 

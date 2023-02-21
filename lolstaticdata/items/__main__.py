@@ -35,6 +35,7 @@ def main():
             item.builds_from = cdrag_item.builds_from
             item.builds_into = cdrag_item.builds_into
             item.simple_description = cdrag_item.simple_description
+            item.description = cdrag_item.description
             item.required_ally = cdrag_item.required_ally
             item.required_champion = cdrag_item.required_champion
             item.shop.purchasable = cdrag_item.shop.purchasable

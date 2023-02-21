@@ -146,6 +146,7 @@ class Item(object):
     required_champion: str
     required_ally: str
     icon: str
+    description: str
     simple_description: str
     nicknames: List[str]
     passives: List[Passive]

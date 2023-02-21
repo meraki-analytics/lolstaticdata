@@ -54,6 +54,7 @@ class DragonItem:
         cdragid = cdrag["id"]
         icon = cdrag["iconPath"]
         plaintext = cls.get_item_plaintext(cdragid)
+        description = cdrag["description"]
         shop = Shop(purchasable=purchasable, prices=[], tags=[])
         item = Item(
             builds_from=builds_from,
@@ -67,6 +68,7 @@ class DragonItem:
             required_ally=ally,
             required_champion=champ,
             simple_description=plaintext,
+            description=description,
             nicknames=[],
             passives=[],
             active=[],
