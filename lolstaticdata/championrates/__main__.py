@@ -11,11 +11,11 @@ def main():
     # all_champs = {str(champ['id']): {meraki_role: {"playRate": 0, "banRate": 0, "winRate": 0} for meraki_role in all_meraki_roles} for champ in champs if champ['id'] != -1}
     all_champs = {str(champ['id']): {meraki_role: {"playRate": 0} for meraki_role in all_meraki_roles} for champ in champs if champ['id'] != -1}
     for meraki_role, json_role in zip(all_meraki_roles, all_json_roles):
-        matches = re.findall(json_role + r":(.*?})", data.text)
+        matches = re.findall(json_role + r"\":(.*?})", data.text)
         if len(matches) > 0:
             match = matches[0]
             # roles = json.loads(match)
-            roles = {key: float(value) for key, value in [pair.split(":") for pair in match.replace(" ", "")[1:-1].split(",")]}  # Do a manual JSON.loads because the keys aren't in parentheses.
+            roles = {key.replace('"', ''): float(value) for key, value in [pair.split(":") for pair in match.replace(" ", "")[1:-1].split(",")]}  # Do a manual JSON.loads because the keys aren't in parentheses.
             for champion, rate in roles.items():
                 all_champs[champion][meraki_role]['playRate'] = round(rate * 100, 5)
 
