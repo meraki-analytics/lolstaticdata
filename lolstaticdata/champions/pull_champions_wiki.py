@@ -173,6 +173,7 @@ class LolWikiDataHandler:
             if (
                 d["id"] == 9999
                 or d["date"] == "Upcoming"
+                or d["date"] == ""
                 or datetime.strptime(d["date"], "%Y-%m-%d") > datetime.today()
             ):  # Champion not released yet
                 continue
