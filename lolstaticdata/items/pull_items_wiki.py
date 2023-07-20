@@ -779,6 +779,6 @@ def get_item_urls(use_cache: bool) -> List[str]:
             spans[len(spans) - i - 1] = ""
             break
 
-    spans = "".join(spans)
+    spans = "\n".join(spans)
     data = lua.decode(spans)
     return data

@@ -286,9 +286,6 @@ class LolWikiDataHandler:
                 mobility=data["mobility"],
                 utility=data["utility"],
                 ability_reliance=data["style"],
-                attack=data["attack"],
-                defense=data["defense"],
-                magic=data["magic"],
                 difficulty=data["difficulty"],
             ),
             abilities=dict(
@@ -964,7 +961,7 @@ class ParsingAndRegex:
         return not_parsed[1]
 
     @staticmethod
-    def get_modifier(mod: str, nvalues: int) -> [List[str], List[Union[int, float]]]:
+    def get_modifier(mod: str, nvalues: int) -> Tuple[List[str], List[Union[int, float]]]:
         units, parsed = ParsingAndRegex.regex_simple_flat(mod, nvalues)
         units = ParsingAndRegex.get_units(units)
         units = [units for _ in range(len(parsed))]
