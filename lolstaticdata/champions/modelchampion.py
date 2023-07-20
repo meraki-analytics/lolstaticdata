@@ -121,9 +121,6 @@ class AttributeRatings(object):
     mobility: int
     utility: int
     ability_reliance: int
-    attack: int
-    defense: int
-    magic: int
     difficulty: int
 
 
