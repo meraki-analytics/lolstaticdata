@@ -360,7 +360,6 @@ class WikiItem:
 
     @classmethod
     def get_stats(cls,item_data):
-        hpflat = 0.0
         hp = 0.0
         mr = 0.0
         ah = 0.0
@@ -398,10 +397,7 @@ class WikiItem:
                 critical_strike_chance=CriticalStrikeChance(percent=cls._parse_float(crit)),
                 gold_per_10=GoldPer10(flat=cls._parse_float(gp10)),
                 heal_and_shield_power=HealAndShieldPower(flat=cls._parse_float(hsp)),
-                health=Health(
-                  flat=cls._parse_float(hpflat),
-                  percent=cls._parse_float(hp),
-                ),
+                health=Health(flat=cls._parse_float(hp)),
                 health_regen=HealthRegen(
                     flat=cls._parse_float(hp5flat),
                     percent=cls._parse_float(hp5),
@@ -428,116 +424,74 @@ class WikiItem:
             )
             return stats
 
-        if 'hpflat' in item_data:
-            hpflat = item_data['hpflat']
-
-
-
         if 'hp' in item_data:
             hp = item_data['hp']
-
-
 
         if 'mr' in item_data:
             mr = item_data['mr']
 
-
-
         if 'ah' in item_data:
             ah = item_data['ah']
-
 
         if 'armor' in item_data:
             armor = item_data['armor']
 
-
-
         if 'ap' in item_data:
             ap = item_data['ap']
-
-
 
         if 'mana' in item_data:
             mana = item_data['mana']
 
-
-
         if 'hsp' in item_data:
             hsp = item_data['hsp']
-
-
 
         if 'mp5' in item_data:
             mp5 = item_data['mp5']
 
-
-
         if 'ad' in item_data:
             ad = item_data['ad']
-
-
 
         if 'as' in item_data:
             attack_speed = item_data['as']
 
-
-
         if 'msflat' in item_data:
             msflat = item_data['msflat']
-
 
         if 'gp10' in item_data:
             gp10 = item_data['gp10']
 
-
         if 'lifesteal' in item_data:
             lifesteal = item_data['lifesteal']
-
 
         if 'mpen' in item_data:
             mpen = item_data['mpen']
 
-
-
         if 'crit' in item_data:
             crit = item_data['crit']
-
-
 
         if 'spec' in item_data:
             spec = item_data['spec']
 
-
-
         if 'hp5' in item_data:
             hp5 = item_data['hp5']
-
 
         if 'ms' in item_data:
             ms = item_data['ms']
 
-
-
         if 'lethality' in item_data:
             lethality = item_data['lethality']
-
 
         if 'omnivamp' in item_data:
             omnivamp = item_data['omnivamp']
 
-
         if 'mpenflat' in item_data:
             mpenflat = item_data['mpenflat']
-
-
 
         if 'hspunique' in item_data:
             hspunique = item_data['hspunique']
 
-
         if 'hp5flat' in item_data:
             hp5flat = item_data['hp5flat']
-
 
         if 'armpen' in item_data:
             armpen = item_data['armpen']
@@ -561,10 +515,7 @@ class WikiItem:
             critical_strike_chance=CriticalStrikeChance(percent=cls._parse_float(crit)),
             gold_per_10=GoldPer10(flat=cls._parse_float(gp10)),
             heal_and_shield_power=HealAndShieldPower(flat=cls._parse_float(hsp)),
-            health=Health(
-              flat=cls._parse_float(hpflat),
-              percent=cls._parse_float(hp),
-            ),
+            health=Health(flat=cls._parse_float(hp)),
             health_regen=HealthRegen(
                 flat=cls._parse_float(hp5flat),
                 percent=cls._parse_float(hp5),
