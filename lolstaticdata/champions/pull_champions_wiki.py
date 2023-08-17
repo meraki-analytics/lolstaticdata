@@ -528,6 +528,7 @@ class LolWikiDataHandler:
                 angle=data.get("angle"),
                 cast_time=data.get("cast time"),
                 effect_radius=data.get("effect radius"),
+                range=data.get("range"),
                 target_range=data.get("target range"),
             )
             if ability.notes is not None and ability.notes.startswith("*"):
