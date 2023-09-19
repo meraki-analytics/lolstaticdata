@@ -37,8 +37,7 @@ def main():
     factions = {}
     try:
         universe_stats = utils.download_json(
-            "https://universe-meeps.leagueoflegends.com/v1/en_us/champion-browse/index.json",
-            False
+            "https://universe-meeps.leagueoflegends.com/v1/en_us/champion-browse/index.json", False
         )["champions"]
 
         for champion in universe_stats:
@@ -56,6 +55,7 @@ def main():
     }
 
     champions = []
+
     for champion in handler.get_champions():
         # Load some information for pulling champion ability icons
         ddragon_champion = ddragon_champions[champion.key]
@@ -75,8 +75,8 @@ def main():
         champion.faction = factions[champion.key.lower()] if champion.key.lower() in factions else ""
 
         # Fix faction bug for e.g. renata
-        if champion.faction == "" and champion.name.lower().replace(" ","") in factions:
-            champion.faction = factions[champion.name.lower().replace(" ","")]
+        if champion.faction == "" and champion.name.lower().replace(" ", "") in factions:
+            champion.faction = factions[champion.name.lower().replace(" ", "")]
 
         # Set the champion ability icons
         for ability_key, abilities in champion.abilities.items():

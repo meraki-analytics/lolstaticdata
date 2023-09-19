@@ -207,12 +207,19 @@ class LolWikiDataHandler:
             if row.startswith("|"):
                 row = row[1:]
             if "=" in row:
-                row = row.split("=")
-                variables[row[0].strip()] = row[1].strip()
+                parts = row.split("=", 1)  # Split at the first "=" occurrence, dont split on the rest.
+                key = parts[0].strip()
+                value = parts[1].strip()
+                variables[key] = value
         return variables
 
-    def _replace_abilities(self, champion_name: str, ability_tuple: Tuple[str, List[Ability]]) -> Tuple[str, List[Ability]]:
-        return (ability_tuple[0], [self._replace_ability_descriptions(champion_name, ability) for ability in ability_tuple[1]])
+    def _replace_abilities(
+        self, champion_name: str, ability_tuple: Tuple[str, List[Ability]]
+    ) -> Tuple[str, List[Ability]]:
+        return (
+            ability_tuple[0],
+            [self._replace_ability_descriptions(champion_name, ability) for ability in ability_tuple[1]],
+        )
 
     def _replace_ability_descriptions(self, champion_name: str, ability: Ability) -> Ability:
         new_descriptions = self._get_correct_effects(champion_name, ability.name)
@@ -224,7 +231,6 @@ class LolWikiDataHandler:
         return ability
 
     def _render_champion_data(self, name: str, data: Dict) -> Champion:
-
         adaptive_type = data["adaptivetype"]
         if adaptive_type.upper() in ("PHYSICAL", "MIXED,PHYSICAL"):
             adaptive_type = "PHYSICAL_DAMAGE"
@@ -301,14 +307,14 @@ class LolWikiDataHandler:
                 selection_radius=Stat(flat=data["stats"].get("selection_radius", 100)),
                 pathing_radius=Stat(flat=data["stats"].get("pathing_radius", 35)),
                 gameplay_radius=Stat(flat=data["stats"].get("gameplay_radius", 65)),
-                aram_damage_taken=Stat(flat=data["stats"].get("aram",{}).get("dmg_taken", 1.0)),
-                aram_damage_dealt=Stat(flat=data["stats"].get("aram",{}).get("dmg_dealt", 1.0)),
-                aram_healing=Stat(flat=data["stats"].get("aram",{}).get("healing", 1.0)),
-                aram_shielding=Stat(flat=data["stats"].get("aram",{}).get("shielding", 1.0)),
-                urf_damage_taken=Stat(flat=data["stats"].get("urf",{}).get("dmg_taken", 1.0)),
-                urf_damage_dealt=Stat(flat=data["stats"].get("urf",{}).get("dmg_dealt", 1.0)),
-                urf_healing=Stat(flat=data["stats"].get("urf",{}).get("healing", 1.0)),
-                urf_shielding=Stat(flat=data["stats"].get("urf",{}).get("shielding", 1.0)),
+                aram_damage_taken=Stat(flat=data["stats"].get("aram", {}).get("dmg_taken", 1.0)),
+                aram_damage_dealt=Stat(flat=data["stats"].get("aram", {}).get("dmg_dealt", 1.0)),
+                aram_healing=Stat(flat=data["stats"].get("aram", {}).get("healing", 1.0)),
+                aram_shielding=Stat(flat=data["stats"].get("aram", {}).get("shielding", 1.0)),
+                urf_damage_taken=Stat(flat=data["stats"].get("urf", {}).get("dmg_taken", 1.0)),
+                urf_damage_dealt=Stat(flat=data["stats"].get("urf", {}).get("dmg_dealt", 1.0)),
+                urf_healing=Stat(flat=data["stats"].get("urf", {}).get("healing", 1.0)),
+                urf_shielding=Stat(flat=data["stats"].get("urf", {}).get("shielding", 1.0)),
             ),
             roles=sorted(
                 {
@@ -346,7 +352,7 @@ class LolWikiDataHandler:
                                     and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                                 )
                             ],
-                        )
+                        ),
                     ),
                     self._replace_abilities(
                         name,
@@ -360,7 +366,7 @@ class LolWikiDataHandler:
                                     and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                                 )
                             ],
-                        )
+                        ),
                     ),
                     self._replace_abilities(
                         name,
@@ -374,7 +380,7 @@ class LolWikiDataHandler:
                                     and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                                 )
                             ],
-                        )
+                        ),
                     ),
                     self._replace_abilities(
                         name,
@@ -388,7 +394,7 @@ class LolWikiDataHandler:
                                     and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                                 )
                             ],
-                        )
+                        ),
                     ),
                     self._replace_abilities(
                         name,
@@ -402,7 +408,7 @@ class LolWikiDataHandler:
                                     and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                                 )
                             ],
-                        )
+                        ),
                     ),
                 ]
             ),
@@ -704,7 +710,6 @@ class LolWikiDataHandler:
         return cooldown
 
     def _get_sale(self):
-
         get_prices = re.compile(r"(\d+) (\d+)")
         url = f"https://leagueoflegends.fandom.com/wiki/Sales"
         # temporary fix for pyke passive
