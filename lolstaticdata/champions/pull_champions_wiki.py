@@ -180,6 +180,49 @@ class LolWikiDataHandler:
             champion = self._render_champion_data(name, d)
             yield champion
 
+    def _get_correct_effects(self, champion, ability_name: str) -> List[str]:
+        ability_name = ability_name.replace(" ", "_")
+        url = f"https://leagueoflegends.fandom.com/wiki/Template:Data_{champion}/{ability_name}?action=edit"
+        html = download_soup(url, False)
+        soup = BeautifulSoup(html, "lxml")
+        spans = soup.find(attrs={"class": "mw-editfont-default"})
+        text = spans.text.split("\n")
+
+        variables = self._fetch_variables(text)
+
+        descriptions = self._extract_descriptions(variables)
+
+        return descriptions
+
+    def _extract_descriptions(self, data: dict) -> []:
+        descriptions = []
+        for key in data:
+            if key.startswith("description"):
+                descriptions.append(data[key])
+        return descriptions
+
+    def _fetch_variables(self, text: []) -> dict:
+        variables = {}
+        for row in text:
+            if row.startswith("|"):
+                row = row[1:]
+            if "=" in row:
+                row = row.split("=")
+                variables[row[0].strip()] = row[1].strip()
+        return variables
+
+    def _replace_abilities(self, champion_name: str, ability_tuple: Tuple[str, List[Ability]]) -> Tuple[str, List[Ability]]:
+        return (ability_tuple[0], [self._replace_ability_descriptions(champion_name, ability) for ability in ability_tuple[1]])
+
+    def _replace_ability_descriptions(self, champion_name: str, ability: Ability) -> Ability:
+        new_descriptions = self._get_correct_effects(champion_name, ability.name)
+
+        for i, effect in enumerate(ability.effects):
+            if i < len(new_descriptions):
+                effect.description = new_descriptions[i]
+
+        return ability
+
     def _render_champion_data(self, name: str, data: Dict) -> Champion:
 
         adaptive_type = data["adaptivetype"]
@@ -291,60 +334,75 @@ class LolWikiDataHandler:
             ),
             abilities=dict(
                 [
-                    self._render_abilities(
-                        champion_name=name,
-                        abilities=[
-                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                            for ability_name in data["skill_i"].values()
-                            if not (
-                                name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
-                            )
-                        ],
+                    self._replace_abilities(
+                        name,
+                        self._render_abilities(
+                            champion_name=name,
+                            abilities=[
+                                self._pull_champion_ability(champion_name=name, ability_name=ability_name)
+                                for ability_name in data["skill_i"].values()
+                                if not (
+                                    name in LolWikiDataHandler.MISSING_SKILLS
+                                    and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
+                                )
+                            ],
+                        )
                     ),
-                    self._render_abilities(
-                        champion_name=name,
-                        abilities=[
-                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                            for ability_name in data["skill_q"].values()
-                            if not (
-                                name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
-                            )
-                        ],
+                    self._replace_abilities(
+                        name,
+                        self._render_abilities(
+                            champion_name=name,
+                            abilities=[
+                                self._pull_champion_ability(champion_name=name, ability_name=ability_name)
+                                for ability_name in data["skill_q"].values()
+                                if not (
+                                    name in LolWikiDataHandler.MISSING_SKILLS
+                                    and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
+                                )
+                            ],
+                        )
                     ),
-                    self._render_abilities(
-                        champion_name=name,
-                        abilities=[
-                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                            for ability_name in data["skill_w"].values()
-                            if not (
-                                name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
-                            )
-                        ],
+                    self._replace_abilities(
+                        name,
+                        self._render_abilities(
+                            champion_name=name,
+                            abilities=[
+                                self._pull_champion_ability(champion_name=name, ability_name=ability_name)
+                                for ability_name in data["skill_w"].values()
+                                if not (
+                                    name in LolWikiDataHandler.MISSING_SKILLS
+                                    and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
+                                )
+                            ],
+                        )
                     ),
-                    self._render_abilities(
-                        champion_name=name,
-                        abilities=[
-                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                            for ability_name in data["skill_e"].values()
-                            if not (
-                                name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
-                            )
-                        ],
+                    self._replace_abilities(
+                        name,
+                        self._render_abilities(
+                            champion_name=name,
+                            abilities=[
+                                self._pull_champion_ability(champion_name=name, ability_name=ability_name)
+                                for ability_name in data["skill_e"].values()
+                                if not (
+                                    name in LolWikiDataHandler.MISSING_SKILLS
+                                    and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
+                                )
+                            ],
+                        )
                     ),
-                    self._render_abilities(
-                        champion_name=name,
-                        abilities=[
-                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                            for ability_name in data["skill_r"].values()
-                            if not (
-                                name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
-                            )
-                        ],
+                    self._replace_abilities(
+                        name,
+                        self._render_abilities(
+                            champion_name=name,
+                            abilities=[
+                                self._pull_champion_ability(champion_name=name, ability_name=ability_name)
+                                for ability_name in data["skill_r"].values()
+                                if not (
+                                    name in LolWikiDataHandler.MISSING_SKILLS
+                                    and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
+                                )
+                            ],
+                        )
                     ),
                 ]
             ),
