@@ -1,6 +1,6 @@
 from typing import Tuple, List, Union, Iterator, Dict
 import re
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Comment
 from collections import Counter
 from slpp import slpp as lua
 from datetime import datetime
@@ -180,6 +180,18 @@ class LolWikiDataHandler:
             champion = self._render_champion_data(name, d)
             yield champion
 
+    def _remove_html_tags_and_comments(self, html):
+        # Parse the HTML string using BeautifulSoup
+        soup = BeautifulSoup(html, "html.parser")
+
+        # Extract the text content without HTML tags and comments
+        for comment in soup.findAll(text=lambda text: isinstance(text, Comment)):
+            comment.extract()
+
+        text = soup.get_text()
+
+        return text
+
     def _get_correct_effects(self, champion, ability_name: str) -> List[str]:
         ability_name = ability_name.replace(" ", "_")
         url = f"https://leagueoflegends.fandom.com/wiki/Template:Data_{champion}/{ability_name}?action=edit"
@@ -196,9 +208,11 @@ class LolWikiDataHandler:
 
     def _extract_descriptions(self, data: dict) -> []:
         descriptions = []
-        for key in data:
-            if key.startswith("description"):
-                descriptions.append(data[key])
+        for ending in ["", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]:
+            description = data.get(f"description{ending}")
+            if description is not None:
+                descriptions.append(self._remove_html_tags_and_comments(description))
+
         return descriptions
 
     def _fetch_variables(self, text: []) -> dict:
