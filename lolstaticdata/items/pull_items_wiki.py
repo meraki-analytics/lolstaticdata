@@ -352,7 +352,7 @@ class WikiItem:
             item = "Ruby_Crystal"
 
         url = "https://leagueoflegends.fandom.com/wiki/Template:Item_data_" + item
-        use_cache = True
+        use_cache = False
         html = download_soup(url, use_cache, dir="__wiki__")
         soup = BeautifulSoup(html, "lxml")
         code = soup.findAll("td", {"data-name": "code"})

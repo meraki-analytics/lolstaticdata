@@ -119,7 +119,7 @@ class LolWikiDataHandler:
         "Taliyah": ["Seismic Shove 2"],
     }
 
-    def __init__(self, use_cache: bool = True):
+    def __init__(self, use_cache: bool = False):
         self.use_cache = use_cache
 
     def check_ability(self, data):
