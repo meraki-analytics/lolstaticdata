@@ -391,10 +391,6 @@ class LolWikiDataHandler:
                 _skill_key = "Q"
             assert _skill_key == skill_key
 
-            if champion_name == "Pyke" and _skill_key == "I":
-                del data[
-                    "Cost"
-                ]  # This is a weird one... There's an embedded table that doesn't get parsed right. It overwrites 'cost', but luckily that isn't an issue because 'cost' is empty.
             if data.get("Cost") is not None:
                 raise ValueError(data)
 
