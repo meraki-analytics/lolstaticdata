@@ -669,16 +669,9 @@ class LolWikiDataHandler:
         return sale
 
     def _get_skin_id(self, id, skin_id):
-        if skin_id < 10:
-            id_test = str(id) + "00" + str(skin_id)
-        elif skin_id >= 10 and skin_id < 100:
-            id_test = str(id) + "0" + str(skin_id)
-        else:
-            id_test = str(id) + str(skin_id)
-
-        # If a single champion gets over 1k skin ids tell Dan he was wrong to think that it would never happen
-
-        return id_test
+        while len(str(skin_id)) < 3:
+            skin_id = "0" + str(skin_id)
+        return str(id) + skin_id
 
     def _get_chroma_attribs(self, id, name):
         if "chromas" in self.cdragDict[0]:
@@ -705,6 +698,8 @@ class LolWikiDataHandler:
                         rarities=rarities,
                     )
                     return chroma
+            available = [n['id'] for n in self.cdragDict[0]["chromas"]]
+            print(f"Chroma Mismatch: {id} not available in {available}")
 
     def _get_skins(self):
         url = f"https://leagueoflegends.fandom.com/wiki/Module:SkinData/data"
@@ -820,6 +815,8 @@ class LolWikiDataHandler:
 
             if "chromas" in champ_data[s]:
                 for chroma in champ_data[s]["chromas"]:
+                    if "availability" in champ_data[s]["chromas"][chroma] and champ_data[s]["chromas"][chroma]["availability"] == "Canceled":
+                        continue
                     chromas.append(
                         self._get_chroma_attribs(
                             self._get_skin_id(champ_id, champ_data[s]["chromas"][chroma]["id"]),
