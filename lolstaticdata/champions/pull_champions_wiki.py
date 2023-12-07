@@ -366,7 +366,7 @@ class LolWikiDataHandler:
         ability_name = ability_name.replace(" ", "_")
 
         # Pull the html from the wiki
-        # print(f"  {ability_name}")
+        print(f"  {ability_name}")
         url = f"https://leagueoflegends.fandom.com/wiki/Template:Data_{champion_name}/{ability_name}"
         # temporary fix for pyke passive
         if url in "https://leagueoflegends.fandom.com/wiki/Template:Data_Pyke/Gift_of_the_Drowned_Ones":
@@ -376,6 +376,10 @@ class LolWikiDataHandler:
         return HTMLAbilityWrapper(soup)
 
     def _render_abilities(self, champion_name, abilities: List[HTMLAbilityWrapper]) -> Tuple[str, List[Ability]]:
+        # because Hwei breaks everything
+        if champion_name == "Hwei": 
+          return "", []
+        
         inputs, abilities = abilities, []  # rename variables
         skill_key = inputs[0]["skill"]
         for data in inputs:
