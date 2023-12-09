@@ -811,6 +811,8 @@ class LolWikiDataHandler:
 
             if "chromas" in champ_data[s]:
                 for chroma in champ_data[s]["chromas"]:
+                    if "id" not in champ_data[s]["chromas"][chroma] or not str(champ_data[s]["chromas"][chroma]["id"]).isnumeric():
+                        continue
                     if "availability" in champ_data[s]["chromas"][chroma] and champ_data[s]["chromas"][chroma]["availability"] == "Canceled":
                         continue
                     chromas.append(
