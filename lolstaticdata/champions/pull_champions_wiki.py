@@ -301,6 +301,7 @@ class LolWikiDataHandler:
                                 and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                             )
                         ],
+                        default="I",
                     ),
                     self._render_abilities(
                         champion_name=name,
@@ -312,6 +313,7 @@ class LolWikiDataHandler:
                                 and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                             )
                         ],
+                        default="Q",
                     ),
                     self._render_abilities(
                         champion_name=name,
@@ -323,6 +325,7 @@ class LolWikiDataHandler:
                                 and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                             )
                         ],
+                        default="W",
                     ),
                     self._render_abilities(
                         champion_name=name,
@@ -334,6 +337,7 @@ class LolWikiDataHandler:
                                 and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                             )
                         ],
+                        default="E",
                     ),
                     self._render_abilities(
                         champion_name=name,
@@ -345,6 +349,7 @@ class LolWikiDataHandler:
                                 and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                             )
                         ],
+                        default="R",
                     ),
                 ]
             ),
@@ -374,7 +379,7 @@ class LolWikiDataHandler:
         soup = BeautifulSoup(html, "lxml")
         return HTMLAbilityWrapper(soup)
 
-    def _render_abilities(self, champion_name, abilities: List[HTMLAbilityWrapper]) -> Tuple[str, List[Ability]]:
+    def _render_abilities(self, champion_name, abilities: List[HTMLAbilityWrapper], default: str) -> Tuple[str, List[Ability]]:
         inputs, abilities = abilities, []  # rename variables
         skill_key = inputs[0]["skill"]
         for data in inputs:
@@ -389,10 +394,9 @@ class LolWikiDataHandler:
                 _skill_key = "I"
             if champion_name == "Gnar" and data["name"] in ("Boulder Toss",):
                 _skill_key = "Q"
+            if _skill_key != skill_key:
+                _skill_key = default
             assert _skill_key == skill_key
-
-            if data.get("Cost") is not None:
-                raise ValueError(data)
 
             nvalues = 5 if _skill_key in ("Q", "W", "E") else 3
             if champion_name == "Aphelios" and _skill_key == "I":
