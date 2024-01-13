@@ -302,6 +302,7 @@ class LolWikiDataHandler:
                                 and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                             )
                         ],
+                        default="I",
                     ),
                     self._render_abilities(
                         champion_name=name,
@@ -313,6 +314,7 @@ class LolWikiDataHandler:
                                 and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                             )
                         ],
+                        default="Q",
                     ),
                     self._render_abilities(
                         champion_name=name,
@@ -324,6 +326,7 @@ class LolWikiDataHandler:
                                 and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                             )
                         ],
+                        default="W",
                     ),
                     self._render_abilities(
                         champion_name=name,
@@ -335,6 +338,7 @@ class LolWikiDataHandler:
                                 and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                             )
                         ],
+                        default="E",
                     ),
                     self._render_abilities(
                         champion_name=name,
@@ -346,6 +350,7 @@ class LolWikiDataHandler:
                                 and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
                             )
                         ],
+                        default="R",
                     ),
                 ]
             ),
@@ -394,14 +399,9 @@ class LolWikiDataHandler:
                 _skill_key = "I"
             if champion_name == "Gnar" and data["name"] in ("Boulder Toss",):
                 _skill_key = "Q"
+            if _skill_key != skill_key:
+                _skill_key = default
             assert _skill_key == skill_key
-
-            if champion_name == "Pyke" and _skill_key == "I":
-                del data[
-                    "Cost"
-                ]  # This is a weird one... There's an embedded table that doesn't get parsed right. It overwrites 'cost', but luckily that isn't an issue because 'cost' is empty.
-            if data.get("Cost") is not None:
-                raise ValueError(data)
 
             nvalues = 5 if _skill_key in ("Q", "W", "E") else 3
             if champion_name == "Aphelios" and _skill_key == "I":
@@ -674,16 +674,9 @@ class LolWikiDataHandler:
         return sale
 
     def _get_skin_id(self, id, skin_id):
-        if skin_id < 10:
-            id_test = str(id) + "00" + str(skin_id)
-        elif skin_id >= 10 and skin_id < 100:
-            id_test = str(id) + "0" + str(skin_id)
-        else:
-            id_test = str(id) + str(skin_id)
-
-        # If a single champion gets over 1k skin ids tell Dan he was wrong to think that it would never happen
-
-        return id_test
+        while len(str(skin_id)) < 3:
+            skin_id = "0" + str(skin_id)
+        return str(id) + skin_id
 
     def _get_chroma_attribs(self, id, name):
         if "chromas" in self.cdragDict[0]:
@@ -710,6 +703,8 @@ class LolWikiDataHandler:
                         rarities=rarities,
                     )
                     return chroma
+            available = [n['id'] for n in self.cdragDict[0]["chromas"]]
+            print(f"Chroma Mismatch: {id} not available in {available}")
 
     def _get_skins(self):
         url = f"https://leagueoflegends.fandom.com/wiki/Module:SkinData/data"
@@ -825,6 +820,10 @@ class LolWikiDataHandler:
 
             if "chromas" in champ_data[s]:
                 for chroma in champ_data[s]["chromas"]:
+                    if "id" not in champ_data[s]["chromas"][chroma] or not str(champ_data[s]["chromas"][chroma]["id"]).isnumeric():
+                        continue
+                    if "availability" in champ_data[s]["chromas"][chroma] and champ_data[s]["chromas"][chroma]["availability"] == "Canceled":
+                        continue
                     chromas.append(
                         self._get_chroma_attribs(
                             self._get_skin_id(champ_id, champ_data[s]["chromas"][chroma]["id"]),
