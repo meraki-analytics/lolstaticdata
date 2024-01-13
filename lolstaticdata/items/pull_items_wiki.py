@@ -662,7 +662,9 @@ class WikiItem:
             no_effects = True
         else:
             no_effects = False
-        if "buy" in item_data and isinstance(item_data["buy"], int):            
+        if "buy" in item_data:     
+            while isinstance(item_data["buy"], str) and "=>" in item_data["buy"]:
+                item_data["buy"] = wiki_data[item_data["buy"].replace("=>", "")]["buy"]       
             sell = item_data["buy"] * .40
         else:
             sell = 0
