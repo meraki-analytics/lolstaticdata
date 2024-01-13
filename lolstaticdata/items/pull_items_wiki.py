@@ -662,8 +662,7 @@ class WikiItem:
             no_effects = True
         else:
             no_effects = False
-        if "buy" in item_data:
-
+        if "buy" in item_data and isinstance(item_data["buy"], int):            
             sell = item_data["buy"] * .40
         else:
             sell = 0
