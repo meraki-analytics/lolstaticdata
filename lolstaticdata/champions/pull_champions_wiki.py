@@ -676,7 +676,7 @@ class LolWikiDataHandler:
     def _get_skin_id(self, id, skin_id):
         while len(str(skin_id)) < 3:
             skin_id = "0" + str(skin_id)
-        return str(id) + skin_id
+        return str(id) + str(skin_id)
 
     def _get_chroma_attribs(self, id, name):
         if "chromas" in self.cdragDict[0]:
