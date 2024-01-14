@@ -381,10 +381,6 @@ class LolWikiDataHandler:
         return HTMLAbilityWrapper(soup)
 
     def _render_abilities(self, champion_name, abilities: List[HTMLAbilityWrapper]) -> Tuple[str, List[Ability]]:
-        # because Hwei breaks everything
-        if champion_name == "Hwei": 
-          return "", []
-        
         inputs, abilities = abilities, []  # rename variables
         skill_key = inputs[0]["skill"]
         for data in inputs:
