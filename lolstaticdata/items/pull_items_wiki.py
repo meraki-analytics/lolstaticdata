@@ -368,7 +368,7 @@ class WikiItem:
         mana = 0.0
         hsp = 0.0
         mp5 = 0.0
-        tenacity = Tenacity(cls._parse_float(0.0))
+        tenacity = 0.0
         ad = 0.0
         mpenflat = 0.0
         hspunique = 0.0
@@ -420,7 +420,7 @@ class WikiItem:
                     percent=cls._parse_float(omnivamp),  # takes omnivamp from
                 ),
                 ability_haste=AbilityHaste(flat=cls._parse_float(ah)),
-                tenacity=tenacity
+                tenacity=Tenacity(percent=cls._parse_float(tenacity))
             )
             return stats
 
@@ -537,11 +537,10 @@ class WikiItem:
             pvamp = item_data['pvamp']
         else:
             pvamp = None
-        if "spec" in item_data:
-            if "TENACITY" in item_data["spec"].upper():
-                tenacity = Tenacity(
-                    cls._parse_float(re.search(r"(\d+)%", item_data["spec"].upper()).groups()[0]))
-                print(tenacity)
+        
+        if "tenacity" in item_data:
+            tenacity = item_data['tenacity']
+        
         stats = Stats(
             ability_power=AbilityPower(flat=cls._parse_float(ap)),
             armor=Armor(flat=cls._parse_float(armor)),
@@ -575,7 +574,7 @@ class WikiItem:
                 percent=cls._parse_float(omnivamp),  # takes omnivamp from
             ),
             ability_haste=AbilityHaste(flat=cls._parse_float(ah)),
-            tenacity=tenacity
+            tenacity=Tenacity(percent=cls._parse_float(tenacity))
         )
         return stats
 
