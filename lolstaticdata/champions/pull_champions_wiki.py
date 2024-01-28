@@ -380,7 +380,7 @@ class LolWikiDataHandler:
         soup = BeautifulSoup(html, "lxml")
         return HTMLAbilityWrapper(soup)
 
-    def _render_abilities(self, champion_name, abilities: List[HTMLAbilityWrapper]) -> Tuple[str, List[Ability]]:
+    def _render_abilities(self, champion_name, abilities: List[HTMLAbilityWrapper], default: str) -> Tuple[str, List[Ability]]:
         inputs, abilities = abilities, []  # rename variables
         skill_key = inputs[0]["skill"]
         for data in inputs:
