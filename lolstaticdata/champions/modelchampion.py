@@ -155,6 +155,7 @@ class Leveling(object):
 @dataclass
 class Effect(object):
     description: str
+    html_description: str
     leveling: List[Leveling]
 
 
