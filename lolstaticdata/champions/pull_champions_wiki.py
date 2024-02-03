@@ -498,7 +498,10 @@ class LolWikiDataHandler:
                 leveling = data.get_source(f"leveling{ending}")
                 leveling = self._render_levelings(leveling, nvalues) if leveling else []
                 if description or leveling:
-                    effects.append(Effect(description=description, leveling=leveling))
+                    html_description = data.data.get(f"description{ending}", None)
+                    if html_description:
+                        html_description = str(html_description)
+                    effects.append(Effect(description=description, html_description=html_description, leveling=leveling))
 
             ability = Ability(
                 name=data["name"],
