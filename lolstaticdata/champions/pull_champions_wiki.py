@@ -45,6 +45,7 @@ from .modelchampion import (
     Price,
     Resource,
     Modifier,
+    Position,
     Role,
     Leveling,
     Skin,
@@ -267,6 +268,7 @@ class LolWikiDataHandler:
                 urf_healing=Stat(flat=data["stats"].get("urf",{}).get("healing", 1.0)),
                 urf_shielding=Stat(flat=data["stats"].get("urf",{}).get("shielding", 1.0)),
             ),
+            positions=sorted(Position.from_string(p) for p in data["external_positions"]),
             roles=sorted(
                 {
                     *(Role.from_string(r) for r in data["role"]),
