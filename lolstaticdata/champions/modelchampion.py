@@ -56,6 +56,12 @@ class AttackType(OrderedEnum):
     MELEE = "MELEE"
     RANGED = "RANGED"
 
+class Position(OrderedEnum): 
+    TOP = "TOP"
+    JUNGLE = "JUNGLE"
+    MIDDLE = "MIDDLE"
+    BOTTOM = "BOTTOM"
+    SUPPORT = "SUPPORT"
 
 class Role(OrderedEnum):
     TANK = "TANK"
@@ -269,6 +275,7 @@ class Champion(object):
     attack_type: AttackType
     adaptive_type: DamageType
     stats: Stats
+    positions: List[Position]
     roles: List[Role]
     attribute_ratings: AttributeRatings
     abilities: Mapping[str, List[Ability]]
