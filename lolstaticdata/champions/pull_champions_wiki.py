@@ -177,7 +177,7 @@ class LolWikiDataHandler:
                 or d["date"] == ""
                 or datetime.strptime(d["date"], "%Y-%m-%d") > datetime.today()
             ):  # Champion not released yet
-                print("ALERT: Skipping unreleased champion")
+                print(f"ALERT: Skipping unreleased champion {name}")
                 continue
             champion = self._render_champion_data(name, d)
             yield champion
