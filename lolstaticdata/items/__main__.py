@@ -23,7 +23,10 @@ def main():
     jsons = {}
     for name,data in wikiItems.items():
         item = None
-        print(name)
+        if "id" in data:
+          print(data["id"], name)
+        else: 
+          print(name)
         l = [x for x in cdragon if "id" in data and x["id"] == data["id"]]
 
         for i in l:
@@ -53,7 +56,6 @@ def main():
                     j = item.__json__(indent=2, ensure_ascii=False)
                     f.write(j)
                 jsons[int(item.id)] = json.loads(item.__json__(ensure_ascii=False))
-                print(item.id)
     if os.path.exists(os.path.join(directory, "__wiki__")):
         shutil.rmtree(os.path.join(directory, "__wiki__"))
     jsonfn = os.path.join(directory, "items.json")
