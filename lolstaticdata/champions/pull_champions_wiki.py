@@ -201,7 +201,7 @@ class LolWikiDataHandler:
                 sale_price = int(sale[name]["price"])
         champion = Champion(
             id=data["id"],
-            key=data["apiname"],
+            key=data.get("apiname", name.replace(" ", "").replace("'", "")),
             name=name,
             title=data["title"],
             full_name=data.get("fullname", ""),
