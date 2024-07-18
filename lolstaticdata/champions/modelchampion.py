@@ -51,6 +51,7 @@ class Resource(OrderedEnum):
     SOUL_UNBOUND = "SOUL_UNBOUND"
     BLOOD_WELL = "BLOOD_WELL"
     CRIMSON_RUSH = "CRIMSON_RUSH"
+    FRENZY = "FRENZY"
 
 class AttackType(OrderedEnum):
     MELEE = "MELEE"
