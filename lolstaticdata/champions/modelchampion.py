@@ -29,7 +29,6 @@ from ..common.utils import OrderedEnum, ExtendedEncoder
 
 class Resource(OrderedEnum):
     NO_COST = "NO_COST"
-    BLOODTHIRST = "BLOODTHIRST"
     MANA = "MANA"
     ENERGY = "ENERGY"
     RAGE = "RAGE"
@@ -51,6 +50,7 @@ class Resource(OrderedEnum):
     SOUL_UNBOUND = "SOUL_UNBOUND"
     BLOOD_WELL = "BLOOD_WELL"
     CRIMSON_RUSH = "CRIMSON_RUSH"
+    FRENZY = "FRENZY"
 
 class AttackType(OrderedEnum):
     MELEE = "MELEE"
