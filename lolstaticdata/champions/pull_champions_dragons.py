@@ -1,4 +1,4 @@
-from fuzzywuzzy import fuzz
+from thefuzz import fuzz
 from functools import partial
 
 
