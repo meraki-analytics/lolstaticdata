@@ -45,6 +45,7 @@ from .modelchampion import (
     Price,
     Resource,
     Modifier,
+    Position,
     Role,
     Leveling,
     Skin,
@@ -251,8 +252,8 @@ class LolWikiDataHandler:
                     flat=data["stats"]["range"],
                     per_level=data["stats"].get("range_lvl", 0),
                 ),
-                critical_strike_damage=Stat(flat=data["stats"].get("crit_base", 200)),
-                critical_strike_damage_modifier=Stat(flat=data["stats"].get("crit_base", 1.0)),
+                critical_strike_damage=Stat(flat=data["stats"].get("crit_base", 175)),
+                critical_strike_damage_modifier=Stat(flat=data["stats"].get("crit_mod", 1.0)),
                 movespeed=Movespeed(flat=data["stats"]["ms"]),
                 acquisition_radius=Stat(flat=data["stats"].get("acquisition_radius", 800)),
                 selection_radius=Stat(flat=data["stats"].get("selection_radius", 100)),
@@ -267,6 +268,7 @@ class LolWikiDataHandler:
                 urf_healing=Stat(flat=data["stats"].get("urf",{}).get("healing", 1.0)),
                 urf_shielding=Stat(flat=data["stats"].get("urf",{}).get("shielding", 1.0)),
             ),
+            positions=sorted(Position.from_string(p) for p in data["external_positions"]),
             roles=sorted(
                 {
                     *(Role.from_string(r) for r in data["role"]),
