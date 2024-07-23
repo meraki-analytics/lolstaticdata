@@ -112,6 +112,10 @@ class Stats(object):
     aram_damage_dealt: Stat
     aram_healing: Stat
     aram_shielding: Stat
+    aram_tenacity: Stat
+    aram_ability_haste: Stat
+    aram_attack_speed: Stat
+    aram_energy_regen: Stat
     urf_damage_taken: Stat
     urf_damage_dealt: Stat
     urf_healing: Stat
