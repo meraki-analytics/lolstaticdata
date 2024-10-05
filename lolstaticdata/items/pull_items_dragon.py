@@ -142,8 +142,6 @@ class DragonItem:
             active=[],
             stats=[],
             shop=shop,
-            rank="",
-            maps=[],
-            tags=[]
+            rank=""
         )
         return item
