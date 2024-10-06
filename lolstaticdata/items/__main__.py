@@ -1,3 +1,4 @@
+import argparse
 import os
 import shutil
 import json
@@ -6,8 +7,12 @@ from .pull_items_wiki import WikiItem, get_item_urls
 from .pull_items_dragon import DragonItem
 from collections import OrderedDict
 
-def main(artifacts_directory: str):
-    directory = os.path.abspath(artifacts_directory)
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--directory', '-d', type=str, help='Path to the data directory.')
+    args = parser.parse_args()
+
+    directory = os.path.abspath(args.directory)
     if not os.path.exists(os.path.join(directory, "items")):
         os.mkdir(os.path.join(directory, "items"))
 
@@ -66,4 +71,3 @@ def main(artifacts_directory: str):
 
 if __name__ == "__main__":
     main()
-    print("Hello! What a surprise, it worked!")
