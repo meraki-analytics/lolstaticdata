@@ -138,6 +138,8 @@ class Item(object):
     name: str
     id: int
     tier: int
+    maps: List[str]
+    tags: List[str]
     rank: List[str]
     builds_from: List[int]
     builds_into: List[int]

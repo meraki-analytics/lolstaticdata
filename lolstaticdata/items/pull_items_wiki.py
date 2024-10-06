@@ -741,6 +741,8 @@ class WikiItem:
             rank=rank,
             special_recipe=0,
             iconOverlay=ornn,
+            maps=[],
+            tags=[],
         )
         return item
 

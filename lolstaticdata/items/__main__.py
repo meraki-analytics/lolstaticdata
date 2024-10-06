@@ -6,8 +6,8 @@ from .pull_items_wiki import WikiItem, get_item_urls
 from .pull_items_dragon import DragonItem
 from collections import OrderedDict
 
-def main():
-    directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), "../.."))
+def main(artifacts_directory: str):
+    directory = os.path.abspath(artifacts_directory)
     if not os.path.exists(os.path.join(directory, "items")):
         os.mkdir(os.path.join(directory, "items"))
 
@@ -17,10 +17,11 @@ def main():
     if not os.path.exists(os.path.join(directory, "__wiki__")):
         os.mkdir(os.path.join(directory, "__wiki__"))
     cdragon = DragonItem.get_cdragon()
+    ddragon_json = DragonItem.get_json_ddragon()
     wikiItems = get_item_urls(False)
 
     jsons = {}
-    for name,data in wikiItems.items():
+    for name, data in wikiItems.items():
         item = None
         print(name)
         l = [x for x in cdragon if "id" in data and x["id"] == data["id"]]
@@ -39,6 +40,8 @@ def main():
             item.required_champion = cdrag_item.required_champion
             item.shop.purchasable = cdrag_item.shop.purchasable
             item.special_recipe = cdrag_item.special_recipe
+            item.maps = ddragon_json[str(cdrag_item.id)]['maps']
+            item.tags = ddragon_json[str(cdrag_item.id)]['tags']
             if item.iconOverlay == True:
                 item.iconOverlay = (
                     "http://raw.communitydragon.org/latest/game/data/items/icons2d/bordertreatmentornn.png"

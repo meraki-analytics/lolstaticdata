@@ -21,9 +21,9 @@ def get_ability_filenames(url):
     return filenames
 
 
-def main():
+def main(artifacts_directory: str):
     handler = LolWikiDataHandler(use_cache=False)
-    directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), "../.."))
+    directory = os.path.abspath(artifacts_directory)
     if not os.path.exists(os.path.join(directory, "champions")):
         os.mkdir(os.path.join(directory, "champions"))
 
