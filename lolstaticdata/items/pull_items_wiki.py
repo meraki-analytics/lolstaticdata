@@ -392,7 +392,7 @@ class WikiItem:
                 armor=Armor(flat=cls._parse_float(armor)),
                 armor_penetration=ArmorPenetration(percent=cls._parse_float(armpen)),
                 attack_damage=AttackDamage(flat=cls._parse_float(ad)),
-                attack_speed=AttackSpeed(flat=cls._parse_float(attack_speed)),
+                attack_speed=AttackSpeed(percent=cls._parse_float(attack_speed)),
                 cooldown_reduction=CooldownReduction(percent=cls._parse_float(0.0)),
                 critical_strike_chance=CriticalStrikeChance(percent=cls._parse_float(crit)),
                 gold_per_10=GoldPer10(flat=cls._parse_float(gp10)),
