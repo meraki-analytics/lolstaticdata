@@ -1,3 +1,4 @@
+import argparse
 import os
 import json
 from bs4 import BeautifulSoup
@@ -21,9 +22,14 @@ def get_ability_filenames(url):
     return filenames
 
 
-def main(artifacts_directory: str):
+def main():
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--directory', '-d', type=str, help='Path to the data directory.')
+    args = parser.parse_args()
+
     handler = LolWikiDataHandler(use_cache=False)
-    directory = os.path.abspath(artifacts_directory)
+    directory = os.path.abspath(args.directory)
     if not os.path.exists(os.path.join(directory, "champions")):
         os.mkdir(os.path.join(directory, "champions"))
 
