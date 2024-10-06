@@ -78,6 +78,8 @@ class DragonItem:
             rank="",
             special_recipe=special_recipe,
             iconOverlay=None,
+            maps=[],
+            tags=[],
         )
         return item
 
