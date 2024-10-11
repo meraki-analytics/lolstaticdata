@@ -351,7 +351,7 @@ class WikiItem:
         elif item in "Ruby_Crystal_Ruby_Crystal":
             item = "Ruby_Crystal"
 
-        url = "https://leagueoflegends.fandom.com/wiki/Template:Item_data_" + item
+        url = "https://wiki.leagueoflegends.com/en-us/Template:Item_data_" + item
         use_cache = True
         html = download_soup(url, use_cache, dir="__wiki__")
         soup = BeautifulSoup(html, "lxml")
@@ -745,7 +745,7 @@ class WikiItem:
         return item
 
 def get_item_urls(use_cache: bool) -> List[str]:
-    url = "https://leagueoflegends.fandom.com/wiki/Module:ItemData/data"
+    url = "https://wiki.leagueoflegends.com/en-us/Module:ItemData/data"
     html = download_soup(url, False)
     soup = BeautifulSoup(html, "lxml")
     spans = soup.find("pre", {"class": "mw-code mw-script"})
