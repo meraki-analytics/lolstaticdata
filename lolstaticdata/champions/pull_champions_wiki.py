@@ -132,7 +132,7 @@ class LolWikiDataHandler:
 
     def get_champions(self) -> Iterator[Champion]:
         # Download the page source
-        url = "https://leagueoflegends.fandom.com/wiki/Module:ChampionData/data"
+        url = "https://wiki.leagueoflegends.com/en-us/Module:ChampionData/data"
         html = download_soup(url, self.use_cache)
         soup = BeautifulSoup(html, "lxml")
 
@@ -377,10 +377,10 @@ class LolWikiDataHandler:
 
         # Pull the html from the wiki
         # print(f"  {ability_name}")
-        url = f"https://leagueoflegends.fandom.com/wiki/Template:Data_{champion_name}/{ability_name}"
+        url = f"https://wiki.leagueoflegends.com/en-us/Template:Data_{champion_name}/{ability_name}"
         # temporary fix for pyke passive
-        if url in "https://leagueoflegends.fandom.com/wiki/Template:Data_Pyke/Gift_of_the_Drowned_Ones":
-            url = "https://leagueoflegends.fandom.com/wiki/User:Dryan426/Sandbox"
+        if url in "https://wiki.leagueoflegends.com/en-us/Template:Data_Pyke/Gift_of_the_Drowned_Ones":
+            url = "https://wiki.leagueoflegends.com/en-us/User:Dryan426/Sandbox"
         html = download_soup(url, self.use_cache)
         soup = BeautifulSoup(html, "lxml")
         return HTMLAbilityWrapper(soup)
@@ -654,7 +654,7 @@ class LolWikiDataHandler:
     def _get_sale(self):
 
         get_prices = re.compile(r"(\d+) (\d+)")
-        url = f"https://leagueoflegends.fandom.com/wiki/Sales"
+        url = f"https://wiki.leagueoflegends.com/en-us/Sales"
         # temporary fix for pyke passive
         html = download_soup(url, False)
         soup = BeautifulSoup(html, "lxml")
@@ -708,7 +708,7 @@ class LolWikiDataHandler:
             print(f"Chroma Mismatch: {id} not available in {available}")
 
     def _get_skins(self):
-        url = f"https://leagueoflegends.fandom.com/wiki/Module:SkinData/data"
+        url = f"https://wiki.leagueoflegends.com/en-us/Module:SkinData/data"
 
         html = download_soup(url, False)
         soup = BeautifulSoup(html, "lxml")
