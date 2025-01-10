@@ -118,6 +118,7 @@ class LolWikiDataHandler:
         "Shaco": ["Command: Hallucinate"],
         "Syndra": ["Force of Will 2"],
         "Taliyah": ["Seismic Shove 2"],
+        "Viktor": ["Glorious Evolution 2", "Glorious Evolution 3", "Glorious Evolution 4", "Glorious Evolution 5", "Arcane Storm 2", "Arcane Storm 3"],
     }
 
     def __init__(self, use_cache: bool = True):
