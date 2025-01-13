@@ -32,6 +32,9 @@ def main():
     ddragon_champions = utils.download_json(
         f"http://ddragon.leagueoflegends.com/cdn/{latest_version}/data/en_US/championFull.json"
     )["data"]
+    cdragon_champions = utils.download_json(
+        f"https://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json"
+    )
 
     # Load a list of champions from universe.leagueoflegends.com => added request fail detection because of unreliable source
     factions = {}
@@ -63,13 +66,18 @@ def main():
         )
 
         # Set the champion icon
-        try:
-            ddragon_champion = ddragon_champions[champion.key]
+        
+        cdragon_champion = next((c for c in cdragon_champions if c["alias"] == champion.key), None)
+        if cdragon_champion is not None:
             champion.icon = (
-                f"https://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/{ddragon_champion['key']}.png"
+                f"https://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/{cdragon_champion['id']}.png"
             )
-        except KeyError:
-            champion.icon = ""
+        else:
+            ddragon_champion = ddragon_champions[champion.key]
+            print(f"No cdragon champion found for {champion.key}")
+            champion.icon = (
+                f"http://ddragon.leagueoflegends.com/cdn/{latest_version}/img/champion/{ddragon_champion['image']['full']}"
+            )
         
         
 
