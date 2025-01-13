@@ -58,39 +58,20 @@ def main():
     champions = []
     for champion in handler.get_champions():
         # Load some information for pulling champion ability icons
-        ddragon_champion = ddragon_champions[champion.key]
         ability_icon_filenames = get_ability_filenames(
             f"http://raw.communitydragon.org/latest/game/assets/characters/{champion.key.lower()}/hud/icons2d/"
         )
 
         # Set the champion icon
-        champion.icon = (
-            f"http://ddragon.leagueoflegends.com/cdn/{latest_version}/img/champion/{ddragon_champion['image']['full']}"
-        )
-
-        # Set the lore
-        champion.lore = ddragon_champion["lore"]
-
-        # Set the faction
-        champion.faction = factions[champion.key.lower()] if champion.key.lower() in factions else ""
-
-        # Fix faction bug for e.g. renata
-        if champion.faction == "" and champion.name.lower().replace(" ","") in factions:
-            champion.faction = factions[champion.name.lower().replace(" ","")]
-
-        # Set the champion ability icons
-        for ability_key, abilities in champion.abilities.items():
-            for ability_index, ability in enumerate(abilities, start=1):
-                url = _get_ability_url(
-                    champion.key,
-                    ability_key_to_identifier[ability_key],
-                    ability_index,
-                    ability.name,
-                    latest_version,
-                    ddragon_champion,
-                    ability_icon_filenames,
-                )
-                ability.icon = url
+        try:
+            ddragon_champion = ddragon_champions[champion.key]
+            champion.icon = (
+                f"https://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/{ddragon_champion['key']}.png"
+            )
+        except KeyError:
+            champion.icon = ""
+        
+        
 
         champions.append(champion)
         jsonfn = os.path.join(directory, "champions", str(champion.key) + ".json")

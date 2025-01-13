@@ -16,12 +16,7 @@ from ..common.modelcommon import (
     AttackSpeed,
     AttackRange,
     Movespeed,
-    Lethality,
-    CooldownReduction,
-    GoldPer10,
-    HealAndShieldPower,
-    Lifesteal,
-    MagicPenetration,
+
     Stat,
 )
 from ..common.utils import OrderedEnum, ExtendedEncoder
@@ -274,29 +269,11 @@ class Champion(object):
     title: str
     full_name: str
     icon: str
-    resource: Resource
-    attack_type: AttackType
-    adaptive_type: DamageType
-    stats: Stats
-    positions: List[Position]
-    roles: List[Role]
-    attribute_ratings: AttributeRatings
-    abilities: Mapping[str, List[Ability]]
-    release_date: str
-    release_patch: str
-    patch_last_changed: str
-    price: Price
-    lore: str
-    faction: str
     skins: List[Skin]
 
     def __json__(self, *args, **kwargs):
         # Use dataclasses_json to get the dict
         d = self.to_dict()
-        # Delete the two stat objects that don't apply to champions
-        for name, stat in d["stats"].items():
-            if isinstance(stat, dict):
-                del stat["percentBase"]
-                del stat["percentBonus"]
+        
         # Return the (un)modified dict
         return json.dumps(d, cls=ExtendedEncoder, *args, **kwargs)
