@@ -111,6 +111,7 @@ class LolWikiDataHandler:
         "Jinx": ["Switcheroo! 2"],
         "Lillia": ["Prance"],
         "Milio": ["Cozy Campfire 2"],
+        "Mel": ["Golden Eclipse 2"],
         "Mordekaiser": ["Indestructible 2"],
         "Nidalee": ["Aspect of the Cougar 2"],
         "Pyke": ["Death from Below 2"],
