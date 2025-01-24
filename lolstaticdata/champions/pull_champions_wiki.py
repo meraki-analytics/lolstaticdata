@@ -110,6 +110,7 @@ class LolWikiDataHandler:
         "Annie": ["Command Tibbers"],
         "Jinx": ["Switcheroo! 2"],
         "Lillia": ["Prance"],
+        "Milio": ["Cozy Campfire 2"],
         "Mordekaiser": ["Indestructible 2"],
         "Nidalee": ["Aspect of the Cougar 2"],
         "Pyke": ["Death from Below 2"],
@@ -118,6 +119,7 @@ class LolWikiDataHandler:
         "Shaco": ["Command: Hallucinate"],
         "Syndra": ["Force of Will 2"],
         "Taliyah": ["Seismic Shove 2"],
+        "Viktor": ["Glorious Evolution 2", "Glorious Evolution 3", "Glorious Evolution 4", "Glorious Evolution 5", "Arcane Storm 2", "Arcane Storm 3"],
     }
 
     def __init__(self, use_cache: bool = True):
@@ -378,9 +380,6 @@ class LolWikiDataHandler:
         # Pull the html from the wiki
         # print(f"  {ability_name}")
         url = f"https://wiki.leagueoflegends.com/en-us/Template:Data_{champion_name}/{ability_name}"
-        # temporary fix for pyke passive
-        if url in "https://wiki.leagueoflegends.com/en-us/Template:Data_Pyke/Gift_of_the_Drowned_Ones":
-            url = "https://wiki.leagueoflegends.com/en-us/User:Dryan426/Sandbox"
         html = download_soup(url, self.use_cache)
         soup = BeautifulSoup(html, "lxml")
         return HTMLAbilityWrapper(soup)
@@ -658,7 +657,6 @@ class LolWikiDataHandler:
 
         get_prices = re.compile(r"(\d+) (\d+)")
         url = f"https://wiki.leagueoflegends.com/en-us/Sales"
-        # temporary fix for pyke passive
         html = download_soup(url, False)
         soup = BeautifulSoup(html, "lxml")
         spans = soup.findAll("div", {"class": "skin_portrait skin-icon"})
