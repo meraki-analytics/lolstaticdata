@@ -112,6 +112,7 @@ class LolWikiDataHandler:
         "Lillia": ["Prance"],
         "Milio": ["Cozy Campfire 2"],
         "Mordekaiser": ["Indestructible 2"],
+        "Mel": ["Golden Eclipse 2"],
         "Nidalee": ["Aspect of the Cougar 2"],
         "Pyke": ["Death from Below 2"],
         "Rumble": ["Electro Harpoon 2"],
