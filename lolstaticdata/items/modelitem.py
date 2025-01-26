@@ -50,6 +50,7 @@ class ItemAttributes(OrderedEnum):
     ABILITY_POWER = "ABILITY_POWER"
     ATTACK_DAMAGE = "ATTACK_DAMAGE"
     CRITICAL_STRIKE = "CRITICAL_STRIKE"
+    ABILITY_HASTE = "ABILITY_HASTE"
 
 
 class ItemRanks(OrderedEnum):
