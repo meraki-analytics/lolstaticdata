@@ -610,16 +610,26 @@ class WikiItem:
                 if "=>" in item_data[x]:
                     try:
                         item_data[x] = wiki_data[item_data[x].replace("=>", "")][x]
+                        if type(item_data[x]) == str:
+                            if "=>" in item_data[x]:
+                                item_data[x] = wiki_data[item_data[x].replace("=>", "")][x]
                     except KeyError as e:
                         clear_keys.append(x)
             if x in "effects":
                 for l in item_data[x]:
                     if "=>" in item_data[x][l]:
                         item_data[x][l] = wiki_data[item_data[x][l].replace("=>", "")][x][l]
+                    
+                    if "=>" in item_data[x][l]:
+                        item_data[x][l] = wiki_data[item_data[x][l].replace("=>", "")][x][l]
+					
             if x in "stats":
                 for l in item_data[x]:
                     if type(item_data[x][l]) ==str and "=>" in item_data[x][l]:
                         item_data[x][l] = wiki_data[item_data[x][l].replace("=>", "")][x][l]
+                    if type(item_data[x][l]) ==str and "=>" in item_data[x][l]:
+                        item_data[x][l] = wiki_data[item_data[x][l].replace("=>", "")][x][l]
+
         for key in clear_keys:
             item_data.pop(key)
         try:
