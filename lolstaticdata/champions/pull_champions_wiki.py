@@ -900,6 +900,7 @@ class ParsingAndRegex:
     r_number = r"(\d+\.?\d*)"
     rc_number = re.compile(r_number)
     rc_based_on_level = re.compile(r"(\d+\.?\d*) ?− ?(\d+\.?\d*) \(based on level\)")
+    rc_based_on_level_colon = re.compile(r"(\d+\.?\d*) ?: ?(\d+\.?\d*) \(based on level\)")
 
     @staticmethod
     def regex_slash_separated(string: str, nvalues: int) -> Tuple[List[str], List[Union[int, float]]]:
@@ -939,6 +940,19 @@ class ParsingAndRegex:
             start, stop = eval(start), eval(stop)
             values = ParsingAndRegex.parse_based_on_level(start, stop)
             parsed = f"{start} − {stop} (based on level)"
+            not_parsed = string.split(parsed)
+            assert len(not_parsed) >= 2
+            if len(not_parsed) != 2:  # see below
+                not_parsed = not_parsed[0], parsed.join(not_parsed[1:])
+            assert len(values) == 18
+            return not_parsed, values
+        elif len(ParsingAndRegex.rc_based_on_level_colon.findall(string)) > 0:
+            level = ParsingAndRegex.rc_based_on_level_colon.findall(string)
+            assert len(level) == 1
+            start, stop = level[0]
+            start, stop = eval(start), eval(stop)
+            values = ParsingAndRegex.parse_based_on_level(start, stop)
+            parsed = f"{start} : {stop} (based on level)"
             not_parsed = string.split(parsed)
             assert len(not_parsed) >= 2
             if len(not_parsed) != 2:  # see below
