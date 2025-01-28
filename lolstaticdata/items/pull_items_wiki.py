@@ -39,6 +39,7 @@ from ..common.modelcommon import (
     OmniVamp,
     AbilityHaste,
     Tenacity,
+    CriticalStrikeDamage
 )
 
 
@@ -185,6 +186,7 @@ class WikiItem:
         health = Health(flat=cls._parse_float(0.0))
         ad = AttackDamage(flat=cls._parse_float(0.0))
         tenacity_re = re.compile(r"(\d+)% TENACITY")
+        critdamage = re.compile(r"\d.* critical strike chance")
         # print(passive)
         if "Empowers each of your other Legendary items" in passive:
             if health_re.search(passive):
@@ -275,6 +277,13 @@ class WikiItem:
             omniv = cls._parse_float(omniv)
         else:
             omniv = 0.0
+        
+        if critdamage.search(passive):
+            critdamage = critdamage.search(passive).group(0).split("%")[0]
+            critdamage = cls._parse_float(critdamage)
+        else:
+            critdamage = 0.0
+        
         stats = Stats(
             ability_power=AbilityPower(flat=ap, percent=ap_percent),
             armor=Armor(flat=cls._parse_float(0.0)),
@@ -296,7 +305,8 @@ class WikiItem:
             movespeed=movespeed,
             omnivamp=OmniVamp(percent=omniv),
             ability_haste=AbilityHaste(flat=ah),
-            tenacity=tenacity
+            tenacity=tenacity,
+            critical_strike_damage=CriticalStrikeDamage(percent=cls._parse_float(critdamage))
         )
         return stats
 
@@ -385,6 +395,7 @@ class WikiItem:
         gp10 = 0.0
         msflat = 0.0
         attack_speed = 0.0
+        critdamage = 0.0
         if type(item_data) == str:
             print(item_data)
             stats = Stats(
@@ -420,7 +431,8 @@ class WikiItem:
                     percent=cls._parse_float(omnivamp),  # takes omnivamp from
                 ),
                 ability_haste=AbilityHaste(flat=cls._parse_float(ah)),
-                tenacity=Tenacity(percent=cls._parse_float(tenacity))
+                tenacity=Tenacity(percent=cls._parse_float(tenacity)),
+                critical_strike_damage=CriticalStrikeDamage(percent=cls._parse_float(critdamage))
             )
             return stats
 
@@ -541,6 +553,9 @@ class WikiItem:
         if "tenacity" in item_data:
             tenacity = item_data['tenacity']
         
+        if "critdamage" in item_data:
+            critdamage = item_data['critdamage']
+        
         stats = Stats(
             ability_power=AbilityPower(flat=cls._parse_float(ap)),
             armor=Armor(flat=cls._parse_float(armor)),
@@ -574,7 +589,8 @@ class WikiItem:
                 percent=cls._parse_float(omnivamp),  # takes omnivamp from
             ),
             ability_haste=AbilityHaste(flat=cls._parse_float(ah)),
-            tenacity=Tenacity(percent=cls._parse_float(tenacity))
+            tenacity=Tenacity(percent=cls._parse_float(tenacity)),
+            critical_strike_damage=CriticalStrikeDamage(percent=cls._parse_float(critdamage))
         )
         return stats
 

@@ -29,6 +29,7 @@ from ..common.modelcommon import (
     AbilityHaste,
     OmniVamp,
     Tenacity,
+    CriticalStrikeDamage,
 )
 
 
@@ -93,6 +94,7 @@ class Stats(object):
     ability_haste: AbilityHaste
     omnivamp: OmniVamp
     tenacity: Tenacity
+    critical_strike_damage: CriticalStrikeDamage
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
