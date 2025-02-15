@@ -1009,7 +1009,7 @@ class ParsingAndRegex:
                 parsed = f"{start} − {stop} (based on level)"
             else:
                 parsed = f"{start} : {stop} (based on level)"
-            not_parsed = [re.sub("[\[\] ]", "", substring) for substring in string.split(parsed)]
+            not_parsed = [re.sub(r"[\[\] ]", "", substring) for substring in string.split(parsed)]
             assert len(not_parsed) >= 2
             if len(not_parsed) != 2:  # see below
                 not_parsed = not_parsed[0], parsed.join(not_parsed[1:])
