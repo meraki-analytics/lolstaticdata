@@ -120,7 +120,81 @@ class LolWikiDataHandler:
         "Shaco": ["Command: Hallucinate"],
         "Syndra": ["Force of Will 2"],
         "Taliyah": ["Seismic Shove 2"],
-        "Viktor": ["Glorious Evolution 2", "Glorious Evolution 3", "Glorious Evolution 4", "Glorious Evolution 5", "Arcane Storm 2", "Arcane Storm 3"],
+        "Viktor": ["Glorious Evolution 2", "Glorious Evolution 3",
+                   "Glorious Evolution 4", "Glorious Evolution 5",
+                   "Arcane Storm 2", "Arcane Storm 3"],
+    }
+    UNHANDLED_MODIFIERS = {
+        # Akshan
+        "1 + 0.3 per 100% bonus attack speed": {
+            "value": 1,
+            "lvling": " + 0.3 per 100% bonus attack speed"
+        },
+        "1 + (0.5 + 0.2) per 100% critical strike chance": {
+            "value": 1,
+            "lvling": " + (0.5 + 0.2 [Infinity Edge]) per " \
+            "100% critical strike chance"
+        },
+        # Ekko
+        "3% per 1% of health lost in the past 4 seconds": {
+            "value": 3,
+            "lvling": "% per 1% of health lost in the past 4 seconds"
+        },
+        # Kog'Maw
+        "40 : 400 (based on stacks)": {
+            "value": 40,
+            "lvling": " + 40 for every stack, capped at 9 stacks"
+        },
+        # K'Sante
+        "3.5 : 2 (based on bonus resistances)": {
+            "value": 3.5,
+            "lvling": " - 0.0125 x bonus resistances, " \
+            "capped at 120 bonus resistances"
+        },
+        # Nasus
+        "Siphoning Strike Stacks": {
+            "value": 0,
+            "lvling": "Siphoning Strike Stacks"
+        },
+        # Quinn
+        "8 : 2.93 (based on critical strike chance)": {
+            "value": 8,
+            "lvling": " x (0.99 ^ critical strike chance %)"
+        },
+        # Sett
+        "1% (+ 1 / 1.5 / 2 / 2.5 / 3% per 100 AD) " \
+        "of target's maximum health": {
+            "value": 1,
+            "lvling": "% (+ 1 / 1.5 / 2 / 2.5 / 3% per 100 AD) " \
+            "of target's maximum health"
+        },
+        "2% (+ 2 / 3 / 4 / 5 / 6% per 100 AD) of target's maximum health": {
+            "value": 2,
+            "lvling": "% (+ 2 / 3 / 4 / 5 / 6% per 100 AD) " \
+            "of target's maximum health"
+        },
+        # Veigar
+        "8 : 0 (based on  Phenomenal Evil stacks)": {
+            "value": 8,
+            "lvling": " x (0.9 ^ (Phenominal Evil Stacks / 50))"
+        },
+        # Vi
+        "[ 1% per 35 ][ 2.86% per 100 ]bonus AD": {
+            "value": 2.86,
+            "lvling": "% per 100 bonus AD"
+        },
+        # Yasuo/Yone
+        "4 : 1.33 (based on bonus attack speed)": {
+            "value": 4,
+            "lvling": " x (1 - (0.01 per 1.67% bonus attack speed)). " \
+            "This is capped at 67% reduction at 111.1% bonus attack speed."
+        },
+        # Yone
+        "14 : 6 (based on bonus attack speed)": {
+            "value": 14,
+            "lvling": " x (1 - (0.01 per 1.51% bonus attack speed)). " \
+            "This is capped at 62.5% reduction at 94.6% bonus attack speed."
+        },
     }
 
     def __init__(self, use_cache: bool = True):
@@ -615,16 +689,8 @@ class LolWikiDataHandler:
             except Exception as error:
                 print(f"ERROR: FAILURE TO PARSE MODIFIER:  {lvling}")
                 print("ERROR:", error)
-                while "  " in lvling:
-                    lvling = lvling.replace("  ", " ")
-                value = 0
-                if lvling.lower() == "Siphoning Strike Stacks".lower():  # Nasus
-                    value = 1
-                if lvling.lower() == "increased by 3% per 1% of health lost in the past 4 seconds".lower():  # Ekko
-                    value = 3
-                    lvling = "% per 1% of health lost in the past 4 seconds"
                 modifier = Modifier(
-                    values=[value for _ in range(nvalues)],
+                    values=[0 for _ in range(nvalues)],
                     units=[lvling for _ in range(nvalues)],
                 )
                 modifiers.append(modifier)
@@ -899,8 +965,8 @@ class ParsingAndRegex:
     rc_scaling = re.compile(r"(\(\+.+?\))")
     r_number = r"(\d+\.?\d*)"
     rc_number = re.compile(r_number)
-    rc_based_on_level = re.compile(r"(\d+\.?\d*) ?− ?(\d+\.?\d*) \(based on level\)")
-    rc_based_on_level_colon = re.compile(r"(\d+\.?\d*) ?: ?(\d+\.?\d*) \(based on level\)")
+    rc_based_on_level = re.compile(r"(\d+\.?\d*) ?[−|:] ?(\d+\.?\d*) \(based on level\)")
+    rc_based_on_crit = re.compile(r"\d+ \+ \d+% critical strike chance")
 
     @staticmethod
     def regex_slash_separated(string: str, nvalues: int) -> Tuple[List[str], List[Union[int, float]]]:
@@ -939,27 +1005,18 @@ class ParsingAndRegex:
             start, stop = level[0]
             start, stop = eval(start), eval(stop)
             values = ParsingAndRegex.parse_based_on_level(start, stop)
-            parsed = f"{start} − {stop} (based on level)"
-            not_parsed = string.split(parsed)
+            if "-" in string:
+                parsed = f"{start} − {stop} (based on level)"
+            else:
+                parsed = f"{start} : {stop} (based on level)"
+            not_parsed = [re.sub("[\[\] ]", "", substring) for substring in string.split(parsed)]
             assert len(not_parsed) >= 2
             if len(not_parsed) != 2:  # see below
                 not_parsed = not_parsed[0], parsed.join(not_parsed[1:])
             assert len(values) == 18
             return not_parsed, values
-        elif len(ParsingAndRegex.rc_based_on_level_colon.findall(string)) > 0:
-            level = ParsingAndRegex.rc_based_on_level_colon.findall(string)
-            assert len(level) == 1
-            start, stop = level[0]
-            start, stop = eval(start), eval(stop)
-            values = ParsingAndRegex.parse_based_on_level(start, stop)
-            parsed = f"{start} : {stop} (based on level)"
-            not_parsed = string.split(parsed)
-            assert len(not_parsed) >= 2
-            if len(not_parsed) != 2:  # see below
-                not_parsed = not_parsed[0], parsed.join(not_parsed[1:])
-            assert len(values) == 18
-            return not_parsed, values
-        elif len(numbers) - len(re.findall(r" per \d", string)) == 1 + string.count("(+ "):
+        elif (len(numbers) - len(re.findall(r" per \d", string)) == 1+ string.count("(+ ") or
+              len(ParsingAndRegex.rc_based_on_crit.findall(string)) > 0):
             number = numbers[0]
             not_parsed = string.split(number)
             assert len(not_parsed) >= 2
@@ -971,6 +1028,9 @@ class ParsingAndRegex:
             values = [number for _ in range(nvalues)]
             assert len(values) == nvalues
             return not_parsed, values
+        elif string.lower() == "none":
+            values = [0 for _ in range(nvalues)]
+            return ["", ""], values # No cost abilities
         raise UnparsableLeveling(f"Could not parse a simple flat value: {string}")
 
     @staticmethod
@@ -981,10 +1041,18 @@ class ParsingAndRegex:
 
     @staticmethod
     def get_modifier(mod: str, nvalues: int) -> Tuple[List[str], List[Union[int, float]]]:
-        units, parsed = ParsingAndRegex.regex_simple_flat(mod, nvalues)
-        units = ParsingAndRegex.get_units(units)
-        units = [units for _ in range(len(parsed))]
-        return units, parsed
+        # Error handling
+        if mod in list(LolWikiDataHandler.UNHANDLED_MODIFIERS.keys()):
+            value = LolWikiDataHandler.UNHANDLED_MODIFIERS[mod]["value"]
+            lvling = LolWikiDataHandler.UNHANDLED_MODIFIERS[mod]["lvling"]
+            parsed = [value for _ in range(nvalues)]
+            units = [lvling for _ in range(nvalues)]
+            return units, parsed
+        else:
+            units, parsed = ParsingAndRegex.regex_simple_flat(mod, nvalues)
+            units = ParsingAndRegex.get_units(units)
+            units = [units for _ in range(len(parsed))]
+            return units, parsed
 
     @staticmethod
     def split_modifiers(mods: str) -> List[str]:
