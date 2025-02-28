@@ -616,8 +616,8 @@ class WikiItem:
 
     @classmethod
     def _parse_item_data(cls, item_data: dict, item_name:str,wiki_data:dict) -> Item:
-        clear_keys = []
         not_unique = re.compile("[A-z]")
+        clear_keys = []
         builds_from = []
         nicknames = []
         for x in item_data:
