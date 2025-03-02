@@ -620,17 +620,15 @@ class WikiItem:
         clear_keys = []
         builds_from = []
         nicknames = []
-
         for x in item_data:
-            if type(item_data[x]) == str:
-                if "=>" in item_data[x]:
-                    try:
-                        item_data[x] = wiki_data[item_data[x].replace("=>", "")][x]
-                        if type(item_data[x]) == str:
-                            if "=>" in item_data[x]:
-                                item_data[x] = wiki_data[item_data[x].replace("=>", "")][x]
-                    except KeyError as e:
-                        clear_keys.append(x)
+            while isinstance(item_data[x], str) and "=>" in item_data[x]:
+                try:
+                    parent_item = item_data[x].replace("=>", "")
+                    item_data[x] = wiki_data[parent_item][x]
+                except KeyError as e:
+                    clear_keys.append(x)
+                    print(f"WARNING: Couldn't find inherited value of '{x}' for {item_name} - inherited from {parent_item}")
+                    break
             if x in "effects":
                 for l in item_data[x]:
                     if "=>" in item_data[x][l]:
@@ -645,7 +643,6 @@ class WikiItem:
                         item_data[x][l] = wiki_data[item_data[x][l].replace("=>", "")][x][l]
                     if type(item_data[x][l]) ==str and "=>" in item_data[x][l]:
                         item_data[x][l] = wiki_data[item_data[x][l].replace("=>", "")][x][l]
-
         for key in clear_keys:
             item_data.pop(key)
         try:

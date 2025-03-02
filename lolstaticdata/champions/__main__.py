@@ -1,5 +1,6 @@
 import os
 import json
+import time
 from bs4 import BeautifulSoup
 
 from ..common import utils
@@ -22,6 +23,13 @@ def get_ability_filenames(url):
 
 
 def main():
+    def print_runtime(): 
+        elapsed_seconds = end_time - start_time
+        minutes = int(elapsed_seconds // 60)
+        seconds = int(elapsed_seconds % 60)
+        print(f"Champions parser completed in {minutes}m {seconds}s")
+
+    start_time = time.time()
     handler = LolWikiDataHandler(use_cache=False)
     directory = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), "../.."))
     if not os.path.exists(os.path.join(directory, "champions")):
@@ -105,6 +113,11 @@ def main():
         json.dump(jsons, f, indent=2, ensure_ascii=False)
     del jsons
 
+    end_time = time.time()
+    print_runtime()
+    
+
+    
 
 if __name__ == "__main__":
     main()
