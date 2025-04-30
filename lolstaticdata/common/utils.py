@@ -199,3 +199,8 @@ def get_latest_patch_version():
     versions = [v for v in versions if "_" not in v]
     versions = natsorted(versions)
     return versions[-1]
+
+
+def strip_lua_comments(spans):
+    return [span.split('--')[0].rstrip() for span in spans]
+

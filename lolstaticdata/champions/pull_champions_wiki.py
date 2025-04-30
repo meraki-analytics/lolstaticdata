@@ -32,6 +32,7 @@ from ..common.utils import (
     grouper,
     to_enum_like,
     download_json,
+    strip_lua_comments,
 )
 from .modelchampion import (
     Champion,
@@ -222,11 +223,9 @@ class LolWikiDataHandler:
             if str(span) == "return {":
                 start = i
                 spans[i] = "{"
-        split_stuff = re.compile("({)|(})")
+                break
         spans = spans[start:]
-        for i, span in enumerate(spans):
-            if span in ["-- </pre>", "-- [[Category:Lua]]"]:
-                spans[i] = ""
+        spans = strip_lua_comments(spans)
 
         spans = "".join(spans)
         data = lua.decode(spans)
