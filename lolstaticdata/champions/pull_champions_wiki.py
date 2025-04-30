@@ -788,22 +788,7 @@ class LolWikiDataHandler:
                 start = i
                 spans[i] = "{"
         spans = spans[start:]
-        test1 = re.compile("\w -- \w|.\w--\w|\w --\w|.\w--\s")
-        for i, span in enumerate(spans):
-            if span in ["-- </pre>", "-- [[Category:Lua]]"]:
-                spans[i] = ""
-
-            if re.search(test1, span):
-                test2 = re.search(test1, span)
-                spans[i] = span.replace(test2.group()[2] + test2.group()[3], " ")
-                span = spans[i]
-
-            comment_start = span.find("--")
-            # text = text.replace("-", " ")
-            if comment_start > -1:
-                spans[i] = span[:comment_start]
-
-        spans = "".join(spans)
+        spans = self.remove_comments(spans)
         skin_data = lua.decode(spans)
         return skin_data
 
