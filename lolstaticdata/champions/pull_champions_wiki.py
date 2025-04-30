@@ -226,8 +226,8 @@ class LolWikiDataHandler:
                 break
         spans = spans[start:]
         spans = strip_lua_comments(spans)
-
         spans = "".join(spans)
+        
         data = lua.decode(spans)
 
         # Return the champData as a list of Champions
@@ -787,8 +787,12 @@ class LolWikiDataHandler:
             if str(span) == "return {":
                 start = i
                 spans[i] = "{"
+                break
+            
         spans = spans[start:]
-        spans = self.remove_comments(spans)
+        spans = strip_lua_comments(spans)
+        spans = "".join(spans)
+        
         skin_data = lua.decode(spans)
         return skin_data
 
