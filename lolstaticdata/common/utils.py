@@ -3,6 +3,7 @@ import os
 import json
 import requests
 import itertools
+import re
 from bs4 import BeautifulSoup
 from enum import Enum
 from datetime import datetime
@@ -199,3 +200,9 @@ def get_latest_patch_version():
     versions = [v for v in versions if "_" not in v]
     versions = natsorted(versions)
     return versions[-1]
+
+
+def strip_lua_comments(data):
+    comment_pattern = re.compile(r'--(?![^\"]*\"|[^\']*\'|[^\[]*\[).*')
+    return [comment_pattern.sub("", line) for line in data]
+
