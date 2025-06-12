@@ -123,6 +123,7 @@ class LolWikiDataHandler:
         "Viktor": ["Glorious Evolution 2", "Glorious Evolution 3",
                    "Glorious Evolution 4", "Glorious Evolution 5",
                    "Arcane Storm 2", "Arcane Storm 3"],
+        "Zoe": ["Paddle Star! 2"],
     }
     UNHANDLED_MODIFIERS = {
         # Akshan
