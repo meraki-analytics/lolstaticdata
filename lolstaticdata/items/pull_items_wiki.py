@@ -14,7 +14,10 @@ from .modelitem import (
     ItemAttributes,
     ItemRanks,
 )
-from ..common.utils import download_soup
+from ..common.utils import (
+    download_soup,
+    strip_lua_comments,
+)
 from ..common.modelcommon import (
     ArmorPenetration,
     DamageType,
@@ -782,12 +785,7 @@ def get_item_urls(use_cache: bool) -> List[str]:
             spans[i] = "{"
             break
     spans = spans[start:]
-
-    # Find end of item data
-    for i, span in enumerate(reversed(spans)):
-        if span in ["-- </pre>", "-- [[Category:Lua]]"]:
-            spans[len(spans) - i - 1] = ""
-            break
+    spans = strip_lua_comments(spans)
 
     spans = "\n".join(spans)
     data = lua.decode(spans)

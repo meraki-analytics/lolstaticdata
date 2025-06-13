@@ -32,6 +32,7 @@ from ..common.utils import (
     grouper,
     to_enum_like,
     download_json,
+    strip_lua_comments,
 )
 from .modelchampion import (
     Champion,
@@ -207,11 +208,6 @@ class LolWikiDataHandler:
                 continue
             else:
                 return False
-    
-    def remove_comments(self, data):
-        comment_pattern = re.compile(r'--(?![^\"]*\"|[^\']*\'|[^\[]*\[).*')
-        data = [comment_pattern.sub("", line) for line in data]
-        return "".join(data)
 
     def get_champions(self) -> Iterator[Champion]:
         # Download the page source
@@ -228,9 +224,11 @@ class LolWikiDataHandler:
             if str(span) == "return {":
                 start = i
                 spans[i] = "{"
-        split_stuff = re.compile("({)|(})")
+                break
         spans = spans[start:]
-        spans = self.remove_comments(spans)
+        spans = strip_lua_comments(spans)
+        spans = "".join(spans)
+        
         data = lua.decode(spans)
 
         # Return the champData as a list of Champions
@@ -790,8 +788,12 @@ class LolWikiDataHandler:
             if str(span) == "return {":
                 start = i
                 spans[i] = "{"
+                break
+            
         spans = spans[start:]
-        spans = self.remove_comments(spans)
+        spans = strip_lua_comments(spans)
+        spans = "".join(spans)
+        
         skin_data = lua.decode(spans)
         return skin_data
 
