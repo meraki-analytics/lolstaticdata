@@ -150,3 +150,6 @@ class OmniVamp(Stat):
 
 class Tenacity(Stat):
     pass
+
+class CriticalStrikeDamage(Stat):
+    pass

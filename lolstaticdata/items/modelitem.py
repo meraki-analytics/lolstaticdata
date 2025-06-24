@@ -29,6 +29,7 @@ from ..common.modelcommon import (
     AbilityHaste,
     OmniVamp,
     Tenacity,
+    CriticalStrikeDamage,
 )
 
 
@@ -50,6 +51,7 @@ class ItemAttributes(OrderedEnum):
     ABILITY_POWER = "ABILITY_POWER"
     ATTACK_DAMAGE = "ATTACK_DAMAGE"
     CRITICAL_STRIKE = "CRITICAL_STRIKE"
+    ABILITY_HASTE = "ABILITY_HASTE"
 
 
 class ItemRanks(OrderedEnum):
@@ -92,6 +94,7 @@ class Stats(object):
     ability_haste: AbilityHaste
     omnivamp: OmniVamp
     tenacity: Tenacity
+    critical_strike_damage: CriticalStrikeDamage
 
 
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
