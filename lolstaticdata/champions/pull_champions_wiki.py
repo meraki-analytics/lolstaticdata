@@ -66,6 +66,8 @@ class HTMLAbilityWrapper:
         self.table = self.soup.find_all(["th", "td"])
         # Do a little html modification based on the "viewsource"
         strip_table = [item.text.strip() for item in self.table]
+        if (strip_table == []):
+            raise ValueError()
         start = strip_table.index("Parameter") + 3
         self.table = self.table[start:]
         self.data = {}
@@ -107,24 +109,6 @@ class HTMLAbilityWrapper:
 
 
 class LolWikiDataHandler:
-    MISSING_SKILLS = {
-        "Annie": ["Command Tibbers"],
-        "Jinx": ["Switcheroo! 2"],
-        "Lillia": ["Prance"],
-        "Milio": ["Cozy Campfire 2"],
-        "Mel": ["Golden Eclipse 2"],
-        "Mordekaiser": ["Indestructible 2"],
-        "Nidalee": ["Aspect of the Cougar 2"],
-        "Pyke": ["Death from Below 2"],
-        "Rumble": ["Electro Harpoon 2"],
-        "Samira": ["splash coin"],
-        "Shaco": ["Command: Hallucinate"],
-        "Syndra": ["Force of Will 2"],
-        "Taliyah": ["Seismic Shove 2"],
-        "Viktor": ["Glorious Evolution 2", "Glorious Evolution 3",
-                   "Glorious Evolution 4", "Glorious Evolution 5",
-                   "Arcane Storm 2", "Arcane Storm 3"],
-    }
     UNHANDLED_MODIFIERS = {
         # Akshan
         "1 + 0.3 per 100% bonus attack speed": {
@@ -376,62 +360,27 @@ class LolWikiDataHandler:
                 [
                     self._render_abilities(
                         champion_name=name,
-                        abilities=[
-                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                            for ability_name in data["skill_i"].values()
-                            if not (
-                                name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
-                            )
-                        ],
+                        abilities=self._get_ability_effects(name, data["skill_i"]),
                         default="I",
                     ),
                     self._render_abilities(
                         champion_name=name,
-                        abilities=[
-                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                            for ability_name in data["skill_q"].values()
-                            if not (
-                                name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
-                            )
-                        ],
+                        abilities=self._get_ability_effects(name, data["skill_q"]),
                         default="Q",
                     ),
                     self._render_abilities(
                         champion_name=name,
-                        abilities=[
-                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                            for ability_name in data["skill_w"].values()
-                            if not (
-                                name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
-                            )
-                        ],
+                        abilities=self._get_ability_effects(name, data["skill_w"]),
                         default="W",
                     ),
                     self._render_abilities(
                         champion_name=name,
-                        abilities=[
-                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                            for ability_name in data["skill_e"].values()
-                            if not (
-                                name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
-                            )
-                        ],
+                        abilities=self._get_ability_effects(name, data["skill_e"]),
                         default="E",
                     ),
                     self._render_abilities(
                         champion_name=name,
-                        abilities=[
-                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                            for ability_name in data["skill_r"].values()
-                            if not (
-                                name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
-                            )
-                        ],
+                        abilities=self._get_ability_effects(name, data["skill_r"]),
                         default="R",
                     ),
                 ]
@@ -450,14 +399,25 @@ class LolWikiDataHandler:
         return champion
 
     def _pull_champion_ability(self, champion_name, ability_name) -> HTMLAbilityWrapper:
+        print(f"  {ability_name}")
         ability_name = ability_name.replace(" ", "_")
 
         # Pull the html from the wiki
-        # print(f"  {ability_name}")
         url = f"https://wiki.leagueoflegends.com/en-us/Template:Data_{champion_name}/{ability_name}"
         html = download_soup(url, self.use_cache)
         soup = BeautifulSoup(html, "lxml")
-        return HTMLAbilityWrapper(soup)
+        try: 
+            return HTMLAbilityWrapper(soup)
+        except ValueError:
+            print(f"WARNING: Ability data could not be found for {ability_name}. The Wiki page may be empty: https://wiki.leagueoflegends.com/en-us/Template:Data_{champion_name}/{ability_name}")
+
+    def _get_ability_effects(self, name, skill_dict):
+        effects = []
+        for ability_name in skill_dict.values():
+            effect = self._pull_champion_ability(champion_name=name, ability_name=ability_name)
+            if effect is not None:
+                effects.append(effect)
+        return effects
 
     def _render_abilities(self, champion_name, abilities: List[HTMLAbilityWrapper], default: str) -> Tuple[str, List[Ability]]:
         inputs, abilities = abilities, []  # rename variables
