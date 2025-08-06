@@ -66,7 +66,7 @@ class HTMLAbilityWrapper:
         self.table = self.soup.find_all(["th", "td"])
         # Do a little html modification based on the "viewsource"
         strip_table = [item.text.strip() for item in self.table]
-        if (strip_table == []):
+        if not strip_table:
             raise ValueError()
         start = strip_table.index("Parameter") + 3
         self.table = self.table[start:]
