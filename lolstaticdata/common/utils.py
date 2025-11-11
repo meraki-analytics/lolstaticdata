@@ -253,12 +253,13 @@ def strip_lua_comments(data):
                 continue
 
             if in_long_string:
-                cleaned.append(c)
                 if ends_with_long_bracket(line, i, long_string_eq):
+                    closing_segment = line[i : i + 2 + long_string_eq]
+                    cleaned.extend(closing_segment)
                     in_long_string = False
-                    i += 2 + long_string_eq
-                    cleaned.extend(line[i - (2 + long_string_eq):i])
+                    i += len(closing_segment)
                 else:
+                    cleaned.append(c)
                     i += 1
                 continue
 

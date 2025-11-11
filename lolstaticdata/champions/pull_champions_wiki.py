@@ -182,11 +182,26 @@ class LolWikiDataHandler:
         },
     }
 
-    def __init__(self, use_cache: bool = True, process_stats: bool = True, process_abilities: bool = True, process_skins: bool = True):
+    def __init__(
+        self,
+        use_cache: bool = True,
+        target_champion: str | None = None,
+        process_stats: bool = True,
+        process_abilities: bool = True,
+        process_skins: bool = True,
+    ):
         self.use_cache = use_cache
+        self.target_champion = (
+            self._normalize_name(target_champion) if target_champion else None
+        )
         self.process_stats = process_stats
         self.process_abilities = process_abilities
         self.process_skins = process_skins
+
+    def _normalize_name(self, value: str | None) -> str | None:
+        if value is None:
+            return None
+        return re.sub(r"[^a-z0-9]", "", value.lower())
 
     def check_ability(self, data):
         for x in data:
@@ -224,6 +239,14 @@ class LolWikiDataHandler:
             self.skin_data = {}
 
         for name, d in data.items():
+            normalized_candidates = {
+                self._normalize_name(name),
+                self._normalize_name(d.get("apiname")),
+                self._normalize_name(d.get("fullname")),
+            }
+            if self.target_champion and self.target_champion not in normalized_candidates:
+                continue
+
             print(name)
             if name in [
                 "Kled & Skaarl",
@@ -247,6 +270,8 @@ class LolWikiDataHandler:
                 continue
             champion = self._render_champion_data(name, d)
             yield champion
+            if self.target_champion:
+                return
 
     def _render_champion_data(self, name: str, data: Dict) -> Champion:
 
@@ -270,8 +295,7 @@ class LolWikiDataHandler:
                 if sale[name]["price"] != 0:
                     sale_price = int(sale[name]["price"])
         
-        if not self.process_stats:
-            return None
+        if self.process_stats:
             stats = Stats(
                 health=Health(
                     flat=data["stats"]["hp_base"],
@@ -336,7 +360,6 @@ class LolWikiDataHandler:
                 urf_shielding=Stat(flat=data["stats"].get("urf",{}).get("shielding", 1.0)),
             )
         else:
-            # Create empty stats
             stats = Stats(
                 health=Health(flat=0, per_level=0),
                 health_regen=HealthRegen(flat=0, per_level=0),
