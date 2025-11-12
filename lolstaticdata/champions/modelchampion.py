@@ -198,6 +198,7 @@ class Ability(object):
     angle: str
     cast_time: str
     effect_radius: str
+    range: str
     target_range: str
 
 
