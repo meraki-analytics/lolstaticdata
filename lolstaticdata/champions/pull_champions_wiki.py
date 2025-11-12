@@ -182,8 +182,26 @@ class LolWikiDataHandler:
         },
     }
 
-    def __init__(self, use_cache: bool = True):
+    def __init__(
+        self,
+        use_cache: bool = True,
+        target_champion: str | None = None,
+        process_stats: bool = True,
+        process_abilities: bool = True,
+        process_skins: bool = True,
+    ):
         self.use_cache = use_cache
+        self.target_champion = (
+            self._normalize_name(target_champion) if target_champion else None
+        )
+        self.process_stats = process_stats
+        self.process_abilities = process_abilities
+        self.process_skins = process_skins
+
+    def _normalize_name(self, value: str | None) -> str | None:
+        if value is None:
+            return None
+        return re.sub(r"[^a-z0-9]", "", value.lower())
 
     def check_ability(self, data):
         for x in data:
@@ -215,9 +233,20 @@ class LolWikiDataHandler:
         data = lua.decode(spans)
 
         # Return the champData as a list of Champions
-        self.skin_data = self._get_skins()
+        if self.process_skins:
+            self.skin_data = self._get_skins()
+        else:
+            self.skin_data = {}
 
         for name, d in data.items():
+            normalized_candidates = {
+                self._normalize_name(name),
+                self._normalize_name(d.get("apiname")),
+                self._normalize_name(d.get("fullname")),
+            }
+            if self.target_champion and self.target_champion not in normalized_candidates:
+                continue
+
             print(name)
             if name in [
                 "Kled & Skaarl",
@@ -241,6 +270,8 @@ class LolWikiDataHandler:
                 continue
             champion = self._render_champion_data(name, d)
             yield champion
+            if self.target_champion:
+                return
 
     def _render_champion_data(self, name: str, data: Dict) -> Champion:
 
@@ -255,22 +286,17 @@ class LolWikiDataHandler:
             patch = data["patch"][1:]
         else:
             patch = data["patch"]
-        sale = self._get_sale()
+        
+        sale = {}
         sale_price = 0
-        if name in sale:
-            if sale[name]["price"] != 0:
-                sale_price = int(sale[name]["price"])
-        champion = Champion(
-            id=data["id"],
-            key=data["apiname"],
-            name=name,
-            title=data["title"],
-            full_name=data.get("fullname", ""),
-            icon=None,
-            resource=Resource.from_string(data["resource"]),
-            attack_type=AttackType.from_string(data["rangetype"]),
-            adaptive_type=DamageType.from_string(adaptive_type),
-            stats=Stats(
+        if self.process_skins:
+            sale = self._get_sale()
+            if name in sale:
+                if sale[name]["price"] != 0:
+                    sale_price = int(sale[name]["price"])
+        
+        if self.process_stats:
+            stats = Stats(
                 health=Health(
                     flat=data["stats"]["hp_base"],
                     per_level=data["stats"]["hp_lvl"],
@@ -306,8 +332,8 @@ class LolWikiDataHandler:
                 attack_speed_ratio=Stat(flat=data["stats"]["as_ratio"]),
                 attack_cast_time=Stat(
                     flat=data["stats"].get("attack_cast_time", 0.3)
-                ),  # I don't know if this default is correct, but going off the values the wiki provides, it seems reasonable.
-                attack_total_time=Stat(flat=data["stats"].get("attack_total_time", 1.6)),  # ibid
+                ),
+                attack_total_time=Stat(flat=data["stats"].get("attack_total_time", 1.6)),
                 attack_delay_offset=Stat(flat=data["stats"].get("attack_delay_offset", 0)),
                 attack_range=AttackRange(
                     flat=data["stats"]["range"],
@@ -332,31 +358,45 @@ class LolWikiDataHandler:
                 urf_damage_dealt=Stat(flat=data["stats"].get("urf",{}).get("dmg_dealt", 1.0)),
                 urf_healing=Stat(flat=data["stats"].get("urf",{}).get("healing", 1.0)),
                 urf_shielding=Stat(flat=data["stats"].get("urf",{}).get("shielding", 1.0)),
-            ),
-            positions=sorted(Position.from_string(p) for p in data["external_positions"]),
-            roles=sorted(
-                {
-                    *(Role.from_string(r) for r in data["role"]),
-                    *(
-                        Role.from_string(role)
-                        for role in (
-                            data.get("herotype"),
-                            data.get("alttype"),
-                        )
-                        if role is not None and role != ""
-                    ),
-                }
-            ),
-            attribute_ratings=AttributeRatings(
-                damage=data["damage"],
-                toughness=data["toughness"],
-                control=data["control"],
-                mobility=data["mobility"],
-                utility=data["utility"],
-                ability_reliance=data["style"],
-                difficulty=data["difficulty"],
-            ),
-            abilities=dict(
+            )
+        else:
+            stats = Stats(
+                health=Health(flat=0, per_level=0),
+                health_regen=HealthRegen(flat=0, per_level=0),
+                mana=Mana(flat=0, per_level=0),
+                mana_regen=ManaRegen(flat=0, per_level=0),
+                armor=Armor(flat=0, per_level=0),
+                magic_resistance=MagicResistance(flat=0, per_level=0),
+                attack_damage=AttackDamage(flat=0, per_level=0),
+                movespeed=Movespeed(flat=0),
+                acquisition_radius=Stat(flat=0),
+                selection_radius=Stat(flat=0),
+                pathing_radius=Stat(flat=0),
+                gameplay_radius=Stat(flat=0),
+                critical_strike_damage=Stat(flat=0),
+                critical_strike_damage_modifier=Stat(flat=1.0),
+                attack_speed=AttackSpeed(flat=0, per_level=0),
+                attack_speed_ratio=Stat(flat=0),
+                attack_cast_time=Stat(flat=0),
+                attack_total_time=Stat(flat=0),
+                attack_delay_offset=Stat(flat=0),
+                attack_range=AttackRange(flat=0, per_level=0),
+                aram_damage_taken=Stat(flat=1.0),
+                aram_damage_dealt=Stat(flat=1.0),
+                aram_healing=Stat(flat=1.0),
+                aram_shielding=Stat(flat=1.0),
+                aram_tenacity=Stat(flat=1.0),
+                aram_ability_haste=Stat(flat=1.0),
+                aram_attack_speed=Stat(flat=1.0),
+                aram_energy_regen=Stat(flat=1.0),
+                urf_damage_taken=Stat(flat=1.0),
+                urf_damage_dealt=Stat(flat=1.0),
+                urf_healing=Stat(flat=1.0),
+                urf_shielding=Stat(flat=1.0),
+            )
+        
+        if self.process_abilities:
+            abilities = dict(
                 [
                     self._render_abilities(
                         champion_name=name,
@@ -384,7 +424,50 @@ class LolWikiDataHandler:
                         default="R",
                     ),
                 ]
+            )
+        else:
+            abilities = {}
+        
+        if self.process_skins:
+            skins = self._get_champ_skin(name, sale)
+        else:
+            skins = []
+        
+        champion = Champion(
+            id=data["id"],
+            key=data["apiname"],
+            name=name,
+            title=data["title"],
+            full_name=data.get("fullname", ""),
+            icon=None,
+            resource=Resource.from_string(data["resource"]),
+            attack_type=AttackType.from_string(data["rangetype"]),
+            adaptive_type=DamageType.from_string(adaptive_type),
+            stats=stats,
+            positions=sorted(Position.from_string(p) for p in data["external_positions"]),
+            roles=sorted(
+                {
+                    *(Role.from_string(r) for r in data["role"]),
+                    *(
+                        Role.from_string(role)
+                        for role in (
+                            data.get("herotype"),
+                            data.get("alttype"),
+                        )
+                        if role is not None and role != ""
+                    ),
+                }
             ),
+            attribute_ratings=AttributeRatings(
+                damage=data["damage"],
+                toughness=data["toughness"],
+                control=data["control"],
+                mobility=data["mobility"],
+                utility=data["utility"],
+                ability_reliance=data["style"],
+                difficulty=data["difficulty"],
+            ),
+            abilities=abilities,
             release_date=data["date"],
             release_patch=patch,
             # remove the leading "V"
@@ -392,7 +475,7 @@ class LolWikiDataHandler:
             price=Price(rp=data["rp"], blue_essence=data["be"], sale_rp=sale_price),
             lore="",
             faction="",
-            skins=self._get_champ_skin(name, sale),
+            skins=skins,
         )
         # "nickname": "nickname",
         # "disp_name": "dispName",
