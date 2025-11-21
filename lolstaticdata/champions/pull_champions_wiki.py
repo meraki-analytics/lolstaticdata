@@ -1,7 +1,6 @@
 from typing import Tuple, List, Union, Iterator, Dict
 import re
 from bs4 import BeautifulSoup
-from collections import Counter
 from slpp import slpp as lua
 from datetime import datetime
 
@@ -14,16 +13,9 @@ from ..common.modelcommon import (
     Armor,
     MagicResistance,
     AttackDamage,
-    AbilityPower,
     AttackSpeed,
     AttackRange,
     Movespeed,
-    Lethality,
-    CooldownReduction,
-    GoldPer10,
-    HealAndShieldPower,
-    Lifesteal,
-    MagicPenetration,
     Stat,
 )
 from ..common.utils import (
@@ -732,11 +724,12 @@ class LolWikiDataHandler:
             except Exception as error:
                 print(f"ERROR: FAILURE TO PARSE MODIFIER:  {lvling}")
                 print("ERROR:", error)
-                modifier = Modifier(
-                    values=[0 for _ in range(nvalues)],
-                    units=[lvling for _ in range(nvalues)],
-                )
-                modifiers.append(modifier)
+                if nvalues is not None:
+                    modifier = Modifier(
+                        values=[0 for _ in range(nvalues)],
+                        units=[lvling for _ in range(nvalues)],
+                    )
+                    modifiers.append(modifier)
         return modifiers
 
     def _render_modifier(self, mod: str, nvalues: int) -> Modifier:
@@ -763,7 +756,7 @@ class LolWikiDataHandler:
     def _get_sale(self):
 
         get_prices = re.compile(r"(\d+) (\d+)")
-        url = f"https://wiki.leagueoflegends.com/en-us/Sales"
+        url = "https://wiki.leagueoflegends.com/en-us/Sales"
         html = download_soup(url, False)
         soup = BeautifulSoup(html, "lxml")
         spans = soup.findAll("div", {"class": "skin_portrait skin-icon"})
@@ -816,7 +809,7 @@ class LolWikiDataHandler:
             print(f"Chroma Mismatch: {id} not available in {available}")
 
     def _get_skins(self):
-        url = f"https://wiki.leagueoflegends.com/en-us/Module:SkinData/data"
+        url = "https://wiki.leagueoflegends.com/en-us/Module:SkinData/data"
 
         html = download_soup(url, False)
         soup = BeautifulSoup(html, "lxml")
