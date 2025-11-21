@@ -32,6 +32,7 @@ from ..common.utils import (
     grouper,
     to_enum_like,
     download_json,
+    strip_lua_comments,
 )
 from .modelchampion import (
     Champion,
@@ -65,6 +66,8 @@ class HTMLAbilityWrapper:
         self.table = self.soup.find_all(["th", "td"])
         # Do a little html modification based on the "viewsource"
         strip_table = [item.text.strip() for item in self.table]
+        if not strip_table:
+            raise ValueError()
         start = strip_table.index("Parameter") + 3
         self.table = self.table[start:]
         self.data = {}
@@ -106,26 +109,6 @@ class HTMLAbilityWrapper:
 
 
 class LolWikiDataHandler:
-    MISSING_SKILLS = {
-        "Annie": ["Command Tibbers"],
-        "Jinx": ["Switcheroo! 2"],
-        "Lillia": ["Prance"],
-        "Milio": ["Cozy Campfire 2"],
-        "Mel": ["Golden Eclipse 2"],
-        "Mordekaiser": ["Indestructible 2"],
-        "Mel": ["Golden Eclipse 2"],
-        "Nidalee": ["Aspect of the Cougar 2"],
-        "Pyke": ["Death from Below 2"],
-        "Rumble": ["Electro Harpoon 2"],
-        "Samira": ["splash coin"],
-        "Shaco": ["Command: Hallucinate"],
-        "Syndra": ["Force of Will 2"],
-        "Taliyah": ["Seismic Shove 2"],
-        "Viktor": ["Glorious Evolution 2", "Glorious Evolution 3",
-                   "Glorious Evolution 4", "Glorious Evolution 5",
-                   "Arcane Storm 2", "Arcane Storm 3"],
-        "Zoe": ["Paddle Star! 2"],
-    }
     UNHANDLED_MODIFIERS = {
         # Akshan
         "1 + 0.3 per 100% bonus attack speed": {
@@ -199,8 +182,26 @@ class LolWikiDataHandler:
         },
     }
 
-    def __init__(self, use_cache: bool = True):
+    def __init__(
+        self,
+        use_cache: bool = True,
+        target_champion: str | None = None,
+        process_stats: bool = True,
+        process_abilities: bool = True,
+        process_skins: bool = True,
+    ):
         self.use_cache = use_cache
+        self.target_champion = (
+            self._normalize_name(target_champion) if target_champion else None
+        )
+        self.process_stats = process_stats
+        self.process_abilities = process_abilities
+        self.process_skins = process_skins
+
+    def _normalize_name(self, value: str | None) -> str | None:
+        if value is None:
+            return None
+        return re.sub(r"[^a-z0-9]", "", value.lower())
 
     def check_ability(self, data):
         for x in data:
@@ -208,11 +209,6 @@ class LolWikiDataHandler:
                 continue
             else:
                 return False
-    
-    def remove_comments(self, data):
-        comment_pattern = re.compile(r'--(?![^\"]*\"|[^\']*\'|[^\[]*\[).*')
-        data = [comment_pattern.sub("", line) for line in data]
-        return "".join(data)
 
     def get_champions(self) -> Iterator[Champion]:
         # Download the page source
@@ -229,15 +225,28 @@ class LolWikiDataHandler:
             if str(span) == "return {":
                 start = i
                 spans[i] = "{"
-        split_stuff = re.compile("({)|(})")
+                break
         spans = spans[start:]
-        spans = self.remove_comments(spans)
+        spans = strip_lua_comments(spans)
+        spans = "".join(spans)
+        
         data = lua.decode(spans)
 
         # Return the champData as a list of Champions
-        self.skin_data = self._get_skins()
+        if self.process_skins:
+            self.skin_data = self._get_skins()
+        else:
+            self.skin_data = {}
 
         for name, d in data.items():
+            normalized_candidates = {
+                self._normalize_name(name),
+                self._normalize_name(d.get("apiname")),
+                self._normalize_name(d.get("fullname")),
+            }
+            if self.target_champion and self.target_champion not in normalized_candidates:
+                continue
+
             print(name)
             if name in [
                 "Kled & Skaarl",
@@ -261,6 +270,8 @@ class LolWikiDataHandler:
                 continue
             champion = self._render_champion_data(name, d)
             yield champion
+            if self.target_champion:
+                return
 
     def _render_champion_data(self, name: str, data: Dict) -> Champion:
 
@@ -275,14 +286,15 @@ class LolWikiDataHandler:
             patch = data["patch"][1:]
         else:
             patch = data["patch"]
-        sale = self._get_sale()
+        
+        sale = {}
         sale_price = 0
         if name in sale:
             if sale[name]["price"] != 0:
                 sale_price = int(sale[name]["price"])
         champion = Champion(
             id=data["id"],
-            key=data.get("apiname", name.replace(" ", "").replace("'", "")),
+            key=data["apiname"],
             name=name,
             title=data["title"],
             full_name=data.get("fullname", ""),
@@ -326,8 +338,8 @@ class LolWikiDataHandler:
                 attack_speed_ratio=Stat(flat=data["stats"]["as_ratio"]),
                 attack_cast_time=Stat(
                     flat=data["stats"].get("attack_cast_time", 0.3)
-                ),  # I don't know if this default is correct, but going off the values the wiki provides, it seems reasonable.
-                attack_total_time=Stat(flat=data["stats"].get("attack_total_time", 1.6)),  # ibid
+                ),
+                attack_total_time=Stat(flat=data["stats"].get("attack_total_time", 1.6)),
                 attack_delay_offset=Stat(flat=data["stats"].get("attack_delay_offset", 0)),
                 attack_range=AttackRange(
                     flat=data["stats"]["range"],
@@ -352,7 +364,92 @@ class LolWikiDataHandler:
                 urf_damage_dealt=Stat(flat=data["stats"].get("urf",{}).get("dmg_dealt", 1.0)),
                 urf_healing=Stat(flat=data["stats"].get("urf",{}).get("healing", 1.0)),
                 urf_shielding=Stat(flat=data["stats"].get("urf",{}).get("shielding", 1.0)),
-            ),
+            )
+        else:
+            stats = Stats(
+                health=Health(flat=0, per_level=0),
+                health_regen=HealthRegen(flat=0, per_level=0),
+                mana=Mana(flat=0, per_level=0),
+                mana_regen=ManaRegen(flat=0, per_level=0),
+                armor=Armor(flat=0, per_level=0),
+                magic_resistance=MagicResistance(flat=0, per_level=0),
+                attack_damage=AttackDamage(flat=0, per_level=0),
+                movespeed=Movespeed(flat=0),
+                acquisition_radius=Stat(flat=0),
+                selection_radius=Stat(flat=0),
+                pathing_radius=Stat(flat=0),
+                gameplay_radius=Stat(flat=0),
+                critical_strike_damage=Stat(flat=0),
+                critical_strike_damage_modifier=Stat(flat=1.0),
+                attack_speed=AttackSpeed(flat=0, per_level=0),
+                attack_speed_ratio=Stat(flat=0),
+                attack_cast_time=Stat(flat=0),
+                attack_total_time=Stat(flat=0),
+                attack_delay_offset=Stat(flat=0),
+                attack_range=AttackRange(flat=0, per_level=0),
+                aram_damage_taken=Stat(flat=1.0),
+                aram_damage_dealt=Stat(flat=1.0),
+                aram_healing=Stat(flat=1.0),
+                aram_shielding=Stat(flat=1.0),
+                aram_tenacity=Stat(flat=1.0),
+                aram_ability_haste=Stat(flat=1.0),
+                aram_attack_speed=Stat(flat=1.0),
+                aram_energy_regen=Stat(flat=1.0),
+                urf_damage_taken=Stat(flat=1.0),
+                urf_damage_dealt=Stat(flat=1.0),
+                urf_healing=Stat(flat=1.0),
+                urf_shielding=Stat(flat=1.0),
+            )
+        
+        if self.process_abilities:
+            abilities = dict(
+                [
+                    self._render_abilities(
+                        champion_name=name,
+                        abilities=self._get_ability_effects(name, data["skill_i"]),
+                        default="I",
+                    ),
+                    self._render_abilities(
+                        champion_name=name,
+                        abilities=self._get_ability_effects(name, data["skill_q"]),
+                        default="Q",
+                    ),
+                    self._render_abilities(
+                        champion_name=name,
+                        abilities=self._get_ability_effects(name, data["skill_w"]),
+                        default="W",
+                    ),
+                    self._render_abilities(
+                        champion_name=name,
+                        abilities=self._get_ability_effects(name, data["skill_e"]),
+                        default="E",
+                    ),
+                    self._render_abilities(
+                        champion_name=name,
+                        abilities=self._get_ability_effects(name, data["skill_r"]),
+                        default="R",
+                    ),
+                ]
+            )
+        else:
+            abilities = {}
+        
+        if self.process_skins:
+            skins = self._get_champ_skin(name, sale)
+        else:
+            skins = []
+        
+        champion = Champion(
+            id=data["id"],
+            key=data["apiname"],
+            name=name,
+            title=data["title"],
+            full_name=data.get("fullname", ""),
+            icon=None,
+            resource=Resource.from_string(data["resource"]),
+            attack_type=AttackType.from_string(data["rangetype"]),
+            adaptive_type=DamageType.from_string(adaptive_type),
+            stats=stats,
             positions=sorted(Position.from_string(p) for p in data["external_positions"]),
             roles=sorted(
                 {
@@ -376,70 +473,7 @@ class LolWikiDataHandler:
                 ability_reliance=data["style"],
                 difficulty=data["difficulty"],
             ),
-            abilities=dict(
-                [
-                    self._render_abilities(
-                        champion_name=name,
-                        abilities=[
-                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                            for ability_name in data["skill_i"].values()
-                            if not (
-                                name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
-                            )
-                        ],
-                        default="I",
-                    ),
-                    self._render_abilities(
-                        champion_name=name,
-                        abilities=[
-                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                            for ability_name in data["skill_q"].values()
-                            if not (
-                                name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
-                            )
-                        ],
-                        default="Q",
-                    ),
-                    self._render_abilities(
-                        champion_name=name,
-                        abilities=[
-                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                            for ability_name in data["skill_w"].values()
-                            if not (
-                                name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
-                            )
-                        ],
-                        default="W",
-                    ),
-                    self._render_abilities(
-                        champion_name=name,
-                        abilities=[
-                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                            for ability_name in data["skill_e"].values()
-                            if not (
-                                name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
-                            )
-                        ],
-                        default="E",
-                    ),
-                    self._render_abilities(
-                        champion_name=name,
-                        abilities=[
-                            self._pull_champion_ability(champion_name=name, ability_name=ability_name)
-                            for ability_name in data["skill_r"].values()
-                            if not (
-                                name in LolWikiDataHandler.MISSING_SKILLS
-                                and ability_name in LolWikiDataHandler.MISSING_SKILLS[name]
-                            )
-                        ],
-                        default="R",
-                    ),
-                ]
-            ),
+            abilities=abilities,
             release_date=data["date"],
             release_patch=patch,
             # remove the leading "V"
@@ -447,21 +481,32 @@ class LolWikiDataHandler:
             price=Price(rp=data["rp"], blue_essence=data["be"], sale_rp=sale_price),
             lore="",
             faction="",
-            skins=self._get_champ_skin(name, sale),
+            skins=skins,
         )
         # "nickname": "nickname",
         # "disp_name": "dispName",
         return champion
 
     def _pull_champion_ability(self, champion_name, ability_name) -> HTMLAbilityWrapper:
+        print(f"  {ability_name}")
         ability_name = ability_name.replace(" ", "_")
 
         # Pull the html from the wiki
-        # print(f"  {ability_name}")
         url = f"https://wiki.leagueoflegends.com/en-us/Template:Data_{champion_name}/{ability_name}"
         html = download_soup(url, self.use_cache)
         soup = BeautifulSoup(html, "lxml")
-        return HTMLAbilityWrapper(soup)
+        try: 
+            return HTMLAbilityWrapper(soup)
+        except ValueError:
+            print(f"WARNING: Ability data could not be found for {ability_name}. The Wiki page may be empty: https://wiki.leagueoflegends.com/en-us/Template:Data_{champion_name}/{ability_name}")
+
+    def _get_ability_effects(self, name, skill_dict):
+        effects = []
+        for ability_name in skill_dict.values():
+            effect = self._pull_champion_ability(champion_name=name, ability_name=ability_name)
+            if effect is not None:
+                effects.append(effect)
+        return effects
 
     def _render_abilities(self, champion_name, abilities: List[HTMLAbilityWrapper], default: str) -> Tuple[str, List[Ability]]:
         inputs, abilities = abilities, []  # rename variables
@@ -794,8 +839,12 @@ class LolWikiDataHandler:
             if str(span) == "return {":
                 start = i
                 spans[i] = "{"
+                break
+            
         spans = spans[start:]
-        spans = self.remove_comments(spans)
+        spans = strip_lua_comments(spans)
+        spans = "".join(spans)
+        
         skin_data = lua.decode(spans)
         return skin_data
 

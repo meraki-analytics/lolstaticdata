@@ -1,8 +1,9 @@
-from typing import Type, Collection, Mapping, Union
+from typing import List, Type, Collection, Mapping, Union
 import os
 import json
 import requests
 import itertools
+import re
 from bs4 import BeautifulSoup
 from enum import Enum
 from datetime import datetime
@@ -199,3 +200,136 @@ def get_latest_patch_version():
     versions = [v for v in versions if "_" not in v]
     versions = natsorted(versions)
     return versions[-1]
+
+
+def strip_lua_comments(data):
+    """
+    Strip single-line (--) and block (--[[ ... ]]) Lua comments while
+    leaving string literals (single, double, or long bracket strings) intact.
+    """
+    result: List[str] = []
+    in_block_comment = False
+    block_eq_count = 0
+
+    def starts_with_long_bracket(s: str, idx: int):
+        """Return number of '=' characters if s[idx:] starts with [[ or [=...=[."""
+        if s[idx] != '[':
+            return None
+        j = idx + 1
+        while j < len(s) and s[j] == '=':
+            j += 1
+        if j < len(s) and s[j] == '[':
+            return j - idx - 1  # number of '=' between the brackets
+        return None
+
+    def ends_with_long_bracket(s: str, idx: int, eq_count: int):
+        """Return True if s[idx:] starts with ]=...=] using eq_count equals."""
+        if s[idx] != ']':
+            return False
+        j = idx + 1
+        while j < len(s) and s[j] == '=':
+            j += 1
+        return j < len(s) and s[j] == ']' and (j - idx - 1) == eq_count
+
+    in_long_string = False
+    long_string_eq = 0
+
+    in_single_quotes = False
+    in_double_quotes = False
+
+    for line in data:
+        i = 0
+        cleaned = []
+
+        while i < len(line):
+            c = line[i]
+
+            if in_block_comment:
+                if ends_with_long_bracket(line, i, block_eq_count):
+                    in_block_comment = False
+                    i += 2 + block_eq_count
+                else:
+                    i += 1
+                continue
+
+            if in_long_string:
+                if ends_with_long_bracket(line, i, long_string_eq):
+                    closing_segment = line[i : i + 2 + long_string_eq]
+                    cleaned.extend(closing_segment)
+                    in_long_string = False
+                    i += len(closing_segment)
+                else:
+                    cleaned.append(c)
+                    i += 1
+                continue
+
+            if in_single_quotes:
+                cleaned.append(c)
+                if c == '\\':
+                    if i + 1 < len(line):
+                        cleaned.append(line[i + 1])
+                        i += 2
+                    else:
+                        i += 1
+                elif c == "'":
+                    in_single_quotes = False
+                    i += 1
+                else:
+                    i += 1
+                continue
+
+            if in_double_quotes:
+                cleaned.append(c)
+                if c == '\\':
+                    if i + 1 < len(line):
+                        cleaned.append(line[i + 1])
+                        i += 2
+                    else:
+                        i += 1
+                elif c == '"':
+                    in_double_quotes = False
+                    i += 1
+                else:
+                    i += 1
+                continue
+
+            # Outside any string/comment
+            if c == "'" and not in_double_quotes:
+                in_single_quotes = True
+                cleaned.append(c)
+                i += 1
+                continue
+
+            if c == '"' and not in_single_quotes:
+                in_double_quotes = True
+                cleaned.append(c)
+                i += 1
+                continue
+
+            # Block comment start
+            if c == '-' and (i + 1) < len(line) and line[i + 1] == '-':
+                eq_count = starts_with_long_bracket(line, i + 2)
+                if eq_count is not None:
+                    in_block_comment = True
+                    block_eq_count = eq_count
+                    i += 4 + eq_count  # skip "--[=...[" 
+                    continue
+                else:
+                    break  # strip rest of line
+            # Long string start
+            eq_count = starts_with_long_bracket(line, i)
+            if eq_count is not None:
+                in_long_string = True
+                long_string_eq = eq_count
+                end_idx = i + 2 + eq_count
+                cleaned.extend(line[i:end_idx])
+                i = end_idx
+                continue
+
+            cleaned.append(c)
+            i += 1
+
+        result.append(''.join(cleaned).rstrip())
+
+    return result
+
