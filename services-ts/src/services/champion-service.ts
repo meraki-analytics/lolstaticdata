@@ -6,6 +6,7 @@ import type { GenerationContext, GenerationResult } from "../types.js";
 const CDRAGON_BASE = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default";
 const CDRAGON_CHAMPION_SUMMARY_URL = `${CDRAGON_BASE}/v1/champion-summary.json`;
 const RAW_CDRAGON_BASE = "https://raw.communitydragon.org";
+const CDRAGON_PLUGIN_PATH = "plugins/rcp-be-lol-game-data/global/default";
 
 interface CDragonChampionSummary {
     id: number;
@@ -105,7 +106,7 @@ function toPatchChannel(patchVersion: string): string {
     return patchVersion || "latest";
 }
 
-function toAssetUrl(assetPath: string | undefined, patchVersion: string): string {
+function toPluginAssetUrl(assetPath: string | undefined, patchVersion: string): string {
     if (!assetPath) {
         return "";
     }
@@ -114,23 +115,43 @@ function toAssetUrl(assetPath: string | undefined, patchVersion: string): string
     }
 
     const normalized = assetPath.replace(/\\/g, "/");
+    const normalizedLower = normalized.toLowerCase();
+    const pluginBase = `${RAW_CDRAGON_BASE}/${toPatchChannel(patchVersion)}/${CDRAGON_PLUGIN_PATH}`;
+
+    if (normalizedLower.startsWith("/lol-game-data/assets/")) {
+        const tail = normalizedLower.slice("/lol-game-data/assets/".length);
+        return `${pluginBase}/${tail}`;
+    }
+
+    if (normalizedLower.startsWith("/")) {
+        return `${pluginBase}${normalizedLower}`;
+    }
+
+    return `${pluginBase}/${normalizedLower}`;
+}
+
+function toPatchGameAssetUrl(assetPath: string, patchVersion: string): string {
+    if (assetPath.startsWith("http://") || assetPath.startsWith("https://")) {
+        return assetPath;
+    }
+
+    const normalized = assetPath.replace(/\\/g, "/");
+    const normalizedLower = normalized.toLowerCase();
     const patchChannel = toPatchChannel(patchVersion);
 
-    if (normalized.startsWith("/lol-game-data/assets/")) {
-        let tail = normalized.slice("/lol-game-data/assets/".length);
-        if (tail.startsWith("ASSETS/")) {
-            tail = tail.slice("ASSETS/".length);
-        } else if (tail.startsWith("assets/")) {
+    if (normalizedLower.startsWith("/lol-game-data/assets/")) {
+        let tail = normalizedLower.slice("/lol-game-data/assets/".length);
+        if (tail.startsWith("assets/")) {
             tail = tail.slice("assets/".length);
         }
-        return `${RAW_CDRAGON_BASE}/${patchChannel}/game/assets/${tail.toLowerCase()}`;
+        return `${RAW_CDRAGON_BASE}/${patchChannel}/game/assets/${tail}`;
     }
 
-    if (normalized.startsWith("/")) {
-        return `${RAW_CDRAGON_BASE}/${patchChannel}${normalized}`;
+    if (normalizedLower.startsWith("/")) {
+        return `${RAW_CDRAGON_BASE}/${patchChannel}${normalizedLower}`;
     }
 
-    return `${RAW_CDRAGON_BASE}/${patchChannel}/${normalized}`;
+    return `${RAW_CDRAGON_BASE}/${patchChannel}/${normalizedLower}`;
 }
 
 function buildFallbackAbilityIconUrl(championKey: string, slot: AbilitySlot, patchVersion: string): string {
@@ -147,7 +168,7 @@ function resolveAbilityIconUrl(
     patchVersion: string
 ): string {
     if (iconPath && iconPath.trim()) {
-        return toAssetUrl(iconPath, patchVersion);
+        return toPatchGameAssetUrl(iconPath, patchVersion);
     }
     return buildFallbackAbilityIconUrl(championKey, slot, patchVersion);
 }
@@ -503,10 +524,10 @@ export class ChampionService implements GenerationService {
                     lore: "",
                     release: 0,
                     set: [],
-                    splashPath: toAssetUrl(skin.splashPath, context.patchVersion),
-                    uncenteredSplashPath: toAssetUrl(skin.uncenteredSplashPath, context.patchVersion),
-                    tilePath: toAssetUrl(skin.tilePath, context.patchVersion),
-                    loadScreenPath: toAssetUrl(skin.loadScreenPath, context.patchVersion),
+                    splashPath: toPluginAssetUrl(skin.splashPath, context.patchVersion),
+                    uncenteredSplashPath: toPluginAssetUrl(skin.uncenteredSplashPath, context.patchVersion),
+                    tilePath: toPluginAssetUrl(skin.tilePath, context.patchVersion),
+                    loadScreenPath: toPluginAssetUrl(skin.loadScreenPath, context.patchVersion),
                     loadScreenVintagePath: "",
                     newEffects: false,
                     newAnimations: false,
@@ -523,7 +544,7 @@ export class ChampionService implements GenerationService {
                     name: detail.name,
                     title: detail.title,
                     fullName: `${detail.name}, ${detail.title}`,
-                    icon: toAssetUrl(detail.squarePortraitPath ?? item.summary.squarePortraitPath, context.patchVersion),
+                    icon: toPluginAssetUrl(detail.squarePortraitPath ?? item.summary.squarePortraitPath, context.patchVersion),
                     resource,
                     attackType: mapAttackType(detail.tacticalInfo?.attackType),
                     adaptiveType,
