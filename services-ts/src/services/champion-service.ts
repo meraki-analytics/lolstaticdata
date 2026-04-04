@@ -5,6 +5,7 @@ import type { GenerationContext, GenerationResult } from "../types.js";
 
 const CDRAGON_BASE = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default";
 const CDRAGON_CHAMPION_SUMMARY_URL = `${CDRAGON_BASE}/v1/champion-summary.json`;
+const RAW_CDRAGON_BASE = "https://raw.communitydragon.org";
 
 interface CDragonChampionSummary {
     id: number;
@@ -93,22 +94,62 @@ function stat(flat = 0, perLevel = 0): StatValue {
     };
 }
 
-function toAssetUrl(assetPath: string | undefined): string {
+function toPatchChannel(patchVersion: string): string {
+    const parts = patchVersion
+        .split(".")
+        .map((value) => value.trim())
+        .filter(Boolean);
+    if (parts.length >= 2) {
+        return `${parts[0]}.${parts[1]}`;
+    }
+    return patchVersion || "latest";
+}
+
+function toAssetUrl(assetPath: string | undefined, patchVersion: string): string {
     if (!assetPath) {
         return "";
     }
     if (assetPath.startsWith("http://") || assetPath.startsWith("https://")) {
         return assetPath;
     }
+
     const normalized = assetPath.replace(/\\/g, "/");
+    const patchChannel = toPatchChannel(patchVersion);
+
     if (normalized.startsWith("/lol-game-data/assets/")) {
-        const tail = normalized.replace("/lol-game-data/assets", "");
-        return `${CDRAGON_BASE}${tail}`;
+        let tail = normalized.slice("/lol-game-data/assets/".length);
+        if (tail.startsWith("ASSETS/")) {
+            tail = tail.slice("ASSETS/".length);
+        } else if (tail.startsWith("assets/")) {
+            tail = tail.slice("assets/".length);
+        }
+        return `${RAW_CDRAGON_BASE}/${patchChannel}/game/assets/${tail.toLowerCase()}`;
     }
+
     if (normalized.startsWith("/")) {
-        return `${CDRAGON_BASE}${normalized}`;
+        return `${RAW_CDRAGON_BASE}/${patchChannel}${normalized}`;
     }
-    return `${CDRAGON_BASE}/${normalized}`;
+
+    return `${RAW_CDRAGON_BASE}/${patchChannel}/${normalized}`;
+}
+
+function buildFallbackAbilityIconUrl(championKey: string, slot: AbilitySlot, patchVersion: string): string {
+    const patchChannel = toPatchChannel(patchVersion);
+    const championKeyLower = championKey.toLowerCase();
+    const suffix = slot === "P" ? "passive" : slot.toLowerCase();
+    return `${RAW_CDRAGON_BASE}/${patchChannel}/game/assets/characters/${championKeyLower}/hud/icons2d/${championKeyLower}_${suffix}.png`;
+}
+
+function resolveAbilityIconUrl(
+    championKey: string,
+    slot: AbilitySlot,
+    iconPath: string | undefined,
+    patchVersion: string
+): string {
+    if (iconPath && iconPath.trim()) {
+        return toAssetUrl(iconPath, patchVersion);
+    }
+    return buildFallbackAbilityIconUrl(championKey, slot, patchVersion);
 }
 
 function normalizeArray(value: unknown): number[] {
@@ -270,7 +311,7 @@ function buildStats(ddragonChampion: DDragonChampion | undefined): Record<string
 function buildAbility(
     name: string,
     description: string,
-    iconPath: string | undefined,
+    iconUrl: string,
     resource: string,
     adaptiveType: string,
     cooldown: number[],
@@ -280,7 +321,7 @@ function buildAbility(
 ): Record<string, unknown> {
     return {
         name,
-        icon: toAssetUrl(iconPath),
+        icon: iconUrl,
         effects: [
             {
                 description,
@@ -401,7 +442,7 @@ export class ChampionService implements GenerationService {
                 const passiveAbility = buildAbility(
                     detail.passive?.name ?? "Passive",
                     detail.passive?.description ?? "",
-                    detail.passive?.abilityIconPath,
+                    resolveAbilityIconUrl(key, "P", detail.passive?.abilityIconPath, context.patchVersion),
                     resource,
                     adaptiveType,
                     [],
@@ -436,7 +477,7 @@ export class ChampionService implements GenerationService {
                         abilities[slot].push(buildAbility(
                             variantName,
                             description,
-                            spell.abilityIconPath,
+                            resolveAbilityIconUrl(key, slot, spell.abilityIconPath, context.patchVersion),
                             resource,
                             adaptiveType,
                             cooldown,
@@ -462,10 +503,10 @@ export class ChampionService implements GenerationService {
                     lore: "",
                     release: 0,
                     set: [],
-                    splashPath: toAssetUrl(skin.splashPath),
-                    uncenteredSplashPath: toAssetUrl(skin.uncenteredSplashPath),
-                    tilePath: toAssetUrl(skin.tilePath),
-                    loadScreenPath: toAssetUrl(skin.loadScreenPath),
+                    splashPath: toAssetUrl(skin.splashPath, context.patchVersion),
+                    uncenteredSplashPath: toAssetUrl(skin.uncenteredSplashPath, context.patchVersion),
+                    tilePath: toAssetUrl(skin.tilePath, context.patchVersion),
+                    loadScreenPath: toAssetUrl(skin.loadScreenPath, context.patchVersion),
                     loadScreenVintagePath: "",
                     newEffects: false,
                     newAnimations: false,
@@ -482,7 +523,7 @@ export class ChampionService implements GenerationService {
                     name: detail.name,
                     title: detail.title,
                     fullName: `${detail.name}, ${detail.title}`,
-                    icon: toAssetUrl(detail.squarePortraitPath ?? item.summary.squarePortraitPath),
+                    icon: toAssetUrl(detail.squarePortraitPath ?? item.summary.squarePortraitPath, context.patchVersion),
                     resource,
                     attackType: mapAttackType(detail.tacticalInfo?.attackType),
                     adaptiveType,
