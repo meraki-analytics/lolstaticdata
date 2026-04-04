@@ -2,690 +2,34 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import type { GenerationService } from "../contracts.js";
 import type { GenerationContext, GenerationResult } from "../types.js";
-
-const CDRAGON_BASE = "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default";
-const CDRAGON_CHAMPION_SUMMARY_URL = `${CDRAGON_BASE}/v1/champion-summary.json`;
-const RAW_CDRAGON_BASE = "https://raw.communitydragon.org";
-const CDRAGON_PLUGIN_PATH = "plugins/rcp-be-lol-game-data/global/default";
-
-interface CDragonChampionSummary {
-    id: number;
-    name: string;
-    description: string;
-    alias: string;
-    squarePortraitPath: string;
-    roles: string[];
-}
-
-interface CDragonSpell {
-    spellKey?: string;
-    name?: string;
-    description?: string;
-    dynamicDescription?: string;
-    abilityIconPath?: string;
-    cost?: number[] | number | string;
-    cooldown?: number[] | number | string;
-    range?: number[] | number;
-    costCoefficients?: number[];
-    cooldownCoefficients?: number[];
-    effectAmounts?: Record<string, number[]>;
-}
-
-interface CDragonChampionDetail {
-    id: number;
-    name: string;
-    alias: string;
-    title: string;
-    shortBio?: string;
-    squarePortraitPath?: string;
-    tacticalInfo?: {
-        style?: number;
-        difficulty?: number;
-        damageType?: string;
-        attackType?: string;
-    };
-    playstyleInfo?: {
-        damage?: number;
-        durability?: number;
-        crowdControl?: number;
-        mobility?: number;
-        utility?: number;
-    };
-    roles?: string[];
-    passive?: {
-        name?: string;
-        description?: string;
-        abilityIconPath?: string;
-    };
-    spells?: CDragonSpell[];
-    skins?: Array<{
-        id: number;
-        name: string;
-        isBase: boolean;
-        skinClassification?: string;
-        splashPath?: string;
-        uncenteredSplashPath?: string;
-        tilePath?: string;
-        loadScreenPath?: string;
-    }>;
-}
-
-interface PassiveAbilityNumbers {
-    cooldown: number[];
-    cost: number[];
-    costUnit: string;
-}
-
-interface DDragonChampion {
-    partype?: string;
-    stats?: Record<string, number>;
-    spells?: Array<{
-        id?: string;
-        costType?: string;
-    }>;
-}
-
-interface DDragonChampionFull {
-    data: Record<string, DDragonChampion>;
-}
-
-interface StatValue {
-    flat: number;
-    percent: number;
-    perLevel: number;
-    percentPerLevel: number;
-}
-
-function stat(flat = 0, perLevel = 0): StatValue {
-    return {
-        flat,
-        percent: 0,
-        perLevel,
-        percentPerLevel: 0
-    };
-}
-
-function toPatchChannel(patchVersion: string): string {
-    const parts = patchVersion
-        .split(".")
-        .map((value) => value.trim())
-        .filter(Boolean);
-    if (parts.length >= 2) {
-        return `${parts[0]}.${parts[1]}`;
-    }
-    return patchVersion || "latest";
-}
-
-function toPluginAssetUrl(assetPath: string | undefined, patchVersion: string): string {
-    if (!assetPath) {
-        return "";
-    }
-    if (assetPath.startsWith("http://") || assetPath.startsWith("https://")) {
-        return assetPath;
-    }
-
-    const normalized = assetPath.replace(/\\/g, "/");
-    const normalizedLower = normalized.toLowerCase();
-    const pluginBase = `${RAW_CDRAGON_BASE}/${toPatchChannel(patchVersion)}/${CDRAGON_PLUGIN_PATH}`;
-
-    if (normalizedLower.startsWith("/lol-game-data/assets/")) {
-        const tail = normalizedLower.slice("/lol-game-data/assets/".length);
-        return `${pluginBase}/${tail}`;
-    }
-
-    if (normalizedLower.startsWith("/")) {
-        return `${pluginBase}${normalizedLower}`;
-    }
-
-    return `${pluginBase}/${normalizedLower}`;
-}
-
-function toPatchGameAssetUrl(assetPath: string, patchVersion: string): string {
-    if (assetPath.startsWith("http://") || assetPath.startsWith("https://")) {
-        return assetPath;
-    }
-
-    const normalized = assetPath.replace(/\\/g, "/");
-    const normalizedLower = normalized.toLowerCase();
-    const patchChannel = toPatchChannel(patchVersion);
-
-    if (normalizedLower.startsWith("/lol-game-data/assets/")) {
-        let tail = normalizedLower.slice("/lol-game-data/assets/".length);
-        if (tail.startsWith("assets/")) {
-            tail = tail.slice("assets/".length);
-        }
-        return `${RAW_CDRAGON_BASE}/${patchChannel}/game/assets/${tail}`;
-    }
-
-    if (normalizedLower.startsWith("/")) {
-        return `${RAW_CDRAGON_BASE}/${patchChannel}${normalizedLower}`;
-    }
-
-    return `${RAW_CDRAGON_BASE}/${patchChannel}/${normalizedLower}`;
-}
-
-function buildFallbackAbilityIconUrl(championKey: string, slot: AbilitySlot, patchVersion: string): string {
-    const patchChannel = toPatchChannel(patchVersion);
-    const championKeyLower = championKey.toLowerCase();
-    const suffix = slot === "P" ? "passive" : slot.toLowerCase();
-    return `${RAW_CDRAGON_BASE}/${patchChannel}/game/assets/characters/${championKeyLower}/hud/icons2d/${championKeyLower}_${suffix}.png`;
-}
-
-function resolveAbilityIconUrl(
-    championKey: string,
-    slot: AbilitySlot,
-    iconPath: string | undefined,
-    patchVersion: string
-): string {
-    if (iconPath && iconPath.trim()) {
-        return toPatchGameAssetUrl(iconPath, patchVersion);
-    }
-    return buildFallbackAbilityIconUrl(championKey, slot, patchVersion);
-}
-
-function normalizeArray(value: unknown): number[] {
-    if (Array.isArray(value)) {
-        return value
-            .map((v) => Number(v))
-            .filter((v) => Number.isFinite(v));
-    }
-    if (typeof value === "number") {
-        return [value];
-    }
-    return [];
-}
-
-function buildLinearValues(start: number, end: number, steps: number): number[] {
-    if (!Number.isFinite(start) || !Number.isFinite(end) || steps <= 0) {
-        return [];
-    }
-    if (steps === 1) {
-        return [start];
-    }
-    const result: number[] = [];
-    for (let i = 0; i < steps; i += 1) {
-        const t = i / (steps - 1);
-        result.push(start + (end - start) * t);
-    }
-    return result;
-}
-
-function inferUnitFromText(raw: string | undefined): string {
-    const value = (raw ?? "").toLowerCase();
-    if (value.includes("mana")) {
-        return "MANA";
-    }
-    if (value.includes("energy")) {
-        return "ENERGY";
-    }
-    if (value.includes("health") || value.includes("hp")) {
-        return "HEALTH";
-    }
-    if (value.includes("rage")) {
-        return "RAGE";
-    }
-    if (value.includes("fury")) {
-        return "FURY";
-    }
-    if (value.includes("ferocity")) {
-        return "FEROCITY";
-    }
-    return "";
-}
-
-function extractSpellDataValues(spellData: Record<string, unknown>): Array<{ name: string; values: number[] }> {
-    const raw = (spellData.DataValues ?? spellData.mDataValues) as unknown;
-    if (!Array.isArray(raw)) {
-        return [];
-    }
-
-    const values: Array<{ name: string; values: number[] }> = [];
-    for (const item of raw) {
-        if (!item || typeof item !== "object") {
-            continue;
-        }
-        const entry = item as Record<string, unknown>;
-        const name = String(entry.name ?? entry.mName ?? "");
-        const data = normalizeArray(entry.values ?? entry.mValues);
-        if (name && data.length > 0) {
-            values.push({ name, values: data });
-        }
-    }
-    return values;
-}
-
-function extractCooldownFromCalculations(spellData: Record<string, unknown>): number[] {
-    const calculations = spellData.mSpellCalculations as unknown;
-    if (!calculations || typeof calculations !== "object") {
-        return [];
-    }
-
-    for (const [name, calc] of Object.entries(calculations as Record<string, unknown>)) {
-        if (!name.toLowerCase().includes("cooldown") || !calc || typeof calc !== "object") {
-            continue;
-        }
-
-        const formulaParts = (calc as Record<string, unknown>).mFormulaParts as unknown;
-        if (!Array.isArray(formulaParts)) {
-            continue;
-        }
-
-        for (const part of formulaParts) {
-            if (!part || typeof part !== "object") {
-                continue;
-            }
-            const record = part as Record<string, unknown>;
-            const start = Number(record.mStartValue);
-            const end = Number(record.mEndValue);
-            if (Number.isFinite(start) && Number.isFinite(end)) {
-                return buildLinearValues(start, end, 18);
-            }
-            const flat = Number(record.mNumber ?? record.mValue);
-            if (Number.isFinite(flat)) {
-                return [flat];
-            }
-        }
-    }
-
-    return [];
-}
-
-function compactText(value: string | undefined): string {
-    return (value ?? "").toLowerCase().replace(/[^a-z0-9]+/g, "");
-}
-
-function findPassiveSpellData(
-    binData: Record<string, unknown>,
-    championKey: string,
-    passiveName: string | undefined
-): Record<string, unknown> | undefined {
-    let bestScore = -1;
-    let best: Record<string, unknown> | undefined;
-    const passiveNameCompact = compactText(passiveName);
-    const passiveNameTokens = (passiveName ?? "")
-        .toLowerCase()
-        .split(/[^a-z0-9]+/)
-        .map((token) => token.trim())
-        .filter((token) => token.length >= 4);
-    const championKeyCompact = compactText(championKey);
-
-    for (const [pathKey, value] of Object.entries(binData)) {
-        if (!value || typeof value !== "object") {
-            continue;
-        }
-        const entry = value as Record<string, unknown>;
-        if (!entry.mSpell || typeof entry.mSpell !== "object") {
-            continue;
-        }
-
-        const text = `${pathKey} ${String(entry.mScriptName ?? "")} ${String(entry.ObjectName ?? "")}`.toLowerCase();
-        const textCompact = compactText(text);
-        let score = 0;
-
-        if (passiveNameCompact && textCompact.includes(passiveNameCompact)) {
-            score += 12;
-        }
-        for (const token of passiveNameTokens) {
-            if (text.includes(token)) {
-                score += 3;
-            }
-        }
-        if (championKeyCompact && textCompact.includes(championKeyCompact)) {
-            score += 1;
-        }
-        if (text.includes("passive")) {
-            score += 4;
-        }
-        if (text.includes("ability")) {
-            score += 1;
-        }
-        const spellData = entry.mSpell as Record<string, unknown>;
-        if (spellData.mSpellCalculations) {
-            score += 1;
-        }
-
-        const dataValueNames = extractSpellDataValues(spellData).map((item) => item.name.toLowerCase());
-        if (dataValueNames.some((name) => name.includes("cooldown") || name.includes("cost") || name.includes("mana"))) {
-            score += 2;
-        }
-
-        if (score > bestScore) {
-            bestScore = score;
-            best = spellData;
-        }
-    }
-
-    return best;
-}
-
-function hasNonZeroValue(values: number[]): boolean {
-    return values.some((v) => v !== 0);
-}
-
-function buildLeveling(effectAmounts: Record<string, number[]> | undefined): Array<Record<string, unknown>> {
-    if (!effectAmounts) {
-        return [];
-    }
-
-    return Object.entries(effectAmounts)
-        .map(([attribute, rawValues]) => ({
-            attribute,
-            values: normalizeArray(rawValues)
-        }))
-        .filter((entry) => entry.values.length > 0 && hasNonZeroValue(entry.values))
-        .slice(0, 12)
-        .map((entry) => ({
-            attribute: entry.attribute,
-            modifiers: [
-                {
-                    values: entry.values,
-                    units: [""]
-                }
-            ]
-        }));
-}
-
-function splitAbilityVariantNames(name: string | undefined, fallback: string): string[] {
-    if (!name || !name.trim()) {
-        return [fallback];
-    }
-    const parts = name
-        .split("/")
-        .map((part) => part.trim())
-        .filter(Boolean);
-    return parts.length > 0 ? parts : [fallback];
-}
-
-type AbilitySlot = "P" | "Q" | "W" | "E" | "R";
-type AbilityGroups = Record<AbilitySlot, Array<Record<string, unknown>>>;
-
-function resolveAbilitySlot(spellKey: string | undefined, index: number): AbilitySlot {
-    const key = (spellKey ?? "").trim().toUpperCase();
-    if (key.startsWith("Q")) {
-        return "Q";
-    }
-    if (key.startsWith("W")) {
-        return "W";
-    }
-    if (key.startsWith("E")) {
-        return "E";
-    }
-    if (key.startsWith("R")) {
-        return "R";
-    }
-    const fallback: AbilitySlot[] = ["Q", "W", "E", "R"];
-    return fallback[Math.max(0, Math.min(index, 3))];
-}
-
-function mapAttackType(attackType: string | undefined): string {
-    if (!attackType) {
-        return "MELEE";
-    }
-    return attackType.toLowerCase().includes("ranged") ? "RANGED" : "MELEE";
-}
-
-function mapAdaptiveType(damageType: string | undefined): string {
-    if (!damageType) {
-        return "MIXED_DAMAGE";
-    }
-    const value = damageType.toLowerCase();
-    if (value.includes("physical")) {
-        return "PHYSICAL_DAMAGE";
-    }
-    if (value.includes("magic")) {
-        return "MAGIC_DAMAGE";
-    }
-    return "MIXED_DAMAGE";
-}
-
-function mapResource(partype: string | undefined): string {
-    if (!partype) {
-        return "NONE";
-    }
-    const value = partype.toLowerCase().trim();
-    if (value === "mana") {
-        return "MANA";
-    }
-    if (value === "energy") {
-        return "ENERGY";
-    }
-    if (value === "rage") {
-        return "RAGE";
-    }
-    if (value === "fury") {
-        return "FURY";
-    }
-    if (value === "none" || value === "manaless") {
-        return "NO_COST";
-    }
-    if (value === "health") {
-        return "HEALTH";
-    }
-    return "OTHER";
-}
-
-function normalizeUnitValue(values: number[], unit: string): string[] {
-    if (values.length === 0) {
-        return [];
-    }
-    return values.map(() => unit);
-}
-
-function fallbackCostUnitFromResource(resource: string): string {
-    if (resource === "NONE" || resource === "NO_COST" || resource === "OTHER") {
-        return "";
-    }
-    return resource;
-}
-
-function resolveCostUnit(costTypeRaw: string | undefined, resource: string): string {
-    const fallback = fallbackCostUnitFromResource(resource);
-    const value = (costTypeRaw ?? "").toLowerCase();
-
-    if (!value.trim()) {
-        return fallback;
-    }
-    if (value.includes("no cost")) {
-        return "";
-    }
-    if (value.includes("mana") || value.includes("abilityresourcename") || value.includes("manacostpersecond")) {
-        return "MANA";
-    }
-    if (value.includes("energy")) {
-        return "ENERGY";
-    }
-    if (value.includes("health") || value.includes("hp")) {
-        return "HEALTH";
-    }
-    if (value.includes("rage")) {
-        return "RAGE";
-    }
-    if (value.includes("fury")) {
-        return "FURY";
-    }
-    if (value.includes("ferocity")) {
-        return "FEROCITY";
-    }
-
-    return fallback;
-}
-
-async function fetchPassiveAbilityNumbers(
-    championKey: string,
-    patchVersion: string,
-    resource: string,
-    passiveName: string | undefined
-): Promise<PassiveAbilityNumbers> {
-    const empty: PassiveAbilityNumbers = {
-        cooldown: [],
-        cost: [],
-        costUnit: ""
-    };
-
-    const key = championKey.toLowerCase();
-    const patchChannel = toPatchChannel(patchVersion);
-    const url = `${RAW_CDRAGON_BASE}/${patchChannel}/game/data/characters/${key}/${key}.bin.json`;
-    const response = await fetch(url);
-    if (!response.ok) {
-        return empty;
-    }
-    const binData = await response.json() as Record<string, unknown>;
-
-    if (!binData) {
-        return empty;
-    }
-
-    const spellData = findPassiveSpellData(binData, championKey, passiveName);
-    if (!spellData) {
-        return empty;
-    }
-
-    const dataValues = extractSpellDataValues(spellData);
-    const cooldownFromDataValue = dataValues.find((entry) => entry.name.toLowerCase().includes("cooldown"))?.values ?? [];
-    const cooldown = cooldownFromDataValue.length > 0
-        ? cooldownFromDataValue
-        : extractCooldownFromCalculations(spellData);
-
-    const costEntry = dataValues.find((entry) => /cost/i.test(entry.name));
-    const cost = costEntry?.values ?? [];
-    const costUnit = cost.length > 0
-        ? (inferUnitFromText(costEntry?.name) || fallbackCostUnitFromResource(resource))
-        : "";
-
-    return {
-        cooldown,
-        cost,
-        costUnit
-    };
-}
-
-function buildStats(ddragonChampion: DDragonChampion | undefined): Record<string, StatValue> {
-    const s = ddragonChampion?.stats ?? {};
-    return {
-        health: stat(s.hp ?? 0, s.hpperlevel ?? 0),
-        healthRegen: stat(s.hpregen ?? 0, s.hpregenperlevel ?? 0),
-        mana: stat(s.mp ?? 0, s.mpperlevel ?? 0),
-        manaRegen: stat(s.mpregen ?? 0, s.mpregenperlevel ?? 0),
-        armor: stat(s.armor ?? 0, s.armorperlevel ?? 0),
-        magicResistance: stat(s.spellblock ?? 0, s.spellblockperlevel ?? 0),
-        attackDamage: stat(s.attackdamage ?? 0, s.attackdamageperlevel ?? 0),
-        movespeed: stat(s.movespeed ?? 0, 0),
-        acquisitionRadius: stat(0, 0),
-        selectionRadius: stat(0, 0),
-        pathingRadius: stat(0, 0),
-        gameplayRadius: stat(0, 0),
-        criticalStrikeDamage: stat(175, 0),
-        criticalStrikeDamageModifier: stat(1, 0),
-        attackSpeed: stat(s.attackspeed ?? 0, s.attackspeedperlevel ?? 0),
-        attackSpeedRatio: stat(s.attackspeed ?? 0, 0),
-        attackCastTime: stat(0, 0),
-        attackTotalTime: stat(0, 0),
-        attackDelayOffset: stat(0, 0),
-        attackRange: stat(s.attackrange ?? 0, 0),
-        aramDamageTaken: stat(1, 0),
-        aramDamageDealt: stat(1, 0),
-        aramHealing: stat(1, 0),
-        aramShielding: stat(1, 0),
-        aramTenacity: stat(0, 0),
-        aramAbilityHaste: stat(0, 0),
-        aramAttackSpeed: stat(0, 0),
-        aramEnergyRegen: stat(0, 0),
-        urfDamageTaken: stat(1, 0),
-        urfDamageDealt: stat(1, 0),
-        urfHealing: stat(1, 0),
-        urfShielding: stat(1, 0)
-    };
-}
-
-function buildAbility(
-    name: string,
-    description: string,
-    iconUrl: string,
-    resource: string,
-    adaptiveType: string,
-    cooldown: number[],
-    affectedByCdr: boolean,
-    cost: number[],
-    costUnit: string,
-    range: number[],
-    leveling: Array<Record<string, unknown>>
-): Record<string, unknown> {
-    return {
-        name,
-        icon: iconUrl,
-        effects: [
-            {
-                description,
-                leveling
-            }
-        ],
-        cost: {
-            modifiers: [
-                {
-                    values: cost,
-                    units: normalizeUnitValue(cost, costUnit)
-                }
-            ]
-        },
-        cooldown: {
-            modifiers: [
-                {
-                    values: cooldown,
-                    units: normalizeUnitValue(cooldown, "seconds")
-                }
-            ],
-            affectedByCdr
-        },
-        targeting: "",
-        affects: "",
-        spellshieldable: "",
-        resource,
-        damageType: adaptiveType,
-        spellEffects: "",
-        projectile: "",
-        onHitEffects: "",
-        occurrence: "",
-        notes: "",
-        blurb: description,
-        missileSpeed: "",
-        rechargeRate: "",
-        collisionRadius: "",
-        tetherRadius: "",
-        onTargetCdStatic: "",
-        innerRadius: "",
-        speed: "",
-        width: "",
-        angle: "",
-        castTime: "",
-        effectRadius: "",
-        targetRange: range.length > 0 ? range.join(" / ") : ""
-    };
-}
-
-async function fetchJson<T>(url: string): Promise<T> {
-    const response = await fetch(url);
-    if (!response.ok) {
-        throw new Error(`Request failed (${response.status}) for ${url}`);
-    }
-    return (await response.json()) as T;
-}
-
-async function mapWithConcurrency<T, R>(items: T[], limit: number, mapper: (item: T, index: number) => Promise<R>): Promise<R[]> {
-    const results = new Array<R>(items.length);
-    let nextIndex = 0;
-
-    async function worker(): Promise<void> {
-        while (nextIndex < items.length) {
-            const current = nextIndex;
-            nextIndex += 1;
-            results[current] = await mapper(items[current], current);
-        }
-    }
-
-    const workers = Array.from({ length: Math.min(limit, items.length) }, () => worker());
-    await Promise.all(workers);
-    return results;
-}
+import {
+    CDRAGON_BASE,
+    CDRAGON_CHAMPION_SUMMARY_URL,
+    resolveAbilityIconUrl,
+    toPluginAssetUrl
+} from "./champion/champion-assets.js";
+import { fetchJson, mapWithConcurrency } from "./champion/champion-http.js";
+import {
+    buildAbility,
+    buildLeveling,
+    buildStats,
+    mapAdaptiveType,
+    mapAttackType,
+    mapResource,
+    normalizeArray,
+    resolveAbilitySlot,
+    resolveCostUnit,
+    splitAbilityVariantNames
+} from "./champion/champion-mapping.js";
+import { fetchPassiveAbilityNumbers } from "./champion/champion-passive.js";
+import type {
+    AbilityGroups,
+    AbilitySlot,
+    CDragonChampionDetail,
+    CDragonChampionSummary,
+    ChampionDetailWithPassive,
+    DDragonChampionFull
+} from "./champion/champion-types.js";
 
 export class ChampionService implements GenerationService {
     readonly name = "ChampionService";
@@ -711,7 +55,7 @@ export class ChampionService implements GenerationService {
                 (entry) => entry.id > 0 && entry.alias && entry.alias !== "None" && Boolean(ddragon.data[entry.alias])
             );
 
-            const details = await mapWithConcurrency(champions, 12, async (entry) => {
+            const details = await mapWithConcurrency<CDragonChampionSummary, ChampionDetailWithPassive>(champions, 12, async (entry) => {
                 const ddragonChampion = ddragon.data[entry.alias];
                 const resource = mapResource(ddragonChampion?.partype);
 
@@ -746,19 +90,19 @@ export class ChampionService implements GenerationService {
                     ddragonCostTypeBySlot[slot] = spell.costType ?? "";
                 });
 
-                const passiveAbility = buildAbility(
-                    detail.passive?.name ?? "Passive",
-                    detail.passive?.description ?? "",
-                    resolveAbilityIconUrl(key, "P", detail.passive?.abilityIconPath, context.patchVersion),
+                const passiveAbility = buildAbility({
+                    name: detail.passive?.name ?? "Passive",
+                    description: detail.passive?.description ?? "",
+                    iconUrl: resolveAbilityIconUrl(key, "P", detail.passive?.abilityIconPath, context.patchVersion),
                     resource,
                     adaptiveType,
-                    item.passiveNumbers.cooldown,
-                    false,
-                    item.passiveNumbers.cost,
-                    item.passiveNumbers.costUnit,
-                    [],
-                    []
-                );
+                    cooldown: item.passiveNumbers.cooldown,
+                    affectedByCdr: false,
+                    cost: item.passiveNumbers.cost,
+                    costUnit: item.passiveNumbers.costUnit,
+                    range: [],
+                    leveling: []
+                });
 
                 const spells = Array.isArray(detail.spells) ? detail.spells : [];
                 const abilities: AbilityGroups = {
@@ -785,19 +129,19 @@ export class ChampionService implements GenerationService {
                     const leveling = buildLeveling(spell.effectAmounts);
 
                     for (const variantName of variantNames) {
-                        abilities[slot].push(buildAbility(
-                            variantName,
+                        abilities[slot].push(buildAbility({
+                            name: variantName,
                             description,
-                            resolveAbilityIconUrl(key, slot, spell.abilityIconPath, context.patchVersion),
+                            iconUrl: resolveAbilityIconUrl(key, slot, spell.abilityIconPath, context.patchVersion),
                             resource,
                             adaptiveType,
                             cooldown,
-                            true,
+                            affectedByCdr: true,
                             cost,
                             costUnit,
                             range,
                             leveling
-                        ));
+                        }));
                     }
                 });
 
@@ -830,19 +174,23 @@ export class ChampionService implements GenerationService {
                     splashArtist: []
                 }));
 
+                const attackType = mapAttackType(detail.tacticalInfo?.attackType);
+                const roles = (detail.roles ?? item.summary.roles ?? []).map((role) => role.toUpperCase());
+                const icon = toPluginAssetUrl(detail.squarePortraitPath ?? item.summary.squarePortraitPath, context.patchVersion);
+
                 const payload: Record<string, unknown> = {
                     id: detail.id,
                     key,
                     name: detail.name,
                     title: detail.title,
                     fullName: `${detail.name}, ${detail.title}`,
-                    icon: toPluginAssetUrl(detail.squarePortraitPath ?? item.summary.squarePortraitPath, context.patchVersion),
+                    icon,
                     resource,
-                    attackType: mapAttackType(detail.tacticalInfo?.attackType),
+                    attackType,
                     adaptiveType,
                     stats: buildStats(ddragonChampion),
                     positions: [],
-                    roles: (detail.roles ?? item.summary.roles ?? []).map(role => role.toUpperCase()),
+                    roles,
                     attributeRatings: {
                         damage: detail.playstyleInfo?.damage ?? 0,
                         toughness: detail.playstyleInfo?.durability ?? 0,
@@ -878,9 +226,9 @@ export class ChampionService implements GenerationService {
                     key,
                     name: detail.name || item.summary.name || key,
                     slug: key.toLowerCase(),
-                    iconUrl: payload.icon,
-                    attackType: payload.attackType,
-                    roles: payload.roles
+                    iconUrl: icon,
+                    attackType,
+                    roles
                 });
 
                 const filePath = path.join(championsDir, `${key}.json`);
