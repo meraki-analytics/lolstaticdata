@@ -21,4 +21,5 @@ This module is intentionally separated from the legacy Python implementation.
 
 - Manual retrigger is intentionally not enabled yet.
 - WrapperService is the only orchestrator for check/generate/version commit order.
-- Champion and item services are currently implemented as legacy-command adapters in Phase 1 and will be replaced by native TS implementations in later phases.
+- ChampionService is now native TypeScript with CDragon ingestion (Phase 2).
+- ItemService remains a legacy-command adapter and will be migrated to native TS in a later phase.
