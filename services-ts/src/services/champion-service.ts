@@ -73,6 +73,10 @@ interface CDragonChampionDetail {
 interface DDragonChampion {
     partype?: string;
     stats?: Record<string, number>;
+    spells?: Array<{
+        id?: string;
+        costType?: string;
+    }>;
 }
 
 interface DDragonChampionFull {
@@ -291,6 +295,52 @@ function mapResource(partype: string | undefined): string {
     return "OTHER";
 }
 
+function normalizeUnitValue(values: number[], unit: string): string[] {
+    if (values.length === 0) {
+        return [];
+    }
+    return values.map(() => unit);
+}
+
+function fallbackCostUnitFromResource(resource: string): string {
+    if (resource === "NONE" || resource === "NO_COST" || resource === "OTHER") {
+        return "";
+    }
+    return resource;
+}
+
+function resolveCostUnit(costTypeRaw: string | undefined, resource: string): string {
+    const fallback = fallbackCostUnitFromResource(resource);
+    const value = (costTypeRaw ?? "").toLowerCase();
+
+    if (!value.trim()) {
+        return fallback;
+    }
+    if (value.includes("no cost")) {
+        return "";
+    }
+    if (value.includes("mana") || value.includes("abilityresourcename") || value.includes("manacostpersecond")) {
+        return "MANA";
+    }
+    if (value.includes("energy")) {
+        return "ENERGY";
+    }
+    if (value.includes("health") || value.includes("hp")) {
+        return "HEALTH";
+    }
+    if (value.includes("rage")) {
+        return "RAGE";
+    }
+    if (value.includes("fury")) {
+        return "FURY";
+    }
+    if (value.includes("ferocity")) {
+        return "FEROCITY";
+    }
+
+    return fallback;
+}
+
 function buildStats(ddragonChampion: DDragonChampion | undefined): Record<string, StatValue> {
     const s = ddragonChampion?.stats ?? {};
     return {
@@ -337,6 +387,7 @@ function buildAbility(
     adaptiveType: string,
     cooldown: number[],
     cost: number[],
+    costUnit: string,
     range: number[],
     leveling: Array<Record<string, unknown>>
 ): Record<string, unknown> {
@@ -353,7 +404,7 @@ function buildAbility(
             modifiers: [
                 {
                     values: cost,
-                    units: ["resource"]
+                    units: normalizeUnitValue(cost, costUnit)
                 }
             ]
         },
@@ -361,10 +412,10 @@ function buildAbility(
             modifiers: [
                 {
                     values: cooldown,
-                    units: ["seconds"]
+                    units: normalizeUnitValue(cooldown, "seconds")
                 }
             ],
-            affectedByCdr: true
+            affectedByCdr: cooldown.length > 0
         },
         targeting: "",
         affects: "",
@@ -459,6 +510,11 @@ export class ChampionService implements GenerationService {
 
                 const resource = mapResource(ddragonChampion?.partype);
                 const adaptiveType = mapAdaptiveType(detail.tacticalInfo?.damageType);
+                const ddragonCostTypeBySlot: Partial<Record<AbilitySlot, string>> = {};
+                (ddragonChampion?.spells ?? []).forEach((spell, index) => {
+                    const slot = resolveAbilitySlot(spell.id, index);
+                    ddragonCostTypeBySlot[slot] = spell.costType ?? "";
+                });
 
                 const passiveAbility = buildAbility(
                     detail.passive?.name ?? "Passive",
@@ -468,6 +524,7 @@ export class ChampionService implements GenerationService {
                     adaptiveType,
                     [],
                     [],
+                    "",
                     [],
                     []
                 );
@@ -491,6 +548,8 @@ export class ChampionService implements GenerationService {
                     const cost = normalizeArray(spell.cost).length > 0
                         ? normalizeArray(spell.cost)
                         : normalizeArray(spell.costCoefficients);
+                    const costTypeRaw = ddragonCostTypeBySlot[slot] ?? "";
+                    const costUnit = resolveCostUnit(costTypeRaw, resource);
                     const range = normalizeArray(spell.range);
                     const leveling = buildLeveling(spell.effectAmounts);
 
@@ -503,6 +562,7 @@ export class ChampionService implements GenerationService {
                             adaptiveType,
                             cooldown,
                             cost,
+                            costUnit,
                             range,
                             leveling
                         ));
