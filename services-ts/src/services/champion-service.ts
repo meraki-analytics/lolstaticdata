@@ -3,6 +3,10 @@ import path from "node:path";
 import type { GenerationService } from "../contracts.js";
 import type { GenerationContext, GenerationResult } from "../types.js";
 import {
+    NativeAbilityMetadataResolver,
+    resolveAbilityMetadata
+} from "./champion/champion-ability-meta.js";
+import {
     CDRAGON_BASE,
     CDRAGON_CHAMPION_SUMMARY_URL,
     resolveAbilityIconUrl,
@@ -141,6 +145,7 @@ export class ChampionService implements GenerationService {
                 fetchChampionFactionIndex()
             ]);
 
+            const abilityMetadataResolver = await NativeAbilityMetadataResolver.create();
             const wikiCooldownResolver = await WikiCooldownResolver.create(
                 path.resolve(context.outputDir, "..", "__cache__", "wiki-cdr-overrides.json")
             );
@@ -196,6 +201,23 @@ export class ChampionService implements GenerationService {
                     ddragonCostTypeBySlot[slot] = spell.costType ?? "";
                 });
 
+                const spells = Array.isArray(detail.spells) ? detail.spells : [];
+                const cooldownOverrides = await wikiCooldownResolver.resolveChampion(
+                    [detail.name, key, item.summary.alias],
+                    spells
+                );
+                const abilityMetadataOverrides = await abilityMetadataResolver.resolveChampion(
+                    key,
+                    context.patchVersion,
+                    spells,
+                    maxRankBySlot
+                );
+                const passiveMetadata = resolveAbilityMetadata(
+                    abilityMetadataOverrides,
+                    "P",
+                    0,
+                    detail.passive?.name ?? "Passive"
+                );
                 const passiveAbility = buildAbility({
                     name: detail.passive?.name ?? "Passive",
                     description: detail.passive?.description ?? "",
@@ -207,14 +229,9 @@ export class ChampionService implements GenerationService {
                     cost: item.passiveNumbers.cost,
                     costUnit: item.passiveNumbers.costUnit,
                     range: [],
-                    leveling: []
+                    leveling: [],
+                    metadata: passiveMetadata
                 });
-
-                const spells = Array.isArray(detail.spells) ? detail.spells : [];
-                const cooldownOverrides = await wikiCooldownResolver.resolveChampion(
-                    [detail.name, key, item.summary.alias],
-                    spells
-                );
                 const abilities: AbilityGroups = {
                     P: [passiveAbility],
                     Q: [],
@@ -262,6 +279,7 @@ export class ChampionService implements GenerationService {
                         const override = formVariantOverrides[variantIndex];
                         const fallbackOverride = override ?? primaryOverride;
                         const affectedByCdr = resolveAffectedByCdr(cooldownOverrides, slot, variantIndex, variantName);
+                        const abilityMetadata = resolveAbilityMetadata(abilityMetadataOverrides, slot, variantIndex, variantName);
                         const variantIconPath = override?.iconPath ?? spell.abilityIconPath;
                         const variantCooldown = override
                             ? (override.hasCooldown ? override.cooldown : cooldown)
@@ -295,7 +313,8 @@ export class ChampionService implements GenerationService {
                             cost: variantCost,
                             costUnit: variantCostUnit,
                             range: variantRange,
-                            leveling: variantLeveling
+                            leveling: variantLeveling,
+                            metadata: abilityMetadata
                         }));
                     });
                 });
@@ -419,6 +438,7 @@ export class ChampionService implements GenerationService {
                 champions: championIndex
             }, null, 2), "utf8");
 
+            await abilityMetadataResolver.save();
             await wikiCooldownResolver.save();
 
             const unresolvedCooldownKeys = wikiCooldownResolver.getUnresolvedKeys();

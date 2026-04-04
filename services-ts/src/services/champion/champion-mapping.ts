@@ -1,3 +1,4 @@
+import type { AbilityMetadata } from "./champion-ability-meta.js";
 import type {
     AbilitySlot,
     DDragonChampion,
@@ -323,9 +324,11 @@ export interface BuildAbilityInput {
     costUnit: string;
     range: number[];
     leveling: Array<Record<string, unknown>>;
+    metadata?: AbilityMetadata;
 }
 
 export function buildAbility(input: BuildAbilityInput): Record<string, unknown> {
+    const metadata = input.metadata ?? {};
     return {
         name: input.name,
         icon: input.iconUrl,
@@ -352,28 +355,28 @@ export function buildAbility(input: BuildAbilityInput): Record<string, unknown> 
             ],
             affectedByCdr: input.affectedByCdr
         },
-        targeting: "",
-        affects: "",
-        spellshieldable: "",
+        targeting: metadata.targeting ?? "",
+        affects: metadata.affects ?? "",
+        spellshieldable: metadata.spellshieldable ?? false,
         resource: input.resource,
         damageType: input.adaptiveType,
-        spellEffects: "",
-        projectile: "",
-        onHitEffects: "",
-        occurrence: "",
-        notes: "",
-        blurb: input.description,
-        missileSpeed: "",
-        rechargeRate: "",
-        collisionRadius: "",
-        tetherRadius: "",
-        onTargetCdStatic: "",
-        innerRadius: "",
-        speed: "",
-        width: "",
-        angle: "",
-        castTime: "",
-        effectRadius: "",
-        targetRange: input.range.length > 0 ? input.range.join(" / ") : ""
+        spellEffects: metadata.spellEffects ?? "",
+        projectile: metadata.projectile ?? "",
+        onHitEffects: metadata.onHitEffects ?? "",
+        occurrence: metadata.occurrence ?? "",
+        notes: metadata.notes ?? "",
+        blurb: metadata.blurb ?? input.description,
+        missileSpeed: metadata.missileSpeed ?? "",
+        rechargeRate: metadata.rechargeRate ?? "",
+        collisionRadius: metadata.collisionRadius ?? "",
+        tetherRadius: metadata.tetherRadius ?? "",
+        onTargetCdStatic: metadata.onTargetCdStatic ?? "",
+        innerRadius: metadata.innerRadius ?? "",
+        speed: metadata.speed ?? "",
+        width: metadata.width ?? "",
+        angle: metadata.angle ?? "",
+        castTime: metadata.castTime ?? "",
+        effectRadius: metadata.effectRadius ?? "",
+        targetRange: metadata.targetRange ?? (input.range.length > 0 ? input.range.join(" / ") : "")
     };
 }

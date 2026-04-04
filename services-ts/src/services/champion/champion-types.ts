@@ -19,6 +19,11 @@ export interface CDragonSpell {
     costCoefficients?: number[];
     cooldownCoefficients?: number[];
     effectAmounts?: Record<string, number[]>;
+    ammo?: {
+        ammoRechargeTime?: number[] | number;
+        maxAmmo?: number[] | number;
+    };
+    maxLevel?: number;
 }
 
 export interface CDragonSkinChroma {
