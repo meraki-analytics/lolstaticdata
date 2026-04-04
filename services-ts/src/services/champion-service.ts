@@ -8,6 +8,7 @@ import {
     resolveAbilityIconUrl,
     toPluginAssetUrl
 } from "./champion/champion-assets.js";
+import { type ChampionCooldownOverrides, WikiCooldownResolver } from "./champion/champion-cdr.js";
 import {
     fetchFormAbilityVariantLookup,
     resolveFormVariantOverrides,
@@ -78,6 +79,29 @@ function buildMaxRankBySlot(
     return maxRankBySlot;
 }
 
+function normalizeAbilityName(name: string): string {
+    return name.toLowerCase().replace(/[^a-z0-9]/g, "");
+}
+
+function resolveAffectedByCdr(
+    overrides: ChampionCooldownOverrides,
+    slot: AbilitySlot,
+    variantIndex: number,
+    variantName: string
+): boolean {
+    const byIndex = overrides.bySlotIndex[slot]?.[variantIndex];
+    if (typeof byIndex === "boolean") {
+        return byIndex;
+    }
+
+    const byName = overrides.bySlotName[slot]?.[normalizeAbilityName(variantName)];
+    if (typeof byName === "boolean") {
+        return byName;
+    }
+
+    return true;
+}
+
 export class ChampionService implements GenerationService {
     readonly name = "ChampionService";
 
@@ -97,6 +121,10 @@ export class ChampionService implements GenerationService {
                 fetchJson<CDragonChampionSummary[]>(CDRAGON_CHAMPION_SUMMARY_URL),
                 fetchJson<DDragonChampionFull>(`https://ddragon.leagueoflegends.com/cdn/${context.patchVersion}/data/en_US/championFull.json`)
             ]);
+
+            const wikiCooldownResolver = await WikiCooldownResolver.create(
+                path.resolve(context.outputDir, "..", "__cache__", "wiki-cdr-overrides.json")
+            );
 
             const champions = summary.filter(
                 (entry) => entry.id > 0 && entry.alias && entry.alias !== "None" && Boolean(ddragon.data[entry.alias])
@@ -164,6 +192,10 @@ export class ChampionService implements GenerationService {
                 });
 
                 const spells = Array.isArray(detail.spells) ? detail.spells : [];
+                const cooldownOverrides = await wikiCooldownResolver.resolveChampion(
+                    [detail.name, key, item.summary.alias],
+                    spells
+                );
                 const abilities: AbilityGroups = {
                     P: [passiveAbility],
                     Q: [],
@@ -210,6 +242,7 @@ export class ChampionService implements GenerationService {
                     variantNames.forEach((variantName, variantIndex) => {
                         const override = formVariantOverrides[variantIndex];
                         const fallbackOverride = override ?? primaryOverride;
+                        const affectedByCdr = resolveAffectedByCdr(cooldownOverrides, slot, variantIndex, variantName);
                         const variantIconPath = override?.iconPath ?? spell.abilityIconPath;
                         const variantCooldown = override
                             ? (override.hasCooldown ? override.cooldown : cooldown)
@@ -239,7 +272,7 @@ export class ChampionService implements GenerationService {
                             resource,
                             adaptiveType,
                             cooldown: variantCooldown,
-                            affectedByCdr: true,
+                            affectedByCdr,
                             cost: variantCost,
                             costUnit: variantCostUnit,
                             range: variantRange,
@@ -350,10 +383,26 @@ export class ChampionService implements GenerationService {
                 champions: championIndex
             }, null, 2), "utf8");
 
+            await wikiCooldownResolver.save();
+
+            const unresolvedCooldownKeys = wikiCooldownResolver.getUnresolvedKeys();
+            const unresolvedReportPath = path.resolve(context.outputDir, "..", "__cache__", "wiki-cdr-unresolved.json");
+            if (unresolvedCooldownKeys.length > 0) {
+                await fs.mkdir(path.dirname(unresolvedReportPath), { recursive: true });
+                await fs.writeFile(unresolvedReportPath, JSON.stringify({
+                    version: 1,
+                    generatedAt: new Date().toISOString(),
+                    patchVersion: context.patchVersion,
+                    unresolvedKeys: unresolvedCooldownKeys
+                }, null, 2), "utf8");
+            } else {
+                await fs.rm(unresolvedReportPath, { force: true });
+            }
+
             return {
                 service: this.name,
                 success: true,
-                details: `Champion generation completed with native CDragon pipeline (${championIndex.length} champions)`
+                details: `Champion generation completed with native CDragon pipeline (${championIndex.length} champions, ${unresolvedCooldownKeys.length} unresolved wiki cooldown mappings)`
             };
         } catch (error) {
             const msg = error instanceof Error ? error.message : String(error);
