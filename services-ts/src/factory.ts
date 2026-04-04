@@ -12,7 +12,7 @@ export function createWrapperService(): WrapperService {
     return new WrapperService(
         new DDragonPatchService(),
         new JsonVersionStateService(),
-        [new ChampionService(), new ItemService()],
+        [new ChampionService(logger), new ItemService()],
         new TopOfHourSchedulerService(),
         new LockService(),
         logger

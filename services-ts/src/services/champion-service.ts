@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { config } from "../config.js";
 import type { GenerationService } from "../contracts.js";
 import type { GenerationContext, GenerationResult } from "../types.js";
 import {
@@ -56,6 +57,7 @@ import type {
     ChampionDetailWithPassive,
     DDragonChampionFull
 } from "./champion/champion-types.js";
+import { ObservabilityService } from "./observability-service.js";
 
 function renameGenericLevelingAttributes(
     leveling: Array<Record<string, unknown>>,
@@ -210,8 +212,12 @@ async function fetchDDragonChampionFull(
 export class ChampionService implements GenerationService {
     readonly name = "ChampionService";
 
+    constructor(private readonly logger: ObservabilityService = new ObservabilityService()) { }
+
     async generate(context: GenerationContext): Promise<GenerationResult> {
         try {
+            this.logger.info(`[champions:${context.locale}] Starting generation for patch ${context.patchVersion}.`);
+
             const championsDir = path.join(context.outputDir, "champions");
             await fs.mkdir(championsDir, { recursive: true });
 
@@ -235,45 +241,63 @@ export class ChampionService implements GenerationService {
 
             const abilityMetadataResolver = await NativeAbilityMetadataResolver.create();
             const wikiCooldownResolver = await WikiCooldownResolver.create(
-                path.resolve(context.rootOutputDir, "__cache__", "wiki-cdr-overrides.json")
+                path.join(config.cacheDir, "wiki-cdr-overrides.json")
             );
 
             const champions = summary.filter(
                 (entry) => entry.id > 0 && entry.alias && entry.alias !== "None" && Boolean(ddragon.data[entry.alias])
             );
 
+            const totalChampions = champions.length;
+            this.logger.info(`[champions:${context.locale}] Found ${totalChampions} champions to process.`);
+
+            const progressStep = 20;
+            let detailsResolved = 0;
+
+            await fs.mkdir(config.cacheDir, { recursive: true });
+
             const details = await mapWithConcurrency<CDragonChampionSummary, ChampionDetailWithPassive>(champions, 12, async (entry) => {
-                const ddragonChampion = ddragon.data[entry.alias];
-                const resource = mapResource(ddragonChampion?.partype);
-                const maxRankBySlot = buildMaxRankBySlot(ddragonChampion?.spells);
+                try {
+                    const ddragonChampion = ddragon.data[entry.alias];
+                    const resource = mapResource(ddragonChampion?.partype);
+                    const maxRankBySlot = buildMaxRankBySlot(ddragonChampion?.spells);
 
-                const detail = await fetchJson<CDragonChampionDetail>(`${CDRAGON_BASE}/v1/champions/${entry.id}.json`);
-                const [passiveNumbers, formVariants] = await Promise.all([
-                    fetchPassiveAbilityNumbers(
-                        entry.alias,
-                        context.patchVersion,
-                        resource,
-                        detail.passive?.name
-                    ),
-                    fetchFormAbilityVariantLookup(
-                        entry.alias,
-                        context.patchVersion,
-                        mapAdaptiveType(detail.tacticalInfo?.damageType),
-                        resource,
-                        maxRankBySlot
-                    )
-                ]);
+                    const detail = await fetchJson<CDragonChampionDetail>(`${CDRAGON_BASE}/v1/champions/${entry.id}.json`);
+                    const [passiveNumbers, formVariants] = await Promise.all([
+                        fetchPassiveAbilityNumbers(
+                            entry.alias,
+                            context.patchVersion,
+                            resource,
+                            detail.passive?.name
+                        ),
+                        fetchFormAbilityVariantLookup(
+                            entry.alias,
+                            context.patchVersion,
+                            mapAdaptiveType(detail.tacticalInfo?.damageType),
+                            resource,
+                            maxRankBySlot
+                        )
+                    ]);
 
-                return {
-                    summary: entry,
-                    detail,
-                    passiveNumbers,
-                    formVariants
-                };
+                    return {
+                        summary: entry,
+                        detail,
+                        passiveNumbers,
+                        formVariants
+                    };
+                } finally {
+                    detailsResolved += 1;
+                    if (detailsResolved % progressStep === 0 || detailsResolved === totalChampions) {
+                        this.logger.info(
+                            `[champions:${context.locale}] Retrieved source data ${detailsResolved}/${totalChampions}.`
+                        );
+                    }
+                }
             });
 
             const championPayloads: Record<string, Record<string, unknown>> = {};
             const championIndex: Array<Record<string, unknown>> = [];
+            let payloadsWritten = 0;
 
             for (const item of details) {
                 const detail = item.detail;
@@ -549,6 +573,13 @@ export class ChampionService implements GenerationService {
 
                 const filePath = path.join(championsDir, `${key}.json`);
                 await fs.writeFile(filePath, JSON.stringify(payload, null, 2), "utf8");
+
+                payloadsWritten += 1;
+                if (payloadsWritten % progressStep === 0 || payloadsWritten === details.length) {
+                    this.logger.info(
+                        `[champions:${context.locale}] Wrote champion payloads ${payloadsWritten}/${details.length}.`
+                    );
+                }
             }
 
             const aggregatePath = path.join(context.outputDir, "champions.json");
@@ -568,7 +599,7 @@ export class ChampionService implements GenerationService {
             await wikiCooldownResolver.save();
 
             const unresolvedCooldownKeys = wikiCooldownResolver.getUnresolvedKeys();
-            const unresolvedReportPath = path.resolve(context.rootOutputDir, "__cache__", "wiki-cdr-unresolved.json");
+            const unresolvedReportPath = path.join(config.cacheDir, "wiki-cdr-unresolved.json");
             if (unresolvedCooldownKeys.length > 0) {
                 await fs.mkdir(path.dirname(unresolvedReportPath), { recursive: true });
                 await fs.writeFile(unresolvedReportPath, JSON.stringify({
@@ -588,6 +619,7 @@ export class ChampionService implements GenerationService {
             };
         } catch (error) {
             const msg = error instanceof Error ? error.message : String(error);
+            this.logger.error(`[champions:${context.locale}] Generation failed: ${msg}`);
             return {
                 service: this.name,
                 success: false,

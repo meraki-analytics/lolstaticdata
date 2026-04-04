@@ -54,6 +54,7 @@ export class WrapperService {
 
     private async cleanupLegacyRootArtifacts(): Promise<void> {
         const legacyPaths = [
+            path.join(config.outputDir, "__cache__"),
             path.join(config.outputDir, "champions"),
             path.join(config.outputDir, "champions.json"),
             path.join(config.outputDir, "champion-index.json"),

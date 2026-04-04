@@ -29,6 +29,9 @@ const outputLocales = resolveOutputLocales();
 
 export const config = {
     repoRoot,
+    cacheDir: process.env.CACHE_DIR
+        ? path.resolve(process.env.CACHE_DIR)
+        : path.join(repoRoot, "__cache__"),
     outputDir: process.env.OUTPUT_DIR
         ? path.resolve(process.env.OUTPUT_DIR)
         : path.join(repoRoot, "srv"),
