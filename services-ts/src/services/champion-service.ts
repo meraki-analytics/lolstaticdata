@@ -29,6 +29,12 @@ import {
     resolveCostUnit,
     splitAbilityVariantNames
 } from "./champion/champion-mapping.js";
+import {
+    fetchChampionFactionIndex,
+    fetchChampionMetadataIndex,
+    resolveChampionFaction,
+    resolveChampionMetadata
+} from "./champion/champion-meta.js";
 import { fetchPassiveAbilityNumbers } from "./champion/champion-passive.js";
 import {
     fetchWikiSkinDataIndex,
@@ -129,7 +135,11 @@ export class ChampionService implements GenerationService {
                 fetchJson<DDragonChampionFull>(`https://ddragon.leagueoflegends.com/cdn/${context.patchVersion}/data/en_US/championFull.json`)
             ]);
 
-            const wikiSkinDataIndex = await fetchWikiSkinDataIndex();
+            const [wikiSkinDataIndex, championMetadataIndex, championFactionIndex] = await Promise.all([
+                fetchWikiSkinDataIndex(),
+                fetchChampionMetadataIndex(),
+                fetchChampionFactionIndex()
+            ]);
 
             const wikiCooldownResolver = await WikiCooldownResolver.create(
                 path.resolve(context.outputDir, "..", "__cache__", "wiki-cdr-overrides.json")
@@ -326,6 +336,19 @@ export class ChampionService implements GenerationService {
                 const attackType = mapAttackType(detail.tacticalInfo?.attackType);
                 const roles = (detail.roles ?? item.summary.roles ?? []).map((role) => role.toUpperCase());
                 const icon = toPluginAssetUrl(detail.squarePortraitPath ?? item.summary.squarePortraitPath, context.patchVersion);
+                const championMetadata = resolveChampionMetadata(championMetadataIndex, [
+                    detail.name,
+                    key,
+                    item.summary.alias,
+                    item.summary.name
+                ]);
+                const faction = resolveChampionFaction(championFactionIndex, [
+                    key,
+                    detail.name,
+                    item.summary.alias,
+                    item.summary.name,
+                    detail.title
+                ]);
 
                 const payload: Record<string, unknown> = {
                     id: detail.id,
@@ -356,16 +379,16 @@ export class ChampionService implements GenerationService {
                         E: abilities.E,
                         R: abilities.R
                     },
-                    releaseDate: "",
-                    releasePatch: "",
-                    patchLastChanged: context.patchVersion,
+                    releaseDate: championMetadata?.releaseDate ?? "",
+                    releasePatch: championMetadata?.releasePatch ?? "",
+                    patchLastChanged: championMetadata?.patchLastChanged ?? context.patchVersion,
                     price: {
-                        blueEssence: 0,
-                        rp: 0,
+                        blueEssence: championMetadata?.blueEssence ?? 0,
+                        rp: championMetadata?.rp ?? 0,
                         saleRp: 0
                     },
                     lore: detail.shortBio ?? "",
-                    faction: "",
+                    faction,
                     skins
                 };
 
