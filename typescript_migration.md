@@ -54,6 +54,9 @@ Define explicit interfaces so each service is replaceable without affecting othe
 
 ## Migration Plan
 
+Phase 0 baseline artifact:
+- `phase0_baseline.md` (locked data/runtime baseline for implementation)
+
 1. Phase 0 - Lock Baselines
 - Freeze data contract baselines from current outputs (champions/items).
 - Freeze runtime contract baselines from current update behavior:
