@@ -1,22 +1,11 @@
 # League of Legends Static Data
 
-This repository provides code to generate accurate champion and item data. First, a big thanks goes out to the people who work hard to maintain the League of Legends Wiki. We pull champion ability information from them because it is the only accurate source of champion data.
-
-If you use this data, please give a shoutout to the League of Legends Wiki.
+This repository provides code to generate accurate champion and item data. 
 
 **Features:**
 - Accurate champion and item data from League of Legends Wiki
 - Automatic patch version detection and updates
 - Bun wrapper runtime with internal hourly scheduling
-
-## Goals of the Project
-Until now, accurate champion data that developers can use to create apps has not been reliably available. Our goal is to provide high quality champion and item data so that you can create awesome applications.
-
-
-In this project, we aim to strike a balance between data that is accurate and simple enough to be understandable and parsable. Having accurate data for champion abilities in particular will open up a new use-case for League of Legends apps by allowing ability damages to be calculated accurately. For example, this data may allow for quick and automated calculations of a champion's power from one patch to another (you'll need to keep track of the changes). This has never before been possible due to the inaccuracy of the available data and, therefore, the manual work required to update that data each patch.
-Data other than that for champions and items should be covered by the data that Riot provides, or by the CDragon project.
-
-Note that it is impossible to represent the enormous complexity of League of Legends data in a simple JSON format, so special cases exist that need to be handled on a case-by-case basis. This is left up to you, as the developer, to create the complex interactions that are needed by your app.
 
 ## Running the Code
 
