@@ -1,3 +1,5 @@
+import fs from "node:fs/promises";
+import path from "node:path";
 import { config } from "../config.js";
 import type { GenerationService, PatchService, SchedulerService, VersionStateService } from "../contracts.js";
 import type { TriggerSource } from "../types.js";
@@ -50,29 +52,51 @@ export class WrapperService {
         });
     }
 
+    private async cleanupLegacyRootArtifacts(): Promise<void> {
+        const legacyPaths = [
+            path.join(config.outputDir, "champions"),
+            path.join(config.outputDir, "champions.json"),
+            path.join(config.outputDir, "champion-index.json"),
+            path.join(config.outputDir, "items"),
+            path.join(config.outputDir, "items.json")
+        ];
+
+        await Promise.all(
+            legacyPaths.map((legacyPath) => fs.rm(legacyPath, { recursive: true, force: true }))
+        );
+    }
+
     private async generateAndCommit(latestPatch: string, source: TriggerSource): Promise<void> {
-        const context = {
-            patchVersion: latestPatch,
-            source,
-            outputDir: config.outputDir
-        };
+        await this.cleanupLegacyRootArtifacts();
 
-        const generationResults = await Promise.all(this.generationServices.map(async (service) => {
-            this.logger.info(`Starting generation for ${service.name}...`);
-            return await service.generate(context);
-        }));
+        for (const locale of config.outputLocales) {
+            const context = {
+                patchVersion: latestPatch,
+                source,
+                rootOutputDir: config.outputDir,
+                outputDir: path.join(config.outputDir, latestPatch, locale),
+                locale
+            };
 
-        generationResults.forEach(result => {
-            if (result.success) {
-                this.logger.info(`Generation successful for ${result.service}.`);
+            this.logger.info(`Starting generation for locale ${locale} at ${context.outputDir}.`);
+
+            const generationResults = await Promise.all(this.generationServices.map(async (service) => {
+                this.logger.info(`Starting generation for ${service.name} (${locale})...`);
+                return await service.generate(context);
+            }));
+
+            generationResults.forEach(result => {
+                if (result.success) {
+                    this.logger.info(`Generation successful for ${result.service} (${locale}).`);
+                }
+            });
+
+            if (generationResults.some(result => !result.success)) {
+                this.logger.error(
+                    `Generation failed for locale ${locale}. ${generationResults.filter(r => !r.success).map(r => `${r.service}: ${r.details ?? "unknown"}`).join("; ")}. Version file not updated.`
+                );
+                return;
             }
-        });
-
-        if (generationResults.some(result => !result.success)) {
-            this.logger.error(
-                `Generation failed. ${generationResults.filter(r => !r.success).map(r => `${r.service}: ${r.details ?? "unknown"}`).join("; ")}. Version file not updated.`
-            );
-            return;
         }
 
         const saved = await this.versionStateService.save(latestPatch);

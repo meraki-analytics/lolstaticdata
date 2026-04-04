@@ -90,12 +90,27 @@ export interface PassiveAbilityNumbers {
 }
 
 export interface DDragonChampion {
+    name?: string;
+    title?: string;
+    blurb?: string;
+    lore?: string;
     partype?: string;
     stats?: Record<string, number>;
+    passive?: {
+        name?: string;
+        description?: string;
+    };
     spells?: Array<{
         id?: string;
+        name?: string;
+        description?: string;
+        tooltip?: string;
         maxrank?: number;
         costType?: string;
+    }>;
+    skins?: Array<{
+        num?: number;
+        name?: string;
     }>;
 }
 

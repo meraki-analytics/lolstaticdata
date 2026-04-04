@@ -119,6 +119,23 @@ function resolveAffectedByCdr(
     return true;
 }
 
+async function fetchDDragonChampionFull(
+    patchVersion: string,
+    locale: string
+): Promise<DDragonChampionFull> {
+    const preferredLocale = locale || "en_US";
+    const preferredUrl = `https://ddragon.leagueoflegends.com/cdn/${patchVersion}/data/${preferredLocale}/championFull.json`;
+    try {
+        return await fetchJson<DDragonChampionFull>(preferredUrl);
+    } catch (error) {
+        if (preferredLocale === "en_US") {
+            throw error;
+        }
+        const fallbackUrl = `https://ddragon.leagueoflegends.com/cdn/${patchVersion}/data/en_US/championFull.json`;
+        return await fetchJson<DDragonChampionFull>(fallbackUrl);
+    }
+}
+
 export class ChampionService implements GenerationService {
     readonly name = "ChampionService";
 
@@ -136,7 +153,7 @@ export class ChampionService implements GenerationService {
 
             const [summary, ddragon] = await Promise.all([
                 fetchJson<CDragonChampionSummary[]>(CDRAGON_CHAMPION_SUMMARY_URL),
-                fetchJson<DDragonChampionFull>(`https://ddragon.leagueoflegends.com/cdn/${context.patchVersion}/data/en_US/championFull.json`)
+                fetchDDragonChampionFull(context.patchVersion, context.locale)
             ]);
 
             const [wikiSkinDataIndex, championMetadataIndex, championFactionIndex] = await Promise.all([
@@ -147,7 +164,7 @@ export class ChampionService implements GenerationService {
 
             const abilityMetadataResolver = await NativeAbilityMetadataResolver.create();
             const wikiCooldownResolver = await WikiCooldownResolver.create(
-                path.resolve(context.outputDir, "..", "__cache__", "wiki-cdr-overrides.json")
+                path.resolve(context.rootOutputDir, "__cache__", "wiki-cdr-overrides.json")
             );
 
             const champions = summary.filter(
@@ -191,6 +208,12 @@ export class ChampionService implements GenerationService {
                 const detail = item.detail;
                 const key = detail.alias || item.summary.alias;
                 const ddragonChampion = ddragon.data[key];
+                const localizedChampionName = ddragonChampion?.name?.trim() || detail.name;
+                const localizedChampionTitle = ddragonChampion?.title?.trim() || detail.title;
+                const localizedLore = (ddragonChampion?.lore ?? ddragonChampion?.blurb ?? detail.shortBio ?? "").trim();
+                const localizedPassiveName = ddragonChampion?.passive?.name?.trim() || detail.passive?.name || "Passive";
+                const localizedPassiveDescription =
+                    (ddragonChampion?.passive?.description ?? detail.passive?.description ?? "").trim();
 
                 const resource = mapResource(ddragonChampion?.partype);
                 const adaptiveType = mapAdaptiveType(detail.tacticalInfo?.damageType);
@@ -219,8 +242,8 @@ export class ChampionService implements GenerationService {
                     detail.passive?.name ?? "Passive"
                 );
                 const passiveAbility = buildAbility({
-                    name: detail.passive?.name ?? "Passive",
-                    description: detail.passive?.description ?? "",
+                    name: localizedPassiveName,
+                    description: localizedPassiveDescription,
                     iconUrl: resolveAbilityIconUrl(key, "P", detail.passive?.abilityIconPath, context.patchVersion),
                     resource,
                     adaptiveType,
@@ -240,9 +263,25 @@ export class ChampionService implements GenerationService {
                     R: []
                 };
 
+                const ddragonSkinNamesById = new Map<number, string>();
+                for (const ddragonSkin of ddragonChampion?.skins ?? []) {
+                    const id = Number(ddragonSkin.num);
+                    const name = ddragonSkin.name?.trim();
+                    if (Number.isInteger(id) && id >= 0 && name) {
+                        ddragonSkinNamesById.set(id, name);
+                    }
+                }
+
                 spells.forEach((spell, index) => {
+                    const ddragonSpell = ddragonChampion?.spells?.[index];
                     const slot = resolveAbilitySlot(spell.spellKey, index);
-                    const variantNames = splitAbilityVariantNames(spell.name, slot);
+                    const cdragonVariantNames = splitAbilityVariantNames(spell.name, slot);
+                    const localizedSpellName = ddragonSpell?.name?.trim();
+                    const variantNames = localizedSpellName
+                        ? (cdragonVariantNames.length > 1
+                            ? [localizedSpellName, ...cdragonVariantNames.slice(1)]
+                            : splitAbilityVariantNames(localizedSpellName, slot))
+                        : cdragonVariantNames;
                     const formVariantOverrides = resolveFormVariantOverrides(
                         spell.abilityIconPath,
                         slot,
@@ -252,7 +291,8 @@ export class ChampionService implements GenerationService {
                     const primaryOverride = variantNames.length === 1
                         ? resolvePrimaryAbilityOverride(spell.abilityIconPath, slot, item.formVariants)
                         : undefined;
-                    const description = spell.description ?? spell.dynamicDescription ?? "";
+                    const description =
+                        (ddragonSpell?.description ?? ddragonSpell?.tooltip ?? spell.description ?? spell.dynamicDescription ?? "").trim();
                     const maxRank = maxRankBySlot[slot];
                     const cooldown = normalizeArray(spell.cooldown).length > 0
                         ? clampValuesToMaxRank(normalizeArray(spell.cooldown), maxRank)
@@ -321,13 +361,14 @@ export class ChampionService implements GenerationService {
 
                 const wikiSkinMap = resolveWikiSkinMap(wikiSkinDataIndex, [detail.name, key, item.summary.alias]);
                 const skins = (detail.skins ?? []).map((skin) => {
+                    const localizedSkinName = ddragonSkinNamesById.get(skin.id) ?? skin.name;
                     const wikiSkin = wikiSkinMap[skin.id];
                     return {
-                        name: skin.name,
+                        name: localizedSkinName,
                         id: skin.id,
                         isBase: Boolean(skin.isBase),
                         availability: wikiSkin?.availability ?? "AVAILABLE",
-                        formatName: wikiSkin?.formatname ?? skin.name,
+                        formatName: wikiSkin?.formatname ?? localizedSkinName,
                         lootEligible: typeof wikiSkin?.looteligible === "boolean" ? wikiSkin.looteligible : true,
                         cost: skinCostToString(wikiSkin?.cost),
                         sale: 0,
@@ -372,9 +413,9 @@ export class ChampionService implements GenerationService {
                 const payload: Record<string, unknown> = {
                     id: detail.id,
                     key,
-                    name: detail.name,
-                    title: detail.title,
-                    fullName: `${detail.name}, ${detail.title}`,
+                    name: localizedChampionName,
+                    title: localizedChampionTitle,
+                    fullName: `${localizedChampionName}, ${localizedChampionTitle}`,
                     icon,
                     resource,
                     attackType,
@@ -406,7 +447,7 @@ export class ChampionService implements GenerationService {
                         rp: championMetadata?.rp ?? 0,
                         saleRp: 0
                     },
-                    lore: detail.shortBio ?? "",
+                    lore: localizedLore,
                     faction,
                     skins
                 };
@@ -415,7 +456,7 @@ export class ChampionService implements GenerationService {
                 championIndex.push({
                     id: detail.id,
                     key,
-                    name: detail.name || item.summary.name || key,
+                    name: localizedChampionName || item.summary.name || key,
                     slug: key.toLowerCase(),
                     iconUrl: icon,
                     attackType,
@@ -433,6 +474,7 @@ export class ChampionService implements GenerationService {
             const indexPath = path.join(context.outputDir, "champion-index.json");
             await fs.writeFile(indexPath, JSON.stringify({
                 version: context.patchVersion,
+                locale: context.locale,
                 generatedAt: new Date().toISOString(),
                 totalChampions: championIndex.length,
                 champions: championIndex
@@ -442,7 +484,7 @@ export class ChampionService implements GenerationService {
             await wikiCooldownResolver.save();
 
             const unresolvedCooldownKeys = wikiCooldownResolver.getUnresolvedKeys();
-            const unresolvedReportPath = path.resolve(context.outputDir, "..", "__cache__", "wiki-cdr-unresolved.json");
+            const unresolvedReportPath = path.resolve(context.rootOutputDir, "__cache__", "wiki-cdr-unresolved.json");
             if (unresolvedCooldownKeys.length > 0) {
                 await fs.mkdir(path.dirname(unresolvedReportPath), { recursive: true });
                 await fs.writeFile(unresolvedReportPath, JSON.stringify({

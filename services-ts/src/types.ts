@@ -12,6 +12,8 @@ export interface GenerationContext {
     patchVersion: PatchVersion;
     source: TriggerSource;
     outputDir: string;
+    rootOutputDir: string;
+    locale: string;
 }
 
 export interface GenerationResult {
