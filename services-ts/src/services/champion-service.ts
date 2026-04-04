@@ -30,6 +30,13 @@ import {
     splitAbilityVariantNames
 } from "./champion/champion-mapping.js";
 import { fetchPassiveAbilityNumbers } from "./champion/champion-passive.js";
+import {
+    fetchWikiSkinDataIndex,
+    mapSkinChromas,
+    normalizeSkinReleaseDate,
+    resolveWikiSkinMap,
+    skinCostToString
+} from "./champion/champion-skins.js";
 import type {
     AbilityGroups,
     AbilitySlot,
@@ -121,6 +128,8 @@ export class ChampionService implements GenerationService {
                 fetchJson<CDragonChampionSummary[]>(CDRAGON_CHAMPION_SUMMARY_URL),
                 fetchJson<DDragonChampionFull>(`https://ddragon.leagueoflegends.com/cdn/${context.patchVersion}/data/en_US/championFull.json`)
             ]);
+
+            const wikiSkinDataIndex = await fetchWikiSkinDataIndex();
 
             const wikiCooldownResolver = await WikiCooldownResolver.create(
                 path.resolve(context.outputDir, "..", "__cache__", "wiki-cdr-overrides.json")
@@ -281,34 +290,38 @@ export class ChampionService implements GenerationService {
                     });
                 });
 
-                const skins = (detail.skins ?? []).map((skin) => ({
-                    name: skin.name,
-                    id: skin.id,
-                    isBase: Boolean(skin.isBase),
-                    availability: "AVAILABLE",
-                    formatName: skin.name,
-                    lootEligible: true,
-                    cost: "",
-                    sale: 0,
-                    distribution: "",
-                    rarity: skin.skinClassification ?? "",
-                    chromas: [],
-                    lore: "",
-                    release: 0,
-                    set: [],
-                    splashPath: toPluginAssetUrl(skin.splashPath, context.patchVersion),
-                    uncenteredSplashPath: toPluginAssetUrl(skin.uncenteredSplashPath, context.patchVersion),
-                    tilePath: toPluginAssetUrl(skin.tilePath, context.patchVersion),
-                    loadScreenPath: toPluginAssetUrl(skin.loadScreenPath, context.patchVersion),
-                    loadScreenVintagePath: "",
-                    newEffects: false,
-                    newAnimations: false,
-                    newRecall: false,
-                    newVoice: false,
-                    newQuotes: false,
-                    voiceActor: [],
-                    splashArtist: []
-                }));
+                const wikiSkinMap = resolveWikiSkinMap(wikiSkinDataIndex, [detail.name, key, item.summary.alias]);
+                const skins = (detail.skins ?? []).map((skin) => {
+                    const wikiSkin = wikiSkinMap[skin.id];
+                    return {
+                        name: skin.name,
+                        id: skin.id,
+                        isBase: Boolean(skin.isBase),
+                        availability: wikiSkin?.availability ?? "AVAILABLE",
+                        formatName: wikiSkin?.formatname ?? skin.name,
+                        lootEligible: typeof wikiSkin?.looteligible === "boolean" ? wikiSkin.looteligible : true,
+                        cost: skinCostToString(wikiSkin?.cost),
+                        sale: 0,
+                        distribution: wikiSkin?.distribution ?? "",
+                        rarity: (skin.rarity ?? skin.skinClassification ?? "").replace(/^k/, ""),
+                        chromas: mapSkinChromas(skin, wikiSkin, detail.id, context.patchVersion),
+                        lore: wikiSkin?.lore ?? "",
+                        release: normalizeSkinReleaseDate(wikiSkin?.release),
+                        set: wikiSkin?.set ?? [],
+                        splashPath: toPluginAssetUrl(skin.splashPath, context.patchVersion),
+                        uncenteredSplashPath: toPluginAssetUrl(skin.uncenteredSplashPath, context.patchVersion),
+                        tilePath: toPluginAssetUrl(skin.tilePath, context.patchVersion),
+                        loadScreenPath: toPluginAssetUrl(skin.loadScreenPath, context.patchVersion),
+                        loadScreenVintagePath: toPluginAssetUrl(skin.loadScreenVintagePath, context.patchVersion),
+                        newEffects: Boolean(wikiSkin?.neweffects),
+                        newAnimations: Boolean(wikiSkin?.newanimations),
+                        newRecall: Boolean(wikiSkin?.newrecall),
+                        newVoice: Boolean(wikiSkin?.newvoice),
+                        newQuotes: Boolean(wikiSkin?.newquotes),
+                        voiceActor: wikiSkin?.voiceactor ?? [],
+                        splashArtist: wikiSkin?.splashartist ?? []
+                    };
+                });
 
                 const attackType = mapAttackType(detail.tacticalInfo?.attackType);
                 const roles = (detail.roles ?? item.summary.roles ?? []).map((role) => role.toUpperCase());

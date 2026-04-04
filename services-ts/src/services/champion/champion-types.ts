@@ -21,6 +21,33 @@ export interface CDragonSpell {
     effectAmounts?: Record<string, number[]>;
 }
 
+export interface CDragonSkinChroma {
+    id: number;
+    name?: string;
+    contentId?: string;
+    skinClassification?: string;
+    chromaPath?: string;
+    tilePath?: string;
+    colors?: string[];
+    descriptions?: Array<{ description?: string; region?: string }>;
+    rarities?: Array<{ rarity?: number; region?: string }>;
+    description?: string;
+}
+
+export interface CDragonChampionSkin {
+    id: number;
+    name: string;
+    isBase: boolean;
+    skinClassification?: string;
+    splashPath?: string;
+    uncenteredSplashPath?: string;
+    tilePath?: string;
+    loadScreenPath?: string;
+    loadScreenVintagePath?: string;
+    rarity?: string;
+    chromas?: CDragonSkinChroma[];
+}
+
 export interface CDragonChampionDetail {
     id: number;
     name: string;
@@ -48,16 +75,7 @@ export interface CDragonChampionDetail {
         abilityIconPath?: string;
     };
     spells?: CDragonSpell[];
-    skins?: Array<{
-        id: number;
-        name: string;
-        isBase: boolean;
-        skinClassification?: string;
-        splashPath?: string;
-        uncenteredSplashPath?: string;
-        tilePath?: string;
-        loadScreenPath?: string;
-    }>;
+    skins?: CDragonChampionSkin[];
 }
 
 export interface PassiveAbilityNumbers {

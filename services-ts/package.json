@@ -12,7 +12,11 @@
         "build": "tsc -p tsconfig.json"
     },
     "devDependencies": {
+        "@types/luaparse": "^0.2.13",
         "@types/node": "^22.15.3",
         "typescript": "^5.8.3"
+    },
+    "dependencies": {
+        "luaparse": "^0.3.1"
     }
 }
