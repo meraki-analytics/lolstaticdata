@@ -6,7 +6,8 @@ import {
     localizeProjectile,
     localizeResource,
     localizeTargeting,
-    localizeUnit
+    localizeUnit,
+    parseResourceCode
 } from "./champion-i18n.js";
 import type {
     AbilitySlot,
@@ -202,41 +203,11 @@ export function mapAdaptiveType(damageType: string | undefined): string {
     return "MIXED_DAMAGE";
 }
 
-function normalizeResourceToken(value: string): string {
-    return value
-        .normalize("NFKD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .toLowerCase()
-        .trim();
-}
-
 export function mapResource(partype: string | undefined): string {
     if (!partype) {
         return "NONE";
     }
-    const value = normalizeResourceToken(partype);
-    if (value === "mana") {
-        return "MANA";
-    }
-    if (value === "energy" || value === "energie") {
-        return "ENERGY";
-    }
-    if (value === "rage" || value === "wut") {
-        return "RAGE";
-    }
-    if (value === "fury" || value === "raserei") {
-        return "FURY";
-    }
-    if (value === "none" || value === "manaless" || value === "keinekosten") {
-        return "NO_COST";
-    }
-    if (value === "health" || value === "leben") {
-        return "HEALTH";
-    }
-    if (value === "ferocity" || value === "wildheit") {
-        return "FEROCITY";
-    }
-    return "OTHER";
+    return parseResourceCode(partype) ?? "OTHER";
 }
 
 function normalizeUnitValue(values: number[], unit: string): string[] {

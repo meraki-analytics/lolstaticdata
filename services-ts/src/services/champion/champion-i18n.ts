@@ -177,6 +177,55 @@ const UNIT_ALIASES: Record<string, string> = {
     magicdamage: "MAGIC_DAMAGE"
 };
 
+const RESOURCE_ALIASES: Record<string, string> = {
+    nocost: "NO_COST",
+    manaless: "NO_COST",
+    abilityresourcename: "RESOURCE",
+    resource: "RESOURCE"
+};
+
+function normalizeResourceToken(value: string): string {
+    return value
+        .normalize("NFKD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "");
+}
+
+const RESOURCE_LOOKUP: Record<string, string> = (() => {
+    const lookup: Record<string, string> = { ...RESOURCE_ALIASES };
+
+    for (const localeTerms of Object.values(TERMS)) {
+        for (const [code, label] of Object.entries(localeTerms.resources)) {
+            const normalizedCode = normalizeResourceToken(code);
+            if (normalizedCode) {
+                lookup[normalizedCode] = code;
+            }
+
+            const normalizedLabel = normalizeResourceToken(label);
+            if (normalizedLabel) {
+                lookup[normalizedLabel] = code;
+            }
+        }
+    }
+
+    return lookup;
+})();
+
+const RESOURCE_TOKENS = Object.keys(RESOURCE_LOOKUP)
+    .filter((token) => token.length > 2)
+    .sort((a, b) => b.length - a.length);
+
+function canonicalResourceCode(code: string): string {
+    if (code === "NONE") {
+        return "NO_COST";
+    }
+    if (code === "RESOURCE") {
+        return "OTHER";
+    }
+    return code;
+}
+
 function normalizeLocale(locale: string): LocaleCode {
     const lower = locale.toLowerCase();
     if (lower.startsWith("de")) {
@@ -231,6 +280,31 @@ export function localizeResource(value: string, locale: string): string {
     const localeCode = normalizeLocale(locale);
     const key = value.trim().toUpperCase();
     return translate(TERMS[localeCode].resources, key);
+}
+
+export function parseResourceCode(value: string | undefined): string | undefined {
+    if (!value) {
+        return undefined;
+    }
+
+    const normalized = normalizeResourceToken(value);
+    if (!normalized) {
+        return undefined;
+    }
+
+    const exact = RESOURCE_LOOKUP[normalized];
+    if (exact) {
+        return canonicalResourceCode(exact);
+    }
+
+    for (const token of RESOURCE_TOKENS) {
+        if (!normalized.includes(token)) {
+            continue;
+        }
+        return canonicalResourceCode(RESOURCE_LOOKUP[token]);
+    }
+
+    return undefined;
 }
 
 export function localizeDamageType(value: string, locale: string): string {
