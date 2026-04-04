@@ -522,11 +522,11 @@ export class ChampionService implements GenerationService {
                 championIndex.push({
                     id: detail.id,
                     key,
+                    name: detail.name || item.summary.name || key,
                     slug: key.toLowerCase(),
                     iconUrl: payload.icon,
                     attackType: payload.attackType,
-                    roles: payload.roles,
-                    patchVersion: context.patchVersion
+                    roles: payload.roles
                 });
 
                 const filePath = path.join(championsDir, `${key}.json`);
