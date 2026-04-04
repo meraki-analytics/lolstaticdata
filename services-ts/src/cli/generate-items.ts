@@ -14,6 +14,8 @@ async function main(): Promise<void> {
     if (!result.success) {
         console.error(result.details ?? "Item generation failed");
         process.exit(1);
+    } else {
+        console.log("Item generation completed successfully.");
     }
 }
 
