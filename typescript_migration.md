@@ -1,132 +1,160 @@
-## Plan: Bun + TypeScript CDragon Rebuild with Auto-Update Runtime
+## Plan: Bun TypeScript Service-Oriented Migration
 
-Migrate from the current Python scraping pipeline to a Bun-run TypeScript CDragon-first pipeline while preserving the new operational behavior already added to the project: Dockerized long-running service, hourly patch checks, automatic full regeneration on new patch detection, and persisted version state.
+Keep the legacy Python implementation in the repository and add a new Bun TypeScript module in a separate folder. The TS module contains multiple small, independent services and one wrapper service that fully orchestrates startup generation, periodic update checks, patch comparison, full regeneration on patch changes, and version state commits.
 
-**Steps**
-1. Phase 0 - Lock Functional Baselines
-Freeze two baseline contracts before migration:
-- Data contract: current champions/items payload shapes and compatibility expectations.
-- Runtime contract: current update loop semantics from check_and_update/version_manager and Docker startup+cron behavior.
-Capture expected success/failure behavior (when version updates, when generation runs, and what happens on partial failures).
+## Architecture Direction
 
-2. Phase 1 - Bun + TypeScript Foundation
-Create a dedicated TypeScript package executed with Bun:
-- bun scripts for build, typecheck, test, run.
-- strict tsconfig and runtime schema validation.
-- CLI commands replacing Python modules:
-  - generate:champions
-  - generate:items (can initially delegate to legacy Python)
-  - check-and-update
-  - version:status
-Keep command UX aligned with existing operators so migration is operationally low-friction.
+Use one TS module (one package, one deployable) in a separate folder, for example `services-ts/`, with internal service boundaries rather than one large replacement script.
 
-3. Phase 1 - Runtime Operations Module (New First-Class Scope)
-Implement a dedicated operations layer in TypeScript for patch lifecycle automation:
-- Patch detector using DDragon versions endpoint.
-- Version state store compatible with existing srv/version.json fields (version, lastUpdate, timestamp).
-- Update orchestrator that triggers full regeneration when latest patch differs from stored version.
-- Commit protocol: only write new version.json after all required generators complete successfully.
-- Locking protocol: prevent overlapping runs (cron overlap/manual trigger/startup race).
+### Core service topology
 
-4. Phase 1 - Docker and Scheduler Migration
-Preserve current container UX while moving internals to Bun:
-- Maintain Docker service that writes data into shared volume path equivalent to current /app/srv behavior.
-- Preserve startup semantics: initial generation on first run, then scheduled checks.
-- Preserve hourly scheduling behavior (top-of-hour) either with in-container cron parity first, or a minimal Bun scheduler loop with equivalent cadence.
-- Keep docker-compose volume contract stable for downstream containers (named shared data volume).
-- Keep logging path/behavior predictable for operators currently tailing update logs.
+- WrapperService (control plane)
+  - Owns lifecycle: startup bootstrap, scheduled checks, full regeneration orchestration, version commit flow, and run locking.
+  - Exposes a future extension point for manual retrigger, but does not enable manual retrigger in the initial rollout.
+  - Delegates generation work to ChampionService and ItemService.
+  - Delegates patch/version state checks to PatchService and VersionStateService.
+- PatchService
+  - Reads latest patch from DDragon (primary) and optional fallback source.
+  - Normalizes and validates patch identifiers.
+- VersionStateService
+  - Reads/writes srv/version.json.
+  - Preserves compatibility fields: version, lastUpdate, timestamp.
+  - Only commits after successful full generation.
+- ChampionService
+  - CDragon ingestion, normalization, locale overlay (detail files), and champion export.
+  - Produces locale-independent champion-index.json.
+- ItemService
+  - Item generation pipeline implemented natively in TypeScript.
+- SchedulerService
+  - Provides top-of-hour trigger semantics (cron parity first).
+- LockService
+  - Prevents concurrent runs from startup and scheduled triggers.
+  - Supports a future manual-trigger source without changing lock semantics.
+- ExportService
+  - Atomic writes/promotions for patch outputs and latest alias.
+- ObservabilityService
+  - Structured logs, run metrics, and failure classification.
 
-5. Phase 2 - CDragon Ingestion for Champions (No Scraping)
-Replace champion wiki scraping with CDragon JSON ingestion:
-- champion metadata, stats, abilities, skins, assets from CDragon endpoints.
-- deterministic URL construction (remove fuzzy icon guessing).
-- retry/backoff, deterministic cache keys, and typed endpoint decoding.
-- use CDragon json/bin.json representations first; defer raw bin parsing.
+## Service Contracts
 
-6. Phase 2 - Optional Bin Adapter
-Add optional raw bin adapter only for champion edge mechanics not expressible from CDragon JSON exports. Keep adapter pluggable and champion-scoped to isolate complexity.
+Define explicit interfaces so each service is replaceable without affecting others.
 
-7. Phase 3 - Normalize to Current Champion Contract
-Map CDragon raw data to current consumer-facing champion schema semantics:
-- preserve existing stable field names where clients depend on them.
-- preserve ability grouping structure and stat object semantics.
-- convert exception logic into declarative rules rather than procedural branching.
+- GenerationService contract
+  - generate(context): Promise<Result>
+  - validate(context): Promise<ValidationResult>
+- UpdateCheck contract
+  - getLatestPatch(): Promise<PatchVersion>
+  - isUpdateRequired(current, latest): boolean
+- VersionState contract
+  - load(): Promise<VersionState | null>
+  - save(next): Promise<void>
+- Scheduler contract
+  - start(handler): void
+  - stop(): void
 
-8. Phase 3 - Localization Model
-Apply localization only to champion detail artifacts:
-- localized fields: champion text/name/title/lore/ability text.
-- locale-neutral fields: ids, keys, stats, mechanics, assets.
-Use deterministic fallback requested locale -> en_US -> explicit missing marker.
+## Migration Plan
 
-9. Phase 4 - Locale-Independent Summary Artifact
-Publish a single champion-index.json that is locale-independent and list-focused.
-Allowed fields: id/key/slug, icon URL, mechanical tags/roles, patch metadata.
-No locale-dependent display text in this file.
+1. Phase 0 - Lock Baselines
+- Freeze data contract baselines from current outputs (champions/items).
+- Freeze runtime contract baselines from current update behavior:
+  - startup full generation
+  - hourly checks
+  - regenerate both domains on new patch
+  - update version.json only on success
 
-10. Phase 4 - Export Layout and Patch Versioning
-Publish immutable patch directories and a latest alias:
-- patch-scoped localized champion details.
-- locale-independent champion index at patch root.
-- version.json reflects currently promoted patch after successful generation commit.
-Use atomic file promotion to avoid partial publish states.
+2. Phase 1 - Create TS module shell (Bun)
+- Create a separate folder for the new implementation (for example `services-ts/`).
+- Initialize one package with Bun scripts for run/typecheck/build.
+- Add strict tsconfig, linting, runtime schema validation.
+- Add command entrypoints:
+  - bun run wrapper:start
+  - bun run wrapper:check-once
+  - bun run generate:champions
+  - bun run generate:items
 
-11. Phase 5 - Python to TypeScript Migration Tracks (Expanded)
-Track A: Contract extraction and golden fixtures from current outputs.
-Track B: Model migration from Python dataclasses/enums to TS schemas/types.
-Track C: Behavior migration for generator CLI flags and defaults.
-Track D: Runtime migration for version manager + check-and-update orchestration.
-Track E: Container migration from python:3.12-slim entry flow to Bun-based image while preserving docker-compose contracts.
-Track F: Dual-run operation where scheduler can execute both pipelines and compare results (new pipeline shadow mode).
-Track G: Cutover switch where check-and-update triggers Bun pipeline as primary; Python kept as rollback path for one patch window.
-Track H: Decommission of legacy scraper modules and Python-only update scripts after rollback period.
+3. Phase 1 - Implement wrapper and runtime services first
+- Implement WrapperService, PatchService, VersionStateService, SchedulerService, and LockService.
+- Ensure WrapperService is the single orchestrator for update checks, generation delegation, and version.json commit sequencing.
+- Validate behavior manually in local runs against the Python output and runtime behavior.
 
-12. Phase 5 - Verification and Reliability Gates
-Add automated gates for both data and operations:
-- Data parity: champion key set, critical fields, ability slots, item/champion artifact existence.
-- Runtime parity: new patch detection behavior equals legacy for same version inputs.
-- Version state integrity: version.json only changes on successful full generation.
-- Concurrency safety: overlapping trigger attempts do not corrupt outputs.
-- Determinism: same patch and config produce byte-stable artifacts.
-- Container smoke tests: startup generation, hourly check run, manual retrigger command.
+4. Phase 2 - Migrate ChampionService to CDragon
+- Replace wiki scraping with CDragon JSON ingestion.
+- Keep locale model where only detailed champion files are localized.
+- Generate one locale-independent champion-index.json.
+- Keep deterministic cache, retries, and typed decoding.
 
-13. Phase 6 - Rollout and Observability
-Roll out in stages:
-- Stage 1: Bun check-and-update in dry-run mode.
-- Stage 2: Bun generation in shadow mode with diff reports.
-- Stage 3: Bun promoted to primary in container.
-- Stage 4: Legacy Python removal.
-Add metrics/logging for patch checks, generation duration, failure reasons, retrigger count, and last successful patch timestamp.
+5. Phase 2 - ItemService strategy
+- Implement ItemService in TypeScript with the same service contracts used by ChampionService.
+- Keep WrapperService orchestration unchanged while item internals are developed and hardened.
 
-**Relevant files**
-- lolstaticdata/Dockerfile - Current startup and cron behavior to preserve during migration.
-- lolstaticdata/docker-compose.yml - Shared volume and long-running container contract to keep stable.
-- lolstaticdata/check_updates.sh - Hourly scheduler entrypoint behavior reference.
-- lolstaticdata/lolstaticdata/check_and_update.py - Current patch-check and full-regeneration orchestration semantics.
-- lolstaticdata/lolstaticdata/version_manager.py - Current version.json lifecycle and update semantics.
-- lolstaticdata/lolstaticdata/champions/__main__.py - Current champion generation CLI behavior to mirror.
-- lolstaticdata/lolstaticdata/items/__main__.py - Current item generation path used by full retrigger flow.
-- lolstaticdata/lolstaticdata/champions/pull_champions_wiki.py - Legacy scraping module targeted for removal.
-- lolstaticdata/lolstaticdata/champions/pull_champions_dragons.py - Legacy fuzzy icon logic targeted for removal.
-- lolstaticdata/champions.json - Golden compatibility dataset for migration diffing.
+6. Phase 3 - Export and publish consistency
+- Implement ExportService atomic publishing for patch folders and latest alias.
+- Maintain current volume compatibility for docker-compose consumers.
 
-**Verification**
-1. Confirm Bun check-and-update returns same decisions as Python for same version.json and mocked latest patch values.
-2. Confirm no-update path leaves artifacts untouched and exits cleanly.
-3. Confirm new-patch path regenerates all required artifacts and only then updates version.json.
-4. Confirm scheduler-triggered and manual-triggered runs are lock-safe and non-overlapping.
-5. Confirm champion-index.json remains locale-independent across all locale generation runs.
-6. Confirm localized champion detail outputs vary only in translatable fields.
-7. Confirm docker-compose consumers can read unchanged volume paths after migration.
+7. Phase 4 - Container migration
+- Move Docker runtime from python image to bun image while preserving external behavior:
+  - same data volume layout
+  - same scheduler cadence
+  - wrapper-driven orchestration for startup and scheduled runs only (manual retrigger deferred)
+  - same version.json compatibility
 
-**Decisions**
-- Runtime and package manager: Bun.
-- Data extraction source: CDragon JSON first; optional bin adapter for proven gaps.
-- Summary artifact: one locale-independent champion-index.json.
-- Localization scope: champion detail artifacts only.
-- Operations scope now included in migration: Docker runtime, scheduler, version checks, auto-retrigger.
-- Items migration strategy: keep item generation in full retrigger path; can remain legacy in first cut while champions move first.
+8. Phase 5 - Local validation and cutover
+- Run exhaustive local validation manually (fixture comparisons and container smoke checks) before production promotion.
+- Promote TS WrapperService as primary after local gates pass and a final pre-production verification run is clean.
+- Use artifact snapshot rollback (previous generated patch artifacts) rather than maintaining a dual runtime.
 
-**Further Considerations**
-1. Scheduler implementation choice: keep in-container cron parity first or replace with Bun-native scheduler loop. Recommendation: keep cron parity first, then optionally simplify later.
-2. Trigger granularity: full regeneration on patch change vs component-level regeneration. Recommendation: keep full regeneration parity first to avoid semantic drift.
-3. Version source hardening: DDragon only vs DDragon plus secondary fallback source. Recommendation: DDragon primary with optional fallback for resilience.
+9. Phase 6
+- Keep service interfaces stable so future data-source changes are isolated.
+
+## Data and Localization Rules
+
+- Champion detail files: localized fields (name/title/lore/ability text) only.
+- Mechanical fields (stats, ids, keys, tags, assets): locale-neutral.
+- champion-index.json: locale-independent and list-focused.
+- Fallback policy: requested locale -> en_US -> explicit missing marker for required text.
+
+## Verification Gates (Manual)
+
+1. Runtime parity gate
+- TS WrapperService makes same update/no-update decisions as current Python flow for identical version inputs.
+
+2. Version integrity gate
+- version.json changes only after successful generation of all required services.
+
+3. Concurrency gate
+- overlapping triggers do not run concurrently and do not corrupt outputs.
+
+4. Data parity gate
+- champion key coverage, required field parity, ability slot coverage, and item/champion artifact existence.
+
+5. Summary gate
+- champion-index.json remains identical regardless of locale generation sequence.
+
+6. Container gate
+- startup run, hourly schedule, and volume access all work with the TS wrapper runtime.
+- architecture keeps a future manual-trigger hook without enabling it now.
+
+## Operational Decisions
+
+- One TS module, many internal services.
+- TS module is built in a separate folder from the Python codebase (for example `services-ts/`).
+- WrapperService is the only component aware of cross-domain orchestration.
+- WrapperService is the only component allowed to orchestrate checks, generation, and version commit order.
+- Services remain independently verifiable and replaceable.
+- Keep cron parity first; optional switch to Bun-native scheduler later.
+- Keep full regeneration on patch changes first to avoid behavioral drift.
+- No automated tests are required for this migration phase; validation is done through repeated local execution and output comparison.
+- Manual retriggers are intentionally omitted in the initial rollout but reserved as a future extension.
+
+## Relevant current files (reference)
+
+- lolstaticdata/Dockerfile
+- lolstaticdata/docker-compose.yml
+- lolstaticdata/check_updates.sh
+- lolstaticdata/lolstaticdata/check_and_update.py
+- lolstaticdata/lolstaticdata/version_manager.py
+- lolstaticdata/lolstaticdata/champions/__main__.py
+- lolstaticdata/lolstaticdata/items/__main__.py
+- lolstaticdata/lolstaticdata/champions/pull_champions_wiki.py
+- lolstaticdata/lolstaticdata/champions/pull_champions_dragons.py
+- lolstaticdata/champions.json
