@@ -16,11 +16,107 @@ export function normalizeArray(value: unknown): number[] {
     return [];
 }
 
+export function clampValuesToMaxRank(values: number[], maxRank: number | undefined): number[] {
+    if (!Number.isInteger(maxRank) || !maxRank || maxRank <= 0) {
+        return values;
+    }
+    return values.slice(0, maxRank);
+}
+
 function hasNonZeroValue(values: number[]): boolean {
     return values.some((v) => v !== 0);
 }
 
-export function buildLeveling(effectAmounts: Record<string, number[]> | undefined): Array<Record<string, unknown>> {
+function normalizeLevelingUnit(values: number[], unit: string): string[] {
+    if (values.length === 0) {
+        return [];
+    }
+    return values.map(() => unit);
+}
+
+function inferDamageUnit(adaptiveType: string): string {
+    if (adaptiveType === "PHYSICAL_DAMAGE") {
+        return "physical damage";
+    }
+    if (adaptiveType === "MAGIC_DAMAGE") {
+        return "magic damage";
+    }
+    return "damage";
+}
+
+function isLikelyPercentSeries(values: number[]): boolean {
+    if (values.length === 0) {
+        return false;
+    }
+    const bounded = values.every((value) => Math.abs(value) <= 1.5);
+    if (!bounded) {
+        return false;
+    }
+    return values.some((value) => !Number.isInteger(value));
+}
+
+export function inferLevelingUnit(
+    attribute: string,
+    adaptiveType: string,
+    resource: string,
+    values: number[] = []
+): string {
+    const key = attribute.toLowerCase();
+
+    if (/(refund|reduction)/.test(key)) {
+        return "%";
+    }
+    if (/(percent|pct)/.test(key)) {
+        return "%";
+    }
+    if (/(duration|cooldown|lifetime|time|delay)/.test(key)) {
+        return "seconds";
+    }
+    if (/(^|[^a-z])cd([^a-z]|$)|cd$/.test(key)) {
+        return "seconds";
+    }
+    if (/(damage|dmg)/.test(key)) {
+        return inferDamageUnit(adaptiveType);
+    }
+    if (/cap/.test(key)) {
+        return inferDamageUnit(adaptiveType);
+    }
+    if (/(range|radius|distance|width|length|aoe|area|collision|size)/.test(key)) {
+        return "units";
+    }
+    if (/(ratio|mult|modifier|mod|scale|chance|crit|slow|haste|attackspeed)/.test(key)) {
+        return "%";
+    }
+    if (/(heal|regen|health|hp)/.test(key)) {
+        return "health";
+    }
+    if (/mana/.test(key)) {
+        return "mana";
+    }
+    if (/energy/.test(key)) {
+        return "energy";
+    }
+    if (/(rage|fury|ferocity)/.test(key)) {
+        return resource === "RAGE" || resource === "FURY" || resource === "FEROCITY"
+            ? resource.toLowerCase()
+            : "resource";
+    }
+    if (/(stack|count)/.test(key)) {
+        return "stacks";
+    }
+    if (/(speed|\bas\b)/.test(key) || isLikelyPercentSeries(values)) {
+        return "%";
+    }
+
+    return "";
+}
+
+export function buildLeveling(
+    effectAmounts: Record<string, number[]> | undefined,
+    adaptiveType: string,
+    resource: string,
+    maxRank?: number
+): Array<Record<string, unknown>> {
     if (!effectAmounts) {
         return [];
     }
@@ -28,7 +124,7 @@ export function buildLeveling(effectAmounts: Record<string, number[]> | undefine
     return Object.entries(effectAmounts)
         .map(([attribute, rawValues]) => ({
             attribute,
-            values: normalizeArray(rawValues)
+            values: clampValuesToMaxRank(normalizeArray(rawValues), maxRank)
         }))
         .filter((entry) => entry.values.length > 0 && hasNonZeroValue(entry.values))
         .slice(0, 12)
@@ -37,7 +133,10 @@ export function buildLeveling(effectAmounts: Record<string, number[]> | undefine
             modifiers: [
                 {
                     values: entry.values,
-                    units: [""]
+                    units: normalizeLevelingUnit(
+                        entry.values,
+                        inferLevelingUnit(entry.attribute, adaptiveType, resource, entry.values)
+                    )
                 }
             ]
         }));

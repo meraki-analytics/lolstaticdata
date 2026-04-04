@@ -8,12 +8,17 @@ import {
     resolveAbilityIconUrl,
     toPluginAssetUrl
 } from "./champion/champion-assets.js";
-import { fetchFormAbilityVariantLookup, resolveFormVariantOverrides } from "./champion/champion-forms.js";
+import {
+    fetchFormAbilityVariantLookup,
+    resolveFormVariantOverrides,
+    resolvePrimaryAbilityOverride
+} from "./champion/champion-forms.js";
 import { fetchJson, mapWithConcurrency } from "./champion/champion-http.js";
 import {
     buildAbility,
     buildLeveling,
     buildStats,
+    clampValuesToMaxRank,
     fallbackCostUnitFromResource,
     mapAdaptiveType,
     mapAttackType,
@@ -32,6 +37,46 @@ import type {
     ChampionDetailWithPassive,
     DDragonChampionFull
 } from "./champion/champion-types.js";
+
+function renameGenericLevelingAttributes(
+    leveling: Array<Record<string, unknown>>,
+    calculationNames: string[]
+): Array<Record<string, unknown>> {
+    if (leveling.length === 0 || calculationNames.length === 0) {
+        return leveling;
+    }
+
+    let nameIndex = 0;
+    return leveling.map((entry) => {
+        const attribute = String(entry.attribute ?? "");
+        if (!/^effect\d+amount$/i.test(attribute)) {
+            return entry;
+        }
+        const nextName = calculationNames[nameIndex];
+        nameIndex += 1;
+        if (!nextName) {
+            return entry;
+        }
+        return {
+            ...entry,
+            attribute: nextName
+        };
+    });
+}
+
+function buildMaxRankBySlot(
+    spells: Array<{ id?: string; maxrank?: number }> | undefined
+): Partial<Record<AbilitySlot, number>> {
+    const maxRankBySlot: Partial<Record<AbilitySlot, number>> = {};
+    (spells ?? []).forEach((spell, index) => {
+        const slot = resolveAbilitySlot(spell.id, index);
+        const maxRank = Number(spell.maxrank);
+        if (Number.isInteger(maxRank) && maxRank > 0) {
+            maxRankBySlot[slot] = maxRank;
+        }
+    });
+    return maxRankBySlot;
+}
 
 export class ChampionService implements GenerationService {
     readonly name = "ChampionService";
@@ -60,6 +105,7 @@ export class ChampionService implements GenerationService {
             const details = await mapWithConcurrency<CDragonChampionSummary, ChampionDetailWithPassive>(champions, 12, async (entry) => {
                 const ddragonChampion = ddragon.data[entry.alias];
                 const resource = mapResource(ddragonChampion?.partype);
+                const maxRankBySlot = buildMaxRankBySlot(ddragonChampion?.spells);
 
                 const detail = await fetchJson<CDragonChampionDetail>(`${CDRAGON_BASE}/v1/champions/${entry.id}.json`);
                 const [passiveNumbers, formVariants] = await Promise.all([
@@ -69,7 +115,13 @@ export class ChampionService implements GenerationService {
                         resource,
                         detail.passive?.name
                     ),
-                    fetchFormAbilityVariantLookup(entry.alias, context.patchVersion)
+                    fetchFormAbilityVariantLookup(
+                        entry.alias,
+                        context.patchVersion,
+                        mapAdaptiveType(detail.tacticalInfo?.damageType),
+                        resource,
+                        maxRankBySlot
+                    )
                 ]);
 
                 return {
@@ -91,6 +143,7 @@ export class ChampionService implements GenerationService {
                 const resource = mapResource(ddragonChampion?.partype);
                 const adaptiveType = mapAdaptiveType(detail.tacticalInfo?.damageType);
                 const ddragonCostTypeBySlot: Partial<Record<AbilitySlot, string>> = {};
+                const maxRankBySlot = buildMaxRankBySlot(ddragonChampion?.spells);
                 (ddragonChampion?.spells ?? []).forEach((spell, index) => {
                     const slot = resolveAbilitySlot(spell.id, index);
                     ddragonCostTypeBySlot[slot] = spell.costType ?? "";
@@ -128,36 +181,56 @@ export class ChampionService implements GenerationService {
                         variantNames.length,
                         item.formVariants
                     );
+                    const primaryOverride = variantNames.length === 1
+                        ? resolvePrimaryAbilityOverride(spell.abilityIconPath, slot, item.formVariants)
+                        : undefined;
                     const description = spell.description ?? spell.dynamicDescription ?? "";
+                    const maxRank = maxRankBySlot[slot];
                     const cooldown = normalizeArray(spell.cooldown).length > 0
-                        ? normalizeArray(spell.cooldown)
-                        : normalizeArray(spell.cooldownCoefficients);
+                        ? clampValuesToMaxRank(normalizeArray(spell.cooldown), maxRank)
+                        : clampValuesToMaxRank(normalizeArray(spell.cooldownCoefficients), maxRank);
                     const cost = normalizeArray(spell.cost).length > 0
-                        ? normalizeArray(spell.cost)
-                        : normalizeArray(spell.costCoefficients);
+                        ? clampValuesToMaxRank(normalizeArray(spell.cost), maxRank)
+                        : clampValuesToMaxRank(normalizeArray(spell.costCoefficients), maxRank);
                     const costTypeRaw = ddragonCostTypeBySlot[slot] ?? "";
                     const costUnit = resolveCostUnit(costTypeRaw, resource);
                     const baseCostUnit = cost.length > 0
                         ? (costUnit || fallbackCostUnitFromResource(resource))
                         : "";
-                    const range = normalizeArray(spell.range);
-                    const leveling = buildLeveling(spell.effectAmounts);
+                    const range = clampValuesToMaxRank(normalizeArray(spell.range), maxRank);
+                    const leveling = buildLeveling(spell.effectAmounts, adaptiveType, resource, maxRank);
+                    const hasGenericLeveling = leveling.length > 0 && leveling.every((entry) => {
+                        const attribute = String(entry.attribute ?? "");
+                        return /^effect\d+amount$/i.test(attribute);
+                    });
+                    const renamedGenericLeveling = hasGenericLeveling && primaryOverride
+                        ? renameGenericLevelingAttributes(leveling, primaryOverride.calculationNames)
+                        : leveling;
 
                     variantNames.forEach((variantName, variantIndex) => {
                         const override = formVariantOverrides[variantIndex];
+                        const fallbackOverride = override ?? primaryOverride;
                         const variantIconPath = override?.iconPath ?? spell.abilityIconPath;
-                        const variantCooldown = override?.hasCooldown ? override.cooldown : cooldown;
-                        const variantCost = override ? (override.hasCost ? override.cost : []) : cost;
+                        const variantCooldown = override
+                            ? (override.hasCooldown ? override.cooldown : cooldown)
+                            : (fallbackOverride?.hasCooldown && cooldown.length === 0 ? fallbackOverride.cooldown : cooldown);
+                        const variantCost = override
+                            ? (override.hasCost ? override.cost : [])
+                            : (fallbackOverride?.hasCost && cost.length === 0 ? fallbackOverride.cost : cost);
                         const variantBaseCostUnit = variantCost.length > 0
                             ? (baseCostUnit || fallbackCostUnitFromResource(resource))
                             : "";
                         const variantCostUnit = override
                             ? (override.hasCost && override.cost.length > 0 ? variantBaseCostUnit : "")
                             : variantBaseCostUnit;
-                        const variantRange = override?.hasRange ? override.range : range;
+                        const variantRange = override
+                            ? (override.hasRange ? override.range : range)
+                            : (fallbackOverride?.hasRange && range.length === 0 ? fallbackOverride.range : range);
                         const variantLeveling = override
                             ? (override.hasLeveling ? override.leveling : [])
-                            : leveling;
+                            : (fallbackOverride?.hasLeveling && (leveling.length === 0 || hasGenericLeveling)
+                                ? fallbackOverride.leveling
+                                : renamedGenericLeveling);
 
                         abilities[slot].push(buildAbility({
                             name: variantName,

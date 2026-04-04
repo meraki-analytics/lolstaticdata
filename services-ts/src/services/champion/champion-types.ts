@@ -71,6 +71,7 @@ export interface DDragonChampion {
     stats?: Record<string, number>;
     spells?: Array<{
         id?: string;
+        maxrank?: number;
         costType?: string;
     }>;
 }
@@ -93,6 +94,7 @@ export interface FormAbilityVariantOverride {
     iconPath: string;
     iconKey: string;
     score: number;
+    calculationNames: string[];
     hasCooldown: boolean;
     cooldown: number[];
     hasCost: boolean;

@@ -1,5 +1,5 @@
 import { RAW_CDRAGON_BASE, toPatchChannel } from "./champion-assets.js";
-import { normalizeArray } from "./champion-mapping.js";
+import { clampValuesToMaxRank, inferLevelingUnit, normalizeArray } from "./champion-mapping.js";
 import type { AbilitySlot, FormAbilityVariantLookup, FormAbilityVariantOverride } from "./champion-types.js";
 
 function iconKeyFromPath(iconPath: string | undefined): string {
@@ -49,7 +49,12 @@ function isNoiseSpell(pathKey: string, scriptName: string): boolean {
     return /missile|buff|debuff|indicator|trail|return|ready|cooldown|proc|attack|basic|crit|land|jump/.test(text);
 }
 
-function buildLevelingFromDataValues(spellData: Record<string, unknown>): Array<Record<string, unknown>> {
+function buildLevelingFromDataValues(
+    spellData: Record<string, unknown>,
+    adaptiveType: string,
+    resource: string,
+    maxRank?: number
+): Array<Record<string, unknown>> {
     const raw = (spellData.DataValues ?? spellData.mDataValues) as unknown;
     if (!Array.isArray(raw)) {
         return [];
@@ -63,7 +68,7 @@ function buildLevelingFromDataValues(spellData: Record<string, unknown>): Array<
 
         const entry = item as Record<string, unknown>;
         const attribute = String(entry.name ?? entry.mName ?? "");
-        const values = normalizeArray(entry.values ?? entry.mValues);
+        const values = clampValuesToMaxRank(normalizeArray(entry.values ?? entry.mValues), maxRank);
         if (!attribute || values.length === 0 || values.every((v) => v === 0)) {
             continue;
         }
@@ -73,7 +78,7 @@ function buildLevelingFromDataValues(spellData: Record<string, unknown>): Array<
             modifiers: [
                 {
                     values,
-                    units: [""]
+                    units: values.map(() => inferLevelingUnit(attribute, adaptiveType, resource, values))
                 }
             ]
         });
@@ -181,25 +186,31 @@ function buildVariantOverride(
     pathKey: string,
     scriptName: string,
     iconPathRaw: string,
-    spellData: Record<string, unknown>
+    spellData: Record<string, unknown>,
+    adaptiveType: string,
+    resource: string,
+    maxRank?: number
 ): FormAbilityVariantOverride {
     const normalizedIconPath = normalizeBinIconPath(iconPathRaw);
     const iconKey = iconKeyFromPath(iconPathRaw);
 
-    const cooldownRaw = normalizeArray(spellData.cooldownTime);
+    const cooldownRaw = clampValuesToMaxRank(normalizeArray(spellData.cooldownTime), maxRank);
     const hasCooldown = Array.isArray((spellData as Record<string, unknown>).cooldownTime) || typeof (spellData as Record<string, unknown>).cooldownTime === "number";
 
-    const manaRaw = normalizeArray(spellData.mana);
+    const manaRaw = clampValuesToMaxRank(normalizeArray(spellData.mana), maxRank);
     const hasCost = Array.isArray((spellData as Record<string, unknown>).mana) || typeof (spellData as Record<string, unknown>).mana === "number";
     const cost = manaRaw.some((value) => value !== 0) ? manaRaw : [];
 
-    const rangeDisplay = normalizeArray(spellData.castRangeDisplayOverride);
-    const rangeCast = normalizeArray(spellData.castRange);
+    const rangeDisplay = clampValuesToMaxRank(normalizeArray(spellData.castRangeDisplayOverride), maxRank);
+    const rangeCast = clampValuesToMaxRank(normalizeArray(spellData.castRange), maxRank);
     const rangeCandidate = rangeDisplay.length > 0 ? rangeDisplay : rangeCast;
     const hasRange = rangeCandidate.length > 0;
 
-    const leveling = buildLevelingFromDataValues(spellData);
+    const leveling = buildLevelingFromDataValues(spellData, adaptiveType, resource, maxRank);
     const hasLeveling = leveling.length > 0;
+    const calculationNames = spellData.mSpellCalculations && typeof spellData.mSpellCalculations === "object"
+        ? Object.keys(spellData.mSpellCalculations as Record<string, unknown>).filter(Boolean)
+        : [];
 
     let score = 0;
     if (hasCooldown) {
@@ -213,6 +224,9 @@ function buildVariantOverride(
     }
     if (hasLeveling) {
         score += 2;
+    }
+    if (calculationNames.length > 0) {
+        score += 1;
     }
     if (!isNoiseSpell(pathKey, scriptName)) {
         score += 2;
@@ -228,6 +242,7 @@ function buildVariantOverride(
         iconPath: normalizedIconPath,
         iconKey,
         score,
+        calculationNames,
         hasCooldown,
         cooldown: cooldownRaw,
         hasCost,
@@ -241,7 +256,10 @@ function buildVariantOverride(
 
 export async function fetchFormAbilityVariantLookup(
     championKey: string,
-    patchVersion: string
+    patchVersion: string,
+    adaptiveType: string,
+    resource: string,
+    maxRankBySlot: Partial<Record<AbilitySlot, number>>
 ): Promise<FormAbilityVariantLookup> {
     const patchChannel = toPatchChannel(patchVersion);
     const key = championKey.toLowerCase();
@@ -278,9 +296,10 @@ export async function fetchFormAbilityVariantLookup(
         if (!slot) {
             continue;
         }
+        const maxRank = maxRankBySlot[slot];
 
         const scriptName = String(entry.mScriptName ?? "");
-        const override = buildVariantOverride(pathKey, scriptName, iconPathRaw, spellData);
+        const override = buildVariantOverride(pathKey, scriptName, iconPathRaw, spellData, adaptiveType, resource, maxRank);
 
         if (!bySlot.has(slot)) {
             bySlot.set(slot, new Map());
@@ -326,4 +345,22 @@ export function resolveFormVariantOverrides(
     const ordered = exact ? [exact, ...remaining] : [...remaining];
 
     return normalizeSharedFormLeveling(ordered.slice(0, variantCount));
+}
+
+export function resolvePrimaryAbilityOverride(
+    mergedIconPath: string | undefined,
+    slot: AbilitySlot,
+    lookup: FormAbilityVariantLookup
+): FormAbilityVariantOverride | undefined {
+    const candidates = lookup[slot] ?? [];
+    if (candidates.length === 0) {
+        return undefined;
+    }
+
+    const mergedIconKey = iconKeyFromPath(mergedIconPath);
+    if (!mergedIconKey) {
+        return undefined;
+    }
+
+    return candidates.find((candidate) => candidate.iconKey === mergedIconKey);
 }
