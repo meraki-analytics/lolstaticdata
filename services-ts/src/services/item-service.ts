@@ -7,6 +7,13 @@ import { buildMapNameIndex, buildWrappedItem } from "./item/item-mapping.js";
 import type { WrappedItem } from "./item/item-types.js";
 import { ObservabilityService } from "./observability-service.js";
 
+function toSlug(value: string): string {
+    return value
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+}
+
 export class ItemService implements GenerationService {
     readonly name = "ItemService";
 
@@ -41,6 +48,7 @@ export class ItemService implements GenerationService {
             );
 
             const wrapped: Record<string, WrappedItem> = {};
+            const itemIndex: Array<Record<string, unknown>> = [];
             let written = 0;
             const progressStep = 50;
 
@@ -48,6 +56,17 @@ export class ItemService implements GenerationService {
                 const mappedItem: WrappedItem = buildWrappedItem(context.patchVersion, id, item, mapNames);
 
                 wrapped[String(id)] = mappedItem;
+                itemIndex.push({
+                    id,
+                    key: String(id),
+                    name: mappedItem.name,
+                    slug: toSlug(mappedItem.name || String(id)),
+                    iconUrl: mappedItem.icon.url,
+                    totalPrice: mappedItem.gold.total,
+                    purchasable: mappedItem.availability.purchasable,
+                    tags: mappedItem.tags,
+                    availableOn: mappedItem.availableOn
+                });
 
                 const filePath = path.join(targetItemsDir, `${id}.json`);
                 await fs.writeFile(filePath, JSON.stringify(mappedItem, null, 2), "utf8");
@@ -62,6 +81,15 @@ export class ItemService implements GenerationService {
                 Object.entries(wrapped).sort((a, b) => Number(a[0]) - Number(b[0]))
             );
             await fs.writeFile(path.join(context.outputDir, "items.json"), JSON.stringify(sorted, null, 2), "utf8");
+
+            itemIndex.sort((a, b) => Number(a.id) - Number(b.id));
+            await fs.writeFile(path.join(context.outputDir, "item-index.json"), JSON.stringify({
+                version: context.patchVersion,
+                locale: context.locale,
+                generatedAt: new Date().toISOString(),
+                totalItems: itemIndex.length,
+                items: itemIndex
+            }, null, 2), "utf8");
 
             const mapCoverage = new Set<string>();
             Object.values(sorted).forEach((item) => {
