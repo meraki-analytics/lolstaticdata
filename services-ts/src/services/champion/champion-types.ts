@@ -94,6 +94,7 @@ export interface DDragonChampion {
     title?: string;
     blurb?: string;
     lore?: string;
+    tags?: string[];
     partype?: string;
     stats?: Record<string, number>;
     passive?: {

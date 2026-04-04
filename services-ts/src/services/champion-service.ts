@@ -101,6 +101,76 @@ function normalizeAbilityName(name: string): string {
     return name.toLowerCase().replace(/[^a-z0-9]/g, "");
 }
 
+function dedupe(values: string[]): string[] {
+    const seen = new Set<string>();
+    const result: string[] = [];
+    for (const value of values) {
+        if (!value || seen.has(value)) {
+            continue;
+        }
+        seen.add(value);
+        result.push(value);
+    }
+    return result;
+}
+
+const DETAILED_ROLE_PARENT: Record<string, string> = {
+    JUGGERNAUT: "FIGHTER",
+    DIVER: "FIGHTER",
+    SKIRMISHER: "FIGHTER",
+    BURST: "MAGE",
+    BATTLEMAGE: "MAGE",
+    ARTILLERY: "MAGE",
+    VANGUARD: "TANK",
+    WARDEN: "TANK",
+    ENCHANTER: "SUPPORT",
+    CATCHER: "SUPPORT"
+};
+
+function resolveChampionRoles(
+    metadataPrimaryType: string | undefined,
+    metadataSecondaryType: string | undefined,
+    ddragonTags: string[] | undefined,
+    metadataRoles: string[] | undefined,
+    fallbackRoles: string[] | undefined
+): string[] {
+    const metadataTypes = [metadataPrimaryType, metadataSecondaryType]
+        .map((value) => String(value ?? "").trim().toUpperCase())
+        .filter(Boolean);
+    const ddragonBaseRoles = (ddragonTags ?? []).map((tag) => tag.trim().toUpperCase()).filter(Boolean);
+    const baseRoles = dedupe([...metadataTypes, ...ddragonBaseRoles]);
+    const detailedRoles = dedupe((metadataRoles ?? []).map((role) => role.trim().toUpperCase()).filter(Boolean));
+    const fallback = dedupe((fallbackRoles ?? []).map((role) => role.trim().toUpperCase()).filter(Boolean));
+
+    if (baseRoles.length === 0 && detailedRoles.length === 0) {
+        return fallback;
+    }
+
+    const merged = [...baseRoles];
+    for (const detailed of detailedRoles) {
+        const parent = DETAILED_ROLE_PARENT[detailed];
+        if (parent && merged.includes(parent)) {
+            const parentIndex = merged.indexOf(parent);
+            if (!merged.includes(detailed)) {
+                merged.splice(parentIndex + 1, 0, detailed);
+            }
+            continue;
+        }
+
+        if (!merged.includes(detailed)) {
+            merged.push(detailed);
+        }
+    }
+
+    return dedupe(merged);
+}
+
+function resolveChampionPositions(
+    metadataPositions: string[] | undefined
+): string[] {
+    return dedupe((metadataPositions ?? []).map((position) => position.trim().toUpperCase()).filter(Boolean));
+}
+
 function resolveAffectedByCdr(
     overrides: ChampionCooldownOverrides,
     slot: AbilitySlot,
@@ -400,7 +470,6 @@ export class ChampionService implements GenerationService {
                 const localizedAttackType = localizeAttackType(attackType, context.locale);
                 const localizedResource = localizeResource(resource, context.locale);
                 const localizedAdaptiveType = localizeDamageType(adaptiveType, context.locale);
-                const roles = (detail.roles ?? item.summary.roles ?? []).map((role) => role.toUpperCase());
                 const icon = toPluginAssetUrl(detail.squarePortraitPath ?? item.summary.squarePortraitPath, context.patchVersion);
                 const championMetadata = resolveChampionMetadata(championMetadataIndex, [
                     detail.name,
@@ -408,6 +477,14 @@ export class ChampionService implements GenerationService {
                     item.summary.alias,
                     item.summary.name
                 ]);
+                const positions = resolveChampionPositions(championMetadata?.positions);
+                const roles = resolveChampionRoles(
+                    championMetadata?.primaryType,
+                    championMetadata?.secondaryType,
+                    ddragonChampion?.tags,
+                    championMetadata?.roles,
+                    detail.roles ?? item.summary.roles
+                );
                 const faction = resolveChampionFaction(championFactionIndex, [
                     key,
                     detail.name,
@@ -427,7 +504,7 @@ export class ChampionService implements GenerationService {
                     attackType: localizedAttackType,
                     adaptiveType: localizedAdaptiveType,
                     stats: buildStats(ddragonChampion),
-                    positions: [],
+                    positions,
                     roles,
                     attributeRatings: {
                         damage: detail.playstyleInfo?.damage ?? 0,
@@ -466,6 +543,7 @@ export class ChampionService implements GenerationService {
                     slug: key.toLowerCase(),
                     iconUrl: icon,
                     attackType: localizedAttackType,
+                    positions,
                     roles
                 });
 

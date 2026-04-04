@@ -14,6 +14,10 @@ export interface ChampionMetadata {
     patchLastChanged: string;
     rp: number;
     blueEssence: number;
+    roles: string[];
+    positions: string[];
+    primaryType: string;
+    secondaryType: string;
 }
 
 function normalizeChampionKey(value: string): string {
@@ -33,6 +37,63 @@ function toNumber(value: unknown): number {
         return 0;
     }
     return parsed;
+}
+
+function toStringArray(value: unknown): string[] {
+    if (Array.isArray(value)) {
+        return value
+            .map((entry) => String(entry ?? "").trim())
+            .filter((entry) => entry.length > 0);
+    }
+    if (typeof value === "string") {
+        const trimmed = value.trim();
+        return trimmed ? [trimmed] : [];
+    }
+    return [];
+}
+
+function normalizePosition(value: string): string {
+    const upper = value.trim().toUpperCase();
+    if (!upper) {
+        return "";
+    }
+    if (upper === "MID" || upper === "MIDDLE") {
+        return "MIDDLE";
+    }
+    if (upper === "BOT" || upper === "BOTTOM") {
+        return "BOTTOM";
+    }
+    return upper;
+}
+
+function normalizeRole(value: string): string {
+    return value.trim().toUpperCase().replace(/\s+/g, "_");
+}
+
+function dedupe(values: string[]): string[] {
+    const seen = new Set<string>();
+    const result: string[] = [];
+    for (const value of values) {
+        if (!value || seen.has(value)) {
+            continue;
+        }
+        seen.add(value);
+        result.push(value);
+    }
+    return result;
+}
+
+function sortPositions(values: string[]): string[] {
+    const POSITION_ORDER = ["JUNGLE", "TOP", "MIDDLE", "BOTTOM", "SUPPORT"];
+    const order = new Map(POSITION_ORDER.map((value, index) => [value, index]));
+    return [...values].sort((a, b) => {
+        const ai = order.get(a) ?? 999;
+        const bi = order.get(b) ?? 999;
+        if (ai !== bi) {
+            return ai - bi;
+        }
+        return a.localeCompare(b);
+    });
 }
 
 function normalizePatchValue(value: string): string {
@@ -204,7 +265,14 @@ export async function fetchChampionMetadataIndex(): Promise<Record<string, Champ
                 releasePatch: normalizePatchValue(String(championData.patch ?? "")),
                 patchLastChanged: normalizePatchValue(String(championData.changes ?? "")),
                 rp: toNumber(championData.rp),
-                blueEssence: toNumber(championData.be)
+                blueEssence: toNumber(championData.be),
+                roles: dedupe(toStringArray(championData.role).map((entry) => normalizeRole(entry))),
+                positions: sortPositions(dedupe([
+                    ...toStringArray(championData.external_positions),
+                    ...toStringArray(championData.client_positions)
+                ].map((entry) => normalizePosition(entry)))),
+                primaryType: normalizeRole(String(championData.herotype ?? "")),
+                secondaryType: normalizeRole(String(championData.alttype ?? ""))
             };
 
             const candidates = [championName, apiname, fullName];
