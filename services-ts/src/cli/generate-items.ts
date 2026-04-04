@@ -1,8 +1,8 @@
 import path from "node:path";
 import { config } from "../config.js";
 import { ItemService } from "../services/item-service.js";
-import { DDragonPatchService } from "../services/patch-service.js";
 import { ObservabilityService } from "../services/observability-service.js";
+import { DDragonPatchService } from "../services/patch-service.js";
 
 async function main(): Promise<void> {
     const patchService = new DDragonPatchService();
@@ -10,7 +10,7 @@ async function main(): Promise<void> {
     const logger = new ObservabilityService();
 
     for (const locale of config.outputLocales) {
-        const result = await new ItemService().generate({
+        const result = await new ItemService(logger).generate({
             patchVersion,
             source: "scheduled",
             rootOutputDir: config.outputDir,
