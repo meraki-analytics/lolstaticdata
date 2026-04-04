@@ -62,7 +62,6 @@ bun run wrapper:check-once
 - `OUTPUT_DIR`: Output root directory (default: `<REPO_ROOT>/srv`).
 - `CACHE_DIR`: Cache root directory (default: `<REPO_ROOT>/__cache__`).
 - `OUTPUT_LOCALES`: Comma-separated locales (default: `en_US,de_DE`).
-- `PYTHON_COMMAND`: Python executable used by legacy item adapter (default: `python`).
 
 ## Notes
 

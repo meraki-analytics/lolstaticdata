@@ -9,9 +9,7 @@ services:
       # Cache is kept outside the exposed srv volume
       - ./__cache__:/app/__cache__
     environment:
-      - PYTHONUNBUFFERED=1
       - REPO_ROOT=/app
-      - PYTHON_COMMAND=python
     # Keep the service running; scheduler cadence is managed by WrapperService.
     restart: unless-stopped
 

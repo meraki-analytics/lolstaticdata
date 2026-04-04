@@ -39,7 +39,6 @@ export const config = {
     defaultLocale: outputLocales[0] ?? "en_US",
     versionFileName: "version.json",
     patchEndpoint: "https://ddragon.leagueoflegends.com/api/versions.json",
-    pythonCommand: process.env.PYTHON_COMMAND || "python",
     scheduler: {
         intervalMs: 60 * 60 * 1000
     }
