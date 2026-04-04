@@ -19,11 +19,11 @@ async function main(): Promise<void> {
         });
 
         if (!result.success) {
-            console.error(result.details ?? `Champion generation failed for ${locale}`);
+            logger.error(result.details ?? ` [champions:${locale}] Champion generation failed`);
             process.exit(1);
         }
 
-        console.log(`Champion generation completed successfully for ${locale}.`);
+        logger.info(`[champions:${locale}] Champion generation completed successfully.`);
     }
 }
 

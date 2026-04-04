@@ -2,10 +2,12 @@ import path from "node:path";
 import { config } from "../config.js";
 import { ItemService } from "../services/item-service.js";
 import { DDragonPatchService } from "../services/patch-service.js";
+import { ObservabilityService } from "../services/observability-service.js";
 
 async function main(): Promise<void> {
     const patchService = new DDragonPatchService();
     const patchVersion = await patchService.getLatestPatch();
+    const logger = new ObservabilityService();
 
     for (const locale of config.outputLocales) {
         const result = await new ItemService().generate({
@@ -17,11 +19,11 @@ async function main(): Promise<void> {
         });
 
         if (!result.success) {
-            console.error(result.details ?? `Item generation failed for ${locale}`);
+            logger.error(result.details ?? ` [items:${locale}] Item generation failed`);
             process.exit(1);
         }
 
-        console.log(`Item generation completed successfully for ${locale}.`);
+        logger.info(`[items:${locale}] Item generation completed successfully.`);
     }
 }
 
