@@ -51,6 +51,7 @@ const TERMS: Record<LocaleCode, LocaleTerms> = {
             FURY: "Fury",
             HEALTH: "Health",
             FEROCITY: "Ferocity",
+            BLOOD_WELL: "Blood Well",
             OTHER: "Other"
         },
         damageTypes: {
@@ -106,6 +107,7 @@ const TERMS: Record<LocaleCode, LocaleTerms> = {
             FURY: "Raserei",
             HEALTH: "Leben",
             FEROCITY: "Wildheit",
+            BLOOD_WELL: "Blutbrunnen",
             OTHER: "Sonstige"
         },
         damageTypes: {
@@ -181,7 +183,10 @@ const RESOURCE_ALIASES: Record<string, string> = {
     nocost: "NO_COST",
     manaless: "NO_COST",
     abilityresourcename: "RESOURCE",
-    resource: "RESOURCE"
+    resource: "RESOURCE",
+    bloodwell: "BLOOD_WELL",
+    blutbrunnen: "BLOOD_WELL",
+    blutsee: "BLOOD_WELL"
 };
 
 function normalizeResourceToken(value: string): string {

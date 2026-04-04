@@ -286,7 +286,7 @@ export class ChampionService implements GenerationService {
                 const localizedPassiveDescription =
                     (ddragonChampion?.passive?.description ?? detail.passive?.description ?? "").trim();
 
-                const resource = mapResource(ddragonChampion?.partype);
+                const resource = ddragonChampion?.partype ? mapResource(ddragonChampion.partype) : "OTHER";
                 const adaptiveType = mapAdaptiveType(detail.tacticalInfo?.damageType);
                 const ddragonCostTypeBySlot: Partial<Record<AbilitySlot, string>> = {};
                 const maxRankBySlot = buildMaxRankBySlot(ddragonChampion?.spells);

@@ -210,13 +210,6 @@ export function mapResource(partype: string | undefined): string {
     return parseResourceCode(partype) ?? "OTHER";
 }
 
-function normalizeUnitValue(values: number[], unit: string): string[] {
-    if (values.length === 0) {
-        return [];
-    }
-    return values.map(() => unit);
-}
-
 export function fallbackCostUnitFromResource(resource: string): string {
     if (resource === "NONE" || resource === "NO_COST" || resource === "OTHER") {
         return "";
