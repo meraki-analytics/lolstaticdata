@@ -7,7 +7,7 @@ If you use this data, please give a shoutout to the League of Legends Wiki and t
 **Features:**
 - Accurate champion and item data from League of Legends Wiki
 - Automatic patch version detection and updates
-- Docker support with hourly update checks
+- Bun wrapper runtime with internal hourly scheduling
 - Version tracking with timestamps
 
 ## Goals of the Project
@@ -34,20 +34,64 @@ docker-compose up -d
 
 # The container will:
 # 1. Generate initial data on first run
-# 2. Check for new patch versions every hour
+# 2. WrapperService checks for new patch versions every hour
 # 3. Automatically regenerate data when a new patch is detected
 # 4. Store version info in srv/version.json
 ```
 
 **Version Information:**
 
-The service creates a `version.json` file in the srv directory containing:
+The service creates a `version.json` file in the srv directory containing compatibility fields and history:
 ```json
 {
   "version": "14.23.1",
   "lastUpdate": "2026-01-13T10:30:00Z",
-  "timestamp": 1736765400
+  "timestamp": 1736765400,
+  "history": [
+    {
+      "version": "14.23.1",
+      "lastUpdate": "2026-01-13T10:30:00Z",
+      "timestamp": 1736765400
+    }
+  ]
 }
+```
+
+**Environment Variables**
+
+The Docker setup works with defaults, but you can override behavior with these environment variables:
+
+- `REPO_ROOT`
+  - Base repository path used by the TypeScript services.
+  - Docker default: `/app`.
+- `OUTPUT_DIR`
+  - Output directory for generated artifacts and `version.json`.
+  - Default: `<REPO_ROOT>/srv`.
+- `CACHE_DIR`
+  - Cache directory for non-public intermediate files.
+  - Default: `<REPO_ROOT>/__cache__`.
+- `OUTPUT_LOCALES`
+  - Comma-separated locales to generate.
+  - Default: `en_US,de_DE`.
+- `PYTHON_COMMAND`
+  - Python executable used by the legacy TypeScript `ItemService` adapter.
+  - Docker default: `python`.
+- `PYTHONUNBUFFERED`
+  - Optional Python stdout/stderr behavior for clearer logs.
+  - Docker default in compose: `1`.
+
+Example override in `docker-compose.yml`:
+
+```yaml
+services:
+  lol-data-generator:
+    environment:
+      - REPO_ROOT=/app
+      - OUTPUT_DIR=/app/srv
+      - CACHE_DIR=/app/__cache__
+      - OUTPUT_LOCALES=en_US,de_DE
+      - PYTHON_COMMAND=python
+      - PYTHONUNBUFFERED=1
 ```
 
 **Using the Volume in Other Containers:**
@@ -72,8 +116,8 @@ volumes:
 # View the logs (including update checks)
 docker-compose logs -f lol-data-generator
 
-# Force regeneration immediately
-docker-compose exec lol-data-generator python -m lolstaticdata.check_and_update
+# Trigger a single immediate update-check cycle
+docker-compose exec lol-data-generator bun run wrapper:check-once
 
 # Check current version
 docker-compose exec lol-data-generator cat /app/srv/version.json
@@ -91,20 +135,33 @@ docker-compose down
 docker-compose down -v
 ```
 
-The service runs continuously and checks for updates every hour at the top of the hour (e.g., 1:00, 2:00, 3:00).
+The service runs continuously and the internal wrapper scheduler checks for updates every hour at the top of the hour (e.g., 1:00, 2:00, 3:00).
 
 ### Running Locally
 
 ```bash
 git clone https://github.com/meraki-analytics/lolstaticdata.git
 cd lolstaticdata
-pip install -r requirements.txt
-python -m lolstaticdata.champions [--champion NAME] [--stats] [--skins] [--lore] [--abilities]
-python -m lolstaticdata.items
+cd services-ts
+bun install
+bun run wrapper:start
 ```
 
-- `--champion NAME` filters the export to a single champion (case-insensitive; optional punctuation/spacing).
-- `--stats`, `--skins`, `--lore`, `--abilities` let you pull only the requested sections. If none are supplied, all sections are generated.
+Local prerequisites:
+
+- `bun` for the wrapper and TypeScript services.
+- `python` with `requirements.txt` installed for the current legacy `ItemService` adapter.
+
+Useful local commands:
+
+```bash
+# Run one update-check cycle
+bun run wrapper:check-once
+
+# Run domains directly
+bun run generate:champions
+bun run generate:items
+```
 
 ### Serving the Files Locally
 
@@ -121,7 +178,7 @@ Then access the data at `http://localhost:8080/champions.json`.
 
 The application supports automatic version checking and data regeneration when new patches are released. See [UPDATES.md](UPDATES.md) for detailed information on:
 - How automatic updates work
-- Scheduling updates with cron or Task Scheduler
+- WrapperService internal scheduling behavior
 - Version file format
 - Manual update commands
 

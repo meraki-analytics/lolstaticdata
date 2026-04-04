@@ -1,16 +1,18 @@
 services:
-  # Application service to generate static data and check for updates
+  # Application service: Bun wrapper handles startup generation and scheduled checks internally.
   lol-data-generator:
     build: .
     container_name: lol-data-generator
     volumes:
       # Named volume to share generated files with other containers
       - lol-static-data:/app/srv
-      # Mount cache directory to avoid re-downloading
+      # Cache is kept outside the exposed srv volume
       - ./__cache__:/app/__cache__
     environment:
       - PYTHONUNBUFFERED=1
-    # Keep the service running to check for updates every hour
+      - REPO_ROOT=/app
+      - PYTHON_COMMAND=python
+    # Keep the service running; scheduler cadence is managed by WrapperService.
     restart: unless-stopped
 
 volumes:

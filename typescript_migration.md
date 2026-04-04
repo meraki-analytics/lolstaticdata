@@ -91,13 +91,12 @@ Phase 0 baseline artifact:
 - Keep WrapperService orchestration unchanged while item internals are developed and hardened.
 
 6. Phase 3 - Export and publish consistency
-- Implement ExportService atomic publishing for patch folders and latest alias.
-- Maintain current volume compatibility for docker-compose consumers.
+- Completed: ExportService atomic publishing and compatibility layout are already in place.
 
 7. Phase 4 - Container migration
-- Move Docker runtime from python image to bun image while preserving external behavior:
+- Move Docker runtime from python entrypoint to Bun WrapperService while preserving external behavior:
   - same data volume layout
-  - same scheduler cadence
+  - same scheduler cadence (managed internally by WrapperService, not Docker cron)
   - wrapper-driven orchestration for startup and scheduled runs only (manual retrigger deferred)
   - same version.json compatibility
 
@@ -153,9 +152,9 @@ Phase 0 baseline artifact:
 
 - lolstaticdata/Dockerfile
 - lolstaticdata/docker-compose.yml
-- lolstaticdata/check_updates.sh
-- lolstaticdata/lolstaticdata/check_and_update.py
-- lolstaticdata/lolstaticdata/version_manager.py
+- lolstaticdata/services-ts/src/cli/wrapper-start.ts
+- lolstaticdata/services-ts/src/cli/wrapper-check-once.ts
+- lolstaticdata/services-ts/src/services/wrapper-service.ts
 - lolstaticdata/lolstaticdata/champions/__main__.py
 - lolstaticdata/lolstaticdata/items/__main__.py
 - lolstaticdata/lolstaticdata/champions/pull_champions_wiki.py

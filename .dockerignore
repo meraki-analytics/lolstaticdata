@@ -12,6 +12,7 @@ build/
 venv/
 env/
 ENV/
+services-ts/node_modules/
 
 # IDE
 .vscode/
@@ -34,5 +35,3 @@ README.md
 UPDATES.md
 LICENSE
 
-# Update checker script (copied separately)
-update_checker.py

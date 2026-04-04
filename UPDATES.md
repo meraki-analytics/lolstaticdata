@@ -1,86 +1,70 @@
 # League of Legends Static Data - Automatic Updates
 
-This directory contains scripts for automatically checking and updating League of Legends patch data.
+Automatic updates are now managed by the TypeScript `WrapperService` in `services-ts/`.
 
 ## How It Works
 
-The system automatically:
-1. Checks for new patch versions every hour
-2. Compares against the stored version in `srv/version.json`
-3. Regenerates all champion and item data when a new patch is detected
-4. Updates the version file with the new patch number and timestamp
+The wrapper automatically:
+1. Runs a full generation on startup.
+2. Checks for new patches every hour (top-of-hour cadence, internal scheduler).
+3. Regenerates champion and item data when a patch change is detected.
+4. Updates `srv/version.json` only after successful generation.
 
 ## Version File Format
 
-The `srv/version.json` file contains:
+The `srv/version.json` file keeps compatibility fields and includes history entries:
+
 ```json
 {
-  "version": "14.23.1",
-  "lastUpdate": "2026-01-13T10:30:00Z",
-  "timestamp": 1736765400
+  "version": "16.7.1",
+  "lastUpdate": "2026-04-04T16:00:00Z",
+  "timestamp": 1775318400,
+  "history": [
+    {
+      "version": "16.7.1",
+      "lastUpdate": "2026-04-04T16:00:00Z",
+      "timestamp": 1775318400
+    }
+  ]
 }
 ```
-
-- `version`: The current League of Legends patch version
-- `lastUpdate`: ISO 8601 timestamp of when the data was last generated
-- `timestamp`: Unix timestamp of the last update
 
 ## Running Updates Manually
 
 ### Using Docker
+
 ```bash
-# Force an immediate update check
-docker-compose exec lol-data-generator python -m lolstaticdata.check_and_update
+# Trigger a single immediate update-check cycle
+docker-compose exec lol-data-generator bun run wrapper:check-once
 
 # View current version
 docker-compose exec lol-data-generator cat /app/srv/version.json
-```
 
-### Running Locally
-```bash
-# Check and update if needed
-python update_checker.py
-
-# Or use the module directly
-python -m lolstaticdata.check_and_update
-
-# Just check version without updating
-python -m lolstaticdata.version_manager
-```
-
-## Scheduling Updates (Non-Docker)
-
-### Linux/macOS (cron)
-Add to your crontab (`crontab -e`):
-```cron
-# Check for updates every hour
-0 * * * * cd /path/to/lolstaticdata && /usr/bin/python3 update_checker.py >> /var/log/lol-updates.log 2>&1
-```
-
-### Windows (Task Scheduler)
-1. Open Task Scheduler
-2. Create Basic Task
-3. Set trigger: Daily, repeat every 1 hour
-4. Action: Start a program
-   - Program: `python.exe`
-   - Arguments: `C:\path\to\lolstaticdata\update_checker.py`
-   - Start in: `C:\path\to\lolstaticdata`
-
-## Files
-
-- `version_manager.py`: Core version tracking functionality
-- `check_and_update.py`: Main update script
-- `update_checker.py`: Standalone executable script
-- `check_updates.sh`: Shell script for cron (used in Docker)
-
-## Logging
-
-In Docker, logs are written to `/var/log/cron.log` and can be viewed with:
-```bash
+# Stream wrapper logs
 docker-compose logs -f lol-data-generator
 ```
 
-For local execution, redirect output to a log file:
+### Running Locally
+
 ```bash
-python update_checker.py >> updates.log 2>&1
+cd services-ts
+
+# Start long-running wrapper (startup + scheduled checks)
+bun run wrapper:start
+
+# Run one update-check cycle
+bun run wrapper:check-once
 ```
+
+## Environment Variables
+
+- `REPO_ROOT`: Base repository path. Default resolves to parent of `services-ts`.
+- `OUTPUT_DIR`: Output root directory (default: `<REPO_ROOT>/srv`).
+- `CACHE_DIR`: Cache root directory (default: `<REPO_ROOT>/__cache__`).
+- `OUTPUT_LOCALES`: Comma-separated locales (default: `en_US,de_DE`).
+- `PYTHON_COMMAND`: Python executable used by legacy item adapter (default: `python`).
+
+## Notes
+
+- Docker cron and cron helper scripts are no longer used.
+- Scheduler behavior is owned by `WrapperService`, not container orchestration.

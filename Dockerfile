@@ -1,52 +1,32 @@
-FROM python:3.12-slim
+FROM oven/bun:1.2
 
-# Install cron
-RUN apt-get update && apt-get install -y cron && rm -rf /var/lib/apt/lists/*
+# Python remains available for the legacy ItemService adapter until native TS item generation is finished.
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends python3 python3-pip python3-venv \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN python3 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:${PATH}"
 
 WORKDIR /app
 
-# Copy requirements and install dependencies
-COPY requirements.txt .
+# Install Python dependencies used by legacy item generation.
+COPY requirements.txt pyproject.toml ./
+COPY lolstaticdata/ ./lolstaticdata/
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the application code
-COPY lolstaticdata/ ./lolstaticdata/
-COPY pyproject.toml .
+# Install Bun dependencies for the TypeScript services module.
+COPY services-ts/package.json services-ts/bun.lock ./services-ts/
+WORKDIR /app/services-ts
+RUN bun install --frozen-lockfile
 
-# Copy cron script
-COPY check_updates.sh /app/check_updates.sh
-RUN sed -i 's/\r$//' /app/check_updates.sh && chmod +x /app/check_updates.sh
+# Copy the TypeScript service sources.
+COPY services-ts/ ./
 
-# Create output directory and log file
-RUN mkdir -p /app/srv && touch /var/log/cron.log
-
-# Set Python path
+# Wrapper defaults: output in /app/srv and cache in /app/__cache__.
 ENV PYTHONPATH=/app
+ENV REPO_ROOT=/app
+ENV PYTHON_COMMAND=python
 
-# Setup cron job to run the update checker every hour
-RUN echo "0 * * * * root /app/check_updates.sh >> /var/log/cron.log 2>&1" > /etc/cron.d/update-checker && \
-    chmod 0644 /etc/cron.d/update-checker
-
-# Create startup script that runs initial generation and starts cron
-RUN echo '#!/bin/sh\n\
-echo "==========================================="\n\
-echo "Starting LOL Static Data Generator"\n\
-echo "==========================================="\n\
-echo ""\n\
-echo "Running data generation on startup..."\n\
-echo "Generating champion data..."\n\
-python3 -m lolstaticdata.champions\n\
-echo ""\n\
-echo "Generating item data..."\n\
-python3 -m lolstaticdata.items\n\
-echo ""\n\
-echo "Initial generation complete!"\n\
-echo "Starting cron daemon for hourly updates..."\n\
-cron\n\
-echo "Cron started successfully."\n\
-echo "Monitoring update logs..."\n\
-echo "==========================================="\n\
-tail -f /var/log/cron.log' > /app/start.sh && chmod +x /app/start.sh
-
-# Default command: run initial generation and start cron daemon
-CMD ["/app/start.sh"]
+# Start wrapper service: startup generation + internal top-of-hour scheduler.
+CMD ["bun", "run", "wrapper:start"]
