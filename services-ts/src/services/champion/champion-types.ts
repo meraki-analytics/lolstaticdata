@@ -89,8 +89,25 @@ export interface StatValue {
 export type AbilitySlot = "P" | "Q" | "W" | "E" | "R";
 export type AbilityGroups = Record<AbilitySlot, Array<Record<string, unknown>>>;
 
+export interface FormAbilityVariantOverride {
+    iconPath: string;
+    iconKey: string;
+    score: number;
+    hasCooldown: boolean;
+    cooldown: number[];
+    hasCost: boolean;
+    cost: number[];
+    hasRange: boolean;
+    range: number[];
+    hasLeveling: boolean;
+    leveling: Array<Record<string, unknown>>;
+}
+
+export type FormAbilityVariantLookup = Partial<Record<AbilitySlot, FormAbilityVariantOverride[]>>;
+
 export interface ChampionDetailWithPassive {
     summary: CDragonChampionSummary;
     detail: CDragonChampionDetail;
     passiveNumbers: PassiveAbilityNumbers;
+    formVariants: FormAbilityVariantLookup;
 }

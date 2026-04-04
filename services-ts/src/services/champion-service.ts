@@ -8,11 +8,13 @@ import {
     resolveAbilityIconUrl,
     toPluginAssetUrl
 } from "./champion/champion-assets.js";
+import { fetchFormAbilityVariantLookup, resolveFormVariantOverrides } from "./champion/champion-forms.js";
 import { fetchJson, mapWithConcurrency } from "./champion/champion-http.js";
 import {
     buildAbility,
     buildLeveling,
     buildStats,
+    fallbackCostUnitFromResource,
     mapAdaptiveType,
     mapAttackType,
     mapResource,
@@ -60,17 +62,21 @@ export class ChampionService implements GenerationService {
                 const resource = mapResource(ddragonChampion?.partype);
 
                 const detail = await fetchJson<CDragonChampionDetail>(`${CDRAGON_BASE}/v1/champions/${entry.id}.json`);
-                const passiveNumbers = await fetchPassiveAbilityNumbers(
-                    entry.alias,
-                    context.patchVersion,
-                    resource,
-                    detail.passive?.name
-                );
+                const [passiveNumbers, formVariants] = await Promise.all([
+                    fetchPassiveAbilityNumbers(
+                        entry.alias,
+                        context.patchVersion,
+                        resource,
+                        detail.passive?.name
+                    ),
+                    fetchFormAbilityVariantLookup(entry.alias, context.patchVersion)
+                ]);
 
                 return {
                     summary: entry,
                     detail,
-                    passiveNumbers
+                    passiveNumbers,
+                    formVariants
                 };
             });
 
@@ -116,6 +122,12 @@ export class ChampionService implements GenerationService {
                 spells.forEach((spell, index) => {
                     const slot = resolveAbilitySlot(spell.spellKey, index);
                     const variantNames = splitAbilityVariantNames(spell.name, slot);
+                    const formVariantOverrides = resolveFormVariantOverrides(
+                        spell.abilityIconPath,
+                        slot,
+                        variantNames.length,
+                        item.formVariants
+                    );
                     const description = spell.description ?? spell.dynamicDescription ?? "";
                     const cooldown = normalizeArray(spell.cooldown).length > 0
                         ? normalizeArray(spell.cooldown)
@@ -125,24 +137,42 @@ export class ChampionService implements GenerationService {
                         : normalizeArray(spell.costCoefficients);
                     const costTypeRaw = ddragonCostTypeBySlot[slot] ?? "";
                     const costUnit = resolveCostUnit(costTypeRaw, resource);
+                    const baseCostUnit = cost.length > 0
+                        ? (costUnit || fallbackCostUnitFromResource(resource))
+                        : "";
                     const range = normalizeArray(spell.range);
                     const leveling = buildLeveling(spell.effectAmounts);
 
-                    for (const variantName of variantNames) {
+                    variantNames.forEach((variantName, variantIndex) => {
+                        const override = formVariantOverrides[variantIndex];
+                        const variantIconPath = override?.iconPath ?? spell.abilityIconPath;
+                        const variantCooldown = override?.hasCooldown ? override.cooldown : cooldown;
+                        const variantCost = override ? (override.hasCost ? override.cost : []) : cost;
+                        const variantBaseCostUnit = variantCost.length > 0
+                            ? (baseCostUnit || fallbackCostUnitFromResource(resource))
+                            : "";
+                        const variantCostUnit = override
+                            ? (override.hasCost && override.cost.length > 0 ? variantBaseCostUnit : "")
+                            : variantBaseCostUnit;
+                        const variantRange = override?.hasRange ? override.range : range;
+                        const variantLeveling = override
+                            ? (override.hasLeveling ? override.leveling : [])
+                            : leveling;
+
                         abilities[slot].push(buildAbility({
                             name: variantName,
                             description,
-                            iconUrl: resolveAbilityIconUrl(key, slot, spell.abilityIconPath, context.patchVersion),
+                            iconUrl: resolveAbilityIconUrl(key, slot, variantIconPath, context.patchVersion),
                             resource,
                             adaptiveType,
-                            cooldown,
+                            cooldown: variantCooldown,
                             affectedByCdr: true,
-                            cost,
-                            costUnit,
-                            range,
-                            leveling
+                            cost: variantCost,
+                            costUnit: variantCostUnit,
+                            range: variantRange,
+                            leveling: variantLeveling
                         }));
-                    }
+                    });
                 });
 
                 const skins = (detail.skins ?? []).map((skin) => ({
