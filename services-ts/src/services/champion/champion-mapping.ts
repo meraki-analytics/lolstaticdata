@@ -1,4 +1,13 @@
 import type { AbilityMetadata } from "./champion-ability-meta.js";
+import {
+    localizeAffects,
+    localizeDamageType,
+    localizeLevelingUnits,
+    localizeProjectile,
+    localizeResource,
+    localizeTargeting,
+    localizeUnit
+} from "./champion-i18n.js";
 import type {
     AbilitySlot,
     DDragonChampion,
@@ -37,12 +46,12 @@ function normalizeLevelingUnit(values: number[], unit: string): string[] {
 
 function inferDamageUnit(adaptiveType: string): string {
     if (adaptiveType === "PHYSICAL_DAMAGE") {
-        return "physical damage";
+        return "PHYSICAL_DAMAGE";
     }
     if (adaptiveType === "MAGIC_DAMAGE") {
-        return "magic damage";
+        return "MAGIC_DAMAGE";
     }
-    return "damage";
+    return "DAMAGE";
 }
 
 function isLikelyPercentSeries(values: number[]): boolean {
@@ -65,16 +74,16 @@ export function inferLevelingUnit(
     const key = attribute.toLowerCase();
 
     if (/(refund|reduction)/.test(key)) {
-        return "%";
+        return "PERCENT";
     }
     if (/(percent|pct)/.test(key)) {
-        return "%";
+        return "PERCENT";
     }
     if (/(duration|cooldown|lifetime|time|delay)/.test(key)) {
-        return "seconds";
+        return "SECONDS";
     }
     if (/(^|[^a-z])cd([^a-z]|$)|cd$/.test(key)) {
-        return "seconds";
+        return "SECONDS";
     }
     if (/(damage|dmg)/.test(key)) {
         return inferDamageUnit(adaptiveType);
@@ -83,30 +92,30 @@ export function inferLevelingUnit(
         return inferDamageUnit(adaptiveType);
     }
     if (/(range|radius|distance|width|length|aoe|area|collision|size)/.test(key)) {
-        return "units";
+        return "UNITS";
     }
     if (/(ratio|mult|modifier|mod|scale|chance|crit|slow|haste|attackspeed)/.test(key)) {
-        return "%";
+        return "PERCENT";
     }
     if (/(heal|regen|health|hp)/.test(key)) {
-        return "health";
+        return "HEALTH";
     }
     if (/mana/.test(key)) {
-        return "mana";
+        return "MANA";
     }
     if (/energy/.test(key)) {
-        return "energy";
+        return "ENERGY";
     }
     if (/(rage|fury|ferocity)/.test(key)) {
         return resource === "RAGE" || resource === "FURY" || resource === "FEROCITY"
-            ? resource.toLowerCase()
-            : "resource";
+            ? resource
+            : "RESOURCE";
     }
     if (/(stack|count)/.test(key)) {
-        return "stacks";
+        return "STACKS";
     }
     if (/(speed|\bas\b)/.test(key) || isLikelyPercentSeries(values)) {
-        return "%";
+        return "PERCENT";
     }
 
     return "";
@@ -193,28 +202,39 @@ export function mapAdaptiveType(damageType: string | undefined): string {
     return "MIXED_DAMAGE";
 }
 
+function normalizeResourceToken(value: string): string {
+    return value
+        .normalize("NFKD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .trim();
+}
+
 export function mapResource(partype: string | undefined): string {
     if (!partype) {
         return "NONE";
     }
-    const value = partype.toLowerCase().trim();
+    const value = normalizeResourceToken(partype);
     if (value === "mana") {
         return "MANA";
     }
-    if (value === "energy") {
+    if (value === "energy" || value === "energie") {
         return "ENERGY";
     }
-    if (value === "rage") {
+    if (value === "rage" || value === "wut") {
         return "RAGE";
     }
-    if (value === "fury") {
+    if (value === "fury" || value === "raserei") {
         return "FURY";
     }
-    if (value === "none" || value === "manaless") {
+    if (value === "none" || value === "manaless" || value === "keinekosten") {
         return "NO_COST";
     }
-    if (value === "health") {
+    if (value === "health" || value === "leben") {
         return "HEALTH";
+    }
+    if (value === "ferocity" || value === "wildheit") {
+        return "FEROCITY";
     }
     return "OTHER";
 }
@@ -243,7 +263,10 @@ export function resolveCostUnit(costTypeRaw: string | undefined, resource: strin
     if (value.includes("no cost")) {
         return "";
     }
-    if (value.includes("mana") || value.includes("abilityresourcename") || value.includes("manacostpersecond")) {
+    if (value.includes("abilityresourcename")) {
+        return fallback;
+    }
+    if (value.includes("mana") || value.includes("manacostpersecond")) {
         return "MANA";
     }
     if (value.includes("energy")) {
@@ -324,25 +347,36 @@ export interface BuildAbilityInput {
     costUnit: string;
     range: number[];
     leveling: Array<Record<string, unknown>>;
+    locale: string;
     metadata?: AbilityMetadata;
 }
 
 export function buildAbility(input: BuildAbilityInput): Record<string, unknown> {
     const metadata = input.metadata ?? {};
+    const localizedLeveling = localizeLevelingUnits(input.leveling, input.locale);
+
+    function localizedUnitSeries(values: number[], unit: string): string[] {
+        if (values.length === 0) {
+            return [];
+        }
+        const localized = localizeUnit(unit, input.locale);
+        return values.map(() => localized);
+    }
+
     return {
         name: input.name,
         icon: input.iconUrl,
         effects: [
             {
                 description: input.description,
-                leveling: input.leveling
+                leveling: localizedLeveling
             }
         ],
         cost: {
             modifiers: [
                 {
                     values: input.cost,
-                    units: normalizeUnitValue(input.cost, input.costUnit)
+                    units: localizedUnitSeries(input.cost, input.costUnit)
                 }
             ]
         },
@@ -350,18 +384,18 @@ export function buildAbility(input: BuildAbilityInput): Record<string, unknown> 
             modifiers: [
                 {
                     values: input.cooldown,
-                    units: normalizeUnitValue(input.cooldown, "seconds")
+                    units: localizedUnitSeries(input.cooldown, "SECONDS")
                 }
             ],
             affectedByCdr: input.affectedByCdr
         },
-        targeting: metadata.targeting ?? "",
-        affects: metadata.affects ?? "",
+        targeting: localizeTargeting(metadata.targeting ?? "", input.locale),
+        affects: localizeAffects(metadata.affects ?? "", input.locale),
         spellshieldable: metadata.spellshieldable ?? false,
-        resource: input.resource,
-        damageType: input.adaptiveType,
+        resource: localizeResource(input.resource, input.locale),
+        damageType: localizeDamageType(input.adaptiveType, input.locale),
         spellEffects: metadata.spellEffects ?? "",
-        projectile: metadata.projectile ?? "",
+        projectile: localizeProjectile(metadata.projectile ?? "", input.locale),
         onHitEffects: metadata.onHitEffects ?? "",
         occurrence: metadata.occurrence ?? "",
         notes: metadata.notes ?? "",

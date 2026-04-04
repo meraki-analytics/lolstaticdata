@@ -19,6 +19,7 @@ import {
     resolvePrimaryAbilityOverride
 } from "./champion/champion-forms.js";
 import { fetchJson, mapWithConcurrency } from "./champion/champion-http.js";
+import { localizeAttackType, localizeDamageType, localizeResource } from "./champion/champion-i18n.js";
 import {
     buildAbility,
     buildLeveling,
@@ -253,6 +254,7 @@ export class ChampionService implements GenerationService {
                     costUnit: item.passiveNumbers.costUnit,
                     range: [],
                     leveling: [],
+                    locale: context.locale,
                     metadata: passiveMetadata
                 });
                 const abilities: AbilityGroups = {
@@ -354,6 +356,7 @@ export class ChampionService implements GenerationService {
                             costUnit: variantCostUnit,
                             range: variantRange,
                             leveling: variantLeveling,
+                            locale: context.locale,
                             metadata: abilityMetadata
                         }));
                     });
@@ -394,6 +397,9 @@ export class ChampionService implements GenerationService {
                 });
 
                 const attackType = mapAttackType(detail.tacticalInfo?.attackType);
+                const localizedAttackType = localizeAttackType(attackType, context.locale);
+                const localizedResource = localizeResource(resource, context.locale);
+                const localizedAdaptiveType = localizeDamageType(adaptiveType, context.locale);
                 const roles = (detail.roles ?? item.summary.roles ?? []).map((role) => role.toUpperCase());
                 const icon = toPluginAssetUrl(detail.squarePortraitPath ?? item.summary.squarePortraitPath, context.patchVersion);
                 const championMetadata = resolveChampionMetadata(championMetadataIndex, [
@@ -417,9 +423,9 @@ export class ChampionService implements GenerationService {
                     title: localizedChampionTitle,
                     fullName: `${localizedChampionName}, ${localizedChampionTitle}`,
                     icon,
-                    resource,
-                    attackType,
-                    adaptiveType,
+                    resource: localizedResource,
+                    attackType: localizedAttackType,
+                    adaptiveType: localizedAdaptiveType,
                     stats: buildStats(ddragonChampion),
                     positions: [],
                     roles,
@@ -459,7 +465,7 @@ export class ChampionService implements GenerationService {
                     name: localizedChampionName || item.summary.name || key,
                     slug: key.toLowerCase(),
                     iconUrl: icon,
-                    attackType,
+                    attackType: localizedAttackType,
                     roles
                 });
 

@@ -1,4 +1,5 @@
 import { RAW_CDRAGON_BASE, toPatchChannel } from "./champion-assets.js";
+import { AFFECT_CODES, TARGETING_CODES } from "./champion-i18n.js";
 import { clampValuesToMaxRank, normalizeArray, resolveAbilitySlot, splitAbilityVariantNames } from "./champion-mapping.js";
 import type { AbilitySlot, CDragonSpell } from "./champion-types.js";
 
@@ -102,19 +103,25 @@ function mapTargetingType(rawType: string | undefined): string {
 
     const lower = value.toLowerCase();
     if (lower.includes("selfaoe")) {
-        return "Self (Area)";
+        return TARGETING_CODES.SELF_AREA;
     }
     if (lower === "self" || lower.includes("self")) {
-        return "Self";
+        return TARGETING_CODES.SELF;
+    }
+    if (lower.includes("locationclamped") || lower.includes("clampedlocation")) {
+        return TARGETING_CODES.LOCATION_CLAMPED;
+    }
+    if (lower.includes("location")) {
+        return TARGETING_CODES.LOCATION;
     }
     if (lower.includes("target") || lower.includes("unit")) {
-        return "Unit-targeted";
+        return TARGETING_CODES.UNIT_TARGETED;
     }
     if (lower.includes("line") || lower.includes("direction") || lower.includes("vector")) {
-        return "Direction";
+        return TARGETING_CODES.DIRECTION;
     }
     if (lower.includes("area") || lower.includes("aoe") || lower.includes("cone")) {
-        return "Area";
+        return TARGETING_CODES.AREA;
     }
 
     return value.replace(/([a-z])([A-Z])/g, "$1 $2");
@@ -131,7 +138,7 @@ function normalizeSpellTag(tag: string): string {
 }
 
 function formatAffects(values: Set<string>): string {
-    const ordered = ["Self", "Allies", "Enemies"].filter((value) => values.has(value));
+    const ordered = [AFFECT_CODES.SELF, AFFECT_CODES.ALLIES, AFFECT_CODES.ENEMIES].filter((value) => values.has(value));
     return ordered.join(", ");
 }
 
@@ -176,43 +183,47 @@ function resolveAffects(
     );
     const bits = decodeAffectsBits(affectsTypeFlags);
 
-    if (targeting === "Self" || targeting === "Self (Area)") {
-        values.add("Self");
+    if (targeting === TARGETING_CODES.SELF || targeting === TARGETING_CODES.SELF_AREA) {
+        values.add(AFFECT_CODES.SELF);
     }
 
-    if (targeting === "Direction" || targeting === "Unit-targeted" || targeting === "Area") {
-        values.add("Enemies");
+    if (
+        targeting === TARGETING_CODES.DIRECTION
+        || targeting === TARGETING_CODES.UNIT_TARGETED
+        || targeting === TARGETING_CODES.AREA
+    ) {
+        values.add(AFFECT_CODES.ENEMIES);
     }
 
-    if (targeting === "Location" || targeting === "Location Clamped") {
+    if (targeting === TARGETING_CODES.LOCATION || targeting === TARGETING_CODES.LOCATION_CLAMPED) {
         if (hasPositive && !hasEnemyIntent && !bits.hasEnemies) {
-            values.add("Allies");
-            values.add("Self");
+            values.add(AFFECT_CODES.ALLIES);
+            values.add(AFFECT_CODES.SELF);
         } else {
-            values.add("Enemies");
+            values.add(AFFECT_CODES.ENEMIES);
         }
     }
 
     if (bits.hasEnemies) {
-        values.add("Enemies");
+        values.add(AFFECT_CODES.ENEMIES);
     }
-    if (bits.hasAllies && (hasPositive || targeting.startsWith("Self"))) {
-        values.add("Allies");
+    if (bits.hasAllies && (hasPositive || targeting === TARGETING_CODES.SELF || targeting === TARGETING_CODES.SELF_AREA)) {
+        values.add(AFFECT_CODES.ALLIES);
     }
-    if (bits.hasSelf && (slot === "P" || hasPositive || targeting.startsWith("Self"))) {
-        values.add("Self");
+    if (bits.hasSelf && (slot === "P" || hasPositive || targeting === TARGETING_CODES.SELF || targeting === TARGETING_CODES.SELF_AREA)) {
+        values.add(AFFECT_CODES.SELF);
     }
 
-    if (targeting === "Self (Area)" && hasPositive && !hasEnemyIntent && !bits.hasEnemies) {
-        values.add("Allies");
+    if (targeting === TARGETING_CODES.SELF_AREA && hasPositive && !hasEnemyIntent && !bits.hasEnemies) {
+        values.add(AFFECT_CODES.ALLIES);
     }
 
     if (slot === "P" && values.size === 0) {
-        values.add("Self");
+        values.add(AFFECT_CODES.SELF);
     }
 
     if (hasEnemyIntent) {
-        values.add("Enemies");
+        values.add(AFFECT_CODES.ENEMIES);
     }
 
     return {
@@ -231,7 +242,7 @@ function deriveTargeting(
         return "";
     }
 
-    if (base !== "Self (Area)") {
+    if (base !== TARGETING_CODES.SELF_AREA) {
         return base;
     }
 
@@ -243,7 +254,7 @@ function deriveTargeting(
     const bits = decodeAffectsBits(affectsTypeFlags);
 
     if (hasPositive && !hasEnemyIntent && !bits.hasEnemies) {
-        return "Self";
+        return TARGETING_CODES.SELF;
     }
 
     return base;
@@ -262,19 +273,19 @@ function resolveSpellshieldable(
         return spellData.spellShieldable;
     }
 
-    if (targeting === "Self" || targeting === "Self (Area)") {
+    if (targeting === TARGETING_CODES.SELF || targeting === TARGETING_CODES.SELF_AREA) {
         return false;
     }
 
-    if (!affectsValues.has("Enemies")) {
+    if (!affectsValues.has(AFFECT_CODES.ENEMIES)) {
         return false;
     }
 
     if (
-        targeting === "Unit-targeted"
-        || targeting === "Direction"
-        || targeting === "Location"
-        || targeting === "Location Clamped"
+        targeting === TARGETING_CODES.UNIT_TARGETED
+        || targeting === TARGETING_CODES.DIRECTION
+        || targeting === TARGETING_CODES.LOCATION
+        || targeting === TARGETING_CODES.LOCATION_CLAMPED
     ) {
         return true;
     }
@@ -448,7 +459,7 @@ function buildMetadataFromSources(
 
     const hasProjectile = Boolean(spellData && spellData.mMissileSpec && typeof spellData.mMissileSpec === "object");
     if (hasProjectile) {
-        metadata.projectile = "Missile";
+        metadata.projectile = "MISSILE";
     }
 
     metadata.spellshieldable = resolveSpellshieldable(targeting, affects.values, hasProjectile, spellData);
