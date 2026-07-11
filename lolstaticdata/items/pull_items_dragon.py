@@ -1,7 +1,8 @@
 import json
 import os
+import requests
 
-from ..common.utils import download_json
+from ..common.utils import download_json, print_warning
 from .pull_items_wiki import WikiItem
 from .modelitem import Item, Shop
 
@@ -13,9 +14,22 @@ def get_latest_version():
 
 
 class DragonItem:
-    latest_version = get_latest_version()
-    version = latest_version.split(".")
-    version = str(version[0]) + "." + str(version[1])
+    _latest_version = None
+    _version = None
+    
+    @classmethod
+    def get_latest_version(cls):
+        if cls._latest_version is None:
+            cls._latest_version = get_latest_version()
+        return cls._latest_version
+
+    @classmethod
+    def get_version(cls):
+        if cls._version is None:
+            latest_version = cls.get_latest_version()
+            version_parts = latest_version.split(".")
+            cls._version = str(version_parts[0]) + "." + str(version_parts[1])
+        return cls._version
 
     @staticmethod
     def get_cdragon():  # cdragon to list
@@ -26,13 +40,25 @@ class DragonItem:
         cdragon = [i for i in j if str(i["id"])]
         return cdragon
 
-    @staticmethod
-    def get_item_plaintext(item):
-        url = f"https://raw.communitydragon.org/{DragonItem.version}/game/en_us/data/menu/en_us/lol.stringtable.json"
-        j = download_json(url, use_cache=True)
+    _stringtable_cache = None
+    _stringtable_loaded = False
+
+    @classmethod
+    def get_item_plaintext(cls, item):
+        if not cls._stringtable_loaded:
+            url = f"https://raw.communitydragon.org/latest/game/en_us/data/menu/en_us/lol.stringtable.json"
+            try:
+                cls._stringtable_cache = download_json(url, use_cache=True)
+            except requests.exceptions.RequestException as e:
+                print_warning(f"Could not fetch CommunityDragon stringtable ({url}): {e}")
+                cls._stringtable_cache = None
+            cls._stringtable_loaded = True
+
+        if cls._stringtable_cache is None:
+            return None
         try:
-            return j['entries']["game_item_plaintext_" + str(item)]
-        except:
+            return cls._stringtable_cache['entries']["game_item_plaintext_" + str(item)]
+        except (KeyError, TypeError):
             return None
 
     @classmethod
@@ -75,6 +101,7 @@ class DragonItem:
             rank="",
             special_recipe=special_recipe,
             iconOverlay=None,
+            modes=[],
         )
         return item
 
@@ -88,7 +115,7 @@ class DragonItem:
                 path = path.lower()
                 path = (
                     "https://raw.communitydragon.org/{}/plugins/rcp-be-lol-game-data/global/default/assets".format(
-                        DragonItem.version
+                        cls.get_version()
                     )
                     + path
                 )
@@ -101,14 +128,14 @@ class DragonItem:
         cls,
     ):  # Main Function, gets items from ddragon, compares them with cdragon and then gets the items from the wiki
         # I didn't want make a request to cdragon for every item
-        url = "http://ddragon.leagueoflegends.com/cdn/{}/data/en_US/item.json".format(get_latest_version())
+        url = "http://ddragon.leagueoflegends.com/cdn/{}/data/en_US/item.json".format(cls.get_latest_version())
         p = download_json(url, use_cache=True)
         return p["data"]
 
     @classmethod
     def get_ddragon(cls, ddragon: int, p: dict):
         # print(ddragon)
-        baseurl = "http://ddragon.leagueoflegends.com/cdn/{}/img/item/".format(get_latest_version())  # icon base url
+        baseurl = "http://ddragon.leagueoflegends.com/cdn/{}/img/item/".format(cls.get_latest_version())  # icon base url
         icon = baseurl + p[ddragon]["image"]["full"]
         plaintext = p[ddragon]["plaintext"]  # simple description
         purchasable = p[ddragon]["gold"]["purchasable"]  # is this purchasable or is it upgraded (seraph's embrace)
@@ -140,5 +167,6 @@ class DragonItem:
             stats=[],
             shop=shop,
             rank="",
+            modes=[],
         )
         return item

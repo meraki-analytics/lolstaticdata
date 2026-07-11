@@ -70,6 +70,14 @@ class ItemRanks(OrderedEnum):
     SPECIAL = "SPECIAL"
 
 
+class ItemModes(OrderedEnum):
+    CLASSIC = "classic"
+    ARAM = "aram"
+    NEXUS_BLITZ = "nexusBlitz"
+    ARENA = "arena"
+    MAYHEM = "mayhem"
+
+
 @dataclasses_json.dataclass_json(letter_case=dataclasses_json.LetterCase.CAMEL)
 @dataclass
 class Stats(object):
@@ -157,6 +165,7 @@ class Item(object):
     stats: Stats
     shop: Shop
     iconOverlay: str
+    modes: List[str]
 
     def __json__(self, *args, **kwargs):
         # Use dataclasses_json to get the dict

@@ -14,6 +14,26 @@ from natsort import natsorted
 Json = Union[dict, list, str, int, float, bool, None]
 
 
+ANSI_RED = "\033[31m"
+ANSI_ORANGE = "\033[38;5;214m"
+ANSI_RESET = "\033[0m"
+
+
+def _print_colored(prefix: str, message: str, color: str, code: Union[int, str, None] = None):
+    if code is None:
+        print(f"{color}{prefix}: {message}{ANSI_RESET}")
+    else:
+        print(f"{color}{prefix} [{code}]: {message}{ANSI_RESET}")
+
+
+def print_error(message: str, code: Union[int, str, None] = None):
+    _print_colored("ERROR", message, ANSI_RED, code=code)
+
+
+def print_warning(message: str, code: Union[int, str, None] = None):
+    _print_colored("WARNING", message, ANSI_ORANGE, code=code)
+
+
 def to_enum_like(string: str) -> str:
     return string.upper().replace(" ", "_")
 
@@ -131,6 +151,9 @@ def download_json(url: str, use_cache: bool = True) -> Json:
     else:
         headers = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36"}
         page = requests.get(url, headers=headers)
+        if page.status_code >= 400:
+            print_error(f"HTTP {page.status_code} while fetching JSON: {url}", code=page.status_code)
+            raise requests.exceptions.HTTPError(f"HTTP {page.status_code}: {url}", response=page)
         j = page.json()
         if use_cache:
             with open(fn, "w") as f:
@@ -153,6 +176,9 @@ def download_soup(url: str, use_cache: bool = True, dir: str = f"__cache__"):
             html = f.read()
     else:
         page = requests.get(url)
+        if page.status_code >= 400:
+            print_error(f"HTTP {page.status_code} while fetching page: {url}", code=page.status_code)
+            raise requests.exceptions.HTTPError(f"HTTP {page.status_code}: {url}", response=page)
         # html = page.content.decode(page.encoding)
         html = page.text
         if use_cache:

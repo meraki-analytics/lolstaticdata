@@ -2,6 +2,7 @@ import os
 import json
 import time
 import argparse
+import requests
 from bs4 import BeautifulSoup
 
 from ..common import utils
@@ -10,7 +11,11 @@ from .pull_champions_dragons import get_ability_url as _get_ability_url
 
 
 def get_ability_filenames(url):
-    soup = utils.download_soup(url, use_cache=False)
+    try:
+        soup = utils.download_soup(url, use_cache=False)
+    except requests.exceptions.RequestException as e:
+        utils.print_warning(f"Could not load ability icon listing ({url}): {e}")
+        return []
     soup = BeautifulSoup(soup, "lxml")
 
     filenames = []
@@ -55,10 +60,20 @@ def main(champion: str | None = None, stats: bool = False, abilities: bool = Fal
         process_skins=skins or process_all,
     )
 
-    latest_version = utils.get_latest_patch_version()
-    ddragon_champions = utils.download_json(
-        f"http://ddragon.leagueoflegends.com/cdn/{latest_version}/data/en_US/championFull.json"
-    )["data"]
+    try:
+        latest_version = utils.get_latest_patch_version()
+    except requests.exceptions.RequestException as e:
+        utils.print_error(f"Unable to determine latest patch version from Data Dragon: {e}")
+        return
+
+    print(f"Fetching Champion data for patch version: {latest_version}")
+    try:
+        ddragon_champions = utils.download_json(
+            f"http://ddragon.leagueoflegends.com/cdn/{latest_version}/data/en_US/championFull.json"
+        )["data"]
+    except requests.exceptions.RequestException as e:
+        utils.print_error(f"Unable to load champion metadata for patch {latest_version}: {e}")
+        return
 
     factions = {}
     if lore or process_all:
@@ -71,7 +86,7 @@ def main(champion: str | None = None, stats: bool = False, abilities: bool = Fal
             for universe_entry in universe_stats:
                 factions[universe_entry["slug"]] = universe_entry["associated-faction-slug"]
         except Exception:
-            print("ERROR: Unable to load/parse universe file, location may have changed")
+            utils.print_error("Unable to load/parse universe file, location may have changed")
 
     ability_key_to_identifier = {
         "P": "passive",
@@ -88,7 +103,7 @@ def main(champion: str | None = None, stats: bool = False, abilities: bool = Fal
         champion_key = champion.key
 
         if champion_key not in ddragon_champions:
-            print(f"WARNING: Skipping champion '{champion_key}' (not present in Data Dragon metadata).")
+            utils.print_warning(f"Skipping champion '{champion_key}' (not present in Data Dragon metadata).")
             continue
 
         ddragon_champion = ddragon_champions[champion_key]
@@ -140,7 +155,7 @@ def main(champion: str | None = None, stats: bool = False, abilities: bool = Fal
     if champion and not champions:
         end_time = time.time()
         print_runtime()
-        print(f"WARNING: Champion '{champion}' was not found. Try the exact in-game name, e.g. \"Jarvan IV\".")
+        utils.print_warning(f"Champion '{champion}' was not found. Try the exact in-game name, e.g. \"Jarvan IV\".")
         return
 
     jsonfn = os.path.join(directory, "champions.json")

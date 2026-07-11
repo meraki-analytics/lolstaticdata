@@ -33,6 +33,8 @@ from ..common.utils import (
     to_enum_like,
     download_json,
     strip_lua_comments,
+    print_error,
+    print_warning,
 )
 from .modelchampion import (
     Champion,
@@ -339,7 +341,7 @@ class LolWikiDataHandler:
                     flat=data["stats"]["range"],
                     per_level=data["stats"].get("range_lvl", 0),
                 ),
-                critical_strike_damage=Stat(flat=data["stats"].get("crit_base", 175)),
+                critical_strike_damage=Stat(flat=data["stats"].get("crit_base", 200)),
                 critical_strike_damage_modifier=Stat(flat=data["stats"].get("crit_mod", 1.0)),
                 movespeed=Movespeed(flat=data["stats"]["ms"]),
                 acquisition_radius=Stat(flat=data["stats"].get("acquisition_radius", 800)),
@@ -492,7 +494,10 @@ class LolWikiDataHandler:
         try: 
             return HTMLAbilityWrapper(soup)
         except ValueError:
-            print(f"WARNING: Ability data could not be found for {ability_name}. The Wiki page may be empty: https://wiki.leagueoflegends.com/en-us/Template:Data_{champion_name}/{ability_name}")
+            print_warning(
+                f"Ability data could not be found for {ability_name}. "
+                f"The Wiki page may be empty: https://wiki.leagueoflegends.com/en-us/Template:Data_{champion_name}/{ability_name}"
+            )
 
     def _get_ability_effects(self, name, skill_dict):
         effects = []
@@ -721,8 +726,8 @@ class LolWikiDataHandler:
         try:
             parsed_modifiers = ParsingAndRegex.split_modifiers(mods)
         except Exception as error:
-            print("ERROR: FAILURE TO SPLIT MODIFIER")
-            print("ERROR:", error)
+            print_error("FAILURE TO SPLIT MODIFIER")
+            print_error(str(error))
             return modifiers
 
         for lvling in parsed_modifiers:
@@ -730,8 +735,8 @@ class LolWikiDataHandler:
                 modifier = self._render_modifier(lvling, nvalues)
                 modifiers.append(modifier)
             except Exception as error:
-                print(f"ERROR: FAILURE TO PARSE MODIFIER:  {lvling}")
-                print("ERROR:", error)
+                print_error(f"FAILURE TO PARSE MODIFIER:  {lvling}")
+                print_error(str(error))
                 modifier = Modifier(
                     values=[0 for _ in range(nvalues)],
                     units=[lvling for _ in range(nvalues)],
@@ -1015,7 +1020,7 @@ class ParsingAndRegex:
                 if nvalues == 3 and len(values) == 5:
                     values = [values[0], values[2], values[4]]
                 if nvalues is not None and len(values) != nvalues:
-                    print(f"WARNING: Unexpected number of modifier values: {values} (expected {nvalues})")
+                    print_warning(f"Unexpected number of modifier values: {values} (expected {nvalues})")
                 return not_parsed, values
         raise ValueError(f"Could not parse slash-separated string: {string}")
 

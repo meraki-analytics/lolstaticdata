@@ -13,10 +13,12 @@ from .modelitem import (
     Active,
     ItemAttributes,
     ItemRanks,
+    ItemModes,
 )
 from ..common.utils import (
     download_soup,
     strip_lua_comments,
+    print_warning,
 )
 from ..common.modelcommon import (
     ArmorPenetration,
@@ -47,6 +49,30 @@ from ..common.modelcommon import (
 
 
 class WikiItem:
+    WIKI_MODE_MAP = {
+        "classic sr 5v5": ItemModes.CLASSIC,
+        "aram": ItemModes.ARAM,
+        "nb": ItemModes.NEXUS_BLITZ,
+        "ar": ItemModes.ARENA,
+        "mayhem": ItemModes.MAYHEM,
+    }
+
+    @classmethod
+    def _parse_modes(cls, item_data: dict) -> List[str]:
+        modes = []
+        wiki_modes = item_data.get("modes")
+        if not isinstance(wiki_modes, dict):
+            return modes
+        for wiki_key, enabled in wiki_modes.items():
+            if not enabled:
+                continue
+            mode = cls.WIKI_MODE_MAP.get(wiki_key)
+            if mode is None:
+                print_warning(f"WARNING: Unknown item mode '{wiki_key}'")
+                continue
+            modes.append(mode)
+        return modes
+
     @classmethod
     def _parse_passives(cls, item_data: dict) -> List[Passive]:
         effects = []
@@ -630,7 +656,7 @@ class WikiItem:
                     item_data[x] = wiki_data[parent_item][x]
                 except KeyError as e:
                     clear_keys.append(x)
-                    print(f"WARNING: Couldn't find inherited value of '{x}' for {item_name} - inherited from {parent_item}")
+                    print_warning(f"Couldn't find inherited value of '{x}' for {item_name} - inherited from {parent_item}")
                     break
             if x in "effects":
                 for l in item_data[x]:
@@ -767,6 +793,7 @@ class WikiItem:
             rank=rank,
             special_recipe=0,
             iconOverlay=ornn,
+            modes=cls._parse_modes(item_data),
         )
         return item
 
