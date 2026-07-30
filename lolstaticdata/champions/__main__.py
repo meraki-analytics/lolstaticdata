@@ -14,7 +14,7 @@ def get_ability_filenames(url):
     soup = BeautifulSoup(soup, "lxml")
 
     filenames = []
-    for td in soup.findAll("td"):
+    for td in soup.find_all("td"):
         a = td.a
         if a is not None:
             fn = a["href"]
