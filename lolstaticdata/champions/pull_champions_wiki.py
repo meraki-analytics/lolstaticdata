@@ -131,7 +131,7 @@ class LolWikiDataHandler:
             "lvling": " + 40 for every stack, capped at 9 stacks"
         },
         # K'Sante
-        "3.5 : 2 (based on bonus resistances)": {
+        "3.5 : 2 (based on bonus resistances) • 2.33 : 1.33": {
             "value": 3.5,
             "lvling": " - 0.0125 x bonus resistances, " \
             "capped at 120 bonus resistances"
@@ -142,8 +142,8 @@ class LolWikiDataHandler:
             "lvling": "Siphoning Strike Stacks"
         },
         # Quinn
-        "8 : 2.93 (based on critical strike chance)": {
-            "value": 8,
+        "7 : 2.56 (based on critical strike chance)": {
+            "value": 7,
             "lvling": " x (0.99 ^ critical strike chance %)"
         },
         # Sett
@@ -696,6 +696,8 @@ class LolWikiDataHandler:
                 "Swipe scales with Aspect of the Cougar's rank",
                 "Pounce scales with Aspect of the Cougar's rank",
                 "Cougar form's abilities rank up when Aspect of the Cougar does",
+                "Hextech Rocket Swarm scales with UPGRADE!!!'s rank",
+                "CH-3X Lightning Grenade scales with UPGRADE!!!'s rank",
             )
         ]
         initial_split = list(grouper(initial_split, 2))
